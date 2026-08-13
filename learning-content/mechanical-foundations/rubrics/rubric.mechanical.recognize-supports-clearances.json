@@ -1,0 +1,47 @@
+{
+  "id": "rubric.mechanical.recognize-supports-clearances",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.recognize-supports-clearances",
+  "rules": [
+    {
+      "id": "rule.mechanical.recognize-supports-clearances.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Reconocer apoyos y holguras: se evalúan relación, justificación, restauración y límites; el tiempo no penaliza."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.mechanical.recognize-supports-clearances.demonstrated",
+    "version": "0.5.0",
+    "competencyId": "competency.mechanical.recognize-supports-clearances",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "simulation-result",
+            "status": "active",
+            "minimumConfidence": 1
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

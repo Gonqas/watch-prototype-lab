@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

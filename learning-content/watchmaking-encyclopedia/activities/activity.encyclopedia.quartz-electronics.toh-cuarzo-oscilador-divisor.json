@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Oscilador de cuarzo y división de frecuencia",
+  "sceneIds": [
+    "scene.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor"
+  ],
+  "rubricId": "rubric.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+    "title": {
+      "es": "Explicar y transferir: Oscilador de cuarzo y división de frecuencia",
+      "en": "Explicar y transferir: Oscilador de cuarzo y división de frecuencia"
+    },
+    "description": {
+      "es": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+      "en": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "electronic-control",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.toh.ch15",
+      "source.official.miyota.2035",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+        "blockId": "block.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+        "conceptIds": [
+          "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+          "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+          "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Oscilador de cuarzo y división de frecuencia sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Oscilador de cuarzo y división de frecuencia sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Una bobina sin pulsos puede deberse a alimentación, resonador, circuito o división. Medir continuidad de bobina solo comprueba el actuador y no demuestra referencia temporal.",
+          "en": "Una bobina sin pulsos puede deberse a alimentación, resonador, circuito o división. Medir continuidad de bobina solo comprueba el actuador y no demuestra referencia temporal."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+            "en": "Identificar la pregunta: ¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+          },
+          {
+            "es": "Dibujar la secuencia alimentar circuito → excitar resonador → sostener oscilación → formar señal → dividir frecuencia → emitir pulso.",
+            "en": "Dibujar la secuencia alimentar circuito → excitar resonador → sostener oscilación → formar señal → dividir frecuencia → emitir pulso."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: 32768 Hz como arquitectura común, no universal; tensión; corriente; desviación de frecuencia.",
+            "en": "Asignar magnitudes y evidencia: 32768 Hz como arquitectura común, no universal; tensión; corriente; desviación de frecuencia."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Dibuja una cadena de diagnóstico desde célula hasta pulso de bobina.",
+          "en": "Dibuja una cadena de diagnóstico desde célula hasta pulso de bobina."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: alimentar circuito → excitar resonador → sostener oscilación → formar señal → dividir frecuencia → emitir pulso.",
+            "en": "Completa la cadena con las etapas visibles: alimentar circuito → excitar resonador → sostener oscilación → formar señal → dividir frecuencia → emitir pulso."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+            "en": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Dibuja una cadena de diagnóstico desde célula hasta pulso de bobina.",
+            "en": "Dibuja una cadena de diagnóstico desde célula hasta pulso de bobina."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "El cuarzo envía un pulso por segundo",
+          "en": "El cuarzo envía un pulso por segundo"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Oscilador de cuarzo y división de frecuencia con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Oscilador de cuarzo y división de frecuencia con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Dibuja una cadena de diagnóstico desde célula hasta pulso de bobina.",
+        "en": "Dibuja una cadena de diagnóstico desde célula hasta pulso de bobina."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena alimentar circuito → excitar resonador → sostener oscilación → formar señal → dividir frecuencia → emitir pulso, su evidencia y límites.",
+        "en": "La explicación conserva la cadena alimentar circuito → excitar resonador → sostener oscilación → formar señal → dividir frecuencia → emitir pulso, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «El cuarzo envía un pulso por segundo».",
+        "en": "Revisa si omitiste una interfaz o caíste en «El cuarzo envía un pulso por segundo»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+        "en": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Medir frecuencia sin carga adecuada. de Llamar cristal al circuito completo..",
+        "en": "Busca evidencia para distinguir Medir frecuencia sin carga adecuada. de Llamar cristal al circuito completo.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor"
+      ],
+      "transferPrompt": {
+        "es": "Dibuja una cadena de diagnóstico desde célula hasta pulso de bobina.",
+        "en": "Dibuja una cadena de diagnóstico desde célula hasta pulso de bobina."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+          "en": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+        },
+        {
+          "es": "¿Qué relación causal de «Oscilador de cuarzo y división de frecuencia» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Oscilador de cuarzo y división de frecuencia» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

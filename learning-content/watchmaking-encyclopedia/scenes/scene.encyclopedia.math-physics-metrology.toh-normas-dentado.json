@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.math-physics-metrology.toh-normas-dentado",
+  "version": "1.1.0",
+  "title": "Cuaderno: Normas, perfiles y lectura de tablas relojeras",
+  "description": "¿Cómo se transforma una tabla NHS/NIHS en una geometría calculable sin inventar datos?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Normas, perfiles y lectura de tablas relojeras. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.math-physics-metrology.toh-normas-dentado.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se transforma una tabla NHS/NIHS en una geometría calculable sin inventar datos?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se transforma una tabla NHS/NIHS en una geometría calculable sin inventar datos?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.math-physics-metrology.toh-normas-dentado.answer",
+      "instructionMarkdown": "Explica **Normas, perfiles y lectura de tablas relojeras** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.math-physics-metrology.toh-normas-dentado.explain",
+          "promptMarkdown": "¿Cómo se transforma una tabla NHS/NIHS en una geometría calculable sin inventar datos?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-normas-dentado.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-normas-dentado.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-normas-dentado.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-normas-dentado.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.toh-normas-dentado.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar norma y sigue hasta verificar límites.",
+                "en": "Empieza por identificar norma y sigue hasta verificar límites."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.toh-normas-dentado.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Una norma define símbolos, perfiles, coeficientes, condiciones y alcance. Antes de usar una fórmula se identifica edición, unidades y tipo de rueda o piñón. Diámetro exterior, primitivo y de pie no son intercambiables.",
+                "en": "Una norma define símbolos, perfiles, coeficientes, condiciones y alcance. Antes de usar una fórmula se identifica edición, unidades y tipo de rueda o piñón. Diámetro exterior, primitivo y de pie no son intercambiables."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se transforma una tabla NHS/NIHS en una geometría calculable sin inventar datos?",
+              "en": "¿Cómo se transforma una tabla NHS/NIHS en una geometría calculable sin inventar datos?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar norma → leer símbolos → confirmar unidades → seleccionar caso → calcular → verificar límites, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar norma → leer símbolos → confirmar unidades → seleccionar caso → calcular → verificar límites, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.math-physics-metrology.toh-normas-dentado.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.math-physics-metrology.toh-normas-dentado.mechanism",
+            "field.encyclopedia.math-physics-metrology.toh-normas-dentado.evidence",
+            "field.encyclopedia.math-physics-metrology.toh-normas-dentado.limit",
+            "field.encyclopedia.math-physics-metrology.toh-normas-dentado.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

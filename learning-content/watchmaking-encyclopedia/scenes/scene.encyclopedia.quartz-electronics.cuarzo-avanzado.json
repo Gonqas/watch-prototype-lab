@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.quartz-electronics.cuarzo-avanzado",
+  "version": "1.1.0",
+  "title": "Cuaderno: Cuarzo de alta precisión, solar, radio y conectividad",
+  "description": "¿Qué funciones se añaden para mejorar autonomía, corrección o estabilidad y qué no debe inferirse de su nombre comercial?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Cuarzo de alta precisión, solar, radio y conectividad. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.quartz-electronics.cuarzo-avanzado.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué funciones se añaden para mejorar autonomía, corrección o estabilidad y qué no debe inferirse de su nombre comercial?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué funciones se añaden para mejorar autonomía, corrección o estabilidad y qué no debe inferirse de su nombre comercial?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.quartz-electronics.cuarzo-avanzado.answer",
+      "instructionMarkdown": "Explica **Cuarzo de alta precisión, solar, radio y conectividad** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.quartz-electronics.cuarzo-avanzado.explain",
+          "promptMarkdown": "¿Qué funciones se añaden para mejorar autonomía, corrección o estabilidad y qué no debe inferirse de su nombre comercial?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.quartz-electronics.cuarzo-avanzado.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.cuarzo-avanzado.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.cuarzo-avanzado.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.cuarzo-avanzado.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.quartz-electronics.cuarzo-avanzado.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por referencia interna oscila y sigue hasta registro conserva estado.",
+                "en": "Empieza por referencia interna oscila y sigue hasta registro conserva estado."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.quartz-electronics.cuarzo-avanzado.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Compensación térmica, ajuste digital, alta frecuencia, sincronización por radio o satélite, captación solar y gestión de energía actúan sobre errores y autonomía distintos. Un sistema conectado puede corregir indicación sin cambiar estabilidad libre. Comparar requiere separar referencia interna, referencia externa, algoritmo, almacenamiento y actuador.",
+                "en": "Compensación térmica, ajuste digital, alta frecuencia, sincronización por radio o satélite, captación solar y gestión de energía actúan sobre errores y autonomía distintos. Un sistema conectado puede corregir indicación sin cambiar estabilidad libre. Comparar requiere separar referencia interna, referencia externa, algoritmo, almacenamiento y actuador."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué funciones se añaden para mejorar autonomía, corrección o estabilidad y qué no debe inferirse de su nombre comercial?",
+              "en": "¿Qué funciones se añaden para mejorar autonomía, corrección o estabilidad y qué no debe inferirse de su nombre comercial?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena referencia interna oscila → sensor o receptor obtiene contexto → algoritmo estima error → se aplica corrección → actuador actualiza indicación → registro conserva estado, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena referencia interna oscila → sensor o receptor obtiene contexto → algoritmo estima error → se aplica corrección → actuador actualiza indicación → registro conserva estado, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.quartz-electronics.cuarzo-avanzado.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.quartz-electronics.cuarzo-avanzado.mechanism",
+            "field.encyclopedia.quartz-electronics.cuarzo-avanzado.evidence",
+            "field.encyclopedia.quartz-electronics.cuarzo-avanzado.limit",
+            "field.encyclopedia.quartz-electronics.cuarzo-avanzado.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

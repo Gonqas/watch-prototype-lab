@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.quartz-electronics.divisor-circuito-y-consumo",
+  "version": "1.1.0",
+  "title": "Circuito integrado, divisor, compensación y consumo",
+  "blockIds": [
+    "block.encyclopedia.quartz-electronics.divisor-circuito-y-consumo"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.divisor-circuito-y-consumo"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Circuito integrado, divisor, compensación y consumo",
+      "en": "Circuito integrado, divisor, compensación y consumo"
+    },
+    "purpose": {
+      "es": "¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?",
+      "en": "¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Circuito integrado, divisor, compensación y consumo mediante relaciones causales.",
+        "en": "Explicar Circuito integrado, divisor, compensación y consumo mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.efecto-piezoelectrico",
+      "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.resonador-de-horquilla",
+      "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.circuito-oscilador"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.division-binaria",
+      "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.pulso-de-motor",
+      "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.consumo-medio"
+    ],
+    "sourceIds": [
+      "source.official.miyota.2035",
+      "source.external.watchguy-manuals",
+      "source.external.watch-movements-eu"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.division-binaria",
+        "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.pulso-de-motor",
+        "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.consumo-medio"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1178,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.quartz-electronics.divisor-circuito-y-consumo"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: división binaria, pulso de motor, consumo medio.",
+          "en": "Defino con mis palabras: división binaria, pulso de motor, consumo medio."
+        },
+        {
+          "es": "Sigo «Circuito integrado, divisor, compensación y consumo» desde amplificar resonancia hasta supervisar estado y explico cada enlace.",
+          "en": "Sigo «Circuito integrado, divisor, compensación y consumo» desde amplificar resonancia hasta supervisar estado y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Circuito integrado, divisor, compensación y consumo» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Circuito integrado, divisor, compensación y consumo» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Calcula el número ideal de divisiones desde 32 768 Hz hasta 1 Hz y enumera los fenómenos físicos que ese cálculo no valida.",
+          "en": "Aplico el criterio a esta variante: Calcula el número ideal de divisiones desde 32 768 Hz hasta 1 Hz y enumera los fenómenos físicos que ese cálculo no valida."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Circuito integrado, divisor, compensación y consumo» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Circuito integrado, divisor, compensación y consumo» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.division-binaria",
+        "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.pulso-de-motor",
+        "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.consumo-medio"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?",
+          "en": "¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?"
+        },
+        {
+          "es": "¿Qué relación causal de «Circuito integrado, divisor, compensación y consumo» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Circuito integrado, divisor, compensación y consumo» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

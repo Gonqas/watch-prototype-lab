@@ -1,0 +1,55 @@
+{
+  "id": "block.quartz2035.assembly",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Montaje virtual y comprobaciones",
+  "bodyMarkdown": "## Propósito\n\nReconstruir desde bandeja validando soporte, orientación e identidad.\n\n## Objetivos\n\n## Conocimientos previos\n\n## Explicación\n\nEl montaje no supone que todo orden inverso sea literal. La pieza debe estar orientada y alineada; un soporte requerido debe estar presente; el tornillo conserva su instancia y se verifica tras instalar. Lo no representable se declara como pendiente de manual, medición o revisión humana.\n\n## Visual y actividad\n\nEl mismo banco virtual y el mismo modelo del movimiento se usan en los modos guiado, asistido y libre. La actividad conserva el mismo modelo de referencia en los modos guiado, asistido y libre. Los cambios solo afectan a la sesión de aprendizaje y nunca alteran el proyecto técnico original.\n\n## Fuentes y alcance de las afirmaciones\n\nEl libro privado respalda principios generales del taller o las herramientas en las páginas verificadas; no se copia texto ni se convierte en instrucción MIYOTA. Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nReconstruir desde bandeja validando soporte, orientación e identidad. La siguiente práctica es “Comprobación y diagnóstico básico”.\n\n## Palabras y piezas clave\n\n- **Identificar piezas documentadas.** Concepto práctico: identificar piezas documentadas, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles.\n- **Montar virtualmente.** Concepto práctico: montar virtualmente, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo se verifica un montaje virtual por dependencias y comprobaciones parciales, en lugar de invertir ciegamente una lista de desmontaje?\n\n## Modelo causal ampliado\n\nMontar requiere que apoyos, interfaces, orientación y sujeciones estén disponibles en el estado correcto. Invertir una secuencia puede ser una primera hipótesis, pero no basta: algunas comprobaciones deben hacerse antes de cubrir el acceso. El sistema valida dependencias declaradas y permite modos guiado, asistido y libre con retirada progresiva de ayuda.\n\nUna aceptación digital confirma consistencia del modelo declarativo. No mide presión de agujas, contacto eléctrico, par de tornillo ni funcionamiento real. Esas magnitudes quedan fuera de esta simulación.\n\n## Ejemplo resuelto\n\nSe coloca una rueda sobre sus apoyos, se comprueba libertad simbólica y engrane declarado, y solo después se añade la cubierta. Si la cubierta se coloca primero, la siguiente pieza queda inaccesible y el sistema explica la dependencia. Al final se restaura y se repite sin la lista completa.\n\n## Práctica deliberada\n\nCompleta un montaje guiado. Repite con solo puntos de control. En el intento independiente recibe una bandeja desordenada, reconstruye por identidades y realiza una comprobación parcial antes de cada cierre.\n\n## Comprobación antes del laboratorio\n\n- No montas sobre una dependencia ausente.\n- Verificas antes de ocultar el acceso.\n- Reduces ayuda entre intentos.\n- Separas consistencia digital de funcionamiento físico.\n\n## Transferencia\n\nAplica el patrón a un conjunto mecánico conceptual y decide qué verificaciones siguen siendo funcionales aunque cambie la geometría.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo se verifica un montaje virtual por dependencias y comprobaciones parciales, en lugar de invertir ciegamente una lista de desmontaje?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Aplica el patrón a un conjunto mecánico conceptual y decide qué verificaciones siguen siendo funcionales aunque cambie la geometría.\n\n## Lectura técnica de relaciones y límites\n\nAñade una lista de “comprobar antes de ocultar”. Incluye presencia de la instancia correcta, orientación, apoyo, interfaz y estado de la bandeja. La comprobación se firma en el punto de control anterior a la cubierta. Si se descubre una incoherencia después, se vuelve al último estado válido y se conserva el intento fallido como evidencia de diagnóstico, no se reescribe la historia.",
+  "claims": [
+    {
+      "id": "claim.quartz2035.assembly",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "La práctica “Montaje virtual y comprobaciones” usa acciones semánticas y reversibles sin afirmar física ni servicio validado.",
+      "sourceStatement": "Explicación educativa original respaldada por el contrato del banco y sus limitaciones.",
+      "method": "Diseño educativo original y prueba del runtime",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+          "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4d:assembly:0.1.0",
+      "recordedAt": "2026-07-27T10:00:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-quartz-practical-route",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4D · ruta práctica Del ISA 8172 al MIYOTA 2035"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Arquitectura del banco, actividades, explicaciones y evaluación originales de la ruta práctica.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.quartz2035.assemble-virtually"
+    ],
+    "estimatedMinutes": 4,
+    "userPaced": true
+  }
+}

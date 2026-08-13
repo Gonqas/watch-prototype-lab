@@ -1,0 +1,136 @@
+{
+  "id": "scene.metrology.preparar-una-inspeccion",
+  "version": "0.2.0",
+  "title": "Preparar una inspección",
+  "description": "Escena textual y accesible que prepara la operación real “Preparar una inspección” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Preparar una inspección. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-preparar-una-inspeccion.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-preparar-una-inspeccion.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Preparar una inspección”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-preparar-una-inspeccion.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Preparar una inspección” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-preparar-una-inspeccion",
+          "promptMarkdown": "¿Qué sabemos de una pieza antes de acercarle un instrumento, y qué estamos suponiendo sin darnos cuenta?\n\nEn «Preparar una inspección», elige la conclusión que no excede la evidencia del ejemplo y justifica por qué las otras dos opciones fallan.",
+          "responseKind": "structured-response",
+          "options": [
+            {
+              "id": "option.activity-metrology-preparar-una-inspeccion.defensible",
+              "label": "El resultado defendible es una observación localizada con condiciones y preguntas de comprobación. No es todavía un diagnóstico de desgaste ni una dimensión del calibre.",
+              "labels": {
+                "es": "El resultado defendible es una observación localizada con condiciones y preguntas de comprobación. No es todavía un diagnóstico de desgaste ni una dimensión del calibre.",
+                "en": "El resultado defendible es una observación localizada con condiciones y preguntas de comprobación. No es todavía un diagnóstico de desgaste ni una dimensión del calibre."
+              }
+            },
+            {
+              "id": "option.activity-metrology-preparar-una-inspeccion.error-one",
+              "label": "Empezar por el instrumento y adaptar después la pregunta al número obtenido.",
+              "labels": {
+                "es": "Empezar por el instrumento y adaptar después la pregunta al número obtenido.",
+                "en": "Empezar por el instrumento y adaptar después la pregunta al número obtenido."
+              }
+            },
+            {
+              "id": "option.activity-metrology-preparar-una-inspeccion.error-two",
+              "label": "Usar el nombre de una pieza como prueba de que su identidad está confirmada.",
+              "labels": {
+                "es": "Usar el nombre de una pieza como prueba de que su identidad está confirmada.",
+                "en": "Usar el nombre de una pieza como prueba de que su identidad está confirmada."
+              }
+            }
+          ],
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-preparar-una-inspeccion.decision",
+              "label": "¿Qué sabemos de una pieza antes de acercarle un instrumento, y qué estamos suponiendo sin darnos cuenta?",
+              "kind": "choice",
+              "required": true,
+              "optionIds": [
+                "option.activity-metrology-preparar-una-inspeccion.defensible",
+                "option.activity-metrology-preparar-una-inspeccion.error-one",
+                "option.activity-metrology-preparar-una-inspeccion.error-two"
+              ]
+            },
+            {
+              "id": "field.activity-metrology-preparar-una-inspeccion.justification",
+              "label": "Justifica qué evidencia y qué límite hacen defendible tu elección.",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-preparar-una-inspeccion.confidence",
+              "label": "Confianza en la decisión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Decide y justifica: ¿Qué sabemos de una pieza antes de acercarle un instrumento, y qué estamos suponiendo sin darnos cuenta?"
+            },
+            "feedback": {
+              "es": "La conclusión defendible conserva evidencia y alcance: El resultado defendible es una observación localizada con condiciones y preguntas de comprobación. No es todavía un diagnóstico de desgaste ni una dimensión del calibre."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-preparar-una-inspeccion",
+          "requiredFieldIds": [
+            "field.activity-metrology-preparar-una-inspeccion.decision",
+            "field.activity-metrology-preparar-una-inspeccion.justification",
+            "field.activity-metrology-preparar-una-inspeccion.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

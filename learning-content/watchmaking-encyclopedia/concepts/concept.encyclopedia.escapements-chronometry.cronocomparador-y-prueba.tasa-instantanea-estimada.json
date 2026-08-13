@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.tasa-instantanea-estimada",
+  "version": "1.1.0",
+  "title": {
+    "es": "tasa instantánea estimada",
+    "en": "tasa instantánea estimada"
+  },
+  "summary": {
+    "es": "Proyección de ganancia o pérdida diaria a partir de un intervalo de observación limitado.",
+    "en": "Proyección de ganancia o pérdida diaria a partir de un intervalo de observación limitado."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.poising-estatico",
+    "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.poising-dinamico",
+    "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.beat-error"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.cronocomparador-y-prueba"
+  ],
+  "movementIds": [],
+  "subsystem": "chronometry",
+  "routeIds": [
+    "route.encyclopedia.escapements-chronometry"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.cronocomparador-y-prueba"
+  ],
+  "sourceIds": [
+    "source.institutional.awci.standards",
+    "source.institutional.wostep.watchmaker",
+    "source.private.vba-uhrentechnik"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.escapements-chronometry.cronocomparador-y-prueba"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.escapements-chronometry.cronocomparador-y-prueba",
+  "plainLanguage": {
+    "es": "Proyección de ganancia o pérdida diaria a partir de un intervalo de observación limitado.",
+    "en": "Proyección de ganancia o pérdida diaria a partir de un intervalo de observación limitado."
+  },
+  "technicalLanguage": {
+    "es": "tasa instantánea estimada se interpreta mediante la cadena identificar movimiento y ángulo → estabilizar estado → capturar señal → evaluar calidad → repetir posiciones y carga → comparar con criterio y las condiciones declaradas en la unidad.",
+    "en": "tasa instantánea estimada se interpreta mediante la cadena identificar movimiento y ángulo → estabilizar estado → capturar señal → evaluar calidad → repetir posiciones y carga → comparar con criterio y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?",
+    "en": "Permite explicar y comprobar ¿qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir tasa instantánea estimada sin circularidad.",
+      "en": "Definir tasa instantánea estimada sin circularidad."
+    },
+    {
+      "es": "Relacionar tasa instantánea estimada con una entrada, una interfaz y una salida.",
+      "en": "Relacionar tasa instantánea estimada con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

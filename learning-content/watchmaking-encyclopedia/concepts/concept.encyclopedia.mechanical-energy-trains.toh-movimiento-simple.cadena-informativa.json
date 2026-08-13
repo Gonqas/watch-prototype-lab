@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+  "version": "1.1.0",
+  "title": {
+    "es": "cadena informativa",
+    "en": "cadena informativa"
+  },
+  "summary": {
+    "es": "Ruta por la que la cadencia del regulador determina el avance indicado.",
+    "en": "Ruta por la que la cadencia del regulador determina el avance indicado."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.canon-de-minutos",
+    "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.rueda-de-minuteria",
+    "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.puesta-en-hora"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "movementIds": [],
+  "subsystem": "integration",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch03",
+    "source.private.daniels.movement-design",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+  "plainLanguage": {
+    "es": "Ruta por la que la cadencia del regulador determina el avance indicado.",
+    "en": "Ruta por la que la cadencia del regulador determina el avance indicado."
+  },
+  "technicalLanguage": {
+    "es": "cadena informativa se interpreta mediante la cadena dar cuerda → almacenar energía → transmitir por el tren → dosificar en el escape → mantener oscilación → contar e indicar y las condiciones declaradas en la unidad.",
+    "en": "cadena informativa se interpreta mediante la cadena dar cuerda → almacenar energía → transmitir por el tren → dosificar en el escape → mantener oscilación → contar e indicar y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo cooperan acumulador, tren, escape, regulador y visualización?",
+    "en": "Permite explicar y comprobar ¿cómo cooperan acumulador, tren, escape, regulador y visualización?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir cadena informativa sin circularidad.",
+      "en": "Definir cadena informativa sin circularidad."
+    },
+    {
+      "es": "Relacionar cadena informativa con una entrada, una interfaz y una salida.",
+      "en": "Relacionar cadena informativa con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

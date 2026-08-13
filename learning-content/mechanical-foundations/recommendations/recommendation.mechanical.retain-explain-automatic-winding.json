@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.mechanical.retain-explain-automatic-winding",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: explicar la carga automática",
+    "en": "Práctica posterior: explicar la carga automática"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días.",
+    "en": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días."
+  },
+  "rule": "independent-later-evidence-different-activity-session-minimum-7-days@1.0.0",
+  "priority": 71,
+  "target": {
+    "kind": "competency",
+    "id": "competency.mechanical.explain-automatic-winding"
+  },
+  "evidenceTemplateIds": [
+    "evidence.mechanical.explain-automatic-winding"
+  ],
+  "required": false
+}

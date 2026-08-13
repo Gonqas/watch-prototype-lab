@@ -1,0 +1,207 @@
+{
+  "id": "lesson.horology.system",
+  "version": "0.5.0",
+  "title": "Un reloj no es una colección de ruedas",
+  "blockIds": [
+    "block.horology.system"
+  ],
+  "activityIds": [
+    "activity.horology.classify-subsystems"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Un reloj no es una colección de ruedas"
+    },
+    "purpose": {
+      "es": "Reconocer el reloj completo como un sistema de energía, regulación o control, transmisión, indicación y estructura."
+    },
+    "objectives": [
+      {
+        "es": "Clasificar elementos por su función observable."
+      },
+      {
+        "es": "Distinguir movimiento, caja, esfera y agujas."
+      },
+      {
+        "es": "Justificar por qué una pieza inmóvil puede ser esencial."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "conceptIds": [
+      "concept.horology.watch-anatomy",
+      "concept.horology.part-language",
+      "concept.horology.functional-chain"
+    ],
+    "sourceIds": [
+      "source.horology.private-book.functional-systems",
+      "source.horology.original-functional-map"
+    ],
+    "visualResourceIds": [
+      "visual.horology.complete-watch-layers",
+      "visual.horology.functional-text-alternative"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Hacer visibles las capas y funciones del reloj completo."
+      },
+      "visibleConcept": {
+        "es": "La función de una pieza depende de sus relaciones dentro del sistema."
+      },
+      "modelReference": "fixture.conceptual.quartz",
+      "movementIds": [],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre general estable del reloj conceptual.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [
+        "fuente",
+        "control o regulación",
+        "transmisión",
+        "indicación"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "caja",
+        "esfera",
+        "agujas",
+        "movimiento",
+        "estructura"
+      ],
+      "arrows": [
+        "ruta funcional general"
+      ],
+      "animations": [
+        "separación lenta de capas con control del usuario"
+      ],
+      "timelineIntent": "Separar capas, aislar funciones, permitir clasificación y restaurar.",
+      "userInteraction": "Seleccionar o usar la lista accesible para clasificar elementos.",
+      "observableResult": {
+        "es": "Cada elemento queda asociado a una función principal con procedencia visible."
+      },
+      "successCriterion": {
+        "es": "Clasificación correcta y distinción explícita entre regulación y transmisión."
+      },
+      "restoration": {
+        "es": "Reunir capas, retirar resaltados y recuperar cámara y visibilidad iniciales."
+      },
+      "textualAlternative": {
+        "es": "Lista jerárquica del reloj, sus capas, funciones, relaciones y estado de selección."
+      },
+      "reducedMotionAlternative": {
+        "es": "Cambios discretos de visibilidad y lista numerada sin movimiento automático."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K1",
+        "physics": "P0",
+        "limitations": [
+          "Reloj conceptual; no representa un calibre concreto."
+        ]
+      },
+      "unknownData": [
+        "dimensiones y relaciones físicas no necesarias para la clasificación"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.horology.complete-watch-layers",
+        "visual.horology.functional-text-alternative"
+      ]
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "pretraining",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "externalPrerequisites": [],
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 677,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "observe",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.horology.classify-subsystems"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Clasificar elementos por su función observable."
+        },
+        {
+          "es": "Distinguir movimiento, caja, esfera y agujas."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Un reloj no es una colección de ruedas», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    }
+  }
+}

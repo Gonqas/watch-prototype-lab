@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+  "version": "1.1.0",
+  "title": "Fuerza, par, trabajo, energía y potencia",
+  "blockIds": [
+    "block.encyclopedia.math-physics-metrology.fuerza-par-energia"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.fuerza-par-energia"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Fuerza, par, trabajo, energía y potencia",
+      "en": "Fuerza, par, trabajo, energía y potencia"
+    },
+    "purpose": {
+      "es": "¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?",
+      "en": "¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Fuerza, par, trabajo, energía y potencia mediante relaciones causales.",
+        "en": "Explicar Fuerza, par, trabajo, energía y potencia mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.magnitud",
+      "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.orden-de-magnitud",
+      "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.homogeneidad-dimensional"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.par",
+      "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.trabajo-mecanico",
+      "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.potencia"
+    ],
+    "sourceIds": [
+      "source.private.daniels.mainsprings",
+      "source.private.daniels.movement-design",
+      "source.private.vba-uhrentechnik"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.par",
+        "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.trabajo-mecanico",
+        "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.potencia"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1102,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.math-physics-metrology.fuerza-par-energia"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: par, trabajo mecánico, potencia.",
+          "en": "Defino con mis palabras: par, trabajo mecánico, potencia."
+        },
+        {
+          "es": "Separo en «Fuerza, par, trabajo, energía y potencia» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Fuerza, par, trabajo, energía y potencia» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Fuerza, par, trabajo, energía y potencia» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Fuerza, par, trabajo, energía y potencia» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Traza un presupuesto cualitativo de energía de barrilete a volante e identifica dónde medirías par, velocidad o pérdida.",
+          "en": "Aplico el criterio a esta variante: Traza un presupuesto cualitativo de energía de barrilete a volante e identifica dónde medirías par, velocidad o pérdida."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Fuerza, par, trabajo, energía y potencia» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Fuerza, par, trabajo, energía y potencia» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.par",
+        "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.trabajo-mecanico",
+        "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.potencia"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?",
+          "en": "¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?"
+        },
+        {
+          "es": "¿Qué relación causal de «Fuerza, par, trabajo, energía y potencia» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Fuerza, par, trabajo, energía y potencia» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

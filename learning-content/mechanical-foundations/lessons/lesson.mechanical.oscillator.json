@@ -1,0 +1,247 @@
+{
+  "id": "lesson.mechanical.oscillator",
+  "version": "0.5.0",
+  "title": "Volante y espiral",
+  "blockIds": [
+    "block.mechanical.theory.oscillator",
+    "block.mechanical.oscillator"
+  ],
+  "activityIds": [
+    "activity.mechanical.distinguish-frequency-amplitude",
+    "activity.mechanical.configure-oscillator"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Volante y espiral",
+      "en": "Volante y espiral"
+    },
+    "purpose": {
+      "es": "Distinguir frecuencia, periodo y amplitud mediante un modelo normalizado.",
+      "en": "Distinguir frecuencia, periodo y amplitud mediante un modelo normalizado."
+    },
+    "objectives": [
+      {
+        "es": "Predecir y manipular una relación mecánica.",
+        "en": "Predecir y manipular una relación mecánica."
+      },
+      {
+        "es": "Explicar el resultado con fórmula o estado.",
+        "en": "Explicar el resultado con fórmula o estado."
+      },
+      {
+        "es": "Declarar límites y restaurar.",
+        "en": "Declarar límites y restaurar."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.mechanical.order-escapement-phases"
+    ],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.mechanical.distinguish-frequency-amplitude"
+    ],
+    "sourceIds": [
+      "source.horology.private-book.balance-spring",
+      "source.horology.original-mechanical-foundations",
+      "source.external.ciechanowski-mechanical-watch",
+      "source.external.timezone-illustrated-glossary",
+      "source.external.hodinkee-watch101"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.oscillator"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Distinguir frecuencia, periodo y amplitud mediante un modelo normalizado.",
+        "en": "Distinguir frecuencia, periodo y amplitud mediante un modelo normalizado."
+      },
+      "visibleConcept": {
+        "es": "Laboratorio oscillator con estados, relaciones y resultados declarados.",
+        "en": "Laboratorio oscillator con estados, relaciones y resultados declarados."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "fixture.conceptual.mechanical-chain",
+        "fixture.miyota.8215.structural"
+      ],
+      "involvedSelectors": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "balance"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "initialState": {
+        "cameraIntent": "Vista estable del subsistema conceptual.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [
+        "mainspring",
+        "barrel",
+        "train",
+        "escapement",
+        "oscillator",
+        "motion-works",
+        "indication"
+      ],
+      "rotationDirections": [
+        "Dirección derivada de cada relación externa o interna."
+      ],
+      "labels": [
+        "entrada",
+        "salida",
+        "estado",
+        "fuente",
+        "G/K/P",
+        "limitación"
+      ],
+      "arrows": [
+        "flujo energético y relación cinemática derivados del mismo grafo"
+      ],
+      "animations": [
+        "timeline pausado, scrub y pasos discretos; reduced motion equivalente"
+      ],
+      "timelineIntent": "Observar, predecir, ejecutar, comparar, explicar, guardar y restaurar.",
+      "userInteraction": "Selección y acciones; teclado completo y sin arrastre obligatorio.",
+      "observableResult": {
+        "es": "El laboratorio produce un estado y un cálculo reproducibles sin alterar el proyecto técnico original.",
+        "en": "El laboratorio produce un estado y un cálculo reproducibles sin alterar el proyecto técnico original."
+      },
+      "successCriterion": {
+        "es": "Resultado correcto para las entradas declaradas, explicación de límites y restauración.",
+        "en": "Resultado correcto para las entradas declaradas, explicación de límites y restauración."
+      },
+      "restoration": {
+        "es": "Restaurar configuración, bloqueos, fallos, timeline y vista.",
+        "en": "Restaurar configuración, bloqueos, fallos, timeline y vista."
+      },
+      "textualAlternative": {
+        "es": "Entidades, relaciones, fórmulas, entradas, salidas y fases en orden equivalente.",
+        "en": "Entidades, relaciones, fórmulas, entradas, salidas y fases en orden equivalente."
+      },
+      "reducedMotionAlternative": {
+        "es": "Estados discretos y fases numeradas con idéntica evaluación.",
+        "en": "Estados discretos y fases numeradas con idéntica evaluación."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "unknownData": [
+        "geometría interna real",
+        "pérdidas reales",
+        "par real",
+        "tolerancias",
+        "conteos de dientes 8215 no documentados",
+        "lubricación"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.mechanical.oscillator"
+      ]
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.distinguish-frequency-amplitude"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 32,
+      "minimumReadingWords": 1638,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.mechanical.distinguish-frequency-amplitude",
+        "activity.mechanical.configure-oscillator"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Puedo distinguir frecuencia, periodo, alternancia, amplitud y marcha.",
+          "en": "Puedo distinguir frecuencia, periodo, alternancia, amplitud y marcha."
+        },
+        {
+          "es": "Puedo explicar por separado la inercia del volante y el par restaurador de la espiral.",
+          "en": "Puedo explicar por separado la inercia del volante y el par restaurador de la espiral."
+        },
+        {
+          "es": "Puedo convertir hercios en alternancias por hora sin afirmar una marcha real.",
+          "en": "Puedo convertir hercios en alternancias por hora sin afirmar una marcha real."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de abrir el laboratorio, escribe una predicción causal y una limitación del modelo que no debes olvidar.",
+        "en": "Before opening the lab, write one causal prediction and one model limitation you must not forget."
+      }
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.mechanical.distinguish-frequency-amplitude"
+      ],
+      "reinforcesConceptIds": [
+        "concept.mechanical.order-escapement-phases"
+      ],
+      "bridgeConceptIds": [
+        "concept.mechanical.order-escapement-phases"
+      ]
+    }
+  }
+}

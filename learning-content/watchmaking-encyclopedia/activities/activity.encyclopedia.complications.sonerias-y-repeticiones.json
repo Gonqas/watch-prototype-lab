@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.complications.sonerias-y-repeticiones",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Sonerías, repetición y gobierno acústico",
+  "sceneIds": [
+    "scene.encyclopedia.complications.sonerias-y-repeticiones"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.complications.sonerias-y-repeticiones"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.complications.sonerias-y-repeticiones"
+  ],
+  "rubricId": "rubric.encyclopedia.complications.sonerias-y-repeticiones",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.complications.sonerias-y-repeticiones",
+    "title": {
+      "es": "Explicar y transferir: Sonerías, repetición y gobierno acústico",
+      "en": "Explicar y transferir: Sonerías, repetición y gobierno acústico"
+    },
+    "description": {
+      "es": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?",
+      "en": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?"
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "striking",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.external.horology-student.books",
+      "source.external.naked-watchmaker",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.caracol",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.rastrillo",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.regulador-de-soneria"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.caracol",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.rastrillo",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.regulador-de-soneria"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.caracol",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.rastrillo",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.regulador-de-soneria"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.complications.sonerias-y-repeticiones",
+        "blockId": "block.encyclopedia.complications.sonerias-y-repeticiones",
+        "conceptIds": [
+          "concept.encyclopedia.complications.sonerias-y-repeticiones.caracol",
+          "concept.encyclopedia.complications.sonerias-y-repeticiones.rastrillo",
+          "concept.encyclopedia.complications.sonerias-y-repeticiones.regulador-de-soneria"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Sonerías, repetición y gobierno acústico sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Sonerías, repetición y gobierno acústico sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Una repetición anuncia cuartos correctos pero minutos erróneos. Esto dirige la búsqueda al lector o rastrillo de minutos después de validar sincronización de caracoles; no exige desmontar primero el tren de sonería completo.",
+          "en": "Una repetición anuncia cuartos correctos pero minutos erróneos. Esto dirige la búsqueda al lector o rastrillo de minutos después de validar sincronización de caracoles; no exige desmontar primero el tren de sonería completo."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?",
+            "en": "Identificar la pregunta: ¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?"
+          },
+          {
+            "es": "Dibujar la secuencia usuario carga sonería → palpadores leen caracoles → rastrillos determinan conteos → tren libera energía → martillos golpean secuencia → regulador espacia eventos.",
+            "en": "Dibujar la secuencia usuario carga sonería → palpadores leen caracoles → rastrillos determinan conteos → tren libera energía → martillos golpean secuencia → regulador espacia eventos."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: número de golpes; intervalo acústico; carrera de martillo; separación del timbre; reserva de sonería.",
+            "en": "Asignar magnitudes y evidencia: número de golpes; intervalo acústico; carrera de martillo; separación del timbre; reserva de sonería."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Modela una repetición de cuartos como entradas, memoria, conteos y salidas; añade un interbloqueo y explica el daño que evita.",
+          "en": "Modela una repetición de cuartos como entradas, memoria, conteos y salidas; añade un interbloqueo y explica el daño que evita."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: usuario carga sonería → palpadores leen caracoles → rastrillos determinan conteos → tren libera energía → martillos golpean secuencia → regulador espacia eventos.",
+            "en": "Completa la cadena con las etapas visibles: usuario carga sonería → palpadores leen caracoles → rastrillos determinan conteos → tren libera energía → martillos golpean secuencia → regulador espacia eventos."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?",
+            "en": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Modela una repetición de cuartos como entradas, memoria, conteos y salidas; añade un interbloqueo y explica el daño que evita.",
+            "en": "Modela una repetición de cuartos como entradas, memoria, conteos y salidas; añade un interbloqueo y explica el daño que evita."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Una repetición es solo un reloj con campanas",
+          "en": "Una repetición es solo un reloj con campanas"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Sonerías, repetición y gobierno acústico con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Sonerías, repetición y gobierno acústico con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Modela una repetición de cuartos como entradas, memoria, conteos y salidas; añade un interbloqueo y explica el daño que evita.",
+        "en": "Modela una repetición de cuartos como entradas, memoria, conteos y salidas; añade un interbloqueo y explica el daño que evita."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena usuario carga sonería → palpadores leen caracoles → rastrillos determinan conteos → tren libera energía → martillos golpean secuencia → regulador espacia eventos, su evidencia y límites.",
+        "en": "La explicación conserva la cadena usuario carga sonería → palpadores leen caracoles → rastrillos determinan conteos → tren libera energía → martillos golpean secuencia → regulador espacia eventos, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Una repetición es solo un reloj con campanas».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Una repetición es solo un reloj con campanas»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?",
+        "en": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Activar una sonería fuera de fase o parcialmente desmontada. de Ajustar tono doblando timbre sin controlar distancia y fijación..",
+        "en": "Busca evidencia para distinguir Activar una sonería fuera de fase o parcialmente desmontada. de Ajustar tono doblando timbre sin controlar distancia y fijación.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.complications.sonerias-y-repeticiones"
+      ],
+      "transferPrompt": {
+        "es": "Modela una repetición de cuartos como entradas, memoria, conteos y salidas; añade un interbloqueo y explica el daño que evita.",
+        "en": "Modela una repetición de cuartos como entradas, memoria, conteos y salidas; añade un interbloqueo y explica el daño que evita."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.caracol",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.rastrillo",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.regulador-de-soneria"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?",
+          "en": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?"
+        },
+        {
+          "es": "¿Qué relación causal de «Sonerías, repetición y gobierno acústico» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Sonerías, repetición y gobierno acústico» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

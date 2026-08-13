@@ -1,0 +1,43 @@
+{
+  "id": "rubric.advanced.calendars",
+  "version": "1.0.0",
+  "competencyId": "competency.advanced.calendars",
+  "rules": [
+    {
+      "id": "rule.advanced.calendars.demonstrated",
+      "version": "1.0.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.8,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Calendarios como acumulación, salto, retención y corrección: una revisión humana confirma causalidad, procedencia, comparación, límites y transferencia."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.advanced.calendars",
+    "version": "1.0.0",
+    "competencyId": "competency.advanced.calendars",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "human-review",
+            "status": "active",
+            "minimumConfidence": 0.8
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

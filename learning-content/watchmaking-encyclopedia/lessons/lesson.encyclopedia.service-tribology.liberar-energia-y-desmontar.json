@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.service-tribology.liberar-energia-y-desmontar",
+  "version": "1.1.0",
+  "title": "Liberar energía y desmontar con trazabilidad",
+  "blockIds": [
+    "block.encyclopedia.service-tribology.liberar-energia-y-desmontar"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.liberar-energia-y-desmontar"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Liberar energía y desmontar con trazabilidad",
+      "en": "Liberar energía y desmontar con trazabilidad"
+    },
+    "purpose": {
+      "es": "¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?",
+      "en": "¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Liberar energía y desmontar con trazabilidad mediante relaciones causales.",
+        "en": "Explicar Liberar energía y desmontar con trazabilidad mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.service-tribology.recepcion-y-linea-base.linea-base",
+      "concept.encyclopedia.service-tribology.recepcion-y-linea-base.cadena-de-custodia",
+      "concept.encyclopedia.service-tribology.recepcion-y-linea-base.criterio-de-no-prueba"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.energia-residual",
+      "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.dependencia-de-desmontaje",
+      "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.mapa-de-tornillos"
+    ],
+    "sourceIds": [
+      "source.institutional.awci.standards",
+      "source.external.naked-watchmaker",
+      "source.official.miyota.8215"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.energia-residual",
+        "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.dependencia-de-desmontaje",
+        "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.mapa-de-tornillos"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1160,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.service-tribology.liberar-energia-y-desmontar"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: energía residual, dependencia de desmontaje, mapa de tornillos.",
+          "en": "Defino con mis palabras: energía residual, dependencia de desmontaje, mapa de tornillos."
+        },
+        {
+          "es": "Describo «Liberar energía y desmontar con trazabilidad» con condición inicial, controles, punto de parada y comprobación final.",
+          "en": "Describo «Liberar energía y desmontar con trazabilidad» con condición inicial, controles, punto de parada y comprobación final."
+        },
+        {
+          "es": "Distingo qué parte de «Liberar energía y desmontar con trazabilidad» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Liberar energía y desmontar con trazabilidad» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Planifica el desmontaje de un subsistema con relaciones de «retirar antes de» y «está fijado por», riesgo energético, soporte de pieza y evidencia mínima.",
+          "en": "Aplico el criterio a esta variante: Planifica el desmontaje de un subsistema con relaciones de «retirar antes de» y «está fijado por», riesgo energético, soporte de pieza y evidencia mínima."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Liberar energía y desmontar con trazabilidad» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Liberar energía y desmontar con trazabilidad» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.energia-residual",
+        "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.dependencia-de-desmontaje",
+        "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.mapa-de-tornillos"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?",
+          "en": "¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?"
+        },
+        {
+          "es": "¿Qué relación causal de «Liberar energía y desmontar con trazabilidad» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Liberar energía y desmontar con trazabilidad» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

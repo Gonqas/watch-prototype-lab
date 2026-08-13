@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.resonador-de-horquilla",
+  "version": "1.1.0",
+  "title": {
+    "es": "resonador de horquilla",
+    "en": "resonador de horquilla"
+  },
+  "summary": {
+    "es": "Elemento de cuarzo con geometría de diapasón diseñado para un modo de oscilación de baja potencia.",
+    "en": "Elemento de cuarzo con geometría de diapasón diseñado para un modo de oscilación de baja potencia."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.tension",
+    "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.corriente",
+    "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.resistencia-interna"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador"
+  ],
+  "movementIds": [],
+  "subsystem": "quartz-regulation",
+  "routeIds": [
+    "route.encyclopedia.quartz-electronics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch15",
+    "source.official.miyota.2035",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador",
+  "plainLanguage": {
+    "es": "Elemento de cuarzo con geometría de diapasón diseñado para un modo de oscilación de baja potencia.",
+    "en": "Elemento de cuarzo con geometría de diapasón diseñado para un modo de oscilación de baja potencia."
+  },
+  "technicalLanguage": {
+    "es": "resonador de horquilla se interpreta mediante la cadena circuito aplica señal → cuarzo se deforma → resonador oscila → respuesta vuelve al circuito → ganancia repone pérdidas → frecuencia alimenta divisor y las condiciones declaradas en la unidad.",
+    "en": "resonador de horquilla se interpreta mediante la cadena circuito aplica señal → cuarzo se deforma → resonador oscila → respuesta vuelve al circuito → ganancia repone pérdidas → frecuencia alimenta divisor y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se convierte deformación cristalina en una referencia eléctrica estable?",
+    "en": "Permite explicar y comprobar ¿cómo se convierte deformación cristalina en una referencia eléctrica estable?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir resonador de horquilla sin circularidad.",
+      "en": "Definir resonador de horquilla sin circularidad."
+    },
+    {
+      "es": "Relacionar resonador de horquilla con una entrada, una interfaz y una salida.",
+      "en": "Relacionar resonador de horquilla con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

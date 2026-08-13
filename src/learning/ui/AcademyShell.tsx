@@ -1,0 +1,507 @@
+import {
+  Suspense,
+  lazy,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type CSSProperties,
+  type FormEvent,
+  type RefObject,
+} from 'react'
+import {
+  Bell,
+  BookOpen,
+  BookOpenText,
+  Boxes,
+  ChevronLeft,
+  ChevronRight,
+  CircleUserRound,
+  Compass,
+  Gauge,
+  GraduationCap,
+  Home,
+  LibraryBig,
+  ListChecks,
+  LoaderCircle,
+  MoreHorizontal,
+  NotebookPen,
+  Search,
+  Settings2,
+  TriangleAlert,
+  Sigma,
+  Wrench,
+} from 'lucide-react'
+import { currentAcademyRoute } from '../academy/academyCatalog'
+import { readUxSession, writeUxSession } from '../academy/academyEntryRecovery'
+import { useAcademyLocalState } from '../academy/useAcademyLocalState'
+import {
+  learningHref,
+  type LearningSurface,
+} from '../application/navigation'
+import {
+  localize,
+  learningMessage,
+  type LearningMessageKey,
+} from '../application/i18n'
+import { useLearning } from './LearningContext'
+import { AcademySurfaceBoundary } from './AcademySurfaceBoundary'
+import { friendlyLearningTerm, friendlyRecommendationReason } from './learningUiLanguage'
+import './academy.css'
+
+const LearningSurfaces = lazy(() => import('./LearningSurfaces').then((module) => ({ default: module.LearningSurfaces })))
+const LearningMapSurface = lazy(() => import('./LearningMapSurface').then((module) => ({ default: module.LearningMapSurface })))
+const LearningActivityWorkspace = lazy(() => import('./LearningActivityWorkspace').then((module) => ({ default: module.LearningActivityWorkspace })))
+
+type AcademyNavItem = {
+  surface: LearningSurface
+  message: LearningMessageKey
+  icon: typeof Home
+}
+
+const learnItems: AcademyNavItem[] = [
+  { surface: 'home', message: 'home', icon: Home },
+  { surface: 'my-learning', message: 'myLearning', icon: BookOpenText },
+  { surface: 'explore', message: 'explore', icon: Compass },
+]
+
+const practiseItems: AcademyNavItem[] = [
+  { surface: 'workshop', message: 'workshop', icon: Wrench },
+  { surface: 'engineering', message: 'engineering', icon: Sigma },
+  { surface: 'atlas', message: 'atlas', icon: Boxes },
+  { surface: 'review', message: 'review', icon: ListChecks },
+]
+
+const referenceItems: AcademyNavItem[] = [
+  { surface: 'search', message: 'search', icon: Search },
+  { surface: 'notebook', message: 'notebook', icon: NotebookPen },
+  { surface: 'glossary', message: 'glossary', icon: BookOpen },
+  { surface: 'sources', message: 'sources', icon: LibraryBig },
+]
+
+function navItemActive(current: LearningSurface, item: LearningSurface): boolean {
+  if (item === 'explore' && ['route', 'module', 'lesson', 'activity'].includes(current)) return true
+  if (item === 'my-learning' && ['sessions', 'history'].includes(current)) return true
+  if (item === 'review' && ['results', 'evidence', 'assessment', 'competency'].includes(current)) return true
+  return current === item
+}
+
+function AcademyNavigation({
+  compact,
+  onToggleCompact,
+}: {
+  compact: boolean
+  onToggleCompact: () => void
+}) {
+  const { snapshot } = useLearning()
+  const locale = snapshot.profile?.locale
+  const [mobileMoreSurface, setMobileMoreSurface] = useState<LearningSurface>()
+  const mobileMoreOpen = mobileMoreSurface === snapshot.location.surface
+  const recoverable = snapshot.sessions.items.filter(({ state }) =>
+    state === 'interrupted' || state === 'suspended').length
+  const renderGroup = (label: string, items: AcademyNavItem[]) => (
+    <section className="academy-nav-group">
+      <h2>{label}</h2>
+      {items.map(({ surface, message, icon: Icon }) => {
+        const active = navItemActive(snapshot.location.surface, surface)
+        return (
+          <a
+            key={surface}
+            href={learningHref({ surface, query: {} })}
+            className={active ? 'is-active' : undefined}
+            aria-current={active ? 'page' : undefined}
+            aria-label={learningMessage(locale, message)}
+            title={learningMessage(locale, message)}
+          >
+            <Icon size={18} />
+            <span>{learningMessage(locale, message)}</span>
+            {surface === 'my-learning' && recoverable > 0 && (
+              <i aria-label={`${recoverable} sesiones recuperables`}>{recoverable}</i>
+            )}
+          </a>
+        )
+      })}
+    </section>
+  )
+  return (
+    <aside className={`academy-navigation ${compact ? 'is-compact' : ''}`} aria-label="Navegación de Academia">
+      <div className="academy-navigation__brand">
+        <div><GraduationCap size={22} /></div>
+        <span><strong>Academia</strong><small>Relojería, paso a paso</small></span>
+      </div>
+      <nav>
+        {renderGroup('APRENDER', learnItems)}
+        {renderGroup('PRACTICAR', practiseItems)}
+        {renderGroup('CONSULTAR', referenceItems)}
+      </nav>
+      <div className="academy-navigation__footer">
+        <a aria-label="Progreso" title="Progreso" className={snapshot.location.surface === 'progress' ? 'is-active' : undefined} aria-current={snapshot.location.surface === 'progress' ? 'page' : undefined} href="#/learning/progress"><Gauge size={17} /><span>Progreso</span></a>
+        <a aria-label="Contenido local" title="Contenido local" className={snapshot.location.surface === 'content' ? 'is-active' : undefined} aria-current={snapshot.location.surface === 'content' ? 'page' : undefined} href="#/learning/content"><LibraryBig size={17} /><span>Contenido local</span></a>
+        <a aria-label="Preferencias" title="Preferencias" className={snapshot.location.surface === 'preferences' ? 'is-active' : undefined} aria-current={snapshot.location.surface === 'preferences' ? 'page' : undefined} href="#/learning/preferences"><Settings2 size={17} /><span>Preferencias</span></a>
+        <button type="button" onClick={onToggleCompact} aria-label={compact ? 'Ampliar navegación' : 'Compactar navegación'}>
+          {compact ? <ChevronRight size={17} /> : <ChevronLeft size={17} />}
+          <span>{compact ? 'Ampliar' : 'Compactar'}</span>
+        </button>
+      </div>
+      <nav className="academy-mobile-navigation" aria-label="Navegación principal móvil">
+        {[...learnItems, practiseItems[0]].map(({ surface, message, icon: Icon }) => {
+          const active = navItemActive(snapshot.location.surface, surface)
+          const label = learningMessage(locale, message)
+          return <a key={surface} href={learningHref({ surface, query: {} })} className={active ? 'is-active' : undefined} aria-current={active ? 'page' : undefined} aria-label={label}><Icon size={18} /><span>{label}</span></a>
+        })}
+        <details open={mobileMoreOpen} onToggle={(event) => setMobileMoreSurface(event.currentTarget.open ? snapshot.location.surface : undefined)}>
+          <summary aria-label="Abrir más destinos" aria-expanded={mobileMoreOpen}><MoreHorizontal size={18} /><span>Más</span></summary>
+          <div>
+            {[...practiseItems.slice(1), ...referenceItems].map(({ surface, message, icon: Icon }) => {
+              const active = navItemActive(snapshot.location.surface, surface)
+              const label = learningMessage(locale, message)
+              return <a key={surface} href={learningHref({ surface, query: {} })} className={active ? 'is-active' : undefined} aria-current={active ? 'page' : undefined} onClick={() => setMobileMoreSurface(undefined)}><Icon size={17} /><span>{label}</span></a>
+            })}
+            <a href="#/learning/progress" onClick={() => setMobileMoreSurface(undefined)}><Gauge size={17} /><span>Progreso</span></a>
+            <a href="#/learning/content" onClick={() => setMobileMoreSurface(undefined)}><LibraryBig size={17} /><span>Contenido local</span></a>
+            <a href="#/learning/preferences" onClick={() => setMobileMoreSurface(undefined)}><Settings2 size={17} /><span>Preferencias</span></a>
+            <a href="#/learning/profile" onClick={() => setMobileMoreSurface(undefined)}><CircleUserRound size={17} /><span>Perfil local</span></a>
+          </div>
+        </details>
+      </nav>
+    </aside>
+  )
+}
+
+function AcademyContextPanel({
+  onClose,
+  drawer,
+  panelRef,
+  closeButtonRef,
+}: {
+  onClose: () => void
+  drawer: boolean
+  panelRef: RefObject<HTMLElement | null>
+  closeButtonRef: RefObject<HTMLButtonElement | null>
+}) {
+  const { service, snapshot } = useLearning()
+  const route = currentAcademyRoute(snapshot)
+  const recommendation = snapshot.recommendations[0]
+  return (
+    <aside
+      className="academy-context-panel"
+      aria-label="Contexto educativo"
+      aria-labelledby="academy-context-title"
+      aria-modal={drawer || undefined}
+      role={drawer ? 'dialog' : undefined}
+      ref={panelRef}
+    >
+      <header>
+        <div><span>CONTEXTO</span><strong id="academy-context-title">{route ? 'Ruta en curso' : 'Academia local'}</strong></div>
+        <button ref={closeButtonRef} type="button" onClick={onClose} aria-label="Cerrar contexto"><ChevronRight size={17} /></button>
+      </header>
+      {route && (
+        <section>
+          <span className="academy-kicker">RUTA</span>
+          <h2>{localize(snapshot.profile?.locale, route.title)}</h2>
+          <p>{friendlyRecommendationReason(localize(snapshot.profile?.locale, route.purpose))}</p>
+          <a href={`#/learning/route/${encodeURIComponent(route.id)}`} onClick={drawer ? onClose : undefined}>Ver estructura</a>
+        </section>
+      )}
+      {recommendation && (
+        <section>
+          <span className="academy-kicker">{recommendation.required ? 'ACCIÓN NECESARIA' : 'SIGUIENTE PASO'}</span>
+          <h2>{recommendation.title}</h2>
+          <p>{friendlyRecommendationReason(recommendation.reason)}</p>
+          <a className="academy-inline-action" href={recommendation.href} onClick={drawer ? onClose : undefined}>
+            {recommendation.required ? 'Resolver ahora' : 'Continuar'}
+          </a>
+          <details>
+            <summary>Por qué es el siguiente paso</summary>
+            <p>{recommendation.required
+              ? 'Hay una base pendiente que conviene resolver antes de continuar con una actividad evaluable.'
+              : 'La recomendación combina tu recorrido actual, lo que ya has estudiado y tus repasos pendientes.'}</p>
+          </details>
+        </section>
+      )}
+      <section>
+        <span className="academy-kicker">DISPONIBILIDAD</span>
+        <h2>Tu Academia está en este equipo</h2>
+        <p>{snapshot.online ? 'Puedes seguir estudiando aunque pierdas la conexión.' : 'Estás sin conexión; el contenido instalado sigue disponible.'}</p>
+        <details>
+          <summary>Cómo se guarda</summary>
+          <p>{snapshot.backend === 'sqlite' ? 'La aplicación de escritorio usa una base de datos local.' : 'El navegador usa almacenamiento local.'}</p>
+        </details>
+      </section>
+      {snapshot.notifications.slice(0, 2).map((notification) => {
+        const activity = snapshot.product.activities.find(({ id }) => notification.detail.includes(id))
+        const detail = activity
+          ? notification.detail.replace(activity.id, localize(snapshot.profile?.locale, activity.title))
+          : friendlyRecommendationReason(notification.detail)
+        return (
+          <section className={`academy-context-notice is-${notification.severity}`} key={notification.id}>
+            <span className="academy-kicker">{friendlyLearningTerm(notification.origin)}</span>
+            <h2>{notification.title}</h2>
+            <p>{detail}</p>
+            <div>
+              <a href={notification.href} onClick={drawer ? onClose : undefined}>Abrir</a>
+              {!notification.read && <button type="button" onClick={() => void service.markNotificationRead(notification.id)}>Marcar leída</button>}
+            </div>
+          </section>
+        )
+      })}
+    </aside>
+  )
+}
+
+function AcademyTopbar({
+  contextOpen,
+  onOpenContext,
+  contextTriggerRef,
+}: {
+  contextOpen: boolean
+  onOpenContext: () => void
+  contextTriggerRef: RefObject<HTMLButtonElement | null>
+}) {
+  const { service, snapshot } = useLearning()
+  const [query, setQuery] = useState('')
+  const unread = snapshot.notifications.filter(({ read }) => !read).length
+  const submit = (event: FormEvent) => {
+    event.preventDefault()
+    service.navigate({ surface: 'search', query: query.trim() ? { q: query.trim() } : {} })
+  }
+  return (
+    <header className="academy-topbar">
+      <div className="academy-topbar__location">
+        <strong>{learningMessage(snapshot.profile?.locale, surfaceMessage(snapshot.location.surface))}</strong>
+      </div>
+      <form className="academy-global-search" role="search" onSubmit={submit}>
+        <Search size={16} />
+        <label className="sr-only" htmlFor="academy-global-search">Buscar en Academia</label>
+        <input
+          id="academy-global-search"
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder="Buscar lecciones, piezas, términos o notas"
+        />
+        <kbd>Enter</kbd>
+      </form>
+      <div className="academy-topbar__actions">
+        <span className={`academy-online-state ${snapshot.online ? 'is-online' : ''}`}>
+          <i />{snapshot.online ? 'Local · con conexión' : 'Local · sin conexión'}
+        </span>
+        {!contextOpen && <button ref={contextTriggerRef} className="academy-context-trigger" type="button" onClick={onOpenContext} aria-label="Abrir ayuda y siguiente paso" title="Ayuda y siguiente paso"><ChevronLeft size={17} /></button>}
+        <button type="button" onClick={() => service.navigate({ surface: 'profile', id: snapshot.profile?.id, query: { panel: 'notifications' } })} aria-label={`Notificaciones${unread ? `, ${unread} sin leer` : ''}`}>
+          <Bell size={17} />{unread > 0 && <i>{unread}</i>}
+        </button>
+        <a href="#/learning/profile" aria-label="Perfil local"><CircleUserRound size={18} /><span>{snapshot.profile?.displayName}</span></a>
+      </div>
+    </header>
+  )
+}
+
+function surfaceMessage(surface: LearningSurface): LearningMessageKey {
+  const messages: Partial<Record<LearningSurface, LearningMessageKey>> = {
+    home: 'home',
+    'my-learning': 'myLearning',
+    explore: 'explore',
+    map: 'map',
+    workshop: 'workshop',
+    engineering: 'engineering',
+    metrology: 'metrology',
+    atlas: 'atlas',
+    review: 'review',
+    search: 'search',
+    notebook: 'notebook',
+    glossary: 'glossary',
+    sources: 'sources',
+    sessions: 'sessions',
+    progress: 'progress',
+    history: 'history',
+    content: 'content',
+    profile: 'profile',
+    preferences: 'preferences',
+  }
+  return messages[surface] ?? 'area'
+}
+
+function AcademyLoading({ label }: { label: string }) {
+  return <div className="academy-loading" role="status"><LoaderCircle className="spin" size={22} /><span>{label}</span></div>
+}
+
+export function AcademyShell({ onExit }: { onExit: () => void }) {
+  const { service, snapshot } = useLearning()
+  const persistedAcademyState = snapshot.profile?.educationalPreferences.academyStateV1
+  const { state, actions, recovery } = useAcademyLocalState(
+    snapshot.profile?.id,
+    persistedAcademyState,
+  )
+  const mainRef = useRef<HTMLElement>(null)
+  const contextPanelRef = useRef<HTMLElement>(null)
+  const contextCloseRef = useRef<HTMLButtonElement>(null)
+  const contextTriggerRef = useRef<HTMLButtonElement>(null)
+  const [compact, setCompact] = useState(
+    () => readUxSession('wplab.academy.nav-compact') === 'true',
+  )
+  const [contextOpen, setContextOpen] = useState(
+    () => window.innerWidth > 1060
+      && readUxSession('wplab.academy.context-open') === 'true',
+  )
+  const [contextDrawer, setContextDrawer] = useState(() => window.innerWidth <= 1060)
+  const density = state?.preferences.density ?? 'comfortable'
+  const theme = state?.preferences.theme ?? 'system'
+  const readingWidth = state?.preferences.readingWidth ?? 'comfortable'
+  const lineHeight = state?.preferences.lineHeight ?? 1.7
+  const isWorkspace = snapshot.location.surface === 'workspace'
+  const shellClass = useMemo(
+    () => `academy-shell density-${density} theme-${theme} reading-${readingWidth} ${compact ? 'is-nav-compact' : ''} ${contextOpen ? 'has-context' : ''}`,
+    [compact, contextOpen, density, readingWidth, theme],
+  )
+  const closeContext = useCallback(() => {
+    writeUxSession('wplab.academy.context-open', 'false')
+    actions.setPreferences({ contextPanelOpen: false })
+    setContextOpen(false)
+    if (contextDrawer) requestAnimationFrame(() => contextTriggerRef.current?.focus())
+  }, [actions, contextDrawer])
+
+  useEffect(() => {
+    const profile = snapshot.profile
+    if (!profile || !state) return
+    const persistedUpdatedAt = persistedAcademyState
+      && typeof persistedAcademyState === 'object'
+      && !Array.isArray(persistedAcademyState)
+      && typeof (persistedAcademyState as Record<string, unknown>).updatedAt === 'string'
+      ? String((persistedAcademyState as Record<string, unknown>).updatedAt)
+      : undefined
+    if (persistedUpdatedAt === state.updatedAt) return
+    const timeout = window.setTimeout(() => {
+      void service.updateProfile({
+        educationalPreferences: {
+          ...profile.educationalPreferences,
+          academyStateV1: JSON.parse(JSON.stringify(state)) as never,
+        },
+      })
+    }, 300)
+    return () => window.clearTimeout(timeout)
+  }, [persistedAcademyState, service, snapshot.profile, state])
+
+  useEffect(() => {
+    const main = mainRef.current
+    if (!main) return
+    const key = `wplab.academy.scroll.${snapshot.location.surface}.${snapshot.location.id ?? ''}`
+    const stored = Number(readUxSession(key))
+    requestAnimationFrame(() => {
+      main.scrollTop = Number.isFinite(stored) && stored >= 0 && stored <= 10_000_000 ? stored : 0
+      main.focus({ preventScroll: true })
+    })
+    document.title = `${learningMessage(snapshot.profile?.locale, surfaceMessage(snapshot.location.surface))} · Academia · Watch Prototype Lab`
+    return () => { writeUxSession(key, String(main.scrollTop)) }
+  }, [snapshot.location.id, snapshot.location.surface, snapshot.profile?.locale])
+
+  useEffect(() => {
+    actions.recordMetric(`surface.${snapshot.location.surface}.open`)
+  }, [actions, snapshot.location.surface])
+
+  useEffect(() => {
+    const compactViewport = window.matchMedia('(max-width: 1060px)')
+    const updateContextMode = (event: MediaQueryListEvent | MediaQueryList) => {
+      setContextDrawer(event.matches)
+    }
+    updateContextMode(compactViewport)
+    compactViewport.addEventListener('change', updateContextMode)
+    return () => compactViewport.removeEventListener('change', updateContextMode)
+  }, [])
+
+  useEffect(() => {
+    if (!contextOpen || !contextDrawer) return
+    const panel = contextPanelRef.current
+    contextCloseRef.current?.focus()
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        event.preventDefault()
+        closeContext()
+        return
+      }
+      if (event.key !== 'Tab' || !panel) return
+      const focusable = [...panel.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), summary, [tabindex]:not([tabindex="-1"])')]
+      if (focusable.length === 0) return
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault()
+        last.focus()
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault()
+        first.focus()
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown)
+    return () => document.removeEventListener('keydown', handleKeyDown)
+  }, [closeContext, contextDrawer, contextOpen])
+
+  if (isWorkspace) {
+    return (
+      <AcademySurfaceBoundary scope="workspace" onReset={() => service.navigate({ surface: 'home', query: {} }, true)}>
+        <Suspense fallback={<AcademyLoading label="Preparando la actividad" />}>
+          <LearningActivityWorkspace
+            key={`${snapshot.workspace?.persistentSessionId ?? 'none'}:${snapshot.workspace?.activeStepId ?? 'none'}`}
+            onExit={onExit}
+          />
+        </Suspense>
+      </AcademySurfaceBoundary>
+    )
+  }
+
+  return (
+    <div className={shellClass}>
+      <AcademySurfaceBoundary scope="navigation" onReset={() => void service.refresh()}>
+        <AcademyNavigation compact={compact} onToggleCompact={() => setCompact((current) => {
+          const next = !current
+          writeUxSession('wplab.academy.nav-compact', String(next))
+          return next
+        })} />
+      </AcademySurfaceBoundary>
+      <div className="academy-content-frame">
+        <AcademySurfaceBoundary scope="topbar" onReset={() => void service.refresh()}>
+          <AcademyTopbar contextOpen={contextOpen} contextTriggerRef={contextTriggerRef} onOpenContext={() => {
+            writeUxSession('wplab.academy.context-open', 'true')
+            actions.setPreferences({ contextPanelOpen: true })
+            setContextOpen(true)
+          }} />
+        </AcademySurfaceBoundary>
+        {(recovery?.recoveredUxState || recovery?.volatile) && (
+          <aside className="academy-recovery-notice" role="status">
+            <TriangleAlert size={17} />
+            <div>
+              <strong>
+                {recovery.recoveredUxState
+                  ? 'Se han restablecido preferencias visuales incompatibles.'
+                  : 'Las preferencias visuales usan memoria temporal.'}
+              </strong>
+              <span>El progreso, los resultados, las sesiones, las notas y el contenido no se han eliminado.</span>
+            </div>
+          </aside>
+        )}
+        <main
+          id="learning-main"
+          ref={mainRef}
+          className="academy-main"
+          style={{ '--academy-reading-line-height': lineHeight } as CSSProperties}
+          tabIndex={-1}
+        >
+          <AcademySurfaceBoundary scope={snapshot.location.surface} onReset={() => void service.refresh()}>
+            <Suspense fallback={<AcademyLoading label="Cargando Academia" />}>
+              {snapshot.location.surface === 'map' ? <LearningMapSurface /> : <LearningSurfaces />}
+            </Suspense>
+          </AcademySurfaceBoundary>
+        </main>
+      </div>
+      {contextOpen && (
+        <AcademySurfaceBoundary scope="context" onReset={closeContext}>
+          <div className={`academy-context-layer ${contextDrawer ? 'is-drawer' : ''}`}>
+            {contextDrawer && <button className="academy-context-backdrop" type="button" onClick={closeContext} aria-label="Cerrar ayuda contextual" tabIndex={-1} />}
+            <AcademyContextPanel onClose={closeContext} drawer={contextDrawer} panelRef={contextPanelRef} closeButtonRef={contextCloseRef} />
+          </div>
+        </AcademySurfaceBoundary>
+      )}
+    </div>
+  )
+}
+
+export default AcademyShell

@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.cases-water.toh-materiales-exterior",
+  "version": "1.1.0",
+  "title": "Materiales, cristales, juntas y fijaciones exteriores",
+  "blockIds": [
+    "block.encyclopedia.cases-water.toh-materiales-exterior"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.cases-water.toh-materiales-exterior"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Materiales, cristales, juntas y fijaciones exteriores",
+      "en": "Materiales, cristales, juntas y fijaciones exteriores"
+    },
+    "purpose": {
+      "es": "¿Qué propiedades gobiernan selección, montaje y envejecimiento del exterior?",
+      "en": "¿Qué propiedades gobiernan selección, montaje y envejecimiento del exterior?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Materiales, cristales, juntas y fijaciones exteriores mediante relaciones causales.",
+        "en": "Explicar Materiales, cristales, juntas y fijaciones exteriores mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.cases-water.toh-exterior-interfaces.pila-axial",
+      "concept.encyclopedia.cases-water.toh-exterior-interfaces.interfaz-radial",
+      "concept.encyclopedia.cases-water.toh-exterior-interfaces.envolvente-funcional"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.cases-water.toh-materiales-exterior.compatibilidad-material",
+      "concept.encyclopedia.cases-water.toh-materiales-exterior.deformacion-de-junta",
+      "concept.encyclopedia.cases-water.toh-materiales-exterior.asiento-funcional"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch12",
+      "source.official.bipm.vim",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.cases-water.toh-materiales-exterior.compatibilidad-material",
+        "concept.encyclopedia.cases-water.toh-materiales-exterior.deformacion-de-junta",
+        "concept.encyclopedia.cases-water.toh-materiales-exterior.asiento-funcional"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1066,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.cases-water.toh-materiales-exterior"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: compatibilidad material, deformación de junta, asiento funcional.",
+          "en": "Defino con mis palabras: compatibilidad material, deformación de junta, asiento funcional."
+        },
+        {
+          "es": "Describo «Materiales, cristales, juntas y fijaciones exteriores» con condición inicial, controles, punto de parada y comprobación final.",
+          "en": "Describo «Materiales, cristales, juntas y fijaciones exteriores» con condición inicial, controles, punto de parada y comprobación final."
+        },
+        {
+          "es": "Distingo qué parte de «Materiales, cristales, juntas y fijaciones exteriores» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Materiales, cristales, juntas y fijaciones exteriores» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Compara dos materiales de cristal y dos de junta mediante propiedades y modos de fallo.",
+          "en": "Aplico el criterio a esta variante: Compara dos materiales de cristal y dos de junta mediante propiedades y modos de fallo."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Materiales, cristales, juntas y fijaciones exteriores» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Materiales, cristales, juntas y fijaciones exteriores» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.cases-water.toh-materiales-exterior.compatibilidad-material",
+        "concept.encyclopedia.cases-water.toh-materiales-exterior.deformacion-de-junta",
+        "concept.encyclopedia.cases-water.toh-materiales-exterior.asiento-funcional"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué propiedades gobiernan selección, montaje y envejecimiento del exterior?",
+          "en": "¿Qué propiedades gobiernan selección, montaje y envejecimiento del exterior?"
+        },
+        {
+          "es": "¿Qué relación causal de «Materiales, cristales, juntas y fijaciones exteriores» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Materiales, cristales, juntas y fijaciones exteriores» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

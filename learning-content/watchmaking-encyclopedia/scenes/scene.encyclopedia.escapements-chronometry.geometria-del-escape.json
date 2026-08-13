@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.geometria-del-escape",
+  "version": "1.1.0",
+  "title": "Cuaderno: Bloqueo, draw, caída, impulso y seguridad",
+  "description": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Bloqueo, draw, caída, impulso y seguridad. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.geometria-del-escape.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.geometria-del-escape.answer",
+      "instructionMarkdown": "Explica **Bloqueo, draw, caída, impulso y seguridad** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.geometria-del-escape.explain",
+          "promptMarkdown": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.geometria-del-escape.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.geometria-del-escape.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.geometria-del-escape.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.geometria-del-escape.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.geometria-del-escape.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por verificar centros y topes y sigue hasta probar seguridad con energía limitada.",
+                "en": "Empieza por verificar centros y topes y sigue hasta probar seguridad con energía limitada."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.geometria-del-escape.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La profundidad de bloqueo debe retener sin exigir desenganche excesivo. El draw lleva el áncora contra los topes y estabiliza; la caída da libertad tras el impulso; hornos, dardo, muesca y rodillo protegen frente a golpes. Cambiar una variable altera otras, por lo que el ajuste requiere jerarquía y geometría.",
+                "en": "La profundidad de bloqueo debe retener sin exigir desenganche excesivo. El draw lleva el áncora contra los topes y estabiliza; la caída da libertad tras el impulso; hornos, dardo, muesca y rodillo protegen frente a golpes. Cambiar una variable altera otras, por lo que el ajuste requiere jerarquía y geometría."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+              "en": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.geometria-del-escape.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.geometria-del-escape.mechanism",
+            "field.encyclopedia.escapements-chronometry.geometria-del-escape.evidence",
+            "field.encyclopedia.escapements-chronometry.geometria-del-escape.limit",
+            "field.encyclopedia.escapements-chronometry.geometria-del-escape.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

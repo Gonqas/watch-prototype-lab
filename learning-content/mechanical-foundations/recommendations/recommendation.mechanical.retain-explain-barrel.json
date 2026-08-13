@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.mechanical.retain-explain-barrel",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: explicar muelle real y barrilete",
+    "en": "Práctica posterior: explicar muelle real y barrilete"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días.",
+    "en": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días."
+  },
+  "rule": "independent-later-evidence-different-activity-session-minimum-7-days@1.0.0",
+  "priority": 61,
+  "target": {
+    "kind": "competency",
+    "id": "competency.mechanical.explain-barrel"
+  },
+  "evidenceTemplateIds": [
+    "evidence.mechanical.explain-barrel"
+  ],
+  "required": false
+}

@@ -1,0 +1,261 @@
+{
+  "id": "route.encyclopedia.quartz-electronics",
+  "version": "1.1.0",
+  "title": {
+    "es": "Cuarzo, electrónica y accionamiento",
+    "en": "Cuarzo, electrónica y accionamiento"
+  },
+  "purpose": {
+    "es": "Entender y diagnosticar la cadena eléctrica completa sin reducir el cuarzo a una pila y un motor.",
+    "en": "Entender y diagnosticar la cadena eléctrica completa sin reducir el cuarzo a una pila y un motor."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.quartz-electronics.electricidad-y-celulas",
+    "module.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador",
+    "module.encyclopedia.quartz-electronics.divisor-circuito-y-consumo",
+    "module.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+    "module.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+    "module.encyclopedia.quartz-electronics.cuarzo-avanzado",
+    "module.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+    "module.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+    "module.encyclopedia.quartz-electronics.toh-cadena-electronica-completa"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.electricidad-y-celulas",
+    "competency.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador",
+    "competency.encyclopedia.quartz-electronics.divisor-circuito-y-consumo",
+    "competency.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+    "competency.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+    "competency.encyclopedia.quartz-electronics.cuarzo-avanzado",
+    "competency.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+    "competency.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+    "competency.encyclopedia.quartz-electronics.toh-cadena-electronica-completa"
+  ],
+  "movementIds": [
+    "miyota-2035"
+  ],
+  "difficulty": "intermediate",
+  "sourceIds": [
+    "source.official.miyota.2035",
+    "source.institutional.awci.standards",
+    "source.external.watchguy-manuals",
+    "source.private.toh.ch15",
+    "source.encyclopedia.original-synthesis",
+    "source.external.watch-movements-eu",
+    "source.external.watchguy-repair-blog",
+    "source.external.watchbase",
+    "source.external.caliber-corner"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.quartz-electronics.01",
+        "order": 1,
+        "title": {
+          "es": "Tensión, corriente, resistencia y células",
+          "en": "Tensión, corriente, resistencia y células"
+        },
+        "outcome": {
+          "es": "¿Qué significa alimentar un movimiento y por qué una tensión correcta en vacío puede no bastar?",
+          "en": "¿Qué significa alimentar un movimiento y por qué una tensión correcta en vacío puede no bastar?"
+        },
+        "lessonId": "lesson.encyclopedia.quartz-electronics.electricidad-y-celulas",
+        "activityId": "activity.encyclopedia.quartz-electronics.electricidad-y-celulas",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.tension",
+          "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.corriente",
+          "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.resistencia-interna"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.quartz-electronics.02",
+        "order": 2,
+        "title": {
+          "es": "Piezoelectricidad y resonador de cuarzo",
+          "en": "Piezoelectricidad y resonador de cuarzo"
+        },
+        "outcome": {
+          "es": "¿Cómo se convierte deformación cristalina en una referencia eléctrica estable?",
+          "en": "¿Cómo se convierte deformación cristalina en una referencia eléctrica estable?"
+        },
+        "lessonId": "lesson.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador",
+        "activityId": "activity.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.efecto-piezoelectrico",
+          "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.resonador-de-horquilla",
+          "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.circuito-oscilador"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.quartz-electronics.03",
+        "order": 3,
+        "title": {
+          "es": "Circuito integrado, divisor, compensación y consumo",
+          "en": "Circuito integrado, divisor, compensación y consumo"
+        },
+        "outcome": {
+          "es": "¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?",
+          "en": "¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?"
+        },
+        "lessonId": "lesson.encyclopedia.quartz-electronics.divisor-circuito-y-consumo",
+        "activityId": "activity.encyclopedia.quartz-electronics.divisor-circuito-y-consumo",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.division-binaria",
+          "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.pulso-de-motor",
+          "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.consumo-medio"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.quartz-electronics.04",
+        "order": 4,
+        "title": {
+          "es": "Bobina, estator, rotor y motor paso a paso",
+          "en": "Bobina, estator, rotor y motor paso a paso"
+        },
+        "outcome": {
+          "es": "¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?",
+          "en": "¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?"
+        },
+        "lessonId": "lesson.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+        "activityId": "activity.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.bobina",
+          "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.estator",
+          "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.rotor-paso-a-paso"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.quartz-electronics.05",
+        "order": 5,
+        "title": {
+          "es": "Diagnóstico sistemático de un cuarzo analógico",
+          "en": "Diagnóstico sistemático de un cuarzo analógico"
+        },
+        "outcome": {
+          "es": "¿Cómo localizar la primera función ausente sin sustituir piezas por ensayo?",
+          "en": "¿Cómo localizar la primera función ausente sin sustituir piezas por ensayo?"
+        },
+        "lessonId": "lesson.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+        "activityId": "activity.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.prueba-discriminante",
+          "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.carga-mecanica",
+          "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.arbol-de-fallos"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.quartz-electronics.06",
+        "order": 6,
+        "title": {
+          "es": "Cuarzo de alta precisión, solar, radio y conectividad",
+          "en": "Cuarzo de alta precisión, solar, radio y conectividad"
+        },
+        "outcome": {
+          "es": "¿Qué funciones se añaden para mejorar autonomía, corrección o estabilidad y qué no debe inferirse de su nombre comercial?",
+          "en": "¿Qué funciones se añaden para mejorar autonomía, corrección o estabilidad y qué no debe inferirse de su nombre comercial?"
+        },
+        "lessonId": "lesson.encyclopedia.quartz-electronics.cuarzo-avanzado",
+        "activityId": "activity.encyclopedia.quartz-electronics.cuarzo-avanzado",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.quartz-electronics.cuarzo-avanzado.compensacion-termica",
+          "concept.encyclopedia.quartz-electronics.cuarzo-avanzado.disciplina-externa",
+          "concept.encyclopedia.quartz-electronics.cuarzo-avanzado.gestion-de-energia"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.quartz-electronics.07",
+        "order": 7,
+        "title": {
+          "es": "Oscilador de cuarzo y división de frecuencia",
+          "en": "Oscilador de cuarzo y división de frecuencia"
+        },
+        "outcome": {
+          "es": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+          "en": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+        },
+        "lessonId": "lesson.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+        "activityId": "activity.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+          "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+          "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.quartz-electronics.08",
+        "order": 8,
+        "title": {
+          "es": "Bobina, estator y motor paso a paso bipolar",
+          "en": "Bobina, estator y motor paso a paso bipolar"
+        },
+        "outcome": {
+          "es": "¿Cómo produce un pulso eléctrico un giro discreto y orientado?",
+          "en": "¿Cómo produce un pulso eléctrico un giro discreto y orientado?"
+        },
+        "lessonId": "lesson.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+        "activityId": "activity.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.estator",
+          "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.rotor-imantado",
+          "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.pulso-bipolar"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.quartz-electronics.09",
+        "order": 9,
+        "title": {
+          "es": "Cadena completa del reloj electrónico analógico",
+          "en": "Cadena completa del reloj electrónico analógico"
+        },
+        "outcome": {
+          "es": "¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?",
+          "en": "¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?"
+        },
+        "lessonId": "lesson.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+        "activityId": "activity.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.driver",
+          "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.consumo-funcional",
+          "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.frontera-electro-mecanica"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.quartz-electronics.toh-cadena-electronica-completa"
+    ]
+  }
+}

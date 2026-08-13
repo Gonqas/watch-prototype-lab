@@ -1,0 +1,62 @@
+{
+  "id": "rubric.miyota8215.document-calibre",
+  "version": "0.5.0",
+  "competencyId": "competency.miyota8215.document-calibre",
+  "rules": [
+    {
+      "id": "rule.miyota8215.document-calibre.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Documentar el calibre: se evalúan identidad, autoridad, dependencia, resultado, razonamiento, corrección y límite; el tiempo no penaliza."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.miyota8215.document-calibre.demonstrated",
+    "version": "0.5.0",
+    "competencyId": "competency.miyota8215.document-calibre",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "all",
+          "conditions": [
+            {
+              "op": "exists",
+              "filter": {
+                "evidenceType": "human-review",
+                "status": "active",
+                "minimumConfidence": 0.7
+              }
+            },
+            {
+              "op": "minimum-evidence",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 2
+        },
+        {
+          "op": "compare",
+          "metric": "average-confidence",
+          "compare": "gte",
+          "value": 0.7
+        }
+      ]
+    }
+  }
+}

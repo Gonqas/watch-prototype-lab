@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1",
+  "version": "1.1.0",
+  "title": "Cuaderno: Caso oficial TM VII: stopwatches Elgin y Message Center Clock M1",
+  "description": "¿Qué enseñan un cronómetro y un reloj militar grande sobre transferencia entre escalas?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Caso oficial TM VII: stopwatches Elgin y Message Center Clock M1. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué enseñan un cronómetro y un reloj militar grande sobre transferencia entre escalas?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué enseñan un cronómetro y un reloj militar grande sobre transferencia entre escalas?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.answer",
+      "instructionMarkdown": "Explica **Caso oficial TM VII: stopwatches Elgin y Message Center Clock M1** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.explain",
+          "promptMarkdown": "¿Qué enseñan un cronómetro y un reloj militar grande sobre transferencia entre escalas?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar función y sigue hasta declarar límites.",
+                "en": "Empieza por identificar función y sigue hasta declarar límites."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El stopwatch añade mando, embrague, freno y cero; el M1 traslada principios a otra escala, energía y montaje. El manual ofrece casos oficiales delimitados para practicar comparación funcional sin fingir modelos exactos.",
+                "en": "El stopwatch añade mando, embrague, freno y cero; el M1 traslada principios a otra escala, energía y montaje. El manual ofrece casos oficiales delimitados para practicar comparación funcional sin fingir modelos exactos."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué enseñan un cronómetro y un reloj militar grande sobre transferencia entre escalas?",
+              "en": "¿Qué enseñan un cronómetro y un reloj militar grande sobre transferencia entre escalas?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar función → separar cadena base y adicional → mapear controles → comparar escala y energía → leer secuencia oficial → declarar límites, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar función → separar cadena base y adicional → mapear controles → comparar escala y energía → leer secuencia oficial → declarar límites, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.mechanism",
+            "field.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.evidence",
+            "field.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.limit",
+            "field.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

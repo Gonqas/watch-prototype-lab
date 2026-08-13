@@ -1,0 +1,31 @@
+{
+  "id": "evidence.horology.hint-use",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.explain-quartz-energy-chain",
+  "kind": "observation",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.horology.hint-use",
+    "version": "0.5.0",
+    "triggerEventType": "hint-requested",
+    "evidenceType": "decision",
+    "competencyId": "competency.horology.explain-quartz-energy-chain",
+    "packageId": "wplab.horology.functional-map",
+    "activityIds": [
+      "activity.horology.order-quartz-chain",
+      "activity.horology.order-mechanical-chain"
+    ],
+    "evidenceTemplateId": "evidence.horology.hint-use",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data"
+    ]
+  }
+}

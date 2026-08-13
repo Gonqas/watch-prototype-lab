@@ -1,0 +1,32 @@
+{
+  "id": "evidence.capstone.manufacturing.hands.human-review",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.manufacturing.hands",
+  "kind": "human-review",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.manufacturing.hands.human-review",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-human-review-completed",
+    "evidenceType": "human-review",
+    "competencyId": "competency.capstone.manufacturing.hands",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.manufacturing.hands"
+    ],
+    "evidenceTemplateId": "evidence.capstone.manufacturing.hands.human-review",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "reviewerId",
+      "criteria",
+      "result",
+      "notes"
+    ]
+  }
+}

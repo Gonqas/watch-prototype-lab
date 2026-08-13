@@ -1,0 +1,167 @@
+{
+  "id": "block.mechanical.theory.oscillator",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Teoría previa · oscillator",
+  "bodyMarkdown": "# Teoría fundamental · volante y espiral\n\n## Antes de empezar\n\nEl oscilador establece una escala temporal repetible. El volante aporta inercia rotatoria y la espiral aporta un par restaurador que cambia de sentido al cruzar el equilibrio. Juntos pueden oscilar; ninguno de los dos cumple la función completa por separado. El escape repone energía, pero no debe confundirse con el elemento que define el periodo.\n\nAntes del laboratorio necesitas separar cinco magnitudes: **frecuencia** es el número de ciclos por segundo; **periodo** es el tiempo de un ciclo; **alternancia** es medio ciclo; **amplitud** es el ángulo máximo respecto al equilibrio; y **marcha** es el adelanto o atraso del reloj respecto a una referencia. Cambiar una no equivale automáticamente a cambiar las demás.\n\n## Modelo físico ideal\n\nPara pequeñas oscilaciones y una espiral ideal, el sistema se aproxima mediante I·θ¨ + κ·θ = 0, donde I es el momento de inercia del volante, κ la rigidez torsional equivalente y θ el ángulo. La frecuencia natural es f = 1/(2π)·√(κ/I), y el periodo T = 1/f = 2π·√(I/κ). Aumentar la inercia tiende a aumentar el periodo; aumentar la rigidez tiende a reducirlo.\n\nEsta ecuación es un modelo, no un cálculo completo de una espiral relojera. Una espiral real tiene geometría, masa, terminales, punto de fijación, respiración espacial, posibles excentricidades, magnetismo, temperatura y no linealidades. El volante tiene distribución de masa, pivotes y fricción. El escape perturba el movimiento durante el impulso. La fórmula sirve para comprender dependencias, no para diseñar o regular sin datos.\n\n## Frecuencia, alternancias y periodo\n\nUn oscilador de 2,5 Hz completa 2,5 ciclos por segundo. Cada ciclo contiene dos alternancias, por lo que produce 5 alternancias por segundo y 18 000 alternancias por hora: 2,5·2·3600. Su periodo es 0,4 s y cada alternancia ideal dura 0,2 s. En 4 Hz, el periodo es 0,25 s y se obtienen 28 800 alternancias por hora.\n\nLas expresiones «vibraciones por hora» y «alternancias por hora» se usan a veces de forma ambigua en material divulgativo. El curso declara su convención explícitamente: un ciclo completo contiene dos alternancias. Siempre comprueba qué está contando la fuente.\n\n## Amplitud no es frecuencia\n\nLa amplitud indica hasta dónde se aleja el volante del equilibrio. Un reloj puede conservar aproximadamente la misma frecuencia mientras la amplitud disminuye, hasta que las no linealidades y las condiciones del escape afectan de forma apreciable a la marcha. Decir «gira más» puede referirse a mayor amplitud, no a más ciclos por segundo.\n\nEn un oscilador amortiguado sin reposición, la energía disminuye y la amplitud decae. El escape entrega impulsos para compensar pérdidas. En régimen estable, la energía aportada por ciclo se equilibra aproximadamente con la perdida. El laboratorio anima amplitud y frecuencia como controles separados para desmontar su confusión; no calcula el equilibrio energético real.\n\n## Longitud activa y regulación\n\nEn arquitecturas con raqueta, modificar la longitud activa de la espiral altera su rigidez efectiva y, por tanto, la frecuencia. Una longitud activa menor suele aumentar la rigidez efectiva y acelerar la oscilación; una mayor suele hacer lo contrario. Esta relación cualitativa no autoriza a predecir segundos por día desde un desplazamiento visual. Existen reguladores sin raqueta, espirales libres y soluciones con ajuste de inercia que siguen otra estrategia.\n\nLa marcha tampoco se deduce únicamente de la frecuencia nominal. Importan la frecuencia efectiva, el error de referencia, posiciones, amplitud, escape, temperatura, magnetismo y ajuste. La Academia separa la visualización secuencia cinemática educativa de una medición con cronocomparador y de una validación cronométrica.\n\n## Ejemplo resuelto\n\nSe declara un oscilador educativo a 3 Hz y 240° de amplitud. El periodo ideal es 1/3 s; las alternancias por hora son 3·2·3600 = 21 600. Si la amplitud se reduce a 180° manteniendo el control de frecuencia en 3 Hz, el modelo debe mostrar arcos menores con el mismo número de ciclos. No concluyas que la marcha real permanece idéntica: el laboratorio solo demuestra que frecuencia y amplitud son variables conceptualmente diferentes.\n\nAhora aumenta simbólicamente la longitud activa. La predicción cualitativa es una frecuencia menor. La escena puede cambiar el ritmo para visualizar esta dependencia, pero la magnitud del cambio no pertenece a una espiral concreta.\n\n## Errores habituales\n\n- Usar amplitud y frecuencia como sinónimos.\n- Contar una alternancia como un ciclo completo.\n- Afirmar que el volante genera energía.\n- Convertir la posición de una raqueta virtual en segundos por día.\n- Creer que una frecuencia nominal garantiza precisión.\n\n## Comprobación antes del laboratorio\n\nCalcula periodo y alternancias por hora para 2,5 Hz y 4 Hz. Explica qué ocurre cualitativamente al aumentar I, κ y la longitud activa. Después predice dos animaciones: misma frecuencia con distinta amplitud, y misma amplitud con distinta frecuencia. Si no puedes describir la diferencia sin mirar, todavía no conviene usar el control visual.\n\n## Resumen\n\nEl volante almacena energía cinética rotatoria; la espiral proporciona el retorno; el escape compensa pérdidas. La ecuación armónica organiza el razonamiento, mientras la marcha real exige medición, modelo físico y condiciones que sin simulación física no contiene.",
+  "claims": [
+    {
+      "id": "claim.mechanical.theory.oscillator",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "La teoría de oscillator sintetiza principios generales y separa explícitamente el modelo educativo de una validación física o de calibre.",
+      "sourceStatement": "Síntesis original contrastada con las fuentes declaradas; sin copiar sus textos ni transferir autoridad de una fuente secundaria.",
+      "method": "Síntesis conceptual, derivación ideal y delimitación G/K/P para estudio previo al laboratorio.",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Geometría pedagógica normalizada; no representa un calibre fabricable.",
+          "La coordinación cinemática demuestra relaciones y sentidos, no tolerancias ni rendimiento real.",
+          "No modela elasticidad real, pérdidas, lubricación, desgaste, choque ni marcha cronométrica."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "mechanical-theory:oscillator:0.5.0",
+      "recordedAt": "2026-08-02T00:00:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.external.ciechanowski-mechanical-watch",
+          "authority": "educational-secondary",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "Mechanical Watch",
+            "locator": "https://ciechanow.ski/mechanical-watch/"
+          },
+          "authorOrManufacturer": "Bartosz Ciechanowski",
+          "sourceType": "educational-visualization",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "D",
+          "sourceClass": "educational-explainer",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "cadena energética",
+            "barrilete",
+            "tren",
+            "escape",
+            "volante",
+            "espiral",
+            "puesta en hora"
+          ],
+          "pedagogicalUses": [
+            "theory",
+            "visual-reference",
+            "worked-example"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar como explicación secundaria y patrón de interacción; validar cualquier dimensión o afirmación específica en fuentes técnicas.",
+          "limitations": [
+            "La claridad visual no convierte la geometría ilustrada en un calibre real ni en una simulación física validada."
+          ],
+          "supportedClaim": "Explicación visual integrada de cómo cooperan los principales subsistemas de un reloj mecánico.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.external.timezone-illustrated-glossary",
+          "authority": "technical-training",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "TimeZone Watch School · Illustrated Glossary of Watch Parts",
+            "locator": "https://www.timezonewatchschool.com/WatchSchool/Glossary/glossary.shtml"
+          },
+          "authorOrManufacturer": "Walt Odets · TimeZone Watch School",
+          "sourceType": "curated-external-resource",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "B",
+          "sourceClass": "institutional-training",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "platina",
+            "puentes",
+            "puesta en hora",
+            "minutería",
+            "volante",
+            "escape",
+            "barrilete",
+            "tren",
+            "tornillos"
+          ],
+          "pedagogicalUses": [
+            "terminology",
+            "theory",
+            "visual-reference"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar para preentrenamiento terminológico y contraste visual; no atribuir sus imágenes a otro calibre.",
+          "limitations": [
+            "Material formativo histórico y general, no documentación de fabricante."
+          ],
+          "supportedClaim": "Glosario ilustrado organizado por caras y subsistemas de un movimiento mecánico.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.external.hodinkee-watch101",
+          "authority": "educational-secondary",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "Hodinkee · Watch 101",
+            "locator": "https://www.hodinkee.com/watch101"
+          },
+          "authorOrManufacturer": "Hodinkee",
+          "sourceType": "curated-external-resource",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "D",
+          "sourceClass": "educational-explainer",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "vocabulario",
+            "piezas",
+            "mecánica básica",
+            "complicaciones",
+            "fabricación"
+          ],
+          "pedagogicalUses": [
+            "terminology",
+            "visual-reference",
+            "discovery"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar para orientación y vocabulario; contrastar afirmaciones técnicas y excepciones.",
+          "limitations": [
+            "Recurso divulgativo, no manual de servicio ni estándar técnico."
+          ],
+          "supportedClaim": "Glosario visual introductorio de piezas, mecánica básica, complicaciones y técnicas de fabricación.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.distinguish-frequency-amplitude"
+    ],
+    "estimatedMinutes": 32,
+    "userPaced": true
+  }
+}

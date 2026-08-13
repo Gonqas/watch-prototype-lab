@@ -1,0 +1,35 @@
+{
+  "id": "evidence.mechanical.order-escapement-phases",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.order-escapement-phases",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.mechanical.order-escapement-phases",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.mechanical.order-escapement-phases",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.order-escapement-phases",
+      "activity.mechanical.identify-lock-impulse-drop"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.order-escapement-phases",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

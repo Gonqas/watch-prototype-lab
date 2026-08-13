@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Muelle real, barrilete y curva de par",
+    "en": "Repasar Muelle real, barrilete y curva de par"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 420,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete"
+  ],
+  "required": false
+}

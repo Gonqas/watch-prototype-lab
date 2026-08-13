@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 4,
+  "id": "cad-fixture-miyota-2035",
+  "name": "Miyota 2035 CAD fixture",
+  "assembly": {
+    "movementBackClearance": { "value": 0.05 },
+    "dialMovementGap": { "value": 0.15 },
+    "runningClearance": { "value": 0.08 },
+    "mates": []
+  },
+  "case": {
+    "shape": "round",
+    "outerDiameter": { "value": 39.0 },
+    "innerDiameter": { "value": 33.5 },
+    "totalHeight": { "value": 9.5 },
+    "usableInteriorHeight": { "value": 7.2 },
+    "backThickness": { "value": 1.2 },
+    "wallThickness": { "value": 2.0 },
+    "dialSeatDiameter": { "value": 32.6 },
+    "crystalSeatDiameter": { "value": 34.5 },
+    "stemAxisZ": { "value": 2.8 },
+    "crownDistance": { "value": 21.6 },
+    "crownDiameter": { "value": 6.0 },
+    "crownTubeDiameter": { "value": 2.5 },
+    "lugSpacing": { "value": 20.0 },
+    "lugWidth": { "value": 3.0 },
+    "lugLength": { "value": 5.2 }
+  },
+  "movement": {
+    "kind": "quartz",
+    "presetId": "miyota_2035",
+    "name": "Miyota 2035",
+    "width": { "value": 15.3 },
+    "length": { "value": 18.5 },
+    "thickness": { "value": 3.15 },
+    "casingWidth": { "value": 18.2 },
+    "casingLength": { "value": 17.8 },
+    "stemAxisZ": { "value": 1.55 }
+  },
+  "dial": {
+    "diameter": { "value": 31.8 },
+    "thickness": { "value": 0.4 },
+    "centerHole": { "value": 1.7 },
+    "seatZ": { "value": 4.55 },
+    "recess": {
+      "enabled": false,
+      "depth": { "value": 0.0 },
+      "radius": { "value": 8.2 },
+      "transition": "ramp"
+    },
+    "reliefs": [
+      {
+        "id": "index-12",
+        "name": "Index 12",
+        "shape": "index",
+        "x": { "value": 0 },
+        "y": { "value": 12 },
+        "width": { "value": 0.8 },
+        "length": { "value": 2.5 },
+        "height": { "value": 0.25 }
+      }
+    ]
+  },
+  "hands": {
+    "hour": {
+      "enabled": true,
+      "length": { "value": 10 },
+      "width": { "value": 1.15 },
+      "thickness": { "value": 0.12 },
+      "mountingHeight": { "value": 0.35 },
+      "tubeHeight": { "value": 0.1 },
+      "holeDiameter": { "value": 1.2 },
+      "curve": { "base": { "value": 0 }, "middle": { "value": 0 }, "tip": { "value": 0 }, "startRatio": 0.35, "endRatio": 0.85 }
+    },
+    "minute": {
+      "enabled": true,
+      "length": { "value": 13 },
+      "width": { "value": 0.82 },
+      "thickness": { "value": 0.11 },
+      "mountingHeight": { "value": 0.72 },
+      "tubeHeight": { "value": 0.12 },
+      "holeDiameter": { "value": 0.7 },
+      "curve": { "base": { "value": 0 }, "middle": { "value": 0 }, "tip": { "value": 0 }, "startRatio": 0.35, "endRatio": 0.85 }
+    },
+    "second": {
+      "enabled": true,
+      "length": { "value": 14.5 },
+      "width": { "value": 0.32 },
+      "thickness": { "value": 0.08 },
+      "mountingHeight": { "value": 1.18 },
+      "tubeHeight": { "value": 0.3 },
+      "holeDiameter": { "value": 0.17 },
+      "curve": { "base": { "value": 0 }, "middle": { "value": 0 }, "tip": { "value": 0 }, "startRatio": 0.35, "endRatio": 0.85 }
+    }
+  },
+  "crystal": {
+    "type": "flat",
+    "diameter": { "value": 34.3 },
+    "thickness": { "value": 1.0 },
+    "innerRise": { "value": 0.0 }
+  }
+}

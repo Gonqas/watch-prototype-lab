@@ -1,0 +1,22 @@
+{
+  "id": "recommendation.example",
+  "version": "1.0.0",
+  "kind": "continue-route",
+  "title": {
+    "es": "Siguiente acción",
+    "en": "Next action"
+  },
+  "reason": {
+    "es": "Motivo determinista y comprensible.",
+    "en": "Deterministic and understandable reason."
+  },
+  "rule": "rule-name@1.0.0",
+  "priority": 50,
+  "target": {
+    "kind": "route",
+    "id": "route.example"
+  },
+  "evidenceTemplateIds": [],
+  "required": false
+}
+

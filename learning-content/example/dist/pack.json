@@ -1,0 +1,1321 @@
+{
+  "manifest": {
+    "format": "wplab-learning-pack",
+    "formatVersion": 1,
+    "schemaId": "learning-pack-v1",
+    "packageVersion": "1.0.0",
+    "id": "wplab.example.authoring-course",
+    "title": "Ejemplo de autoría declarativa",
+    "distribution": "integrated",
+    "editorialStatus": "draft",
+    "authors": [
+      {
+        "name": "Watch Prototype Lab"
+      }
+    ],
+    "languages": [
+      "es-ES",
+      "en-US"
+    ],
+    "dependencies": [],
+    "requiredCapabilities": [
+      "learning.scene-runtime@^1.0.0",
+      "canonical-selectors-v1@^1.0.0",
+      "viewport.selection@^1.0.0",
+      "viewport.isolation@^1.0.0",
+      "viewport.highlight@^1.0.0",
+      "viewport.explode@^1.0.0",
+      "viewport.camera@^1.0.0",
+      "viewport.overlay.labels@^1.0.0",
+      "timeline.scrub@^1.0.0"
+    ],
+    "movements": [],
+    "assets": [],
+    "entries": {
+      "curricula": [
+        {
+          "id": "curriculum.authoring-example",
+          "path": "curriculum/curriculum.authoring-example.json"
+        }
+      ],
+      "routes": [
+        {
+          "id": "route.authoring-first-package",
+          "path": "routes/route.authoring-first-package.json"
+        }
+      ],
+      "modules": [
+        {
+          "id": "module.authoring-traceable-scene",
+          "path": "modules/module.authoring-traceable-scene.json"
+        }
+      ],
+      "concepts": [
+        {
+          "id": "concept.authoring.traceability",
+          "path": "concepts/concept.authoring.traceability.json"
+        }
+      ],
+      "misconceptions": [],
+      "blocks": [
+        {
+          "id": "explanation.authoring.traceability",
+          "path": "blocks/explanation.authoring.traceability.json"
+        },
+        {
+          "id": "exercise.authoring.map-contracts",
+          "path": "blocks/exercise.authoring.map-contracts.json"
+        }
+      ],
+      "lessons": [
+        {
+          "id": "lesson.authoring.traceability",
+          "path": "lessons/lesson.authoring.traceability.json"
+        },
+        {
+          "id": "lesson.authoring.storyboard",
+          "path": "lessons/lesson.authoring.storyboard.json"
+        }
+      ],
+      "activities": [
+        {
+          "id": "activity.authoring.selector-walkthrough",
+          "path": "activities/activity.authoring.selector-walkthrough.json"
+        }
+      ],
+      "scenes": [
+        {
+          "id": "scene.authoring.selector-walkthrough",
+          "path": "scenes/scene.authoring.selector-walkthrough.json"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "competency.authoring.traceable-activity",
+          "path": "competencies/competency.authoring.traceable-activity.json"
+        }
+      ],
+      "evidenceTemplates": [
+        {
+          "id": "evidence.authoring.selection",
+          "path": "evidence/evidence.authoring.selection.json"
+        }
+      ],
+      "rubrics": [
+        {
+          "id": "rubric.authoring.traceable-activity",
+          "path": "rubrics/rubric.authoring.traceable-activity.json"
+        }
+      ],
+      "glossary": [
+        {
+          "id": "term.authoring.selector",
+          "path": "glossary/term.authoring.selector.json"
+        },
+        {
+          "id": "term.authoring.fidelity",
+          "path": "glossary/term.authoring.fidelity.json"
+        },
+        {
+          "id": "term.authoring.claim",
+          "path": "glossary/term.authoring.claim.json"
+        }
+      ],
+      "sources": [
+        {
+          "id": "source.authoring.system-contracts",
+          "path": "sources/source.authoring.system-contracts.json"
+        },
+        {
+          "id": "source.authoring.original-guide",
+          "path": "sources/source.authoring.original-guide.json"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "recommendation.authoring.review-storyboard",
+          "path": "recommendations/recommendation.authoring.review-storyboard.json"
+        }
+      ],
+      "visualResources": [
+        {
+          "id": "visual.authoring.selector-scene",
+          "path": "visual-resources/visual.authoring.selector-scene.json"
+        },
+        {
+          "id": "visual.authoring.selector-text-alternative",
+          "path": "visual-resources/visual.authoring.selector-text-alternative.json"
+        }
+      ]
+    },
+    "minimumAppVersion": "0.4.1",
+    "createdAt": "2026-07-23T15:00:00.000Z"
+  },
+  "curricula": [
+    {
+      "id": "curriculum.authoring-example",
+      "version": "1.0.0",
+      "title": {
+        "es": "Aprender a redactar un paquete",
+        "en": "Learn to author a package"
+      },
+      "purpose": {
+        "es": "Demostrar la relación entre texto editorial, escena, evidencia y rúbrica sin enseñar contenido relojero.",
+        "en": "Demonstrate the relationship between editorial copy, scene, evidence and rubric without teaching watchmaking content."
+      },
+      "routeIds": [
+        "route.authoring-first-package"
+      ],
+      "languages": [
+        "es-ES",
+        "en-US"
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "route.authoring-first-package",
+      "version": "1.0.0",
+      "title": {
+        "es": "Primer paquete trazable",
+        "en": "First traceable package"
+      },
+      "purpose": {
+        "es": "Recorrer un ejemplo editorial completo y comprobar que cada afirmación, recurso y evaluación tiene una procedencia explícita.",
+        "en": "Walk through a complete editorial example and verify that every claim, resource and assessment has explicit provenance."
+      },
+      "prerequisiteConceptIds": [],
+      "moduleIds": [
+        "module.authoring-traceable-scene"
+      ],
+      "competencyIds": [
+        "competency.authoring.traceable-activity"
+      ],
+      "movementIds": [],
+      "difficulty": "introductory",
+      "sourceIds": [
+        "source.authoring.system-contracts",
+        "source.authoring.original-guide"
+      ],
+      "visualResourceIds": [
+        "visual.authoring.selector-scene",
+        "visual.authoring.selector-text-alternative"
+      ],
+      "demo": true
+    }
+  ],
+  "modules": [
+    {
+      "id": "module.authoring-traceable-scene",
+      "version": "1.0.0",
+      "title": {
+        "es": "De la intención a la escena",
+        "en": "From intent to scene"
+      },
+      "purpose": {
+        "es": "Separar intención pedagógica, contrato visual y acciones ejecutables del runtime.",
+        "en": "Separate pedagogical intent, visual contract and executable runtime actions."
+      },
+      "lessonIds": [
+        "lesson.authoring.traceability",
+        "lesson.authoring.storyboard"
+      ]
+    }
+  ],
+  "concepts": [
+    {
+      "id": "concept.authoring.traceability",
+      "version": "1.0.0",
+      "title": {
+        "es": "Trazabilidad editorial",
+        "en": "Editorial traceability"
+      },
+      "summary": {
+        "es": "Una afirmación visible enlaza fuente, fidelidad, escena, evidencia y criterio de evaluación.",
+        "en": "A visible claim links source, fidelity, scene, evidence and assessment criterion."
+      },
+      "kind": "concept",
+      "knowledgeType": "conceptual-causal",
+      "prerequisiteIds": [],
+      "recommendedPrerequisiteIds": [],
+      "relatedIds": [],
+      "competencyIds": [
+        "competency.authoring.traceable-activity"
+      ],
+      "movementIds": [],
+      "subsystem": "content-authoring",
+      "routeIds": [
+        "route.authoring-first-package"
+      ],
+      "activityIds": [
+        "activity.authoring.selector-walkthrough"
+      ],
+      "sourceIds": [
+        "source.authoring.system-contracts"
+      ],
+      "misconceptionIds": [],
+      "observableActions": [],
+      "transferTargetIds": [],
+      "targetEvidenceLevel": "causal-explanation",
+      "availability": "available"
+    }
+  ],
+  "misconceptions": [],
+  "blocks": [
+    {
+      "id": "explanation.authoring.traceability",
+      "version": "1.0.0",
+      "kind": "explanation",
+      "title": "De la fuente a la evidencia",
+      "bodyMarkdown": "Una actividad trazable enlaza una {{term:term.authoring.claim}}, una {{term:term.authoring.fidelity}} declarada y un {{term:term.authoring.selector}} estable. Este ejemplo enseña el contrato, no relojería.",
+      "claims": [
+        {
+          "id": "claim.authoring.declarative-chain",
+          "claim": "El contenido visible y las acciones del runtime se relacionan mediante IDs estables.",
+          "classification": "original-explanation",
+          "method": "Síntesis editorial de los contratos implementados",
+          "fidelity": {
+            "geometry": "G0",
+            "kinematics": "K0",
+            "physics": "P0",
+            "limitations": [
+              "La afirmación describe arquitectura de contenido, no un mecanismo relojero."
+            ]
+          },
+          "reliability": "high",
+          "inputFingerprint": "authoring-example:contracts:1",
+          "recordedAt": "2026-07-23T15:00:00.000Z",
+          "methodVersion": "1.0.0",
+          "sources": [
+            {
+              "id": "source.authoring.system-contracts",
+              "authority": "original-educational",
+              "usage": "shareable",
+              "resource": {
+                "kind": "note",
+                "title": "Contratos aprobados de Aprender, Sistemas 0–3",
+                "locator": "docs/APRENDER-SISTEMA-3.md"
+              },
+              "authorOrManufacturer": "Watch Prototype Lab",
+              "edition": "Sistemas 0–3",
+              "year": 2026,
+              "sourceType": "original-educational-content",
+              "revision": "1.0",
+              "chapter": "Contratos de contenido y runtime",
+              "retrievedAt": "2026-07-23",
+              "privateUse": false,
+              "editorialComment": "Fuente interna para enseñar autoría; no contiene afirmaciones relojeras.",
+              "supportedClaim": "El paquete separa contenido declarativo, runtime, persistencia y presentación.",
+              "derivedLayer": "source"
+            }
+          ],
+          "claimType": "source",
+          "sourceStatement": "Los contratos de Sistemas 0–3 separan paquete, escena, evidencia y evaluación."
+        }
+      ],
+      "localization": {
+        "title": {
+          "es": "De la fuente a la evidencia",
+          "en": "From source to evidence"
+        },
+        "bodyMarkdown": {
+          "es": "Una actividad trazable enlaza afirmación, fidelidad y selector estable.",
+          "en": "A traceable activity links a claim, fidelity and a stable selector."
+        }
+      }
+    },
+    {
+      "id": "exercise.authoring.map-contracts",
+      "version": "1.0.0",
+      "kind": "exercise",
+      "title": "Relacionar intención y contrato",
+      "bodyMarkdown": "Comprueba que cada paso del storyboard tiene un paso de escena, una interacción observable y una regla de evidencia. No añadas datos relojeros al ejemplo.",
+      "claims": [],
+      "localization": {
+        "title": {
+          "es": "Relacionar intención y contrato",
+          "en": "Map intent to contract"
+        },
+        "bodyMarkdown": {
+          "es": "Relaciona storyboard, paso, interacción y evidencia.",
+          "en": "Map storyboard, step, interaction and evidence."
+        }
+      }
+    }
+  ],
+  "lessons": [
+    {
+      "id": "lesson.authoring.traceability",
+      "version": "1.0.0",
+      "title": "Trazabilidad antes de animar",
+      "blockIds": [
+        "explanation.authoring.traceability"
+      ],
+      "activityIds": [
+        "activity.authoring.selector-walkthrough"
+      ],
+      "authoring": {
+        "title": {
+          "es": "Trazabilidad antes de animar",
+          "en": "Traceability before animation"
+        },
+        "purpose": {
+          "es": "Mostrar cómo una intención visual se convierte en selectores, pasos y evidencia verificables.",
+          "en": "Show how a visual intent becomes verifiable selectors, steps and evidence."
+        },
+        "objectives": [
+          {
+            "es": "Distinguir propósito editorial, acción de runtime y criterio de éxito.",
+            "en": "Distinguish editorial purpose, runtime action and success criterion."
+          },
+          {
+            "es": "Comprobar que la escena tiene alternativa textual y de movimiento reducido.",
+            "en": "Verify that the scene has text and reduced-motion alternatives."
+          }
+        ],
+        "prerequisiteConceptIds": [],
+        "recommendedPrerequisiteConceptIds": [],
+        "externalPrerequisites": [],
+        "conceptIds": [
+          "concept.authoring.traceability"
+        ],
+        "sourceIds": [
+          "source.authoring.system-contracts",
+          "source.authoring.original-guide"
+        ],
+        "visualResourceIds": [
+          "visual.authoring.selector-scene",
+          "visual.authoring.selector-text-alternative"
+        ],
+        "visualStrategy": {
+          "objective": {
+            "es": "Hacer visible que un selector semántico identifica una entidad sin depender del texto mostrado.",
+            "en": "Make visible that a semantic selector identifies an entity without relying on displayed text."
+          },
+          "visibleConcept": {
+            "es": "La continuidad entre intención editorial, selector y evidencia.",
+            "en": "The continuity between editorial intent, selector and evidence."
+          },
+          "modelReference": "active-project-v5-projection",
+          "movementIds": [],
+          "involvedSelectors": [
+            {
+              "selector": {
+                "by": "role",
+                "value": "case"
+              },
+              "cardinality": "exactly-one"
+            }
+          ],
+          "initialState": {
+            "cameraIntent": "Encuadre isométrico del proyecto activo; la entidad objetivo se aísla sin modificar el proyecto.",
+            "visible": [],
+            "hidden": [],
+            "isolated": [
+              {
+                "selector": {
+                  "by": "role",
+                  "value": "case"
+                },
+                "cardinality": "exactly-one"
+              }
+            ],
+            "explode": 0,
+            "transparency": []
+          },
+          "energyFlow": [],
+          "rotationDirections": [],
+          "labels": [
+            "Selector role:case"
+          ],
+          "arrows": [],
+          "animations": [
+            "Explosionado breve de baja amplitud para evidenciar una acción declarativa."
+          ],
+          "timelineIntent": "Aislar, destacar, realizar un explosionado breve y volver al estado de partida.",
+          "userInteraction": "Predecir el selector correcto, seleccionar la entidad y confirmar.",
+          "predictionQuestionId": "question.authoring.predict-selector",
+          "observableResult": {
+            "es": "La selección queda registrada como evento semántico y el proyecto se restaura.",
+            "en": "The selection is recorded as a semantic event and the project is restored."
+          },
+          "successCriterion": {
+            "es": "La entidad resuelta por role:case se selecciona y se confirma.",
+            "en": "The entity resolved by role:case is selected and confirmed."
+          },
+          "restoration": {
+            "es": "Restaurar selección, aislamiento, explosionado y cámara capturados antes de la escena.",
+            "en": "Restore selection, isolation, exploded state and camera captured before the scene."
+          },
+          "textualAlternative": {
+            "es": "Una lista anuncia la entidad resuelta, su ID y si está seleccionada; todos los pasos tienen botones.",
+            "en": "A list announces the resolved entity, its ID and selection state; every step has buttons."
+          },
+          "reducedMotionAlternative": {
+            "es": "El explosionado se convierte en un cambio de estado inmediato y conserva la explicación textual.",
+            "en": "The exploded animation becomes an immediate state change while keeping the text explanation."
+          },
+          "fidelity": {
+            "geometry": "G2",
+            "kinematics": "K1",
+            "physics": "P0",
+            "limitations": [
+              "La geometría pertenece al proyecto activo.",
+              "El movimiento es ilustrativo y no simula física."
+            ]
+          },
+          "unknownData": [
+            "No se requiere ninguna dimensión ni dato interno del movimiento."
+          ],
+          "requiredVisualResourceIds": [
+            "visual.authoring.selector-scene",
+            "visual.authoring.selector-text-alternative"
+          ]
+        }
+      }
+    },
+    {
+      "id": "lesson.authoring.storyboard",
+      "version": "1.0.0",
+      "title": "Revisar el storyboard",
+      "blockIds": [
+        "exercise.authoring.map-contracts"
+      ],
+      "activityIds": [],
+      "authoring": {
+        "title": {
+          "es": "Revisar el storyboard",
+          "en": "Review the storyboard"
+        },
+        "purpose": {
+          "es": "Comprobar sin abrir código que narrativa, acciones, feedback, restauración y evidencia están conectados.",
+          "en": "Verify without opening code that narrative, actions, feedback, restoration and evidence are connected."
+        },
+        "objectives": [
+          {
+            "es": "Detectar un paso narrativo sin acción o evidencia correspondiente.",
+            "en": "Detect a narrative step without a corresponding action or evidence."
+          }
+        ],
+        "prerequisiteConceptIds": [
+          "concept.authoring.traceability"
+        ],
+        "recommendedPrerequisiteConceptIds": [],
+        "externalPrerequisites": [],
+        "conceptIds": [
+          "concept.authoring.traceability"
+        ],
+        "sourceIds": [
+          "source.authoring.original-guide"
+        ],
+        "visualResourceIds": []
+      }
+    }
+  ],
+  "activities": [
+    {
+      "id": "activity.authoring.selector-walkthrough",
+      "version": "1.0.0",
+      "title": "Recorrer un selector trazable",
+      "sceneIds": [
+        "scene.authoring.selector-walkthrough"
+      ],
+      "competencyIds": [
+        "competency.authoring.traceable-activity"
+      ],
+      "evidenceTemplateIds": [
+        "evidence.authoring.selection"
+      ],
+      "rubricId": "rubric.authoring.traceable-activity",
+      "projectReference": {
+        "kind": "template-readonly",
+        "templateId": "active-project-v5-projection"
+      },
+      "authoring": {
+        "lessonId": "lesson.authoring.traceability",
+        "title": {
+          "es": "Recorrer un selector trazable",
+          "en": "Walk through a traceable selector"
+        },
+        "description": {
+          "es": "Actividad metaeducativa: utiliza una entidad neutral del proyecto para demostrar cómo se conectan predicción, interacción, evento, evidencia y rúbrica.",
+          "en": "Meta-learning activity: it uses a neutral project entity to demonstrate how prediction, interaction, event, evidence and rubric connect."
+        },
+        "difficulty": "introductory",
+        "durationMinutes": 6,
+        "activityType": "guided-practice",
+        "movementIds": [],
+        "familyIds": [],
+        "subsystem": "content-authoring",
+        "requiredCapabilities": [
+          "learning.scene-runtime",
+          "canonical-selectors-v1",
+          "viewport.selection",
+          "viewport.isolation",
+          "viewport.highlight",
+          "viewport.explode",
+          "viewport.camera",
+          "viewport.overlay.labels",
+          "timeline.scrub"
+        ],
+        "languages": [
+          "es-ES",
+          "en-US"
+        ],
+        "offline": true,
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K1",
+          "physics": "P0",
+          "limitations": [
+            "El modelo solo sirve como soporte neutral de autoría.",
+            "No se enseña ninguna propiedad relojera de la entidad."
+          ]
+        },
+        "warnings": {
+          "es": [
+            "Ejemplo de autoría: no es contenido relojero.",
+            "La escena valida contratos, no ingeniería."
+          ],
+          "en": [
+            "Authoring example: this is not watchmaking content.",
+            "The scene validates contracts, not engineering."
+          ]
+        },
+        "sourceIds": [
+          "source.authoring.system-contracts",
+          "source.authoring.original-guide"
+        ],
+        "visualResourceIds": [
+          "visual.authoring.selector-scene",
+          "visual.authoring.selector-text-alternative"
+        ],
+        "pedagogicalContract": {
+          "purpose": "guided-practice",
+          "assessmentIntent": "formative",
+          "requiresConceptIds": [
+            "concept.authoring.traceability"
+          ],
+          "introducesConceptIds": [],
+          "demonstratesConceptIds": [],
+          "practicesConceptIds": [
+            "concept.authoring.traceability"
+          ],
+          "assessesConceptIds": [
+            "concept.authoring.traceability"
+          ],
+          "evidenceLevel": "causal-explanation",
+          "supportLevel": "guided",
+          "remediation": {
+            "lessonId": "lesson.authoring.traceability",
+            "blockId": "explanation.authoring.traceability",
+            "conceptIds": [
+              "concept.authoring.traceability"
+            ]
+          },
+          "physicalBoundary": {
+            "es": "La actividad demuestra contratos de autoría sobre un modelo neutral; no acredita conocimiento ni destreza relojera.",
+            "en": "The activity demonstrates authoring contracts on a neutral model; it does not certify watchmaking knowledge or skill."
+          }
+        },
+        "pedagogicalPattern": {
+          "enabled": true,
+          "stages": [
+            "observe",
+            "predict",
+            "manipulate",
+            "execute-or-simulate",
+            "compare",
+            "explain",
+            "relate-to-real-object",
+            "check-understanding",
+            "record-evidence"
+          ]
+        }
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene.authoring.selector-walkthrough",
+      "version": "1.0.0",
+      "title": "Del storyboard al evento",
+      "description": "La escena aísla una entidad neutral, solicita una predicción y registra una selección confirmada. Alternativa textual: la entidad resuelta aparece en una lista seleccionable.",
+      "requiredCapabilities": [
+        "learning.scene-runtime@^1.0.0",
+        "canonical-selectors-v1@^1.0.0",
+        "viewport.selection@^1.0.0",
+        "viewport.isolation@^1.0.0",
+        "viewport.highlight@^1.0.0",
+        "viewport.explode@^1.0.0",
+        "viewport.camera@^1.0.0",
+        "viewport.overlay.labels@^1.0.0",
+        "timeline.scrub@^1.0.0"
+      ],
+      "camera": {
+        "position": [
+          4,
+          3,
+          5
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "projection": "perspective",
+        "fieldOfView": 42
+      },
+      "state": {
+        "selected": [],
+        "visible": [],
+        "hidden": [],
+        "isolated": [
+          {
+            "selector": {
+              "by": "role",
+              "value": "case"
+            },
+            "cardinality": "exactly-one"
+          }
+        ],
+        "transparent": [],
+        "highlighted": [
+          {
+            "selector": {
+              "by": "role",
+              "value": "case"
+            },
+            "cardinality": "exactly-one"
+          }
+        ],
+        "explode": 0,
+        "speed": 1
+      },
+      "timeline": [
+        {
+          "atMs": 0,
+          "operation": "highlight",
+          "targets": [
+            {
+              "selector": {
+                "by": "role",
+                "value": "case"
+              },
+              "cardinality": "exactly-one"
+            }
+          ],
+          "durationMs": 0,
+          "essential": false,
+          "waitFor": "none"
+        },
+        {
+          "atMs": 600,
+          "operation": "explode",
+          "targets": [],
+          "value": 0.12,
+          "durationMs": 500,
+          "essential": false,
+          "waitFor": "none"
+        },
+        {
+          "atMs": 1400,
+          "operation": "explode",
+          "targets": [],
+          "value": 0,
+          "durationMs": 500,
+          "essential": false,
+          "waitFor": "interaction"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "label",
+          "id": "overlay.authoring.selector",
+          "target": {
+            "selector": {
+              "by": "role",
+              "value": "case"
+            },
+            "cardinality": "exactly-one"
+          },
+          "text": "role:case",
+          "accessibleLabel": "Entidad neutral resuelta por el selector semántico role case."
+        },
+        {
+          "kind": "text",
+          "id": "overlay.authoring.scope",
+          "markdown": "Ejemplo de autoría. No describe una propiedad relojera.",
+          "accessibleLabel": "Ejemplo de autoría sin contenido relojero."
+        }
+      ],
+      "steps": [
+        {
+          "id": "step.authoring.predict",
+          "instructionMarkdown": "Predice qué selector es estable aunque cambie el idioma visible.",
+          "questions": [
+            {
+              "id": "question.authoring.predict-selector",
+              "promptMarkdown": "¿Qué selector expresa función semántica y no texto traducido?",
+              "responseKind": "single-choice",
+              "options": [
+                {
+                  "id": "option.label",
+                  "label": "Texto visible: Caja",
+                  "labels": {
+                    "es": "Texto visible: Caja",
+                    "en": "Visible text: Case"
+                  }
+                },
+                {
+                  "id": "option.role",
+                  "label": "Rol estable: case",
+                  "labels": {
+                    "es": "Rol estable: case",
+                    "en": "Stable role: case"
+                  }
+                }
+              ],
+              "authoring": {
+                "prompt": {
+                  "es": "¿Qué selector expresa función semántica y no texto traducido?",
+                  "en": "Which selector expresses semantic function rather than translated text?"
+                },
+                "feedback": {
+                  "es": "El rol es estable; la etiqueta visible puede localizarse.",
+                  "en": "The role is stable; the visible label can be localized."
+                }
+              }
+            }
+          ],
+          "success": [
+            {
+              "condition": "answer",
+              "questionId": "question.authoring.predict-selector",
+              "expectedOptionIds": [
+                "option.role"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "step.authoring.manipulate",
+          "instructionMarkdown": "Selecciona en la lista accesible la entidad resuelta por `role:case`.",
+          "questions": [],
+          "success": [
+            {
+              "condition": "selected",
+              "target": {
+                "selector": {
+                  "by": "role",
+                  "value": "case"
+                },
+                "cardinality": "exactly-one"
+              }
+            }
+          ]
+        },
+        {
+          "id": "step.authoring.explain",
+          "instructionMarkdown": "Confirma que interacción, evento, evidencia y rúbrica conservan el mismo ID de competencia.",
+          "questions": [],
+          "success": [
+            {
+              "condition": "step-confirmed"
+            }
+          ]
+        }
+      ],
+      "storyboard": {
+        "sceneName": {
+          "es": "Del storyboard al evento",
+          "en": "From storyboard to event"
+        },
+        "purpose": {
+          "es": "Hacer visible la cadena editorial sin enseñar el funcionamiento de una pieza.",
+          "en": "Make the editorial chain visible without teaching how a part works."
+        },
+        "prerequisites": [
+          "concept.authoring.traceability"
+        ],
+        "narrative": {
+          "es": "El autor primero predice el selector estable, luego manipula la entidad y finalmente explica qué se convertirá en evidencia.",
+          "en": "The author first predicts the stable selector, then manipulates the entity and finally explains what becomes evidence."
+        },
+        "initialFraming": {
+          "es": "Encuadre isométrico; entidad neutral aislada y etiquetada con su rol.",
+          "en": "Isometric framing; neutral entity isolated and labelled with its role."
+        },
+        "protagonist": {
+          "selector": {
+            "by": "role",
+            "value": "case"
+          },
+          "cardinality": "exactly-one"
+        },
+        "secondaryParts": [],
+        "sequence": [
+          {
+            "id": "storyboard.authoring.predict",
+            "sceneStepId": "step.authoring.predict",
+            "narrative": {
+              "es": "Presentar dos formas de identificar la entidad.",
+              "en": "Present two ways to identify the entity."
+            },
+            "timelineIndexes": [
+              0
+            ],
+            "runtimeActions": [
+              "highlight",
+              "overlay"
+            ],
+            "interaction": {
+              "es": "Elegir una respuesta única.",
+              "en": "Choose one answer."
+            },
+            "feedback": {
+              "es": "Explicar por qué el rol sobrevive a la localización.",
+              "en": "Explain why the role survives localization."
+            },
+            "expectedError": {
+              "es": "Elegir la etiqueta visible.",
+              "en": "Choose the visible label."
+            },
+            "hint": {
+              "es": "Busca el dato que no cambia entre español e inglés.",
+              "en": "Look for the value that does not change between Spanish and English."
+            }
+          },
+          {
+            "id": "storyboard.authoring.manipulate",
+            "sceneStepId": "step.authoring.manipulate",
+            "narrative": {
+              "es": "Aplicar una selección semántica.",
+              "en": "Apply a semantic selection."
+            },
+            "timelineIndexes": [
+              1,
+              2
+            ],
+            "runtimeActions": [
+              "explode",
+              "select"
+            ],
+            "interaction": {
+              "es": "Seleccionar mediante lista o viewport.",
+              "en": "Select using the list or viewport."
+            },
+            "feedback": {
+              "es": "Mostrar el estado seleccionado también en texto.",
+              "en": "Show the selected state in text as well."
+            }
+          },
+          {
+            "id": "storyboard.authoring.explain",
+            "sceneStepId": "step.authoring.explain",
+            "narrative": {
+              "es": "Relacionar la interacción con la regla de evidencia.",
+              "en": "Relate the interaction to the evidence rule."
+            },
+            "timelineIndexes": [],
+            "runtimeActions": [
+              "confirm-selection",
+              "complete"
+            ],
+            "interaction": {
+              "es": "Confirmar el paso.",
+              "en": "Confirm the step."
+            },
+            "feedback": {
+              "es": "Enumerar evento, evidencia y rúbrica.",
+              "en": "List event, evidence and rubric."
+            }
+          }
+        ],
+        "ending": {
+          "es": "La vista de resultados muestra evidencia y evaluación explicables.",
+          "en": "The results view shows explainable evidence and assessment."
+        },
+        "restoration": {
+          "es": "Restaurar el snapshot de presentación capturado antes de la escena.",
+          "en": "Restore the presentation snapshot captured before the scene."
+        },
+        "accessibility": {
+          "es": "Todos los pasos se completan mediante controles nativos y una lista textual equivalente.",
+          "en": "All steps can be completed with native controls and an equivalent text list."
+        },
+        "reducedMotion": {
+          "es": "Las transiciones de explosionado se reducen a cambios instantáneos.",
+          "en": "Exploded-view transitions become instant state changes."
+        },
+        "evidenceTemplateIds": [
+          "evidence.authoring.selection"
+        ],
+        "technicalCriteria": [
+          "El selector debe resolver exactamente una entidad.",
+          "La escena debe restaurar el estado anterior.",
+          "La evidencia debe proceder de selection-confirmed."
+        ],
+        "limitations": [
+          "El modelo se usa como soporte neutral.",
+          "No contiene datos MIYOTA ni del libro privado."
+        ]
+      },
+      "restorePreviousState": true
+    }
+  ],
+  "competencies": [
+    {
+      "id": "competency.authoring.traceable-activity",
+      "version": "1.0.0",
+      "title": "Redactar una actividad trazable",
+      "description": "Relaciona intención, fuente, selector, interacción, evidencia y rúbrica sin introducir lógica en la interfaz.",
+      "prerequisites": [],
+      "authoring": {
+        "title": {
+          "es": "Redactar una actividad trazable",
+          "en": "Author a traceable activity"
+        },
+        "description": {
+          "es": "Relaciona intención, fuente, selector, interacción, evidencia y rúbrica.",
+          "en": "Relate intent, source, selector, interaction, evidence and rubric."
+        },
+        "movementIds": [],
+        "subsystem": "content-authoring",
+        "skillType": "procedure",
+        "sourceIds": [
+          "source.authoring.system-contracts",
+          "source.authoring.original-guide"
+        ]
+      }
+    }
+  ],
+  "evidenceTemplates": [
+    {
+      "id": "evidence.authoring.selection",
+      "version": "1.0.0",
+      "competencyId": "competency.authoring.traceable-activity",
+      "kind": "answer",
+      "scoringMethod": "binary",
+      "extraction": {
+        "id": "evidence.authoring.selection-confirmed",
+        "version": "1.0.0",
+        "triggerEventType": "selection-confirmed",
+        "evidenceType": "selection",
+        "competencyId": "competency.authoring.traceable-activity",
+        "minimumSessionState": [
+          "active",
+          "paused",
+          "completed"
+        ],
+        "confidence": 1,
+        "contentFields": [
+          "sceneId",
+          "entityIds"
+        ]
+      }
+    }
+  ],
+  "rubrics": [
+    {
+      "id": "rubric.authoring.traceable-activity",
+      "version": "1.0.0",
+      "competencyId": "competency.authoring.traceable-activity",
+      "rules": [
+        {
+          "id": "rule.authoring.traceable.introduced",
+          "version": "1.0.0",
+          "targetState": "introduced",
+          "acceptedEvidenceKinds": [
+            "answer"
+          ],
+          "minimumEvidence": 1,
+          "minimumScore": 1,
+          "minimumDistinctSessions": 1,
+          "minimumSpanDays": 0,
+          "explanationTemplate": "La interacción confirmada introduce la relación entre selector y evidencia."
+        }
+      ],
+      "assessmentRule": {
+        "id": "rule.authoring.traceable.demonstrated",
+        "version": "1.0.0",
+        "competencyId": "competency.authoring.traceable-activity",
+        "targetState": "demonstrated",
+        "condition": {
+          "op": "all",
+          "conditions": [
+            {
+              "op": "exists",
+              "filter": {
+                "evidenceType": "selection",
+                "status": "active",
+                "minimumConfidence": 1
+              }
+            },
+            {
+              "op": "minimum-evidence",
+              "count": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "id": "term.authoring.selector",
+      "version": "1.0.0",
+      "term": "Selector semántico",
+      "definitionMarkdown": "Referencia declarativa que resuelve entidades por identidad, rol, subsistema u otra propiedad estable.",
+      "language": "es-ES",
+      "authoring": {
+        "terms": {
+          "es": "Selector semántico",
+          "en": "Semantic selector"
+        },
+        "synonyms": {
+          "es": [
+            "selector canónico"
+          ],
+          "en": [
+            "canonical selector"
+          ]
+        },
+        "discouragedTerms": [
+          "índice de pieza",
+          "piece index"
+        ],
+        "context": {
+          "es": "Se utiliza en escenas y criterios para evitar depender del orden o de etiquetas traducidas.",
+          "en": "Used in scenes and criteria to avoid depending on order or translated labels."
+        },
+        "sourceIds": [
+          "source.authoring.system-contracts"
+        ]
+      }
+    },
+    {
+      "id": "term.authoring.fidelity",
+      "version": "1.0.0",
+      "term": "Fidelidad G/K/P",
+      "definitionMarkdown": "Declaración separada de fidelidad geométrica, cinemática y física, acompañada de limitaciones.",
+      "language": "es-ES",
+      "authoring": {
+        "terms": {
+          "es": "Fidelidad G/K/P",
+          "en": "G/K/P fidelity"
+        },
+        "synonyms": {
+          "es": [],
+          "en": []
+        },
+        "discouragedTerms": [
+          "precisión total",
+          "total accuracy"
+        ],
+        "context": {
+          "es": "Describe qué puede afirmarse de una explicación o escena en tres ejes independientes.",
+          "en": "Describes what an explanation or scene can claim across three independent axes."
+        },
+        "sourceIds": [
+          "source.authoring.system-contracts"
+        ]
+      }
+    },
+    {
+      "id": "term.authoring.claim",
+      "version": "1.0.0",
+      "term": "Afirmación técnica",
+      "definitionMarkdown": "Proposición clasificable cuya fuente, método, fidelidad y limitaciones pueden inspeccionarse.",
+      "language": "es-ES",
+      "authoring": {
+        "terms": {
+          "es": "Afirmación técnica",
+          "en": "Technical claim"
+        },
+        "synonyms": {
+          "es": [
+            "claim"
+          ],
+          "en": [
+            "claim"
+          ]
+        },
+        "discouragedTerms": [],
+        "context": {
+          "es": "No toda frase pedagógica necesita ser oficial, pero toda afirmación técnica debe declarar su clasificación.",
+          "en": "Not every pedagogical sentence must be official, but every technical claim must declare its classification."
+        },
+        "sourceIds": [
+          "source.authoring.original-guide"
+        ]
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "source.authoring.system-contracts",
+      "authority": "original-educational",
+      "usage": "shareable",
+      "resource": {
+        "kind": "note",
+        "title": "Contratos aprobados de Aprender, Sistemas 0–3",
+        "locator": "docs/APRENDER-SISTEMA-3.md"
+      },
+      "authorOrManufacturer": "Watch Prototype Lab",
+      "edition": "Sistemas 0–3",
+      "year": 2026,
+      "sourceType": "original-educational-content",
+      "revision": "1.0",
+      "chapter": "Contratos de contenido y runtime",
+      "retrievedAt": "2026-07-23",
+      "privateUse": false,
+      "editorialComment": "Fuente interna para enseñar autoría; no contiene afirmaciones relojeras.",
+      "supportedClaim": "El paquete separa contenido declarativo, runtime, persistencia y presentación.",
+      "derivedLayer": "source"
+    },
+    {
+      "id": "source.authoring.original-guide",
+      "authority": "original-educational",
+      "usage": "shareable",
+      "resource": {
+        "kind": "note",
+        "title": "Guía original de autoría de contenido",
+        "locator": "docs/APRENDER-AUTORIA-CONTENIDO.md"
+      },
+      "authorOrManufacturer": "Watch Prototype Lab",
+      "edition": "1",
+      "year": 2026,
+      "sourceType": "original-educational-content",
+      "revision": "1.0",
+      "chapter": "Flujo Observar–Predecir–Manipular",
+      "retrievedAt": "2026-07-23",
+      "privateUse": false,
+      "editorialComment": "Explicación original destinada a autores no técnicos.",
+      "supportedClaim": "Un storyboard puede enlazar intención pedagógica con acciones declarativas del runtime.",
+      "derivedLayer": "source"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "recommendation.authoring.review-storyboard",
+      "version": "1.0.0",
+      "kind": "continue-route",
+      "title": {
+        "es": "Revisar el storyboard después de ejecutar",
+        "en": "Review the storyboard after execution"
+      },
+      "reason": {
+        "es": "Comparar el resultado observado con la intención escrita permite detectar contratos incompletos.",
+        "en": "Comparing the observed result with the written intent helps detect incomplete contracts."
+      },
+      "rule": "authoring-activity-completed-before-storyboard-review@1.0.0",
+      "priority": 50,
+      "target": {
+        "kind": "route",
+        "id": "route.authoring-first-package"
+      },
+      "evidenceTemplateIds": [
+        "evidence.authoring.selection"
+      ],
+      "required": false
+    }
+  ],
+  "visualResources": [
+    {
+      "id": "visual.authoring.selector-scene",
+      "version": "1.0.0",
+      "type": "conceptual-3d",
+      "purpose": {
+        "es": "Mostrar la resolución de un selector semántico sobre una entidad neutral del proyecto activo.",
+        "en": "Show semantic selector resolution on a neutral entity in the active project."
+      },
+      "status": "ready",
+      "sourceIds": [
+        "source.authoring.system-contracts"
+      ],
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K1",
+        "physics": "P0",
+        "limitations": [
+          "Geometría procedente del proyecto activo.",
+          "Movimiento meramente ilustrativo."
+        ]
+      },
+      "lessonIds": [
+        "lesson.authoring.traceability"
+      ],
+      "movementIds": [],
+      "partSelectors": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "case"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "requiredCapabilities": [
+        "viewport.selection",
+        "viewport.isolation",
+        "viewport.highlight",
+        "viewport.explode",
+        "viewport.camera"
+      ],
+      "dataRequirements": [
+        "Una entidad del proyecto con el rol semántico case."
+      ],
+      "priority": "high",
+      "dependencyIds": [
+        "visual.authoring.selector-text-alternative"
+      ],
+      "currentModelSupport": "yes",
+      "viewportImpact": "configuration"
+    },
+    {
+      "id": "visual.authoring.selector-text-alternative",
+      "version": "1.0.0",
+      "type": "accessible-text-alternative",
+      "purpose": {
+        "es": "Enumerar la entidad resuelta, su identidad y estado de selección sin depender del viewport.",
+        "en": "List the resolved entity, identity and selection state without relying on the viewport."
+      },
+      "status": "approved",
+      "sourceIds": [
+        "source.authoring.original-guide"
+      ],
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K0",
+        "physics": "P0",
+        "limitations": [
+          "Alternativa semántica; no intenta reproducir geometría."
+        ]
+      },
+      "lessonIds": [
+        "lesson.authoring.traceability"
+      ],
+      "movementIds": [],
+      "partSelectors": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "case"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "requiredCapabilities": [
+        "canonical-selectors-v1"
+      ],
+      "dataRequirements": [
+        "Etiqueta accesible e ID estable de la entidad resuelta."
+      ],
+      "priority": "critical",
+      "dependencyIds": [],
+      "currentModelSupport": "yes",
+      "viewportImpact": "none"
+    }
+  ]
+}

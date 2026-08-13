@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado",
+  "version": "1.1.0",
+  "title": "Cuaderno: Pulido, satinado, cepillado y geometría",
+  "description": "¿Cómo se crea una textura controlada sin perder forma ni referencias?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Pulido, satinado, cepillado y geometría. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se crea una textura controlada sin perder forma ni referencias?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se crea una textura controlada sin perder forma ni referencias?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.answer",
+      "instructionMarkdown": "Explica **Pulido, satinado, cepillado y geometría** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.explain",
+          "promptMarkdown": "¿Cómo se crea una textura controlada sin perder forma ni referencias?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por documentar forma y sigue hasta inspeccionar bajo luces múltiples.",
+                "en": "Empieza por documentar forma y sigue hasta inspeccionar bajo luces múltiples."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El pulido reduce dispersión y marcas; satinado y cepillado crean dirección mediante abrasión controlada. Secuencia de granos, soporte, presión, velocidad, limpieza y enmascarado determinan superficie. La prioridad es conservar planos, aristas, espesores y función antes que maximizar brillo.",
+                "en": "El pulido reduce dispersión y marcas; satinado y cepillado crean dirección mediante abrasión controlada. Secuencia de granos, soporte, presión, velocidad, limpieza y enmascarado determinan superficie. La prioridad es conservar planos, aristas, espesores y función antes que maximizar brillo."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se crea una textura controlada sin perder forma ni referencias?",
+              "en": "¿Cómo se crea una textura controlada sin perder forma ni referencias?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena documentar forma → nivelar solo si está autorizado → progresar abrasivos → limpiar entre granos → generar textura final → inspeccionar bajo luces múltiples, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena documentar forma → nivelar solo si está autorizado → progresar abrasivos → limpiar entre granos → generar textura final → inspeccionar bajo luces múltiples, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.mechanism",
+            "field.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.evidence",
+            "field.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.limit",
+            "field.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

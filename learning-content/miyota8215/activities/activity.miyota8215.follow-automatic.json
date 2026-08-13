@@ -1,0 +1,420 @@
+{
+  "id": "activity.miyota8215.follow-automatic",
+  "version": "0.5.0",
+  "title": "Seguir la carga automática",
+  "sceneIds": [
+    "scene.practice.miyota8215.follow-automatic"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.explain-automatic"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.miyota8215.explain-automatic"
+  ],
+  "rubricId": "rubric.miyota8215.explain-automatic",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.miyota.8215.structural"
+  },
+  "authoring": {
+    "lessonId": "lesson.miyota8215.automatic",
+    "title": {
+      "es": "Seguir la carga automática",
+      "en": "Seguir la carga automática"
+    },
+    "description": {
+      "es": "Seguir la carga automática con identidad, autoridad, dependencias, evidencia y restauración.",
+      "en": "Seguir la carga automática con identidad, autoridad, dependencias, evidencia y restauración."
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 16,
+    "activityType": "guided-practice",
+    "movementIds": [
+      "fixture.miyota.8215.structural",
+      "fixture.conceptual.mechanical-chain"
+    ],
+    "familyIds": [
+      "miyota-82"
+    ],
+    "subsystem": "automatic",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física.",
+        "La ruta interna contiene relaciones inferidas de confianza baja; no se inventan eficiencia ni pérdidas."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.miyota.8215.product-page",
+      "source.miyota.8215.specification",
+      "source.miyota.8215.drawing",
+      "source.miyota.8215.instruction-manual",
+      "source.miyota.8215.parts-list-exploded-view",
+      "source.horology.original-miyota8215"
+    ],
+    "visualResourceIds": [
+      "visual.miyota8215.automatic"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.miyota.8215.structural"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.miyota8215.follow-automatic.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Qué recorrido funcional sigue la carga automática?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.follow-automatic.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Sigue cada engrane o interfaz hasta el estado de carga."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.follow-automatic.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: El rotor aporta una entrada al sistema de carga; no entrega directamente a la indicación."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.follow-automatic.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.follow-automatic.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "El rotor aporta una entrada al sistema de carga; no entrega directamente a la indicación."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.follow-automatic.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Compara con la ruta de cuerda manual."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "calibre-lab-command",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [
+          "instance-id",
+          "authority",
+          "dependency",
+          "state",
+          "fixture-version"
+        ],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "automatic",
+      "commands": [
+        "inspect",
+        "select-subsystem",
+        "change-view",
+        "introduce-fault",
+        "restore"
+      ],
+      "viewModes": [
+        "normal",
+        "step-by-step",
+        "compare-8215",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "check-understanding",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "El rotor aporta una entrada al sistema de carga; no entrega directamente a la indicación."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «Rotor → calendario → agujas → escape» y «Barrilete → rotor → corona → esfera» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Qué recorrido funcional sigue la carga automática?"
+      },
+      "nextObservation": {
+        "es": "Sigue cada engrane o interfaz hasta el estado de carga."
+      },
+      "misconceptionIds": [
+        "misconception.miyota8215.hidden-subsystem-is-new-calibre"
+      ],
+      "transferPrompt": {
+        "es": "Compara con la ruta de cuerda manual."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.miyota8215.recognize-subsystems",
+        "concept.miyota8215.explain-automatic"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Seguir la carga automática», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Seguir la carga automática», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué recorrido funcional sigue la carga automática?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Sigue cada engrane o interfaz hasta el estado de carga."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Seguir la carga automática»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: El rotor aporta una entrada al sistema de carga; no entrega directamente a la indicación."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "El rotor aporta una entrada al sistema de carga; no entrega directamente a la indicación."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Seguir la carga automática» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Seguir la carga automática» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Seguir la carga automática» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Compara con la ruta de cuerda manual."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "Rotor → transmisión automática → entrada de carga del barrilete"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Rotor → calendario → agujas → escape"
+        },
+        {
+          "es": "Barrilete → rotor → corona → esfera"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Compara con la ruta de cuerda manual."
+        }
+      },
+      "transferPrompt": {
+        "es": "Compara con la ruta de cuerda manual."
+      }
+    },
+    "calibreLabContract": {
+      "fixtureId": "fixture.miyota.8215.structural",
+      "modes": [
+        "guided"
+      ],
+      "subsystemIds": [
+        "subsystem.8215.automatic"
+      ],
+      "operationPhases": [
+        "documentation",
+        "verification"
+      ],
+      "authorityVisible": true,
+      "instanceIdentityRequired": true,
+      "contextualMechanicalLabs": [
+        "automatic"
+      ],
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalContract": {
+      "purpose": "worked-example",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.miyota8215.recognize-subsystems"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [
+        "concept.miyota8215.explain-automatic"
+      ],
+      "practicesConceptIds": [
+        "concept.miyota8215.explain-automatic"
+      ],
+      "assessesConceptIds": [
+        "concept.miyota8215.explain-automatic"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "full",
+      "remediation": {
+        "lessonId": "lesson.miyota8215.automatic",
+        "blockId": "block.miyota8215.automatic",
+        "conceptIds": [
+          "concept.miyota8215.explain-automatic"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba reconocimiento o decisiones dentro de una reconstrucción educativa del MIYOTA 8215. No certifica destreza de taller, ajuste, lubricación, tolerancias ni el estado de una unidad física.",
+        "en": "This activity checks recognition or decisions in an educational reconstruction of the MIYOTA 8215. It does not certify bench skill, adjustment, lubrication, tolerances, or the condition of a physical unit."
+      }
+    }
+  }
+}

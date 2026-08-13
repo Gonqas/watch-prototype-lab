@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.history-language.medir-el-tiempo",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Medir el tiempo: referencia, oscilador y contador",
+  "sceneIds": [
+    "scene.encyclopedia.history-language.medir-el-tiempo"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.history-language.medir-el-tiempo"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.history-language.medir-el-tiempo"
+  ],
+  "rubricId": "rubric.encyclopedia.history-language.medir-el-tiempo",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+    "title": {
+      "es": "Explicar y transferir: Medir el tiempo: referencia, oscilador y contador",
+      "en": "Explicar y transferir: Medir el tiempo: referencia, oscilador y contador"
+    },
+    "description": {
+      "es": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?",
+      "en": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?"
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "timekeeping-principles",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.external.horology-student.books",
+      "source.external.hodinkee-watch101",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+        "blockId": "block.encyclopedia.history-language.medir-el-tiempo",
+        "conceptIds": [
+          "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+          "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+          "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Medir el tiempo: referencia, oscilador y contador sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Medir el tiempo: referencia, oscilador y contador sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Compara un reloj mecánico y uno de cuarzo. Ambos necesitan energía, referencia, conteo e indicación, pero el primero mantiene un volante mediante escape y el segundo excita un resonador y divide electrónicamente su señal. Que ambos tengan agujas no vuelve iguales sus reguladores; que uno sea digital no elimina el oscilador.",
+          "en": "Compara un reloj mecánico y uno de cuarzo. Ambos necesitan energía, referencia, conteo e indicación, pero el primero mantiene un volante mediante escape y el segundo excita un resonador y divide electrónicamente su señal. Que ambos tengan agujas no vuelve iguales sus reguladores; que uno sea digital no elimina el oscilador."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?",
+            "en": "Identificar la pregunta: ¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?"
+          },
+          {
+            "es": "Dibujar la secuencia aportar energía → mantener una referencia repetitiva → contar o dividir ciclos → transmitir el conteo → mostrar una lectura.",
+            "en": "Dibujar la secuencia aportar energía → mantener una referencia repetitiva → contar o dividir ciclos → transmitir el conteo → mostrar una lectura."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: periodo T y frecuencia f=1/T; estabilidad de frecuencia; resolución de la indicación; autonomía y consumo.",
+            "en": "Asignar magnitudes y evidencia: periodo T y frecuencia f=1/T; estabilidad de frecuencia; resolución de la indicación; autonomía y consumo."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Dibuja el mismo diagrama funcional para un péndulo, un 8215, un cuarzo analógico y un cronómetro digital; marca qué cambia y qué función permanece.",
+          "en": "Dibuja el mismo diagrama funcional para un péndulo, un 8215, un cuarzo analógico y un cronómetro digital; marca qué cambia y qué función permanece."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: aportar energía → mantener una referencia repetitiva → contar o dividir ciclos → transmitir el conteo → mostrar una lectura.",
+            "en": "Completa la cadena con las etapas visibles: aportar energía → mantener una referencia repetitiva → contar o dividir ciclos → transmitir el conteo → mostrar una lectura."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?",
+            "en": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Dibuja el mismo diagrama funcional para un péndulo, un 8215, un cuarzo analógico y un cronómetro digital; marca qué cambia y qué función permanece.",
+            "en": "Dibuja el mismo diagrama funcional para un péndulo, un 8215, un cuarzo analógico y un cronómetro digital; marca qué cambia y qué función permanece."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Un reloj es simplemente un conjunto de ruedas que gira",
+          "en": "Un reloj es simplemente un conjunto de ruedas que gira"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Medir el tiempo: referencia, oscilador y contador con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Medir el tiempo: referencia, oscilador y contador con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Dibuja el mismo diagrama funcional para un péndulo, un 8215, un cuarzo analógico y un cronómetro digital; marca qué cambia y qué función permanece.",
+        "en": "Dibuja el mismo diagrama funcional para un péndulo, un 8215, un cuarzo analógico y un cronómetro digital; marca qué cambia y qué función permanece."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena aportar energía → mantener una referencia repetitiva → contar o dividir ciclos → transmitir el conteo → mostrar una lectura, su evidencia y límites.",
+        "en": "La explicación conserva la cadena aportar energía → mantener una referencia repetitiva → contar o dividir ciclos → transmitir el conteo → mostrar una lectura, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Un reloj es simplemente un conjunto de ruedas que gira».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Un reloj es simplemente un conjunto de ruedas que gira»."
+      },
+      "causalQuestion": {
+        "es": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?",
+        "en": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Llamar oscilador al tren de ruedas porque se mueve. de Juzgar precisión únicamente por el número de piezas o por el tipo de indicación..",
+        "en": "Busca evidencia para distinguir Llamar oscilador al tren de ruedas porque se mueve. de Juzgar precisión únicamente por el número de piezas o por el tipo de indicación.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "transferPrompt": {
+        "es": "Dibuja el mismo diagrama funcional para un péndulo, un 8215, un cuarzo analógico y un cronómetro digital; marca qué cambia y qué función permanece.",
+        "en": "Dibuja el mismo diagrama funcional para un péndulo, un 8215, un cuarzo analógico y un cronómetro digital; marca qué cambia y qué función permanece."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?",
+          "en": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?"
+        },
+        {
+          "es": "¿Qué relación causal de «Medir el tiempo: referencia, oscilador y contador» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Medir el tiempo: referencia, oscilador y contador» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

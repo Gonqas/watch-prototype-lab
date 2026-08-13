@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Preview · Fundamentos del reloj mecánico</title>
+<style>body{font:16px/1.55 system-ui;max-width:1200px;margin:auto;padding:2rem;color:#18201c;background:#f5f3ec}header,section,details{background:white;border:1px solid #d8d4c7;padding:1.25rem;margin:1rem 0}code{background:#e9ece7;padding:.15rem .35rem}pre{white-space:pre-wrap;font:14px/1.5 system-ui;background:#f5f3ec;padding:1rem}table{width:100%;border-collapse:collapse}th,td{border:1px solid #d8d4c7;padding:.55rem;text-align:left;vertical-align:top}.error{color:#9b1c1c}.warning{color:#855700}.badge{display:inline-block;border:1px solid;padding:.2rem .5rem;margin-right:.5rem}</style>
+</head><body><header><p>PREVISUALIZACIÓN DE AUTORÍA</p><h1>Fundamentos del reloj mecánico</h1><p><code>wplab.horology.mechanical-foundations@0.1.0</code></p><p>Esta vista no sustituye la ejecución en Watch Prototype Lab.</p></header>
+<section><span class="badge">in-review</span><span class="badge">local-unsigned</span><span class="badge">es-ES</span><h2>Jerarquía</h2><section><h2>Fundamentos del reloj mecánico</h2><p>Construir una comprensión visual, calculable y diagnosticable de un movimiento mecánico conceptual.</p><ul><li><strong>De energía almacenada a movimiento</strong><ul><li><strong>De energía almacenada a movimiento</strong><ul><li>Clasificar energía, transmisión, regulación e indicación</li><li>Activar, bloquear y restaurar la cadena energética</li></ul></li></ul></li><li><strong>Muelle real y barrilete</strong><ul><li><strong>Muelle real y barrilete</strong><ul><li>Cargar y descargar un barrilete</li><li>Identificar partes del barrilete</li></ul></li></ul></li><li><strong>Ruedas, piñones y engrane</strong><ul><li><strong>Ruedas, piñones y engrane</strong><ul><li>Predecir el sentido de un par de ruedas</li><li>Calcular la relación de un par</li><li>Detectar un engrane imposible</li></ul></li></ul></li><li><strong>Construir un tren de rodaje</strong><ul><li><strong>Construir un tren de rodaje</strong><ul><li>Construir un tren</li><li>Calcular la relación total</li><li>Bloquear o retirar una etapa y explicar el resultado</li></ul></li></ul></li><li><strong>Pivotes, rubíes, puentes y libertad</strong><ul><li><strong>Pivotes, rubíes, puentes y libertad</strong><ul><li>Identificar pivotes y apoyos</li><li>Detectar una rueda mal asentada</li></ul></li></ul></li><li><strong>El escape de áncora suizo</strong><ul><li><strong>El escape de áncora suizo</strong><ul><li>Ordenar las fases del escape</li><li>Identificar bloqueo, impulso y caída</li></ul></li></ul></li><li><strong>Volante y espiral</strong><ul><li><strong>Volante y espiral</strong><ul><li>Diferenciar frecuencia y amplitud</li><li>Configurar frecuencia y amplitud conceptual</li></ul></li></ul></li><li><strong>Escape y oscilador como sistema</strong><ul><li><strong>Escape y oscilador como sistema</strong><ul><li>Relacionar escape y oscilador</li><li>Predecir una interrupción del sistema</li></ul></li></ul></li><li><strong>Minutería e indicación</strong><ul><li><strong>Minutería e indicación</strong><ul><li>Construir la minutería</li><li>Ajustar una indicación horaria</li></ul></li></ul></li><li><strong>Cuerda y puesta en hora</strong><ul><li><strong>Cuerda y puesta en hora</strong><ul><li>Reconstruir estados de la tija</li><li>Distinguir cuerda y puesta en hora</li></ul></li></ul></li><li><strong>Carga automática y calendario básico</strong><ul><li><strong>Carga automática y calendario básico</strong><ul><li>Seguir la carga automática</li><li>Explicar el cambio de fecha</li></ul></li></ul></li><li><strong>Integración y proyecto final</strong><ul><li><strong>Integración y proyecto final</strong><ul><li>Introducir un fallo</li><li>Formular una hipótesis y una prueba</li><li>Construir el proyecto final</li><li>Comparar el conceptual con el 8215</li><li>Documentar limitaciones y pruebas pendientes</li></ul></li></ul></li></ul></section></section>
+<section><h2>Lecciones, texto y claims</h2><details><summary><strong>De energía almacenada a movimiento</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>De energía almacenada a movimiento</h3><pre>## Propósito
+
+Distinguir energía, movimiento, transmisión, ritmo y pérdida conceptual dentro del reloj.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+La energía almacenada en el muelle no es todavía indicación ni ritmo. Al liberarse, el barrilete entrega rotación al tren; el escape controla la liberación y repone energía al oscilador; la minutería deriva una rama de indicación. Bloquear un tramo muestra qué queda aguas arriba y aguas abajo, sin convertir la energía normalizada en julios o par real.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.mainsprings; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Distinguir energía, movimiento, transmisión, ritmo y pérdida conceptual dentro del reloj. Continúa con “Muelle real y barrilete”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.energy · source/original-explanation · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.mainsprings</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.energy</li></ul>
+    </details><details><summary><strong>Muelle real y barrilete</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Muelle real y barrilete</h3><pre>## Propósito
+
+Relacionar muelle, árbol, tambor, tapa, carga, descarga y reserva conceptual.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+El laboratorio separa muelle, árbol, tambor y tapa. La carga cambia una magnitud normalizada; la deformación visual es didáctica y la reserva deriva únicamente de entradas simplificadas. La brida deslizante se presenta como familia conceptual de ciertos automáticos, no como propiedad universal.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.mainsprings; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Relacionar muelle, árbol, tambor, tapa, carga, descarga y reserva conceptual. Continúa con “Ruedas, piñones y engrane”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.barrel · source/original-explanation · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.mainsprings</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.barrel</li></ul>
+    </details><details><summary><strong>Ruedas, piñones y engrane</strong> · 1 claims · 3 actividades</summary>
+      <article><h3>Ruedas, piñones y engrane</h3><pre>## Propósito
+
+Calcular una relación ideal, predecir sentido y diagnosticar un engrane imposible.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+Para un engrane externo ideal, las vueltas de la conducida por vuelta de la conductora son Z conductora dividido entre Z conducida y el sentido se invierte. Una rueda intermedia cambia el sentido final sin cambiar por sí sola el módulo de la relación total. La distancia entre centros se valida como estado geométrico conceptual, no mediante perfiles reales.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.wheels-pinions; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Calcular una relación ideal, predecir sentido y diagnosticar un engrane imposible. Continúa con “Construir un tren de rodaje”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.gear-pair · calculation/calculated · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.wheels-pinions</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.gear-pair</li></ul>
+    </details><details><summary><strong>Construir un tren de rodaje</strong> · 1 claims · 3 actividades</summary>
+      <article><h3>Construir un tren de rodaje</h3><pre>## Propósito
+
+Componer etapas, calcular reducción acumulada y observar interrupciones.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+Cada etapa conserva identidad, dientes educativos, tipo de engrane, dirección y estado. La relación total es el producto exacto de las etapas declaradas. Retirar o desengranar una etapa produce una salida interrumpida; no se atribuyen los conteos de dientes al 8215.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.wheels-pinions, source.horology.private-book.movement-design; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Componer etapas, calcular reducción acumulada y observar interrupciones. Continúa con “Pivotes, rubíes, puentes y libertad”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.train · calculation/calculated · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.wheels-pinions</li><li>source.horology.private-book.movement-design</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.train</li></ul>
+    </details><details><summary><strong>Pivotes, rubíes, puentes y libertad</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Pivotes, rubíes, puentes y libertad</h3><pre>## Propósito
+
+Reconocer apoyos superior e inferior y diferenciar libertad de desalineación.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+Una rueda necesita apoyos coherentes en platina y puente. El laboratorio exagera pivote fuera del rubí, exceso axial, ausencia de libertad y roce para hacerlos visibles. Endshake y sideshake se explican cualitativamente; no reciben tolerancias reales.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.jewelling, source.horology.private-book.movement-design; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Reconocer apoyos superior e inferior y diferenciar libertad de desalineación. Continúa con “El escape de áncora suizo”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.supports · source/original-explanation · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.jewelling</li><li>source.horology.private-book.movement-design</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.supports</li></ul>
+    </details><details><summary><strong>El escape de áncora suizo</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>El escape de áncora suizo</h3><pre>## Propósito
+
+Ordenar bloqueo, desbloqueo, impulso y caída sin formar para un ajuste físico.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+Ocho estados discretos representan la alternancia izquierda y derecha: bloqueo, desbloqueo, impulso y caída. El timeline puede pausarse, retroceder y avanzar de fase. Las zonas de contacto son conceptuales; no se inventan ángulos, penetraciones, draw, pérdidas ni lubricación.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.escapements; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Ordenar bloqueo, desbloqueo, impulso y caída sin formar para un ajuste físico. Continúa con “Volante y espiral”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.escapement · source/original-explanation · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.escapements</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.escapement</li></ul>
+    </details><details><summary><strong>Volante y espiral</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Volante y espiral</h3><pre>## Propósito
+
+Distinguir frecuencia, periodo y amplitud mediante un modelo normalizado.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+La frecuencia fija el periodo ideal T=1/f; las alternancias por hora son f×2×3600. La amplitud cambia de forma independiente en el laboratorio. Modificar la longitud activa es una acción simbólica: no se resuelve la dinámica de una espiral real ni se deduce marcha.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.balance-spring; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Distinguir frecuencia, periodo y amplitud mediante un modelo normalizado. Continúa con “Escape y oscilador como sistema”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.oscillator · calculation/calculated · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.balance-spring</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.oscillator</li></ul>
+    </details><details><summary><strong>Escape y oscilador como sistema</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Escape y oscilador como sistema</h3><pre>## Propósito
+
+Explicar cómo tren, escape y oscilador cooperan sin diagnosticar una causa única.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+El tren aporta energía; el escape bloquea, libera e impulsa; el oscilador establece el ritmo y recibe reposición energética. Una amplitud baja puede tener múltiples causas. Los casos separan síntoma, hipótesis, prueba y conclusión permitida.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.escapements, source.horology.private-book.balance-spring; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Explicar cómo tren, escape y oscilador cooperan sin diagnosticar una causa única. Continúa con “Minutería e indicación”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.escape-oscillator · source/original-explanation · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.escapements</li><li>source.horology.private-book.balance-spring</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.escape-oscillator</li></ul>
+    </details><details><summary><strong>Minutería e indicación</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Minutería e indicación</h3><pre>## Propósito
+
+Relacionar tren de marcha, fricción, minutería y agujas.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+El cañón de minutos, la rueda de minutería y la rueda de horas forman una rama de indicación. El modelo usa una relación didáctica de doce horas y permite desacoplar la salida, avanzar tiempo y representar agujas rozando sin fingir alturas reales.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.wheels-pinions; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Relacionar tren de marcha, fricción, minutería y agujas. Continúa con “Cuerda y puesta en hora”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.motion-works · source/original-explanation · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.wheels-pinions</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.motion-works</li></ul>
+    </details><details><summary><strong>Cuerda y puesta en hora</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Cuerda y puesta en hora</h3><pre>## Propósito
+
+Reconstruir estados de corona sin atribuir una disposición universal.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+Los estados winding, neutral y time-setting declaran su función y rama activa. Corona, tija, piñón corredizo, tirete y báscula se representan conceptualmente. Una transición inválida produce diagnóstico y no fuerza el modelo.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.movement-design; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Reconstruir estados de corona sin atribuir una disposición universal. Continúa con “Carga automática y calendario básico”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.keyless · source/original-explanation · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.movement-design</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.keyless</li></ul>
+    </details><details><summary><strong>Carga automática y calendario básico</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Carga automática y calendario básico</h3><pre>## Propósito
+
+Seguir ramas conceptuales de automático y calendario sin modelar el 8215 en detalle.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+El rotor, la reducción y la reversión se comparan como familias unidireccional y bidireccional. El calendario deriva de la indicación y recorre días 1–31 con arrastre y salto simbólicos. No se prescribe una ventana segura específica ni el mecanismo exacto del 8215.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.mainsprings, source.horology.private-book.movement-design; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Seguir ramas conceptuales de automático y calendario sin modelar el 8215 en detalle. Continúa con “Integración y proyecto final”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.automatic-calendar · source/original-explanation · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.mainsprings</li><li>source.horology.private-book.movement-design</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.automatic-calendar</li></ul>
+    </details><details><summary><strong>Integración y proyecto final</strong> · 1 claims · 5 actividades</summary>
+      <article><h3>Integración y proyecto final</h3><pre>## Propósito
+
+Construir, interrumpir, diagnosticar y documentar un movimiento conceptual completo.
+
+## Objetivos observables
+
+Predecir un resultado, manipular el laboratorio, justificar el cálculo o estado, separar modelo conceptual de calibre real y restaurar la sesión.
+
+## Prerrequisitos
+
+Se reutiliza la cadena funcional de `wplab.horology.functional-map`. El MIYOTA 2035 es recomendable, pero no obligatorio.
+
+## Explicación
+
+El dossier reúne arquitectura, relaciones, cálculos, fuentes, decisiones, G/K/P, limitaciones, hipótesis y pruebas. La comparación con el MIYOTA 8215 usa únicamente identidades, subsistemas y estructura R2 documentada; no transfiere dientes, cinemática, tolerancias ni servicio.
+
+## Interacción y actividad
+
+Los comandos son semánticos, validados, reversibles y producen eventos. La fórmula, entradas, unidades, redondeo, clasificación y limitación acompañan todo resultado numérico.
+
+## Claims y fuentes
+
+El libro privado se usa como teoría general en source.horology.private-book.movement-design; no se copia texto. Toda explicación y cálculo del laboratorio se clasifica como original o calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan la cinemática conceptual.
+
+## Vocabulario
+
+Consulta el glosario ES/EN de energía, par, rueda, piñón, apoyo, escape, oscilador, minutería, keyless, automático, calendario y fidelidad.
+
+## Errores habituales y feedback
+
+Confundir frecuencia con amplitud; invertir la razón de dientes; olvidar un cambio de sentido; tratar un estado visual como tolerancia; o atribuir el modelo al 8215. El diagnóstico identifica la primera entrada o relación inválida.
+
+## Evidencia y rúbrica
+
+Se conservan comando, estado inicial/final, fórmula, resultado, fallos, ayudas, restauración y límites. El proyecto final requiere revisión explicable. Retained exige otra sesión y al menos siete días.
+
+## Resumen y conexión
+
+Construir, interrumpir, diagnosticar y documentar un movimiento conceptual completo. El resultado es un dossier conceptual, no un diseño industrial ni una acreditación de servicio.</pre></article>
+      <h3>Claims</h3><ul><li>claim.mechanical.final-project · source/original-explanation · G1/K2/P0 · source.horology.original-mechanical-foundations</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.movement-design</li><li>source.horology.original-mechanical-foundations</li><li>visual.mechanical.final-project</li></ul>
+    </details></section>
+<section><h2>Escenas, storyboards y operaciones</h2><details><summary><strong>De energía almacenada a movimiento</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Distinguir energía, movimiento, transmisión, ritmo y pérdida conceptual dentro del reloj. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.energy.fidelity</p>
+    <p><strong>Storyboard:</strong> La energía almacenada en el muelle no es todavía indicación ni ritmo. Al liberarse, el barrilete entrega rotación al tren; el escape controla la liberación y repone energía al oscilador; la minutería deriva una rama de indicación. Bloquear un tramo muestra qué queda aguas arriba y aguas abajo, sin convertir la energía normalizada en julios o par real.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para De energía almacenada a movimiento.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>Muelle real y barrilete</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Relacionar muelle, árbol, tambor, tapa, carga, descarga y reserva conceptual. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.barrel.fidelity</p>
+    <p><strong>Storyboard:</strong> El laboratorio separa muelle, árbol, tambor y tapa. La carga cambia una magnitud normalizada; la deformación visual es didáctica y la reserva deriva únicamente de entradas simplificadas. La brida deslizante se presenta como familia conceptual de ciertos automáticos, no como propiedad universal.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Muelle real y barrilete.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>Ruedas, piñones y engrane</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Calcular una relación ideal, predecir sentido y diagnosticar un engrane imposible. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.gear-pair.fidelity</p>
+    <p><strong>Storyboard:</strong> Para un engrane externo ideal, las vueltas de la conducida por vuelta de la conductora son Z conductora dividido entre Z conducida y el sentido se invierte. Una rueda intermedia cambia el sentido final sin cambiar por sí sola el módulo de la relación total. La distancia entre centros se valida como estado geométrico conceptual, no mediante perfiles reales.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Ruedas, piñones y engrane.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>Construir un tren de rodaje</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Componer etapas, calcular reducción acumulada y observar interrupciones. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.train.fidelity</p>
+    <p><strong>Storyboard:</strong> Cada etapa conserva identidad, dientes educativos, tipo de engrane, dirección y estado. La relación total es el producto exacto de las etapas declaradas. Retirar o desengranar una etapa produce una salida interrumpida; no se atribuyen los conteos de dientes al 8215.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Construir un tren de rodaje.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>Pivotes, rubíes, puentes y libertad</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Reconocer apoyos superior e inferior y diferenciar libertad de desalineación. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.supports.fidelity</p>
+    <p><strong>Storyboard:</strong> Una rueda necesita apoyos coherentes en platina y puente. El laboratorio exagera pivote fuera del rubí, exceso axial, ausencia de libertad y roce para hacerlos visibles. Endshake y sideshake se explican cualitativamente; no reciben tolerancias reales.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Pivotes, rubíes, puentes y libertad.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>El escape de áncora suizo</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Ordenar bloqueo, desbloqueo, impulso y caída sin formar para un ajuste físico. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.escapement.fidelity</p>
+    <p><strong>Storyboard:</strong> Ocho estados discretos representan la alternancia izquierda y derecha: bloqueo, desbloqueo, impulso y caída. El timeline puede pausarse, retroceder y avanzar de fase. Las zonas de contacto son conceptuales; no se inventan ángulos, penetraciones, draw, pérdidas ni lubricación.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para El escape de áncora suizo.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>Volante y espiral</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Distinguir frecuencia, periodo y amplitud mediante un modelo normalizado. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.oscillator.fidelity</p>
+    <p><strong>Storyboard:</strong> La frecuencia fija el periodo ideal T=1/f; las alternancias por hora son f×2×3600. La amplitud cambia de forma independiente en el laboratorio. Modificar la longitud activa es una acción simbólica: no se resuelve la dinámica de una espiral real ni se deduce marcha.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Volante y espiral.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>Escape y oscilador como sistema</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Explicar cómo tren, escape y oscilador cooperan sin diagnosticar una causa única. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.escape-oscillator.fidelity</p>
+    <p><strong>Storyboard:</strong> El tren aporta energía; el escape bloquea, libera e impulsa; el oscilador establece el ritmo y recibe reposición energética. Una amplitud baja puede tener múltiples causas. Los casos separan síntoma, hipótesis, prueba y conclusión permitida.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Escape y oscilador como sistema.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>Minutería e indicación</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Relacionar tren de marcha, fricción, minutería y agujas. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.motion-works.fidelity</p>
+    <p><strong>Storyboard:</strong> El cañón de minutos, la rueda de minutería y la rueda de horas forman una rama de indicación. El modelo usa una relación didáctica de doce horas y permite desacoplar la salida, avanzar tiempo y representar agujas rozando sin fingir alturas reales.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Minutería e indicación.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>Cuerda y puesta en hora</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Reconstruir estados de corona sin atribuir una disposición universal. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.keyless.fidelity</p>
+    <p><strong>Storyboard:</strong> Los estados winding, neutral y time-setting declaran su función y rama activa. Corona, tija, piñón corredizo, tirete y báscula se representan conceptualmente. Una transición inválida produce diagnóstico y no fuerza el modelo.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Cuerda y puesta en hora.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>Carga automática y calendario básico</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Seguir ramas conceptuales de automático y calendario sin modelar el 8215 en detalle. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.automatic-calendar.fidelity</p>
+    <p><strong>Storyboard:</strong> El rotor, la reducción y la reversión se comparan como familias unidireccional y bidireccional. El calendario deriva de la indicación y recorre días 1–31 con arrastre y salto simbólicos. No se prescribe una ventana segura específica ni el mecanismo exacto del 8215.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Carga automática y calendario básico.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details><details><summary><strong>Integración y proyecto final</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Construir, interrumpir, diagnosticar y documentar un movimiento conceptual completo. Laboratorio manipulable, reversible y accesible.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.mechanical.final-project.fidelity</p>
+    <p><strong>Storyboard:</strong> El dossier reúne arquitectura, relaciones, cálculos, fuentes, decisiones, G/K/P, limitaciones, hipótesis y pruebas. La comparación con el MIYOTA 8215 usa únicamente identidades, subsistemas y estructura R2 documentada; no transfiere dientes, cinemática, tolerancias ni servicio.</p>
+    <p><strong>Alternativa textual:</strong> Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Integración y proyecto final.</p>
+    <p><strong>Reduced motion:</strong> Estados discretos y fases numeradas con los mismos cálculos y evaluación.</p>
+  </details></section>
+<section><h2>Banco, herramientas, piezas, bandejas y dependencias</h2>
+  <p>Este paquete no declara banco virtual.</p>
+</section>
+<section><h2>Laboratorio mecánico, cálculos, grafos y modos</h2>
+  <p>Laboratorio semántico bajo demanda con modelo conceptual y comparación 8215 separada. Las relaciones, fórmulas, entradas, unidades, redondeo, G/K/P y limitaciones forman parte del contrato.</p><table><thead><tr><th>Actividad</th><th>Subsistema</th><th>Comandos</th><th>Vistas</th><th>Física</th><th>Reduced motion</th><th>Rúbrica</th></tr></thead><tbody><tr><td>activity.mechanical.classify-energy-functions</td><td>energy</td><td>wind, release, block, unblock, inspect, restore</td><td>normal, energy-flow, schematic, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-energy-chain</td></tr><tr><td>activity.mechanical.interrupt-energy-chain</td><td>energy</td><td>wind, release, block, unblock, inspect, restore</td><td>normal, energy-flow, schematic, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-energy-chain</td></tr><tr><td>activity.mechanical.load-unload-barrel</td><td>barrel</td><td>wind, release, block, unblock, inspect, restore</td><td>section, schematic, energy-flow, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-barrel</td></tr><tr><td>activity.mechanical.identify-barrel-parts</td><td>barrel</td><td>wind, release, block, unblock, inspect, restore</td><td>section, schematic, energy-flow, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-barrel</td></tr><tr><td>activity.mechanical.predict-pair-direction</td><td>gear-pair</td><td>change-ratio, engage, disengage, add-stage, remove-stage, restore</td><td>normal, schematic, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.determine-rotation-direction</td></tr><tr><td>activity.mechanical.calculate-pair-ratio</td><td>gear-pair</td><td>change-ratio, engage, disengage, add-stage, remove-stage, restore</td><td>normal, schematic, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.calculate-simple-ratios</td></tr><tr><td>activity.mechanical.detect-impossible-mesh</td><td>gear-pair</td><td>change-ratio, engage, disengage, add-stage, remove-stage, restore</td><td>normal, schematic, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.calculate-simple-ratios</td></tr><tr><td>activity.mechanical.build-train</td><td>train</td><td>add-stage, remove-stage, change-ratio, engage, disengage, block, restore</td><td>normal, schematic, kinematics, energy-flow, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.build-functional-train</td></tr><tr><td>activity.mechanical.calculate-total-ratio</td><td>train</td><td>add-stage, remove-stage, change-ratio, engage, disengage, block, restore</td><td>normal, schematic, kinematics, energy-flow, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.calculate-simple-ratios</td></tr><tr><td>activity.mechanical.interrupt-train</td><td>train</td><td>add-stage, remove-stage, change-ratio, engage, disengage, block, restore</td><td>normal, schematic, kinematics, energy-flow, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.build-functional-train</td></tr><tr><td>activity.mechanical.identify-pivots-supports</td><td>supports</td><td>align, misalign, inspect, restore</td><td>normal, section, isolated, uncertainty, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.recognize-supports-clearances</td></tr><tr><td>activity.mechanical.detect-mis-seated-wheel</td><td>supports</td><td>align, misalign, inspect, restore</td><td>normal, section, isolated, uncertainty, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.recognize-supports-clearances</td></tr><tr><td>activity.mechanical.order-escapement-phases</td><td>escapement</td><td>step-escapement, scrub-escapement, set-escapement-speed, pause-escapement, block, unblock, inspect, restore</td><td>normal, section, slow-motion, step-by-step, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.order-escapement-phases</td></tr><tr><td>activity.mechanical.identify-lock-impulse-drop</td><td>escapement</td><td>step-escapement, scrub-escapement, set-escapement-speed, pause-escapement, block, unblock, inspect, restore</td><td>normal, section, slow-motion, step-by-step, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.order-escapement-phases</td></tr><tr><td>activity.mechanical.distinguish-frequency-amplitude</td><td>oscillator</td><td>set-oscillator, pause-oscillator, set-hairspring-active-length, oscillate, block, unblock, inspect, restore</td><td>normal, slow-motion, step-by-step, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.distinguish-frequency-amplitude</td></tr><tr><td>activity.mechanical.configure-oscillator</td><td>oscillator</td><td>set-oscillator, pause-oscillator, set-hairspring-active-length, oscillate, block, unblock, inspect, restore</td><td>normal, slow-motion, step-by-step, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.distinguish-frequency-amplitude</td></tr><tr><td>activity.mechanical.relate-escape-oscillator</td><td>integration</td><td>set-oscillator, pause-oscillator, set-hairspring-active-length, step-escapement, scrub-escapement, oscillate, block, unblock, introduce-fault, inspect, restore</td><td>normal, energy-flow, kinematics, step-by-step, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-escape-oscillator-system</td></tr><tr><td>activity.mechanical.predict-escapement-interruption</td><td>integration</td><td>set-oscillator, pause-oscillator, set-hairspring-active-length, step-escapement, scrub-escapement, oscillate, block, unblock, introduce-fault, inspect, restore</td><td>normal, energy-flow, kinematics, step-by-step, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.diagnose-conceptual-interruption</td></tr><tr><td>activity.mechanical.build-motion-works</td><td>motion-works</td><td>engage, disengage, rotate, set-time, introduce-fault, restore</td><td>normal, schematic, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-motion-works</td></tr><tr><td>activity.mechanical.set-indication</td><td>motion-works</td><td>engage, disengage, rotate, set-time, introduce-fault, restore</td><td>normal, schematic, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-motion-works</td></tr><tr><td>activity.mechanical.reconstruct-crown-states</td><td>keyless</td><td>change-crown-position, rotate, engage, disengage, set-time, inspect, restore</td><td>normal, schematic, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-keyless</td></tr><tr><td>activity.mechanical.operate-winding-setting</td><td>keyless</td><td>change-crown-position, rotate, engage, disengage, set-time, inspect, restore</td><td>normal, schematic, kinematics, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-keyless</td></tr><tr><td>activity.mechanical.follow-automatic-energy</td><td>automatic</td><td>enable-automatic, disable-automatic, advance-calendar, introduce-fault, inspect, restore</td><td>normal, schematic, energy-flow, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-automatic-winding</td></tr><tr><td>activity.mechanical.explain-date-change</td><td>automatic</td><td>enable-automatic, disable-automatic, advance-calendar, introduce-fault, inspect, restore</td><td>normal, schematic, energy-flow, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.explain-basic-calendar</td></tr><tr><td>activity.mechanical.introduce-fault</td><td>integration</td><td>wind, add-stage, change-ratio, set-oscillator, set-hairspring-active-length, step-escapement, scrub-escapement, oscillate, set-time, change-crown-position, enable-automatic, advance-calendar, introduce-fault, inspect, project-enable-subsystem, project-record-decision, restore, undo</td><td>normal, energy-flow, kinematics, compare-8215, provenance, uncertainty, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.diagnose-conceptual-interruption</td></tr><tr><td>activity.mechanical.formulate-hypothesis</td><td>integration</td><td>wind, add-stage, change-ratio, set-oscillator, set-hairspring-active-length, step-escapement, scrub-escapement, oscillate, set-time, change-crown-position, enable-automatic, advance-calendar, introduce-fault, inspect, project-enable-subsystem, project-record-decision, restore, undo</td><td>normal, energy-flow, kinematics, compare-8215, provenance, uncertainty, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.diagnose-conceptual-interruption</td></tr><tr><td>activity.mechanical.build-final-project</td><td>integration</td><td>wind, add-stage, change-ratio, set-oscillator, set-hairspring-active-length, step-escapement, scrub-escapement, oscillate, set-time, change-crown-position, enable-automatic, advance-calendar, introduce-fault, inspect, project-enable-subsystem, project-record-decision, restore, undo</td><td>normal, energy-flow, kinematics, compare-8215, provenance, uncertainty, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.document-fidelity-limits</td></tr><tr><td>activity.mechanical.compare-with-8215</td><td>integration</td><td>wind, add-stage, change-ratio, set-oscillator, set-hairspring-active-length, step-escapement, scrub-escapement, oscillate, set-time, change-crown-position, enable-automatic, advance-calendar, introduce-fault, inspect, project-enable-subsystem, project-record-decision, restore, undo</td><td>normal, energy-flow, kinematics, compare-8215, provenance, uncertainty, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.compare-conceptual-real</td></tr><tr><td>activity.mechanical.document-limitations</td><td>integration</td><td>wind, add-stage, change-ratio, set-oscillator, set-hairspring-active-length, step-escapement, scrub-escapement, oscillate, set-time, change-crown-position, enable-automatic, advance-calendar, introduce-fault, inspect, project-enable-subsystem, project-record-decision, restore, undo</td><td>normal, energy-flow, kinematics, compare-8215, provenance, uncertainty, textual</td><td>normalizada</td><td>sí</td><td>rubric.mechanical.document-fidelity-limits</td></tr></tbody></table>
+</section>
+<section><h2>Laboratorio de calibre, operaciones y autoridad</h2>
+  <p>Este paquete no declara laboratorio de calibre.</p>
+</section>
+<section><h2>Competencias, evidencia y rúbricas</h2><table><thead><tr><th>Competencia</th><th>Descripción</th><th>Evidencia</th><th>Rúbricas</th></tr></thead><tbody><tr><td>competency.mechanical.explain-energy-chain</td><td>Explicar la cadena energética mecánica mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.explain-energy-chain</td><td>rubric.mechanical.explain-energy-chain→demonstrated</td></tr><tr><td>competency.mechanical.explain-barrel</td><td>Explicar muelle real y barrilete mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.explain-barrel</td><td>rubric.mechanical.explain-barrel→demonstrated</td></tr><tr><td>competency.mechanical.calculate-simple-ratios</td><td>Calcular relaciones simples mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.calculate-simple-ratios</td><td>rubric.mechanical.calculate-simple-ratios→demonstrated</td></tr><tr><td>competency.mechanical.determine-rotation-direction</td><td>Determinar sentidos de giro mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.determine-rotation-direction</td><td>rubric.mechanical.determine-rotation-direction→demonstrated</td></tr><tr><td>competency.mechanical.build-functional-train</td><td>Construir un tren funcional mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.build-functional-train</td><td>rubric.mechanical.build-functional-train→demonstrated</td></tr><tr><td>competency.mechanical.recognize-supports-clearances</td><td>Reconocer apoyos y holguras mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.recognize-supports-clearances</td><td>rubric.mechanical.recognize-supports-clearances→demonstrated</td></tr><tr><td>competency.mechanical.order-escapement-phases</td><td>Ordenar las fases del escape mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.order-escapement-phases</td><td>rubric.mechanical.order-escapement-phases→demonstrated</td></tr><tr><td>competency.mechanical.distinguish-frequency-amplitude</td><td>Distinguir frecuencia y amplitud mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.distinguish-frequency-amplitude</td><td>rubric.mechanical.distinguish-frequency-amplitude→demonstrated</td></tr><tr><td>competency.mechanical.explain-escape-oscillator-system</td><td>Explicar escape y oscilador como sistema mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.explain-escape-oscillator-system</td><td>rubric.mechanical.explain-escape-oscillator-system→demonstrated</td></tr><tr><td>competency.mechanical.explain-motion-works</td><td>Explicar la minutería mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.explain-motion-works</td><td>rubric.mechanical.explain-motion-works→demonstrated</td></tr><tr><td>competency.mechanical.explain-keyless</td><td>Explicar cuerda y puesta en hora mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.explain-keyless</td><td>rubric.mechanical.explain-keyless→demonstrated</td></tr><tr><td>competency.mechanical.explain-automatic-winding</td><td>Explicar la carga automática mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.explain-automatic-winding</td><td>rubric.mechanical.explain-automatic-winding→demonstrated</td></tr><tr><td>competency.mechanical.explain-basic-calendar</td><td>Explicar el calendario básico mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.explain-basic-calendar</td><td>rubric.mechanical.explain-basic-calendar→demonstrated</td></tr><tr><td>competency.mechanical.diagnose-conceptual-interruption</td><td>Diagnosticar una interrupción conceptual mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.diagnose-conceptual-interruption</td><td>rubric.mechanical.diagnose-conceptual-interruption→demonstrated</td></tr><tr><td>competency.mechanical.compare-conceptual-real</td><td>Comparar un modelo conceptual con un calibre real mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.compare-conceptual-real</td><td>rubric.mechanical.compare-conceptual-real→demonstrated</td></tr><tr><td>competency.mechanical.document-fidelity-limits</td><td>Documentar límites de fidelidad mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.</td><td>evidence.mechanical.document-fidelity-limits</td><td>rubric.mechanical.document-fidelity-limits→demonstrated</td></tr></tbody></table></section>
+<section><h2>Fuentes</h2><table><thead><tr><th>ID</th><th>Autoridad</th><th>Recurso</th><th>Localizador</th><th>Claim respaldado</th></tr></thead><tbody><tr><td>source.horology.private-book.wheels-pinions</td><td>private-book-theory</td><td>Libro privado de teoría relojera · Wheels and Pinions</td><td>capítulo 5 · PDF pp. 124–167 verificadas; inicio visual en p. 124</td><td>Relaciones, ruedas, piñones y trenes como teoría general.</td></tr><tr><td>source.horology.private-book.jewelling</td><td>private-book-theory</td><td>Libro privado de teoría relojera · Jewelling</td><td>capítulo 7 · PDF pp. 195–213 verificadas; inicio visual en p. 195</td><td>Rubíes y apoyos como teoría general; sin tolerancias trasladadas.</td></tr><tr><td>source.horology.private-book.escapements</td><td>private-book-theory</td><td>Libro privado de teoría relojera · Escapements</td><td>capítulo 8 · PDF pp. 214–271 verificadas; inicio visual en p. 214</td><td>Principios de escape; no se copian ángulos o ajustes.</td></tr><tr><td>source.horology.private-book.mainsprings</td><td>private-book-theory</td><td>Libro privado de teoría relojera · Mainsprings and Accessories</td><td>capítulo 9 · PDF pp. 272–297 verificadas; inicio visual en p. 272</td><td>Muelle real, barrilete y variación de entrega como teoría general.</td></tr><tr><td>source.horology.private-book.movement-design</td><td>private-book-theory</td><td>Libro privado de teoría relojera · Movement Design</td><td>capítulo 10 · PDF pp. 298–335 verificadas; inicio visual en p. 298</td><td>Arquitectura y disposición como teoría general.</td></tr><tr><td>source.horology.private-book.balance-spring</td><td>private-book-theory</td><td>Libro privado de teoría relojera · The Balance and Spring</td><td>capítulo 11 · PDF pp. 336–370 verificadas; inicio visual en p. 336</td><td>Volante, espiral e isocronismo como teoría general.</td></tr><tr><td>source.miyota.8215.product-page</td><td>official-miyota</td><td>MIYOTA 8215 · página oficial</td><td>https://miyotamovement.com/product/8215/</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.8215.specification</td><td>official-miyota</td><td>MIYOTA 8215 · specification</td><td>https://miyotamovement.com/uploads/product/product_8jT5DEdzRXAsaSN2Bu.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.8215.drawing</td><td>official-miyota</td><td>MIYOTA 8215 · drawing</td><td>https://miyotamovement.com/uploads/product/product_LGuS8EY5DX03RiBaJH.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.8215.instruction-manual</td><td>official-miyota</td><td>MIYOTA 8215 · instruction manual</td><td>https://miyotamovement.com/uploads/product/product_mRAnUkS0wHFurpOK3T.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.8215.parts-list-exploded-view</td><td>official-miyota</td><td>MIYOTA 8215 · parts list and exploded view</td><td>https://miyotamovement.com/uploads/product/product_x2MOZCosd7iH59wu0K.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.</td></tr><tr><td>source.horology.original-mechanical-foundations</td><td>original-educational</td><td>Sistema 4E · Fundamentos del reloj mecánico</td><td>—</td><td>Laboratorios, cálculos educativos, explicaciones, actividades y evaluación originales.</td></tr></tbody></table></section>
+<section><h2>Glosario</h2><table><thead><tr><th>ID</th><th>ES</th><th>EN</th><th>Definición</th></tr></thead><tbody><tr><td>term.mechanical.energy</td><td>energía</td><td>energy</td><td>energía: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.force</td><td>fuerza</td><td>force</td><td>fuerza: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.torque</td><td>par</td><td>torque</td><td>par: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.work</td><td>trabajo</td><td>work</td><td>trabajo: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.angular-velocity</td><td>velocidad angular</td><td>angular velocity</td><td>velocidad angular: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.gear-ratio</td><td>relación de transmisión</td><td>gear ratio</td><td>relación de transmisión: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.driver-wheel</td><td>rueda conductora</td><td>driver wheel</td><td>rueda conductora: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.driven-wheel</td><td>rueda conducida</td><td>driven wheel</td><td>rueda conducida: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.arbor</td><td>árbol</td><td>arbor</td><td>árbol: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.pivot</td><td>pivote</td><td>pivot</td><td>pivote: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.endshake</td><td>endshake</td><td>endshake</td><td>endshake: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.sideshake</td><td>sideshake</td><td>sideshake</td><td>sideshake: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.barrel</td><td>barrilete</td><td>barrel</td><td>barrilete: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.barrel-arbor</td><td>árbol del barrilete</td><td>barrel arbor</td><td>árbol del barrilete: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.drum</td><td>tambor</td><td>drum</td><td>tambor: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.cover</td><td>tapa</td><td>cover</td><td>tapa: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.slipping-bridle</td><td>brida deslizante</td><td>slipping bridle</td><td>brida deslizante: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.going-train</td><td>tren de rodaje</td><td>going train</td><td>tren de rodaje: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.center-wheel</td><td>rueda de centro</td><td>center wheel</td><td>rueda de centro: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.third-wheel</td><td>tercera rueda</td><td>third wheel</td><td>tercera rueda: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.fourth-wheel</td><td>cuarta rueda</td><td>fourth wheel</td><td>cuarta rueda: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.escape-wheel</td><td>rueda de escape</td><td>escape wheel</td><td>rueda de escape: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.escapement</td><td>escape</td><td>escapement</td><td>escape: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.pallet-fork</td><td>áncora</td><td>pallet fork</td><td>áncora: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.pallet-stone</td><td>paleta</td><td>pallet stone</td><td>paleta: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.locking</td><td>bloqueo</td><td>locking</td><td>bloqueo: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.drop</td><td>caída</td><td>drop</td><td>caída: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.impulse</td><td>impulso</td><td>impulse</td><td>impulso: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.balance</td><td>volante</td><td>balance</td><td>volante: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.hairspring</td><td>espiral</td><td>hairspring</td><td>espiral: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.frequency</td><td>frecuencia</td><td>frequency</td><td>frecuencia: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.period</td><td>periodo</td><td>period</td><td>periodo: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.alternation</td><td>alternancia</td><td>alternation</td><td>alternancia: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.amplitude</td><td>amplitud</td><td>amplitude</td><td>amplitud: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.isochronism</td><td>isocronismo</td><td>isochronism</td><td>isocronismo: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.beat-error</td><td>error de compás</td><td>beat error</td><td>error de compás: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.cannon-pinion</td><td>cañón de minutos</td><td>cannon pinion</td><td>cañón de minutos: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.minute-wheel</td><td>rueda de minutería</td><td>minute wheel</td><td>rueda de minutería: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.hour-wheel</td><td>rueda de horas</td><td>hour wheel</td><td>rueda de horas: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.stem</td><td>tija</td><td>stem</td><td>tija: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.sliding-pinion</td><td>piñón corredizo</td><td>sliding pinion</td><td>piñón corredizo: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.setting-lever</td><td>tirete</td><td>setting lever</td><td>tirete: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.yoke</td><td>báscula</td><td>yoke</td><td>báscula: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.crown-wheel</td><td>rueda de corona</td><td>crown wheel</td><td>rueda de corona: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.automatic-rotor</td><td>rotor automático</td><td>automatic rotor</td><td>rotor automático: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.reverser</td><td>reversor</td><td>reverser</td><td>reversor: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.calendar</td><td>calendario</td><td>calendar</td><td>calendario: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr><tr><td>term.mechanical.quick-correction</td><td>corrección rápida</td><td>quick correction</td><td>corrección rápida: término del modelo mecánico conceptual con relación y procedencia declaradas.</td></tr></tbody></table></section>
+<section><h2>Recursos visuales</h2><table><thead><tr><th>ID</th><th>Tipo</th><th>Estado</th><th>Prioridad</th><th>G/K/P</th><th>Modelo actual</th><th>Cardinalidad</th></tr></thead><tbody><tr><td>visual.mechanical.energy</td><td>conceptual-3d</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.barrel</td><td>section-view</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.gear-pair</td><td>conceptual-3d</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.train</td><td>conceptual-3d</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.supports</td><td>section-view</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.escapement</td><td>kinematic-animation</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.oscillator</td><td>kinematic-animation</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.escape-oscillator</td><td>conceptual-3d</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.motion-works</td><td>conceptual-3d</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.keyless</td><td>conceptual-3d</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.automatic-calendar</td><td>conceptual-3d</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.mechanical.final-project</td><td>overlay-comparison</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr></tbody></table></section>
+<section><h2>Warnings declarados</h2><ul><li>activity.mechanical.classify-energy-functions: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.classify-energy-functions: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.interrupt-energy-chain: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.interrupt-energy-chain: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.load-unload-barrel: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.load-unload-barrel: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.identify-barrel-parts: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.identify-barrel-parts: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.predict-pair-direction: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.predict-pair-direction: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.calculate-pair-ratio: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.calculate-pair-ratio: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.detect-impossible-mesh: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.detect-impossible-mesh: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.build-train: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.build-train: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.calculate-total-ratio: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.calculate-total-ratio: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.interrupt-train: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.interrupt-train: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.identify-pivots-supports: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.identify-pivots-supports: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.detect-mis-seated-wheel: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.detect-mis-seated-wheel: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.order-escapement-phases: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.order-escapement-phases: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.identify-lock-impulse-drop: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.identify-lock-impulse-drop: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.distinguish-frequency-amplitude: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.distinguish-frequency-amplitude: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.configure-oscillator: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.configure-oscillator: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.relate-escape-oscillator: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.relate-escape-oscillator: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.predict-escapement-interruption: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.predict-escapement-interruption: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.build-motion-works: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.build-motion-works: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.set-indication: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.set-indication: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.reconstruct-crown-states: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.reconstruct-crown-states: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.operate-winding-setting: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.operate-winding-setting: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.follow-automatic-energy: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.follow-automatic-energy: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.explain-date-change: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.explain-date-change: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.introduce-fault: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.introduce-fault: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.formulate-hypothesis: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.formulate-hypothesis: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.build-final-project: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.build-final-project: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.compare-with-8215: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.compare-with-8215: El 8215 solo aporta comparación estructural documentada.</li><li>activity.mechanical.document-limitations: Modelo normalizado: no es física ni servicio de un calibre real.</li><li>activity.mechanical.document-limitations: El 8215 solo aporta comparación estructural documentada.</li></ul></section>
+<section><h2>Diagnósticos</h2><ul><li>Sin diagnósticos.</li></ul></section></body></html>

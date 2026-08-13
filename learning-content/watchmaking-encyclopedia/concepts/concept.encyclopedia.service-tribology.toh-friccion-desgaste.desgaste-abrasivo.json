@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.toh-friccion-desgaste.desgaste-abrasivo",
+  "version": "1.1.0",
+  "title": {
+    "es": "desgaste abrasivo",
+    "en": "desgaste abrasivo"
+  },
+  "summary": {
+    "es": "Pérdida producida por asperezas o partículas que cortan o surcan.",
+    "en": "Pérdida producida por asperezas o partículas que cortan o surcan."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.diagnostico-y-control-final.causa-raiz",
+    "concept.encyclopedia.service-tribology.diagnostico-y-control-final.criterio-de-aceptacion",
+    "concept.encyclopedia.service-tribology.diagnostico-y-control-final.retencion-diferida"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.toh-friccion-desgaste"
+  ],
+  "movementIds": [],
+  "subsystem": "tribology",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.toh-friccion-desgaste"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch13",
+    "source.private.daniels.jewelling",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.toh-friccion-desgaste"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.toh-friccion-desgaste",
+  "plainLanguage": {
+    "es": "Pérdida producida por asperezas o partículas que cortan o surcan.",
+    "en": "Pérdida producida por asperezas o partículas que cortan o surcan."
+  },
+  "technicalLanguage": {
+    "es": "desgaste abrasivo se interpreta mediante la cadena aplicar carga → establecer contacto → mover superficies → formar o romper película → disipar energía → acumular desgaste y las condiciones declaradas en la unidad.",
+    "en": "desgaste abrasivo se interpreta mediante la cadena aplicar carga → establecer contacto → mover superficies → formar o romper película → disipar energía → acumular desgaste y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se relacionan carga, velocidad, superficie y lubricante en un contacto relojero?",
+    "en": "Permite explicar y comprobar ¿cómo se relacionan carga, velocidad, superficie y lubricante en un contacto relojero?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir desgaste abrasivo sin circularidad.",
+      "en": "Definir desgaste abrasivo sin circularidad."
+    },
+    {
+      "es": "Relacionar desgaste abrasivo con una entrada, una interfaz y una salida.",
+      "en": "Relacionar desgaste abrasivo con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

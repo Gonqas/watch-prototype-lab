@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes",
+  "version": "1.1.0",
+  "title": "Cuaderno: Pivotes, rubíes, juegos, platina y puentes",
+  "description": "¿Cómo mantiene la estructura ejes alineados con libertad suficiente y posición controlada?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Pivotes, rubíes, juegos, platina y puentes. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo mantiene la estructura ejes alineados con libertad suficiente y posición controlada?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo mantiene la estructura ejes alineados con libertad suficiente y posición controlada?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.answer",
+      "instructionMarkdown": "Explica **Pivotes, rubíes, juegos, platina y puentes** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.explain",
+          "promptMarkdown": "¿Cómo mantiene la estructura ejes alineados con libertad suficiente y posición controlada?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por platina posiciona cojinete y sigue hasta tornillos estabilizan geometría.",
+                "en": "Empieza por platina posiciona cojinete y sigue hasta tornillos estabilizan geometría."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El pivote gira en un cojinete y puede apoyar axialmente en piedra de contrapivote o superficie equivalente. Diámetro, cilindricidad, hombro, acabado, juego radial y axial, alineación y aceite gobiernan el contacto. Platina y puentes cierran la cadena estructural; apretar tornillos puede revelar o crear deformación.",
+                "en": "El pivote gira en un cojinete y puede apoyar axialmente en piedra de contrapivote o superficie equivalente. Diámetro, cilindricidad, hombro, acabado, juego radial y axial, alineación y aceite gobiernan el contacto. Platina y puentes cierran la cadena estructural; apretar tornillos puede revelar o crear deformación."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo mantiene la estructura ejes alineados con libertad suficiente y posición controlada?",
+              "en": "¿Cómo mantiene la estructura ejes alineados con libertad suficiente y posición controlada?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena platina posiciona cojinete → pivote entra → puente cierra segundo apoyo → juego permite rotación → aceite forma contacto → tornillos estabilizan geometría, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena platina posiciona cojinete → pivote entra → puente cierra segundo apoyo → juego permite rotación → aceite forma contacto → tornillos estabilizan geometría, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.evidence",
+            "field.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.limit",
+            "field.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

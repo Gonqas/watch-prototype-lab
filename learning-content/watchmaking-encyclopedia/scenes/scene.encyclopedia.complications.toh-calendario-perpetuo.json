@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.complications.toh-calendario-perpetuo",
+  "version": "1.1.0",
+  "title": "Cuaderno: Calendarios completo, anual y perpetuo",
+  "description": "¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Calendarios completo, anual y perpetuo. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.complications.toh-calendario-perpetuo.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.complications.toh-calendario-perpetuo.answer",
+      "instructionMarkdown": "Explica **Calendarios completo, anual y perpetuo** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.complications.toh-calendario-perpetuo.explain",
+          "promptMarkdown": "¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.complications.toh-calendario-perpetuo.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-calendario-perpetuo.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-calendario-perpetuo.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-calendario-perpetuo.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.complications.toh-calendario-perpetuo.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por contar días y sigue hasta actualizar ciclo anual.",
+                "en": "Empieza por contar días y sigue hasta actualizar ciclo anual."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.complications.toh-calendario-perpetuo.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Un calendario simple cuenta hasta 31; mecanismos más complejos codifican longitud de mes y, en el perpetuo, el ciclo de cuatro años con excepciones seculares normalmente fuera de su horizonte. Levas, ruedas programa y palancas almacenan estado mecánico.",
+                "en": "Un calendario simple cuenta hasta 31; mecanismos más complejos codifican longitud de mes y, en el perpetuo, el ciclo de cuatro años con excepciones seculares normalmente fuera de su horizonte. Levas, ruedas programa y palancas almacenan estado mecánico."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?",
+              "en": "¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena contar días → leer programa mensual → detectar fin de mes → saltar días inexistentes → actualizar mes → actualizar ciclo anual, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena contar días → leer programa mensual → detectar fin de mes → saltar días inexistentes → actualizar mes → actualizar ciclo anual, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.complications.toh-calendario-perpetuo.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.complications.toh-calendario-perpetuo.mechanism",
+            "field.encyclopedia.complications.toh-calendario-perpetuo.evidence",
+            "field.encyclopedia.complications.toh-calendario-perpetuo.limit",
+            "field.encyclopedia.complications.toh-calendario-perpetuo.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

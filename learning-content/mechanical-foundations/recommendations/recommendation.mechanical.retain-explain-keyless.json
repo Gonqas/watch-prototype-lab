@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.mechanical.retain-explain-keyless",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: explicar cuerda y puesta en hora",
+    "en": "Práctica posterior: explicar cuerda y puesta en hora"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días.",
+    "en": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días."
+  },
+  "rule": "independent-later-evidence-different-activity-session-minimum-7-days@1.0.0",
+  "priority": 70,
+  "target": {
+    "kind": "competency",
+    "id": "competency.mechanical.explain-keyless"
+  },
+  "evidenceTemplateIds": [
+    "evidence.mechanical.explain-keyless"
+  ],
+  "required": false
+}

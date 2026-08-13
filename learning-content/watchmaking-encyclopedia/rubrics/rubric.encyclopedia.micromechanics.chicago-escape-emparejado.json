@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.micromechanics.chicago-escape-emparejado",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.chicago-escape-emparejado",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.micromechanics.chicago-escape-emparejado",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Expediente Chicago X: emparejar y reparar un escape."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.micromechanics.chicago-escape-emparejado",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.micromechanics.chicago-escape-emparejado",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

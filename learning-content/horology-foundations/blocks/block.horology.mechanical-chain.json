@@ -1,0 +1,58 @@
+{
+  "id": "block.horology.mechanical-chain",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "La cadena funcional mecánica",
+  "bodyMarkdown": "## Propósito\n\nSeguir cómo la energía almacenada en un muelle llega a la indicación mientras un escape y un oscilador controlan su liberación.\n\n## Conocimientos previos\n\nSe distingue fuente, regulación, transmisión e indicación, y se mantiene separada una animación educativa de un dato oficial de calibre.\n\n## Objetivos observables\n\nOrdenar muelle real, barrilete, tren, escape, volante y espiral, minutería y agujas; explicar la relación bidireccional entre escape y oscilador; y diferenciar tren de marcha de minutería.\n\n## Explicación principal\n\nEl {{term:term.horology.mainspring}} almacena energía cuando recibe cuerda. Se aloja en el {{term:term.horology.barrel}}, que permite entregarla al tren. La energía disponible tiende a mover las ruedas; por sí sola no establece un ritmo relojero.\n\nEl tren lleva movimiento desde el barrilete hacia la {{term:term.horology.escape-wheel}}. El {{term:term.horology.escapement}} alterna bloqueo, liberación e impulso. El {{term:term.horology.pallet-fork}} relaciona la rueda de escape con el oscilador. El {{term:term.horology.balance-wheel}} y la {{term:term.horology.balance-spring}} forman el conjunto oscilante que establece el ritmo. El escape permite avanzar al tren por pasos y devuelve impulsos al oscilador. Por eso se representa escape ↔ volante y espiral, no como una simple flecha que atribuya toda la regulación a una sola pieza.\n\nLa {{term:term.horology.oscillation}} es un movimiento alternativo alrededor de una posición. La {{term:term.horology.frequency}} describe cuántas oscilaciones se producen en una unidad de tiempo; la {{term:term.horology.amplitude}} describe la extensión angular del movimiento. Este módulo no calcula ni valida esos valores en el modelo didáctico. La ficha técnica aclara que no simula la física de una unidad real.\n\nDespués, la minutería adapta el movimiento para la indicación de horas y minutos. Conviene separarla del tren de marcha: ambos contienen ruedas, pero su papel y relaciones no son idénticos. Las agujas muestran el resultado.\n\nEl modelo mecánico conceptual usa proporciones claras y publica sus límites en la ficha técnica. El MIYOTA 8215 aparece como un ensamblaje estructural separado. La lista oficial permite nombrar conjuntos y piezas, pero no convierte cada forma interna reconstruida en una superficie oficial ni valida lubricación, desgaste o choque.\n\n## Explicación visual\n\nLa escena D coordina el modelo conceptual y el 8215. La ruta energética avanza de forma numerada. Una vista lenta separa estados conceptuales de bloqueo, desbloqueo e impulso. Detener simbólicamente el volante marca que la liberación controlada se interrumpe. La opción de movimiento reducido sustituye el giro por estados y flechas estáticas.\n\n## Vocabulario\n\nAdemás de barrilete, escape, áncora, volante y espiral, usaremos {{term:term.horology.pivot}} y {{term:term.horology.jewel}} para describir apoyos sin inventar su geometría. La política terminológica utiliza espiral o balance spring según idioma; hairspring se reconoce como equivalente inglés, pero no se traduce de varias maneras en español.\n\n## Fuentes\n\nLa identidad de piezas específicas del 8215 se apoya en su despiece oficial. La cadena funcional y la animación son explicaciones educativas originales. No se aportan dientes, tolerancias ni puntos de lubricación.\n\n## Ejemplo\n\nUn muelle con energía puede empujar el tren, pero si el escape permanece bloqueado no hay liberación ordenada. Si el oscilador se detiene, la interacción con el escape deja de sostener la secuencia prevista. El ejemplo muestra una consecuencia funcional, no diagnostica por qué se detuvo un reloj real.\n\n## Errores habituales\n\nDecir que el escape crea el tiempo; tratar el volante como una rueda más del tren; afirmar que el tren regula por sí solo; confundir rueda de escape con todo el escape; o presentar una ralentización conceptual como medición.\n\n## Actividad\n\nOrdena la cadena mecánica, identifica escape, áncora, volante y espiral y separa tren de marcha de minutería. Observa después un bloqueo simbólico y describe qué relación deja de avanzar.\n\n## Ayuda después de responder\n\nLa ayuda indica la primera relación funcional incoherente y ofrece pistas graduadas. La explicación completa solo aparece después de un intento.\n\n## Evidencia\n\nSe registran el orden, las selecciones, la distinción entre regulación y transmisión, las pistas y la restauración. La evidencia no afirma destreza de desmontaje físico.\n\n## Criterio de éxito\n\nOrdenar la cadena y explicar correctamente que el escape dosifica la liberación y transmite impulsos al conjunto volante-espiral.\n\n## Resumen\n\nLa fuente mecánica almacena energía; el tren la transmite; escape y oscilador gobiernan su liberación; la minutería la adapta a la indicación.\n\n## Siguiente conexión\n\nLa siguiente lección presenta la cadena de cuarzo desde la pila hasta las agujas. Después podrás comparar ambas soluciones por función sin confundir sus piezas.",
+  "claims": [
+    {
+      "id": "claim.miyota.8215.documented-parts",
+      "claimType": "source",
+      "classification": "official",
+      "claim": "La documentación oficial de servicio del MIYOTA 8215 identifica conjuntos asociados al barrilete, escape, áncora, volante y tren.",
+      "sourceStatement": "La lista de piezas oficial respalda identidades; no valida por sí sola geometría interna completa ni comportamiento físico.",
+      "method": "Lectura de identidades en el despiece oficial",
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K0",
+        "physics": "P0",
+        "limitations": [
+          "El fixture estructural R2 mantiene geometría reconstruida o estimada explícita."
+        ]
+      },
+      "reliability": "high",
+      "inputFingerprint": "official:miyota-8215-parts:2026-07-23",
+      "recordedAt": "2026-07-23T15:30:00.000Z",
+      "methodVersion": "0.1.0",
+      "sources": [
+        {
+          "id": "source.miyota.8215.parts-list-exploded-view",
+          "authority": "official-miyota",
+          "usage": "official-linked",
+          "resource": {
+            "kind": "pdf",
+            "title": "MIYOTA 8215 · parts list and exploded view",
+            "locator": "https://miyotamovement.com/uploads/product/product_x2MOZCosd7iH59wu0K.pdf"
+          },
+          "authorOrManufacturer": "MIYOTA",
+          "sourceType": "official-miyota-documentation",
+          "calibre": "8215",
+          "movement": "MIYOTA 8215",
+          "revision": "Sin identificador de revisión publicado; URL vigente consultada el 2026-07-23.",
+          "retrievedAt": "2026-07-23",
+          "privateUse": false,
+          "supportedClaim": "Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.horology.mechanical-chain"
+    ],
+    "estimatedMinutes": 15,
+    "userPaced": true
+  }
+}

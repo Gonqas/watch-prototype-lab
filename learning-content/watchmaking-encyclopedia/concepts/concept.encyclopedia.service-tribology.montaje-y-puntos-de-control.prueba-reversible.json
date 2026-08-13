@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.montaje-y-puntos-de-control.prueba-reversible",
+  "version": "1.1.0",
+  "title": {
+    "es": "prueba reversible",
+    "en": "prueba reversible"
+  },
+  "summary": {
+    "es": "Comprobación que aporta evidencia sin introducir daño ni cambio difícil de deshacer.",
+    "en": "Comprobación que aporta evidencia sin introducir daño ni cambio difícil de deshacer."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.regimen-de-lubricacion",
+    "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.capilaridad",
+    "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.migracion"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.montaje-y-puntos-de-control"
+  ],
+  "movementIds": [],
+  "subsystem": "assembly",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.montaje-y-puntos-de-control"
+  ],
+  "sourceIds": [
+    "source.institutional.awci.standards",
+    "source.external.learnwatchmaking",
+    "source.official.miyota.8215"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.montaje-y-puntos-de-control"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+  "plainLanguage": {
+    "es": "Comprobación que aporta evidencia sin introducir daño ni cambio difícil de deshacer.",
+    "en": "Comprobación que aporta evidencia sin introducir daño ni cambio difícil de deshacer."
+  },
+  "technicalLanguage": {
+    "es": "prueba reversible se interpreta mediante la cadena preparar piezas → montar subsistema → verificar asiento y libertad → lubricar según orden → cerrar retenedores → probar antes de siguiente capa y las condiciones declaradas en la unidad.",
+    "en": "prueba reversible se interpreta mediante la cadena preparar piezas → montar subsistema → verificar asiento y libertad → lubricar según orden → cerrar retenedores → probar antes de siguiente capa y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se monta detectando el primer error cuando todavía es reversible?",
+    "en": "Permite explicar y comprobar ¿cómo se monta detectando el primer error cuando todavía es reversible?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir prueba reversible sin circularidad.",
+      "en": "Definir prueba reversible sin circularidad."
+    },
+    {
+      "es": "Relacionar prueba reversible con una entrada, una interfaz y una salida.",
+      "en": "Relacionar prueba reversible con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

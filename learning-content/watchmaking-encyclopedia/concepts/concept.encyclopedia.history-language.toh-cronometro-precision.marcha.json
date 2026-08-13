@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.history-language.toh-cronometro-precision.marcha",
+  "version": "1.1.0",
+  "title": {
+    "es": "marcha",
+    "en": "marcha"
+  },
+  "summary": {
+    "es": "Variación de la indicación acumulada por unidad de tiempo.",
+    "en": "Variación de la indicación acumulada por unidad de tiempo."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.history-language.toh-instrumentos-principios.instrumento-de-flujo",
+    "concept.encyclopedia.history-language.toh-instrumentos-principios.reloj-oscilatorio",
+    "concept.encyclopedia.history-language.toh-instrumentos-principios.realizacion-de-la-referencia"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.history-language.toh-cronometro-precision"
+  ],
+  "movementIds": [],
+  "subsystem": "technical-literacy",
+  "routeIds": [
+    "route.encyclopedia.history-language"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.history-language.toh-cronometro-precision"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch01",
+    "source.official.nist.uncertainty",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.history-language.toh-cronometro-precision"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.history-language.toh-cronometro-precision",
+  "plainLanguage": {
+    "es": "Variación de la indicación acumulada por unidad de tiempo.",
+    "en": "Variación de la indicación acumulada por unidad de tiempo."
+  },
+  "technicalLanguage": {
+    "es": "marcha se interpreta mediante la cadena definir referencia → sincronizar lectura → observar intervalo → calcular desviación → repetir condiciones → declarar alcance y las condiciones declaradas en la unidad.",
+    "en": "marcha se interpreta mediante la cadena definir referencia → sincronizar lectura → observar intervalo → calcular desviación → repetir condiciones → declarar alcance y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?",
+    "en": "Permite explicar y comprobar ¿qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir marcha sin circularidad.",
+      "en": "Definir marcha sin circularidad."
+    },
+    {
+      "es": "Relacionar marcha con una entrada, una interfaz y una salida.",
+      "en": "Relacionar marcha con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "transfer",
+  "availability": "prerequisite-blocked"
+}

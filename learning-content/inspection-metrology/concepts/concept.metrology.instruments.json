@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.instruments",
+  "version": "0.1.0",
+  "title": {
+    "es": "Instrumentos"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para elegir un instrumento compatible con la característica, el rango y el acceso."
+  },
+  "kind": "concept",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.metrology.precision-accuracy-uncertainty"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.units-scale-resolution"
+  ],
+  "competencyIds": [
+    "competency.metrology.verificar-un-instrumento"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.seleccionar-instrumento",
+    "activity.metrology.detectar-paralaje"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a elegir un instrumento compatible con la característica, el rango y el acceso sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para elegir un instrumento compatible con la característica, el rango y el acceso."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.verification-calibration"
+  ],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available"
+}

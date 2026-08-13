@@ -1,0 +1,70 @@
+{
+  "id": "concept.capstone.design.capstone",
+  "version": "1.0.0",
+  "title": {
+    "es": "Dossier integral y puerta de prototipo",
+    "en": "Dossier integral y puerta de prototipo"
+  },
+  "summary": {
+    "es": "¿Qué evidencia permite superar la puerta de dossier integral y puerta de prototipo?",
+    "en": "¿Qué evidencia permite superar la puerta de dossier integral y puerta de prototipo?"
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.capstone.design.own-movement"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.capstone.design.own-movement"
+  ],
+  "competencyIds": [
+    "competency.capstone.design.capstone"
+  ],
+  "movementIds": [],
+  "subsystem": "personal-design-prototype-plan",
+  "routeIds": [
+    "route.capstone.personal-watch-design"
+  ],
+  "activityIds": [
+    "activity.capstone.design.capstone"
+  ],
+  "sourceIds": [
+    "source.iso.9241-210",
+    "source.iso.14253-1",
+    "source.w3c.wcag22",
+    "source.roediger-karpicke.2006"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Qué evidencia permite superar la puerta de dossier integral y puerta de prototipo?",
+    "en": "¿Qué evidencia permite superar la puerta de dossier integral y puerta de prototipo?"
+  },
+  "technicalLanguage": {
+    "es": "## El propósito de esta puerta\n\nDefender un reloj completo y decidir con evidencia si puede entrar en prototipo, qué queda bloqueado y cómo se validará. Diseñar un reloj propio no consiste en saltar directamente a dibujar puentes. Es una progresión de autoridad: primero se integra un movimiento adquirido sin cambiar su arquitectura; después se estudian modificaciones controladas con interfaces y pruebas; finalmente se propone un movimiento propio. Cada nivel conserva lo aprendido en el anterior y añade incertidumbre, dependencia y responsabilidad.\n\nLa puerta **Dossier integral y puerta de prototipo** no premia la cantidad de imágenes ni la sofisticación del diseño asistido por ordenador. Decide si existe información suficiente para comprometer tiempo, material y riesgo en la fase siguiente. Su expediente debe permitir que otra persona reconstruya qué se decidió, qué alternativas se descartaron, con qué evidencia, qué sigue abierto y qué resultado obligaría a volver atrás.\n\n## Entradas que deben estar fijadas\n\n- **Decisiones vigentes:** Pliego, interfaces, cálculos, materiales, procesos, riesgos y pruebas.\n- **Hallazgos de revisión:** Objeciones, no conformidades, desconocidos y cambios pendientes.\n\nEn **Dossier integral y puerta de prototipo**, una entrada incierta —por ejemplo, **Decisiones vigentes**— se marca con responsable, plan de resolución y fecha. Si cambia la comunicación del fabricante, la unidad medida o el pliego, el registro identifica qué decisiones de esta puerta quedan afectadas. Así una cifra copiada no se convierte silenciosamente en arquitectura del proyecto.\n\n## Interfaces y restricciones\n\n- **Arquitectura completa:** Movimiento, exterior, usuario, fabricación, montaje y servicio.\n- **Decisión–evidencia:** Cada aceptación o bloqueo enlaza requisito y prueba.\n\n- **Liberación honesta:** Un riesgo crítico abierto bloquea la puerta; el calendario no lo rebaja.\n- **Configuración fijada:** Versión de todos los artefactos y cambios posteriores controlados.\n\nPara superar **Dossier integral y puerta de prototipo**, trata cada interfaz —empezando por **Arquitectura completa**— como un contrato de geometría, posición, movimiento, carga, material, montaje, servicio y verificación. Dos componentes pueden caber por separado y resultar incompatibles al apilar tolerancias. Revisa qué controla la interfaz, qué variación admite, cómo se monta, cómo se inspecciona y qué ocurre cuando falla.\n\n## Alternativas y decisión\n\nLa puerta **Dossier integral y puerta de prototipo** exige al menos **3 alternativas reales**. No cuentan como alternativas la misma solución con otro color: deben cambiar arquitectura, proceso, interfaz o estrategia de validación. La matriz separa requisitos obligatorios de preferencias, usa unidades cuando existen y conserva incertidumbre. Una opción que incumple un requisito bloqueante de esta fase no se rescata sumando ventajas estéticas.\n\nLas preguntas de puerta son:\n\n- ¿Qué versión exacta se propone prototipar?\n- ¿Qué riesgos críticos siguen abiertos?\n- ¿Qué resultado detendría o rediseñaría el prototipo?\n\nLa decisión de **Dossier integral y puerta de prototipo** registra autor, fecha, configuración, alternativas, criterios, evidencia, riesgos y condiciones de reapertura. Su objetivo no es eliminar toda incertidumbre, sino impedir que una incertidumbre crítica de esta puerta quede disfrazada de decisión cerrada.\n\n## Entregables y verificación\n\n- **Expediente de diseño:** Requisitos, alternativas, decisiones, revis",
+    "en": "## El propósito de esta puerta\n\nDefender un reloj completo y decidir con evidencia si puede entrar en prototipo, qué queda bloqueado y cómo se validará. Diseñar un reloj propio no consiste en saltar directamente a dibujar puentes. Es una progresión de autoridad: primero se integra un movimiento adquirido sin cambiar su arquitectura; después se estudian modificaciones controladas con interfaces y pruebas; finalmente se propone un movimiento propio. Cada nivel conserva lo aprendido en el anterior y añade incertidumbre, dependencia y responsabilidad.\n\nLa puerta **Dossier integral y puerta de prototipo** no premia la cantidad de imágenes ni la sofisticación del diseño asistido por ordenador. Decide si existe información suficiente para comprometer tiempo, material y riesgo en la fase siguiente. Su expediente debe permitir que otra persona reconstruya qué se decidió, qué alternativas se descartaron, con qué evidencia, qué sigue abierto y qué resultado obligaría a volver atrás.\n\n## Entradas que deben estar fijadas\n\n- **Decisiones vigentes:** Pliego, interfaces, cálculos, materiales, procesos, riesgos y pruebas.\n- **Hallazgos de revisión:** Objeciones, no conformidades, desconocidos y cambios pendientes.\n\nEn **Dossier integral y puerta de prototipo**, una entrada incierta —por ejemplo, **Decisiones vigentes**— se marca con responsable, plan de resolución y fecha. Si cambia la comunicación del fabricante, la unidad medida o el pliego, el registro identifica qué decisiones de esta puerta quedan afectadas. Así una cifra copiada no se convierte silenciosamente en arquitectura del proyecto.\n\n## Interfaces y restricciones\n\n- **Arquitectura completa:** Movimiento, exterior, usuario, fabricación, montaje y servicio.\n- **Decisión–evidencia:** Cada aceptación o bloqueo enlaza requisito y prueba.\n\n- **Liberación honesta:** Un riesgo crítico abierto bloquea la puerta; el calendario no lo rebaja.\n- **Configuración fijada:** Versión de todos los artefactos y cambios posteriores controlados.\n\nPara superar **Dossier integral y puerta de prototipo**, trata cada interfaz —empezando por **Arquitectura completa**— como un contrato de geometría, posición, movimiento, carga, material, montaje, servicio y verificación. Dos componentes pueden caber por separado y resultar incompatibles al apilar tolerancias. Revisa qué controla la interfaz, qué variación admite, cómo se monta, cómo se inspecciona y qué ocurre cuando falla.\n\n## Alternativas y decisión\n\nLa puerta **Dossier integral y puerta de prototipo** exige al menos **3 alternativas reales**. No cuentan como alternativas la misma solución con otro color: deben cambiar arquitectura, proceso, interfaz o estrategia de validación. La matriz separa requisitos obligatorios de preferencias, usa unidades cuando existen y conserva incertidumbre. Una opción que incumple un requisito bloqueante de esta fase no se rescata sumando ventajas estéticas.\n\nLas preguntas de puerta son:\n\n- ¿Qué versión exacta se propone prototipar?\n- ¿Qué riesgos críticos siguen abiertos?\n- ¿Qué resultado detendría o rediseñaría el prototipo?\n\nLa decisión de **Dossier integral y puerta de prototipo** registra autor, fecha, configuración, alternativas, criterios, evidencia, riesgos y condiciones de reapertura. Su objetivo no es eliminar toda incertidumbre, sino impedir que una incertidumbre crítica de esta puerta quede disfrazada de decisión cerrada.\n\n## Entregables y verificación\n\n- **Expediente de diseño:** Requisitos, alternativas, decisiones, revis"
+  },
+  "whyItMatters": {
+    "es": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables.",
+    "en": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables."
+  },
+  "observableActions": [
+    {
+      "es": "Compara alternativas.",
+      "en": "Compara alternativas."
+    },
+    {
+      "es": "Declara interfaces y riesgos.",
+      "en": "Declara interfaces y riesgos."
+    },
+    {
+      "es": "Define evidencia y criterios de parada.",
+      "en": "Define evidencia y criterios de parada."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.capstone.design.requirements"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

@@ -1,0 +1,220 @@
+{
+  "id": "lesson.quartz2035.documentation",
+  "version": "0.5.0",
+  "title": "Cómo leer la documentación del MIYOTA 2035",
+  "blockIds": [
+    "block.quartz2035.documentation"
+  ],
+  "activityIds": [
+    "activity.quartz2035.read-drawing",
+    "activity.quartz2035.associate-reference-part"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Cómo leer la documentación del MIYOTA 2035"
+    },
+    "purpose": {
+      "es": "Localizar, interpretar y clasificar información oficial sin memorizarla."
+    },
+    "objectives": [
+      {
+        "es": "Ejecutar la práctica con orden y trazabilidad."
+      },
+      {
+        "es": "Distinguir hecho, fuente, inferencia y simulación."
+      },
+      {
+        "es": "Registrar evidencia y restaurar el estado."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.quartz2035.distinguish-observation-inference"
+    ],
+    "conceptIds": [
+      "concept.quartz2035.locate-official-data"
+    ],
+    "sourceIds": [
+      "source.miyota.2035.product-page",
+      "source.miyota.2035.specification",
+      "source.miyota.2035.drawing",
+      "source.miyota.2035.instruction-manual",
+      "source.miyota.2035.parts-list-exploded-view",
+      "source.horology.original-quartz-practical-route"
+    ],
+    "visualResourceIds": [
+      "visual.quartz2035.documentation"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Localizar, interpretar y clasificar información oficial sin memorizarla."
+      },
+      "visibleConcept": {
+        "es": "Tabla derivada que enlaza ficha, especificación, plano, manual y despiece."
+      },
+      "modelReference": "fixture.miyota.2035.structural",
+      "movementIds": [
+        "fixture.miyota.2035.structural"
+      ],
+      "involvedSelectors": [
+        {
+          "selector": {
+            "by": "subsystem",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "initialState": {
+        "cameraIntent": "Vista estable del banco y el 2035.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [],
+      "rotationDirections": [],
+      "labels": [
+        "identidad",
+        "subsistema",
+        "fuente",
+        "G/K/P",
+        "estado de banco"
+      ],
+      "arrows": [
+        "dependencia con autoridad explícita"
+      ],
+      "animations": [
+        "cambios discretos de estado; sin física arbitraria"
+      ],
+      "timelineIntent": "Observar, confirmar, ejecutar, guardar checkpoint y restaurar.",
+      "userInteraction": "Teclado, selección secuencial, menú de acción o viewport; nunca arrastre obligatorio.",
+      "observableResult": {
+        "es": "El estado del banco y la evidencia cambian sin alterar el modelo de referencia ni el proyecto técnico original."
+      },
+      "successCriterion": {
+        "es": "Acción válida, identidad conservada, fuente o limitación declarada y restauración correcta."
+      },
+      "restoration": {
+        "es": "Restaurar herramienta, pieza, orientación, bandeja, vista y paso."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada de zonas, herramientas, piezas, acciones, dependencias y estados."
+      },
+      "reducedMotionAlternative": {
+        "es": "Estados discretos con idéntica evaluación."
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+          "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+        ]
+      },
+      "unknownData": [
+        "secuencia completa de servicio",
+        "pares",
+        "lubricación",
+        "tolerancias internas",
+        "valores eléctricos y puntos de prueba"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.quartz2035.documentation"
+      ]
+    },
+    "externalPrerequisites": [],
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.quartz2035.locate-official-data"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 650,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.quartz2035.read-drawing",
+        "activity.quartz2035.associate-reference-part"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Ejecutar la práctica con orden y trazabilidad."
+        },
+        {
+          "es": "Distinguir hecho, fuente, inferencia y simulación."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Cómo leer la documentación del MIYOTA 2035», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "pretraining",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.quartz2035.locate-official-data"
+      ],
+      "reinforcesConceptIds": [
+        "concept.quartz2035.distinguish-observation-inference"
+      ],
+      "bridgeConceptIds": [
+        "concept.quartz2035.distinguish-observation-inference"
+      ]
+    }
+  }
+}

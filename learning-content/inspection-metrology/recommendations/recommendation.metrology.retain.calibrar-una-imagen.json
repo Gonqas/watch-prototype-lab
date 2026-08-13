@@ -1,0 +1,19 @@
+{
+  "id": "recommendation.metrology.retain.calibrar-una-imagen",
+  "version": "0.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar: Calibrar una imagen"
+  },
+  "reason": {
+    "es": "La retención exige una sesión independiente; el motor programará ventanas de 1, 7 y 21 días."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 293,
+  "target": {
+    "kind": "competency",
+    "id": "competency.metrology.calibrar-una-imagen"
+  },
+  "evidenceTemplateIds": [],
+  "required": false
+}

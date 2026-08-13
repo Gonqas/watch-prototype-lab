@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+  "version": "1.1.0",
+  "title": "Cuaderno: Posiciones, gravedad, poising y perturbaciones",
+  "description": "¿Por qué un reloj cambia de marcha al cambiar de orientación?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Posiciones, gravedad, poising y perturbaciones. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.scope",
+      "markdown": "**Alcance del estudio:** ¿Por qué un reloj cambia de marcha al cambiar de orientación?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Por qué un reloj cambia de marcha al cambiar de orientación?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.answer",
+      "instructionMarkdown": "Explica **Posiciones, gravedad, poising y perturbaciones** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.explain",
+          "promptMarkdown": "¿Por qué un reloj cambia de marcha al cambiar de orientación?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por orientar movimiento y sigue hasta comparar patrón.",
+                "en": "Empieza por orientar movimiento y sigue hasta comparar patrón."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "En horizontal dominan unos apoyos; en vertical cambian contactos, flexiones y efecto de desequilibrio. Poising estático, poising dinámico, centrado de espiral, pivotes, antichoque y magnetismo pueden producir patrones distintos.",
+                "en": "En horizontal dominan unos apoyos; en vertical cambian contactos, flexiones y efecto de desequilibrio. Poising estático, poising dinámico, centrado de espiral, pivotes, antichoque y magnetismo pueden producir patrones distintos."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Por qué un reloj cambia de marcha al cambiar de orientación?",
+              "en": "¿Por qué un reloj cambia de marcha al cambiar de orientación?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena orientar movimiento → cambiar apoyos activos → aplicar gravedad al desequilibrio → modificar fricción y respiración → observar señal → comparar patrón, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena orientar movimiento → cambiar apoyos activos → aplicar gravedad al desequilibrio → modificar fricción y respiración → observar señal → comparar patrón, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.mechanism",
+            "field.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.evidence",
+            "field.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.limit",
+            "field.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

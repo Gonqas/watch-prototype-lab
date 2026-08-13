@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.micromechanics.ruedas-y-pinones",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Fabricación de ruedas, piñones y cortadores",
+  "sceneIds": [
+    "scene.encyclopedia.micromechanics.ruedas-y-pinones"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.micromechanics.ruedas-y-pinones"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.micromechanics.ruedas-y-pinones"
+  ],
+  "rubricId": "rubric.encyclopedia.micromechanics.ruedas-y-pinones",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.micromechanics.ruedas-y-pinones",
+    "title": {
+      "es": "Explicar y transferir: Fabricación de ruedas, piñones y cortadores",
+      "en": "Explicar y transferir: Fabricación de ruedas, piñones y cortadores"
+    },
+    "description": {
+      "es": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?",
+      "en": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?"
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "wheel-making",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.daniels.wheels-pinions",
+      "source.private.vba-uhrentechnik",
+      "source.private.daniels.movement-design"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.fresa-de-modulo",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.division-angular",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.pinon-de-hojas"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.fresa-de-modulo",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.division-angular",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.pinon-de-hojas"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.fresa-de-modulo",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.division-angular",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.pinon-de-hojas"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.micromechanics.ruedas-y-pinones",
+        "blockId": "block.encyclopedia.micromechanics.ruedas-y-pinones",
+        "conceptIds": [
+          "concept.encyclopedia.micromechanics.ruedas-y-pinones.fresa-de-modulo",
+          "concept.encyclopedia.micromechanics.ruedas-y-pinones.division-angular",
+          "concept.encyclopedia.micromechanics.ruedas-y-pinones.pinon-de-hojas"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Fabricación de ruedas, piñones y cortadores sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Fabricación de ruedas, piñones y cortadores sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Una rueda tiene todos sus dientes pero pulsa una vez por vuelta. Una desviación de centrado del blank o del montaje puede dominar aunque el cortador sea correcto. Se separa error periódico del perfil local.",
+          "en": "Una rueda tiene todos sus dientes pero pulsa una vez por vuelta. Una desviación de centrado del blank o del montaje puede dominar aunque el cortador sea correcto. Se separa error periódico del perfil local."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?",
+            "en": "Identificar la pregunta: ¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?"
+          },
+          {
+            "es": "Dibujar la secuencia definir relación y centros → calcular blank y perfil → fabricar o elegir cortador → centrar y dividir → cortar y desbarbar → medir y probar engrane.",
+            "en": "Dibujar la secuencia definir relación y centros → calcular blank y perfil → fabricar o elegir cortador → centrar y dividir → cortar y desbarbar → medir y probar engrane."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: número de dientes; módulo/paso; diámetros; espesor; excentricidad e índice.",
+            "en": "Asignar magnitudes y evidencia: número de dientes; módulo/paso; diámetros; espesor; excentricidad e índice."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Elige un par rueda-piñón de práctica y produce una hoja de cálculo verificable con unidades, relación, blank, cortador, indexado y pruebas.",
+          "en": "Elige un par rueda-piñón de práctica y produce una hoja de cálculo verificable con unidades, relación, blank, cortador, indexado y pruebas."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: definir relación y centros → calcular blank y perfil → fabricar o elegir cortador → centrar y dividir → cortar y desbarbar → medir y probar engrane.",
+            "en": "Completa la cadena con las etapas visibles: definir relación y centros → calcular blank y perfil → fabricar o elegir cortador → centrar y dividir → cortar y desbarbar → medir y probar engrane."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?",
+            "en": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Elige un par rueda-piñón de práctica y produce una hoja de cálculo verificable con unidades, relación, blank, cortador, indexado y pruebas.",
+            "en": "Elige un par rueda-piñón de práctica y produce una hoja de cálculo verificable con unidades, relación, blank, cortador, indexado y pruebas."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Contar bien las divisiones garantiza una rueda buena",
+          "en": "Contar bien las divisiones garantiza una rueda buena"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Fabricación de ruedas, piñones y cortadores con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Fabricación de ruedas, piñones y cortadores con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Elige un par rueda-piñón de práctica y produce una hoja de cálculo verificable con unidades, relación, blank, cortador, indexado y pruebas.",
+        "en": "Elige un par rueda-piñón de práctica y produce una hoja de cálculo verificable con unidades, relación, blank, cortador, indexado y pruebas."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena definir relación y centros → calcular blank y perfil → fabricar o elegir cortador → centrar y dividir → cortar y desbarbar → medir y probar engrane, su evidencia y límites.",
+        "en": "La explicación conserva la cadena definir relación y centros → calcular blank y perfil → fabricar o elegir cortador → centrar y dividir → cortar y desbarbar → medir y probar engrane, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Contar bien las divisiones garantiza una rueda buena».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Contar bien las divisiones garantiza una rueda buena»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?",
+        "en": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Usar un perfil genérico para cualquier número de hojas. de Desbarbar cambiando el espesor funcional del diente..",
+        "en": "Busca evidencia para distinguir Usar un perfil genérico para cualquier número de hojas. de Desbarbar cambiando el espesor funcional del diente.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.micromechanics.ruedas-y-pinones"
+      ],
+      "transferPrompt": {
+        "es": "Elige un par rueda-piñón de práctica y produce una hoja de cálculo verificable con unidades, relación, blank, cortador, indexado y pruebas.",
+        "en": "Elige un par rueda-piñón de práctica y produce una hoja de cálculo verificable con unidades, relación, blank, cortador, indexado y pruebas."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.fresa-de-modulo",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.division-angular",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.pinon-de-hojas"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?",
+          "en": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?"
+        },
+        {
+          "es": "¿Qué relación causal de «Fabricación de ruedas, piñones y cortadores» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Fabricación de ruedas, piñones y cortadores» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

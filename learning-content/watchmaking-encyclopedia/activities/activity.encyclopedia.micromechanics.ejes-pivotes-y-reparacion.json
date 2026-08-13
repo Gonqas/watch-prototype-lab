@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Ejes, pivotes, hombros y sustitución de staffs",
+  "sceneIds": [
+    "scene.encyclopedia.micromechanics.ejes-pivotes-y-reparacion"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.micromechanics.ejes-pivotes-y-reparacion"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.micromechanics.ejes-pivotes-y-reparacion"
+  ],
+  "rubricId": "rubric.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+    "title": {
+      "es": "Explicar y transferir: Ejes, pivotes, hombros y sustitución de staffs",
+      "en": "Explicar y transferir: Ejes, pivotes, hombros y sustitución de staffs"
+    },
+    "description": {
+      "es": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+      "en": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?"
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "staff-making",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.daniels.turning",
+      "source.private.daniels.small-components",
+      "source.external.bobinchak-school"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.pivote",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.hombro",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.brunido"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.pivote",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.hombro",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.brunido"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.pivote",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.hombro",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.brunido"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+        "blockId": "block.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+        "conceptIds": [
+          "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.pivote",
+          "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.hombro",
+          "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.brunido"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Ejes, pivotes, hombros y sustitución de staffs sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Ejes, pivotes, hombros y sustitución de staffs sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Un pivote nuevo entra en el rubí pero el volante queda sin juego axial. El diámetro era solo una de varias características: distancia entre hombros, asiento del platillo y altura del volante determinan el conjunto.",
+          "en": "Un pivote nuevo entra en el rubí pero el volante queda sin juego axial. El diámetro era solo una de varias características: distancia entre hombros, asiento del platillo y altura del volante determinan el conjunto."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+            "en": "Identificar la pregunta: ¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?"
+          },
+          {
+            "es": "Dibujar la secuencia documentar pieza original → establecer centros → tornear cuerpos y hombros → tratar térmicamente → rectificar y bruñir pivotes → probar juegos y montaje.",
+            "en": "Dibujar la secuencia documentar pieza original → establecer centros → tornear cuerpos y hombros → tratar térmicamente → rectificar y bruñir pivotes → probar juegos y montaje."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: diámetro de pivote; longitud entre hombros; radio; conicidad; rugosidad y dureza.",
+            "en": "Asignar magnitudes y evidencia: diámetro de pivote; longitud entre hombros; radio; conicidad; rugosidad y dureza."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Prepara un plano de proceso de un eje de práctica y distingue cotas copiadas, inferidas por conjunto y calculadas por función.",
+          "en": "Prepara un plano de proceso de un eje de práctica y distingue cotas copiadas, inferidas por conjunto y calculadas por función."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: documentar pieza original → establecer centros → tornear cuerpos y hombros → tratar térmicamente → rectificar y bruñir pivotes → probar juegos y montaje.",
+            "en": "Completa la cadena con las etapas visibles: documentar pieza original → establecer centros → tornear cuerpos y hombros → tratar térmicamente → rectificar y bruñir pivotes → probar juegos y montaje."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+            "en": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Prepara un plano de proceso de un eje de práctica y distingue cotas copiadas, inferidas por conjunto y calculadas por función.",
+            "en": "Prepara un plano de proceso de un eje de práctica y distingue cotas copiadas, inferidas por conjunto y calculadas por función."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Hacer un staff consiste en copiar sus diámetros",
+          "en": "Hacer un staff consiste en copiar sus diámetros"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Ejes, pivotes, hombros y sustitución de staffs con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Ejes, pivotes, hombros y sustitución de staffs con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Prepara un plano de proceso de un eje de práctica y distingue cotas copiadas, inferidas por conjunto y calculadas por función.",
+        "en": "Prepara un plano de proceso de un eje de práctica y distingue cotas copiadas, inferidas por conjunto y calculadas por función."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena documentar pieza original → establecer centros → tornear cuerpos y hombros → tratar térmicamente → rectificar y bruñir pivotes → probar juegos y montaje, su evidencia y límites.",
+        "en": "La explicación conserva la cadena documentar pieza original → establecer centros → tornear cuerpos y hombros → tratar térmicamente → rectificar y bruñir pivotes → probar juegos y montaje, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Hacer un staff consiste en copiar sus diámetros».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Hacer un staff consiste en copiar sus diámetros»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+        "en": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Copiar una pieza desgastada como si conservara cotas originales. de Crear hombro agudo o pulir hasta reducir diámetro funcional..",
+        "en": "Busca evidencia para distinguir Copiar una pieza desgastada como si conservara cotas originales. de Crear hombro agudo o pulir hasta reducir diámetro funcional.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.micromechanics.ejes-pivotes-y-reparacion"
+      ],
+      "transferPrompt": {
+        "es": "Prepara un plano de proceso de un eje de práctica y distingue cotas copiadas, inferidas por conjunto y calculadas por función.",
+        "en": "Prepara un plano de proceso de un eje de práctica y distingue cotas copiadas, inferidas por conjunto y calculadas por función."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.pivote",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.hombro",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.brunido"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+          "en": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?"
+        },
+        {
+          "es": "¿Qué relación causal de «Ejes, pivotes, hombros y sustitución de staffs» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Ejes, pivotes, hombros y sustitución de staffs» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

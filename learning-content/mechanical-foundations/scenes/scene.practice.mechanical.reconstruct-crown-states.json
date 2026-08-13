@@ -1,0 +1,326 @@
+{
+  "id": "scene.practice.mechanical.reconstruct-crown-states",
+  "version": "0.5.0",
+  "title": "Reconstruir estados de la tija · práctica específica",
+  "description": "Reconstruir estados de la tija mediante el laboratorio funcional, cálculos declarados, evidencia y restauración. La pregunta, el feedback y la evidencia pertenecen exclusivamente a este objetivo.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para Cuerda y puesta en hora.",
+    "reducedMotionAlternative": "Estados discretos y fases numeradas con los mismos cálculos y evaluación.",
+    "keyboardActions": [
+      "Tabular por subsistema, entidad y acción.",
+      "Activar con Intro o Espacio.",
+      "Deshacer y restaurar mediante controles nombrados."
+    ],
+    "colorIndependentCues": [
+      "Texto y estado acompañan cada color.",
+      "Dirección, bloqueo y confianza se expresan también con palabras."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "keyless"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "durationMs": 0,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 600,
+      "operation": "explode",
+      "targets": [],
+      "value": 0.1,
+      "durationMs": 300,
+      "essential": false,
+      "waitFor": "none"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.mechanical.keyless.fidelity",
+      "markdown": "Cuerda y puesta en hora: modelo conceptual con cálculos ideales; la comparación con el 8215 se mantiene separada. Consulta la ficha técnica para conocer el alcance de geometría, movimiento y física.",
+      "accessibleLabel": "Cuerda y puesta en hora. Fidelidad y limitaciones disponibles en texto."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.mechanical.keyless.observe",
+      "instructionMarkdown": "Ejecuta «Reconstruir estados de la tija». Antes de confirmar, compara tu predicción, el cambio observable, la relación implicada y la autoridad de la fuente.",
+      "questions": [
+        {
+          "id": "question.practice.mechanical.reconstruct-crown-states.criterion",
+          "promptMarkdown": "¿Cómo se distinguen los estados de la corona y la tija?",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.practice.mechanical.reconstruct-crown-states.evidence",
+              "label": "Por la posición y las relaciones que quedan engranadas hacia cuerda o puesta",
+              "labels": {
+                "es": "Por la posición y las relaciones que quedan engranadas hacia cuerda o puesta",
+                "en": "Por la posición y las relaciones que quedan engranadas hacia cuerda o puesta"
+              }
+            },
+            {
+              "id": "option.practice.mechanical.reconstruct-crown-states.appearance",
+              "label": "Por el color que adopta la corona en la interfaz",
+              "labels": {
+                "es": "Por el color que adopta la corona en la interfaz",
+                "en": "Por el color que adopta la corona en la interfaz"
+              }
+            },
+            {
+              "id": "option.practice.mechanical.reconstruct-crown-states.authority",
+              "label": "Por la velocidad del volante, sin observar el sistema de puesta",
+              "labels": {
+                "es": "Por la velocidad del volante, sin observar el sistema de puesta",
+                "en": "Por la velocidad del volante, sin observar el sistema de puesta"
+              }
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se distinguen los estados de la corona y la tija?"
+            },
+            "feedback": {
+              "es": "Cada estado selecciona una ruta funcional distinta."
+            }
+          }
+        },
+        {
+          "id": "question.practice.mechanical.reconstruct-crown-states.reasoning",
+          "promptMarkdown": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Cómo se distinguen los estados de la corona y la tija?",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué cambió o qué comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué relación, interfaz o regla explica el resultado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué fuente o límite condiciona la conclusión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Cómo se distinguen los estados de la corona y la tija?"
+            },
+            "feedback": {
+              "es": "La revisión debe comprobar la relación específica: Cada estado selecciona una ruta funcional distinta."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.practice.mechanical.reconstruct-crown-states.criterion",
+          "expectedOptionIds": [
+            "option.practice.mechanical.reconstruct-crown-states.evidence"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.practice.mechanical.reconstruct-crown-states.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    },
+    {
+      "id": "step.mechanical.keyless.execute",
+      "instructionMarkdown": "Ejecuta comandos semánticos, compara el resultado, explica el límite y restaura.",
+      "questions": []
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Reconstruir estados de la tija · práctica específica",
+      "en": "Reconstruir estados de la tija · práctica específica"
+    },
+    "purpose": {
+      "es": "Resolver «Reconstruir estados de la tija» mediante una decisión específica, explicación propia, restauración y transferencia."
+    },
+    "prerequisites": [
+      "concept.mechanical.explain-motion-works"
+    ],
+    "narrative": {
+      "es": "Marca entrada, piezas activas y salida de cada posición. Cada estado selecciona una ruta funcional distinta."
+    },
+    "initialFraming": {
+      "es": "Vista estable del subsistema conceptual; sin movimiento automático obligatorio.",
+      "en": "Vista estable del subsistema conceptual; sin movimiento automático obligatorio."
+    },
+    "protagonist": {
+      "selector": {
+        "by": "role",
+        "value": "keyless"
+      },
+      "cardinality": "one-or-more"
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "story.mechanical.keyless.observe",
+        "sceneStepId": "step.mechanical.keyless.observe",
+        "narrative": {
+          "es": "Observar y predecir antes de manipular.",
+          "en": "Observar y predecir antes de manipular."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "inspect",
+          "predict"
+        ],
+        "interaction": {
+          "es": "Seleccionar mediante teclado o puntero.",
+          "en": "Seleccionar mediante teclado o puntero."
+        },
+        "feedback": {
+          "es": "La predicción se conserva antes de mostrar el resultado.",
+          "en": "La predicción se conserva antes de mostrar el resultado."
+        }
+      },
+      {
+        "id": "story.mechanical.keyless.execute",
+        "sceneStepId": "step.mechanical.keyless.execute",
+        "narrative": {
+          "es": "Manipular, calcular, comparar, explicar y restaurar.",
+          "en": "Manipular, calcular, comparar, explicar y restaurar."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "mechanical-lab-command",
+          "checkpoint",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Botones y menús semánticos; sin arrastre obligatorio.",
+          "en": "Botones y menús semánticos; sin arrastre obligatorio."
+        },
+        "feedback": {
+          "es": "El diagnóstico señala entrada, relación o estado inválido sin fingir física.",
+          "en": "El diagnóstico señala entrada, relación o estado inválido sin fingir física."
+        }
+      }
+    ],
+    "ending": {
+      "es": "Estado restaurado y evidencia disponible.",
+      "en": "Estado restaurado y evidencia disponible."
+    },
+    "restoration": {
+      "es": "Restaurar grafo, configuración, energía, fallos, vista y selección.",
+      "en": "Restaurar grafo, configuración, energía, fallos, vista y selección."
+    },
+    "accessibility": {
+      "es": "Orden único, fórmulas legibles y alternativa textual equivalente.",
+      "en": "Orden único, fórmulas legibles y alternativa textual equivalente."
+    },
+    "reducedMotion": {
+      "es": "Fases estáticas numeradas y cambios discretos con igual resultado.",
+      "en": "Fases estáticas numeradas y cambios discretos con igual resultado."
+    },
+    "evidenceTemplateIds": [
+      "evidence.mechanical.explain-keyless"
+    ],
+    "technicalCriteria": [
+      "Acciones validadas.",
+      "Cálculos reproducibles.",
+      "Modelo conceptual y 8215 separados.",
+      "El proyecto técnico original permanece intacto."
+    ],
+    "limitations": [
+      "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+      "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+      "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+    ]
+  },
+  "restorePreviousState": true
+}

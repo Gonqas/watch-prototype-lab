@@ -1,0 +1,433 @@
+{
+  "id": "activity.mechanical.build-final-project",
+  "version": "0.5.0",
+  "title": "Construir el proyecto final",
+  "sceneIds": [
+    "scene.practice.mechanical.build-final-project"
+  ],
+  "competencyIds": [
+    "competency.mechanical.document-fidelity-limits"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.mechanical.document-fidelity-limits"
+  ],
+  "rubricId": "rubric.mechanical.document-fidelity-limits",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.mechanical.final-project",
+    "title": {
+      "es": "Construir el proyecto final",
+      "en": "Construir el proyecto final"
+    },
+    "description": {
+      "es": "Construir el proyecto final mediante el laboratorio funcional, cálculos declarados, evidencia y restauración.",
+      "en": "Construir el proyecto final mediante el laboratorio funcional, cálculos declarados, evidencia y restauración."
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 30,
+    "activityType": "prediction",
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "familyIds": [
+      "conceptual-mechanical"
+    ],
+    "subsystem": "integration",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+        "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+        "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Modelo normalizado: no es física ni servicio de un calibre real.",
+        "El 8215 solo aporta comparación estructural documentada."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.horology.private-book.movement-design",
+      "source.horology.original-mechanical-foundations"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.final-project"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "interactionContract": {
+      "responseModel": "structured-response",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [
+        {
+          "id": "field.observation",
+          "label": {
+            "es": "Observación verificable",
+            "en": "Observación verificable"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.causal-link",
+          "label": {
+            "es": "Relación o decisión causal",
+            "en": "Relación o decisión causal"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.source-limit",
+          "label": {
+            "es": "Fuente, límite y confianza",
+            "en": "Fuente, límite y confianza"
+          },
+          "kind": "short-text",
+          "required": true
+        }
+      ],
+      "hints": [
+        {
+          "id": "hint.mechanical.build-final-project.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Qué evidencia integra realmente el proyecto mecánico final?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.build-final-project.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Revisa si cada subsistema tiene entrada, relación y salida."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.build-final-project.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: Integrar exige construir, explicar, comprobar y delimitar, no solo mostrar piezas."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.build-final-project.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.build-final-project.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "Integrar exige construir, explicar, comprobar y delimitar, no solo mostrar piezas."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.build-final-project.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Defiende la misma cadena sobre otro movimiento sin copiar geometría."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "mechanical-lab-command",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [
+          "field.observation",
+          "field.causal-link",
+          "field.confidence"
+        ],
+        "requiresHumanReview": true,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "integration",
+      "commands": [
+        "wind",
+        "add-stage",
+        "change-ratio",
+        "set-oscillator",
+        "set-hairspring-active-length",
+        "step-escapement",
+        "scrub-escapement",
+        "oscillate",
+        "set-time",
+        "change-crown-position",
+        "enable-automatic",
+        "advance-calendar",
+        "introduce-fault",
+        "inspect",
+        "project-enable-subsystem",
+        "project-record-decision",
+        "restore",
+        "undo"
+      ],
+      "viewModes": [
+        "normal",
+        "energy-flow",
+        "kinematics",
+        "compare-8215",
+        "provenance",
+        "uncertainty",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "Integrar exige construir, explicar, comprobar y delimitar, no solo mostrar piezas."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «Una captura del modelo completo sin relaciones ni fuentes» y «La lista de nombres memorizada en el mismo orden del ejemplo» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Qué evidencia integra realmente el proyecto mecánico final?"
+      },
+      "nextObservation": {
+        "es": "Revisa si cada subsistema tiene entrada, relación y salida."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Defiende la misma cadena sobre otro movimiento sin copiar geometría."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.explain-automatic-winding",
+        "concept.mechanical.document-fidelity-limits"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Construir el proyecto final», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Construir el proyecto final», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué evidencia integra realmente el proyecto mecánico final?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Revisa si cada subsistema tiene entrada, relación y salida."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Construir el proyecto final»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: Integrar exige construir, explicar, comprobar y delimitar, no solo mostrar piezas."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "Integrar exige construir, explicar, comprobar y delimitar, no solo mostrar piezas."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Construir el proyecto final» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Construir el proyecto final» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Construir el proyecto final» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Defiende la misma cadena sobre otro movimiento sin copiar geometría."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "Cadena independiente, predicción de interrupción, restauración y explicación con límites"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Una captura del modelo completo sin relaciones ni fuentes"
+        },
+        {
+          "es": "La lista de nombres memorizada en el mismo orden del ejemplo"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Defiende la misma cadena sobre otro movimiento sin copiar geometría."
+        }
+      },
+      "transferPrompt": {
+        "es": "Defiende la misma cadena sobre otro movimiento sin copiar geometría."
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "mastery-check",
+      "assessmentIntent": "demonstration",
+      "requiresConceptIds": [
+        "concept.mechanical.explain-automatic-winding"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [
+        "concept.mechanical.document-fidelity-limits"
+      ],
+      "practicesConceptIds": [
+        "concept.mechanical.document-fidelity-limits"
+      ],
+      "assessesConceptIds": [
+        "concept.mechanical.document-fidelity-limits"
+      ],
+      "evidenceLevel": "independent-simulation",
+      "supportLevel": "independent",
+      "remediation": {
+        "lessonId": "lesson.mechanical.final-project",
+        "blockId": "block.mechanical.final-project",
+        "conceptIds": [
+          "concept.mechanical.document-fidelity-limits"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba comprensión dentro de un modelo mecánico conceptual geometría conceptual y secuencia educativa, sin simulación física. No demuestra física validada, destreza manual ni capacidad de servicio sobre un calibre real.",
+        "en": "This activity checks understanding in a geometría conceptual y secuencia educativa, sin simulación física conceptual mechanical model. It does not demonstrate validated physics, manual skill, or the ability to service a real calibre."
+      }
+    }
+  }
+}

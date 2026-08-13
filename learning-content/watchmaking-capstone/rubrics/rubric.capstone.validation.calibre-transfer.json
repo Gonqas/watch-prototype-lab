@@ -1,0 +1,43 @@
+{
+  "id": "rubric.capstone.validation.calibre-transfer",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.validation.calibre-transfer",
+  "rules": [
+    {
+      "id": "rule.capstone.validation.calibre-transfer.demonstrated",
+      "version": "1.0.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.8,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Transferencia entre calibres y arquitecturas: revisión humana de requisitos, alternativas, riesgos, evidencia y límites."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.capstone.validation.calibre-transfer",
+    "version": "1.0.0",
+    "competencyId": "competency.capstone.validation.calibre-transfer",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "human-review",
+            "status": "active",
+            "minimumConfidence": 0.8
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

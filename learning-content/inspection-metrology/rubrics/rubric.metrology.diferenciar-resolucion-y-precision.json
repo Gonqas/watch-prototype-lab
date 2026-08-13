@@ -1,0 +1,34 @@
+{
+  "id": "rubric.metrology.diferenciar-resolucion-y-precision",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.verificar-un-instrumento",
+  "rules": [
+    {
+      "id": "rule.activity-metrology-diferenciar-resolucion-y-precision.practice",
+      "version": "0.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.7,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan método, unidad, repetición, trazabilidad, incertidumbre, interpretación y reconocimiento de invalidez; no solo el número."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.activity-metrology-diferenciar-resolucion-y-precision",
+    "version": "0.1.0",
+    "competencyId": "competency.metrology.verificar-un-instrumento",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

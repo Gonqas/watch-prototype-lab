@@ -1,0 +1,59 @@
+{
+  "id": "concept.mechanical.explain-basic-calendar",
+  "version": "0.5.0",
+  "title": {
+    "es": "Explicar el calendario básico",
+    "en": "Explicar el calendario básico"
+  },
+  "summary": {
+    "es": "Explicar el calendario básico mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Explicar el calendario básico mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.mechanical.explain-automatic-winding"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.explain-basic-calendar"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "calendar",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.explain-date-change"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Explicar el calendario básico mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Explicar el calendario básico mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Explicar el calendario básico describe una relación causal dentro de calendario: una entrada produce un cambio observable mediante una interfaz declarada. Explicar el calendario básico mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Explicar el calendario básico describe una relación causal dentro de calendario: una entrada produce un cambio observable mediante una interfaz declarada. Explicar el calendario básico mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "whyItMatters": {
+    "es": "Dominar explicar el calendario básico permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega explicar el calendario básico dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema calendar."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [],
+  "knowledgeType": "conceptual-causal",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.automatic-calendar",
+  "targetEvidenceLevel": "causal-explanation"
+}

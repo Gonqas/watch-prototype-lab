@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.distancia-entre-centros",
+  "version": "1.1.0",
+  "title": {
+    "es": "distancia entre centros",
+    "en": "distancia entre centros"
+  },
+  "summary": {
+    "es": "Separación de ejes que sitúa los perfiles en su profundidad de trabajo.",
+    "en": "Separación de ejes que sitúa los perfiles en su profundidad de trabajo."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.going-barrel",
+    "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.motor-barrel",
+    "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.apoyo-del-arbol"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria"
+  ],
+  "movementIds": [],
+  "subsystem": "gear-pair",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch05",
+    "source.private.vba-uhrentechnik",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+  "plainLanguage": {
+    "es": "Separación de ejes que sitúa los perfiles en su profundidad de trabajo.",
+    "en": "Separación de ejes que sitúa los perfiles en su profundidad de trabajo."
+  },
+  "technicalLanguage": {
+    "es": "distancia entre centros se interpreta mediante la cadena definir relación → seleccionar dientes → establecer módulo y perfiles → calcular centros → comprobar contacto → verificar bajo carga y las condiciones declaradas en la unidad.",
+    "en": "distancia entre centros se interpreta mediante la cadena definir relación → seleccionar dientes → establecer módulo y perfiles → calcular centros → comprobar contacto → verificar bajo carga y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?",
+    "en": "Permite explicar y comprobar ¿qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir distancia entre centros sin circularidad.",
+      "en": "Definir distancia entre centros sin circularidad."
+    },
+    {
+      "es": "Relacionar distancia entre centros con una entrada, una interfaz y una salida.",
+      "en": "Relacionar distancia entre centros con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

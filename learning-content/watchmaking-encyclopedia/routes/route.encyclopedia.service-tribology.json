@@ -1,0 +1,391 @@
+{
+  "id": "route.encyclopedia.service-tribology",
+  "version": "1.1.0",
+  "title": {
+    "es": "Servicio, tribología y diagnóstico",
+    "en": "Servicio, tribología y diagnóstico"
+  },
+  "purpose": {
+    "es": "Organizar una intervención reversible desde la recepción hasta el control final, con lubricación y diagnóstico basados en interfaces.",
+    "en": "Organizar una intervención reversible desde la recepción hasta el control final, con lubricación y diagnóstico basados en interfaces."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.service-tribology.recepcion-y-linea-base",
+    "module.encyclopedia.service-tribology.liberar-energia-y-desmontar",
+    "module.encyclopedia.service-tribology.limpieza-e-inspeccion",
+    "module.encyclopedia.service-tribology.tribologia-y-lubricantes",
+    "module.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+    "module.encyclopedia.service-tribology.diagnostico-y-control-final",
+    "module.encyclopedia.service-tribology.toh-friccion-desgaste",
+    "module.encyclopedia.service-tribology.toh-lubricacion-retencion",
+    "module.encyclopedia.service-tribology.bulova-montaje-barrilete",
+    "module.encyclopedia.service-tribology.bulova-enjaltado-escape",
+    "module.encyclopedia.service-tribology.chicago-limpieza-segura",
+    "module.encyclopedia.service-tribology.chicago-ensamblaje-control",
+    "module.encyclopedia.service-tribology.tm-inspeccion-previa",
+    "module.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.recepcion-y-linea-base",
+    "competency.encyclopedia.service-tribology.liberar-energia-y-desmontar",
+    "competency.encyclopedia.service-tribology.limpieza-e-inspeccion",
+    "competency.encyclopedia.service-tribology.tribologia-y-lubricantes",
+    "competency.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+    "competency.encyclopedia.service-tribology.diagnostico-y-control-final",
+    "competency.encyclopedia.service-tribology.toh-friccion-desgaste",
+    "competency.encyclopedia.service-tribology.toh-lubricacion-retencion",
+    "competency.encyclopedia.service-tribology.bulova-montaje-barrilete",
+    "competency.encyclopedia.service-tribology.bulova-enjaltado-escape",
+    "competency.encyclopedia.service-tribology.chicago-limpieza-segura",
+    "competency.encyclopedia.service-tribology.chicago-ensamblaje-control",
+    "competency.encyclopedia.service-tribology.tm-inspeccion-previa",
+    "competency.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "movementIds": [],
+  "difficulty": "intermediate",
+  "sourceIds": [
+    "source.institutional.awci.standards",
+    "source.external.watchguy-repair-blog",
+    "source.external.dean-dk",
+    "source.external.naked-watchmaker",
+    "source.official.miyota.8215",
+    "source.private.daniels.jewelling",
+    "source.external.learnwatchmaking",
+    "source.institutional.wostep.watchmaker",
+    "source.private.toh.ch13",
+    "source.encyclopedia.original-synthesis",
+    "source.private.bulova.09",
+    "source.private.bulova.09a",
+    "source.private.bulova.09b",
+    "source.private.bulova.10",
+    "source.private.bulova.10a",
+    "source.private.chicago.10",
+    "source.private.chicago.8",
+    "source.private.chicago.9",
+    "source.official.tm9-1575.inspection",
+    "source.official.tm9-1575.diagnosis",
+    "source.private.chicago.35"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.service-tribology.01",
+        "order": 1,
+        "title": {
+          "es": "Recepción, historia y línea base",
+          "en": "Recepción, historia y línea base"
+        },
+        "outcome": {
+          "es": "¿Qué debe saberse y registrarse antes de abrir un reloj?",
+          "en": "¿Qué debe saberse y registrarse antes de abrir un reloj?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.recepcion-y-linea-base",
+        "activityId": "activity.encyclopedia.service-tribology.recepcion-y-linea-base",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.recepcion-y-linea-base.linea-base",
+          "concept.encyclopedia.service-tribology.recepcion-y-linea-base.cadena-de-custodia",
+          "concept.encyclopedia.service-tribology.recepcion-y-linea-base.criterio-de-no-prueba"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.02",
+        "order": 2,
+        "title": {
+          "es": "Liberar energía y desmontar con trazabilidad",
+          "en": "Liberar energía y desmontar con trazabilidad"
+        },
+        "outcome": {
+          "es": "¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?",
+          "en": "¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.liberar-energia-y-desmontar",
+        "activityId": "activity.encyclopedia.service-tribology.liberar-energia-y-desmontar",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.energia-residual",
+          "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.dependencia-de-desmontaje",
+          "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.mapa-de-tornillos"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.03",
+        "order": 3,
+        "title": {
+          "es": "Limpieza, inspección y clasificación de defectos",
+          "en": "Limpieza, inspección y clasificación de defectos"
+        },
+        "outcome": {
+          "es": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+          "en": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+        "activityId": "activity.encyclopedia.service-tribology.limpieza-e-inspeccion",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+          "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.defecto-funcional",
+          "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.criterio-de-rechazo"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.04",
+        "order": 4,
+        "title": {
+          "es": "Tribología, lubricantes y cantidad aplicada",
+          "en": "Tribología, lubricantes y cantidad aplicada"
+        },
+        "outcome": {
+          "es": "¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?",
+          "en": "¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.tribologia-y-lubricantes",
+        "activityId": "activity.encyclopedia.service-tribology.tribologia-y-lubricantes",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.regimen-de-lubricacion",
+          "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.capilaridad",
+          "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.migracion"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.05",
+        "order": 5,
+        "title": {
+          "es": "Montaje por funciones y puntos de control",
+          "en": "Montaje por funciones y puntos de control"
+        },
+        "outcome": {
+          "es": "¿Cómo se monta detectando el primer error cuando todavía es reversible?",
+          "en": "¿Cómo se monta detectando el primer error cuando todavía es reversible?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+        "activityId": "activity.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.montaje-y-puntos-de-control.punto-de-control",
+          "concept.encyclopedia.service-tribology.montaje-y-puntos-de-control.asiento",
+          "concept.encyclopedia.service-tribology.montaje-y-puntos-de-control.prueba-reversible"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.06",
+        "order": 6,
+        "title": {
+          "es": "Diagnóstico causal y control final",
+          "en": "Diagnóstico causal y control final"
+        },
+        "outcome": {
+          "es": "¿Cómo demostrar que el objetivo del servicio se alcanzó sin confundir ausencia momentánea de síntomas con calidad?",
+          "en": "¿Cómo demostrar que el objetivo del servicio se alcanzó sin confundir ausencia momentánea de síntomas con calidad?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+        "activityId": "activity.encyclopedia.service-tribology.diagnostico-y-control-final",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.diagnostico-y-control-final.causa-raiz",
+          "concept.encyclopedia.service-tribology.diagnostico-y-control-final.criterio-de-aceptacion",
+          "concept.encyclopedia.service-tribology.diagnostico-y-control-final.retencion-diferida"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.07",
+        "order": 7,
+        "title": {
+          "es": "Fricción, desgaste y regímenes de contacto",
+          "en": "Fricción, desgaste y regímenes de contacto"
+        },
+        "outcome": {
+          "es": "¿Cómo se relacionan carga, velocidad, superficie y lubricante en un contacto relojero?",
+          "en": "¿Cómo se relacionan carga, velocidad, superficie y lubricante en un contacto relojero?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.toh-friccion-desgaste",
+        "activityId": "activity.encyclopedia.service-tribology.toh-friccion-desgaste",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.toh-friccion-desgaste.par-tribologico",
+          "concept.encyclopedia.service-tribology.toh-friccion-desgaste.desgaste-adhesivo",
+          "concept.encyclopedia.service-tribology.toh-friccion-desgaste.desgaste-abrasivo"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.08",
+        "order": 8,
+        "title": {
+          "es": "Lubricación, cantidad y retención del aceite",
+          "en": "Lubricación, cantidad y retención del aceite"
+        },
+        "outcome": {
+          "es": "¿Por qué producto correcto y cantidad correcta son decisiones separadas?",
+          "en": "¿Por qué producto correcto y cantidad correcta son decisiones separadas?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.toh-lubricacion-retencion",
+        "activityId": "activity.encyclopedia.service-tribology.toh-lubricacion-retencion",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.toh-lubricacion-retencion.retencion-capilar",
+          "concept.encyclopedia.service-tribology.toh-lubricacion-retencion.mapa-de-lubricacion",
+          "concept.encyclopedia.service-tribology.toh-lubricacion-retencion.migracion"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.09",
+        "order": 9,
+        "title": {
+          "es": "Pasaporte XI: montaje del movimiento y barrilete",
+          "en": "Pasaporte XI: montaje del movimiento y barrilete"
+        },
+        "outcome": {
+          "es": "¿Qué puntos de control impiden ocultar un defecto bajo la siguiente pieza?",
+          "en": "¿Qué puntos de control impiden ocultar un defecto bajo la siguiente pieza?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.bulova-montaje-barrilete",
+        "activityId": "activity.encyclopedia.service-tribology.bulova-montaje-barrilete",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.bulova-montaje-barrilete.montaje-incremental",
+          "concept.encyclopedia.service-tribology.bulova-montaje-barrilete.estado-de-energia-seguro",
+          "concept.encyclopedia.service-tribology.bulova-montaje-barrilete.punto-de-control"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.10",
+        "order": 10,
+        "title": {
+          "es": "Pasaporte XII: enjaltado y examen del escape",
+          "en": "Pasaporte XII: enjaltado y examen del escape"
+        },
+        "outcome": {
+          "es": "¿Qué evidencia separa posición de rubí, juego y geometría de escape?",
+          "en": "¿Qué evidencia separa posición de rubí, juego y geometría de escape?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.bulova-enjaltado-escape",
+        "activityId": "activity.encyclopedia.service-tribology.bulova-enjaltado-escape",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.bulova-enjaltado-escape.altura-de-rubi",
+          "concept.encyclopedia.service-tribology.bulova-enjaltado-escape.ajuste-por-friccion",
+          "concept.encyclopedia.service-tribology.bulova-enjaltado-escape.examen-funcional-del-escape"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.11",
+        "order": 11,
+        "title": {
+          "es": "Expediente Chicago V: limpieza histórica y sustitución segura",
+          "en": "Expediente Chicago V: limpieza histórica y sustitución segura"
+        },
+        "outcome": {
+          "es": "¿Qué conocimiento puede conservarse de un capítulo con disolventes hoy inaceptables?",
+          "en": "¿Qué conocimiento puede conservarse de un capítulo con disolventes hoy inaceptables?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.chicago-limpieza-segura",
+        "activityId": "activity.encyclopedia.service-tribology.chicago-limpieza-segura",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.chicago-limpieza-segura.cuarentena-de-procedimiento",
+          "concept.encyclopedia.service-tribology.chicago-limpieza-segura.compatibilidad-de-limpieza",
+          "concept.encyclopedia.service-tribology.chicago-limpieza-segura.verificacion-poslimpieza"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.12",
+        "order": 12,
+        "title": {
+          "es": "Expediente Chicago VI: montaje, cuerda y puesta en hora",
+          "en": "Expediente Chicago VI: montaje, cuerda y puesta en hora"
+        },
+        "outcome": {
+          "es": "¿Cómo se separan fallos de montaje, cuerda y puesta en hora?",
+          "en": "¿Cómo se separan fallos de montaje, cuerda y puesta en hora?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.chicago-ensamblaje-control",
+        "activityId": "activity.encyclopedia.service-tribology.chicago-ensamblaje-control",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.matriz-posicion-funcion",
+          "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.prueba-incremental",
+          "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.retroceso-de-corona"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.13",
+        "order": 13,
+        "title": {
+          "es": "Caso TM I: inspección antes de desmontar",
+          "en": "Caso TM I: inspección antes de desmontar"
+        },
+        "outcome": {
+          "es": "¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?",
+          "en": "¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+        "activityId": "activity.encyclopedia.service-tribology.tm-inspeccion-previa",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.tm-inspeccion-previa.estado-de-entrada",
+          "concept.encyclopedia.service-tribology.tm-inspeccion-previa.inspeccion-funcional",
+          "concept.encyclopedia.service-tribology.tm-inspeccion-previa.registro-de-discrepancia"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.service-tribology.14",
+        "order": 14,
+        "title": {
+          "es": "Caso TM II: diagnóstico por síntomas y prueba discriminante",
+          "en": "Caso TM II: diagnóstico por síntomas y prueba discriminante"
+        },
+        "outcome": {
+          "es": "¿Cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?",
+          "en": "¿Cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?"
+        },
+        "lessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+        "activityId": "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.sintoma",
+          "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.hipotesis-rival",
+          "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.prueba-discriminante"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+    ]
+  }
+}

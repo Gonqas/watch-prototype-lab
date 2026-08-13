@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+  "version": "1.1.0",
+  "title": "Cuaderno: Expediente Chicago IV: barriletes motor, enjoyados y stopwork",
+  "description": "¿Qué cambia en la cadena de par al cambiar la arquitectura del barrilete?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Expediente Chicago IV: barriletes motor, enjoyados y stopwork. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué cambia en la cadena de par al cambiar la arquitectura del barrilete?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué cambia en la cadena de par al cambiar la arquitectura del barrilete?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.answer",
+      "instructionMarkdown": "Explica **Expediente Chicago IV: barriletes motor, enjoyados y stopwork** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.explain",
+          "promptMarkdown": "¿Qué cambia en la cadena de par al cambiar la arquitectura del barrilete?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar entrada y sigue hasta comprobar apoyos.",
+                "en": "Empieza por identificar entrada y sigue hasta comprobar apoyos."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Barriletes motor y enjoyados modifican miembros de entrada, salida y apoyos; stopwork limita vueltas para usar una zona del muelle. Los nombres históricos se entienden mediante funciones y relaciones, no como variantes estéticas.",
+                "en": "Barriletes motor y enjoyados modifican miembros de entrada, salida y apoyos; stopwork limita vueltas para usar una zona del muelle. Los nombres históricos se entienden mediante funciones y relaciones, no como variantes estéticas."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué cambia en la cadena de par al cambiar la arquitectura del barrilete?",
+              "en": "¿Qué cambia en la cadena de par al cambiar la arquitectura del barrilete?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar entrada → seguir carga del muelle → localizar miembro fijo → localizar salida → detectar limitador → comprobar apoyos, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar entrada → seguir carga del muelle → localizar miembro fijo → localizar salida → detectar limitador → comprobar apoyos, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.evidence",
+            "field.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.limit",
+            "field.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

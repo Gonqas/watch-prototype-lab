@@ -1,0 +1,237 @@
+{
+  "id": "lesson.encyclopedia.complications.toh-reversores-deslizamiento",
+  "version": "1.1.0",
+  "title": "Reversores, desacoplamiento y limitación de carga",
+  "blockIds": [
+    "block.encyclopedia.complications.toh-reversores-deslizamiento"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-reversores-deslizamiento"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Reversores, desacoplamiento y limitación de carga",
+      "en": "Reversores, desacoplamiento y limitación de carga"
+    },
+    "purpose": {
+      "es": "¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?",
+      "en": "¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Reversores, desacoplamiento y limitación de carga mediante relaciones causales.",
+        "en": "Explicar Reversores, desacoplamiento y limitación de carga mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.complications.toh-automatico-rotor.masa-oscilante",
+      "concept.encyclopedia.complications.toh-automatico-rotor.rectificacion-mecanica",
+      "concept.encyclopedia.complications.toh-automatico-rotor.rendimiento-de-carga"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.complications.toh-reversores-deslizamiento.rueda-inversora",
+      "concept.encyclopedia.complications.toh-reversores-deslizamiento.desacoplamiento",
+      "concept.encyclopedia.complications.toh-reversores-deslizamiento.par-de-deslizamiento"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch08",
+      "source.private.daniels.mainsprings",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.complications.toh-reversores-deslizamiento.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Reversores, desacoplamiento y limitación de carga después de estudiar su teoría.",
+        "en": "Observar y manipular Reversores, desacoplamiento y limitación de carga después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "Ruedas inversoras, trinquetes o embragues seleccionan caminos de par. Cuando el muelle alcanza su rango, una brida puede deslizar de forma controlada. Suciedad, aceite incorrecto o desgaste pueden producir patinamiento prematuro o bloqueo.",
+        "en": "Ruedas inversoras, trinquetes o embragues seleccionan caminos de par. Cuando el muelle alcanza su rango, una brida puede deslizar de forma controlada. Suciedad, aceite incorrecto o desgaste pueden producir patinamiento prematuro o bloqueo."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema automatic con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "recibir giro alterno",
+        "seleccionar camino",
+        "bloquear sentido útil",
+        "liberar retorno",
+        "cargar barrilete",
+        "deslizar al alcanzar umbral"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "rueda inversora",
+        "desacoplamiento",
+        "par de deslizamiento"
+      ],
+      "arrows": [
+        "recibir giro alterno → seleccionar camino",
+        "seleccionar camino → bloquear sentido útil",
+        "bloquear sentido útil → liberar retorno",
+        "liberar retorno → cargar barrilete",
+        "cargar barrilete → deslizar al alcanzar umbral"
+      ],
+      "animations": [
+        "enable-automatic",
+        "engage",
+        "disengage",
+        "rotate",
+        "introduce-fault",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Reversores, desacoplamiento y limitación de carga sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Reversores, desacoplamiento y limitación de carga sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: recibir giro alterno → seleccionar camino → bloquear sentido útil → liberar retorno → cargar barrilete → deslizar al alcanzar umbral. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: recibir giro alterno → seleccionar camino → bloquear sentido útil → liberar retorno → cargar barrilete → deslizar al alcanzar umbral. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.complications.toh-reversores-deslizamiento.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.complications.toh-reversores-deslizamiento.rueda-inversora",
+        "concept.encyclopedia.complications.toh-reversores-deslizamiento.desacoplamiento",
+        "concept.encyclopedia.complications.toh-reversores-deslizamiento.par-de-deslizamiento"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1122,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.complications.toh-reversores-deslizamiento"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: rueda inversora, desacoplamiento, par de deslizamiento.",
+          "en": "Defino con mis palabras: rueda inversora, desacoplamiento, par de deslizamiento."
+        },
+        {
+          "es": "Sigo «Reversores, desacoplamiento y limitación de carga» desde recibir giro alterno hasta deslizar al alcanzar umbral y explico cada enlace.",
+          "en": "Sigo «Reversores, desacoplamiento y limitación de carga» desde recibir giro alterno hasta deslizar al alcanzar umbral y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Reversores, desacoplamiento y limitación de carga» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Reversores, desacoplamiento y limitación de carga» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Diseña pruebas que separen captación, transmisión, deslizamiento y consumo.",
+          "en": "Aplico el criterio a esta variante: Diseña pruebas que separen captación, transmisión, deslizamiento y consumo."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Reversores, desacoplamiento y limitación de carga» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Reversores, desacoplamiento y limitación de carga» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.complications.toh-reversores-deslizamiento.rueda-inversora",
+        "concept.encyclopedia.complications.toh-reversores-deslizamiento.desacoplamiento",
+        "concept.encyclopedia.complications.toh-reversores-deslizamiento.par-de-deslizamiento"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?",
+          "en": "¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?"
+        },
+        {
+          "es": "¿Qué relación causal de «Reversores, desacoplamiento y limitación de carga» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Reversores, desacoplamiento y limitación de carga» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

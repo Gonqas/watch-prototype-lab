@@ -1,0 +1,36 @@
+{
+  "id": "evidence.mechanical.diagnose-conceptual-interruption",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.diagnose-conceptual-interruption",
+  "kind": "human-review",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.mechanical.diagnose-conceptual-interruption",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "diagnosis",
+    "competencyId": "competency.mechanical.diagnose-conceptual-interruption",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.predict-escapement-interruption",
+      "activity.mechanical.introduce-fault",
+      "activity.mechanical.formulate-hypothesis"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.diagnose-conceptual-interruption",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.7,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

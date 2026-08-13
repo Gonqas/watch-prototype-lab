@@ -1,0 +1,43 @@
+{
+  "id": "rubric.advanced.construction-trade-study",
+  "version": "1.0.0",
+  "competencyId": "competency.advanced.construction-trade-study",
+  "rules": [
+    {
+      "id": "rule.advanced.construction-trade-study.demonstrated",
+      "version": "1.0.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.8,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Puentes, platinas y presupuesto de altura: una revisión humana confirma causalidad, procedencia, comparación, límites y transferencia."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.advanced.construction-trade-study",
+    "version": "1.0.0",
+    "competencyId": "competency.advanced.construction-trade-study",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "human-review",
+            "status": "active",
+            "minimumConfidence": 0.8
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

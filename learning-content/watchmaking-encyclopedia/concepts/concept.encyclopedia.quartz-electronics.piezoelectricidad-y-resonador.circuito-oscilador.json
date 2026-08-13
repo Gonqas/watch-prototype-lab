@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.circuito-oscilador",
+  "version": "1.1.0",
+  "title": {
+    "es": "circuito oscilador",
+    "en": "circuito oscilador"
+  },
+  "summary": {
+    "es": "Red electrónica que proporciona ganancia y fase para mantener la resonancia.",
+    "en": "Red electrónica que proporciona ganancia y fase para mantener la resonancia."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.tension",
+    "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.corriente",
+    "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.resistencia-interna"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador"
+  ],
+  "movementIds": [],
+  "subsystem": "quartz-regulation",
+  "routeIds": [
+    "route.encyclopedia.quartz-electronics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch15",
+    "source.official.miyota.2035",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador",
+  "plainLanguage": {
+    "es": "Red electrónica que proporciona ganancia y fase para mantener la resonancia.",
+    "en": "Red electrónica que proporciona ganancia y fase para mantener la resonancia."
+  },
+  "technicalLanguage": {
+    "es": "circuito oscilador se interpreta mediante la cadena circuito aplica señal → cuarzo se deforma → resonador oscila → respuesta vuelve al circuito → ganancia repone pérdidas → frecuencia alimenta divisor y las condiciones declaradas en la unidad.",
+    "en": "circuito oscilador se interpreta mediante la cadena circuito aplica señal → cuarzo se deforma → resonador oscila → respuesta vuelve al circuito → ganancia repone pérdidas → frecuencia alimenta divisor y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se convierte deformación cristalina en una referencia eléctrica estable?",
+    "en": "Permite explicar y comprobar ¿cómo se convierte deformación cristalina en una referencia eléctrica estable?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir circuito oscilador sin circularidad.",
+      "en": "Definir circuito oscilador sin circularidad."
+    },
+    {
+      "es": "Relacionar circuito oscilador con una entrada, una interfaz y una salida.",
+      "en": "Relacionar circuito oscilador con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.service-tribology.bulova-enjaltado-escape",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.service-tribology.bulova-enjaltado-escape",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.service-tribology.bulova-enjaltado-escape",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.service-tribology.bulova-enjaltado-escape",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.service-tribology.bulova-enjaltado-escape"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.service-tribology.bulova-enjaltado-escape",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

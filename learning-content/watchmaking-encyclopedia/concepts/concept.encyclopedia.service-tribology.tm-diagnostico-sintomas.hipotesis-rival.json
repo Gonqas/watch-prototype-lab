@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.hipotesis-rival",
+  "version": "1.1.0",
+  "title": {
+    "es": "hipótesis rival",
+    "en": "hipótesis rival"
+  },
+  "summary": {
+    "es": "Explicación alternativa compatible con el mismo síntoma inicial.",
+    "en": "Explicación alternativa compatible con el mismo síntoma inicial."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.tm-inspeccion-previa.estado-de-entrada",
+    "concept.encyclopedia.service-tribology.tm-inspeccion-previa.inspeccion-funcional",
+    "concept.encyclopedia.service-tribology.tm-inspeccion-previa.registro-de-discrepancia"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "movementIds": [],
+  "subsystem": "diagnosis",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "sourceIds": [
+    "source.official.tm9-1575.diagnosis",
+    "source.private.chicago.35",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+  "plainLanguage": {
+    "es": "Explicación alternativa compatible con el mismo síntoma inicial.",
+    "en": "Explicación alternativa compatible con el mismo síntoma inicial."
+  },
+  "technicalLanguage": {
+    "es": "hipótesis rival se interpreta mediante la cadena definir síntoma → registrar condiciones → enumerar causas por función → elegir prueba reversible → actualizar confianza → intervenir solo con evidencia y las condiciones declaradas en la unidad.",
+    "en": "hipótesis rival se interpreta mediante la cadena definir síntoma → registrar condiciones → enumerar causas por función → elegir prueba reversible → actualizar confianza → intervenir solo con evidencia y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?",
+    "en": "Permite explicar y comprobar ¿cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir hipótesis rival sin circularidad.",
+      "en": "Definir hipótesis rival sin circularidad."
+    },
+    {
+      "es": "Relacionar hipótesis rival con una entrada, una interfaz y una salida.",
+      "en": "Relacionar hipótesis rival con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "transfer",
+  "availability": "prerequisite-blocked"
+}

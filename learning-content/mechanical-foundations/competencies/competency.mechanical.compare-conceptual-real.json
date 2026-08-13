@@ -1,0 +1,28 @@
+{
+  "id": "competency.mechanical.compare-conceptual-real",
+  "version": "0.5.0",
+  "title": "Comparar un modelo conceptual con un calibre real",
+  "description": "Comparar un modelo conceptual con un calibre real mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.",
+  "prerequisites": [
+    "competency.mechanical.diagnose-conceptual-interruption"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Comparar un modelo conceptual con un calibre real",
+      "en": "Comparar un modelo conceptual con un calibre real"
+    },
+    "description": {
+      "es": "Comparar un modelo conceptual con un calibre real; el tiempo y las adaptaciones accesibles no penalizan.",
+      "en": "Comparar un modelo conceptual con un calibre real; el tiempo y las adaptaciones accesibles no penalizan."
+    },
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "subsystem": "comparison",
+    "skillType": "diagnosis",
+    "sourceIds": [
+      "source.horology.original-mechanical-foundations"
+    ]
+  }
+}

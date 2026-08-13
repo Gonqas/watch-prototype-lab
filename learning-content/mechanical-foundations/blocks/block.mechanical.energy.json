@@ -1,0 +1,56 @@
+{
+  "id": "block.mechanical.energy",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "De energía almacenada a movimiento",
+  "bodyMarkdown": "## Propósito\n\nDistinguir energía, movimiento, transmisión, ritmo y pérdida conceptual dentro del reloj.\n\n## Objetivos observables\n\n## Prerrequisitos\n\n## Explicación\n\nLa energía almacenada en el muelle no es todavía indicación ni ritmo. Al liberarse, el barrilete entrega rotación al tren; el escape controla la liberación y repone energía al oscilador; la minutería deriva una rama de indicación. Bloquear un tramo muestra qué queda aguas arriba y aguas abajo, sin convertir la energía normalizada en julios o par real.\n\n## Interacción y actividad\n\n## Fuentes y alcance de las afirmaciones\n\nEl libro privado se usa como teoría general en los capítulos declarados en la ficha de fuentes; no se copia texto. Cada explicación o cálculo del laboratorio indica si es una síntesis educativa o un resultado calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan el movimiento del modelo conceptual.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nDistinguir energía, movimiento, transmisión, ritmo y pérdida conceptual dentro del reloj. Continúa con “Muelle real y barrilete”.\n\n## Palabras y piezas clave\n\n- **Explicar la cadena energética mecánica.** Explicar la cadena energética mecánica mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo pasa un reloj mecánico de energía almacenada a una indicación regulada, y por qué no basta con decir que «todo gira»?\n\n## Modelo causal ampliado\n\nEl recorrido comienza en el muelle real, que almacena energía al cambiar su estado durante la cuerda. El conjunto de barrilete ofrece una salida giratoria al tren. El tren transmite y adapta ese movimiento; no crea energía. En el extremo regulador, el escape alterna retención y liberación, y entrega impulsos al oscilador. La minutería toma una rama del movimiento para producir la indicación. Así aparecen dos recorridos relacionados: el de la energía, desde el muelle hacia las pérdidas, y el de la temporización, desde el oscilador hacia los instantes de liberación.\n\nEnergía, par, potencia y movimiento no son sinónimos. El par describe una acción de giro; la potencia depende también de la rapidez con que se transfiere energía. La animación solo conserva estados y dirección causal. No calcula la energía elástica, el par disponible, las pérdidas ni la autonomía de un reloj real. Por eso una pieza que se mueve en pantalla demuestra una relación educativa, no un balance energético validado.\n\n## Ejemplo resuelto\n\nImagina el muelle con carga disponible y una interrupción entre barrilete y primera etapa del tren. La fuente conserva su estado, pero el tren, el escape y la indicación quedan aguas abajo sin entrada. Si la interrupción se desplaza entre tren y escape, parte del tren puede seguir recibiendo movimiento mientras se pierde la liberación regulada. Si se conserva la cadena energética pero se rompe la referencia temporal, puede existir tendencia al movimiento sin una marcha controlada. Cada síntoma se explica localizando la primera salida ausente, no atribuyendo toda parada a una fuente agotada.\n\n## Práctica deliberada\n\nDibuja primero la cadena completa con seis funciones: almacenamiento, salida, transmisión, escape, oscilador e indicación. Marca con un color el flujo de energía y con otro la condición temporal. Después recibe tres interrupciones y predice qué subsistemas pueden conservar estado y cuáles dejan de recibir entrada. En el intento independiente explica una parada desde el síntoma hacia atrás, restaura el modelo y comprueba tu predicción sin usar etiquetas.\n\n## Comprobación antes del laboratorio\n\n- Distingues energía almacenada, par, movimiento y ritmo.\n- Sigues una causa a través de interfaces, no por proximidad visual.\n- Localizas el primer resultado ausente ante una interrupción.\n- Declaras que la animación no proporciona energía, pérdidas, par ni autonomía medidos.\n\n## Transferencia\n\nAplica el mapa a un movimiento documentado: conserva las seis funciones, sustituye cada función por las piezas que indique la fuente y deja como desconocida cualquier magnitud que no haya sido calculada o medida.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo pasa un reloj mecánico de energía almacenada a una indicación regulada, y por qué no basta con decir que «todo gira»?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Aplica el mapa a un movimiento documentado: conserva las seis funciones, sustituye cada función por las piezas que indique la fuente y deja como desconocida cualquier magnitud que no haya sido calculada o medida.\n\n## Lectura técnica de relaciones y límites\n\nComprueba la cadena en dos direcciones. Desde el muelle hacia las agujas, pregunta qué entrada recibe y qué salida entrega cada subsistema. Desde una indicación detenida hacia la fuente, busca el primer resultado que todavía está presente y el primero que falta. El recorrido inverso no identifica automáticamente una causa, pero reduce el espacio de hipótesis. Mantén una columna separada para la condición temporal: el oscilador no suministra toda la energía del reloj, pero condiciona cuándo el escape libera la que llega del tren.",
+  "claims": [
+    {
+      "id": "claim.mechanical.energy",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "De energía almacenada a movimiento se representa mediante un modelo conceptual reversible y no como comportamiento exacto del 8215.",
+      "sourceStatement": "Teoría privada y explicación educativa original; sin reproducción textual ni datos específicos trasladados.",
+      "method": "Modelo declarativo y cálculos deterministas del Sistema 4E",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4e:energy:0.1.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-mechanical-foundations",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4E · Fundamentos del reloj mecánico"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Laboratorios, cálculos educativos, explicaciones, actividades y evaluación originales.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "pretrain",
+    "conceptIds": [
+      "concept.mechanical.explain-energy-chain"
+    ],
+    "estimatedMinutes": 5,
+    "userPaced": true
+  }
+}

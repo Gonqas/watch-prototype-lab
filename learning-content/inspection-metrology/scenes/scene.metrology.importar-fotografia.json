@@ -1,0 +1,136 @@
+{
+  "id": "scene.metrology.importar-fotografia",
+  "version": "0.2.0",
+  "title": "Importar fotografía",
+  "description": "Escena textual y accesible que prepara la operación real “Importar fotografía” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Importar fotografía. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-importar-fotografia.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-importar-fotografia.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Importar fotografía”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-importar-fotografia.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Importar fotografía” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-importar-fotografia",
+          "promptMarkdown": "¿Qué debe conservar una fotografía para funcionar como evidencia y no solo como una imagen bonita?\n\nEn «Importar fotografía», elige la conclusión que no excede la evidencia del ejemplo y justifica por qué las otras dos opciones fallan.",
+          "responseKind": "structured-response",
+          "options": [
+            {
+              "id": "option.activity-metrology-importar-fotografia.defensible",
+              "label": "La serie fotográfica separa funciones y conserva procedencia. La imagen preparada para medida sigue limitada a su plano y configuración.",
+              "labels": {
+                "es": "La serie fotográfica separa funciones y conserva procedencia. La imagen preparada para medida sigue limitada a su plano y configuración.",
+                "en": "La serie fotográfica separa funciones y conserva procedencia. La imagen preparada para medida sigue limitada a su plano y configuración."
+              }
+            },
+            {
+              "id": "option.activity-metrology-importar-fotografia.error-one",
+              "label": "Recortar o aumentar contraste sobre el único archivo disponible.",
+              "labels": {
+                "es": "Recortar o aumentar contraste sobre el único archivo disponible.",
+                "en": "Recortar o aumentar contraste sobre el único archivo disponible."
+              }
+            },
+            {
+              "id": "option.activity-metrology-importar-fotografia.error-two",
+              "label": "Colocar la escala en otro plano que la característica.",
+              "labels": {
+                "es": "Colocar la escala en otro plano que la característica.",
+                "en": "Colocar la escala en otro plano que la característica."
+              }
+            }
+          ],
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-importar-fotografia.decision",
+              "label": "¿Qué debe conservar una fotografía para funcionar como evidencia y no solo como una imagen bonita?",
+              "kind": "choice",
+              "required": true,
+              "optionIds": [
+                "option.activity-metrology-importar-fotografia.defensible",
+                "option.activity-metrology-importar-fotografia.error-one",
+                "option.activity-metrology-importar-fotografia.error-two"
+              ]
+            },
+            {
+              "id": "field.activity-metrology-importar-fotografia.justification",
+              "label": "Justifica qué evidencia y qué límite hacen defendible tu elección.",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-importar-fotografia.confidence",
+              "label": "Confianza en la decisión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Decide y justifica: ¿Qué debe conservar una fotografía para funcionar como evidencia y no solo como una imagen bonita?"
+            },
+            "feedback": {
+              "es": "La conclusión defendible conserva evidencia y alcance: La serie fotográfica separa funciones y conserva procedencia. La imagen preparada para medida sigue limitada a su plano y configuración."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-importar-fotografia",
+          "requiredFieldIds": [
+            "field.activity-metrology-importar-fotografia.decision",
+            "field.activity-metrology-importar-fotografia.justification",
+            "field.activity-metrology-importar-fotografia.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

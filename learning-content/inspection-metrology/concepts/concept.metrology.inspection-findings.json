@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.inspection-findings",
+  "version": "0.1.0",
+  "title": {
+    "es": "Inspeccionar desgaste y daños"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para clasificar hallazgos sin convertirlos automáticamente en diagnóstico."
+  },
+  "kind": "skill",
+  "knowledgeType": "diagnostic",
+  "prerequisiteIds": [
+    "concept.metrology.physical-measurement"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.image-measurement"
+  ],
+  "competencyIds": [
+    "competency.metrology.repetir-una-medicion"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.identificar-lectura-atipica",
+    "activity.metrology.registrar-hallazgo"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a clasificar hallazgos sin convertirlos automáticamente en diagnóstico sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para clasificar hallazgos sin convertirlos automáticamente en diagnóstico."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.compare-data"
+  ],
+  "targetEvidenceLevel": "physical-observation",
+  "availability": "available"
+}

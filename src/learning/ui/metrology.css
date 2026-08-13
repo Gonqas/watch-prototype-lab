@@ -1,0 +1,365 @@
+.metrology-page {
+  --metrology-accent: #68d1d6;
+  --metrology-accent-soft: color-mix(in srgb, var(--metrology-accent) 14%, transparent);
+  --metrology-panel: color-mix(in srgb, #162021 88%, transparent);
+  --metrology-border: color-mix(in srgb, var(--metrology-accent) 18%, #263233);
+  display: grid;
+  gap: 20px;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
+.metrology-page button,
+.metrology-page input,
+.metrology-page select,
+.metrology-page textarea {
+  font: inherit;
+}
+
+.metrology-page button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  border: 1px solid var(--metrology-border);
+  border-radius: 10px;
+  padding: 8px 13px;
+  color: #eaf4f3;
+  background: #182425;
+  cursor: pointer;
+}
+
+.metrology-page button:hover:not(:disabled),
+.metrology-page button.is-active {
+  border-color: var(--metrology-accent);
+  background: var(--metrology-accent-soft);
+}
+
+.metrology-page button:focus-visible,
+.metrology-page input:focus-visible,
+.metrology-page select:focus-visible,
+.metrology-page textarea:focus-visible,
+.metrology-image-stage:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--metrology-accent) 70%, white);
+  outline-offset: 2px;
+}
+
+.metrology-page button:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
+
+.metrology-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 390px);
+  align-items: end;
+  gap: 28px;
+}
+
+.metrology-hero h1 { max-width: 900px; }
+.metrology-hero p { max-width: 880px; }
+
+.metrology-hero-status {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 7px 10px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid var(--metrology-border);
+  border-radius: 14px;
+  background: var(--metrology-panel);
+}
+
+.metrology-hero-status i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5de09a;
+  box-shadow: 0 0 14px #5de09a88;
+}
+
+.metrology-hero-status span,
+.metrology-hero-status button { grid-column: 2; }
+.metrology-hero-status span { color: #9aaead; font-size: 13px; }
+.metrology-hero-status button { justify-self: start; }
+
+.metrology-boundary {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 18px;
+  border: 1px solid #447174;
+  border-left: 4px solid var(--metrology-accent);
+  border-radius: 10px;
+  background: #132022;
+}
+
+.metrology-boundary > div { display: grid; gap: 4px; }
+.metrology-boundary span { color: #a8bab9; line-height: 1.5; }
+.metrology-error { margin: 6px 0 0; color: #ffaaa2; }
+
+.metrology-data-safety {
+  border: 1px solid var(--metrology-border);
+  border-radius: 12px;
+  background: var(--metrology-panel);
+}
+.metrology-data-safety summary { cursor: pointer; padding: 15px 18px; font-weight: 750; }
+.metrology-data-safety > div { display: grid; gap: 12px; padding: 0 18px 18px; }
+.metrology-data-safety p { margin: 0; color: #a8bab9; }
+.metrology-data-safety small { overflow-wrap: anywhere; color: #8fa5a4; }
+.metrology-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+
+.metrology-tabs {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid var(--metrology-border);
+  border-radius: 14px;
+  background: color-mix(in srgb, #101819 94%, transparent);
+  backdrop-filter: blur(16px);
+}
+
+.metrology-tabs button.is-active {
+  color: white;
+  box-shadow: inset 0 -2px var(--metrology-accent);
+}
+
+.metrology-registry,
+.metrology-measurement,
+.metrology-comparison {
+  display: grid;
+  grid-template-columns: minmax(260px, 350px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.metrology-registry > aside,
+.metrology-detail,
+.metrology-inspection-card,
+.metrology-image-workbench,
+.metrology-measurement-form,
+.metrology-series-list > article,
+.metrology-comparison > .metrology-form,
+.metrology-comparison-list > article {
+  border: 1px solid var(--metrology-border);
+  border-radius: 14px;
+  background: var(--metrology-panel);
+}
+
+.metrology-registry > aside { overflow: hidden; }
+.metrology-form { display: grid; gap: 13px; padding: 18px; }
+.metrology-form h2 { margin: 0; }
+
+.metrology-form label,
+.metrology-tool-panel label,
+.metrology-image-adjustments label {
+  display: grid;
+  gap: 7px;
+  color: #b6c7c6;
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.metrology-form input,
+.metrology-form select,
+.metrology-form textarea,
+.metrology-inline-form input,
+.metrology-inline-form select,
+.metrology-tool-panel input,
+.metrology-tool-panel select {
+  width: 100%;
+  min-height: 42px;
+  box-sizing: border-box;
+  border: 1px solid #344546;
+  border-radius: 8px;
+  padding: 9px 11px;
+  color: #edf6f5;
+  background: #0e1718;
+}
+
+.metrology-form textarea { min-height: 96px; resize: vertical; line-height: 1.45; }
+.metrology-record-list { display: grid; max-height: 520px; overflow: auto; border-top: 1px solid var(--metrology-border); }
+
+.metrology-record-list button {
+  justify-content: flex-start;
+  border: 0;
+  border-bottom: 1px solid #263435;
+  border-radius: 0;
+  padding: 13px 16px;
+  text-align: left;
+  background: transparent;
+}
+
+.metrology-record-list button > span { display: grid; gap: 3px; min-width: 0; }
+.metrology-record-list strong,
+.metrology-record-list small { overflow: hidden; text-overflow: ellipsis; }
+.metrology-record-list small { color: #8fa2a1; }
+
+.metrology-detail { min-height: 420px; padding: 22px; }
+.metrology-detail > header { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
+.metrology-detail h2 { margin: 6px 0; }
+.metrology-private { border: 1px solid #467276; border-radius: 999px; padding: 6px 10px; color: #9ee0e2; white-space: nowrap; font-size: 12px; }
+
+.metrology-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  margin: 24px 0;
+  overflow: hidden;
+  border: 1px solid var(--metrology-border);
+  border-radius: 10px;
+  background: var(--metrology-border);
+}
+
+.metrology-facts > div { display: grid; gap: 5px; padding: 14px; background: #111a1b; }
+.metrology-facts dt { color: #8da2a1; font-size: 12px; }
+.metrology-facts dd { margin: 0; font-weight: 700; }
+
+.metrology-inline-form,
+.metrology-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+}
+
+.metrology-inline-form input { flex: 1 1 260px; }
+.metrology-inline-form select { flex: 0 1 180px; }
+.metrology-actions label { display: inline-flex; gap: 7px; align-items: center; color: #a6b8b7; font-size: 13px; }
+
+.metrology-component-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+  margin: 14px 0 24px;
+}
+
+.metrology-component-grid article,
+.metrology-verification,
+.metrology-timeline article {
+  display: grid;
+  gap: 6px;
+  padding: 13px;
+  border: 1px solid #2d3c3d;
+  border-radius: 10px;
+  background: #111a1b;
+}
+
+.metrology-component-grid span { color: var(--metrology-accent); }
+.metrology-component-grid small,
+.metrology-verification small { color: #8fa2a1; line-height: 1.45; }
+.metrology-verification { grid-template-columns: auto 1fr; margin: 10px 0; }
+.metrology-empty,
+.metrology-image-empty { display: grid; place-items: center; gap: 8px; min-height: 280px; color: #94a7a6; text-align: center; }
+
+.metrology-split { display: grid; grid-template-columns: minmax(280px, 380px) minmax(0, 1fr); gap: 18px; align-items: start; }
+.metrology-inspection-card { padding: 20px; }
+.metrology-inspection-card .metrology-form { padding: 14px 0; }
+.metrology-timeline { display: grid; gap: 9px; margin-top: 18px; }
+.metrology-timeline p { margin: 0; line-height: 1.5; }
+.metrology-image-picker { display: flex; gap: 7px; overflow-x: auto; padding: 0 0 8px; }
+.metrology-image-picker button { min-height: 34px; padding: 5px 10px; font-family: ui-monospace, monospace; font-size: 12px; }
+
+.metrology-image-workbench { overflow: hidden; }
+.metrology-image-workbench > header,
+.metrology-image-adjustments,
+.metrology-tool-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 13px 15px;
+  border-bottom: 1px solid var(--metrology-border);
+}
+
+.metrology-image-workbench > header > div:first-child { display: grid; gap: 3px; }
+.metrology-image-workbench small { color: #8fa2a1; }
+.metrology-image-controls,
+.metrology-pan-controls { display: flex; align-items: center; gap: 5px; }
+.metrology-image-controls button,
+.metrology-pan-controls button { min-width: 36px; min-height: 36px; padding: 6px; }
+.metrology-image-controls output { min-width: 48px; text-align: center; font-variant-numeric: tabular-nums; }
+.metrology-image-adjustments { justify-content: flex-start; flex-wrap: wrap; }
+.metrology-image-adjustments label { grid-template-columns: auto minmax(90px, 170px); align-items: center; }
+
+.metrology-image-stage {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  background: #090f10;
+  touch-action: none;
+}
+
+.metrology-image-stage.has-grid {
+  background-image: linear-gradient(#78b7ba13 1px, transparent 1px), linear-gradient(90deg, #78b7ba13 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.metrology-image-stage > div { position: absolute; inset: 0; transform-origin: center; transition: transform 130ms ease, filter 130ms ease; }
+.metrology-image-stage img,
+.metrology-image-stage svg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.metrology-image-stage svg { cursor: crosshair; }
+.metrology-image-stage svg circle { fill: #0d1516; stroke: #7df5fb; stroke-width: 3; vector-effect: non-scaling-stroke; }
+.metrology-image-stage svg line { stroke: #7df5fb; stroke-width: 2; vector-effect: non-scaling-stroke; }
+.metrology-image-stage svg .is-pending circle,
+.metrology-image-stage svg .is-pending line { stroke: #ffcc6b; }
+
+.metrology-tool-panel { display: grid; grid-template-columns: minmax(160px, 1fr) minmax(160px, .8fr) auto minmax(160px, .7fr) auto; border-top: 1px solid var(--metrology-border); }
+.metrology-tool-panel > div { display: grid; gap: 4px; }
+.metrology-tool-panel span { color: #92a7a6; font-size: 12px; }
+.metrology-annotation-table { padding: 14px 16px; }
+.metrology-annotation-table summary { cursor: pointer; font-weight: 700; }
+.metrology-annotation-table table { width: 100%; margin-top: 12px; border-collapse: collapse; font-size: 13px; }
+.metrology-annotation-table th,
+.metrology-annotation-table td { border-top: 1px solid #2c3a3b; padding: 9px; text-align: left; }
+
+.metrology-measurement-form,
+.metrology-comparison > .metrology-form { position: sticky; top: 76px; }
+.metrology-series-list,
+.metrology-comparison-list { display: grid; gap: 12px; }
+.metrology-series-list > article,
+.metrology-comparison-list > article { padding: 18px; }
+.metrology-series-list header,
+.metrology-comparison-list article header { display: flex; justify-content: space-between; gap: 12px; }
+.metrology-series-list dl { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.metrology-series-list dl > div { padding: 10px; border-radius: 8px; background: #0e1718; }
+.metrology-series-list dt { color: #8fa2a1; font-size: 11px; }
+.metrology-series-list dd { margin: 5px 0 0; font-weight: 700; font-variant-numeric: tabular-nums; }
+.metrology-comparison-list h2 { margin: 12px 0 0; }
+.metrology-comparison-list article > small { display: block; margin: 8px 0 14px; color: #8fa2a1; line-height: 1.5; }
+.metrology-comparison-list .is-apparent-discrepancy { border-left: 4px solid #e5ae58; }
+.metrology-comparison-list .is-within-declared-tolerance { border-left: 4px solid #55ce91; }
+
+@media (max-width: 1180px) {
+  .metrology-hero,
+  .metrology-registry,
+  .metrology-measurement,
+  .metrology-comparison,
+  .metrology-split { grid-template-columns: 1fr; }
+  .metrology-measurement-form,
+  .metrology-comparison > .metrology-form { position: static; }
+  .metrology-tool-panel { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .metrology-tool-panel button { width: 100%; }
+}
+
+@media (max-width: 760px) {
+  .metrology-tabs { position: static; grid-template-columns: 1fr 1fr; }
+  .metrology-tabs button { justify-content: flex-start; }
+  .metrology-facts,
+  .metrology-series-list dl { grid-template-columns: 1fr 1fr; }
+  .metrology-detail > header,
+  .metrology-image-workbench > header { flex-direction: column; }
+  .metrology-image-stage { min-height: 360px; }
+  .metrology-tool-panel { grid-template-columns: 1fr; }
+  .metrology-image-controls { flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .metrology-image-stage > div { transition: none; }
+}

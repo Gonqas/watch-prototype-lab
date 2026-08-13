@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador",
+  "version": "1.1.0",
+  "title": "Piezoelectricidad y resonador de cuarzo",
+  "blockIds": [
+    "block.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Piezoelectricidad y resonador de cuarzo",
+      "en": "Piezoelectricidad y resonador de cuarzo"
+    },
+    "purpose": {
+      "es": "¿Cómo se convierte deformación cristalina en una referencia eléctrica estable?",
+      "en": "¿Cómo se convierte deformación cristalina en una referencia eléctrica estable?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Piezoelectricidad y resonador de cuarzo mediante relaciones causales.",
+        "en": "Explicar Piezoelectricidad y resonador de cuarzo mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.tension",
+      "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.corriente",
+      "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.resistencia-interna"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.efecto-piezoelectrico",
+      "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.resonador-de-horquilla",
+      "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.circuito-oscilador"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch15",
+      "source.official.miyota.2035",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.efecto-piezoelectrico",
+        "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.resonador-de-horquilla",
+        "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.circuito-oscilador"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1173,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: efecto piezoeléctrico, resonador de horquilla, circuito oscilador.",
+          "en": "Defino con mis palabras: efecto piezoeléctrico, resonador de horquilla, circuito oscilador."
+        },
+        {
+          "es": "Sigo «Piezoelectricidad y resonador de cuarzo» desde circuito aplica señal hasta frecuencia alimenta divisor y explico cada enlace.",
+          "en": "Sigo «Piezoelectricidad y resonador de cuarzo» desde circuito aplica señal hasta frecuencia alimenta divisor y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Piezoelectricidad y resonador de cuarzo» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Piezoelectricidad y resonador de cuarzo» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Explica por qué 32 768 permite divisiones binarias y separa conveniencia de conteo, estabilidad física y exactitud calibrada.",
+          "en": "Aplico el criterio a esta variante: Explica por qué 32 768 permite divisiones binarias y separa conveniencia de conteo, estabilidad física y exactitud calibrada."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Piezoelectricidad y resonador de cuarzo» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Piezoelectricidad y resonador de cuarzo» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.efecto-piezoelectrico",
+        "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.resonador-de-horquilla",
+        "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.circuito-oscilador"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se convierte deformación cristalina en una referencia eléctrica estable?",
+          "en": "¿Cómo se convierte deformación cristalina en una referencia eléctrica estable?"
+        },
+        {
+          "es": "¿Qué relación causal de «Piezoelectricidad y resonador de cuarzo» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Piezoelectricidad y resonador de cuarzo» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,425 @@
+[
+  {
+    "resourceId": "visual.horology.complete-watch-layers",
+    "lessonIds": [
+      "lesson.horology.system"
+    ],
+    "type": "conceptual-3d",
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain"
+    ],
+    "partSelectors": [],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Modelo técnico 4B intacto.",
+      "Identidad de cada pieza estable.",
+      "Alternativa textual funcional."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Representación educativa normalizada; no expresa dimensiones ni física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.horology.failure-simulation",
+    "lessonIds": [
+      "lesson.horology.failure-prediction"
+    ],
+    "type": "error-simulation",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Modelo técnico 4B intacto.",
+      "Identidad de cada pieza estable.",
+      "Alternativa textual funcional."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje R2 con geometría interna normalizada.",
+        "No es un gemelo exacto ni una validación de ingeniería."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.horology.functional-text-alternative",
+    "lessonIds": [
+      "lesson.horology.system",
+      "lesson.horology.mechanical-chain",
+      "lesson.horology.quartz-chain",
+      "lesson.horology.functional-equivalence",
+      "lesson.horology.failure-prediction",
+      "lesson.horology.isa8172-confidence"
+    ],
+    "type": "accessible-text-alternative",
+    "movementIds": [
+      "fixture.conceptual.quartz-chain"
+    ],
+    "partSelectors": [],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Modelo técnico 4B intacto.",
+      "Identidad de cada pieza estable.",
+      "Alternativa textual funcional."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Representación educativa normalizada; no expresa dimensiones ni física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.horology.isa8172-memory-map",
+    "lessonIds": [
+      "lesson.horology.isa8172-confidence"
+    ],
+    "type": "schematic-2d",
+    "movementIds": [
+      "fixture.conceptual.quartz-chain"
+    ],
+    "partSelectors": [],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Modelo técnico 4B intacto.",
+      "Identidad de cada pieza estable.",
+      "Alternativa textual funcional."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Representación educativa normalizada; no expresa dimensiones ni física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.horology.mechanical-energy-flow",
+    "lessonIds": [
+      "lesson.horology.mechanical-chain"
+    ],
+    "type": "energy-flow-diagram",
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain"
+    ],
+    "partSelectors": [],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Modelo técnico 4B intacto.",
+      "Identidad de cada pieza estable.",
+      "Alternativa textual funcional."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Representación educativa normalizada; no expresa dimensiones ni física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.horology.miyota2035-structural",
+    "lessonIds": [
+      "lesson.horology.quartz-chain",
+      "lesson.horology.isa8172-confidence"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Modelo técnico 4B intacto.",
+      "Identidad de cada pieza estable.",
+      "Alternativa textual funcional."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje R2 con geometría interna normalizada.",
+        "No es un gemelo exacto ni una validación de ingeniería."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.horology.quartz-energy-flow",
+    "lessonIds": [
+      "lesson.horology.quartz-chain"
+    ],
+    "type": "energy-flow-diagram",
+    "movementIds": [
+      "fixture.conceptual.quartz-chain"
+    ],
+    "partSelectors": [],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Modelo técnico 4B intacto.",
+      "Identidad de cada pieza estable.",
+      "Alternativa textual funcional."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Representación educativa normalizada; no expresa dimensiones ni física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.horology.quartz-mechanical-overlay",
+    "lessonIds": [
+      "lesson.horology.functional-equivalence"
+    ],
+    "type": "overlay-comparison",
+    "movementIds": [
+      "fixture.conceptual.quartz-chain"
+    ],
+    "partSelectors": [],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Modelo técnico 4B intacto.",
+      "Identidad de cada pieza estable.",
+      "Alternativa textual funcional."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Representación educativa normalizada; no expresa dimensiones ni física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.horology.swiss-lever-slow-motion",
+    "lessonIds": [
+      "lesson.horology.mechanical-chain"
+    ],
+    "type": "kinematic-animation",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Modelo técnico 4B intacto.",
+      "Identidad de cada pieza estable.",
+      "Alternativa textual funcional."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje R2 con geometría interna normalizada.",
+        "No es un gemelo exacto ni una validación de ingeniería."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  }
+]

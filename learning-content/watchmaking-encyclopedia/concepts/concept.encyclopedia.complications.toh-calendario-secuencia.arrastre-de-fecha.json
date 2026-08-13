@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.toh-calendario-secuencia.arrastre-de-fecha",
+  "version": "1.1.0",
+  "title": {
+    "es": "arrastre de fecha",
+    "en": "arrastre de fecha"
+  },
+  "summary": {
+    "es": "Interfaz que transmite el ciclo horario al indicador.",
+    "en": "Interfaz que transmite el ciclo horario al indicador."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.toh-reversores-deslizamiento.rueda-inversora",
+    "concept.encyclopedia.complications.toh-reversores-deslizamiento.desacoplamiento",
+    "concept.encyclopedia.complications.toh-reversores-deslizamiento.par-de-deslizamiento"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.toh-calendario-secuencia"
+  ],
+  "movementIds": [],
+  "subsystem": "calendar",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-calendario-secuencia"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch09",
+    "source.official.eta.2824",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.toh-calendario-secuencia"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.toh-calendario-secuencia",
+  "plainLanguage": {
+    "es": "Interfaz que transmite el ciclo horario al indicador.",
+    "en": "Interfaz que transmite el ciclo horario al indicador."
+  },
+  "technicalLanguage": {
+    "es": "arrastre de fecha se interpreta mediante la cadena tomar ciclo de 24 horas → aproximar arrastre → cargar o empujar → vencer jumper → avanzar un paso → asentar nueva fecha y las condiciones declaradas en la unidad.",
+    "en": "arrastre de fecha se interpreta mediante la cadena tomar ciclo de 24 horas → aproximar arrastre → cargar o empujar → vencer jumper → avanzar un paso → asentar nueva fecha y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?",
+    "en": "Permite explicar y comprobar ¿cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir arrastre de fecha sin circularidad.",
+      "en": "Definir arrastre de fecha sin circularidad."
+    },
+    {
+      "es": "Relacionar arrastre de fecha con una entrada, una interfaz y una salida.",
+      "en": "Relacionar arrastre de fecha con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "rubric.miyota8215.explain-calendar",
+  "version": "0.5.0",
+  "competencyId": "competency.miyota8215.explain-calendar",
+  "rules": [
+    {
+      "id": "rule.miyota8215.explain-calendar.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Explicar el calendario: se evalúan identidad, autoridad, dependencia, resultado, razonamiento, corrección y límite; el tiempo no penaliza."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.miyota8215.explain-calendar.demonstrated",
+    "version": "0.5.0",
+    "competencyId": "competency.miyota8215.explain-calendar",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "simulation-result",
+            "status": "active",
+            "minimumConfidence": 1
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

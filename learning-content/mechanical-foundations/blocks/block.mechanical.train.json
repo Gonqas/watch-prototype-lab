@@ -1,0 +1,58 @@
+{
+  "id": "block.mechanical.train",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Construir un tren de rodaje",
+  "bodyMarkdown": "## Propósito\n\nComponer etapas, calcular reducción acumulada y observar interrupciones.\n\n## Objetivos observables\n\n## Prerrequisitos\n\n## Explicación\n\nCada etapa conserva identidad, dientes educativos, tipo de engrane, dirección y estado. La relación total es el producto exacto de las etapas declaradas. Retirar o desengranar una etapa produce una salida interrumpida; no se atribuyen los conteos de dientes al 8215.\n\n## Interacción y actividad\n\n## Fuentes y alcance de las afirmaciones\n\nEl libro privado se usa como teoría general en los capítulos declarados en la ficha de fuentes; no se copia texto. Cada explicación o cálculo del laboratorio indica si es una síntesis educativa o un resultado calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan el movimiento del modelo conceptual.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nComponer etapas, calcular reducción acumulada y observar interrupciones. Continúa con “Pivotes, rubíes, puentes y libertad”.\n\n## Palabras y piezas clave\n\n- **Calcular relaciones simples.** Calcular relaciones simples mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n- **Construir un tren funcional.** Construir un tren funcional mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n- **Determinar sentidos de giro.** Determinar sentidos de giro mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo se construye y comprueba un tren compuesto sin perder el sentido de giro, duplicar etapas ni confundir una rueda con su piñón solidario?\n\n## Modelo causal ampliado\n\nUn tren se lee alternando dos clases de relación. En un árbol, una rueda y un piñón pueden ser solidarios y comparten velocidad angular; entre árboles, sus dentados engranan y forman una etapa. La relación total se obtiene componiendo únicamente los pares de engrane activos. Contar como una etapa adicional el paso entre rueda y piñón del mismo árbol introduce un error. Cada engrane exterior invierte el sentido; una unión solidaria no lo hace.\n\nPara una etapa ideal, la razón de velocidades se obtiene de los números de dientes de la conductora y la conducida. En un tren compuesto, los cocientes se multiplican con una orientación declarada. El cálculo no prueba que las ruedas puedan engranar físicamente: módulo, perfil, distancia entre centros, juego, apoyos y libertad deben ser compatibles. La escena educativa usa conteos declarados y relaciones ideales. Esos números no pertenecen a un calibre real salvo que una fuente aplicable los proporcione.\n\n## Ejemplo resuelto\n\nEn un tren de dos etapas, la primera rueda conduce un piñón en otro árbol; la rueda solidaria de ese segundo árbol conduce después otro piñón. El ejemplo escribe por separado cada par de engrane, cancela las magnitudes intermedias al multiplicar y comprueba el sentido con el número de contactos exteriores. Si se retira el segundo engrane, la primera pareja aún puede cambiar de estado, pero la salida final queda aislada. Una respuesta que solo ofrece el producto numérico no permite saber si la orientación o el sentido son correctos.\n\n## Práctica deliberada\n\nConstruye una tabla con columnas para árbol, rueda solidaria, piñón solidario, pieza conductora, pieza conducida y apoyo. Calcula después la relación con los dientes visibles. Repite con un árbol intermedio y comprueba el sentido antes del valor. En el intento independiente recibe una cadena con un salto falso entre piezas próximas: localiza la interfaz que falta, corrige el grafo y predice el efecto de abrir cada etapa.\n\n## Comprobación antes del laboratorio\n\n- Cada cociente nombra entrada y salida.\n- No cuentas como engrane una unión solidaria sobre el mismo árbol.\n- Compruebas sentido y continuidad además del valor.\n- Separas cálculo ideal, compatibilidad geométrica y comportamiento físico.\n\n## Transferencia\n\nTransfiere el método a la minutería: identifica qué parte sigue siendo un tren de relaciones y qué requisito adicional impone la indicación de horas y minutos.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo se construye y comprueba un tren compuesto sin perder el sentido de giro, duplicar etapas ni confundir una rueda con su piñón solidario?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Transfiere el método a la minutería: identifica qué parte sigue siendo un tren de relaciones y qué requisito adicional impone la indicación de horas y minutos.\n\n## Lectura técnica de relaciones y límites\n\nAntes de multiplicar, dibuja cada árbol como una unidad y cada engrane como una conexión entre árboles. Este esquema evita introducir un cociente ficticio entre la rueda y el piñón solidarios. Verifica la relación total con una vuelta de entrada simbólica y conserva el sentido en una columna distinta del valor absoluto. Si una rueda intermedia solo invierte el sentido, explica por qué no modifica la magnitud final. Finalmente separa tres veredictos: cálculo coherente, geometría potencialmente compatible y mecanismo físicamente validado; solo el primero pertenece a esta práctica.",
+  "claims": [
+    {
+      "id": "claim.mechanical.train",
+      "claimType": "calculation",
+      "classification": "calculated",
+      "claim": "Construir un tren de rodaje se representa mediante un modelo conceptual reversible y no como comportamiento exacto del 8215.",
+      "expression": "Relaciones educativas declarativas: Z conductora/Z conducida; producto de etapas; T=1/f y A/h=f×2×3600.",
+      "method": "Modelo declarativo y cálculos deterministas del Sistema 4E",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4e:train:0.1.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-mechanical-foundations",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4E · Fundamentos del reloj mecánico"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Laboratorios, cálculos educativos, explicaciones, actividades y evaluación originales.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.build-functional-train",
+      "concept.mechanical.calculate-simple-ratios",
+      "concept.mechanical.determine-rotation-direction"
+    ],
+    "estimatedMinutes": 5,
+    "userPaced": true
+  }
+}

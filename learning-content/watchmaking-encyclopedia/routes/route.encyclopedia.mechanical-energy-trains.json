@@ -1,0 +1,416 @@
+{
+  "id": "route.encyclopedia.mechanical-energy-trains",
+  "version": "1.1.0",
+  "title": {
+    "es": "Energía, tren y puesta en hora mecánicos",
+    "en": "Energía, tren y puesta en hora mecánicos"
+  },
+  "purpose": {
+    "es": "Explicar el movimiento mecánico completo desde la carga del muelle hasta la indicación y sus interfaces estructurales.",
+    "en": "Explicar el movimiento mecánico completo desde la carga del muelle hasta la indicación y sus interfaces estructurales."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+    "module.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+    "module.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+    "module.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+    "module.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes",
+    "module.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+    "module.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+    "module.encyclopedia.mechanical-energy-trains.toh-muelle-par",
+    "module.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas",
+    "module.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+    "module.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+    "module.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+    "module.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+    "module.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion",
+    "module.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+    "competency.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+    "competency.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+    "competency.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+    "competency.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes",
+    "competency.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+    "competency.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+    "competency.encyclopedia.mechanical-energy-trains.toh-muelle-par",
+    "competency.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas",
+    "competency.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+    "competency.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+    "competency.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+    "competency.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+    "competency.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion",
+    "competency.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales"
+  ],
+  "movementIds": [
+    "miyota-8215"
+  ],
+  "difficulty": "intermediate",
+  "sourceIds": [
+    "source.private.daniels.mainsprings",
+    "source.external.ciechanowski-mechanical-watch",
+    "source.external.17jewels",
+    "source.official.miyota.8215",
+    "source.external.animagraffs-mechanical-watch",
+    "source.private.daniels.wheels-pinions",
+    "source.private.vba-uhrentechnik",
+    "source.external.eta-swisslab-6497",
+    "source.private.daniels.movement-design",
+    "source.private.daniels.jewelling",
+    "source.private.daniels.turning",
+    "source.external.naked-watchmaker",
+    "source.private.toh.ch03",
+    "source.encyclopedia.original-synthesis",
+    "source.private.toh.ch04",
+    "source.private.chicago.6",
+    "source.private.toh.ch05",
+    "source.private.chicago.9",
+    "source.private.chicago.5",
+    "source.private.chicago.7"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.01",
+        "order": 1,
+        "title": {
+          "es": "Muelle real, barrilete y curva de par",
+          "en": "Muelle real, barrilete y curva de par"
+        },
+        "outcome": {
+          "es": "¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?",
+          "en": "¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.muelle-real",
+          "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.arbol-de-barrilete",
+          "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.curva-de-par"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.02",
+        "order": 2,
+        "title": {
+          "es": "Cuerda manual, rochete, rueda de corona y sistema automático",
+          "en": "Cuerda manual, rochete, rueda de corona y sistema automático"
+        },
+        "outcome": {
+          "es": "¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?",
+          "en": "¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.rochete",
+          "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.clic",
+          "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.reversor-automatico"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.03",
+        "order": 3,
+        "title": {
+          "es": "Dentado relojero y condiciones de engrane",
+          "en": "Dentado relojero y condiciones de engrane"
+        },
+        "outcome": {
+          "es": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+          "en": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.diametro-primitivo",
+          "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.depthing",
+          "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.linea-de-accion"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.04",
+        "order": 4,
+        "title": {
+          "es": "Relaciones, velocidades y arquitectura del tren",
+          "en": "Relaciones, velocidades y arquitectura del tren"
+        },
+        "outcome": {
+          "es": "¿Cómo se diseña una cadena de ruedas que conecte barrilete, escape e indicación?",
+          "en": "¿Cómo se diseña una cadena de ruedas que conecte barrilete, escape e indicación?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.movil-compuesto",
+          "concept.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.relacion-de-transmision",
+          "concept.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.cadena-cinematica"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.05",
+        "order": 5,
+        "title": {
+          "es": "Pivotes, rubíes, juegos, platina y puentes",
+          "en": "Pivotes, rubíes, juegos, platina y puentes"
+        },
+        "outcome": {
+          "es": "¿Cómo mantiene la estructura ejes alineados con libertad suficiente y posición controlada?",
+          "en": "¿Cómo mantiene la estructura ejes alineados con libertad suficiente y posición controlada?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.juego-radial",
+          "concept.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.juego-axial",
+          "concept.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.piedra-de-contrapivote"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.06",
+        "order": 6,
+        "title": {
+          "es": "Minutería, cañón de minutos y puesta en hora",
+          "en": "Minutería, cañón de minutos y puesta en hora"
+        },
+        "outcome": {
+          "es": "¿Cómo puede el reloj mover agujas y permitir ajustarlas sin detener ni romper el tren?",
+          "en": "¿Cómo puede el reloj mover agujas y permitir ajustarlas sin detener ni romper el tren?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.canon-de-minutos",
+          "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.rueda-de-minuteria",
+          "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.puesta-en-hora"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.07",
+        "order": 7,
+        "title": {
+          "es": "Movimiento mecánico simple como sistema cerrado",
+          "en": "Movimiento mecánico simple como sistema cerrado"
+        },
+        "outcome": {
+          "es": "¿Cómo cooperan acumulador, tren, escape, regulador y visualización?",
+          "en": "¿Cómo cooperan acumulador, tren, escape, regulador y visualización?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+          "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+          "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.08",
+        "order": 8,
+        "title": {
+          "es": "Muelle real: energía, par y curva de entrega",
+          "en": "Muelle real: energía, par y curva de entrega"
+        },
+        "outcome": {
+          "es": "¿Por qué un muelle con más vueltas no entrega un par constante?",
+          "en": "¿Por qué un muelle con más vueltas no entrega un par constante?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-muelle-par",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.toh-muelle-par",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.curva-de-par",
+          "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.numero-de-vueltas-utiles",
+          "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.brida-deslizante"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.09",
+        "order": 9,
+        "title": {
+          "es": "Barrilete, árbol, tambor y apoyos",
+          "en": "Barrilete, árbol, tambor y apoyos"
+        },
+        "outcome": {
+          "es": "¿Qué interfaces convierten el muelle real en una fuente de par utilizable?",
+          "en": "¿Qué interfaces convierten el muelle real en una fuente de par utilizable?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.going-barrel",
+          "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.motor-barrel",
+          "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.apoyo-del-arbol"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.10",
+        "order": 10,
+        "title": {
+          "es": "Geometría del engrane relojero",
+          "en": "Geometría del engrane relojero"
+        },
+        "outcome": {
+          "es": "¿Qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?",
+          "en": "¿Qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.modulo",
+          "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.distancia-entre-centros",
+          "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.arco-de-conduccion"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.11",
+        "order": 11,
+        "title": {
+          "es": "Relaciones del tren y sentido de giro",
+          "en": "Relaciones del tren y sentido de giro"
+        },
+        "outcome": {
+          "es": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?",
+          "en": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.relacion-de-transmision",
+          "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.tren-compuesto",
+          "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.12",
+        "order": 12,
+        "title": {
+          "es": "Par, velocidad, potencia y pérdidas en el tren",
+          "en": "Par, velocidad, potencia y pérdidas en el tren"
+        },
+        "outcome": {
+          "es": "¿Por qué una relación cinemática correcta puede no mover el escape?",
+          "en": "¿Por qué una relación cinemática correcta puede no mover el escape?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.toh-potencia-tren.rendimiento-de-etapa",
+          "concept.encyclopedia.mechanical-energy-trains.toh-potencia-tren.margen-de-par",
+          "concept.encyclopedia.mechanical-energy-trains.toh-potencia-tren.perdida-parasitaria"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.13",
+        "order": 13,
+        "title": {
+          "es": "Acoplamiento de minutería y ajuste manual",
+          "en": "Acoplamiento de minutería y ajuste manual"
+        },
+        "outcome": {
+          "es": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+          "en": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+          "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+          "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.14",
+        "order": 14,
+        "title": {
+          "es": "Expediente Chicago III: selección de muelle real",
+          "en": "Expediente Chicago III: selección de muelle real"
+        },
+        "outcome": {
+          "es": "¿Cómo se elige un muelle cuando faltan referencias de pieza?",
+          "en": "¿Cómo se elige un muelle cuando faltan referencias de pieza?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.factor-de-ocupacion",
+          "concept.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.gancho-de-muelle",
+          "concept.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.reconstruccion-dimensional"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.mechanical-energy-trains.15",
+        "order": 15,
+        "title": {
+          "es": "Expediente Chicago IV: barriletes motor, enjoyados y stopwork",
+          "en": "Expediente Chicago IV: barriletes motor, enjoyados y stopwork"
+        },
+        "outcome": {
+          "es": "¿Qué cambia en la cadena de par al cambiar la arquitectura del barrilete?",
+          "en": "¿Qué cambia en la cadena de par al cambiar la arquitectura del barrilete?"
+        },
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+        "activityId": "activity.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.barrilete-enjoyado",
+          "concept.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.stopwork",
+          "concept.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.miembro-de-salida"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales"
+    ]
+  }
+}

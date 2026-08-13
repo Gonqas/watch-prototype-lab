@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+  "version": "1.1.0",
+  "title": {
+    "es": "huella de desgaste",
+    "en": "huella de desgaste"
+  },
+  "summary": {
+    "es": "Patrón superficial producido por contacto y movimiento que informa dirección, carga y lubricación.",
+    "en": "Patrón superficial producido por contacto y movimiento que informa dirección, carga y lubricación."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.energia-residual",
+    "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.dependencia-de-desmontaje",
+    "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.mapa-de-tornillos"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.limpieza-e-inspeccion"
+  ],
+  "movementIds": [],
+  "subsystem": "inspection",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.limpieza-e-inspeccion"
+  ],
+  "sourceIds": [
+    "source.institutional.awci.standards",
+    "source.external.naked-watchmaker",
+    "source.external.watchguy-repair-blog"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.limpieza-e-inspeccion"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+  "plainLanguage": {
+    "es": "Patrón superficial producido por contacto y movimiento que informa dirección, carga y lubricación.",
+    "en": "Patrón superficial producido por contacto y movimiento que informa dirección, carga y lubricación."
+  },
+  "technicalLanguage": {
+    "es": "huella de desgaste se interpreta mediante la cadena inspeccionar antes → limpiar según material → inspeccionar bajo luz y aumento → medir si procede → clasificar efecto → decidir conservar/reparar/sustituir y las condiciones declaradas en la unidad.",
+    "en": "huella de desgaste se interpreta mediante la cadena inspeccionar antes → limpiar según material → inspeccionar bajo luz y aumento → medir si procede → clasificar efecto → decidir conservar/reparar/sustituir y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+    "en": "Permite explicar y comprobar ¿cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir huella de desgaste sin circularidad.",
+      "en": "Definir huella de desgaste sin circularidad."
+    },
+    {
+      "es": "Relacionar huella de desgaste con una entrada, una interfaz y una salida.",
+      "en": "Relacionar huella de desgaste con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

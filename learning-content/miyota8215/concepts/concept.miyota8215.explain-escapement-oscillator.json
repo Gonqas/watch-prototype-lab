@@ -1,0 +1,70 @@
+{
+  "id": "concept.miyota8215.explain-escapement-oscillator",
+  "version": "0.5.0",
+  "title": {
+    "es": "Explicar escape y oscilador",
+    "en": "Explicar escape y oscilador"
+  },
+  "summary": {
+    "es": "Explicar escape y oscilador con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Explicar escape y oscilador con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "concept",
+  "prerequisiteIds": [
+    "concept.miyota8215.identify-train",
+    "concept.miyota8215.explain-energy-chain"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.verify-partially"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.explain-escapement-oscillator"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "escapement",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.follow-escapement",
+    "activity.miyota8215.compare-conceptual-real"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Explicar escape y oscilador describe una relación causal dentro de escape: una entrada produce un cambio observable mediante una interfaz declarada. Explicar escape y oscilador con un modelo estructural, fuentes, operaciones y límites declarados. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Explicar escape y oscilador describe una relación causal dentro de escape: una entrada produce un cambio observable mediante una interfaz declarada. Explicar escape y oscilador con un modelo estructural, fuentes, operaciones y límites declarados. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.prepare-disassembly"
+  ],
+  "plainLanguage": {
+    "es": "Explicar escape y oscilador con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Explicar escape y oscilador con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Entender explicar escape y oscilador permite razonar sobre el reloj completo y no memorizar piezas aisladas."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega explicar escape y oscilador dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema escapement."
+    }
+  ],
+  "misconceptionIds": [],
+  "knowledgeType": "conceptual-causal",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.escapement-oscillator",
+  "targetEvidenceLevel": "causal-explanation"
+}

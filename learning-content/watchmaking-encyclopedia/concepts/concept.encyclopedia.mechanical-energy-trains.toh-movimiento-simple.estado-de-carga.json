@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga",
+  "version": "1.1.0",
+  "title": {
+    "es": "estado de carga",
+    "en": "estado de carga"
+  },
+  "summary": {
+    "es": "Condición energética del muelle que modifica el par disponible.",
+    "en": "Condición energética del muelle que modifica el par disponible."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.canon-de-minutos",
+    "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.rueda-de-minuteria",
+    "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.puesta-en-hora"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "movementIds": [],
+  "subsystem": "integration",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch03",
+    "source.private.daniels.movement-design",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+  "plainLanguage": {
+    "es": "Condición energética del muelle que modifica el par disponible.",
+    "en": "Condición energética del muelle que modifica el par disponible."
+  },
+  "technicalLanguage": {
+    "es": "estado de carga se interpreta mediante la cadena dar cuerda → almacenar energía → transmitir por el tren → dosificar en el escape → mantener oscilación → contar e indicar y las condiciones declaradas en la unidad.",
+    "en": "estado de carga se interpreta mediante la cadena dar cuerda → almacenar energía → transmitir por el tren → dosificar en el escape → mantener oscilación → contar e indicar y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo cooperan acumulador, tren, escape, regulador y visualización?",
+    "en": "Permite explicar y comprobar ¿cómo cooperan acumulador, tren, escape, regulador y visualización?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir estado de carga sin circularidad.",
+      "en": "Definir estado de carga sin circularidad."
+    },
+    {
+      "es": "Relacionar estado de carga con una entrada, una interfaz y una salida.",
+      "en": "Relacionar estado de carga con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+  "version": "1.1.0",
+  "title": "Cuaderno: Tratamiento térmico y acabado de superficies",
+  "description": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Tratamiento térmico y acabado de superficies. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.answer",
+      "instructionMarkdown": "Explica **Tratamiento térmico y acabado de superficies** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.explain",
+          "promptMarkdown": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por seleccionar aleación y sigue hasta acabar y verificar.",
+                "en": "Empieza por seleccionar aleación y sigue hasta acabar y verificar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El tratamiento térmico altera microestructura y tensiones; el acabado modifica geometría superficial, contacto y apariencia. Templar, revenir, azular, rectificar, lapear y pulir tienen objetivos diferentes. Temperatura, tiempo, atmósfera y sección afectan el resultado, por lo que el color es un indicador condicionado y no un termómetro universal.",
+                "en": "El tratamiento térmico altera microestructura y tensiones; el acabado modifica geometría superficial, contacto y apariencia. Templar, revenir, azular, rectificar, lapear y pulir tienen objetivos diferentes. Temperatura, tiempo, atmósfera y sección afectan el resultado, por lo que el color es un indicador condicionado y no un termómetro universal."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?",
+              "en": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena seleccionar aleación → preparar geometría → calentar con control → enfriar según proceso → revenir o estabilizar → acabar y verificar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena seleccionar aleación → preparar geometría → calentar con control → enfriar según proceso → revenir o estabilizar → acabar y verificar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.mechanism",
+            "field.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.evidence",
+            "field.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.limit",
+            "field.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

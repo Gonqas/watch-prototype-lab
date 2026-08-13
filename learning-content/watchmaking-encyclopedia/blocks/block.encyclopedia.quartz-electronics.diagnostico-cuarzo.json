@@ -1,0 +1,160 @@
+{
+  "id": "block.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+  "version": "1.1.0",
+  "kind": "explanation",
+  "title": "Diagnóstico sistemático de un cuarzo analógico",
+  "bodyMarkdown": "# Diagnóstico sistemático de un cuarzo analógico\n\n## Síntoma, observación y pregunta diagnóstica\n\n¿Cómo localizar la primera función ausente sin sustituir piezas por ensayo? El diagnóstico recorre alimentación, contacto, oscilación, división, pulso, bobina, rotor, tren y agujas. Cada prueba debe tener riesgo y poder discriminante. El síntoma de segundero, consumo y respuesta a prueba eléctrica ayudan, pero siempre dentro de especificaciones del fabricante.\n\nDiagnosticar **Diagnóstico sistemático de un cuarzo analógico** significa pasar de una observación a varias hipótesis y elegir una prueba que pueda separarlas. Un síntoma no identifica por sí solo una causa. Esta lección diferencia explicación general, evidencia disponible y aplicación a una pieza, calibre o proceso particular. Una semejanza visual puede orientar, pero no autoriza una dimensión, lubricante, tolerancia ni orden de intervención. Los límites detallados del material visual se consultan en su ficha técnica.\n\n## Vocabulario para formular hipótesis\n\n### 1. prueba discriminante\n\n**Definición:** Observación que produce resultados distintos para dos hipótesis rivales relevantes.\n\n**Aplicación en esta lección:** En «Diagnóstico sistemático de un cuarzo analógico», **propiedad que debes comprobar:** Observación que produce resultados distintos para dos hipótesis rivales relevantes. En documentación inglesa, contrasta **prueba discriminante** con **discriminating test**. Usa **prueba discriminante** para separar observación, hipótesis y prueba discriminante, y declara qué resultado apoyaría o debilitaría cada explicación. Una aplicación válida de prueba discriminante debe poder cambiar la conclusión; si todos los resultados confirman lo mismo, la prueba no discrimina.\n\n### 2. carga mecánica\n\n**Definición:** Par resistente que el motor y tren deben vencer durante el paso.\n\n**Aplicación en esta lección:** En «Diagnóstico sistemático de un cuarzo analógico», **propiedad que debes comprobar:** Par resistente que el motor y tren deben vencer durante el paso. En documentación inglesa, contrasta **carga mecánica** con **mechanical load**. Usa **carga mecánica** para separar observación, hipótesis y prueba discriminante, y declara qué resultado apoyaría o debilitaría cada explicación. Una aplicación válida de carga mecánica debe poder cambiar la conclusión; si todos los resultados confirman lo mismo, la prueba no discrimina.\n\n### 3. árbol de fallos\n\n**Definición:** Representación lógica de causas necesarias o alternativas que pueden producir un síntoma.\n\n**Aplicación en esta lección:** En «Diagnóstico sistemático de un cuarzo analógico», **propiedad que debes comprobar:** Representación lógica de causas necesarias o alternativas que pueden producir un síntoma. En documentación inglesa, contrasta **árbol de fallos** con **fault tree**. Usa **árbol de fallos** para separar observación, hipótesis y prueba discriminante, y declara qué resultado apoyaría o debilitaría cada explicación. Una aplicación válida de árbol de fallos debe poder cambiar la conclusión; si todos los resultados confirman lo mismo, la prueba no discrimina.\n\n## De la observación a la prueba discriminante\n\n1. **Confirmar síntoma → verificar fuente y contacto.** El primer resultado debe aportar evidencia para decidir el paso siguiente; si no diferencia las hipótesis, continuar carece de fundamento.\n2. **Verificar fuente y contacto → evaluar consumo u oscilación.** El primer resultado debe aportar evidencia para decidir el paso siguiente; si no diferencia las hipótesis, continuar carece de fundamento.\n3. **Evaluar consumo u oscilación → comprobar pulso y bobina.** El primer resultado debe aportar evidencia para decidir el paso siguiente; si no diferencia las hipótesis, continuar carece de fundamento.\n4. **Comprobar pulso y bobina → aislar motor y tren.** El primer resultado debe aportar evidencia para decidir el paso siguiente; si no diferencia las hipótesis, continuar carece de fundamento.\n5. **Aislar motor y tren → validar indicación.** El primer resultado debe aportar evidencia para decidir el paso siguiente; si no diferencia las hipótesis, continuar carece de fundamento.\n6. Al llegar a **validar indicación**, compara el resultado con la pregunta inicial de «Diagnóstico sistemático de un cuarzo analógico» y anota qué evidencia permite dar la secuencia por completa.\n\nEn **Diagnóstico sistemático de un cuarzo analógico**, recorre la secuencia sin saltar de síntoma a avería. Cada transición debe reducir la incertidumbre: si una prueba no puede cambiar la conclusión, no es una prueba diagnóstica útil.\n\n## Medidas, referencias y umbrales\n\n- tensión bajo condición\n- resistencia de bobina\n- consumo\n- cadencia de pulso\n- par o libertad del tren\n\nCompara las medidas de **Diagnóstico sistemático de un cuarzo analógico** con una referencia declarada y conserva incertidumbre, condiciones y estado de la unidad. Un valor aislado no confirma una causa si también es compatible con hipótesis rivales. La comparación se hace por sensibilidad: pregunta qué variable domina el resultado, cuál puede controlarse y cuál permanece desconocida. Más decimales no aportan más verdad si el método no puede resolverlos.\n\n## Caso diagnóstico razonado\n\nEl segundero intenta avanzar y retrocede. Ese patrón apoya pulso presente y carga o bloqueo, pero no localiza todavía rotor, tren o agujas. Se comprueba interferencia externa y libertad por etapas antes de abrir electrónica.\n\nPara resolver el caso de **Diagnóstico sistemático de un cuarzo analógico**, escribe al menos dos hipótesis, predice qué observarías bajo cada una y elige la comprobación menos invasiva que produzca resultados distintos. La respuesta final incluye una afirmación apoyada, una inferencia explícita y un desconocido. Si depende de una operación física no realizada, describe la comprobación pendiente en vez de sustituirla por confianza personal.\n\n## Sesgos y conclusiones prematuras\n\n1. Usar una fuente externa sin límite de corriente ni procedimiento.\n2. Cambiar circuito y bobina simultáneamente, perdiendo evidencia.\n\nEl error central de esta unidad se expresa así: **«Diagnosticar es encontrar la pieza que parece rota»**. Es incorrecto porque es localizar la primera función ausente mediante pruebas que separan hipótesis y conservan trazabilidad. La reparación no consiste en memorizar la frase correcta: exige explicar qué observación cambiaría entre el modelo erróneo y el correcto.\n\n## Fuentes y alcance\n\nFuentes de trabajo para **Diagnóstico sistemático de un cuarzo analógico**: AWCI Official Standards and Practices for Watchmakers; MIYOTA 2035 · documentación oficial; Watch Guy · Technical Instructions / Service Manuals; Watch Guy · Watch repair blog. La fuente primaria gobierna identidad, dato o procedimiento de su referencia. Las fuentes secundarias aportan explicación, imágenes y casos; las bases de datos ayudan a descubrir. Si existe contradicción, se conserva y se busca mayor autoridad en lugar de promediar.\n\n## Práctica deliberada y transferencia\n\nResuelve tres síntomas —sin consumo, consumo alto, segundero vacilante— con árboles separados y una condición de parada segura.\n\nAntes de practicar «Diagnóstico sistemático de un cuarzo analógico», separa observación, dos hipótesis y una prueba discriminante. Después comprueba si el resultado elegido podría cambiar tu conclusión y aplica el método a otro síntoma. La respuesta final separa teoría, dato, observación, cálculo e incertidumbre. La actividad comprueba razonamiento; la destreza manual, la seguridad de banco y la validez física requieren práctica y revisión específicas.\n\n## Comprueba antes de continuar\n\nPuedes continuar cuando separes síntoma, hipótesis, prueba y conclusión en **Diagnóstico sistemático de un cuarzo analógico**, y cuando puedas explicar qué resultado te haría cambiar de opinión. También debes poder definir prueba discriminante, carga mecánica, árbol de fallos, justificar qué magnitudes importan, reconocer el error central y señalar qué fuente o prueba faltaría para transferir la conclusión a un reloj físico.",
+  "claims": [
+    {
+      "id": "claim.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+      "claimType": "source",
+      "claim": "El diagnóstico recorre alimentación, contacto, oscilación, división, pulso, bobina, rotor, tren y agujas. Cada prueba debe tener riesgo y poder discriminante. El síntoma de segundero, consumo y respuesta a prueba eléctrica ayudan, pero siempre dentro de especificaciones del fabricante.",
+      "classification": "original-explanation",
+      "method": "Síntesis causal contrastada con las fuentes declaradas y con límites de aplicación explícitos.",
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K0",
+        "physics": "P0",
+        "limitations": [
+          "Explicación textual; no valida geometría, cinemática, materiales, tolerancias ni física de una unidad concreta."
+        ]
+      },
+      "reliability": "high",
+      "inputFingerprint": "curriculum:quartz-electronics.diagnostico-cuarzo@1.1.0",
+      "recordedAt": "2026-08-09T00:00:00.000Z",
+      "methodVersion": "encyclopedia-synthesis@1.0.0",
+      "sources": [
+        {
+          "id": "source.institutional.awci.standards",
+          "authority": "technical-training",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "pdf",
+            "title": "AWCI Official Standards and Practices for Watchmakers",
+            "locator": "https://www.awci.com/wp-content/uploads/2011/07/AWCI-standards-practicese.pdf"
+          },
+          "authorOrManufacturer": "American Watchmakers-Clockmakers Institute",
+          "sourceType": "course-catalog",
+          "year": 2011,
+          "retrievedAt": "2026-08-09",
+          "authorityTier": "B",
+          "sourceClass": "institutional-training",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "servicio",
+            "herramientas",
+            "cuarzo",
+            "estanqueidad",
+            "evaluación"
+          ],
+          "pedagogicalUses": [
+            "discovery",
+            "theory"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-09",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar como estándar de cobertura y conducta; contrastar procedimientos con fabricante y práctica vigente.",
+          "limitations": [
+            "Documento de 2011; no representa por sí solo toda actualización posterior."
+          ],
+          "supportedClaim": "Distingue conocimiento, destreza y disposiciones y enumera ámbitos de servicio relojero.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.official.miyota.2035",
+          "authority": "official-miyota",
+          "usage": "official-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "MIYOTA 2035 · documentación oficial",
+            "locator": "https://miyotamovement.com/product/2035/"
+          },
+          "authorOrManufacturer": "MIYOTA",
+          "sourceType": "official-miyota-documentation",
+          "calibre": "2035",
+          "revision": "Consulta 2026-08-09",
+          "retrievedAt": "2026-08-09",
+          "authorityTier": "A",
+          "sourceClass": "official-primary",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "cuarzo",
+            "2035"
+          ],
+          "pedagogicalUses": [
+            "theory",
+            "procedure-contrast"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-09",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Aplicar solo al 2035 y a la revisión consultada.",
+          "limitations": [
+            "No transferir valores a otros calibres."
+          ],
+          "supportedClaim": "Identidad y especificaciones oficiales del calibre MIYOTA 2035.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.external.watchguy-manuals",
+          "authority": "reference-database",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "dataset",
+            "title": "Watch Guy · Technical Instructions / Service Manuals",
+            "locator": "https://watchguy.co.uk/technical-instructions-service-manuals/"
+          },
+          "authorOrManufacturer": "Watch Guy",
+          "sourceType": "reference-database",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "D",
+          "sourceClass": "database-index",
+          "languages": [
+            "en",
+            "de",
+            "fr"
+          ],
+          "topics": [
+            "manuales de servicio",
+            "documentación vintage",
+            "desmontaje",
+            "montaje"
+          ],
+          "pedagogicalUses": [
+            "discovery",
+            "procedure-contrast",
+            "calibre-identification"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "metadata-only",
+          "offlineReady": false,
+          "validationPolicy": "La autoridad pertenece al manual individual y a su fabricante; registrar título, revisión, URL y hash si se conserva una copia.",
+          "limitations": [
+            "El índice no transfiere automáticamente autenticidad o vigencia a cada documento alojado."
+          ],
+          "supportedClaim": "Índice de manuales e instrucciones técnicas, especialmente útil para movimientos vintage.",
+          "derivedLayer": "source"
+        }
+      ],
+      "sourceStatement": "Las fuentes citadas respaldan el vocabulario, el mecanismo o el contexto usados en Diagnóstico sistemático de un cuarzo analógico; las inferencias educativas permanecen separadas."
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.prueba-discriminante",
+      "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.carga-mecanica",
+      "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.arbol-de-fallos"
+    ],
+    "estimatedMinutes": 12,
+    "userPaced": true
+  }
+}

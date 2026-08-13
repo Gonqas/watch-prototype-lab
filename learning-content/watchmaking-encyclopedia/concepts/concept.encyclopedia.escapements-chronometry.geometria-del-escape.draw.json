@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+  "version": "1.1.0",
+  "title": {
+    "es": "draw",
+    "en": "draw"
+  },
+  "summary": {
+    "es": "Componente geométrica que hace que la presión del diente tienda a llevar el áncora hacia el tope.",
+    "en": "Componente geométrica que hace que la presión del diente tienda a llevar el áncora hacia el tope."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-entrada",
+    "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-salida",
+    "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.accion-perdida"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.geometria-del-escape"
+  ],
+  "movementIds": [],
+  "subsystem": "escapement",
+  "routeIds": [
+    "route.encyclopedia.escapements-chronometry"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.geometria-del-escape"
+  ],
+  "sourceIds": [
+    "source.private.daniels.escapements",
+    "source.private.vba-uhrentechnik",
+    "source.external.eta-swisslab-6497"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.escapements-chronometry.geometria-del-escape"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+  "plainLanguage": {
+    "es": "Componente geométrica que hace que la presión del diente tienda a llevar el áncora hacia el tope.",
+    "en": "Componente geométrica que hace que la presión del diente tienda a llevar el áncora hacia el tope."
+  },
+  "technicalLanguage": {
+    "es": "draw se interpreta mediante la cadena verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada y las condiciones declaradas en la unidad.",
+    "en": "draw se interpreta mediante la cadena verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+    "en": "Permite explicar y comprobar ¿cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir draw sin circularidad.",
+      "en": "Definir draw sin circularidad."
+    },
+    {
+      "es": "Relacionar draw con una entrada, una interfaz y una salida.",
+      "en": "Relacionar draw con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

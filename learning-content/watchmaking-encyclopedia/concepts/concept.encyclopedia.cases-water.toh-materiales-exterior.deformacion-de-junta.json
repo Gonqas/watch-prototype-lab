@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.cases-water.toh-materiales-exterior.deformacion-de-junta",
+  "version": "1.1.0",
+  "title": {
+    "es": "deformación de junta",
+    "en": "deformación de junta"
+  },
+  "summary": {
+    "es": "Cambio controlado de forma que produce contacto de sellado.",
+    "en": "Cambio controlado de forma que produce contacto de sellado."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.cases-water.toh-exterior-interfaces.pila-axial",
+    "concept.encyclopedia.cases-water.toh-exterior-interfaces.interfaz-radial",
+    "concept.encyclopedia.cases-water.toh-exterior-interfaces.envolvente-funcional"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.cases-water.toh-materiales-exterior"
+  ],
+  "movementIds": [],
+  "subsystem": "case",
+  "routeIds": [
+    "route.encyclopedia.cases-water"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.cases-water.toh-materiales-exterior"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch12",
+    "source.official.bipm.vim",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.cases-water.toh-materiales-exterior"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.cases-water.toh-materiales-exterior",
+  "plainLanguage": {
+    "es": "Cambio controlado de forma que produce contacto de sellado.",
+    "en": "Cambio controlado de forma que produce contacto de sellado."
+  },
+  "technicalLanguage": {
+    "es": "deformación de junta se interpreta mediante la cadena identificar material → definir carga y entorno → seleccionar ajuste → preparar asiento → montar sin daño → verificar función y las condiciones declaradas en la unidad.",
+    "en": "deformación de junta se interpreta mediante la cadena identificar material → definir carga y entorno → seleccionar ajuste → preparar asiento → montar sin daño → verificar función y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué propiedades gobiernan selección, montaje y envejecimiento del exterior?",
+    "en": "Permite explicar y comprobar ¿qué propiedades gobiernan selección, montaje y envejecimiento del exterior?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir deformación de junta sin circularidad.",
+      "en": "Definir deformación de junta sin circularidad."
+    },
+    {
+      "es": "Relacionar deformación de junta con una entrada, una interfaz y una salida.",
+      "en": "Relacionar deformación de junta con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

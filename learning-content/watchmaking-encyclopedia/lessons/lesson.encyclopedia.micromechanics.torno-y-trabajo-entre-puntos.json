@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+  "version": "1.1.0",
+  "title": "Torno relojero, pinzas y trabajo entre puntos",
+  "blockIds": [
+    "block.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Torno relojero, pinzas y trabajo entre puntos",
+      "en": "Torno relojero, pinzas y trabajo entre puntos"
+    },
+    "purpose": {
+      "es": "¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?",
+      "en": "¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Torno relojero, pinzas y trabajo entre puntos mediante relaciones causales.",
+        "en": "Explicar Torno relojero, pinzas y trabajo entre puntos mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.datum",
+      "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.cadena-de-proceso",
+      "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.sobrematerial"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.trabajo-entre-puntos",
+      "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.excentricidad",
+      "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.buril"
+    ],
+    "sourceIds": [
+      "source.private.daniels.turning",
+      "source.private.daniels.hand-tools",
+      "source.institutional.wostep.watchmaker"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.trabajo-entre-puntos",
+        "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.excentricidad",
+        "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.buril"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1149,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: trabajo entre puntos, excentricidad, buril.",
+          "en": "Defino con mis palabras: trabajo entre puntos, excentricidad, buril."
+        },
+        {
+          "es": "Relaciono las operaciones de «Torno relojero, pinzas y trabajo entre puntos» con características medibles y riesgos de proceso.",
+          "en": "Relaciono las operaciones de «Torno relojero, pinzas y trabajo entre puntos» con características medibles y riesgos de proceso."
+        },
+        {
+          "es": "Distingo qué parte de «Torno relojero, pinzas y trabajo entre puntos» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Torno relojero, pinzas y trabajo entre puntos» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Selecciona método de sujeción para eje, rueda, anillo y tornillo; justifica datum, riesgo de deformación y verificación al volver a montar.",
+          "en": "Aplico el criterio a esta variante: Selecciona método de sujeción para eje, rueda, anillo y tornillo; justifica datum, riesgo de deformación y verificación al volver a montar."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Torno relojero, pinzas y trabajo entre puntos» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Torno relojero, pinzas y trabajo entre puntos» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.trabajo-entre-puntos",
+        "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.excentricidad",
+        "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.buril"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?",
+          "en": "¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?"
+        },
+        {
+          "es": "¿Qué relación causal de «Torno relojero, pinzas y trabajo entre puntos» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Torno relojero, pinzas y trabajo entre puntos» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

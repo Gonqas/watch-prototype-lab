@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.atlas-restoration-design.identidad-y-comparacion",
+  "version": "1.1.0",
+  "title": "Cuaderno: Identidad, atlas y comparación entre familias",
+  "description": "¿Cómo se aprende de muchos calibres sin memorizar catálogos ni transferir datos incompatibles?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Identidad, atlas y comparación entre familias. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.atlas-restoration-design.identidad-y-comparacion.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se aprende de muchos calibres sin memorizar catálogos ni transferir datos incompatibles?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se aprende de muchos calibres sin memorizar catálogos ni transferir datos incompatibles?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.atlas-restoration-design.identidad-y-comparacion.answer",
+      "instructionMarkdown": "Explica **Identidad, atlas y comparación entre familias** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.atlas-restoration-design.identidad-y-comparacion.explain",
+          "promptMarkdown": "¿Cómo se aprende de muchos calibres sin memorizar catálogos ni transferir datos incompatibles?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.identidad-y-comparacion.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.identidad-y-comparacion.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.identidad-y-comparacion.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.identidad-y-comparacion.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.identidad-y-comparacion.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar referencia y sigue hasta registrar transferencia y límites.",
+                "en": "Empieza por identificar referencia y sigue hasta registrar transferencia y límites."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.identidad-y-comparacion.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El atlas organiza por funciones, arquitecturas, interfaces y evidencia. Cada ficha conserva fabricante, familia, calibre, variante, revisión, dimensiones, frecuencia, funciones, procedencia y estado de reconstrucción. La comparación parte de invariantes funcionales y luego enumera diferencias que exigen documentación propia.",
+                "en": "El atlas organiza por funciones, arquitecturas, interfaces y evidencia. Cada ficha conserva fabricante, familia, calibre, variante, revisión, dimensiones, frecuencia, funciones, procedencia y estado de reconstrucción. La comparación parte de invariantes funcionales y luego enumera diferencias que exigen documentación propia."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se aprende de muchos calibres sin memorizar catálogos ni transferir datos incompatibles?",
+              "en": "¿Cómo se aprende de muchos calibres sin memorizar catálogos ni transferir datos incompatibles?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar referencia → describir cadena funcional → mapear subsistemas → comparar interfaces → verificar documentación primaria → registrar transferencia y límites, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar referencia → describir cadena funcional → mapear subsistemas → comparar interfaces → verificar documentación primaria → registrar transferencia y límites, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.atlas-restoration-design.identidad-y-comparacion.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.atlas-restoration-design.identidad-y-comparacion.mechanism",
+            "field.encyclopedia.atlas-restoration-design.identidad-y-comparacion.evidence",
+            "field.encyclopedia.atlas-restoration-design.identidad-y-comparacion.limit",
+            "field.encyclopedia.atlas-restoration-design.identidad-y-comparacion.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

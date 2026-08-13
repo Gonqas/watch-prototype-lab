@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.service-tribology.toh-lubricacion-retencion",
+  "version": "1.1.0",
+  "title": "Cuaderno: Lubricación, cantidad y retención del aceite",
+  "description": "¿Por qué producto correcto y cantidad correcta son decisiones separadas?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Lubricación, cantidad y retención del aceite. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.service-tribology.toh-lubricacion-retencion.scope",
+      "markdown": "**Alcance del estudio:** ¿Por qué producto correcto y cantidad correcta son decisiones separadas?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Por qué producto correcto y cantidad correcta son decisiones separadas?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.service-tribology.toh-lubricacion-retencion.answer",
+      "instructionMarkdown": "Explica **Lubricación, cantidad y retención del aceite** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.service-tribology.toh-lubricacion-retencion.explain",
+          "promptMarkdown": "¿Por qué producto correcto y cantidad correcta son decisiones separadas?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.service-tribology.toh-lubricacion-retencion.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.toh-lubricacion-retencion.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.toh-lubricacion-retencion.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.toh-lubricacion-retencion.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.service-tribology.toh-lubricacion-retencion.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar contacto y sigue hasta controlar migración.",
+                "en": "Empieza por identificar contacto y sigue hasta controlar migración."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.service-tribology.toh-lubricacion-retencion.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Viscosidad, capilaridad, tensión superficial, afinidad y geometría determinan dónde permanece un lubricante. Exceso puede migrar y contaminar; defecto deja contacto sin película. El mapa punto-producto-cantidad procede del fabricante o de una fuente aplicable.",
+                "en": "Viscosidad, capilaridad, tensión superficial, afinidad y geometría determinan dónde permanece un lubricante. Exceso puede migrar y contaminar; defecto deja contacto sin película. El mapa punto-producto-cantidad procede del fabricante o de una fuente aplicable."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Por qué producto correcto y cantidad correcta son decisiones separadas?",
+              "en": "¿Por qué producto correcto y cantidad correcta son decisiones separadas?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar contacto → consultar fuente → limpiar y verificar → depositar cantidad → observar menisco o punto → controlar migración, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar contacto → consultar fuente → limpiar y verificar → depositar cantidad → observar menisco o punto → controlar migración, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.service-tribology.toh-lubricacion-retencion.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.service-tribology.toh-lubricacion-retencion.mechanism",
+            "field.encyclopedia.service-tribology.toh-lubricacion-retencion.evidence",
+            "field.encyclopedia.service-tribology.toh-lubricacion-retencion.limit",
+            "field.encyclopedia.service-tribology.toh-lubricacion-retencion.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

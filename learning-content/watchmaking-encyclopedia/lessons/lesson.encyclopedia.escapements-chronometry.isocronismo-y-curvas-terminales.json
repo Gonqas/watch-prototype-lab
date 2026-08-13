@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+  "version": "1.1.0",
+  "title": "Isocronismo, punto de sujeción y curvas terminales",
+  "blockIds": [
+    "block.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Isocronismo, punto de sujeción y curvas terminales",
+      "en": "Isocronismo, punto de sujeción y curvas terminales"
+    },
+    "purpose": {
+      "es": "¿Por qué puede cambiar la tasa cuando cambia la amplitud aunque la frecuencia nominal sea fija?",
+      "en": "¿Por qué puede cambiar la tasa cuando cambia la amplitud aunque la frecuencia nominal sea fija?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Isocronismo, punto de sujeción y curvas terminales mediante relaciones causales.",
+        "en": "Explicar Isocronismo, punto de sujeción y curvas terminales mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.escapements-chronometry.volante-y-espiral.momento-de-inercia-del-volante",
+      "concept.encyclopedia.escapements-chronometry.volante-y-espiral.longitud-activa-de-espiral",
+      "concept.encyclopedia.escapements-chronometry.volante-y-espiral.respiracion-concentrica"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.isocronismo",
+      "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.curva-terminal",
+      "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.error-circular"
+    ],
+    "sourceIds": [
+      "source.private.daniels.balance-spring",
+      "source.private.vba-uhrentechnik",
+      "source.external.horology-student.books"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.isocronismo",
+        "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.curva-terminal",
+        "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.error-circular"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1216,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: isocronismo, curva terminal, error circular.",
+          "en": "Defino con mis palabras: isocronismo, curva terminal, error circular."
+        },
+        {
+          "es": "Sigo «Isocronismo, punto de sujeción y curvas terminales» desde cambia par disponible hasta se compara a varias amplitudes y explico cada enlace.",
+          "en": "Sigo «Isocronismo, punto de sujeción y curvas terminales» desde cambia par disponible hasta se compara a varias amplitudes y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Isocronismo, punto de sujeción y curvas terminales» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Isocronismo, punto de sujeción y curvas terminales» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Diseña una prueba de tasa y amplitud durante la reserva y explica qué patrón sugeriría pérdida de energía frente a no isocronismo.",
+          "en": "Aplico el criterio a esta variante: Diseña una prueba de tasa y amplitud durante la reserva y explica qué patrón sugeriría pérdida de energía frente a no isocronismo."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Isocronismo, punto de sujeción y curvas terminales» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Isocronismo, punto de sujeción y curvas terminales» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.isocronismo",
+        "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.curva-terminal",
+        "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.error-circular"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Por qué puede cambiar la tasa cuando cambia la amplitud aunque la frecuencia nominal sea fija?",
+          "en": "¿Por qué puede cambiar la tasa cuando cambia la amplitud aunque la frecuencia nominal sea fija?"
+        },
+        {
+          "es": "¿Qué relación causal de «Isocronismo, punto de sujeción y curvas terminales» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Isocronismo, punto de sujeción y curvas terminales» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

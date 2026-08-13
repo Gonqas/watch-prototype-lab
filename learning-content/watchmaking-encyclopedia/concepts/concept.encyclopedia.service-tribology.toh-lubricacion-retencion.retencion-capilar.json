@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.toh-lubricacion-retencion.retencion-capilar",
+  "version": "1.1.0",
+  "title": {
+    "es": "retención capilar",
+    "en": "retención capilar"
+  },
+  "summary": {
+    "es": "Permanencia de fluido condicionada por geometría y fuerzas superficiales.",
+    "en": "Permanencia de fluido condicionada por geometría y fuerzas superficiales."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.toh-friccion-desgaste.par-tribologico",
+    "concept.encyclopedia.service-tribology.toh-friccion-desgaste.desgaste-adhesivo",
+    "concept.encyclopedia.service-tribology.toh-friccion-desgaste.desgaste-abrasivo"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.toh-lubricacion-retencion"
+  ],
+  "movementIds": [],
+  "subsystem": "lubrication",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.toh-lubricacion-retencion"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch13",
+    "source.institutional.awci.standards",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.toh-lubricacion-retencion"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.toh-lubricacion-retencion",
+  "plainLanguage": {
+    "es": "Permanencia de fluido condicionada por geometría y fuerzas superficiales.",
+    "en": "Permanencia de fluido condicionada por geometría y fuerzas superficiales."
+  },
+  "technicalLanguage": {
+    "es": "retención capilar se interpreta mediante la cadena identificar contacto → consultar fuente → limpiar y verificar → depositar cantidad → observar menisco o punto → controlar migración y las condiciones declaradas en la unidad.",
+    "en": "retención capilar se interpreta mediante la cadena identificar contacto → consultar fuente → limpiar y verificar → depositar cantidad → observar menisco o punto → controlar migración y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿por qué producto correcto y cantidad correcta son decisiones separadas?",
+    "en": "Permite explicar y comprobar ¿por qué producto correcto y cantidad correcta son decisiones separadas?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir retención capilar sin circularidad.",
+      "en": "Definir retención capilar sin circularidad."
+    },
+    {
+      "es": "Relacionar retención capilar con una entrada, una interfaz y una salida.",
+      "en": "Relacionar retención capilar con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

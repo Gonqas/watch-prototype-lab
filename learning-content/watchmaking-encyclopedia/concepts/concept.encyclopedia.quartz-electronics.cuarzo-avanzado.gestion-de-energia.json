@@ -1,0 +1,67 @@
+{
+  "id": "concept.encyclopedia.quartz-electronics.cuarzo-avanzado.gestion-de-energia",
+  "version": "1.1.0",
+  "title": {
+    "es": "gestión de energía",
+    "en": "gestión de energía"
+  },
+  "summary": {
+    "es": "Control de captación, almacenamiento, consumo y estados para prolongar operación.",
+    "en": "Control de captación, almacenamiento, consumo y estados para prolongar operación."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.prueba-discriminante",
+    "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.carga-mecanica",
+    "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.arbol-de-fallos"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.cuarzo-avanzado"
+  ],
+  "movementIds": [],
+  "subsystem": "quartz-advanced",
+  "routeIds": [
+    "route.encyclopedia.quartz-electronics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.cuarzo-avanzado"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch15",
+    "source.external.watchbase",
+    "source.external.caliber-corner",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.quartz-electronics.cuarzo-avanzado"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.quartz-electronics.cuarzo-avanzado",
+  "plainLanguage": {
+    "es": "Control de captación, almacenamiento, consumo y estados para prolongar operación.",
+    "en": "Control de captación, almacenamiento, consumo y estados para prolongar operación."
+  },
+  "technicalLanguage": {
+    "es": "gestión de energía se interpreta mediante la cadena referencia interna oscila → sensor o receptor obtiene contexto → algoritmo estima error → se aplica corrección → actuador actualiza indicación → registro conserva estado y las condiciones declaradas en la unidad.",
+    "en": "gestión de energía se interpreta mediante la cadena referencia interna oscila → sensor o receptor obtiene contexto → algoritmo estima error → se aplica corrección → actuador actualiza indicación → registro conserva estado y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué funciones se añaden para mejorar autonomía, corrección o estabilidad y qué no debe inferirse de su nombre comercial?",
+    "en": "Permite explicar y comprobar ¿qué funciones se añaden para mejorar autonomía, corrección o estabilidad y qué no debe inferirse de su nombre comercial?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir gestión de energía sin circularidad.",
+      "en": "Definir gestión de energía sin circularidad."
+    },
+    {
+      "es": "Relacionar gestión de energía con una entrada, una interfaz y una salida.",
+      "en": "Relacionar gestión de energía con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

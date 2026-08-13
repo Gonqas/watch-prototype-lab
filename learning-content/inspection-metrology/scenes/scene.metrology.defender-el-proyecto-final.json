@@ -1,0 +1,114 @@
+{
+  "id": "scene.metrology.defender-el-proyecto-final",
+  "version": "0.2.0",
+  "title": "Defender el proyecto final",
+  "description": "Escena textual y accesible que prepara la operación real “Defender el proyecto final” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Defender el proyecto final. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-defender-el-proyecto-final.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-defender-el-proyecto-final.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Defender el proyecto final”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-defender-el-proyecto-final.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Defender el proyecto final” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-defender-el-proyecto-final",
+          "promptMarkdown": "¿Qué debe contener un dossier para que otra persona pueda reconstruir el razonamiento sin confiar en nuestra memoria?\n\nEn «Defender el proyecto final», resuelve un contexto nuevo: Entrega el dossier a una revisión ciega o aplícalo a otra unidad. La transferencia se supera si el método se conserva sin copiar dimensiones, tolerancias ni diagnósticos del primer caso. Documenta observación o resultado, método, límite y confianza sin copiar el dato del ejemplo.",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-defender-el-proyecto-final.observation",
+              "label": "Observación o resultado transferido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-defender-el-proyecto-final.method",
+              "label": "Método y referencia empleados",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-defender-el-proyecto-final.limitation",
+              "label": "Límite, dato ausente o condición de invalidez",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-defender-el-proyecto-final.confidence",
+              "label": "Confianza en la conclusión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Transfiere el criterio de «Defender el proyecto final» a un contexto nuevo."
+            },
+            "feedback": {
+              "es": "La transferencia conserva el método y vuelve a declarar sus límites: Entrega el dossier a una revisión ciega o aplícalo a otra unidad. La transferencia se supera si el método se conserva sin copiar dimensiones, tolerancias ni diagnósticos del primer caso."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-defender-el-proyecto-final",
+          "requiredFieldIds": [
+            "field.activity-metrology-defender-el-proyecto-final.observation",
+            "field.activity-metrology-defender-el-proyecto-final.method",
+            "field.activity-metrology-defender-el-proyecto-final.limitation",
+            "field.activity-metrology-defender-el-proyecto-final.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

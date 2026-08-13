@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+  "version": "1.1.0",
+  "title": "Limpieza, inspección y clasificación de defectos",
+  "blockIds": [
+    "block.encyclopedia.service-tribology.limpieza-e-inspeccion"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.limpieza-e-inspeccion"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Limpieza, inspección y clasificación de defectos",
+      "en": "Limpieza, inspección y clasificación de defectos"
+    },
+    "purpose": {
+      "es": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+      "en": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Limpieza, inspección y clasificación de defectos mediante relaciones causales.",
+        "en": "Explicar Limpieza, inspección y clasificación de defectos mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.energia-residual",
+      "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.dependencia-de-desmontaje",
+      "concept.encyclopedia.service-tribology.liberar-energia-y-desmontar.mapa-de-tornillos"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+      "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.defecto-funcional",
+      "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.criterio-de-rechazo"
+    ],
+    "sourceIds": [
+      "source.institutional.awci.standards",
+      "source.external.naked-watchmaker",
+      "source.external.watchguy-repair-blog"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.defecto-funcional",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.criterio-de-rechazo"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1102,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.service-tribology.limpieza-e-inspeccion"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: huella de desgaste, defecto funcional, criterio de rechazo.",
+          "en": "Defino con mis palabras: huella de desgaste, defecto funcional, criterio de rechazo."
+        },
+        {
+          "es": "Separo en «Limpieza, inspección y clasificación de defectos» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Limpieza, inspección y clasificación de defectos» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Limpieza, inspección y clasificación de defectos» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Limpieza, inspección y clasificación de defectos» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Crea una tabla observar–medir–función–decisión para pivote, diente, rubí, tornillo y muelle, con criterio de incertidumbre.",
+          "en": "Aplico el criterio a esta variante: Crea una tabla observar–medir–función–decisión para pivote, diente, rubí, tornillo y muelle, con criterio de incertidumbre."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Limpieza, inspección y clasificación de defectos» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Limpieza, inspección y clasificación de defectos» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.defecto-funcional",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.criterio-de-rechazo"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+          "en": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+        },
+        {
+          "es": "¿Qué relación causal de «Limpieza, inspección y clasificación de defectos» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Limpieza, inspección y clasificación de defectos» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

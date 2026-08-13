@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar GMT, hora mundial, tourbillon y fuerza constante",
+    "en": "Repasar GMT, hora mundial, tourbillon y fuerza constante"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 415,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante"
+  ],
+  "required": false
+}

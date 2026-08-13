@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.math-physics-metrology.unidades-y-modelos",
+  "version": "1.1.0",
+  "title": "Cuaderno: Unidades, escalas y análisis dimensional",
+  "description": "¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Unidades, escalas y análisis dimensional. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.math-physics-metrology.unidades-y-modelos.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.math-physics-metrology.unidades-y-modelos.answer",
+      "instructionMarkdown": "Explica **Unidades, escalas y análisis dimensional** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.math-physics-metrology.unidades-y-modelos.explain",
+          "promptMarkdown": "¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.math-physics-metrology.unidades-y-modelos.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.unidades-y-modelos.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.unidades-y-modelos.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.unidades-y-modelos.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.unidades-y-modelos.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir variable y sigue hasta calcular y redondear.",
+                "en": "Empieza por definir variable y sigue hasta calcular y redondear."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.unidades-y-modelos.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Toda magnitud combina número, unidad, referencia y condición. Prefijos, conversiones, orden de magnitud y análisis dimensional permiten descubrir errores antes de calcular. Un modelo útil declara variables, hipótesis y dominio; una fórmula copiada sin ellos puede producir un número correcto en apariencia y falso en significado.",
+                "en": "Toda magnitud combina número, unidad, referencia y condición. Prefijos, conversiones, orden de magnitud y análisis dimensional permiten descubrir errores antes de calcular. Un modelo útil declara variables, hipótesis y dominio; una fórmula copiada sin ellos puede producir un número correcto en apariencia y falso en significado."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?",
+              "en": "¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir variable → asignar unidad → convertir prefijos → comprobar dimensiones → estimar orden → calcular y redondear, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir variable → asignar unidad → convertir prefijos → comprobar dimensiones → estimar orden → calcular y redondear, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.math-physics-metrology.unidades-y-modelos.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.math-physics-metrology.unidades-y-modelos.mechanism",
+            "field.encyclopedia.math-physics-metrology.unidades-y-modelos.evidence",
+            "field.encyclopedia.math-physics-metrology.unidades-y-modelos.limit",
+            "field.encyclopedia.math-physics-metrology.unidades-y-modelos.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

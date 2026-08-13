@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas",
+  "version": "1.1.0",
+  "title": "Cuaderno: Guilloché, motor de línea recta y motor de rosas",
+  "description": "¿Cómo se genera un patrón mediante movimiento guiado y qué diferencia corte real de imitación visual?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Guilloché, motor de línea recta y motor de rosas. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se genera un patrón mediante movimiento guiado y qué diferencia corte real de imitación visual?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se genera un patrón mediante movimiento guiado y qué diferencia corte real de imitación visual?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.answer",
+      "instructionMarkdown": "Explica **Guilloché, motor de línea recta y motor de rosas** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.explain",
+          "promptMarkdown": "¿Cómo se genera un patrón mediante movimiento guiado y qué diferencia corte real de imitación visual?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por preparar blank y sigue hasta inspeccionar continuidad y acabado.",
+                "en": "Empieza por preparar blank y sigue hasta inspeccionar continuidad y acabado."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El guilloché tradicional corta líneas mediante relación mecánica entre roseta o guía, pieza y herramienta. Frecuencia del patrón, amplitud, indexado, avance, profundidad y fase determinan continuidad. Estampado, grabado CNC y texturas impresas pueden producir apariencia parecida con procesos y señales distintas.",
+                "en": "El guilloché tradicional corta líneas mediante relación mecánica entre roseta o guía, pieza y herramienta. Frecuencia del patrón, amplitud, indexado, avance, profundidad y fase determinan continuidad. Estampado, grabado CNC y texturas impresas pueden producir apariencia parecida con procesos y señales distintas."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se genera un patrón mediante movimiento guiado y qué diferencia corte real de imitación visual?",
+              "en": "¿Cómo se genera un patrón mediante movimiento guiado y qué diferencia corte real de imitación visual?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena preparar blank → elegir roseta/guía → ajustar amplitud y herramienta → indexar → cortar pasadas → inspeccionar continuidad y acabado, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena preparar blank → elegir roseta/guía → ajustar amplitud y herramienta → indexar → cortar pasadas → inspeccionar continuidad y acabado, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.mechanism",
+            "field.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.evidence",
+            "field.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.limit",
+            "field.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

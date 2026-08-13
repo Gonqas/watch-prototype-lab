@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.service-tribology.toh-friccion-desgaste.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Fricción, desgaste y regímenes de contacto",
+    "en": "Repasar Fricción, desgaste y regímenes de contacto"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 414,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.service-tribology.toh-friccion-desgaste"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.service-tribology.toh-friccion-desgaste"
+  ],
+  "required": false
+}

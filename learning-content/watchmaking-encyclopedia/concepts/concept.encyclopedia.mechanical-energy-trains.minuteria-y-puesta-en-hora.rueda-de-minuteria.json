@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.rueda-de-minuteria",
+  "version": "1.1.0",
+  "title": {
+    "es": "rueda de minutería",
+    "en": "rueda de minutería"
+  },
+  "summary": {
+    "es": "Rueda intermedia que participa en la reducción entre minutos y horas.",
+    "en": "Rueda intermedia que participa en la reducción entre minutos y horas."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.juego-radial",
+    "concept.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.juego-axial",
+    "concept.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes.piedra-de-contrapivote"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora"
+  ],
+  "movementIds": [],
+  "subsystem": "motion-works-keyless",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora"
+  ],
+  "sourceIds": [
+    "source.private.daniels.movement-design",
+    "source.official.miyota.8215",
+    "source.external.ciechanowski-mechanical-watch"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+  "plainLanguage": {
+    "es": "Rueda intermedia que participa en la reducción entre minutos y horas.",
+    "en": "Rueda intermedia que participa en la reducción entre minutos y horas."
+  },
+  "technicalLanguage": {
+    "es": "rueda de minutería se interpreta mediante la cadena extraer o girar corona → tija desplaza selector → piñón corredizo engrana → minutería recibe giro → cañón desliza de forma controlada → agujas cambian posición y las condiciones declaradas en la unidad.",
+    "en": "rueda de minutería se interpreta mediante la cadena extraer o girar corona → tija desplaza selector → piñón corredizo engrana → minutería recibe giro → cañón desliza de forma controlada → agujas cambian posición y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo puede el reloj mover agujas y permitir ajustarlas sin detener ni romper el tren?",
+    "en": "Permite explicar y comprobar ¿cómo puede el reloj mover agujas y permitir ajustarlas sin detener ni romper el tren?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir rueda de minutería sin circularidad.",
+      "en": "Definir rueda de minutería sin circularidad."
+    },
+    {
+      "es": "Relacionar rueda de minutería con una entrada, una interfaz y una salida.",
+      "en": "Relacionar rueda de minutería con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

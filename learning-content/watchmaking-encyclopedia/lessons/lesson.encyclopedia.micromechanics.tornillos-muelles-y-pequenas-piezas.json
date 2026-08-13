@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+  "version": "1.1.0",
+  "title": "Tornillos, pasadores, muelles y piezas pequeñas",
+  "blockIds": [
+    "block.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Tornillos, pasadores, muelles y piezas pequeñas",
+      "en": "Tornillos, pasadores, muelles y piezas pequeñas"
+    },
+    "purpose": {
+      "es": "¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?",
+      "en": "¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Tornillos, pasadores, muelles y piezas pequeñas mediante relaciones causales.",
+        "en": "Explicar Tornillos, pasadores, muelles y piezas pequeñas mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.micromechanics.ruedas-y-pinones.fresa-de-modulo",
+      "concept.encyclopedia.micromechanics.ruedas-y-pinones.division-angular",
+      "concept.encyclopedia.micromechanics.ruedas-y-pinones.pinon-de-hojas"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.rosca-funcional",
+      "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.muelle-de-lamina",
+      "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.concentracion-de-tensiones"
+    ],
+    "sourceIds": [
+      "source.private.daniels.small-components",
+      "source.private.daniels.finishing-metals",
+      "source.private.daniels.hand-tools"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.rosca-funcional",
+        "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.muelle-de-lamina",
+        "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.concentracion-de-tensiones"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1133,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: rosca funcional, muelle de lámina, concentración de tensiones.",
+          "en": "Defino con mis palabras: rosca funcional, muelle de lámina, concentración de tensiones."
+        },
+        {
+          "es": "Relaciono las operaciones de «Tornillos, pasadores, muelles y piezas pequeñas» con características medibles y riesgos de proceso.",
+          "en": "Relaciono las operaciones de «Tornillos, pasadores, muelles y piezas pequeñas» con características medibles y riesgos de proceso."
+        },
+        {
+          "es": "Distingo qué parte de «Tornillos, pasadores, muelles y piezas pequeñas» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Tornillos, pasadores, muelles y piezas pequeñas» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Diseña un clic de práctica mediante función, diagrama de carga, material, proceso, tratamiento y ensayo incremental hasta fallo seguro.",
+          "en": "Aplico el criterio a esta variante: Diseña un clic de práctica mediante función, diagrama de carga, material, proceso, tratamiento y ensayo incremental hasta fallo seguro."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Tornillos, pasadores, muelles y piezas pequeñas» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Tornillos, pasadores, muelles y piezas pequeñas» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.rosca-funcional",
+        "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.muelle-de-lamina",
+        "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.concentracion-de-tensiones"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?",
+          "en": "¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?"
+        },
+        {
+          "es": "¿Qué relación causal de «Tornillos, pasadores, muelles y piezas pequeñas» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Tornillos, pasadores, muelles y piezas pequeñas» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

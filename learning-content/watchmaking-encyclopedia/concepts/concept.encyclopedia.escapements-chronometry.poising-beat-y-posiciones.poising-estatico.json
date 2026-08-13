@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.poising-estatico",
+  "version": "1.1.0",
+  "title": {
+    "es": "poising estático",
+    "en": "poising estático"
+  },
+  "summary": {
+    "es": "Equilibrado del centro de masa de un volante en reposo alrededor de su eje.",
+    "en": "Equilibrado del centro de masa de un volante en reposo alrededor de su eje."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.isocronismo",
+    "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.curva-terminal",
+    "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.error-circular"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.poising-beat-y-posiciones"
+  ],
+  "movementIds": [],
+  "subsystem": "chronometry",
+  "routeIds": [
+    "route.encyclopedia.escapements-chronometry"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.poising-beat-y-posiciones"
+  ],
+  "sourceIds": [
+    "source.private.daniels.balance-spring",
+    "source.private.vba-uhrentechnik",
+    "source.institutional.wostep.watchmaker"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.escapements-chronometry.poising-beat-y-posiciones"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+  "plainLanguage": {
+    "es": "Equilibrado del centro de masa de un volante en reposo alrededor de su eje.",
+    "en": "Equilibrado del centro de masa de un volante en reposo alrededor de su eje."
+  },
+  "technicalLanguage": {
+    "es": "poising estático se interpreta mediante la cadena orientar reloj → gravedad cambia carga → desequilibrio añade par → apoyos cambian fricción → intervalos difieren → instrumento estima tasa y beat y las condiciones declaradas en la unidad.",
+    "en": "poising estático se interpreta mediante la cadena orientar reloj → gravedad cambia carga → desequilibrio añade par → apoyos cambian fricción → intervalos difieren → instrumento estima tasa y beat y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo producen gravedad y asimetría diferencias entre posiciones?",
+    "en": "Permite explicar y comprobar ¿cómo producen gravedad y asimetría diferencias entre posiciones?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir poising estático sin circularidad.",
+      "en": "Definir poising estático sin circularidad."
+    },
+    {
+      "es": "Relacionar poising estático con una entrada, una interfaz y una salida.",
+      "en": "Relacionar poising estático con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,236 @@
+{
+  "id": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+  "version": "1.1.0",
+  "title": "Movimiento mecánico simple como sistema cerrado",
+  "blockIds": [
+    "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Movimiento mecánico simple como sistema cerrado",
+      "en": "Movimiento mecánico simple como sistema cerrado"
+    },
+    "purpose": {
+      "es": "¿Cómo cooperan acumulador, tren, escape, regulador y visualización?",
+      "en": "¿Cómo cooperan acumulador, tren, escape, regulador y visualización?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Movimiento mecánico simple como sistema cerrado mediante relaciones causales.",
+        "en": "Explicar Movimiento mecánico simple como sistema cerrado mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.canon-de-minutos",
+      "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.rueda-de-minuteria",
+      "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.puesta-en-hora"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+      "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+      "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch03",
+      "source.private.daniels.movement-design",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Movimiento mecánico simple como sistema cerrado después de estudiar su teoría.",
+        "en": "Observar y manipular Movimiento mecánico simple como sistema cerrado después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "El movimiento mecánico simple transforma energía potencial del muelle en una indicación regulada. El barrilete entrega par; el tren adapta velocidad y par; el escape alterna bloqueo e impulso; el volante-espiral determina la cadencia; la minutería escala la salida.",
+        "en": "El movimiento mecánico simple transforma energía potencial del muelle en una indicación regulada. El barrilete entrega par; el tren adapta velocidad y par; el escape alterna bloqueo e impulso; el volante-espiral determina la cadencia; la minutería escala la salida."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema integration con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "dar cuerda",
+        "almacenar energía",
+        "transmitir por el tren",
+        "dosificar en el escape",
+        "mantener oscilación",
+        "contar e indicar"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "cadena energética",
+        "cadena informativa",
+        "estado de carga"
+      ],
+      "arrows": [
+        "dar cuerda → almacenar energía",
+        "almacenar energía → transmitir por el tren",
+        "transmitir por el tren → dosificar en el escape",
+        "dosificar en el escape → mantener oscilación",
+        "mantener oscilación → contar e indicar"
+      ],
+      "animations": [
+        "wind",
+        "release",
+        "block",
+        "unblock",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Movimiento mecánico simple como sistema cerrado sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Movimiento mecánico simple como sistema cerrado sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: dar cuerda → almacenar energía → transmitir por el tren → dosificar en el escape → mantener oscilación → contar e indicar. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: dar cuerda → almacenar energía → transmitir por el tren → dosificar en el escape → mantener oscilación → contar e indicar. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1122,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: cadena energética, cadena informativa, estado de carga.",
+          "en": "Defino con mis palabras: cadena energética, cadena informativa, estado de carga."
+        },
+        {
+          "es": "Sigo «Movimiento mecánico simple como sistema cerrado» desde dar cuerda hasta contar e indicar y explico cada enlace.",
+          "en": "Sigo «Movimiento mecánico simple como sistema cerrado» desde dar cuerda hasta contar e indicar y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Movimiento mecánico simple como sistema cerrado» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Movimiento mecánico simple como sistema cerrado» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Recorre la cadena hacia delante y hacia atrás para tres síntomas diferentes.",
+          "en": "Aplico el criterio a esta variante: Recorre la cadena hacia delante y hacia atrás para tres síntomas diferentes."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Movimiento mecánico simple como sistema cerrado» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Movimiento mecánico simple como sistema cerrado» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo cooperan acumulador, tren, escape, regulador y visualización?",
+          "en": "¿Cómo cooperan acumulador, tren, escape, regulador y visualización?"
+        },
+        {
+          "es": "¿Qué relación causal de «Movimiento mecánico simple como sistema cerrado» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Movimiento mecánico simple como sistema cerrado» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

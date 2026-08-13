@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+  "version": "1.1.0",
+  "title": "Cuaderno: Geometría del engrane relojero",
+  "description": "¿Qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Geometría del engrane relojero. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.answer",
+      "instructionMarkdown": "Explica **Geometría del engrane relojero** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.explain",
+          "promptMarkdown": "¿Qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir relación y sigue hasta verificar bajo carga.",
+                "en": "Empieza por definir relación y sigue hasta verificar bajo carga."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Número de dientes, módulo, diámetros, distancia entre centros, espesor y perfiles determinan el contacto. La relojería utiliza condiciones y perfiles que deben leerse en sus normas; un dibujo visualmente dentado no demuestra rodadura, penetración ni eficiencia.",
+                "en": "Número de dientes, módulo, diámetros, distancia entre centros, espesor y perfiles determinan el contacto. La relojería utiliza condiciones y perfiles que deben leerse en sus normas; un dibujo visualmente dentado no demuestra rodadura, penetración ni eficiencia."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?",
+              "en": "¿Qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir relación → seleccionar dientes → establecer módulo y perfiles → calcular centros → comprobar contacto → verificar bajo carga, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir relación → seleccionar dientes → establecer módulo y perfiles → calcular centros → comprobar contacto → verificar bajo carga, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.evidence",
+            "field.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.limit",
+            "field.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

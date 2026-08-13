@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.complications.cronografo-mandos",
+  "version": "1.1.0",
+  "title": "Cronógrafo: mando, rueda de pilares y sistema de levas",
+  "blockIds": [
+    "block.encyclopedia.complications.cronografo-mandos"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.cronografo-mandos"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Cronógrafo: mando, rueda de pilares y sistema de levas",
+      "en": "Cronógrafo: mando, rueda de pilares y sistema de levas"
+    },
+    "purpose": {
+      "es": "¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?",
+      "en": "¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Cronógrafo: mando, rueda de pilares y sistema de levas mediante relaciones causales.",
+        "en": "Explicar Cronógrafo: mando, rueda de pilares y sistema de levas mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.complications.calendarios.dedo-de-fecha",
+      "concept.encyclopedia.complications.calendarios.saltador",
+      "concept.encyclopedia.complications.calendarios.rueda-de-programa"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.complications.cronografo-mandos.rueda-de-pilares",
+      "concept.encyclopedia.complications.cronografo-mandos.leva-de-mando",
+      "concept.encyclopedia.complications.cronografo-mandos.maquina-de-estados"
+    ],
+    "sourceIds": [
+      "source.official.eta.7750",
+      "source.official.seiko.6138",
+      "source.external.naked-watchmaker"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.complications.cronografo-mandos.rueda-de-pilares",
+        "concept.encyclopedia.complications.cronografo-mandos.leva-de-mando",
+        "concept.encyclopedia.complications.cronografo-mandos.maquina-de-estados"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1234,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.complications.cronografo-mandos"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: rueda de pilares, leva de mando, máquina de estados.",
+          "en": "Defino con mis palabras: rueda de pilares, leva de mando, máquina de estados."
+        },
+        {
+          "es": "Sigo «Cronógrafo: mando, rueda de pilares y sistema de levas» desde pulsador aporta carrera hasta siguiente pulso cambia estado y explico cada enlace.",
+          "en": "Sigo «Cronógrafo: mando, rueda de pilares y sistema de levas» desde pulsador aporta carrera hasta siguiente pulso cambia estado y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Cronógrafo: mando, rueda de pilares y sistema de levas» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Cronógrafo: mando, rueda de pilares y sistema de levas» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Dibuja tablas de transición para un control de rueda de pilares y uno de levas y señala qué funciones son equivalentes.",
+          "en": "Aplico el criterio a esta variante: Dibuja tablas de transición para un control de rueda de pilares y uno de levas y señala qué funciones son equivalentes."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Cronógrafo: mando, rueda de pilares y sistema de levas» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Cronógrafo: mando, rueda de pilares y sistema de levas» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.complications.cronografo-mandos.rueda-de-pilares",
+        "concept.encyclopedia.complications.cronografo-mandos.leva-de-mando",
+        "concept.encyclopedia.complications.cronografo-mandos.maquina-de-estados"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?",
+          "en": "¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?"
+        },
+        {
+          "es": "¿Qué relación causal de «Cronógrafo: mando, rueda de pilares y sistema de levas» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Cronógrafo: mando, rueda de pilares y sistema de levas» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.mechanical.retain-document-fidelity-limits",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: documentar límites de fidelidad",
+    "en": "Práctica posterior: documentar límites de fidelidad"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días.",
+    "en": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días."
+  },
+  "rule": "independent-later-evidence-different-activity-session-minimum-7-days@1.0.0",
+  "priority": 75,
+  "target": {
+    "kind": "competency",
+    "id": "competency.mechanical.document-fidelity-limits"
+  },
+  "evidenceTemplateIds": [
+    "evidence.mechanical.document-fidelity-limits"
+  ],
+  "required": false
+}

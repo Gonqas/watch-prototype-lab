@@ -1,0 +1,821 @@
+{
+  "format": "wplab-learning-pack",
+  "formatVersion": 1,
+  "schemaId": "learning-pack-v1",
+  "packageVersion": "0.5.0",
+  "id": "wplab.horology.quartz-miyota2035",
+  "title": "Del ISA 8172 al MIYOTA 2035",
+  "distribution": "local-unsigned",
+  "editorialStatus": "in-review",
+  "authors": [
+    {
+      "name": "Watch Prototype Lab"
+    }
+  ],
+  "languages": [
+    "es-ES"
+  ],
+  "dependencies": [
+    {
+      "packageId": "wplab.horology.functional-map",
+      "versionRange": "^0.5.0"
+    }
+  ],
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "reduced-motion@^1.0.0"
+  ],
+  "movements": [
+    {
+      "manufacturer": "MIYOTA",
+      "calibre": "2035",
+      "referenceId": "fixture.miyota.2035.structural"
+    }
+  ],
+  "assets": [],
+  "entries": {
+    "curricula": [
+      {
+        "id": "curriculum.quartz2035",
+        "path": "curriculum/curriculum.quartz2035.json"
+      }
+    ],
+    "routes": [
+      {
+        "id": "route.horology.bench-foundations",
+        "path": "routes/route.horology.bench-foundations.json"
+      },
+      {
+        "id": "route.quartz2035.isa-to-2035",
+        "path": "routes/route.quartz2035.isa-to-2035.json"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module.quartz2035.workstation",
+        "path": "modules/module.quartz2035.workstation.json"
+      },
+      {
+        "id": "module.quartz2035.tools",
+        "path": "modules/module.quartz2035.tools.json"
+      },
+      {
+        "id": "module.quartz2035.observe",
+        "path": "modules/module.quartz2035.observe.json"
+      },
+      {
+        "id": "module.quartz2035.isa-memory",
+        "path": "modules/module.quartz2035.isa-memory.json"
+      },
+      {
+        "id": "module.quartz2035.documentation",
+        "path": "modules/module.quartz2035.documentation.json"
+      },
+      {
+        "id": "module.quartz2035.anatomy",
+        "path": "modules/module.quartz2035.anatomy.json"
+      },
+      {
+        "id": "module.quartz2035.disassembly",
+        "path": "modules/module.quartz2035.disassembly.json"
+      },
+      {
+        "id": "module.quartz2035.assembly",
+        "path": "modules/module.quartz2035.assembly.json"
+      },
+      {
+        "id": "module.quartz2035.diagnosis",
+        "path": "modules/module.quartz2035.diagnosis.json"
+      },
+      {
+        "id": "module.quartz2035.final-project",
+        "path": "modules/module.quartz2035.final-project.json"
+      }
+    ],
+    "concepts": [
+      {
+        "id": "concept.quartz2035.prepare-safe-workstation",
+        "path": "concepts/concept.quartz2035.prepare-safe-workstation.json"
+      },
+      {
+        "id": "concept.quartz2035.select-basic-tools",
+        "path": "concepts/concept.quartz2035.select-basic-tools.json"
+      },
+      {
+        "id": "concept.quartz2035.observe-before-disassembly",
+        "path": "concepts/concept.quartz2035.observe-before-disassembly.json"
+      },
+      {
+        "id": "concept.quartz2035.distinguish-observation-inference",
+        "path": "concepts/concept.quartz2035.distinguish-observation-inference.json"
+      },
+      {
+        "id": "concept.quartz2035.locate-official-data",
+        "path": "concepts/concept.quartz2035.locate-official-data.json"
+      },
+      {
+        "id": "concept.quartz2035.identify-2035-subsystems",
+        "path": "concepts/concept.quartz2035.identify-2035-subsystems.json"
+      },
+      {
+        "id": "concept.quartz2035.identify-documented-parts",
+        "path": "concepts/concept.quartz2035.identify-documented-parts.json"
+      },
+      {
+        "id": "concept.quartz2035.disassemble-virtually",
+        "path": "concepts/concept.quartz2035.disassemble-virtually.json"
+      },
+      {
+        "id": "concept.quartz2035.preserve-identity-orientation",
+        "path": "concepts/concept.quartz2035.preserve-identity-orientation.json"
+      },
+      {
+        "id": "concept.quartz2035.assemble-virtually",
+        "path": "concepts/concept.quartz2035.assemble-virtually.json"
+      },
+      {
+        "id": "concept.quartz2035.perform-partial-checks",
+        "path": "concepts/concept.quartz2035.perform-partial-checks.json"
+      },
+      {
+        "id": "concept.quartz2035.reason-about-symptom",
+        "path": "concepts/concept.quartz2035.reason-about-symptom.json"
+      },
+      {
+        "id": "concept.quartz2035.document-movement",
+        "path": "concepts/concept.quartz2035.document-movement.json"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "block.quartz2035.workstation",
+        "path": "blocks/block.quartz2035.workstation.json"
+      },
+      {
+        "id": "block.quartz2035.tools",
+        "path": "blocks/block.quartz2035.tools.json"
+      },
+      {
+        "id": "block.quartz2035.observe",
+        "path": "blocks/block.quartz2035.observe.json"
+      },
+      {
+        "id": "block.quartz2035.isa-memory",
+        "path": "blocks/block.quartz2035.isa-memory.json"
+      },
+      {
+        "id": "block.quartz2035.documentation",
+        "path": "blocks/block.quartz2035.documentation.json"
+      },
+      {
+        "id": "block.quartz2035.anatomy",
+        "path": "blocks/block.quartz2035.anatomy.json"
+      },
+      {
+        "id": "block.quartz2035.disassembly",
+        "path": "blocks/block.quartz2035.disassembly.json"
+      },
+      {
+        "id": "block.quartz2035.assembly",
+        "path": "blocks/block.quartz2035.assembly.json"
+      },
+      {
+        "id": "block.quartz2035.diagnosis",
+        "path": "blocks/block.quartz2035.diagnosis.json"
+      },
+      {
+        "id": "block.quartz2035.final-project",
+        "path": "blocks/block.quartz2035.final-project.json"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "lesson.quartz2035.workstation",
+        "path": "lessons/lesson.quartz2035.workstation.json"
+      },
+      {
+        "id": "lesson.quartz2035.tools",
+        "path": "lessons/lesson.quartz2035.tools.json"
+      },
+      {
+        "id": "lesson.quartz2035.observe",
+        "path": "lessons/lesson.quartz2035.observe.json"
+      },
+      {
+        "id": "lesson.quartz2035.isa-memory",
+        "path": "lessons/lesson.quartz2035.isa-memory.json"
+      },
+      {
+        "id": "lesson.quartz2035.documentation",
+        "path": "lessons/lesson.quartz2035.documentation.json"
+      },
+      {
+        "id": "lesson.quartz2035.anatomy",
+        "path": "lessons/lesson.quartz2035.anatomy.json"
+      },
+      {
+        "id": "lesson.quartz2035.disassembly",
+        "path": "lessons/lesson.quartz2035.disassembly.json"
+      },
+      {
+        "id": "lesson.quartz2035.assembly",
+        "path": "lessons/lesson.quartz2035.assembly.json"
+      },
+      {
+        "id": "lesson.quartz2035.diagnosis",
+        "path": "lessons/lesson.quartz2035.diagnosis.json"
+      },
+      {
+        "id": "lesson.quartz2035.final-project",
+        "path": "lessons/lesson.quartz2035.final-project.json"
+      }
+    ],
+    "activities": [
+      {
+        "id": "activity.quartz2035.prepare-workbench",
+        "path": "activities/activity.quartz2035.prepare-workbench.json"
+      },
+      {
+        "id": "activity.quartz2035.detect-unsafe-conditions",
+        "path": "activities/activity.quartz2035.detect-unsafe-conditions.json"
+      },
+      {
+        "id": "activity.quartz2035.select-tools",
+        "path": "activities/activity.quartz2035.select-tools.json"
+      },
+      {
+        "id": "activity.quartz2035.reject-wrong-tool",
+        "path": "activities/activity.quartz2035.reject-wrong-tool.json"
+      },
+      {
+        "id": "activity.quartz2035.identify-movement-zones",
+        "path": "activities/activity.quartz2035.identify-movement-zones.json"
+      },
+      {
+        "id": "activity.quartz2035.record-initial-condition",
+        "path": "activities/activity.quartz2035.record-initial-condition.json"
+      },
+      {
+        "id": "activity.quartz2035.create-isa-confidence-map",
+        "path": "activities/activity.quartz2035.create-isa-confidence-map.json"
+      },
+      {
+        "id": "activity.quartz2035.compare-isa-functionally",
+        "path": "activities/activity.quartz2035.compare-isa-functionally.json"
+      },
+      {
+        "id": "activity.quartz2035.read-drawing",
+        "path": "activities/activity.quartz2035.read-drawing.json"
+      },
+      {
+        "id": "activity.quartz2035.associate-reference-part",
+        "path": "activities/activity.quartz2035.associate-reference-part.json"
+      },
+      {
+        "id": "activity.quartz2035.classify-subsystems",
+        "path": "activities/activity.quartz2035.classify-subsystems.json"
+      },
+      {
+        "id": "activity.quartz2035.follow-functional-chain",
+        "path": "activities/activity.quartz2035.follow-functional-chain.json"
+      },
+      {
+        "id": "activity.quartz2035.order-disassembly-steps",
+        "path": "activities/activity.quartz2035.order-disassembly-steps.json"
+      },
+      {
+        "id": "activity.quartz2035.disassemble-to-tray",
+        "path": "activities/activity.quartz2035.disassemble-to-tray.json"
+      },
+      {
+        "id": "activity.quartz2035.assemble-guided",
+        "path": "activities/activity.quartz2035.assemble-guided.json"
+      },
+      {
+        "id": "activity.quartz2035.assemble-assisted-free",
+        "path": "activities/activity.quartz2035.assemble-assisted-free.json"
+      },
+      {
+        "id": "activity.quartz2035.identify-error-hypothesis",
+        "path": "activities/activity.quartz2035.identify-error-hypothesis.json"
+      },
+      {
+        "id": "activity.quartz2035.choose-check",
+        "path": "activities/activity.quartz2035.choose-check.json"
+      },
+      {
+        "id": "activity.quartz2035.complete-final-project",
+        "path": "activities/activity.quartz2035.complete-final-project.json"
+      },
+      {
+        "id": "activity.quartz2035.review-final-dossier",
+        "path": "activities/activity.quartz2035.review-final-dossier.json"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "scene.quartz2035.workstation",
+        "path": "scenes/scene.quartz2035.workstation.json"
+      },
+      {
+        "id": "scene.quartz2035.tools",
+        "path": "scenes/scene.quartz2035.tools.json"
+      },
+      {
+        "id": "scene.quartz2035.observe",
+        "path": "scenes/scene.quartz2035.observe.json"
+      },
+      {
+        "id": "scene.quartz2035.isa-memory",
+        "path": "scenes/scene.quartz2035.isa-memory.json"
+      },
+      {
+        "id": "scene.quartz2035.documentation",
+        "path": "scenes/scene.quartz2035.documentation.json"
+      },
+      {
+        "id": "scene.quartz2035.anatomy",
+        "path": "scenes/scene.quartz2035.anatomy.json"
+      },
+      {
+        "id": "scene.quartz2035.disassembly",
+        "path": "scenes/scene.quartz2035.disassembly.json"
+      },
+      {
+        "id": "scene.quartz2035.assembly",
+        "path": "scenes/scene.quartz2035.assembly.json"
+      },
+      {
+        "id": "scene.quartz2035.diagnosis",
+        "path": "scenes/scene.quartz2035.diagnosis.json"
+      },
+      {
+        "id": "scene.quartz2035.final-project",
+        "path": "scenes/scene.quartz2035.final-project.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.assemble-assisted-free",
+        "path": "scenes/scene.practice.quartz2035.assemble-assisted-free.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.assemble-guided",
+        "path": "scenes/scene.practice.quartz2035.assemble-guided.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.associate-reference-part",
+        "path": "scenes/scene.practice.quartz2035.associate-reference-part.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.choose-check",
+        "path": "scenes/scene.practice.quartz2035.choose-check.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.classify-subsystems",
+        "path": "scenes/scene.practice.quartz2035.classify-subsystems.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.compare-isa-functionally",
+        "path": "scenes/scene.practice.quartz2035.compare-isa-functionally.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.complete-final-project",
+        "path": "scenes/scene.practice.quartz2035.complete-final-project.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.create-isa-confidence-map",
+        "path": "scenes/scene.practice.quartz2035.create-isa-confidence-map.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.detect-unsafe-conditions",
+        "path": "scenes/scene.practice.quartz2035.detect-unsafe-conditions.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.disassemble-to-tray",
+        "path": "scenes/scene.practice.quartz2035.disassemble-to-tray.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.follow-functional-chain",
+        "path": "scenes/scene.practice.quartz2035.follow-functional-chain.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.identify-error-hypothesis",
+        "path": "scenes/scene.practice.quartz2035.identify-error-hypothesis.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.identify-movement-zones",
+        "path": "scenes/scene.practice.quartz2035.identify-movement-zones.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.order-disassembly-steps",
+        "path": "scenes/scene.practice.quartz2035.order-disassembly-steps.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.prepare-workbench",
+        "path": "scenes/scene.practice.quartz2035.prepare-workbench.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.read-drawing",
+        "path": "scenes/scene.practice.quartz2035.read-drawing.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.record-initial-condition",
+        "path": "scenes/scene.practice.quartz2035.record-initial-condition.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.reject-wrong-tool",
+        "path": "scenes/scene.practice.quartz2035.reject-wrong-tool.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.review-final-dossier",
+        "path": "scenes/scene.practice.quartz2035.review-final-dossier.json"
+      },
+      {
+        "id": "scene.practice.quartz2035.select-tools",
+        "path": "scenes/scene.practice.quartz2035.select-tools.json"
+      }
+    ],
+    "competencies": [
+      {
+        "id": "competency.quartz2035.prepare-safe-workstation",
+        "path": "competencies/competency.quartz2035.prepare-safe-workstation.json"
+      },
+      {
+        "id": "competency.quartz2035.select-basic-tools",
+        "path": "competencies/competency.quartz2035.select-basic-tools.json"
+      },
+      {
+        "id": "competency.quartz2035.observe-before-disassembly",
+        "path": "competencies/competency.quartz2035.observe-before-disassembly.json"
+      },
+      {
+        "id": "competency.quartz2035.distinguish-observation-inference",
+        "path": "competencies/competency.quartz2035.distinguish-observation-inference.json"
+      },
+      {
+        "id": "competency.quartz2035.locate-official-data",
+        "path": "competencies/competency.quartz2035.locate-official-data.json"
+      },
+      {
+        "id": "competency.quartz2035.identify-2035-subsystems",
+        "path": "competencies/competency.quartz2035.identify-2035-subsystems.json"
+      },
+      {
+        "id": "competency.quartz2035.identify-documented-parts",
+        "path": "competencies/competency.quartz2035.identify-documented-parts.json"
+      },
+      {
+        "id": "competency.quartz2035.disassemble-virtually",
+        "path": "competencies/competency.quartz2035.disassemble-virtually.json"
+      },
+      {
+        "id": "competency.quartz2035.preserve-identity-orientation",
+        "path": "competencies/competency.quartz2035.preserve-identity-orientation.json"
+      },
+      {
+        "id": "competency.quartz2035.assemble-virtually",
+        "path": "competencies/competency.quartz2035.assemble-virtually.json"
+      },
+      {
+        "id": "competency.quartz2035.perform-partial-checks",
+        "path": "competencies/competency.quartz2035.perform-partial-checks.json"
+      },
+      {
+        "id": "competency.quartz2035.reason-about-symptom",
+        "path": "competencies/competency.quartz2035.reason-about-symptom.json"
+      },
+      {
+        "id": "competency.quartz2035.document-movement",
+        "path": "competencies/competency.quartz2035.document-movement.json"
+      }
+    ],
+    "evidenceTemplates": [
+      {
+        "id": "evidence.quartz2035.preparation",
+        "path": "evidence/evidence.quartz2035.preparation.json"
+      },
+      {
+        "id": "evidence.quartz2035.safety",
+        "path": "evidence/evidence.quartz2035.safety.json"
+      },
+      {
+        "id": "evidence.quartz2035.tool",
+        "path": "evidence/evidence.quartz2035.tool.json"
+      },
+      {
+        "id": "evidence.quartz2035.observation",
+        "path": "evidence/evidence.quartz2035.observation.json"
+      },
+      {
+        "id": "evidence.quartz2035.provenance",
+        "path": "evidence/evidence.quartz2035.provenance.json"
+      },
+      {
+        "id": "evidence.quartz2035.document-reading",
+        "path": "evidence/evidence.quartz2035.document-reading.json"
+      },
+      {
+        "id": "evidence.quartz2035.identification",
+        "path": "evidence/evidence.quartz2035.identification.json"
+      },
+      {
+        "id": "evidence.quartz2035.classification",
+        "path": "evidence/evidence.quartz2035.classification.json"
+      },
+      {
+        "id": "evidence.quartz2035.sequence",
+        "path": "evidence/evidence.quartz2035.sequence.json"
+      },
+      {
+        "id": "evidence.quartz2035.manipulation",
+        "path": "evidence/evidence.quartz2035.manipulation.json"
+      },
+      {
+        "id": "evidence.quartz2035.order",
+        "path": "evidence/evidence.quartz2035.order.json"
+      },
+      {
+        "id": "evidence.quartz2035.orientation",
+        "path": "evidence/evidence.quartz2035.orientation.json"
+      },
+      {
+        "id": "evidence.quartz2035.disassembly",
+        "path": "evidence/evidence.quartz2035.disassembly.json"
+      },
+      {
+        "id": "evidence.quartz2035.assembly",
+        "path": "evidence/evidence.quartz2035.assembly.json"
+      },
+      {
+        "id": "evidence.quartz2035.verification",
+        "path": "evidence/evidence.quartz2035.verification.json"
+      },
+      {
+        "id": "evidence.quartz2035.diagnosis",
+        "path": "evidence/evidence.quartz2035.diagnosis.json"
+      },
+      {
+        "id": "evidence.quartz2035.explanation",
+        "path": "evidence/evidence.quartz2035.explanation.json"
+      },
+      {
+        "id": "evidence.quartz2035.final-project",
+        "path": "evidence/evidence.quartz2035.final-project.json"
+      }
+    ],
+    "rubrics": [
+      {
+        "id": "rubric.quartz2035.prepare-safe-workstation",
+        "path": "rubrics/rubric.quartz2035.prepare-safe-workstation.json"
+      },
+      {
+        "id": "rubric.quartz2035.select-basic-tools",
+        "path": "rubrics/rubric.quartz2035.select-basic-tools.json"
+      },
+      {
+        "id": "rubric.quartz2035.observe-before-disassembly",
+        "path": "rubrics/rubric.quartz2035.observe-before-disassembly.json"
+      },
+      {
+        "id": "rubric.quartz2035.distinguish-observation-inference",
+        "path": "rubrics/rubric.quartz2035.distinguish-observation-inference.json"
+      },
+      {
+        "id": "rubric.quartz2035.locate-official-data",
+        "path": "rubrics/rubric.quartz2035.locate-official-data.json"
+      },
+      {
+        "id": "rubric.quartz2035.identify-2035-subsystems",
+        "path": "rubrics/rubric.quartz2035.identify-2035-subsystems.json"
+      },
+      {
+        "id": "rubric.quartz2035.identify-documented-parts",
+        "path": "rubrics/rubric.quartz2035.identify-documented-parts.json"
+      },
+      {
+        "id": "rubric.quartz2035.disassemble-virtually",
+        "path": "rubrics/rubric.quartz2035.disassemble-virtually.json"
+      },
+      {
+        "id": "rubric.quartz2035.preserve-identity-orientation",
+        "path": "rubrics/rubric.quartz2035.preserve-identity-orientation.json"
+      },
+      {
+        "id": "rubric.quartz2035.assemble-virtually",
+        "path": "rubrics/rubric.quartz2035.assemble-virtually.json"
+      },
+      {
+        "id": "rubric.quartz2035.perform-partial-checks",
+        "path": "rubrics/rubric.quartz2035.perform-partial-checks.json"
+      },
+      {
+        "id": "rubric.quartz2035.reason-about-symptom",
+        "path": "rubrics/rubric.quartz2035.reason-about-symptom.json"
+      },
+      {
+        "id": "rubric.quartz2035.document-movement",
+        "path": "rubrics/rubric.quartz2035.document-movement.json"
+      }
+    ],
+    "glossary": [
+      {
+        "id": "term.quartz2035.workbench",
+        "path": "glossary/term.quartz2035.workbench.json"
+      },
+      {
+        "id": "term.quartz2035.movement-holder",
+        "path": "glossary/term.quartz2035.movement-holder.json"
+      },
+      {
+        "id": "term.quartz2035.parts-tray",
+        "path": "glossary/term.quartz2035.parts-tray.json"
+      },
+      {
+        "id": "term.quartz2035.fastener",
+        "path": "glossary/term.quartz2035.fastener.json"
+      },
+      {
+        "id": "term.quartz2035.orientation",
+        "path": "glossary/term.quartz2035.orientation.json"
+      },
+      {
+        "id": "term.quartz2035.checkpoint",
+        "path": "glossary/term.quartz2035.checkpoint.json"
+      },
+      {
+        "id": "term.horology.provenance",
+        "path": "glossary/term.horology.provenance.json"
+      },
+      {
+        "id": "term.quartz2035.observation",
+        "path": "glossary/term.quartz2035.observation.json"
+      },
+      {
+        "id": "term.horology.inference",
+        "path": "glossary/term.horology.inference.json"
+      },
+      {
+        "id": "term.quartz2035.official-datum",
+        "path": "glossary/term.quartz2035.official-datum.json"
+      },
+      {
+        "id": "term.horology.main-plate",
+        "path": "glossary/term.horology.main-plate.json"
+      },
+      {
+        "id": "term.horology.bridge",
+        "path": "glossary/term.horology.bridge.json"
+      },
+      {
+        "id": "term.horology.coil",
+        "path": "glossary/term.horology.coil.json"
+      },
+      {
+        "id": "term.horology.stepper-rotor",
+        "path": "glossary/term.horology.stepper-rotor.json"
+      },
+      {
+        "id": "term.horology.gear-train",
+        "path": "glossary/term.horology.gear-train.json"
+      }
+    ],
+    "sources": [
+      {
+        "id": "source.miyota.2035.product-page",
+        "path": "sources/source.miyota.2035.product-page.json"
+      },
+      {
+        "id": "source.miyota.2035.specification",
+        "path": "sources/source.miyota.2035.specification.json"
+      },
+      {
+        "id": "source.miyota.2035.drawing",
+        "path": "sources/source.miyota.2035.drawing.json"
+      },
+      {
+        "id": "source.miyota.2035.instruction-manual",
+        "path": "sources/source.miyota.2035.instruction-manual.json"
+      },
+      {
+        "id": "source.miyota.2035.parts-list-exploded-view",
+        "path": "sources/source.miyota.2035.parts-list-exploded-view.json"
+      },
+      {
+        "id": "source.horology.original-quartz-practical-route",
+        "path": "sources/source.horology.original-quartz-practical-route.json"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "recommendation.quartz2035.retain-prepare-safe-workstation",
+        "path": "recommendations/recommendation.quartz2035.retain-prepare-safe-workstation.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-select-basic-tools",
+        "path": "recommendations/recommendation.quartz2035.retain-select-basic-tools.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-observe-before-disassembly",
+        "path": "recommendations/recommendation.quartz2035.retain-observe-before-disassembly.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-distinguish-observation-inference",
+        "path": "recommendations/recommendation.quartz2035.retain-distinguish-observation-inference.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-locate-official-data",
+        "path": "recommendations/recommendation.quartz2035.retain-locate-official-data.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-identify-2035-subsystems",
+        "path": "recommendations/recommendation.quartz2035.retain-identify-2035-subsystems.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-identify-documented-parts",
+        "path": "recommendations/recommendation.quartz2035.retain-identify-documented-parts.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-disassemble-virtually",
+        "path": "recommendations/recommendation.quartz2035.retain-disassemble-virtually.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-preserve-identity-orientation",
+        "path": "recommendations/recommendation.quartz2035.retain-preserve-identity-orientation.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-assemble-virtually",
+        "path": "recommendations/recommendation.quartz2035.retain-assemble-virtually.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-perform-partial-checks",
+        "path": "recommendations/recommendation.quartz2035.retain-perform-partial-checks.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-reason-about-symptom",
+        "path": "recommendations/recommendation.quartz2035.retain-reason-about-symptom.json"
+      },
+      {
+        "id": "recommendation.quartz2035.retain-document-movement",
+        "path": "recommendations/recommendation.quartz2035.retain-document-movement.json"
+      }
+    ],
+    "visualResources": [
+      {
+        "id": "visual.quartz2035.workstation",
+        "path": "visual-resources/visual.quartz2035.workstation.json"
+      },
+      {
+        "id": "visual.quartz2035.tools",
+        "path": "visual-resources/visual.quartz2035.tools.json"
+      },
+      {
+        "id": "visual.quartz2035.observe",
+        "path": "visual-resources/visual.quartz2035.observe.json"
+      },
+      {
+        "id": "visual.quartz2035.isa-memory",
+        "path": "visual-resources/visual.quartz2035.isa-memory.json"
+      },
+      {
+        "id": "visual.quartz2035.documentation",
+        "path": "visual-resources/visual.quartz2035.documentation.json"
+      },
+      {
+        "id": "visual.quartz2035.anatomy",
+        "path": "visual-resources/visual.quartz2035.anatomy.json"
+      },
+      {
+        "id": "visual.quartz2035.disassembly",
+        "path": "visual-resources/visual.quartz2035.disassembly.json"
+      },
+      {
+        "id": "visual.quartz2035.assembly",
+        "path": "visual-resources/visual.quartz2035.assembly.json"
+      },
+      {
+        "id": "visual.quartz2035.diagnosis",
+        "path": "visual-resources/visual.quartz2035.diagnosis.json"
+      },
+      {
+        "id": "visual.quartz2035.final-project",
+        "path": "visual-resources/visual.quartz2035.final-project.json"
+      }
+    ],
+    "misconceptions": [
+      {
+        "id": "misconception.quartz2035.image-is-official-dimension",
+        "path": "misconceptions/misconception.quartz2035.image-is-official-dimension.json"
+      },
+      {
+        "id": "misconception.quartz2035.virtual-equals-manual-skill",
+        "path": "misconceptions/misconception.quartz2035.virtual-equals-manual-skill.json"
+      },
+      {
+        "id": "misconception.quartz2035.symptom-is-diagnosis",
+        "path": "misconceptions/misconception.quartz2035.symptom-is-diagnosis.json"
+      }
+    ]
+  },
+  "minimumAppVersion": "0.10.0",
+  "createdAt": "2026-07-27T10:00:00.000Z"
+}

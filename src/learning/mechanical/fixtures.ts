@@ -1,0 +1,137 @@
+import type { EnergySegment, KinematicRelation, MechanicalEntity, MechanicalFault } from './model'
+
+const conceptual = {
+  geometry: 'G1' as const,
+  kinematics: 'K2' as const,
+  physics: 'P0' as const,
+  limitations: ['Geometría simbólica.', 'Cinemática educativa determinista.', 'Sin física de ingeniería validada.'],
+}
+const source = ['source.horology.private-book.mechanical-theory', 'source.horology.original-mechanical-foundations']
+const entity = (id: string, label: string, labelEn: string, subsystem: MechanicalEntity['subsystem'], roles: string[]): MechanicalEntity => ({
+  id,
+  label,
+  labelEn,
+  subsystem,
+  roles,
+  sourceIds: source,
+  fidelity: conceptual,
+  limitations: ['Componente conceptual; no representa una pieza MIYOTA 8215 ni una dimensión fabricable.'],
+})
+
+export const MECHANICAL_LAB_ENTITIES: MechanicalEntity[] = [
+  entity('mechanical.mainspring', 'Muelle real', 'Mainspring', 'energy', ['mainspring', 'energy-source']),
+  entity('mechanical.barrel-arbor', 'Árbol del barrilete', 'Barrel arbor', 'barrel', ['barrel-arbor']),
+  entity('mechanical.barrel-drum', 'Tambor del barrilete', 'Barrel drum', 'barrel', ['barrel', 'drum']),
+  entity('mechanical.barrel-cover', 'Tapa del barrilete', 'Barrel cover', 'barrel', ['barrel-cover']),
+  entity('mechanical.sliding-bridle', 'Brida deslizante conceptual', 'Conceptual slipping bridle', 'barrel', ['slipping-bridle']),
+  entity('mechanical.center-wheel', 'Rueda de centro conceptual', 'Conceptual center wheel', 'train', ['center-wheel', 'wheel']),
+  entity('mechanical.center-pinion', 'Piñón de centro conceptual', 'Conceptual center pinion', 'train', ['center-pinion', 'pinion', 'same-arbor']),
+  entity('mechanical.third-wheel', 'Tercera rueda conceptual', 'Conceptual third wheel', 'train', ['third-wheel', 'wheel']),
+  entity('mechanical.fourth-wheel', 'Cuarta rueda conceptual', 'Conceptual fourth wheel', 'train', ['fourth-wheel', 'wheel']),
+  entity('mechanical.escape-wheel', 'Rueda de escape conceptual', 'Conceptual escape wheel', 'escapement', ['escape-wheel']),
+  entity('mechanical.pallet-fork', 'Áncora conceptual', 'Conceptual pallet fork', 'escapement', ['pallet-fork']),
+  entity('mechanical.pallet-stones', 'Paletas conceptuales', 'Conceptual pallet stones', 'escapement', ['pallet-stones']),
+  entity('mechanical.balance', 'Volante conceptual', 'Conceptual balance', 'oscillator', ['balance']),
+  entity('mechanical.hairspring', 'Espiral conceptual', 'Conceptual hairspring', 'oscillator', ['hairspring']),
+  entity('mechanical.jewel-upper', 'Rubí superior conceptual', 'Conceptual upper jewel', 'supports', ['jewel', 'upper-support']),
+  entity('mechanical.jewel-lower', 'Rubí inferior conceptual', 'Conceptual lower jewel', 'supports', ['jewel', 'lower-support']),
+  entity('mechanical.bridge', 'Puente conceptual', 'Conceptual bridge', 'supports', ['bridge']),
+  entity('mechanical.plate', 'Platina conceptual', 'Conceptual main plate', 'supports', ['plate']),
+  entity('mechanical.cannon-pinion', 'Cañón de minutos', 'Cannon pinion', 'motion-works', ['cannon-pinion']),
+  entity('mechanical.minute-wheel', 'Rueda de minutería', 'Minute wheel', 'motion-works', ['minute-wheel']),
+  entity('mechanical.hour-wheel', 'Rueda de horas', 'Hour wheel', 'motion-works', ['hour-wheel']),
+  entity('mechanical.crown', 'Corona conceptual', 'Conceptual crown', 'keyless', ['crown']),
+  entity('mechanical.stem', 'Tija conceptual', 'Conceptual stem', 'keyless', ['stem']),
+  entity('mechanical.sliding-pinion', 'Piñón corredizo conceptual', 'Conceptual sliding pinion', 'keyless', ['sliding-pinion']),
+  entity('mechanical.setting-lever', 'Tirete conceptual', 'Conceptual setting lever', 'keyless', ['setting-lever']),
+  entity('mechanical.yoke', 'Báscula conceptual', 'Conceptual yoke', 'keyless', ['yoke']),
+  entity('mechanical.automatic-rotor', 'Rotor automático conceptual', 'Conceptual automatic rotor', 'automatic', ['automatic-rotor']),
+  entity('mechanical.reverser', 'Reversor conceptual', 'Conceptual reverser', 'automatic', ['reverser']),
+  entity('mechanical.date-driver', 'Arrastre de fecha conceptual', 'Conceptual date driver', 'calendar', ['date-driver']),
+  entity('mechanical.date-ring', 'Disco de fecha conceptual', 'Conceptual date ring', 'calendar', ['calendar', 'date-ring']),
+]
+
+export const MECHANICAL_KINEMATIC_RELATIONS: KinematicRelation[] = [
+  ['barrel-center', 'mechanical.barrel-drum', 'mechanical.center-wheel', 'external-mesh', 80, 10],
+  ['center-wheel-pinion', 'mechanical.center-wheel', 'mechanical.center-pinion', 'same-arbor', undefined, undefined],
+  ['center-third', 'mechanical.center-pinion', 'mechanical.third-wheel', 'external-mesh', 64, 8],
+  ['third-fourth', 'mechanical.third-wheel', 'mechanical.fourth-wheel', 'external-mesh', 60, 10],
+  ['fourth-escape', 'mechanical.fourth-wheel', 'mechanical.escape-wheel', 'external-mesh', 60, 8],
+  ['escape-pallet', 'mechanical.escape-wheel', 'mechanical.pallet-fork', 'escapement-release', undefined, undefined],
+  ['pallet-balance', 'mechanical.pallet-fork', 'mechanical.balance', 'oscillatory-coupling', undefined, undefined],
+  ['balance-hairspring', 'mechanical.balance', 'mechanical.hairspring', 'oscillatory-coupling', undefined, undefined],
+  ['fourth-cannon', 'mechanical.fourth-wheel', 'mechanical.cannon-pinion', 'friction-drive', undefined, undefined],
+  ['minute-hour', 'mechanical.minute-wheel', 'mechanical.hour-wheel', 'external-mesh', 10, 120],
+  ['stem-pinion', 'mechanical.stem', 'mechanical.sliding-pinion', 'manual-setting', undefined, undefined],
+  ['rotor-reverser', 'mechanical.automatic-rotor', 'mechanical.reverser', 'automatic-winding', undefined, undefined],
+].map(([id, driverId, drivenId, type, driverTeeth, drivenTeeth]) => {
+  const external = type === 'external-mesh'
+  const ratio = driverTeeth && drivenTeeth ? Number(driverTeeth) / Number(drivenTeeth) : 1
+  return {
+    id: String(id),
+    driverId: String(driverId),
+    drivenId: String(drivenId),
+    type: type as KinematicRelation['type'],
+    driverTeeth: driverTeeth ? Number(driverTeeth) : undefined,
+    drivenTeeth: drivenTeeth ? Number(drivenTeeth) : undefined,
+    ratio,
+    direction: external ? -1 : 1,
+    relativeSpeed: ratio,
+    state: 'engaged',
+    confidence: 'high',
+    sourceIds: source,
+    limitations: ['Relación y dientes del modelo educativo; no se atribuyen a MIYOTA 8215.'],
+  }
+})
+
+export const MECHANICAL_ENERGY_SEGMENTS: EnergySegment[] = [
+  ['spring-barrel', 'mechanical.mainspring', 'mechanical.barrel-drum', 'storage', 'going-train'],
+  ['barrel-center', 'mechanical.barrel-drum', 'mechanical.center-wheel', 'transmission', 'going-train'],
+  ['center-escape', 'mechanical.center-wheel', 'mechanical.escape-wheel', 'transmission', 'going-train'],
+  ['escape-pallet', 'mechanical.escape-wheel', 'mechanical.pallet-fork', 'release', 'going-train'],
+  ['pallet-balance', 'mechanical.pallet-fork', 'mechanical.balance', 'oscillation', 'going-train'],
+  ['train-motion', 'mechanical.fourth-wheel', 'mechanical.cannon-pinion', 'indication', 'motion-works'],
+  ['motion-calendar', 'mechanical.hour-wheel', 'mechanical.date-driver', 'indication', 'calendar'],
+  ['rotor-barrel', 'mechanical.automatic-rotor', 'mechanical.barrel-arbor', 'source', 'automatic'],
+  ['stem-barrel', 'mechanical.stem', 'mechanical.barrel-arbor', 'source', 'setting'],
+].map(([id, fromId, toId, func, branch]) => ({
+  id,
+  fromId,
+  toId,
+  function: func as EnergySegment['function'],
+  branch: branch as EnergySegment['branch'],
+  direction: branch === 'setting' ? 'bidirectional' : 'forward',
+  state: 'inactive',
+  sourceIds: source,
+  fidelity: conceptual,
+  limitations: ['Flujo funcional normalizado; no representa pérdidas ni par de un calibre real.'],
+}))
+
+export const MECHANICAL_FAULT_CATALOG: MechanicalFault[] = [
+  ['mainspring-discharged', 'Sin energía almacenada', 'Muelle relajado', 'El sistema no tiene energía disponible.', 'Comprobar el nivel normalizado.', 'El modelo puede explicar la interrupción energética.', 'No permite concluir el estado de un muelle físico.'],
+  ['barrel-blocked', 'El tren no recibe movimiento', 'Barrilete bloqueado', 'La salida del barrilete está interrumpida.', 'Desbloquear el tambor y comparar.', 'El bloqueo conceptual interrumpe la cadena.', 'No identifica rozamiento o daño real.'],
+  ['missing-mesh', 'Una etapa no transmite', 'Engrane ausente', 'Falta una relación cinemática.', 'Inspeccionar etapas y centros.', 'El tren ideal está abierto.', 'No diagnostica dientes ni depthing físicos.'],
+  ['incorrect-ratio', 'La indicación no conserva la relación esperada', 'Relación alterada', 'Los dientes educativos no satisfacen el objetivo.', 'Recalcular el par y el total.', 'El cálculo ideal no coincide con el objetivo.', 'No describe un calibre real.'],
+  ['pivot-outside-jewel', 'La rueda queda inclinada', 'Pivote fuera del rubí', 'Un apoyo no está alineado.', 'Restaurar el apoyo superior e inferior.', 'La representación muestra apoyo incorrecto.', 'No cuantifica doblado ni tolerancia.'],
+  ['wheel-no-freedom', 'La rueda no gira', 'Libertad anulada', 'El apoyo conceptual bloquea la rueda.', 'Comparar supported/no-freedom.', 'El estado visual impide movimiento.', 'No mide endshake ni sideshake.'],
+  ['escapement-blocked', 'No se libera el tren', 'Escape bloqueado', 'La rueda de escape no alterna bloqueo y liberación.', 'Avanzar fase paso a paso.', 'El escape conceptual está detenido.', 'No identifica paletas, penetración o aceite.'],
+  ['pallet-no-alternation', 'No hay alternancia', 'Áncora inmóvil', 'El acoplamiento no alterna.', 'Revisar fases izquierda/derecha.', 'La secuencia funcional está interrumpida.', 'No diagnostica una áncora física.'],
+  ['balance-blocked', 'El regulador no oscila', 'Volante bloqueado', 'El oscilador está detenido.', 'Desbloquear y observar ciclos.', 'Sin oscilación no hay liberación controlada.', 'No determina causa física.'],
+  ['low-amplitude-conceptual', 'Oscilación visual pequeña', 'Amplitud normalizada baja', 'La energía relativa disponible es insuficiente en el modelo.', 'Comparar frecuencia constante y amplitud variable.', 'La amplitud conceptual es baja.', 'No equivale a grados medidos por cronocomparador.'],
+  ['hairspring-rubbing', 'Oscilación perturbada', 'Espiral rozando simbólicamente', 'Existe una interferencia visual.', 'Retirar el fallo y comparar.', 'El roce conceptual altera la representación.', 'No determina geometría o ajuste real.'],
+  ['motion-works-disconnected', 'Las agujas no avanzan', 'Minutería desacoplada', 'La rama de indicación está abierta.', 'Reacoplar y avanzar tiempo.', 'La indicación está desacoplada.', 'No diagnostica fricción física.'],
+  ['wrong-crown-position', 'La acción de corona no produce la función esperada', 'Posición incorrecta', 'El estado keyless no corresponde a la acción.', 'Cambiar winding/neutral/time-setting.', 'La función activa depende del estado.', 'No atribuye una disposición a todos los calibres.'],
+  ['automatic-disconnected', 'El rotor no carga', 'Automático desactivado', 'La rama automática está interrumpida.', 'Activar un modelo de reversión.', 'La rama conceptual está desconectada.', 'No representa el automático 8215 exacto.'],
+  ['calendar-blocked', 'La fecha no cambia', 'Calendario bloqueado', 'La rama de calendario está interrumpida.', 'Desbloquear y avanzar un día.', 'El calendario conceptual no avanza.', 'No establece una ventana segura de corrección real.'],
+  ['hands-rubbing', 'La indicación se bloquea', 'Agujas rozando simbólicamente', 'La salida visual encuentra interferencia.', 'Desacoplar y comparar.', 'El roce conceptual bloquea la indicación.', 'No mide alturas o paralelismo físicos.'],
+].map(([kind, symptom, visualState, hypothesis, test, allowedConclusion, forbiddenConclusion], index) => ({
+  id: `fault.mechanical.${index + 1}`,
+  kind: kind as MechanicalFault['kind'],
+  symptom,
+  visualState,
+  hypothesis,
+  test,
+  allowedConclusion,
+  forbiddenConclusion,
+  active: false,
+}))

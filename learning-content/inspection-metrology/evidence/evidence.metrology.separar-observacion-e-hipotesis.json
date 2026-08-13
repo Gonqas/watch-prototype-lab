@@ -1,0 +1,46 @@
+{
+  "id": "evidence.metrology.separar-observacion-e-hipotesis",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.seleccionar-luz-y-aumento",
+  "kind": "procedure",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.activity-metrology-separar-observacion-e-hipotesis",
+    "version": "0.1.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.metrology.seleccionar-luz-y-aumento",
+    "packageId": "wplab.horology.inspection-metrology",
+    "activityIds": [
+      "activity.metrology.separar-observacion-e-hipotesis"
+    ],
+    "evidenceTemplateId": "evidence.metrology.separar-observacion-e-hipotesis",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "specimenId",
+      "componentId",
+      "imageAssetId",
+      "regionAnnotationId",
+      "instrumentId",
+      "instrumentVerificationId",
+      "readingIds",
+      "measurementSeriesId",
+      "calculation",
+      "uncertainty",
+      "findingId",
+      "confidence",
+      "comparisonId",
+      "proposalId",
+      "hintEventIds",
+      "adaptations"
+    ]
+  }
+}

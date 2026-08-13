@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.service-tribology.bulova-enjaltado-escape",
+  "version": "1.1.0",
+  "title": "Cuaderno: Pasaporte XII: enjaltado y examen del escape",
+  "description": "¿Qué evidencia separa posición de rubí, juego y geometría de escape?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Pasaporte XII: enjaltado y examen del escape. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.service-tribology.bulova-enjaltado-escape.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué evidencia separa posición de rubí, juego y geometría de escape?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué evidencia separa posición de rubí, juego y geometría de escape?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.service-tribology.bulova-enjaltado-escape.answer",
+      "instructionMarkdown": "Explica **Pasaporte XII: enjaltado y examen del escape** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.service-tribology.bulova-enjaltado-escape.explain",
+          "promptMarkdown": "¿Qué evidencia separa posición de rubí, juego y geometría de escape?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.service-tribology.bulova-enjaltado-escape.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.bulova-enjaltado-escape.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.bulova-enjaltado-escape.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.bulova-enjaltado-escape.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.service-tribology.bulova-enjaltado-escape.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar estado y riesgo y sigue hasta revisar humanamente antes de actuar.",
+                "en": "Empieza por identificar estado y riesgo y sigue hasta revisar humanamente antes de actuar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.service-tribology.bulova-enjaltado-escape.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El enjaltado por fricción controla altura y posición; el escape exige observar bloqueo, caída, impulso y seguridad. Los procedimientos con goma laca y calor quedan bloqueados como práctica hasta revisión moderna y supervisión.",
+                "en": "El enjaltado por fricción controla altura y posición; el escape exige observar bloqueo, caída, impulso y seguridad. Los procedimientos con goma laca y calor quedan bloqueados como práctica hasta revisión moderna y supervisión."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué evidencia separa posición de rubí, juego y geometría de escape?",
+              "en": "¿Qué evidencia separa posición de rubí, juego y geometría de escape?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar estado y riesgo → medir juego → observar fases → localizar primera desviación → planificar corrección → revisar humanamente antes de actuar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar estado y riesgo → medir juego → observar fases → localizar primera desviación → planificar corrección → revisar humanamente antes de actuar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.service-tribology.bulova-enjaltado-escape.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.service-tribology.bulova-enjaltado-escape.mechanism",
+            "field.encyclopedia.service-tribology.bulova-enjaltado-escape.evidence",
+            "field.encyclopedia.service-tribology.bulova-enjaltado-escape.limit",
+            "field.encyclopedia.service-tribology.bulova-enjaltado-escape.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

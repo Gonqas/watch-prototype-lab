@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.chicago-rubies-antichoque",
+  "version": "1.1.0",
+  "title": "Cuaderno: Expediente Chicago VIII: rubíes, contrapiedras y antichoque",
+  "description": "¿Cómo se decide altura, juego y orientación sin mezclar sistemas?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Expediente Chicago VIII: rubíes, contrapiedras y antichoque. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.chicago-rubies-antichoque.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se decide altura, juego y orientación sin mezclar sistemas?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se decide altura, juego y orientación sin mezclar sistemas?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.chicago-rubies-antichoque.answer",
+      "instructionMarkdown": "Explica **Expediente Chicago VIII: rubíes, contrapiedras y antichoque** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.chicago-rubies-antichoque.explain",
+          "promptMarkdown": "¿Cómo se decide altura, juego y orientación sin mezclar sistemas?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-rubies-antichoque.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-rubies-antichoque.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-rubies-antichoque.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-rubies-antichoque.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.chicago-rubies-antichoque.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar sistema y sigue hasta montar y comprobar libertad.",
+                "en": "Empieza por identificar sistema y sigue hasta montar y comprobar libertad."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.chicago-rubies-antichoque.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Rubíes de agujero, contrapiedras, chatones y resortes antichoque controlan apoyo radial, axial y retención. Factory-set y friction jeweling describen métodos distintos. Se identifica sistema y documenta orientación antes de liberar el resorte.",
+                "en": "Rubíes de agujero, contrapiedras, chatones y resortes antichoque controlan apoyo radial, axial y retención. Factory-set y friction jeweling describen métodos distintos. Se identifica sistema y documenta orientación antes de liberar el resorte."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se decide altura, juego y orientación sin mezclar sistemas?",
+              "en": "¿Cómo se decide altura, juego y orientación sin mezclar sistemas?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar sistema → contener resorte → documentar caras → medir juego → ajustar solo con autoridad → montar y comprobar libertad, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar sistema → contener resorte → documentar caras → medir juego → ajustar solo con autoridad → montar y comprobar libertad, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.chicago-rubies-antichoque.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.chicago-rubies-antichoque.mechanism",
+            "field.encyclopedia.micromechanics.chicago-rubies-antichoque.evidence",
+            "field.encyclopedia.micromechanics.chicago-rubies-antichoque.limit",
+            "field.encyclopedia.micromechanics.chicago-rubies-antichoque.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

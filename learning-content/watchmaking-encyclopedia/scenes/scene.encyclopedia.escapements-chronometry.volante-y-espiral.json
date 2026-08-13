@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.volante-y-espiral",
+  "version": "1.1.0",
+  "title": "Cuaderno: Volante, espiral, pitón, raqueta y frecuencia",
+  "description": "¿Cómo forman volante y espiral un oscilador regulable y qué perturba su centro elástico?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Volante, espiral, pitón, raqueta y frecuencia. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.volante-y-espiral.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo forman volante y espiral un oscilador regulable y qué perturba su centro elástico?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo forman volante y espiral un oscilador regulable y qué perturba su centro elástico?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.volante-y-espiral.answer",
+      "instructionMarkdown": "Explica **Volante, espiral, pitón, raqueta y frecuencia** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.volante-y-espiral.explain",
+          "promptMarkdown": "¿Cómo forman volante y espiral un oscilador regulable y qué perturba su centro elástico?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.volante-y-espiral.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.volante-y-espiral.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.volante-y-espiral.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.volante-y-espiral.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.volante-y-espiral.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por volante se desplaza y sigue hasta escape repone energía.",
+                "en": "Empieza por volante se desplaza y sigue hasta escape repone energía."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.volante-y-espiral.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El momento de inercia del volante y el par restaurador de la espiral determinan la frecuencia ideal. Pitón, virola, longitud activa y raqueta establecen condiciones de contorno. Centrado, planitud, respiración, magnetismo y contacto entre espiras cambian rigidez efectiva y simetría.",
+                "en": "El momento de inercia del volante y el par restaurador de la espiral determinan la frecuencia ideal. Pitón, virola, longitud activa y raqueta establecen condiciones de contorno. Centrado, planitud, respiración, magnetismo y contacto entre espiras cambian rigidez efectiva y simetría."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo forman volante y espiral un oscilador regulable y qué perturba su centro elástico?",
+              "en": "¿Cómo forman volante y espiral un oscilador regulable y qué perturba su centro elástico?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena volante se desplaza → espiral almacena energía → par restaurador invierte movimiento → volante cruza equilibrio → pérdidas reducen amplitud → escape repone energía, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena volante se desplaza → espiral almacena energía → par restaurador invierte movimiento → volante cruza equilibrio → pérdidas reducen amplitud → escape repone energía, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.volante-y-espiral.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.volante-y-espiral.mechanism",
+            "field.encyclopedia.escapements-chronometry.volante-y-espiral.evidence",
+            "field.encyclopedia.escapements-chronometry.volante-y-espiral.limit",
+            "field.encyclopedia.escapements-chronometry.volante-y-espiral.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

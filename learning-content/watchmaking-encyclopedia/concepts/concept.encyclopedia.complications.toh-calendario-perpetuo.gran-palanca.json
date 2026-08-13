@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.toh-calendario-perpetuo.gran-palanca",
+  "version": "1.1.0",
+  "title": {
+    "es": "gran palanca",
+    "en": "gran palanca"
+  },
+  "summary": {
+    "es": "Elemento lector que integra estados del programa para gobernar correcciones.",
+    "en": "Elemento lector que integra estados del programa para gobernar correcciones."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.toh-calendario-secuencia.arrastre-de-fecha",
+    "concept.encyclopedia.complications.toh-calendario-secuencia.salto-de-calendario",
+    "concept.encyclopedia.complications.toh-calendario-secuencia.jumper"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.toh-calendario-perpetuo"
+  ],
+  "movementIds": [],
+  "subsystem": "calendar",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-calendario-perpetuo"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch09",
+    "source.private.daniels.movement-design",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.toh-calendario-perpetuo"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.toh-calendario-perpetuo",
+  "plainLanguage": {
+    "es": "Elemento lector que integra estados del programa para gobernar correcciones.",
+    "en": "Elemento lector que integra estados del programa para gobernar correcciones."
+  },
+  "technicalLanguage": {
+    "es": "gran palanca se interpreta mediante la cadena contar días → leer programa mensual → detectar fin de mes → saltar días inexistentes → actualizar mes → actualizar ciclo anual y las condiciones declaradas en la unidad.",
+    "en": "gran palanca se interpreta mediante la cadena contar días → leer programa mensual → detectar fin de mes → saltar días inexistentes → actualizar mes → actualizar ciclo anual y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?",
+    "en": "Permite explicar y comprobar ¿qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir gran palanca sin circularidad.",
+      "en": "Definir gran palanca sin circularidad."
+    },
+    {
+      "es": "Relacionar gran palanca con una entrada, una interfaz y una salida.",
+      "en": "Relacionar gran palanca con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

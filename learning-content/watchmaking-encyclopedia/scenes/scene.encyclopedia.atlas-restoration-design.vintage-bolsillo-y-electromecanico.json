@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico",
+  "version": "1.1.0",
+  "title": "Cuaderno: Relojes vintage, de bolsillo y electromecánicos",
+  "description": "¿Qué cambia cuando documentación, repuesto, material y seguridad son inciertos o irrepetibles?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Relojes vintage, de bolsillo y electromecánicos. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué cambia cuando documentación, repuesto, material y seguridad son inciertos o irrepetibles?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué cambia cuando documentación, repuesto, material y seguridad son inciertos o irrepetibles?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.answer",
+      "instructionMarkdown": "Explica **Relojes vintage, de bolsillo y electromecánicos** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.explain",
+          "promptMarkdown": "¿Qué cambia cuando documentación, repuesto, material y seguridad son inciertos o irrepetibles?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por investigar identidad y sigue hasta archivar evidencia y piezas.",
+                "en": "Empieza por investigar identidad y sigue hasta archivar evidencia y piezas."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Una pieza histórica conserva información de fabricación, uso y reparaciones anteriores. La intervención equilibra función, autenticidad, reversibilidad y disponibilidad. En electromecánicos aparecen contactos y bobinas delicados; en bolsillo, acabados, pivotes y repuestos pueden requerir fabricación. “Funcionar” no es el único valor.",
+                "en": "Una pieza histórica conserva información de fabricación, uso y reparaciones anteriores. La intervención equilibra función, autenticidad, reversibilidad y disponibilidad. En electromecánicos aparecen contactos y bobinas delicados; en bolsillo, acabados, pivotes y repuestos pueden requerir fabricación. “Funcionar” no es el único valor."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué cambia cuando documentación, repuesto, material y seguridad son inciertos o irrepetibles?",
+              "en": "¿Qué cambia cuando documentación, repuesto, material y seguridad son inciertos o irrepetibles?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena investigar identidad → documentar estado y reparaciones → valorar significación → definir objetivo con límites → intervenir mínimamente → archivar evidencia y piezas, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena investigar identidad → documentar estado y reparaciones → valorar significación → definir objetivo con límites → intervenir mínimamente → archivar evidencia y piezas, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.mechanism",
+            "field.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.evidence",
+            "field.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.limit",
+            "field.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

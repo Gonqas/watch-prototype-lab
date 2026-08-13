@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.complications.toh-soneria-control.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Alarma, sonería y repetición a demanda",
+    "en": "Repasar Alarma, sonería y repetición a demanda"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 410,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.complications.toh-soneria-control"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.complications.toh-soneria-control"
+  ],
+  "required": false
+}

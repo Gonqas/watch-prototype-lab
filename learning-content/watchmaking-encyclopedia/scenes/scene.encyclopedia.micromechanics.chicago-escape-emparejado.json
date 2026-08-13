@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.chicago-escape-emparejado",
+  "version": "1.1.0",
+  "title": "Cuaderno: Expediente Chicago X: emparejar y reparar un escape",
+  "description": "¿Qué significa que rueda, áncora y volante formen un conjunto compatible?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Expediente Chicago X: emparejar y reparar un escape. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.chicago-escape-emparejado.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué significa que rueda, áncora y volante formen un conjunto compatible?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué significa que rueda, áncora y volante formen un conjunto compatible?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.chicago-escape-emparejado.answer",
+      "instructionMarkdown": "Explica **Expediente Chicago X: emparejar y reparar un escape** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.chicago-escape-emparejado.explain",
+          "promptMarkdown": "¿Qué significa que rueda, áncora y volante formen un conjunto compatible?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-escape-emparejado.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-escape-emparejado.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-escape-emparejado.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-escape-emparejado.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.chicago-escape-emparejado.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar piezas y sigue hasta revisar antes de modificar.",
+                "en": "Empieza por identificar piezas y sigue hasta revisar antes de modificar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.chicago-escape-emparejado.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Compatibilidad exige centros, diámetros, número y perfil de dientes, paletas, niveles y platillo coherentes. La semejanza visual no basta. La reparación parte de identificar qué relación está fuera de condición y qué corrección es reversible.",
+                "en": "Compatibilidad exige centros, diámetros, número y perfil de dientes, paletas, niveles y platillo coherentes. La semejanza visual no basta. La reparación parte de identificar qué relación está fuera de condición y qué corrección es reversible."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué significa que rueda, áncora y volante formen un conjunto compatible?",
+              "en": "¿Qué significa que rueda, áncora y volante formen un conjunto compatible?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar piezas → medir centros y niveles → observar fases → comparar condiciones → probar hipótesis reversible → revisar antes de modificar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar piezas → medir centros y niveles → observar fases → comparar condiciones → probar hipótesis reversible → revisar antes de modificar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.chicago-escape-emparejado.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.chicago-escape-emparejado.mechanism",
+            "field.encyclopedia.micromechanics.chicago-escape-emparejado.evidence",
+            "field.encyclopedia.micromechanics.chicago-escape-emparejado.limit",
+            "field.encyclopedia.micromechanics.chicago-escape-emparejado.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

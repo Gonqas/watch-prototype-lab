@@ -1,0 +1,108 @@
+{
+  "id": "route.capstone.validation",
+  "version": "1.0.0",
+  "title": {
+    "es": "Validación interna de la Academia",
+    "en": "Validación interna de la Academia"
+  },
+  "purpose": {
+    "es": "Comprobar con personas principiantes, accesibilidad equivalente y retención diferida que la Academia enseña sin excluir ni crear una sensación falsa de dominio.",
+    "en": "Comprobar con personas principiantes, accesibilidad equivalente y retención diferida que la Academia enseña sin excluir ni crear una sensación falsa de dominio."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.capstone.validation.beginner-usability",
+    "module.capstone.validation.accessibility",
+    "module.capstone.validation.deferred-retention"
+  ],
+  "competencyIds": [
+    "competency.capstone.validation.beginner-usability",
+    "competency.capstone.validation.accessibility",
+    "competency.capstone.validation.deferred-retention"
+  ],
+  "movementIds": [],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.iso.9241-11",
+    "source.iso.9241-210",
+    "source.nist.human-centered-design",
+    "source.w3c.wcag22",
+    "source.roediger-karpicke.2006",
+    "source.cepeda.2008"
+  ],
+  "visualResourceIds": [],
+  "demo": true,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.capstone.validation.01",
+        "order": 1,
+        "title": {
+          "es": "Pruebas con principiantes",
+          "en": "Pruebas con principiantes"
+        },
+        "outcome": {
+          "es": "¿Cómo comprobar con principiantes que las instrucciones, la secuencia y la ayuda permiten aprender sin adivinar?",
+          "en": "¿Cómo comprobar con principiantes que las instrucciones, la secuencia y la ayuda permiten aprender sin adivinar?"
+        },
+        "lessonId": "lesson.capstone.validation.beginner-usability",
+        "activityId": "activity.capstone.validation.beginner-usability",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.validation.beginner-usability"
+        ]
+      },
+      {
+        "id": "milestone.capstone.validation.02",
+        "order": 2,
+        "title": {
+          "es": "Accesibilidad y equivalencia de interacción",
+          "en": "Accesibilidad y equivalencia de interacción"
+        },
+        "outcome": {
+          "es": "¿Cómo comprobar que distintas formas de percibir y manejar la Academia permiten alcanzar el mismo objetivo?",
+          "en": "¿Cómo comprobar que distintas formas de percibir y manejar la Academia permiten alcanzar el mismo objetivo?"
+        },
+        "lessonId": "lesson.capstone.validation.accessibility",
+        "activityId": "activity.capstone.validation.accessibility",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.validation.accessibility"
+        ]
+      },
+      {
+        "id": "milestone.capstone.validation.03",
+        "order": 3,
+        "title": {
+          "es": "Retención diferida y puerta de liberación",
+          "en": "Retención diferida y puerta de liberación"
+        },
+        "outcome": {
+          "es": "¿Cómo comprobar días después que el conocimiento se conserva y puede recuperarse sin las ayudas iniciales?",
+          "en": "¿Cómo comprobar días después que el conocimiento se conserva y puede recuperarse sin las ayudas iniciales?"
+        },
+        "lessonId": "lesson.capstone.validation.deferred-retention",
+        "activityId": "activity.capstone.validation.deferred-retention",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.validation.deferred-retention"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.capstone.validation.beginner-usability",
+      "activity.capstone.validation.accessibility",
+      "activity.capstone.validation.deferred-retention"
+    ]
+  }
+}

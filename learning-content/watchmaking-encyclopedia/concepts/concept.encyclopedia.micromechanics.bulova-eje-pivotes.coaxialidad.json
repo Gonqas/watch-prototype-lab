@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.micromechanics.bulova-eje-pivotes.coaxialidad",
+  "version": "1.1.0",
+  "title": {
+    "es": "coaxialidad",
+    "en": "coaxialidad"
+  },
+  "summary": {
+    "es": "Coincidencia de ejes de superficies que deben girar juntas.",
+    "en": "Coincidencia de ejes de superficies que deben girar juntas."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.micromechanics.bulova-torneado-fundamental.trabajo-entre-puntos",
+    "concept.encyclopedia.micromechanics.bulova-torneado-fundamental.altura-de-corte",
+    "concept.encyclopedia.micromechanics.bulova-torneado-fundamental.pasada-de-acabado"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.micromechanics.bulova-eje-pivotes"
+  ],
+  "movementIds": [],
+  "subsystem": "balance-staff",
+  "routeIds": [
+    "route.encyclopedia.micromechanics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.micromechanics.bulova-eje-pivotes"
+  ],
+  "sourceIds": [
+    "source.private.bulova.03a",
+    "source.private.daniels.turning",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.micromechanics.bulova-eje-pivotes"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.micromechanics.bulova-eje-pivotes",
+  "plainLanguage": {
+    "es": "Coincidencia de ejes de superficies que deben girar juntas.",
+    "en": "Coincidencia de ejes de superficies que deben girar juntas."
+  },
+  "technicalLanguage": {
+    "es": "coaxialidad se interpreta mediante la cadena levantar plano de interfaces → preparar bruto y centros → tornear diámetros mayores → formar hombros → dejar pivotes → bruñir y probar y las condiciones declaradas en la unidad.",
+    "en": "coaxialidad se interpreta mediante la cadena levantar plano de interfaces → preparar bruto y centros → tornear diámetros mayores → formar hombros → dejar pivotes → bruñir y probar y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se conserva coaxialidad al fabricar una geometría escalonada?",
+    "en": "Permite explicar y comprobar ¿cómo se conserva coaxialidad al fabricar una geometría escalonada?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir coaxialidad sin circularidad.",
+      "en": "Definir coaxialidad sin circularidad."
+    },
+    {
+      "es": "Relacionar coaxialidad con una entrada, una interfaz y una salida.",
+      "en": "Relacionar coaxialidad con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,634 @@
+{
+  "format": "wplab-learning-pack",
+  "formatVersion": 1,
+  "schemaId": "learning-pack-v1",
+  "packageVersion": "0.5.0",
+  "id": "wplab.horology.functional-map",
+  "title": "Cómo funciona un reloj de principio a fin",
+  "distribution": "local-unsigned",
+  "editorialStatus": "in-review",
+  "authors": [
+    {
+      "name": "Watch Prototype Lab"
+    }
+  ],
+  "languages": [
+    "es-ES"
+  ],
+  "dependencies": [],
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0"
+  ],
+  "movements": [
+    {
+      "manufacturer": "MIYOTA",
+      "calibre": "2035",
+      "referenceId": "fixture.miyota.2035.structural"
+    },
+    {
+      "manufacturer": "MIYOTA",
+      "calibre": "8215",
+      "referenceId": "fixture.miyota.8215.structural"
+    }
+  ],
+  "assets": [],
+  "entries": {
+    "curricula": [
+      {
+        "id": "curriculum.horology",
+        "path": "curriculum/curriculum.horology.json"
+      }
+    ],
+    "routes": [
+      {
+        "id": "route.horology.orientation",
+        "path": "routes/route.horology.orientation.json"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module.horology.functional-map",
+        "path": "modules/module.horology.functional-map.json"
+      }
+    ],
+    "concepts": [
+      {
+        "id": "concept.horology.watch-anatomy",
+        "path": "concepts/concept.horology.watch-anatomy.json"
+      },
+      {
+        "id": "concept.horology.part-language",
+        "path": "concepts/concept.horology.part-language.json"
+      },
+      {
+        "id": "concept.horology.functional-chain",
+        "path": "concepts/concept.horology.functional-chain.json"
+      },
+      {
+        "id": "concept.horology.quartz-chain",
+        "path": "concepts/concept.horology.quartz-chain.json"
+      },
+      {
+        "id": "concept.horology.source-confidence",
+        "path": "concepts/concept.horology.source-confidence.json"
+      },
+      {
+        "id": "concept.horology.mechanical-chain",
+        "path": "concepts/concept.horology.mechanical-chain.json"
+      },
+      {
+        "id": "concept.horology.functional-equivalence",
+        "path": "concepts/concept.horology.functional-equivalence.json"
+      },
+      {
+        "id": "concept.horology.system-interruption",
+        "path": "concepts/concept.horology.system-interruption.json"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "block.horology.system",
+        "path": "blocks/block.horology.system.json"
+      },
+      {
+        "id": "block.horology.quartz-chain",
+        "path": "blocks/block.horology.quartz-chain.json"
+      },
+      {
+        "id": "block.horology.isa8172-confidence",
+        "path": "blocks/block.horology.isa8172-confidence.json"
+      },
+      {
+        "id": "block.horology.mechanical-chain",
+        "path": "blocks/block.horology.mechanical-chain.json"
+      },
+      {
+        "id": "block.horology.functional-equivalence",
+        "path": "blocks/block.horology.functional-equivalence.json"
+      },
+      {
+        "id": "block.horology.failure-prediction",
+        "path": "blocks/block.horology.failure-prediction.json"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "lesson.horology.system",
+        "path": "lessons/lesson.horology.system.json"
+      },
+      {
+        "id": "lesson.horology.mechanical-chain",
+        "path": "lessons/lesson.horology.mechanical-chain.json"
+      },
+      {
+        "id": "lesson.horology.quartz-chain",
+        "path": "lessons/lesson.horology.quartz-chain.json"
+      },
+      {
+        "id": "lesson.horology.functional-equivalence",
+        "path": "lessons/lesson.horology.functional-equivalence.json"
+      },
+      {
+        "id": "lesson.horology.failure-prediction",
+        "path": "lessons/lesson.horology.failure-prediction.json"
+      },
+      {
+        "id": "lesson.horology.isa8172-confidence",
+        "path": "lessons/lesson.horology.isa8172-confidence.json"
+      }
+    ],
+    "activities": [
+      {
+        "id": "activity.horology.classify-subsystems",
+        "path": "activities/activity.horology.classify-subsystems.json"
+      },
+      {
+        "id": "activity.horology.order-quartz-chain",
+        "path": "activities/activity.horology.order-quartz-chain.json"
+      },
+      {
+        "id": "activity.horology.identify-time-reference",
+        "path": "activities/activity.horology.identify-time-reference.json"
+      },
+      {
+        "id": "activity.horology.isa-confidence-map",
+        "path": "activities/activity.horology.isa-confidence-map.json"
+      },
+      {
+        "id": "activity.horology.order-mechanical-chain",
+        "path": "activities/activity.horology.order-mechanical-chain.json"
+      },
+      {
+        "id": "activity.horology.identify-escapement-oscillator",
+        "path": "activities/activity.horology.identify-escapement-oscillator.json"
+      },
+      {
+        "id": "activity.horology.match-functional-equivalents",
+        "path": "activities/activity.horology.match-functional-equivalents.json"
+      },
+      {
+        "id": "activity.horology.predict-interruption",
+        "path": "activities/activity.horology.predict-interruption.json"
+      },
+      {
+        "id": "activity.horology.select-affected-subsystem",
+        "path": "activities/activity.horology.select-affected-subsystem.json"
+      },
+      {
+        "id": "activity.horology.justify-hypothesis",
+        "path": "activities/activity.horology.justify-hypothesis.json"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "scene.horology.functional-layers",
+        "path": "scenes/scene.horology.functional-layers.json"
+      },
+      {
+        "id": "scene.horology.quartz-chain",
+        "path": "scenes/scene.horology.quartz-chain.json"
+      },
+      {
+        "id": "scene.horology.isa-confidence",
+        "path": "scenes/scene.horology.isa-confidence.json"
+      },
+      {
+        "id": "scene.horology.mechanical-chain",
+        "path": "scenes/scene.horology.mechanical-chain.json"
+      },
+      {
+        "id": "scene.horology.functional-comparison",
+        "path": "scenes/scene.horology.functional-comparison.json"
+      },
+      {
+        "id": "scene.horology.interruptions",
+        "path": "scenes/scene.horology.interruptions.json"
+      },
+      {
+        "id": "scene.horology.activity.classify-subsystems",
+        "path": "scenes/scene.horology.activity.classify-subsystems.json"
+      },
+      {
+        "id": "scene.horology.activity.order-quartz-chain",
+        "path": "scenes/scene.horology.activity.order-quartz-chain.json"
+      },
+      {
+        "id": "scene.horology.activity.identify-time-reference",
+        "path": "scenes/scene.horology.activity.identify-time-reference.json"
+      },
+      {
+        "id": "scene.horology.activity.isa-confidence-map",
+        "path": "scenes/scene.horology.activity.isa-confidence-map.json"
+      },
+      {
+        "id": "scene.horology.activity.order-mechanical-chain",
+        "path": "scenes/scene.horology.activity.order-mechanical-chain.json"
+      },
+      {
+        "id": "scene.horology.activity.identify-escapement-oscillator",
+        "path": "scenes/scene.horology.activity.identify-escapement-oscillator.json"
+      },
+      {
+        "id": "scene.horology.activity.match-functional-equivalents",
+        "path": "scenes/scene.horology.activity.match-functional-equivalents.json"
+      },
+      {
+        "id": "scene.horology.activity.predict-interruption",
+        "path": "scenes/scene.horology.activity.predict-interruption.json"
+      },
+      {
+        "id": "scene.horology.activity.select-affected-subsystem",
+        "path": "scenes/scene.horology.activity.select-affected-subsystem.json"
+      },
+      {
+        "id": "scene.horology.activity.justify-hypothesis",
+        "path": "scenes/scene.horology.activity.justify-hypothesis.json"
+      }
+    ],
+    "competencies": [
+      {
+        "id": "competency.horology.identify-functional-subsystems",
+        "path": "competencies/competency.horology.identify-functional-subsystems.json"
+      },
+      {
+        "id": "competency.horology.explain-quartz-energy-chain",
+        "path": "competencies/competency.horology.explain-quartz-energy-chain.json"
+      },
+      {
+        "id": "competency.horology.explain-mechanical-energy-chain",
+        "path": "competencies/competency.horology.explain-mechanical-energy-chain.json"
+      },
+      {
+        "id": "competency.horology.distinguish-regulation-from-transmission",
+        "path": "competencies/competency.horology.distinguish-regulation-from-transmission.json"
+      },
+      {
+        "id": "competency.horology.predict-system-interruption",
+        "path": "competencies/competency.horology.predict-system-interruption.json"
+      },
+      {
+        "id": "competency.horology.state-source-confidence",
+        "path": "competencies/competency.horology.state-source-confidence.json"
+      }
+    ],
+    "evidenceTemplates": [
+      {
+        "id": "evidence.horology.subsystem-classification",
+        "path": "evidence/evidence.horology.subsystem-classification.json"
+      },
+      {
+        "id": "evidence.horology.quartz-sequence",
+        "path": "evidence/evidence.horology.quartz-sequence.json"
+      },
+      {
+        "id": "evidence.horology.mechanical-sequence",
+        "path": "evidence/evidence.horology.mechanical-sequence.json"
+      },
+      {
+        "id": "evidence.horology.component-selection",
+        "path": "evidence/evidence.horology.component-selection.json"
+      },
+      {
+        "id": "evidence.horology.functional-comparison",
+        "path": "evidence/evidence.horology.functional-comparison.json"
+      },
+      {
+        "id": "evidence.horology.interruption-prediction",
+        "path": "evidence/evidence.horology.interruption-prediction.json"
+      },
+      {
+        "id": "evidence.horology.affected-subsystem",
+        "path": "evidence/evidence.horology.affected-subsystem.json"
+      },
+      {
+        "id": "evidence.horology.structured-justification",
+        "path": "evidence/evidence.horology.structured-justification.json"
+      },
+      {
+        "id": "evidence.horology.hint-use",
+        "path": "evidence/evidence.horology.hint-use.json"
+      },
+      {
+        "id": "evidence.horology.source-consultation",
+        "path": "evidence/evidence.horology.source-consultation.json"
+      },
+      {
+        "id": "evidence.horology.confidence-declaration",
+        "path": "evidence/evidence.horology.confidence-declaration.json"
+      }
+    ],
+    "rubrics": [
+      {
+        "id": "rubric.horology.functional-subsystems",
+        "path": "rubrics/rubric.horology.functional-subsystems.json"
+      },
+      {
+        "id": "rubric.horology.quartz-chain",
+        "path": "rubrics/rubric.horology.quartz-chain.json"
+      },
+      {
+        "id": "rubric.horology.mechanical-chain",
+        "path": "rubrics/rubric.horology.mechanical-chain.json"
+      },
+      {
+        "id": "rubric.horology.regulation-transmission",
+        "path": "rubrics/rubric.horology.regulation-transmission.json"
+      },
+      {
+        "id": "rubric.horology.interruption",
+        "path": "rubrics/rubric.horology.interruption.json"
+      },
+      {
+        "id": "rubric.horology.source-confidence",
+        "path": "rubrics/rubric.horology.source-confidence.json"
+      }
+    ],
+    "glossary": [
+      {
+        "id": "term.horology.movement",
+        "path": "glossary/term.horology.movement.json"
+      },
+      {
+        "id": "term.horology.calibre",
+        "path": "glossary/term.horology.calibre.json"
+      },
+      {
+        "id": "term.horology.main-plate",
+        "path": "glossary/term.horology.main-plate.json"
+      },
+      {
+        "id": "term.horology.bridge",
+        "path": "glossary/term.horology.bridge.json"
+      },
+      {
+        "id": "term.horology.battery",
+        "path": "glossary/term.horology.battery.json"
+      },
+      {
+        "id": "term.horology.integrated-circuit",
+        "path": "glossary/term.horology.integrated-circuit.json"
+      },
+      {
+        "id": "term.horology.quartz-resonator",
+        "path": "glossary/term.horology.quartz-resonator.json"
+      },
+      {
+        "id": "term.horology.coil",
+        "path": "glossary/term.horology.coil.json"
+      },
+      {
+        "id": "term.horology.stepper-rotor",
+        "path": "glossary/term.horology.stepper-rotor.json"
+      },
+      {
+        "id": "term.horology.gear-train",
+        "path": "glossary/term.horology.gear-train.json"
+      },
+      {
+        "id": "term.horology.wheel",
+        "path": "glossary/term.horology.wheel.json"
+      },
+      {
+        "id": "term.horology.pinion",
+        "path": "glossary/term.horology.pinion.json"
+      },
+      {
+        "id": "term.horology.arbor",
+        "path": "glossary/term.horology.arbor.json"
+      },
+      {
+        "id": "term.horology.pivot",
+        "path": "glossary/term.horology.pivot.json"
+      },
+      {
+        "id": "term.horology.jewel",
+        "path": "glossary/term.horology.jewel.json"
+      },
+      {
+        "id": "term.horology.mainspring",
+        "path": "glossary/term.horology.mainspring.json"
+      },
+      {
+        "id": "term.horology.barrel",
+        "path": "glossary/term.horology.barrel.json"
+      },
+      {
+        "id": "term.horology.escape-wheel",
+        "path": "glossary/term.horology.escape-wheel.json"
+      },
+      {
+        "id": "term.horology.pallet-fork",
+        "path": "glossary/term.horology.pallet-fork.json"
+      },
+      {
+        "id": "term.horology.balance-wheel",
+        "path": "glossary/term.horology.balance-wheel.json"
+      },
+      {
+        "id": "term.horology.balance-spring",
+        "path": "glossary/term.horology.balance-spring.json"
+      },
+      {
+        "id": "term.horology.escapement",
+        "path": "glossary/term.horology.escapement.json"
+      },
+      {
+        "id": "term.horology.oscillation",
+        "path": "glossary/term.horology.oscillation.json"
+      },
+      {
+        "id": "term.horology.frequency",
+        "path": "glossary/term.horology.frequency.json"
+      },
+      {
+        "id": "term.horology.amplitude",
+        "path": "glossary/term.horology.amplitude.json"
+      },
+      {
+        "id": "term.horology.motion-works",
+        "path": "glossary/term.horology.motion-works.json"
+      },
+      {
+        "id": "term.horology.stem",
+        "path": "glossary/term.horology.stem.json"
+      },
+      {
+        "id": "term.horology.time-setting",
+        "path": "glossary/term.horology.time-setting.json"
+      },
+      {
+        "id": "term.horology.indication",
+        "path": "glossary/term.horology.indication.json"
+      },
+      {
+        "id": "term.horology.transmission",
+        "path": "glossary/term.horology.transmission.json"
+      },
+      {
+        "id": "term.horology.regulation",
+        "path": "glossary/term.horology.regulation.json"
+      },
+      {
+        "id": "term.horology.provenance",
+        "path": "glossary/term.horology.provenance.json"
+      },
+      {
+        "id": "term.horology.nominal-value",
+        "path": "glossary/term.horology.nominal-value.json"
+      },
+      {
+        "id": "term.horology.measurement",
+        "path": "glossary/term.horology.measurement.json"
+      },
+      {
+        "id": "term.horology.inference",
+        "path": "glossary/term.horology.inference.json"
+      },
+      {
+        "id": "term.horology.hypothesis",
+        "path": "glossary/term.horology.hypothesis.json"
+      }
+    ],
+    "sources": [
+      {
+        "id": "source.miyota.2035.product-page",
+        "path": "sources/source.miyota.2035.product-page.json"
+      },
+      {
+        "id": "source.miyota.2035.specification",
+        "path": "sources/source.miyota.2035.specification.json"
+      },
+      {
+        "id": "source.miyota.2035.drawing",
+        "path": "sources/source.miyota.2035.drawing.json"
+      },
+      {
+        "id": "source.miyota.2035.instruction-manual",
+        "path": "sources/source.miyota.2035.instruction-manual.json"
+      },
+      {
+        "id": "source.miyota.2035.parts-list-exploded-view",
+        "path": "sources/source.miyota.2035.parts-list-exploded-view.json"
+      },
+      {
+        "id": "source.miyota.8215.product-page",
+        "path": "sources/source.miyota.8215.product-page.json"
+      },
+      {
+        "id": "source.miyota.8215.specification",
+        "path": "sources/source.miyota.8215.specification.json"
+      },
+      {
+        "id": "source.miyota.8215.drawing",
+        "path": "sources/source.miyota.8215.drawing.json"
+      },
+      {
+        "id": "source.miyota.8215.instruction-manual",
+        "path": "sources/source.miyota.8215.instruction-manual.json"
+      },
+      {
+        "id": "source.miyota.8215.parts-list-exploded-view",
+        "path": "sources/source.miyota.8215.parts-list-exploded-view.json"
+      },
+      {
+        "id": "source.horology.private-book.functional-systems",
+        "path": "sources/source.horology.private-book.functional-systems.json"
+      },
+      {
+        "id": "source.horology.original-functional-map",
+        "path": "sources/source.horology.original-functional-map.json"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "recommendation.horology.retain-identify-functional-subsystems",
+        "path": "recommendations/recommendation.horology.retain-identify-functional-subsystems.json"
+      },
+      {
+        "id": "recommendation.horology.retain-explain-quartz-energy-chain",
+        "path": "recommendations/recommendation.horology.retain-explain-quartz-energy-chain.json"
+      },
+      {
+        "id": "recommendation.horology.retain-explain-mechanical-energy-chain",
+        "path": "recommendations/recommendation.horology.retain-explain-mechanical-energy-chain.json"
+      },
+      {
+        "id": "recommendation.horology.retain-distinguish-regulation-from-transmission",
+        "path": "recommendations/recommendation.horology.retain-distinguish-regulation-from-transmission.json"
+      },
+      {
+        "id": "recommendation.horology.retain-predict-system-interruption",
+        "path": "recommendations/recommendation.horology.retain-predict-system-interruption.json"
+      },
+      {
+        "id": "recommendation.horology.retain-state-source-confidence",
+        "path": "recommendations/recommendation.horology.retain-state-source-confidence.json"
+      }
+    ],
+    "visualResources": [
+      {
+        "id": "visual.horology.complete-watch-layers",
+        "path": "visual-resources/visual.horology.complete-watch-layers.json"
+      },
+      {
+        "id": "visual.horology.quartz-energy-flow",
+        "path": "visual-resources/visual.horology.quartz-energy-flow.json"
+      },
+      {
+        "id": "visual.horology.miyota2035-structural",
+        "path": "visual-resources/visual.horology.miyota2035-structural.json"
+      },
+      {
+        "id": "visual.horology.isa8172-memory-map",
+        "path": "visual-resources/visual.horology.isa8172-memory-map.json"
+      },
+      {
+        "id": "visual.horology.mechanical-energy-flow",
+        "path": "visual-resources/visual.horology.mechanical-energy-flow.json"
+      },
+      {
+        "id": "visual.horology.swiss-lever-slow-motion",
+        "path": "visual-resources/visual.horology.swiss-lever-slow-motion.json"
+      },
+      {
+        "id": "visual.horology.quartz-mechanical-overlay",
+        "path": "visual-resources/visual.horology.quartz-mechanical-overlay.json"
+      },
+      {
+        "id": "visual.horology.failure-simulation",
+        "path": "visual-resources/visual.horology.failure-simulation.json"
+      },
+      {
+        "id": "visual.horology.functional-text-alternative",
+        "path": "visual-resources/visual.horology.functional-text-alternative.json"
+      }
+    ],
+    "misconceptions": [
+      {
+        "id": "misconception.horology.near-means-connected",
+        "path": "misconceptions/misconception.horology.near-means-connected.json"
+      },
+      {
+        "id": "misconception.horology.train-is-energy-source",
+        "path": "misconceptions/misconception.horology.train-is-energy-source.json"
+      },
+      {
+        "id": "misconception.horology.escapement-creates-energy",
+        "path": "misconceptions/misconception.horology.escapement-creates-energy.json"
+      },
+      {
+        "id": "misconception.horology.quartz-has-no-train",
+        "path": "misconceptions/misconception.horology.quartz-has-no-train.json"
+      },
+      {
+        "id": "misconception.horology.simulation-is-physical-proof",
+        "path": "misconceptions/misconception.horology.simulation-is-physical-proof.json"
+      }
+    ]
+  },
+  "minimumAppVersion": "0.10.0",
+  "createdAt": "2026-07-23T15:30:00.000Z"
+}

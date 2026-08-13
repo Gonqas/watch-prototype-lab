@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.diagnostico-y-control-final.criterio-de-aceptacion",
+  "version": "1.1.0",
+  "title": {
+    "es": "criterio de aceptación",
+    "en": "criterio de aceptación"
+  },
+  "summary": {
+    "es": "Condición definida antes de la prueba que determina conformidad del resultado.",
+    "en": "Condición definida antes de la prueba que determina conformidad del resultado."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.montaje-y-puntos-de-control.punto-de-control",
+    "concept.encyclopedia.service-tribology.montaje-y-puntos-de-control.asiento",
+    "concept.encyclopedia.service-tribology.montaje-y-puntos-de-control.prueba-reversible"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.diagnostico-y-control-final"
+  ],
+  "movementIds": [],
+  "subsystem": "validation",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.diagnostico-y-control-final"
+  ],
+  "sourceIds": [
+    "source.institutional.awci.standards",
+    "source.institutional.wostep.watchmaker",
+    "source.external.watchguy-repair-blog"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.diagnostico-y-control-final"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+  "plainLanguage": {
+    "es": "Condición definida antes de la prueba que determina conformidad del resultado.",
+    "en": "Condición definida antes de la prueba que determina conformidad del resultado."
+  },
+  "technicalLanguage": {
+    "es": "criterio de aceptación se interpreta mediante la cadena repetir síntomas iniciales → probar funciones reparadas → medir criterios → observar durante tiempo → comparar línea base → documentar límites y seguimiento y las condiciones declaradas en la unidad.",
+    "en": "criterio de aceptación se interpreta mediante la cadena repetir síntomas iniciales → probar funciones reparadas → medir criterios → observar durante tiempo → comparar línea base → documentar límites y seguimiento y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo demostrar que el objetivo del servicio se alcanzó sin confundir ausencia momentánea de síntomas con calidad?",
+    "en": "Permite explicar y comprobar ¿cómo demostrar que el objetivo del servicio se alcanzó sin confundir ausencia momentánea de síntomas con calidad?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir criterio de aceptación sin circularidad.",
+      "en": "Definir criterio de aceptación sin circularidad."
+    },
+    {
+      "es": "Relacionar criterio de aceptación con una entrada, una interfaz y una salida.",
+      "en": "Relacionar criterio de aceptación con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

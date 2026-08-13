@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.workshop-tools-materials.herramientas-y-afilado"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

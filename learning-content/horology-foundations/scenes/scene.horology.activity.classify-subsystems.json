@@ -1,0 +1,535 @@
+{
+  "id": "scene.horology.activity.classify-subsystems",
+  "version": "0.5.0",
+  "title": "Clasificar subsistemas",
+  "description": "Clasificar subsistemas. Comprobación específica, reversible y accesible.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Elementos presentes: estructura, fuente, regulación, transmisión e indicación del modelo conceptual. Relación y secuencia: caja → esfera → aguja horaria → muelle real → volante → tren de ruedas → indicación. El estado inicial está disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar la vista tridimensional.",
+    "reducedMotionAlternative": "La misma información se presenta como estados discretos y una lista numerada: caja → esfera → aguja horaria → muelle real → volante → tren de ruedas → indicación. No hay movimiento automático de cámara ni rotación.",
+    "keyboardActions": [
+      "Tabular por controles y entidades.",
+      "Activar con Intro o Espacio.",
+      "Avanzar y retroceder mediante botones con nombre accesible.",
+      "Restaurar el estado desde el control Restaurar."
+    ],
+    "colorIndependentCues": [
+      "Patrón y grosor distinguen estados.",
+      "Icono y texto acompañan cada color.",
+      "La ruta tiene numeración explícita."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "overview",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "viewport.overlay.arrows@^1.0.0",
+    "viewport.energy-route@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "case"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 900,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "dial"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:1",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 1800,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "hour-hand"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:2",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 2700,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "mainspring"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:3",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 3600,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "balance"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:4",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "energy-path",
+      "id": "overlay.scene.horology.functional-layers.path",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "case"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "dial"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "hour-hand"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "mainspring"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "balance"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "state": "available",
+      "label": "Ruta Capas funcionales",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa dimensiones ni física validada."
+        ]
+      },
+      "accessibleLabel": "Ruta Capas funcionales. Ruta funcional educativa, no simulación física.",
+      "numberedAlternative": [
+        "1. caja",
+        "2. esfera",
+        "3. aguja horaria",
+        "4. muelle real",
+        "5. volante",
+        "6. tren de ruedas",
+        "7. indicación"
+      ]
+    },
+    {
+      "kind": "rotation",
+      "id": "overlay.scene.horology.functional-layers.rotation",
+      "target": {
+        "selector": {
+          "by": "role",
+          "value": "hour-hand"
+        },
+        "cardinality": "one-or-more"
+      },
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "direction": "clockwise",
+      "conceptualSpeed": "slow",
+      "state": "available",
+      "label": "Sentido conceptual",
+      "accessibleLabel": "Arco de giro conceptual. En el modo de movimiento reducido se sustituye por una flecha estática."
+    },
+    {
+      "kind": "arrow",
+      "id": "overlay.scene.horology.functional-layers.arrow",
+      "start": {
+        "kind": "entity",
+        "target": {
+          "selector": {
+            "by": "role",
+            "value": "case"
+          },
+          "cardinality": "one-or-more"
+        },
+        "offset": [
+          0,
+          0.2,
+          0
+        ]
+      },
+      "end": {
+        "kind": "entity",
+        "target": {
+          "selector": {
+            "by": "role",
+            "value": "dial"
+          },
+          "cardinality": "one-or-more"
+        },
+        "offset": [
+          0,
+          0.2,
+          0
+        ]
+      },
+      "label": "Relación funcional",
+      "state": "available",
+      "pattern": "dashed",
+      "accessibleLabel": "Flecha funcional desde caja hacia esfera; no expresa una trayectoria física."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.horology.activity.classify-subsystems.question",
+      "instructionMarkdown": "Clasifica el tren de ruedas: selecciona la función que le corresponde.",
+      "questions": [
+        {
+          "id": "question.horology.activity.classify-subsystems",
+          "promptMarkdown": "Clasifica el tren de ruedas: selecciona la función que le corresponde.",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.energy",
+              "label": "Energía",
+              "labels": {
+                "es": "Energía",
+                "en": "Energía"
+              }
+            },
+            {
+              "id": "option.transmission",
+              "label": "Transmisión",
+              "labels": {
+                "es": "Transmisión",
+                "en": "Transmisión"
+              }
+            },
+            {
+              "id": "option.indication",
+              "label": "Indicación",
+              "labels": {
+                "es": "Indicación",
+                "en": "Indicación"
+              }
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.horology.activity.classify-subsystems.1",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Vuelve a la pregunta de «Clasificar subsistemas» y separa primero lo que ya está comprobado de lo que debes decidir."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.activity.classify-subsystems.2",
+              "level": 2,
+              "kind": "subsystem",
+              "content": {
+                "es": "Centra la observación en el tren de ruedas y lo que recibe y entrega; no elijas por color, tamaño o proximidad."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.activity.classify-subsystems.3",
+              "level": 3,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El tren de ruedas transmite movimiento entre etapas; no crea la energía ni constituye por sí solo la indicación."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "Clasifica el tren de ruedas: selecciona la función que le corresponde."
+            },
+            "feedback": {
+              "es": "El tren de ruedas transmite movimiento entre etapas; no crea la energía ni constituye por sí solo la indicación."
+            }
+          }
+        },
+        {
+          "id": "question.horology.activity.classify-subsystems.causal-explanation",
+          "promptMarkdown": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: Clasifica el tren de ruedas: selecciona la función que le corresponde.",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué cambió o qué comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué relación, interfaz o regla explica el resultado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué fuente o límite condiciona la conclusión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: Clasifica el tren de ruedas: selecciona la función que le corresponde."
+            },
+            "feedback": {
+              "es": "La revisión debe comprobar la relación específica: En «Comprobar qué hace el tren de ruedas» has aportado una observación del tren de ruedas que respalda el objetivo «Identificar subsistemas funcionales». Ahora repite el mismo criterio sin ayuda y, cuando corresponda, aplícalo a otro caso."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.horology.activity.classify-subsystems",
+          "expectedOptionIds": [
+            "option.transmission"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.horology.activity.classify-subsystems.causal-explanation",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    },
+    {
+      "id": "step.horology.activity.classify-subsystems.explore",
+      "instructionMarkdown": "Explora solo las piezas necesarias para «Clasificar subsistemas», explica el resultado y restaura el estado antes de continuar.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Clasificar subsistemas"
+    },
+    "purpose": {
+      "es": "Comprobar clasificar subsistemas mediante una pregunta propia, observación y explicación."
+    },
+    "prerequisites": [
+      "concept.horology.functional-chain"
+    ],
+    "narrative": {
+      "es": "El tren de ruedas transmite movimiento entre etapas; no crea la energía ni constituye por sí solo la indicación."
+    },
+    "initialFraming": {
+      "es": "Encuadre general estable con procedencia y fidelidad disponibles bajo demanda."
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "storyboard.step.horology.activity.classify-subsystems.question",
+        "sceneStepId": "step.horology.activity.classify-subsystems.question",
+        "narrative": {
+          "es": "Observar la escena y formular una predicción."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "highlight",
+          "pause"
+        ],
+        "interaction": {
+          "es": "Usar los controles de teclado, la lista accesible o la vista tridimensional."
+        },
+        "feedback": {
+          "es": "La corrección distingue la respuesta, su procedencia y las limitaciones del modelo."
+        },
+        "hint": {
+          "es": "La pista se ofrece por niveles y se registra como evidencia de proceso."
+        }
+      },
+      {
+        "id": "storyboard.step.horology.activity.classify-subsystems.explore",
+        "sceneStepId": "step.horology.activity.classify-subsystems.explore",
+        "narrative": {
+          "es": "Manipular el estado y explicar el resultado."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "select",
+          "answer",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Usar los controles de teclado, la lista accesible o la vista tridimensional."
+        },
+        "feedback": {
+          "es": "La corrección distingue la respuesta, su procedencia y las limitaciones del modelo."
+        },
+        "hint": {
+          "es": "La pista se ofrece por niveles y se registra como evidencia de proceso."
+        }
+      }
+    ],
+    "ending": {
+      "es": "La escena muestra la evidencia registrada y la regla de evaluación aplicable."
+    },
+    "restoration": {
+      "es": "Restaurar la selección, las piezas visibles, las etiquetas, el encuadre y la secuencia a su estado inicial."
+    },
+    "accessibility": {
+      "es": "Lista funcional equivalente con entidades, relaciones, estados, cambios y controles completos."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos, flechas estáticas numeradas y avance manual con idéntica evaluación."
+    },
+    "evidenceTemplateIds": [
+      "evidence.horology.subsystem-classification"
+    ],
+    "technicalCriteria": [
+      "Selectores resolubles.",
+      "Restauración idempotente.",
+      "Procedencia y G/K/P conservados."
+    ],
+    "limitations": []
+  },
+  "restorePreviousState": true
+}

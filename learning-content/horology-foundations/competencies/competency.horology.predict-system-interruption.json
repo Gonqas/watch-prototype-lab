@@ -1,0 +1,27 @@
+{
+  "id": "competency.horology.predict-system-interruption",
+  "version": "0.5.0",
+  "title": "Predecir una interrupción",
+  "description": "Predecir efectos observables y proponer comprobaciones no destructivas sin afirmar averías.",
+  "prerequisites": [],
+  "authoring": {
+    "title": {
+      "es": "Predecir una interrupción"
+    },
+    "description": {
+      "es": "Predecir efectos observables y proponer comprobaciones no destructivas sin afirmar averías."
+    },
+    "movementIds": [
+      "fixture.conceptual.quartz-chain",
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.2035.structural",
+      "fixture.miyota.8215.structural"
+    ],
+    "subsystem": "diagnosis",
+    "skillType": "diagnosis",
+    "sourceIds": [
+      "source.horology.original-functional-map",
+      "source.horology.private-book.functional-systems"
+    ]
+  }
+}

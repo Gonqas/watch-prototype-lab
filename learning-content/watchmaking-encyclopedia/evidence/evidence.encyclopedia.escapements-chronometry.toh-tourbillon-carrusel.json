@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

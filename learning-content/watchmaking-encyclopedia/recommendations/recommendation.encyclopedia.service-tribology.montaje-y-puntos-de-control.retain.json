@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.service-tribology.montaje-y-puntos-de-control.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Montaje por funciones y puntos de control",
+    "en": "Repasar Montaje por funciones y puntos de control"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 416,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.service-tribology.montaje-y-puntos-de-control"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.service-tribology.montaje-y-puntos-de-control"
+  ],
+  "required": false
+}

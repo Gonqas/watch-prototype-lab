@@ -1,0 +1,149 @@
+{
+  "id": "lesson.advanced.service-baseline",
+  "version": "1.1.0",
+  "title": "Estado inicial, alcance y seguridad",
+  "blockIds": [
+    "block.advanced.service-baseline"
+  ],
+  "activityIds": [
+    "activity.advanced.service-baseline"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Estado inicial, alcance y seguridad",
+      "en": "Estado inicial, alcance y seguridad"
+    },
+    "purpose": {
+      "es": "¿Qué debe quedar fijado antes de que una herramienta toque el movimiento?",
+      "en": "¿Qué debe quedar fijado antes de que una herramienta toque el movimiento?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar relaciones y estados antes de usar ejemplos.",
+        "en": "Explicar relaciones y estados antes de usar ejemplos."
+      },
+      {
+        "es": "Comparar al menos dos alternativas con procedencia.",
+        "en": "Comparar al menos dos alternativas con procedencia."
+      },
+      {
+        "es": "Defender una decisión y declarar desconocidos.",
+        "en": "Defender una decisión y declarar desconocidos."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [
+      {
+        "packageId": "wplab.horology.mechanical-foundations",
+        "versionRange": "^0.5.0",
+        "moduleIds": [
+          "module.mechanical.train"
+        ],
+        "competencyIds": [
+          "competency.mechanical.build-functional-train"
+        ],
+        "recommendedButOptionalRouteIds": [
+          "route.mechanical.foundations"
+        ]
+      }
+    ],
+    "conceptIds": [
+      "concept.advanced.service-baseline"
+    ],
+    "sourceIds": [
+      "source.eta.6497-2.communication",
+      "source.external.watchguy"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.advanced.service-baseline"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 803,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.advanced.service-baseline"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Puedo explicar la cadena causal sin mirar una animación.",
+          "en": "Puedo explicar la cadena causal sin mirar una animación."
+        },
+        {
+          "es": "Puedo separar fuente primaria, secundaria, inferencia y desconocido.",
+          "en": "Puedo separar fuente primaria, secundaria, inferencia y desconocido."
+        },
+        {
+          "es": "Puedo comparar compromisos y proponer evidencia que refute mi decisión.",
+          "en": "Puedo comparar compromisos y proponer evidencia que refute mi decisión."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Anota una afirmación confirmada, una inferencia y un desconocido antes de practicar.",
+        "en": "Anota una afirmación confirmada, una inferencia y un desconocido antes de practicar."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.advanced.service-baseline"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, materiales, contactos o procedimientos.",
+          "en": "No inventar dimensiones, materiales, contactos o procedimientos."
+        },
+        {
+          "es": "No presentar una actividad digital como competencia física.",
+          "en": "No presentar una actividad digital como competencia física."
+        },
+        {
+          "es": "No sustituir la revisión humana exigida.",
+          "en": "No sustituir la revisión humana exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué fuente respalda esa afirmación?",
+          "en": "¿Qué fuente respalda esa afirmación?"
+        },
+        {
+          "es": "¿Qué relación cambia entre los casos?",
+          "en": "¿Qué relación cambia entre los casos?"
+        },
+        {
+          "es": "¿Qué sigue siendo desconocido?",
+          "en": "¿Qué sigue siendo desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

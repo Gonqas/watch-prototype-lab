@@ -1,0 +1,290 @@
+{
+  "id": "route.encyclopedia.cases-water",
+  "version": "1.1.0",
+  "title": {
+    "es": "Caja, cristales, coronas y estanqueidad",
+    "en": "Caja, cristales, coronas y estanqueidad"
+  },
+  "purpose": {
+    "es": "Comprender la envolvente como sistema estructural, de uso y sellado, y validar su intervención con pruebas proporcionadas.",
+    "en": "Comprender la envolvente como sistema estructural, de uso y sellado, y validar su intervención con pruebas proporcionadas."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.cases-water.arquitectura-de-caja",
+    "module.encyclopedia.cases-water.corona-tubo-y-tija",
+    "module.encyclopedia.cases-water.cristales-y-biseles",
+    "module.encyclopedia.cases-water.juntas-y-sellado",
+    "module.encyclopedia.cases-water.pruebas-de-presion",
+    "module.encyclopedia.cases-water.brazaletes-y-restauracion-de-caja",
+    "module.encyclopedia.cases-water.toh-exterior-interfaces",
+    "module.encyclopedia.cases-water.toh-materiales-exterior",
+    "module.encyclopedia.cases-water.chicago-caja-corona-tija",
+    "module.encyclopedia.cases-water.chicago-cristales-fijaciones"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.cases-water.arquitectura-de-caja",
+    "competency.encyclopedia.cases-water.corona-tubo-y-tija",
+    "competency.encyclopedia.cases-water.cristales-y-biseles",
+    "competency.encyclopedia.cases-water.juntas-y-sellado",
+    "competency.encyclopedia.cases-water.pruebas-de-presion",
+    "competency.encyclopedia.cases-water.brazaletes-y-restauracion-de-caja",
+    "competency.encyclopedia.cases-water.toh-exterior-interfaces",
+    "competency.encyclopedia.cases-water.toh-materiales-exterior",
+    "competency.encyclopedia.cases-water.chicago-caja-corona-tija",
+    "competency.encyclopedia.cases-water.chicago-cristales-fijaciones"
+  ],
+  "movementIds": [],
+  "difficulty": "intermediate",
+  "sourceIds": [
+    "source.private.daniels.casemaking",
+    "source.official.miyota.2035",
+    "source.official.miyota.8215",
+    "source.institutional.awci.standards",
+    "source.external.watchguy-manuals",
+    "source.external.ashton-tracy",
+    "source.external.dean-dk",
+    "source.encyclopedia.original-synthesis",
+    "source.external.naked-watchmaker",
+    "source.private.daniels.finishing-metals",
+    "source.private.toh.ch12",
+    "source.official.bipm.vim",
+    "source.private.chicago.1",
+    "source.private.chicago.2",
+    "source.private.chicago.4",
+    "source.private.chicago.3"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.cases-water.01",
+        "order": 1,
+        "title": {
+          "es": "Arquitectura de caja y encaje del movimiento",
+          "en": "Arquitectura de caja y encaje del movimiento"
+        },
+        "outcome": {
+          "es": "¿Qué interfaces convierten movimiento, esfera, agujas y caja en un reloj utilizable?",
+          "en": "¿Qué interfaces convierten movimiento, esfera, agujas y caja en un reloj utilizable?"
+        },
+        "lessonId": "lesson.encyclopedia.cases-water.arquitectura-de-caja",
+        "activityId": "activity.encyclopedia.cases-water.arquitectura-de-caja",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.cases-water.arquitectura-de-caja.carrura",
+          "concept.encyclopedia.cases-water.arquitectura-de-caja.aro-de-encaje",
+          "concept.encyclopedia.cases-water.arquitectura-de-caja.linea-de-tija"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.cases-water.02",
+        "order": 2,
+        "title": {
+          "es": "Corona, tubo, tija y órganos de mando",
+          "en": "Corona, tubo, tija y órganos de mando"
+        },
+        "outcome": {
+          "es": "¿Cómo se transmiten fuerza y selección a través de una abertura que también debe proteger?",
+          "en": "¿Cómo se transmiten fuerza y selección a través de una abertura que también debe proteger?"
+        },
+        "lessonId": "lesson.encyclopedia.cases-water.corona-tubo-y-tija",
+        "activityId": "activity.encyclopedia.cases-water.corona-tubo-y-tija",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.cases-water.corona-tubo-y-tija.tubo-de-corona",
+          "concept.encyclopedia.cases-water.corona-tubo-y-tija.longitud-funcional-de-tija",
+          "concept.encyclopedia.cases-water.corona-tubo-y-tija.corona-roscada"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.cases-water.03",
+        "order": 3,
+        "title": {
+          "es": "Cristales, biseles, tensiones y adhesivos",
+          "en": "Cristales, biseles, tensiones y adhesivos"
+        },
+        "outcome": {
+          "es": "¿Cómo se retiene un cristal sin dañarlo y qué cambia entre ajuste, junta y adhesivo?",
+          "en": "¿Cómo se retiene un cristal sin dañarlo y qué cambia entre ajuste, junta y adhesivo?"
+        },
+        "lessonId": "lesson.encyclopedia.cases-water.cristales-y-biseles",
+        "activityId": "activity.encyclopedia.cases-water.cristales-y-biseles",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.cases-water.cristales-y-biseles.ajuste-por-interferencia",
+          "concept.encyclopedia.cases-water.cristales-y-biseles.bisel",
+          "concept.encyclopedia.cases-water.cristales-y-biseles.tension-residual"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.cases-water.04",
+        "order": 4,
+        "title": {
+          "es": "Juntas, compresión y rutas de fuga",
+          "en": "Juntas, compresión y rutas de fuga"
+        },
+        "outcome": {
+          "es": "¿Cómo crea una junta una barrera y por qué una junta nueva puede seguir fugando?",
+          "en": "¿Cómo crea una junta una barrera y por qué una junta nueva puede seguir fugando?"
+        },
+        "lessonId": "lesson.encyclopedia.cases-water.juntas-y-sellado",
+        "activityId": "activity.encyclopedia.cases-water.juntas-y-sellado",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.cases-water.juntas-y-sellado.compresion-de-junta",
+          "concept.encyclopedia.cases-water.juntas-y-sellado.ruta-de-fuga",
+          "concept.encyclopedia.cases-water.juntas-y-sellado.set-de-compresion"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.cases-water.05",
+        "order": 5,
+        "title": {
+          "es": "Pruebas de presión, condensación y límites de seguridad",
+          "en": "Pruebas de presión, condensación y límites de seguridad"
+        },
+        "outcome": {
+          "es": "¿Qué demuestra cada prueba de estanqueidad y cuándo no debe realizarse?",
+          "en": "¿Qué demuestra cada prueba de estanqueidad y cuándo no debe realizarse?"
+        },
+        "lessonId": "lesson.encyclopedia.cases-water.pruebas-de-presion",
+        "activityId": "activity.encyclopedia.cases-water.pruebas-de-presion",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.cases-water.pruebas-de-presion.prueba-seca",
+          "concept.encyclopedia.cases-water.pruebas-de-presion.presion-diferencial",
+          "concept.encyclopedia.cases-water.pruebas-de-presion.criterio-de-prueba"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.cases-water.06",
+        "order": 6,
+        "title": {
+          "es": "Brazaletes, cierres y restauración responsable de caja",
+          "en": "Brazaletes, cierres y restauración responsable de caja"
+        },
+        "outcome": {
+          "es": "¿Cómo se restaura función y apariencia sin borrar geometría, identidad o historia?",
+          "en": "¿Cómo se restaura función y apariencia sin borrar geometría, identidad o historia?"
+        },
+        "lessonId": "lesson.encyclopedia.cases-water.brazaletes-y-restauracion-de-caja",
+        "activityId": "activity.encyclopedia.cases-water.brazaletes-y-restauracion-de-caja",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.cases-water.brazaletes-y-restauracion-de-caja.conservacion",
+          "concept.encyclopedia.cases-water.brazaletes-y-restauracion-de-caja.geometria-de-arista",
+          "concept.encyclopedia.cases-water.brazaletes-y-restauracion-de-caja.pasador-de-seguridad"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.cases-water.07",
+        "order": 7,
+        "title": {
+          "es": "Exterior del reloj como cadena de interfaces",
+          "en": "Exterior del reloj como cadena de interfaces"
+        },
+        "outcome": {
+          "es": "¿Cómo relaciona la caja movimiento, esfera, agujas, cristal, mandos y correa?",
+          "en": "¿Cómo relaciona la caja movimiento, esfera, agujas, cristal, mandos y correa?"
+        },
+        "lessonId": "lesson.encyclopedia.cases-water.toh-exterior-interfaces",
+        "activityId": "activity.encyclopedia.cases-water.toh-exterior-interfaces",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.cases-water.toh-exterior-interfaces.pila-axial",
+          "concept.encyclopedia.cases-water.toh-exterior-interfaces.interfaz-radial",
+          "concept.encyclopedia.cases-water.toh-exterior-interfaces.envolvente-funcional"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.cases-water.08",
+        "order": 8,
+        "title": {
+          "es": "Materiales, cristales, juntas y fijaciones exteriores",
+          "en": "Materiales, cristales, juntas y fijaciones exteriores"
+        },
+        "outcome": {
+          "es": "¿Qué propiedades gobiernan selección, montaje y envejecimiento del exterior?",
+          "en": "¿Qué propiedades gobiernan selección, montaje y envejecimiento del exterior?"
+        },
+        "lessonId": "lesson.encyclopedia.cases-water.toh-materiales-exterior",
+        "activityId": "activity.encyclopedia.cases-water.toh-materiales-exterior",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.cases-water.toh-materiales-exterior.compatibilidad-material",
+          "concept.encyclopedia.cases-water.toh-materiales-exterior.deformacion-de-junta",
+          "concept.encyclopedia.cases-water.toh-materiales-exterior.asiento-funcional"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.cases-water.09",
+        "order": 9,
+        "title": {
+          "es": "Expediente Chicago I: caja, corona, tubo y tija",
+          "en": "Expediente Chicago I: caja, corona, tubo y tija"
+        },
+        "outcome": {
+          "es": "¿Cómo se diagnostica un mando exterior sin atribuir todo el fallo a la tija?",
+          "en": "¿Cómo se diagnostica un mando exterior sin atribuir todo el fallo a la tija?"
+        },
+        "lessonId": "lesson.encyclopedia.cases-water.chicago-caja-corona-tija",
+        "activityId": "activity.encyclopedia.cases-water.chicago-caja-corona-tija",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.cases-water.chicago-caja-corona-tija.mando-exterior",
+          "concept.encyclopedia.cases-water.chicago-caja-corona-tija.manga-o-sleeve",
+          "concept.encyclopedia.cases-water.chicago-caja-corona-tija.compatibilidad-de-rosca"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.cases-water.10",
+        "order": 10,
+        "title": {
+          "es": "Expediente Chicago II: cristales, biseles y fijaciones",
+          "en": "Expediente Chicago II: cristales, biseles y fijaciones"
+        },
+        "outcome": {
+          "es": "¿Qué debe verificarse antes de prensar o cementar un cristal?",
+          "en": "¿Qué debe verificarse antes de prensar o cementar un cristal?"
+        },
+        "lessonId": "lesson.encyclopedia.cases-water.chicago-cristales-fijaciones",
+        "activityId": "activity.encyclopedia.cases-water.chicago-cristales-fijaciones",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.cases-water.chicago-cristales-fijaciones.asiento-de-cristal",
+          "concept.encyclopedia.cases-water.chicago-cristales-fijaciones.interferencia-de-montaje",
+          "concept.encyclopedia.cases-water.chicago-cristales-fijaciones.holgura-de-indicacion"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.cases-water.chicago-cristales-fijaciones"
+    ]
+  }
+}

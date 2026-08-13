@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+  "version": "1.1.0",
+  "title": "Cuaderno: Tornillos, pasadores, muelles y piezas pequeñas",
+  "description": "¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Tornillos, pasadores, muelles y piezas pequeñas. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.answer",
+      "instructionMarkdown": "Explica **Tornillos, pasadores, muelles y piezas pequeñas** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.explain",
+          "promptMarkdown": "¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir carga e interfaz y sigue hasta acabar y probar ciclos.",
+                "en": "Empieza por definir carga e interfaz y sigue hasta acabar y probar ciclos."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Un tornillo combina rosca, vástago, hombro, cabeza y ranura; un muelle combina material, forma, apoyo y deflexión. El orden de torneado, roscado, temple, revenido y acabado controla fragilidad y precisión. La herramienta de servicio forma parte del diseño de la interfaz.",
+                "en": "Un tornillo combina rosca, vástago, hombro, cabeza y ranura; un muelle combina material, forma, apoyo y deflexión. El orden de torneado, roscado, temple, revenido y acabado controla fragilidad y precisión. La herramienta de servicio forma parte del diseño de la interfaz."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?",
+              "en": "¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir carga e interfaz → elegir material → formar geometría dejando apoyo → generar rosca o flexión → tratar térmicamente → acabar y probar ciclos, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir carga e interfaz → elegir material → formar geometría dejando apoyo → generar rosca o flexión → tratar térmicamente → acabar y probar ciclos, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.mechanism",
+            "field.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.evidence",
+            "field.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.limit",
+            "field.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

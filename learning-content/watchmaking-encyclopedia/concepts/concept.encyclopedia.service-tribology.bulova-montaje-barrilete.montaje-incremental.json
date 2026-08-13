@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.bulova-montaje-barrilete.montaje-incremental",
+  "version": "1.1.0",
+  "title": {
+    "es": "montaje incremental",
+    "en": "montaje incremental"
+  },
+  "summary": {
+    "es": "Secuencia que comprueba cada función antes de añadir la siguiente capa.",
+    "en": "Secuencia que comprueba cada función antes de añadir la siguiente capa."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.toh-lubricacion-retencion.retencion-capilar",
+    "concept.encyclopedia.service-tribology.toh-lubricacion-retencion.mapa-de-lubricacion",
+    "concept.encyclopedia.service-tribology.toh-lubricacion-retencion.migracion"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.bulova-montaje-barrilete"
+  ],
+  "movementIds": [],
+  "subsystem": "assembly",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.bulova-montaje-barrilete"
+  ],
+  "sourceIds": [
+    "source.private.bulova.09",
+    "source.private.bulova.09a",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.bulova-montaje-barrilete"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.bulova-montaje-barrilete",
+  "plainLanguage": {
+    "es": "Secuencia que comprueba cada función antes de añadir la siguiente capa.",
+    "en": "Secuencia que comprueba cada función antes de añadir la siguiente capa."
+  },
+  "technicalLanguage": {
+    "es": "montaje incremental se interpreta mediante la cadena verificar limpieza → montar subconjunto → asentar apoyos sin forzar → comprobar libertad → registrar resultado → continuar o detener y las condiciones declaradas en la unidad.",
+    "en": "montaje incremental se interpreta mediante la cadena verificar limpieza → montar subconjunto → asentar apoyos sin forzar → comprobar libertad → registrar resultado → continuar o detener y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué puntos de control impiden ocultar un defecto bajo la siguiente pieza?",
+    "en": "Permite explicar y comprobar ¿qué puntos de control impiden ocultar un defecto bajo la siguiente pieza?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir montaje incremental sin circularidad.",
+      "en": "Definir montaje incremental sin circularidad."
+    },
+    {
+      "es": "Relacionar montaje incremental con una entrada, una interfaz y una salida.",
+      "en": "Relacionar montaje incremental con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

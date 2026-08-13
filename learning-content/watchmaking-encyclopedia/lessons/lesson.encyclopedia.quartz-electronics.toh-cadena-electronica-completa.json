@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+  "version": "1.1.0",
+  "title": "Cadena completa del reloj electrónico analógico",
+  "blockIds": [
+    "block.encyclopedia.quartz-electronics.toh-cadena-electronica-completa"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.toh-cadena-electronica-completa"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Cadena completa del reloj electrónico analógico",
+      "en": "Cadena completa del reloj electrónico analógico"
+    },
+    "purpose": {
+      "es": "¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?",
+      "en": "¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Cadena completa del reloj electrónico analógico mediante relaciones causales.",
+        "en": "Explicar Cadena completa del reloj electrónico analógico mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.estator",
+      "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.rotor-imantado",
+      "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.pulso-bipolar"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.driver",
+      "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.consumo-funcional",
+      "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.frontera-electro-mecanica"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch15",
+      "source.official.miyota.2035",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "transfer",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.driver",
+        "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.consumo-funcional",
+        "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.frontera-electro-mecanica"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1038,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.quartz-electronics.toh-cadena-electronica-completa"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: driver, consumo funcional, frontera electro-mecánica.",
+          "en": "Defino con mis palabras: driver, consumo funcional, frontera electro-mecánica."
+        },
+        {
+          "es": "Separo en «Cadena completa del reloj electrónico analógico» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Cadena completa del reloj electrónico analógico» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Cadena completa del reloj electrónico analógico» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Cadena completa del reloj electrónico analógico» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Construye un árbol de pruebas de menor a mayor intervención.",
+          "en": "Aplico el criterio a esta variante: Construye un árbol de pruebas de menor a mayor intervención."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Cadena completa del reloj electrónico analógico» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Cadena completa del reloj electrónico analógico» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.driver",
+        "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.consumo-funcional",
+        "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.frontera-electro-mecanica"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?",
+          "en": "¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?"
+        },
+        {
+          "es": "¿Qué relación causal de «Cadena completa del reloj electrónico analógico» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Cadena completa del reloj electrónico analógico» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

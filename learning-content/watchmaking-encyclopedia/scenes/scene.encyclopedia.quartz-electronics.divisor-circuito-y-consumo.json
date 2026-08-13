@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.quartz-electronics.divisor-circuito-y-consumo",
+  "version": "1.1.0",
+  "title": "Cuaderno: Circuito integrado, divisor, compensación y consumo",
+  "description": "¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Circuito integrado, divisor, compensación y consumo. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.answer",
+      "instructionMarkdown": "Explica **Circuito integrado, divisor, compensación y consumo** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.explain",
+          "promptMarkdown": "¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por amplificar resonancia y sigue hasta supervisar estado.",
+                "en": "Empieza por amplificar resonancia y sigue hasta supervisar estado."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La electrónica amplifica el resonador, divide la frecuencia mediante estados binarios y gobierna pulsos de bobina. Puede añadir inhibición, compensación térmica, detección de fin de vida o funciones de calendario. El consumo total combina reposo, oscilador, divisor, fugas y pulsos de actuación.",
+                "en": "La electrónica amplifica el resonador, divide la frecuencia mediante estados binarios y gobierna pulsos de bobina. Puede añadir inhibición, compensación térmica, detección de fin de vida o funciones de calendario. El consumo total combina reposo, oscilador, divisor, fugas y pulsos de actuación."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?",
+              "en": "¿Cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena amplificar resonancia → contar flancos → dividir frecuencia → decidir instante → formar pulso alterno → supervisar estado, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena amplificar resonancia → contar flancos → dividir frecuencia → decidir instante → formar pulso alterno → supervisar estado, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.mechanism",
+            "field.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.evidence",
+            "field.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.limit",
+            "field.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,329 @@
+{
+  "id": "scene.practice.miyota8215.explain-calendar",
+  "version": "0.5.0",
+  "title": "Explicar el calendario · práctica específica",
+  "description": "Explicar el calendario con identidad, autoridad, dependencias, evidencia y restauración. La pregunta, el feedback y la evidencia pertenecen exclusivamente a este objetivo.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.miyota.8215.structural"
+  },
+  "accessibility": {
+    "textualAlternative": "Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para De energía almacenada a movimiento.",
+    "reducedMotionAlternative": "Estados discretos y fases numeradas con los mismos cálculos y evaluación.",
+    "keyboardActions": [
+      "Tabular por subsistema, entidad y acción.",
+      "Activar con Intro o Espacio.",
+      "Deshacer y restaurar mediante controles nombrados."
+    ],
+    "colorIndependentCues": [
+      "Texto y estado acompañan cada color.",
+      "Dirección, bloqueo y confianza se expresan también con palabras."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "calibre",
+            "value": "8215"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "durationMs": 0,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 600,
+      "operation": "explode",
+      "targets": [],
+      "value": 0.1,
+      "durationMs": 300,
+      "essential": false,
+      "waitFor": "none"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.miyota8215.calendar.fidelity",
+      "markdown": "Calendario: modelo estructural del MIYOTA 8215. Cada operación muestra su autoridad y las referencias solo documentales no pueden manipularse. Consulta los niveles de reconstrucción y fidelidad en la ficha técnica.",
+      "accessibleLabel": "Calendario. Fidelidad, autoridad y limitaciones disponibles en texto."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.miyota8215.calendar.observe",
+      "instructionMarkdown": "Ejecuta «Explicar el calendario». Antes de confirmar, compara tu predicción, el cambio observable, la relación implicada y la autoridad de la fuente.",
+      "questions": [
+        {
+          "id": "question.practice.miyota8215.explain-calendar.criterion",
+          "promptMarkdown": "¿Qué relación explica el calendario de fecha sin inventar una ventana de corrección?",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.practice.miyota8215.explain-calendar.evidence",
+              "label": "Una entrada diaria avanza el disco y el saltador lo posiciona; cualquier restricción se cita del manual",
+              "labels": {
+                "es": "Una entrada diaria avanza el disco y el saltador lo posiciona; cualquier restricción se cita del manual",
+                "en": "Una entrada diaria avanza el disco y el saltador lo posiciona; cualquier restricción se cita del manual"
+              }
+            },
+            {
+              "id": "option.practice.miyota8215.explain-calendar.appearance",
+              "label": "El volante empuja directamente el disco una vez al día",
+              "labels": {
+                "es": "El volante empuja directamente el disco una vez al día",
+                "en": "El volante empuja directamente el disco una vez al día"
+              }
+            },
+            {
+              "id": "option.practice.miyota8215.explain-calendar.authority",
+              "label": "El disco gira libremente y se detiene por su peso",
+              "labels": {
+                "es": "El disco gira libremente y se detiene por su peso",
+                "en": "El disco gira libremente y se detiene por su peso"
+              }
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué relación explica el calendario de fecha sin inventar una ventana de corrección?"
+            },
+            "feedback": {
+              "es": "El calendario transforma una entrada periódica en avance y asentamiento."
+            }
+          }
+        },
+        {
+          "id": "question.practice.miyota8215.explain-calendar.reasoning",
+          "promptMarkdown": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Qué relación explica el calendario de fecha sin inventar una ventana de corrección?",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué cambió o qué comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué relación, interfaz o regla explica el resultado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué fuente o límite condiciona la conclusión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Qué relación explica el calendario de fecha sin inventar una ventana de corrección?"
+            },
+            "feedback": {
+              "es": "La revisión debe comprobar la relación específica: El calendario transforma una entrada periódica en avance y asentamiento."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.practice.miyota8215.explain-calendar.criterion",
+          "expectedOptionIds": [
+            "option.practice.miyota8215.explain-calendar.evidence"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.practice.miyota8215.explain-calendar.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    },
+    {
+      "id": "step.miyota8215.calendar.execute",
+      "instructionMarkdown": "Ejecuta acciones semánticas, registra evidencia, comprueba el resultado y restaura.",
+      "questions": []
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Explicar el calendario · práctica específica",
+      "en": "Explicar el calendario · práctica específica"
+    },
+    "purpose": {
+      "es": "Resolver «Explicar el calendario» mediante una decisión específica, explicación propia, restauración y transferencia."
+    },
+    "prerequisites": [
+      "concept.miyota8215.explain-winding-setting"
+    ],
+    "narrative": {
+      "es": "Observa conductor, disco y saltador por fases. El calendario transforma una entrada periódica en avance y asentamiento."
+    },
+    "initialFraming": {
+      "es": "Vista estable con fuente y ficha técnica de reconstrucción y fidelidad visibles.",
+      "en": "Vista estable con fuente y ficha técnica de reconstrucción y fidelidad visibles."
+    },
+    "protagonist": {
+      "selector": {
+        "by": "calibre",
+        "value": "8215"
+      },
+      "cardinality": "exactly-one"
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "story.miyota8215.calendar.observe",
+        "sceneStepId": "step.miyota8215.calendar.observe",
+        "narrative": {
+          "es": "Consultar, identificar, clasificar autoridad y predecir.",
+          "en": "Consultar, identificar, clasificar autoridad y predecir."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "calibre-select",
+          "documentation-review",
+          "predict"
+        ],
+        "interaction": {
+          "es": "Seleccionar mediante teclado o puntero.",
+          "en": "Seleccionar mediante teclado o puntero."
+        },
+        "feedback": {
+          "es": "La predicción se conserva antes de mostrar el resultado.",
+          "en": "La predicción se conserva antes de mostrar el resultado."
+        }
+      },
+      {
+        "id": "story.miyota8215.calendar.execute",
+        "sceneStepId": "step.miyota8215.calendar.execute",
+        "narrative": {
+          "es": "Manipular cuando esté permitido, comprobar, explicar y restaurar.",
+          "en": "Manipular cuando esté permitido, comprobar, explicar y restaurar."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "calibre-lab-command",
+          "workbench-command",
+          "checkpoint",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Botones y menús semánticos; sin arrastre obligatorio.",
+          "en": "Botones y menús semánticos; sin arrastre obligatorio."
+        },
+        "feedback": {
+          "es": "El diagnóstico señala entrada, relación o estado inválido sin fingir física.",
+          "en": "El diagnóstico señala entrada, relación o estado inválido sin fingir física."
+        }
+      }
+    ],
+    "ending": {
+      "es": "Estado restaurable y evidencia disponible.",
+      "en": "Estado restaurable y evidencia disponible."
+    },
+    "restoration": {
+      "es": "Restaurar 63 identidades, tornillos, bandejas, orientación, cámara y subsistema.",
+      "en": "Restaurar 63 identidades, tornillos, bandejas, orientación, cámara y subsistema."
+    },
+    "accessibility": {
+      "es": "Árbol y lista ordenados; acciones por teclado y sin arrastre.",
+      "en": "Árbol y lista ordenados; acciones por teclado y sin arrastre."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos con idéntica información y evaluación.",
+      "en": "Estados discretos con idéntica información y evaluación."
+    },
+    "evidenceTemplateIds": [
+      "evidence.miyota8215.explain-calendar"
+    ],
+    "technicalCriteria": [
+      "Identidad de cada pieza.",
+      "Autoridad visible.",
+      "Dependencias clasificadas.",
+      "El modelo de referencia y el proyecto técnico permanecen intactos."
+    ],
+    "limitations": [
+      "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+      "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+      "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física.",
+      "No se declara una ventana de corrección segura ni una geometría exacta del salto."
+    ]
+  },
+  "restorePreviousState": true
+}

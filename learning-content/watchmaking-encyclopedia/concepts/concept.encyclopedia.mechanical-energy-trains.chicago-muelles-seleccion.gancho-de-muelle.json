@@ -1,0 +1,67 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.gancho-de-muelle",
+  "version": "1.1.0",
+  "title": {
+    "es": "gancho de muelle",
+    "en": "gancho de muelle"
+  },
+  "summary": {
+    "es": "Interfaz interior o exterior que transmite carga según arquitectura.",
+    "en": "Interfaz interior o exterior que transmite carga según arquitectura."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+    "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+    "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion"
+  ],
+  "movementIds": [],
+  "subsystem": "mainspring",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion"
+  ],
+  "sourceIds": [
+    "source.private.chicago.5",
+    "source.private.chicago.7",
+    "source.private.toh.ch04",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion",
+  "plainLanguage": {
+    "es": "Interfaz interior o exterior que transmite carga según arquitectura.",
+    "en": "Interfaz interior o exterior que transmite carga según arquitectura."
+  },
+  "technicalLanguage": {
+    "es": "gancho de muelle se interpreta mediante la cadena buscar referencia → identificar arquitectura → medir barrilete y muelle → calcular ocupación → verificar ganchos → probar bajo protocolo y las condiciones declaradas en la unidad.",
+    "en": "gancho de muelle se interpreta mediante la cadena buscar referencia → identificar arquitectura → medir barrilete y muelle → calcular ocupación → verificar ganchos → probar bajo protocolo y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se elige un muelle cuando faltan referencias de pieza?",
+    "en": "Permite explicar y comprobar ¿cómo se elige un muelle cuando faltan referencias de pieza?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir gancho de muelle sin circularidad.",
+      "en": "Definir gancho de muelle sin circularidad."
+    },
+    {
+      "es": "Relacionar gancho de muelle con una entrada, una interfaz y una salida.",
+      "en": "Relacionar gancho de muelle con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

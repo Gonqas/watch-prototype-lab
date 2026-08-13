@@ -1,0 +1,46 @@
+{
+  "id": "evidence.metrology.detectar-paralaje",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.medir-una-pieza-fisica",
+  "kind": "artifact",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.activity-metrology-detectar-paralaje",
+    "version": "0.1.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.metrology.medir-una-pieza-fisica",
+    "packageId": "wplab.horology.inspection-metrology",
+    "activityIds": [
+      "activity.metrology.detectar-paralaje"
+    ],
+    "evidenceTemplateId": "evidence.metrology.detectar-paralaje",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "specimenId",
+      "componentId",
+      "imageAssetId",
+      "regionAnnotationId",
+      "instrumentId",
+      "instrumentVerificationId",
+      "readingIds",
+      "measurementSeriesId",
+      "calculation",
+      "uncertainty",
+      "findingId",
+      "confidence",
+      "comparisonId",
+      "proposalId",
+      "hintEventIds",
+      "adaptations"
+    ]
+  }
+}

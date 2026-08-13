@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+  "version": "1.1.0",
+  "title": "Cuaderno: Rotación, inercia, fricción y contacto",
+  "description": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Rotación, inercia, fricción y contacto. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.scope",
+      "markdown": "**Alcance del estudio:** ¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.answer",
+      "instructionMarkdown": "Explica **Rotación, inercia, fricción y contacto** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.explain",
+          "promptMarkdown": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por aplicar par y sigue hasta alcanzar velocidad.",
+                "en": "Empieza por aplicar par y sigue hasta alcanzar velocidad."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La rotación depende de momento de inercia, par neto, apoyos y contactos. Fricción estática, deslizante, rodante y viscosa no son intercambiables; tampoco lo son rugosidad y forma. Un pivote puede parecer libre sin carga y trabarse con puente, aceite, inclinación o empuje axial.",
+                "en": "La rotación depende de momento de inercia, par neto, apoyos y contactos. Fricción estática, deslizante, rodante y viscosa no son intercambiables; tampoco lo son rugosidad y forma. Un pivote puede parecer libre sin carga y trabarse con puente, aceite, inclinación o empuje axial."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+              "en": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena aplicar par → superar fricción estática → acelerar inercia → mantener contacto → disipar energía → alcanzar velocidad, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena aplicar par → superar fricción estática → acelerar inercia → mantener contacto → disipar energía → alcanzar velocidad, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.mechanism",
+            "field.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.evidence",
+            "field.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.limit",
+            "field.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

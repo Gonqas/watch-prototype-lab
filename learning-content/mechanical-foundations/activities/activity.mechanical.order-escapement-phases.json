@@ -1,0 +1,391 @@
+{
+  "id": "activity.mechanical.order-escapement-phases",
+  "version": "0.5.0",
+  "title": "Ordenar las fases del escape",
+  "sceneIds": [
+    "scene.practice.mechanical.order-escapement-phases"
+  ],
+  "competencyIds": [
+    "competency.mechanical.order-escapement-phases"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.mechanical.order-escapement-phases"
+  ],
+  "rubricId": "rubric.mechanical.order-escapement-phases",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.mechanical.escapement",
+    "title": {
+      "es": "Ordenar las fases del escape",
+      "en": "Ordenar las fases del escape"
+    },
+    "description": {
+      "es": "Ordenar las fases del escape mediante el laboratorio funcional, cálculos declarados, evidencia y restauración.",
+      "en": "Ordenar las fases del escape mediante el laboratorio funcional, cálculos declarados, evidencia y restauración."
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 14,
+    "activityType": "guided-practice",
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "familyIds": [
+      "conceptual-mechanical"
+    ],
+    "subsystem": "escapement",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+        "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+        "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Modelo normalizado: no es física ni servicio de un calibre real.",
+        "El 8215 solo aporta comparación estructural documentada."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.horology.private-book.escapements",
+      "source.horology.original-mechanical-foundations"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.escapement"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.mechanical.order-escapement-phases.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Qué orden conserva un ciclo simplificado del escape de áncora?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.order-escapement-phases.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Pausa en cada contacto entre rueda de escape y áncora."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.order-escapement-phases.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: El escape alterna retención y liberación coordinadas con el oscilador."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.order-escapement-phases.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.order-escapement-phases.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "El escape alterna retención y liberación coordinadas con el oscilador."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.order-escapement-phases.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Empieza desde impulso y ordena las tres fases siguientes."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "mechanical-lab-command",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "escapement",
+      "commands": [
+        "step-escapement",
+        "scrub-escapement",
+        "set-escapement-speed",
+        "pause-escapement",
+        "block",
+        "unblock",
+        "inspect",
+        "restore"
+      ],
+      "viewModes": [
+        "normal",
+        "section",
+        "slow-motion",
+        "step-by-step",
+        "kinematics",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "El escape alterna retención y liberación coordinadas con el oscilador."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «Impulso → carga del muelle → indicación → bloqueo» y «Caída → cuerda manual → desbloqueo → calendario» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Qué orden conserva un ciclo simplificado del escape de áncora?"
+      },
+      "nextObservation": {
+        "es": "Pausa en cada contacto entre rueda de escape y áncora."
+      },
+      "misconceptionIds": [
+        "misconception.mechanical.near-gears-mesh",
+        "misconception.mechanical.escapement-is-source"
+      ],
+      "transferPrompt": {
+        "es": "Empieza desde impulso y ordena las tres fases siguientes."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.recognize-supports-clearances",
+        "concept.mechanical.order-escapement-phases"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Ordenar las fases del escape», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Ordenar las fases del escape», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué orden conserva un ciclo simplificado del escape de áncora?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Pausa en cada contacto entre rueda de escape y áncora."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Ordenar las fases del escape»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: El escape alterna retención y liberación coordinadas con el oscilador."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "El escape alterna retención y liberación coordinadas con el oscilador."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Ordenar las fases del escape» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Ordenar las fases del escape» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Ordenar las fases del escape» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Empieza desde impulso y ordena las tres fases siguientes."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "Bloqueo → desbloqueo → impulso → caída y nuevo bloqueo"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Impulso → carga del muelle → indicación → bloqueo"
+        },
+        {
+          "es": "Caída → cuerda manual → desbloqueo → calendario"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Empieza desde impulso y ordena las tres fases siguientes."
+        }
+      },
+      "transferPrompt": {
+        "es": "Empieza desde impulso y ordena las tres fases siguientes."
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "completion-problem",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.mechanical.recognize-supports-clearances"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.mechanical.order-escapement-phases"
+      ],
+      "assessesConceptIds": [
+        "concept.mechanical.order-escapement-phases"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "faded",
+      "remediation": {
+        "lessonId": "lesson.mechanical.escapement",
+        "blockId": "block.mechanical.escapement",
+        "conceptIds": [
+          "concept.mechanical.order-escapement-phases"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba comprensión dentro de un modelo mecánico conceptual geometría conceptual y secuencia educativa, sin simulación física. No demuestra física validada, destreza manual ni capacidad de servicio sobre un calibre real.",
+        "en": "This activity checks understanding in a geometría conceptual y secuencia educativa, sin simulación física conceptual mechanical model. It does not demonstrate validated physics, manual skill, or the ability to service a real calibre."
+      }
+    }
+  }
+}

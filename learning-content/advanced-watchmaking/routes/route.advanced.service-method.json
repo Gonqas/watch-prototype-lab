@@ -1,0 +1,151 @@
+{
+  "id": "route.advanced.service-method",
+  "version": "1.0.0",
+  "title": {
+    "es": "Método de servicio y evidencia",
+    "en": "Método de servicio y evidencia"
+  },
+  "purpose": {
+    "es": "Preparar, secuenciar, inspeccionar y documentar una intervención con riesgos, criterios y evidencia física separados.",
+    "en": "Preparar, secuenciar, inspeccionar y documentar una intervención con riesgos, criterios y evidencia física separados."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.advanced.service-baseline",
+    "module.advanced.service-disassembly",
+    "module.advanced.service-clean-lube",
+    "module.advanced.service-assembly",
+    "module.advanced.service-diagnosis"
+  ],
+  "competencyIds": [
+    "competency.advanced.service-baseline",
+    "competency.advanced.service-disassembly",
+    "competency.advanced.service-clean-lube",
+    "competency.advanced.service-assembly",
+    "competency.advanced.service-diagnosis"
+  ],
+  "movementIds": [],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.eta.6497-2.communication",
+    "source.external.watchguy",
+    "source.eta.7750.communication"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.advanced.service.01",
+        "order": 1,
+        "title": {
+          "es": "Estado inicial, alcance y seguridad",
+          "en": "Estado inicial, alcance y seguridad"
+        },
+        "outcome": {
+          "es": "¿Qué debe quedar fijado antes de que una herramienta toque el movimiento?",
+          "en": "¿Qué debe quedar fijado antes de que una herramienta toque el movimiento?"
+        },
+        "lessonId": "lesson.advanced.service-baseline",
+        "activityId": "activity.advanced.service-baseline",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.service-baseline"
+        ]
+      },
+      {
+        "id": "milestone.advanced.service.02",
+        "order": 2,
+        "title": {
+          "es": "Desmontar por dependencias, no por memoria",
+          "en": "Desmontar por dependencias, no por memoria"
+        },
+        "outcome": {
+          "es": "¿Qué relación remove-before justifica cada retirada?",
+          "en": "¿Qué relación remove-before justifica cada retirada?"
+        },
+        "lessonId": "lesson.advanced.service-disassembly",
+        "activityId": "activity.advanced.service-disassembly",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.service-disassembly"
+        ]
+      },
+      {
+        "id": "milestone.advanced.service.03",
+        "order": 3,
+        "title": {
+          "es": "Limpieza y lubricación como decisiones documentadas",
+          "en": "Limpieza y lubricación como decisiones documentadas"
+        },
+        "outcome": {
+          "es": "¿Qué material, superficie, producto, cantidad y fuente justifican cada proceso?",
+          "en": "¿Qué material, superficie, producto, cantidad y fuente justifican cada proceso?"
+        },
+        "lessonId": "lesson.advanced.service-clean-lube",
+        "activityId": "activity.advanced.service-clean-lube",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.service-clean-lube"
+        ]
+      },
+      {
+        "id": "milestone.advanced.service.04",
+        "order": 4,
+        "title": {
+          "es": "Montaje incremental y verificación por capas",
+          "en": "Montaje incremental y verificación por capas"
+        },
+        "outcome": {
+          "es": "¿Qué debe comprobarse antes de ocultar un subconjunto bajo el siguiente?",
+          "en": "¿Qué debe comprobarse antes de ocultar un subconjunto bajo el siguiente?"
+        },
+        "lessonId": "lesson.advanced.service-assembly",
+        "activityId": "activity.advanced.service-assembly",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.service-assembly"
+        ]
+      },
+      {
+        "id": "milestone.advanced.service.05",
+        "order": 5,
+        "title": {
+          "es": "Diagnóstico causal e informe defendible",
+          "en": "Diagnóstico causal e informe defendible"
+        },
+        "outcome": {
+          "es": "¿Qué prueba produciría resultados distintos si cada hipótesis fuera cierta?",
+          "en": "¿Qué prueba produciría resultados distintos si cada hipótesis fuera cierta?"
+        },
+        "lessonId": "lesson.advanced.service-diagnosis",
+        "activityId": "activity.advanced.service-diagnosis",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.service-diagnosis"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.advanced.service-baseline",
+      "activity.advanced.service-disassembly",
+      "activity.advanced.service-clean-lube",
+      "activity.advanced.service-assembly",
+      "activity.advanced.service-diagnosis"
+    ]
+  }
+}

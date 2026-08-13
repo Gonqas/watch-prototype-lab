@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.service-tribology.toh-friccion-desgaste",
+  "version": "1.1.0",
+  "title": "Cuaderno: Fricción, desgaste y regímenes de contacto",
+  "description": "¿Cómo se relacionan carga, velocidad, superficie y lubricante en un contacto relojero?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Fricción, desgaste y regímenes de contacto. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.service-tribology.toh-friccion-desgaste.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se relacionan carga, velocidad, superficie y lubricante en un contacto relojero?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se relacionan carga, velocidad, superficie y lubricante en un contacto relojero?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.service-tribology.toh-friccion-desgaste.answer",
+      "instructionMarkdown": "Explica **Fricción, desgaste y regímenes de contacto** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.service-tribology.toh-friccion-desgaste.explain",
+          "promptMarkdown": "¿Cómo se relacionan carga, velocidad, superficie y lubricante en un contacto relojero?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.service-tribology.toh-friccion-desgaste.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.toh-friccion-desgaste.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.toh-friccion-desgaste.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.toh-friccion-desgaste.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.service-tribology.toh-friccion-desgaste.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por aplicar carga y sigue hasta acumular desgaste.",
+                "en": "Empieza por aplicar carga y sigue hasta acumular desgaste."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.service-tribology.toh-friccion-desgaste.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La fricción no es una propiedad fija de una pieza: emerge del par de materiales, topografía, carga, movimiento, ambiente y lubricación. Adhesión, abrasión, fatiga y corrosión dejan firmas diferentes.",
+                "en": "La fricción no es una propiedad fija de una pieza: emerge del par de materiales, topografía, carga, movimiento, ambiente y lubricación. Adhesión, abrasión, fatiga y corrosión dejan firmas diferentes."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se relacionan carga, velocidad, superficie y lubricante en un contacto relojero?",
+              "en": "¿Cómo se relacionan carga, velocidad, superficie y lubricante en un contacto relojero?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena aplicar carga → establecer contacto → mover superficies → formar o romper película → disipar energía → acumular desgaste, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena aplicar carga → establecer contacto → mover superficies → formar o romper película → disipar energía → acumular desgaste, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.service-tribology.toh-friccion-desgaste.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.service-tribology.toh-friccion-desgaste.mechanism",
+            "field.encyclopedia.service-tribology.toh-friccion-desgaste.evidence",
+            "field.encyclopedia.service-tribology.toh-friccion-desgaste.limit",
+            "field.encyclopedia.service-tribology.toh-friccion-desgaste.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

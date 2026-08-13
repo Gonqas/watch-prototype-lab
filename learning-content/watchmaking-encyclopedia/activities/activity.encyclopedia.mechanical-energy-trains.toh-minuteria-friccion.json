@@ -1,0 +1,337 @@
+{
+  "id": "activity.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Acoplamiento de minutería y ajuste manual",
+  "sceneIds": [
+    "scene.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion"
+  ],
+  "rubricId": "rubric.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+    "title": {
+      "es": "Explicar y transferir: Acoplamiento de minutería y ajuste manual",
+      "en": "Explicar y transferir: Acoplamiento de minutería y ajuste manual"
+    },
+    "description": {
+      "es": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+      "en": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?"
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 35,
+    "activityType": "observation-3d",
+    "movementIds": [
+      "movement.conceptual.mechanical-chain"
+    ],
+    "familyIds": [],
+    "subsystem": "motion-works",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion",
+      "viewport.camera",
+      "viewport.overlay.labels"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Cinemática educativa reversible; no valida geometría, fuerzas, tolerancias, lubricación ni competencia física."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.toh.ch05",
+      "source.private.chicago.9",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.causal-lab"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "motion-works",
+      "commands": [
+        "set-time",
+        "engage",
+        "disengage",
+        "rotate",
+        "inspect",
+        "restore"
+      ],
+      "viewModes": [
+        "kinematics",
+        "section",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+        "blockId": "block.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+        "conceptIds": [
+          "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+          "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+          "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Acoplamiento de minutería y ajuste manual sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Acoplamiento de minutería y ajuste manual sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Una minutera que salta puede deberse a fricción insuficiente, ajuste de agujas, interferencia o dentado; una fricción excesiva puede robar amplitud. Apretar sin diagnosticar modifica una variable y puede dañar concentricidad.",
+          "en": "Una minutera que salta puede deberse a fricción insuficiente, ajuste de agujas, interferencia o dentado; una fricción excesiva puede robar amplitud. Apretar sin diagnosticar modifica una variable y puede dañar concentricidad."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+            "en": "Identificar la pregunta: ¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?"
+          },
+          {
+            "es": "Dibujar la secuencia tomar giro del tren → acoplar por fricción → mover minutera → reducir hacia rueda horaria → indicar horas → desacoplar manualmente al ajustar.",
+            "en": "Dibujar la secuencia tomar giro del tren → acoplar por fricción → mover minutera → reducir hacia rueda horaria → indicar horas → desacoplar manualmente al ajustar."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: relación 12:1; par de fricción; altura de cañones; holgura entre agujas.",
+            "en": "Asignar magnitudes y evidencia: relación 12:1; par de fricción; altura de cañones; holgura entre agujas."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Compara dos ubicaciones del acoplamiento y analiza sus síntomas.",
+          "en": "Compara dos ubicaciones del acoplamiento y analiza sus síntomas."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: tomar giro del tren → acoplar por fricción → mover minutera → reducir hacia rueda horaria → indicar horas → desacoplar manualmente al ajustar.",
+            "en": "Completa la cadena con las etapas visibles: tomar giro del tren → acoplar por fricción → mover minutera → reducir hacia rueda horaria → indicar horas → desacoplar manualmente al ajustar."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+            "en": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Compara dos ubicaciones del acoplamiento y analiza sus síntomas.",
+            "en": "Compara dos ubicaciones del acoplamiento y analiza sus síntomas."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "La minutería está unida rígidamente al tren",
+          "en": "La minutería está unida rígidamente al tren"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Acoplamiento de minutería y ajuste manual con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Acoplamiento de minutería y ajuste manual con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Compara dos ubicaciones del acoplamiento y analiza sus síntomas.",
+        "en": "Compara dos ubicaciones del acoplamiento y analiza sus síntomas."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena tomar giro del tren → acoplar por fricción → mover minutera → reducir hacia rueda horaria → indicar horas → desacoplar manualmente al ajustar, su evidencia y límites.",
+        "en": "La explicación conserva la cadena tomar giro del tren → acoplar por fricción → mover minutera → reducir hacia rueda horaria → indicar horas → desacoplar manualmente al ajustar, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «La minutería está unida rígidamente al tren».",
+        "en": "Revisa si omitiste una interfaz o caíste en «La minutería está unida rígidamente al tren»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+        "en": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Regular la fricción sin comprobar agujas. de Confundir puesta en hora con parada del tren..",
+        "en": "Busca evidencia para distinguir Regular la fricción sin comprobar agujas. de Confundir puesta en hora con parada del tren.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion"
+      ],
+      "transferPrompt": {
+        "es": "Compara dos ubicaciones del acoplamiento y analiza sus síntomas.",
+        "en": "Compara dos ubicaciones del acoplamiento y analiza sus síntomas."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+          "en": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?"
+        },
+        {
+          "es": "¿Qué relación causal de «Acoplamiento de minutería y ajuste manual» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Acoplamiento de minutería y ajuste manual» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

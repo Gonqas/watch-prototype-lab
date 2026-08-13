@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.history-language.toh-tiempo-escalas",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.history-language.toh-tiempo-escalas",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.history-language.toh-tiempo-escalas",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.history-language.toh-tiempo-escalas",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.history-language.toh-tiempo-escalas"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.history-language.toh-tiempo-escalas",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

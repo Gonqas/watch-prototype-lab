@@ -1,0 +1,59 @@
+{
+  "id": "rubric.horology.regulation-transmission",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.distinguish-regulation-from-transmission",
+  "rules": [
+    {
+      "id": "rule.horology.regulation-transmission.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "La evidencia correcta y completa demuestra la competencia en este módulo; el uso de pistas queda visible."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.horology.regulation-transmission.demonstrated",
+    "version": "0.2.0",
+    "competencyId": "competency.horology.distinguish-regulation-from-transmission",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "count",
+          "filter": {
+            "evidenceType": "selection",
+            "status": "active",
+            "minimumConfidence": 1
+          },
+          "compare": "gte",
+          "value": 2
+        },
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "explanation",
+            "status": "active",
+            "minimumConfidence": 1
+          }
+        },
+        {
+          "op": "compare",
+          "metric": "distinct-sessions",
+          "compare": "gte",
+          "value": 3
+        }
+      ]
+    }
+  }
+}

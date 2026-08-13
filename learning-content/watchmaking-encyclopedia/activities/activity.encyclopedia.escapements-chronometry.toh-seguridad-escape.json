@@ -1,0 +1,335 @@
+{
+  "id": "activity.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Seguridad: draw, guardia y cuernos",
+  "sceneIds": [
+    "scene.encyclopedia.escapements-chronometry.toh-seguridad-escape"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.toh-seguridad-escape"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.escapements-chronometry.toh-seguridad-escape"
+  ],
+  "rubricId": "rubric.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+    "title": {
+      "es": "Explicar y transferir: Seguridad: draw, guardia y cuernos",
+      "en": "Explicar y transferir: Seguridad: draw, guardia y cuernos"
+    },
+    "description": {
+      "es": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?",
+      "en": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?"
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 35,
+    "activityType": "observation-3d",
+    "movementIds": [
+      "movement.conceptual.mechanical-chain"
+    ],
+    "familyIds": [],
+    "subsystem": "escapement",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion",
+      "viewport.camera",
+      "viewport.overlay.labels"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Cinemática educativa reversible; no valida geometría, fuerzas, tolerancias, lubricación ni competencia física."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.toh.ch06",
+      "source.private.bulova.10",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.escapements-chronometry.toh-seguridad-escape.causal-lab"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "escapement",
+      "commands": [
+        "step-escapement",
+        "introduce-fault",
+        "inspect",
+        "restore"
+      ],
+      "viewModes": [
+        "step-by-step",
+        "uncertainty",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.draw",
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.accion-de-guardia",
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.run-to-banking"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.draw",
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.accion-de-guardia",
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.run-to-banking"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.draw",
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.accion-de-guardia",
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.run-to-banking"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+        "blockId": "block.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+        "conceptIds": [
+          "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.draw",
+          "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.accion-de-guardia",
+          "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.run-to-banking"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Seguridad: draw, guardia y cuernos sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Seguridad: draw, guardia y cuernos sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Reducir una holgura puede aumentar roce; aumentarla puede perder seguridad. Una comprobación estática debe completarse con secuencia y condiciones documentadas, sin deformar componentes por tanteo.",
+          "en": "Reducir una holgura puede aumentar roce; aumentarla puede perder seguridad. Una comprobación estática debe completarse con secuencia y condiciones documentadas, sin deformar componentes por tanteo."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?",
+            "en": "Identificar la pregunta: ¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?"
+          },
+          {
+            "es": "Dibujar la secuencia diente bloqueado → draw asienta áncora → golpe intenta desplazarla → guardia limita movimiento → clavija entra en fase → despeje autorizado.",
+            "en": "Dibujar la secuencia diente bloqueado → draw asienta áncora → golpe intenta desplazarla → guardia limita movimiento → clavija entra en fase → despeje autorizado."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: holgura de guardia; profundidad de bloqueo; run; distancia a topes.",
+            "en": "Asignar magnitudes y evidencia: holgura de guardia; profundidad de bloqueo; run; distancia a topes."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Compara fallo por exceso y defecto de cada holgura.",
+          "en": "Compara fallo por exceso y defecto de cada holgura."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: diente bloqueado → draw asienta áncora → golpe intenta desplazarla → guardia limita movimiento → clavija entra en fase → despeje autorizado.",
+            "en": "Completa la cadena con las etapas visibles: diente bloqueado → draw asienta áncora → golpe intenta desplazarla → guardia limita movimiento → clavija entra en fase → despeje autorizado."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?",
+            "en": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Compara fallo por exceso y defecto de cada holgura.",
+            "en": "Compara fallo por exceso y defecto de cada holgura."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Cuanto más apretado, más seguro",
+          "en": "Cuanto más apretado, más seguro"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Seguridad: draw, guardia y cuernos con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Seguridad: draw, guardia y cuernos con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Compara fallo por exceso y defecto de cada holgura.",
+        "en": "Compara fallo por exceso y defecto de cada holgura."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena diente bloqueado → draw asienta áncora → golpe intenta desplazarla → guardia limita movimiento → clavija entra en fase → despeje autorizado, su evidencia y límites.",
+        "en": "La explicación conserva la cadena diente bloqueado → draw asienta áncora → golpe intenta desplazarla → guardia limita movimiento → clavija entra en fase → despeje autorizado, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Cuanto más apretado, más seguro».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Cuanto más apretado, más seguro»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?",
+        "en": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Eliminar juego para obtener seguridad. de Confundir topes con ajuste de marcha..",
+        "en": "Busca evidencia para distinguir Eliminar juego para obtener seguridad. de Confundir topes con ajuste de marcha.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.escapements-chronometry.toh-seguridad-escape"
+      ],
+      "transferPrompt": {
+        "es": "Compara fallo por exceso y defecto de cada holgura.",
+        "en": "Compara fallo por exceso y defecto de cada holgura."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.draw",
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.accion-de-guardia",
+        "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.run-to-banking"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?",
+          "en": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?"
+        },
+        {
+          "es": "¿Qué relación causal de «Seguridad: draw, guardia y cuernos» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Seguridad: draw, guardia y cuernos» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

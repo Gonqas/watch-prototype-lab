@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Bobina, estator y motor paso a paso bipolar."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

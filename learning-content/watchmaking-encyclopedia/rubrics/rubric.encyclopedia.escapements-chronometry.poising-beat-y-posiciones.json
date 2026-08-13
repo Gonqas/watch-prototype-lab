@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Poising, beat error y posiciones."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

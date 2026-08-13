@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.math-physics-metrology.toh-oscilador-modelo.rigidez-angular",
+  "version": "1.1.0",
+  "title": {
+    "es": "rigidez angular",
+    "en": "rigidez angular"
+  },
+  "summary": {
+    "es": "Momento restaurador por unidad de desplazamiento angular.",
+    "en": "Momento restaurador por unidad de desplazamiento angular."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.math-physics-metrology.toh-contar-tren.relacion-objetivo",
+    "concept.encyclopedia.math-physics-metrology.toh-contar-tren.factorizacion-de-tren",
+    "concept.encyclopedia.math-physics-metrology.toh-contar-tren.restriccion-geometrica"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.toh-oscilador-modelo"
+  ],
+  "movementIds": [],
+  "subsystem": "oscillator",
+  "routeIds": [
+    "route.encyclopedia.math-physics-metrology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.toh-oscilador-modelo"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch07",
+    "source.private.vba-uhrentechnik",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.math-physics-metrology.toh-oscilador-modelo"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+  "plainLanguage": {
+    "es": "Momento restaurador por unidad de desplazamiento angular.",
+    "en": "Momento restaurador por unidad de desplazamiento angular."
+  },
+  "technicalLanguage": {
+    "es": "rigidez angular se interpreta mediante la cadena desplazar volante → almacenar energía en espiral → cruzar equilibrio → intercambiar energía cinética → perder energía → recibir impulso y las condiciones declaradas en la unidad.",
+    "en": "rigidez angular se interpreta mediante la cadena desplazar volante → almacenar energía en espiral → cruzar equilibrio → intercambiar energía cinética → perder energía → recibir impulso y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué aproxima el oscilador armónico y dónde deja de describir un volante real?",
+    "en": "Permite explicar y comprobar ¿qué aproxima el oscilador armónico y dónde deja de describir un volante real?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir rigidez angular sin circularidad.",
+      "en": "Definir rigidez angular sin circularidad."
+    },
+    {
+      "es": "Relacionar rigidez angular con una entrada, una interfaz y una salida.",
+      "en": "Relacionar rigidez angular con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

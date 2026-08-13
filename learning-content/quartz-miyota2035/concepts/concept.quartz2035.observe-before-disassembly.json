@@ -1,0 +1,77 @@
+{
+  "id": "concept.quartz2035.observe-before-disassembly",
+  "version": "0.5.0",
+  "title": {
+    "es": "Observar antes de desmontar"
+  },
+  "summary": {
+    "es": "Concepto práctico: observar antes de desmontar, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.quartz2035.select-basic-tools"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.quartz2035.observe-before-disassembly"
+  ],
+  "movementIds": [
+    "fixture.miyota.2035.structural"
+  ],
+  "subsystem": "inspection",
+  "routeIds": [
+    "route.horology.bench-foundations"
+  ],
+  "activityIds": [
+    "activity.quartz2035.prepare-workbench",
+    "activity.quartz2035.detect-unsafe-conditions",
+    "activity.quartz2035.select-tools",
+    "activity.quartz2035.reject-wrong-tool",
+    "activity.quartz2035.identify-movement-zones",
+    "activity.quartz2035.record-initial-condition",
+    "activity.quartz2035.create-isa-confidence-map",
+    "activity.quartz2035.compare-isa-functionally",
+    "activity.quartz2035.read-drawing",
+    "activity.quartz2035.associate-reference-part",
+    "activity.quartz2035.classify-subsystems",
+    "activity.quartz2035.follow-functional-chain",
+    "activity.quartz2035.order-disassembly-steps",
+    "activity.quartz2035.disassemble-to-tray",
+    "activity.quartz2035.assemble-guided",
+    "activity.quartz2035.assemble-assisted-free",
+    "activity.quartz2035.identify-error-hypothesis",
+    "activity.quartz2035.choose-check",
+    "activity.quartz2035.complete-final-project",
+    "activity.quartz2035.review-final-dossier"
+  ],
+  "sourceIds": [
+    "source.horology.original-quartz-practical-route"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Concepto práctico: observar antes de desmontar, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles."
+  },
+  "technicalLanguage": {
+    "es": "Observar antes de desmontar separa observación, síntoma, hipótesis y comprobación en inspección. Concepto práctico: observar antes de desmontar, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles.",
+    "en": "Observar antes de desmontar separa observación, síntoma, hipótesis y comprobación en inspección. Concepto práctico: observar antes de desmontar, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles."
+  },
+  "whyItMatters": {
+    "es": "Dominar observar antes de desmontar permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega observar antes de desmontar dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema inspection."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [
+    "misconception.quartz2035.symptom-is-diagnosis"
+  ],
+  "knowledgeType": "diagnostic",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.quartz2035.observe",
+  "targetEvidenceLevel": "transfer"
+}

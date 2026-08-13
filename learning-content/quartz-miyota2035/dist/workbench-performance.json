@@ -1,0 +1,32 @@
+{
+  "measuredAt": "2026-07-27",
+  "environment": "Node headless; medición contractual del dominio, no GPU",
+  "fixtureId": "fixture.miyota.2035.structural",
+  "durationsMs": {
+    "loadWorkbench": 0.9977000000000089,
+    "prepareWorkbench": 1.125099999999975,
+    "changeStepSelection": 0.048699999999996635,
+    "disassembleOneFastenerToTray": 0.4896999999999707,
+    "restoreSnapshot": 0.2447999999999979,
+    "reopenCheckpoint": 0.7647000000000048,
+    "reassembleAndVerifyOneFastener": 0.11750000000000682,
+    "completeAssembly": null
+  },
+  "counts": {
+    "canonicalInstances": 33,
+    "manipulableInstances": 23,
+    "tools": 9,
+    "zones": 5,
+    "trayZones": 8,
+    "dependencyEdges": 9,
+    "snapshotBytesUtf8": 29270,
+    "sceneObjects": 33,
+    "measuredDrawCalls": null,
+    "measuredGpuMemoryBytes": null
+  },
+  "limitations": [
+    "No se mide montaje completo porque el fixture solo declara una secuencia parcial y no debe fingirse una secuencia de servicio.",
+    "Draw calls y memoria GPU requieren instrumentación del renderer en una ejecución gráfica; se declaran no medidos.",
+    "Los tiempos son una muestra diagnóstica local, no un presupuesto de rendimiento garantizado."
+  ]
+}

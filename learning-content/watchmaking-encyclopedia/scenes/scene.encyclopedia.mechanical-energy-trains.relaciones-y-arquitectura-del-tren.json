@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+  "version": "1.1.0",
+  "title": "Cuaderno: Relaciones, velocidades y arquitectura del tren",
+  "description": "¿Cómo se diseña una cadena de ruedas que conecte barrilete, escape e indicación?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Relaciones, velocidades y arquitectura del tren. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se diseña una cadena de ruedas que conecte barrilete, escape e indicación?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se diseña una cadena de ruedas que conecte barrilete, escape e indicación?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.answer",
+      "instructionMarkdown": "Explica **Relaciones, velocidades y arquitectura del tren** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.explain",
+          "promptMarkdown": "¿Cómo se diseña una cadena de ruedas que conecte barrilete, escape e indicación?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por barrilete gira lentamente y sigue hasta minutería deriva indicación.",
+                "en": "Empieza por barrilete gira lentamente y sigue hasta minutería deriva indicación."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Cada móvil compuesto reúne una rueda y un piñón solidarios. Las relaciones se multiplican a través de pares engranados; el sentido alterna en cada contacto exterior. La frecuencia del escape fija la rotación final y el tren selecciona escalas temporales, mientras centros, diámetros y puentes deben coexistir con energía y fabricación.",
+                "en": "Cada móvil compuesto reúne una rueda y un piñón solidarios. Las relaciones se multiplican a través de pares engranados; el sentido alterna en cada contacto exterior. La frecuencia del escape fija la rotación final y el tren selecciona escalas temporales, mientras centros, diámetros y puentes deben coexistir con energía y fabricación."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se diseña una cadena de ruedas que conecte barrilete, escape e indicación?",
+              "en": "¿Cómo se diseña una cadena de ruedas que conecte barrilete, escape e indicación?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena barrilete gira lentamente → rueda primera mueve piñón → móviles compuestos escalan velocidad → rueda de escape gira → escape cuenta → minutería deriva indicación, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena barrilete gira lentamente → rueda primera mueve piñón → móviles compuestos escalan velocidad → rueda de escape gira → escape cuenta → minutería deriva indicación, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.evidence",
+            "field.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.limit",
+            "field.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

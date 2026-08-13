@@ -1,0 +1,384 @@
+{
+  "id": "activity.quartz2035.create-isa-confidence-map",
+  "version": "0.5.0",
+  "title": "Crear mapa de confianza ISA 8172",
+  "sceneIds": [
+    "scene.practice.quartz2035.create-isa-confidence-map"
+  ],
+  "competencyIds": [
+    "competency.quartz2035.distinguish-observation-inference"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.quartz2035.provenance"
+  ],
+  "rubricId": "rubric.quartz2035.distinguish-observation-inference",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.miyota.2035.structural"
+  },
+  "authoring": {
+    "lessonId": "lesson.quartz2035.isa-memory",
+    "title": {
+      "es": "Crear mapa de confianza ISA 8172"
+    },
+    "description": {
+      "es": "Crear mapa de confianza ISA 8172 en el banco virtual 2035, con comandos deterministas, evidencia, cancelación y restauración."
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 12,
+    "activityType": "guided-practice",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "familyIds": [
+      "miyota-quartz-standard"
+    ],
+    "subsystem": "isa-memory",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Simulación educativa: no es un manual de servicio ni acredita reparación profesional.",
+        "Toda dependencia inferida o no verificada se muestra como tal."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.horology.original-quartz-practical-route"
+    ],
+    "visualResourceIds": [
+      "visual.quartz2035.isa-memory"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.miyota.2035.structural"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.quartz2035.create-isa-confidence-map.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Cómo debe registrarse un recuerdo del ISA 8172 antes de compararlo con 2035?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.quartz2035.create-isa-confidence-map.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Etiqueta recuerdo, equivalencia funcional y confirmación por separado."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.quartz2035.create-isa-confidence-map.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: La experiencia previa orienta preguntas, pero no hereda autoridad entre calibres."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.quartz2035.create-isa-confidence-map.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.quartz2035.create-isa-confidence-map.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "La experiencia previa orienta preguntas, pero no hereda autoridad entre calibres."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.quartz2035.create-isa-confidence-map.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Aplica el mapa al pasar de 2035 a otro cuarzo desconocido."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "answer-submitted",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "workbenchContract": {
+      "fixtureId": "fixture.miyota.2035.structural",
+      "modes": [
+        "guided"
+      ],
+      "requiredZones": [
+        "zone.movement",
+        "zone.tools",
+        "zone.tray",
+        "zone.inspection",
+        "zone.documentation"
+      ],
+      "evidenceContext": [
+        "mode",
+        "assistance",
+        "hints",
+        "errors",
+        "corrections",
+        "sources",
+        "initial-state",
+        "final-state",
+        "fixture-limitations"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La experiencia previa orienta preguntas, pero no hereda autoridad entre calibres."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «Como dato oficial del 2035 porque ambos son de cuarzo» y «Como dimensión aproximada obtenida de la memoria» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo debe registrarse un recuerdo del ISA 8172 antes de compararlo con 2035?"
+      },
+      "nextObservation": {
+        "es": "Etiqueta recuerdo, equivalencia funcional y confirmación por separado."
+      },
+      "misconceptionIds": [
+        "misconception.quartz2035.symptom-is-diagnosis",
+        "misconception.quartz2035.image-is-official-dimension"
+      ],
+      "transferPrompt": {
+        "es": "Aplica el mapa al pasar de 2035 a otro cuarzo desconocido."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.quartz2035.observe-before-disassembly",
+        "concept.quartz2035.distinguish-observation-inference"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Crear mapa de confianza ISA 8172», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Crear mapa de confianza ISA 8172», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Cómo debe registrarse un recuerdo del ISA 8172 antes de compararlo con 2035?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Etiqueta recuerdo, equivalencia funcional y confirmación por separado."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Crear mapa de confianza ISA 8172»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: La experiencia previa orienta preguntas, pero no hereda autoridad entre calibres."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "La experiencia previa orienta preguntas, pero no hereda autoridad entre calibres."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Crear mapa de confianza ISA 8172» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Crear mapa de confianza ISA 8172» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Crear mapa de confianza ISA 8172» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Aplica el mapa al pasar de 2035 a otro cuarzo desconocido."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "Como hipótesis con confianza y comprobación pendiente en fuentes del 2035"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Como dato oficial del 2035 porque ambos son de cuarzo"
+        },
+        {
+          "es": "Como dimensión aproximada obtenida de la memoria"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Aplica el mapa al pasar de 2035 a otro cuarzo desconocido."
+        }
+      },
+      "transferPrompt": {
+        "es": "Aplica el mapa al pasar de 2035 a otro cuarzo desconocido."
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.quartz2035.observe-before-disassembly"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.quartz2035.distinguish-observation-inference"
+      ],
+      "assessesConceptIds": [
+        "concept.quartz2035.distinguish-observation-inference"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.quartz2035.isa-memory",
+        "blockId": "block.quartz2035.isa-memory",
+        "conceptIds": [
+          "concept.quartz2035.distinguish-observation-inference"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba reconocimiento o decisiones dentro de una reconstrucción educativa del MIYOTA 2035. No certifica destreza de taller, ajuste, lubricación, tolerancias ni el estado de una unidad física.",
+        "en": "This activity checks recognition or decisions in an educational reconstruction of the MIYOTA 2035. It does not certify bench skill, adjustment, lubrication, tolerances, or the condition of a physical unit."
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.cases-water.cristales-y-biseles.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Cristales, biseles, tensiones y adhesivos",
+    "en": "Repasar Cristales, biseles, tensiones y adhesivos"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 418,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.cases-water.cristales-y-biseles"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.cases-water.cristales-y-biseles"
+  ],
+  "required": false
+}

@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.history-language.medir-el-tiempo",
+  "version": "1.1.0",
+  "title": "Cuaderno: Medir el tiempo: referencia, oscilador y contador",
+  "description": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Medir el tiempo: referencia, oscilador y contador. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.history-language.medir-el-tiempo.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.history-language.medir-el-tiempo.answer",
+      "instructionMarkdown": "Explica **Medir el tiempo: referencia, oscilador y contador** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.history-language.medir-el-tiempo.explain",
+          "promptMarkdown": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.history-language.medir-el-tiempo.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.medir-el-tiempo.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.medir-el-tiempo.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.medir-el-tiempo.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.history-language.medir-el-tiempo.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por aportar energía y sigue hasta mostrar una lectura.",
+                "en": "Empieza por aportar energía y sigue hasta mostrar una lectura."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.history-language.medir-el-tiempo.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Un reloj no crea tiempo: compara una referencia repetitiva con un conteo y presenta el resultado. La estabilidad del oscilador, el modo de mantenerlo, la división de su frecuencia y la lectura constituyen funciones distintas. Separarlas permite comparar clepsidras, péndulos, volantes, cuarzos y referencias atómicas sin confundir apariencia con principio.",
+                "en": "Un reloj no crea tiempo: compara una referencia repetitiva con un conteo y presenta el resultado. La estabilidad del oscilador, el modo de mantenerlo, la división de su frecuencia y la lectura constituyen funciones distintas. Separarlas permite comparar clepsidras, péndulos, volantes, cuarzos y referencias atómicas sin confundir apariencia con principio."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?",
+              "en": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena aportar energía → mantener una referencia repetitiva → contar o dividir ciclos → transmitir el conteo → mostrar una lectura, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena aportar energía → mantener una referencia repetitiva → contar o dividir ciclos → transmitir el conteo → mostrar una lectura, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.history-language.medir-el-tiempo.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.history-language.medir-el-tiempo.mechanism",
+            "field.encyclopedia.history-language.medir-el-tiempo.evidence",
+            "field.encyclopedia.history-language.medir-el-tiempo.limit",
+            "field.encyclopedia.history-language.medir-el-tiempo.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

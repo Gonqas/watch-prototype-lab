@@ -1,0 +1,46 @@
+{
+  "id": "evidence.metrology.verificar-cero",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.repetir-una-medicion",
+  "kind": "artifact",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.activity-metrology-verificar-cero",
+    "version": "0.1.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.metrology.repetir-una-medicion",
+    "packageId": "wplab.horology.inspection-metrology",
+    "activityIds": [
+      "activity.metrology.verificar-cero"
+    ],
+    "evidenceTemplateId": "evidence.metrology.verificar-cero",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "specimenId",
+      "componentId",
+      "imageAssetId",
+      "regionAnnotationId",
+      "instrumentId",
+      "instrumentVerificationId",
+      "readingIds",
+      "measurementSeriesId",
+      "calculation",
+      "uncertainty",
+      "findingId",
+      "confidence",
+      "comparisonId",
+      "proposalId",
+      "hintEventIds",
+      "adaptations"
+    ]
+  }
+}

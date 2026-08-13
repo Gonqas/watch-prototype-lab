@@ -1,0 +1,234 @@
+{
+  "id": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+  "version": "1.1.0",
+  "title": "Bloqueo, draw, caída, impulso y seguridad",
+  "blockIds": [
+    "block.encyclopedia.escapements-chronometry.geometria-del-escape"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.geometria-del-escape"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Bloqueo, draw, caída, impulso y seguridad",
+      "en": "Bloqueo, draw, caída, impulso y seguridad"
+    },
+    "purpose": {
+      "es": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+      "en": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Bloqueo, draw, caída, impulso y seguridad mediante relaciones causales.",
+        "en": "Explicar Bloqueo, draw, caída, impulso y seguridad mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-entrada",
+      "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-salida",
+      "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.accion-perdida"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+      "concept.encyclopedia.escapements-chronometry.geometria-del-escape.caida",
+      "concept.encyclopedia.escapements-chronometry.geometria-del-escape.seguridad-del-rodillo"
+    ],
+    "sourceIds": [
+      "source.private.daniels.escapements",
+      "source.private.vba-uhrentechnik",
+      "source.external.eta-swisslab-6497"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.escapements-chronometry.geometria-del-escape.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Bloqueo, draw, caída, impulso y seguridad después de estudiar su teoría.",
+        "en": "Observar y manipular Bloqueo, draw, caída, impulso y seguridad después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "La profundidad de bloqueo debe retener sin exigir desenganche excesivo. El draw lleva el áncora contra los topes y estabiliza; la caída da libertad tras el impulso; hornos, dardo, muesca y rodillo protegen frente a golpes. Cambiar una variable altera otras, por lo que el ajuste requiere jerarquía y geometría.",
+        "en": "La profundidad de bloqueo debe retener sin exigir desenganche excesivo. El draw lleva el áncora contra los topes y estabiliza; la caída da libertad tras el impulso; hornos, dardo, muesca y rodillo protegen frente a golpes. Cambiar una variable altera otras, por lo que el ajuste requiere jerarquía y geometría."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema escapement con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "verificar centros y topes",
+        "evaluar bloqueo",
+        "comprobar draw",
+        "observar impulso",
+        "medir caída",
+        "probar seguridad con energía limitada"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "draw",
+        "caída",
+        "seguridad del rodillo"
+      ],
+      "arrows": [
+        "verificar centros y topes → evaluar bloqueo",
+        "evaluar bloqueo → comprobar draw",
+        "comprobar draw → observar impulso",
+        "observar impulso → medir caída",
+        "medir caída → probar seguridad con energía limitada"
+      ],
+      "animations": [
+        "step-escapement",
+        "introduce-fault",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Bloqueo, draw, caída, impulso y seguridad sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Bloqueo, draw, caída, impulso y seguridad sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.escapements-chronometry.geometria-del-escape.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.caida",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.seguridad-del-rodillo"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1177,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.escapements-chronometry.geometria-del-escape"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: draw, caída, seguridad del rodillo.",
+          "en": "Defino con mis palabras: draw, caída, seguridad del rodillo."
+        },
+        {
+          "es": "Sigo «Bloqueo, draw, caída, impulso y seguridad» desde verificar centros y topes hasta probar seguridad con energía limitada y explico cada enlace.",
+          "en": "Sigo «Bloqueo, draw, caída, impulso y seguridad» desde verificar centros y topes hasta probar seguridad con energía limitada y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Bloqueo, draw, caída, impulso y seguridad» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Bloqueo, draw, caída, impulso y seguridad» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Crea un árbol diagnóstico para caída excesiva constante frente a caída irregular por sectores, indicando observaciones que separan hipótesis.",
+          "en": "Aplico el criterio a esta variante: Crea un árbol diagnóstico para caída excesiva constante frente a caída irregular por sectores, indicando observaciones que separan hipótesis."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Bloqueo, draw, caída, impulso y seguridad» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Bloqueo, draw, caída, impulso y seguridad» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.caida",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.seguridad-del-rodillo"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+          "en": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+        },
+        {
+          "es": "¿Qué relación causal de «Bloqueo, draw, caída, impulso y seguridad» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Bloqueo, draw, caída, impulso y seguridad» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

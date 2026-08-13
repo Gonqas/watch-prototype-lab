@@ -1,0 +1,34 @@
+{
+  "id": "rubric.metrology.verificar-cero",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.repetir-una-medicion",
+  "rules": [
+    {
+      "id": "rule.activity-metrology-verificar-cero.practice",
+      "version": "0.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.7,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan método, unidad, repetición, trazabilidad, incertidumbre, interpretación y reconocimiento de invalidez; no solo el número."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.activity-metrology-verificar-cero",
+    "version": "0.1.0",
+    "competencyId": "competency.metrology.repetir-una-medicion",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

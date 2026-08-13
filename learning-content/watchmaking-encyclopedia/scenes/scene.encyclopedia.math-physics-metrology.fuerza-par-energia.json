@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.math-physics-metrology.fuerza-par-energia",
+  "version": "1.1.0",
+  "title": "Cuaderno: Fuerza, par, trabajo, energía y potencia",
+  "description": "¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Fuerza, par, trabajo, energía y potencia. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.math-physics-metrology.fuerza-par-energia.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.math-physics-metrology.fuerza-par-energia.answer",
+      "instructionMarkdown": "Explica **Fuerza, par, trabajo, energía y potencia** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.math-physics-metrology.fuerza-par-energia.explain",
+          "promptMarkdown": "¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.math-physics-metrology.fuerza-par-energia.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.fuerza-par-energia.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.fuerza-par-energia.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.fuerza-par-energia.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.fuerza-par-energia.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por almacenar energía y sigue hasta mover indicación.",
+                "en": "Empieza por almacenar energía y sigue hasta mover indicación."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.fuerza-par-energia.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La fuerza describe interacción lineal; el par incorpora brazo respecto a un eje; el trabajo integra fuerza sobre desplazamiento; energía es capacidad de producir trabajo y potencia relaciona energía con tiempo. En un reloj importan tanto la cantidad almacenada como el par disponible, las pérdidas y la velocidad de entrega.",
+                "en": "La fuerza describe interacción lineal; el par incorpora brazo respecto a un eje; el trabajo integra fuerza sobre desplazamiento; energía es capacidad de producir trabajo y potencia relaciona energía con tiempo. En un reloj importan tanto la cantidad almacenada como el par disponible, las pérdidas y la velocidad de entrega."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?",
+              "en": "¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena almacenar energía → aplicar par → transmitir por engranes → vencer pérdidas → entregar impulso → mover indicación, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena almacenar energía → aplicar par → transmitir por engranes → vencer pérdidas → entregar impulso → mover indicación, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.math-physics-metrology.fuerza-par-energia.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.math-physics-metrology.fuerza-par-energia.mechanism",
+            "field.encyclopedia.math-physics-metrology.fuerza-par-energia.evidence",
+            "field.encyclopedia.math-physics-metrology.fuerza-par-energia.limit",
+            "field.encyclopedia.math-physics-metrology.fuerza-par-energia.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

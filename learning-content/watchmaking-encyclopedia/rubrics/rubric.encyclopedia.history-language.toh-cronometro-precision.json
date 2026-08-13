@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.history-language.toh-cronometro-precision",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.history-language.toh-cronometro-precision",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.history-language.toh-cronometro-precision",
+      "version": "1.1.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Reloj, cronómetro, precisión y exactitud."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.history-language.toh-cronometro-precision",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.history-language.toh-cronometro-precision",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

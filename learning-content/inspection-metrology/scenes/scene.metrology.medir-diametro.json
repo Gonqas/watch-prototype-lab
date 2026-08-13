@@ -1,0 +1,136 @@
+{
+  "id": "scene.metrology.medir-diametro",
+  "version": "0.2.0",
+  "title": "Medir diámetro",
+  "description": "Escena textual y accesible que prepara la operación real “Medir diámetro” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Medir diámetro. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-medir-diametro.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-medir-diametro.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Medir diámetro”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-medir-diametro.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Medir diámetro” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-medir-diametro",
+          "promptMarkdown": "¿Qué debe permanecer fijo para que varias lecturas describan la misma característica?\n\nEn «Medir diámetro», elige la conclusión que no excede la evidencia del ejemplo y justifica por qué las otras dos opciones fallan.",
+          "responseKind": "structured-response",
+          "options": [
+            {
+              "id": "option.activity-metrology-medir-diametro.defensible",
+              "label": "La serie es evidencia, no una conclusión automática. El mensurando y la regla de adopción deciden cómo se interpreta.",
+              "labels": {
+                "es": "La serie es evidencia, no una conclusión automática. El mensurando y la regla de adopción deciden cómo se interpreta.",
+                "en": "La serie es evidencia, no una conclusión automática. El mensurando y la regla de adopción deciden cómo se interpreta."
+              }
+            },
+            {
+              "id": "option.activity-metrology-medir-diametro.error-one",
+              "label": "Promediar lecturas que corresponden a orientaciones o datums distintos.",
+              "labels": {
+                "es": "Promediar lecturas que corresponden a orientaciones o datums distintos.",
+                "en": "Promediar lecturas que corresponden a orientaciones o datums distintos."
+              }
+            },
+            {
+              "id": "option.activity-metrology-medir-diametro.error-two",
+              "label": "Presionar hasta obtener el número esperado.",
+              "labels": {
+                "es": "Presionar hasta obtener el número esperado.",
+                "en": "Presionar hasta obtener el número esperado."
+              }
+            }
+          ],
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-medir-diametro.decision",
+              "label": "¿Qué debe permanecer fijo para que varias lecturas describan la misma característica?",
+              "kind": "choice",
+              "required": true,
+              "optionIds": [
+                "option.activity-metrology-medir-diametro.defensible",
+                "option.activity-metrology-medir-diametro.error-one",
+                "option.activity-metrology-medir-diametro.error-two"
+              ]
+            },
+            {
+              "id": "field.activity-metrology-medir-diametro.justification",
+              "label": "Justifica qué evidencia y qué límite hacen defendible tu elección.",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-medir-diametro.confidence",
+              "label": "Confianza en la decisión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Decide y justifica: ¿Qué debe permanecer fijo para que varias lecturas describan la misma característica?"
+            },
+            "feedback": {
+              "es": "La conclusión defendible conserva evidencia y alcance: La serie es evidencia, no una conclusión automática. El mensurando y la regla de adopción deciden cómo se interpreta."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-medir-diametro",
+          "requiredFieldIds": [
+            "field.activity-metrology-medir-diametro.decision",
+            "field.activity-metrology-medir-diametro.justification",
+            "field.activity-metrology-medir-diametro.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

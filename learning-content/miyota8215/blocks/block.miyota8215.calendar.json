@@ -1,0 +1,56 @@
+{
+  "id": "block.miyota8215.calendar",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Calendario",
+  "bodyMarkdown": "## Propósito\n\nExplicar piezas, capas, arrastre, corrección y ciclo de fecha sin inventar ventanas horarias.\n\n## Objetivos y prerrequisitos\n\n## Explicación\n\nEl disco de fecha, conductor, intermedio, saltador, corrector, muelle y protector se presentan con referencias. El ciclo y el bloqueo son simulaciones discretas sobre relaciones declaradas.\n\n## Visual e interacción\n\n- ciclo acelerado\n- aislamiento\n- retirada de capas permitidas\n- bloqueo simbólico\n\n## Fuentes, afirmaciones y vocabulario\n\nLas identidades, referencias y datos específicos proceden de documentación MIYOTA. La explicación es contenido educativo original. El libro privado solo aporta teoría general y no se copia. Los nombres en español conservan su equivalencia técnica en inglés y su referencia oficial.\n\n## Actividad, errores y ayuda\n\n- Explicar el calendario.\n- Recorrer un ciclo de fecha.\n\n## Evidencia y criterios de revisión\n\n## Limitaciones\n\n- No se declara una ventana de corrección segura ni una geometría exacta del salto.\n- Los niveles de reconstrucción y fidelidad se consultan en la ficha técnica; no certifican servicio profesional ni funcionamiento físico.\n\n## Resumen y siguiente conexión\n\nExplicar piezas, capas, arrastre, corrección y ciclo de fecha sin inventar ventanas horarias. Continúa con «Barrilete y energía».\n\n## Palabras y piezas clave\n\n- **Explicar cuerda y puesta en hora.** Explicar cuerda y puesta en hora con un modelo estructural, fuentes, operaciones y límites declarados.\n- **Explicar el calendario.** Explicar el calendario con un modelo estructural, fuentes, operaciones y límites declarados.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo transforma el calendario una entrada diaria en avance y posicionamiento de fecha sin inventar una ventana universal de corrección?\n\n## Modelo causal ampliado\n\nEl calendario recibe movimiento desde la indicación o su tren asociado, acciona el elemento de avance y desplaza el disco. Un saltador y su muelle posicionan la indicación en un estado legible. La corrección utiliza otra entrada hacia el mismo subsistema.\n\nCambio normal y corrección rápida pueden compartir piezas o estados; cualquier restricción horaria debe proceder del manual aplicable. El laboratorio muestra un ciclo discreto de relaciones, no fuerzas, elasticidad ni geometría exacta.\n\n## Ejemplo resuelto\n\nSe parte de fecha asentada. El conductor entra en la zona educativa de cambio, desplaza el disco y el saltador pasa al siguiente asiento. Después se restaura y se intenta corrección en un estado declarado incompatible por el escenario: el sistema bloquea la acción sin convertir esa regla simulada en ventana oficial universal.\n\n## Práctica deliberada\n\nOrdena reposo, entrada, avance y asentamiento. Repite desde una fase intermedia. En el intento independiente compara cambio normal y corrección, identificando su punto de convergencia.\n\n## Comprobación antes del laboratorio\n\n- Explicas entrada, avance y posicionamiento.\n- Diferencias ciclo y corrección.\n- Citas cualquier restricción específica.\n- No inventas una ventana horaria.\n\n## Transferencia\n\nTransfiere el modelo a un calendario con otra indicación y determina qué estados adicionales serían necesarios.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo transforma el calendario una entrada diaria en avance y posicionamiento de fecha sin inventar una ventana universal de corrección?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Transfiere el modelo a un calendario con otra indicación y determina qué estados adicionales serían necesarios.\n\n## Lectura técnica de relaciones y límites\n\nRepresenta el calendario como una pequeña máquina de estados. Define reposo asentado, entrada en cambio, avance y nuevo asentamiento. La corrección añade una entrada que debe analizarse contra esos estados; no la dibujes como una flecha libre hacia el disco. Si el manual declara restricciones, enlázalas a su referencia y revisión. Si no las declara el material curado, conserva el conflicto como desconocido. Distingue también “el disco se mueve” de “la fecha queda legible y posicionada”: el saltador y su muelle participan en el segundo resultado. La simulación no calcula la energía necesaria para vencer ese posicionamiento.",
+  "claims": [
+    {
+      "id": "claim.miyota8215.calendar",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "Calendario se practica sobre el modelo estructural del 8215 con autoridad y limitaciones visibles.",
+      "sourceStatement": "Documentación MIYOTA para identidad y estructura; explicación educativa original para la secuencia de aprendizaje.",
+      "method": "Modelo estructural del 8215 y controles educativos del Sistema 4F",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+          "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+          "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4f:calendar:0.5.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-miyota8215",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4F · MIYOTA 8215 completo"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Arquitectura de laboratorio, explicaciones, actividades, operaciones educativas y evaluación originales del Sistema 4F.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.miyota8215.explain-calendar"
+    ],
+    "estimatedMinutes": 4,
+    "userPaced": true
+  }
+}

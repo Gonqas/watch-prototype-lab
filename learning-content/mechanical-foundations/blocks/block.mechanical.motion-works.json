@@ -1,0 +1,56 @@
+{
+  "id": "block.mechanical.motion-works",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Minutería e indicación",
+  "bodyMarkdown": "## Propósito\n\nRelacionar tren de marcha, fricción, minutería y agujas.\n\n## Objetivos observables\n\n## Prerrequisitos\n\n## Explicación\n\nEl cañón de minutos, la rueda de minutería y la rueda de horas forman una rama de indicación. El modelo usa una relación didáctica de doce horas y permite desacoplar la salida, avanzar tiempo y representar agujas rozando sin fingir alturas reales.\n\n## Interacción y actividad\n\n## Fuentes y alcance de las afirmaciones\n\nEl libro privado se usa como teoría general en los capítulos declarados en la ficha de fuentes; no se copia texto. Cada explicación o cálculo del laboratorio indica si es una síntesis educativa o un resultado calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan el movimiento del modelo conceptual.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nRelacionar tren de marcha, fricción, minutería y agujas. Continúa con “Cuerda y puesta en hora”.\n\n## Palabras y piezas clave\n\n- **Explicar escape y oscilador como sistema.** Explicar escape y oscilador como sistema mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n- **Explicar la minutería.** Explicar la minutería mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo transforma la minutería una rotación disponible en indicaciones de minutos y horas y, al mismo tiempo, permite poner las agujas en hora?\n\n## Modelo causal ampliado\n\nLa minutería toma movimiento de una etapa de salida y establece relaciones para las agujas. La rueda o cañón que porta el minutero, la rueda de minutería y la rueda de horas forman una cadena en la que el horario debe avanzar una vuelta mientras el minutero completa doce. La relación funcional importa más que el nombre aislado de cada pieza.\n\nLa puesta en hora exige una interfaz que pueda mover la indicación sin destruir la cadena de marcha. En muchas arquitecturas se utiliza una unión de fricción en torno al cañón de minutos; la realización exacta debe confirmarse para cada calibre. La fricción suficiente transmite durante la marcha y permite el ajuste cuando actúa el sistema de puesta. El modelo educativo representa estados y relaciones, no el par de fricción ni el ajuste de agujas.\n\n## Ejemplo resuelto\n\nParte de las 3:00. Si el minutero recorre una vuelta completa, el horario debe pasar a las 4:00. Una configuración que deja ambos ejes a la misma velocidad es incompatible con la indicación de doce horas. Después se activa el estado de puesta: la entrada procede de la corona y la tija, no del barrilete, aunque el resultado visible siga siendo el movimiento de las agujas.\n\n## Práctica deliberada\n\nConstruye primero la cadena con relaciones ya etiquetadas. En el segundo intento solo se ofrece el objetivo 12:1. En el tercero debes detectar una rueda invertida o una relación incorrecta observando el desacuerdo entre minutos y horas. Finaliza restaurando las agujas y describiendo la ruta activa.\n\n## Comprobación antes del laboratorio\n\n- Relacionas una vuelta del minutero con un doceavo de vuelta del horario.\n- Diferencias la entrada de marcha de la entrada de puesta.\n- Reconoces el papel de una unión de fricción sin asignarle un valor inventado.\n- Compruebas coherencia de indicación tras restaurar.\n\n## Transferencia\n\nTransfiere el esquema a un reloj de 24 horas o a una indicación descentrada y determina qué relación o interfaz tendría que cambiar.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo transforma la minutería una rotación disponible en indicaciones de minutos y horas y, al mismo tiempo, permite poner las agujas en hora?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Transfiere el esquema a un reloj de 24 horas o a una indicación descentrada y determina qué relación o interfaz tendría que cambiar.\n\n## Lectura técnica de relaciones y límites\n\nComprueba la coherencia en cuatro puntos de la esfera, no solo al completar una vuelta. Tras quince, treinta, cuarenta y cinco y sesenta minutos, el horario debe haber recorrido fracciones compatibles. El ejercicio detecta relaciones que coinciden por casualidad al inicio o al final. Separa además la alineación visual de las agujas de su ajuste físico sobre los cañones, que no está representado.",
+  "claims": [
+    {
+      "id": "claim.mechanical.motion-works",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "Minutería e indicación se representa mediante un modelo conceptual reversible y no como comportamiento exacto del 8215.",
+      "sourceStatement": "Teoría privada y explicación educativa original; sin reproducción textual ni datos específicos trasladados.",
+      "method": "Modelo declarativo y cálculos deterministas del Sistema 4E",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4e:motion-works:0.1.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-mechanical-foundations",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4E · Fundamentos del reloj mecánico"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Laboratorios, cálculos educativos, explicaciones, actividades y evaluación originales.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.explain-motion-works"
+    ],
+    "estimatedMinutes": 5,
+    "userPaced": true
+  }
+}

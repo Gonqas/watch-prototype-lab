@@ -1,0 +1,150 @@
+{
+  "format": "wplab-learning-pack",
+  "formatVersion": 1,
+  "schemaId": "learning-pack-v1",
+  "packageVersion": "1.0.0",
+  "id": "wplab.example.authoring-course",
+  "title": "Ejemplo de autoría declarativa",
+  "distribution": "integrated",
+  "authors": [
+    {
+      "name": "Watch Prototype Lab"
+    }
+  ],
+  "languages": [
+    "es-ES",
+    "en-US"
+  ],
+  "dependencies": [],
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0"
+  ],
+  "movements": [],
+  "assets": [],
+  "entries": {
+    "curricula": [
+      {
+        "id": "curriculum.authoring-example",
+        "path": "curriculum/curriculum.authoring-example.json"
+      }
+    ],
+    "routes": [
+      {
+        "id": "route.authoring-first-package",
+        "path": "routes/route.authoring-first-package.json"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module.authoring-traceable-scene",
+        "path": "modules/module.authoring-traceable-scene.json"
+      }
+    ],
+    "concepts": [
+      {
+        "id": "concept.authoring.traceability",
+        "path": "concepts/concept.authoring.traceability.json"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "explanation.authoring.traceability",
+        "path": "blocks/explanation.authoring.traceability.json"
+      },
+      {
+        "id": "exercise.authoring.map-contracts",
+        "path": "blocks/exercise.authoring.map-contracts.json"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "lesson.authoring.traceability",
+        "path": "lessons/lesson.authoring.traceability.json"
+      },
+      {
+        "id": "lesson.authoring.storyboard",
+        "path": "lessons/lesson.authoring.storyboard.json"
+      }
+    ],
+    "activities": [
+      {
+        "id": "activity.authoring.selector-walkthrough",
+        "path": "activities/activity.authoring.selector-walkthrough.json"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "scene.authoring.selector-walkthrough",
+        "path": "scenes/scene.authoring.selector-walkthrough.json"
+      }
+    ],
+    "competencies": [
+      {
+        "id": "competency.authoring.traceable-activity",
+        "path": "competencies/competency.authoring.traceable-activity.json"
+      }
+    ],
+    "evidenceTemplates": [
+      {
+        "id": "evidence.authoring.selection",
+        "path": "evidence/evidence.authoring.selection.json"
+      }
+    ],
+    "rubrics": [
+      {
+        "id": "rubric.authoring.traceable-activity",
+        "path": "rubrics/rubric.authoring.traceable-activity.json"
+      }
+    ],
+    "glossary": [
+      {
+        "id": "term.authoring.selector",
+        "path": "glossary/term.authoring.selector.json"
+      },
+      {
+        "id": "term.authoring.fidelity",
+        "path": "glossary/term.authoring.fidelity.json"
+      },
+      {
+        "id": "term.authoring.claim",
+        "path": "glossary/term.authoring.claim.json"
+      }
+    ],
+    "sources": [
+      {
+        "id": "source.authoring.system-contracts",
+        "path": "sources/source.authoring.system-contracts.json"
+      },
+      {
+        "id": "source.authoring.original-guide",
+        "path": "sources/source.authoring.original-guide.json"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "recommendation.authoring.review-storyboard",
+        "path": "recommendations/recommendation.authoring.review-storyboard.json"
+      }
+    ],
+    "visualResources": [
+      {
+        "id": "visual.authoring.selector-scene",
+        "path": "visual-resources/visual.authoring.selector-scene.json"
+      },
+      {
+        "id": "visual.authoring.selector-text-alternative",
+        "path": "visual-resources/visual.authoring.selector-text-alternative.json"
+      }
+    ]
+  },
+  "minimumAppVersion": "0.4.1",
+  "createdAt": "2026-07-23T15:00:00.000Z"
+}

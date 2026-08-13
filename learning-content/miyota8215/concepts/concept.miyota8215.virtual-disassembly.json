@@ -1,0 +1,72 @@
+{
+  "id": "concept.miyota8215.virtual-disassembly",
+  "version": "0.5.0",
+  "title": {
+    "es": "Desmontar virtualmente",
+    "en": "Desmontar virtualmente"
+  },
+  "summary": {
+    "es": "Desmontar virtualmente con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Desmontar virtualmente con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.miyota8215.prepare-disassembly",
+    "concept.miyota8215.preserve-identity-orientation"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.recognize-subsystems"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.virtual-disassembly"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "disassembly",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.remove-rotor",
+    "activity.miyota8215.guided-disassembly",
+    "activity.miyota8215.assisted-disassembly",
+    "activity.miyota8215.free-disassembly"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Desmontar virtualmente describe una relación causal dentro de desmontaje: una entrada produce un cambio observable mediante una interfaz declarada. Desmontar virtualmente con un modelo estructural, fuentes, operaciones y límites declarados. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Desmontar virtualmente describe una relación causal dentro de desmontaje: una entrada produce un cambio observable mediante una interfaz declarada. Desmontar virtualmente con un modelo estructural, fuentes, operaciones y límites declarados. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.inspect"
+  ],
+  "plainLanguage": {
+    "es": "Desmontar virtualmente con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Desmontar virtualmente con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Dominar desmontar virtualmente permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega desmontar virtualmente dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema disassembly."
+    }
+  ],
+  "misconceptionIds": [],
+  "knowledgeType": "conceptual-causal",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.guided-disassembly",
+  "targetEvidenceLevel": "causal-explanation"
+}

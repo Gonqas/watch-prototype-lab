@@ -1,0 +1,337 @@
+{
+  "id": "activity.encyclopedia.math-physics-metrology.toh-contar-tren",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Diseño inverso de un tren de conteo",
+  "sceneIds": [
+    "scene.encyclopedia.math-physics-metrology.toh-contar-tren"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.toh-contar-tren"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.math-physics-metrology.toh-contar-tren"
+  ],
+  "rubricId": "rubric.encyclopedia.math-physics-metrology.toh-contar-tren",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+    "title": {
+      "es": "Explicar y transferir: Diseño inverso de un tren de conteo",
+      "en": "Explicar y transferir: Diseño inverso de un tren de conteo"
+    },
+    "description": {
+      "es": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+      "en": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?"
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 35,
+    "activityType": "observation-3d",
+    "movementIds": [
+      "movement.conceptual.mechanical-chain"
+    ],
+    "familyIds": [],
+    "subsystem": "engineering-math",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion",
+      "viewport.camera",
+      "viewport.overlay.labels"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Cinemática educativa reversible; no valida geometría, fuerzas, tolerancias, lubricación ni competencia física."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.toh.ch05",
+      "source.private.vba-uhrentechnik",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.math-physics-metrology.toh-contar-tren.causal-lab"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "train",
+      "commands": [
+        "change-ratio",
+        "add-stage",
+        "remove-stage",
+        "rotate",
+        "inspect",
+        "restore"
+      ],
+      "viewModes": [
+        "schematic",
+        "kinematics",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.relacion-objetivo",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.factorizacion-de-tren",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.restriccion-geometrica"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.relacion-objetivo",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.factorizacion-de-tren",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.restriccion-geometrica"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.relacion-objetivo",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.factorizacion-de-tren",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.restriccion-geometrica"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+        "blockId": "block.encyclopedia.math-physics-metrology.toh-contar-tren",
+        "conceptIds": [
+          "concept.encyclopedia.math-physics-metrology.toh-contar-tren.relacion-objetivo",
+          "concept.encyclopedia.math-physics-metrology.toh-contar-tren.factorizacion-de-tren",
+          "concept.encyclopedia.math-physics-metrology.toh-contar-tren.restriccion-geometrica"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Diseño inverso de un tren de conteo sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Diseño inverso de un tren de conteo sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Dos factorizaciones pueden producir la misma indicación pero exigir diámetros, piñones y centros distintos. La solución aritmética es solo candidata hasta verificar fabricabilidad y potencia.",
+          "en": "Dos factorizaciones pueden producir la misma indicación pero exigir diámetros, piñones y centros distintos. La solución aritmética es solo candidata hasta verificar fabricabilidad y potencia."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+            "en": "Identificar la pregunta: ¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?"
+          },
+          {
+            "es": "Dibujar la secuencia convertir frecuencia a impulsos → obtener vueltas del escape → fijar salida → calcular relación total → factorizar etapas → comprobar geometría.",
+            "en": "Dibujar la secuencia convertir frecuencia a impulsos → obtener vueltas del escape → fijar salida → calcular relación total → factorizar etapas → comprobar geometría."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: alternancias por hora; dientes de escape; vueltas por hora; producto de relaciones.",
+            "en": "Asignar magnitudes y evidencia: alternancias por hora; dientes de escape; vueltas por hora; producto de relaciones."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Propón dos trenes para una misma frecuencia y compara compromisos.",
+          "en": "Propón dos trenes para una misma frecuencia y compara compromisos."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: convertir frecuencia a impulsos → obtener vueltas del escape → fijar salida → calcular relación total → factorizar etapas → comprobar geometría.",
+            "en": "Completa la cadena con las etapas visibles: convertir frecuencia a impulsos → obtener vueltas del escape → fijar salida → calcular relación total → factorizar etapas → comprobar geometría."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+            "en": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Propón dos trenes para una misma frecuencia y compara compromisos.",
+            "en": "Propón dos trenes para una misma frecuencia y compara compromisos."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "La relación total determina un único tren",
+          "en": "La relación total determina un único tren"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Diseño inverso de un tren de conteo con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Diseño inverso de un tren de conteo con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Propón dos trenes para una misma frecuencia y compara compromisos.",
+        "en": "Propón dos trenes para una misma frecuencia y compara compromisos."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena convertir frecuencia a impulsos → obtener vueltas del escape → fijar salida → calcular relación total → factorizar etapas → comprobar geometría, su evidencia y límites.",
+        "en": "La explicación conserva la cadena convertir frecuencia a impulsos → obtener vueltas del escape → fijar salida → calcular relación total → factorizar etapas → comprobar geometría, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «La relación total determina un único tren».",
+        "en": "Revisa si omitiste una interfaz o caíste en «La relación total determina un único tren»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+        "en": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Ignorar si el escape avanza un diente por ciclo o por alternancia. de Aceptar cualquier factorización entera..",
+        "en": "Busca evidencia para distinguir Ignorar si el escape avanza un diente por ciclo o por alternancia. de Aceptar cualquier factorización entera.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.math-physics-metrology.toh-contar-tren"
+      ],
+      "transferPrompt": {
+        "es": "Propón dos trenes para una misma frecuencia y compara compromisos.",
+        "en": "Propón dos trenes para una misma frecuencia y compara compromisos."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.relacion-objetivo",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.factorizacion-de-tren",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.restriccion-geometrica"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+          "en": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?"
+        },
+        {
+          "es": "¿Qué relación causal de «Diseño inverso de un tren de conteo» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Diseño inverso de un tren de conteo» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

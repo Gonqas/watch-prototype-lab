@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+  "version": "1.1.0",
+  "title": "Cuaderno: Oscilación, frecuencia, resonancia y amortiguamiento",
+  "description": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Oscilación, frecuencia, resonancia y amortiguamiento. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.answer",
+      "instructionMarkdown": "Explica **Oscilación, frecuencia, resonancia y amortiguamiento** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.explain",
+          "promptMarkdown": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por desplazar del equilibrio y sigue hasta recibir mantenimiento.",
+                "en": "Empieza por desplazar del equilibrio y sigue hasta recibir mantenimiento."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Un oscilador intercambia energía potencial y cinética alrededor de un equilibrio. Inercia y rigidez fijan una frecuencia ideal; pérdidas determinan amortiguamiento y energía de mantenimiento. No linealidades, perturbaciones y acoplamiento hacen que frecuencia y amplitud dependan de estado y entorno.",
+                "en": "Un oscilador intercambia energía potencial y cinética alrededor de un equilibrio. Inercia y rigidez fijan una frecuencia ideal; pérdidas determinan amortiguamiento y energía de mantenimiento. No linealidades, perturbaciones y acoplamiento hacen que frecuencia y amplitud dependan de estado y entorno."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+              "en": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.mechanism",
+            "field.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.evidence",
+            "field.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.limit",
+            "field.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

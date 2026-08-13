@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.service-tribology.liberar-energia-y-desmontar.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Liberar energía y desmontar con trazabilidad",
+    "en": "Repasar Liberar energía y desmontar con trazabilidad"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 419,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.service-tribology.liberar-energia-y-desmontar"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.service-tribology.liberar-energia-y-desmontar"
+  ],
+  "required": false
+}

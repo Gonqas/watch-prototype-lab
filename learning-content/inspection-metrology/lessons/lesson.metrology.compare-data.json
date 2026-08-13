@@ -1,0 +1,126 @@
+{
+  "id": "lesson.metrology.compare-data",
+  "version": "0.2.0",
+  "title": "Comparar datos",
+  "blockIds": [
+    "block.metrology.compare-data"
+  ],
+  "activityIds": [
+    "activity.metrology.comparar-nominal-y-medido",
+    "activity.metrology.determinar-validez-de-comparacion"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Comparar datos"
+    },
+    "purpose": {
+      "es": "Comprender y aplicar cómo contrastar nominal, reconstruido y medido con marcos y tolerancias explícitos."
+    },
+    "objectives": [
+      {
+        "es": "Explicar cómo contrastar nominal, reconstruido y medido con marcos y tolerancias explícitos."
+      },
+      {
+        "es": "Reconocer un resultado inválido o insuficiente."
+      },
+      {
+        "es": "Conservar evidencia y alcance."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.metrology.inspection-findings"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.metrology.compare-data"
+    ],
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "guided-practice",
+      "entryCheck": "ungraded-diagnostic",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.metrology.compare-data"
+      ],
+      "reinforcesConceptIds": [
+        "concept.metrology.inspection-findings"
+      ],
+      "bridgeConceptIds": []
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.metrology.compare-data"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar tolerancias, exactitudes, calibraciones, diagnósticos ni datos de fabricante."
+        },
+        {
+          "es": "No aprobar propuestas, elevar fidelidad o modificar CAD."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente?"
+        },
+        {
+          "es": "¿Qué método y referencia hacen repetible este resultado?"
+        },
+        {
+          "es": "¿Qué limitación impide generalizarlo?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 717,
+      "requiredSegmentRoles": [
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.metrology.comparar-nominal-y-medido",
+        "activity.metrology.determinar-validez-de-comparacion"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Explicar cómo contrastar nominal, reconstruido y medido con marcos y tolerancias explícitos."
+        },
+        {
+          "es": "Reconocer un resultado inválido o insuficiente."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Comparar datos», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    }
+  }
+}

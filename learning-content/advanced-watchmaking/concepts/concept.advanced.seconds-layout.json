@@ -1,0 +1,71 @@
+{
+  "id": "concept.advanced.seconds-layout",
+  "version": "1.0.0",
+  "title": {
+    "es": "Pequeño segundero, central directo e indirecto",
+    "en": "Pequeño segundero, central directo e indirecto"
+  },
+  "summary": {
+    "es": "¿Qué ruta mecánica lleva una vuelta por minuto hasta la aguja de segundos?",
+    "en": "¿Qué ruta mecánica lleva una vuelta por minuto hasta la aguja de segundos?"
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.advanced.atlas-authority"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.advanced.atlas-authority",
+    "concept.advanced.winding-systems"
+  ],
+  "competencyIds": [
+    "competency.advanced.seconds-layout"
+  ],
+  "movementIds": [],
+  "subsystem": "seconds",
+  "routeIds": [
+    "route.advanced.comparative-atlas"
+  ],
+  "activityIds": [
+    "activity.advanced.seconds-layout"
+  ],
+  "sourceIds": [
+    "source.eta.6497-2.product",
+    "source.eta.2824-2.product",
+    "source.eta.7750.product",
+    "source.external.ranfft"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Qué ruta mecánica lleva una vuelta por minuto hasta la aguja de segundos?",
+    "en": "¿Qué ruta mecánica lleva una vuelta por minuto hasta la aguja de segundos?"
+  },
+  "technicalLanguage": {
+    "es": "La posición de la aguja no revela por sí sola la arquitectura. En un pequeño segundero, una rueda del tren lleva su eje hasta una subesfera desplazada. En un central directo, el móvil que gira una vez por minuto ocupa o comparte el eje central. En un central indirecto, una transmisión adicional toma el movimiento desde una rueda desplazada y lo lleva al centro. Este último camino puede necesitar un elemento de fricción para controlar juego o temblor, pero su forma concreta depende del calibre.",
+    "en": "La posición de la aguja no revela por sí sola la arquitectura. En un pequeño segundero, una rueda del tren lleva su eje hasta una subesfera desplazada. En un central directo, el móvil que gira una vez por minuto ocupa o comparte el eje central. En un central indirecto, una transmisión adicional toma el movimiento desde una rueda desplazada y lo lleva al centro. Este último camino puede necesitar un elemento de fricción para controlar juego o temblor, pero su forma concreta depende del calibre."
+  },
+  "whyItMatters": {
+    "es": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física.",
+    "en": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física."
+  },
+  "observableActions": [
+    {
+      "es": "Separa hecho, inferencia y desconocido.",
+      "en": "Separa hecho, inferencia y desconocido."
+    },
+    {
+      "es": "Compara relaciones y compromisos.",
+      "en": "Compara relaciones y compromisos."
+    },
+    {
+      "es": "Declara fuentes, riesgos y límites.",
+      "en": "Declara fuentes, riesgos y límites."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.advanced.winding-systems"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

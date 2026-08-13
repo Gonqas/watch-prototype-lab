@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.escapements-chronometry.bulova-centrado-volante.error-radial",
+  "version": "1.1.0",
+  "title": {
+    "es": "error radial",
+    "en": "error radial"
+  },
+  "summary": {
+    "es": "Variación de distancia de la llanta al eje durante una vuelta.",
+    "en": "Variación de distancia de la llanta al eje durante una vuelta."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.jaula",
+    "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.periodo-de-rotacion",
+    "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.promedio-posicional"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.bulova-centrado-volante"
+  ],
+  "movementIds": [],
+  "subsystem": "balance",
+  "routeIds": [
+    "route.encyclopedia.escapements-chronometry"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.bulova-centrado-volante"
+  ],
+  "sourceIds": [
+    "source.private.bulova.02",
+    "source.private.chicago.16",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.escapements-chronometry.bulova-centrado-volante"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+  "plainLanguage": {
+    "es": "Variación de distancia de la llanta al eje durante una vuelta.",
+    "en": "Variación de distancia de la llanta al eje durante una vuelta."
+  },
+  "technicalLanguage": {
+    "es": "error radial se interpreta mediante la cadena verificar montaje → elegir referencia → girar lentamente → clasificar radial o axial → corregir localmente → repetir vuelta completa y las condiciones declaradas en la unidad.",
+    "en": "error radial se interpreta mediante la cadena verificar montaje → elegir referencia → girar lentamente → clasificar radial o axial → corregir localmente → repetir vuelta completa y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se distinguen error radial, axial y desplazamiento de montaje?",
+    "en": "Permite explicar y comprobar ¿cómo se distinguen error radial, axial y desplazamiento de montaje?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir error radial sin circularidad.",
+      "en": "Definir error radial sin circularidad."
+    },
+    {
+      "es": "Relacionar error radial con una entrada, una interfaz y una salida.",
+      "en": "Relacionar error radial con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

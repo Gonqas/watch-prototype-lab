@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.complications.toh-automatico-rotor",
+  "version": "1.1.0",
+  "title": "Cuaderno: Rotor, masa excéntrica y captación de movimiento",
+  "description": "¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Rotor, masa excéntrica y captación de movimiento. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.complications.toh-automatico-rotor.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.complications.toh-automatico-rotor.answer",
+      "instructionMarkdown": "Explica **Rotor, masa excéntrica y captación de movimiento** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.complications.toh-automatico-rotor.explain",
+          "promptMarkdown": "¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.complications.toh-automatico-rotor.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-automatico-rotor.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-automatico-rotor.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-automatico-rotor.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.complications.toh-automatico-rotor.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por mover caja y sigue hasta cargar muelle.",
+                "en": "Empieza por mover caja y sigue hasta cargar muelle."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.complications.toh-automatico-rotor.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La masa excéntrica genera movimiento relativo; rodamientos o apoyos lo guían; engranajes y reversores rectifican uno o ambos sentidos; el sistema limita sobrecarga mediante la arquitectura del barrilete.",
+                "en": "La masa excéntrica genera movimiento relativo; rodamientos o apoyos lo guían; engranajes y reversores rectifican uno o ambos sentidos; el sistema limita sobrecarga mediante la arquitectura del barrilete."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?",
+              "en": "¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena mover caja → rotar masa → transmitir a reversor → rectificar sentido → reducir y aumentar par → cargar muelle, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena mover caja → rotar masa → transmitir a reversor → rectificar sentido → reducir y aumentar par → cargar muelle, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.complications.toh-automatico-rotor.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.complications.toh-automatico-rotor.mechanism",
+            "field.encyclopedia.complications.toh-automatico-rotor.evidence",
+            "field.encyclopedia.complications.toh-automatico-rotor.limit",
+            "field.encyclopedia.complications.toh-automatico-rotor.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

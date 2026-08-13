@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.complications.toh-reversores-deslizamiento",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.complications.toh-reversores-deslizamiento",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.complications.toh-reversores-deslizamiento",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Reversores, desacoplamiento y limitación de carga."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.complications.toh-reversores-deslizamiento",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.complications.toh-reversores-deslizamiento",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

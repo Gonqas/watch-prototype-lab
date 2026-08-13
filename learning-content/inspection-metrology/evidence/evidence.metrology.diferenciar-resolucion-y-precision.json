@@ -1,0 +1,46 @@
+{
+  "id": "evidence.metrology.diferenciar-resolucion-y-precision",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.verificar-un-instrumento",
+  "kind": "procedure",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.activity-metrology-diferenciar-resolucion-y-precision",
+    "version": "0.1.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.metrology.verificar-un-instrumento",
+    "packageId": "wplab.horology.inspection-metrology",
+    "activityIds": [
+      "activity.metrology.diferenciar-resolucion-y-precision"
+    ],
+    "evidenceTemplateId": "evidence.metrology.diferenciar-resolucion-y-precision",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "specimenId",
+      "componentId",
+      "imageAssetId",
+      "regionAnnotationId",
+      "instrumentId",
+      "instrumentVerificationId",
+      "readingIds",
+      "measurementSeriesId",
+      "calculation",
+      "uncertainty",
+      "findingId",
+      "confidence",
+      "comparisonId",
+      "proposalId",
+      "hintEventIds",
+      "adaptations"
+    ]
+  }
+}

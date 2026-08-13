@@ -1,0 +1,74 @@
+{
+  "id": "concept.quartz2035.perform-partial-checks",
+  "version": "0.5.0",
+  "title": {
+    "es": "Realizar comprobaciones parciales"
+  },
+  "summary": {
+    "es": "Concepto práctico: realizar comprobaciones parciales, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.quartz2035.assemble-virtually"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.quartz2035.perform-partial-checks"
+  ],
+  "movementIds": [
+    "fixture.miyota.2035.structural"
+  ],
+  "subsystem": "verification",
+  "routeIds": [
+    "route.quartz2035.isa-to-2035"
+  ],
+  "activityIds": [
+    "activity.quartz2035.prepare-workbench",
+    "activity.quartz2035.detect-unsafe-conditions",
+    "activity.quartz2035.select-tools",
+    "activity.quartz2035.reject-wrong-tool",
+    "activity.quartz2035.identify-movement-zones",
+    "activity.quartz2035.record-initial-condition",
+    "activity.quartz2035.create-isa-confidence-map",
+    "activity.quartz2035.compare-isa-functionally",
+    "activity.quartz2035.read-drawing",
+    "activity.quartz2035.associate-reference-part",
+    "activity.quartz2035.classify-subsystems",
+    "activity.quartz2035.follow-functional-chain",
+    "activity.quartz2035.order-disassembly-steps",
+    "activity.quartz2035.disassemble-to-tray",
+    "activity.quartz2035.assemble-guided",
+    "activity.quartz2035.assemble-assisted-free",
+    "activity.quartz2035.identify-error-hypothesis",
+    "activity.quartz2035.choose-check",
+    "activity.quartz2035.complete-final-project",
+    "activity.quartz2035.review-final-dossier"
+  ],
+  "sourceIds": [
+    "source.horology.original-quartz-practical-route"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Concepto práctico: realizar comprobaciones parciales, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles."
+  },
+  "technicalLanguage": {
+    "es": "Realizar comprobaciones parciales separa observación, síntoma, hipótesis y comprobación en verification. Concepto práctico: realizar comprobaciones parciales, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles.",
+    "en": "Realizar comprobaciones parciales separa observación, síntoma, hipótesis y comprobación en verification. Concepto práctico: realizar comprobaciones parciales, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles."
+  },
+  "whyItMatters": {
+    "es": "Dominar realizar comprobaciones parciales permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega realizar comprobaciones parciales dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema verification."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [],
+  "knowledgeType": "diagnostic",
+  "recommendedPrerequisiteIds": [],
+  "targetEvidenceLevel": "transfer"
+}

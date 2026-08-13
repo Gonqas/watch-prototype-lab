@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

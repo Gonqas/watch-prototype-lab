@@ -1,0 +1,32 @@
+{
+  "id": "evidence.capstone.validation.beginner-usability.human-review",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.validation.beginner-usability",
+  "kind": "human-review",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.validation.beginner-usability.human-review",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-human-review-completed",
+    "evidenceType": "human-review",
+    "competencyId": "competency.capstone.validation.beginner-usability",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.validation.beginner-usability"
+    ],
+    "evidenceTemplateId": "evidence.capstone.validation.beginner-usability.human-review",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "reviewerId",
+      "criteria",
+      "result",
+      "notes"
+    ]
+  }
+}

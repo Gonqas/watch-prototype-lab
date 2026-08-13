@@ -1,0 +1,136 @@
+{
+  "id": "route.advanced.comparative-atlas",
+  "version": "1.0.0",
+  "title": {
+    "es": "Atlas comparativo de movimientos",
+    "en": "Atlas comparativo de movimientos"
+  },
+  "purpose": {
+    "es": "Aprender a comparar familias, calibres y fuentes sin confundir identidad, arquitectura, aspecto ni autoridad.",
+    "en": "Aprender a comparar familias, calibres y fuentes sin confundir identidad, arquitectura, aspecto ni autoridad."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.advanced.atlas-authority",
+    "module.advanced.seconds-layout",
+    "module.advanced.winding-systems",
+    "module.advanced.construction-trade-study"
+  ],
+  "competencyIds": [
+    "competency.advanced.atlas-authority",
+    "competency.advanced.seconds-layout",
+    "competency.advanced.winding-systems",
+    "competency.advanced.construction-trade-study"
+  ],
+  "movementIds": [],
+  "difficulty": "intermediate",
+  "sourceIds": [
+    "source.eta.6497-2.communication",
+    "source.external.ranfft",
+    "source.external.17jewels",
+    "source.external.watchguy",
+    "source.external.pocketwatchdatabase",
+    "source.eta.6497-2.product",
+    "source.eta.2824-2.product",
+    "source.eta.7750.product",
+    "source.seiko.42.technical-guide",
+    "source.seiko.6138a.technical-guide",
+    "source.miyota.8215.official"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.advanced.atlas.01",
+        "order": 1,
+        "title": {
+          "es": "Leer un movimiento con autoridad y procedencia",
+          "en": "Leer un movimiento con autoridad y procedencia"
+        },
+        "outcome": {
+          "es": "¿Qué puedo afirmar, qué solo puedo inferir y qué sigue siendo desconocido?",
+          "en": "¿Qué puedo afirmar, qué solo puedo inferir y qué sigue siendo desconocido?"
+        },
+        "lessonId": "lesson.advanced.atlas-authority",
+        "activityId": "activity.advanced.atlas-authority",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.atlas-authority"
+        ]
+      },
+      {
+        "id": "milestone.advanced.atlas.02",
+        "order": 2,
+        "title": {
+          "es": "Pequeño segundero, central directo e indirecto",
+          "en": "Pequeño segundero, central directo e indirecto"
+        },
+        "outcome": {
+          "es": "¿Qué ruta mecánica lleva una vuelta por minuto hasta la aguja de segundos?",
+          "en": "¿Qué ruta mecánica lleva una vuelta por minuto hasta la aguja de segundos?"
+        },
+        "lessonId": "lesson.advanced.seconds-layout",
+        "activityId": "activity.advanced.seconds-layout",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.seconds-layout"
+        ]
+      },
+      {
+        "id": "milestone.advanced.atlas.03",
+        "order": 3,
+        "title": {
+          "es": "Inversores, palanca de uñas y carga unidireccional",
+          "en": "Inversores, palanca de uñas y carga unidireccional"
+        },
+        "outcome": {
+          "es": "¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?",
+          "en": "¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?"
+        },
+        "lessonId": "lesson.advanced.winding-systems",
+        "activityId": "activity.advanced.winding-systems",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.winding-systems"
+        ]
+      },
+      {
+        "id": "milestone.advanced.atlas.04",
+        "order": 4,
+        "title": {
+          "es": "Puentes, platinas y presupuesto de altura",
+          "en": "Puentes, platinas y presupuesto de altura"
+        },
+        "outcome": {
+          "es": "¿Cómo cambia el diseño cuando rigidez, altura, acceso y montaje compiten?",
+          "en": "¿Cómo cambia el diseño cuando rigidez, altura, acceso y montaje compiten?"
+        },
+        "lessonId": "lesson.advanced.construction-trade-study",
+        "activityId": "activity.advanced.construction-trade-study",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.construction-trade-study"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.advanced.atlas-authority",
+      "activity.advanced.seconds-layout",
+      "activity.advanced.winding-systems",
+      "activity.advanced.construction-trade-study"
+    ]
+  }
+}

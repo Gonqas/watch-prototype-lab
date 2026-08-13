@@ -1,0 +1,56 @@
+{
+  "id": "concept.metrology.observe-before-measuring",
+  "version": "0.1.0",
+  "title": {
+    "es": "Observar antes de medir"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para separar descripción, identificación e interpretación antes de escoger una magnitud."
+  },
+  "kind": "concept",
+  "knowledgeType": "quantitative",
+  "prerequisiteIds": [],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.metrology.planificar-una-inspeccion"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.preparar-una-inspeccion",
+    "activity.metrology.separar-observacion-e-hipotesis"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a separar descripción, identificación e interpretación antes de escoger una magnitud sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para separar descripción, identificación e interpretación antes de escoger una magnitud."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.light-magnification-posture"
+  ],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available"
+}

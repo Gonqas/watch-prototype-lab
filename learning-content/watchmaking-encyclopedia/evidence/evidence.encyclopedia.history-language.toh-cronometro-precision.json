@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.history-language.toh-cronometro-precision",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.history-language.toh-cronometro-precision",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.history-language.toh-cronometro-precision",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.history-language.toh-cronometro-precision",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.history-language.toh-cronometro-precision"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.history-language.toh-cronometro-precision",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.9,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

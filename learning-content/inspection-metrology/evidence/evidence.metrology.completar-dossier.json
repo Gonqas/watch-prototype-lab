@@ -1,0 +1,46 @@
+{
+  "id": "evidence.metrology.completar-dossier",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.medir-en-dos-dimensiones",
+  "kind": "artifact",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.activity-metrology-completar-dossier",
+    "version": "0.1.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "measurement",
+    "competencyId": "competency.metrology.medir-en-dos-dimensiones",
+    "packageId": "wplab.horology.inspection-metrology",
+    "activityIds": [
+      "activity.metrology.completar-dossier"
+    ],
+    "evidenceTemplateId": "evidence.metrology.completar-dossier",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "specimenId",
+      "componentId",
+      "imageAssetId",
+      "regionAnnotationId",
+      "instrumentId",
+      "instrumentVerificationId",
+      "readingIds",
+      "measurementSeriesId",
+      "calculation",
+      "uncertainty",
+      "findingId",
+      "confidence",
+      "comparisonId",
+      "proposalId",
+      "hintEventIds",
+      "adaptations"
+    ]
+  }
+}

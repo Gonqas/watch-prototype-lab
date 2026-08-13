@@ -1,0 +1,399 @@
+{
+  "id": "route.miyota8215.complete",
+  "version": "0.5.0",
+  "title": {
+    "es": "MIYOTA 8215: comprender, desmontar, montar y diagnosticar",
+    "en": "MIYOTA 8215: comprender, desmontar, montar y diagnosticar"
+  },
+  "purpose": {
+    "es": "Especialización práctica, trazable y reversible sobre el ensamblaje canónico del MIYOTA 8215.",
+    "en": "Especialización práctica, trazable y reversible sobre el ensamblaje canónico del MIYOTA 8215."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.miyota8215.identify",
+    "module.miyota8215.documentation",
+    "module.miyota8215.architecture",
+    "module.miyota8215.automatic",
+    "module.miyota8215.winding-setting",
+    "module.miyota8215.calendar",
+    "module.miyota8215.barrel-energy",
+    "module.miyota8215.train",
+    "module.miyota8215.escapement-oscillator",
+    "module.miyota8215.plan-disassembly",
+    "module.miyota8215.guided-disassembly",
+    "module.miyota8215.assisted-free-disassembly",
+    "module.miyota8215.inspection",
+    "module.miyota8215.assembly-verification",
+    "module.miyota8215.diagnosis-project"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.identify-calibre",
+    "competency.miyota8215.read-official-documentation",
+    "competency.miyota8215.distinguish-data-reconstruction",
+    "competency.miyota8215.recognize-subsystems",
+    "competency.miyota8215.explain-automatic",
+    "competency.miyota8215.explain-winding-setting",
+    "competency.miyota8215.explain-calendar",
+    "competency.miyota8215.explain-energy-chain",
+    "competency.miyota8215.identify-train",
+    "competency.miyota8215.explain-escapement-oscillator",
+    "competency.miyota8215.prepare-disassembly",
+    "competency.miyota8215.preserve-identity-orientation",
+    "competency.miyota8215.virtual-disassembly",
+    "competency.miyota8215.inspect",
+    "competency.miyota8215.virtual-assembly",
+    "competency.miyota8215.verify-partially",
+    "competency.miyota8215.form-hypothesis",
+    "competency.miyota8215.conceptual-diagnosis",
+    "competency.miyota8215.document-calibre",
+    "competency.miyota8215.declare-fidelity-limits"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "visualResourceIds": [
+    "visual.miyota8215.identify",
+    "visual.miyota8215.documentation",
+    "visual.miyota8215.architecture",
+    "visual.miyota8215.automatic",
+    "visual.miyota8215.winding-setting",
+    "visual.miyota8215.calendar",
+    "visual.miyota8215.barrel-energy",
+    "visual.miyota8215.train",
+    "visual.miyota8215.escapement-oscillator",
+    "visual.miyota8215.plan-disassembly",
+    "visual.miyota8215.guided-disassembly",
+    "visual.miyota8215.assisted-free-disassembly",
+    "visual.miyota8215.inspection",
+    "visual.miyota8215.assembly-verification",
+    "visual.miyota8215.diagnosis-project"
+  ],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "diagnostic-optional",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.miyota8215.complete.01",
+        "order": 1,
+        "title": {
+          "es": "Identificar el MIYOTA 8215",
+          "en": "Identificar el MIYOTA 8215"
+        },
+        "outcome": {
+          "es": "Identificar fabricante, calibre, familia, funciones, caras, rotor, tija, calendario e indicaciones con procedencia visible.",
+          "en": "Identificar fabricante, calibre, familia, funciones, caras, rotor, tija, calendario e indicaciones con procedencia visible."
+        },
+        "lessonId": "lesson.miyota8215.identify",
+        "activityId": "activity.miyota8215.identify-calibre",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.identify-calibre"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.02",
+        "order": 2,
+        "title": {
+          "es": "Leer su documentación",
+          "en": "Leer su documentación"
+        },
+        "outcome": {
+          "es": "Localizar datos, referencias y límites en ficha, especificación, plano, manual, despiece y lista de piezas.",
+          "en": "Localizar datos, referencias y límites en ficha, especificación, plano, manual, despiece y lista de piezas."
+        },
+        "lessonId": "lesson.miyota8215.documentation",
+        "activityId": "activity.miyota8215.locate-specification",
+        "mode": "worked-example",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.read-official-documentation"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.03",
+        "order": 3,
+        "title": {
+          "es": "Arquitectura general",
+          "en": "Arquitectura general"
+        },
+        "outcome": {
+          "es": "Reconstruir el calibre por capas y subsistemas sobre un único ensamblaje canónico.",
+          "en": "Reconstruir el calibre por capas y subsistemas sobre un único ensamblaje canónico."
+        },
+        "lessonId": "lesson.miyota8215.architecture",
+        "activityId": "activity.miyota8215.classify-subsystems",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.recognize-subsystems"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.04",
+        "order": 4,
+        "title": {
+          "es": "Rotor y carga automática",
+          "en": "Rotor y carga automática"
+        },
+        "outcome": {
+          "es": "Seguir la ruta funcional documentada desde la masa oscilante hacia el barrilete.",
+          "en": "Seguir la ruta funcional documentada desde la masa oscilante hacia el barrilete."
+        },
+        "lessonId": "lesson.miyota8215.automatic",
+        "activityId": "activity.miyota8215.follow-automatic",
+        "mode": "worked-example",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.explain-automatic"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.05",
+        "order": 5,
+        "title": {
+          "es": "Cuerda manual y puesta en hora",
+          "en": "Cuerda manual y puesta en hora"
+        },
+        "outcome": {
+          "es": "Reconstruir estados y relaciones de tija, cuerda, selección, puesta en hora y minutería.",
+          "en": "Reconstruir estados y relaciones de tija, cuerda, selección, puesta en hora y minutería."
+        },
+        "lessonId": "lesson.miyota8215.winding-setting",
+        "activityId": "activity.miyota8215.reconstruct-winding-states",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.explain-winding-setting"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.06",
+        "order": 6,
+        "title": {
+          "es": "Calendario",
+          "en": "Calendario"
+        },
+        "outcome": {
+          "es": "Explicar piezas, capas, arrastre, corrección y ciclo de fecha sin inventar ventanas horarias.",
+          "en": "Explicar piezas, capas, arrastre, corrección y ciclo de fecha sin inventar ventanas horarias."
+        },
+        "lessonId": "lesson.miyota8215.calendar",
+        "activityId": "activity.miyota8215.explain-calendar",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.explain-calendar"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.07",
+        "order": 7,
+        "title": {
+          "es": "Barrilete y energía",
+          "en": "Barrilete y energía"
+        },
+        "outcome": {
+          "es": "Relacionar cuerda manual y automática con barrilete y salida hacia el tren.",
+          "en": "Relacionar cuerda manual y automática con barrilete y salida hacia el tren."
+        },
+        "lessonId": "lesson.miyota8215.barrel-energy",
+        "activityId": "activity.miyota8215.follow-barrel-energy",
+        "mode": "worked-example",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.explain-energy-chain"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.08",
+        "order": 8,
+        "title": {
+          "es": "Tren de rodaje",
+          "en": "Tren de rodaje"
+        },
+        "outcome": {
+          "es": "Identificar ruedas, piñones, árboles, apoyos, puentes y engranes documentados.",
+          "en": "Identificar ruedas, piñones, árboles, apoyos, puentes y engranes documentados."
+        },
+        "lessonId": "lesson.miyota8215.train",
+        "activityId": "activity.miyota8215.identify-train",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.identify-train"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.09",
+        "order": 9,
+        "title": {
+          "es": "Escape, volante y espiral",
+          "en": "Escape, volante y espiral"
+        },
+        "outcome": {
+          "es": "Relacionar las piezas del modelo estructural del 8215 con el laboratorio conceptual de escape y oscilador.",
+          "en": "Relacionar las piezas del modelo estructural del 8215 con el laboratorio conceptual de escape y oscilador."
+        },
+        "lessonId": "lesson.miyota8215.escapement-oscillator",
+        "activityId": "activity.miyota8215.follow-escapement",
+        "mode": "worked-example",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.explain-escapement-oscillator"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.10",
+        "order": 10,
+        "title": {
+          "es": "Planificar el desmontaje",
+          "en": "Planificar el desmontaje"
+        },
+        "outcome": {
+          "es": "Preparar banco, fuentes, energía, herramientas, bandejas, dependencias y checkpoint antes de retirar.",
+          "en": "Preparar banco, fuentes, energía, herramientas, bandejas, dependencias y checkpoint antes de retirar."
+        },
+        "lessonId": "lesson.miyota8215.plan-disassembly",
+        "activityId": "activity.miyota8215.prepare-workbench",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.prepare-disassembly"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.11",
+        "order": 11,
+        "title": {
+          "es": "Desmontaje guiado",
+          "en": "Desmontaje guiado"
+        },
+        "outcome": {
+          "es": "Retirar las instancias permitidas con herramienta, autoridad, identidad, orientación, bandeja y checkpoint.",
+          "en": "Retirar las instancias permitidas con herramienta, autoridad, identidad, orientación, bandeja y checkpoint."
+        },
+        "lessonId": "lesson.miyota8215.guided-disassembly",
+        "activityId": "activity.miyota8215.remove-rotor",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.virtual-disassembly"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.12",
+        "order": 12,
+        "title": {
+          "es": "Desmontaje asistido y libre",
+          "en": "Desmontaje asistido y libre"
+        },
+        "outcome": {
+          "es": "Practicar con ayudas graduadas o sin orden visible usando los mismos comandos y dependencias.",
+          "en": "Practicar con ayudas graduadas o sin orden visible usando los mismos comandos y dependencias."
+        },
+        "lessonId": "lesson.miyota8215.assisted-free-disassembly",
+        "activityId": "activity.miyota8215.assisted-disassembly",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.virtual-disassembly"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.13",
+        "order": 13,
+        "title": {
+          "es": "Inspección",
+          "en": "Inspección"
+        },
+        "outcome": {
+          "es": "Observar dientes, pivotes, rubíes, puentes, tornillos, muelles, superficies y orientación.",
+          "en": "Observar dientes, pivotes, rubíes, puentes, tornillos, muelles, superficies y orientación."
+        },
+        "lessonId": "lesson.miyota8215.inspection",
+        "activityId": "activity.miyota8215.inspect-parts",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.inspect"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.14",
+        "order": 14,
+        "title": {
+          "es": "Montaje y comprobaciones",
+          "en": "Montaje y comprobaciones"
+        },
+        "outcome": {
+          "es": "Montar en modos guiado, asistido y libre validando soportes, alineación, orientación e identidad.",
+          "en": "Montar en modos guiado, asistido y libre validando soportes, alineación, orientación e identidad."
+        },
+        "lessonId": "lesson.miyota8215.assembly-verification",
+        "activityId": "activity.miyota8215.guided-assembly",
+        "mode": "worked-example",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.virtual-assembly"
+        ]
+      },
+      {
+        "id": "milestone.miyota8215.complete.15",
+        "order": 15,
+        "title": {
+          "es": "Diagnóstico y proyecto final",
+          "en": "Diagnóstico y proyecto final"
+        },
+        "outcome": {
+          "es": "Convertir síntoma en hipótesis, dato, comprobación, resultado y conclusión permitida; completar el dossier.",
+          "en": "Convertir síntoma en hipótesis, dato, comprobación, resultado y conclusión permitida; completar el dossier."
+        },
+        "lessonId": "lesson.miyota8215.diagnosis-project",
+        "activityId": "activity.miyota8215.identify-affected-subsystem",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.miyota8215.form-hypothesis"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [
+      "activity.miyota8215.detect-document-limit",
+      "activity.miyota8215.detect-symbolic-defect",
+      "activity.miyota8215.form-hypothesis",
+      "activity.miyota8215.select-verification"
+    ],
+    "demonstrationActivityIds": [
+      "activity.miyota8215.complete-diagnosis",
+      "activity.miyota8215.final-project"
+    ]
+  }
+}

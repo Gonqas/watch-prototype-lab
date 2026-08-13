@@ -1,0 +1,210 @@
+{
+  "id": "lesson.horology.functional-equivalence",
+  "version": "0.5.0",
+  "title": "Cuarzo y mecánico: equivalencias funcionales",
+  "blockIds": [
+    "block.horology.functional-equivalence"
+  ],
+  "activityIds": [
+    "activity.horology.match-functional-equivalents"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Cuarzo y mecánico: equivalencias funcionales"
+    },
+    "purpose": {
+      "es": "Comparar soluciones por función y declarar dónde termina la analogía."
+    },
+    "objectives": [
+      {
+        "es": "Emparejar seis funciones en cuarzo y mecánico."
+      },
+      {
+        "es": "Identificar una diferencia esencial."
+      },
+      {
+        "es": "Rechazar una equivalencia física no demostrada."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.horology.quartz-chain",
+      "concept.horology.mechanical-chain"
+    ],
+    "conceptIds": [
+      "concept.horology.functional-equivalence"
+    ],
+    "sourceIds": [
+      "source.miyota.2035.parts-list-exploded-view",
+      "source.horology.original-functional-map"
+    ],
+    "visualResourceIds": [
+      "visual.horology.quartz-mechanical-overlay",
+      "visual.horology.functional-text-alternative"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Mostrar funciones comparables conservando identidad, procedencia y fidelidad independientes."
+      },
+      "visibleConcept": {
+        "es": "Equivalencia funcional no significa igualdad física ni compatibilidad."
+      },
+      "modelReference": "composition.functional-comparison",
+      "movementIds": [
+        "fixture.miyota.2035.structural"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Vista coordinada de cuarzo conceptual, mecánico conceptual y 2035.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [
+        "comparación de rutas funcionales"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "fuente",
+        "referencia",
+        "dosificación",
+        "conversión",
+        "transmisión",
+        "indicación"
+      ],
+      "arrows": [
+        "emparejamientos con límite visible"
+      ],
+      "animations": [
+        "alternancia controlada conceptual-real"
+      ],
+      "timelineIntent": "Presentar pares, solicitar diferencia y mostrar G/K/P y procedencia.",
+      "userInteraction": "Emparejar mediante botones o teclado y justificar un límite.",
+      "observableResult": {
+        "es": "Cada par conserva una función común y una advertencia de diferencia."
+      },
+      "successCriterion": {
+        "es": "Seis pares correctos y una diferencia esencial justificada."
+      },
+      "restoration": {
+        "es": "Separar de nuevo los modelos y limpiar emparejamientos y resaltados."
+      },
+      "textualAlternative": {
+        "es": "Tabla funcional con una columna de límites para cada comparación."
+      },
+      "reducedMotionAlternative": {
+        "es": "Tabla estática y alternancia instantánea sin desplazamiento de cámara."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K1",
+        "physics": "P0",
+        "limitations": [
+          "Comparación funcional; no demuestra equivalencia física."
+        ]
+      },
+      "unknownData": [
+        "compatibilidades y correspondencias físicas no afirmadas"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.horology.quartz-mechanical-overlay",
+        "visual.horology.functional-text-alternative"
+      ]
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "transfer",
+      "entryCheck": "ungraded-diagnostic",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "reinforcesConceptIds": [
+        "concept.horology.quartz-chain",
+        "concept.horology.mechanical-chain"
+      ],
+      "bridgeConceptIds": [
+        "concept.horology.quartz-chain",
+        "concept.horology.mechanical-chain"
+      ]
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "externalPrerequisites": [],
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 672,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "observe",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.horology.match-functional-equivalents"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Emparejar seis funciones en cuarzo y mecánico."
+        },
+        {
+          "es": "Identificar una diferencia esencial."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Cuarzo y mecánico: equivalencias funcionales», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    }
+  }
+}

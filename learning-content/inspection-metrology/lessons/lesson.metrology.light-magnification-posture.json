@@ -1,0 +1,126 @@
+{
+  "id": "lesson.metrology.light-magnification-posture",
+  "version": "0.2.0",
+  "title": "Luz, aumento y postura",
+  "blockIds": [
+    "block.metrology.light-magnification-posture"
+  ],
+  "activityIds": [
+    "activity.metrology.elegir-iluminacion",
+    "activity.metrology.elegir-aumento"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Luz, aumento y postura"
+    },
+    "purpose": {
+      "es": "Comprender y aplicar cómo hacer visible una característica sin introducir reflejos, sombras o posturas inestables."
+    },
+    "objectives": [
+      {
+        "es": "Explicar cómo hacer visible una característica sin introducir reflejos, sombras o posturas inestables."
+      },
+      {
+        "es": "Reconocer un resultado inválido o insuficiente."
+      },
+      {
+        "es": "Conservar evidencia y alcance."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.metrology.observe-before-measuring"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.metrology.light-magnification-posture"
+    ],
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "guided-practice",
+      "entryCheck": "ungraded-diagnostic",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.metrology.light-magnification-posture"
+      ],
+      "reinforcesConceptIds": [
+        "concept.metrology.observe-before-measuring"
+      ],
+      "bridgeConceptIds": []
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.metrology.light-magnification-posture"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar tolerancias, exactitudes, calibraciones, diagnósticos ni datos de fabricante."
+        },
+        {
+          "es": "No aprobar propuestas, elevar fidelidad o modificar CAD."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente?"
+        },
+        {
+          "es": "¿Qué método y referencia hacen repetible este resultado?"
+        },
+        {
+          "es": "¿Qué limitación impide generalizarlo?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 716,
+      "requiredSegmentRoles": [
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.metrology.elegir-iluminacion",
+        "activity.metrology.elegir-aumento"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Explicar cómo hacer visible una característica sin introducir reflejos, sombras o posturas inestables."
+        },
+        {
+          "es": "Reconocer un resultado inválido o insuficiente."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Luz, aumento y postura», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    }
+  }
+}

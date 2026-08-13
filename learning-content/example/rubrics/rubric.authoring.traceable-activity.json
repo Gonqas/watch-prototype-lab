@@ -1,0 +1,43 @@
+{
+  "id": "rubric.authoring.traceable-activity",
+  "version": "1.0.0",
+  "competencyId": "competency.authoring.traceable-activity",
+  "rules": [
+    {
+      "id": "rule.authoring.traceable.introduced",
+      "version": "1.0.0",
+      "targetState": "introduced",
+      "acceptedEvidenceKinds": [
+        "answer"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "La interacción confirmada introduce la relación entre selector y evidencia."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.authoring.traceable.demonstrated",
+    "version": "1.0.0",
+    "competencyId": "competency.authoring.traceable-activity",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "selection",
+            "status": "active",
+            "minimumConfidence": 1
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

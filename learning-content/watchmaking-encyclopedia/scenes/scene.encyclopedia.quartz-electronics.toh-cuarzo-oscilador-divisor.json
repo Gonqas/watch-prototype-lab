@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+  "version": "1.1.0",
+  "title": "Cuaderno: Oscilador de cuarzo y división de frecuencia",
+  "description": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Oscilador de cuarzo y división de frecuencia. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.answer",
+      "instructionMarkdown": "Explica **Oscilador de cuarzo y división de frecuencia** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.explain",
+          "promptMarkdown": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por alimentar circuito y sigue hasta emitir pulso.",
+                "en": "Empieza por alimentar circuito y sigue hasta emitir pulso."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El resonador piezoeléctrico forma parte de un oscilador electrónico; su señal se divide mediante etapas binarias hasta obtener una cadencia de actuación. Frecuencia nominal, carga, temperatura, consumo y envejecimiento condicionan el resultado.",
+                "en": "El resonador piezoeléctrico forma parte de un oscilador electrónico; su señal se divide mediante etapas binarias hasta obtener una cadencia de actuación. Frecuencia nominal, carga, temperatura, consumo y envejecimiento condicionan el resultado."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+              "en": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena alimentar circuito → excitar resonador → sostener oscilación → formar señal → dividir frecuencia → emitir pulso, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena alimentar circuito → excitar resonador → sostener oscilación → formar señal → dividir frecuencia → emitir pulso, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.mechanism",
+            "field.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.evidence",
+            "field.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.limit",
+            "field.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

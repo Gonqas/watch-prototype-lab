@@ -1,0 +1,46 @@
+{
+  "id": "evidence.metrology.medir-distancia",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.completar-un-dossier",
+  "kind": "artifact",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.activity-metrology-medir-distancia",
+    "version": "0.1.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "measurement",
+    "competencyId": "competency.metrology.completar-un-dossier",
+    "packageId": "wplab.horology.inspection-metrology",
+    "activityIds": [
+      "activity.metrology.medir-distancia"
+    ],
+    "evidenceTemplateId": "evidence.metrology.medir-distancia",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "specimenId",
+      "componentId",
+      "imageAssetId",
+      "regionAnnotationId",
+      "instrumentId",
+      "instrumentVerificationId",
+      "readingIds",
+      "measurementSeriesId",
+      "calculation",
+      "uncertainty",
+      "findingId",
+      "confidence",
+      "comparisonId",
+      "proposalId",
+      "hintEventIds",
+      "adaptations"
+    ]
+  }
+}

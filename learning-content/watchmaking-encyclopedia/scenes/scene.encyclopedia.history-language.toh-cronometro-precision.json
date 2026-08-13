@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.history-language.toh-cronometro-precision",
+  "version": "1.1.0",
+  "title": "Cuaderno: Reloj, cronómetro, precisión y exactitud",
+  "description": "¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Reloj, cronómetro, precisión y exactitud. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.history-language.toh-cronometro-precision.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.history-language.toh-cronometro-precision.answer",
+      "instructionMarkdown": "Explica **Reloj, cronómetro, precisión y exactitud** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.history-language.toh-cronometro-precision.explain",
+          "promptMarkdown": "¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.history-language.toh-cronometro-precision.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.toh-cronometro-precision.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.toh-cronometro-precision.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.toh-cronometro-precision.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.history-language.toh-cronometro-precision.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir referencia y sigue hasta declarar alcance.",
+                "en": "Empieza por definir referencia y sigue hasta declarar alcance."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.history-language.toh-cronometro-precision.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Coincidencia instantánea, marcha media, estabilidad, repetibilidad y certificación no son sinónimos. La palabra cronómetro implica un contexto de ensayo; la exactitud exige una referencia y la precisión describe dispersión bajo condiciones declaradas.",
+                "en": "Coincidencia instantánea, marcha media, estabilidad, repetibilidad y certificación no son sinónimos. La palabra cronómetro implica un contexto de ensayo; la exactitud exige una referencia y la precisión describe dispersión bajo condiciones declaradas."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?",
+              "en": "¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir referencia → sincronizar lectura → observar intervalo → calcular desviación → repetir condiciones → declarar alcance, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir referencia → sincronizar lectura → observar intervalo → calcular desviación → repetir condiciones → declarar alcance, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.history-language.toh-cronometro-precision.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.history-language.toh-cronometro-precision.mechanism",
+            "field.encyclopedia.history-language.toh-cronometro-precision.evidence",
+            "field.encyclopedia.history-language.toh-cronometro-precision.limit",
+            "field.encyclopedia.history-language.toh-cronometro-precision.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

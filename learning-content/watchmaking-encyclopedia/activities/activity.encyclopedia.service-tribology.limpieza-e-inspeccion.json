@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.service-tribology.limpieza-e-inspeccion",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Limpieza, inspección y clasificación de defectos",
+  "sceneIds": [
+    "scene.encyclopedia.service-tribology.limpieza-e-inspeccion"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.limpieza-e-inspeccion"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.service-tribology.limpieza-e-inspeccion"
+  ],
+  "rubricId": "rubric.encyclopedia.service-tribology.limpieza-e-inspeccion",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+    "title": {
+      "es": "Explicar y transferir: Limpieza, inspección y clasificación de defectos",
+      "en": "Explicar y transferir: Limpieza, inspección y clasificación de defectos"
+    },
+    "description": {
+      "es": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+      "en": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "inspection",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.institutional.awci.standards",
+      "source.external.naked-watchmaker",
+      "source.external.watchguy-repair-blog"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.defecto-funcional",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.criterio-de-rechazo"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.defecto-funcional",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.criterio-de-rechazo"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.defecto-funcional",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.criterio-de-rechazo"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+        "blockId": "block.encyclopedia.service-tribology.limpieza-e-inspeccion",
+        "conceptIds": [
+          "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+          "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.defecto-funcional",
+          "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.criterio-de-rechazo"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Limpieza, inspección y clasificación de defectos sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Limpieza, inspección y clasificación de defectos sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Un pivote aparece brillante salvo una banda mate. Puede indicar contacto desplazado, abrasión o residuo. Comparar circunferencia, eje opuesto, rubí y juego permite interpretar la huella antes de pulir y eliminarla.",
+          "en": "Un pivote aparece brillante salvo una banda mate. Puede indicar contacto desplazado, abrasión o residuo. Comparar circunferencia, eje opuesto, rubí y juego permite interpretar la huella antes de pulir y eliminarla."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+            "en": "Identificar la pregunta: ¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+          },
+          {
+            "es": "Dibujar la secuencia inspeccionar antes → limpiar según material → inspeccionar bajo luz y aumento → medir si procede → clasificar efecto → decidir conservar/reparar/sustituir.",
+            "en": "Dibujar la secuencia inspeccionar antes → limpiar según material → inspeccionar bajo luz y aumento → medir si procede → clasificar efecto → decidir conservar/reparar/sustituir."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: diámetro y ovalidad; profundidad de marca; juego; corrosión; magnetismo residual.",
+            "en": "Asignar magnitudes y evidencia: diámetro y ovalidad; profundidad de marca; juego; corrosión; magnetismo residual."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Crea una tabla observar–medir–función–decisión para pivote, diente, rubí, tornillo y muelle, con criterio de incertidumbre.",
+          "en": "Crea una tabla observar–medir–función–decisión para pivote, diente, rubí, tornillo y muelle, con criterio de incertidumbre."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: inspeccionar antes → limpiar según material → inspeccionar bajo luz y aumento → medir si procede → clasificar efecto → decidir conservar/reparar/sustituir.",
+            "en": "Completa la cadena con las etapas visibles: inspeccionar antes → limpiar según material → inspeccionar bajo luz y aumento → medir si procede → clasificar efecto → decidir conservar/reparar/sustituir."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+            "en": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Crea una tabla observar–medir–función–decisión para pivote, diente, rubí, tornillo y muelle, con criterio de incertidumbre.",
+            "en": "Crea una tabla observar–medir–función–decisión para pivote, diente, rubí, tornillo y muelle, con criterio de incertidumbre."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Toda marca visible es causa del fallo",
+          "en": "Toda marca visible es causa del fallo"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Limpieza, inspección y clasificación de defectos con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Limpieza, inspección y clasificación de defectos con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Crea una tabla observar–medir–función–decisión para pivote, diente, rubí, tornillo y muelle, con criterio de incertidumbre.",
+        "en": "Crea una tabla observar–medir–función–decisión para pivote, diente, rubí, tornillo y muelle, con criterio de incertidumbre."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena inspeccionar antes → limpiar según material → inspeccionar bajo luz y aumento → medir si procede → clasificar efecto → decidir conservar/reparar/sustituir, su evidencia y límites.",
+        "en": "La explicación conserva la cadena inspeccionar antes → limpiar según material → inspeccionar bajo luz y aumento → medir si procede → clasificar efecto → decidir conservar/reparar/sustituir, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Toda marca visible es causa del fallo».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Toda marca visible es causa del fallo»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+        "en": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Pulir antes de documentar patrón. de Sustituir por estética una pieza histórica funcional..",
+        "en": "Busca evidencia para distinguir Pulir antes de documentar patrón. de Sustituir por estética una pieza histórica funcional.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.service-tribology.limpieza-e-inspeccion"
+      ],
+      "transferPrompt": {
+        "es": "Crea una tabla observar–medir–función–decisión para pivote, diente, rubí, tornillo y muelle, con criterio de incertidumbre.",
+        "en": "Crea una tabla observar–medir–función–decisión para pivote, diente, rubí, tornillo y muelle, con criterio de incertidumbre."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.defecto-funcional",
+        "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.criterio-de-rechazo"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+          "en": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+        },
+        {
+          "es": "¿Qué relación causal de «Limpieza, inspección y clasificación de defectos» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Limpieza, inspección y clasificación de defectos» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

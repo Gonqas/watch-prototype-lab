@@ -1,0 +1,30 @@
+{
+  "id": "evidence.horology.functional-comparison",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.distinguish-regulation-from-transmission",
+  "kind": "answer",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.horology.functional-comparison",
+    "version": "0.5.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "explanation",
+    "competencyId": "competency.horology.distinguish-regulation-from-transmission",
+    "packageId": "wplab.horology.functional-map",
+    "activityIds": [
+      "activity.horology.match-functional-equivalents"
+    ],
+    "evidenceTemplateId": "evidence.horology.functional-comparison",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data"
+    ]
+  }
+}

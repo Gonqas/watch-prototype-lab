@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.9,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

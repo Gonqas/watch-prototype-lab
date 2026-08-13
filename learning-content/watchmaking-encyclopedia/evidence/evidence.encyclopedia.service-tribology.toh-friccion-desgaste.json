@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.service-tribology.toh-friccion-desgaste",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.service-tribology.toh-friccion-desgaste",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.service-tribology.toh-friccion-desgaste",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.service-tribology.toh-friccion-desgaste",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.service-tribology.toh-friccion-desgaste"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.service-tribology.toh-friccion-desgaste",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

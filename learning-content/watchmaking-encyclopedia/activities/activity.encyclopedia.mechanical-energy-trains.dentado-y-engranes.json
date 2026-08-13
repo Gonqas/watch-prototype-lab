@@ -1,0 +1,338 @@
+{
+  "id": "activity.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Dentado relojero y condiciones de engrane",
+  "sceneIds": [
+    "scene.encyclopedia.mechanical-energy-trains.dentado-y-engranes"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.dentado-y-engranes"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.mechanical-energy-trains.dentado-y-engranes"
+  ],
+  "rubricId": "rubric.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+    "title": {
+      "es": "Explicar y transferir: Dentado relojero y condiciones de engrane",
+      "en": "Explicar y transferir: Dentado relojero y condiciones de engrane"
+    },
+    "description": {
+      "es": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+      "en": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 35,
+    "activityType": "observation-3d",
+    "movementIds": [
+      "movement.conceptual.mechanical-chain"
+    ],
+    "familyIds": [],
+    "subsystem": "train",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion",
+      "viewport.camera",
+      "viewport.overlay.labels"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Cinemática educativa reversible; no valida geometría, fuerzas, tolerancias, lubricación ni competencia física."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.daniels.wheels-pinions",
+      "source.private.vba-uhrentechnik",
+      "source.external.eta-swisslab-6497"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.mechanical-energy-trains.dentado-y-engranes.causal-lab"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "gear-pair",
+      "commands": [
+        "rotate",
+        "change-ratio",
+        "align",
+        "misalign",
+        "inspect",
+        "restore"
+      ],
+      "viewModes": [
+        "schematic",
+        "slow-motion",
+        "kinematics",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.diametro-primitivo",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.depthing",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.linea-de-accion"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.diametro-primitivo",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.depthing",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.linea-de-accion"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.diametro-primitivo",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.depthing",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.linea-de-accion"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+        "blockId": "block.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+        "conceptIds": [
+          "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.diametro-primitivo",
+          "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.depthing",
+          "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.linea-de-accion"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Dentado relojero y condiciones de engrane sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Dentado relojero y condiciones de engrane sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Una rueda y un piñón tienen la relación correcta pero se endurecen en una zona. Puede haber excentricidad, diente deformado, depthing incorrecto, pivote doblado o centro desplazado. Marcar contacto y girar una revolución completa aporta información que un conteo no contiene.",
+          "en": "Una rueda y un piñón tienen la relación correcta pero se endurecen en una zona. Puede haber excentricidad, diente deformado, depthing incorrecto, pivote doblado o centro desplazado. Marcar contacto y girar una revolución completa aporta información que un conteo no contiene."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+            "en": "Identificar la pregunta: ¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+          },
+          {
+            "es": "Dibujar la secuencia diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media.",
+            "en": "Dibujar la secuencia diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: número de dientes; módulo o paso; diámetro primitivo; distancia entre centros; profundidad y holgura.",
+            "en": "Asignar magnitudes y evidencia: número de dientes; módulo o paso; diámetro primitivo; distancia entre centros; profundidad y holgura."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Calcula la relación de un tren de ejemplo y luego enumera todas las condiciones geométricas que el cálculo no valida.",
+          "en": "Calcula la relación de un tren de ejemplo y luego enumera todas las condiciones geométricas que el cálculo no valida."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media.",
+            "en": "Completa la cadena con las etapas visibles: diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+            "en": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Calcula la relación de un tren de ejemplo y luego enumera todas las condiciones geométricas que el cálculo no valida.",
+            "en": "Calcula la relación de un tren de ejemplo y luego enumera todas las condiciones geométricas que el cálculo no valida."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Si la relación de dientes es correcta, el engrane también lo es",
+          "en": "Si la relación de dientes es correcta, el engrane también lo es"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Dentado relojero y condiciones de engrane con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Dentado relojero y condiciones de engrane con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Calcula la relación de un tren de ejemplo y luego enumera todas las condiciones geométricas que el cálculo no valida.",
+        "en": "Calcula la relación de un tren de ejemplo y luego enumera todas las condiciones geométricas que el cálculo no valida."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media, su evidencia y límites.",
+        "en": "La explicación conserva la cadena diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Si la relación de dientes es correcta, el engrane también lo es».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Si la relación de dientes es correcta, el engrane también lo es»."
+      },
+      "causalQuestion": {
+        "es": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+        "en": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Ajustar profundidad hasta eliminar toda holgura. de Corregir un diente antes de descartar excentricidad o suciedad..",
+        "en": "Busca evidencia para distinguir Ajustar profundidad hasta eliminar toda holgura. de Corregir un diente antes de descartar excentricidad o suciedad.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.mechanical-energy-trains.dentado-y-engranes"
+      ],
+      "transferPrompt": {
+        "es": "Calcula la relación de un tren de ejemplo y luego enumera todas las condiciones geométricas que el cálculo no valida.",
+        "en": "Calcula la relación de un tren de ejemplo y luego enumera todas las condiciones geométricas que el cálculo no valida."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.diametro-primitivo",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.depthing",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.linea-de-accion"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+          "en": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+        },
+        {
+          "es": "¿Qué relación causal de «Dentado relojero y condiciones de engrane» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Dentado relojero y condiciones de engrane» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

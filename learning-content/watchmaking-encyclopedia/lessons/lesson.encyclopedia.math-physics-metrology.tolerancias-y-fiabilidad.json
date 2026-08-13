@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+  "version": "1.1.0",
+  "title": "Tolerancias, capacidad, FMEA y fiabilidad",
+  "blockIds": [
+    "block.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Tolerancias, capacidad, FMEA y fiabilidad",
+      "en": "Tolerancias, capacidad, FMEA y fiabilidad"
+    },
+    "purpose": {
+      "es": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?",
+      "en": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Tolerancias, capacidad, FMEA y fiabilidad mediante relaciones causales.",
+        "en": "Explicar Tolerancias, capacidad, FMEA y fiabilidad mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.mensurando",
+      "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.incertidumbre-de-medida",
+      "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.trazabilidad-metrologica"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.cadena-de-tolerancias",
+      "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.capacidad-de-proceso",
+      "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.modo-de-fallo"
+    ],
+    "sourceIds": [
+      "source.private.vba-uhrentechnik",
+      "source.institutional.wostep.watchmaker",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.cadena-de-tolerancias",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.capacidad-de-proceso",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.modo-de-fallo"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1151,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: cadena de tolerancias, capacidad de proceso, modo de fallo.",
+          "en": "Defino con mis palabras: cadena de tolerancias, capacidad de proceso, modo de fallo."
+        },
+        {
+          "es": "Separo en «Tolerancias, capacidad, FMEA y fiabilidad» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Tolerancias, capacidad, FMEA y fiabilidad» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Tolerancias, capacidad, FMEA y fiabilidad» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Tolerancias, capacidad, FMEA y fiabilidad» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Construye una mini-FMEA para un apoyo de rueda y una cadena de cotas para su juego; declara datos faltantes y plan de verificación.",
+          "en": "Aplico el criterio a esta variante: Construye una mini-FMEA para un apoyo de rueda y una cadena de cotas para su juego; declara datos faltantes y plan de verificación."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Tolerancias, capacidad, FMEA y fiabilidad» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Tolerancias, capacidad, FMEA y fiabilidad» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.cadena-de-tolerancias",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.capacidad-de-proceso",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.modo-de-fallo"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?",
+          "en": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?"
+        },
+        {
+          "es": "¿Qué relación causal de «Tolerancias, capacidad, FMEA y fiabilidad» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Tolerancias, capacidad, FMEA y fiabilidad» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

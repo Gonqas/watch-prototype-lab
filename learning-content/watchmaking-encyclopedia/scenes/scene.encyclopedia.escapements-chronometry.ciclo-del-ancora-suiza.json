@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza",
+  "version": "1.1.0",
+  "title": "Cuaderno: Ciclo completo del escape de áncora suiza",
+  "description": "¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Ciclo completo del escape de áncora suiza. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.answer",
+      "instructionMarkdown": "Explica **Ciclo completo del escape de áncora suiza** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.explain",
+          "promptMarkdown": "¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por bloqueo de entrada y sigue hasta impulso de salida.",
+                "en": "Empieza por bloqueo de entrada y sigue hasta impulso de salida."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El áncora suiza alterna bloqueo, desenganche, impulso y caída. El volante inicia el desenganche mediante clavija; la rueda entrega impulso a través de las paletas y el dardo con rodillo protege frente a desbloqueo accidental. El ciclo debe estudiarse en ambas direcciones y en las dos paletas.",
+                "en": "El áncora suiza alterna bloqueo, desenganche, impulso y caída. El volante inicia el desenganche mediante clavija; la rueda entrega impulso a través de las paletas y el dardo con rodillo protege frente a desbloqueo accidental. El ciclo debe estudiarse en ambas direcciones y en las dos paletas."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?",
+              "en": "¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena bloqueo de entrada → desenganche → impulso de entrada → caída → bloqueo de salida → impulso de salida, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena bloqueo de entrada → desenganche → impulso de entrada → caída → bloqueo de salida → impulso de salida, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.mechanism",
+            "field.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.evidence",
+            "field.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.limit",
+            "field.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

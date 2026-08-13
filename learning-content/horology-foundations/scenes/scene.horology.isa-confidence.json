@@ -1,0 +1,529 @@
+{
+  "id": "scene.horology.isa-confidence",
+  "version": "0.5.0",
+  "title": "Mapa de confianza ISA 8172",
+  "description": "Mapa de confianza ISA 8172. Escena reversible con alternativa textual funcional.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.quartz-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Elementos presentes: representación abstracta funcional; no existe un modelo atribuido al ISA 8172. Relación y secuencia: fuente de energía → control electrónico → bobina → tren de ruedas. El estado inicial está disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar la vista tridimensional.",
+    "reducedMotionAlternative": "La misma información se presenta como estados discretos y una lista numerada: fuente de energía → control electrónico → bobina → tren de ruedas. No hay movimiento automático de cámara ni rotación.",
+    "keyboardActions": [
+      "Tabular por controles y entidades.",
+      "Activar con Intro o Espacio.",
+      "Avanzar y retroceder mediante botones con nombre accesible.",
+      "Restaurar el estado desde el control Restaurar."
+    ],
+    "colorIndependentCues": [
+      "Patrón y grosor distinguen estados.",
+      "Icono y texto acompañan cada color.",
+      "La ruta tiene numeración explícita."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "overview",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "viewport.overlay.arrows@^1.0.0",
+    "viewport.energy-route@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 900,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "electronic-control"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:1",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 1800,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "coil"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:2",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 2700,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:3",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "none"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "energy-path",
+      "id": "overlay.scene.horology.isa-confidence.path",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "electronic-control"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "coil"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "state": "available",
+      "label": "Ruta Mapa de confianza ISA 8172",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Ensamblaje R2 con geometría interna normalizada.",
+          "No es un gemelo exacto ni una validación de ingeniería."
+        ]
+      },
+      "accessibleLabel": "Ruta Mapa de confianza ISA 8172. Ruta funcional educativa, no simulación física.",
+      "numberedAlternative": [
+        "1. fuente de energía",
+        "2. control electrónico",
+        "3. bobina",
+        "4. tren de ruedas"
+      ]
+    },
+    {
+      "kind": "rotation",
+      "id": "overlay.scene.horology.isa-confidence.rotation",
+      "target": {
+        "selector": {
+          "by": "role",
+          "value": "coil"
+        },
+        "cardinality": "one-or-more"
+      },
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "direction": "clockwise",
+      "conceptualSpeed": "slow",
+      "state": "available",
+      "label": "Sentido conceptual",
+      "accessibleLabel": "Arco de giro conceptual. En el modo de movimiento reducido se sustituye por una flecha estática."
+    },
+    {
+      "kind": "arrow",
+      "id": "overlay.scene.horology.isa-confidence.arrow",
+      "start": {
+        "kind": "entity",
+        "target": {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        },
+        "offset": [
+          0,
+          0.2,
+          0
+        ]
+      },
+      "end": {
+        "kind": "entity",
+        "target": {
+          "selector": {
+            "by": "role",
+            "value": "electronic-control"
+          },
+          "cardinality": "one-or-more"
+        },
+        "offset": [
+          0,
+          0.2,
+          0
+        ]
+      },
+      "label": "Relación funcional",
+      "state": "available",
+      "pattern": "dashed",
+      "accessibleLabel": "Flecha funcional desde fuente de energía hacia control electrónico; no expresa una trayectoria física."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene.horology.isa-confidence.question",
+      "instructionMarkdown": "Clasifica la afirmación según su autoridad.",
+      "questions": [
+        {
+          "id": "question.horology.confidence",
+          "promptMarkdown": "Clasifica la afirmación según su autoridad.",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.observed",
+              "label": "Visto directamente",
+              "labels": {
+                "es": "Visto directamente",
+                "en": "Visto directamente"
+              }
+            },
+            {
+              "id": "option.inferred",
+              "label": "Inferido por función",
+              "labels": {
+                "es": "Inferido por función",
+                "en": "Inferido por función"
+              }
+            },
+            {
+              "id": "option.official",
+              "label": "Documentado oficialmente",
+              "labels": {
+                "es": "Documentado oficialmente",
+                "en": "Documentado oficialmente"
+              }
+            },
+            {
+              "id": "option.unknown",
+              "label": "Desconocido",
+              "labels": {
+                "es": "Desconocido",
+                "en": "Desconocido"
+              }
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.horology.isa-confidence.1",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar de dónde procede exactamente la afirmación."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.isa-confidence.2",
+              "level": 2,
+              "kind": "subsystem",
+              "content": {
+                "es": "Distingue documento oficial, observación directa, inferencia y dato desconocido."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.isa-confidence.3",
+              "level": 3,
+              "kind": "functional-property",
+              "content": {
+                "es": "Pregunta si la fuente declara el dato o si tú lo has deducido a partir de una relación."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.isa-confidence.4",
+              "level": 4,
+              "kind": "comparison",
+              "content": {
+                "es": "Compara la afirmación con un dato que sí aparezca expresamente en una fuente primaria."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.isa-confidence.5",
+              "level": 5,
+              "kind": "near-answer",
+              "content": {
+                "es": "Si la documentación permite razonar la función pero no la declara, la afirmación sigue siendo inferida."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.isa-confidence.6",
+              "level": 6,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Tras el intento: revisa la ruta numerada y separa fuente, control, conversión, transmisión e indicación."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "Clasifica la afirmación según su autoridad."
+            },
+            "feedback": {
+              "es": "La respuesta se contrasta con la función, la procedencia y las limitaciones declaradas."
+            }
+          }
+        },
+        {
+          "id": "question.horology.confidence.reasoning",
+          "promptMarkdown": "Explica qué evidencia permite clasificar la afirmación y por qué una inferencia no se convierte en dato oficial.",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué evidencia consultaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué regla de procedencia aplicaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué sigue sin estar demostrado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué evidencia permite clasificar la afirmación y por qué una inferencia no se convierte en dato oficial."
+            },
+            "feedback": {
+              "es": "La explicación debe separar documentación oficial, observación, inferencia y desconocido."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.horology.confidence",
+          "expectedOptionIds": [
+            "option.inferred"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.horology.confidence.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    },
+    {
+      "id": "step.scene.horology.isa-confidence.manipulate",
+      "instructionMarkdown": "Manipula o recorre la lista equivalente y confirma el resultado antes de restaurar.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Mapa de confianza ISA 8172"
+    },
+    "purpose": {
+      "es": "Ejecutar mapa de confianza isa 8172 de forma visual, accesible y evaluable."
+    },
+    "prerequisites": [
+      "concept.horology.source-confidence"
+    ],
+    "narrative": {
+      "es": "Observar, predecir, manipular y explicar antes de registrar evidencia."
+    },
+    "initialFraming": {
+      "es": "Encuadre general estable con procedencia y fidelidad disponibles bajo demanda."
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "storyboard.step.scene.horology.isa-confidence.question",
+        "sceneStepId": "step.scene.horology.isa-confidence.question",
+        "narrative": {
+          "es": "Observar la escena y formular una predicción."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "highlight",
+          "pause"
+        ],
+        "interaction": {
+          "es": "Usar los controles de teclado, la lista accesible o la vista tridimensional."
+        },
+        "feedback": {
+          "es": "La corrección distingue la respuesta, su procedencia y las limitaciones del modelo."
+        },
+        "hint": {
+          "es": "La pista se ofrece por niveles y se registra como evidencia de proceso."
+        }
+      },
+      {
+        "id": "storyboard.step.scene.horology.isa-confidence.manipulate",
+        "sceneStepId": "step.scene.horology.isa-confidence.manipulate",
+        "narrative": {
+          "es": "Manipular el estado y explicar el resultado."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "select",
+          "answer",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Usar los controles de teclado, la lista accesible o la vista tridimensional."
+        },
+        "feedback": {
+          "es": "La corrección distingue la respuesta, su procedencia y las limitaciones del modelo."
+        },
+        "hint": {
+          "es": "La pista se ofrece por niveles y se registra como evidencia de proceso."
+        }
+      }
+    ],
+    "ending": {
+      "es": "La escena muestra la evidencia registrada y la regla de evaluación aplicable."
+    },
+    "restoration": {
+      "es": "Restaurar la selección, las piezas visibles, las etiquetas, el encuadre y la secuencia a su estado inicial."
+    },
+    "accessibility": {
+      "es": "Lista funcional equivalente con entidades, relaciones, estados, cambios y controles completos."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos, flechas estáticas numeradas y avance manual con idéntica evaluación."
+    },
+    "evidenceTemplateIds": [
+      "evidence.horology.source-consultation",
+      "evidence.horology.confidence-declaration"
+    ],
+    "technicalCriteria": [
+      "Selectores resolubles.",
+      "Restauración idempotente.",
+      "Procedencia y G/K/P conservados."
+    ],
+    "limitations": [
+      "No se atribuye geometría ni compatibilidad al ISA 8172."
+    ]
+  },
+  "restorePreviousState": true
+}

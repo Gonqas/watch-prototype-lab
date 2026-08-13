@@ -1,0 +1,44 @@
+{
+  "id": "visual.encyclopedia.escapements-chronometry.toh-seguridad-escape.causal-lab",
+  "version": "1.1.0",
+  "type": "error-simulation",
+  "purpose": {
+    "es": "Hacer observable la cadena causal de Seguridad: draw, guardia y cuernos mediante estados reversibles y controles explícitos.",
+    "en": "Hacer observable la cadena causal de Seguridad: draw, guardia y cuernos mediante estados reversibles y controles explícitos."
+  },
+  "status": "ready",
+  "sourceIds": [
+    "source.private.toh.ch06",
+    "source.private.bulova.10",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "fidelity": {
+    "geometry": "G1",
+    "kinematics": "K2",
+    "physics": "P0",
+    "limitations": [
+      "Modelo conceptual normalizado. Muestra relaciones y sentidos; no valida geometría, fuerzas, lubricación ni rendimiento de un calibre."
+    ]
+  },
+  "lessonIds": [
+    "lesson.encyclopedia.escapements-chronometry.toh-seguridad-escape"
+  ],
+  "movementIds": [
+    "movement.conceptual.mechanical-chain"
+  ],
+  "partSelectors": [],
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.camera@^1.0.0"
+  ],
+  "dataRequirements": [
+    "Relaciones funcionales del fixture conceptual.",
+    "Comandos reversibles y restauración.",
+    "Alternativa textual completa."
+  ],
+  "priority": "high",
+  "dependencyIds": [],
+  "currentModelSupport": "yes",
+  "viewportImpact": "configuration"
+}

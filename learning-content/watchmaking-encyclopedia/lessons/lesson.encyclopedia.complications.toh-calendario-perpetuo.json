@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.complications.toh-calendario-perpetuo",
+  "version": "1.1.0",
+  "title": "Calendarios completo, anual y perpetuo",
+  "blockIds": [
+    "block.encyclopedia.complications.toh-calendario-perpetuo"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-calendario-perpetuo"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Calendarios completo, anual y perpetuo",
+      "en": "Calendarios completo, anual y perpetuo"
+    },
+    "purpose": {
+      "es": "¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?",
+      "en": "¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Calendarios completo, anual y perpetuo mediante relaciones causales.",
+        "en": "Explicar Calendarios completo, anual y perpetuo mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.complications.toh-calendario-secuencia.arrastre-de-fecha",
+      "concept.encyclopedia.complications.toh-calendario-secuencia.salto-de-calendario",
+      "concept.encyclopedia.complications.toh-calendario-secuencia.jumper"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.complications.toh-calendario-perpetuo.rueda-programa",
+      "concept.encyclopedia.complications.toh-calendario-perpetuo.gran-palanca",
+      "concept.encyclopedia.complications.toh-calendario-perpetuo.ciclo-bisiesto"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch09",
+      "source.private.daniels.movement-design",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.complications.toh-calendario-perpetuo.rueda-programa",
+        "concept.encyclopedia.complications.toh-calendario-perpetuo.gran-palanca",
+        "concept.encyclopedia.complications.toh-calendario-perpetuo.ciclo-bisiesto"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1099,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.complications.toh-calendario-perpetuo"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: rueda programa, gran palanca, ciclo bisiesto.",
+          "en": "Defino con mis palabras: rueda programa, gran palanca, ciclo bisiesto."
+        },
+        {
+          "es": "Sigo «Calendarios completo, anual y perpetuo» desde contar días hasta actualizar ciclo anual y explico cada enlace.",
+          "en": "Sigo «Calendarios completo, anual y perpetuo» desde contar días hasta actualizar ciclo anual y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Calendarios completo, anual y perpetuo» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Calendarios completo, anual y perpetuo» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Representa la memoria necesaria para simple, anual y perpetuo.",
+          "en": "Aplico el criterio a esta variante: Representa la memoria necesaria para simple, anual y perpetuo."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Calendarios completo, anual y perpetuo» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Calendarios completo, anual y perpetuo» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.complications.toh-calendario-perpetuo.rueda-programa",
+        "concept.encyclopedia.complications.toh-calendario-perpetuo.gran-palanca",
+        "concept.encyclopedia.complications.toh-calendario-perpetuo.ciclo-bisiesto"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?",
+          "en": "¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?"
+        },
+        {
+          "es": "¿Qué relación causal de «Calendarios completo, anual y perpetuo» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Calendarios completo, anual y perpetuo» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

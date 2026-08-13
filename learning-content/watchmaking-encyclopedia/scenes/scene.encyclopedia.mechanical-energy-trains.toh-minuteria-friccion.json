@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+  "version": "1.1.0",
+  "title": "Cuaderno: Acoplamiento de minutería y ajuste manual",
+  "description": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Acoplamiento de minutería y ajuste manual. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.answer",
+      "instructionMarkdown": "Explica **Acoplamiento de minutería y ajuste manual** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.explain",
+          "promptMarkdown": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por tomar giro del tren y sigue hasta desacoplar manualmente al ajustar.",
+                "en": "Empieza por tomar giro del tren y sigue hasta desacoplar manualmente al ajustar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La minutería toma una rotación del tren y la escala a minutos y horas. El acoplamiento de fricción permite arrastrar la indicación durante la puesta en hora y volver a transmitir durante la marcha. Su par debe superar la carga de agujas sin perturbar el tren.",
+                "en": "La minutería toma una rotación del tren y la escala a minutos y horas. El acoplamiento de fricción permite arrastrar la indicación durante la puesta en hora y volver a transmitir durante la marcha. Su par debe superar la carga de agujas sin perturbar el tren."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+              "en": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena tomar giro del tren → acoplar por fricción → mover minutera → reducir hacia rueda horaria → indicar horas → desacoplar manualmente al ajustar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena tomar giro del tren → acoplar por fricción → mover minutera → reducir hacia rueda horaria → indicar horas → desacoplar manualmente al ajustar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.evidence",
+            "field.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.limit",
+            "field.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

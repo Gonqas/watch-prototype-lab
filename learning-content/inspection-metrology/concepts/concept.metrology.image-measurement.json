@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.image-measurement",
+  "version": "0.1.0",
+  "title": {
+    "es": "Medir sobre una fotografía"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para calibrar una escala 2D y medir sin inferir profundidad."
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.metrology.technical-photography"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.physical-specimen"
+  ],
+  "competencyIds": [
+    "competency.metrology.medir-en-dos-dimensiones"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.calibrar-escala",
+    "activity.metrology.medir-distancia"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a calibrar una escala 2D y medir sin inferir profundidad sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para calibrar una escala 2D y medir sin inferir profundidad."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.physical-measurement"
+  ],
+  "targetEvidenceLevel": "physical-observation",
+  "availability": "available"
+}

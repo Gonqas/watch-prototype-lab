@@ -1,0 +1,183 @@
+{
+  "id": "route.advanced.architectures-complications",
+  "version": "1.0.0",
+  "title": {
+    "es": "Arquitecturas y complicaciones",
+    "en": "Arquitecturas y complicaciones"
+  },
+  "purpose": {
+    "es": "Razonar sobre segundos, automáticos, escapes, extraplano, calendarios y cronógrafos como sistemas de relaciones y compromisos.",
+    "en": "Razonar sobre segundos, automáticos, escapes, extraplano, calendarios y cronógrafos como sistemas de relaciones y compromisos."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.advanced.escapement-compare",
+    "module.advanced.ultra-thin",
+    "module.advanced.calendars",
+    "module.advanced.chronograph-control",
+    "module.advanced.chronograph-coupling",
+    "module.advanced.architecture-capstone"
+  ],
+  "competencyIds": [
+    "competency.advanced.escapement-compare",
+    "competency.advanced.ultra-thin",
+    "competency.advanced.calendars",
+    "competency.advanced.chronograph-control",
+    "competency.advanced.chronograph-coupling",
+    "competency.advanced.architecture-capstone"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.eta.6497-2.communication",
+    "source.miyota.8215.official",
+    "source.external.ranfft",
+    "source.eta.2824-2.product",
+    "source.external.17jewels",
+    "source.eta.7750.product",
+    "source.eta.7750.communication",
+    "source.seiko.6138a.technical-guide",
+    "source.eta.6497-2.product",
+    "source.seiko.42.technical-guide"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.advanced.architecture.01",
+        "order": 1,
+        "title": {
+          "es": "Escapes: funciones comunes y geometrías no transferibles",
+          "en": "Escapes: funciones comunes y geometrías no transferibles"
+        },
+        "outcome": {
+          "es": "¿Qué relaciones hacen que un conjunto sea escape y qué depende de su geometría concreta?",
+          "en": "¿Qué relaciones hacen que un conjunto sea escape y qué depende de su geometría concreta?"
+        },
+        "lessonId": "lesson.advanced.escapement-compare",
+        "activityId": "activity.advanced.escapement-compare",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.escapement-compare"
+        ]
+      },
+      {
+        "id": "milestone.advanced.architecture.02",
+        "order": 2,
+        "title": {
+          "es": "Arquitectura extraplana y presupuesto axial",
+          "en": "Arquitectura extraplana y presupuesto axial"
+        },
+        "outcome": {
+          "es": "¿Qué funciones compiten por altura y qué consecuencias produce cada integración?",
+          "en": "¿Qué funciones compiten por altura y qué consecuencias produce cada integración?"
+        },
+        "lessonId": "lesson.advanced.ultra-thin",
+        "activityId": "activity.advanced.ultra-thin",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.ultra-thin"
+        ]
+      },
+      {
+        "id": "milestone.advanced.architecture.03",
+        "order": 3,
+        "title": {
+          "es": "Calendarios como acumulación, salto, retención y corrección",
+          "en": "Calendarios como acumulación, salto, retención y corrección"
+        },
+        "outcome": {
+          "es": "¿Cómo transforma el calendario una rotación diaria en un salto controlado y corregible?",
+          "en": "¿Cómo transforma el calendario una rotación diaria en un salto controlado y corregible?"
+        },
+        "lessonId": "lesson.advanced.calendars",
+        "activityId": "activity.advanced.calendars",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.calendars"
+        ]
+      },
+      {
+        "id": "milestone.advanced.architecture.04",
+        "order": 4,
+        "title": {
+          "es": "Control de cronógrafo: levas y rueda de pilares",
+          "en": "Control de cronógrafo: levas y rueda de pilares"
+        },
+        "outcome": {
+          "es": "¿Qué componente conserva el estado y coordina acoplamiento, freno y puesta a cero?",
+          "en": "¿Qué componente conserva el estado y coordina acoplamiento, freno y puesta a cero?"
+        },
+        "lessonId": "lesson.advanced.chronograph-control",
+        "activityId": "activity.advanced.chronograph-control",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.chronograph-control"
+        ]
+      },
+      {
+        "id": "milestone.advanced.architecture.05",
+        "order": 5,
+        "title": {
+          "es": "Acoplamiento horizontal y embrague vertical",
+          "en": "Acoplamiento horizontal y embrague vertical"
+        },
+        "outcome": {
+          "es": "¿Cómo entra y sale la potencia del contador y qué síntomas dependen de esa interfaz?",
+          "en": "¿Cómo entra y sale la potencia del contador y qué síntomas dependen de esa interfaz?"
+        },
+        "lessonId": "lesson.advanced.chronograph-coupling",
+        "activityId": "activity.advanced.chronograph-coupling",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.chronograph-coupling"
+        ]
+      },
+      {
+        "id": "milestone.advanced.architecture.06",
+        "order": 6,
+        "title": {
+          "es": "Proyecto: defender una arquitectura completa",
+          "en": "Proyecto: defender una arquitectura completa"
+        },
+        "outcome": {
+          "es": "¿Qué arquitectura satisface el pliego y qué tendría que validarse antes de fabricar?",
+          "en": "¿Qué arquitectura satisface el pliego y qué tendría que validarse antes de fabricar?"
+        },
+        "lessonId": "lesson.advanced.architecture-capstone",
+        "activityId": "activity.advanced.architecture-capstone",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.advanced.architecture-capstone"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.advanced.escapement-compare",
+      "activity.advanced.ultra-thin",
+      "activity.advanced.calendars",
+      "activity.advanced.chronograph-control",
+      "activity.advanced.chronograph-coupling",
+      "activity.advanced.architecture-capstone"
+    ]
+  }
+}

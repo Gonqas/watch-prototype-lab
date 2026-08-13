@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+  "version": "1.1.0",
+  "title": "Cuaderno: Cadena completa del reloj electrónico analógico",
+  "description": "¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Cadena completa del reloj electrónico analógico. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.answer",
+      "instructionMarkdown": "Explica **Cadena completa del reloj electrónico analógico** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.explain",
+          "promptMarkdown": "¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por entregar energía y sigue hasta transmitir e indicar.",
+                "en": "Empieza por entregar energía y sigue hasta transmitir e indicar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La célula y contactos suministran tensión; el oscilador crea referencia; la lógica divide y controla; el driver excita bobina; el motor convierte; el tren transmite; la indicación presenta. Cada frontera admite pruebas con autoridad y riesgo distintos.",
+                "en": "La célula y contactos suministran tensión; el oscilador crea referencia; la lógica divide y controla; el driver excita bobina; el motor convierte; el tren transmite; la indicación presenta. Cada frontera admite pruebas con autoridad y riesgo distintos."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?",
+              "en": "¿Cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena entregar energía → generar referencia → dividir y decidir → excitar bobina → avanzar rotor → transmitir e indicar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena entregar energía → generar referencia → dividir y decidir → excitar bobina → avanzar rotor → transmitir e indicar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.mechanism",
+            "field.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.evidence",
+            "field.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.limit",
+            "field.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,35 @@
+{
+  "id": "evidence.mechanical.explain-keyless",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.explain-keyless",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.mechanical.explain-keyless",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.mechanical.explain-keyless",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.reconstruct-crown-states",
+      "activity.mechanical.operate-winding-setting"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.explain-keyless",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

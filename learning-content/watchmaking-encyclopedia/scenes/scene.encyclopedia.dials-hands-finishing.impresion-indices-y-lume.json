@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+  "version": "1.1.0",
+  "title": "Cuaderno: Impresión, índices aplicados y material luminoso",
+  "description": "¿Cómo se producen marcas legibles y duraderas sin añadir altura o masa incontroladas?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Impresión, índices aplicados y material luminoso. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se producen marcas legibles y duraderas sin añadir altura o masa incontroladas?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se producen marcas legibles y duraderas sin añadir altura o masa incontroladas?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.answer",
+      "instructionMarkdown": "Explica **Impresión, índices aplicados y material luminoso** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.explain",
+          "promptMarkdown": "¿Cómo se producen marcas legibles y duraderas sin añadir altura o masa incontroladas?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por preparar superficie y sigue hasta inspeccionar registro y legibilidad.",
+                "en": "Empieza por preparar superficie y sigue hasta inspeccionar registro y legibilidad."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Tampografía, transferencia, grabado, índices aplicados y rellenos luminosos tienen procesos y tolerancias diferentes. Tinta, superficie, curado, adhesión, posición y espesor condicionan borde y duración. Material luminoso añade partículas, aglutinante, masa, seguridad y envejecimiento.",
+                "en": "Tampografía, transferencia, grabado, índices aplicados y rellenos luminosos tienen procesos y tolerancias diferentes. Tinta, superficie, curado, adhesión, posición y espesor condicionan borde y duración. Material luminoso añade partículas, aglutinante, masa, seguridad y envejecimiento."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se producen marcas legibles y duraderas sin añadir altura o masa incontroladas?",
+              "en": "¿Cómo se producen marcas legibles y duraderas sin añadir altura o masa incontroladas?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena preparar superficie → definir cliché o posición → depositar tinta/índice → controlar espesor → curar o fijar → inspeccionar registro y legibilidad, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena preparar superficie → definir cliché o posición → depositar tinta/índice → controlar espesor → curar o fijar → inspeccionar registro y legibilidad, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.mechanism",
+            "field.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.evidence",
+            "field.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.limit",
+            "field.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

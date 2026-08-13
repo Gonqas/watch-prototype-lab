@@ -1,0 +1,59 @@
+{
+  "id": "block.quartz2035.anatomy",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Anatomía completa del MIYOTA 2035",
+  "bodyMarkdown": "## Propósito\n\nOrganizar las piezas utilizables por subsistema, relación y procedencia.\n\n## Objetivos\n\n## Conocimientos previos\n\n## Explicación\n\nEl modelo didáctico organiza alimentación, control electrónico, conversión electromecánica, tren, indicación, puesta en hora, estructura y sujeción. Cada pieza conserva nombre, referencia, relaciones y fuente. Sus límites geométricos, de movimiento y de física aparecen en la ficha técnica. Los marcadores documentales permanecen visibles como limitación, no como pieza desmontable.\n\n## Visual y actividad\n\nVista completa, subsistemas, explosionado, transparencia, ruta y vecinos. La actividad conserva el mismo modelo de referencia en los modos guiado, asistido y libre. Los cambios solo afectan a la sesión de aprendizaje y nunca alteran el proyecto técnico original.\n\n## Fuentes y alcance de las afirmaciones\n\n Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nOrganizar las piezas utilizables por subsistema, relación y procedencia. La siguiente práctica es “Desmontaje virtual guiado”.\n\n## Palabras y piezas clave\n\n- **Localizar datos oficiales.** Concepto práctico: localizar datos oficiales, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles.\n- **Identificar subsistemas del 2035.** Concepto práctico: identificar subsistemas del 2035, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles.\n- **Identificar piezas documentadas.** Concepto práctico: identificar piezas documentadas, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo se recorre el MIYOTA 2035 desde la pila hasta las agujas sin confundir proximidad visual con conexión funcional?\n\n## Modelo causal ampliado\n\nLa cadena conceptual de cuarzo distingue fuente, control y referencia temporal, bobina, rotor paso a paso, tren, minutería e indicación. En el ensamblaje 2035 se vinculan estas funciones con identidades documentadas cuando existen. Los contactos y sujeciones pertenecen también a la explicación porque una cadena eléctrica o mecánica necesita interfaces, no solo componentes nombrados.\n\nEl modelo de ensamblaje individualiza piezas y relaciones estructurales suficientes para seleccionar y aislar. Representa una secuencia educativa coordinada, pero no simula corriente, campo magnético, par, consumo ni marcha real. La cadena debe leerse por entradas y salidas, no como una lista de colores.\n\n## Ejemplo resuelto\n\nCon la pila presente y el tren oculto se sigue primero la ruta eléctrica hasta la bobina. Después se muestra el rotor y se enlaza cada paso eléctrico con un avance mecánico discreto. Al revelar el tren, el movimiento llega a la indicación. Si se oculta la pila, no se concluye que una unidad física está agotada: solo se representa una interrupción educativa de la fuente.\n\n## Práctica deliberada\n\nRecorre la cadena con flechas. Repite desde las agujas hacia atrás preguntando de dónde llega cada cambio. En el tercer intento se retira un enlace y debes localizar el primer subsistema aguas abajo que deja de recibir su entrada.\n\n## Comprobación antes del laboratorio\n\n- Nombras la entrada y salida de cada subsistema.\n- Señalas contactos o engranes, no solo proximidades.\n- Diferencias 2035 documentado y cuarzo conceptual.\n- Declaras que la geometría está reconstruida, la secuencia es educativa y la física no se simula.\n\n## Transferencia\n\nCompara la cadena con la mecánica conceptual y explica qué funciones son equivalentes y qué medios físicos no lo son.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo se recorre el MIYOTA 2035 desde la pila hasta las agujas sin confundir proximidad visual con conexión funcional?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Compara la cadena con la mecánica conceptual y explica qué funciones son equivalentes y qué medios físicos no lo son.\n\n## Lectura técnica de relaciones y límites\n\nPara cada subsistema completa una ficha de cuatro líneas: entrada, transformación, salida e interrupción característica. El control no se reduce a “circuito”; debe incluir la referencia temporal declarada. El motor no se reduce a “bobina”; debe explicar la conversión hacia pasos mecánicos. El tren no se reduce a “ruedas”; debe enlazar el paso del rotor con la cadencia de la indicación dentro del alcance de la secuencia educativa.",
+  "claims": [
+    {
+      "id": "claim.quartz2035.anatomy",
+      "claimType": "source",
+      "classification": "official",
+      "claim": "La lista oficial identifica piezas y referencias del MIYOTA 2035, pero no valida por sí sola la geometría reconstruida.",
+      "sourceStatement": "La afirmación se limita a la identidad y estructura documental de las fuentes oficiales.",
+      "method": "Lectura curada de documentación MIYOTA",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+          "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+        ]
+      },
+      "reliability": "high",
+      "inputFingerprint": "system4d:anatomy:0.1.0",
+      "recordedAt": "2026-07-27T10:00:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.miyota.2035.parts-list-exploded-view",
+          "authority": "official-miyota",
+          "usage": "official-linked",
+          "resource": {
+            "kind": "pdf",
+            "title": "MIYOTA 2035 · parts list and exploded view",
+            "locator": "https://miyotamovement.com/uploads/product/product_j6P3s1O5naNRxHZWMK.pdf"
+          },
+          "authorOrManufacturer": "MIYOTA",
+          "sourceType": "official-miyota-documentation",
+          "calibre": "2035",
+          "movement": "MIYOTA 2035",
+          "revision": "Sin identificador de revisión publicado; URL vigente consultada el 2026-07-23.",
+          "retrievedAt": "2026-07-23",
+          "privateUse": false,
+          "supportedClaim": "Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "pretrain",
+    "conceptIds": [
+      "concept.quartz2035.identify-2035-subsystems"
+    ],
+    "estimatedMinutes": 4,
+    "userPaced": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "evidence.metrology.seleccionar-instrumento",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.medir-en-dos-dimensiones",
+  "kind": "procedure",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.activity-metrology-seleccionar-instrumento",
+    "version": "0.1.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.metrology.medir-en-dos-dimensiones",
+    "packageId": "wplab.horology.inspection-metrology",
+    "activityIds": [
+      "activity.metrology.seleccionar-instrumento"
+    ],
+    "evidenceTemplateId": "evidence.metrology.seleccionar-instrumento",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "specimenId",
+      "componentId",
+      "imageAssetId",
+      "regionAnnotationId",
+      "instrumentId",
+      "instrumentVerificationId",
+      "readingIds",
+      "measurementSeriesId",
+      "calculation",
+      "uncertainty",
+      "findingId",
+      "confidence",
+      "comparisonId",
+      "proposalId",
+      "hintEventIds",
+      "adaptations"
+    ]
+  }
+}

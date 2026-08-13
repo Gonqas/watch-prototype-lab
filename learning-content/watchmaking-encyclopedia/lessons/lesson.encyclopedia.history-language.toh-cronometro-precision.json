@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.history-language.toh-cronometro-precision",
+  "version": "1.1.0",
+  "title": "Reloj, cronómetro, precisión y exactitud",
+  "blockIds": [
+    "block.encyclopedia.history-language.toh-cronometro-precision"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.history-language.toh-cronometro-precision"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Reloj, cronómetro, precisión y exactitud",
+      "en": "Reloj, cronómetro, precisión y exactitud"
+    },
+    "purpose": {
+      "es": "¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?",
+      "en": "¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Reloj, cronómetro, precisión y exactitud mediante relaciones causales.",
+        "en": "Explicar Reloj, cronómetro, precisión y exactitud mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.history-language.toh-instrumentos-principios.instrumento-de-flujo",
+      "concept.encyclopedia.history-language.toh-instrumentos-principios.reloj-oscilatorio",
+      "concept.encyclopedia.history-language.toh-instrumentos-principios.realizacion-de-la-referencia"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.history-language.toh-cronometro-precision.error-de-indicacion",
+      "concept.encyclopedia.history-language.toh-cronometro-precision.marcha",
+      "concept.encyclopedia.history-language.toh-cronometro-precision.repetibilidad"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch01",
+      "source.official.nist.uncertainty",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "transfer",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.history-language.toh-cronometro-precision.error-de-indicacion",
+        "concept.encyclopedia.history-language.toh-cronometro-precision.marcha",
+        "concept.encyclopedia.history-language.toh-cronometro-precision.repetibilidad"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1068,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.history-language.toh-cronometro-precision"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: error de indicación, marcha, repetibilidad.",
+          "en": "Defino con mis palabras: error de indicación, marcha, repetibilidad."
+        },
+        {
+          "es": "Relaciono cada cambio de «Reloj, cronómetro, precisión y exactitud» con el problema que intentaba resolver y con una fuente.",
+          "en": "Relaciono cada cambio de «Reloj, cronómetro, precisión y exactitud» con el problema que intentaba resolver y con una fuente."
+        },
+        {
+          "es": "Distingo qué parte de «Reloj, cronómetro, precisión y exactitud» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Reloj, cronómetro, precisión y exactitud» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Diseña un registro de siete días que separe ajuste inicial, marcha y dispersión.",
+          "en": "Aplico el criterio a esta variante: Diseña un registro de siete días que separe ajuste inicial, marcha y dispersión."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Reloj, cronómetro, precisión y exactitud» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Reloj, cronómetro, precisión y exactitud» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.history-language.toh-cronometro-precision.error-de-indicacion",
+        "concept.encyclopedia.history-language.toh-cronometro-precision.marcha",
+        "concept.encyclopedia.history-language.toh-cronometro-precision.repetibilidad"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?",
+          "en": "¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?"
+        },
+        {
+          "es": "¿Qué relación causal de «Reloj, cronómetro, precisión y exactitud» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Reloj, cronómetro, precisión y exactitud» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

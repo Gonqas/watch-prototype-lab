@@ -1,0 +1,30 @@
+{
+  "id": "evidence.horology.component-selection",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.distinguish-regulation-from-transmission",
+  "kind": "answer",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.horology.component-selection",
+    "version": "0.5.0",
+    "triggerEventType": "selection-confirmed",
+    "evidenceType": "selection",
+    "competencyId": "competency.horology.distinguish-regulation-from-transmission",
+    "packageId": "wplab.horology.functional-map",
+    "activityIds": [
+      "activity.horology.identify-time-reference",
+      "activity.horology.identify-escapement-oscillator"
+    ],
+    "evidenceTemplateId": "evidence.horology.component-selection",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "entityIds"
+    ]
+  }
+}

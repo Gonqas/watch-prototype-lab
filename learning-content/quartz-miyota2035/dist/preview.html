@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Preview · Del ISA 8172 al MIYOTA 2035</title>
+<style>body{font:16px/1.55 system-ui;max-width:1200px;margin:auto;padding:2rem;color:#18201c;background:#f5f3ec}header,section,details{background:white;border:1px solid #d8d4c7;padding:1.25rem;margin:1rem 0}code{background:#e9ece7;padding:.15rem .35rem}pre{white-space:pre-wrap;font:14px/1.5 system-ui;background:#f5f3ec;padding:1rem}table{width:100%;border-collapse:collapse}th,td{border:1px solid #d8d4c7;padding:.55rem;text-align:left;vertical-align:top}.error{color:#9b1c1c}.warning{color:#855700}.badge{display:inline-block;border:1px solid;padding:.2rem .5rem;margin-right:.5rem}</style>
+</head><body><header><p>PREVISUALIZACIÓN DE AUTORÍA</p><h1>Del ISA 8172 al MIYOTA 2035</h1><p><code>wplab.horology.quartz-miyota2035@0.1.0</code></p><p>Esta vista no sustituye la ejecución en Watch Prototype Lab.</p></header>
+<section><span class="badge">in-review</span><span class="badge">local-unsigned</span><span class="badge">es-ES</span><h2>Jerarquía</h2><section><h2>Del ISA 8172 al MIYOTA 2035</h2><p>Convertir experiencia previa en método trazable sobre el banco virtual y el fixture MIYOTA 2035.</p><ul><li><strong>El puesto de trabajo</strong><ul><li><strong>El puesto de trabajo</strong><ul><li>Preparar el banco</li><li>Detectar condiciones inseguras</li></ul></li></ul></li><li><strong>Herramientas fundamentales</strong><ul><li><strong>Herramientas fundamentales</strong><ul><li>Seleccionar herramientas</li><li>Rechazar una herramienta inadecuada</li></ul></li></ul></li><li><strong>Observar antes de desmontar</strong><ul><li><strong>Observar antes de desmontar</strong><ul><li>Identificar zonas del movimiento</li><li>Registrar el estado inicial</li></ul></li></ul></li><li><strong>Del recuerdo del ISA 8172 a una observación trazable</strong><ul><li><strong>Del recuerdo del ISA 8172 a una observación trazable</strong><ul><li>Crear mapa de confianza ISA 8172</li><li>Comparar ISA 8172 y 2035 por función</li></ul></li></ul></li><li><strong>Cómo leer la documentación del MIYOTA 2035</strong><ul><li><strong>Cómo leer la documentación del MIYOTA 2035</strong><ul><li>Leer un plano</li><li>Asociar referencias y piezas</li></ul></li></ul></li><li><strong>Anatomía completa del MIYOTA 2035</strong><ul><li><strong>Anatomía completa del MIYOTA 2035</strong><ul><li>Clasificar subsistemas</li><li>Seguir la cadena funcional</li></ul></li></ul></li><li><strong>Desmontaje virtual guiado</strong><ul><li><strong>Desmontaje virtual guiado</strong><ul><li>Ordenar pasos respaldados</li><li>Elegir pieza, retirar y colocar en bandeja</li></ul></li></ul></li><li><strong>Montaje virtual y comprobaciones</strong><ul><li><strong>Montaje virtual y comprobaciones</strong><ul><li>Montar en modo guiado</li><li>Montar en modo asistido y libre</li></ul></li></ul></li><li><strong>Comprobación y diagnóstico básico</strong><ul><li><strong>Comprobación y diagnóstico básico</strong><ul><li>Identificar un error y proponer hipótesis</li><li>Elegir una comprobación</li></ul></li></ul></li><li><strong>Proyecto final MIYOTA 2035</strong><ul><li><strong>Proyecto final MIYOTA 2035</strong><ul><li>Completar proyecto final</li><li>Revisar trazabilidad del dossier</li></ul></li></ul></li></ul></section></section>
+<section><h2>Lecciones, texto y claims</h2><details><summary><strong>El puesto de trabajo</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>El puesto de trabajo</h3><pre>## Propósito
+
+Preparar un entorno ordenado antes de observar o manipular.
+
+## Objetivos
+
+Preparar, observar o ejecutar la operación de forma trazable; distinguir dato oficial, inferencia y simulación; conservar identidad y restaurar el estado.
+
+## Conocimientos previos
+
+Se reutiliza el mapa funcional del paquete `wplab.horology.functional-map`. Cuando un prerrequisito no está demostrado, la ruta permite explorar pero muestra la dependencia.
+
+## Explicación
+
+La preparación precede a cualquier desmontaje. Se asignan zonas estables, se comprueba iluminación, se protege el movimiento del polvo y se prepara un registro. La fotografía o nota simulada conserva contexto sin fingir una observación física. Una condición insegura debe corregirse antes de continuar.
+
+## Visual y actividad
+
+Banco con soporte, herramientas, bandeja, inspección y documentación. La actividad usa el mismo fixture canónico y el mismo runtime en guiado, asistido o libre. Los cambios son estados educativos de sesión y no mutan WatchProject.
+
+## Fuentes y claims
+
+El libro privado respalda principios generales del taller o las herramientas en las páginas verificadas; no se copia texto ni se convierte en instrucción MIYOTA. Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.
+
+## Vocabulario
+
+Consulta banco, soporte, bandeja, fijación, orientación, procedencia, observación, inferencia y dato oficial en el glosario bilingüe.
+
+## Errores habituales y feedback
+
+Confundir una referencia con geometría validada; tratar una vista explosionada como secuencia completa; perder identidad de un tornillo; omitir orientación; o formular una hipótesis como certeza. El feedback señala el primer requisito incumplido y su autoridad, sin completar automáticamente la tarea.
+
+## Evidencia y rúbrica
+
+Se registran modo, ayudas, pistas, errores, correcciones, fuentes, estado inicial, estado final y limitaciones. El tiempo no penaliza. La evidencia abierta del proyecto final requiere revisión; retained solo puede llegar en otra sesión posterior.
+
+## Resumen y conexión
+
+Preparar un entorno ordenado antes de observar o manipular. La siguiente práctica es “Herramientas fundamentales”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.quartz2035.workstation · source/original-explanation · G2/K2/P0 · source.horology.original-quartz-practical-route</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.workshop-equipment</li><li>source.horology.original-quartz-practical-route</li><li>visual.quartz2035.workstation</li></ul>
+    </details><details><summary><strong>Herramientas fundamentales</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Herramientas fundamentales</h3><pre>## Propósito
+
+Elegir una capacidad semántica adecuada y reconocer sus límites.
+
+## Objetivos
+
+Preparar, observar o ejecutar la operación de forma trazable; distinguir dato oficial, inferencia y simulación; conservar identidad y restaurar el estado.
+
+## Conocimientos previos
+
+Se reutiliza el mapa funcional del paquete `wplab.horology.functional-map`. Cuando un prerrequisito no está demostrado, la ruta permite explorar pero muestra la dependencia.
+
+## Explicación
+
+Una herramienta se elige por la operación y el riesgo, no por una marca. El destornillador exige confirmar ajuste sin prescribir medida; las pinzas recogen, colocan y orientan; la lupa inspecciona. El calibre y el multímetro no generan valores ficticios: registran que hace falta una medición o un procedimiento.
+
+## Visual y actividad
+
+Paleta accesible de soporte, destornillador, pinzas, lupa, pera, útiles de agujas, calibre y multímetro conceptual. La actividad usa el mismo fixture canónico y el mismo runtime en guiado, asistido o libre. Los cambios son estados educativos de sesión y no mutan WatchProject.
+
+## Fuentes y claims
+
+El libro privado respalda principios generales del taller o las herramientas en las páginas verificadas; no se copia texto ni se convierte en instrucción MIYOTA. Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.
+
+## Vocabulario
+
+Consulta banco, soporte, bandeja, fijación, orientación, procedencia, observación, inferencia y dato oficial en el glosario bilingüe.
+
+## Errores habituales y feedback
+
+Confundir una referencia con geometría validada; tratar una vista explosionada como secuencia completa; perder identidad de un tornillo; omitir orientación; o formular una hipótesis como certeza. El feedback señala el primer requisito incumplido y su autoridad, sin completar automáticamente la tarea.
+
+## Evidencia y rúbrica
+
+Se registran modo, ayudas, pistas, errores, correcciones, fuentes, estado inicial, estado final y limitaciones. El tiempo no penaliza. La evidencia abierta del proyecto final requiere revisión; retained solo puede llegar en otra sesión posterior.
+
+## Resumen y conexión
+
+Elegir una capacidad semántica adecuada y reconocer sus límites. La siguiente práctica es “Observar antes de desmontar”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.quartz2035.tools · source/original-explanation · G2/K2/P0 · source.horology.original-quartz-practical-route</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.hand-tools</li><li>source.horology.original-quartz-practical-route</li><li>visual.quartz2035.tools</li></ul>
+    </details><details><summary><strong>Observar antes de desmontar</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Observar antes de desmontar</h3><pre>## Propósito
+
+Aplicar un protocolo de identificación, observación y registro previo.
+
+## Objetivos
+
+Preparar, observar o ejecutar la operación de forma trazable; distinguir dato oficial, inferencia y simulación; conservar identidad y restaurar el estado.
+
+## Conocimientos previos
+
+Se reutiliza el mapa funcional del paquete `wplab.horology.functional-map`. Cuando un prerrequisito no está demostrado, la ruta permite explorar pero muestra la dependencia.
+
+## Explicación
+
+Se observa cara de indicación, cara posterior, lateral, tija, pila, circuito, bobina, cubiertas, tren visible y tornillos. Cada nota se clasifica como visto, documentado, inferido o desconocido. Desmontar solo tiene sentido cuando existe un objetivo y un estado inicial registrado.
+
+## Visual y actividad
+
+Vistas estables del 2035 con lupa, etiquetas, procedencia y ficha de observación. La actividad usa el mismo fixture canónico y el mismo runtime en guiado, asistido o libre. Los cambios son estados educativos de sesión y no mutan WatchProject.
+
+## Fuentes y claims
+
+El libro privado respalda principios generales del taller o las herramientas en las páginas verificadas; no se copia texto ni se convierte en instrucción MIYOTA. Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.
+
+## Vocabulario
+
+Consulta banco, soporte, bandeja, fijación, orientación, procedencia, observación, inferencia y dato oficial en el glosario bilingüe.
+
+## Errores habituales y feedback
+
+Confundir una referencia con geometría validada; tratar una vista explosionada como secuencia completa; perder identidad de un tornillo; omitir orientación; o formular una hipótesis como certeza. El feedback señala el primer requisito incumplido y su autoridad, sin completar automáticamente la tarea.
+
+## Evidencia y rúbrica
+
+Se registran modo, ayudas, pistas, errores, correcciones, fuentes, estado inicial, estado final y limitaciones. El tiempo no penaliza. La evidencia abierta del proyecto final requiere revisión; retained solo puede llegar en otra sesión posterior.
+
+## Resumen y conexión
+
+Aplicar un protocolo de identificación, observación y registro previo. La siguiente práctica es “Del recuerdo del ISA 8172 a una observación trazable”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.quartz2035.observe · source/original-explanation · G2/K2/P0 · source.horology.original-quartz-practical-route</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.workshop-equipment</li><li>source.miyota.2035.product-page</li><li>source.miyota.2035.specification</li><li>source.miyota.2035.drawing</li><li>source.miyota.2035.instruction-manual</li><li>source.miyota.2035.parts-list-exploded-view</li><li>source.horology.original-quartz-practical-route</li><li>visual.quartz2035.observe</li></ul>
+    </details><details><summary><strong>Del recuerdo del ISA 8172 a una observación trazable</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Del recuerdo del ISA 8172 a una observación trazable</h3><pre>## Propósito
+
+Separar memoria, observación, fotografía, inferencia y fuente oficial.
+
+## Objetivos
+
+Preparar, observar o ejecutar la operación de forma trazable; distinguir dato oficial, inferencia y simulación; conservar identidad y restaurar el estado.
+
+## Conocimientos previos
+
+Se reutiliza el mapa funcional del paquete `wplab.horology.functional-map`. Cuando un prerrequisito no está demostrado, la ruta permite explorar pero muestra la dependencia.
+
+## Explicación
+
+El usuario registra qué recuerda de su ISA 8172 sin convertirlo en configuración exacta. La comparación solo relaciona funciones. No afirma compatibilidad, igualdad dimensional, intercambiabilidad ni una misma secuencia de servicio.
+
+## Visual y actividad
+
+Mapa personal sin geometría atribuida al ISA 8172 y comparación funcional con el 2035. La actividad usa el mismo fixture canónico y el mismo runtime en guiado, asistido o libre. Los cambios son estados educativos de sesión y no mutan WatchProject.
+
+## Fuentes y claims
+
+ Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.
+
+## Vocabulario
+
+Consulta banco, soporte, bandeja, fijación, orientación, procedencia, observación, inferencia y dato oficial en el glosario bilingüe.
+
+## Errores habituales y feedback
+
+Confundir una referencia con geometría validada; tratar una vista explosionada como secuencia completa; perder identidad de un tornillo; omitir orientación; o formular una hipótesis como certeza. El feedback señala el primer requisito incumplido y su autoridad, sin completar automáticamente la tarea.
+
+## Evidencia y rúbrica
+
+Se registran modo, ayudas, pistas, errores, correcciones, fuentes, estado inicial, estado final y limitaciones. El tiempo no penaliza. La evidencia abierta del proyecto final requiere revisión; retained solo puede llegar en otra sesión posterior.
+
+## Resumen y conexión
+
+Separar memoria, observación, fotografía, inferencia y fuente oficial. La siguiente práctica es “Cómo leer la documentación del MIYOTA 2035”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.quartz2035.isa-memory · source/original-explanation · G2/K2/P0 · source.horology.original-quartz-practical-route</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.original-quartz-practical-route</li><li>visual.quartz2035.isa-memory</li></ul>
+    </details><details><summary><strong>Cómo leer la documentación del MIYOTA 2035</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Cómo leer la documentación del MIYOTA 2035</h3><pre>## Propósito
+
+Localizar, interpretar y clasificar información oficial sin memorizarla.
+
+## Objetivos
+
+Preparar, observar o ejecutar la operación de forma trazable; distinguir dato oficial, inferencia y simulación; conservar identidad y restaurar el estado.
+
+## Conocimientos previos
+
+Se reutiliza el mapa funcional del paquete `wplab.horology.functional-map`. Cuando un prerrequisito no está demostrado, la ruta permite explorar pero muestra la dependencia.
+
+## Explicación
+
+La ficha identifica el producto; la especificación aporta datos nominales; el plano expresa envolvente e interfaces; la vista explosionada y la lista permiten asociar llamadas y referencias. El lector debe reconocer también lo que un documento no ofrece. Una forma reconstruida nunca se convierte en dimensión oficial.
+
+## Visual y actividad
+
+Tabla derivada que enlaza ficha, especificación, plano, manual y despiece. La actividad usa el mismo fixture canónico y el mismo runtime en guiado, asistido o libre. Los cambios son estados educativos de sesión y no mutan WatchProject.
+
+## Fuentes y claims
+
+ Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.
+
+## Vocabulario
+
+Consulta banco, soporte, bandeja, fijación, orientación, procedencia, observación, inferencia y dato oficial en el glosario bilingüe.
+
+## Errores habituales y feedback
+
+Confundir una referencia con geometría validada; tratar una vista explosionada como secuencia completa; perder identidad de un tornillo; omitir orientación; o formular una hipótesis como certeza. El feedback señala el primer requisito incumplido y su autoridad, sin completar automáticamente la tarea.
+
+## Evidencia y rúbrica
+
+Se registran modo, ayudas, pistas, errores, correcciones, fuentes, estado inicial, estado final y limitaciones. El tiempo no penaliza. La evidencia abierta del proyecto final requiere revisión; retained solo puede llegar en otra sesión posterior.
+
+## Resumen y conexión
+
+Localizar, interpretar y clasificar información oficial sin memorizarla. La siguiente práctica es “Anatomía completa del MIYOTA 2035”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.quartz2035.documentation · source/official · G2/K2/P0 · source.miyota.2035.parts-list-exploded-view</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.miyota.2035.product-page</li><li>source.miyota.2035.specification</li><li>source.miyota.2035.drawing</li><li>source.miyota.2035.instruction-manual</li><li>source.miyota.2035.parts-list-exploded-view</li><li>source.horology.original-quartz-practical-route</li><li>visual.quartz2035.documentation</li></ul>
+    </details><details><summary><strong>Anatomía completa del MIYOTA 2035</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Anatomía completa del MIYOTA 2035</h3><pre>## Propósito
+
+Organizar las piezas utilizables por subsistema, relación y procedencia.
+
+## Objetivos
+
+Preparar, observar o ejecutar la operación de forma trazable; distinguir dato oficial, inferencia y simulación; conservar identidad y restaurar el estado.
+
+## Conocimientos previos
+
+Se reutiliza el mapa funcional del paquete `wplab.horology.functional-map`. Cuando un prerrequisito no está demostrado, la ruta permite explorar pero muestra la dependencia.
+
+## Explicación
+
+El fixture organiza alimentación, control electrónico, conversión electromecánica, tren, indicación, puesta en hora, estructura y sujeción. Cada instancia conserva nombre, referencia, relaciones, fuente y G/K/P. Los marcadores documentales permanecen visibles como limitación, no como pieza desmontable.
+
+## Visual y actividad
+
+Vista completa, subsistemas, explosionado, transparencia, ruta y vecinos. La actividad usa el mismo fixture canónico y el mismo runtime en guiado, asistido o libre. Los cambios son estados educativos de sesión y no mutan WatchProject.
+
+## Fuentes y claims
+
+ Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.
+
+## Vocabulario
+
+Consulta banco, soporte, bandeja, fijación, orientación, procedencia, observación, inferencia y dato oficial en el glosario bilingüe.
+
+## Errores habituales y feedback
+
+Confundir una referencia con geometría validada; tratar una vista explosionada como secuencia completa; perder identidad de un tornillo; omitir orientación; o formular una hipótesis como certeza. El feedback señala el primer requisito incumplido y su autoridad, sin completar automáticamente la tarea.
+
+## Evidencia y rúbrica
+
+Se registran modo, ayudas, pistas, errores, correcciones, fuentes, estado inicial, estado final y limitaciones. El tiempo no penaliza. La evidencia abierta del proyecto final requiere revisión; retained solo puede llegar en otra sesión posterior.
+
+## Resumen y conexión
+
+Organizar las piezas utilizables por subsistema, relación y procedencia. La siguiente práctica es “Desmontaje virtual guiado”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.quartz2035.anatomy · source/official · G2/K2/P0 · source.miyota.2035.parts-list-exploded-view</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.miyota.2035.product-page</li><li>source.miyota.2035.specification</li><li>source.miyota.2035.drawing</li><li>source.miyota.2035.instruction-manual</li><li>source.miyota.2035.parts-list-exploded-view</li><li>source.horology.original-quartz-practical-route</li><li>visual.quartz2035.anatomy</li></ul>
+    </details><details><summary><strong>Desmontaje virtual guiado</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Desmontaje virtual guiado</h3><pre>## Propósito
+
+Ejecutar operaciones respaldadas, conservar identidad y crear checkpoints.
+
+## Objetivos
+
+Preparar, observar o ejecutar la operación de forma trazable; distinguir dato oficial, inferencia y simulación; conservar identidad y restaurar el estado.
+
+## Conocimientos previos
+
+Se reutiliza el mapa funcional del paquete `wplab.horology.functional-map`. Cuando un prerrequisito no está demostrado, la ruta permite explorar pero muestra la dependencia.
+
+## Explicación
+
+El runtime distingue dependencia documentada, estructural, educativa, inferida y no verificada. Solo bloquea las relaciones explícitas. Preparar, registrar, aislar la energía, elegir herramienta, comprobar dependencia, retirar, colocar, orientar y crear checkpoint son acciones separadas. La vista explosionada no se presenta como manual completo.
+
+## Visual y actividad
+
+Banco 2035 con herramienta, dependencias, bandeja y registro de orientación. La actividad usa el mismo fixture canónico y el mismo runtime en guiado, asistido o libre. Los cambios son estados educativos de sesión y no mutan WatchProject.
+
+## Fuentes y claims
+
+El libro privado respalda principios generales del taller o las herramientas en las páginas verificadas; no se copia texto ni se convierte en instrucción MIYOTA. Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.
+
+## Vocabulario
+
+Consulta banco, soporte, bandeja, fijación, orientación, procedencia, observación, inferencia y dato oficial en el glosario bilingüe.
+
+## Errores habituales y feedback
+
+Confundir una referencia con geometría validada; tratar una vista explosionada como secuencia completa; perder identidad de un tornillo; omitir orientación; o formular una hipótesis como certeza. El feedback señala el primer requisito incumplido y su autoridad, sin completar automáticamente la tarea.
+
+## Evidencia y rúbrica
+
+Se registran modo, ayudas, pistas, errores, correcciones, fuentes, estado inicial, estado final y limitaciones. El tiempo no penaliza. La evidencia abierta del proyecto final requiere revisión; retained solo puede llegar en otra sesión posterior.
+
+## Resumen y conexión
+
+Ejecutar operaciones respaldadas, conservar identidad y crear checkpoints. La siguiente práctica es “Montaje virtual y comprobaciones”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.quartz2035.disassembly · source/original-explanation · G2/K2/P0 · source.horology.original-quartz-practical-route</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.miyota.2035.product-page</li><li>source.miyota.2035.specification</li><li>source.miyota.2035.drawing</li><li>source.miyota.2035.instruction-manual</li><li>source.miyota.2035.parts-list-exploded-view</li><li>source.horology.private-book.hand-tools</li><li>source.horology.original-quartz-practical-route</li><li>visual.quartz2035.disassembly</li></ul>
+    </details><details><summary><strong>Montaje virtual y comprobaciones</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Montaje virtual y comprobaciones</h3><pre>## Propósito
+
+Reconstruir desde bandeja validando soporte, orientación e identidad.
+
+## Objetivos
+
+Preparar, observar o ejecutar la operación de forma trazable; distinguir dato oficial, inferencia y simulación; conservar identidad y restaurar el estado.
+
+## Conocimientos previos
+
+Se reutiliza el mapa funcional del paquete `wplab.horology.functional-map`. Cuando un prerrequisito no está demostrado, la ruta permite explorar pero muestra la dependencia.
+
+## Explicación
+
+El montaje no supone que todo orden inverso sea literal. La pieza debe estar orientada y alineada; un soporte requerido debe estar presente; el tornillo conserva su instancia y se verifica tras instalar. Lo no representable se declara como pendiente de manual, medición o revisión humana.
+
+## Visual y actividad
+
+Mismo banco y fixture en modos guiado, asistido y libre. La actividad usa el mismo fixture canónico y el mismo runtime en guiado, asistido o libre. Los cambios son estados educativos de sesión y no mutan WatchProject.
+
+## Fuentes y claims
+
+El libro privado respalda principios generales del taller o las herramientas en las páginas verificadas; no se copia texto ni se convierte en instrucción MIYOTA. Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.
+
+## Vocabulario
+
+Consulta banco, soporte, bandeja, fijación, orientación, procedencia, observación, inferencia y dato oficial en el glosario bilingüe.
+
+## Errores habituales y feedback
+
+Confundir una referencia con geometría validada; tratar una vista explosionada como secuencia completa; perder identidad de un tornillo; omitir orientación; o formular una hipótesis como certeza. El feedback señala el primer requisito incumplido y su autoridad, sin completar automáticamente la tarea.
+
+## Evidencia y rúbrica
+
+Se registran modo, ayudas, pistas, errores, correcciones, fuentes, estado inicial, estado final y limitaciones. El tiempo no penaliza. La evidencia abierta del proyecto final requiere revisión; retained solo puede llegar en otra sesión posterior.
+
+## Resumen y conexión
+
+Reconstruir desde bandeja validando soporte, orientación e identidad. La siguiente práctica es “Comprobación y diagnóstico básico”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.quartz2035.assembly · source/original-explanation · G2/K2/P0 · source.horology.original-quartz-practical-route</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.miyota.2035.product-page</li><li>source.miyota.2035.specification</li><li>source.miyota.2035.drawing</li><li>source.miyota.2035.instruction-manual</li><li>source.miyota.2035.parts-list-exploded-view</li><li>source.horology.private-book.hand-tools</li><li>source.horology.original-quartz-practical-route</li><li>visual.quartz2035.assembly</li></ul>
+    </details><details><summary><strong>Comprobación y diagnóstico básico</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Comprobación y diagnóstico básico</h3><pre>## Propósito
+
+Relacionar síntoma, subsistema, hipótesis, comprobación y límites.
+
+## Objetivos
+
+Preparar, observar o ejecutar la operación de forma trazable; distinguir dato oficial, inferencia y simulación; conservar identidad y restaurar el estado.
+
+## Conocimientos previos
+
+Se reutiliza el mapa funcional del paquete `wplab.horology.functional-map`. Cuando un prerrequisito no está demostrado, la ruta permite explorar pero muestra la dependencia.
+
+## Explicación
+
+Los casos incluyen pila ausente, contacto incorrecto, bobina inactiva, rotor o tren bloqueado, rueda ausente, puesta en hora o agujas mal posicionadas, orientación incorrecta y cierre incompleto. Cada caso separa lo observado de lo que no puede concluirse. No se inventan valores eléctricos.
+
+## Visual y actividad
+
+Errores simbólicos reversibles con observación y prueba adicional pendiente. La actividad usa el mismo fixture canónico y el mismo runtime en guiado, asistido o libre. Los cambios son estados educativos de sesión y no mutan WatchProject.
+
+## Fuentes y claims
+
+ Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.
+
+## Vocabulario
+
+Consulta banco, soporte, bandeja, fijación, orientación, procedencia, observación, inferencia y dato oficial en el glosario bilingüe.
+
+## Errores habituales y feedback
+
+Confundir una referencia con geometría validada; tratar una vista explosionada como secuencia completa; perder identidad de un tornillo; omitir orientación; o formular una hipótesis como certeza. El feedback señala el primer requisito incumplido y su autoridad, sin completar automáticamente la tarea.
+
+## Evidencia y rúbrica
+
+Se registran modo, ayudas, pistas, errores, correcciones, fuentes, estado inicial, estado final y limitaciones. El tiempo no penaliza. La evidencia abierta del proyecto final requiere revisión; retained solo puede llegar en otra sesión posterior.
+
+## Resumen y conexión
+
+Relacionar síntoma, subsistema, hipótesis, comprobación y límites. La siguiente práctica es “Proyecto final MIYOTA 2035”.</pre></article>
+      <h3>Claims</h3><ul><li>claim.quartz2035.diagnosis · source/original-explanation · G2/K2/P0 · source.horology.original-quartz-practical-route</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.miyota.2035.product-page</li><li>source.miyota.2035.specification</li><li>source.miyota.2035.drawing</li><li>source.miyota.2035.instruction-manual</li><li>source.miyota.2035.parts-list-exploded-view</li><li>source.horology.original-quartz-practical-route</li><li>visual.quartz2035.diagnosis</li></ul>
+    </details><details><summary><strong>Proyecto final MIYOTA 2035</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>Proyecto final MIYOTA 2035</h3><pre>## Propósito
+
+Completar un dossier trazable que demuestre método y comprensión.
+
+## Objetivos
+
+Preparar, observar o ejecutar la operación de forma trazable; distinguir dato oficial, inferencia y simulación; conservar identidad y restaurar el estado.
+
+## Conocimientos previos
+
+Se reutiliza el mapa funcional del paquete `wplab.horology.functional-map`. Cuando un prerrequisito no está demostrado, la ruta permite explorar pero muestra la dependencia.
+
+## Explicación
+
+El dossier integra identificación, fuentes, mapa, lista de piezas, desconocidos, secuencia declarada por autoridad, bandeja, desmontaje, montaje, comprobaciones, diagnóstico, procedencia y fidelidad. El resultado demuestra método inicial; no certifica reparación profesional de una unidad física.
+
+## Visual y actividad
+
+Dossier con fuentes, subsistemas, piezas, desconocidos, bandeja, montaje y diagnóstico. La actividad usa el mismo fixture canónico y el mismo runtime en guiado, asistido o libre. Los cambios son estados educativos de sesión y no mutan WatchProject.
+
+## Fuentes y claims
+
+El libro privado respalda principios generales del taller o las herramientas en las páginas verificadas; no se copia texto ni se convierte en instrucción MIYOTA. Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.
+
+## Vocabulario
+
+Consulta banco, soporte, bandeja, fijación, orientación, procedencia, observación, inferencia y dato oficial en el glosario bilingüe.
+
+## Errores habituales y feedback
+
+Confundir una referencia con geometría validada; tratar una vista explosionada como secuencia completa; perder identidad de un tornillo; omitir orientación; o formular una hipótesis como certeza. El feedback señala el primer requisito incumplido y su autoridad, sin completar automáticamente la tarea.
+
+## Evidencia y rúbrica
+
+Se registran modo, ayudas, pistas, errores, correcciones, fuentes, estado inicial, estado final y limitaciones. El tiempo no penaliza. La evidencia abierta del proyecto final requiere revisión; retained solo puede llegar en otra sesión posterior.
+
+## Resumen y conexión
+
+Completar un dossier trazable que demuestre método y comprensión. La ruta termina con una recomendación de retención posterior, no con una acreditación profesional.</pre></article>
+      <h3>Claims</h3><ul><li>claim.quartz2035.final-project · source/original-explanation · G2/K2/P0 · source.horology.original-quartz-practical-route</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.miyota.2035.product-page</li><li>source.miyota.2035.specification</li><li>source.miyota.2035.drawing</li><li>source.miyota.2035.instruction-manual</li><li>source.miyota.2035.parts-list-exploded-view</li><li>source.horology.private-book.workshop-equipment</li><li>source.horology.private-book.hand-tools</li><li>source.horology.original-quartz-practical-route</li><li>visual.quartz2035.final-project</li></ul>
+    </details></section>
+<section><h2>Escenas, storyboards y operaciones</h2><details><summary><strong>El puesto de trabajo</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Banco con soporte, herramientas, bandeja, inspección y documentación. Operaciones reversibles, procedencia visible y alternativa textual.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.miyota.2035.structural&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.quartz2035.workstation.scope</p>
+    <p><strong>Storyboard:</strong> Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar.</p>
+    <p><strong>Alternativa textual:</strong> Banco con soporte, herramientas, bandeja, inspección y documentación. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.</p>
+    <p><strong>Reduced motion:</strong> Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.</p>
+  </details><details><summary><strong>Herramientas fundamentales</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Paleta accesible de soporte, destornillador, pinzas, lupa, pera, útiles de agujas, calibre y multímetro conceptual. Operaciones reversibles, procedencia visible y alternativa textual.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.miyota.2035.structural&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.quartz2035.tools.scope</p>
+    <p><strong>Storyboard:</strong> Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar.</p>
+    <p><strong>Alternativa textual:</strong> Paleta accesible de soporte, destornillador, pinzas, lupa, pera, útiles de agujas, calibre y multímetro conceptual. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.</p>
+    <p><strong>Reduced motion:</strong> Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.</p>
+  </details><details><summary><strong>Observar antes de desmontar</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Vistas estables del 2035 con lupa, etiquetas, procedencia y ficha de observación. Operaciones reversibles, procedencia visible y alternativa textual.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.miyota.2035.structural&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.quartz2035.observe.scope</p>
+    <p><strong>Storyboard:</strong> Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar.</p>
+    <p><strong>Alternativa textual:</strong> Vistas estables del 2035 con lupa, etiquetas, procedencia y ficha de observación. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.</p>
+    <p><strong>Reduced motion:</strong> Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.</p>
+  </details><details><summary><strong>Del recuerdo del ISA 8172 a una observación trazable</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Mapa personal sin geometría atribuida al ISA 8172 y comparación funcional con el 2035. Operaciones reversibles, procedencia visible y alternativa textual.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.miyota.2035.structural&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.quartz2035.isa-memory.scope</p>
+    <p><strong>Storyboard:</strong> Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar.</p>
+    <p><strong>Alternativa textual:</strong> Mapa personal sin geometría atribuida al ISA 8172 y comparación funcional con el 2035. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.</p>
+    <p><strong>Reduced motion:</strong> Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.</p>
+  </details><details><summary><strong>Cómo leer la documentación del MIYOTA 2035</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Tabla derivada que enlaza ficha, especificación, plano, manual y despiece. Operaciones reversibles, procedencia visible y alternativa textual.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.miyota.2035.structural&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.quartz2035.documentation.scope</p>
+    <p><strong>Storyboard:</strong> Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar.</p>
+    <p><strong>Alternativa textual:</strong> Tabla derivada que enlaza ficha, especificación, plano, manual y despiece. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.</p>
+    <p><strong>Reduced motion:</strong> Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.</p>
+  </details><details><summary><strong>Anatomía completa del MIYOTA 2035</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Vista completa, subsistemas, explosionado, transparencia, ruta y vecinos. Operaciones reversibles, procedencia visible y alternativa textual.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.miyota.2035.structural&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.quartz2035.anatomy.scope</p>
+    <p><strong>Storyboard:</strong> Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar.</p>
+    <p><strong>Alternativa textual:</strong> Vista completa, subsistemas, explosionado, transparencia, ruta y vecinos. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.</p>
+    <p><strong>Reduced motion:</strong> Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.</p>
+  </details><details><summary><strong>Desmontaje virtual guiado</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Banco 2035 con herramienta, dependencias, bandeja y registro de orientación. Operaciones reversibles, procedencia visible y alternativa textual.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.miyota.2035.structural&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.quartz2035.disassembly.scope</p>
+    <p><strong>Storyboard:</strong> Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar.</p>
+    <p><strong>Alternativa textual:</strong> Banco 2035 con herramienta, dependencias, bandeja y registro de orientación. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.</p>
+    <p><strong>Reduced motion:</strong> Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.</p>
+  </details><details><summary><strong>Montaje virtual y comprobaciones</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Mismo banco y fixture en modos guiado, asistido y libre. Operaciones reversibles, procedencia visible y alternativa textual.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.miyota.2035.structural&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.quartz2035.assembly.scope</p>
+    <p><strong>Storyboard:</strong> Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar.</p>
+    <p><strong>Alternativa textual:</strong> Mismo banco y fixture en modos guiado, asistido y libre. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.</p>
+    <p><strong>Reduced motion:</strong> Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.</p>
+  </details><details><summary><strong>Comprobación y diagnóstico básico</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Errores simbólicos reversibles con observación y prueba adicional pendiente. Operaciones reversibles, procedencia visible y alternativa textual.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.miyota.2035.structural&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.quartz2035.diagnosis.scope</p>
+    <p><strong>Storyboard:</strong> Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar.</p>
+    <p><strong>Alternativa textual:</strong> Errores simbólicos reversibles con observación y prueba adicional pendiente. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.</p>
+    <p><strong>Reduced motion:</strong> Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.</p>
+  </details><details><summary><strong>Proyecto final MIYOTA 2035</strong> · 2 pasos · 2 operaciones</summary>
+    <p>Dossier con fuentes, subsistemas, piezas, desconocidos, bandeja, montaje y diagnóstico. Operaciones reversibles, procedencia visible y alternativa textual.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.miyota.2035.structural&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, explode</p>
+    <p><strong>Overlays:</strong> text:overlay.quartz2035.final-project.scope</p>
+    <p><strong>Storyboard:</strong> Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar.</p>
+    <p><strong>Alternativa textual:</strong> Dossier con fuentes, subsistemas, piezas, desconocidos, bandeja, montaje y diagnóstico. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.</p>
+    <p><strong>Reduced motion:</strong> Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.</p>
+  </details></section>
+<section><h2>Banco, herramientas, piezas, bandejas y dependencias</h2>
+  <p>Banco semántico bajo demanda. Herramientas, piezas y tornillos conservan identidad; desmontaje y montaje usan grafos separados. El detalle pieza por pieza está en <code>generated/miyota2035-audit.*</code> y el contrato ejecutable en <code>dist/workbench-report.md</code>.</p><table><thead><tr><th>Actividad</th><th>Fixture</th><th>Modos</th><th>Zonas y bandejas</th><th>Contexto de evidencia</th><th>Evidencias</th><th>Rúbrica</th></tr></thead><tbody><tr><td>activity.quartz2035.prepare-workbench</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.preparation, evidence.quartz2035.safety</td><td>rubric.quartz2035.prepare-safe-workstation</td></tr><tr><td>activity.quartz2035.detect-unsafe-conditions</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.preparation, evidence.quartz2035.safety</td><td>rubric.quartz2035.prepare-safe-workstation</td></tr><tr><td>activity.quartz2035.select-tools</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.tool</td><td>rubric.quartz2035.select-basic-tools</td></tr><tr><td>activity.quartz2035.reject-wrong-tool</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.tool</td><td>rubric.quartz2035.select-basic-tools</td></tr><tr><td>activity.quartz2035.identify-movement-zones</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.observation</td><td>rubric.quartz2035.observe-before-disassembly</td></tr><tr><td>activity.quartz2035.record-initial-condition</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.observation</td><td>rubric.quartz2035.observe-before-disassembly</td></tr><tr><td>activity.quartz2035.create-isa-confidence-map</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.provenance</td><td>rubric.quartz2035.distinguish-observation-inference</td></tr><tr><td>activity.quartz2035.compare-isa-functionally</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.provenance</td><td>rubric.quartz2035.distinguish-observation-inference</td></tr><tr><td>activity.quartz2035.read-drawing</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.document-reading</td><td>rubric.quartz2035.locate-official-data</td></tr><tr><td>activity.quartz2035.associate-reference-part</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.document-reading</td><td>rubric.quartz2035.locate-official-data</td></tr><tr><td>activity.quartz2035.classify-subsystems</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.classification</td><td>rubric.quartz2035.identify-2035-subsystems</td></tr><tr><td>activity.quartz2035.follow-functional-chain</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.classification</td><td>rubric.quartz2035.identify-2035-subsystems</td></tr><tr><td>activity.quartz2035.order-disassembly-steps</td><td>fixture.miyota.2035.structural</td><td>guided, assisted</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.sequence, evidence.quartz2035.manipulation, evidence.quartz2035.order, evidence.quartz2035.disassembly</td><td>rubric.quartz2035.disassemble-virtually</td></tr><tr><td>activity.quartz2035.disassemble-to-tray</td><td>fixture.miyota.2035.structural</td><td>guided, assisted</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.sequence, evidence.quartz2035.manipulation, evidence.quartz2035.order, evidence.quartz2035.disassembly</td><td>rubric.quartz2035.disassemble-virtually</td></tr><tr><td>activity.quartz2035.assemble-guided</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.assembly</td><td>rubric.quartz2035.assemble-virtually</td></tr><tr><td>activity.quartz2035.assemble-assisted-free</td><td>fixture.miyota.2035.structural</td><td>assisted, free</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.assembly</td><td>rubric.quartz2035.assemble-virtually</td></tr><tr><td>activity.quartz2035.identify-error-hypothesis</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.diagnosis, evidence.quartz2035.explanation</td><td>rubric.quartz2035.reason-about-symptom</td></tr><tr><td>activity.quartz2035.choose-check</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.diagnosis, evidence.quartz2035.explanation</td><td>rubric.quartz2035.reason-about-symptom</td></tr><tr><td>activity.quartz2035.complete-final-project</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.final-project</td><td>rubric.quartz2035.document-movement</td></tr><tr><td>activity.quartz2035.review-final-dossier</td><td>fixture.miyota.2035.structural</td><td>guided</td><td>zone.movement, zone.tools, zone.tray, zone.inspection, zone.documentation</td><td>mode, assistance, hints, errors, corrections, sources, initial-state, final-state, fixture-limitations</td><td>evidence.quartz2035.final-project</td><td>rubric.quartz2035.document-movement</td></tr></tbody></table>
+</section>
+<section><h2>Laboratorio mecánico, cálculos, grafos y modos</h2>
+  <p>Este paquete no declara laboratorio mecánico.</p>
+</section>
+<section><h2>Laboratorio de calibre, operaciones y autoridad</h2>
+  <p>Este paquete no declara laboratorio de calibre.</p>
+</section>
+<section><h2>Competencias, evidencia y rúbricas</h2><table><thead><tr><th>Competencia</th><th>Descripción</th><th>Evidencia</th><th>Rúbricas</th></tr></thead><tbody><tr><td>competency.quartz2035.prepare-safe-workstation</td><td>Preparar un puesto de trabajo seguro sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.preparation, evidence.quartz2035.safety</td><td>rubric.quartz2035.prepare-safe-workstation→demonstrated</td></tr><tr><td>competency.quartz2035.select-basic-tools</td><td>Seleccionar herramientas básicas sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.tool</td><td>rubric.quartz2035.select-basic-tools→demonstrated</td></tr><tr><td>competency.quartz2035.observe-before-disassembly</td><td>Observar antes de desmontar sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.observation</td><td>rubric.quartz2035.observe-before-disassembly→demonstrated</td></tr><tr><td>competency.quartz2035.distinguish-observation-inference</td><td>Distinguir observación e inferencia sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.provenance</td><td>rubric.quartz2035.distinguish-observation-inference→demonstrated</td></tr><tr><td>competency.quartz2035.locate-official-data</td><td>Localizar datos oficiales sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.document-reading</td><td>rubric.quartz2035.locate-official-data→demonstrated</td></tr><tr><td>competency.quartz2035.identify-2035-subsystems</td><td>Identificar subsistemas del 2035 sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.classification</td><td>rubric.quartz2035.identify-2035-subsystems→demonstrated</td></tr><tr><td>competency.quartz2035.identify-documented-parts</td><td>Identificar piezas documentadas sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.identification</td><td>rubric.quartz2035.identify-documented-parts→demonstrated</td></tr><tr><td>competency.quartz2035.disassemble-virtually</td><td>Desmontar virtualmente de forma ordenada sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.sequence, evidence.quartz2035.manipulation, evidence.quartz2035.order, evidence.quartz2035.disassembly</td><td>rubric.quartz2035.disassemble-virtually→demonstrated</td></tr><tr><td>competency.quartz2035.preserve-identity-orientation</td><td>Conservar identidad y orientación sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.orientation</td><td>rubric.quartz2035.preserve-identity-orientation→demonstrated</td></tr><tr><td>competency.quartz2035.assemble-virtually</td><td>Montar virtualmente sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.assembly</td><td>rubric.quartz2035.assemble-virtually→demonstrated</td></tr><tr><td>competency.quartz2035.perform-partial-checks</td><td>Realizar comprobaciones parciales sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.verification</td><td>rubric.quartz2035.perform-partial-checks→demonstrated</td></tr><tr><td>competency.quartz2035.reason-about-symptom</td><td>Razonar sobre un síntoma sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.diagnosis, evidence.quartz2035.explanation</td><td>rubric.quartz2035.reason-about-symptom→demonstrated</td></tr><tr><td>competency.quartz2035.document-movement</td><td>Documentar un movimiento sobre el fixture 2035 conservando seguridad, procedencia, identidad y límites.</td><td>evidence.quartz2035.final-project</td><td>rubric.quartz2035.document-movement→demonstrated</td></tr></tbody></table></section>
+<section><h2>Fuentes</h2><table><thead><tr><th>ID</th><th>Autoridad</th><th>Recurso</th><th>Localizador</th><th>Claim respaldado</th></tr></thead><tbody><tr><td>source.miyota.2035.product-page</td><td>official-miyota</td><td>MIYOTA 2035 · página oficial</td><td>https://miyotamovement.com/product/2035/</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.2035.specification</td><td>official-miyota</td><td>MIYOTA 2035 · specification</td><td>https://miyotamovement.com/uploads/product/product_pgSIG6yWb0akqcUhDf.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.2035.drawing</td><td>official-miyota</td><td>MIYOTA 2035 · drawing</td><td>https://miyotamovement.com/uploads/product/product_4tdsbpNVQi1WcE5lUw.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.2035.instruction-manual</td><td>official-miyota</td><td>MIYOTA 2035 · instruction manual</td><td>https://miyotamovement.com/uploads/product/product_cKAJDxu3CLoa18GHXO.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.2035.parts-list-exploded-view</td><td>official-miyota</td><td>MIYOTA 2035 · parts list and exploded view</td><td>https://miyotamovement.com/uploads/product/product_j6P3s1O5naNRxHZWMK.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.</td></tr><tr><td>source.horology.private-book.workshop-equipment</td><td>private-book-theory</td><td>Libro privado de teoría relojera · Workshop and Equipment</td><td>archivo local privado · PDF pp. 26–31 verificadas visualmente</td><td>Principios generales de puesto, iluminación, documentación y control de piezas; no instrucciones MIYOTA.</td></tr><tr><td>source.horology.private-book.hand-tools</td><td>private-book-theory</td><td>Libro privado de teoría relojera · Hand Tools</td><td>archivo local privado · PDF pp. 53–54 verificadas visualmente</td><td>Principios generales de pinzas, destornilladores y ajuste de hoja; no medidas ni referencias comerciales.</td></tr><tr><td>source.horology.original-quartz-practical-route</td><td>original-educational</td><td>Sistema 4D · ruta práctica Del ISA 8172 al MIYOTA 2035</td><td>—</td><td>Arquitectura del banco, actividades, explicaciones y evaluación originales de la ruta práctica.</td></tr></tbody></table></section>
+<section><h2>Glosario</h2><table><thead><tr><th>ID</th><th>ES</th><th>EN</th><th>Definición</th></tr></thead><tbody><tr><td>term.quartz2035.workbench</td><td>banco de trabajo</td><td>workbench</td><td>banco de trabajo: término de la ruta práctica cuyo significado se conserva mediante identidad, procedencia y contexto.</td></tr><tr><td>term.quartz2035.movement-holder</td><td>soporte de movimiento</td><td>movement holder</td><td>soporte de movimiento: término de la ruta práctica cuyo significado se conserva mediante identidad, procedencia y contexto.</td></tr><tr><td>term.quartz2035.parts-tray</td><td>bandeja de piezas</td><td>parts tray</td><td>bandeja de piezas: término de la ruta práctica cuyo significado se conserva mediante identidad, procedencia y contexto.</td></tr><tr><td>term.quartz2035.fastener</td><td>elemento de fijación</td><td>fastener</td><td>elemento de fijación: término de la ruta práctica cuyo significado se conserva mediante identidad, procedencia y contexto.</td></tr><tr><td>term.quartz2035.orientation</td><td>orientación</td><td>orientation</td><td>orientación: término de la ruta práctica cuyo significado se conserva mediante identidad, procedencia y contexto.</td></tr><tr><td>term.quartz2035.checkpoint</td><td>punto de control</td><td>checkpoint</td><td>punto de control: término de la ruta práctica cuyo significado se conserva mediante identidad, procedencia y contexto.</td></tr><tr><td>term.horology.provenance</td><td>procedencia</td><td>provenance</td><td>procedencia: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.quartz2035.observation</td><td>observación</td><td>observation</td><td>observación: término de la ruta práctica cuyo significado se conserva mediante identidad, procedencia y contexto.</td></tr><tr><td>term.horology.inference</td><td>inferencia</td><td>inference</td><td>inferencia: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.quartz2035.official-datum</td><td>dato oficial</td><td>official datum</td><td>dato oficial: término de la ruta práctica cuyo significado se conserva mediante identidad, procedencia y contexto.</td></tr><tr><td>term.horology.main-plate</td><td>platina</td><td>main plate</td><td>platina: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.bridge</td><td>puente</td><td>bridge</td><td>puente: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.coil</td><td>bobina</td><td>coil</td><td>bobina: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.stepper-rotor</td><td>rotor paso a paso</td><td>stepper rotor</td><td>rotor paso a paso: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.gear-train</td><td>tren de ruedas</td><td>gear train</td><td>tren de ruedas: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr></tbody></table></section>
+<section><h2>Recursos visuales</h2><table><thead><tr><th>ID</th><th>Tipo</th><th>Estado</th><th>Prioridad</th><th>G/K/P</th><th>Modelo actual</th><th>Cardinalidad</th></tr></thead><tbody><tr><td>visual.quartz2035.workstation</td><td>schematic-2d</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.quartz2035.tools</td><td>schematic-2d</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.quartz2035.observe</td><td>real-movement-3d</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.quartz2035.isa-memory</td><td>real-movement-3d</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.quartz2035.documentation</td><td>visual-table</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.quartz2035.anatomy</td><td>real-movement-3d</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.quartz2035.disassembly</td><td>real-movement-3d</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.quartz2035.assembly</td><td>real-movement-3d</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.quartz2035.diagnosis</td><td>error-simulation</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr><tr><td>visual.quartz2035.final-project</td><td>real-movement-3d</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>&quot;one-or-more&quot;</td></tr></tbody></table></section>
+<section><h2>Warnings declarados</h2><ul><li>activity.quartz2035.prepare-workbench: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.prepare-workbench: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.detect-unsafe-conditions: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.detect-unsafe-conditions: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.select-tools: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.select-tools: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.reject-wrong-tool: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.reject-wrong-tool: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.identify-movement-zones: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.identify-movement-zones: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.record-initial-condition: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.record-initial-condition: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.create-isa-confidence-map: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.create-isa-confidence-map: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.compare-isa-functionally: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.compare-isa-functionally: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.read-drawing: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.read-drawing: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.associate-reference-part: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.associate-reference-part: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.classify-subsystems: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.classify-subsystems: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.follow-functional-chain: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.follow-functional-chain: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.order-disassembly-steps: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.order-disassembly-steps: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.disassemble-to-tray: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.disassemble-to-tray: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.assemble-guided: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.assemble-guided: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.assemble-assisted-free: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.assemble-assisted-free: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.identify-error-hypothesis: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.identify-error-hypothesis: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.choose-check: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.choose-check: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.complete-final-project: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.complete-final-project: Toda dependencia inferida o no verificada se muestra como tal.</li><li>activity.quartz2035.review-final-dossier: Simulación educativa: no es un manual de servicio ni acredita reparación profesional.</li><li>activity.quartz2035.review-final-dossier: Toda dependencia inferida o no verificada se muestra como tal.</li></ul></section>
+<section><h2>Diagnósticos</h2><ul><li>Sin diagnósticos.</li></ul></section></body></html>

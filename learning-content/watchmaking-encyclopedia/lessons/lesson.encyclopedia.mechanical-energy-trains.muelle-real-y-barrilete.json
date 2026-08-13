@@ -1,0 +1,230 @@
+{
+  "id": "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+  "version": "1.1.0",
+  "title": "Muelle real, barrilete y curva de par",
+  "blockIds": [
+    "block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Muelle real, barrilete y curva de par",
+      "en": "Muelle real, barrilete y curva de par"
+    },
+    "purpose": {
+      "es": "¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?",
+      "en": "¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Muelle real, barrilete y curva de par mediante relaciones causales.",
+        "en": "Explicar Muelle real, barrilete y curva de par mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.muelle-real",
+      "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.arbol-de-barrilete",
+      "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.curva-de-par"
+    ],
+    "sourceIds": [
+      "source.private.daniels.mainsprings",
+      "source.external.ciechanowski-mechanical-watch",
+      "source.external.17jewels"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Muelle real, barrilete y curva de par después de estudiar su teoría.",
+        "en": "Observar y manipular Muelle real, barrilete y curva de par después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "El muelle real almacena energía al deformarse dentro del barrilete. Sus extremos enlazan árbol y tambor; el modo de carga decide qué elemento gira. Espesor, altura, longitud, material, forma previa, lubricación y número de vueltas condicionan par, reserva y fatiga. El barrilete además guía, contiene y transmite, por lo que no es solo una caja.",
+        "en": "El muelle real almacena energía al deformarse dentro del barrilete. Sus extremos enlazan árbol y tambor; el modo de carga decide qué elemento gira. Espesor, altura, longitud, material, forma previa, lubricación y número de vueltas condicionan par, reserva y fatiga. El barrilete además guía, contiene y transmite, por lo que no es solo una caja."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema barrel con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "girar corona o rotor",
+        "cargar árbol o barrilete",
+        "deformar muelle",
+        "retener carga",
+        "liberar par en el dentado",
+        "alimentar tren"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "muelle real",
+        "árbol de barrilete",
+        "curva de par"
+      ],
+      "arrows": [
+        "girar corona o rotor → cargar árbol o barrilete",
+        "cargar árbol o barrilete → deformar muelle",
+        "deformar muelle → retener carga",
+        "retener carga → liberar par en el dentado",
+        "liberar par en el dentado → alimentar tren"
+      ],
+      "animations": [
+        "wind",
+        "release",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Muelle real, barrilete y curva de par sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Muelle real, barrilete y curva de par sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: girar corona o rotor → cargar árbol o barrilete → deformar muelle → retener carga → liberar par en el dentado → alimentar tren. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: girar corona o rotor → cargar árbol o barrilete → deformar muelle → retener carga → liberar par en el dentado → alimentar tren. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.muelle-real",
+        "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.arbol-de-barrilete",
+        "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.curva-de-par"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1268,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: muelle real, árbol de barrilete, curva de par.",
+          "en": "Defino con mis palabras: muelle real, árbol de barrilete, curva de par."
+        },
+        {
+          "es": "Sigo «Muelle real, barrilete y curva de par» desde girar corona o rotor hasta alimentar tren y explico cada enlace.",
+          "en": "Sigo «Muelle real, barrilete y curva de par» desde girar corona o rotor hasta alimentar tren y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Muelle real, barrilete y curva de par» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Muelle real, barrilete y curva de par» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Compara barrilete fijo, barrilete giratorio y brida deslizante; dibuja flujo de carga y descarga y marca la comprobación segura previa a desmontaje.",
+          "en": "Aplico el criterio a esta variante: Compara barrilete fijo, barrilete giratorio y brida deslizante; dibuja flujo de carga y descarga y marca la comprobación segura previa a desmontaje."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Muelle real, barrilete y curva de par» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Muelle real, barrilete y curva de par» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.muelle-real",
+        "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.arbol-de-barrilete",
+        "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.curva-de-par"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?",
+          "en": "¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?"
+        },
+        {
+          "es": "¿Qué relación causal de «Muelle real, barrilete y curva de par» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Muelle real, barrilete y curva de par» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

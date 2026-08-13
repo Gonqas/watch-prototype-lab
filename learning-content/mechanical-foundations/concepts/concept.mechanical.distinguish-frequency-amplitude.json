@@ -1,0 +1,62 @@
+{
+  "id": "concept.mechanical.distinguish-frequency-amplitude",
+  "version": "0.5.0",
+  "title": {
+    "es": "Distinguir frecuencia y amplitud",
+    "en": "Distinguir frecuencia y amplitud"
+  },
+  "summary": {
+    "es": "Distinguir frecuencia y amplitud mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Distinguir frecuencia y amplitud mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "concept",
+  "prerequisiteIds": [
+    "concept.mechanical.order-escapement-phases"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.distinguish-frequency-amplitude"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "oscillator",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.distinguish-frequency-amplitude",
+    "activity.mechanical.configure-oscillator"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Distinguir frecuencia y amplitud mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Distinguir frecuencia y amplitud mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Distinguir frecuencia y amplitud exige declarar magnitud, unidad, fórmula, entradas y margen de interpretación dentro de oscilador. Distinguir frecuencia y amplitud mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. Un valor normalizado o calculado no se presenta como dimensión oficial.",
+    "en": "Distinguir frecuencia y amplitud exige declarar magnitud, unidad, fórmula, entradas y margen de interpretación dentro de oscilador. Distinguir frecuencia y amplitud mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. Un valor normalizado o calculado no se presenta como dimensión oficial."
+  },
+  "whyItMatters": {
+    "es": "Entender distinguir frecuencia y amplitud permite razonar sobre el reloj completo y no memorizar piezas aisladas."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega distinguir frecuencia y amplitud dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema oscillator."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [
+    "misconception.mechanical.frequency-is-amplitude"
+  ],
+  "knowledgeType": "quantitative",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.oscillator",
+  "targetEvidenceLevel": "causal-explanation"
+}

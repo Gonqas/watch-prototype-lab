@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.toh-cronografo-estados.corazon-de-puesta-a-cero",
+  "version": "1.1.0",
+  "title": {
+    "es": "corazón de puesta a cero",
+    "en": "corazón de puesta a cero"
+  },
+  "summary": {
+    "es": "Leva que conduce el indicador a una posición estable al recibir el martillo.",
+    "en": "Leva que conduce el indicador a una posición estable al recibir el martillo."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.toh-soneria-control.rastrillo",
+    "concept.encyclopedia.complications.toh-soneria-control.caracol",
+    "concept.encyclopedia.complications.toh-soneria-control.pieza-sorpresa"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "movementIds": [],
+  "subsystem": "chronograph",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch11",
+    "source.official.eta.7750",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.toh-cronografo-estados",
+  "plainLanguage": {
+    "es": "Leva que conduce el indicador a una posición estable al recibir el martillo.",
+    "en": "Leva que conduce el indicador a una posición estable al recibir el martillo."
+  },
+  "technicalLanguage": {
+    "es": "corazón de puesta a cero se interpreta mediante la cadena recibir pulsación → cambiar estado de mando → liberar freno → acoplar contador → detener y frenar → desacoplar y poner a cero y las condiciones declaradas en la unidad.",
+    "en": "corazón de puesta a cero se interpreta mediante la cadena recibir pulsación → cambiar estado de mando → liberar freno → acoplar contador → detener y frenar → desacoplar y poner a cero y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?",
+    "en": "Permite explicar y comprobar ¿qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir corazón de puesta a cero sin circularidad.",
+      "en": "Definir corazón de puesta a cero sin circularidad."
+    },
+    {
+      "es": "Relacionar corazón de puesta a cero con una entrada, una interfaz y una salida.",
+      "en": "Relacionar corazón de puesta a cero con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "transfer",
+  "availability": "prerequisite-blocked"
+}

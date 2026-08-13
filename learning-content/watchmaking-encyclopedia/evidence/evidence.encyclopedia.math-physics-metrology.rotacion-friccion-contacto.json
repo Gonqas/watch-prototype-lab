@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.math-physics-metrology.rotacion-friccion-contacto"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

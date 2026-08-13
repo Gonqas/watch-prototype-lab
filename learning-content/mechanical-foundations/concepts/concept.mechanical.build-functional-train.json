@@ -1,0 +1,62 @@
+{
+  "id": "concept.mechanical.build-functional-train",
+  "version": "0.5.0",
+  "title": {
+    "es": "Construir un tren funcional",
+    "en": "Construir un tren funcional"
+  },
+  "summary": {
+    "es": "Construir un tren funcional mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Construir un tren funcional mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.mechanical.determine-rotation-direction"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.build-functional-train"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "train",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.build-train",
+    "activity.mechanical.interrupt-train"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Construir un tren funcional mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Construir un tren funcional mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Construir un tren funcional es una secuencia reversible sobre tren de ruedas que conserva identidad, orientación, dependencias y estado inicial. Construir un tren funcional mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. Cada paso se valida antes de avanzar y deja evidencia de ayudas, errores y restauración.",
+    "en": "Construir un tren funcional es una secuencia reversible sobre tren de ruedas que conserva identidad, orientación, dependencias y estado inicial. Construir un tren funcional mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. Cada paso se valida antes de avanzar y deja evidencia de ayudas, errores y restauración."
+  },
+  "whyItMatters": {
+    "es": "Dominar construir un tren funcional permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega construir un tren funcional dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema train."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [
+    "misconception.mechanical.near-gears-mesh"
+  ],
+  "knowledgeType": "procedural",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.train",
+  "targetEvidenceLevel": "independent-simulation"
+}

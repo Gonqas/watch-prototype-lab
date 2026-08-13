@@ -1,0 +1,142 @@
+{
+  "id": "lesson.encyclopedia.quartz-electronics.electricidad-y-celulas",
+  "version": "1.1.0",
+  "title": "Tensión, corriente, resistencia y células",
+  "blockIds": [
+    "block.encyclopedia.quartz-electronics.electricidad-y-celulas"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.electricidad-y-celulas"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Tensión, corriente, resistencia y células",
+      "en": "Tensión, corriente, resistencia y células"
+    },
+    "purpose": {
+      "es": "¿Qué significa alimentar un movimiento y por qué una tensión correcta en vacío puede no bastar?",
+      "en": "¿Qué significa alimentar un movimiento y por qué una tensión correcta en vacío puede no bastar?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Tensión, corriente, resistencia y células mediante relaciones causales.",
+        "en": "Explicar Tensión, corriente, resistencia y células mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.tension",
+      "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.corriente",
+      "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.resistencia-interna"
+    ],
+    "sourceIds": [
+      "source.official.miyota.2035",
+      "source.institutional.awci.standards",
+      "source.external.watchguy-manuals"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.tension",
+        "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.corriente",
+        "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.resistencia-interna"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1156,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.quartz-electronics.electricidad-y-celulas"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: tensión, corriente, resistencia interna.",
+          "en": "Defino con mis palabras: tensión, corriente, resistencia interna."
+        },
+        {
+          "es": "Sigo «Tensión, corriente, resistencia y células» desde química establece tensión hasta energía se agota y explico cada enlace.",
+          "en": "Sigo «Tensión, corriente, resistencia y células» desde química establece tensión hasta energía se agota y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Tensión, corriente, resistencia y células» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Tensión, corriente, resistencia y células» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Dibuja un circuito equivalente simple con fuente y resistencia interna y explica qué dos mediciones separarían fuente débil de contacto deficiente.",
+          "en": "Aplico el criterio a esta variante: Dibuja un circuito equivalente simple con fuente y resistencia interna y explica qué dos mediciones separarían fuente débil de contacto deficiente."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Tensión, corriente, resistencia y células» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Tensión, corriente, resistencia y células» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.tension",
+        "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.corriente",
+        "concept.encyclopedia.quartz-electronics.electricidad-y-celulas.resistencia-interna"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué significa alimentar un movimiento y por qué una tensión correcta en vacío puede no bastar?",
+          "en": "¿Qué significa alimentar un movimiento y por qué una tensión correcta en vacío puede no bastar?"
+        },
+        {
+          "es": "¿Qué relación causal de «Tensión, corriente, resistencia y células» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Tensión, corriente, resistencia y células» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

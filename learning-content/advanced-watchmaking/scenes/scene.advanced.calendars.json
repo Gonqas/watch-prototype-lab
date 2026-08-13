@@ -1,0 +1,134 @@
+{
+  "id": "scene.advanced.calendars",
+  "version": "1.1.0",
+  "title": "Calendarios como acumulación, salto, retención y corrección · estudio aplicado",
+  "description": "Actividad documental y causal posterior a la teoría. No presenta geometría ausente ni competencia física.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "La actividad completa se expresa como pregunta, fuentes, tabla causal y respuesta estructurada; no depende del color ni del movimiento.",
+    "reducedMotionAlternative": "No existe animación esencial. Los estados y relaciones se presentan en texto.",
+    "keyboardActions": [
+      "Recorrer campos con Tab.",
+      "Guardar respuesta con el control nombrado."
+    ],
+    "colorIndependentCues": [
+      "Autoridad, estado y resultado se expresan con texto."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "reduced-motion"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.advanced.calendars.boundary",
+      "markdown": "Comparación documental y simulación educativa. Sin geometría exacta, física validada ni acreditación manual.",
+      "accessibleLabel": "Límite de autoridad de la actividad."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.advanced.calendars.respond",
+      "instructionMarkdown": "¿Cómo transforma el calendario una rotación diaria en un salto controlado y corregible? Construye una respuesta defendible después de estudiar la teoría y las fuentes.",
+      "questions": [
+        {
+          "id": "question.advanced.calendars.response",
+          "promptMarkdown": "Resuelve **Calendarios como acumulación, salto, retención y corrección** separando hechos, razonamiento, desconocidos y confianza.",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.claims",
+              "label": "Hechos respaldados y sus fuentes",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.reasoning",
+              "label": "Relaciones, comparación y decisión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.unknowns",
+              "label": "Desconocidos, riesgos y plan de verificación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza y qué la cambiaría",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo transforma el calendario una rotación diaria en un salto controlado y corregible?",
+              "en": "¿Cómo transforma el calendario una rotación diaria en un salto controlado y corregible?"
+            },
+            "feedback": {
+              "es": "La respuesta se conserva como evidencia pendiente de revisión humana; la longitud no equivale a corrección.",
+              "en": "La respuesta se conserva como evidencia pendiente de revisión humana; la longitud no equivale a corrección."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.advanced.calendars.response",
+          "requiredFieldIds": [
+            "field.claims",
+            "field.reasoning",
+            "field.unknowns",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

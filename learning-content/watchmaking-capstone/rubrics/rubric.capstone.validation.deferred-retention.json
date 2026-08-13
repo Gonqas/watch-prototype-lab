@@ -1,0 +1,43 @@
+{
+  "id": "rubric.capstone.validation.deferred-retention",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.validation.deferred-retention",
+  "rules": [
+    {
+      "id": "rule.capstone.validation.deferred-retention.demonstrated",
+      "version": "1.0.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.8,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Retención diferida y puerta de liberación: revisión humana de requisitos, alternativas, riesgos, evidencia y límites."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.capstone.validation.deferred-retention",
+    "version": "1.0.0",
+    "competencyId": "competency.capstone.validation.deferred-retention",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "human-review",
+            "status": "active",
+            "minimumConfidence": 0.8
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+  "version": "1.1.0",
+  "title": "Cuaderno: Dentado relojero y condiciones de engrane",
+  "description": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Dentado relojero y condiciones de engrane. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.dentado-y-engranes.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.dentado-y-engranes.answer",
+      "instructionMarkdown": "Explica **Dentado relojero y condiciones de engrane** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.dentado-y-engranes.explain",
+          "promptMarkdown": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.dentado-y-engranes.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.dentado-y-engranes.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.dentado-y-engranes.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.dentado-y-engranes.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.dentado-y-engranes.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por diente conductor entra y sigue hasta piñón mantiene relación media.",
+                "en": "Empieza por diente conductor entra y sigue hasta piñón mantiene relación media."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.dentado-y-engranes.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Los perfiles relojeros buscan entrada y salida suaves con pocos dientes de piñón y escalas pequeñas. Paso, módulo o sistema equivalente, diámetro primitivo, addendum, dedendum, distancia entre centros, profundidad y depthing interactúan. Contar dientes determina relación, pero no garantiza contacto correcto ni ausencia de interferencia.",
+                "en": "Los perfiles relojeros buscan entrada y salida suaves con pocos dientes de piñón y escalas pequeñas. Paso, módulo o sistema equivalente, diámetro primitivo, addendum, dedendum, distancia entre centros, profundidad y depthing interactúan. Contar dientes determina relación, pero no garantiza contacto correcto ni ausencia de interferencia."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+              "en": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.dentado-y-engranes.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.dentado-y-engranes.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.dentado-y-engranes.evidence",
+            "field.encyclopedia.mechanical-energy-trains.dentado-y-engranes.limit",
+            "field.encyclopedia.mechanical-energy-trains.dentado-y-engranes.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

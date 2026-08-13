@@ -1,0 +1,21 @@
+{
+  "id": "recommendation.horology.retain-state-source-confidence",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Comprobar retención: state source confidence"
+  },
+  "reason": {
+    "es": "Una demostración inicial no basta para considerarlo consolidado. Se necesita evidencia independiente posterior, en otra sesión y sobre un contexto distinto."
+  },
+  "rule": "independent-later-evidence-different-session@1.0.0",
+  "priority": 60,
+  "target": {
+    "kind": "competency",
+    "id": "competency.horology.state-source-confidence"
+  },
+  "evidenceTemplateIds": [
+    "evidence.horology.source-consultation"
+  ],
+  "required": false
+}

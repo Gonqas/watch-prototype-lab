@@ -1,0 +1,339 @@
+{
+  "id": "route.encyclopedia.complications",
+  "version": "1.1.0",
+  "title": {
+    "es": "Complicaciones y mecanismos avanzados",
+    "en": "Complicaciones y mecanismos avanzados"
+  },
+  "purpose": {
+    "es": "Comprender las complicaciones como máquinas de estados, cadenas de energía e interfaces ajustables, no como listas de piezas prestigiosas.",
+    "en": "Comprender las complicaciones como máquinas de estados, cadenas de energía e interfaces ajustables, no como listas de piezas prestigiosas."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.complications.automatico-y-reserva",
+    "module.encyclopedia.complications.calendarios",
+    "module.encyclopedia.complications.cronografo-mandos",
+    "module.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+    "module.encyclopedia.complications.sonerias-y-repeticiones",
+    "module.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+    "module.encyclopedia.complications.toh-automatico-rotor",
+    "module.encyclopedia.complications.toh-reversores-deslizamiento",
+    "module.encyclopedia.complications.toh-calendario-secuencia",
+    "module.encyclopedia.complications.toh-calendario-perpetuo",
+    "module.encyclopedia.complications.toh-soneria-control",
+    "module.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.complications.automatico-y-reserva",
+    "competency.encyclopedia.complications.calendarios",
+    "competency.encyclopedia.complications.cronografo-mandos",
+    "competency.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+    "competency.encyclopedia.complications.sonerias-y-repeticiones",
+    "competency.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+    "competency.encyclopedia.complications.toh-automatico-rotor",
+    "competency.encyclopedia.complications.toh-reversores-deslizamiento",
+    "competency.encyclopedia.complications.toh-calendario-secuencia",
+    "competency.encyclopedia.complications.toh-calendario-perpetuo",
+    "competency.encyclopedia.complications.toh-soneria-control",
+    "competency.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "movementIds": [],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.official.miyota.8215",
+    "source.official.eta.2824",
+    "source.external.animagraffs-mechanical-watch",
+    "source.external.hodinkee-watch101",
+    "source.official.eta.7750",
+    "source.official.seiko.6138",
+    "source.external.naked-watchmaker",
+    "source.external.watchguy-manuals",
+    "source.external.horology-student.books",
+    "source.encyclopedia.original-synthesis",
+    "source.private.daniels.movement-design",
+    "source.private.toh.ch08",
+    "source.private.chicago.6",
+    "source.private.daniels.mainsprings",
+    "source.private.toh.ch09",
+    "source.private.toh.ch10",
+    "source.private.toh.ch11"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.complications.01",
+        "order": 1,
+        "title": {
+          "es": "Automático, embragues y reserva de marcha",
+          "en": "Automático, embragues y reserva de marcha"
+        },
+        "outcome": {
+          "es": "¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?",
+          "en": "¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.automatico-y-reserva",
+        "activityId": "activity.encyclopedia.complications.automatico-y-reserva",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.automatico-y-reserva.rotor",
+          "concept.encyclopedia.complications.automatico-y-reserva.embrague-unidireccional",
+          "concept.encyclopedia.complications.automatico-y-reserva.indicador-de-reserva"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.02",
+        "order": 2,
+        "title": {
+          "es": "Fecha, día, calendario anual y perpetuo",
+          "en": "Fecha, día, calendario anual y perpetuo"
+        },
+        "outcome": {
+          "es": "¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?",
+          "en": "¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.calendarios",
+        "activityId": "activity.encyclopedia.complications.calendarios",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.calendarios.dedo-de-fecha",
+          "concept.encyclopedia.complications.calendarios.saltador",
+          "concept.encyclopedia.complications.calendarios.rueda-de-programa"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.03",
+        "order": 3,
+        "title": {
+          "es": "Cronógrafo: mando, rueda de pilares y sistema de levas",
+          "en": "Cronógrafo: mando, rueda de pilares y sistema de levas"
+        },
+        "outcome": {
+          "es": "¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?",
+          "en": "¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.cronografo-mandos",
+        "activityId": "activity.encyclopedia.complications.cronografo-mandos",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.cronografo-mandos.rueda-de-pilares",
+          "concept.encyclopedia.complications.cronografo-mandos.leva-de-mando",
+          "concept.encyclopedia.complications.cronografo-mandos.maquina-de-estados"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.04",
+        "order": 4,
+        "title": {
+          "es": "Acoplamiento, contadores, corazón y puesta a cero",
+          "en": "Acoplamiento, contadores, corazón y puesta a cero"
+        },
+        "outcome": {
+          "es": "¿Cómo entra y sale potencia del cronógrafo y cómo vuelven varios indicadores exactamente a origen?",
+          "en": "¿Cómo entra y sale potencia del cronógrafo y cómo vuelven varios indicadores exactamente a origen?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+        "activityId": "activity.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-horizontal",
+          "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-vertical",
+          "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.leva-corazon"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.05",
+        "order": 5,
+        "title": {
+          "es": "Sonerías, repetición y gobierno acústico",
+          "en": "Sonerías, repetición y gobierno acústico"
+        },
+        "outcome": {
+          "es": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?",
+          "en": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.sonerias-y-repeticiones",
+        "activityId": "activity.encyclopedia.complications.sonerias-y-repeticiones",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.sonerias-y-repeticiones.caracol",
+          "concept.encyclopedia.complications.sonerias-y-repeticiones.rastrillo",
+          "concept.encyclopedia.complications.sonerias-y-repeticiones.regulador-de-soneria"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.06",
+        "order": 6,
+        "title": {
+          "es": "GMT, hora mundial, tourbillon y fuerza constante",
+          "en": "GMT, hora mundial, tourbillon y fuerza constante"
+        },
+        "outcome": {
+          "es": "¿Qué problema intenta resolver cada mecanismo avanzado y qué afirmaciones comerciales deben descomponerse?",
+          "en": "¿Qué problema intenta resolver cada mecanismo avanzado y qué afirmaciones comerciales deben descomponerse?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+        "activityId": "activity.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.gmt-independiente",
+          "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.tourbillon",
+          "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.remontoir-de-igualdad"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.07",
+        "order": 7,
+        "title": {
+          "es": "Rotor, masa excéntrica y captación de movimiento",
+          "en": "Rotor, masa excéntrica y captación de movimiento"
+        },
+        "outcome": {
+          "es": "¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?",
+          "en": "¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.toh-automatico-rotor",
+        "activityId": "activity.encyclopedia.complications.toh-automatico-rotor",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.toh-automatico-rotor.masa-oscilante",
+          "concept.encyclopedia.complications.toh-automatico-rotor.rectificacion-mecanica",
+          "concept.encyclopedia.complications.toh-automatico-rotor.rendimiento-de-carga"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.08",
+        "order": 8,
+        "title": {
+          "es": "Reversores, desacoplamiento y limitación de carga",
+          "en": "Reversores, desacoplamiento y limitación de carga"
+        },
+        "outcome": {
+          "es": "¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?",
+          "en": "¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.toh-reversores-deslizamiento",
+        "activityId": "activity.encyclopedia.complications.toh-reversores-deslizamiento",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.toh-reversores-deslizamiento.rueda-inversora",
+          "concept.encyclopedia.complications.toh-reversores-deslizamiento.desacoplamiento",
+          "concept.encyclopedia.complications.toh-reversores-deslizamiento.par-de-deslizamiento"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.09",
+        "order": 9,
+        "title": {
+          "es": "Calendario simple, salto y corrección",
+          "en": "Calendario simple, salto y corrección"
+        },
+        "outcome": {
+          "es": "¿Cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?",
+          "en": "¿Cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.toh-calendario-secuencia",
+        "activityId": "activity.encyclopedia.complications.toh-calendario-secuencia",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.toh-calendario-secuencia.arrastre-de-fecha",
+          "concept.encyclopedia.complications.toh-calendario-secuencia.salto-de-calendario",
+          "concept.encyclopedia.complications.toh-calendario-secuencia.jumper"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.10",
+        "order": 10,
+        "title": {
+          "es": "Calendarios completo, anual y perpetuo",
+          "en": "Calendarios completo, anual y perpetuo"
+        },
+        "outcome": {
+          "es": "¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?",
+          "en": "¿Qué memoria mecánica necesita un reloj para resolver meses desiguales y años bisiestos?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.toh-calendario-perpetuo",
+        "activityId": "activity.encyclopedia.complications.toh-calendario-perpetuo",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.toh-calendario-perpetuo.rueda-programa",
+          "concept.encyclopedia.complications.toh-calendario-perpetuo.gran-palanca",
+          "concept.encyclopedia.complications.toh-calendario-perpetuo.ciclo-bisiesto"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.11",
+        "order": 11,
+        "title": {
+          "es": "Alarma, sonería y repetición a demanda",
+          "en": "Alarma, sonería y repetición a demanda"
+        },
+        "outcome": {
+          "es": "¿Cómo separan estos mecanismos almacenamiento, lectura de hora, control y producción de sonido?",
+          "en": "¿Cómo separan estos mecanismos almacenamiento, lectura de hora, control y producción de sonido?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.toh-soneria-control",
+        "activityId": "activity.encyclopedia.complications.toh-soneria-control",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.toh-soneria-control.rastrillo",
+          "concept.encyclopedia.complications.toh-soneria-control.caracol",
+          "concept.encyclopedia.complications.toh-soneria-control.pieza-sorpresa"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.complications.12",
+        "order": 12,
+        "title": {
+          "es": "Cronógrafo: mando, embrague, freno y puesta a cero",
+          "en": "Cronógrafo: mando, embrague, freno y puesta a cero"
+        },
+        "outcome": {
+          "es": "¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?",
+          "en": "¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?"
+        },
+        "lessonId": "lesson.encyclopedia.complications.toh-cronografo-estados",
+        "activityId": "activity.encyclopedia.complications.toh-cronografo-estados",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.complications.toh-cronografo-estados.organo-de-mando",
+          "concept.encyclopedia.complications.toh-cronografo-estados.embrague-de-cronografo",
+          "concept.encyclopedia.complications.toh-cronografo-estados.corazon-de-puesta-a-cero"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.complications.toh-cronografo-estados"
+    ]
+  }
+}

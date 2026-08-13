@@ -1,0 +1,65 @@
+{
+  "id": "concept.horology.functional-chain",
+  "version": "0.5.0",
+  "title": {
+    "es": "Funciones del reloj"
+  },
+  "summary": {
+    "es": "Relacionar fuente, control o regulación, transmisión, indicación y estructura sin confundir función con aspecto."
+  },
+  "kind": "subsystem",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.horology.watch-anatomy",
+    "concept.horology.part-language"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.horology.quartz-chain",
+    "concept.horology.mechanical-chain"
+  ],
+  "competencyIds": [
+    "competency.horology.identify-functional-subsystems"
+  ],
+  "movementIds": [],
+  "subsystem": "horology-foundations",
+  "routeIds": [
+    "route.horology.orientation"
+  ],
+  "activityIds": [
+    "activity.horology.classify-subsystems",
+    "activity.horology.select-affected-subsystem"
+  ],
+  "sourceIds": [
+    "source.horology.original-functional-map"
+  ],
+  "misconceptionIds": [
+    "misconception.horology.near-means-connected",
+    "misconception.horology.train-is-energy-source"
+  ],
+  "bridgeLessonId": "lesson.horology.system",
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available",
+  "plainLanguage": {
+    "es": "Relacionar fuente, control o regulación, transmisión, indicación y estructura sin confundir función con aspecto."
+  },
+  "technicalLanguage": {
+    "es": "Funciones del reloj describe una relación causal dentro de fundamentos de relojería: una entrada produce un cambio observable mediante una interfaz declarada. Relacionar fuente, control o regulación, transmisión, indicación y estructura sin confundir función con aspecto. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Funciones del reloj describe una relación causal dentro de fundamentos de relojería: una entrada produce un cambio observable mediante una interfaz declarada. Relacionar fuente, control o regulación, transmisión, indicación y estructura sin confundir función con aspecto. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "whyItMatters": {
+    "es": "Reconocer funciones del reloj permite seguir la causa y el efecto entre subsistemas."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega funciones del reloj dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema fundamentos de relojería."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.horology.quartz-chain",
+    "concept.horology.mechanical-chain"
+  ]
+}

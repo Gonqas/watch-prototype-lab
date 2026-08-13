@@ -1,0 +1,147 @@
+{
+  "id": "lesson.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+  "version": "1.1.0",
+  "title": "Diagnóstico sistemático de un cuarzo analógico",
+  "blockIds": [
+    "block.encyclopedia.quartz-electronics.diagnostico-cuarzo"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.diagnostico-cuarzo"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Diagnóstico sistemático de un cuarzo analógico",
+      "en": "Diagnóstico sistemático de un cuarzo analógico"
+    },
+    "purpose": {
+      "es": "¿Cómo localizar la primera función ausente sin sustituir piezas por ensayo?",
+      "en": "¿Cómo localizar la primera función ausente sin sustituir piezas por ensayo?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Diagnóstico sistemático de un cuarzo analógico mediante relaciones causales.",
+        "en": "Explicar Diagnóstico sistemático de un cuarzo analógico mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.bobina",
+      "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.estator",
+      "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.rotor-paso-a-paso"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.prueba-discriminante",
+      "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.carga-mecanica",
+      "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.arbol-de-fallos"
+    ],
+    "sourceIds": [
+      "source.institutional.awci.standards",
+      "source.official.miyota.2035",
+      "source.external.watchguy-manuals",
+      "source.external.watchguy-repair-blog"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.prueba-discriminante",
+        "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.carga-mecanica",
+        "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.arbol-de-fallos"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1126,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.quartz-electronics.diagnostico-cuarzo"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: prueba discriminante, carga mecánica, árbol de fallos.",
+          "en": "Defino con mis palabras: prueba discriminante, carga mecánica, árbol de fallos."
+        },
+        {
+          "es": "Separo en «Diagnóstico sistemático de un cuarzo analógico» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Diagnóstico sistemático de un cuarzo analógico» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Diagnóstico sistemático de un cuarzo analógico» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Diagnóstico sistemático de un cuarzo analógico» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Resuelve tres síntomas —sin consumo, consumo alto, segundero vacilante— con árboles separados y una condición de parada segura.",
+          "en": "Aplico el criterio a esta variante: Resuelve tres síntomas —sin consumo, consumo alto, segundero vacilante— con árboles separados y una condición de parada segura."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Diagnóstico sistemático de un cuarzo analógico» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Diagnóstico sistemático de un cuarzo analógico» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.prueba-discriminante",
+        "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.carga-mecanica",
+        "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.arbol-de-fallos"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo localizar la primera función ausente sin sustituir piezas por ensayo?",
+          "en": "¿Cómo localizar la primera función ausente sin sustituir piezas por ensayo?"
+        },
+        {
+          "es": "¿Qué relación causal de «Diagnóstico sistemático de un cuarzo analógico» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Diagnóstico sistemático de un cuarzo analógico» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "id": "lesson.encyclopedia.complications.automatico-y-reserva",
+  "version": "1.1.0",
+  "title": "Automático, embragues y reserva de marcha",
+  "blockIds": [
+    "block.encyclopedia.complications.automatico-y-reserva"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.automatico-y-reserva"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Automático, embragues y reserva de marcha",
+      "en": "Automático, embragues y reserva de marcha"
+    },
+    "purpose": {
+      "es": "¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?",
+      "en": "¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Automático, embragues y reserva de marcha mediante relaciones causales.",
+        "en": "Explicar Automático, embragues y reserva de marcha mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.complications.automatico-y-reserva.rotor",
+      "concept.encyclopedia.complications.automatico-y-reserva.embrague-unidireccional",
+      "concept.encyclopedia.complications.automatico-y-reserva.indicador-de-reserva"
+    ],
+    "sourceIds": [
+      "source.official.miyota.8215",
+      "source.official.eta.2824",
+      "source.external.animagraffs-mechanical-watch"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.complications.automatico-y-reserva.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Automático, embragues y reserva de marcha después de estudiar su teoría.",
+        "en": "Observar y manipular Automático, embragues y reserva de marcha después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "El sistema automático convierte oscilaciones del rotor en carga del barrilete mediante reducción y mecanismos reversores o unidireccionales. El indicador de reserva compara estados de árbol y barrilete o integra otra relación equivalente. Ambos subsistemas deben convivir con cuerda manual, brida deslizante, eficiencia y espacio.",
+        "en": "El sistema automático convierte oscilaciones del rotor en carga del barrilete mediante reducción y mecanismos reversores o unidireccionales. El indicador de reserva compara estados de árbol y barrilete o integra otra relación equivalente. Ambos subsistemas deben convivir con cuerda manual, brida deslizante, eficiencia y espacio."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema automatic con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "muñeca acelera caja",
+        "rotor se desplaza",
+        "reversor rectifica",
+        "reducción aumenta par",
+        "barrilete se carga",
+        "diferencial muestra estado"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "rotor",
+        "embrague unidireccional",
+        "indicador de reserva"
+      ],
+      "arrows": [
+        "muñeca acelera caja → rotor se desplaza",
+        "rotor se desplaza → reversor rectifica",
+        "reversor rectifica → reducción aumenta par",
+        "reducción aumenta par → barrilete se carga",
+        "barrilete se carga → diferencial muestra estado"
+      ],
+      "animations": [
+        "enable-automatic",
+        "rotate",
+        "disable-automatic",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Automático, embragues y reserva de marcha sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Automático, embragues y reserva de marcha sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: muñeca acelera caja → rotor se desplaza → reversor rectifica → reducción aumenta par → barrilete se carga → diferencial muestra estado. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: muñeca acelera caja → rotor se desplaza → reversor rectifica → reducción aumenta par → barrilete se carga → diferencial muestra estado. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.complications.automatico-y-reserva.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.complications.automatico-y-reserva.rotor",
+        "concept.encyclopedia.complications.automatico-y-reserva.embrague-unidireccional",
+        "concept.encyclopedia.complications.automatico-y-reserva.indicador-de-reserva"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1201,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.complications.automatico-y-reserva"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: rotor, embrague unidireccional, indicador de reserva.",
+          "en": "Defino con mis palabras: rotor, embrague unidireccional, indicador de reserva."
+        },
+        {
+          "es": "Sigo «Automático, embragues y reserva de marcha» desde muñeca acelera caja hasta diferencial muestra estado y explico cada enlace.",
+          "en": "Sigo «Automático, embragues y reserva de marcha» desde muñeca acelera caja hasta diferencial muestra estado y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Automático, embragues y reserva de marcha» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Automático, embragues y reserva de marcha» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Compara automático unidireccional y bidireccional mediante ruta de energía, pérdidas, servicio y prueba, sin declarar superioridad universal.",
+          "en": "Aplico el criterio a esta variante: Compara automático unidireccional y bidireccional mediante ruta de energía, pérdidas, servicio y prueba, sin declarar superioridad universal."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Automático, embragues y reserva de marcha» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Automático, embragues y reserva de marcha» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.complications.automatico-y-reserva.rotor",
+        "concept.encyclopedia.complications.automatico-y-reserva.embrague-unidireccional",
+        "concept.encyclopedia.complications.automatico-y-reserva.indicador-de-reserva"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?",
+          "en": "¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?"
+        },
+        {
+          "es": "¿Qué relación causal de «Automático, embragues y reserva de marcha» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Automático, embragues y reserva de marcha» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

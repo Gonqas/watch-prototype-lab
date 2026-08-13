@@ -1,0 +1,121 @@
+{
+  "id": "activity.authoring.selector-walkthrough",
+  "version": "1.0.0",
+  "title": "Recorrer un selector trazable",
+  "sceneIds": [
+    "scene.authoring.selector-walkthrough"
+  ],
+  "competencyIds": [
+    "competency.authoring.traceable-activity"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.authoring.selection"
+  ],
+  "rubricId": "rubric.authoring.traceable-activity",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "active-project-v5-projection"
+  },
+  "authoring": {
+    "lessonId": "lesson.authoring.traceability",
+    "title": {
+      "es": "Recorrer un selector trazable",
+      "en": "Walk through a traceable selector"
+    },
+    "description": {
+      "es": "Actividad metaeducativa: utiliza una entidad neutral del proyecto para demostrar cómo se conectan predicción, interacción, evento, evidencia y rúbrica.",
+      "en": "Meta-learning activity: it uses a neutral project entity to demonstrate how prediction, interaction, event, evidence and rubric connect."
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 6,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "content-authoring",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.isolation",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub"
+    ],
+    "languages": [
+      "es-ES",
+      "en-US"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K1",
+      "physics": "P0",
+      "limitations": [
+        "El modelo solo sirve como soporte neutral de autoría.",
+        "No se enseña ninguna propiedad relojera de la entidad."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Ejemplo de autoría: no es contenido relojero.",
+        "La escena valida contratos, no ingeniería."
+      ],
+      "en": [
+        "Authoring example: this is not watchmaking content.",
+        "The scene validates contracts, not engineering."
+      ]
+    },
+    "sourceIds": [
+      "source.authoring.system-contracts",
+      "source.authoring.original-guide"
+    ],
+    "visualResourceIds": [
+      "visual.authoring.selector-scene",
+      "visual.authoring.selector-text-alternative"
+    ],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.authoring.traceability"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.authoring.traceability"
+      ],
+      "assessesConceptIds": [
+        "concept.authoring.traceability"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.authoring.traceability",
+        "blockId": "explanation.authoring.traceability",
+        "conceptIds": [
+          "concept.authoring.traceability"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La actividad demuestra contratos de autoría sobre un modelo neutral; no acredita conocimiento ni destreza relojera.",
+        "en": "The activity demonstrates authoring contracts on a neutral model; it does not certify watchmaking knowledge or skill."
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

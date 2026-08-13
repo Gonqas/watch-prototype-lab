@@ -1,0 +1,426 @@
+{
+  "id": "route.encyclopedia.micromechanics",
+  "version": "1.1.0",
+  "title": {
+    "es": "Micromecánica y fabricación de componentes",
+    "en": "Micromecánica y fabricación de componentes"
+  },
+  "purpose": {
+    "es": "Desarrollar desde medición y sujeción hasta ejes, ruedas, tornillos, muelles, platinas y rubíes con procesos verificables.",
+    "en": "Desarrollar desde medición y sujeción hasta ejes, ruedas, tornillos, muelles, platinas y rubíes con procesos verificables."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+    "module.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+    "module.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+    "module.encyclopedia.micromechanics.ruedas-y-pinones",
+    "module.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+    "module.encyclopedia.micromechanics.platinas-puentes-y-jewelling",
+    "module.encyclopedia.micromechanics.bulova-botador-eje",
+    "module.encyclopedia.micromechanics.bulova-torneado-fundamental",
+    "module.encyclopedia.micromechanics.bulova-eje-pivotes",
+    "module.encyclopedia.micromechanics.bulova-tija",
+    "module.encyclopedia.micromechanics.bulova-brunido",
+    "module.encyclopedia.micromechanics.chicago-rubies-antichoque",
+    "module.encyclopedia.micromechanics.chicago-escape-dibujo",
+    "module.encyclopedia.micromechanics.chicago-escape-emparejado",
+    "module.encyclopedia.micromechanics.chicago-torno-repivotado"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+    "competency.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+    "competency.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+    "competency.encyclopedia.micromechanics.ruedas-y-pinones",
+    "competency.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+    "competency.encyclopedia.micromechanics.platinas-puentes-y-jewelling",
+    "competency.encyclopedia.micromechanics.bulova-botador-eje",
+    "competency.encyclopedia.micromechanics.bulova-torneado-fundamental",
+    "competency.encyclopedia.micromechanics.bulova-eje-pivotes",
+    "competency.encyclopedia.micromechanics.bulova-tija",
+    "competency.encyclopedia.micromechanics.bulova-brunido",
+    "competency.encyclopedia.micromechanics.chicago-rubies-antichoque",
+    "competency.encyclopedia.micromechanics.chicago-escape-dibujo",
+    "competency.encyclopedia.micromechanics.chicago-escape-emparejado",
+    "competency.encyclopedia.micromechanics.chicago-torno-repivotado"
+  ],
+  "movementIds": [],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.private.daniels.workshop-equipment",
+    "source.private.daniels.turning",
+    "source.private.vba-uhrentechnik",
+    "source.private.daniels.hand-tools",
+    "source.institutional.wostep.watchmaker",
+    "source.private.daniels.small-components",
+    "source.external.bobinchak-school",
+    "source.private.daniels.wheels-pinions",
+    "source.private.daniels.movement-design",
+    "source.private.daniels.finishing-metals",
+    "source.private.daniels.jewelling",
+    "source.private.bulova.01",
+    "source.private.chicago.15",
+    "source.encyclopedia.original-synthesis",
+    "source.private.bulova.03",
+    "source.private.chicago.28",
+    "source.private.bulova.03a",
+    "source.private.bulova.03b",
+    "source.private.chicago.2",
+    "source.private.bulova.04",
+    "source.private.chicago.12",
+    "source.private.chicago.13",
+    "source.private.chicago.14",
+    "source.private.chicago.24",
+    "source.private.chicago.25",
+    "source.private.toh.ch06",
+    "source.private.chicago.21",
+    "source.private.chicago.22",
+    "source.private.chicago.26",
+    "source.private.chicago.29",
+    "source.private.chicago.30",
+    "source.private.chicago.31"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.micromechanics.01",
+        "order": 1,
+        "title": {
+          "es": "Trazado, referencias, medición y sujeción",
+          "en": "Trazado, referencias, medición y sujeción"
+        },
+        "outcome": {
+          "es": "¿Cómo se conserva una referencia geométrica a través de varias operaciones microscópicas?",
+          "en": "¿Cómo se conserva una referencia geométrica a través de varias operaciones microscópicas?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+        "activityId": "activity.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.datum",
+          "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.cadena-de-proceso",
+          "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.sobrematerial"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.02",
+        "order": 2,
+        "title": {
+          "es": "Torno relojero, pinzas y trabajo entre puntos",
+          "en": "Torno relojero, pinzas y trabajo entre puntos"
+        },
+        "outcome": {
+          "es": "¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?",
+          "en": "¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+        "activityId": "activity.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.trabajo-entre-puntos",
+          "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.excentricidad",
+          "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.buril"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.03",
+        "order": 3,
+        "title": {
+          "es": "Ejes, pivotes, hombros y sustitución de staffs",
+          "en": "Ejes, pivotes, hombros y sustitución de staffs"
+        },
+        "outcome": {
+          "es": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+          "en": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+        "activityId": "activity.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.pivote",
+          "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.hombro",
+          "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.brunido"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.04",
+        "order": 4,
+        "title": {
+          "es": "Fabricación de ruedas, piñones y cortadores",
+          "en": "Fabricación de ruedas, piñones y cortadores"
+        },
+        "outcome": {
+          "es": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?",
+          "en": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.ruedas-y-pinones",
+        "activityId": "activity.encyclopedia.micromechanics.ruedas-y-pinones",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.ruedas-y-pinones.fresa-de-modulo",
+          "concept.encyclopedia.micromechanics.ruedas-y-pinones.division-angular",
+          "concept.encyclopedia.micromechanics.ruedas-y-pinones.pinon-de-hojas"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.05",
+        "order": 5,
+        "title": {
+          "es": "Tornillos, pasadores, muelles y piezas pequeñas",
+          "en": "Tornillos, pasadores, muelles y piezas pequeñas"
+        },
+        "outcome": {
+          "es": "¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?",
+          "en": "¿Cómo se fabrican elementos diminutos que deben fijar, flexar o localizar sin fallar durante el servicio?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+        "activityId": "activity.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.rosca-funcional",
+          "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.muelle-de-lamina",
+          "concept.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas.concentracion-de-tensiones"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.06",
+        "order": 6,
+        "title": {
+          "es": "Platinas, puentes, taladros, escariado y colocación de rubíes",
+          "en": "Platinas, puentes, taladros, escariado y colocación de rubíes"
+        },
+        "outcome": {
+          "es": "¿Cómo se crea una estructura que alinee centros y permita montar, ajustar y reparar?",
+          "en": "¿Cómo se crea una estructura que alinee centros y permita montar, ajustar y reparar?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.platinas-puentes-y-jewelling",
+        "activityId": "activity.encyclopedia.micromechanics.platinas-puentes-y-jewelling",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.platinas-puentes-y-jewelling.coordenada-de-centro",
+          "concept.encyclopedia.micromechanics.platinas-puentes-y-jewelling.escariado",
+          "concept.encyclopedia.micromechanics.platinas-puentes-y-jewelling.interferencia-de-rubi"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.07",
+        "order": 7,
+        "title": {
+          "es": "Pasaporte III: botador y sustitución de eje",
+          "en": "Pasaporte III: botador y sustitución de eje"
+        },
+        "outcome": {
+          "es": "¿Qué referencias deben protegerse al separar y montar volante, platillo y eje?",
+          "en": "¿Qué referencias deben protegerse al separar y montar volante, platillo y eje?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.bulova-botador-eje",
+        "activityId": "activity.encyclopedia.micromechanics.bulova-botador-eje",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.bulova-botador-eje.apoyo-de-trabajo",
+          "concept.encyclopedia.micromechanics.bulova-botador-eje.punzon-compatible",
+          "concept.encyclopedia.micromechanics.bulova-botador-eje.remachado-concentrico"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.08",
+        "order": 8,
+        "title": {
+          "es": "Pasaporte IV: torneado entre puntos y buril",
+          "en": "Pasaporte IV: torneado entre puntos y buril"
+        },
+        "outcome": {
+          "es": "¿Qué hábitos producen una superficie concéntrica sin convertir el torno en un riesgo?",
+          "en": "¿Qué hábitos producen una superficie concéntrica sin convertir el torno en un riesgo?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.bulova-torneado-fundamental",
+        "activityId": "activity.encyclopedia.micromechanics.bulova-torneado-fundamental",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.bulova-torneado-fundamental.trabajo-entre-puntos",
+          "concept.encyclopedia.micromechanics.bulova-torneado-fundamental.altura-de-corte",
+          "concept.encyclopedia.micromechanics.bulova-torneado-fundamental.pasada-de-acabado"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.09",
+        "order": 9,
+        "title": {
+          "es": "Pasaporte V: eje de volante, pivotes y hombros",
+          "en": "Pasaporte V: eje de volante, pivotes y hombros"
+        },
+        "outcome": {
+          "es": "¿Cómo se conserva coaxialidad al fabricar una geometría escalonada?",
+          "en": "¿Cómo se conserva coaxialidad al fabricar una geometría escalonada?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.bulova-eje-pivotes",
+        "activityId": "activity.encyclopedia.micromechanics.bulova-eje-pivotes",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.bulova-eje-pivotes.hombro-funcional",
+          "concept.encyclopedia.micromechanics.bulova-eje-pivotes.coaxialidad",
+          "concept.encyclopedia.micromechanics.bulova-eje-pivotes.sobrematerial-de-acabado"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.10",
+        "order": 10,
+        "title": {
+          "es": "Pasaporte VI: fabricación y ajuste de una tija",
+          "en": "Pasaporte VI: fabricación y ajuste de una tija"
+        },
+        "outcome": {
+          "es": "¿Qué funciones deben conservarse al fabricar una tija además de longitud y rosca?",
+          "en": "¿Qué funciones deben conservarse al fabricar una tija además de longitud y rosca?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.bulova-tija",
+        "activityId": "activity.encyclopedia.micromechanics.bulova-tija",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.bulova-tija.cuadrado-de-tija",
+          "concept.encyclopedia.micromechanics.bulova-tija.hombro-de-posicion",
+          "concept.encyclopedia.micromechanics.bulova-tija.longitud-de-caja"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.11",
+        "order": 11,
+        "title": {
+          "es": "Pasaporte VII: bruñido de pivotes",
+          "en": "Pasaporte VII: bruñido de pivotes"
+        },
+        "outcome": {
+          "es": "¿Cómo mejora el bruñido una superficie sin destruir forma ni diámetro?",
+          "en": "¿Cómo mejora el bruñido una superficie sin destruir forma ni diámetro?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.bulova-brunido",
+        "activityId": "activity.encyclopedia.micromechanics.bulova-brunido",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.bulova-brunido.brunidor",
+          "concept.encyclopedia.micromechanics.bulova-brunido.cilindricidad-del-pivote",
+          "concept.encyclopedia.micromechanics.bulova-brunido.radio-de-hombro"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.12",
+        "order": 12,
+        "title": {
+          "es": "Expediente Chicago VIII: rubíes, contrapiedras y antichoque",
+          "en": "Expediente Chicago VIII: rubíes, contrapiedras y antichoque"
+        },
+        "outcome": {
+          "es": "¿Cómo se decide altura, juego y orientación sin mezclar sistemas?",
+          "en": "¿Cómo se decide altura, juego y orientación sin mezclar sistemas?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.chicago-rubies-antichoque",
+        "activityId": "activity.encyclopedia.micromechanics.chicago-rubies-antichoque",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.chicago-rubies-antichoque.contrapiedra",
+          "concept.encyclopedia.micromechanics.chicago-rubies-antichoque.chaton",
+          "concept.encyclopedia.micromechanics.chicago-rubies-antichoque.resorte-antichoque"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.13",
+        "order": 13,
+        "title": {
+          "es": "Expediente Chicago IX: construcción geométrica del escape",
+          "en": "Expediente Chicago IX: construcción geométrica del escape"
+        },
+        "outcome": {
+          "es": "¿Para qué sirve dibujar un escape antes de ajustarlo?",
+          "en": "¿Para qué sirve dibujar un escape antes de ajustarlo?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.chicago-escape-dibujo",
+        "activityId": "activity.encyclopedia.micromechanics.chicago-escape-dibujo",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.chicago-escape-dibujo.linea-de-centros",
+          "concept.encyclopedia.micromechanics.chicago-escape-dibujo.plano-de-impulso",
+          "concept.encyclopedia.micromechanics.chicago-escape-dibujo.construccion-nominal"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.14",
+        "order": 14,
+        "title": {
+          "es": "Expediente Chicago X: emparejar y reparar un escape",
+          "en": "Expediente Chicago X: emparejar y reparar un escape"
+        },
+        "outcome": {
+          "es": "¿Qué significa que rueda, áncora y volante formen un conjunto compatible?",
+          "en": "¿Qué significa que rueda, áncora y volante formen un conjunto compatible?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.chicago-escape-emparejado",
+        "activityId": "activity.encyclopedia.micromechanics.chicago-escape-emparejado",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.chicago-escape-emparejado.matching-de-escape",
+          "concept.encyclopedia.micromechanics.chicago-escape-emparejado.condicion-conjugada",
+          "concept.encyclopedia.micromechanics.chicago-escape-emparejado.correccion-reversible"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.micromechanics.15",
+        "order": 15,
+        "title": {
+          "es": "Expediente Chicago XI: torno, repivotado y piezas perdidas",
+          "en": "Expediente Chicago XI: torno, repivotado y piezas perdidas"
+        },
+        "outcome": {
+          "es": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?",
+          "en": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?"
+        },
+        "lessonId": "lesson.encyclopedia.micromechanics.chicago-torno-repivotado",
+        "activityId": "activity.encyclopedia.micromechanics.chicago-torno-repivotado",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.micromechanics.chicago-torno-repivotado.repivotado",
+          "concept.encyclopedia.micromechanics.chicago-torno-repivotado.pieza-perdida",
+          "concept.encyclopedia.micromechanics.chicago-torno-repivotado.decision-de-conservacion"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.micromechanics.chicago-torno-repivotado"
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "evidence.miyota8215.virtual-assembly",
+  "version": "0.5.0",
+  "competencyId": "competency.miyota8215.virtual-assembly",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.miyota8215.virtual-assembly",
+    "version": "0.5.0",
+    "triggerEventType": "calibre-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.miyota8215.virtual-assembly",
+    "packageId": "wplab.horology.miyota8215",
+    "activityIds": [
+      "activity.miyota8215.guided-assembly",
+      "activity.miyota8215.assisted-assembly",
+      "activity.miyota8215.free-assembly"
+    ],
+    "evidenceTemplateId": "evidence.miyota8215.virtual-assembly",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "instanceId",
+      "authority",
+      "dependencyIds",
+      "toolId",
+      "orientation",
+      "trayZoneId",
+      "verification",
+      "hypothesis",
+      "limitations"
+    ]
+  }
+}

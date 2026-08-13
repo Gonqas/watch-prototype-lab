@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
+  "version": "1.1.0",
+  "title": "Cuaderno: Caso oficial TM III: Hamilton 992B",
+  "description": "¿Cómo se estudia un calibre histórico sin generalizar su secuencia?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Caso oficial TM III: Hamilton 992B. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.atlas-restoration-design.tm-hamilton-992b.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se estudia un calibre histórico sin generalizar su secuencia?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se estudia un calibre histórico sin generalizar su secuencia?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.atlas-restoration-design.tm-hamilton-992b.answer",
+      "instructionMarkdown": "Explica **Caso oficial TM III: Hamilton 992B** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.atlas-restoration-design.tm-hamilton-992b.explain",
+          "promptMarkdown": "¿Cómo se estudia un calibre histórico sin generalizar su secuencia?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-hamilton-992b.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-hamilton-992b.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-hamilton-992b.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-hamilton-992b.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.tm-hamilton-992b.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por confirmar marcas y sigue hasta comparar con unidad solo si existe.",
+                "en": "Empieza por confirmar marcas y sigue hasta comparar con unidad solo si existe."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.tm-hamilton-992b.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El TM documenta identificación, disposición y servicio del Hamilton 992B de 16 líneas y 21 rubíes dentro de la revisión militar. Se usa como expediente primario: cada pieza y paso conserva referencia; las similitudes con otros bolsillos son hipótesis.",
+                "en": "El TM documenta identificación, disposición y servicio del Hamilton 992B de 16 líneas y 21 rubíes dentro de la revisión militar. Se usa como expediente primario: cada pieza y paso conserva referencia; las similitudes con otros bolsillos son hipótesis."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se estudia un calibre histórico sin generalizar su secuencia?",
+              "en": "¿Cómo se estudia un calibre histórico sin generalizar su secuencia?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena confirmar marcas → vincular revisión → leer despiece → mapear dependencias → simular secuencia documental → comparar con unidad solo si existe, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena confirmar marcas → vincular revisión → leer despiece → mapear dependencias → simular secuencia documental → comparar con unidad solo si existe, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.atlas-restoration-design.tm-hamilton-992b.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.atlas-restoration-design.tm-hamilton-992b.mechanism",
+            "field.encyclopedia.atlas-restoration-design.tm-hamilton-992b.evidence",
+            "field.encyclopedia.atlas-restoration-design.tm-hamilton-992b.limit",
+            "field.encyclopedia.atlas-restoration-design.tm-hamilton-992b.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

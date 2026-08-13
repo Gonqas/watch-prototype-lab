@@ -1,0 +1,1341 @@
+{
+  "format": "wplab-learning-pack",
+  "formatVersion": 1,
+  "schemaId": "learning-pack-v1",
+  "packageVersion": "0.5.0",
+  "id": "wplab.horology.miyota8215",
+  "title": "MIYOTA 8215: comprender, desmontar, montar y diagnosticar",
+  "distribution": "local-unsigned",
+  "editorialStatus": "in-review",
+  "authors": [
+    {
+      "name": "Watch Prototype Lab"
+    }
+  ],
+  "languages": [
+    "es-ES"
+  ],
+  "dependencies": [
+    {
+      "packageId": "wplab.horology.functional-map",
+      "versionRange": "^0.5.0"
+    },
+    {
+      "packageId": "wplab.horology.mechanical-foundations",
+      "versionRange": "^0.5.0"
+    }
+  ],
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "reduced-motion@^1.0.0"
+  ],
+  "movements": [
+    {
+      "manufacturer": "MIYOTA",
+      "calibre": "8215",
+      "referenceId": "fixture.miyota.8215.structural"
+    }
+  ],
+  "assets": [],
+  "entries": {
+    "curricula": [
+      {
+        "id": "curriculum.miyota8215",
+        "path": "curriculum/curriculum.miyota8215.json"
+      }
+    ],
+    "routes": [
+      {
+        "id": "route.miyota8215.complete",
+        "path": "routes/route.miyota8215.complete.json"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module.miyota8215.identify",
+        "path": "modules/module.miyota8215.identify.json"
+      },
+      {
+        "id": "module.miyota8215.documentation",
+        "path": "modules/module.miyota8215.documentation.json"
+      },
+      {
+        "id": "module.miyota8215.architecture",
+        "path": "modules/module.miyota8215.architecture.json"
+      },
+      {
+        "id": "module.miyota8215.automatic",
+        "path": "modules/module.miyota8215.automatic.json"
+      },
+      {
+        "id": "module.miyota8215.winding-setting",
+        "path": "modules/module.miyota8215.winding-setting.json"
+      },
+      {
+        "id": "module.miyota8215.calendar",
+        "path": "modules/module.miyota8215.calendar.json"
+      },
+      {
+        "id": "module.miyota8215.barrel-energy",
+        "path": "modules/module.miyota8215.barrel-energy.json"
+      },
+      {
+        "id": "module.miyota8215.train",
+        "path": "modules/module.miyota8215.train.json"
+      },
+      {
+        "id": "module.miyota8215.escapement-oscillator",
+        "path": "modules/module.miyota8215.escapement-oscillator.json"
+      },
+      {
+        "id": "module.miyota8215.plan-disassembly",
+        "path": "modules/module.miyota8215.plan-disassembly.json"
+      },
+      {
+        "id": "module.miyota8215.guided-disassembly",
+        "path": "modules/module.miyota8215.guided-disassembly.json"
+      },
+      {
+        "id": "module.miyota8215.assisted-free-disassembly",
+        "path": "modules/module.miyota8215.assisted-free-disassembly.json"
+      },
+      {
+        "id": "module.miyota8215.inspection",
+        "path": "modules/module.miyota8215.inspection.json"
+      },
+      {
+        "id": "module.miyota8215.assembly-verification",
+        "path": "modules/module.miyota8215.assembly-verification.json"
+      },
+      {
+        "id": "module.miyota8215.diagnosis-project",
+        "path": "modules/module.miyota8215.diagnosis-project.json"
+      }
+    ],
+    "concepts": [
+      {
+        "id": "concept.miyota8215.identify-calibre",
+        "path": "concepts/concept.miyota8215.identify-calibre.json"
+      },
+      {
+        "id": "concept.miyota8215.read-official-documentation",
+        "path": "concepts/concept.miyota8215.read-official-documentation.json"
+      },
+      {
+        "id": "concept.miyota8215.distinguish-data-reconstruction",
+        "path": "concepts/concept.miyota8215.distinguish-data-reconstruction.json"
+      },
+      {
+        "id": "concept.miyota8215.recognize-subsystems",
+        "path": "concepts/concept.miyota8215.recognize-subsystems.json"
+      },
+      {
+        "id": "concept.miyota8215.explain-automatic",
+        "path": "concepts/concept.miyota8215.explain-automatic.json"
+      },
+      {
+        "id": "concept.miyota8215.explain-winding-setting",
+        "path": "concepts/concept.miyota8215.explain-winding-setting.json"
+      },
+      {
+        "id": "concept.miyota8215.explain-calendar",
+        "path": "concepts/concept.miyota8215.explain-calendar.json"
+      },
+      {
+        "id": "concept.miyota8215.explain-energy-chain",
+        "path": "concepts/concept.miyota8215.explain-energy-chain.json"
+      },
+      {
+        "id": "concept.miyota8215.identify-train",
+        "path": "concepts/concept.miyota8215.identify-train.json"
+      },
+      {
+        "id": "concept.miyota8215.explain-escapement-oscillator",
+        "path": "concepts/concept.miyota8215.explain-escapement-oscillator.json"
+      },
+      {
+        "id": "concept.miyota8215.prepare-disassembly",
+        "path": "concepts/concept.miyota8215.prepare-disassembly.json"
+      },
+      {
+        "id": "concept.miyota8215.preserve-identity-orientation",
+        "path": "concepts/concept.miyota8215.preserve-identity-orientation.json"
+      },
+      {
+        "id": "concept.miyota8215.virtual-disassembly",
+        "path": "concepts/concept.miyota8215.virtual-disassembly.json"
+      },
+      {
+        "id": "concept.miyota8215.inspect",
+        "path": "concepts/concept.miyota8215.inspect.json"
+      },
+      {
+        "id": "concept.miyota8215.virtual-assembly",
+        "path": "concepts/concept.miyota8215.virtual-assembly.json"
+      },
+      {
+        "id": "concept.miyota8215.verify-partially",
+        "path": "concepts/concept.miyota8215.verify-partially.json"
+      },
+      {
+        "id": "concept.miyota8215.form-hypothesis",
+        "path": "concepts/concept.miyota8215.form-hypothesis.json"
+      },
+      {
+        "id": "concept.miyota8215.conceptual-diagnosis",
+        "path": "concepts/concept.miyota8215.conceptual-diagnosis.json"
+      },
+      {
+        "id": "concept.miyota8215.document-calibre",
+        "path": "concepts/concept.miyota8215.document-calibre.json"
+      },
+      {
+        "id": "concept.miyota8215.declare-fidelity-limits",
+        "path": "concepts/concept.miyota8215.declare-fidelity-limits.json"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "block.miyota8215.identify",
+        "path": "blocks/block.miyota8215.identify.json"
+      },
+      {
+        "id": "block.miyota8215.documentation",
+        "path": "blocks/block.miyota8215.documentation.json"
+      },
+      {
+        "id": "block.miyota8215.architecture",
+        "path": "blocks/block.miyota8215.architecture.json"
+      },
+      {
+        "id": "block.miyota8215.automatic",
+        "path": "blocks/block.miyota8215.automatic.json"
+      },
+      {
+        "id": "block.miyota8215.winding-setting",
+        "path": "blocks/block.miyota8215.winding-setting.json"
+      },
+      {
+        "id": "block.miyota8215.calendar",
+        "path": "blocks/block.miyota8215.calendar.json"
+      },
+      {
+        "id": "block.miyota8215.barrel-energy",
+        "path": "blocks/block.miyota8215.barrel-energy.json"
+      },
+      {
+        "id": "block.miyota8215.train",
+        "path": "blocks/block.miyota8215.train.json"
+      },
+      {
+        "id": "block.miyota8215.escapement-oscillator",
+        "path": "blocks/block.miyota8215.escapement-oscillator.json"
+      },
+      {
+        "id": "block.miyota8215.plan-disassembly",
+        "path": "blocks/block.miyota8215.plan-disassembly.json"
+      },
+      {
+        "id": "block.miyota8215.guided-disassembly",
+        "path": "blocks/block.miyota8215.guided-disassembly.json"
+      },
+      {
+        "id": "block.miyota8215.assisted-free-disassembly",
+        "path": "blocks/block.miyota8215.assisted-free-disassembly.json"
+      },
+      {
+        "id": "block.miyota8215.inspection",
+        "path": "blocks/block.miyota8215.inspection.json"
+      },
+      {
+        "id": "block.miyota8215.assembly-verification",
+        "path": "blocks/block.miyota8215.assembly-verification.json"
+      },
+      {
+        "id": "block.miyota8215.diagnosis-project",
+        "path": "blocks/block.miyota8215.diagnosis-project.json"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "lesson.miyota8215.identify",
+        "path": "lessons/lesson.miyota8215.identify.json"
+      },
+      {
+        "id": "lesson.miyota8215.documentation",
+        "path": "lessons/lesson.miyota8215.documentation.json"
+      },
+      {
+        "id": "lesson.miyota8215.architecture",
+        "path": "lessons/lesson.miyota8215.architecture.json"
+      },
+      {
+        "id": "lesson.miyota8215.automatic",
+        "path": "lessons/lesson.miyota8215.automatic.json"
+      },
+      {
+        "id": "lesson.miyota8215.winding-setting",
+        "path": "lessons/lesson.miyota8215.winding-setting.json"
+      },
+      {
+        "id": "lesson.miyota8215.calendar",
+        "path": "lessons/lesson.miyota8215.calendar.json"
+      },
+      {
+        "id": "lesson.miyota8215.barrel-energy",
+        "path": "lessons/lesson.miyota8215.barrel-energy.json"
+      },
+      {
+        "id": "lesson.miyota8215.train",
+        "path": "lessons/lesson.miyota8215.train.json"
+      },
+      {
+        "id": "lesson.miyota8215.escapement-oscillator",
+        "path": "lessons/lesson.miyota8215.escapement-oscillator.json"
+      },
+      {
+        "id": "lesson.miyota8215.plan-disassembly",
+        "path": "lessons/lesson.miyota8215.plan-disassembly.json"
+      },
+      {
+        "id": "lesson.miyota8215.guided-disassembly",
+        "path": "lessons/lesson.miyota8215.guided-disassembly.json"
+      },
+      {
+        "id": "lesson.miyota8215.assisted-free-disassembly",
+        "path": "lessons/lesson.miyota8215.assisted-free-disassembly.json"
+      },
+      {
+        "id": "lesson.miyota8215.inspection",
+        "path": "lessons/lesson.miyota8215.inspection.json"
+      },
+      {
+        "id": "lesson.miyota8215.assembly-verification",
+        "path": "lessons/lesson.miyota8215.assembly-verification.json"
+      },
+      {
+        "id": "lesson.miyota8215.diagnosis-project",
+        "path": "lessons/lesson.miyota8215.diagnosis-project.json"
+      }
+    ],
+    "activities": [
+      {
+        "id": "activity.miyota8215.identify-calibre",
+        "path": "activities/activity.miyota8215.identify-calibre.json"
+      },
+      {
+        "id": "activity.miyota8215.classify-provenance",
+        "path": "activities/activity.miyota8215.classify-provenance.json"
+      },
+      {
+        "id": "activity.miyota8215.locate-specification",
+        "path": "activities/activity.miyota8215.locate-specification.json"
+      },
+      {
+        "id": "activity.miyota8215.associate-reference-part",
+        "path": "activities/activity.miyota8215.associate-reference-part.json"
+      },
+      {
+        "id": "activity.miyota8215.detect-document-limit",
+        "path": "activities/activity.miyota8215.detect-document-limit.json"
+      },
+      {
+        "id": "activity.miyota8215.classify-subsystems",
+        "path": "activities/activity.miyota8215.classify-subsystems.json"
+      },
+      {
+        "id": "activity.miyota8215.reconstruct-layers",
+        "path": "activities/activity.miyota8215.reconstruct-layers.json"
+      },
+      {
+        "id": "activity.miyota8215.follow-automatic",
+        "path": "activities/activity.miyota8215.follow-automatic.json"
+      },
+      {
+        "id": "activity.miyota8215.compare-automatic-conceptual",
+        "path": "activities/activity.miyota8215.compare-automatic-conceptual.json"
+      },
+      {
+        "id": "activity.miyota8215.reconstruct-winding-states",
+        "path": "activities/activity.miyota8215.reconstruct-winding-states.json"
+      },
+      {
+        "id": "activity.miyota8215.trace-manual-winding",
+        "path": "activities/activity.miyota8215.trace-manual-winding.json"
+      },
+      {
+        "id": "activity.miyota8215.explain-calendar",
+        "path": "activities/activity.miyota8215.explain-calendar.json"
+      },
+      {
+        "id": "activity.miyota8215.run-calendar-cycle",
+        "path": "activities/activity.miyota8215.run-calendar-cycle.json"
+      },
+      {
+        "id": "activity.miyota8215.follow-barrel-energy",
+        "path": "activities/activity.miyota8215.follow-barrel-energy.json"
+      },
+      {
+        "id": "activity.miyota8215.compare-barrel-conceptual",
+        "path": "activities/activity.miyota8215.compare-barrel-conceptual.json"
+      },
+      {
+        "id": "activity.miyota8215.identify-train",
+        "path": "activities/activity.miyota8215.identify-train.json"
+      },
+      {
+        "id": "activity.miyota8215.interrupt-train",
+        "path": "activities/activity.miyota8215.interrupt-train.json"
+      },
+      {
+        "id": "activity.miyota8215.follow-escapement",
+        "path": "activities/activity.miyota8215.follow-escapement.json"
+      },
+      {
+        "id": "activity.miyota8215.compare-conceptual-real",
+        "path": "activities/activity.miyota8215.compare-conceptual-real.json"
+      },
+      {
+        "id": "activity.miyota8215.prepare-workbench",
+        "path": "activities/activity.miyota8215.prepare-workbench.json"
+      },
+      {
+        "id": "activity.miyota8215.create-disassembly-plan",
+        "path": "activities/activity.miyota8215.create-disassembly-plan.json"
+      },
+      {
+        "id": "activity.miyota8215.remove-rotor",
+        "path": "activities/activity.miyota8215.remove-rotor.json"
+      },
+      {
+        "id": "activity.miyota8215.manage-fasteners",
+        "path": "activities/activity.miyota8215.manage-fasteners.json"
+      },
+      {
+        "id": "activity.miyota8215.guided-disassembly",
+        "path": "activities/activity.miyota8215.guided-disassembly.json"
+      },
+      {
+        "id": "activity.miyota8215.assisted-disassembly",
+        "path": "activities/activity.miyota8215.assisted-disassembly.json"
+      },
+      {
+        "id": "activity.miyota8215.free-disassembly",
+        "path": "activities/activity.miyota8215.free-disassembly.json"
+      },
+      {
+        "id": "activity.miyota8215.inspect-parts",
+        "path": "activities/activity.miyota8215.inspect-parts.json"
+      },
+      {
+        "id": "activity.miyota8215.detect-symbolic-defect",
+        "path": "activities/activity.miyota8215.detect-symbolic-defect.json"
+      },
+      {
+        "id": "activity.miyota8215.guided-assembly",
+        "path": "activities/activity.miyota8215.guided-assembly.json"
+      },
+      {
+        "id": "activity.miyota8215.assisted-assembly",
+        "path": "activities/activity.miyota8215.assisted-assembly.json"
+      },
+      {
+        "id": "activity.miyota8215.free-assembly",
+        "path": "activities/activity.miyota8215.free-assembly.json"
+      },
+      {
+        "id": "activity.miyota8215.partial-verifications",
+        "path": "activities/activity.miyota8215.partial-verifications.json"
+      },
+      {
+        "id": "activity.miyota8215.identify-affected-subsystem",
+        "path": "activities/activity.miyota8215.identify-affected-subsystem.json"
+      },
+      {
+        "id": "activity.miyota8215.form-hypothesis",
+        "path": "activities/activity.miyota8215.form-hypothesis.json"
+      },
+      {
+        "id": "activity.miyota8215.select-verification",
+        "path": "activities/activity.miyota8215.select-verification.json"
+      },
+      {
+        "id": "activity.miyota8215.complete-diagnosis",
+        "path": "activities/activity.miyota8215.complete-diagnosis.json"
+      },
+      {
+        "id": "activity.miyota8215.final-project",
+        "path": "activities/activity.miyota8215.final-project.json"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "scene.miyota8215.identify",
+        "path": "scenes/scene.miyota8215.identify.json"
+      },
+      {
+        "id": "scene.miyota8215.documentation",
+        "path": "scenes/scene.miyota8215.documentation.json"
+      },
+      {
+        "id": "scene.miyota8215.architecture",
+        "path": "scenes/scene.miyota8215.architecture.json"
+      },
+      {
+        "id": "scene.miyota8215.automatic",
+        "path": "scenes/scene.miyota8215.automatic.json"
+      },
+      {
+        "id": "scene.miyota8215.winding-setting",
+        "path": "scenes/scene.miyota8215.winding-setting.json"
+      },
+      {
+        "id": "scene.miyota8215.calendar",
+        "path": "scenes/scene.miyota8215.calendar.json"
+      },
+      {
+        "id": "scene.miyota8215.barrel-energy",
+        "path": "scenes/scene.miyota8215.barrel-energy.json"
+      },
+      {
+        "id": "scene.miyota8215.train",
+        "path": "scenes/scene.miyota8215.train.json"
+      },
+      {
+        "id": "scene.miyota8215.escapement-oscillator",
+        "path": "scenes/scene.miyota8215.escapement-oscillator.json"
+      },
+      {
+        "id": "scene.miyota8215.plan-disassembly",
+        "path": "scenes/scene.miyota8215.plan-disassembly.json"
+      },
+      {
+        "id": "scene.miyota8215.guided-disassembly",
+        "path": "scenes/scene.miyota8215.guided-disassembly.json"
+      },
+      {
+        "id": "scene.miyota8215.assisted-free-disassembly",
+        "path": "scenes/scene.miyota8215.assisted-free-disassembly.json"
+      },
+      {
+        "id": "scene.miyota8215.inspection",
+        "path": "scenes/scene.miyota8215.inspection.json"
+      },
+      {
+        "id": "scene.miyota8215.assembly-verification",
+        "path": "scenes/scene.miyota8215.assembly-verification.json"
+      },
+      {
+        "id": "scene.miyota8215.diagnosis-project",
+        "path": "scenes/scene.miyota8215.diagnosis-project.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.assisted-assembly",
+        "path": "scenes/scene.practice.miyota8215.assisted-assembly.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.assisted-disassembly",
+        "path": "scenes/scene.practice.miyota8215.assisted-disassembly.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.associate-reference-part",
+        "path": "scenes/scene.practice.miyota8215.associate-reference-part.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.classify-provenance",
+        "path": "scenes/scene.practice.miyota8215.classify-provenance.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.classify-subsystems",
+        "path": "scenes/scene.practice.miyota8215.classify-subsystems.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.compare-automatic-conceptual",
+        "path": "scenes/scene.practice.miyota8215.compare-automatic-conceptual.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.compare-barrel-conceptual",
+        "path": "scenes/scene.practice.miyota8215.compare-barrel-conceptual.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.compare-conceptual-real",
+        "path": "scenes/scene.practice.miyota8215.compare-conceptual-real.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.complete-diagnosis",
+        "path": "scenes/scene.practice.miyota8215.complete-diagnosis.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.create-disassembly-plan",
+        "path": "scenes/scene.practice.miyota8215.create-disassembly-plan.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.detect-document-limit",
+        "path": "scenes/scene.practice.miyota8215.detect-document-limit.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.detect-symbolic-defect",
+        "path": "scenes/scene.practice.miyota8215.detect-symbolic-defect.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.explain-calendar",
+        "path": "scenes/scene.practice.miyota8215.explain-calendar.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.final-project",
+        "path": "scenes/scene.practice.miyota8215.final-project.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.follow-automatic",
+        "path": "scenes/scene.practice.miyota8215.follow-automatic.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.follow-barrel-energy",
+        "path": "scenes/scene.practice.miyota8215.follow-barrel-energy.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.follow-escapement",
+        "path": "scenes/scene.practice.miyota8215.follow-escapement.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.form-hypothesis",
+        "path": "scenes/scene.practice.miyota8215.form-hypothesis.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.free-assembly",
+        "path": "scenes/scene.practice.miyota8215.free-assembly.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.free-disassembly",
+        "path": "scenes/scene.practice.miyota8215.free-disassembly.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.guided-assembly",
+        "path": "scenes/scene.practice.miyota8215.guided-assembly.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.guided-disassembly",
+        "path": "scenes/scene.practice.miyota8215.guided-disassembly.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.identify-affected-subsystem",
+        "path": "scenes/scene.practice.miyota8215.identify-affected-subsystem.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.identify-calibre",
+        "path": "scenes/scene.practice.miyota8215.identify-calibre.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.identify-train",
+        "path": "scenes/scene.practice.miyota8215.identify-train.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.inspect-parts",
+        "path": "scenes/scene.practice.miyota8215.inspect-parts.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.interrupt-train",
+        "path": "scenes/scene.practice.miyota8215.interrupt-train.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.locate-specification",
+        "path": "scenes/scene.practice.miyota8215.locate-specification.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.manage-fasteners",
+        "path": "scenes/scene.practice.miyota8215.manage-fasteners.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.partial-verifications",
+        "path": "scenes/scene.practice.miyota8215.partial-verifications.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.prepare-workbench",
+        "path": "scenes/scene.practice.miyota8215.prepare-workbench.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.reconstruct-layers",
+        "path": "scenes/scene.practice.miyota8215.reconstruct-layers.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.reconstruct-winding-states",
+        "path": "scenes/scene.practice.miyota8215.reconstruct-winding-states.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.remove-rotor",
+        "path": "scenes/scene.practice.miyota8215.remove-rotor.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.run-calendar-cycle",
+        "path": "scenes/scene.practice.miyota8215.run-calendar-cycle.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.select-verification",
+        "path": "scenes/scene.practice.miyota8215.select-verification.json"
+      },
+      {
+        "id": "scene.practice.miyota8215.trace-manual-winding",
+        "path": "scenes/scene.practice.miyota8215.trace-manual-winding.json"
+      }
+    ],
+    "competencies": [
+      {
+        "id": "competency.miyota8215.identify-calibre",
+        "path": "competencies/competency.miyota8215.identify-calibre.json"
+      },
+      {
+        "id": "competency.miyota8215.read-official-documentation",
+        "path": "competencies/competency.miyota8215.read-official-documentation.json"
+      },
+      {
+        "id": "competency.miyota8215.distinguish-data-reconstruction",
+        "path": "competencies/competency.miyota8215.distinguish-data-reconstruction.json"
+      },
+      {
+        "id": "competency.miyota8215.recognize-subsystems",
+        "path": "competencies/competency.miyota8215.recognize-subsystems.json"
+      },
+      {
+        "id": "competency.miyota8215.explain-automatic",
+        "path": "competencies/competency.miyota8215.explain-automatic.json"
+      },
+      {
+        "id": "competency.miyota8215.explain-winding-setting",
+        "path": "competencies/competency.miyota8215.explain-winding-setting.json"
+      },
+      {
+        "id": "competency.miyota8215.explain-calendar",
+        "path": "competencies/competency.miyota8215.explain-calendar.json"
+      },
+      {
+        "id": "competency.miyota8215.explain-energy-chain",
+        "path": "competencies/competency.miyota8215.explain-energy-chain.json"
+      },
+      {
+        "id": "competency.miyota8215.identify-train",
+        "path": "competencies/competency.miyota8215.identify-train.json"
+      },
+      {
+        "id": "competency.miyota8215.explain-escapement-oscillator",
+        "path": "competencies/competency.miyota8215.explain-escapement-oscillator.json"
+      },
+      {
+        "id": "competency.miyota8215.prepare-disassembly",
+        "path": "competencies/competency.miyota8215.prepare-disassembly.json"
+      },
+      {
+        "id": "competency.miyota8215.preserve-identity-orientation",
+        "path": "competencies/competency.miyota8215.preserve-identity-orientation.json"
+      },
+      {
+        "id": "competency.miyota8215.virtual-disassembly",
+        "path": "competencies/competency.miyota8215.virtual-disassembly.json"
+      },
+      {
+        "id": "competency.miyota8215.inspect",
+        "path": "competencies/competency.miyota8215.inspect.json"
+      },
+      {
+        "id": "competency.miyota8215.virtual-assembly",
+        "path": "competencies/competency.miyota8215.virtual-assembly.json"
+      },
+      {
+        "id": "competency.miyota8215.verify-partially",
+        "path": "competencies/competency.miyota8215.verify-partially.json"
+      },
+      {
+        "id": "competency.miyota8215.form-hypothesis",
+        "path": "competencies/competency.miyota8215.form-hypothesis.json"
+      },
+      {
+        "id": "competency.miyota8215.conceptual-diagnosis",
+        "path": "competencies/competency.miyota8215.conceptual-diagnosis.json"
+      },
+      {
+        "id": "competency.miyota8215.document-calibre",
+        "path": "competencies/competency.miyota8215.document-calibre.json"
+      },
+      {
+        "id": "competency.miyota8215.declare-fidelity-limits",
+        "path": "competencies/competency.miyota8215.declare-fidelity-limits.json"
+      }
+    ],
+    "evidenceTemplates": [
+      {
+        "id": "evidence.miyota8215.identify-calibre",
+        "path": "evidence/evidence.miyota8215.identify-calibre.json"
+      },
+      {
+        "id": "evidence.miyota8215.read-official-documentation",
+        "path": "evidence/evidence.miyota8215.read-official-documentation.json"
+      },
+      {
+        "id": "evidence.miyota8215.distinguish-data-reconstruction",
+        "path": "evidence/evidence.miyota8215.distinguish-data-reconstruction.json"
+      },
+      {
+        "id": "evidence.miyota8215.recognize-subsystems",
+        "path": "evidence/evidence.miyota8215.recognize-subsystems.json"
+      },
+      {
+        "id": "evidence.miyota8215.explain-automatic",
+        "path": "evidence/evidence.miyota8215.explain-automatic.json"
+      },
+      {
+        "id": "evidence.miyota8215.explain-winding-setting",
+        "path": "evidence/evidence.miyota8215.explain-winding-setting.json"
+      },
+      {
+        "id": "evidence.miyota8215.explain-calendar",
+        "path": "evidence/evidence.miyota8215.explain-calendar.json"
+      },
+      {
+        "id": "evidence.miyota8215.explain-energy-chain",
+        "path": "evidence/evidence.miyota8215.explain-energy-chain.json"
+      },
+      {
+        "id": "evidence.miyota8215.identify-train",
+        "path": "evidence/evidence.miyota8215.identify-train.json"
+      },
+      {
+        "id": "evidence.miyota8215.explain-escapement-oscillator",
+        "path": "evidence/evidence.miyota8215.explain-escapement-oscillator.json"
+      },
+      {
+        "id": "evidence.miyota8215.prepare-disassembly",
+        "path": "evidence/evidence.miyota8215.prepare-disassembly.json"
+      },
+      {
+        "id": "evidence.miyota8215.preserve-identity-orientation",
+        "path": "evidence/evidence.miyota8215.preserve-identity-orientation.json"
+      },
+      {
+        "id": "evidence.miyota8215.virtual-disassembly",
+        "path": "evidence/evidence.miyota8215.virtual-disassembly.json"
+      },
+      {
+        "id": "evidence.miyota8215.inspect",
+        "path": "evidence/evidence.miyota8215.inspect.json"
+      },
+      {
+        "id": "evidence.miyota8215.virtual-assembly",
+        "path": "evidence/evidence.miyota8215.virtual-assembly.json"
+      },
+      {
+        "id": "evidence.miyota8215.verify-partially",
+        "path": "evidence/evidence.miyota8215.verify-partially.json"
+      },
+      {
+        "id": "evidence.miyota8215.form-hypothesis",
+        "path": "evidence/evidence.miyota8215.form-hypothesis.json"
+      },
+      {
+        "id": "evidence.miyota8215.conceptual-diagnosis",
+        "path": "evidence/evidence.miyota8215.conceptual-diagnosis.json"
+      },
+      {
+        "id": "evidence.miyota8215.document-calibre",
+        "path": "evidence/evidence.miyota8215.document-calibre.json"
+      },
+      {
+        "id": "evidence.miyota8215.declare-fidelity-limits",
+        "path": "evidence/evidence.miyota8215.declare-fidelity-limits.json"
+      }
+    ],
+    "rubrics": [
+      {
+        "id": "rubric.miyota8215.identify-calibre",
+        "path": "rubrics/rubric.miyota8215.identify-calibre.json"
+      },
+      {
+        "id": "rubric.miyota8215.read-official-documentation",
+        "path": "rubrics/rubric.miyota8215.read-official-documentation.json"
+      },
+      {
+        "id": "rubric.miyota8215.distinguish-data-reconstruction",
+        "path": "rubrics/rubric.miyota8215.distinguish-data-reconstruction.json"
+      },
+      {
+        "id": "rubric.miyota8215.recognize-subsystems",
+        "path": "rubrics/rubric.miyota8215.recognize-subsystems.json"
+      },
+      {
+        "id": "rubric.miyota8215.explain-automatic",
+        "path": "rubrics/rubric.miyota8215.explain-automatic.json"
+      },
+      {
+        "id": "rubric.miyota8215.explain-winding-setting",
+        "path": "rubrics/rubric.miyota8215.explain-winding-setting.json"
+      },
+      {
+        "id": "rubric.miyota8215.explain-calendar",
+        "path": "rubrics/rubric.miyota8215.explain-calendar.json"
+      },
+      {
+        "id": "rubric.miyota8215.explain-energy-chain",
+        "path": "rubrics/rubric.miyota8215.explain-energy-chain.json"
+      },
+      {
+        "id": "rubric.miyota8215.identify-train",
+        "path": "rubrics/rubric.miyota8215.identify-train.json"
+      },
+      {
+        "id": "rubric.miyota8215.explain-escapement-oscillator",
+        "path": "rubrics/rubric.miyota8215.explain-escapement-oscillator.json"
+      },
+      {
+        "id": "rubric.miyota8215.prepare-disassembly",
+        "path": "rubrics/rubric.miyota8215.prepare-disassembly.json"
+      },
+      {
+        "id": "rubric.miyota8215.preserve-identity-orientation",
+        "path": "rubrics/rubric.miyota8215.preserve-identity-orientation.json"
+      },
+      {
+        "id": "rubric.miyota8215.virtual-disassembly",
+        "path": "rubrics/rubric.miyota8215.virtual-disassembly.json"
+      },
+      {
+        "id": "rubric.miyota8215.inspect",
+        "path": "rubrics/rubric.miyota8215.inspect.json"
+      },
+      {
+        "id": "rubric.miyota8215.virtual-assembly",
+        "path": "rubrics/rubric.miyota8215.virtual-assembly.json"
+      },
+      {
+        "id": "rubric.miyota8215.verify-partially",
+        "path": "rubrics/rubric.miyota8215.verify-partially.json"
+      },
+      {
+        "id": "rubric.miyota8215.form-hypothesis",
+        "path": "rubrics/rubric.miyota8215.form-hypothesis.json"
+      },
+      {
+        "id": "rubric.miyota8215.conceptual-diagnosis",
+        "path": "rubrics/rubric.miyota8215.conceptual-diagnosis.json"
+      },
+      {
+        "id": "rubric.miyota8215.document-calibre",
+        "path": "rubrics/rubric.miyota8215.document-calibre.json"
+      },
+      {
+        "id": "rubric.miyota8215.declare-fidelity-limits",
+        "path": "rubrics/rubric.miyota8215.declare-fidelity-limits.json"
+      }
+    ],
+    "glossary": [
+      {
+        "id": "term.miyota8215.interface-official-movement-envelope",
+        "path": "glossary/term.miyota8215.interface-official-movement-envelope.json"
+      },
+      {
+        "id": "term.miyota8215.interface-visible-base-structure",
+        "path": "glossary/term.miyota8215.interface-visible-base-structure.json"
+      },
+      {
+        "id": "term.miyota8215.350-005-balance-cock-complete",
+        "path": "glossary/term.miyota8215.350-005-balance-cock-complete.json"
+      },
+      {
+        "id": "term.miyota8215.039-102-balance-with-hairspring-regulated",
+        "path": "glossary/term.miyota8215.039-102-balance-with-hairspring-regulated.json"
+      },
+      {
+        "id": "term.miyota8215.701-263-barrel-bridge",
+        "path": "glossary/term.miyota8215.701-263-barrel-bridge.json"
+      },
+      {
+        "id": "term.miyota8215.001-870-barrel-complete",
+        "path": "glossary/term.miyota8215.001-870-barrel-complete.json"
+      },
+      {
+        "id": "term.miyota8215.269-408-brake-lever-for-second-hand",
+        "path": "glossary/term.miyota8215.269-408-brake-lever-for-second-hand.json"
+      },
+      {
+        "id": "term.miyota8215.116-300-calendar-corrector-lever",
+        "path": "glossary/term.miyota8215.116-300-calendar-corrector-lever.json"
+      },
+      {
+        "id": "term.miyota8215.012-116-center-wheel-and-pinion",
+        "path": "glossary/term.miyota8215.012-116-center-wheel-and-pinion.json"
+      },
+      {
+        "id": "term.miyota8215.711-074-center-wheel-cock",
+        "path": "glossary/term.miyota8215.711-074-center-wheel-cock.json"
+      },
+      {
+        "id": "term.miyota8215.060-390-click",
+        "path": "glossary/term.miyota8215.060-390-click.json"
+      },
+      {
+        "id": "term.miyota8215.903-700-click-spring",
+        "path": "glossary/term.miyota8215.903-700-click-spring.json"
+      },
+      {
+        "id": "term.miyota8215.064-450-clutch-wheel",
+        "path": "glossary/term.miyota8215.064-450-clutch-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.058-360-crown-wheel",
+        "path": "glossary/term.miyota8215.058-360-crown-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.903-a31-date-corrector-spring",
+        "path": "glossary/term.miyota8215.903-a31-date-corrector-spring.json"
+      },
+      {
+        "id": "term.miyota8215.108-9500-date-dial",
+        "path": "glossary/term.miyota8215.108-9500-date-dial.json"
+      },
+      {
+        "id": "term.miyota8215.103-650-date-dial-driving-wheel",
+        "path": "glossary/term.miyota8215.103-650-date-dial-driving-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.176-150-date-dial-guard",
+        "path": "glossary/term.miyota8215.176-150-date-dial-guard.json"
+      },
+      {
+        "id": "term.miyota8215.109-350-date-jumper",
+        "path": "glossary/term.miyota8215.109-350-date-jumper.json"
+      },
+      {
+        "id": "term.miyota8215.032-106-escape-wheel-and-pinion",
+        "path": "glossary/term.miyota8215.032-106-escape-wheel-and-pinion.json"
+      },
+      {
+        "id": "term.miyota8215.023-940-fourth-wheel-and-pinion",
+        "path": "glossary/term.miyota8215.023-940-fourth-wheel-and-pinion.json"
+      },
+      {
+        "id": "term.miyota8215.903-690-friction-spring-for-sweep-sec-pinion",
+        "path": "glossary/term.miyota8215.903-690-friction-spring-for-sweep-sec-pinion.json"
+      },
+      {
+        "id": "term.miyota8215.075-124-hour-wheel",
+        "path": "glossary/term.miyota8215.075-124-hour-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.100-170-intermediate-date-wheel",
+        "path": "glossary/term.miyota8215.100-170-intermediate-date-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.087-250-intermediate-wheel",
+        "path": "glossary/term.miyota8215.087-250-intermediate-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.078-150-intermediate-wheel-washer",
+        "path": "glossary/term.miyota8215.078-150-intermediate-wheel-washer.json"
+      },
+      {
+        "id": "term.miyota8215.035-560-jeweled-pallet-fork-and-staff",
+        "path": "glossary/term.miyota8215.035-560-jeweled-pallet-fork-and-staff.json"
+      },
+      {
+        "id": "term.miyota8215.094-040-lower-cap-jewel-mounted",
+        "path": "glossary/term.miyota8215.094-040-lower-cap-jewel-mounted.json"
+      },
+      {
+        "id": "term.miyota8215.072-520-minute-wheel-and-pinion",
+        "path": "glossary/term.miyota8215.072-520-minute-wheel-and-pinion.json"
+      },
+      {
+        "id": "term.miyota8215.079-600-minute-wheel-guard",
+        "path": "glossary/term.miyota8215.079-600-minute-wheel-guard.json"
+      },
+      {
+        "id": "term.miyota8215.500-710-movement-holder-plastic",
+        "path": "glossary/term.miyota8215.500-710-movement-holder-plastic.json"
+      },
+      {
+        "id": "term.miyota8215.119-a76-oscillating-weight",
+        "path": "glossary/term.miyota8215.119-a76-oscillating-weight.json"
+      },
+      {
+        "id": "term.miyota8215.708-095-pallet-cock",
+        "path": "glossary/term.miyota8215.708-095-pallet-cock.json"
+      },
+      {
+        "id": "term.miyota8215.141-190-pawl-winding-wheel",
+        "path": "glossary/term.miyota8215.141-190-pawl-winding-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.059-560-ratchet-wheel",
+        "path": "glossary/term.miyota8215.059-560-ratchet-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.088-120-reduction-wheel",
+        "path": "glossary/term.miyota8215.088-120-reduction-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.273-201-second-hand-brake-connection-lever",
+        "path": "glossary/term.miyota8215.273-201-second-hand-brake-connection-lever.json"
+      },
+      {
+        "id": "term.miyota8215.067-860-setting-lever",
+        "path": "glossary/term.miyota8215.067-860-setting-lever.json"
+      },
+      {
+        "id": "term.miyota8215.077-680-setting-lever-spring",
+        "path": "glossary/term.miyota8215.077-680-setting-lever-spring.json"
+      },
+      {
+        "id": "term.miyota8215.076-430-setting-wheel",
+        "path": "glossary/term.miyota8215.076-430-setting-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.098-090-spiral-spring-with-jewel",
+        "path": "glossary/term.miyota8215.098-090-spiral-spring-with-jewel.json"
+      },
+      {
+        "id": "term.miyota8215.025-670-sweep-second-pinion",
+        "path": "glossary/term.miyota8215.025-670-sweep-second-pinion.json"
+      },
+      {
+        "id": "term.miyota8215.017-760-third-wheel-and-pinion",
+        "path": "glossary/term.miyota8215.017-760-third-wheel-and-pinion.json"
+      },
+      {
+        "id": "term.miyota8215.094-010-upper-cap-jewel-mounted",
+        "path": "glossary/term.miyota8215.094-010-upper-cap-jewel-mounted.json"
+      },
+      {
+        "id": "term.miyota8215.078-140-washer-for-wheel",
+        "path": "glossary/term.miyota8215.078-140-washer-for-wheel.json"
+      },
+      {
+        "id": "term.miyota8215.065-212-winding-stem",
+        "path": "glossary/term.miyota8215.065-212-winding-stem.json"
+      },
+      {
+        "id": "term.miyota8215.071-a04-yoke",
+        "path": "glossary/term.miyota8215.071-a04-yoke.json"
+      },
+      {
+        "id": "term.miyota8215.924-460-screw-for-barrel-and-train-wheel-bridge",
+        "path": "glossary/term.miyota8215.924-460-screw-for-barrel-and-train-wheel-bridge.json"
+      },
+      {
+        "id": "term.miyota8215.923-600-screw-for-center-wheel-cock",
+        "path": "glossary/term.miyota8215.923-600-screw-for-center-wheel-cock.json"
+      },
+      {
+        "id": "term.miyota8215.923-630-screw-for-date-dial-guard",
+        "path": "glossary/term.miyota8215.923-630-screw-for-date-dial-guard.json"
+      },
+      {
+        "id": "term.miyota8215.925-490-screw-for-oscillating-weight",
+        "path": "glossary/term.miyota8215.925-490-screw-for-oscillating-weight.json"
+      },
+      {
+        "id": "term.miyota8215.923-600-screw-for-pallet-bridge",
+        "path": "glossary/term.miyota8215.923-600-screw-for-pallet-bridge.json"
+      },
+      {
+        "id": "term.miyota8215.924-460-screw-for-balance-bridge",
+        "path": "glossary/term.miyota8215.924-460-screw-for-balance-bridge.json"
+      },
+      {
+        "id": "term.miyota8215.interface-hour-hand-interface",
+        "path": "glossary/term.miyota8215.interface-hour-hand-interface.json"
+      },
+      {
+        "id": "term.miyota8215.interface-minute-hand-interface",
+        "path": "glossary/term.miyota8215.interface-minute-hand-interface.json"
+      },
+      {
+        "id": "term.miyota8215.interface-second-hand-interface",
+        "path": "glossary/term.miyota8215.interface-second-hand-interface.json"
+      }
+    ],
+    "sources": [
+      {
+        "id": "source.miyota.8215.product-page",
+        "path": "sources/source.miyota.8215.product-page.json"
+      },
+      {
+        "id": "source.miyota.8215.specification",
+        "path": "sources/source.miyota.8215.specification.json"
+      },
+      {
+        "id": "source.miyota.8215.drawing",
+        "path": "sources/source.miyota.8215.drawing.json"
+      },
+      {
+        "id": "source.miyota.8215.instruction-manual",
+        "path": "sources/source.miyota.8215.instruction-manual.json"
+      },
+      {
+        "id": "source.miyota.8215.parts-list-exploded-view",
+        "path": "sources/source.miyota.8215.parts-list-exploded-view.json"
+      },
+      {
+        "id": "source.horology.original-miyota8215",
+        "path": "sources/source.horology.original-miyota8215.json"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "recommendation.miyota8215.retain-identify-calibre",
+        "path": "recommendations/recommendation.miyota8215.retain-identify-calibre.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-read-official-documentation",
+        "path": "recommendations/recommendation.miyota8215.retain-read-official-documentation.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-distinguish-data-reconstruction",
+        "path": "recommendations/recommendation.miyota8215.retain-distinguish-data-reconstruction.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-recognize-subsystems",
+        "path": "recommendations/recommendation.miyota8215.retain-recognize-subsystems.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-explain-automatic",
+        "path": "recommendations/recommendation.miyota8215.retain-explain-automatic.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-explain-winding-setting",
+        "path": "recommendations/recommendation.miyota8215.retain-explain-winding-setting.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-explain-calendar",
+        "path": "recommendations/recommendation.miyota8215.retain-explain-calendar.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-explain-energy-chain",
+        "path": "recommendations/recommendation.miyota8215.retain-explain-energy-chain.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-identify-train",
+        "path": "recommendations/recommendation.miyota8215.retain-identify-train.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-explain-escapement-oscillator",
+        "path": "recommendations/recommendation.miyota8215.retain-explain-escapement-oscillator.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-prepare-disassembly",
+        "path": "recommendations/recommendation.miyota8215.retain-prepare-disassembly.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-preserve-identity-orientation",
+        "path": "recommendations/recommendation.miyota8215.retain-preserve-identity-orientation.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-virtual-disassembly",
+        "path": "recommendations/recommendation.miyota8215.retain-virtual-disassembly.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-inspect",
+        "path": "recommendations/recommendation.miyota8215.retain-inspect.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-virtual-assembly",
+        "path": "recommendations/recommendation.miyota8215.retain-virtual-assembly.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-verify-partially",
+        "path": "recommendations/recommendation.miyota8215.retain-verify-partially.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-form-hypothesis",
+        "path": "recommendations/recommendation.miyota8215.retain-form-hypothesis.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-conceptual-diagnosis",
+        "path": "recommendations/recommendation.miyota8215.retain-conceptual-diagnosis.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-document-calibre",
+        "path": "recommendations/recommendation.miyota8215.retain-document-calibre.json"
+      },
+      {
+        "id": "recommendation.miyota8215.retain-declare-fidelity-limits",
+        "path": "recommendations/recommendation.miyota8215.retain-declare-fidelity-limits.json"
+      }
+    ],
+    "visualResources": [
+      {
+        "id": "visual.miyota8215.identify",
+        "path": "visual-resources/visual.miyota8215.identify.json"
+      },
+      {
+        "id": "visual.miyota8215.documentation",
+        "path": "visual-resources/visual.miyota8215.documentation.json"
+      },
+      {
+        "id": "visual.miyota8215.architecture",
+        "path": "visual-resources/visual.miyota8215.architecture.json"
+      },
+      {
+        "id": "visual.miyota8215.automatic",
+        "path": "visual-resources/visual.miyota8215.automatic.json"
+      },
+      {
+        "id": "visual.miyota8215.winding-setting",
+        "path": "visual-resources/visual.miyota8215.winding-setting.json"
+      },
+      {
+        "id": "visual.miyota8215.calendar",
+        "path": "visual-resources/visual.miyota8215.calendar.json"
+      },
+      {
+        "id": "visual.miyota8215.barrel-energy",
+        "path": "visual-resources/visual.miyota8215.barrel-energy.json"
+      },
+      {
+        "id": "visual.miyota8215.train",
+        "path": "visual-resources/visual.miyota8215.train.json"
+      },
+      {
+        "id": "visual.miyota8215.escapement-oscillator",
+        "path": "visual-resources/visual.miyota8215.escapement-oscillator.json"
+      },
+      {
+        "id": "visual.miyota8215.plan-disassembly",
+        "path": "visual-resources/visual.miyota8215.plan-disassembly.json"
+      },
+      {
+        "id": "visual.miyota8215.guided-disassembly",
+        "path": "visual-resources/visual.miyota8215.guided-disassembly.json"
+      },
+      {
+        "id": "visual.miyota8215.assisted-free-disassembly",
+        "path": "visual-resources/visual.miyota8215.assisted-free-disassembly.json"
+      },
+      {
+        "id": "visual.miyota8215.inspection",
+        "path": "visual-resources/visual.miyota8215.inspection.json"
+      },
+      {
+        "id": "visual.miyota8215.assembly-verification",
+        "path": "visual-resources/visual.miyota8215.assembly-verification.json"
+      },
+      {
+        "id": "visual.miyota8215.diagnosis-project",
+        "path": "visual-resources/visual.miyota8215.diagnosis-project.json"
+      }
+    ],
+    "misconceptions": [
+      {
+        "id": "misconception.miyota8215.r2-is-exact-twin",
+        "path": "misconceptions/misconception.miyota8215.r2-is-exact-twin.json"
+      },
+      {
+        "id": "misconception.miyota8215.hidden-subsystem-is-new-calibre",
+        "path": "misconceptions/misconception.miyota8215.hidden-subsystem-is-new-calibre.json"
+      },
+      {
+        "id": "misconception.miyota8215.symptom-is-cause",
+        "path": "misconceptions/misconception.miyota8215.symptom-is-cause.json"
+      }
+    ]
+  },
+  "minimumAppVersion": "0.10.0",
+  "createdAt": "2026-07-27T13:30:00.000Z"
+}

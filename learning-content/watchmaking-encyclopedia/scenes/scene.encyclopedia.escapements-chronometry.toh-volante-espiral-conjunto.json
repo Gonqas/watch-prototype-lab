@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto",
+  "version": "1.1.0",
+  "title": "Cuaderno: Volante, espiral, pitón, virola y raqueta",
+  "description": "¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Volante, espiral, pitón, virola y raqueta. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.answer",
+      "instructionMarkdown": "Explica **Volante, espiral, pitón, virola y raqueta** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.explain",
+          "promptMarkdown": "¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por fijar interior y sigue hasta respirar sin contacto.",
+                "en": "Empieza por fijar interior y sigue hasta respirar sin contacto."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La virola fija el extremo interior; el pitón fija el exterior; la raqueta modifica longitud activa en sistemas regulados. Plano, centrado, respiración y libertad respecto a pasadores afectan simetría e isocronismo.",
+                "en": "La virola fija el extremo interior; el pitón fija el exterior; la raqueta modifica longitud activa en sistemas regulados. Plano, centrado, respiración y libertad respecto a pasadores afectan simetría e isocronismo."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?",
+              "en": "¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena fijar interior → formar espiras → guiar exterior → pasar entre clavijas → fijar pitón → respirar sin contacto, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena fijar interior → formar espiras → guiar exterior → pasar entre clavijas → fijar pitón → respirar sin contacto, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.mechanism",
+            "field.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.evidence",
+            "field.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.limit",
+            "field.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

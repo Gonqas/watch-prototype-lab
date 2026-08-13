@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.history-language.toh-tiempo-escalas",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Tiempo, escalas y calendario civil",
+  "sceneIds": [
+    "scene.encyclopedia.history-language.toh-tiempo-escalas"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.history-language.toh-tiempo-escalas"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.history-language.toh-tiempo-escalas"
+  ],
+  "rubricId": "rubric.encyclopedia.history-language.toh-tiempo-escalas",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.history-language.toh-tiempo-escalas",
+    "title": {
+      "es": "Explicar y transferir: Tiempo, escalas y calendario civil",
+      "en": "Explicar y transferir: Tiempo, escalas y calendario civil"
+    },
+    "description": {
+      "es": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?",
+      "en": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?"
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "timekeeping-principles",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.toh.ch01",
+      "source.official.bipm.vim",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.escala-temporal",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.tiempo-solar-aparente",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.calendario-civil"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.escala-temporal",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.tiempo-solar-aparente",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.calendario-civil"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.escala-temporal",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.tiempo-solar-aparente",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.calendario-civil"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.history-language.toh-tiempo-escalas",
+        "blockId": "block.encyclopedia.history-language.toh-tiempo-escalas",
+        "conceptIds": [
+          "concept.encyclopedia.history-language.toh-tiempo-escalas.escala-temporal",
+          "concept.encyclopedia.history-language.toh-tiempo-escalas.tiempo-solar-aparente",
+          "concept.encyclopedia.history-language.toh-tiempo-escalas.calendario-civil"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Tiempo, escalas y calendario civil sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Tiempo, escalas y calendario civil sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Un reloj solar y un reloj atómico pueden discrepar sin que uno esté averiado: realizan referencias diferentes y necesitan reglas de conversión. La fecha civil tampoco se obtiene contando oscilaciones sin una convención de meses y bisiestos.",
+          "en": "Un reloj solar y un reloj atómico pueden discrepar sin que uno esté averiado: realizan referencias diferentes y necesitan reglas de conversión. La fecha civil tampoco se obtiene contando oscilaciones sin una convención de meses y bisiestos."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?",
+            "en": "Identificar la pregunta: ¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?"
+          },
+          {
+            "es": "Dibujar la secuencia observar un ciclo → definir una referencia → establecer unidad y origen → corregir irregularidades → distribuir la escala → mostrar fecha y hora.",
+            "en": "Dibujar la secuencia observar un ciclo → definir una referencia → establecer unidad y origen → corregir irregularidades → distribuir la escala → mostrar fecha y hora."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: día solar y sidéreo; año trópico; desfase de zona; regla de año bisiesto.",
+            "en": "Asignar magnitudes y evidencia: día solar y sidéreo; año trópico; desfase de zona; regla de año bisiesto."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Explica por qué dos relojes correctos pueden mostrar escalas distintas y documenta la conversión necesaria.",
+          "en": "Explica por qué dos relojes correctos pueden mostrar escalas distintas y documenta la conversión necesaria."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: observar un ciclo → definir una referencia → establecer unidad y origen → corregir irregularidades → distribuir la escala → mostrar fecha y hora.",
+            "en": "Completa la cadena con las etapas visibles: observar un ciclo → definir una referencia → establecer unidad y origen → corregir irregularidades → distribuir la escala → mostrar fecha y hora."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?",
+            "en": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Explica por qué dos relojes correctos pueden mostrar escalas distintas y documenta la conversión necesaria.",
+            "en": "Explica por qué dos relojes correctos pueden mostrar escalas distintas y documenta la conversión necesaria."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "El mediodía solar siempre coincide con las 12:00",
+          "en": "El mediodía solar siempre coincide con las 12:00"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Tiempo, escalas y calendario civil con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Tiempo, escalas y calendario civil con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Explica por qué dos relojes correctos pueden mostrar escalas distintas y documenta la conversión necesaria.",
+        "en": "Explica por qué dos relojes correctos pueden mostrar escalas distintas y documenta la conversión necesaria."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena observar un ciclo → definir una referencia → establecer unidad y origen → corregir irregularidades → distribuir la escala → mostrar fecha y hora, su evidencia y límites.",
+        "en": "La explicación conserva la cadena observar un ciclo → definir una referencia → establecer unidad y origen → corregir irregularidades → distribuir la escala → mostrar fecha y hora, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «El mediodía solar siempre coincide con las 12:00».",
+        "en": "Revisa si omitiste una interfaz o caíste en «El mediodía solar siempre coincide con las 12:00»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?",
+        "en": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Llamar tiempo a cualquier lectura horaria. de Tratar zona horaria y longitud geográfica como equivalentes exactos..",
+        "en": "Busca evidencia para distinguir Llamar tiempo a cualquier lectura horaria. de Tratar zona horaria y longitud geográfica como equivalentes exactos.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.history-language.toh-tiempo-escalas"
+      ],
+      "transferPrompt": {
+        "es": "Explica por qué dos relojes correctos pueden mostrar escalas distintas y documenta la conversión necesaria.",
+        "en": "Explica por qué dos relojes correctos pueden mostrar escalas distintas y documenta la conversión necesaria."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.escala-temporal",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.tiempo-solar-aparente",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.calendario-civil"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?",
+          "en": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?"
+        },
+        {
+          "es": "¿Qué relación causal de «Tiempo, escalas y calendario civil» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Tiempo, escalas y calendario civil» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

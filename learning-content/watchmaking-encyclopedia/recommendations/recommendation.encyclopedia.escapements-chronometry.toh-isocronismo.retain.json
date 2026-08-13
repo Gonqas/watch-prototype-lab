@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.escapements-chronometry.toh-isocronismo.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Isocronismo y dependencia de amplitud",
+    "en": "Repasar Isocronismo y dependencia de amplitud"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 411,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.escapements-chronometry.toh-isocronismo"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.escapements-chronometry.toh-isocronismo"
+  ],
+  "required": false
+}

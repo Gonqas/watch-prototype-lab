@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-07-27T19:22:00.000+02:00",
+  "command": "npm run build",
+  "viteVersion": "8.0.16",
+  "viteBuildDurationMs": 863,
+  "fullBuildDurationMs": 14582,
+  "assets": {
+    "AcademyShell.css": {
+      "bytes": 11930,
+      "gzipBytes": 2620
+    },
+    "AcademySurfaces.css": {
+      "bytes": 41790,
+      "gzipBytes": 6850
+    },
+    "LearningArea.css": {
+      "bytes": 50680,
+      "gzipBytes": 9060
+    },
+    "AcademyShell.js": {
+      "bytes": 12830,
+      "gzipBytes": 4560
+    },
+    "AcademySurfaces.js": {
+      "bytes": 74660,
+      "gzipBytes": 17880
+    },
+    "LearningArea.js": {
+      "bytes": 237430,
+      "gzipBytes": 64740
+    },
+    "LearningSurfaces.js": {
+      "bytes": 66320,
+      "gzipBytes": 15670
+    },
+    "LearningActivityWorkspace.js": {
+      "bytes": 40910,
+      "gzipBytes": 10390
+    },
+    "integratedContent.js": {
+      "bytes": 1928740,
+      "gzipBytes": 205300
+    },
+    "ContactShadows.js": {
+      "bytes": 930700,
+      "gzipBytes": 248790
+    },
+    "index.js": {
+      "bytes": 518530,
+      "gzipBytes": 153410
+    }
+  },
+  "comparison": {
+    "viteBuildDurationPercent": 6.7,
+    "learningAreaBytesBefore": 2266120,
+    "learningAreaBytesAfter": 237430,
+    "learningAreaReductionPercent": 89.5,
+    "interpretation": "La entrada educativa dejó de contener catálogo y superficies en un único chunk. El contenido integrado sigue siendo grande, pero se carga por separado."
+  },
+  "knownWarnings": [
+    "integratedContent, ContactShadows e index superan 500 kB sin comprimir.",
+    "@tauri-apps/api/core.js tiene una importación dinámica ineficaz por imports estáticos existentes.",
+    "Three.js avisa de que THREE.Clock y PCFSoftShadowMap están deprecados.",
+    "La medición es de build y smoke local experto; no es telemetría de usuarios reales."
+  ]
+}

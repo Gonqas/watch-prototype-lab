@@ -1,0 +1,414 @@
+{
+  "id": "route.encyclopedia.escapements-chronometry",
+  "version": "1.1.0",
+  "title": {
+    "es": "Escapes, volante y cronometría",
+    "en": "Escapes, volante y cronometría"
+  },
+  "purpose": {
+    "es": "Pasar de reconocer piezas a explicar geometría de escape, oscilación, ajuste y lectura crítica del cronocomparador.",
+    "en": "Pasar de reconocer piezas a explicar geometría de escape, oscilación, ajuste y lectura crítica del cronocomparador."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza",
+    "module.encyclopedia.escapements-chronometry.geometria-del-escape",
+    "module.encyclopedia.escapements-chronometry.volante-y-espiral",
+    "module.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+    "module.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+    "module.encyclopedia.escapements-chronometry.cronocomparador-y-prueba",
+    "module.encyclopedia.escapements-chronometry.toh-escape-fases",
+    "module.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+    "module.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto",
+    "module.encyclopedia.escapements-chronometry.toh-isocronismo",
+    "module.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+    "module.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+    "module.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+    "module.encyclopedia.escapements-chronometry.bulova-poising",
+    "module.encyclopedia.escapements-chronometry.bulova-espiral"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza",
+    "competency.encyclopedia.escapements-chronometry.geometria-del-escape",
+    "competency.encyclopedia.escapements-chronometry.volante-y-espiral",
+    "competency.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+    "competency.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+    "competency.encyclopedia.escapements-chronometry.cronocomparador-y-prueba",
+    "competency.encyclopedia.escapements-chronometry.toh-escape-fases",
+    "competency.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+    "competency.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto",
+    "competency.encyclopedia.escapements-chronometry.toh-isocronismo",
+    "competency.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+    "competency.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+    "competency.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+    "competency.encyclopedia.escapements-chronometry.bulova-poising",
+    "competency.encyclopedia.escapements-chronometry.bulova-espiral"
+  ],
+  "movementIds": [],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.private.daniels.escapements",
+    "source.external.ciechanowski-mechanical-watch",
+    "source.external.horlogerie-suisse",
+    "source.private.vba-uhrentechnik",
+    "source.external.eta-swisslab-6497",
+    "source.private.daniels.balance-spring",
+    "source.external.horology-student.books",
+    "source.institutional.wostep.watchmaker",
+    "source.institutional.awci.standards",
+    "source.private.toh.ch06",
+    "source.private.bulova.10",
+    "source.encyclopedia.original-synthesis",
+    "source.private.toh.ch07",
+    "source.private.bulova.06",
+    "source.private.bulova.05",
+    "source.private.bulova.02",
+    "source.private.chicago.16",
+    "source.private.chicago.17",
+    "source.private.bulova.07",
+    "source.private.bulova.08"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.01",
+        "order": 1,
+        "title": {
+          "es": "Ciclo completo del escape de áncora suiza",
+          "en": "Ciclo completo del escape de áncora suiza"
+        },
+        "outcome": {
+          "es": "¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?",
+          "en": "¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza",
+        "activityId": "activity.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-entrada",
+          "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-salida",
+          "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.accion-perdida"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.02",
+        "order": 2,
+        "title": {
+          "es": "Bloqueo, draw, caída, impulso y seguridad",
+          "en": "Bloqueo, draw, caída, impulso y seguridad"
+        },
+        "outcome": {
+          "es": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+          "en": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+        "activityId": "activity.encyclopedia.escapements-chronometry.geometria-del-escape",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+          "concept.encyclopedia.escapements-chronometry.geometria-del-escape.caida",
+          "concept.encyclopedia.escapements-chronometry.geometria-del-escape.seguridad-del-rodillo"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.03",
+        "order": 3,
+        "title": {
+          "es": "Volante, espiral, pitón, raqueta y frecuencia",
+          "en": "Volante, espiral, pitón, raqueta y frecuencia"
+        },
+        "outcome": {
+          "es": "¿Cómo forman volante y espiral un oscilador regulable y qué perturba su centro elástico?",
+          "en": "¿Cómo forman volante y espiral un oscilador regulable y qué perturba su centro elástico?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.volante-y-espiral",
+        "activityId": "activity.encyclopedia.escapements-chronometry.volante-y-espiral",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.volante-y-espiral.momento-de-inercia-del-volante",
+          "concept.encyclopedia.escapements-chronometry.volante-y-espiral.longitud-activa-de-espiral",
+          "concept.encyclopedia.escapements-chronometry.volante-y-espiral.respiracion-concentrica"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.04",
+        "order": 4,
+        "title": {
+          "es": "Isocronismo, punto de sujeción y curvas terminales",
+          "en": "Isocronismo, punto de sujeción y curvas terminales"
+        },
+        "outcome": {
+          "es": "¿Por qué puede cambiar la tasa cuando cambia la amplitud aunque la frecuencia nominal sea fija?",
+          "en": "¿Por qué puede cambiar la tasa cuando cambia la amplitud aunque la frecuencia nominal sea fija?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+        "activityId": "activity.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.isocronismo",
+          "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.curva-terminal",
+          "concept.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales.error-circular"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.05",
+        "order": 5,
+        "title": {
+          "es": "Poising, beat error y posiciones",
+          "en": "Poising, beat error y posiciones"
+        },
+        "outcome": {
+          "es": "¿Cómo producen gravedad y asimetría diferencias entre posiciones?",
+          "en": "¿Cómo producen gravedad y asimetría diferencias entre posiciones?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+        "activityId": "activity.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.poising-estatico",
+          "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.poising-dinamico",
+          "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.beat-error"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.06",
+        "order": 6,
+        "title": {
+          "es": "Cronocomparador, reserva y validación cronométrica",
+          "en": "Cronocomparador, reserva y validación cronométrica"
+        },
+        "outcome": {
+          "es": "¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?",
+          "en": "¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.cronocomparador-y-prueba",
+        "activityId": "activity.encyclopedia.escapements-chronometry.cronocomparador-y-prueba",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.tasa-instantanea-estimada",
+          "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.angulo-de-alzada",
+          "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.protocolo-cronometrico"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.07",
+        "order": 7,
+        "title": {
+          "es": "Fases completas del escape de áncora suizo",
+          "en": "Fases completas del escape de áncora suizo"
+        },
+        "outcome": {
+          "es": "¿Qué estados atraviesa un diente desde el bloqueo hasta el siguiente bloqueo?",
+          "en": "¿Qué estados atraviesa un diente desde el bloqueo hasta el siguiente bloqueo?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-escape-fases",
+        "activityId": "activity.encyclopedia.escapements-chronometry.toh-escape-fases",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.toh-escape-fases.despeje",
+          "concept.encyclopedia.escapements-chronometry.toh-escape-fases.impulso",
+          "concept.encyclopedia.escapements-chronometry.toh-escape-fases.caida"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.08",
+        "order": 8,
+        "title": {
+          "es": "Seguridad: draw, guardia y cuernos",
+          "en": "Seguridad: draw, guardia y cuernos"
+        },
+        "outcome": {
+          "es": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?",
+          "en": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+        "activityId": "activity.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.draw",
+          "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.accion-de-guardia",
+          "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.run-to-banking"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.09",
+        "order": 9,
+        "title": {
+          "es": "Volante, espiral, pitón, virola y raqueta",
+          "en": "Volante, espiral, pitón, virola y raqueta"
+        },
+        "outcome": {
+          "es": "¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?",
+          "en": "¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto",
+        "activityId": "activity.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.virola",
+          "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.piton",
+          "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.longitud-activa"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.10",
+        "order": 10,
+        "title": {
+          "es": "Isocronismo y dependencia de amplitud",
+          "en": "Isocronismo y dependencia de amplitud"
+        },
+        "outcome": {
+          "es": "¿Por qué el periodo puede cambiar cuando cambia la amplitud?",
+          "en": "¿Por qué el periodo puede cambiar cuando cambia la amplitud?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-isocronismo",
+        "activityId": "activity.encyclopedia.escapements-chronometry.toh-isocronismo",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.toh-isocronismo.error-de-isocronismo",
+          "concept.encyclopedia.escapements-chronometry.toh-isocronismo.efecto-caspari",
+          "concept.encyclopedia.escapements-chronometry.toh-isocronismo.efecto-grossmann"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.11",
+        "order": 11,
+        "title": {
+          "es": "Posiciones, gravedad, poising y perturbaciones",
+          "en": "Posiciones, gravedad, poising y perturbaciones"
+        },
+        "outcome": {
+          "es": "¿Por qué un reloj cambia de marcha al cambiar de orientación?",
+          "en": "¿Por qué un reloj cambia de marcha al cambiar de orientación?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+        "activityId": "activity.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.error-posicional",
+          "concept.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.poising-estatico",
+          "concept.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.poising-dinamico"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.12",
+        "order": 12,
+        "title": {
+          "es": "Tourbillon, carrusel y promedio posicional",
+          "en": "Tourbillon, carrusel y promedio posicional"
+        },
+        "outcome": {
+          "es": "¿Qué error intentan promediar los reguladores rotatorios y qué no corrigen?",
+          "en": "¿Qué error intentan promediar los reguladores rotatorios y qué no corrigen?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+        "activityId": "activity.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.jaula",
+          "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.periodo-de-rotacion",
+          "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.promedio-posicional"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.13",
+        "order": 13,
+        "title": {
+          "es": "Pasaporte VIII: centrado y alabeo del volante",
+          "en": "Pasaporte VIII: centrado y alabeo del volante"
+        },
+        "outcome": {
+          "es": "¿Cómo se distinguen error radial, axial y desplazamiento de montaje?",
+          "en": "¿Cómo se distinguen error radial, axial y desplazamiento de montaje?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+        "activityId": "activity.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.bulova-centrado-volante.error-radial",
+          "concept.encyclopedia.escapements-chronometry.bulova-centrado-volante.alabeo-axial",
+          "concept.encyclopedia.escapements-chronometry.bulova-centrado-volante.referencia-de-observacion"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.14",
+        "order": 14,
+        "title": {
+          "es": "Pasaporte IX: equilibrado estático del volante",
+          "en": "Pasaporte IX: equilibrado estático del volante"
+        },
+        "outcome": {
+          "es": "¿Qué demuestra y qué no demuestra una prueba de poising?",
+          "en": "¿Qué demuestra y qué no demuestra una prueba de poising?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.bulova-poising",
+        "activityId": "activity.encyclopedia.escapements-chronometry.bulova-poising",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.bulova-poising.punto-pesado",
+          "concept.encyclopedia.escapements-chronometry.bulova-poising.cuchillas-de-equilibrado",
+          "concept.encyclopedia.escapements-chronometry.bulova-poising.correccion-de-masa"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.escapements-chronometry.15",
+        "order": 15,
+        "title": {
+          "es": "Pasaporte X: plano, centrado, virola y vibrado de espiral",
+          "en": "Pasaporte X: plano, centrado, virola y vibrado de espiral"
+        },
+        "outcome": {
+          "es": "¿Qué orden evita corregir frecuencia sobre una espiral geométricamente defectuosa?",
+          "en": "¿Qué orden evita corregir frecuencia sobre una espiral geométricamente defectuosa?"
+        },
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.bulova-espiral",
+        "activityId": "activity.encyclopedia.escapements-chronometry.bulova-espiral",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.escapements-chronometry.bulova-espiral.vibrado-de-espiral",
+          "concept.encyclopedia.escapements-chronometry.bulova-espiral.colletado",
+          "concept.encyclopedia.escapements-chronometry.bulova-espiral.curva-terminal"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.escapements-chronometry.bulova-espiral"
+    ]
+  }
+}

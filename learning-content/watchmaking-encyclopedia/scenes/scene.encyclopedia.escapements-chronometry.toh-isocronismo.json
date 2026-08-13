@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.toh-isocronismo",
+  "version": "1.1.0",
+  "title": "Cuaderno: Isocronismo y dependencia de amplitud",
+  "description": "¿Por qué el periodo puede cambiar cuando cambia la amplitud?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Isocronismo y dependencia de amplitud. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.toh-isocronismo.scope",
+      "markdown": "**Alcance del estudio:** ¿Por qué el periodo puede cambiar cuando cambia la amplitud?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Por qué el periodo puede cambiar cuando cambia la amplitud?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.toh-isocronismo.answer",
+      "instructionMarkdown": "Explica **Isocronismo y dependencia de amplitud** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.toh-isocronismo.explain",
+          "promptMarkdown": "¿Por qué el periodo puede cambiar cuando cambia la amplitud?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-isocronismo.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-isocronismo.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-isocronismo.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-isocronismo.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.toh-isocronismo.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por cambiar par disponible y sigue hasta observar marcha.",
+                "en": "Empieza por cambiar par disponible y sigue hasta observar marcha."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.toh-isocronismo.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El modelo armónico ideal es isócrono, pero geometría de espiral, puntos de fijación, gravedad, escape, fricción y elasticidad introducen errores. Comparar marcha a distintas amplitudes revela la suma del sistema, no una causa única.",
+                "en": "El modelo armónico ideal es isócrono, pero geometría de espiral, puntos de fijación, gravedad, escape, fricción y elasticidad introducen errores. Comparar marcha a distintas amplitudes revela la suma del sistema, no una causa única."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Por qué el periodo puede cambiar cuando cambia la amplitud?",
+              "en": "¿Por qué el periodo puede cambiar cuando cambia la amplitud?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena cambiar par disponible → cambiar amplitud → alterar respiración efectiva → modificar perturbaciones → cambiar periodo → observar marcha, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena cambiar par disponible → cambiar amplitud → alterar respiración efectiva → modificar perturbaciones → cambiar periodo → observar marcha, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.toh-isocronismo.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.toh-isocronismo.mechanism",
+            "field.encyclopedia.escapements-chronometry.toh-isocronismo.evidence",
+            "field.encyclopedia.escapements-chronometry.toh-isocronismo.limit",
+            "field.encyclopedia.escapements-chronometry.toh-isocronismo.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

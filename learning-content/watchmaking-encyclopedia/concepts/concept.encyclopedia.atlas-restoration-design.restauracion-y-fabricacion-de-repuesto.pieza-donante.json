@@ -1,0 +1,67 @@
+{
+  "id": "concept.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.pieza-donante",
+  "version": "1.1.0",
+  "title": {
+    "es": "pieza donante",
+    "en": "pieza donante"
+  },
+  "summary": {
+    "es": "Componente extraído de otro ejemplar para reutilización tras verificar identidad, estado y compatibilidad.",
+    "en": "Componente extraído de otro ejemplar para reutilización tras verificar identidad, estado y compatibilidad."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.autenticidad-material",
+    "concept.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.intervencion-minima",
+    "concept.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico.reversibilidad"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto"
+  ],
+  "movementIds": [],
+  "subsystem": "restoration",
+  "routeIds": [
+    "route.encyclopedia.atlas-restoration-design"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto"
+  ],
+  "sourceIds": [
+    "source.private.daniels.small-components",
+    "source.external.pocket-watch-database",
+    "source.external.watchguy-repair-blog",
+    "source.external.bobinchak-school"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+  "plainLanguage": {
+    "es": "Componente extraído de otro ejemplar para reutilización tras verificar identidad, estado y compatibilidad.",
+    "en": "Componente extraído de otro ejemplar para reutilización tras verificar identidad, estado y compatibilidad."
+  },
+  "technicalLanguage": {
+    "es": "pieza donante se interpreta mediante la cadena definir función perdida → documentar original → comparar opciones → medir interfaces y riesgo → prototipar fuera del original → instalar, validar y registrar y las condiciones declaradas en la unidad.",
+    "en": "pieza donante se interpreta mediante la cadena definir función perdida → documentar original → comparar opciones → medir interfaces y riesgo → prototipar fuera del original → instalar, validar y registrar y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se decide entre reparar, fabricar, adaptar, usar donante o no intervenir?",
+    "en": "Permite explicar y comprobar ¿cómo se decide entre reparar, fabricar, adaptar, usar donante o no intervenir?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir pieza donante sin circularidad.",
+      "en": "Definir pieza donante sin circularidad."
+    },
+    {
+      "es": "Relacionar pieza donante con una entrada, una interfaz y una salida.",
+      "en": "Relacionar pieza donante con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

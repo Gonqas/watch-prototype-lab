@@ -1,0 +1,68 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.rochete",
+  "version": "1.1.0",
+  "title": {
+    "es": "rochete",
+    "en": "rochete"
+  },
+  "summary": {
+    "es": "Rueda fijada al árbol de barrilete que recibe la acción de cuerda y es retenida por el clic.",
+    "en": "Rueda fijada al árbol de barrilete que recibe la acción de cuerda y es retenida por el clic."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.muelle-real",
+    "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.arbol-de-barrilete",
+    "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.curva-de-par"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico"
+  ],
+  "movementIds": [
+    "miyota-8215"
+  ],
+  "subsystem": "winding",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico"
+  ],
+  "sourceIds": [
+    "source.private.daniels.mainsprings",
+    "source.official.miyota.8215",
+    "source.external.animagraffs-mechanical-watch"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+  "plainLanguage": {
+    "es": "Rueda fijada al árbol de barrilete que recibe la acción de cuerda y es retenida por el clic.",
+    "en": "Rueda fijada al árbol de barrilete que recibe la acción de cuerda y es retenida por el clic."
+  },
+  "technicalLanguage": {
+    "es": "rochete se interpreta mediante la cadena usuario o rotor aporta giro → transmisión selecciona sentido → rochete mueve árbol → clic retiene retroceso → muelle acumula energía → limitador evita sobrecarga y las condiciones declaradas en la unidad.",
+    "en": "rochete se interpreta mediante la cadena usuario o rotor aporta giro → transmisión selecciona sentido → rochete mueve árbol → clic retiene retroceso → muelle acumula energía → limitador evita sobrecarga y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?",
+    "en": "Permite explicar y comprobar ¿cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir rochete sin circularidad.",
+      "en": "Definir rochete sin circularidad."
+    },
+    {
+      "es": "Relacionar rochete con una entrada, una interfaz y una salida.",
+      "en": "Relacionar rochete con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

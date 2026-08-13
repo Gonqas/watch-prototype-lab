@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+  "version": "1.1.0",
+  "title": "Cuaderno: Observación, óptica y manipulación",
+  "description": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Observación, óptica y manipulación. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.answer",
+      "instructionMarkdown": "Explica **Observación, óptica y manipulación** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.explain",
+          "promptMarkdown": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por preguntar y sigue hasta registrar comparación.",
+                "en": "Empieza por preguntar y sigue hasta registrar comparación."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Aumento, campo, profundidad, iluminación y ángulo cambian lo visible. La manipulación añade fuerza, magnetismo, grasa y riesgo de proyección. Observar bien implica comenzar con bajo aumento, formular una pregunta, variar la luz, comparar referencias y registrar antes de tocar.",
+                "en": "Aumento, campo, profundidad, iluminación y ángulo cambian lo visible. La manipulación añade fuerza, magnetismo, grasa y riesgo de proyección. Observar bien implica comenzar con bajo aumento, formular una pregunta, variar la luz, comparar referencias y registrar antes de tocar."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+              "en": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena preguntar → observar a bajo aumento → variar iluminación → aumentar localmente → manipular con apoyo → registrar comparación, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena preguntar → observar a bajo aumento → variar iluminación → aumentar localmente → manipular con apoyo → registrar comparación, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.mechanism",
+            "field.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.evidence",
+            "field.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.limit",
+            "field.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

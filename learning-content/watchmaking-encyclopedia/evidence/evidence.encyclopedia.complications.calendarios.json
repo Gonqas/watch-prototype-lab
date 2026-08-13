@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.complications.calendarios",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.complications.calendarios",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.complications.calendarios",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.complications.calendarios",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.complications.calendarios"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.complications.calendarios",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

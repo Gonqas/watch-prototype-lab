@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.dials-hands-finishing.impresion-indices-y-lume"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

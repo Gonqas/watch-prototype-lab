@@ -1,0 +1,26 @@
+{
+  "id": "competency.metrology.completar-un-dossier",
+  "version": "0.1.0",
+  "title": "Completar un dossier",
+  "description": "Completar un dossier con método, trazabilidad, límites y evidencia aplicados a una unidad concreta.",
+  "prerequisites": [
+    "competency.metrology.documentar-una-pieza"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Completar un dossier"
+    },
+    "description": {
+      "es": "Completar un dossier sin generalizar resultados ni ocultar incertidumbre."
+    },
+    "movementIds": [],
+    "subsystem": "metrology",
+    "skillType": "procedure",
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ]
+  }
+}

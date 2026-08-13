@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+  "version": "1.1.0",
+  "title": "Cuerda manual, rochete, rueda de corona y sistema automático",
+  "blockIds": [
+    "block.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Cuerda manual, rochete, rueda de corona y sistema automático",
+      "en": "Cuerda manual, rochete, rueda de corona y sistema automático"
+    },
+    "purpose": {
+      "es": "¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?",
+      "en": "¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Cuerda manual, rochete, rueda de corona y sistema automático mediante relaciones causales.",
+        "en": "Explicar Cuerda manual, rochete, rueda de corona y sistema automático mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.muelle-real",
+      "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.arbol-de-barrilete",
+      "concept.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.curva-de-par"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.rochete",
+      "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.clic",
+      "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.reversor-automatico"
+    ],
+    "sourceIds": [
+      "source.private.daniels.mainsprings",
+      "source.official.miyota.8215",
+      "source.external.animagraffs-mechanical-watch"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.rochete",
+        "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.clic",
+        "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.reversor-automatico"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1253,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: rochete, clic, reversor automático.",
+          "en": "Defino con mis palabras: rochete, clic, reversor automático."
+        },
+        {
+          "es": "Sigo «Cuerda manual, rochete, rueda de corona y sistema automático» desde usuario o rotor aporta giro hasta limitador evita sobrecarga y explico cada enlace.",
+          "en": "Sigo «Cuerda manual, rochete, rueda de corona y sistema automático» desde usuario o rotor aporta giro hasta limitador evita sobrecarga y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Cuerda manual, rochete, rueda de corona y sistema automático» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Cuerda manual, rochete, rueda de corona y sistema automático» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Traza el camino de carga manual y automática en el 8215 solo con documentación oficial; etiqueta como desconocida toda dirección o lubricación no documentada.",
+          "en": "Aplico el criterio a esta variante: Traza el camino de carga manual y automática en el 8215 solo con documentación oficial; etiqueta como desconocida toda dirección o lubricación no documentada."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Cuerda manual, rochete, rueda de corona y sistema automático» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Cuerda manual, rochete, rueda de corona y sistema automático» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.rochete",
+        "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.clic",
+        "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.reversor-automatico"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?",
+          "en": "¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?"
+        },
+        {
+          "es": "¿Qué relación causal de «Cuerda manual, rochete, rueda de corona y sistema automático» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Cuerda manual, rochete, rueda de corona y sistema automático» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

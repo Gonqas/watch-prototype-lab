@@ -1,0 +1,114 @@
+{
+  "id": "scene.metrology.medir-distancia",
+  "version": "0.2.0",
+  "title": "Medir distancia",
+  "description": "Escena textual y accesible que prepara la operación real “Medir distancia” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Medir distancia. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-medir-distancia.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-medir-distancia.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Medir distancia”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-medir-distancia.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Medir distancia” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-medir-distancia",
+          "promptMarkdown": "¿Cuándo una distancia en píxeles puede convertirse en longitud y cuándo la perspectiva invalida esa conversión?\n\nEn «Medir distancia», resuelve un contexto nuevo: Usa el mismo protocolo en una distancia entre centros y en un diámetro aparente. Explica por qué cada característica necesita reglas de selección diferentes aunque comparta escala. Documenta observación o resultado, método, límite y confianza sin copiar el dato del ejemplo.",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-medir-distancia.observation",
+              "label": "Observación o resultado transferido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-medir-distancia.method",
+              "label": "Método y referencia empleados",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-medir-distancia.limitation",
+              "label": "Límite, dato ausente o condición de invalidez",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-medir-distancia.confidence",
+              "label": "Confianza en la conclusión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Transfiere el criterio de «Medir distancia» a un contexto nuevo."
+            },
+            "feedback": {
+              "es": "La transferencia conserva el método y vuelve a declarar sus límites: Usa el mismo protocolo en una distancia entre centros y en un diámetro aparente. Explica por qué cada característica necesita reglas de selección diferentes aunque comparta escala."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-medir-distancia",
+          "requiredFieldIds": [
+            "field.activity-metrology-medir-distancia.observation",
+            "field.activity-metrology-medir-distancia.method",
+            "field.activity-metrology-medir-distancia.limitation",
+            "field.activity-metrology-medir-distancia.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

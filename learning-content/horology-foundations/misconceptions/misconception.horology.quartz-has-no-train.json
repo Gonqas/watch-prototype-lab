@@ -1,0 +1,28 @@
+{
+  "id": "misconception.horology.quartz-has-no-train",
+  "version": "0.5.0",
+  "title": {
+    "es": "Un reloj de cuarzo también transmite movimiento"
+  },
+  "learnerExpression": {
+    "es": "Como el control es electrónico, el cuarzo no necesita tren de ruedas."
+  },
+  "diagnosis": {
+    "es": "Se está confundiendo la referencia temporal electrónica con la transmisión mecánica hasta las agujas."
+  },
+  "correction": {
+    "es": "El circuito controla el paso a paso y el rotor entrega movimiento a un tren que mueve la indicación."
+  },
+  "observableSignals": [
+    "Salta de circuito a agujas.",
+    "No sitúa bobina, rotor y tren en orden."
+  ],
+  "conceptIds": [
+    "concept.horology.quartz-chain",
+    "concept.horology.functional-equivalence"
+  ],
+  "remediationLessonId": "lesson.horology.quartz-chain",
+  "sourceIds": [
+    "source.horology.original-functional-map"
+  ]
+}

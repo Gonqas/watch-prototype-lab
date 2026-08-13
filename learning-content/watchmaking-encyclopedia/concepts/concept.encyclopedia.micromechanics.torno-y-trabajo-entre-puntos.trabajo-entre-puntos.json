@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.trabajo-entre-puntos",
+  "version": "1.1.0",
+  "title": {
+    "es": "trabajo entre puntos",
+    "en": "trabajo entre puntos"
+  },
+  "summary": {
+    "es": "Mecanizado de una pieza apoyada en centros que conservan su eje al invertirla.",
+    "en": "Mecanizado de una pieza apoyada en centros que conservan su eje al invertirla."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.datum",
+    "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.cadena-de-proceso",
+    "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.sobrematerial"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "movementIds": [],
+  "subsystem": "turning",
+  "routeIds": [
+    "route.encyclopedia.micromechanics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "sourceIds": [
+    "source.private.daniels.turning",
+    "source.private.daniels.hand-tools",
+    "source.institutional.wostep.watchmaker"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+  "plainLanguage": {
+    "es": "Mecanizado de una pieza apoyada en centros que conservan su eje al invertirla.",
+    "en": "Mecanizado de una pieza apoyada en centros que conservan su eje al invertirla."
+  },
+  "technicalLanguage": {
+    "es": "trabajo entre puntos se interpreta mediante la cadena preparar centros o superficie → elegir sujeción → alinear apoyo y buril → desbastar → medir sin retirar referencia → acabar y verificar al invertir y las condiciones declaradas en la unidad.",
+    "en": "trabajo entre puntos se interpreta mediante la cadena preparar centros o superficie → elegir sujeción → alinear apoyo y buril → desbastar → medir sin retirar referencia → acabar y verificar al invertir y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?",
+    "en": "Permite explicar y comprobar ¿cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir trabajo entre puntos sin circularidad.",
+      "en": "Definir trabajo entre puntos sin circularidad."
+    },
+    {
+      "es": "Relacionar trabajo entre puntos con una entrada, una interfaz y una salida.",
+      "en": "Relacionar trabajo entre puntos con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

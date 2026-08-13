@@ -1,0 +1,399 @@
+{
+  "id": "activity.mechanical.formulate-hypothesis",
+  "version": "0.5.0",
+  "title": "Formular una hipótesis y una prueba",
+  "sceneIds": [
+    "scene.practice.mechanical.formulate-hypothesis"
+  ],
+  "competencyIds": [
+    "competency.mechanical.diagnose-conceptual-interruption"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.mechanical.diagnose-conceptual-interruption"
+  ],
+  "rubricId": "rubric.mechanical.diagnose-conceptual-interruption",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.mechanical.final-project",
+    "title": {
+      "es": "Formular una hipótesis y una prueba",
+      "en": "Formular una hipótesis y una prueba"
+    },
+    "description": {
+      "es": "Formular una hipótesis y una prueba mediante el laboratorio funcional, cálculos declarados, evidencia y restauración.",
+      "en": "Formular una hipótesis y una prueba mediante el laboratorio funcional, cálculos declarados, evidencia y restauración."
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 30,
+    "activityType": "prediction",
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "familyIds": [
+      "conceptual-mechanical"
+    ],
+    "subsystem": "integration",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+        "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+        "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Modelo normalizado: no es física ni servicio de un calibre real.",
+        "El 8215 solo aporta comparación estructural documentada."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.horology.private-book.movement-design",
+      "source.horology.original-mechanical-foundations"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.final-project"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.mechanical.formulate-hypothesis.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Qué hace que una hipótesis sea comprobable?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.formulate-hypothesis.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Escribe dos causas rivales y un resultado distinto para cada una."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.formulate-hypothesis.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: Una hipótesis útil enlaza causa propuesta, resultado esperado y prueba discriminante."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.formulate-hypothesis.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.formulate-hypothesis.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "Una hipótesis útil enlaza causa propuesta, resultado esperado y prueba discriminante."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.formulate-hypothesis.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Transfiere el árbol a un síntoma del 8215."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "mechanical-lab-command",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": true,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "integration",
+      "commands": [
+        "wind",
+        "add-stage",
+        "change-ratio",
+        "set-oscillator",
+        "set-hairspring-active-length",
+        "step-escapement",
+        "scrub-escapement",
+        "oscillate",
+        "set-time",
+        "change-crown-position",
+        "enable-automatic",
+        "advance-calendar",
+        "introduce-fault",
+        "inspect",
+        "project-enable-subsystem",
+        "project-record-decision",
+        "restore",
+        "undo"
+      ],
+      "viewModes": [
+        "normal",
+        "energy-flow",
+        "kinematics",
+        "compare-8215",
+        "provenance",
+        "uncertainty",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "Una hipótesis útil enlaza causa propuesta, resultado esperado y prueba discriminante."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «Repite el síntoma con palabras más técnicas» y «Afirma una causa sin indicar qué resultado la refutaría» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Qué hace que una hipótesis sea comprobable?"
+      },
+      "nextObservation": {
+        "es": "Escribe dos causas rivales y un resultado distinto para cada una."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Transfiere el árbol a un síntoma del 8215."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.explain-automatic-winding",
+        "concept.mechanical.diagnose-conceptual-interruption"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Formular una hipótesis y una prueba», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Formular una hipótesis y una prueba», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué hace que una hipótesis sea comprobable?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Escribe dos causas rivales y un resultado distinto para cada una."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Formular una hipótesis y una prueba»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: Una hipótesis útil enlaza causa propuesta, resultado esperado y prueba discriminante."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "Una hipótesis útil enlaza causa propuesta, resultado esperado y prueba discriminante."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Formular una hipótesis y una prueba» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Formular una hipótesis y una prueba» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Formular una hipótesis y una prueba» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Transfiere el árbol a un síntoma del 8215."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "Predice una observación que podría diferenciarla de otra explicación"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Repite el síntoma con palabras más técnicas"
+        },
+        {
+          "es": "Afirma una causa sin indicar qué resultado la refutaría"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Transfiere el árbol a un síntoma del 8215."
+        }
+      },
+      "transferPrompt": {
+        "es": "Transfiere el árbol a un síntoma del 8215."
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.mechanical.explain-automatic-winding"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.mechanical.diagnose-conceptual-interruption"
+      ],
+      "assessesConceptIds": [
+        "concept.mechanical.diagnose-conceptual-interruption"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.mechanical.final-project",
+        "blockId": "block.mechanical.final-project",
+        "conceptIds": [
+          "concept.mechanical.diagnose-conceptual-interruption"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba comprensión dentro de un modelo mecánico conceptual geometría conceptual y secuencia educativa, sin simulación física. No demuestra física validada, destreza manual ni capacidad de servicio sobre un calibre real.",
+        "en": "This activity checks understanding in a geometría conceptual y secuencia educativa, sin simulación física conceptual mechanical model. It does not demonstrate validated physics, manual skill, or the ability to service a real calibre."
+      }
+    }
+  }
+}

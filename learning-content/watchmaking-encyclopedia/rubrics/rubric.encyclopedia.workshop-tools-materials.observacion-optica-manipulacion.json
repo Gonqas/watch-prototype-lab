@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Observación, óptica y manipulación."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

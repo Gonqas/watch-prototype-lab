@@ -1,0 +1,28 @@
+{
+  "id": "competency.mechanical.explain-barrel",
+  "version": "0.5.0",
+  "title": "Explicar muelle real y barrilete",
+  "description": "Explicar muelle real y barrilete mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.",
+  "prerequisites": [
+    "competency.mechanical.explain-energy-chain"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Explicar muelle real y barrilete",
+      "en": "Explicar muelle real y barrilete"
+    },
+    "description": {
+      "es": "Explicar muelle real y barrilete; el tiempo y las adaptaciones accesibles no penalizan.",
+      "en": "Explicar muelle real y barrilete; el tiempo y las adaptaciones accesibles no penalizan."
+    },
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "subsystem": "barrel",
+    "skillType": "procedure",
+    "sourceIds": [
+      "source.horology.original-mechanical-foundations"
+    ]
+  }
+}

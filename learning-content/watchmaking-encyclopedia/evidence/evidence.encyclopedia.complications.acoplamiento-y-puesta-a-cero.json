@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.complications.acoplamiento-y-puesta-a-cero"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

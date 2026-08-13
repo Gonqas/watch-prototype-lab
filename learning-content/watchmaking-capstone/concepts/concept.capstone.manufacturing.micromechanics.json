@@ -1,0 +1,71 @@
+{
+  "id": "concept.capstone.manufacturing.micromechanics",
+  "version": "1.0.0",
+  "title": {
+    "es": "Micromecánica: ejes, piñones, tornillos y muelles",
+    "en": "Micromecánica: ejes, piñones, tornillos y muelles"
+  },
+  "summary": {
+    "es": "¿Cómo convertir micromecánica: ejes, piñones, tornillos y muelles en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir micromecánica: ejes, piñones, tornillos y muelles en un proceso seguro, medible y revisable?"
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.capstone.manufacturing.plates-bridges"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.capstone.manufacturing.plates-bridges",
+    "concept.capstone.manufacturing.decoration"
+  ],
+  "competencyIds": [
+    "competency.capstone.manufacturing.micromechanics"
+  ],
+  "movementIds": [],
+  "subsystem": "manufacturing-micromechanics",
+  "routeIds": [
+    "route.capstone.manufacturing-finishing"
+  ],
+  "activityIds": [
+    "activity.capstone.manufacturing.micromechanics"
+  ],
+  "sourceIds": [
+    "source.iso.286-1",
+    "source.iso.1101",
+    "source.iso.21920-1",
+    "source.niosh.machine-safety"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Cómo convertir micromecánica: ejes, piñones, tornillos y muelles en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir micromecánica: ejes, piñones, tornillos y muelles en un proceso seguro, medible y revisable?"
+  },
+  "technicalLanguage": {
+    "es": "## Qué problema resuelve\n\nPlanificar piezas pequeñas por función, material, tratamiento, sujeción, acabado, inspección y riesgo de pérdida. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Micromecánica: ejes, piñones, tornillos y muelles**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Preparar bruto y sobrematerial.** Asegurar identidad, sujeción y referencias viables. Entrada: Barra, chapa o alambre identificado. Salida verificable: Bruto trazable.\n2. **Generar forma funcional.** Crear pivotes, perfiles, roscas, dientes o elasticidad sin perder referencia. Entrada: Bruto preparado. Salida verificable: Pieza formada antes de tratamiento.\n3. **Tratar, terminar e inspeccionar.** Obtener propiedades y superficie preservando geometría. Entrada: Pieza formada. Salida verificable: Pieza final registrada.\n\nRevisa la secuencia de **Preparar bruto y sobrematerial** a **Tratar, terminar e inspeccionar** también de atrás hacia delante. Para aceptar el resultado final de micromecánica: ejes, piñones, tornillos y muelles, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿Material, tratamiento y dureza responden a contacto, fatiga, elasticidad y posibilidad de acabado?\n\n- **Eje o interfaz funcional principal:** Concentricidad de escalones. Longitud funcional. Superficie de contacto.\n\n- **Requisito:** La tolerancia se asigna al contacto o movimiento, no al tamaño visual. **Verificación:** Método de medida o galga definido antes del tratamiento final.\n\nSelecciona el material de **Micromecánica: ejes, piñones, tornillos y muelles** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Atrapamiento en maquinaria rotativa (critical):** Formación presencial y resguardos. Sujeción verificada y zona despejada. Nunca usar guantes junto a elementos giratorios cuando exista riesgo de atrapamiento. Detenerse si: Resguardo ausente. Pieza o herramienta mal sujeta. Ruido, vibración o excentricidad no explicados.\n- **Cortes, virutas y proyección de partículas (serious):*",
+    "en": "## Qué problema resuelve\n\nPlanificar piezas pequeñas por función, material, tratamiento, sujeción, acabado, inspección y riesgo de pérdida. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Micromecánica: ejes, piñones, tornillos y muelles**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Preparar bruto y sobrematerial.** Asegurar identidad, sujeción y referencias viables. Entrada: Barra, chapa o alambre identificado. Salida verificable: Bruto trazable.\n2. **Generar forma funcional.** Crear pivotes, perfiles, roscas, dientes o elasticidad sin perder referencia. Entrada: Bruto preparado. Salida verificable: Pieza formada antes de tratamiento.\n3. **Tratar, terminar e inspeccionar.** Obtener propiedades y superficie preservando geometría. Entrada: Pieza formada. Salida verificable: Pieza final registrada.\n\nRevisa la secuencia de **Preparar bruto y sobrematerial** a **Tratar, terminar e inspeccionar** también de atrás hacia delante. Para aceptar el resultado final de micromecánica: ejes, piñones, tornillos y muelles, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿Material, tratamiento y dureza responden a contacto, fatiga, elasticidad y posibilidad de acabado?\n\n- **Eje o interfaz funcional principal:** Concentricidad de escalones. Longitud funcional. Superficie de contacto.\n\n- **Requisito:** La tolerancia se asigna al contacto o movimiento, no al tamaño visual. **Verificación:** Método de medida o galga definido antes del tratamiento final.\n\nSelecciona el material de **Micromecánica: ejes, piñones, tornillos y muelles** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Atrapamiento en maquinaria rotativa (critical):** Formación presencial y resguardos. Sujeción verificada y zona despejada. Nunca usar guantes junto a elementos giratorios cuando exista riesgo de atrapamiento. Detenerse si: Resguardo ausente. Pieza o herramienta mal sujeta. Ruido, vibración o excentricidad no explicados.\n- **Cortes, virutas y proyección de partículas (serious):*"
+  },
+  "whyItMatters": {
+    "es": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables.",
+    "en": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables."
+  },
+  "observableActions": [
+    {
+      "es": "Compara alternativas.",
+      "en": "Compara alternativas."
+    },
+    {
+      "es": "Declara interfaces y riesgos.",
+      "en": "Declara interfaces y riesgos."
+    },
+    {
+      "es": "Define evidencia y criterios de parada.",
+      "en": "Define evidencia y criterios de parada."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.capstone.manufacturing.decoration"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

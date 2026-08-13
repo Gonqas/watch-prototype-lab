@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.miyota8215.retain-inspect",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: inspeccionar",
+    "en": "Práctica posterior: inspeccionar"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra actividad, otra sesión, evidencia independiente, un contexto diferente y al menos siete días.",
+    "en": "Para considerarlo consolidado se exige otra actividad, otra sesión, evidencia independiente, un contexto diferente y al menos siete días."
+  },
+  "rule": "independent-later-evidence-different-activity-session-context-minimum-7-days@1.0.0",
+  "priority": 60,
+  "target": {
+    "kind": "competency",
+    "id": "competency.miyota8215.inspect"
+  },
+  "evidenceTemplateIds": [
+    "evidence.miyota8215.inspect"
+  ],
+  "required": false
+}

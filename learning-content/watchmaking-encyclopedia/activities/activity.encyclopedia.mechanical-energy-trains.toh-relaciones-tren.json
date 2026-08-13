@@ -1,0 +1,337 @@
+{
+  "id": "activity.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Relaciones del tren y sentido de giro",
+  "sceneIds": [
+    "scene.encyclopedia.mechanical-energy-trains.toh-relaciones-tren"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-relaciones-tren"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.mechanical-energy-trains.toh-relaciones-tren"
+  ],
+  "rubricId": "rubric.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+    "title": {
+      "es": "Explicar y transferir: Relaciones del tren y sentido de giro",
+      "en": "Explicar y transferir: Relaciones del tren y sentido de giro"
+    },
+    "description": {
+      "es": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?",
+      "en": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?"
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 35,
+    "activityType": "observation-3d",
+    "movementIds": [
+      "movement.conceptual.mechanical-chain"
+    ],
+    "familyIds": [],
+    "subsystem": "train",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion",
+      "viewport.camera",
+      "viewport.overlay.labels"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Cinemática educativa reversible; no valida geometría, fuerzas, tolerancias, lubricación ni competencia física."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.toh.ch05",
+      "source.private.vba-uhrentechnik",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.causal-lab"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "train",
+      "commands": [
+        "rotate",
+        "change-ratio",
+        "add-stage",
+        "remove-stage",
+        "inspect",
+        "restore"
+      ],
+      "viewModes": [
+        "schematic",
+        "kinematics",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.relacion-de-transmision",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.tren-compuesto",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.relacion-de-transmision",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.tren-compuesto",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.relacion-de-transmision",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.tren-compuesto",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+        "blockId": "block.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+        "conceptIds": [
+          "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.relacion-de-transmision",
+          "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.tren-compuesto",
+          "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Relaciones del tren y sentido de giro sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Relaciones del tren y sentido de giro sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Una cuarta rueda de una vuelta por minuto no se obtiene imponiendo ese valor a una sola pareja; resulta del producto completo y de la frecuencia de escape. Una rueda intermedia puede cambiar sentido sin cambiar la magnitud global si no forma etapa compuesta.",
+          "en": "Una cuarta rueda de una vuelta por minuto no se obtiene imponiendo ese valor a una sola pareja; resulta del producto completo y de la frecuencia de escape. Una rueda intermedia puede cambiar sentido sin cambiar la magnitud global si no forma etapa compuesta."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?",
+            "en": "Identificar la pregunta: ¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?"
+          },
+          {
+            "es": "Dibujar la secuencia identificar conductor → identificar conducido → anotar dientes → calcular pareja → multiplicar etapas → comprobar frecuencia y sentido.",
+            "en": "Dibujar la secuencia identificar conductor → identificar conducido → anotar dientes → calcular pareja → multiplicar etapas → comprobar frecuencia y sentido."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: dientes por móvil; revoluciones por hora; frecuencia de escape; sentido de giro.",
+            "en": "Asignar magnitudes y evidencia: dientes por móvil; revoluciones por hora; frecuencia de escape; sentido de giro."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Resuelve un tren hacia delante y después deduce dientes faltantes desde una frecuencia objetivo.",
+          "en": "Resuelve un tren hacia delante y después deduce dientes faltantes desde una frecuencia objetivo."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: identificar conductor → identificar conducido → anotar dientes → calcular pareja → multiplicar etapas → comprobar frecuencia y sentido.",
+            "en": "Completa la cadena con las etapas visibles: identificar conductor → identificar conducido → anotar dientes → calcular pareja → multiplicar etapas → comprobar frecuencia y sentido."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?",
+            "en": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Resuelve un tren hacia delante y después deduce dientes faltantes desde una frecuencia objetivo.",
+            "en": "Resuelve un tren hacia delante y después deduce dientes faltantes desde una frecuencia objetivo."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Dos etapas 4:1 dan 8:1",
+          "en": "Dos etapas 4:1 dan 8:1"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Relaciones del tren y sentido de giro con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Relaciones del tren y sentido de giro con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Resuelve un tren hacia delante y después deduce dientes faltantes desde una frecuencia objetivo.",
+        "en": "Resuelve un tren hacia delante y después deduce dientes faltantes desde una frecuencia objetivo."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena identificar conductor → identificar conducido → anotar dientes → calcular pareja → multiplicar etapas → comprobar frecuencia y sentido, su evidencia y límites.",
+        "en": "La explicación conserva la cadena identificar conductor → identificar conducido → anotar dientes → calcular pareja → multiplicar etapas → comprobar frecuencia y sentido, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Dos etapas 4:1 dan 8:1».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Dos etapas 4:1 dan 8:1»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?",
+        "en": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Sumar relaciones de etapas. de Contar todas las ruedas como inversiones independientes sin distinguir elementos solidarios..",
+        "en": "Busca evidencia para distinguir Sumar relaciones de etapas. de Contar todas las ruedas como inversiones independientes sin distinguir elementos solidarios.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.mechanical-energy-trains.toh-relaciones-tren"
+      ],
+      "transferPrompt": {
+        "es": "Resuelve un tren hacia delante y después deduce dientes faltantes desde una frecuencia objetivo.",
+        "en": "Resuelve un tren hacia delante y después deduce dientes faltantes desde una frecuencia objetivo."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.relacion-de-transmision",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.tren-compuesto",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?",
+          "en": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?"
+        },
+        {
+          "es": "¿Qué relación causal de «Relaciones del tren y sentido de giro» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Relaciones del tren y sentido de giro» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

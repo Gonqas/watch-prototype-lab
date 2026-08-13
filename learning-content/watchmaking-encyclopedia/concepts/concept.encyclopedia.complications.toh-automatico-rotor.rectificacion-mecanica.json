@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.toh-automatico-rotor.rectificacion-mecanica",
+  "version": "1.1.0",
+  "title": {
+    "es": "rectificación mecánica",
+    "en": "rectificación mecánica"
+  },
+  "summary": {
+    "es": "Conversión de giros alternos en un sentido útil de cuerda.",
+    "en": "Conversión de giros alternos en un sentido útil de cuerda."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.gmt-independiente",
+    "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.tourbillon",
+    "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.remontoir-de-igualdad"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.toh-automatico-rotor"
+  ],
+  "movementIds": [],
+  "subsystem": "automatic",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-automatico-rotor"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch08",
+    "source.private.chicago.6",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.toh-automatico-rotor"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.toh-automatico-rotor",
+  "plainLanguage": {
+    "es": "Conversión de giros alternos en un sentido útil de cuerda.",
+    "en": "Conversión de giros alternos en un sentido útil de cuerda."
+  },
+  "technicalLanguage": {
+    "es": "rectificación mecánica se interpreta mediante la cadena mover caja → rotar masa → transmitir a reversor → rectificar sentido → reducir y aumentar par → cargar muelle y las condiciones declaradas en la unidad.",
+    "en": "rectificación mecánica se interpreta mediante la cadena mover caja → rotar masa → transmitir a reversor → rectificar sentido → reducir y aumentar par → cargar muelle y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?",
+    "en": "Permite explicar y comprobar ¿cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir rectificación mecánica sin circularidad.",
+      "en": "Definir rectificación mecánica sin circularidad."
+    },
+    {
+      "es": "Relacionar rectificación mecánica con una entrada, una interfaz y una salida.",
+      "en": "Relacionar rectificación mecánica con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

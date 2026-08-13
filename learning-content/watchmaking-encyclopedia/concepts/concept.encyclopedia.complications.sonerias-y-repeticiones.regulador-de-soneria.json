@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.sonerias-y-repeticiones.regulador-de-soneria",
+  "version": "1.1.0",
+  "title": {
+    "es": "regulador de sonería",
+    "en": "regulador de sonería"
+  },
+  "summary": {
+    "es": "Órgano que limita velocidad del tren de golpes y ordena ritmo acústico.",
+    "en": "Órgano que limita velocidad del tren de golpes y ordena ritmo acústico."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-horizontal",
+    "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-vertical",
+    "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.leva-corazon"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.sonerias-y-repeticiones"
+  ],
+  "movementIds": [],
+  "subsystem": "striking",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.sonerias-y-repeticiones"
+  ],
+  "sourceIds": [
+    "source.external.horology-student.books",
+    "source.external.naked-watchmaker",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.sonerias-y-repeticiones"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.sonerias-y-repeticiones",
+  "plainLanguage": {
+    "es": "Órgano que limita velocidad del tren de golpes y ordena ritmo acústico.",
+    "en": "Órgano que limita velocidad del tren de golpes y ordena ritmo acústico."
+  },
+  "technicalLanguage": {
+    "es": "regulador de sonería se interpreta mediante la cadena usuario carga sonería → palpadores leen caracoles → rastrillos determinan conteos → tren libera energía → martillos golpean secuencia → regulador espacia eventos y las condiciones declaradas en la unidad.",
+    "en": "regulador de sonería se interpreta mediante la cadena usuario carga sonería → palpadores leen caracoles → rastrillos determinan conteos → tren libera energía → martillos golpean secuencia → regulador espacia eventos y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?",
+    "en": "Permite explicar y comprobar ¿cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir regulador de sonería sin circularidad.",
+      "en": "Definir regulador de sonería sin circularidad."
+    },
+    {
+      "es": "Relacionar regulador de sonería con una entrada, una interfaz y una salida.",
+      "en": "Relacionar regulador de sonería con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.complications.toh-soneria-control",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.complications.toh-soneria-control",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.complications.toh-soneria-control",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.complications.toh-soneria-control",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.complications.toh-soneria-control"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.complications.toh-soneria-control",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.tm-inspeccion-previa.estado-de-entrada",
+  "version": "1.1.0",
+  "title": {
+    "es": "estado de entrada",
+    "en": "estado de entrada"
+  },
+  "summary": {
+    "es": "Condición documentada de la unidad antes de alterar energía, posición o montaje.",
+    "en": "Condición documentada de la unidad antes de alterar energía, posición o montaje."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.matriz-posicion-funcion",
+    "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.prueba-incremental",
+    "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.retroceso-de-corona"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.tm-inspeccion-previa"
+  ],
+  "movementIds": [],
+  "subsystem": "service-baseline",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.tm-inspeccion-previa"
+  ],
+  "sourceIds": [
+    "source.official.tm9-1575.inspection",
+    "source.institutional.awci.standards",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.tm-inspeccion-previa"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+  "plainLanguage": {
+    "es": "Condición documentada de la unidad antes de alterar energía, posición o montaje.",
+    "en": "Condición documentada de la unidad antes de alterar energía, posición o montaje."
+  },
+  "technicalLanguage": {
+    "es": "estado de entrada se interpreta mediante la cadena identificar unidad → fotografiar exterior → probar mandos sin forzar → observar marcha → registrar síntomas → definir alcance y las condiciones declaradas en la unidad.",
+    "en": "estado de entrada se interpreta mediante la cadena identificar unidad → fotografiar exterior → probar mandos sin forzar → observar marcha → registrar síntomas → definir alcance y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?",
+    "en": "Permite explicar y comprobar ¿qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir estado de entrada sin circularidad.",
+      "en": "Definir estado de entrada sin circularidad."
+    },
+    {
+      "es": "Relacionar estado de entrada con una entrada, una interfaz y una salida.",
+      "en": "Relacionar estado de entrada con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

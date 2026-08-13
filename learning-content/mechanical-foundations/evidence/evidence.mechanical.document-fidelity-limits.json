@@ -1,0 +1,35 @@
+{
+  "id": "evidence.mechanical.document-fidelity-limits",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.document-fidelity-limits",
+  "kind": "human-review",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.mechanical.document-fidelity-limits",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "explanation",
+    "competencyId": "competency.mechanical.document-fidelity-limits",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.build-final-project",
+      "activity.mechanical.document-limitations"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.document-fidelity-limits",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.7,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

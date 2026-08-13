@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.cases-water.chicago-cristales-fijaciones",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.cases-water.chicago-cristales-fijaciones",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.cases-water.chicago-cristales-fijaciones",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.cases-water.chicago-cristales-fijaciones",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.cases-water.chicago-cristales-fijaciones"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.cases-water.chicago-cristales-fijaciones",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.9,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Tratamiento térmico y acabado de superficies",
+    "en": "Repasar Tratamiento térmico y acabado de superficies"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 416,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies"
+  ],
+  "required": false
+}

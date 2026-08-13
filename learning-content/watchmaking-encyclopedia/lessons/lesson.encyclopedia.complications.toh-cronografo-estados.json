@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.complications.toh-cronografo-estados",
+  "version": "1.1.0",
+  "title": "Cronógrafo: mando, embrague, freno y puesta a cero",
+  "blockIds": [
+    "block.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Cronógrafo: mando, embrague, freno y puesta a cero",
+      "en": "Cronógrafo: mando, embrague, freno y puesta a cero"
+    },
+    "purpose": {
+      "es": "¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?",
+      "en": "¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Cronógrafo: mando, embrague, freno y puesta a cero mediante relaciones causales.",
+        "en": "Explicar Cronógrafo: mando, embrague, freno y puesta a cero mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.complications.toh-soneria-control.rastrillo",
+      "concept.encyclopedia.complications.toh-soneria-control.caracol",
+      "concept.encyclopedia.complications.toh-soneria-control.pieza-sorpresa"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.complications.toh-cronografo-estados.organo-de-mando",
+      "concept.encyclopedia.complications.toh-cronografo-estados.embrague-de-cronografo",
+      "concept.encyclopedia.complications.toh-cronografo-estados.corazon-de-puesta-a-cero"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch11",
+      "source.official.eta.7750",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "transfer",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.complications.toh-cronografo-estados.organo-de-mando",
+        "concept.encyclopedia.complications.toh-cronografo-estados.embrague-de-cronografo",
+        "concept.encyclopedia.complications.toh-cronografo-estados.corazon-de-puesta-a-cero"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1159,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.complications.toh-cronografo-estados"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: órgano de mando, embrague de cronógrafo, corazón de puesta a cero.",
+          "en": "Defino con mis palabras: órgano de mando, embrague de cronógrafo, corazón de puesta a cero."
+        },
+        {
+          "es": "Sigo «Cronógrafo: mando, embrague, freno y puesta a cero» desde recibir pulsación hasta desacoplar y poner a cero y explico cada enlace.",
+          "en": "Sigo «Cronógrafo: mando, embrague, freno y puesta a cero» desde recibir pulsación hasta desacoplar y poner a cero y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Cronógrafo: mando, embrague, freno y puesta a cero» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Cronógrafo: mando, embrague, freno y puesta a cero» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Dibuja la máquina de estados de un sistema por leva y otro por rueda de pilares.",
+          "en": "Aplico el criterio a esta variante: Dibuja la máquina de estados de un sistema por leva y otro por rueda de pilares."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Cronógrafo: mando, embrague, freno y puesta a cero» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Cronógrafo: mando, embrague, freno y puesta a cero» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.complications.toh-cronografo-estados.organo-de-mando",
+        "concept.encyclopedia.complications.toh-cronografo-estados.embrague-de-cronografo",
+        "concept.encyclopedia.complications.toh-cronografo-estados.corazon-de-puesta-a-cero"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?",
+          "en": "¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?"
+        },
+        {
+          "es": "¿Qué relación causal de «Cronógrafo: mando, embrague, freno y puesta a cero» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Cronógrafo: mando, embrague, freno y puesta a cero» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.technical-photography",
+  "version": "0.1.0",
+  "title": {
+    "es": "Fotografía técnica"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para capturar vistas reproducibles y conservar el original inmutable."
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.metrology.physical-specimen"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.verification-calibration"
+  ],
+  "competencyIds": [
+    "competency.metrology.calibrar-una-imagen"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.importar-fotografia",
+    "activity.metrology.clasificar-fotografia"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a capturar vistas reproducibles y conservar el original inmutable sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para capturar vistas reproducibles y conservar el original inmutable."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.image-measurement"
+  ],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available"
+}

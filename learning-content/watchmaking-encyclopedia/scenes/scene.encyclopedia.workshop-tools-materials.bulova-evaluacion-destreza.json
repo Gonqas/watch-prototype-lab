@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza",
+  "version": "1.1.0",
+  "title": "Cuaderno: Pasaporte de banco II: repetición, calidad y revisión",
+  "description": "¿Cómo se convierte una operación manual en evidencia revisable?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Pasaporte de banco II: repetición, calidad y revisión. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se convierte una operación manual en evidencia revisable?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se convierte una operación manual en evidencia revisable?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.answer",
+      "instructionMarkdown": "Explica **Pasaporte de banco II: repetición, calidad y revisión** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.explain",
+          "promptMarkdown": "¿Cómo se convierte una operación manual en evidencia revisable?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir criterio y sigue hasta revisar y programar retención.",
+                "en": "Empieza por definir criterio y sigue hasta revisar y programar retención."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La práctica deliberada fija una operación, criterio, número de intentos, variación y revisión. Fotografías, conteo de errores, estado de herramienta y observación humana permiten separar finalización de competencia. La simulación prepara decisiones pero no acredita tacto.",
+                "en": "La práctica deliberada fija una operación, criterio, número de intentos, variación y revisión. Fotografías, conteo de errores, estado de herramienta y observación humana permiten separar finalización de competencia. La simulación prepara decisiones pero no acredita tacto."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se convierte una operación manual en evidencia revisable?",
+              "en": "¿Cómo se convierte una operación manual en evidencia revisable?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir criterio → registrar estado inicial → ejecutar serie guiada → reducir ayuda → ejecutar independiente → revisar y programar retención, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir criterio → registrar estado inicial → ejecutar serie guiada → reducir ayuda → ejecutar independiente → revisar y programar retención, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.mechanism",
+            "field.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.evidence",
+            "field.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.limit",
+            "field.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+  "version": "1.1.0",
+  "title": {
+    "es": "contaminante",
+    "en": "contaminante"
+  },
+  "summary": {
+    "es": "Materia o película no prevista que altera observación, contacto, lubricación, corrosión o montaje.",
+    "en": "Materia o película no prevista que altera observación, contacto, lubricación, corrosión o montaje."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.temple",
+    "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.revenido",
+    "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.integridad-superficial"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+  ],
+  "movementIds": [],
+  "subsystem": "cleaning",
+  "routeIds": [
+    "route.encyclopedia.workshop-tools-materials"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+  ],
+  "sourceIds": [
+    "source.institutional.awci.standards",
+    "source.external.watchguy-repair-blog",
+    "source.private.daniels.workshop-equipment"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+  "plainLanguage": {
+    "es": "Materia o película no prevista que altera observación, contacto, lubricación, corrosión o montaje.",
+    "en": "Materia o película no prevista que altera observación, contacto, lubricación, corrosión o montaje."
+  },
+  "technicalLanguage": {
+    "es": "contaminante se interpreta mediante la cadena documentar estado → clasificar material y contaminante → seleccionar proceso → limpiar por etapas → aclarar y secar → inspeccionar y renovar baños y las condiciones declaradas en la unidad.",
+    "en": "contaminante se interpreta mediante la cadena documentar estado → clasificar material y contaminante → seleccionar proceso → limpiar por etapas → aclarar y secar → inspeccionar y renovar baños y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se elimina suciedad sin redistribuirla, atacar materiales ni borrar evidencia?",
+    "en": "Permite explicar y comprobar ¿cómo se elimina suciedad sin redistribuirla, atacar materiales ni borrar evidencia?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir contaminante sin circularidad.",
+      "en": "Definir contaminante sin circularidad."
+    },
+    {
+      "es": "Relacionar contaminante con una entrada, una interfaz y una salida.",
+      "en": "Relacionar contaminante con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

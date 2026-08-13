@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad",
+  "version": "1.1.0",
+  "title": "Medición, incertidumbre y trazabilidad",
+  "blockIds": [
+    "block.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Medición, incertidumbre y trazabilidad",
+      "en": "Medición, incertidumbre y trazabilidad"
+    },
+    "purpose": {
+      "es": "¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?",
+      "en": "¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Medición, incertidumbre y trazabilidad mediante relaciones causales.",
+        "en": "Explicar Medición, incertidumbre y trazabilidad mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+      "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+      "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.mensurando",
+      "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.incertidumbre-de-medida",
+      "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.trazabilidad-metrologica"
+    ],
+    "sourceIds": [
+      "source.official.bipm.vim",
+      "source.official.nist.uncertainty",
+      "source.private.vba-uhrentechnik"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.mensurando",
+        "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.incertidumbre-de-medida",
+        "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.trazabilidad-metrologica"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1080,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: mensurando, incertidumbre de medida, trazabilidad metrológica.",
+          "en": "Defino con mis palabras: mensurando, incertidumbre de medida, trazabilidad metrológica."
+        },
+        {
+          "es": "Separo en «Medición, incertidumbre y trazabilidad» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Medición, incertidumbre y trazabilidad» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Medición, incertidumbre y trazabilidad» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Medición, incertidumbre y trazabilidad» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Redacta un registro completo para diámetro de pivote, altura de cañón y tasa diaria: define mensurando, método, influencias e incertidumbre.",
+          "en": "Aplico el criterio a esta variante: Redacta un registro completo para diámetro de pivote, altura de cañón y tasa diaria: define mensurando, método, influencias e incertidumbre."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Medición, incertidumbre y trazabilidad» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Medición, incertidumbre y trazabilidad» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.mensurando",
+        "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.incertidumbre-de-medida",
+        "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.trazabilidad-metrologica"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?",
+          "en": "¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?"
+        },
+        {
+          "es": "¿Qué relación causal de «Medición, incertidumbre y trazabilidad» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Medición, incertidumbre y trazabilidad» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+  "version": "1.1.0",
+  "title": {
+    "es": "divisor binario",
+    "en": "divisor binario"
+  },
+  "summary": {
+    "es": "Cadena que reduce frecuencia por factores sucesivos de dos.",
+    "en": "Cadena que reduce frecuencia por factores sucesivos de dos."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.quartz-electronics.cuarzo-avanzado.compensacion-termica",
+    "concept.encyclopedia.quartz-electronics.cuarzo-avanzado.disciplina-externa",
+    "concept.encyclopedia.quartz-electronics.cuarzo-avanzado.gestion-de-energia"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor"
+  ],
+  "movementIds": [],
+  "subsystem": "electronic-control",
+  "routeIds": [
+    "route.encyclopedia.quartz-electronics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch15",
+    "source.official.miyota.2035",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+  "plainLanguage": {
+    "es": "Cadena que reduce frecuencia por factores sucesivos de dos.",
+    "en": "Cadena que reduce frecuencia por factores sucesivos de dos."
+  },
+  "technicalLanguage": {
+    "es": "divisor binario se interpreta mediante la cadena alimentar circuito → excitar resonador → sostener oscilación → formar señal → dividir frecuencia → emitir pulso y las condiciones declaradas en la unidad.",
+    "en": "divisor binario se interpreta mediante la cadena alimentar circuito → excitar resonador → sostener oscilación → formar señal → dividir frecuencia → emitir pulso y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+    "en": "Permite explicar y comprobar ¿cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir divisor binario sin circularidad.",
+      "en": "Definir divisor binario sin circularidad."
+    },
+    {
+      "es": "Relacionar divisor binario con una entrada, una interfaz y una salida.",
+      "en": "Relacionar divisor binario con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

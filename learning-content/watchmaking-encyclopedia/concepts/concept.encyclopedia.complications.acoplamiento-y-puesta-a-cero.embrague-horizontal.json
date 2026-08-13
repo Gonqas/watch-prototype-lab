@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-horizontal",
+  "version": "1.1.0",
+  "title": {
+    "es": "embrague horizontal",
+    "en": "embrague horizontal"
+  },
+  "summary": {
+    "es": "Acoplamiento lateral por engrane entre rueda conductora y rueda de cronógrafo.",
+    "en": "Acoplamiento lateral por engrane entre rueda conductora y rueda de cronógrafo."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.cronografo-mandos.rueda-de-pilares",
+    "concept.encyclopedia.complications.cronografo-mandos.leva-de-mando",
+    "concept.encyclopedia.complications.cronografo-mandos.maquina-de-estados"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.acoplamiento-y-puesta-a-cero"
+  ],
+  "movementIds": [],
+  "subsystem": "chronograph-train",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.acoplamiento-y-puesta-a-cero"
+  ],
+  "sourceIds": [
+    "source.official.eta.7750",
+    "source.official.seiko.6138",
+    "source.external.watchguy-manuals"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.acoplamiento-y-puesta-a-cero"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+  "plainLanguage": {
+    "es": "Acoplamiento lateral por engrane entre rueda conductora y rueda de cronógrafo.",
+    "en": "Acoplamiento lateral por engrane entre rueda conductora y rueda de cronógrafo."
+  },
+  "technicalLanguage": {
+    "es": "embrague horizontal se interpreta mediante la cadena mando libera freno → embrague conecta → contador acumula → mando desconecta y frena → martillo cae sobre corazón → indicador retorna a cero y las condiciones declaradas en la unidad.",
+    "en": "embrague horizontal se interpreta mediante la cadena mando libera freno → embrague conecta → contador acumula → mando desconecta y frena → martillo cae sobre corazón → indicador retorna a cero y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo entra y sale potencia del cronógrafo y cómo vuelven varios indicadores exactamente a origen?",
+    "en": "Permite explicar y comprobar ¿cómo entra y sale potencia del cronógrafo y cómo vuelven varios indicadores exactamente a origen?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir embrague horizontal sin circularidad.",
+      "en": "Definir embrague horizontal sin circularidad."
+    },
+    {
+      "es": "Relacionar embrague horizontal con una entrada, una interfaz y una salida.",
+      "en": "Relacionar embrague horizontal con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

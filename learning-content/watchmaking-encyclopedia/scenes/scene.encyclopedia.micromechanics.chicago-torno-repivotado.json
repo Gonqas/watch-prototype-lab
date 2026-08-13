@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.chicago-torno-repivotado",
+  "version": "1.1.0",
+  "title": "Cuaderno: Expediente Chicago XI: torno, repivotado y piezas perdidas",
+  "description": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Expediente Chicago XI: torno, repivotado y piezas perdidas. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.chicago-torno-repivotado.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.chicago-torno-repivotado.answer",
+      "instructionMarkdown": "Explica **Expediente Chicago XI: torno, repivotado y piezas perdidas** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.chicago-torno-repivotado.explain",
+          "promptMarkdown": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-torno-repivotado.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-torno-repivotado.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-torno-repivotado.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-torno-repivotado.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.chicago-torno-repivotado.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por documentar daño y sigue hasta revisar antes de mecanizar.",
+                "en": "Empieza por documentar daño y sigue hasta revisar antes de mecanizar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.chicago-torno-repivotado.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La decisión parte de función, material restante, referencia, reversibilidad y riesgo. Repivotar exige taladro coaxial y ajuste; fabricar rueda o cilindro exige datos suficientes. La técnica histórica orienta la secuencia, no certifica tolerancias.",
+                "en": "La decisión parte de función, material restante, referencia, reversibilidad y riesgo. Repivotar exige taladro coaxial y ajuste; fabricar rueda o cilindro exige datos suficientes. La técnica histórica orienta la secuencia, no certifica tolerancias."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?",
+              "en": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena documentar daño → definir función y material → medir referencias → comparar opciones → planificar verificación → revisar antes de mecanizar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena documentar daño → definir función y material → medir referencias → comparar opciones → planificar verificación → revisar antes de mecanizar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.chicago-torno-repivotado.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.chicago-torno-repivotado.mechanism",
+            "field.encyclopedia.micromechanics.chicago-torno-repivotado.evidence",
+            "field.encyclopedia.micromechanics.chicago-torno-repivotado.limit",
+            "field.encyclopedia.micromechanics.chicago-torno-repivotado.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

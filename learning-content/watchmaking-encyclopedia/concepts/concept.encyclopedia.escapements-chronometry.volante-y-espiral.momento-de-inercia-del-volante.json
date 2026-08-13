@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.escapements-chronometry.volante-y-espiral.momento-de-inercia-del-volante",
+  "version": "1.1.0",
+  "title": {
+    "es": "momento de inercia del volante",
+    "en": "momento de inercia del volante"
+  },
+  "summary": {
+    "es": "Distribución de masa respecto al eje que se opone a cambios de velocidad angular.",
+    "en": "Distribución de masa respecto al eje que se opone a cambios de velocidad angular."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+    "concept.encyclopedia.escapements-chronometry.geometria-del-escape.caida",
+    "concept.encyclopedia.escapements-chronometry.geometria-del-escape.seguridad-del-rodillo"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.volante-y-espiral"
+  ],
+  "movementIds": [],
+  "subsystem": "oscillator",
+  "routeIds": [
+    "route.encyclopedia.escapements-chronometry"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.volante-y-espiral"
+  ],
+  "sourceIds": [
+    "source.private.daniels.balance-spring",
+    "source.private.vba-uhrentechnik",
+    "source.external.horlogerie-suisse"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.escapements-chronometry.volante-y-espiral"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.escapements-chronometry.volante-y-espiral",
+  "plainLanguage": {
+    "es": "Distribución de masa respecto al eje que se opone a cambios de velocidad angular.",
+    "en": "Distribución de masa respecto al eje que se opone a cambios de velocidad angular."
+  },
+  "technicalLanguage": {
+    "es": "momento de inercia del volante se interpreta mediante la cadena volante se desplaza → espiral almacena energía → par restaurador invierte movimiento → volante cruza equilibrio → pérdidas reducen amplitud → escape repone energía y las condiciones declaradas en la unidad.",
+    "en": "momento de inercia del volante se interpreta mediante la cadena volante se desplaza → espiral almacena energía → par restaurador invierte movimiento → volante cruza equilibrio → pérdidas reducen amplitud → escape repone energía y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo forman volante y espiral un oscilador regulable y qué perturba su centro elástico?",
+    "en": "Permite explicar y comprobar ¿cómo forman volante y espiral un oscilador regulable y qué perturba su centro elástico?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir momento de inercia del volante sin circularidad.",
+      "en": "Definir momento de inercia del volante sin circularidad."
+    },
+    {
+      "es": "Relacionar momento de inercia del volante con una entrada, una interfaz y una salida.",
+      "en": "Relacionar momento de inercia del volante con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

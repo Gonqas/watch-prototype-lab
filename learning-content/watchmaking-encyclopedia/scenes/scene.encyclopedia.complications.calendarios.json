@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.complications.calendarios",
+  "version": "1.1.0",
+  "title": "Cuaderno: Fecha, día, calendario anual y perpetuo",
+  "description": "¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Fecha, día, calendario anual y perpetuo. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.complications.calendarios.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.complications.calendarios.answer",
+      "instructionMarkdown": "Explica **Fecha, día, calendario anual y perpetuo** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.complications.calendarios.explain",
+          "promptMarkdown": "¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.complications.calendarios.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.calendarios.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.calendarios.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.calendarios.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.complications.calendarios.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por tren de horas alcanza fase y sigue hasta programa decide salto adicional.",
+                "en": "Empieza por tren de horas alcanza fase y sigue hasta programa decide salto adicional."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.complications.calendarios.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Un calendario simple indexa un disco por ciclo diario y requiere corrección en meses cortos. Calendarios anual y perpetuo añaden levas, programas o ruedas que codifican duraciones y años bisiestos. La zona de cambio acumula energía y dependencias; ajustar durante ella puede forzar componentes.",
+                "en": "Un calendario simple indexa un disco por ciclo diario y requiere corrección en meses cortos. Calendarios anual y perpetuo añaden levas, programas o ruedas que codifican duraciones y años bisiestos. La zona de cambio acumula energía y dependencias; ajustar durante ella puede forzar componentes."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?",
+              "en": "¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena tren de horas alcanza fase → leva carga muelle → dedo libera o empuja → disco indexa → saltador centra → programa decide salto adicional, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena tren de horas alcanza fase → leva carga muelle → dedo libera o empuja → disco indexa → saltador centra → programa decide salto adicional, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.complications.calendarios.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.complications.calendarios.mechanism",
+            "field.encyclopedia.complications.calendarios.evidence",
+            "field.encyclopedia.complications.calendarios.limit",
+            "field.encyclopedia.complications.calendarios.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

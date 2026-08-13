@@ -1,0 +1,386 @@
+{
+  "id": "activity.horology.identify-time-reference",
+  "version": "0.5.0",
+  "title": "Identificar la referencia temporal",
+  "sceneIds": [
+    "scene.horology.activity.identify-time-reference"
+  ],
+  "competencyIds": [
+    "competency.horology.distinguish-regulation-from-transmission"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.horology.component-selection"
+  ],
+  "rubricId": "rubric.horology.regulation-transmission",
+  "projectReference": {
+    "kind": "fixture-composition-readonly",
+    "compositionId": "composition.horology.quartz-chain",
+    "fixtureIds": [
+      "fixture.conceptual.quartz-chain",
+      "fixture.miyota.2035.structural"
+    ]
+  },
+  "authoring": {
+    "lessonId": "lesson.horology.quartz-chain",
+    "title": {
+      "es": "Identificar la referencia temporal"
+    },
+    "description": {
+      "es": "Identificar la referencia temporal sobre modelos técnicos de solo lectura, con restauración y evidencia explicable."
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 8,
+    "activityType": "guided-practice",
+    "movementIds": [
+      "fixture.conceptual.quartz-chain",
+      "fixture.miyota.2035.structural"
+    ],
+    "familyIds": [],
+    "subsystem": "regulation",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje R2 con geometría interna normalizada.",
+        "No es un gemelo exacto ni una validación de ingeniería."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.horology.original-functional-map",
+      "source.horology.private-book.functional-systems",
+      "source.miyota.2035.product-page",
+      "source.miyota.2035.specification",
+      "source.miyota.2035.drawing",
+      "source.miyota.2035.instruction-manual",
+      "source.miyota.2035.parts-list-exploded-view"
+    ],
+    "visualResourceIds": [],
+    "fixtureBinding": {
+      "kind": "composition",
+      "compositionId": "composition.horology.quartz-chain",
+      "fixtureIds": [
+        "fixture.conceptual.quartz-chain",
+        "fixture.miyota.2035.structural"
+      ],
+      "layout": "split"
+    },
+    "interactionContract": {
+      "responseModel": "entity-selection",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.horology.identify-time-reference.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Vuelve al objetivo de «Identificar la referencia temporal»: Identificar la referencia temporal sobre modelos técnicos de solo lectura, con restauración y evidencia explicable. Escribe primero qué resultado concreto tendrías que observar.",
+            "en": "Vuelve al objetivo de «Identificar la referencia temporal»: Identificar la referencia temporal sobre modelos técnicos de solo lectura, con restauración y evidencia explicable. Escribe primero qué resultado concreto tendrías que observar."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.horology.identify-time-reference.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "En «Identificar la referencia temporal», limita la búsqueda a regulación. Separa las piezas que participan de las que solo están próximas en la vista.",
+            "en": "En «Identificar la referencia temporal», limita la búsqueda a regulación. Separa las piezas que participan de las que solo están próximas en la vista."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.horology.identify-time-reference.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Usa el criterio «Distinguir regulación y transmisión»: anota quién inicia el cambio, quién recibe el efecto y qué relación permite transmitirlo.",
+            "en": "Usa el criterio «Distinguir regulación y transmisión»: anota quién inicia el cambio, quién recibe el efecto y qué relación permite transmitirlo."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.horology.identify-time-reference.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Restaura «Identificar la referencia temporal» y compara un solo estado antes y después. Busca la primera diferencia que apoye o contradiga tu predicción.",
+            "en": "Restaura «Identificar la referencia temporal» y compara un solo estado antes y después. Busca la primera diferencia que apoye o contradiga tu predicción."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.horology.identify-time-reference.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "Para «Identificar la referencia temporal», vuelve a la observación exigida por «Distinguir regulación y transmisión». Descarta respuestas basadas solo en parecido, proximidad o autoridad no citada.",
+            "en": "Para «Identificar la referencia temporal», vuelve a la observación exigida por «Distinguir regulación y transmisión». Descarta respuestas basadas solo en parecido, proximidad o autoridad no citada."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.horology.identify-time-reference.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Revisa tu intento en «Identificar la referencia temporal»: nombra el enlace que faltó, la evidencia que lo corrige y el resultado que te haría cambiar otra vez de conclusión.",
+            "en": "Revisa tu intento en «Identificar la referencia temporal»: nombra el enlace que faltó, la evidencia que lo corrige y el resultado que te haría cambiar otra vez de conclusión."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "selection-confirmed",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "compare",
+        "explain",
+        "check-understanding",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "En «Identificar la referencia temporal» has aportado una observación de regulación que respalda el objetivo «Distinguir regulación y transmisión». Ahora repite el mismo criterio sin ayuda y, cuando corresponda, aplícalo a otro caso.",
+        "en": "En «Identificar la referencia temporal» has aportado una observación de regulación que respalda el objetivo «Distinguir regulación y transmisión». Ahora repite el mismo criterio sin ayuda y, cuando corresponda, aplícalo a otro caso."
+      },
+      "incorrectDiagnosis": {
+        "es": "En «Identificar la referencia temporal» todavía falta justificar el objetivo «Distinguir regulación y transmisión». Comprueba si confundiste identidad con función, proximidad con contacto, orden visual con orden de montaje o una inferencia con un dato documentado.",
+        "en": "En «Identificar la referencia temporal» todavía falta justificar el objetivo «Distinguir regulación y transmisión». Comprueba si confundiste identidad con función, proximidad con contacto, orden visual con orden de montaje o una inferencia con un dato documentado."
+      },
+      "causalQuestion": {
+        "es": "En «Identificar la referencia temporal», ¿qué elemento inicia el cambio, mediante qué relación se transmite y qué resultado observable confirmaría tu explicación?",
+        "en": "En «Identificar la referencia temporal», ¿qué elemento inicia el cambio, mediante qué relación se transmite y qué resultado observable confirmaría tu explicación?"
+      },
+      "nextObservation": {
+        "es": "Restaura la escena de «Identificar la referencia temporal», aísla regulación y compara un único estado antes/después. Anota también la fuente o el límite que permite interpretar el cambio.",
+        "en": "Restaura la escena de «Identificar la referencia temporal», aísla regulación y compara un único estado antes/después. Anota también la fuente o el límite que permite interpretar el cambio."
+      },
+      "misconceptionIds": [
+        "misconception.horology.quartz-has-no-train"
+      ],
+      "transferPrompt": {
+        "es": "¿Cómo aplicarías el criterio de «Identificar la referencia temporal» a otro movimiento o a una decisión de diseño propio sin suponer que la geometría es idéntica?",
+        "en": "¿Cómo aplicarías el criterio de «Identificar la referencia temporal» a otro movimiento o a una decisión de diseño propio sin suponer que la geometría es idéntica?"
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.horology.functional-chain",
+        "concept.horology.mechanical-chain",
+        "concept.horology.quartz-chain"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Identificar la referencia temporal», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Identificar la referencia temporal», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "En «Identificar la referencia temporal», ¿qué elemento inicia el cambio, mediante qué relación se transmite y qué resultado observable confirmaría tu explicación?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Restaura la escena de «Identificar la referencia temporal», aísla regulación y compara un único estado antes/después. Anota también la fuente o el límite que permite interpretar el cambio."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Identificar la referencia temporal»."
+          },
+          {
+            "es": "Sigue la relación causal declarada en la lección y conserva su fuente o límite."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "En «Identificar la referencia temporal» has aportado una observación de regulación que respalda el objetivo «Distinguir regulación y transmisión». Ahora repite el mismo criterio sin ayuda y, cuando corresponda, aplícalo a otro caso."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Identificar la referencia temporal» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Identificar la referencia temporal» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Identificar la referencia temporal» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "¿Cómo aplicarías el criterio de «Identificar la referencia temporal» a otro movimiento o a una decisión de diseño propio sin suponer que la geometría es idéntica?"
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La conclusión responde al objetivo «Identificar la referencia temporal» con una relación observable."
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "En «Identificar la referencia temporal» todavía falta justificar el objetivo «Distinguir regulación y transmisión». Comprueba si confundiste identidad con función, proximidad con contacto, orden visual con orden de montaje o una inferencia con un dato documentado."
+        },
+        {
+          "es": "La respuesta describe apariencia o autoridad, pero no la relación que produce el resultado."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "¿Cómo aplicarías el criterio de «Identificar la referencia temporal» a otro movimiento o a una decisión de diseño propio sin suponer que la geometría es idéntica?"
+        }
+      },
+      "transferPrompt": {
+        "es": "¿Cómo aplicarías el criterio de «Identificar la referencia temporal» a otro movimiento o a una decisión de diseño propio sin suponer que la geometría es idéntica?"
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "independent-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.horology.functional-chain",
+        "concept.horology.mechanical-chain"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "practicesConceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "assessesConceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "faded",
+      "remediation": {
+        "lessonId": "lesson.horology.quartz-chain",
+        "blockId": "block.horology.quartz-chain",
+        "conceptIds": [
+          "concept.horology.quartz-chain"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La actividad acredita comprensión o ejecución dentro de una simulación educativa. No acredita destreza manual, ajuste físico, lubricación, desgaste ni validación de ingeniería."
+      }
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+  "version": "1.1.0",
+  "title": "Cuaderno: Torno relojero, pinzas y trabajo entre puntos",
+  "description": "¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Torno relojero, pinzas y trabajo entre puntos. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.scope",
+      "markdown": "**Alcance del estudio:** ¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.answer",
+      "instructionMarkdown": "Explica **Torno relojero, pinzas y trabajo entre puntos** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.explain",
+          "promptMarkdown": "¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por preparar centros o superficie y sigue hasta acabar y verificar al invertir.",
+                "en": "Empieza por preparar centros o superficie y sigue hasta acabar y verificar al invertir."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El torno genera superficies de revolución respecto al eje real de montaje. Pinza ofrece repetibilidad si material y pinza son adecuados; entre puntos conserva un eje común al voltear; mandriles soportan anillos. Excentricidad, flexión, herramienta, velocidad y rebaba compiten en cada corte.",
+                "en": "El torno genera superficies de revolución respecto al eje real de montaje. Pinza ofrece repetibilidad si material y pinza son adecuados; entre puntos conserva un eje común al voltear; mandriles soportan anillos. Excentricidad, flexión, herramienta, velocidad y rebaba compiten en cada corte."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?",
+              "en": "¿Cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena preparar centros o superficie → elegir sujeción → alinear apoyo y buril → desbastar → medir sin retirar referencia → acabar y verificar al invertir, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena preparar centros o superficie → elegir sujeción → alinear apoyo y buril → desbastar → medir sin retirar referencia → acabar y verificar al invertir, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.mechanism",
+            "field.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.evidence",
+            "field.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.limit",
+            "field.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

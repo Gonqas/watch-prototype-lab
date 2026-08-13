@@ -1,0 +1,35 @@
+{
+  "id": "evidence.mechanical.explain-barrel",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.explain-barrel",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.mechanical.explain-barrel",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.mechanical.explain-barrel",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.load-unload-barrel",
+      "activity.mechanical.identify-barrel-parts"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.explain-barrel",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

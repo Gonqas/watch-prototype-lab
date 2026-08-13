@@ -1,0 +1,28 @@
+{
+  "id": "competency.mechanical.build-functional-train",
+  "version": "0.5.0",
+  "title": "Construir un tren funcional",
+  "description": "Construir un tren funcional mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.",
+  "prerequisites": [
+    "competency.mechanical.determine-rotation-direction"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Construir un tren funcional",
+      "en": "Construir un tren funcional"
+    },
+    "description": {
+      "es": "Construir un tren funcional; el tiempo y las adaptaciones accesibles no penalizan.",
+      "en": "Construir un tren funcional; el tiempo y las adaptaciones accesibles no penalizan."
+    },
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "subsystem": "train",
+    "skillType": "procedure",
+    "sourceIds": [
+      "source.horology.original-mechanical-foundations"
+    ]
+  }
+}

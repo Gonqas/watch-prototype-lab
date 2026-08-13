@@ -1,0 +1,70 @@
+{
+  "id": "concept.advanced.chronograph-control",
+  "version": "1.0.0",
+  "title": {
+    "es": "Control de cronógrafo: levas y rueda de pilares",
+    "en": "Control de cronógrafo: levas y rueda de pilares"
+  },
+  "summary": {
+    "es": "¿Qué componente conserva el estado y coordina acoplamiento, freno y puesta a cero?",
+    "en": "¿Qué componente conserva el estado y coordina acoplamiento, freno y puesta a cero?"
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.advanced.calendars"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.advanced.calendars",
+    "concept.advanced.chronograph-coupling"
+  ],
+  "competencyIds": [
+    "competency.advanced.chronograph-control"
+  ],
+  "movementIds": [],
+  "subsystem": "chronograph",
+  "routeIds": [
+    "route.advanced.architectures-complications"
+  ],
+  "activityIds": [
+    "activity.advanced.chronograph-control"
+  ],
+  "sourceIds": [
+    "source.eta.7750.product",
+    "source.eta.7750.communication",
+    "source.seiko.6138a.technical-guide"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Qué componente conserva el estado y coordina acoplamiento, freno y puesta a cero?",
+    "en": "¿Qué componente conserva el estado y coordina acoplamiento, freno y puesta a cero?"
+  },
+  "technicalLanguage": {
+    "es": "Un cronógrafo añade una máquina de estados a la marcha base. El pulsador no mueve directamente todas las funciones: una palanca de mando indexa una leva o rueda de pilares, y su posición gobierna acoplamiento, freno y martillos. Inicio exige acoplar y liberar freno; parada mantiene el contador y aplica freno; cero desacopla cuando corresponde y deja caer martillos sobre corazones. Las interdependencias impiden estudiar cada palanca aislada.",
+    "en": "Un cronógrafo añade una máquina de estados a la marcha base. El pulsador no mueve directamente todas las funciones: una palanca de mando indexa una leva o rueda de pilares, y su posición gobierna acoplamiento, freno y martillos. Inicio exige acoplar y liberar freno; parada mantiene el contador y aplica freno; cero desacopla cuando corresponde y deja caer martillos sobre corazones. Las interdependencias impiden estudiar cada palanca aislada."
+  },
+  "whyItMatters": {
+    "es": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física.",
+    "en": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física."
+  },
+  "observableActions": [
+    {
+      "es": "Separa hecho, inferencia y desconocido.",
+      "en": "Separa hecho, inferencia y desconocido."
+    },
+    {
+      "es": "Compara relaciones y compromisos.",
+      "en": "Compara relaciones y compromisos."
+    },
+    {
+      "es": "Declara fuentes, riesgos y límites.",
+      "en": "Declara fuentes, riesgos y límites."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.advanced.chronograph-coupling"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

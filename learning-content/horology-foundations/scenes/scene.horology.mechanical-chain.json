@@ -1,0 +1,620 @@
+{
+  "id": "scene.horology.mechanical-chain",
+  "version": "0.5.0",
+  "title": "Cadena mecánica",
+  "description": "Cadena mecánica. Escena reversible con alternativa textual funcional.",
+  "fixtureBinding": {
+    "kind": "composition",
+    "compositionId": "composition.horology.mechanical-chain",
+    "fixtureIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "layout": "split"
+  },
+  "accessibility": {
+    "textualAlternative": "Elementos presentes: mecánico conceptual y MIYOTA 8215, presentados por separado. Relación y secuencia: muelle real → barrilete → tren de ruedas → rueda de escape → áncora → volante → minutería → indicación. El estado inicial está disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar la vista tridimensional.",
+    "reducedMotionAlternative": "La misma información se presenta como estados discretos y una lista numerada: muelle real → barrilete → tren de ruedas → rueda de escape → áncora → volante → minutería → indicación. No hay movimiento automático de cámara ni rotación.",
+    "keyboardActions": [
+      "Tabular por controles y entidades.",
+      "Activar con Intro o Espacio.",
+      "Avanzar y retroceder mediante botones con nombre accesible.",
+      "Restaurar el estado desde el control Restaurar."
+    ],
+    "colorIndependentCues": [
+      "Patrón y grosor distinguen estados.",
+      "Icono y texto acompañan cada color.",
+      "La ruta tiene numeración explícita."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "viewport.overlay.arrows@^1.0.0",
+    "viewport.energy-route@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "mainspring"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 900,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "barrel"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:1",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 1800,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:2",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 2700,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "escape-wheel"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:3",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 3600,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "pallet-fork"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:4",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "energy-path",
+      "id": "overlay.scene.horology.mechanical-chain.path",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "mainspring"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "barrel"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "escape-wheel"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "pallet-fork"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "balance"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "motion-works"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "state": "available",
+      "label": "Ruta Cadena mecánica",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Ensamblaje R2 con geometría interna normalizada.",
+          "No es un gemelo exacto ni una validación de ingeniería."
+        ]
+      },
+      "accessibleLabel": "Ruta Cadena mecánica. Ruta funcional educativa, no simulación física.",
+      "numberedAlternative": [
+        "1. muelle real",
+        "2. barrilete",
+        "3. tren de ruedas",
+        "4. rueda de escape",
+        "5. áncora",
+        "6. volante",
+        "7. minutería",
+        "8. indicación"
+      ]
+    },
+    {
+      "kind": "rotation",
+      "id": "overlay.scene.horology.mechanical-chain.rotation",
+      "target": {
+        "selector": {
+          "by": "role",
+          "value": "train"
+        },
+        "cardinality": "one-or-more"
+      },
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "direction": "clockwise",
+      "conceptualSpeed": "slow",
+      "state": "available",
+      "label": "Sentido conceptual",
+      "accessibleLabel": "Arco de giro conceptual. En el modo de movimiento reducido se sustituye por una flecha estática."
+    },
+    {
+      "kind": "arrow",
+      "id": "overlay.scene.horology.mechanical-chain.arrow",
+      "start": {
+        "kind": "entity",
+        "target": {
+          "selector": {
+            "by": "role",
+            "value": "mainspring"
+          },
+          "cardinality": "one-or-more"
+        },
+        "offset": [
+          0,
+          0.2,
+          0
+        ]
+      },
+      "end": {
+        "kind": "entity",
+        "target": {
+          "selector": {
+            "by": "role",
+            "value": "barrel"
+          },
+          "cardinality": "one-or-more"
+        },
+        "offset": [
+          0,
+          0.2,
+          0
+        ]
+      },
+      "label": "Relación funcional",
+      "state": "available",
+      "pattern": "dashed",
+      "accessibleLabel": "Flecha funcional desde muelle real hacia barrilete; no expresa una trayectoria física."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene.horology.mechanical-chain.question",
+      "instructionMarkdown": "Ordena la cadena funcional mecánica.",
+      "questions": [
+        {
+          "id": "question.horology.mechanical-order",
+          "promptMarkdown": "Ordena la cadena funcional mecánica.",
+          "responseKind": "ordered-list",
+          "options": [
+            {
+              "id": "item.mechanical.indication",
+              "label": "indicación",
+              "labels": {
+                "es": "indicación",
+                "en": "indicación"
+              }
+            },
+            {
+              "id": "item.mechanical.motion-works",
+              "label": "minutería",
+              "labels": {
+                "es": "minutería",
+                "en": "minutería"
+              }
+            },
+            {
+              "id": "item.mechanical.balance",
+              "label": "volante",
+              "labels": {
+                "es": "volante",
+                "en": "volante"
+              }
+            },
+            {
+              "id": "item.mechanical.pallet-fork",
+              "label": "áncora",
+              "labels": {
+                "es": "áncora",
+                "en": "áncora"
+              }
+            },
+            {
+              "id": "item.mechanical.escape-wheel",
+              "label": "rueda de escape",
+              "labels": {
+                "es": "rueda de escape",
+                "en": "rueda de escape"
+              }
+            },
+            {
+              "id": "item.mechanical.train",
+              "label": "tren de ruedas",
+              "labels": {
+                "es": "tren de ruedas",
+                "en": "tren de ruedas"
+              }
+            },
+            {
+              "id": "item.mechanical.barrel",
+              "label": "barrilete",
+              "labels": {
+                "es": "barrilete",
+                "en": "barrilete"
+              }
+            },
+            {
+              "id": "item.mechanical.mainspring",
+              "label": "muelle real",
+              "labels": {
+                "es": "muelle real",
+                "en": "muelle real"
+              }
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.horology.mechanical-chain.1",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Localiza primero los extremos de la cadena: muelle real e indicación."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.mechanical-chain.2",
+              "level": 2,
+              "kind": "subsystem",
+              "content": {
+                "es": "Separa almacenamiento, transmisión, escape, oscilación y minutería."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.mechanical-chain.3",
+              "level": 3,
+              "kind": "functional-property",
+              "content": {
+                "es": "Para cada etapa, nombra qué recibe y qué entrega a la siguiente."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.mechanical-chain.4",
+              "level": 4,
+              "kind": "comparison",
+              "content": {
+                "es": "Comprueba que escape y oscilador aparecen entre el tren y la indicación."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.mechanical-chain.5",
+              "level": 5,
+              "kind": "near-answer",
+              "content": {
+                "es": "Revisa el recorrido completo sin confundir el muelle real con el tren de ruedas."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.mechanical-chain.6",
+              "level": 6,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Tras el intento: revisa la ruta numerada y separa fuente, control, conversión, transmisión e indicación."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "Ordena la cadena funcional mecánica."
+            },
+            "feedback": {
+              "es": "La respuesta se contrasta con la función, la procedencia y las limitaciones declaradas."
+            }
+          }
+        },
+        {
+          "id": "question.horology.mechanical-order.reasoning",
+          "promptMarkdown": "Explica cómo pasan la energía y la regulación desde el muelle real hasta la indicación.",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué orden comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué enlace justifica el orden",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué no demuestra el modelo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica cómo pasan la energía y la regulación desde el muelle real hasta la indicación."
+            },
+            "feedback": {
+              "es": "La explicación debe distinguir almacenamiento, transmisión, escape, oscilación e indicación."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.horology.mechanical-order",
+          "expectedOptionIds": [
+            "item.mechanical.mainspring",
+            "item.mechanical.barrel",
+            "item.mechanical.train",
+            "item.mechanical.escape-wheel",
+            "item.mechanical.pallet-fork",
+            "item.mechanical.balance",
+            "item.mechanical.motion-works",
+            "item.mechanical.indication"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.horology.mechanical-order.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    },
+    {
+      "id": "step.scene.horology.mechanical-chain.manipulate",
+      "instructionMarkdown": "Manipula o recorre la lista equivalente y confirma el resultado antes de restaurar.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Cadena mecánica"
+    },
+    "purpose": {
+      "es": "Ejecutar cadena mecánica de forma visual, accesible y evaluable."
+    },
+    "prerequisites": [
+      "concept.horology.mechanical-chain"
+    ],
+    "narrative": {
+      "es": "Observar, predecir, manipular y explicar antes de registrar evidencia."
+    },
+    "initialFraming": {
+      "es": "Encuadre general estable con procedencia y fidelidad disponibles bajo demanda."
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "storyboard.step.scene.horology.mechanical-chain.question",
+        "sceneStepId": "step.scene.horology.mechanical-chain.question",
+        "narrative": {
+          "es": "Observar la escena y formular una predicción."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "highlight",
+          "pause"
+        ],
+        "interaction": {
+          "es": "Usar los controles de teclado, la lista accesible o la vista tridimensional."
+        },
+        "feedback": {
+          "es": "La corrección distingue la respuesta, su procedencia y las limitaciones del modelo."
+        },
+        "hint": {
+          "es": "La pista se ofrece por niveles y se registra como evidencia de proceso."
+        }
+      },
+      {
+        "id": "storyboard.step.scene.horology.mechanical-chain.manipulate",
+        "sceneStepId": "step.scene.horology.mechanical-chain.manipulate",
+        "narrative": {
+          "es": "Manipular el estado y explicar el resultado."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "select",
+          "answer",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Usar los controles de teclado, la lista accesible o la vista tridimensional."
+        },
+        "feedback": {
+          "es": "La corrección distingue la respuesta, su procedencia y las limitaciones del modelo."
+        },
+        "hint": {
+          "es": "La pista se ofrece por niveles y se registra como evidencia de proceso."
+        }
+      }
+    ],
+    "ending": {
+      "es": "La escena muestra la evidencia registrada y la regla de evaluación aplicable."
+    },
+    "restoration": {
+      "es": "Restaurar la selección, las piezas visibles, las etiquetas, el encuadre y la secuencia a su estado inicial."
+    },
+    "accessibility": {
+      "es": "Lista funcional equivalente con entidades, relaciones, estados, cambios y controles completos."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos, flechas estáticas numeradas y avance manual con idéntica evaluación."
+    },
+    "evidenceTemplateIds": [
+      "evidence.horology.mechanical-sequence",
+      "evidence.horology.component-selection"
+    ],
+    "technicalCriteria": [
+      "Selectores resolubles.",
+      "Restauración idempotente.",
+      "Procedencia y G/K/P conservados."
+    ],
+    "limitations": []
+  },
+  "restorePreviousState": true
+}

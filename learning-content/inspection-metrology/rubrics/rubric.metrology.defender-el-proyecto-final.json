@@ -1,0 +1,45 @@
+{
+  "id": "rubric.metrology.defender-el-proyecto-final",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.medir-una-pieza-fisica",
+  "rules": [
+    {
+      "id": "rule.activity-metrology-defender-el-proyecto-final.practice",
+      "version": "0.1.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.7,
+      "minimumDistinctSessions": 2,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan método, unidad, repetición, trazabilidad, incertidumbre, interpretación y reconocimiento de invalidez; no solo el número."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.activity-metrology-defender-el-proyecto-final",
+    "version": "0.1.0",
+    "competencyId": "competency.metrology.medir-una-pieza-fisica",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        },
+        {
+          "op": "compare",
+          "metric": "distinct-sessions",
+          "compare": "gte",
+          "value": 2
+        }
+      ]
+    }
+  }
+}

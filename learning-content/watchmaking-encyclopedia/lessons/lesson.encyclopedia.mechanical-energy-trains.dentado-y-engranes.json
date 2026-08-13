@@ -1,0 +1,236 @@
+{
+  "id": "lesson.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+  "version": "1.1.0",
+  "title": "Dentado relojero y condiciones de engrane",
+  "blockIds": [
+    "block.encyclopedia.mechanical-energy-trains.dentado-y-engranes"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.dentado-y-engranes"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Dentado relojero y condiciones de engrane",
+      "en": "Dentado relojero y condiciones de engrane"
+    },
+    "purpose": {
+      "es": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+      "en": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Dentado relojero y condiciones de engrane mediante relaciones causales.",
+        "en": "Explicar Dentado relojero y condiciones de engrane mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.rochete",
+      "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.clic",
+      "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.reversor-automatico"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.diametro-primitivo",
+      "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.depthing",
+      "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.linea-de-accion"
+    ],
+    "sourceIds": [
+      "source.private.daniels.wheels-pinions",
+      "source.private.vba-uhrentechnik",
+      "source.external.eta-swisslab-6497"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.mechanical-energy-trains.dentado-y-engranes.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Dentado relojero y condiciones de engrane después de estudiar su teoría.",
+        "en": "Observar y manipular Dentado relojero y condiciones de engrane después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "Los perfiles relojeros buscan entrada y salida suaves con pocos dientes de piñón y escalas pequeñas. Paso, módulo o sistema equivalente, diámetro primitivo, addendum, dedendum, distancia entre centros, profundidad y depthing interactúan. Contar dientes determina relación, pero no garantiza contacto correcto ni ausencia de interferencia.",
+        "en": "Los perfiles relojeros buscan entrada y salida suaves con pocos dientes de piñón y escalas pequeñas. Paso, módulo o sistema equivalente, diámetro primitivo, addendum, dedendum, distancia entre centros, profundidad y depthing interactúan. Contar dientes determina relación, pero no garantiza contacto correcto ni ausencia de interferencia."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema gear-pair con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "diente conductor entra",
+        "contacto transmite fuerza",
+        "punto de contacto progresa",
+        "diente sale",
+        "siguiente pareja entra",
+        "piñón mantiene relación media"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "diámetro primitivo",
+        "depthing",
+        "línea de acción"
+      ],
+      "arrows": [
+        "diente conductor entra → contacto transmite fuerza",
+        "contacto transmite fuerza → punto de contacto progresa",
+        "punto de contacto progresa → diente sale",
+        "diente sale → siguiente pareja entra",
+        "siguiente pareja entra → piñón mantiene relación media"
+      ],
+      "animations": [
+        "rotate",
+        "change-ratio",
+        "align",
+        "misalign",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Dentado relojero y condiciones de engrane sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Dentado relojero y condiciones de engrane sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.mechanical-energy-trains.dentado-y-engranes.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.diametro-primitivo",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.depthing",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.linea-de-accion"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1194,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.mechanical-energy-trains.dentado-y-engranes"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: diámetro primitivo, depthing, línea de acción.",
+          "en": "Defino con mis palabras: diámetro primitivo, depthing, línea de acción."
+        },
+        {
+          "es": "Sigo «Dentado relojero y condiciones de engrane» desde diente conductor entra hasta piñón mantiene relación media y explico cada enlace.",
+          "en": "Sigo «Dentado relojero y condiciones de engrane» desde diente conductor entra hasta piñón mantiene relación media y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Dentado relojero y condiciones de engrane» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Dentado relojero y condiciones de engrane» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Calcula la relación de un tren de ejemplo y luego enumera todas las condiciones geométricas que el cálculo no valida.",
+          "en": "Aplico el criterio a esta variante: Calcula la relación de un tren de ejemplo y luego enumera todas las condiciones geométricas que el cálculo no valida."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Dentado relojero y condiciones de engrane» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Dentado relojero y condiciones de engrane» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.diametro-primitivo",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.depthing",
+        "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.linea-de-accion"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+          "en": "¿Qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+        },
+        {
+          "es": "¿Qué relación causal de «Dentado relojero y condiciones de engrane» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Dentado relojero y condiciones de engrane» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "competency.metrology.repetir-una-medicion",
+  "version": "0.1.0",
+  "title": "Repetir una medición",
+  "description": "Repetir una medición con método, trazabilidad, límites y evidencia aplicados a una unidad concreta.",
+  "prerequisites": [
+    "competency.metrology.medir-una-pieza-fisica"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Repetir una medición"
+    },
+    "description": {
+      "es": "Repetir una medición sin generalizar resultados ni ocultar incertidumbre."
+    },
+    "movementIds": [],
+    "subsystem": "metrology",
+    "skillType": "measurement",
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ]
+  }
+}

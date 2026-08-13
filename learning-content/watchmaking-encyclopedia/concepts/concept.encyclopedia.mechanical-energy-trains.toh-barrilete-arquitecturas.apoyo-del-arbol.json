@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.apoyo-del-arbol",
+  "version": "1.1.0",
+  "title": {
+    "es": "apoyo del árbol",
+    "en": "apoyo del árbol"
+  },
+  "summary": {
+    "es": "Interfaz que centra el árbol y controla juego sin bloquearlo.",
+    "en": "Interfaz que centra el árbol y controla juego sin bloquearlo."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.curva-de-par",
+    "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.numero-de-vueltas-utiles",
+    "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.brida-deslizante"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas"
+  ],
+  "movementIds": [],
+  "subsystem": "barrel",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch04",
+    "source.private.chicago.6",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas",
+  "plainLanguage": {
+    "es": "Interfaz que centra el árbol y controla juego sin bloquearlo.",
+    "en": "Interfaz que centra el árbol y controla juego sin bloquearlo."
+  },
+  "technicalLanguage": {
+    "es": "apoyo del árbol se interpreta mediante la cadena anclar extremo interior → guiar el árbol → contener espiras → cerrar tapa → transmitir al dentado → controlar juego y fricción y las condiciones declaradas en la unidad.",
+    "en": "apoyo del árbol se interpreta mediante la cadena anclar extremo interior → guiar el árbol → contener espiras → cerrar tapa → transmitir al dentado → controlar juego y fricción y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué interfaces convierten el muelle real en una fuente de par utilizable?",
+    "en": "Permite explicar y comprobar ¿qué interfaces convierten el muelle real en una fuente de par utilizable?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir apoyo del árbol sin circularidad.",
+      "en": "Definir apoyo del árbol sin circularidad."
+    },
+    {
+      "es": "Relacionar apoyo del árbol con una entrada, una interfaz y una salida.",
+      "en": "Relacionar apoyo del árbol con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

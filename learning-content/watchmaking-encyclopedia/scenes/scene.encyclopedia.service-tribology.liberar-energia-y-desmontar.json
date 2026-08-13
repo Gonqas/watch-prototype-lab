@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.service-tribology.liberar-energia-y-desmontar",
+  "version": "1.1.0",
+  "title": "Cuaderno: Liberar energía y desmontar con trazabilidad",
+  "description": "¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Liberar energía y desmontar con trazabilidad. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.service-tribology.liberar-energia-y-desmontar.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.service-tribology.liberar-energia-y-desmontar.answer",
+      "instructionMarkdown": "Explica **Liberar energía y desmontar con trazabilidad** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.service-tribology.liberar-energia-y-desmontar.explain",
+          "promptMarkdown": "¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.service-tribology.liberar-energia-y-desmontar.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.liberar-energia-y-desmontar.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.liberar-energia-y-desmontar.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.liberar-energia-y-desmontar.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.service-tribology.liberar-energia-y-desmontar.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar energía y sigue hasta reconciliar inventario.",
+                "en": "Empieza por identificar energía y sigue hasta reconciliar inventario."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.service-tribology.liberar-energia-y-desmontar.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Antes de retirar retenedores se identifican fuentes de energía: muelle real, clic, muelles de calendario, resortes, imanes y presión. El desmontaje sigue dependencias, captura orientación, tornillos y arandelas, y mantiene conjuntos separados. La vista explosionada ayuda, pero la unidad y revisión mandan.",
+                "en": "Antes de retirar retenedores se identifican fuentes de energía: muelle real, clic, muelles de calendario, resortes, imanes y presión. El desmontaje sigue dependencias, captura orientación, tornillos y arandelas, y mantiene conjuntos separados. La vista explosionada ayuda, pero la unidad y revisión mandan."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?",
+              "en": "¿Cómo se desarma sin que la energía, el orden o una similitud de piezas destruyan información?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar energía → descargar de forma controlada → registrar estado → seguir dependencias → separar y etiquetar → reconciliar inventario, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar energía → descargar de forma controlada → registrar estado → seguir dependencias → separar y etiquetar → reconciliar inventario, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.service-tribology.liberar-energia-y-desmontar.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.service-tribology.liberar-energia-y-desmontar.mechanism",
+            "field.encyclopedia.service-tribology.liberar-energia-y-desmontar.evidence",
+            "field.encyclopedia.service-tribology.liberar-energia-y-desmontar.limit",
+            "field.encyclopedia.service-tribology.liberar-energia-y-desmontar.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

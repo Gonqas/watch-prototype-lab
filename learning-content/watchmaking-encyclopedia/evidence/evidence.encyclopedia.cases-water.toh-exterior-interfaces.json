@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.cases-water.toh-exterior-interfaces",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.cases-water.toh-exterior-interfaces",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.cases-water.toh-exterior-interfaces",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.cases-water.toh-exterior-interfaces",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.cases-water.toh-exterior-interfaces"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.cases-water.toh-exterior-interfaces",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

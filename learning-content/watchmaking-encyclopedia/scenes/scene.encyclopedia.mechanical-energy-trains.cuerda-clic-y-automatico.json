@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+  "version": "1.1.0",
+  "title": "Cuaderno: Cuerda manual, rochete, rueda de corona y sistema automático",
+  "description": "¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Cuerda manual, rochete, rueda de corona y sistema automático. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.answer",
+      "instructionMarkdown": "Explica **Cuerda manual, rochete, rueda de corona y sistema automático** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.explain",
+          "promptMarkdown": "¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por usuario o rotor aporta giro y sigue hasta limitador evita sobrecarga.",
+                "en": "Empieza por usuario o rotor aporta giro y sigue hasta limitador evita sobrecarga."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La cuerda manual convierte giro de corona en rotación del árbol mediante piñón de canto, rueda de corona y rochete; el clic retiene. En un automático, rotor y reversores rectifican movimientos variables y cargan el mismo almacenamiento o una interfaz relacionada. Cada embrague, inversor y limitador tiene sentido de acción y estado de seguridad.",
+                "en": "La cuerda manual convierte giro de corona en rotación del árbol mediante piñón de canto, rueda de corona y rochete; el clic retiene. En un automático, rotor y reversores rectifican movimientos variables y cargan el mismo almacenamiento o una interfaz relacionada. Cada embrague, inversor y limitador tiene sentido de acción y estado de seguridad."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?",
+              "en": "¿Cómo entra la energía al barrilete y cómo se impide que regrese de forma incontrolada?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena usuario o rotor aporta giro → transmisión selecciona sentido → rochete mueve árbol → clic retiene retroceso → muelle acumula energía → limitador evita sobrecarga, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena usuario o rotor aporta giro → transmisión selecciona sentido → rochete mueve árbol → clic retiene retroceso → muelle acumula energía → limitador evita sobrecarga, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.evidence",
+            "field.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.limit",
+            "field.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

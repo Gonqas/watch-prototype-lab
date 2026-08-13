@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+  "version": "1.1.0",
+  "title": {
+    "es": "cadena energética",
+    "en": "cadena energética"
+  },
+  "summary": {
+    "es": "Ruta de almacenamiento, transmisión, dosificación y disipación de energía.",
+    "en": "Ruta de almacenamiento, transmisión, dosificación y disipación de energía."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.canon-de-minutos",
+    "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.rueda-de-minuteria",
+    "concept.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.puesta-en-hora"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "movementIds": [],
+  "subsystem": "integration",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch03",
+    "source.private.daniels.movement-design",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+  "plainLanguage": {
+    "es": "Ruta de almacenamiento, transmisión, dosificación y disipación de energía.",
+    "en": "Ruta de almacenamiento, transmisión, dosificación y disipación de energía."
+  },
+  "technicalLanguage": {
+    "es": "cadena energética se interpreta mediante la cadena dar cuerda → almacenar energía → transmitir por el tren → dosificar en el escape → mantener oscilación → contar e indicar y las condiciones declaradas en la unidad.",
+    "en": "cadena energética se interpreta mediante la cadena dar cuerda → almacenar energía → transmitir por el tren → dosificar en el escape → mantener oscilación → contar e indicar y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo cooperan acumulador, tren, escape, regulador y visualización?",
+    "en": "Permite explicar y comprobar ¿cómo cooperan acumulador, tren, escape, regulador y visualización?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir cadena energética sin circularidad.",
+      "en": "Definir cadena energética sin circularidad."
+    },
+    {
+      "es": "Relacionar cadena energética con una entrada, una interfaz y una salida.",
+      "en": "Relacionar cadena energética con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

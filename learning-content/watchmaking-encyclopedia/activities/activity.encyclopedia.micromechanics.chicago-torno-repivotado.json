@@ -1,0 +1,311 @@
+{
+  "id": "activity.encyclopedia.micromechanics.chicago-torno-repivotado",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Expediente Chicago XI: torno, repivotado y piezas perdidas",
+  "sceneIds": [
+    "scene.encyclopedia.micromechanics.chicago-torno-repivotado"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.micromechanics.chicago-torno-repivotado"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.micromechanics.chicago-torno-repivotado"
+  ],
+  "rubricId": "rubric.encyclopedia.micromechanics.chicago-torno-repivotado",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.micromechanics.chicago-torno-repivotado",
+    "title": {
+      "es": "Explicar y transferir: Expediente Chicago XI: torno, repivotado y piezas perdidas",
+      "en": "Explicar y transferir: Expediente Chicago XI: torno, repivotado y piezas perdidas"
+    },
+    "description": {
+      "es": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?",
+      "en": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?"
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 35,
+    "activityType": "explanation",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "restoration-manufacturing",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.chicago.29",
+      "source.private.chicago.30",
+      "source.private.chicago.31",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "transfer",
+      "assessmentIntent": "demonstration",
+      "requiresConceptIds": [
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.repivotado",
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.pieza-perdida",
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.decision-de-conservacion"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.repivotado",
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.pieza-perdida",
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.decision-de-conservacion"
+      ],
+      "practicesConceptIds": [
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.repivotado",
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.pieza-perdida",
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.decision-de-conservacion"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.repivotado",
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.pieza-perdida",
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.decision-de-conservacion"
+      ],
+      "evidenceLevel": "transfer",
+      "supportLevel": "independent",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.micromechanics.chicago-torno-repivotado",
+        "blockId": "block.encyclopedia.micromechanics.chicago-torno-repivotado",
+        "conceptIds": [
+          "concept.encyclopedia.micromechanics.chicago-torno-repivotado.repivotado",
+          "concept.encyclopedia.micromechanics.chicago-torno-repivotado.pieza-perdida",
+          "concept.encyclopedia.micromechanics.chicago-torno-repivotado.decision-de-conservacion"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Expediente Chicago XI: torno, repivotado y piezas perdidas sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Expediente Chicago XI: torno, repivotado y piezas perdidas sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Pulir un pivote profundamente rayado puede dejarlo insuficiente; repivotar conserva rueda pero añade una interfaz. La elección se justifica con medidas y riesgo, no por preferencia técnica.",
+          "en": "Pulir un pivote profundamente rayado puede dejarlo insuficiente; repivotar conserva rueda pero añade una interfaz. La elección se justifica con medidas y riesgo, no por preferencia técnica."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?",
+            "en": "Identificar la pregunta: ¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?"
+          },
+          {
+            "es": "Dibujar la secuencia documentar daño → definir función y material → medir referencias → comparar opciones → planificar verificación → revisar antes de mecanizar.",
+            "en": "Dibujar la secuencia documentar daño → definir función y material → medir referencias → comparar opciones → planificar verificación → revisar antes de mecanizar."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: diámetro y profundidad de taladro; ajuste del inserto; coaxialidad; juego final.",
+            "en": "Asignar magnitudes y evidencia: diámetro y profundidad de taladro; ajuste del inserto; coaxialidad; juego final."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Compara opciones para tres niveles de daño y registra criterios de parada.",
+          "en": "Compara opciones para tres niveles de daño y registra criterios de parada."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: documentar daño → definir función y material → medir referencias → comparar opciones → planificar verificación → revisar antes de mecanizar.",
+            "en": "Completa la cadena con las etapas visibles: documentar daño → definir función y material → medir referencias → comparar opciones → planificar verificación → revisar antes de mecanizar."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?",
+            "en": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Compara opciones para tres niveles de daño y registra criterios de parada.",
+            "en": "Compara opciones para tres niveles de daño y registra criterios de parada."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "La reparación más compleja es la mejor",
+          "en": "La reparación más compleja es la mejor"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Expediente Chicago XI: torno, repivotado y piezas perdidas con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Expediente Chicago XI: torno, repivotado y piezas perdidas con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Compara opciones para tres niveles de daño y registra criterios de parada.",
+        "en": "Compara opciones para tres niveles de daño y registra criterios de parada."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena documentar daño → definir función y material → medir referencias → comparar opciones → planificar verificación → revisar antes de mecanizar, su evidencia y límites.",
+        "en": "La explicación conserva la cadena documentar daño → definir función y material → medir referencias → comparar opciones → planificar verificación → revisar antes de mecanizar, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «La reparación más compleja es la mejor».",
+        "en": "Revisa si omitiste una interfaz o caíste en «La reparación más compleja es la mejor»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?",
+        "en": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Mecanizar antes de fotografiar. de Fabricar desde una sola pieza deformada..",
+        "en": "Busca evidencia para distinguir Mecanizar antes de fotografiar. de Fabricar desde una sola pieza deformada.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.micromechanics.chicago-torno-repivotado"
+      ],
+      "transferPrompt": {
+        "es": "Compara opciones para tres niveles de daño y registra criterios de parada.",
+        "en": "Compara opciones para tres niveles de daño y registra criterios de parada."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.repivotado",
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.pieza-perdida",
+        "concept.encyclopedia.micromechanics.chicago-torno-repivotado.decision-de-conservacion"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?",
+          "en": "¿Cómo se decide entre pulir, repivotar, fabricar o sustituir?"
+        },
+        {
+          "es": "¿Qué relación causal de «Expediente Chicago XI: torno, repivotado y piezas perdidas» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Expediente Chicago XI: torno, repivotado y piezas perdidas» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

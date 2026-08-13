@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.atlas-restoration-design.tm-elgin-waltham.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Caso oficial TM IV: Elgin y Waltham de bolsillo",
+    "en": "Repasar Caso oficial TM IV: Elgin y Waltham de bolsillo"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 413,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.atlas-restoration-design.tm-elgin-waltham"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.atlas-restoration-design.tm-elgin-waltham"
+  ],
+  "required": false
+}

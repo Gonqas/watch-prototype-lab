@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.escapements-chronometry.cronocomparador-y-prueba",
+  "version": "1.1.0",
+  "title": "Cronocomparador, reserva y validación cronométrica",
+  "blockIds": [
+    "block.encyclopedia.escapements-chronometry.cronocomparador-y-prueba"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.cronocomparador-y-prueba"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Cronocomparador, reserva y validación cronométrica",
+      "en": "Cronocomparador, reserva y validación cronométrica"
+    },
+    "purpose": {
+      "es": "¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?",
+      "en": "¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Cronocomparador, reserva y validación cronométrica mediante relaciones causales.",
+        "en": "Explicar Cronocomparador, reserva y validación cronométrica mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.poising-estatico",
+      "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.poising-dinamico",
+      "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.beat-error"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.tasa-instantanea-estimada",
+      "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.angulo-de-alzada",
+      "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.protocolo-cronometrico"
+    ],
+    "sourceIds": [
+      "source.institutional.awci.standards",
+      "source.institutional.wostep.watchmaker",
+      "source.private.vba-uhrentechnik"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.tasa-instantanea-estimada",
+        "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.angulo-de-alzada",
+        "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.protocolo-cronometrico"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1136,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.escapements-chronometry.cronocomparador-y-prueba"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: tasa instantánea estimada, ángulo de alzada, protocolo cronométrico.",
+          "en": "Defino con mis palabras: tasa instantánea estimada, ángulo de alzada, protocolo cronométrico."
+        },
+        {
+          "es": "Separo en «Cronocomparador, reserva y validación cronométrica» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Cronocomparador, reserva y validación cronométrica» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Cronocomparador, reserva y validación cronométrica» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Cronocomparador, reserva y validación cronométrica» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Escribe un protocolo de aceptación posterior a servicio con condiciones, posiciones, intervalos, criterios y regla para repetir una lectura dudosa.",
+          "en": "Aplico el criterio a esta variante: Escribe un protocolo de aceptación posterior a servicio con condiciones, posiciones, intervalos, criterios y regla para repetir una lectura dudosa."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Cronocomparador, reserva y validación cronométrica» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Cronocomparador, reserva y validación cronométrica» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.tasa-instantanea-estimada",
+        "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.angulo-de-alzada",
+        "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.protocolo-cronometrico"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?",
+          "en": "¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?"
+        },
+        {
+          "es": "¿Qué relación causal de «Cronocomparador, reserva y validación cronométrica» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Cronocomparador, reserva y validación cronométrica» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

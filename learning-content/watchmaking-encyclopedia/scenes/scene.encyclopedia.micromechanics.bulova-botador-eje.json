@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.bulova-botador-eje",
+  "version": "1.1.0",
+  "title": "Cuaderno: Pasaporte III: botador y sustitución de eje",
+  "description": "¿Qué referencias deben protegerse al separar y montar volante, platillo y eje?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Pasaporte III: botador y sustitución de eje. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.bulova-botador-eje.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué referencias deben protegerse al separar y montar volante, platillo y eje?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué referencias deben protegerse al separar y montar volante, platillo y eje?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.bulova-botador-eje.answer",
+      "instructionMarkdown": "Explica **Pasaporte III: botador y sustitución de eje** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.bulova-botador-eje.explain",
+          "promptMarkdown": "¿Qué referencias deben protegerse al separar y montar volante, platillo y eje?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.bulova-botador-eje.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.bulova-botador-eje.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.bulova-botador-eje.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.bulova-botador-eje.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.bulova-botador-eje.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por documentar orientación y sigue hasta montar y verificar.",
+                "en": "Empieza por documentar orientación y sigue hasta montar y verificar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.bulova-botador-eje.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El botador aplica fuerza axial mediante punzón y asiento compatibles. Orientación, apoyo, diámetro, limpieza y secuencia evitan deformar llanta, platillo o remache. El procedimiento histórico se estudia como mapa; la ejecución exige pieza de práctica y supervisión.",
+                "en": "El botador aplica fuerza axial mediante punzón y asiento compatibles. Orientación, apoyo, diámetro, limpieza y secuencia evitan deformar llanta, platillo o remache. El procedimiento histórico se estudia como mapa; la ejecución exige pieza de práctica y supervisión."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué referencias deben protegerse al separar y montar volante, platillo y eje?",
+              "en": "¿Qué referencias deben protegerse al separar y montar volante, platillo y eje?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena documentar orientación → seleccionar asiento → alinear conjunto → separar axialmente → inspeccionar referencias → montar y verificar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena documentar orientación → seleccionar asiento → alinear conjunto → separar axialmente → inspeccionar referencias → montar y verificar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.bulova-botador-eje.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.bulova-botador-eje.mechanism",
+            "field.encyclopedia.micromechanics.bulova-botador-eje.evidence",
+            "field.encyclopedia.micromechanics.bulova-botador-eje.limit",
+            "field.encyclopedia.micromechanics.bulova-botador-eje.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

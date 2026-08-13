@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.micromechanics.ejes-pivotes-y-reparacion"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

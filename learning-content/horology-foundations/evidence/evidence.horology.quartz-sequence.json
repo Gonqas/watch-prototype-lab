@@ -1,0 +1,30 @@
+{
+  "id": "evidence.horology.quartz-sequence",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.explain-quartz-energy-chain",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.horology.quartz-sequence",
+    "version": "0.5.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "sequence",
+    "competencyId": "competency.horology.explain-quartz-energy-chain",
+    "packageId": "wplab.horology.functional-map",
+    "activityIds": [
+      "activity.horology.order-quartz-chain"
+    ],
+    "evidenceTemplateId": "evidence.horology.quartz-sequence",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data"
+    ]
+  }
+}

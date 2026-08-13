@@ -1,0 +1,72 @@
+{
+  "id": "concept.advanced.winding-systems",
+  "version": "1.0.0",
+  "title": {
+    "es": "Inversores, palanca de uñas y carga unidireccional",
+    "en": "Inversores, palanca de uñas y carga unidireccional"
+  },
+  "summary": {
+    "es": "¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?",
+    "en": "¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?"
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.advanced.seconds-layout"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.advanced.seconds-layout",
+    "concept.advanced.construction-trade-study"
+  ],
+  "competencyIds": [
+    "competency.advanced.winding-systems"
+  ],
+  "movementIds": [],
+  "subsystem": "automatic-winding",
+  "routeIds": [
+    "route.advanced.comparative-atlas"
+  ],
+  "activityIds": [
+    "activity.advanced.winding-systems"
+  ],
+  "sourceIds": [
+    "source.eta.2824-2.product",
+    "source.eta.7750.product",
+    "source.seiko.42.technical-guide",
+    "source.seiko.6138a.technical-guide",
+    "source.miyota.8215.official"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?",
+    "en": "¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?"
+  },
+  "technicalLanguage": {
+    "es": "El rotor no se conecta sin más al árbol del barrilete. La ruta necesita reducción, rectificación, protección frente al retroceso y un límite de carga. Un sistema de inversores emplea embragues dentro de ruedas que transmiten según el sentido; una palanca de uñas indexa una rueda mediante movimientos alternos; un sistema unidireccional carga en un sentido y libera en el opuesto. Son soluciones funcionalmente comparables, pero sus superficies críticas y modos de fallo no coinciden.",
+    "en": "El rotor no se conecta sin más al árbol del barrilete. La ruta necesita reducción, rectificación, protección frente al retroceso y un límite de carga. Un sistema de inversores emplea embragues dentro de ruedas que transmiten según el sentido; una palanca de uñas indexa una rueda mediante movimientos alternos; un sistema unidireccional carga en un sentido y libera en el opuesto. Son soluciones funcionalmente comparables, pero sus superficies críticas y modos de fallo no coinciden."
+  },
+  "whyItMatters": {
+    "es": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física.",
+    "en": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física."
+  },
+  "observableActions": [
+    {
+      "es": "Separa hecho, inferencia y desconocido.",
+      "en": "Separa hecho, inferencia y desconocido."
+    },
+    {
+      "es": "Compara relaciones y compromisos.",
+      "en": "Compara relaciones y compromisos."
+    },
+    {
+      "es": "Declara fuentes, riesgos y límites.",
+      "en": "Declara fuentes, riesgos y límites."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.advanced.construction-trade-study"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

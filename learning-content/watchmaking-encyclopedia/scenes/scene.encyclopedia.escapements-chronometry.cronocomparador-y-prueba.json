@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.cronocomparador-y-prueba",
+  "version": "1.1.0",
+  "title": "Cuaderno: Cronocomparador, reserva y validación cronométrica",
+  "description": "¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Cronocomparador, reserva y validación cronométrica. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.answer",
+      "instructionMarkdown": "Explica **Cronocomparador, reserva y validación cronométrica** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.explain",
+          "promptMarkdown": "¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar movimiento y ángulo y sigue hasta comparar con criterio.",
+                "en": "Empieza por identificar movimiento y ángulo y sigue hasta comparar con criterio."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El cronocomparador detecta eventos acústicos o señales y estima tasa, beat y amplitud mediante parámetros del movimiento, incluido ángulo de alzada. Lecturas dependen de acoplamiento, ruido, estado transitorio y configuración. Una validación añade posiciones, temperatura, carga, duración, repetición y criterios previos.",
+                "en": "El cronocomparador detecta eventos acústicos o señales y estima tasa, beat y amplitud mediante parámetros del movimiento, incluido ángulo de alzada. Lecturas dependen de acoplamiento, ruido, estado transitorio y configuración. Una validación añade posiciones, temperatura, carga, duración, repetición y criterios previos."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?",
+              "en": "¿Qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar movimiento y ángulo → estabilizar estado → capturar señal → evaluar calidad → repetir posiciones y carga → comparar con criterio, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar movimiento y ángulo → estabilizar estado → capturar señal → evaluar calidad → repetir posiciones y carga → comparar con criterio, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.mechanism",
+            "field.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.evidence",
+            "field.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.limit",
+            "field.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

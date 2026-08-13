@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.sintoma",
+  "version": "1.1.0",
+  "title": {
+    "es": "síntoma",
+    "en": "síntoma"
+  },
+  "summary": {
+    "es": "Resultado observable definido sin incorporar una causa supuesta.",
+    "en": "Resultado observable definido sin incorporar una causa supuesta."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.tm-inspeccion-previa.estado-de-entrada",
+    "concept.encyclopedia.service-tribology.tm-inspeccion-previa.inspeccion-funcional",
+    "concept.encyclopedia.service-tribology.tm-inspeccion-previa.registro-de-discrepancia"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "movementIds": [],
+  "subsystem": "diagnosis",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "sourceIds": [
+    "source.official.tm9-1575.diagnosis",
+    "source.private.chicago.35",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+  "plainLanguage": {
+    "es": "Resultado observable definido sin incorporar una causa supuesta.",
+    "en": "Resultado observable definido sin incorporar una causa supuesta."
+  },
+  "technicalLanguage": {
+    "es": "síntoma se interpreta mediante la cadena definir síntoma → registrar condiciones → enumerar causas por función → elegir prueba reversible → actualizar confianza → intervenir solo con evidencia y las condiciones declaradas en la unidad.",
+    "en": "síntoma se interpreta mediante la cadena definir síntoma → registrar condiciones → enumerar causas por función → elegir prueba reversible → actualizar confianza → intervenir solo con evidencia y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?",
+    "en": "Permite explicar y comprobar ¿cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir síntoma sin circularidad.",
+      "en": "Definir síntoma sin circularidad."
+    },
+    {
+      "es": "Relacionar síntoma con una entrada, una interfaz y una salida.",
+      "en": "Relacionar síntoma con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "transfer",
+  "availability": "prerequisite-blocked"
+}

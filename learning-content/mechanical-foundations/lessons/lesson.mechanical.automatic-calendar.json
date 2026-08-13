@@ -1,0 +1,251 @@
+{
+  "id": "lesson.mechanical.automatic-calendar",
+  "version": "0.5.0",
+  "title": "Carga automática y calendario básico",
+  "blockIds": [
+    "block.mechanical.theory.automatic",
+    "block.mechanical.automatic-calendar"
+  ],
+  "activityIds": [
+    "activity.mechanical.follow-automatic-energy",
+    "activity.mechanical.explain-date-change"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Carga automática y calendario básico",
+      "en": "Carga automática y calendario básico"
+    },
+    "purpose": {
+      "es": "Seguir ramas conceptuales de automático y calendario sin modelar el 8215 en detalle.",
+      "en": "Seguir ramas conceptuales de automático y calendario sin modelar el 8215 en detalle."
+    },
+    "objectives": [
+      {
+        "es": "Predecir y manipular una relación mecánica.",
+        "en": "Predecir y manipular una relación mecánica."
+      },
+      {
+        "es": "Explicar el resultado con fórmula o estado.",
+        "en": "Explicar el resultado con fórmula o estado."
+      },
+      {
+        "es": "Declarar límites y restaurar.",
+        "en": "Declarar límites y restaurar."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.mechanical.explain-keyless"
+    ],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.mechanical.explain-automatic-winding",
+      "concept.mechanical.explain-basic-calendar"
+    ],
+    "sourceIds": [
+      "source.horology.private-book.mainsprings",
+      "source.horology.private-book.movement-design",
+      "source.horology.original-mechanical-foundations",
+      "source.external.ciechanowski-mechanical-watch",
+      "source.external.animagraffs-mechanical-watch",
+      "source.external.hodinkee-watch101"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.automatic-calendar"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Seguir ramas conceptuales de automático y calendario sin modelar el 8215 en detalle.",
+        "en": "Seguir ramas conceptuales de automático y calendario sin modelar el 8215 en detalle."
+      },
+      "visibleConcept": {
+        "es": "Laboratorio automatic con estados, relaciones y resultados declarados.",
+        "en": "Laboratorio automatic con estados, relaciones y resultados declarados."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "fixture.conceptual.mechanical-chain",
+        "fixture.miyota.8215.structural"
+      ],
+      "involvedSelectors": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "barrel"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "initialState": {
+        "cameraIntent": "Vista estable del subsistema conceptual.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [
+        "mainspring",
+        "barrel",
+        "train",
+        "escapement",
+        "oscillator",
+        "motion-works",
+        "indication"
+      ],
+      "rotationDirections": [
+        "Dirección derivada de cada relación externa o interna."
+      ],
+      "labels": [
+        "entrada",
+        "salida",
+        "estado",
+        "fuente",
+        "G/K/P",
+        "limitación"
+      ],
+      "arrows": [
+        "flujo energético y relación cinemática derivados del mismo grafo"
+      ],
+      "animations": [
+        "timeline pausado, scrub y pasos discretos; reduced motion equivalente"
+      ],
+      "timelineIntent": "Observar, predecir, ejecutar, comparar, explicar, guardar y restaurar.",
+      "userInteraction": "Selección y acciones; teclado completo y sin arrastre obligatorio.",
+      "observableResult": {
+        "es": "El laboratorio produce un estado y un cálculo reproducibles sin alterar el proyecto técnico original.",
+        "en": "El laboratorio produce un estado y un cálculo reproducibles sin alterar el proyecto técnico original."
+      },
+      "successCriterion": {
+        "es": "Resultado correcto para las entradas declaradas, explicación de límites y restauración.",
+        "en": "Resultado correcto para las entradas declaradas, explicación de límites y restauración."
+      },
+      "restoration": {
+        "es": "Restaurar configuración, bloqueos, fallos, timeline y vista.",
+        "en": "Restaurar configuración, bloqueos, fallos, timeline y vista."
+      },
+      "textualAlternative": {
+        "es": "Entidades, relaciones, fórmulas, entradas, salidas y fases en orden equivalente.",
+        "en": "Entidades, relaciones, fórmulas, entradas, salidas y fases en orden equivalente."
+      },
+      "reducedMotionAlternative": {
+        "es": "Estados discretos y fases numeradas con idéntica evaluación.",
+        "en": "Estados discretos y fases numeradas con idéntica evaluación."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "unknownData": [
+        "geometría interna real",
+        "pérdidas reales",
+        "par real",
+        "tolerancias",
+        "conteos de dientes 8215 no documentados",
+        "lubricación"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.mechanical.automatic-calendar"
+      ]
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.explain-automatic-winding",
+        "concept.mechanical.explain-basic-calendar"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 30,
+      "minimumReadingWords": 1624,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.mechanical.follow-automatic-energy",
+        "activity.mechanical.explain-date-change"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Puedo recorrer la energía desde el rotor hasta el árbol del barrilete.",
+          "en": "Puedo recorrer la energía desde el rotor hasta el árbol del barrilete."
+        },
+        {
+          "es": "Puedo explicar por qué un sistema inversor o rueda libre rectifica el movimiento.",
+          "en": "Puedo explicar por qué un sistema inversor o rueda libre rectifica el movimiento."
+        },
+        {
+          "es": "Puedo distinguir carga unidireccional, bidireccional y brida deslizante sin atribuirlas a todo calibre.",
+          "en": "Puedo distinguir carga unidireccional, bidireccional y brida deslizante sin atribuirlas a todo calibre."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de abrir el laboratorio, escribe una predicción causal y una limitación del modelo que no debes olvidar.",
+        "en": "Before opening the lab, write one causal prediction and one model limitation you must not forget."
+      }
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.mechanical.explain-automatic-winding",
+        "concept.mechanical.explain-basic-calendar"
+      ],
+      "reinforcesConceptIds": [
+        "concept.mechanical.explain-keyless"
+      ],
+      "bridgeConceptIds": [
+        "concept.mechanical.explain-keyless"
+      ]
+    }
+  }
+}

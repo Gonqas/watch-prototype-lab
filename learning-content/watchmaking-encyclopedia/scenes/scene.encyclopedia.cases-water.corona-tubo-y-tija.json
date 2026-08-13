@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.cases-water.corona-tubo-y-tija",
+  "version": "1.1.0",
+  "title": "Cuaderno: Corona, tubo, tija y órganos de mando",
+  "description": "¿Cómo se transmiten fuerza y selección a través de una abertura que también debe proteger?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Corona, tubo, tija y órganos de mando. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.cases-water.corona-tubo-y-tija.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se transmiten fuerza y selección a través de una abertura que también debe proteger?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se transmiten fuerza y selección a través de una abertura que también debe proteger?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.cases-water.corona-tubo-y-tija.answer",
+      "instructionMarkdown": "Explica **Corona, tubo, tija y órganos de mando** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.cases-water.corona-tubo-y-tija.explain",
+          "promptMarkdown": "¿Cómo se transmiten fuerza y selección a través de una abertura que también debe proteger?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.cases-water.corona-tubo-y-tija.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.corona-tubo-y-tija.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.corona-tubo-y-tija.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.corona-tubo-y-tija.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.cases-water.corona-tubo-y-tija.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por usuario gira o extrae corona y sigue hasta caja recupera barrera.",
+                "en": "Empieza por usuario gira o extrae corona y sigue hasta caja recupera barrera."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.cases-water.corona-tubo-y-tija.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La corona proporciona agarre, la tija transmite par y desplazamiento, y el tubo guía y recibe sellado o rosca. Longitud, rosca, concentricidad, recorrido y compresión de junta se condicionan. Una corona roscada protege solo si rosca, asiento, junta y usuario trabajan dentro del diseño.",
+                "en": "La corona proporciona agarre, la tija transmite par y desplazamiento, y el tubo guía y recibe sellado o rosca. Longitud, rosca, concentricidad, recorrido y compresión de junta se condicionan. Una corona roscada protege solo si rosca, asiento, junta y usuario trabajan dentro del diseño."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se transmiten fuerza y selección a través de una abertura que también debe proteger?",
+              "en": "¿Cómo se transmiten fuerza y selección a través de una abertura que también debe proteger?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena usuario gira o extrae corona → corona transmite a tija → tubo guía y sella → tija selecciona mecanismo → junta se comprime al cerrar → caja recupera barrera, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena usuario gira o extrae corona → corona transmite a tija → tubo guía y sella → tija selecciona mecanismo → junta se comprime al cerrar → caja recupera barrera, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.cases-water.corona-tubo-y-tija.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.cases-water.corona-tubo-y-tija.mechanism",
+            "field.encyclopedia.cases-water.corona-tubo-y-tija.evidence",
+            "field.encyclopedia.cases-water.corona-tubo-y-tija.limit",
+            "field.encyclopedia.cases-water.corona-tubo-y-tija.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

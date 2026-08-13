@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.toh-muelle-par",
+  "version": "1.1.0",
+  "title": "Cuaderno: Muelle real: energía, par y curva de entrega",
+  "description": "¿Por qué un muelle con más vueltas no entrega un par constante?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Muelle real: energía, par y curva de entrega. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.toh-muelle-par.scope",
+      "markdown": "**Alcance del estudio:** ¿Por qué un muelle con más vueltas no entrega un par constante?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Por qué un muelle con más vueltas no entrega un par constante?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.toh-muelle-par.answer",
+      "instructionMarkdown": "Explica **Muelle real: energía, par y curva de entrega** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.toh-muelle-par.explain",
+          "promptMarkdown": "¿Por qué un muelle con más vueltas no entrega un par constante?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-muelle-par.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-muelle-par.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-muelle-par.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-muelle-par.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.toh-muelle-par.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por aplicar cuerda al árbol y sigue hasta alcanzar fin de reserva.",
+                "en": "Empieza por aplicar cuerda al árbol y sigue hasta alcanzar fin de reserva."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.toh-muelle-par.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El muelle real almacena energía al deformarse. Su momento depende de material, sección, longitud, curvatura, enrollamiento y fricción entre espiras y paredes. La zona útil de la curva se elige para evitar extremos de entrega y tensión.",
+                "en": "El muelle real almacena energía al deformarse. Su momento depende de material, sección, longitud, curvatura, enrollamiento y fricción entre espiras y paredes. La zona útil de la curva se elige para evitar extremos de entrega y tensión."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Por qué un muelle con más vueltas no entrega un par constante?",
+              "en": "¿Por qué un muelle con más vueltas no entrega un par constante?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena aplicar cuerda al árbol → enrollar el muelle → aumentar energía almacenada → liberar par al tambor → vencer pérdidas → alcanzar fin de reserva, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena aplicar cuerda al árbol → enrollar el muelle → aumentar energía almacenada → liberar par al tambor → vencer pérdidas → alcanzar fin de reserva, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.toh-muelle-par.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.toh-muelle-par.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.toh-muelle-par.evidence",
+            "field.encyclopedia.mechanical-energy-trains.toh-muelle-par.limit",
+            "field.encyclopedia.mechanical-energy-trains.toh-muelle-par.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

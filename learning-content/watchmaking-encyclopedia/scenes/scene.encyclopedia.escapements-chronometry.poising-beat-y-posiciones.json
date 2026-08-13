@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+  "version": "1.1.0",
+  "title": "Cuaderno: Poising, beat error y posiciones",
+  "description": "¿Cómo producen gravedad y asimetría diferencias entre posiciones?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Poising, beat error y posiciones. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo producen gravedad y asimetría diferencias entre posiciones?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo producen gravedad y asimetría diferencias entre posiciones?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.answer",
+      "instructionMarkdown": "Explica **Poising, beat error y posiciones** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.explain",
+          "promptMarkdown": "¿Cómo producen gravedad y asimetría diferencias entre posiciones?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por orientar reloj y sigue hasta instrumento estima tasa y beat.",
+                "en": "Empieza por orientar reloj y sigue hasta instrumento estima tasa y beat."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "En horizontal los apoyos y gravedad actúan de forma distinta que en vertical. Un desequilibrio del volante genera par gravitatorio dependiente del ángulo; pivotes, espiral y escape añaden variaciones. El beat error expresa asimetría temporal entre impulsos, pero no identifica por sí solo su causa.",
+                "en": "En horizontal los apoyos y gravedad actúan de forma distinta que en vertical. Un desequilibrio del volante genera par gravitatorio dependiente del ángulo; pivotes, espiral y escape añaden variaciones. El beat error expresa asimetría temporal entre impulsos, pero no identifica por sí solo su causa."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo producen gravedad y asimetría diferencias entre posiciones?",
+              "en": "¿Cómo producen gravedad y asimetría diferencias entre posiciones?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena orientar reloj → gravedad cambia carga → desequilibrio añade par → apoyos cambian fricción → intervalos difieren → instrumento estima tasa y beat, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena orientar reloj → gravedad cambia carga → desequilibrio añade par → apoyos cambian fricción → intervalos difieren → instrumento estima tasa y beat, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.mechanism",
+            "field.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.evidence",
+            "field.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.limit",
+            "field.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

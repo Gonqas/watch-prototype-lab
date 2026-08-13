@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.micromechanics.chicago-escape-emparejado",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.chicago-escape-emparejado",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.micromechanics.chicago-escape-emparejado",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.micromechanics.chicago-escape-emparejado",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.micromechanics.chicago-escape-emparejado"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.micromechanics.chicago-escape-emparejado",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

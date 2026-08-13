@@ -1,0 +1,67 @@
+{
+  "id": "concept.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.beat-error",
+  "version": "1.1.0",
+  "title": {
+    "es": "beat error",
+    "en": "beat error"
+  },
+  "summary": {
+    "es": "Asimetría temporal entre alternancias asociada a la fase del escape.",
+    "en": "Asimetría temporal entre alternancias asociada a la fase del escape."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.math-physics-metrology.toh-oscilador-modelo.inercia-del-volante",
+    "concept.encyclopedia.math-physics-metrology.toh-oscilador-modelo.rigidez-angular",
+    "concept.encyclopedia.math-physics-metrology.toh-oscilador-modelo.amortiguamiento"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas"
+  ],
+  "movementIds": [],
+  "subsystem": "timing-instrument",
+  "routeIds": [
+    "route.encyclopedia.math-physics-metrology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas"
+  ],
+  "sourceIds": [
+    "source.private.chicago.33",
+    "source.private.chicago.34",
+    "source.private.chicago.11",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas",
+  "plainLanguage": {
+    "es": "Asimetría temporal entre alternancias asociada a la fase del escape.",
+    "en": "Asimetría temporal entre alternancias asociada a la fase del escape."
+  },
+  "technicalLanguage": {
+    "es": "beat error se interpreta mediante la cadena configurar frecuencia → captar sonido → detectar eventos → comparar intervalos → dibujar traza → correlacionar con observación y las condiciones declaradas en la unidad.",
+    "en": "beat error se interpreta mediante la cadena configurar frecuencia → captar sonido → detectar eventos → comparar intervalos → dibujar traza → correlacionar con observación y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué principios de señal permanecen aunque cambie el instrumento?",
+    "en": "Permite explicar y comprobar ¿qué principios de señal permanecen aunque cambie el instrumento?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir beat error sin circularidad.",
+      "en": "Definir beat error sin circularidad."
+    },
+    {
+      "es": "Relacionar beat error con una entrada, una interfaz y una salida.",
+      "en": "Relacionar beat error con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "transfer",
+  "availability": "prerequisite-blocked"
+}

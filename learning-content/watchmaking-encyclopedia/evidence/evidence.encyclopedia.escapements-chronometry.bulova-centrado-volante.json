@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.escapements-chronometry.bulova-centrado-volante"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

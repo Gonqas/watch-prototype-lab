@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Cuerda manual, rochete, rueda de corona y sistema automático."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

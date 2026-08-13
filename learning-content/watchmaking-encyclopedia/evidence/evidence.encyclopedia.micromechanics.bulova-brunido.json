@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.micromechanics.bulova-brunido",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.bulova-brunido",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.micromechanics.bulova-brunido",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.micromechanics.bulova-brunido",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.micromechanics.bulova-brunido"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.micromechanics.bulova-brunido",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

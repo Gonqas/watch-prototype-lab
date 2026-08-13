@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.complications.sonerias-y-repeticiones",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.complications.sonerias-y-repeticiones",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.complications.sonerias-y-repeticiones",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.complications.sonerias-y-repeticiones",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.complications.sonerias-y-repeticiones"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.complications.sonerias-y-repeticiones",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

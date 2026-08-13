@@ -1,0 +1,327 @@
+{
+  "id": "scene.authoring.selector-walkthrough",
+  "version": "1.0.0",
+  "title": "Del storyboard al evento",
+  "description": "La escena aísla una entidad neutral, solicita una predicción y registra una selección confirmada. Alternativa textual: la entidad resuelta aparece en una lista seleccionable.",
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      4,
+      3,
+      5
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [
+      {
+        "selector": {
+          "by": "role",
+          "value": "case"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "transparent": [],
+    "highlighted": [
+      {
+        "selector": {
+          "by": "role",
+          "value": "case"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "case"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "durationMs": 0,
+      "essential": false,
+      "waitFor": "none"
+    },
+    {
+      "atMs": 600,
+      "operation": "explode",
+      "targets": [],
+      "value": 0.12,
+      "durationMs": 500,
+      "essential": false,
+      "waitFor": "none"
+    },
+    {
+      "atMs": 1400,
+      "operation": "explode",
+      "targets": [],
+      "value": 0,
+      "durationMs": 500,
+      "essential": false,
+      "waitFor": "interaction"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "label",
+      "id": "overlay.authoring.selector",
+      "target": {
+        "selector": {
+          "by": "role",
+          "value": "case"
+        },
+        "cardinality": "exactly-one"
+      },
+      "text": "role:case",
+      "accessibleLabel": "Entidad neutral resuelta por el selector semántico role case."
+    },
+    {
+      "kind": "text",
+      "id": "overlay.authoring.scope",
+      "markdown": "Ejemplo de autoría. No describe una propiedad relojera.",
+      "accessibleLabel": "Ejemplo de autoría sin contenido relojero."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.authoring.predict",
+      "instructionMarkdown": "Predice qué selector es estable aunque cambie el idioma visible.",
+      "questions": [
+        {
+          "id": "question.authoring.predict-selector",
+          "promptMarkdown": "¿Qué selector expresa función semántica y no texto traducido?",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.label",
+              "label": "Texto visible: Caja",
+              "labels": {
+                "es": "Texto visible: Caja",
+                "en": "Visible text: Case"
+              }
+            },
+            {
+              "id": "option.role",
+              "label": "Rol estable: case",
+              "labels": {
+                "es": "Rol estable: case",
+                "en": "Stable role: case"
+              }
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué selector expresa función semántica y no texto traducido?",
+              "en": "Which selector expresses semantic function rather than translated text?"
+            },
+            "feedback": {
+              "es": "El rol es estable; la etiqueta visible puede localizarse.",
+              "en": "The role is stable; the visible label can be localized."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.authoring.predict-selector",
+          "expectedOptionIds": [
+            "option.role"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "step.authoring.manipulate",
+      "instructionMarkdown": "Selecciona en la lista accesible la entidad resuelta por `role:case`.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "selected",
+          "target": {
+            "selector": {
+              "by": "role",
+              "value": "case"
+            },
+            "cardinality": "exactly-one"
+          }
+        }
+      ]
+    },
+    {
+      "id": "step.authoring.explain",
+      "instructionMarkdown": "Confirma que interacción, evento, evidencia y rúbrica conservan el mismo ID de competencia.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Del storyboard al evento",
+      "en": "From storyboard to event"
+    },
+    "purpose": {
+      "es": "Hacer visible la cadena editorial sin enseñar el funcionamiento de una pieza.",
+      "en": "Make the editorial chain visible without teaching how a part works."
+    },
+    "prerequisites": [
+      "concept.authoring.traceability"
+    ],
+    "narrative": {
+      "es": "El autor primero predice el selector estable, luego manipula la entidad y finalmente explica qué se convertirá en evidencia.",
+      "en": "The author first predicts the stable selector, then manipulates the entity and finally explains what becomes evidence."
+    },
+    "initialFraming": {
+      "es": "Encuadre isométrico; entidad neutral aislada y etiquetada con su rol.",
+      "en": "Isometric framing; neutral entity isolated and labelled with its role."
+    },
+    "protagonist": {
+      "selector": {
+        "by": "role",
+        "value": "case"
+      },
+      "cardinality": "exactly-one"
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "storyboard.authoring.predict",
+        "sceneStepId": "step.authoring.predict",
+        "narrative": {
+          "es": "Presentar dos formas de identificar la entidad.",
+          "en": "Present two ways to identify the entity."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "highlight",
+          "overlay"
+        ],
+        "interaction": {
+          "es": "Elegir una respuesta única.",
+          "en": "Choose one answer."
+        },
+        "feedback": {
+          "es": "Explicar por qué el rol sobrevive a la localización.",
+          "en": "Explain why the role survives localization."
+        },
+        "expectedError": {
+          "es": "Elegir la etiqueta visible.",
+          "en": "Choose the visible label."
+        },
+        "hint": {
+          "es": "Busca el dato que no cambia entre español e inglés.",
+          "en": "Look for the value that does not change between Spanish and English."
+        }
+      },
+      {
+        "id": "storyboard.authoring.manipulate",
+        "sceneStepId": "step.authoring.manipulate",
+        "narrative": {
+          "es": "Aplicar una selección semántica.",
+          "en": "Apply a semantic selection."
+        },
+        "timelineIndexes": [
+          1,
+          2
+        ],
+        "runtimeActions": [
+          "explode",
+          "select"
+        ],
+        "interaction": {
+          "es": "Seleccionar mediante lista o viewport.",
+          "en": "Select using the list or viewport."
+        },
+        "feedback": {
+          "es": "Mostrar el estado seleccionado también en texto.",
+          "en": "Show the selected state in text as well."
+        }
+      },
+      {
+        "id": "storyboard.authoring.explain",
+        "sceneStepId": "step.authoring.explain",
+        "narrative": {
+          "es": "Relacionar la interacción con la regla de evidencia.",
+          "en": "Relate the interaction to the evidence rule."
+        },
+        "timelineIndexes": [],
+        "runtimeActions": [
+          "confirm-selection",
+          "complete"
+        ],
+        "interaction": {
+          "es": "Confirmar el paso.",
+          "en": "Confirm the step."
+        },
+        "feedback": {
+          "es": "Enumerar evento, evidencia y rúbrica.",
+          "en": "List event, evidence and rubric."
+        }
+      }
+    ],
+    "ending": {
+      "es": "La vista de resultados muestra evidencia y evaluación explicables.",
+      "en": "The results view shows explainable evidence and assessment."
+    },
+    "restoration": {
+      "es": "Restaurar el snapshot de presentación capturado antes de la escena.",
+      "en": "Restore the presentation snapshot captured before the scene."
+    },
+    "accessibility": {
+      "es": "Todos los pasos se completan mediante controles nativos y una lista textual equivalente.",
+      "en": "All steps can be completed with native controls and an equivalent text list."
+    },
+    "reducedMotion": {
+      "es": "Las transiciones de explosionado se reducen a cambios instantáneos.",
+      "en": "Exploded-view transitions become instant state changes."
+    },
+    "evidenceTemplateIds": [
+      "evidence.authoring.selection"
+    ],
+    "technicalCriteria": [
+      "El selector debe resolver exactamente una entidad.",
+      "La escena debe restaurar el estado anterior.",
+      "La evidencia debe proceder de selection-confirmed."
+    ],
+    "limitations": [
+      "El modelo se usa como soporte neutral.",
+      "No contiene datos MIYOTA ni del libro privado."
+    ]
+  },
+  "restorePreviousState": true
+}

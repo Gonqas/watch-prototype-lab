@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.micromechanics.bulova-torneado-fundamental",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.bulova-torneado-fundamental",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.micromechanics.bulova-torneado-fundamental",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Pasaporte IV: torneado entre puntos y buril."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.micromechanics.bulova-torneado-fundamental",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.micromechanics.bulova-torneado-fundamental",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

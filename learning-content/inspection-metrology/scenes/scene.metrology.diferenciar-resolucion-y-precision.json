@@ -1,0 +1,136 @@
+{
+  "id": "scene.metrology.diferenciar-resolucion-y-precision",
+  "version": "0.2.0",
+  "title": "Diferenciar resolución y precisión",
+  "description": "Escena textual y accesible que prepara la operación real “Diferenciar resolución y precisión” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Diferenciar resolución y precisión. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-diferenciar-resolucion-y-precision.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-diferenciar-resolucion-y-precision.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Diferenciar resolución y precisión”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-diferenciar-resolucion-y-precision.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Diferenciar resolución y precisión” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-diferenciar-resolucion-y-precision",
+          "promptMarkdown": "¿Qué expresa realmente una lectura y cuántos dígitos podemos conservar sin fabricar información?\n\nEn «Diferenciar resolución y precisión», elige la conclusión que no excede la evidencia del ejemplo y justifica por qué las otras dos opciones fallan.",
+          "responseKind": "structured-response",
+          "options": [
+            {
+              "id": "option.activity-metrology-diferenciar-resolucion-y-precision.defensible",
+              "label": "La cifra defendible incluye unidad, escala, plano, puntos y redondeo. La resolución de píxel o de pantalla no prueba exactitud global.",
+              "labels": {
+                "es": "La cifra defendible incluye unidad, escala, plano, puntos y redondeo. La resolución de píxel o de pantalla no prueba exactitud global.",
+                "en": "La cifra defendible incluye unidad, escala, plano, puntos y redondeo. La resolución de píxel o de pantalla no prueba exactitud global."
+              }
+            },
+            {
+              "id": "option.activity-metrology-diferenciar-resolucion-y-precision.error-one",
+              "label": "Omitir unidades o mezclar milímetros, micrómetros y píxeles sin conversión registrada.",
+              "labels": {
+                "es": "Omitir unidades o mezclar milímetros, micrómetros y píxeles sin conversión registrada.",
+                "en": "Omitir unidades o mezclar milímetros, micrómetros y píxeles sin conversión registrada."
+              }
+            },
+            {
+              "id": "option.activity-metrology-diferenciar-resolucion-y-precision.error-two",
+              "label": "Confundir el último dígito visible con una incertidumbre completa.",
+              "labels": {
+                "es": "Confundir el último dígito visible con una incertidumbre completa.",
+                "en": "Confundir el último dígito visible con una incertidumbre completa."
+              }
+            }
+          ],
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-diferenciar-resolucion-y-precision.decision",
+              "label": "¿Qué expresa realmente una lectura y cuántos dígitos podemos conservar sin fabricar información?",
+              "kind": "choice",
+              "required": true,
+              "optionIds": [
+                "option.activity-metrology-diferenciar-resolucion-y-precision.defensible",
+                "option.activity-metrology-diferenciar-resolucion-y-precision.error-one",
+                "option.activity-metrology-diferenciar-resolucion-y-precision.error-two"
+              ]
+            },
+            {
+              "id": "field.activity-metrology-diferenciar-resolucion-y-precision.justification",
+              "label": "Justifica qué evidencia y qué límite hacen defendible tu elección.",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-diferenciar-resolucion-y-precision.confidence",
+              "label": "Confianza en la decisión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Decide y justifica: ¿Qué expresa realmente una lectura y cuántos dígitos podemos conservar sin fabricar información?"
+            },
+            "feedback": {
+              "es": "La conclusión defendible conserva evidencia y alcance: La cifra defendible incluye unidad, escala, plano, puntos y redondeo. La resolución de píxel o de pantalla no prueba exactitud global."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-diferenciar-resolucion-y-precision",
+          "requiredFieldIds": [
+            "field.activity-metrology-diferenciar-resolucion-y-precision.decision",
+            "field.activity-metrology-diferenciar-resolucion-y-precision.justification",
+            "field.activity-metrology-diferenciar-resolucion-y-precision.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

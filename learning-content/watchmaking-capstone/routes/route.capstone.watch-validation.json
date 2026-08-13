@@ -1,0 +1,83 @@
+{
+  "id": "route.capstone.watch-validation",
+  "version": "1.0.0",
+  "title": {
+    "es": "Validación relojera y transferencia",
+    "en": "Validación relojera y transferencia"
+  },
+  "purpose": {
+    "es": "Validar el trabajo mediante revisión relojera independiente y transferencia entre calibres, conservando evidencia y límites.",
+    "en": "Validar el trabajo mediante revisión relojera independiente y transferencia entre calibres, conservando evidencia y límites."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.capstone.validation.watchmaker-review",
+    "module.capstone.validation.calibre-transfer"
+  ],
+  "competencyIds": [
+    "competency.capstone.validation.watchmaker-review",
+    "competency.capstone.validation.calibre-transfer"
+  ],
+  "movementIds": [],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.eta.6497-2.communication",
+    "source.miyota.8215.official",
+    "source.iso.14253-1",
+    "source.seiko.6138a.technical-guide"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.capstone.watch-validation.01",
+        "order": 1,
+        "title": {
+          "es": "Revisión relojera independiente",
+          "en": "Revisión relojera independiente"
+        },
+        "outcome": {
+          "es": "¿Qué debe revisar una persona relojera independiente y qué evidencia puede obligarte a corregir el proyecto?",
+          "en": "¿Qué debe revisar una persona relojera independiente y qué evidencia puede obligarte a corregir el proyecto?"
+        },
+        "lessonId": "lesson.capstone.validation.watchmaker-review",
+        "activityId": "activity.capstone.validation.watchmaker-review",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.validation.watchmaker-review"
+        ]
+      },
+      {
+        "id": "milestone.capstone.watch-validation.02",
+        "order": 2,
+        "title": {
+          "es": "Transferencia entre calibres y arquitecturas",
+          "en": "Transferencia entre calibres y arquitecturas"
+        },
+        "outcome": {
+          "es": "¿Qué principio puedes transferir a otro calibre y qué datos debes volver a comprobar antes de actuar?",
+          "en": "¿Qué principio puedes transferir a otro calibre y qué datos debes volver a comprobar antes de actuar?"
+        },
+        "lessonId": "lesson.capstone.validation.calibre-transfer",
+        "activityId": "activity.capstone.validation.calibre-transfer",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.validation.calibre-transfer"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.capstone.validation.watchmaker-review",
+      "activity.capstone.validation.calibre-transfer"
+    ]
+  }
+}

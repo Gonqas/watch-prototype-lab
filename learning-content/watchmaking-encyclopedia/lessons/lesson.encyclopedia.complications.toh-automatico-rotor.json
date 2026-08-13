@@ -1,0 +1,235 @@
+{
+  "id": "lesson.encyclopedia.complications.toh-automatico-rotor",
+  "version": "1.1.0",
+  "title": "Rotor, masa excéntrica y captación de movimiento",
+  "blockIds": [
+    "block.encyclopedia.complications.toh-automatico-rotor"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-automatico-rotor"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Rotor, masa excéntrica y captación de movimiento",
+      "en": "Rotor, masa excéntrica y captación de movimiento"
+    },
+    "purpose": {
+      "es": "¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?",
+      "en": "¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Rotor, masa excéntrica y captación de movimiento mediante relaciones causales.",
+        "en": "Explicar Rotor, masa excéntrica y captación de movimiento mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.gmt-independiente",
+      "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.tourbillon",
+      "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.remontoir-de-igualdad"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.complications.toh-automatico-rotor.masa-oscilante",
+      "concept.encyclopedia.complications.toh-automatico-rotor.rectificacion-mecanica",
+      "concept.encyclopedia.complications.toh-automatico-rotor.rendimiento-de-carga"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch08",
+      "source.private.chicago.6",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.complications.toh-automatico-rotor.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Rotor, masa excéntrica y captación de movimiento después de estudiar su teoría.",
+        "en": "Observar y manipular Rotor, masa excéntrica y captación de movimiento después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "La masa excéntrica genera movimiento relativo; rodamientos o apoyos lo guían; engranajes y reversores rectifican uno o ambos sentidos; el sistema limita sobrecarga mediante la arquitectura del barrilete.",
+        "en": "La masa excéntrica genera movimiento relativo; rodamientos o apoyos lo guían; engranajes y reversores rectifican uno o ambos sentidos; el sistema limita sobrecarga mediante la arquitectura del barrilete."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema automatic con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "mover caja",
+        "rotar masa",
+        "transmitir a reversor",
+        "rectificar sentido",
+        "reducir y aumentar par",
+        "cargar muelle"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "masa oscilante",
+        "rectificación mecánica",
+        "rendimiento de carga"
+      ],
+      "arrows": [
+        "mover caja → rotar masa",
+        "rotar masa → transmitir a reversor",
+        "transmitir a reversor → rectificar sentido",
+        "rectificar sentido → reducir y aumentar par",
+        "reducir y aumentar par → cargar muelle"
+      ],
+      "animations": [
+        "enable-automatic",
+        "rotate",
+        "disable-automatic",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Rotor, masa excéntrica y captación de movimiento sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Rotor, masa excéntrica y captación de movimiento sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: mover caja → rotar masa → transmitir a reversor → rectificar sentido → reducir y aumentar par → cargar muelle. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: mover caja → rotar masa → transmitir a reversor → rectificar sentido → reducir y aumentar par → cargar muelle. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.complications.toh-automatico-rotor.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.complications.toh-automatico-rotor.masa-oscilante",
+        "concept.encyclopedia.complications.toh-automatico-rotor.rectificacion-mecanica",
+        "concept.encyclopedia.complications.toh-automatico-rotor.rendimiento-de-carga"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1119,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.complications.toh-automatico-rotor"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: masa oscilante, rectificación mecánica, rendimiento de carga.",
+          "en": "Defino con mis palabras: masa oscilante, rectificación mecánica, rendimiento de carga."
+        },
+        {
+          "es": "Sigo «Rotor, masa excéntrica y captación de movimiento» desde mover caja hasta cargar muelle y explico cada enlace.",
+          "en": "Sigo «Rotor, masa excéntrica y captación de movimiento» desde mover caja hasta cargar muelle y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Rotor, masa excéntrica y captación de movimiento» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Rotor, masa excéntrica y captación de movimiento» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Compara sistemas uni y bidireccionales con el mismo protocolo.",
+          "en": "Aplico el criterio a esta variante: Compara sistemas uni y bidireccionales con el mismo protocolo."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Rotor, masa excéntrica y captación de movimiento» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Rotor, masa excéntrica y captación de movimiento» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.complications.toh-automatico-rotor.masa-oscilante",
+        "concept.encyclopedia.complications.toh-automatico-rotor.rectificacion-mecanica",
+        "concept.encyclopedia.complications.toh-automatico-rotor.rendimiento-de-carga"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?",
+          "en": "¿Cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?"
+        },
+        {
+          "es": "¿Qué relación causal de «Rotor, masa excéntrica y captación de movimiento» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Rotor, masa excéntrica y captación de movimiento» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

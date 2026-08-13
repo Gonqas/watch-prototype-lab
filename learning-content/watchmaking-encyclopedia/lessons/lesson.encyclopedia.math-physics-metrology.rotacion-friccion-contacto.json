@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+  "version": "1.1.0",
+  "title": "Rotación, inercia, fricción y contacto",
+  "blockIds": [
+    "block.encyclopedia.math-physics-metrology.rotacion-friccion-contacto"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.rotacion-friccion-contacto"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Rotación, inercia, fricción y contacto",
+      "en": "Rotación, inercia, fricción y contacto"
+    },
+    "purpose": {
+      "es": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+      "en": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Rotación, inercia, fricción y contacto mediante relaciones causales.",
+        "en": "Explicar Rotación, inercia, fricción y contacto mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.par",
+      "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.trabajo-mecanico",
+      "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.potencia"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+      "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+      "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+    ],
+    "sourceIds": [
+      "source.private.daniels.jewelling",
+      "source.private.daniels.wheels-pinions",
+      "source.private.vba-uhrentechnik"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1122,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.math-physics-metrology.rotacion-friccion-contacto"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: momento de inercia, fricción estática, contacto hertziano.",
+          "en": "Defino con mis palabras: momento de inercia, fricción estática, contacto hertziano."
+        },
+        {
+          "es": "Separo en «Rotación, inercia, fricción y contacto» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Rotación, inercia, fricción y contacto» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Rotación, inercia, fricción y contacto» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Rotación, inercia, fricción y contacto» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Propón una secuencia de pruebas que separe pivote doblado, rubí desalineado, falta de juego y contaminación sin sustituir piezas al azar.",
+          "en": "Aplico el criterio a esta variante: Propón una secuencia de pruebas que separe pivote doblado, rubí desalineado, falta de juego y contaminación sin sustituir piezas al azar."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Rotación, inercia, fricción y contacto» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Rotación, inercia, fricción y contacto» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+          "en": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?"
+        },
+        {
+          "es": "¿Qué relación causal de «Rotación, inercia, fricción y contacto» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Rotación, inercia, fricción y contacto» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

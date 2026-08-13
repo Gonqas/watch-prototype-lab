@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Tratamiento térmico y acabado de superficies",
+  "sceneIds": [
+    "scene.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies"
+  ],
+  "rubricId": "rubric.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+    "title": {
+      "es": "Explicar y transferir: Tratamiento térmico y acabado de superficies",
+      "en": "Explicar y transferir: Tratamiento térmico y acabado de superficies"
+    },
+    "description": {
+      "es": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?",
+      "en": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?"
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "materials-processing",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.daniels.finishing-metals",
+      "source.private.daniels.small-components",
+      "source.private.vba-uhrentechnik"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.temple",
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.revenido",
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.integridad-superficial"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.temple",
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.revenido",
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.integridad-superficial"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.temple",
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.revenido",
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.integridad-superficial"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+        "blockId": "block.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+        "conceptIds": [
+          "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.temple",
+          "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.revenido",
+          "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.integridad-superficial"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Tratamiento térmico y acabado de superficies sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Tratamiento térmico y acabado de superficies sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Una pieza pequeña se calienta con gran rapidez y puede descarburarse o deformarse. Obtener color azul no demuestra una dureza concreta: superficie, luz, aleación y temperatura previa alteran el color. La verificación debe corresponder a la propiedad buscada y al riesgo de dañar la pieza.",
+          "en": "Una pieza pequeña se calienta con gran rapidez y puede descarburarse o deformarse. Obtener color azul no demuestra una dureza concreta: superficie, luz, aleación y temperatura previa alteran el color. La verificación debe corresponder a la propiedad buscada y al riesgo de dañar la pieza."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?",
+            "en": "Identificar la pregunta: ¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?"
+          },
+          {
+            "es": "Dibujar la secuencia seleccionar aleación → preparar geometría → calentar con control → enfriar según proceso → revenir o estabilizar → acabar y verificar.",
+            "en": "Dibujar la secuencia seleccionar aleación → preparar geometría → calentar con control → enfriar según proceso → revenir o estabilizar → acabar y verificar."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: temperatura; tiempo; velocidad de enfriamiento; espesor de sección; rugosidad.",
+            "en": "Asignar magnitudes y evidencia: temperatura; tiempo; velocidad de enfriamiento; espesor de sección; rugosidad."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Define una ficha de proceso para una pieza de práctica: material supuesto, geometría crítica, ciclo, acabado, riesgo y comprobación; separa lo observado de lo inferido.",
+          "en": "Define una ficha de proceso para una pieza de práctica: material supuesto, geometría crítica, ciclo, acabado, riesgo y comprobación; separa lo observado de lo inferido."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: seleccionar aleación → preparar geometría → calentar con control → enfriar según proceso → revenir o estabilizar → acabar y verificar.",
+            "en": "Completa la cadena con las etapas visibles: seleccionar aleación → preparar geometría → calentar con control → enfriar según proceso → revenir o estabilizar → acabar y verificar."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?",
+            "en": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Define una ficha de proceso para una pieza de práctica: material supuesto, geometría crítica, ciclo, acabado, riesgo y comprobación; separa lo observado de lo inferido.",
+            "en": "Define una ficha de proceso para una pieza de práctica: material supuesto, geometría crítica, ciclo, acabado, riesgo y comprobación; separa lo observado de lo inferido."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Pulir mejora siempre una pieza",
+          "en": "Pulir mejora siempre una pieza"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Tratamiento térmico y acabado de superficies con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Tratamiento térmico y acabado de superficies con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Define una ficha de proceso para una pieza de práctica: material supuesto, geometría crítica, ciclo, acabado, riesgo y comprobación; separa lo observado de lo inferido.",
+        "en": "Define una ficha de proceso para una pieza de práctica: material supuesto, geometría crítica, ciclo, acabado, riesgo y comprobación; separa lo observado de lo inferido."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena seleccionar aleación → preparar geometría → calentar con control → enfriar según proceso → revenir o estabilizar → acabar y verificar, su evidencia y límites.",
+        "en": "La explicación conserva la cadena seleccionar aleación → preparar geometría → calentar con control → enfriar según proceso → revenir o estabilizar → acabar y verificar, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Pulir mejora siempre una pieza».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Pulir mejora siempre una pieza»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?",
+        "en": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Usar solo el color como certificación de temperatura o dureza. de Pulir una superficie funcional hasta alterar su dimensión..",
+        "en": "Busca evidencia para distinguir Usar solo el color como certificación de temperatura o dureza. de Pulir una superficie funcional hasta alterar su dimensión.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies"
+      ],
+      "transferPrompt": {
+        "es": "Define una ficha de proceso para una pieza de práctica: material supuesto, geometría crítica, ciclo, acabado, riesgo y comprobación; separa lo observado de lo inferido.",
+        "en": "Define una ficha de proceso para una pieza de práctica: material supuesto, geometría crítica, ciclo, acabado, riesgo y comprobación; separa lo observado de lo inferido."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.temple",
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.revenido",
+        "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.integridad-superficial"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?",
+          "en": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?"
+        },
+        {
+          "es": "¿Qué relación causal de «Tratamiento térmico y acabado de superficies» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Tratamiento térmico y acabado de superficies» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

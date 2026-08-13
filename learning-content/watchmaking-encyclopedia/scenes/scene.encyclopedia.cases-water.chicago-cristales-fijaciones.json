@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.cases-water.chicago-cristales-fijaciones",
+  "version": "1.1.0",
+  "title": "Cuaderno: Expediente Chicago II: cristales, biseles y fijaciones",
+  "description": "¿Qué debe verificarse antes de prensar o cementar un cristal?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Expediente Chicago II: cristales, biseles y fijaciones. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.cases-water.chicago-cristales-fijaciones.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué debe verificarse antes de prensar o cementar un cristal?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué debe verificarse antes de prensar o cementar un cristal?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.cases-water.chicago-cristales-fijaciones.answer",
+      "instructionMarkdown": "Explica **Expediente Chicago II: cristales, biseles y fijaciones** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.cases-water.chicago-cristales-fijaciones.explain",
+          "promptMarkdown": "¿Qué debe verificarse antes de prensar o cementar un cristal?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.cases-water.chicago-cristales-fijaciones.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.chicago-cristales-fijaciones.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.chicago-cristales-fijaciones.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.chicago-cristales-fijaciones.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.cases-water.chicago-cristales-fijaciones.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por clasificar construcción y sigue hasta montar y verificar.",
+                "en": "Empieza por clasificar construcción y sigue hasta montar y verificar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.cases-water.chicago-cristales-fijaciones.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Tipo de cristal, asiento, bisel, tensión, altura de agujas, material y método de retención determinan el montaje. Los cementos históricos no se trasladan; se conserva la lógica de identificación y medición.",
+                "en": "Tipo de cristal, asiento, bisel, tensión, altura de agujas, material y método de retención determinan el montaje. Los cementos históricos no se trasladan; se conserva la lógica de identificación y medición."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué debe verificarse antes de prensar o cementar un cristal?",
+              "en": "¿Qué debe verificarse antes de prensar o cementar un cristal?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena clasificar construcción → limpiar e inspeccionar asiento → medir varias direcciones → comprobar altura interior → elegir método compatible → montar y verificar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena clasificar construcción → limpiar e inspeccionar asiento → medir varias direcciones → comprobar altura interior → elegir método compatible → montar y verificar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.cases-water.chicago-cristales-fijaciones.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.cases-water.chicago-cristales-fijaciones.mechanism",
+            "field.encyclopedia.cases-water.chicago-cristales-fijaciones.evidence",
+            "field.encyclopedia.cases-water.chicago-cristales-fijaciones.limit",
+            "field.encyclopedia.cases-water.chicago-cristales-fijaciones.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

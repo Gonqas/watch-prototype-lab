@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

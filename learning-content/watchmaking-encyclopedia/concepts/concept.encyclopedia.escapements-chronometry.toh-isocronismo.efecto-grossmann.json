@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.escapements-chronometry.toh-isocronismo.efecto-grossmann",
+  "version": "1.1.0",
+  "title": {
+    "es": "efecto Grossmann",
+    "en": "efecto Grossmann"
+  },
+  "summary": {
+    "es": "Componente del error relacionada con configuración y fijación de la espiral.",
+    "en": "Componente del error relacionada con configuración y fijación de la espiral."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.virola",
+    "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.piton",
+    "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.longitud-activa"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.toh-isocronismo"
+  ],
+  "movementIds": [],
+  "subsystem": "chronometry",
+  "routeIds": [
+    "route.encyclopedia.escapements-chronometry"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.toh-isocronismo"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch07",
+    "source.private.daniels.balance-spring",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.escapements-chronometry.toh-isocronismo"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.escapements-chronometry.toh-isocronismo",
+  "plainLanguage": {
+    "es": "Componente del error relacionada con configuración y fijación de la espiral.",
+    "en": "Componente del error relacionada con configuración y fijación de la espiral."
+  },
+  "technicalLanguage": {
+    "es": "efecto Grossmann se interpreta mediante la cadena cambiar par disponible → cambiar amplitud → alterar respiración efectiva → modificar perturbaciones → cambiar periodo → observar marcha y las condiciones declaradas en la unidad.",
+    "en": "efecto Grossmann se interpreta mediante la cadena cambiar par disponible → cambiar amplitud → alterar respiración efectiva → modificar perturbaciones → cambiar periodo → observar marcha y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿por qué el periodo puede cambiar cuando cambia la amplitud?",
+    "en": "Permite explicar y comprobar ¿por qué el periodo puede cambiar cuando cambia la amplitud?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir efecto Grossmann sin circularidad.",
+      "en": "Definir efecto Grossmann sin circularidad."
+    },
+    {
+      "es": "Relacionar efecto Grossmann con una entrada, una interfaz y una salida.",
+      "en": "Relacionar efecto Grossmann con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.bulova-torneado-fundamental",
+  "version": "1.1.0",
+  "title": "Cuaderno: Pasaporte IV: torneado entre puntos y buril",
+  "description": "¿Qué hábitos producen una superficie concéntrica sin convertir el torno en un riesgo?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Pasaporte IV: torneado entre puntos y buril. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.bulova-torneado-fundamental.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué hábitos producen una superficie concéntrica sin convertir el torno en un riesgo?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué hábitos producen una superficie concéntrica sin convertir el torno en un riesgo?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.bulova-torneado-fundamental.answer",
+      "instructionMarkdown": "Explica **Pasaporte IV: torneado entre puntos y buril** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.bulova-torneado-fundamental.explain",
+          "promptMarkdown": "¿Qué hábitos producen una superficie concéntrica sin convertir el torno en un riesgo?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.bulova-torneado-fundamental.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.bulova-torneado-fundamental.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.bulova-torneado-fundamental.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.bulova-torneado-fundamental.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.bulova-torneado-fundamental.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por evaluar riesgo y sigue hasta acabar y verificar.",
+                "en": "Empieza por evaluar riesgo y sigue hasta acabar y verificar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.bulova-torneado-fundamental.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Preparación de centros, apoyo del buril, altura, ángulo, avance, medición intermedia y acabado forman una secuencia. El torno histórico enseña geometría y tacto, pero la práctica queda condicionada a protección, formación y supervisión modernas.",
+                "en": "Preparación de centros, apoyo del buril, altura, ángulo, avance, medición intermedia y acabado forman una secuencia. El torno histórico enseña geometría y tacto, pero la práctica queda condicionada a protección, formación y supervisión modernas."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué hábitos producen una superficie concéntrica sin convertir el torno en un riesgo?",
+              "en": "¿Qué hábitos producen una superficie concéntrica sin convertir el torno en un riesgo?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena evaluar riesgo → preparar centros → afilar y apoyar buril → desbastar → medir sin rotación → acabar y verificar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena evaluar riesgo → preparar centros → afilar y apoyar buril → desbastar → medir sin rotación → acabar y verificar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.bulova-torneado-fundamental.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.bulova-torneado-fundamental.mechanism",
+            "field.encyclopedia.micromechanics.bulova-torneado-fundamental.evidence",
+            "field.encyclopedia.micromechanics.bulova-torneado-fundamental.limit",
+            "field.encyclopedia.micromechanics.bulova-torneado-fundamental.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

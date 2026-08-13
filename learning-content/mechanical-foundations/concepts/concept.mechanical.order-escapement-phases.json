@@ -1,0 +1,62 @@
+{
+  "id": "concept.mechanical.order-escapement-phases",
+  "version": "0.5.0",
+  "title": {
+    "es": "Ordenar las fases del escape",
+    "en": "Ordenar las fases del escape"
+  },
+  "summary": {
+    "es": "Ordenar las fases del escape mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Ordenar las fases del escape mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.mechanical.recognize-supports-clearances"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.order-escapement-phases"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "escapement",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.order-escapement-phases",
+    "activity.mechanical.identify-lock-impulse-drop"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Ordenar las fases del escape mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Ordenar las fases del escape mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Ordenar las fases del escape describe una relación causal dentro de escape: una entrada produce un cambio observable mediante una interfaz declarada. Ordenar las fases del escape mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Ordenar las fases del escape describe una relación causal dentro de escape: una entrada produce un cambio observable mediante una interfaz declarada. Ordenar las fases del escape mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "whyItMatters": {
+    "es": "Dominar ordenar las fases del escape permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega ordenar las fases del escape dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema escapement."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [
+    "misconception.mechanical.escapement-is-source"
+  ],
+  "knowledgeType": "conceptual-causal",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.escapement",
+  "targetEvidenceLevel": "causal-explanation"
+}

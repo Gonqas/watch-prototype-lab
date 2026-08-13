@@ -1,0 +1,34 @@
+{
+  "id": "evidence.advanced.service-baseline",
+  "version": "1.0.0",
+  "competencyId": "competency.advanced.service-baseline",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.advanced.service-baseline",
+    "version": "1.0.0",
+    "triggerEventType": "advanced-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.advanced.service-baseline",
+    "packageId": "wplab.horology.advanced-architecture-service",
+    "activityIds": [
+      "activity.advanced.service-baseline"
+    ],
+    "evidenceTemplateId": "evidence.advanced.service-baseline",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "caseIds",
+      "procedureId",
+      "sourceIds",
+      "unknowns"
+    ]
+  }
+}

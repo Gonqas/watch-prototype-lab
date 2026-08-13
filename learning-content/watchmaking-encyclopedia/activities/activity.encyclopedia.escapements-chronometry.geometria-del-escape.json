@@ -1,0 +1,335 @@
+{
+  "id": "activity.encyclopedia.escapements-chronometry.geometria-del-escape",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Bloqueo, draw, caída, impulso y seguridad",
+  "sceneIds": [
+    "scene.encyclopedia.escapements-chronometry.geometria-del-escape"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.geometria-del-escape"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.escapements-chronometry.geometria-del-escape"
+  ],
+  "rubricId": "rubric.encyclopedia.escapements-chronometry.geometria-del-escape",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+    "title": {
+      "es": "Explicar y transferir: Bloqueo, draw, caída, impulso y seguridad",
+      "en": "Explicar y transferir: Bloqueo, draw, caída, impulso y seguridad"
+    },
+    "description": {
+      "es": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+      "en": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 35,
+    "activityType": "observation-3d",
+    "movementIds": [
+      "movement.conceptual.mechanical-chain"
+    ],
+    "familyIds": [],
+    "subsystem": "escapement",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion",
+      "viewport.camera",
+      "viewport.overlay.labels"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Cinemática educativa reversible; no valida geometría, fuerzas, tolerancias, lubricación ni competencia física."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.daniels.escapements",
+      "source.private.vba-uhrentechnik",
+      "source.external.eta-swisslab-6497"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.escapements-chronometry.geometria-del-escape.causal-lab"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "escapement",
+      "commands": [
+        "step-escapement",
+        "introduce-fault",
+        "inspect",
+        "restore"
+      ],
+      "viewModes": [
+        "schematic",
+        "uncertainty",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.caida",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.seguridad-del-rodillo"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.caida",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.seguridad-del-rodillo"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.caida",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.seguridad-del-rodillo"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+        "blockId": "block.encyclopedia.escapements-chronometry.geometria-del-escape",
+        "conceptIds": [
+          "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+          "concept.encyclopedia.escapements-chronometry.geometria-del-escape.caida",
+          "concept.encyclopedia.escapements-chronometry.geometria-del-escape.seguridad-del-rodillo"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Bloqueo, draw, caída, impulso y seguridad sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Bloqueo, draw, caída, impulso y seguridad sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Reducir bloqueo para ganar amplitud puede dejar el escape inseguro. Antes de tocar paletas se comprueban centros, topes, pivotes, libertad y profundidad en todos los dientes. Un defecto periódico sugiere rueda o centro más que ambas paletas.",
+          "en": "Reducir bloqueo para ganar amplitud puede dejar el escape inseguro. Antes de tocar paletas se comprueban centros, topes, pivotes, libertad y profundidad en todos los dientes. Un defecto periódico sugiere rueda o centro más que ambas paletas."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+            "en": "Identificar la pregunta: ¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+          },
+          {
+            "es": "Dibujar la secuencia verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada.",
+            "en": "Dibujar la secuencia verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: profundidad de bloqueo; ángulo de draw; caída total; horn clearance; guard pin safety.",
+            "en": "Asignar magnitudes y evidencia: profundidad de bloqueo; ángulo de draw; caída total; horn clearance; guard pin safety."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Crea un árbol diagnóstico para caída excesiva constante frente a caída irregular por sectores, indicando observaciones que separan hipótesis.",
+          "en": "Crea un árbol diagnóstico para caída excesiva constante frente a caída irregular por sectores, indicando observaciones que separan hipótesis."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada.",
+            "en": "Completa la cadena con las etapas visibles: verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+            "en": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Crea un árbol diagnóstico para caída excesiva constante frente a caída irregular por sectores, indicando observaciones que separan hipótesis.",
+            "en": "Crea un árbol diagnóstico para caída excesiva constante frente a caída irregular por sectores, indicando observaciones que separan hipótesis."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Cuanto menor el bloqueo, más eficiente el escape",
+          "en": "Cuanto menor el bloqueo, más eficiente el escape"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Bloqueo, draw, caída, impulso y seguridad con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Bloqueo, draw, caída, impulso y seguridad con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Crea un árbol diagnóstico para caída excesiva constante frente a caída irregular por sectores, indicando observaciones que separan hipótesis.",
+        "en": "Crea un árbol diagnóstico para caída excesiva constante frente a caída irregular por sectores, indicando observaciones que separan hipótesis."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada, su evidencia y límites.",
+        "en": "La explicación conserva la cadena verificar centros y topes → evaluar bloqueo → comprobar draw → observar impulso → medir caída → probar seguridad con energía limitada, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Cuanto menor el bloqueo, más eficiente el escape».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Cuanto menor el bloqueo, más eficiente el escape»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+        "en": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Optimizar amplitud sacrificando seguridad. de Confundir caída irregular con un único ajuste de paleta..",
+        "en": "Busca evidencia para distinguir Optimizar amplitud sacrificando seguridad. de Confundir caída irregular con un único ajuste de paleta.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.escapements-chronometry.geometria-del-escape"
+      ],
+      "transferPrompt": {
+        "es": "Crea un árbol diagnóstico para caída excesiva constante frente a caída irregular por sectores, indicando observaciones que separan hipótesis.",
+        "en": "Crea un árbol diagnóstico para caída excesiva constante frente a caída irregular por sectores, indicando observaciones que separan hipótesis."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.draw",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.caida",
+        "concept.encyclopedia.escapements-chronometry.geometria-del-escape.seguridad-del-rodillo"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?",
+          "en": "¿Cómo se distingue un ajuste seguro de uno que simplemente funciona en una posición?"
+        },
+        {
+          "es": "¿Qué relación causal de «Bloqueo, draw, caída, impulso y seguridad» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Bloqueo, draw, caída, impulso y seguridad» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

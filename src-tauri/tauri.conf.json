@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Watch Prototype Lab",
+  "version": "0.13.1",
+  "identifier": "com.watchprototypelab.studio",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://127.0.0.1:5173",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Watch Prototype Lab",
+        "width": 1600,
+        "height": 980,
+        "minWidth": 760,
+        "minHeight": 620,
+        "resizable": true,
+        "fullscreen": false,
+        "decorations": true,
+        "backgroundColor": "#0f1213"
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: http://asset.localhost blob: data:; connect-src 'self' ipc: http://ipc.localhost; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self' data:"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "publisher": "Watch Prototype Lab",
+    "copyright": "Copyright © 2026 Watch Prototype Lab",
+    "category": "GraphicsAndDesign",
+    "shortDescription": "Estudio de ingeniería y academia relojera local.",
+    "longDescription": "Diseña, ensambla y valida relojes, y estudia relojería en Watchmaking Academy mediante rutas, modelos, laboratorios, evidencia y progreso privado que funcionan localmente.",
+    "resources": {
+      "../cad-engine/dist/watchlab-cad/": "cad-engine/"
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ],
+    "windows": {
+      "allowDowngrades": false,
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper",
+        "silent": true
+      },
+      "nsis": {
+        "installerIcon": "icons/icon.ico",
+        "uninstallerIcon": "icons/icon.ico",
+        "installMode": "currentUser",
+        "languages": ["Spanish", "English"],
+        "displayLanguageSelector": false,
+        "compression": "lzma",
+        "startMenuFolder": "Watch Prototype Lab"
+      }
+    }
+  }
+}

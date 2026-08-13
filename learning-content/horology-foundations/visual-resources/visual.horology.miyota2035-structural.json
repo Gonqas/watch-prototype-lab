@@ -1,0 +1,60 @@
+{
+  "id": "visual.horology.miyota2035-structural",
+  "version": "0.5.0",
+  "type": "real-movement-3d",
+  "purpose": {
+    "es": "Soportar miyota2035 structural con selectores, procedencia y alternativa accesible."
+  },
+  "status": "ready",
+  "sourceIds": [
+    "source.horology.original-functional-map",
+    "source.miyota.2035.product-page",
+    "source.miyota.2035.specification",
+    "source.miyota.2035.drawing",
+    "source.miyota.2035.instruction-manual",
+    "source.miyota.2035.parts-list-exploded-view"
+  ],
+  "fidelity": {
+    "geometry": "G2",
+    "kinematics": "K2",
+    "physics": "P0",
+    "limitations": [
+      "Ensamblaje R2 con geometría interna normalizada.",
+      "No es un gemelo exacto ni una validación de ingeniería."
+    ]
+  },
+  "lessonIds": [
+    "lesson.horology.quartz-chain",
+    "lesson.horology.isa8172-confidence"
+  ],
+  "movementIds": [
+    "fixture.miyota.2035.structural"
+  ],
+  "partSelectors": [],
+  "requiredCapabilities": [
+    "learning.scene-runtime",
+    "canonical-selectors-v1",
+    "viewport.selection",
+    "viewport.visibility",
+    "viewport.isolation",
+    "viewport.transparency",
+    "viewport.highlight",
+    "viewport.explode",
+    "viewport.camera",
+    "viewport.overlay.labels",
+    "viewport.overlay.arrows",
+    "viewport.energy-route",
+    "timeline.scrub",
+    "reduced-motion",
+    "viewport.restore"
+  ],
+  "dataRequirements": [
+    "Modelo técnico 4B intacto.",
+    "Identidad de cada pieza estable.",
+    "Alternativa textual funcional."
+  ],
+  "priority": "high",
+  "dependencyIds": [],
+  "currentModelSupport": "yes",
+  "viewportImpact": "configuration"
+}

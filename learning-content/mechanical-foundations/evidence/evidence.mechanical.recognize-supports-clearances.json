@@ -1,0 +1,35 @@
+{
+  "id": "evidence.mechanical.recognize-supports-clearances",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.recognize-supports-clearances",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.mechanical.recognize-supports-clearances",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.mechanical.recognize-supports-clearances",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.identify-pivots-supports",
+      "activity.mechanical.detect-mis-seated-wheel"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.recognize-supports-clearances",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

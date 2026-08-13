@@ -1,0 +1,183 @@
+{
+  "id": "route.capstone.personal-watch-design",
+  "version": "1.0.0",
+  "title": {
+    "es": "Ruta de diseño de un reloj propio",
+    "en": "Ruta de diseño de un reloj propio"
+  },
+  "purpose": {
+    "es": "Avanzar desde un movimiento adquirido hasta una arquitectura propia mediante decisiones, interfaces, riesgos y puertas explícitas.",
+    "en": "Avanzar desde un movimiento adquirido hasta una arquitectura propia mediante decisiones, interfaces, riesgos y puertas explícitas."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.capstone.design.requirements",
+    "module.capstone.design.acquired-movement",
+    "module.capstone.design.external-components",
+    "module.capstone.design.controlled-modification",
+    "module.capstone.design.own-movement",
+    "module.capstone.design.capstone"
+  ],
+  "competencyIds": [
+    "competency.capstone.design.requirements",
+    "competency.capstone.design.acquired-movement",
+    "competency.capstone.design.external-components",
+    "competency.capstone.design.controlled-modification",
+    "competency.capstone.design.own-movement",
+    "competency.capstone.design.capstone"
+  ],
+  "movementIds": [],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.iso.9241-11",
+    "source.iso.9241-210",
+    "source.w3c.wcag22",
+    "source.miyota.8215.official",
+    "source.eta.6497-2.communication",
+    "source.iso.1101",
+    "source.iso.22810",
+    "source.iso.21920-1",
+    "source.iso.14253-1",
+    "source.private.horologia-book",
+    "source.iso.286-1",
+    "source.roediger-karpicke.2006"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.capstone.design.01",
+        "order": 1,
+        "title": {
+          "es": "Pliego, usuario y arquitectura del producto",
+          "en": "Pliego, usuario y arquitectura del producto"
+        },
+        "outcome": {
+          "es": "¿Qué evidencia permite superar la puerta de pliego, usuario y arquitectura del producto?",
+          "en": "¿Qué evidencia permite superar la puerta de pliego, usuario y arquitectura del producto?"
+        },
+        "lessonId": "lesson.capstone.design.requirements",
+        "activityId": "activity.capstone.design.requirements",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.design.requirements"
+        ]
+      },
+      {
+        "id": "milestone.capstone.design.02",
+        "order": 2,
+        "title": {
+          "es": "Integración de un movimiento adquirido",
+          "en": "Integración de un movimiento adquirido"
+        },
+        "outcome": {
+          "es": "¿Qué evidencia permite superar la puerta de integración de un movimiento adquirido?",
+          "en": "¿Qué evidencia permite superar la puerta de integración de un movimiento adquirido?"
+        },
+        "lessonId": "lesson.capstone.design.acquired-movement",
+        "activityId": "activity.capstone.design.acquired-movement",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.design.acquired-movement"
+        ]
+      },
+      {
+        "id": "milestone.capstone.design.03",
+        "order": 3,
+        "title": {
+          "es": "Caja, esfera, agujas y experiencia de uso",
+          "en": "Caja, esfera, agujas y experiencia de uso"
+        },
+        "outcome": {
+          "es": "¿Qué evidencia permite superar la puerta de caja, esfera, agujas y experiencia de uso?",
+          "en": "¿Qué evidencia permite superar la puerta de caja, esfera, agujas y experiencia de uso?"
+        },
+        "lessonId": "lesson.capstone.design.external-components",
+        "activityId": "activity.capstone.design.external-components",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.design.external-components"
+        ]
+      },
+      {
+        "id": "milestone.capstone.design.04",
+        "order": 4,
+        "title": {
+          "es": "Modificación arquitectónica controlada",
+          "en": "Modificación arquitectónica controlada"
+        },
+        "outcome": {
+          "es": "¿Qué evidencia permite superar la puerta de modificación arquitectónica controlada?",
+          "en": "¿Qué evidencia permite superar la puerta de modificación arquitectónica controlada?"
+        },
+        "lessonId": "lesson.capstone.design.controlled-modification",
+        "activityId": "activity.capstone.design.controlled-modification",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.design.controlled-modification"
+        ]
+      },
+      {
+        "id": "milestone.capstone.design.05",
+        "order": 5,
+        "title": {
+          "es": "Arquitectura de un movimiento propio",
+          "en": "Arquitectura de un movimiento propio"
+        },
+        "outcome": {
+          "es": "¿Qué evidencia permite superar la puerta de arquitectura de un movimiento propio?",
+          "en": "¿Qué evidencia permite superar la puerta de arquitectura de un movimiento propio?"
+        },
+        "lessonId": "lesson.capstone.design.own-movement",
+        "activityId": "activity.capstone.design.own-movement",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.design.own-movement"
+        ]
+      },
+      {
+        "id": "milestone.capstone.design.06",
+        "order": 6,
+        "title": {
+          "es": "Dossier integral y puerta de prototipo",
+          "en": "Dossier integral y puerta de prototipo"
+        },
+        "outcome": {
+          "es": "¿Qué evidencia permite superar la puerta de dossier integral y puerta de prototipo?",
+          "en": "¿Qué evidencia permite superar la puerta de dossier integral y puerta de prototipo?"
+        },
+        "lessonId": "lesson.capstone.design.capstone",
+        "activityId": "activity.capstone.design.capstone",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.design.capstone"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.capstone.design.requirements",
+      "activity.capstone.design.acquired-movement",
+      "activity.capstone.design.external-components",
+      "activity.capstone.design.controlled-modification",
+      "activity.capstone.design.own-movement",
+      "activity.capstone.design.capstone"
+    ]
+  }
+}

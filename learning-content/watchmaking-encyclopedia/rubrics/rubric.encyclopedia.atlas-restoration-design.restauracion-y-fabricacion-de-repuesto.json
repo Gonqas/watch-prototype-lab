@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Restauración, donantes y fabricación de repuesto."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

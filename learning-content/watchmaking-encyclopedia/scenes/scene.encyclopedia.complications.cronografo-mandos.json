@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.complications.cronografo-mandos",
+  "version": "1.1.0",
+  "title": "Cuaderno: Cronógrafo: mando, rueda de pilares y sistema de levas",
+  "description": "¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Cronógrafo: mando, rueda de pilares y sistema de levas. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.complications.cronografo-mandos.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.complications.cronografo-mandos.answer",
+      "instructionMarkdown": "Explica **Cronógrafo: mando, rueda de pilares y sistema de levas** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.complications.cronografo-mandos.explain",
+          "promptMarkdown": "¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.complications.cronografo-mandos.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.cronografo-mandos.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.cronografo-mandos.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.cronografo-mandos.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.complications.cronografo-mandos.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por pulsador aporta carrera y sigue hasta siguiente pulso cambia estado.",
+                "en": "Empieza por pulsador aporta carrera y sigue hasta siguiente pulso cambia estado."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.complications.cronografo-mandos.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El cronógrafo superpone una máquina de estados al reloj base. Pulsadores, palancas y rueda de pilares o leva coordinan acoplamiento, freno y martillos. La rueda de pilares distribuye estados por columnas; un sistema de levas lo hace mediante perfiles y resortes. La calidad depende de geometría y sincronización, no del nombre aislado.",
+                "en": "El cronógrafo superpone una máquina de estados al reloj base. Pulsadores, palancas y rueda de pilares o leva coordinan acoplamiento, freno y martillos. La rueda de pilares distribuye estados por columnas; un sistema de levas lo hace mediante perfiles y resortes. La calidad depende de geometría y sincronización, no del nombre aislado."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?",
+              "en": "¿Cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena pulsador aporta carrera → mando indexa estado → palancas leen perfil → embrague conecta o desconecta → freno actúa → siguiente pulso cambia estado, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena pulsador aporta carrera → mando indexa estado → palancas leen perfil → embrague conecta o desconecta → freno actúa → siguiente pulso cambia estado, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.complications.cronografo-mandos.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.complications.cronografo-mandos.mechanism",
+            "field.encyclopedia.complications.cronografo-mandos.evidence",
+            "field.encyclopedia.complications.cronografo-mandos.limit",
+            "field.encyclopedia.complications.cronografo-mandos.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

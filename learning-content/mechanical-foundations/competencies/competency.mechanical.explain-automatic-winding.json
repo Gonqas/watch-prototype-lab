@@ -1,0 +1,28 @@
+{
+  "id": "competency.mechanical.explain-automatic-winding",
+  "version": "0.5.0",
+  "title": "Explicar la carga automática",
+  "description": "Explicar la carga automática mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.",
+  "prerequisites": [
+    "competency.mechanical.explain-keyless"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Explicar la carga automática",
+      "en": "Explicar la carga automática"
+    },
+    "description": {
+      "es": "Explicar la carga automática; el tiempo y las adaptaciones accesibles no penalizan.",
+      "en": "Explicar la carga automática; el tiempo y las adaptaciones accesibles no penalizan."
+    },
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "subsystem": "automatic",
+    "skillType": "procedure",
+    "sourceIds": [
+      "source.horology.original-mechanical-foundations"
+    ]
+  }
+}

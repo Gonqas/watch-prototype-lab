@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.calendarios.dedo-de-fecha",
+  "version": "1.1.0",
+  "title": {
+    "es": "dedo de fecha",
+    "en": "dedo de fecha"
+  },
+  "summary": {
+    "es": "Elemento que acumula o transmite movimiento para indexar el disco de calendario.",
+    "en": "Elemento que acumula o transmite movimiento para indexar el disco de calendario."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.automatico-y-reserva.rotor",
+    "concept.encyclopedia.complications.automatico-y-reserva.embrague-unidireccional",
+    "concept.encyclopedia.complications.automatico-y-reserva.indicador-de-reserva"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.calendarios"
+  ],
+  "movementIds": [],
+  "subsystem": "calendar",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.calendarios"
+  ],
+  "sourceIds": [
+    "source.official.miyota.8215",
+    "source.official.eta.2824",
+    "source.external.hodinkee-watch101"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.calendarios"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.calendarios",
+  "plainLanguage": {
+    "es": "Elemento que acumula o transmite movimiento para indexar el disco de calendario.",
+    "en": "Elemento que acumula o transmite movimiento para indexar el disco de calendario."
+  },
+  "technicalLanguage": {
+    "es": "dedo de fecha se interpreta mediante la cadena tren de horas alcanza fase → leva carga muelle → dedo libera o empuja → disco indexa → saltador centra → programa decide salto adicional y las condiciones declaradas en la unidad.",
+    "en": "dedo de fecha se interpreta mediante la cadena tren de horas alcanza fase → leva carga muelle → dedo libera o empuja → disco indexa → saltador centra → programa decide salto adicional y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?",
+    "en": "Permite explicar y comprobar ¿cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir dedo de fecha sin circularidad.",
+      "en": "Definir dedo de fecha sin circularidad."
+    },
+    {
+      "es": "Relacionar dedo de fecha con una entrada, una interfaz y una salida.",
+      "en": "Relacionar dedo de fecha con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

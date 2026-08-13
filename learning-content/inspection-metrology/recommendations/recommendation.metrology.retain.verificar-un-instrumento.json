@@ -1,0 +1,19 @@
+{
+  "id": "recommendation.metrology.retain.verificar-un-instrumento",
+  "version": "0.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar: Verificar un instrumento"
+  },
+  "reason": {
+    "es": "La retención exige una sesión independiente; el motor programará ventanas de 1, 7 y 21 días."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 296,
+  "target": {
+    "kind": "competency",
+    "id": "competency.metrology.verificar-un-instrumento"
+  },
+  "evidenceTemplateIds": [],
+  "required": false
+}

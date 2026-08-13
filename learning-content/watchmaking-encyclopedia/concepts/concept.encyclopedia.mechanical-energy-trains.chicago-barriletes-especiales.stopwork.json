@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales.stopwork",
+  "version": "1.1.0",
+  "title": {
+    "es": "stopwork",
+    "en": "stopwork"
+  },
+  "summary": {
+    "es": "Mecanismo que limita el rango de cuerda y descarga.",
+    "en": "Mecanismo que limita el rango de cuerda y descarga."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.factor-de-ocupacion",
+    "concept.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.gancho-de-muelle",
+    "concept.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.reconstruccion-dimensional"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales"
+  ],
+  "movementIds": [],
+  "subsystem": "barrel",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales"
+  ],
+  "sourceIds": [
+    "source.private.chicago.6",
+    "source.private.toh.ch04",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+  "plainLanguage": {
+    "es": "Mecanismo que limita el rango de cuerda y descarga.",
+    "en": "Mecanismo que limita el rango de cuerda y descarga."
+  },
+  "technicalLanguage": {
+    "es": "stopwork se interpreta mediante la cadena identificar entrada → seguir carga del muelle → localizar miembro fijo → localizar salida → detectar limitador → comprobar apoyos y las condiciones declaradas en la unidad.",
+    "en": "stopwork se interpreta mediante la cadena identificar entrada → seguir carga del muelle → localizar miembro fijo → localizar salida → detectar limitador → comprobar apoyos y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué cambia en la cadena de par al cambiar la arquitectura del barrilete?",
+    "en": "Permite explicar y comprobar ¿qué cambia en la cadena de par al cambiar la arquitectura del barrilete?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir stopwork sin circularidad.",
+      "en": "Definir stopwork sin circularidad."
+    },
+    {
+      "es": "Relacionar stopwork con una entrada, una interfaz y una salida.",
+      "en": "Relacionar stopwork con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "transfer",
+  "availability": "prerequisite-blocked"
+}

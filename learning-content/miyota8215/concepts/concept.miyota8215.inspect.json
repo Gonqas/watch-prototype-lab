@@ -1,0 +1,73 @@
+{
+  "id": "concept.miyota8215.inspect",
+  "version": "0.5.0",
+  "title": {
+    "es": "Inspeccionar",
+    "en": "Inspeccionar"
+  },
+  "summary": {
+    "es": "Inspeccionar con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Inspeccionar con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.miyota8215.virtual-disassembly",
+    "concept.miyota8215.preserve-identity-orientation"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.distinguish-data-reconstruction"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.inspect"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "inspection",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.inspect-parts",
+    "activity.miyota8215.detect-symbolic-defect"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Inspeccionar separa observación, síntoma, hipótesis y comprobación en inspección. Inspeccionar con un modelo estructural, fuentes, operaciones y límites declarados. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles.",
+    "en": "Inspeccionar separa observación, síntoma, hipótesis y comprobación en inspección. Inspeccionar con un modelo estructural, fuentes, operaciones y límites declarados. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.virtual-assembly",
+    "concept.miyota8215.form-hypothesis"
+  ],
+  "plainLanguage": {
+    "es": "Inspeccionar con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Inspeccionar con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Dominar inspeccionar permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega inspeccionar dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema inspection."
+    }
+  ],
+  "misconceptionIds": [
+    "misconception.miyota8215.symptom-is-cause"
+  ],
+  "knowledgeType": "diagnostic",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.inspection",
+  "targetEvidenceLevel": "transfer"
+}

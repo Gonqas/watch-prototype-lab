@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.excentricidad",
+  "version": "1.1.0",
+  "title": {
+    "es": "excentricidad",
+    "en": "excentricidad"
+  },
+  "summary": {
+    "es": "Separación entre el eje geométrico de una característica y el eje de rotación de referencia.",
+    "en": "Separación entre el eje geométrico de una característica y el eje de rotación de referencia."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.datum",
+    "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.cadena-de-proceso",
+    "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.sobrematerial"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "movementIds": [],
+  "subsystem": "turning",
+  "routeIds": [
+    "route.encyclopedia.micromechanics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "sourceIds": [
+    "source.private.daniels.turning",
+    "source.private.daniels.hand-tools",
+    "source.institutional.wostep.watchmaker"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+  "plainLanguage": {
+    "es": "Separación entre el eje geométrico de una característica y el eje de rotación de referencia.",
+    "en": "Separación entre el eje geométrico de una característica y el eje de rotación de referencia."
+  },
+  "technicalLanguage": {
+    "es": "excentricidad se interpreta mediante la cadena preparar centros o superficie → elegir sujeción → alinear apoyo y buril → desbastar → medir sin retirar referencia → acabar y verificar al invertir y las condiciones declaradas en la unidad.",
+    "en": "excentricidad se interpreta mediante la cadena preparar centros o superficie → elegir sujeción → alinear apoyo y buril → desbastar → medir sin retirar referencia → acabar y verificar al invertir y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?",
+    "en": "Permite explicar y comprobar ¿cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir excentricidad sin circularidad.",
+      "en": "Definir excentricidad sin circularidad."
+    },
+    {
+      "es": "Relacionar excentricidad con una entrada, una interfaz y una salida.",
+      "en": "Relacionar excentricidad con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

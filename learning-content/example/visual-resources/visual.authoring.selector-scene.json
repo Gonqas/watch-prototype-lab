@@ -1,0 +1,51 @@
+{
+  "id": "visual.authoring.selector-scene",
+  "version": "1.0.0",
+  "type": "conceptual-3d",
+  "purpose": {
+    "es": "Mostrar la resolución de un selector semántico sobre una entidad neutral del proyecto activo.",
+    "en": "Show semantic selector resolution on a neutral entity in the active project."
+  },
+  "status": "ready",
+  "sourceIds": [
+    "source.authoring.system-contracts"
+  ],
+  "fidelity": {
+    "geometry": "G2",
+    "kinematics": "K1",
+    "physics": "P0",
+    "limitations": [
+      "Geometría procedente del proyecto activo.",
+      "Movimiento meramente ilustrativo."
+    ]
+  },
+  "lessonIds": [
+    "lesson.authoring.traceability"
+  ],
+  "movementIds": [],
+  "partSelectors": [
+    {
+      "selector": {
+        "by": "role",
+        "value": "case"
+      },
+      "cardinality": "exactly-one"
+    }
+  ],
+  "requiredCapabilities": [
+    "viewport.selection",
+    "viewport.isolation",
+    "viewport.highlight",
+    "viewport.explode",
+    "viewport.camera"
+  ],
+  "dataRequirements": [
+    "Una entidad del proyecto con el rol semántico case."
+  ],
+  "priority": "high",
+  "dependencyIds": [
+    "visual.authoring.selector-text-alternative"
+  ],
+  "currentModelSupport": "yes",
+  "viewportImpact": "configuration"
+}

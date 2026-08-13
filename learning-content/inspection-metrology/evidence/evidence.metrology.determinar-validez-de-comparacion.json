@@ -1,0 +1,46 @@
+{
+  "id": "evidence.metrology.determinar-validez-de-comparacion",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.registrar-una-unidad-fisica",
+  "kind": "artifact",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.activity-metrology-determinar-validez-de-comparacion",
+    "version": "0.1.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "measurement",
+    "competencyId": "competency.metrology.registrar-una-unidad-fisica",
+    "packageId": "wplab.horology.inspection-metrology",
+    "activityIds": [
+      "activity.metrology.determinar-validez-de-comparacion"
+    ],
+    "evidenceTemplateId": "evidence.metrology.determinar-validez-de-comparacion",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "specimenId",
+      "componentId",
+      "imageAssetId",
+      "regionAnnotationId",
+      "instrumentId",
+      "instrumentVerificationId",
+      "readingIds",
+      "measurementSeriesId",
+      "calculation",
+      "uncertainty",
+      "findingId",
+      "confidence",
+      "comparisonId",
+      "proposalId",
+      "hintEventIds",
+      "adaptations"
+    ]
+  }
+}

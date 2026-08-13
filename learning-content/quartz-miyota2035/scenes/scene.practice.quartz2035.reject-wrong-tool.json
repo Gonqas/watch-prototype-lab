@@ -1,0 +1,317 @@
+{
+  "id": "scene.practice.quartz2035.reject-wrong-tool",
+  "version": "0.5.0",
+  "title": "Rechazar una herramienta inadecuada · práctica específica",
+  "description": "Rechazar una herramienta inadecuada en el banco virtual 2035, con comandos deterministas, evidencia, cancelación y restauración. La pregunta, el feedback y la evidencia pertenecen exclusivamente a este objetivo.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.miyota.2035.structural"
+  },
+  "accessibility": {
+    "textualAlternative": "Paleta accesible de soporte, destornillador, pinzas, lupa, pera, útiles de agujas, calibre y multímetro conceptual. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.",
+    "reducedMotionAlternative": "Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.",
+    "keyboardActions": [
+      "Tabular en orden banco, herramientas, movimiento, bandeja y acciones.",
+      "Activar con Intro o Espacio.",
+      "Cancelar o restaurar mediante botones nombrados."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono, patrón y estado acompañan cada color.",
+      "Cada instancia tiene un nombre accesible único."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "electronic-control"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "durationMs": 0,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 700,
+      "operation": "explode",
+      "targets": [],
+      "value": 0.1,
+      "durationMs": 350,
+      "essential": false,
+      "waitFor": "none"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.quartz2035.tools.scope",
+      "markdown": "Herramientas fundamentales: representación educativa reversible. No es un procedimiento físico validado; consulta la ficha técnica para conocer su alcance geométrico, de movimiento y de física.",
+      "accessibleLabel": "Herramientas fundamentales. Alcance educativo y limitaciones disponibles en texto."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.quartz2035.tools.observe",
+      "instructionMarkdown": "Observa y registra el estado inicial de “Herramientas fundamentales” antes de actuar.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.quartz2035.tools.execute",
+      "instructionMarkdown": "Ejecuta «Rechazar una herramienta inadecuada». Antes de confirmar, compara tu predicción, el cambio observable, la relación implicada y la autoridad de la fuente.",
+      "questions": [
+        {
+          "id": "question.practice.quartz2035.reject-wrong-tool.criterion",
+          "promptMarkdown": "¿Por qué debe rechazarse una herramienta que parece caber pero no coincide con la interfaz declarada?",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.practice.quartz2035.reject-wrong-tool.evidence",
+              "label": "Porque la proximidad visual no garantiza contacto correcto ni una operación autorizada",
+              "labels": {
+                "es": "Porque la proximidad visual no garantiza contacto correcto ni una operación autorizada",
+                "en": "Porque la proximidad visual no garantiza contacto correcto ni una operación autorizada"
+              }
+            },
+            {
+              "id": "option.practice.quartz2035.reject-wrong-tool.appearance",
+              "label": "Porque toda herramienta debe tener el mismo color que la pieza",
+              "labels": {
+                "es": "Porque toda herramienta debe tener el mismo color que la pieza",
+                "en": "Porque toda herramienta debe tener el mismo color que la pieza"
+              }
+            },
+            {
+              "id": "option.practice.quartz2035.reject-wrong-tool.authority",
+              "label": "Porque una herramienta solo puede utilizarse una vez por sesión",
+              "labels": {
+                "es": "Porque una herramienta solo puede utilizarse una vez por sesión",
+                "en": "Porque una herramienta solo puede utilizarse una vez por sesión"
+              }
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "¿Por qué debe rechazarse una herramienta que parece caber pero no coincide con la interfaz declarada?"
+            },
+            "feedback": {
+              "es": "Encajar visualmente no prueba compatibilidad ni seguridad."
+            }
+          }
+        },
+        {
+          "id": "question.practice.quartz2035.reject-wrong-tool.reasoning",
+          "promptMarkdown": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Por qué debe rechazarse una herramienta que parece caber pero no coincide con la interfaz declarada?",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué cambió o qué comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué relación, interfaz o regla explica el resultado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué fuente o límite condiciona la conclusión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Por qué debe rechazarse una herramienta que parece caber pero no coincide con la interfaz declarada?"
+            },
+            "feedback": {
+              "es": "La revisión debe comprobar la relación específica: Encajar visualmente no prueba compatibilidad ni seguridad."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.practice.quartz2035.reject-wrong-tool.criterion",
+          "expectedOptionIds": [
+            "option.practice.quartz2035.reject-wrong-tool.evidence"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.practice.quartz2035.reject-wrong-tool.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Rechazar una herramienta inadecuada · práctica específica",
+      "en": "Rechazar una herramienta inadecuada · práctica específica"
+    },
+    "purpose": {
+      "es": "Resolver «Rechazar una herramienta inadecuada» mediante una decisión específica, explicación propia, restauración y transferencia."
+    },
+    "prerequisites": [
+      "concept.quartz2035.prepare-safe-workstation"
+    ],
+    "narrative": {
+      "es": "Compara rol, acceso e interfaz, no tamaño aparente. Encajar visualmente no prueba compatibilidad ni seguridad."
+    },
+    "initialFraming": {
+      "es": "Banco estable con pieza, herramienta, bandeja, fuentes y una ficha técnica de alcance accesible."
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "storyboard.step.quartz2035.tools.observe",
+        "sceneStepId": "step.quartz2035.tools.observe",
+        "narrative": {
+          "es": "Observar y documentar antes de manipular."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "inspect",
+          "record"
+        ],
+        "interaction": {
+          "es": "Usar teclado, lista accesible o selección directa."
+        },
+        "feedback": {
+          "es": "El feedback nombra herramienta, dependencia, identidad y autoridad de la regla."
+        },
+        "hint": {
+          "es": "Las pistas disminuyen según el modo y nunca penalizan una adaptación de accesibilidad."
+        }
+      },
+      {
+        "id": "storyboard.step.quartz2035.tools.execute",
+        "sceneStepId": "step.quartz2035.tools.execute",
+        "narrative": {
+          "es": "Ejecutar, comprobar y restaurar."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "workbench-command",
+          "checkpoint",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Usar teclado, lista accesible o selección directa."
+        },
+        "feedback": {
+          "es": "El feedback nombra herramienta, dependencia, identidad y autoridad de la regla."
+        },
+        "hint": {
+          "es": "Las pistas disminuyen según el modo y nunca penalizan una adaptación de accesibilidad."
+        }
+      }
+    ],
+    "ending": {
+      "es": "Guardar evidencia provisional y restaurar el estado inicial o conservar un punto de control explícito."
+    },
+    "restoration": {
+      "es": "Restaurar piezas, bandejas, herramientas, orientación, selección y vista de forma idempotente."
+    },
+    "accessibility": {
+      "es": "Banco, herramientas y bandeja equivalentes como listas ordenadas y menús de acción."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos, sin arrastre ni movimiento automático, con la misma rúbrica."
+    },
+    "evidenceTemplateIds": [
+      "evidence.quartz2035.tool"
+    ],
+    "technicalCriteria": [
+      "Identidad de cada pieza estable.",
+      "Acción validada y resultado registrado.",
+      "El proyecto técnico y el modelo de práctica permanecen intactos."
+    ],
+    "limitations": [
+      "Los niveles de reconstrucción y fidelidad se conservan en la ficha técnica.",
+      "Sin secuencia completa de servicio, pares, lubricación, tolerancias ni valores eléctricos inventados."
+    ]
+  },
+  "restorePreviousState": true
+}

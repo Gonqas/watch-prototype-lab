@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.atlas-restoration-design.identidad-y-comparacion.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Identidad, atlas y comparación entre familias",
+    "en": "Repasar Identidad, atlas y comparación entre familias"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 420,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.atlas-restoration-design.identidad-y-comparacion"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.atlas-restoration-design.identidad-y-comparacion"
+  ],
+  "required": false
+}

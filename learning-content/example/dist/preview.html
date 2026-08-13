@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Preview · Ejemplo de autoría declarativa</title>
+<style>body{font:16px/1.55 system-ui;max-width:1200px;margin:auto;padding:2rem;color:#18201c;background:#f5f3ec}header,section,details{background:white;border:1px solid #d8d4c7;padding:1.25rem;margin:1rem 0}code{background:#e9ece7;padding:.15rem .35rem}pre{white-space:pre-wrap;font:14px/1.5 system-ui;background:#f5f3ec;padding:1rem}table{width:100%;border-collapse:collapse}th,td{border:1px solid #d8d4c7;padding:.55rem;text-align:left;vertical-align:top}.error{color:#9b1c1c}.warning{color:#855700}.badge{display:inline-block;border:1px solid;padding:.2rem .5rem;margin-right:.5rem}</style>
+</head><body><header><p>PREVISUALIZACIÓN DE AUTORÍA</p><h1>Ejemplo de autoría declarativa</h1><p><code>wplab.example.authoring-course@1.0.0</code></p><p>Esta vista no sustituye la ejecución en Watch Prototype Lab.</p></header>
+<section><span class="badge">draft</span><span class="badge">integrated</span><span class="badge">es-ES, en-US</span><h2>Jerarquía</h2><section><h2>Primer paquete trazable</h2><p>Recorrer un ejemplo editorial completo y comprobar que cada afirmación, recurso y evaluación tiene una procedencia explícita.</p><ul><li><strong>De la intención a la escena</strong><ul><li><strong>Trazabilidad antes de animar</strong><ul><li>Recorrer un selector trazable</li></ul></li><li><strong>Revisar el storyboard</strong><ul></ul></li></ul></li></ul></section></section>
+<section><h2>Lecciones, texto y claims</h2><details><summary><strong>Trazabilidad antes de animar</strong> · 1 claims · 1 actividades</summary>
+      <article><h3>De la fuente a la evidencia</h3><pre>Una actividad trazable enlaza una {{term:term.authoring.claim}}, una {{term:term.authoring.fidelity}} declarada y un {{term:term.authoring.selector}} estable. Este ejemplo enseña el contrato, no relojería.</pre></article>
+      <h3>Claims</h3><ul><li>claim.authoring.declarative-chain · source/original-explanation · G0/K0/P0 · source.authoring.system-contracts</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.authoring.system-contracts</li><li>source.authoring.original-guide</li><li>visual.authoring.selector-scene</li><li>visual.authoring.selector-text-alternative</li></ul>
+    </details><details><summary><strong>Revisar el storyboard</strong> · 0 claims · 0 actividades</summary>
+      <article><h3>Relacionar intención y contrato</h3><pre>Comprueba que cada paso del storyboard tiene un paso de escena, una interacción observable y una regla de evidencia. No añadas datos relojeros al ejemplo.</pre></article>
+      <h3>Claims</h3><p>—</p>
+      <h3>Fuentes y recursos</h3><ul><li>source.authoring.original-guide</li></ul>
+    </details></section>
+<section><h2>Escenas, storyboards y operaciones</h2><details><summary><strong>Del storyboard al evento</strong> · 3 pasos · 3 operaciones</summary>
+    <p>La escena aísla una entidad neutral, solicita una predicción y registra una selección confirmada. Alternativa textual: la entidad resuelta aparece en una lista seleccionable.</p>
+    <p><strong>Fixture:</strong> {}</p>
+    <p><strong>Operaciones:</strong> highlight, explode, explode</p>
+    <p><strong>Overlays:</strong> label:overlay.authoring.selector, text:overlay.authoring.scope</p>
+    <p><strong>Storyboard:</strong> El autor primero predice el selector estable, luego manipula la entidad y finalmente explica qué se convertirá en evidencia.</p>
+    <p><strong>Alternativa textual:</strong> Todos los pasos se completan mediante controles nativos y una lista textual equivalente.</p>
+    <p><strong>Reduced motion:</strong> Las transiciones de explosionado se reducen a cambios instantáneos.</p>
+  </details></section>
+<section><h2>Banco, herramientas, piezas, bandejas y dependencias</h2>
+  <p>Este paquete no declara banco virtual.</p>
+</section>
+<section><h2>Laboratorio mecánico, cálculos, grafos y modos</h2>
+  <p>Este paquete no declara laboratorio mecánico.</p>
+</section>
+<section><h2>Laboratorio de calibre, operaciones y autoridad</h2>
+  <p>Este paquete no declara laboratorio de calibre.</p>
+</section>
+<section><h2>Competencias, evidencia y rúbricas</h2><table><thead><tr><th>Competencia</th><th>Descripción</th><th>Evidencia</th><th>Rúbricas</th></tr></thead><tbody><tr><td>competency.authoring.traceable-activity</td><td>Relaciona intención, fuente, selector, interacción, evidencia y rúbrica sin introducir lógica en la interfaz.</td><td>evidence.authoring.selection</td><td>rubric.authoring.traceable-activity→demonstrated</td></tr></tbody></table></section>
+<section><h2>Fuentes</h2><table><thead><tr><th>ID</th><th>Autoridad</th><th>Recurso</th><th>Localizador</th><th>Claim respaldado</th></tr></thead><tbody><tr><td>source.authoring.system-contracts</td><td>original-educational</td><td>Contratos aprobados de Aprender, Sistemas 0–3</td><td>docs/APRENDER-SISTEMA-3.md</td><td>El paquete separa contenido declarativo, runtime, persistencia y presentación.</td></tr><tr><td>source.authoring.original-guide</td><td>original-educational</td><td>Guía original de autoría de contenido</td><td>docs/APRENDER-AUTORIA-CONTENIDO.md</td><td>Un storyboard puede enlazar intención pedagógica con acciones declarativas del runtime.</td></tr></tbody></table></section>
+<section><h2>Glosario</h2><table><thead><tr><th>ID</th><th>ES</th><th>EN</th><th>Definición</th></tr></thead><tbody><tr><td>term.authoring.selector</td><td>Selector semántico</td><td>Semantic selector</td><td>Referencia declarativa que resuelve entidades por identidad, rol, subsistema u otra propiedad estable.</td></tr><tr><td>term.authoring.fidelity</td><td>Fidelidad G/K/P</td><td>G/K/P fidelity</td><td>Declaración separada de fidelidad geométrica, cinemática y física, acompañada de limitaciones.</td></tr><tr><td>term.authoring.claim</td><td>Afirmación técnica</td><td>Technical claim</td><td>Proposición clasificable cuya fuente, método, fidelidad y limitaciones pueden inspeccionarse.</td></tr></tbody></table></section>
+<section><h2>Recursos visuales</h2><table><thead><tr><th>ID</th><th>Tipo</th><th>Estado</th><th>Prioridad</th><th>G/K/P</th><th>Modelo actual</th><th>Cardinalidad</th></tr></thead><tbody><tr><td>visual.authoring.selector-scene</td><td>conceptual-3d</td><td>ready</td><td>high</td><td>G2/K1/P0</td><td>yes</td><td>&quot;exactly-one&quot;</td></tr><tr><td>visual.authoring.selector-text-alternative</td><td>accessible-text-alternative</td><td>approved</td><td>critical</td><td>G0/K0/P0</td><td>yes</td><td>&quot;exactly-one&quot;</td></tr></tbody></table></section>
+<section><h2>Warnings declarados</h2><ul><li>activity.authoring.selector-walkthrough: Ejemplo de autoría: no es contenido relojero.</li><li>activity.authoring.selector-walkthrough: La escena valida contratos, no ingeniería.</li></ul></section>
+<section><h2>Diagnósticos</h2><ul><li>Sin diagnósticos.</li></ul></section></body></html>

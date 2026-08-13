@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Torno relojero, pinzas y trabajo entre puntos",
+    "en": "Repasar Torno relojero, pinzas y trabajo entre puntos"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 419,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "required": false
+}

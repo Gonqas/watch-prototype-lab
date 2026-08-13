@@ -1,0 +1,169 @@
+{
+  "id": "block.mechanical.theory.train",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Teoría previa · train",
+  "bodyMarkdown": "# Teoría fundamental · ruedas, piñones y tren de rodaje\n\n## Antes de empezar\n\nEl tren de rodaje transforma una rotación disponible en otras velocidades y pares útiles. No es una hilera de discos: cada móvil suele combinar una rueda de mayor diámetro y un piñón solidario en el mismo eje; la rueda de una etapa engrana con el piñón del móvil siguiente. Esta alternancia permite acumular relaciones grandes en poco espacio. Para leerla hay que seguir interfaces y ejes, no simplemente saltar a la pieza más próxima.\n\nAntes de entrar al laboratorio debes dominar tres operaciones mentales: identificar quién conduce, calcular la relación de una etapa y encadenar etapas sin perder el sentido de giro. También debes distinguir un dato didáctico —por ejemplo, un número de dientes elegido para que el cálculo sea claro— de un conteo documentado de un calibre real.\n\n## Vocabulario estructural\n\nUna **rueda** es el elemento dentado grande de un móvil; un **piñón** suele ser el elemento pequeño de acero. Cuando ambos pertenecen al mismo móvil, giran con la misma velocidad angular porque comparten eje. Cuando la rueda A engrana con el piñón B, forman una interfaz entre dos ejes diferentes. El **móvil central**, la **tercera rueda**, la **cuarta rueda** y la **rueda de escape** son nombres funcionales comunes, pero su posición y su relación exacta varían entre arquitecturas.\n\nLos pivotes apoyan el móvil en cojinetes o rubíes de platina y puente. Un tren solo puede transmitir si su geometría permite contacto dentado y sus apoyos permiten libertad. El laboratorio declara «engranado» o «desengranado» como estado semántico. No calcula perfiles cicloidales, módulo, corrección, juego, penetración ni distancia entre centros real.\n\n## Relación de una etapa\n\nPara un par externo ideal, si la conductora tiene Z₁ dientes y la conducida Z₂, la velocidad de salida cumple ω₂ = −ω₁·Z₁/Z₂. El signo menos indica inversión del sentido. Si una rueda de 80 dientes conduce un piñón de 10, el piñón gira ocho vueltas por cada vuelta de la rueda y lo hace en sentido contrario. Para el par ideal, ignorando pérdidas, τ₂ = −τ₁·Z₂/Z₁: la ganancia de velocidad se paga con una reducción de par.\n\nLa palabra «reducción» puede causar confusión porque depende de qué magnitud y convención se cite. Es más seguro escribir siempre: conductora, conducida, dientes de entrada, dientes de salida y magnitud buscada. Después sustituye números. Una cifra aislada como 8:1 no dice por sí sola qué eje gira ocho veces.\n\nEn un tren compuesto con varias etapas, la relación de velocidades es el producto de las relaciones de cada engrane. Los dientes de los elementos solidarios en un mismo eje no crean una nueva inversión: solo preparan el siguiente engrane. El sentido final depende del número de engranes externos activos. Dos engranes invierten dos veces y recuperan el sentido inicial; tres producen sentido opuesto.\n\n## Ruedas intermedias y cancelación\n\nUna rueda intermedia simple puede cambiar el sentido y la separación entre ejes sin alterar el módulo de la relación total, porque su número de dientes aparece una vez en numerador y otra en denominador y se cancela. Pero esto solo es cierto para la configuración descrita. Si la rueda intermedia comparte eje con otro piñón de diferente número de dientes, ya forma parte de un tren compuesto y sí modifica la relación.\n\nEsta distinción evita un error frecuente: multiplicar todos los dientes visibles sin reconstruir primero qué elementos comparten eje y cuáles engranan. El grafo funcional debe contener dos tipos de relación diferentes: **solidario con** y **engrana con**. La matemática se deriva del grafo, no al revés.\n\n## Geometría, contacto y límites\n\nDos círculos que se solapan en pantalla no garantizan engrane. Para una geometría fabricable habría que definir sistema de dentado, paso o módulo, número de dientes, diámetros primitivos, adendo, dedendo, correcciones, espesor, ángulo de presión o geometría cicloidal, distancia entre centros, juego y tolerancias. En relojería, el perfil se optimiza para pequeñas cantidades de dientes y condiciones particulares. El laboratorio secuencia cinemática educativa coordina sentidos y relaciones declaradas; no valida contacto.\n\nRetirar una etapa debe interrumpir todo lo situado aguas abajo. Si una rueda posterior sigue girando sin una ruta alternativa declarada, la animación es causalmente falsa. Del mismo modo, bloquear una rueda puede detener etapas anteriores en un modelo rígido ideal, pero un reloj físico puede almacenar deformación, deslizar o sufrir daño. El laboratorio no simula esos esfuerzos.\n\n## Ejemplo resuelto\n\nEtapa 1: una rueda de 72 dientes conduce un piñón de 12. La salida gira −72/12 = −6 veces por vuelta de entrada. El piñón comparte eje con una rueda de 60 dientes. Etapa 2: esa rueda conduce un piñón de 10, así que la nueva relación es −60/10 = −6. El producto es (+36): la salida final gira treinta y seis veces por vuelta de la primera rueda y recupera el sentido inicial. En un modelo ideal, el par final sería aproximadamente 1/36 del inicial antes de pérdidas.\n\nSi se desacopla la segunda etapa, la primera pareja conserva su relación, pero la salida final debe quedar a cero. Esta predicción separa cálculo local, relación total y continuidad funcional.\n\n## Errores habituales\n\n- Invertir Z conductora y Z conducida porque se memoriza una fracción sin nombrar ejes.\n- Contar como engrane la unión solidaria de rueda y piñón de un mismo móvil.\n- Creer que una rueda intermedia siempre cambia la relación o que nunca la cambia.\n- Inferir contacto por cercanía visual.\n- Atribuir los dientes educativos al MIYOTA 8215 u otro calibre.\n\n## Comprobación antes del laboratorio\n\nDibuja dos ejes compuestos y marca con una línea continua los elementos solidarios y con una flecha los engranes. Calcula relación, sentido y efecto de retirar la segunda etapa. Explica qué información adicional necesitarías para diseñar dientes reales. Si no puedes separar cinemática ideal de geometría fabricable, vuelve a esta lectura antes de construir el tren virtual.\n\n## Resumen\n\nEl tren se entiende como un grafo de ejes solidarios y engranes. La relación total se multiplica, el sentido se deriva del número y tipo de contactos, y toda afirmación geométrica exige datos que la representación geometría conceptual no contiene.",
+  "claims": [
+    {
+      "id": "claim.mechanical.theory.train",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "La teoría de train sintetiza principios generales y separa explícitamente el modelo educativo de una validación física o de calibre.",
+      "sourceStatement": "Síntesis original contrastada con las fuentes declaradas; sin copiar sus textos ni transferir autoridad de una fuente secundaria.",
+      "method": "Síntesis conceptual, derivación ideal y delimitación G/K/P para estudio previo al laboratorio.",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Geometría pedagógica normalizada; no representa un calibre fabricable.",
+          "La coordinación cinemática demuestra relaciones y sentidos, no tolerancias ni rendimiento real.",
+          "No modela elasticidad real, pérdidas, lubricación, desgaste, choque ni marcha cronométrica."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "mechanical-theory:train:0.5.0",
+      "recordedAt": "2026-08-02T00:00:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.external.ciechanowski-mechanical-watch",
+          "authority": "educational-secondary",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "Mechanical Watch",
+            "locator": "https://ciechanow.ski/mechanical-watch/"
+          },
+          "authorOrManufacturer": "Bartosz Ciechanowski",
+          "sourceType": "educational-visualization",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "D",
+          "sourceClass": "educational-explainer",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "cadena energética",
+            "barrilete",
+            "tren",
+            "escape",
+            "volante",
+            "espiral",
+            "puesta en hora"
+          ],
+          "pedagogicalUses": [
+            "theory",
+            "visual-reference",
+            "worked-example"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar como explicación secundaria y patrón de interacción; validar cualquier dimensión o afirmación específica en fuentes técnicas.",
+          "limitations": [
+            "La claridad visual no convierte la geometría ilustrada en un calibre real ni en una simulación física validada."
+          ],
+          "supportedClaim": "Explicación visual integrada de cómo cooperan los principales subsistemas de un reloj mecánico.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.external.timezone-illustrated-glossary",
+          "authority": "technical-training",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "TimeZone Watch School · Illustrated Glossary of Watch Parts",
+            "locator": "https://www.timezonewatchschool.com/WatchSchool/Glossary/glossary.shtml"
+          },
+          "authorOrManufacturer": "Walt Odets · TimeZone Watch School",
+          "sourceType": "curated-external-resource",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "B",
+          "sourceClass": "institutional-training",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "platina",
+            "puentes",
+            "puesta en hora",
+            "minutería",
+            "volante",
+            "escape",
+            "barrilete",
+            "tren",
+            "tornillos"
+          ],
+          "pedagogicalUses": [
+            "terminology",
+            "theory",
+            "visual-reference"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar para preentrenamiento terminológico y contraste visual; no atribuir sus imágenes a otro calibre.",
+          "limitations": [
+            "Material formativo histórico y general, no documentación de fabricante."
+          ],
+          "supportedClaim": "Glosario ilustrado organizado por caras y subsistemas de un movimiento mecánico.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.external.bobinchak-school",
+          "authority": "expert-practice",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "Watchmaking School From a Student's Perspective",
+            "locator": "https://www.bobinchak.com/"
+          },
+          "authorOrManufacturer": "Nathan Bobinchak",
+          "sourceType": "expert-technical-article",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "C",
+          "sourceClass": "expert-observation",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "escuela de relojería",
+            "micromecánica",
+            "perfiles de dientes",
+            "escape",
+            "servicio"
+          ],
+          "pedagogicalUses": [
+            "worked-example",
+            "procedure-contrast",
+            "visual-reference"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar los artículos como casos de aprendizaje y contrastar datos técnicos o de calibre con documentación primaria.",
+          "limitations": [
+            "Relato de una formación y práctica concretas; no constituye por sí solo un currículo normativo."
+          ],
+          "supportedClaim": "Archivo de aprendizaje formal y práctica profesional con casos técnicos y proyectos de micromecánica.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.build-functional-train",
+      "concept.mechanical.calculate-simple-ratios",
+      "concept.mechanical.determine-rotation-direction"
+    ],
+    "estimatedMinutes": 34,
+    "userPaced": true
+  }
+}

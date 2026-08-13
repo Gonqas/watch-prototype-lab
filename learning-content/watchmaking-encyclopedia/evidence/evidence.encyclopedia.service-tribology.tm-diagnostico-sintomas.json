@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.9,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.complications.toh-cronografo-estados",
+  "version": "1.1.0",
+  "title": "Cuaderno: Cronógrafo: mando, embrague, freno y puesta a cero",
+  "description": "¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Cronógrafo: mando, embrague, freno y puesta a cero. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.complications.toh-cronografo-estados.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.complications.toh-cronografo-estados.answer",
+      "instructionMarkdown": "Explica **Cronógrafo: mando, embrague, freno y puesta a cero** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.complications.toh-cronografo-estados.explain",
+          "promptMarkdown": "¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.complications.toh-cronografo-estados.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-cronografo-estados.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-cronografo-estados.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-cronografo-estados.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.complications.toh-cronografo-estados.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por recibir pulsación y sigue hasta desacoplar y poner a cero.",
+                "en": "Empieza por recibir pulsación y sigue hasta desacoplar y poner a cero."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.complications.toh-cronografo-estados.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El órgano de mando selecciona estados; el embrague conecta el contador al tren; el freno inmoviliza; martillos y corazones restauran cero. Rueda de pilares o leva coordinan secuencias, pero no son el embrague.",
+                "en": "El órgano de mando selecciona estados; el embrague conecta el contador al tren; el freno inmoviliza; martillos y corazones restauran cero. Rueda de pilares o leva coordinan secuencias, pero no son el embrague."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?",
+              "en": "¿Qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena recibir pulsación → cambiar estado de mando → liberar freno → acoplar contador → detener y frenar → desacoplar y poner a cero, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena recibir pulsación → cambiar estado de mando → liberar freno → acoplar contador → detener y frenar → desacoplar y poner a cero, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.complications.toh-cronografo-estados.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.complications.toh-cronografo-estados.mechanism",
+            "field.encyclopedia.complications.toh-cronografo-estados.evidence",
+            "field.encyclopedia.complications.toh-cronografo-estados.limit",
+            "field.encyclopedia.complications.toh-cronografo-estados.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

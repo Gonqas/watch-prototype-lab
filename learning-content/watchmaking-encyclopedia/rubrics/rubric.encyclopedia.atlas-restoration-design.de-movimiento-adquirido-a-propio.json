@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Ruta de diseño: de movimiento adquirido a movimiento propio."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo",
+  "version": "1.1.0",
+  "title": "Cuaderno: Casos de transferencia: 7750, Seiko 6138 y cuarzo analógico",
+  "description": "¿Cómo comparar cronógrafos y un cuarzo sin confundir función de indicación con arquitectura energética?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Casos de transferencia: 7750, Seiko 6138 y cuarzo analógico. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo comparar cronógrafos y un cuarzo sin confundir función de indicación con arquitectura energética?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo comparar cronógrafos y un cuarzo sin confundir función de indicación con arquitectura energética?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.answer",
+      "instructionMarkdown": "Explica **Casos de transferencia: 7750, Seiko 6138 y cuarzo analógico** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.explain",
+          "promptMarkdown": "¿Cómo comparar cronógrafos y un cuarzo sin confundir función de indicación con arquitectura energética?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir indicaciones y sigue hasta marcar transferencias peligrosas.",
+                "en": "Empieza por definir indicaciones y sigue hasta marcar transferencias peligrosas."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "ETA 7750 y Seiko 6138 implementan cronógrafo automático con decisiones de control y acoplamiento propias. Un cuarzo cronográfico puede mostrar la misma información mediante motores y lógica. La comparación separa interfaz de usuario, máquina de estados, fuente, actuadores, trenes y retorno a cero.",
+                "en": "ETA 7750 y Seiko 6138 implementan cronógrafo automático con decisiones de control y acoplamiento propias. Un cuarzo cronográfico puede mostrar la misma información mediante motores y lógica. La comparación separa interfaz de usuario, máquina de estados, fuente, actuadores, trenes y retorno a cero."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo comparar cronógrafos y un cuarzo sin confundir función de indicación con arquitectura energética?",
+              "en": "¿Cómo comparar cronógrafos y un cuarzo sin confundir función de indicación con arquitectura energética?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir indicaciones → mapear mandos y estados → seguir energía → identificar actuadores → comparar cero y freno → marcar transferencias peligrosas, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir indicaciones → mapear mandos y estados → seguir energía → identificar actuadores → comparar cero y freno → marcar transferencias peligrosas, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.mechanism",
+            "field.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.evidence",
+            "field.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.limit",
+            "field.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

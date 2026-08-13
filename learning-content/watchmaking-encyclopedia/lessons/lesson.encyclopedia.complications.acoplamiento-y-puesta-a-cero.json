@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+  "version": "1.1.0",
+  "title": "Acoplamiento, contadores, corazón y puesta a cero",
+  "blockIds": [
+    "block.encyclopedia.complications.acoplamiento-y-puesta-a-cero"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.acoplamiento-y-puesta-a-cero"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Acoplamiento, contadores, corazón y puesta a cero",
+      "en": "Acoplamiento, contadores, corazón y puesta a cero"
+    },
+    "purpose": {
+      "es": "¿Cómo entra y sale potencia del cronógrafo y cómo vuelven varios indicadores exactamente a origen?",
+      "en": "¿Cómo entra y sale potencia del cronógrafo y cómo vuelven varios indicadores exactamente a origen?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Acoplamiento, contadores, corazón y puesta a cero mediante relaciones causales.",
+        "en": "Explicar Acoplamiento, contadores, corazón y puesta a cero mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.complications.cronografo-mandos.rueda-de-pilares",
+      "concept.encyclopedia.complications.cronografo-mandos.leva-de-mando",
+      "concept.encyclopedia.complications.cronografo-mandos.maquina-de-estados"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-horizontal",
+      "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-vertical",
+      "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.leva-corazon"
+    ],
+    "sourceIds": [
+      "source.official.eta.7750",
+      "source.official.seiko.6138",
+      "source.external.watchguy-manuals"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-horizontal",
+        "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-vertical",
+        "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.leva-corazon"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1191,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.complications.acoplamiento-y-puesta-a-cero"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: embrague horizontal, embrague vertical, leva corazón.",
+          "en": "Defino con mis palabras: embrague horizontal, embrague vertical, leva corazón."
+        },
+        {
+          "es": "Sigo «Acoplamiento, contadores, corazón y puesta a cero» desde mando libera freno hasta indicador retorna a cero y explico cada enlace.",
+          "en": "Sigo «Acoplamiento, contadores, corazón y puesta a cero» desde mando libera freno hasta indicador retorna a cero y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Acoplamiento, contadores, corazón y puesta a cero» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Acoplamiento, contadores, corazón y puesta a cero» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Compara 7750 y Seiko 6138 con documentos disponibles: control, acoplamiento, freno, contadores y cero; conserva huecos explícitos.",
+          "en": "Aplico el criterio a esta variante: Compara 7750 y Seiko 6138 con documentos disponibles: control, acoplamiento, freno, contadores y cero; conserva huecos explícitos."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Acoplamiento, contadores, corazón y puesta a cero» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Acoplamiento, contadores, corazón y puesta a cero» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-horizontal",
+        "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-vertical",
+        "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.leva-corazon"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo entra y sale potencia del cronógrafo y cómo vuelven varios indicadores exactamente a origen?",
+          "en": "¿Cómo entra y sale potencia del cronógrafo y cómo vuelven varios indicadores exactamente a origen?"
+        },
+        {
+          "es": "¿Qué relación causal de «Acoplamiento, contadores, corazón y puesta a cero» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Acoplamiento, contadores, corazón y puesta a cero» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

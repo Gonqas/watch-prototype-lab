@@ -1,0 +1,60 @@
+{
+  "id": "visual.quartz2035.isa-memory",
+  "version": "0.5.0",
+  "type": "real-movement-3d",
+  "purpose": {
+    "es": "Mapa personal sin geometría atribuida al ISA 8172 y comparación funcional con el 2035."
+  },
+  "status": "ready",
+  "sourceIds": [
+    "source.horology.original-quartz-practical-route"
+  ],
+  "fidelity": {
+    "geometry": "G2",
+    "kinematics": "K2",
+    "physics": "P0",
+    "limitations": [
+      "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+      "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+    ]
+  },
+  "lessonIds": [
+    "lesson.quartz2035.isa-memory"
+  ],
+  "movementIds": [
+    "fixture.miyota.2035.structural"
+  ],
+  "partSelectors": [
+    {
+      "selector": {
+        "by": "role",
+        "value": "stepper-rotor"
+      },
+      "cardinality": "one-or-more"
+    }
+  ],
+  "requiredCapabilities": [
+    "learning.scene-runtime",
+    "canonical-selectors-v1",
+    "viewport.selection",
+    "viewport.visibility",
+    "viewport.isolation",
+    "viewport.transparency",
+    "viewport.highlight",
+    "viewport.explode",
+    "viewport.camera",
+    "viewport.overlay.labels",
+    "timeline.scrub",
+    "reduced-motion",
+    "viewport.restore"
+  ],
+  "dataRequirements": [
+    "Fixture 2035 intacto.",
+    "Identidad de instancia estable.",
+    "Alternativa textual y reduced motion."
+  ],
+  "priority": "high",
+  "dependencyIds": [],
+  "currentModelSupport": "yes",
+  "viewportImpact": "configuration"
+}

@@ -1,0 +1,247 @@
+{
+  "id": "lesson.miyota8215.barrel-energy",
+  "version": "0.5.0",
+  "title": "Barrilete y energía",
+  "blockIds": [
+    "block.miyota8215.barrel-energy"
+  ],
+  "activityIds": [
+    "activity.miyota8215.follow-barrel-energy",
+    "activity.miyota8215.compare-barrel-conceptual"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Barrilete y energía",
+      "en": "Barrilete y energía"
+    },
+    "purpose": {
+      "es": "Relacionar cuerda manual y automática con barrilete y salida hacia el tren.",
+      "en": "Relacionar cuerda manual y automática con barrilete y salida hacia el tren."
+    },
+    "objectives": [
+      {
+        "es": "Identificar y explicar barrilete y energía con fuentes.",
+        "en": "Identificar y explicar barrilete y energía con fuentes."
+      },
+      {
+        "es": "Ejecutar una acción reversible cuando el modelo y las fuentes la respalden.",
+        "en": "Ejecutar una acción reversible cuando el modelo y las fuentes la respalden."
+      },
+      {
+        "es": "Distinguir conclusión permitida, desconocido y límite del modelo estructural.",
+        "en": "Distinguir conclusión permitida, desconocido y límite del modelo estructural."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.miyota8215.explain-calendar"
+    ],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.miyota8215.explain-energy-chain"
+    ],
+    "sourceIds": [
+      "source.miyota.8215.product-page",
+      "source.miyota.8215.specification",
+      "source.miyota.8215.drawing",
+      "source.miyota.8215.instruction-manual",
+      "source.miyota.8215.parts-list-exploded-view",
+      "source.horology.original-miyota8215"
+    ],
+    "visualResourceIds": [
+      "visual.miyota8215.barrel-energy"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Relacionar cuerda manual y automática con barrilete y salida hacia el tren.",
+        "en": "Relacionar cuerda manual y automática con barrilete y salida hacia el tren."
+      },
+      "visibleConcept": {
+        "es": "Barrilete y energía sobre el ensamblaje canónico 8215.",
+        "en": "Barrilete y energía sobre el ensamblaje canónico 8215."
+      },
+      "modelReference": "fixture.miyota.8215.structural",
+      "movementIds": [
+        "fixture.miyota.8215.structural",
+        "fixture.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [
+        {
+          "selector": {
+            "by": "calibre",
+            "value": "8215"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "initialState": {
+        "cameraIntent": "Vista estable del 8215; sin movimiento automático obligatorio.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [
+        "rotor/corona",
+        "barrel",
+        "train",
+        "escapement"
+      ],
+      "rotationDirections": [
+        "Arcos estáticos o pasos discretos; sin cinemática exacta atribuida al 8215."
+      ],
+      "labels": [
+        "pieza",
+        "referencia",
+        "pieza concreta",
+        "subsistema",
+        "autoridad",
+        "fidelidad del modelo",
+        "limitación"
+      ],
+      "arrows": [
+        "Relaciones derivadas del grafo funcional o estructural, con autoridad visible."
+      ],
+      "animations": [
+        "Estados discretos, pausa y navegación manual; reduced motion equivalente."
+      ],
+      "timelineIntent": "Observar, consultar fuente, predecir, actuar, comprobar, explicar y restaurar.",
+      "userInteraction": "Acciones semánticas con teclado; no requiere arrastre.",
+      "observableResult": {
+        "es": "Estado de calibre, evidencia y limitación reproducibles.",
+        "en": "Estado de calibre, evidencia y limitación reproducibles."
+      },
+      "successCriterion": {
+        "es": "Identidad y autoridad correctas, dependencia satisfecha y conclusión limitada.",
+        "en": "Identidad y autoridad correctas, dependencia satisfecha y conclusión limitada."
+      },
+      "restoration": {
+        "es": "Restaurar instancia, bandeja, herramienta, cámara, subsistema y checkpoint.",
+        "en": "Restaurar instancia, bandeja, herramienta, cámara, subsistema y checkpoint."
+      },
+      "textualAlternative": {
+        "es": "Árbol de subsistemas, lista de instancias, relaciones, dependencias, acciones y resultados.",
+        "en": "Árbol de subsistemas, lista de instancias, relaciones, dependencias, acciones y resultados."
+      },
+      "reducedMotionAlternative": {
+        "es": "Estados discretos, giros estáticos, energía numerada y escape por fases.",
+        "en": "Estados discretos, giros estáticos, energía numerada y escape por fases."
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+          "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+          "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+        ]
+      },
+      "unknownData": [
+        "geometría oculta por pieza",
+        "tolerancias",
+        "par",
+        "presión",
+        "lubricación",
+        "desgaste",
+        "secuencia profesional completa"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.miyota8215.barrel-energy"
+      ]
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 651,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.miyota8215.follow-barrel-energy",
+        "activity.miyota8215.compare-barrel-conceptual"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Predecir y manipular una relación mecánica.",
+          "en": "Predecir y manipular una relación mecánica."
+        },
+        {
+          "es": "Explicar el resultado con fórmula o estado.",
+          "en": "Explicar el resultado con fórmula o estado."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «De energía almacenada a movimiento», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.miyota8215.explain-energy-chain"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.miyota8215.explain-energy-chain"
+      ],
+      "reinforcesConceptIds": [
+        "concept.miyota8215.explain-calendar"
+      ],
+      "bridgeConceptIds": [
+        "concept.miyota8215.explain-calendar"
+      ]
+    }
+  }
+}

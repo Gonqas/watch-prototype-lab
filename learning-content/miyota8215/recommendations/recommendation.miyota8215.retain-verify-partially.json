@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.miyota8215.retain-verify-partially",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: verificar parcialmente",
+    "en": "Práctica posterior: verificar parcialmente"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra actividad, otra sesión, evidencia independiente, un contexto diferente y al menos siete días.",
+    "en": "Para considerarlo consolidado se exige otra actividad, otra sesión, evidencia independiente, un contexto diferente y al menos siete días."
+  },
+  "rule": "independent-later-evidence-different-activity-session-context-minimum-7-days@1.0.0",
+  "priority": 60,
+  "target": {
+    "kind": "competency",
+    "id": "competency.miyota8215.verify-partially"
+  },
+  "evidenceTemplateIds": [
+    "evidence.miyota8215.verify-partially"
+  ],
+  "required": false
+}

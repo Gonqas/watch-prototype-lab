@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.mechanical-energy-trains.toh-potencia-tren"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

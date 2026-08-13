@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+  "version": "1.1.0",
+  "title": "Cuaderno: Agujas: geometría, masa, tubo, ajuste y alturas",
+  "description": "¿Cómo transmite una aguja movimiento y mantiene lectura sin rozar ni soltarse?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Agujas: geometría, masa, tubo, ajuste y alturas. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo transmite una aguja movimiento y mantiene lectura sin rozar ni soltarse?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo transmite una aguja movimiento y mantiene lectura sin rozar ni soltarse?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.answer",
+      "instructionMarkdown": "Explica **Agujas: geometría, masa, tubo, ajuste y alturas** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.explain",
+          "promptMarkdown": "¿Cómo transmite una aguja movimiento y mantiene lectura sin rozar ni soltarse?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por verificar diámetros y alturas y sigue hasta verificar bajo cristal.",
+                "en": "Empieza por verificar diámetros y alturas y sigue hasta verificar bajo cristal."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La aguja combina cuerpo legible y tubo ajustado al órgano de indicación. Interferencia, concentricidad, perpendicularidad, masa y momento de inercia afectan montaje y carga. Las alturas forman una cadena entre esfera, horaria, minutera, segundero y cristal.",
+                "en": "La aguja combina cuerpo legible y tubo ajustado al órgano de indicación. Interferencia, concentricidad, perpendicularidad, masa y momento de inercia afectan montaje y carga. Las alturas forman una cadena entre esfera, horaria, minutera, segundero y cristal."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo transmite una aguja movimiento y mantiene lectura sin rozar ni soltarse?",
+              "en": "¿Cómo transmite una aguja movimiento y mantiene lectura sin rozar ni soltarse?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena verificar diámetros y alturas → sujetar movimiento y esfera → orientar y prensar axialmente → comprobar ajuste → girar ciclo completo → verificar bajo cristal, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena verificar diámetros y alturas → sujetar movimiento y esfera → orientar y prensar axialmente → comprobar ajuste → girar ciclo completo → verificar bajo cristal, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.mechanism",
+            "field.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.evidence",
+            "field.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.limit",
+            "field.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

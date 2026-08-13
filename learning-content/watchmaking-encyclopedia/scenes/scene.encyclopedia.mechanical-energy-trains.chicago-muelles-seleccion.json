@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion",
+  "version": "1.1.0",
+  "title": "Cuaderno: Expediente Chicago III: selección de muelle real",
+  "description": "¿Cómo se elige un muelle cuando faltan referencias de pieza?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Expediente Chicago III: selección de muelle real. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se elige un muelle cuando faltan referencias de pieza?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se elige un muelle cuando faltan referencias de pieza?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.answer",
+      "instructionMarkdown": "Explica **Expediente Chicago III: selección de muelle real** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.explain",
+          "promptMarkdown": "¿Cómo se elige un muelle cuando faltan referencias de pieza?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por buscar referencia y sigue hasta probar bajo protocolo.",
+                "en": "Empieza por buscar referencia y sigue hasta probar bajo protocolo."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La selección histórica usa barrilete, anchura, espesor, longitud, ganchos y ocupación. Hoy se prioriza la referencia documentada; si no existe, las mediciones se registran como reconstrucción y no como dato oficial.",
+                "en": "La selección histórica usa barrilete, anchura, espesor, longitud, ganchos y ocupación. Hoy se prioriza la referencia documentada; si no existe, las mediciones se registran como reconstrucción y no como dato oficial."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se elige un muelle cuando faltan referencias de pieza?",
+              "en": "¿Cómo se elige un muelle cuando faltan referencias de pieza?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena buscar referencia → identificar arquitectura → medir barrilete y muelle → calcular ocupación → verificar ganchos → probar bajo protocolo, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena buscar referencia → identificar arquitectura → medir barrilete y muelle → calcular ocupación → verificar ganchos → probar bajo protocolo, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.evidence",
+            "field.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.limit",
+            "field.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

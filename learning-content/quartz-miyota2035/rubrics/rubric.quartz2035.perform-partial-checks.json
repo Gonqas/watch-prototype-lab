@@ -1,0 +1,47 @@
+{
+  "id": "rubric.quartz2035.perform-partial-checks",
+  "version": "0.5.0",
+  "competencyId": "competency.quartz2035.perform-partial-checks",
+  "rules": [
+    {
+      "id": "rule.quartz2035.perform-partial-checks.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Demostración basada en orden, seguridad, identidad, orientación, corrección, fuentes y separación entre hecho e hipótesis; el tiempo no penaliza."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.quartz2035.perform-partial-checks.demonstrated",
+    "version": "0.5.0",
+    "competencyId": "competency.quartz2035.perform-partial-checks",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "simulation-result",
+            "status": "active",
+            "minimumConfidence": 1
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

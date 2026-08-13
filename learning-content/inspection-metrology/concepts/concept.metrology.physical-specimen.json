@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.physical-specimen",
+  "version": "0.1.0",
+  "title": {
+    "es": "Registrar una unidad física"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para dar identidad estable, alcance y privacidad a una unidad concreta."
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.metrology.verification-calibration"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.instruments"
+  ],
+  "competencyIds": [
+    "competency.metrology.documentar-fotografias"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.registrar-especimen",
+    "activity.metrology.contar-dientes"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a dar identidad estable, alcance y privacidad a una unidad concreta sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para dar identidad estable, alcance y privacidad a una unidad concreta."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.technical-photography"
+  ],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available"
+}

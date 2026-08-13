@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.toh-reversores-deslizamiento.par-de-deslizamiento",
+  "version": "1.1.0",
+  "title": {
+    "es": "par de deslizamiento",
+    "en": "par de deslizamiento"
+  },
+  "summary": {
+    "es": "Umbral a partir del cual la brida exterior se desplaza en la pared.",
+    "en": "Umbral a partir del cual la brida exterior se desplaza en la pared."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.toh-automatico-rotor.masa-oscilante",
+    "concept.encyclopedia.complications.toh-automatico-rotor.rectificacion-mecanica",
+    "concept.encyclopedia.complications.toh-automatico-rotor.rendimiento-de-carga"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.toh-reversores-deslizamiento"
+  ],
+  "movementIds": [],
+  "subsystem": "automatic",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-reversores-deslizamiento"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch08",
+    "source.private.daniels.mainsprings",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.toh-reversores-deslizamiento"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.toh-reversores-deslizamiento",
+  "plainLanguage": {
+    "es": "Umbral a partir del cual la brida exterior se desplaza en la pared.",
+    "en": "Umbral a partir del cual la brida exterior se desplaza en la pared."
+  },
+  "technicalLanguage": {
+    "es": "par de deslizamiento se interpreta mediante la cadena recibir giro alterno → seleccionar camino → bloquear sentido útil → liberar retorno → cargar barrilete → deslizar al alcanzar umbral y las condiciones declaradas en la unidad.",
+    "en": "par de deslizamiento se interpreta mediante la cadena recibir giro alterno → seleccionar camino → bloquear sentido útil → liberar retorno → cargar barrilete → deslizar al alcanzar umbral y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?",
+    "en": "Permite explicar y comprobar ¿cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir par de deslizamiento sin circularidad.",
+      "en": "Definir par de deslizamiento sin circularidad."
+    },
+    {
+      "es": "Relacionar par de deslizamiento con una entrada, una interfaz y una salida.",
+      "en": "Relacionar par de deslizamiento con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

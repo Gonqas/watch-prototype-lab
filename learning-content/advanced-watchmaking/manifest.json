@@ -1,0 +1,752 @@
+{
+  "format": "wplab-learning-pack",
+  "formatVersion": 1,
+  "schemaId": "learning-pack-v1",
+  "packageVersion": "1.1.0",
+  "id": "wplab.horology.advanced-architecture-service",
+  "title": "Atlas, servicio, arquitecturas y complicaciones",
+  "distribution": "local-unsigned",
+  "editorialStatus": "approved",
+  "authors": [
+    {
+      "name": "Watch Prototype Lab"
+    }
+  ],
+  "languages": [
+    "es-ES"
+  ],
+  "dependencies": [
+    {
+      "packageId": "wplab.horology.mechanical-foundations",
+      "versionRange": "^0.5.0"
+    },
+    {
+      "packageId": "wplab.horology.inspection-metrology",
+      "versionRange": "^0.2.0"
+    }
+  ],
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "movements": [
+    {
+      "manufacturer": "Conceptual",
+      "calibre": "mechanical-chain",
+      "referenceId": "fixture.conceptual.mechanical-chain"
+    },
+    {
+      "manufacturer": "MIYOTA",
+      "calibre": "8215",
+      "referenceId": "fixture.miyota.8215.structural"
+    },
+    {
+      "manufacturer": "MIYOTA",
+      "calibre": "2035",
+      "referenceId": "fixture.miyota.2035.structural"
+    }
+  ],
+  "assets": [],
+  "entries": {
+    "curricula": [
+      {
+        "id": "curriculum.advanced.personal-watchmaking",
+        "path": "curriculum/curriculum.advanced.personal-watchmaking.json"
+      }
+    ],
+    "routes": [
+      {
+        "id": "route.advanced.comparative-atlas",
+        "path": "routes/route.advanced.comparative-atlas.json"
+      },
+      {
+        "id": "route.advanced.service-method",
+        "path": "routes/route.advanced.service-method.json"
+      },
+      {
+        "id": "route.advanced.architectures-complications",
+        "path": "routes/route.advanced.architectures-complications.json"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module.advanced.atlas-authority",
+        "path": "modules/module.advanced.atlas-authority.json"
+      },
+      {
+        "id": "module.advanced.seconds-layout",
+        "path": "modules/module.advanced.seconds-layout.json"
+      },
+      {
+        "id": "module.advanced.winding-systems",
+        "path": "modules/module.advanced.winding-systems.json"
+      },
+      {
+        "id": "module.advanced.construction-trade-study",
+        "path": "modules/module.advanced.construction-trade-study.json"
+      },
+      {
+        "id": "module.advanced.service-baseline",
+        "path": "modules/module.advanced.service-baseline.json"
+      },
+      {
+        "id": "module.advanced.service-disassembly",
+        "path": "modules/module.advanced.service-disassembly.json"
+      },
+      {
+        "id": "module.advanced.service-clean-lube",
+        "path": "modules/module.advanced.service-clean-lube.json"
+      },
+      {
+        "id": "module.advanced.service-assembly",
+        "path": "modules/module.advanced.service-assembly.json"
+      },
+      {
+        "id": "module.advanced.service-diagnosis",
+        "path": "modules/module.advanced.service-diagnosis.json"
+      },
+      {
+        "id": "module.advanced.escapement-compare",
+        "path": "modules/module.advanced.escapement-compare.json"
+      },
+      {
+        "id": "module.advanced.ultra-thin",
+        "path": "modules/module.advanced.ultra-thin.json"
+      },
+      {
+        "id": "module.advanced.calendars",
+        "path": "modules/module.advanced.calendars.json"
+      },
+      {
+        "id": "module.advanced.chronograph-control",
+        "path": "modules/module.advanced.chronograph-control.json"
+      },
+      {
+        "id": "module.advanced.chronograph-coupling",
+        "path": "modules/module.advanced.chronograph-coupling.json"
+      },
+      {
+        "id": "module.advanced.architecture-capstone",
+        "path": "modules/module.advanced.architecture-capstone.json"
+      }
+    ],
+    "concepts": [
+      {
+        "id": "concept.advanced.atlas-authority",
+        "path": "concepts/concept.advanced.atlas-authority.json"
+      },
+      {
+        "id": "concept.advanced.seconds-layout",
+        "path": "concepts/concept.advanced.seconds-layout.json"
+      },
+      {
+        "id": "concept.advanced.winding-systems",
+        "path": "concepts/concept.advanced.winding-systems.json"
+      },
+      {
+        "id": "concept.advanced.construction-trade-study",
+        "path": "concepts/concept.advanced.construction-trade-study.json"
+      },
+      {
+        "id": "concept.advanced.service-baseline",
+        "path": "concepts/concept.advanced.service-baseline.json"
+      },
+      {
+        "id": "concept.advanced.service-disassembly",
+        "path": "concepts/concept.advanced.service-disassembly.json"
+      },
+      {
+        "id": "concept.advanced.service-clean-lube",
+        "path": "concepts/concept.advanced.service-clean-lube.json"
+      },
+      {
+        "id": "concept.advanced.service-assembly",
+        "path": "concepts/concept.advanced.service-assembly.json"
+      },
+      {
+        "id": "concept.advanced.service-diagnosis",
+        "path": "concepts/concept.advanced.service-diagnosis.json"
+      },
+      {
+        "id": "concept.advanced.escapement-compare",
+        "path": "concepts/concept.advanced.escapement-compare.json"
+      },
+      {
+        "id": "concept.advanced.ultra-thin",
+        "path": "concepts/concept.advanced.ultra-thin.json"
+      },
+      {
+        "id": "concept.advanced.calendars",
+        "path": "concepts/concept.advanced.calendars.json"
+      },
+      {
+        "id": "concept.advanced.chronograph-control",
+        "path": "concepts/concept.advanced.chronograph-control.json"
+      },
+      {
+        "id": "concept.advanced.chronograph-coupling",
+        "path": "concepts/concept.advanced.chronograph-coupling.json"
+      },
+      {
+        "id": "concept.advanced.architecture-capstone",
+        "path": "concepts/concept.advanced.architecture-capstone.json"
+      }
+    ],
+    "misconceptions": [],
+    "blocks": [
+      {
+        "id": "block.advanced.atlas-authority",
+        "path": "blocks/block.advanced.atlas-authority.json"
+      },
+      {
+        "id": "block.advanced.seconds-layout",
+        "path": "blocks/block.advanced.seconds-layout.json"
+      },
+      {
+        "id": "block.advanced.winding-systems",
+        "path": "blocks/block.advanced.winding-systems.json"
+      },
+      {
+        "id": "block.advanced.construction-trade-study",
+        "path": "blocks/block.advanced.construction-trade-study.json"
+      },
+      {
+        "id": "block.advanced.service-baseline",
+        "path": "blocks/block.advanced.service-baseline.json"
+      },
+      {
+        "id": "block.advanced.service-disassembly",
+        "path": "blocks/block.advanced.service-disassembly.json"
+      },
+      {
+        "id": "block.advanced.service-clean-lube",
+        "path": "blocks/block.advanced.service-clean-lube.json"
+      },
+      {
+        "id": "block.advanced.service-assembly",
+        "path": "blocks/block.advanced.service-assembly.json"
+      },
+      {
+        "id": "block.advanced.service-diagnosis",
+        "path": "blocks/block.advanced.service-diagnosis.json"
+      },
+      {
+        "id": "block.advanced.escapement-compare",
+        "path": "blocks/block.advanced.escapement-compare.json"
+      },
+      {
+        "id": "block.advanced.ultra-thin",
+        "path": "blocks/block.advanced.ultra-thin.json"
+      },
+      {
+        "id": "block.advanced.calendars",
+        "path": "blocks/block.advanced.calendars.json"
+      },
+      {
+        "id": "block.advanced.chronograph-control",
+        "path": "blocks/block.advanced.chronograph-control.json"
+      },
+      {
+        "id": "block.advanced.chronograph-coupling",
+        "path": "blocks/block.advanced.chronograph-coupling.json"
+      },
+      {
+        "id": "block.advanced.architecture-capstone",
+        "path": "blocks/block.advanced.architecture-capstone.json"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "lesson.advanced.atlas-authority",
+        "path": "lessons/lesson.advanced.atlas-authority.json"
+      },
+      {
+        "id": "lesson.advanced.seconds-layout",
+        "path": "lessons/lesson.advanced.seconds-layout.json"
+      },
+      {
+        "id": "lesson.advanced.winding-systems",
+        "path": "lessons/lesson.advanced.winding-systems.json"
+      },
+      {
+        "id": "lesson.advanced.construction-trade-study",
+        "path": "lessons/lesson.advanced.construction-trade-study.json"
+      },
+      {
+        "id": "lesson.advanced.service-baseline",
+        "path": "lessons/lesson.advanced.service-baseline.json"
+      },
+      {
+        "id": "lesson.advanced.service-disassembly",
+        "path": "lessons/lesson.advanced.service-disassembly.json"
+      },
+      {
+        "id": "lesson.advanced.service-clean-lube",
+        "path": "lessons/lesson.advanced.service-clean-lube.json"
+      },
+      {
+        "id": "lesson.advanced.service-assembly",
+        "path": "lessons/lesson.advanced.service-assembly.json"
+      },
+      {
+        "id": "lesson.advanced.service-diagnosis",
+        "path": "lessons/lesson.advanced.service-diagnosis.json"
+      },
+      {
+        "id": "lesson.advanced.escapement-compare",
+        "path": "lessons/lesson.advanced.escapement-compare.json"
+      },
+      {
+        "id": "lesson.advanced.ultra-thin",
+        "path": "lessons/lesson.advanced.ultra-thin.json"
+      },
+      {
+        "id": "lesson.advanced.calendars",
+        "path": "lessons/lesson.advanced.calendars.json"
+      },
+      {
+        "id": "lesson.advanced.chronograph-control",
+        "path": "lessons/lesson.advanced.chronograph-control.json"
+      },
+      {
+        "id": "lesson.advanced.chronograph-coupling",
+        "path": "lessons/lesson.advanced.chronograph-coupling.json"
+      },
+      {
+        "id": "lesson.advanced.architecture-capstone",
+        "path": "lessons/lesson.advanced.architecture-capstone.json"
+      }
+    ],
+    "activities": [
+      {
+        "id": "activity.advanced.atlas-authority",
+        "path": "activities/activity.advanced.atlas-authority.json"
+      },
+      {
+        "id": "activity.advanced.seconds-layout",
+        "path": "activities/activity.advanced.seconds-layout.json"
+      },
+      {
+        "id": "activity.advanced.winding-systems",
+        "path": "activities/activity.advanced.winding-systems.json"
+      },
+      {
+        "id": "activity.advanced.construction-trade-study",
+        "path": "activities/activity.advanced.construction-trade-study.json"
+      },
+      {
+        "id": "activity.advanced.service-baseline",
+        "path": "activities/activity.advanced.service-baseline.json"
+      },
+      {
+        "id": "activity.advanced.service-disassembly",
+        "path": "activities/activity.advanced.service-disassembly.json"
+      },
+      {
+        "id": "activity.advanced.service-clean-lube",
+        "path": "activities/activity.advanced.service-clean-lube.json"
+      },
+      {
+        "id": "activity.advanced.service-assembly",
+        "path": "activities/activity.advanced.service-assembly.json"
+      },
+      {
+        "id": "activity.advanced.service-diagnosis",
+        "path": "activities/activity.advanced.service-diagnosis.json"
+      },
+      {
+        "id": "activity.advanced.escapement-compare",
+        "path": "activities/activity.advanced.escapement-compare.json"
+      },
+      {
+        "id": "activity.advanced.ultra-thin",
+        "path": "activities/activity.advanced.ultra-thin.json"
+      },
+      {
+        "id": "activity.advanced.calendars",
+        "path": "activities/activity.advanced.calendars.json"
+      },
+      {
+        "id": "activity.advanced.chronograph-control",
+        "path": "activities/activity.advanced.chronograph-control.json"
+      },
+      {
+        "id": "activity.advanced.chronograph-coupling",
+        "path": "activities/activity.advanced.chronograph-coupling.json"
+      },
+      {
+        "id": "activity.advanced.architecture-capstone",
+        "path": "activities/activity.advanced.architecture-capstone.json"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "scene.advanced.atlas-authority",
+        "path": "scenes/scene.advanced.atlas-authority.json"
+      },
+      {
+        "id": "scene.advanced.seconds-layout",
+        "path": "scenes/scene.advanced.seconds-layout.json"
+      },
+      {
+        "id": "scene.advanced.winding-systems",
+        "path": "scenes/scene.advanced.winding-systems.json"
+      },
+      {
+        "id": "scene.advanced.construction-trade-study",
+        "path": "scenes/scene.advanced.construction-trade-study.json"
+      },
+      {
+        "id": "scene.advanced.service-baseline",
+        "path": "scenes/scene.advanced.service-baseline.json"
+      },
+      {
+        "id": "scene.advanced.service-disassembly",
+        "path": "scenes/scene.advanced.service-disassembly.json"
+      },
+      {
+        "id": "scene.advanced.service-clean-lube",
+        "path": "scenes/scene.advanced.service-clean-lube.json"
+      },
+      {
+        "id": "scene.advanced.service-assembly",
+        "path": "scenes/scene.advanced.service-assembly.json"
+      },
+      {
+        "id": "scene.advanced.service-diagnosis",
+        "path": "scenes/scene.advanced.service-diagnosis.json"
+      },
+      {
+        "id": "scene.advanced.escapement-compare",
+        "path": "scenes/scene.advanced.escapement-compare.json"
+      },
+      {
+        "id": "scene.advanced.ultra-thin",
+        "path": "scenes/scene.advanced.ultra-thin.json"
+      },
+      {
+        "id": "scene.advanced.calendars",
+        "path": "scenes/scene.advanced.calendars.json"
+      },
+      {
+        "id": "scene.advanced.chronograph-control",
+        "path": "scenes/scene.advanced.chronograph-control.json"
+      },
+      {
+        "id": "scene.advanced.chronograph-coupling",
+        "path": "scenes/scene.advanced.chronograph-coupling.json"
+      },
+      {
+        "id": "scene.advanced.architecture-capstone",
+        "path": "scenes/scene.advanced.architecture-capstone.json"
+      }
+    ],
+    "competencies": [
+      {
+        "id": "competency.advanced.atlas-authority",
+        "path": "competencies/competency.advanced.atlas-authority.json"
+      },
+      {
+        "id": "competency.advanced.seconds-layout",
+        "path": "competencies/competency.advanced.seconds-layout.json"
+      },
+      {
+        "id": "competency.advanced.winding-systems",
+        "path": "competencies/competency.advanced.winding-systems.json"
+      },
+      {
+        "id": "competency.advanced.construction-trade-study",
+        "path": "competencies/competency.advanced.construction-trade-study.json"
+      },
+      {
+        "id": "competency.advanced.service-baseline",
+        "path": "competencies/competency.advanced.service-baseline.json"
+      },
+      {
+        "id": "competency.advanced.service-disassembly",
+        "path": "competencies/competency.advanced.service-disassembly.json"
+      },
+      {
+        "id": "competency.advanced.service-clean-lube",
+        "path": "competencies/competency.advanced.service-clean-lube.json"
+      },
+      {
+        "id": "competency.advanced.service-assembly",
+        "path": "competencies/competency.advanced.service-assembly.json"
+      },
+      {
+        "id": "competency.advanced.service-diagnosis",
+        "path": "competencies/competency.advanced.service-diagnosis.json"
+      },
+      {
+        "id": "competency.advanced.escapement-compare",
+        "path": "competencies/competency.advanced.escapement-compare.json"
+      },
+      {
+        "id": "competency.advanced.ultra-thin",
+        "path": "competencies/competency.advanced.ultra-thin.json"
+      },
+      {
+        "id": "competency.advanced.calendars",
+        "path": "competencies/competency.advanced.calendars.json"
+      },
+      {
+        "id": "competency.advanced.chronograph-control",
+        "path": "competencies/competency.advanced.chronograph-control.json"
+      },
+      {
+        "id": "competency.advanced.chronograph-coupling",
+        "path": "competencies/competency.advanced.chronograph-coupling.json"
+      },
+      {
+        "id": "competency.advanced.architecture-capstone",
+        "path": "competencies/competency.advanced.architecture-capstone.json"
+      }
+    ],
+    "evidenceTemplates": [
+      {
+        "id": "evidence.advanced.atlas-authority",
+        "path": "evidence/evidence.advanced.atlas-authority.json"
+      },
+      {
+        "id": "evidence.advanced.atlas-authority.human-review",
+        "path": "evidence/evidence.advanced.atlas-authority.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.seconds-layout",
+        "path": "evidence/evidence.advanced.seconds-layout.json"
+      },
+      {
+        "id": "evidence.advanced.seconds-layout.human-review",
+        "path": "evidence/evidence.advanced.seconds-layout.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.winding-systems",
+        "path": "evidence/evidence.advanced.winding-systems.json"
+      },
+      {
+        "id": "evidence.advanced.winding-systems.human-review",
+        "path": "evidence/evidence.advanced.winding-systems.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.construction-trade-study",
+        "path": "evidence/evidence.advanced.construction-trade-study.json"
+      },
+      {
+        "id": "evidence.advanced.construction-trade-study.human-review",
+        "path": "evidence/evidence.advanced.construction-trade-study.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.service-baseline",
+        "path": "evidence/evidence.advanced.service-baseline.json"
+      },
+      {
+        "id": "evidence.advanced.service-baseline.human-review",
+        "path": "evidence/evidence.advanced.service-baseline.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.service-disassembly",
+        "path": "evidence/evidence.advanced.service-disassembly.json"
+      },
+      {
+        "id": "evidence.advanced.service-disassembly.human-review",
+        "path": "evidence/evidence.advanced.service-disassembly.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.service-clean-lube",
+        "path": "evidence/evidence.advanced.service-clean-lube.json"
+      },
+      {
+        "id": "evidence.advanced.service-clean-lube.human-review",
+        "path": "evidence/evidence.advanced.service-clean-lube.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.service-assembly",
+        "path": "evidence/evidence.advanced.service-assembly.json"
+      },
+      {
+        "id": "evidence.advanced.service-assembly.human-review",
+        "path": "evidence/evidence.advanced.service-assembly.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.service-diagnosis",
+        "path": "evidence/evidence.advanced.service-diagnosis.json"
+      },
+      {
+        "id": "evidence.advanced.service-diagnosis.human-review",
+        "path": "evidence/evidence.advanced.service-diagnosis.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.escapement-compare",
+        "path": "evidence/evidence.advanced.escapement-compare.json"
+      },
+      {
+        "id": "evidence.advanced.escapement-compare.human-review",
+        "path": "evidence/evidence.advanced.escapement-compare.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.ultra-thin",
+        "path": "evidence/evidence.advanced.ultra-thin.json"
+      },
+      {
+        "id": "evidence.advanced.ultra-thin.human-review",
+        "path": "evidence/evidence.advanced.ultra-thin.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.calendars",
+        "path": "evidence/evidence.advanced.calendars.json"
+      },
+      {
+        "id": "evidence.advanced.calendars.human-review",
+        "path": "evidence/evidence.advanced.calendars.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.chronograph-control",
+        "path": "evidence/evidence.advanced.chronograph-control.json"
+      },
+      {
+        "id": "evidence.advanced.chronograph-control.human-review",
+        "path": "evidence/evidence.advanced.chronograph-control.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.chronograph-coupling",
+        "path": "evidence/evidence.advanced.chronograph-coupling.json"
+      },
+      {
+        "id": "evidence.advanced.chronograph-coupling.human-review",
+        "path": "evidence/evidence.advanced.chronograph-coupling.human-review.json"
+      },
+      {
+        "id": "evidence.advanced.architecture-capstone",
+        "path": "evidence/evidence.advanced.architecture-capstone.json"
+      },
+      {
+        "id": "evidence.advanced.architecture-capstone.human-review",
+        "path": "evidence/evidence.advanced.architecture-capstone.human-review.json"
+      }
+    ],
+    "rubrics": [
+      {
+        "id": "rubric.advanced.atlas-authority",
+        "path": "rubrics/rubric.advanced.atlas-authority.json"
+      },
+      {
+        "id": "rubric.advanced.seconds-layout",
+        "path": "rubrics/rubric.advanced.seconds-layout.json"
+      },
+      {
+        "id": "rubric.advanced.winding-systems",
+        "path": "rubrics/rubric.advanced.winding-systems.json"
+      },
+      {
+        "id": "rubric.advanced.construction-trade-study",
+        "path": "rubrics/rubric.advanced.construction-trade-study.json"
+      },
+      {
+        "id": "rubric.advanced.service-baseline",
+        "path": "rubrics/rubric.advanced.service-baseline.json"
+      },
+      {
+        "id": "rubric.advanced.service-disassembly",
+        "path": "rubrics/rubric.advanced.service-disassembly.json"
+      },
+      {
+        "id": "rubric.advanced.service-clean-lube",
+        "path": "rubrics/rubric.advanced.service-clean-lube.json"
+      },
+      {
+        "id": "rubric.advanced.service-assembly",
+        "path": "rubrics/rubric.advanced.service-assembly.json"
+      },
+      {
+        "id": "rubric.advanced.service-diagnosis",
+        "path": "rubrics/rubric.advanced.service-diagnosis.json"
+      },
+      {
+        "id": "rubric.advanced.escapement-compare",
+        "path": "rubrics/rubric.advanced.escapement-compare.json"
+      },
+      {
+        "id": "rubric.advanced.ultra-thin",
+        "path": "rubrics/rubric.advanced.ultra-thin.json"
+      },
+      {
+        "id": "rubric.advanced.calendars",
+        "path": "rubrics/rubric.advanced.calendars.json"
+      },
+      {
+        "id": "rubric.advanced.chronograph-control",
+        "path": "rubrics/rubric.advanced.chronograph-control.json"
+      },
+      {
+        "id": "rubric.advanced.chronograph-coupling",
+        "path": "rubrics/rubric.advanced.chronograph-coupling.json"
+      },
+      {
+        "id": "rubric.advanced.architecture-capstone",
+        "path": "rubrics/rubric.advanced.architecture-capstone.json"
+      }
+    ],
+    "glossary": [],
+    "sources": [
+      {
+        "id": "source.eta.6497-2.product",
+        "path": "sources/source.eta.6497-2.product.json"
+      },
+      {
+        "id": "source.eta.6497-2.communication",
+        "path": "sources/source.eta.6497-2.communication.json"
+      },
+      {
+        "id": "source.eta.2824-2.product",
+        "path": "sources/source.eta.2824-2.product.json"
+      },
+      {
+        "id": "source.eta.7750.product",
+        "path": "sources/source.eta.7750.product.json"
+      },
+      {
+        "id": "source.eta.7750.communication",
+        "path": "sources/source.eta.7750.communication.json"
+      },
+      {
+        "id": "source.seiko.42.technical-guide",
+        "path": "sources/source.seiko.42.technical-guide.json"
+      },
+      {
+        "id": "source.seiko.6138a.technical-guide",
+        "path": "sources/source.seiko.6138a.technical-guide.json"
+      },
+      {
+        "id": "source.miyota.8215.official",
+        "path": "sources/source.miyota.8215.official.json"
+      },
+      {
+        "id": "source.miyota.2035.official",
+        "path": "sources/source.miyota.2035.official.json"
+      },
+      {
+        "id": "source.external.ranfft",
+        "path": "sources/source.external.ranfft.json"
+      },
+      {
+        "id": "source.external.17jewels",
+        "path": "sources/source.external.17jewels.json"
+      },
+      {
+        "id": "source.external.watchguy",
+        "path": "sources/source.external.watchguy.json"
+      },
+      {
+        "id": "source.external.pocketwatchdatabase",
+        "path": "sources/source.external.pocketwatchdatabase.json"
+      }
+    ],
+    "recommendations": [],
+    "visualResources": []
+  },
+  "minimumAppVersion": "0.10.0",
+  "createdAt": "2026-08-02T00:00:00.000Z"
+}

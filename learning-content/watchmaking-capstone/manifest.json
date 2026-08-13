@@ -1,0 +1,899 @@
+{
+  "format": "wplab-learning-pack",
+  "formatVersion": 1,
+  "schemaId": "learning-pack-v1",
+  "packageVersion": "1.1.0",
+  "id": "wplab.horology.manufacturing-design-validation",
+  "title": "Fabricación, diseño propio y validación",
+  "distribution": "local-unsigned",
+  "editorialStatus": "approved",
+  "authors": [
+    {
+      "name": "Watch Prototype Lab"
+    }
+  ],
+  "languages": [
+    "es-ES"
+  ],
+  "dependencies": [
+    {
+      "packageId": "wplab.horology.advanced-architecture-service",
+      "versionRange": "^1.1.0"
+    },
+    {
+      "packageId": "wplab.horology.inspection-metrology",
+      "versionRange": "^0.2.0"
+    }
+  ],
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "movements": [
+    {
+      "manufacturer": "Conceptual",
+      "calibre": "mechanical-chain",
+      "referenceId": "fixture.conceptual.mechanical-chain"
+    },
+    {
+      "manufacturer": "MIYOTA",
+      "calibre": "8215",
+      "referenceId": "fixture.miyota.8215.structural"
+    }
+  ],
+  "assets": [],
+  "entries": {
+    "curricula": [
+      {
+        "id": "curriculum.personal-watch.capstone",
+        "path": "curriculum/curriculum.personal-watch.capstone.json"
+      }
+    ],
+    "routes": [
+      {
+        "id": "route.capstone.manufacturing-finishing",
+        "path": "routes/route.capstone.manufacturing-finishing.json"
+      },
+      {
+        "id": "route.capstone.personal-watch-design",
+        "path": "routes/route.capstone.personal-watch-design.json"
+      },
+      {
+        "id": "route.capstone.validation",
+        "path": "routes/route.capstone.validation.json"
+      },
+      {
+        "id": "route.capstone.watch-validation",
+        "path": "routes/route.capstone.watch-validation.json"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module.capstone.manufacturing.dfm-datums",
+        "path": "modules/module.capstone.manufacturing.dfm-datums.json"
+      },
+      {
+        "id": "module.capstone.manufacturing.case",
+        "path": "modules/module.capstone.manufacturing.case.json"
+      },
+      {
+        "id": "module.capstone.manufacturing.dial",
+        "path": "modules/module.capstone.manufacturing.dial.json"
+      },
+      {
+        "id": "module.capstone.manufacturing.hands",
+        "path": "modules/module.capstone.manufacturing.hands.json"
+      },
+      {
+        "id": "module.capstone.manufacturing.plates-bridges",
+        "path": "modules/module.capstone.manufacturing.plates-bridges.json"
+      },
+      {
+        "id": "module.capstone.manufacturing.micromechanics",
+        "path": "modules/module.capstone.manufacturing.micromechanics.json"
+      },
+      {
+        "id": "module.capstone.manufacturing.decoration",
+        "path": "modules/module.capstone.manufacturing.decoration.json"
+      },
+      {
+        "id": "module.capstone.design.requirements",
+        "path": "modules/module.capstone.design.requirements.json"
+      },
+      {
+        "id": "module.capstone.design.acquired-movement",
+        "path": "modules/module.capstone.design.acquired-movement.json"
+      },
+      {
+        "id": "module.capstone.design.external-components",
+        "path": "modules/module.capstone.design.external-components.json"
+      },
+      {
+        "id": "module.capstone.design.controlled-modification",
+        "path": "modules/module.capstone.design.controlled-modification.json"
+      },
+      {
+        "id": "module.capstone.design.own-movement",
+        "path": "modules/module.capstone.design.own-movement.json"
+      },
+      {
+        "id": "module.capstone.design.capstone",
+        "path": "modules/module.capstone.design.capstone.json"
+      },
+      {
+        "id": "module.capstone.validation.watchmaker-review",
+        "path": "modules/module.capstone.validation.watchmaker-review.json"
+      },
+      {
+        "id": "module.capstone.validation.beginner-usability",
+        "path": "modules/module.capstone.validation.beginner-usability.json"
+      },
+      {
+        "id": "module.capstone.validation.calibre-transfer",
+        "path": "modules/module.capstone.validation.calibre-transfer.json"
+      },
+      {
+        "id": "module.capstone.validation.accessibility",
+        "path": "modules/module.capstone.validation.accessibility.json"
+      },
+      {
+        "id": "module.capstone.validation.deferred-retention",
+        "path": "modules/module.capstone.validation.deferred-retention.json"
+      }
+    ],
+    "concepts": [
+      {
+        "id": "concept.capstone.manufacturing.dfm-datums",
+        "path": "concepts/concept.capstone.manufacturing.dfm-datums.json"
+      },
+      {
+        "id": "concept.capstone.manufacturing.case",
+        "path": "concepts/concept.capstone.manufacturing.case.json"
+      },
+      {
+        "id": "concept.capstone.manufacturing.dial",
+        "path": "concepts/concept.capstone.manufacturing.dial.json"
+      },
+      {
+        "id": "concept.capstone.manufacturing.hands",
+        "path": "concepts/concept.capstone.manufacturing.hands.json"
+      },
+      {
+        "id": "concept.capstone.manufacturing.plates-bridges",
+        "path": "concepts/concept.capstone.manufacturing.plates-bridges.json"
+      },
+      {
+        "id": "concept.capstone.manufacturing.micromechanics",
+        "path": "concepts/concept.capstone.manufacturing.micromechanics.json"
+      },
+      {
+        "id": "concept.capstone.manufacturing.decoration",
+        "path": "concepts/concept.capstone.manufacturing.decoration.json"
+      },
+      {
+        "id": "concept.capstone.design.requirements",
+        "path": "concepts/concept.capstone.design.requirements.json"
+      },
+      {
+        "id": "concept.capstone.design.acquired-movement",
+        "path": "concepts/concept.capstone.design.acquired-movement.json"
+      },
+      {
+        "id": "concept.capstone.design.external-components",
+        "path": "concepts/concept.capstone.design.external-components.json"
+      },
+      {
+        "id": "concept.capstone.design.controlled-modification",
+        "path": "concepts/concept.capstone.design.controlled-modification.json"
+      },
+      {
+        "id": "concept.capstone.design.own-movement",
+        "path": "concepts/concept.capstone.design.own-movement.json"
+      },
+      {
+        "id": "concept.capstone.design.capstone",
+        "path": "concepts/concept.capstone.design.capstone.json"
+      },
+      {
+        "id": "concept.capstone.validation.watchmaker-review",
+        "path": "concepts/concept.capstone.validation.watchmaker-review.json"
+      },
+      {
+        "id": "concept.capstone.validation.beginner-usability",
+        "path": "concepts/concept.capstone.validation.beginner-usability.json"
+      },
+      {
+        "id": "concept.capstone.validation.calibre-transfer",
+        "path": "concepts/concept.capstone.validation.calibre-transfer.json"
+      },
+      {
+        "id": "concept.capstone.validation.accessibility",
+        "path": "concepts/concept.capstone.validation.accessibility.json"
+      },
+      {
+        "id": "concept.capstone.validation.deferred-retention",
+        "path": "concepts/concept.capstone.validation.deferred-retention.json"
+      }
+    ],
+    "misconceptions": [],
+    "blocks": [
+      {
+        "id": "block.capstone.manufacturing.dfm-datums",
+        "path": "blocks/block.capstone.manufacturing.dfm-datums.json"
+      },
+      {
+        "id": "block.capstone.manufacturing.case",
+        "path": "blocks/block.capstone.manufacturing.case.json"
+      },
+      {
+        "id": "block.capstone.manufacturing.dial",
+        "path": "blocks/block.capstone.manufacturing.dial.json"
+      },
+      {
+        "id": "block.capstone.manufacturing.hands",
+        "path": "blocks/block.capstone.manufacturing.hands.json"
+      },
+      {
+        "id": "block.capstone.manufacturing.plates-bridges",
+        "path": "blocks/block.capstone.manufacturing.plates-bridges.json"
+      },
+      {
+        "id": "block.capstone.manufacturing.micromechanics",
+        "path": "blocks/block.capstone.manufacturing.micromechanics.json"
+      },
+      {
+        "id": "block.capstone.manufacturing.decoration",
+        "path": "blocks/block.capstone.manufacturing.decoration.json"
+      },
+      {
+        "id": "block.capstone.design.requirements",
+        "path": "blocks/block.capstone.design.requirements.json"
+      },
+      {
+        "id": "block.capstone.design.acquired-movement",
+        "path": "blocks/block.capstone.design.acquired-movement.json"
+      },
+      {
+        "id": "block.capstone.design.external-components",
+        "path": "blocks/block.capstone.design.external-components.json"
+      },
+      {
+        "id": "block.capstone.design.controlled-modification",
+        "path": "blocks/block.capstone.design.controlled-modification.json"
+      },
+      {
+        "id": "block.capstone.design.own-movement",
+        "path": "blocks/block.capstone.design.own-movement.json"
+      },
+      {
+        "id": "block.capstone.design.capstone",
+        "path": "blocks/block.capstone.design.capstone.json"
+      },
+      {
+        "id": "block.capstone.validation.watchmaker-review",
+        "path": "blocks/block.capstone.validation.watchmaker-review.json"
+      },
+      {
+        "id": "block.capstone.validation.beginner-usability",
+        "path": "blocks/block.capstone.validation.beginner-usability.json"
+      },
+      {
+        "id": "block.capstone.validation.calibre-transfer",
+        "path": "blocks/block.capstone.validation.calibre-transfer.json"
+      },
+      {
+        "id": "block.capstone.validation.accessibility",
+        "path": "blocks/block.capstone.validation.accessibility.json"
+      },
+      {
+        "id": "block.capstone.validation.deferred-retention",
+        "path": "blocks/block.capstone.validation.deferred-retention.json"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "lesson.capstone.manufacturing.dfm-datums",
+        "path": "lessons/lesson.capstone.manufacturing.dfm-datums.json"
+      },
+      {
+        "id": "lesson.capstone.manufacturing.case",
+        "path": "lessons/lesson.capstone.manufacturing.case.json"
+      },
+      {
+        "id": "lesson.capstone.manufacturing.dial",
+        "path": "lessons/lesson.capstone.manufacturing.dial.json"
+      },
+      {
+        "id": "lesson.capstone.manufacturing.hands",
+        "path": "lessons/lesson.capstone.manufacturing.hands.json"
+      },
+      {
+        "id": "lesson.capstone.manufacturing.plates-bridges",
+        "path": "lessons/lesson.capstone.manufacturing.plates-bridges.json"
+      },
+      {
+        "id": "lesson.capstone.manufacturing.micromechanics",
+        "path": "lessons/lesson.capstone.manufacturing.micromechanics.json"
+      },
+      {
+        "id": "lesson.capstone.manufacturing.decoration",
+        "path": "lessons/lesson.capstone.manufacturing.decoration.json"
+      },
+      {
+        "id": "lesson.capstone.design.requirements",
+        "path": "lessons/lesson.capstone.design.requirements.json"
+      },
+      {
+        "id": "lesson.capstone.design.acquired-movement",
+        "path": "lessons/lesson.capstone.design.acquired-movement.json"
+      },
+      {
+        "id": "lesson.capstone.design.external-components",
+        "path": "lessons/lesson.capstone.design.external-components.json"
+      },
+      {
+        "id": "lesson.capstone.design.controlled-modification",
+        "path": "lessons/lesson.capstone.design.controlled-modification.json"
+      },
+      {
+        "id": "lesson.capstone.design.own-movement",
+        "path": "lessons/lesson.capstone.design.own-movement.json"
+      },
+      {
+        "id": "lesson.capstone.design.capstone",
+        "path": "lessons/lesson.capstone.design.capstone.json"
+      },
+      {
+        "id": "lesson.capstone.validation.watchmaker-review",
+        "path": "lessons/lesson.capstone.validation.watchmaker-review.json"
+      },
+      {
+        "id": "lesson.capstone.validation.beginner-usability",
+        "path": "lessons/lesson.capstone.validation.beginner-usability.json"
+      },
+      {
+        "id": "lesson.capstone.validation.calibre-transfer",
+        "path": "lessons/lesson.capstone.validation.calibre-transfer.json"
+      },
+      {
+        "id": "lesson.capstone.validation.accessibility",
+        "path": "lessons/lesson.capstone.validation.accessibility.json"
+      },
+      {
+        "id": "lesson.capstone.validation.deferred-retention",
+        "path": "lessons/lesson.capstone.validation.deferred-retention.json"
+      }
+    ],
+    "activities": [
+      {
+        "id": "activity.capstone.manufacturing.dfm-datums",
+        "path": "activities/activity.capstone.manufacturing.dfm-datums.json"
+      },
+      {
+        "id": "activity.capstone.manufacturing.case",
+        "path": "activities/activity.capstone.manufacturing.case.json"
+      },
+      {
+        "id": "activity.capstone.manufacturing.dial",
+        "path": "activities/activity.capstone.manufacturing.dial.json"
+      },
+      {
+        "id": "activity.capstone.manufacturing.hands",
+        "path": "activities/activity.capstone.manufacturing.hands.json"
+      },
+      {
+        "id": "activity.capstone.manufacturing.plates-bridges",
+        "path": "activities/activity.capstone.manufacturing.plates-bridges.json"
+      },
+      {
+        "id": "activity.capstone.manufacturing.micromechanics",
+        "path": "activities/activity.capstone.manufacturing.micromechanics.json"
+      },
+      {
+        "id": "activity.capstone.manufacturing.decoration",
+        "path": "activities/activity.capstone.manufacturing.decoration.json"
+      },
+      {
+        "id": "activity.capstone.design.requirements",
+        "path": "activities/activity.capstone.design.requirements.json"
+      },
+      {
+        "id": "activity.capstone.design.acquired-movement",
+        "path": "activities/activity.capstone.design.acquired-movement.json"
+      },
+      {
+        "id": "activity.capstone.design.external-components",
+        "path": "activities/activity.capstone.design.external-components.json"
+      },
+      {
+        "id": "activity.capstone.design.controlled-modification",
+        "path": "activities/activity.capstone.design.controlled-modification.json"
+      },
+      {
+        "id": "activity.capstone.design.own-movement",
+        "path": "activities/activity.capstone.design.own-movement.json"
+      },
+      {
+        "id": "activity.capstone.design.capstone",
+        "path": "activities/activity.capstone.design.capstone.json"
+      },
+      {
+        "id": "activity.capstone.validation.watchmaker-review",
+        "path": "activities/activity.capstone.validation.watchmaker-review.json"
+      },
+      {
+        "id": "activity.capstone.validation.beginner-usability",
+        "path": "activities/activity.capstone.validation.beginner-usability.json"
+      },
+      {
+        "id": "activity.capstone.validation.calibre-transfer",
+        "path": "activities/activity.capstone.validation.calibre-transfer.json"
+      },
+      {
+        "id": "activity.capstone.validation.accessibility",
+        "path": "activities/activity.capstone.validation.accessibility.json"
+      },
+      {
+        "id": "activity.capstone.validation.deferred-retention",
+        "path": "activities/activity.capstone.validation.deferred-retention.json"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "scene.capstone.manufacturing.dfm-datums",
+        "path": "scenes/scene.capstone.manufacturing.dfm-datums.json"
+      },
+      {
+        "id": "scene.capstone.manufacturing.case",
+        "path": "scenes/scene.capstone.manufacturing.case.json"
+      },
+      {
+        "id": "scene.capstone.manufacturing.dial",
+        "path": "scenes/scene.capstone.manufacturing.dial.json"
+      },
+      {
+        "id": "scene.capstone.manufacturing.hands",
+        "path": "scenes/scene.capstone.manufacturing.hands.json"
+      },
+      {
+        "id": "scene.capstone.manufacturing.plates-bridges",
+        "path": "scenes/scene.capstone.manufacturing.plates-bridges.json"
+      },
+      {
+        "id": "scene.capstone.manufacturing.micromechanics",
+        "path": "scenes/scene.capstone.manufacturing.micromechanics.json"
+      },
+      {
+        "id": "scene.capstone.manufacturing.decoration",
+        "path": "scenes/scene.capstone.manufacturing.decoration.json"
+      },
+      {
+        "id": "scene.capstone.design.requirements",
+        "path": "scenes/scene.capstone.design.requirements.json"
+      },
+      {
+        "id": "scene.capstone.design.acquired-movement",
+        "path": "scenes/scene.capstone.design.acquired-movement.json"
+      },
+      {
+        "id": "scene.capstone.design.external-components",
+        "path": "scenes/scene.capstone.design.external-components.json"
+      },
+      {
+        "id": "scene.capstone.design.controlled-modification",
+        "path": "scenes/scene.capstone.design.controlled-modification.json"
+      },
+      {
+        "id": "scene.capstone.design.own-movement",
+        "path": "scenes/scene.capstone.design.own-movement.json"
+      },
+      {
+        "id": "scene.capstone.design.capstone",
+        "path": "scenes/scene.capstone.design.capstone.json"
+      },
+      {
+        "id": "scene.capstone.validation.watchmaker-review",
+        "path": "scenes/scene.capstone.validation.watchmaker-review.json"
+      },
+      {
+        "id": "scene.capstone.validation.beginner-usability",
+        "path": "scenes/scene.capstone.validation.beginner-usability.json"
+      },
+      {
+        "id": "scene.capstone.validation.calibre-transfer",
+        "path": "scenes/scene.capstone.validation.calibre-transfer.json"
+      },
+      {
+        "id": "scene.capstone.validation.accessibility",
+        "path": "scenes/scene.capstone.validation.accessibility.json"
+      },
+      {
+        "id": "scene.capstone.validation.deferred-retention",
+        "path": "scenes/scene.capstone.validation.deferred-retention.json"
+      }
+    ],
+    "competencies": [
+      {
+        "id": "competency.capstone.manufacturing.dfm-datums",
+        "path": "competencies/competency.capstone.manufacturing.dfm-datums.json"
+      },
+      {
+        "id": "competency.capstone.manufacturing.case",
+        "path": "competencies/competency.capstone.manufacturing.case.json"
+      },
+      {
+        "id": "competency.capstone.manufacturing.dial",
+        "path": "competencies/competency.capstone.manufacturing.dial.json"
+      },
+      {
+        "id": "competency.capstone.manufacturing.hands",
+        "path": "competencies/competency.capstone.manufacturing.hands.json"
+      },
+      {
+        "id": "competency.capstone.manufacturing.plates-bridges",
+        "path": "competencies/competency.capstone.manufacturing.plates-bridges.json"
+      },
+      {
+        "id": "competency.capstone.manufacturing.micromechanics",
+        "path": "competencies/competency.capstone.manufacturing.micromechanics.json"
+      },
+      {
+        "id": "competency.capstone.manufacturing.decoration",
+        "path": "competencies/competency.capstone.manufacturing.decoration.json"
+      },
+      {
+        "id": "competency.capstone.design.requirements",
+        "path": "competencies/competency.capstone.design.requirements.json"
+      },
+      {
+        "id": "competency.capstone.design.acquired-movement",
+        "path": "competencies/competency.capstone.design.acquired-movement.json"
+      },
+      {
+        "id": "competency.capstone.design.external-components",
+        "path": "competencies/competency.capstone.design.external-components.json"
+      },
+      {
+        "id": "competency.capstone.design.controlled-modification",
+        "path": "competencies/competency.capstone.design.controlled-modification.json"
+      },
+      {
+        "id": "competency.capstone.design.own-movement",
+        "path": "competencies/competency.capstone.design.own-movement.json"
+      },
+      {
+        "id": "competency.capstone.design.capstone",
+        "path": "competencies/competency.capstone.design.capstone.json"
+      },
+      {
+        "id": "competency.capstone.validation.watchmaker-review",
+        "path": "competencies/competency.capstone.validation.watchmaker-review.json"
+      },
+      {
+        "id": "competency.capstone.validation.beginner-usability",
+        "path": "competencies/competency.capstone.validation.beginner-usability.json"
+      },
+      {
+        "id": "competency.capstone.validation.calibre-transfer",
+        "path": "competencies/competency.capstone.validation.calibre-transfer.json"
+      },
+      {
+        "id": "competency.capstone.validation.accessibility",
+        "path": "competencies/competency.capstone.validation.accessibility.json"
+      },
+      {
+        "id": "competency.capstone.validation.deferred-retention",
+        "path": "competencies/competency.capstone.validation.deferred-retention.json"
+      }
+    ],
+    "evidenceTemplates": [
+      {
+        "id": "evidence.capstone.manufacturing.dfm-datums",
+        "path": "evidence/evidence.capstone.manufacturing.dfm-datums.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.dfm-datums.human-review",
+        "path": "evidence/evidence.capstone.manufacturing.dfm-datums.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.case",
+        "path": "evidence/evidence.capstone.manufacturing.case.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.case.human-review",
+        "path": "evidence/evidence.capstone.manufacturing.case.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.dial",
+        "path": "evidence/evidence.capstone.manufacturing.dial.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.dial.human-review",
+        "path": "evidence/evidence.capstone.manufacturing.dial.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.hands",
+        "path": "evidence/evidence.capstone.manufacturing.hands.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.hands.human-review",
+        "path": "evidence/evidence.capstone.manufacturing.hands.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.plates-bridges",
+        "path": "evidence/evidence.capstone.manufacturing.plates-bridges.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.plates-bridges.human-review",
+        "path": "evidence/evidence.capstone.manufacturing.plates-bridges.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.micromechanics",
+        "path": "evidence/evidence.capstone.manufacturing.micromechanics.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.micromechanics.human-review",
+        "path": "evidence/evidence.capstone.manufacturing.micromechanics.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.decoration",
+        "path": "evidence/evidence.capstone.manufacturing.decoration.json"
+      },
+      {
+        "id": "evidence.capstone.manufacturing.decoration.human-review",
+        "path": "evidence/evidence.capstone.manufacturing.decoration.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.design.requirements",
+        "path": "evidence/evidence.capstone.design.requirements.json"
+      },
+      {
+        "id": "evidence.capstone.design.requirements.human-review",
+        "path": "evidence/evidence.capstone.design.requirements.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.design.acquired-movement",
+        "path": "evidence/evidence.capstone.design.acquired-movement.json"
+      },
+      {
+        "id": "evidence.capstone.design.acquired-movement.human-review",
+        "path": "evidence/evidence.capstone.design.acquired-movement.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.design.external-components",
+        "path": "evidence/evidence.capstone.design.external-components.json"
+      },
+      {
+        "id": "evidence.capstone.design.external-components.human-review",
+        "path": "evidence/evidence.capstone.design.external-components.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.design.controlled-modification",
+        "path": "evidence/evidence.capstone.design.controlled-modification.json"
+      },
+      {
+        "id": "evidence.capstone.design.controlled-modification.human-review",
+        "path": "evidence/evidence.capstone.design.controlled-modification.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.design.own-movement",
+        "path": "evidence/evidence.capstone.design.own-movement.json"
+      },
+      {
+        "id": "evidence.capstone.design.own-movement.human-review",
+        "path": "evidence/evidence.capstone.design.own-movement.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.design.capstone",
+        "path": "evidence/evidence.capstone.design.capstone.json"
+      },
+      {
+        "id": "evidence.capstone.design.capstone.human-review",
+        "path": "evidence/evidence.capstone.design.capstone.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.validation.watchmaker-review",
+        "path": "evidence/evidence.capstone.validation.watchmaker-review.json"
+      },
+      {
+        "id": "evidence.capstone.validation.watchmaker-review.human-review",
+        "path": "evidence/evidence.capstone.validation.watchmaker-review.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.validation.beginner-usability",
+        "path": "evidence/evidence.capstone.validation.beginner-usability.json"
+      },
+      {
+        "id": "evidence.capstone.validation.beginner-usability.human-review",
+        "path": "evidence/evidence.capstone.validation.beginner-usability.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.validation.calibre-transfer",
+        "path": "evidence/evidence.capstone.validation.calibre-transfer.json"
+      },
+      {
+        "id": "evidence.capstone.validation.calibre-transfer.human-review",
+        "path": "evidence/evidence.capstone.validation.calibre-transfer.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.validation.accessibility",
+        "path": "evidence/evidence.capstone.validation.accessibility.json"
+      },
+      {
+        "id": "evidence.capstone.validation.accessibility.human-review",
+        "path": "evidence/evidence.capstone.validation.accessibility.human-review.json"
+      },
+      {
+        "id": "evidence.capstone.validation.deferred-retention",
+        "path": "evidence/evidence.capstone.validation.deferred-retention.json"
+      },
+      {
+        "id": "evidence.capstone.validation.deferred-retention.human-review",
+        "path": "evidence/evidence.capstone.validation.deferred-retention.human-review.json"
+      }
+    ],
+    "rubrics": [
+      {
+        "id": "rubric.capstone.manufacturing.dfm-datums",
+        "path": "rubrics/rubric.capstone.manufacturing.dfm-datums.json"
+      },
+      {
+        "id": "rubric.capstone.manufacturing.case",
+        "path": "rubrics/rubric.capstone.manufacturing.case.json"
+      },
+      {
+        "id": "rubric.capstone.manufacturing.dial",
+        "path": "rubrics/rubric.capstone.manufacturing.dial.json"
+      },
+      {
+        "id": "rubric.capstone.manufacturing.hands",
+        "path": "rubrics/rubric.capstone.manufacturing.hands.json"
+      },
+      {
+        "id": "rubric.capstone.manufacturing.plates-bridges",
+        "path": "rubrics/rubric.capstone.manufacturing.plates-bridges.json"
+      },
+      {
+        "id": "rubric.capstone.manufacturing.micromechanics",
+        "path": "rubrics/rubric.capstone.manufacturing.micromechanics.json"
+      },
+      {
+        "id": "rubric.capstone.manufacturing.decoration",
+        "path": "rubrics/rubric.capstone.manufacturing.decoration.json"
+      },
+      {
+        "id": "rubric.capstone.design.requirements",
+        "path": "rubrics/rubric.capstone.design.requirements.json"
+      },
+      {
+        "id": "rubric.capstone.design.acquired-movement",
+        "path": "rubrics/rubric.capstone.design.acquired-movement.json"
+      },
+      {
+        "id": "rubric.capstone.design.external-components",
+        "path": "rubrics/rubric.capstone.design.external-components.json"
+      },
+      {
+        "id": "rubric.capstone.design.controlled-modification",
+        "path": "rubrics/rubric.capstone.design.controlled-modification.json"
+      },
+      {
+        "id": "rubric.capstone.design.own-movement",
+        "path": "rubrics/rubric.capstone.design.own-movement.json"
+      },
+      {
+        "id": "rubric.capstone.design.capstone",
+        "path": "rubrics/rubric.capstone.design.capstone.json"
+      },
+      {
+        "id": "rubric.capstone.validation.watchmaker-review",
+        "path": "rubrics/rubric.capstone.validation.watchmaker-review.json"
+      },
+      {
+        "id": "rubric.capstone.validation.beginner-usability",
+        "path": "rubrics/rubric.capstone.validation.beginner-usability.json"
+      },
+      {
+        "id": "rubric.capstone.validation.calibre-transfer",
+        "path": "rubrics/rubric.capstone.validation.calibre-transfer.json"
+      },
+      {
+        "id": "rubric.capstone.validation.accessibility",
+        "path": "rubrics/rubric.capstone.validation.accessibility.json"
+      },
+      {
+        "id": "rubric.capstone.validation.deferred-retention",
+        "path": "rubrics/rubric.capstone.validation.deferred-retention.json"
+      }
+    ],
+    "glossary": [],
+    "sources": [
+      {
+        "id": "source.iso.286-1",
+        "path": "sources/source.iso.286-1.json"
+      },
+      {
+        "id": "source.iso.1101",
+        "path": "sources/source.iso.1101.json"
+      },
+      {
+        "id": "source.iso.21920-1",
+        "path": "sources/source.iso.21920-1.json"
+      },
+      {
+        "id": "source.iso.14253-1",
+        "path": "sources/source.iso.14253-1.json"
+      },
+      {
+        "id": "source.iso.22810",
+        "path": "sources/source.iso.22810.json"
+      },
+      {
+        "id": "source.iso.14856",
+        "path": "sources/source.iso.14856.json"
+      },
+      {
+        "id": "source.iso.3160-2",
+        "path": "sources/source.iso.3160-2.json"
+      },
+      {
+        "id": "source.iso.9241-11",
+        "path": "sources/source.iso.9241-11.json"
+      },
+      {
+        "id": "source.iso.9241-210",
+        "path": "sources/source.iso.9241-210.json"
+      },
+      {
+        "id": "source.w3c.wcag22",
+        "path": "sources/source.w3c.wcag22.json"
+      },
+      {
+        "id": "source.niosh.machine-safety",
+        "path": "sources/source.niosh.machine-safety.json"
+      },
+      {
+        "id": "source.niosh.metalworking-fluids",
+        "path": "sources/source.niosh.metalworking-fluids.json"
+      },
+      {
+        "id": "source.osha.metalworking-fluids",
+        "path": "sources/source.osha.metalworking-fluids.json"
+      },
+      {
+        "id": "source.nist.human-centered-design",
+        "path": "sources/source.nist.human-centered-design.json"
+      },
+      {
+        "id": "source.roediger-karpicke.2006",
+        "path": "sources/source.roediger-karpicke.2006.json"
+      },
+      {
+        "id": "source.cepeda.2008",
+        "path": "sources/source.cepeda.2008.json"
+      },
+      {
+        "id": "source.miyota.8215.official",
+        "path": "sources/source.miyota.8215.official.json"
+      },
+      {
+        "id": "source.eta.6497-2.communication",
+        "path": "sources/source.eta.6497-2.communication.json"
+      },
+      {
+        "id": "source.seiko.6138a.technical-guide",
+        "path": "sources/source.seiko.6138a.technical-guide.json"
+      },
+      {
+        "id": "source.private.horologia-book",
+        "path": "sources/source.private.horologia-book.json"
+      }
+    ],
+    "recommendations": [],
+    "visualResources": []
+  },
+  "minimumAppVersion": "0.10.0",
+  "createdAt": "2026-08-02T00:00:00.000Z"
+}

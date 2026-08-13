@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+  "version": "1.1.0",
+  "title": "Bobina, estator y motor paso a paso bipolar",
+  "blockIds": [
+    "block.encyclopedia.quartz-electronics.toh-motor-paso-bipolar"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.toh-motor-paso-bipolar"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Bobina, estator y motor paso a paso bipolar",
+      "en": "Bobina, estator y motor paso a paso bipolar"
+    },
+    "purpose": {
+      "es": "¿Cómo produce un pulso eléctrico un giro discreto y orientado?",
+      "en": "¿Cómo produce un pulso eléctrico un giro discreto y orientado?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Bobina, estator y motor paso a paso bipolar mediante relaciones causales.",
+        "en": "Explicar Bobina, estator y motor paso a paso bipolar mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+      "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+      "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.estator",
+      "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.rotor-imantado",
+      "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.pulso-bipolar"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch15",
+      "source.official.miyota.2035",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.estator",
+        "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.rotor-imantado",
+        "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.pulso-bipolar"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1119,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.quartz-electronics.toh-motor-paso-bipolar"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: estator, rotor imantado, pulso bipolar.",
+          "en": "Defino con mis palabras: estator, rotor imantado, pulso bipolar."
+        },
+        {
+          "es": "Sigo «Bobina, estator y motor paso a paso bipolar» desde aplicar pulso hasta invertir siguiente pulso y explico cada enlace.",
+          "en": "Sigo «Bobina, estator y motor paso a paso bipolar» desde aplicar pulso hasta invertir siguiente pulso y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Bobina, estator y motor paso a paso bipolar» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Bobina, estator y motor paso a paso bipolar» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Compara motor bipolar y de dos fases por entradas, estados y observaciones.",
+          "en": "Aplico el criterio a esta variante: Compara motor bipolar y de dos fases por entradas, estados y observaciones."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Bobina, estator y motor paso a paso bipolar» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Bobina, estator y motor paso a paso bipolar» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.estator",
+        "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.rotor-imantado",
+        "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.pulso-bipolar"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo produce un pulso eléctrico un giro discreto y orientado?",
+          "en": "¿Cómo produce un pulso eléctrico un giro discreto y orientado?"
+        },
+        {
+          "es": "¿Qué relación causal de «Bobina, estator y motor paso a paso bipolar» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Bobina, estator y motor paso a paso bipolar» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.history-language.toh-tiempo-escalas",
+  "version": "1.1.0",
+  "title": "Tiempo, escalas y calendario civil",
+  "blockIds": [
+    "block.encyclopedia.history-language.toh-tiempo-escalas"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.history-language.toh-tiempo-escalas"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Tiempo, escalas y calendario civil",
+      "en": "Tiempo, escalas y calendario civil"
+    },
+    "purpose": {
+      "es": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?",
+      "en": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Tiempo, escalas y calendario civil mediante relaciones causales.",
+        "en": "Explicar Tiempo, escalas y calendario civil mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+      "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+      "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.history-language.toh-tiempo-escalas.escala-temporal",
+      "concept.encyclopedia.history-language.toh-tiempo-escalas.tiempo-solar-aparente",
+      "concept.encyclopedia.history-language.toh-tiempo-escalas.calendario-civil"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch01",
+      "source.official.bipm.vim",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.escala-temporal",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.tiempo-solar-aparente",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.calendario-civil"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1128,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.history-language.toh-tiempo-escalas"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: escala temporal, tiempo solar aparente, calendario civil.",
+          "en": "Defino con mis palabras: escala temporal, tiempo solar aparente, calendario civil."
+        },
+        {
+          "es": "Relaciono cada cambio de «Tiempo, escalas y calendario civil» con el problema que intentaba resolver y con una fuente.",
+          "en": "Relaciono cada cambio de «Tiempo, escalas y calendario civil» con el problema que intentaba resolver y con una fuente."
+        },
+        {
+          "es": "Distingo qué parte de «Tiempo, escalas y calendario civil» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Tiempo, escalas y calendario civil» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Explica por qué dos relojes correctos pueden mostrar escalas distintas y documenta la conversión necesaria.",
+          "en": "Aplico el criterio a esta variante: Explica por qué dos relojes correctos pueden mostrar escalas distintas y documenta la conversión necesaria."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Tiempo, escalas y calendario civil» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Tiempo, escalas y calendario civil» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.escala-temporal",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.tiempo-solar-aparente",
+        "concept.encyclopedia.history-language.toh-tiempo-escalas.calendario-civil"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?",
+          "en": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?"
+        },
+        {
+          "es": "¿Qué relación causal de «Tiempo, escalas y calendario civil» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Tiempo, escalas y calendario civil» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.complications.toh-cronografo-estados",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.complications.toh-cronografo-estados",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.complications.toh-cronografo-estados",
+      "version": "1.1.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Cronógrafo: mando, embrague, freno y puesta a cero."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.complications.toh-cronografo-estados",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.complications.toh-cronografo-estados",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

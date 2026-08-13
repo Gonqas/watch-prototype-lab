@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.complications.toh-calendario-secuencia",
+  "version": "1.1.0",
+  "title": "Cuaderno: Calendario simple, salto y corrección",
+  "description": "¿Cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Calendario simple, salto y corrección. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.complications.toh-calendario-secuencia.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.complications.toh-calendario-secuencia.answer",
+      "instructionMarkdown": "Explica **Calendario simple, salto y corrección** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.complications.toh-calendario-secuencia.explain",
+          "promptMarkdown": "¿Cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.complications.toh-calendario-secuencia.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-calendario-secuencia.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-calendario-secuencia.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-calendario-secuencia.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.complications.toh-calendario-secuencia.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por tomar ciclo de 24 horas y sigue hasta asentar nueva fecha.",
+                "en": "Empieza por tomar ciclo de 24 horas y sigue hasta asentar nueva fecha."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.complications.toh-calendario-secuencia.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Una rueda de arrastre toma la rotación diaria, carga o empuja un mecanismo de cambio, libera el disco y un muelle de posicionamiento lo estabiliza. La corrección rápida puede compartir piezas y crear una zona temporal de riesgo.",
+                "en": "Una rueda de arrastre toma la rotación diaria, carga o empuja un mecanismo de cambio, libera el disco y un muelle de posicionamiento lo estabiliza. La corrección rápida puede compartir piezas y crear una zona temporal de riesgo."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?",
+              "en": "¿Cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena tomar ciclo de 24 horas → aproximar arrastre → cargar o empujar → vencer jumper → avanzar un paso → asentar nueva fecha, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena tomar ciclo de 24 horas → aproximar arrastre → cargar o empujar → vencer jumper → avanzar un paso → asentar nueva fecha, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.complications.toh-calendario-secuencia.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.complications.toh-calendario-secuencia.mechanism",
+            "field.encyclopedia.complications.toh-calendario-secuencia.evidence",
+            "field.encyclopedia.complications.toh-calendario-secuencia.limit",
+            "field.encyclopedia.complications.toh-calendario-secuencia.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

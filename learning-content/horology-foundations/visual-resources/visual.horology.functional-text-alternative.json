@@ -1,0 +1,58 @@
+{
+  "id": "visual.horology.functional-text-alternative",
+  "version": "0.5.0",
+  "type": "accessible-text-alternative",
+  "purpose": {
+    "es": "Soportar functional text alternative con selectores, procedencia y alternativa accesible."
+  },
+  "status": "ready",
+  "sourceIds": [
+    "source.horology.original-functional-map"
+  ],
+  "fidelity": {
+    "geometry": "G1",
+    "kinematics": "K2",
+    "physics": "P0",
+    "limitations": [
+      "Representación educativa normalizada; no expresa dimensiones ni física validada."
+    ]
+  },
+  "lessonIds": [
+    "lesson.horology.system",
+    "lesson.horology.mechanical-chain",
+    "lesson.horology.quartz-chain",
+    "lesson.horology.functional-equivalence",
+    "lesson.horology.failure-prediction",
+    "lesson.horology.isa8172-confidence"
+  ],
+  "movementIds": [
+    "fixture.conceptual.quartz-chain"
+  ],
+  "partSelectors": [],
+  "requiredCapabilities": [
+    "learning.scene-runtime",
+    "canonical-selectors-v1",
+    "viewport.selection",
+    "viewport.visibility",
+    "viewport.isolation",
+    "viewport.transparency",
+    "viewport.highlight",
+    "viewport.explode",
+    "viewport.camera",
+    "viewport.overlay.labels",
+    "viewport.overlay.arrows",
+    "viewport.energy-route",
+    "timeline.scrub",
+    "reduced-motion",
+    "viewport.restore"
+  ],
+  "dataRequirements": [
+    "Modelo técnico 4B intacto.",
+    "Identidad de cada pieza estable.",
+    "Alternativa textual funcional."
+  ],
+  "priority": "high",
+  "dependencyIds": [],
+  "currentModelSupport": "yes",
+  "viewportImpact": "configuration"
+}

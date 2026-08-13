@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+  "version": "1.1.0",
+  "title": "Oscilación, frecuencia, resonancia y amortiguamiento",
+  "blockIds": [
+    "block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Oscilación, frecuencia, resonancia y amortiguamiento",
+      "en": "Oscilación, frecuencia, resonancia y amortiguamiento"
+    },
+    "purpose": {
+      "es": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+      "en": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Oscilación, frecuencia, resonancia y amortiguamiento mediante relaciones causales.",
+        "en": "Explicar Oscilación, frecuencia, resonancia y amortiguamiento mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+      "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+      "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+      "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+      "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+    ],
+    "sourceIds": [
+      "source.private.daniels.balance-spring",
+      "source.external.ciechanowski-mechanical-watch",
+      "source.private.vba-uhrentechnik"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1100,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: frecuencia natural, amortiguamiento, factor de calidad.",
+          "en": "Defino con mis palabras: frecuencia natural, amortiguamiento, factor de calidad."
+        },
+        {
+          "es": "Separo en «Oscilación, frecuencia, resonancia y amortiguamiento» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Oscilación, frecuencia, resonancia y amortiguamiento» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Oscilación, frecuencia, resonancia y amortiguamiento» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Oscilación, frecuencia, resonancia y amortiguamiento» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Compara volante-espiral y cuarzo mediante inercia, rigidez, mantenimiento, amortiguamiento y lectura de frecuencia; no uses precisión comercial como sustituto del mecanismo.",
+          "en": "Aplico el criterio a esta variante: Compara volante-espiral y cuarzo mediante inercia, rigidez, mantenimiento, amortiguamiento y lectura de frecuencia; no uses precisión comercial como sustituto del mecanismo."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Oscilación, frecuencia, resonancia y amortiguamiento» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Oscilación, frecuencia, resonancia y amortiguamiento» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+          "en": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+        },
+        {
+          "es": "¿Qué relación causal de «Oscilación, frecuencia, resonancia y amortiguamiento» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Oscilación, frecuencia, resonancia y amortiguamiento» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "evidence.horology.confidence-declaration",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.state-source-confidence",
+  "kind": "answer",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.horology.confidence-declaration",
+    "version": "0.5.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.horology.state-source-confidence",
+    "packageId": "wplab.horology.functional-map",
+    "activityIds": [
+      "activity.horology.isa-confidence-map"
+    ],
+    "evidenceTemplateId": "evidence.horology.confidence-declaration",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data"
+    ]
+  }
+}

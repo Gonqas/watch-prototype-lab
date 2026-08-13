@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.mechanical.retain-explain-motion-works",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: explicar la minutería",
+    "en": "Práctica posterior: explicar la minutería"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días.",
+    "en": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días."
+  },
+  "rule": "independent-later-evidence-different-activity-session-minimum-7-days@1.0.0",
+  "priority": 69,
+  "target": {
+    "kind": "competency",
+    "id": "competency.mechanical.explain-motion-works"
+  },
+  "evidenceTemplateIds": [
+    "evidence.mechanical.explain-motion-works"
+  ],
+  "required": false
+}

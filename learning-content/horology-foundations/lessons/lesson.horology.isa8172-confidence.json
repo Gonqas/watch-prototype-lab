@@ -1,0 +1,203 @@
+{
+  "id": "lesson.horology.isa8172-confidence",
+  "version": "0.5.0",
+  "title": "Lo que ya conoces por el ISA 8172",
+  "blockIds": [
+    "block.horology.isa8172-confidence"
+  ],
+  "activityIds": [
+    "activity.horology.isa-confidence-map"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Lo que ya conoces por el ISA 8172"
+    },
+    "purpose": {
+      "es": "Registrar la experiencia previa distinguiendo observación, recuerdo, inferencia, documentación y desconocido."
+    },
+    "objectives": [
+      {
+        "es": "Clasificar la autoridad de una afirmación."
+      },
+      {
+        "es": "Declarar confianza y datos faltantes."
+      },
+      {
+        "es": "Evitar equivalencias físicas no demostradas."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.horology.quartz-chain",
+      "concept.horology.system-interruption"
+    ],
+    "conceptIds": [
+      "concept.horology.source-confidence"
+    ],
+    "sourceIds": [
+      "source.horology.original-functional-map"
+    ],
+    "visualResourceIds": [
+      "visual.horology.isa8172-memory-map",
+      "visual.horology.functional-text-alternative"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Hacer visible la autoridad diferente de cada capa de conocimiento."
+      },
+      "visibleConcept": {
+        "es": "Reconocer una función no demuestra identidad o compatibilidad física."
+      },
+      "modelReference": "fixture.conceptual.quartz",
+      "movementIds": [],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Mapa abstracto estable sin fingir un modelo ISA exacto.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [],
+      "rotationDirections": [],
+      "labels": [
+        "visto",
+        "recordado",
+        "forma",
+        "inferencia",
+        "documentación",
+        "desconocido"
+      ],
+      "arrows": [
+        "relación funcional no equivalente"
+      ],
+      "animations": [],
+      "timelineIntent": "Presentar categorías y registrar elecciones sin movimiento automático.",
+      "userInteraction": "Completar un mapa de confianza estructurado.",
+      "observableResult": {
+        "es": "Cada afirmación queda ligada a una capa, confianza y dato faltante."
+      },
+      "successCriterion": {
+        "es": "Diferenciar dato oficial, observación e inferencia sin inventar detalles del ISA."
+      },
+      "restoration": {
+        "es": "Limpiar selecciones conservando la evidencia registrada fuera del proyecto."
+      },
+      "textualAlternative": {
+        "es": "Tabla editable de afirmación, capa, confianza, fuente y desconocido."
+      },
+      "reducedMotionAlternative": {
+        "es": "La escena ya usa estados discretos sin animación."
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K0",
+        "physics": "P0",
+        "limitations": [
+          "No existe modelo exacto del ISA 8172 en esta escena."
+        ]
+      },
+      "unknownData": [
+        "identidades, medidas y compatibilidades de la unidad ISA no documentadas"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.horology.isa8172-memory-map",
+        "visual.horology.functional-text-alternative"
+      ]
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "guided-practice",
+      "entryCheck": "ungraded-diagnostic",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.horology.source-confidence"
+      ],
+      "reinforcesConceptIds": [
+        "concept.horology.quartz-chain",
+        "concept.horology.system-interruption"
+      ],
+      "bridgeConceptIds": [
+        "concept.horology.quartz-chain",
+        "concept.horology.system-interruption"
+      ]
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.horology.source-confidence"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "externalPrerequisites": [],
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 649,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "observe",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.horology.isa-confidence-map"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Clasificar la autoridad de una afirmación."
+        },
+        {
+          "es": "Declarar confianza y datos faltantes."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Lo que ya conoces por el ISA 8172», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    }
+  }
+}

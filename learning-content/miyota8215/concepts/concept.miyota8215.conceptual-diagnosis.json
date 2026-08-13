@@ -1,0 +1,72 @@
+{
+  "id": "concept.miyota8215.conceptual-diagnosis",
+  "version": "0.5.0",
+  "title": {
+    "es": "Diagnosticar conceptualmente",
+    "en": "Diagnosticar conceptualmente"
+  },
+  "summary": {
+    "es": "Diagnosticar conceptualmente con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Diagnosticar conceptualmente con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.miyota8215.form-hypothesis",
+    "concept.miyota8215.verify-partially"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.inspect"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.conceptual-diagnosis"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "diagnosis",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.select-verification",
+    "activity.miyota8215.complete-diagnosis"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Diagnosticar conceptualmente separa observación, síntoma, hipótesis y comprobación en diagnóstico. Diagnosticar conceptualmente con un modelo estructural, fuentes, operaciones y límites declarados. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles.",
+    "en": "Diagnosticar conceptualmente separa observación, síntoma, hipótesis y comprobación en diagnóstico. Diagnosticar conceptualmente con un modelo estructural, fuentes, operaciones y límites declarados. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.document-calibre"
+  ],
+  "plainLanguage": {
+    "es": "Diagnosticar conceptualmente con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Diagnosticar conceptualmente con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Dominar diagnosticar conceptualmente permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega diagnosticar conceptualmente dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema diagnosis."
+    }
+  ],
+  "misconceptionIds": [
+    "misconception.miyota8215.symptom-is-cause"
+  ],
+  "knowledgeType": "diagnostic",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.diagnosis-project",
+  "targetEvidenceLevel": "transfer"
+}

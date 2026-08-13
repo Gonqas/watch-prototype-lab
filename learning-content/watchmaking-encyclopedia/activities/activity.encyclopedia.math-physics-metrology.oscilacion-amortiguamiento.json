@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Oscilación, frecuencia, resonancia y amortiguamiento",
+  "sceneIds": [
+    "scene.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "rubricId": "rubric.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+    "title": {
+      "es": "Explicar y transferir: Oscilación, frecuencia, resonancia y amortiguamiento",
+      "en": "Explicar y transferir: Oscilación, frecuencia, resonancia y amortiguamiento"
+    },
+    "description": {
+      "es": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+      "en": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "oscillators",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.daniels.balance-spring",
+      "source.external.ciechanowski-mechanical-watch",
+      "source.private.vba-uhrentechnik"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+        "blockId": "block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+        "conceptIds": [
+          "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+          "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+          "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Oscilación, frecuencia, resonancia y amortiguamiento sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Oscilación, frecuencia, resonancia y amortiguamiento sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Si aumenta la fricción del tren o del escape, el volante puede perder amplitud sin detenerse. La tasa puede cambiar por no isocronismo aunque la frecuencia nominal siga siendo la misma. Observar movimiento no basta: amplitud, beat y variación temporal aportan estados diferentes.",
+          "en": "Si aumenta la fricción del tren o del escape, el volante puede perder amplitud sin detenerse. La tasa puede cambiar por no isocronismo aunque la frecuencia nominal siga siendo la misma. Observar movimiento no basta: amplitud, beat y variación temporal aportan estados diferentes."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+            "en": "Identificar la pregunta: ¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+          },
+          {
+            "es": "Dibujar la secuencia desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento.",
+            "en": "Dibujar la secuencia desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: frecuencia; periodo; amplitud; rigidez; momento de inercia; factor Q.",
+            "en": "Asignar magnitudes y evidencia: frecuencia; periodo; amplitud; rigidez; momento de inercia; factor Q."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Compara volante-espiral y cuarzo mediante inercia, rigidez, mantenimiento, amortiguamiento y lectura de frecuencia; no uses precisión comercial como sustituto del mecanismo.",
+          "en": "Compara volante-espiral y cuarzo mediante inercia, rigidez, mantenimiento, amortiguamiento y lectura de frecuencia; no uses precisión comercial como sustituto del mecanismo."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento.",
+            "en": "Completa la cadena con las etapas visibles: desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+            "en": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Compara volante-espiral y cuarzo mediante inercia, rigidez, mantenimiento, amortiguamiento y lectura de frecuencia; no uses precisión comercial como sustituto del mecanismo.",
+            "en": "Compara volante-espiral y cuarzo mediante inercia, rigidez, mantenimiento, amortiguamiento y lectura de frecuencia; no uses precisión comercial como sustituto del mecanismo."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Un oscilador que se mueve a simple vista está regulando correctamente",
+          "en": "Un oscilador que se mueve a simple vista está regulando correctamente"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Oscilación, frecuencia, resonancia y amortiguamiento con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Oscilación, frecuencia, resonancia y amortiguamiento con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Compara volante-espiral y cuarzo mediante inercia, rigidez, mantenimiento, amortiguamiento y lectura de frecuencia; no uses precisión comercial como sustituto del mecanismo.",
+        "en": "Compara volante-espiral y cuarzo mediante inercia, rigidez, mantenimiento, amortiguamiento y lectura de frecuencia; no uses precisión comercial como sustituto del mecanismo."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento, su evidencia y límites.",
+        "en": "La explicación conserva la cadena desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Un oscilador que se mueve a simple vista está regulando correctamente».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Un oscilador que se mueve a simple vista está regulando correctamente»."
+      },
+      "causalQuestion": {
+        "es": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+        "en": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Confundir frecuencia nominal con marcha real. de Atribuir toda amplitud baja al muelle real..",
+        "en": "Busca evidencia para distinguir Confundir frecuencia nominal con marcha real. de Atribuir toda amplitud baja al muelle real.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+      ],
+      "transferPrompt": {
+        "es": "Compara volante-espiral y cuarzo mediante inercia, rigidez, mantenimiento, amortiguamiento y lectura de frecuencia; no uses precisión comercial como sustituto del mecanismo.",
+        "en": "Compara volante-espiral y cuarzo mediante inercia, rigidez, mantenimiento, amortiguamiento y lectura de frecuencia; no uses precisión comercial como sustituto del mecanismo."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+        "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+          "en": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+        },
+        {
+          "es": "¿Qué relación causal de «Oscilación, frecuencia, resonancia y amortiguamiento» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Oscilación, frecuencia, resonancia y amortiguamiento» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

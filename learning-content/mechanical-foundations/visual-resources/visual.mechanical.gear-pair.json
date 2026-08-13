@@ -1,0 +1,64 @@
+{
+  "id": "visual.mechanical.gear-pair",
+  "version": "0.5.0",
+  "type": "conceptual-3d",
+  "purpose": {
+    "es": "Ruedas, piñones y engrane: manipulación y alternativa textual sobre el laboratorio mecánico.",
+    "en": "Ruedas, piñones y engrane: manipulación y alternativa textual sobre el laboratorio mecánico."
+  },
+  "status": "ready",
+  "sourceIds": [
+    "source.horology.private-book.wheels-pinions",
+    "source.horology.original-mechanical-foundations"
+  ],
+  "fidelity": {
+    "geometry": "G1",
+    "kinematics": "K2",
+    "physics": "P0",
+    "limitations": [
+      "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+      "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+      "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+    ]
+  },
+  "lessonIds": [
+    "lesson.mechanical.gear-pair"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "partSelectors": [
+    {
+      "selector": {
+        "by": "role",
+        "value": "train"
+      },
+      "cardinality": "one-or-more"
+    }
+  ],
+  "requiredCapabilities": [
+    "learning.scene-runtime",
+    "canonical-selectors-v1",
+    "viewport.selection",
+    "viewport.visibility",
+    "viewport.isolation",
+    "viewport.transparency",
+    "viewport.highlight",
+    "viewport.explode",
+    "viewport.camera",
+    "viewport.overlay.labels",
+    "timeline.scrub",
+    "reduced-motion",
+    "viewport.restore"
+  ],
+  "dataRequirements": [
+    "Modelo conceptual separado del 8215.",
+    "Cálculos declarativos.",
+    "Restauración.",
+    "Reduced motion y alternativa textual."
+  ],
+  "priority": "high",
+  "dependencyIds": [],
+  "currentModelSupport": "yes",
+  "viewportImpact": "configuration"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+      "version": "1.1.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Cadena completa del reloj electrónico analógico."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

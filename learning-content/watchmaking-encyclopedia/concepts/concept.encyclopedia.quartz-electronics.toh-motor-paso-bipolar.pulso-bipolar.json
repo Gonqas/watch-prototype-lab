@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.pulso-bipolar",
+  "version": "1.1.0",
+  "title": {
+    "es": "pulso bipolar",
+    "en": "pulso bipolar"
+  },
+  "summary": {
+    "es": "Excitación cuya polaridad alterna para gobernar pasos sucesivos.",
+    "en": "Excitación cuya polaridad alterna para gobernar pasos sucesivos."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+    "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+    "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.toh-motor-paso-bipolar"
+  ],
+  "movementIds": [],
+  "subsystem": "stepper-motor",
+  "routeIds": [
+    "route.encyclopedia.quartz-electronics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.toh-motor-paso-bipolar"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch15",
+    "source.official.miyota.2035",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.quartz-electronics.toh-motor-paso-bipolar"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+  "plainLanguage": {
+    "es": "Excitación cuya polaridad alterna para gobernar pasos sucesivos.",
+    "en": "Excitación cuya polaridad alterna para gobernar pasos sucesivos."
+  },
+  "technicalLanguage": {
+    "es": "pulso bipolar se interpreta mediante la cadena aplicar pulso → crear flujo en estator → desestabilizar rotor → girar hacia nuevo mínimo → transferir al piñón → invertir siguiente pulso y las condiciones declaradas en la unidad.",
+    "en": "pulso bipolar se interpreta mediante la cadena aplicar pulso → crear flujo en estator → desestabilizar rotor → girar hacia nuevo mínimo → transferir al piñón → invertir siguiente pulso y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo produce un pulso eléctrico un giro discreto y orientado?",
+    "en": "Permite explicar y comprobar ¿cómo produce un pulso eléctrico un giro discreto y orientado?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir pulso bipolar sin circularidad.",
+      "en": "Definir pulso bipolar sin circularidad."
+    },
+    {
+      "es": "Relacionar pulso bipolar con una entrada, una interfaz y una salida.",
+      "en": "Relacionar pulso bipolar con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

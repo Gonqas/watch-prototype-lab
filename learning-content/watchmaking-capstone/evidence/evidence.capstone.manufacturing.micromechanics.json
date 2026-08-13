@@ -1,0 +1,33 @@
+{
+  "id": "evidence.capstone.manufacturing.micromechanics",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.manufacturing.micromechanics",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.manufacturing.micromechanics",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.capstone.manufacturing.micromechanics",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.manufacturing.micromechanics"
+    ],
+    "evidenceTemplateId": "evidence.capstone.manufacturing.micromechanics",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "sourceIds",
+      "risks",
+      "validation"
+    ]
+  }
+}

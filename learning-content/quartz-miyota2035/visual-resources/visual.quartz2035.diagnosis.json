@@ -1,0 +1,65 @@
+{
+  "id": "visual.quartz2035.diagnosis",
+  "version": "0.5.0",
+  "type": "error-simulation",
+  "purpose": {
+    "es": "Errores simbólicos reversibles con observación y prueba adicional pendiente."
+  },
+  "status": "ready",
+  "sourceIds": [
+    "source.miyota.2035.product-page",
+    "source.miyota.2035.specification",
+    "source.miyota.2035.drawing",
+    "source.miyota.2035.instruction-manual",
+    "source.miyota.2035.parts-list-exploded-view",
+    "source.horology.original-quartz-practical-route"
+  ],
+  "fidelity": {
+    "geometry": "G2",
+    "kinematics": "K2",
+    "physics": "P0",
+    "limitations": [
+      "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+      "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+    ]
+  },
+  "lessonIds": [
+    "lesson.quartz2035.diagnosis"
+  ],
+  "movementIds": [
+    "fixture.miyota.2035.structural"
+  ],
+  "partSelectors": [
+    {
+      "selector": {
+        "by": "role",
+        "value": "power-source"
+      },
+      "cardinality": "one-or-more"
+    }
+  ],
+  "requiredCapabilities": [
+    "learning.scene-runtime",
+    "canonical-selectors-v1",
+    "viewport.selection",
+    "viewport.visibility",
+    "viewport.isolation",
+    "viewport.transparency",
+    "viewport.highlight",
+    "viewport.explode",
+    "viewport.camera",
+    "viewport.overlay.labels",
+    "timeline.scrub",
+    "reduced-motion",
+    "viewport.restore"
+  ],
+  "dataRequirements": [
+    "Fixture 2035 intacto.",
+    "Identidad de instancia estable.",
+    "Alternativa textual y reduced motion."
+  ],
+  "priority": "high",
+  "dependencyIds": [],
+  "currentModelSupport": "yes",
+  "viewportImpact": "configuration"
+}

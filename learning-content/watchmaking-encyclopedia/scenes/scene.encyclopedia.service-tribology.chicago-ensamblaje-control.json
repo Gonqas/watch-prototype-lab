@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.service-tribology.chicago-ensamblaje-control",
+  "version": "1.1.0",
+  "title": "Cuaderno: Expediente Chicago VI: montaje, cuerda y puesta en hora",
+  "description": "¿Cómo se separan fallos de montaje, cuerda y puesta en hora?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Expediente Chicago VI: montaje, cuerda y puesta en hora. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.service-tribology.chicago-ensamblaje-control.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se separan fallos de montaje, cuerda y puesta en hora?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se separan fallos de montaje, cuerda y puesta en hora?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.service-tribology.chicago-ensamblaje-control.answer",
+      "instructionMarkdown": "Explica **Expediente Chicago VI: montaje, cuerda y puesta en hora** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.service-tribology.chicago-ensamblaje-control.explain",
+          "promptMarkdown": "¿Cómo se separan fallos de montaje, cuerda y puesta en hora?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.service-tribology.chicago-ensamblaje-control.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.chicago-ensamblaje-control.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.chicago-ensamblaje-control.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.chicago-ensamblaje-control.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.service-tribology.chicago-ensamblaje-control.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por montar tren y sigue hasta probar cada posición.",
+                "en": "Empieza por montar tren y sigue hasta probar cada posición."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.service-tribology.chicago-ensamblaje-control.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El montaje incremental comprueba tren; la cuerda añade trinquete, rueda de corona y barrilete; la puesta en hora añade tija, tirete, piñón corredizo y minutería. Una matriz por posiciones evita desmontar todo ante un síntoma.",
+                "en": "El montaje incremental comprueba tren; la cuerda añade trinquete, rueda de corona y barrilete; la puesta en hora añade tija, tirete, piñón corredizo y minutería. Una matriz por posiciones evita desmontar todo ante un síntoma."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se separan fallos de montaje, cuerda y puesta en hora?",
+              "en": "¿Cómo se separan fallos de montaje, cuerda y puesta en hora?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena montar tren → probar libertad → añadir cuerda → probar retención → añadir puesta en hora → probar cada posición, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena montar tren → probar libertad → añadir cuerda → probar retención → añadir puesta en hora → probar cada posición, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.service-tribology.chicago-ensamblaje-control.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.service-tribology.chicago-ensamblaje-control.mechanism",
+            "field.encyclopedia.service-tribology.chicago-ensamblaje-control.evidence",
+            "field.encyclopedia.service-tribology.chicago-ensamblaje-control.limit",
+            "field.encyclopedia.service-tribology.chicago-ensamblaje-control.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

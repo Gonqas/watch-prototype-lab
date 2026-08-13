@@ -1,0 +1,56 @@
+{
+  "id": "block.mechanical.oscillator",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Volante y espiral",
+  "bodyMarkdown": "## Propósito\n\nDistinguir frecuencia, periodo y amplitud mediante un modelo normalizado.\n\n## Objetivos observables\n\n## Prerrequisitos\n\n## Explicación\n\nLa frecuencia fija el periodo ideal T=1/f; las alternancias por hora son f×2×3600. La amplitud cambia de forma independiente en el laboratorio. Modificar la longitud activa es una acción simbólica: no se resuelve la dinámica de una espiral real ni se deduce marcha.\n\n## Interacción y actividad\n\n## Fuentes y alcance de las afirmaciones\n\nEl libro privado se usa como teoría general en los capítulos declarados en la ficha de fuentes; no se copia texto. Cada explicación o cálculo del laboratorio indica si es una síntesis educativa o un resultado calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan el movimiento del modelo conceptual.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nDistinguir frecuencia, periodo y amplitud mediante un modelo normalizado. Continúa con “Escape y oscilador como sistema”.\n\n## Palabras y piezas clave\n\n- **Ordenar las fases del escape.** Ordenar las fases del escape mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n- **Distinguir frecuencia y amplitud.** Distinguir frecuencia y amplitud mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo se relacionan frecuencia, periodo y amplitud en el oscilador, y por qué ninguna de esas magnitudes basta por sí sola para afirmar una buena marcha?\n\n## Modelo causal ampliado\n\nEl volante y la espiral forman un oscilador. La frecuencia expresa cuántos ciclos se producen por unidad de tiempo; el periodo es el tiempo de un ciclo y, en el modelo ideal, se relaciona mediante T = 1/f. Una alternancia corresponde a medio ciclo, de modo que la conversión a alternancias por hora exige declarar la unidad y multiplicar la frecuencia por dos y por 3600. La amplitud describe la extensión angular del movimiento, no su frecuencia.\n\nEn un reloj real, la marcha depende de la interacción entre oscilador, escape, energía disponible, posición, rozamiento, geometría y ajuste. Una amplitud visual mayor no prueba una frecuencia correcta, y una frecuencia nominal no demuestra estabilidad ni exactitud. Cambiar simbólicamente la longitud activa de la espiral sirve para razonar sobre tendencia, pero no resuelve masa, rigidez, forma de la espiral, punto de sujeción, perturbaciones ni error entre alternancias. La simulación separa variables para aprender; la unidad física vuelve a acoplarlas.\n\n## Ejemplo resuelto\n\nPara una frecuencia educativa declarada, el ejemplo calcula el periodo y las alternancias por hora mostrando todos los pasos y unidades. Después mantiene la frecuencia y cambia solo la amplitud visual: el periodo calculado permanece igual en el modelo, lo que demuestra que son variables distintas. En un tercer estado se modifica la longitud activa de manera simbólica y se registra una tendencia, no una marcha prevista. La conclusión evita atribuir el resultado a un 8215 o a una espiral real.\n\n## Práctica deliberada\n\nResuelve dos conversiones de frecuencia y periodo con unidades completas. Clasifica después frases como «dato», «resultado calculado», «tendencia cualitativa» o «afirmación no disponible». Repite con la animación pausada y estima qué observación necesitarías para medir un ciclo. En el intento independiente compara dos estados con igual frecuencia y distinta amplitud, y explica por qué no puedes elegir el mejor reloj solo con esa escena.\n\n## Comprobación antes del laboratorio\n\n- Calculas periodo y alternancias por hora sin mezclar ciclo y alternancia.\n- Distingues frecuencia, amplitud y marcha.\n- Identificas qué cambio es simbólico.\n- No infieres estabilidad, error diario ni calidad física sin medición.\n\n## Transferencia\n\nTransfiere el método a una lectura de cronocomparador documentada: señala qué nuevas magnitudes aparecen, qué condiciones deben registrarse y por qué la interpretación ya no depende solo de la fórmula ideal.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo se relacionan frecuencia, periodo y amplitud en el oscilador, y por qué ninguna de esas magnitudes basta por sí sola para afirmar una buena marcha?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Transfiere el método a una lectura de cronocomparador documentada: señala qué nuevas magnitudes aparecen, qué condiciones deben registrarse y por qué la interpretación ya no depende solo de la fórmula ideal.\n\n## Lectura técnica de relaciones y límites\n\nEscribe siempre la conversión dimensional completa: hercios como ciclos por segundo, periodo en segundos por ciclo y alternancias por hora como medios ciclos acumulados durante 3600 segundos. Esta práctica permite detectar un factor dos o una unidad omitida. Después añade una tabla de afirmaciones disponibles y no disponibles. La fórmula ideal permite convertir frecuencia y periodo; la animación permite comparar estados declarados; ninguna de ambas basta para afirmar marcha, estabilidad, isocronismo, amplitud física o condición de una espiral concreta.",
+  "claims": [
+    {
+      "id": "claim.mechanical.oscillator",
+      "claimType": "calculation",
+      "classification": "calculated",
+      "claim": "Volante y espiral se representa mediante un modelo conceptual reversible y no como comportamiento exacto del 8215.",
+      "expression": "Relaciones educativas declarativas: Z conductora/Z conducida; producto de etapas; T=1/f y A/h=f×2×3600.",
+      "method": "Modelo declarativo y cálculos deterministas del Sistema 4E",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4e:oscillator:0.1.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-mechanical-foundations",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4E · Fundamentos del reloj mecánico"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Laboratorios, cálculos educativos, explicaciones, actividades y evaluación originales.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.distinguish-frequency-amplitude"
+    ],
+    "estimatedMinutes": 5,
+    "userPaced": true
+  }
+}

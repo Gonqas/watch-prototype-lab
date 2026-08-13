@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+  "version": "1.1.0",
+  "title": "Cuaderno: Herramientas de mano, ajuste y afilado",
+  "description": "¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Herramientas de mano, ajuste y afilado. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.workshop-tools-materials.herramientas-y-afilado.scope",
+      "markdown": "**Alcance del estudio:** ¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.workshop-tools-materials.herramientas-y-afilado.answer",
+      "instructionMarkdown": "Explica **Herramientas de mano, ajuste y afilado** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.workshop-tools-materials.herramientas-y-afilado.explain",
+          "promptMarkdown": "¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.herramientas-y-afilado.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.herramientas-y-afilado.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.herramientas-y-afilado.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.herramientas-y-afilado.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.herramientas-y-afilado.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar interfaz y sigue hasta limpiar y proteger.",
+                "en": "Empieza por identificar interfaz y sigue hasta limpiar y proteger."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.herramientas-y-afilado.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Destornilladores, pinzas, buriles, limas y escariadores funcionan por contacto geométrico. Punta, cara, ángulo, dureza, apoyo y acabado determinan si la fuerza se transmite o concentra. Afilar no es hacer una punta brillante: es restaurar ángulos, simetría y soporte sin sobrecalentar.",
+                "en": "Destornilladores, pinzas, buriles, limas y escariadores funcionan por contacto geométrico. Punta, cara, ángulo, dureza, apoyo y acabado determinan si la fuerza se transmite o concentra. Afilar no es hacer una punta brillante: es restaurar ángulos, simetría y soporte sin sobrecalentar."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?",
+              "en": "¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar interfaz → seleccionar material y tamaño → formar geometría → afilar y desbarbar → probar en muestra → limpiar y proteger, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar interfaz → seleccionar material y tamaño → formar geometría → afilar y desbarbar → probar en muestra → limpiar y proteger, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.workshop-tools-materials.herramientas-y-afilado.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.workshop-tools-materials.herramientas-y-afilado.mechanism",
+            "field.encyclopedia.workshop-tools-materials.herramientas-y-afilado.evidence",
+            "field.encyclopedia.workshop-tools-materials.herramientas-y-afilado.limit",
+            "field.encyclopedia.workshop-tools-materials.herramientas-y-afilado.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

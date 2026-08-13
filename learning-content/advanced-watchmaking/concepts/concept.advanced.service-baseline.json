@@ -1,0 +1,66 @@
+{
+  "id": "concept.advanced.service-baseline",
+  "version": "1.0.0",
+  "title": {
+    "es": "Estado inicial, alcance y seguridad",
+    "en": "Estado inicial, alcance y seguridad"
+  },
+  "summary": {
+    "es": "¿Qué debe quedar fijado antes de que una herramienta toque el movimiento?",
+    "en": "¿Qué debe quedar fijado antes de que una herramienta toque el movimiento?"
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.advanced.service-disassembly"
+  ],
+  "competencyIds": [
+    "competency.advanced.service-baseline"
+  ],
+  "movementIds": [],
+  "subsystem": "service",
+  "routeIds": [
+    "route.advanced.service-method"
+  ],
+  "activityIds": [
+    "activity.advanced.service-baseline"
+  ],
+  "sourceIds": [
+    "source.eta.6497-2.communication",
+    "source.external.watchguy"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Qué debe quedar fijado antes de que una herramienta toque el movimiento?",
+    "en": "¿Qué debe quedar fijado antes de que una herramienta toque el movimiento?"
+  },
+  "technicalLanguage": {
+    "es": "Un servicio comienza con un estado inicial, no con el primer tornillo. Se asigna una identidad provisional, se registran contradicciones, se define el alcance, se fotografían caras y marcas, se comprueba qué funciones pueden observarse y se determina la autoridad del procedimiento. La energía almacenada recibe un tratamiento específico: muelle, automático, tren y elementos precargados pueden liberar movimiento de forma no prevista.",
+    "en": "Un servicio comienza con un estado inicial, no con el primer tornillo. Se asigna una identidad provisional, se registran contradicciones, se define el alcance, se fotografían caras y marcas, se comprueba qué funciones pueden observarse y se determina la autoridad del procedimiento. La energía almacenada recibe un tratamiento específico: muelle, automático, tren y elementos precargados pueden liberar movimiento de forma no prevista."
+  },
+  "whyItMatters": {
+    "es": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física.",
+    "en": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física."
+  },
+  "observableActions": [
+    {
+      "es": "Separa hecho, inferencia y desconocido.",
+      "en": "Separa hecho, inferencia y desconocido."
+    },
+    {
+      "es": "Compara relaciones y compromisos.",
+      "en": "Compara relaciones y compromisos."
+    },
+    {
+      "es": "Declara fuentes, riesgos y límites.",
+      "en": "Declara fuentes, riesgos y límites."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.advanced.service-disassembly"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

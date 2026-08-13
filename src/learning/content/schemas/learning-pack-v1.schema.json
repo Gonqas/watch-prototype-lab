@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://watchprototype.lab/schemas/learning-pack-v1.schema.json",
+  "title": "Watch Prototype Lab learning pack v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest", "blocks", "lessons", "activities", "scenes", "competencies", "evidenceTemplates", "rubrics", "glossary"],
+  "properties": {
+    "manifest": { "$ref": "#/$defs/manifest" },
+    "curricula": { "type": "array", "items": { "type": "object" } },
+    "routes": { "type": "array", "items": { "type": "object" } },
+    "modules": { "type": "array", "items": { "type": "object" } },
+    "concepts": { "type": "array", "items": { "type": "object" } },
+    "misconceptions": { "type": "array", "items": { "type": "object" } },
+    "blocks": { "type": "array", "items": { "type": "object" } },
+    "lessons": { "type": "array", "items": { "type": "object" } },
+    "activities": { "type": "array", "items": { "type": "object" } },
+    "scenes": { "type": "array", "items": { "type": "object" } },
+    "competencies": { "type": "array", "items": { "type": "object" } },
+    "evidenceTemplates": { "type": "array", "items": { "type": "object" } },
+    "rubrics": { "type": "array", "items": { "type": "object" } },
+    "glossary": { "type": "array", "items": { "type": "object" } },
+    "sources": { "type": "array", "items": { "type": "object" } },
+    "recommendations": { "type": "array", "items": { "type": "object" } },
+    "visualResources": { "type": "array", "items": { "type": "object" } }
+  },
+  "$defs": {
+    "semver": { "type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)(?:-[0-9A-Za-z.-]+)?(?:\\+[0-9A-Za-z.-]+)?$" },
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "path"],
+      "properties": {
+        "id": { "type": "string", "minLength": 3, "maxLength": 160 },
+        "path": { "type": "string", "minLength": 1, "maxLength": 240 }
+      }
+    },
+    "manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "formatVersion", "schemaId", "packageVersion", "id", "title", "distribution", "authors", "languages", "dependencies", "requiredCapabilities", "movements", "assets", "entries", "minimumAppVersion", "createdAt"],
+      "properties": {
+        "format": { "const": "wplab-learning-pack" },
+        "formatVersion": { "const": 1 },
+        "schemaId": { "const": "learning-pack-v1" },
+        "packageVersion": { "$ref": "#/$defs/semver" },
+        "id": { "type": "string", "minLength": 3, "maxLength": 160 },
+        "title": { "type": "string", "minLength": 1, "maxLength": 240 },
+        "distribution": { "enum": ["integrated", "local-unsigned"] },
+        "editorialStatus": { "enum": ["draft", "in-review", "approved", "published-local", "retired"] },
+        "authors": { "type": "array", "minItems": 1, "items": { "type": "object", "required": ["name"], "properties": { "name": { "type": "string", "minLength": 1 }, "url": { "type": "string" } }, "additionalProperties": false } },
+        "languages": { "type": "array", "minItems": 1, "items": { "type": "string", "pattern": "^[a-z]{2,3}(-[A-Z]{2})?$" } },
+        "dependencies": { "type": "array", "items": { "type": "object", "required": ["packageId", "versionRange"], "properties": { "packageId": { "type": "string", "minLength": 3 }, "versionRange": { "type": "string", "minLength": 1 } }, "additionalProperties": false } },
+        "requiredCapabilities": { "type": "array", "items": { "type": "string" } },
+        "movements": { "type": "array" },
+        "assets": { "type": "array", "items": { "type": "object", "required": ["id", "path", "sha256", "bytes", "mediaType", "required", "provenance"], "properties": { "id": { "type": "string", "minLength": 3 }, "path": { "type": "string", "minLength": 1, "maxLength": 240 }, "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }, "bytes": { "type": "integer", "minimum": 0 }, "mediaType": { "type": "string", "minLength": 1 }, "required": { "type": "boolean" }, "provenance": { "type": "object" } }, "additionalProperties": false } },
+        "entries": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["blocks", "lessons", "activities", "scenes", "competencies", "evidenceTemplates", "rubrics", "glossary"],
+          "properties": {
+            "curricula": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "routes": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "modules": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "concepts": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "misconceptions": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "blocks": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "lessons": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "activities": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "scenes": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "competencies": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "evidenceTemplates": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "rubrics": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "glossary": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "sources": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "recommendations": { "type": "array", "items": { "$ref": "#/$defs/entry" } },
+            "visualResources": { "type": "array", "items": { "$ref": "#/$defs/entry" } }
+          }
+        },
+        "minimumAppVersion": { "$ref": "#/$defs/semver" },
+        "maximumAppVersion": { "$ref": "#/$defs/semver" },
+        "createdAt": { "type": "string", "minLength": 10 }
+      }
+    }
+  }
+}

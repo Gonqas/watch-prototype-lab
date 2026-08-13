@@ -1,0 +1,30 @@
+{
+  "id": "evidence.horology.mechanical-sequence",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.explain-mechanical-energy-chain",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.horology.mechanical-sequence",
+    "version": "0.5.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "sequence",
+    "competencyId": "competency.horology.explain-mechanical-energy-chain",
+    "packageId": "wplab.horology.functional-map",
+    "activityIds": [
+      "activity.horology.order-mechanical-chain"
+    ],
+    "evidenceTemplateId": "evidence.horology.mechanical-sequence",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data"
+    ]
+  }
+}

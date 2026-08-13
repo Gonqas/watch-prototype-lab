@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.escapements-chronometry.cronocomparador-y-prueba.angulo-de-alzada",
+  "version": "1.1.0",
+  "title": {
+    "es": "ángulo de alzada",
+    "en": "ángulo de alzada"
+  },
+  "summary": {
+    "es": "Ángulo del volante durante el que el escape transmite impulso, usado para estimar amplitud.",
+    "en": "Ángulo del volante durante el que el escape transmite impulso, usado para estimar amplitud."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.poising-estatico",
+    "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.poising-dinamico",
+    "concept.encyclopedia.escapements-chronometry.poising-beat-y-posiciones.beat-error"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.cronocomparador-y-prueba"
+  ],
+  "movementIds": [],
+  "subsystem": "chronometry",
+  "routeIds": [
+    "route.encyclopedia.escapements-chronometry"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.cronocomparador-y-prueba"
+  ],
+  "sourceIds": [
+    "source.institutional.awci.standards",
+    "source.institutional.wostep.watchmaker",
+    "source.private.vba-uhrentechnik"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.escapements-chronometry.cronocomparador-y-prueba"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.escapements-chronometry.cronocomparador-y-prueba",
+  "plainLanguage": {
+    "es": "Ángulo del volante durante el que el escape transmite impulso, usado para estimar amplitud.",
+    "en": "Ángulo del volante durante el que el escape transmite impulso, usado para estimar amplitud."
+  },
+  "technicalLanguage": {
+    "es": "ángulo de alzada se interpreta mediante la cadena identificar movimiento y ángulo → estabilizar estado → capturar señal → evaluar calidad → repetir posiciones y carga → comparar con criterio y las condiciones declaradas en la unidad.",
+    "en": "ángulo de alzada se interpreta mediante la cadena identificar movimiento y ángulo → estabilizar estado → capturar señal → evaluar calidad → repetir posiciones y carga → comparar con criterio y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?",
+    "en": "Permite explicar y comprobar ¿qué mide realmente un cronocomparador y cómo se diseña una prueba que no confunda estimación con verdad?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir ángulo de alzada sin circularidad.",
+      "en": "Definir ángulo de alzada sin circularidad."
+    },
+    {
+      "es": "Relacionar ángulo de alzada con una entrada, una interfaz y una salida.",
+      "en": "Relacionar ángulo de alzada con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

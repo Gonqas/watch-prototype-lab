@@ -1,0 +1,315 @@
+{
+  "id": "activity.metrology.calibrar-escala",
+  "version": "0.2.0",
+  "title": "Calibrar escala",
+  "sceneIds": [
+    "scene.metrology.calibrar-escala"
+  ],
+  "competencyIds": [
+    "competency.metrology.documentar-una-pieza"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.metrology.calibrar-escala"
+  ],
+  "rubricId": "rubric.metrology.calibrar-escala",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "active-project-v5-projection"
+  },
+  "authoring": {
+    "lessonId": "lesson.metrology.image-measurement",
+    "title": {
+      "es": "Calibrar escala"
+    },
+    "description": {
+      "es": "Práctica guiada para calibrar escala sobre una unidad o el espécimen sintético, conservando método, evidencia, confianza y límites."
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 12,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "metrology",
+    "requiredCapabilities": [],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "La práctica registra evidencia; no simula ni certifica comportamiento físico."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "No generalizar una medida de una unidad ni inventar tolerancias."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ],
+    "visualResourceIds": [],
+    "interactionContract": {
+      "responseModel": "structured-response",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [
+        {
+          "id": "field.activity-metrology-calibrar-escala.decision",
+          "label": {
+            "es": "¿Cuándo una distancia en píxeles puede convertirse en longitud y cuándo la perspectiva invalida esa conversión?"
+          },
+          "kind": "choice",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-calibrar-escala.justification",
+          "label": {
+            "es": "Justifica qué evidencia y qué límite hacen defendible tu elección."
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-calibrar-escala.confidence",
+          "label": {
+            "es": "Confianza en la decisión"
+          },
+          "kind": "confidence",
+          "required": true
+        }
+      ],
+      "hints": [
+        {
+          "id": "hint.activity-metrology-calibrar-escala.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Localiza qué evidencia responde a esta pregunta: ¿Cuándo una distancia en píxeles puede convertirse en longitud y cuándo la perspectiva invalida esa conversión?"
+          },
+          "availableAfterAttempts": 0,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.activity-metrology-calibrar-escala.2",
+          "level": 2,
+          "kind": "comparison",
+          "content": {
+            "es": "Compara la conclusión limitada con este error: Usar una escala colocada en un plano diferente."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.activity-metrology-calibrar-escala.3",
+          "level": 3,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "La opción defendible conserva este límite: El cálculo es reproducible porque conserva imagen, plano, referencia, puntos y operación. No demuestra espesor, profundidad ni dimensión oficial."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "answer-submitted",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [
+          "field.activity-metrology-calibrar-escala.decision"
+        ],
+        "requiresHumanReview": true,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.metrology.image-measurement"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.metrology.image-measurement"
+      ],
+      "assessesConceptIds": [
+        "concept.metrology.image-measurement"
+      ],
+      "evidenceLevel": "physical-observation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.metrology.image-measurement",
+        "blockId": "block.metrology.image-measurement",
+        "conceptIds": [
+          "concept.metrology.image-measurement"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La práctica acredita un método documentado dentro de la Academia. No certifica destreza profesional, calibración ni validez industrial."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "En “Calibrar escala” una respuesta sólida conserva característica, referencia, método, evidencia y alcance."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si en “Calibrar escala” confundiste resolución con exactitud, observación con hipótesis o una unidad con toda una familia."
+      },
+      "causalQuestion": {
+        "es": "¿Qué decisión de “Calibrar escala” cambia el resultado y cómo podrías comprobarla?"
+      },
+      "nextObservation": {
+        "es": "Repite “Calibrar escala” cambiando una sola condición y documenta el efecto."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Aplica el criterio de “Calibrar escala” a otra pieza sin suponer que comparte geometría o tolerancia."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.metrology.image-measurement"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar tolerancias, exactitudes, calibraciones, diagnósticos ni datos de fabricante."
+        },
+        {
+          "es": "No aprobar propuestas, elevar fidelidad o modificar CAD."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente?"
+        },
+        {
+          "es": "¿Qué método y referencia hacen repetible este resultado?"
+        },
+        {
+          "es": "¿Qué limitación impide generalizarlo?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué decisión de “Calibrar escala” cambia el resultado y cómo podrías comprobarla?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Repite “Calibrar escala” cambiando una sola condición y documenta el efecto."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Calibrar escala»."
+          },
+          {
+            "es": "Sigue la relación causal declarada en la lección y conserva su fuente o límite."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "En “Calibrar escala” una respuesta sólida conserva característica, referencia, método, evidencia y alcance."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Calibrar escala» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Calibrar escala» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Calibrar escala» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Aplica el criterio de “Calibrar escala” a otra pieza sin suponer que comparte geometría o tolerancia."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La conclusión responde al objetivo «Calibrar escala» con una relación observable."
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Revisa si en “Calibrar escala” confundiste resolución con exactitud, observación con hipótesis o una unidad con toda una familia."
+        },
+        {
+          "es": "La respuesta describe apariencia o autoridad, pero no la relación que produce el resultado."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Aplica el criterio de “Calibrar escala” a otra pieza sin suponer que comparte geometría o tolerancia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Aplica el criterio de “Calibrar escala” a otra pieza sin suponer que comparte geometría o tolerancia."
+      }
+    }
+  }
+}

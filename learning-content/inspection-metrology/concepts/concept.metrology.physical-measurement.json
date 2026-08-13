@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.physical-measurement",
+  "version": "0.1.0",
+  "title": {
+    "es": "Medir piezas físicas"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para definir datums, orientación, instrumento y repeticiones antes de leer."
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.metrology.image-measurement"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.technical-photography"
+  ],
+  "competencyIds": [
+    "competency.metrology.medir-una-pieza-fisica"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.medir-diametro",
+    "activity.metrology.medir-distancia-entre-centros"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a definir datums, orientación, instrumento y repeticiones antes de leer sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para definir datums, orientación, instrumento y repeticiones antes de leer."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.inspection-findings"
+  ],
+  "targetEvidenceLevel": "physical-observation",
+  "availability": "available"
+}

@@ -1,0 +1,142 @@
+{
+  "id": "lesson.encyclopedia.math-physics-metrology.unidades-y-modelos",
+  "version": "1.1.0",
+  "title": "Unidades, escalas y análisis dimensional",
+  "blockIds": [
+    "block.encyclopedia.math-physics-metrology.unidades-y-modelos"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.unidades-y-modelos"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Unidades, escalas y análisis dimensional",
+      "en": "Unidades, escalas y análisis dimensional"
+    },
+    "purpose": {
+      "es": "¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?",
+      "en": "¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Unidades, escalas y análisis dimensional mediante relaciones causales.",
+        "en": "Explicar Unidades, escalas y análisis dimensional mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.magnitud",
+      "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.orden-de-magnitud",
+      "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.homogeneidad-dimensional"
+    ],
+    "sourceIds": [
+      "source.official.bipm.vim",
+      "source.private.vba-uhrentechnik",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.magnitud",
+        "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.orden-de-magnitud",
+        "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.homogeneidad-dimensional"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1106,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.math-physics-metrology.unidades-y-modelos"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: magnitud, orden de magnitud, homogeneidad dimensional.",
+          "en": "Defino con mis palabras: magnitud, orden de magnitud, homogeneidad dimensional."
+        },
+        {
+          "es": "Separo en «Unidades, escalas y análisis dimensional» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Unidades, escalas y análisis dimensional» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Unidades, escalas y análisis dimensional» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Unidades, escalas y análisis dimensional» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Audita cinco cálculos del corpus VBA: reescribe variables, unidades, dimensiones, orden esperado y condición de validez antes de ejecutarlos.",
+          "en": "Aplico el criterio a esta variante: Audita cinco cálculos del corpus VBA: reescribe variables, unidades, dimensiones, orden esperado y condición de validez antes de ejecutarlos."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Unidades, escalas y análisis dimensional» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Unidades, escalas y análisis dimensional» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.magnitud",
+        "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.orden-de-magnitud",
+        "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.homogeneidad-dimensional"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?",
+          "en": "¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?"
+        },
+        {
+          "es": "¿Qué relación causal de «Unidades, escalas y análisis dimensional» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Unidades, escalas y análisis dimensional» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

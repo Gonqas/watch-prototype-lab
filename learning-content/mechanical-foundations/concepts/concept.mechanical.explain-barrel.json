@@ -1,0 +1,62 @@
+{
+  "id": "concept.mechanical.explain-barrel",
+  "version": "0.5.0",
+  "title": {
+    "es": "Explicar muelle real y barrilete",
+    "en": "Explicar muelle real y barrilete"
+  },
+  "summary": {
+    "es": "Explicar muelle real y barrilete mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Explicar muelle real y barrilete mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.mechanical.explain-energy-chain"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.explain-barrel"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "barrel",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.load-unload-barrel",
+    "activity.mechanical.identify-barrel-parts"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Explicar muelle real y barrilete mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Explicar muelle real y barrilete mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Explicar muelle real y barrilete describe una relación causal dentro de barrilete: una entrada produce un cambio observable mediante una interfaz declarada. Explicar muelle real y barrilete mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Explicar muelle real y barrilete describe una relación causal dentro de barrilete: una entrada produce un cambio observable mediante una interfaz declarada. Explicar muelle real y barrilete mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "whyItMatters": {
+    "es": "Dominar explicar muelle real y barrilete permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega explicar muelle real y barrilete dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema barrel."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [
+    "misconception.mechanical.escapement-is-source"
+  ],
+  "knowledgeType": "conceptual-causal",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.barrel",
+  "targetEvidenceLevel": "causal-explanation"
+}

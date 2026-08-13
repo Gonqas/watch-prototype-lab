@@ -1,0 +1,58 @@
+{
+  "id": "block.horology.quartz-chain",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "La cadena funcional del cuarzo",
+  "bodyMarkdown": "## Propósito\n\nSeguir de principio a fin cómo una fuente eléctrica termina produciendo el avance visible de las agujas, distinguiendo control temporal, conversión electromecánica y transmisión.\n\n## Conocimientos previos\n\nSe utiliza el mapa de la lección anterior: fuente, control o regulación, transmisión, indicación y estructura. No se requiere conocer electrónica ni calcular frecuencias.\n\n## Objetivos observables\n\nOrdenar pila, circuito y referencia de cuarzo, bobina, rotor paso a paso, tren y agujas; identificar dónde cambia la naturaleza de la señal; y explicar qué etapa deja de recibir acción cuando se interrumpe otra.\n\n## Explicación principal\n\nLa {{term:term.horology.battery}} aporta energía eléctrica. Esa energía no se envía sin control al tren. El {{term:term.horology.integrated-circuit}} trabaja con una referencia proporcionada por el {{term:term.horology.resonador de cuarzo}} y establece una secuencia temporal de impulsos. En este nivel educativo importa la función: disponer de una referencia estable y dividirla para gobernar el avance. No se pretende representar internamente el circuito ni deducir componentes que la documentación no individualiza.\n\nLa {{term:term.horology.coil}} recibe impulsos controlados y genera un campo magnético. Junto con el estator y el rotor constituye la zona donde una acción eléctrica produce un paso mecánico. El {{term:term.horology.rotor paso a paso}} no gira libremente como una turbina; responde mediante pasos gobernados. A partir de ahí, el tren transmite y reduce el movimiento hasta la minutería y las agujas.\n\nLa cadena funcional que se usa en el módulo es: pila → circuito y referencia de cuarzo → bobina → rotor paso a paso → tren de ruedas → agujas. Las flechas indican relaciones funcionales. No representan una simulación física validada de corriente, campo magnético, par o pérdidas. Por ello la ruta se declara educativa y no simula la física de una unidad real.\n\nEl modelo conceptual muestra cada función con gran claridad. El MIYOTA 2035 se emplea cuando se señalan identidades de piezas que aparecen en su documentación oficial. Que el modelo estructural permita seleccionar una pieza no convierte su geometría reconstruida en geometría oficial completa. La procedencia visible mantiene separados identidad oficial, posición deducida y forma estimada.\n\n## Explicación visual\n\nLa escena B presenta el cuarzo conceptual junto al 2035. Una ruta numerada activa una etapa cada vez, se pausa antes de pasar al rotor y ofrece una predicción. En movimiento reducido no gira la cámara ni se anima el rotor: cambian estados discretos y aparecen flechas estáticas numeradas. Al bloquear simbólicamente la bobina, las etapas posteriores quedan marcadas como inactivas sin afirmar una avería real.\n\n## Vocabulario\n\nAdemás de pila, circuito, resonador, bobina y rotor, distinguimos {{term:term.horology.wheel}}, {{term:term.horology.pinion}}, {{term:term.horology.arbor}} y {{term:term.horology.minutería}}. Los términos describen funciones o familias de elementos; la referencia oficial concreta se muestra aparte.\n\n## Fuentes\n\nLa identidad de las piezas específicas del 2035 procede de la lista oficial y su vista explosionada. La explicación de la cadena es original y funcional. No se asignan dimensiones, dientes ni tolerancias.\n\n## Ejemplo\n\nSi la pila está ausente, ninguna etapa recibe energía. Si el control no produce impulsos, la bobina no recibe la secuencia prevista. Si la bobina se desactiva en la simulación, el rotor no recibe el estímulo conceptual y el tren no obtiene pasos. El síntoma visual es parecido en las agujas, pero las hipótesis se sitúan en etapas distintas.\n\n## Errores habituales\n\nDecir que la pila marca el tiempo; confundir el resonador con el motor; afirmar que la bobina gira; considerar eléctrico todo lo que ocurre después de la pila; o tratar la ruta educativa como una medición de corriente real.\n\n## Actividad\n\nOrdena las seis etapas y, antes de confirmar el paso al rotor, predice cuál será el siguiente cambio. Después identifica la referencia temporal y separa la conversión electromecánica de la transmisión mecánica.\n\n## Ayuda después de responder\n\nLa ayuda señala la primera relación fuera de orden sin reconstruir automáticamente la secuencia completa. Las pistas progresan desde la zona funcional hasta una explicación posterior al intento.\n\n## Evidencia\n\nSe registra el orden propuesto, la selección de la referencia temporal, las predicciones, las pistas y la restauración final. La respuesta abierta explica la función, pero el dominio se apoya en componentes estructurados verificables.\n\n## Criterio de éxito\n\nOrdenar correctamente la cadena, identificar circuito y resonador como referencia o control temporal y situar bobina y rotor en la conversión electromecánica.\n\n## Resumen\n\nEl cuarzo combina referencia y control electrónicos con un motor paso a paso y una transmisión mecánica. La indicación visible depende de todas las etapas anteriores.\n\n## Siguiente conexión\n\nLa siguiente lección compara la cadena de cuarzo con la mecánica por funciones y muestra dónde la analogía ayuda y dónde deja de ser válida. El mapa del ISA 8172 queda como profundización opcional para trabajar la confianza de las fuentes.",
+  "claims": [
+    {
+      "id": "claim.miyota.2035.documented-parts",
+      "claimType": "source",
+      "classification": "official",
+      "claim": "La documentación oficial de servicio del MIYOTA 2035 identifica, entre otros elementos, circuito, bobina, estator, rotor y puente de tren.",
+      "sourceStatement": "La lista de piezas y vista explosionada oficial contienen esas identidades; no proporcionan por sí solas geometría interna completa.",
+      "method": "Lectura de identidades en el despiece oficial",
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K0",
+        "physics": "P0",
+        "limitations": [
+          "La identidad oficial no valida los contornos reconstruidos del fixture R2."
+        ]
+      },
+      "reliability": "high",
+      "inputFingerprint": "official:miyota-2035-parts:2026-07-23",
+      "recordedAt": "2026-07-23T15:30:00.000Z",
+      "methodVersion": "0.1.0",
+      "sources": [
+        {
+          "id": "source.miyota.2035.parts-list-exploded-view",
+          "authority": "official-miyota",
+          "usage": "official-linked",
+          "resource": {
+            "kind": "pdf",
+            "title": "MIYOTA 2035 · parts list and exploded view",
+            "locator": "https://miyotamovement.com/uploads/product/product_j6P3s1O5naNRxHZWMK.pdf"
+          },
+          "authorOrManufacturer": "MIYOTA",
+          "sourceType": "official-miyota-documentation",
+          "calibre": "2035",
+          "movement": "MIYOTA 2035",
+          "revision": "Sin identificador de revisión publicado; URL vigente consultada el 2026-07-23.",
+          "retrievedAt": "2026-07-23",
+          "privateUse": false,
+          "supportedClaim": "Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.horology.quartz-chain"
+    ],
+    "estimatedMinutes": 15,
+    "userPaced": true
+  }
+}

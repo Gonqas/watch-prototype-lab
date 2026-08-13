@@ -1,0 +1,417 @@
+{
+  "id": "activity.miyota8215.prepare-workbench",
+  "version": "0.5.0",
+  "title": "Preparar banco",
+  "sceneIds": [
+    "scene.practice.miyota8215.prepare-workbench"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.prepare-disassembly"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.miyota8215.prepare-disassembly"
+  ],
+  "rubricId": "rubric.miyota8215.prepare-disassembly",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.miyota.8215.structural"
+  },
+  "authoring": {
+    "lessonId": "lesson.miyota8215.plan-disassembly",
+    "title": {
+      "es": "Preparar banco",
+      "en": "Preparar banco"
+    },
+    "description": {
+      "es": "Preparar banco con identidad, autoridad, dependencias, evidencia y restauración.",
+      "en": "Preparar banco con identidad, autoridad, dependencias, evidencia y restauración."
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 24,
+    "activityType": "guided-practice",
+    "movementIds": [
+      "fixture.miyota.8215.structural",
+      "fixture.conceptual.mechanical-chain"
+    ],
+    "familyIds": [
+      "miyota-82"
+    ],
+    "subsystem": "planning",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física.",
+        "El plan visual no sustituye un manual oficial de servicio."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.miyota.8215.product-page",
+      "source.miyota.8215.specification",
+      "source.miyota.8215.drawing",
+      "source.miyota.8215.instruction-manual",
+      "source.miyota.8215.parts-list-exploded-view",
+      "source.horology.original-miyota8215"
+    ],
+    "visualResourceIds": [
+      "visual.miyota8215.plan-disassembly"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.miyota.8215.structural"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.miyota8215.prepare-workbench.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Qué preparación es necesaria antes de planificar el desmontaje 8215?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.prepare-workbench.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Revisa que todo objeto tenga identidad y destino."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.prepare-workbench.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: El banco fija el contexto que hace trazable cada operación."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.prepare-workbench.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.prepare-workbench.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "El banco fija el contexto que hace trazable cada operación."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.prepare-workbench.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Adapta las zonas a una unidad física y añade riesgos no digitales."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "calibre-lab-command",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [
+          "instance-id",
+          "authority",
+          "dependency",
+          "state",
+          "fixture-version"
+        ],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "check-understanding",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "El banco fija el contexto que hace trazable cada operación."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «Ocultar el rotor y comenzar por la pieza más grande» y «Usar el banco preparado para 2035 sin revisar diferencias» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Qué preparación es necesaria antes de planificar el desmontaje 8215?"
+      },
+      "nextObservation": {
+        "es": "Revisa que todo objeto tenga identidad y destino."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Adapta las zonas a una unidad física y añade riesgos no digitales."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.miyota8215.explain-escapement-oscillator",
+        "concept.miyota8215.prepare-disassembly"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Preparar banco», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Preparar banco», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué preparación es necesaria antes de planificar el desmontaje 8215?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Revisa que todo objeto tenga identidad y destino."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Preparar banco»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: El banco fija el contexto que hace trazable cada operación."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "El banco fija el contexto que hace trazable cada operación."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Preparar banco» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Preparar banco» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Preparar banco» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Adapta las zonas a una unidad física y añade riesgos no digitales."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "Identificar instancia, fuente, estado, herramientas, bandejas y límites del modelo"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Ocultar el rotor y comenzar por la pieza más grande"
+        },
+        {
+          "es": "Usar el banco preparado para 2035 sin revisar diferencias"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Adapta las zonas a una unidad física y añade riesgos no digitales."
+        }
+      },
+      "transferPrompt": {
+        "es": "Adapta las zonas a una unidad física y añade riesgos no digitales."
+      }
+    },
+    "calibreLabContract": {
+      "fixtureId": "fixture.miyota.8215.structural",
+      "modes": [
+        "guided"
+      ],
+      "subsystemIds": [
+        "subsystem.8215.structure"
+      ],
+      "operationPhases": [
+        "documentation",
+        "disassembly"
+      ],
+      "authorityVisible": true,
+      "instanceIdentityRequired": true,
+      "contextualMechanicalLabs": [],
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "workbenchContract": {
+      "fixtureId": "fixture.miyota.8215.structural",
+      "modes": [
+        "guided"
+      ],
+      "requiredZones": [
+        "zone.movement",
+        "zone.tools",
+        "zone.tray",
+        "zone.inspection",
+        "zone.documentation"
+      ],
+      "evidenceContext": [
+        "mode",
+        "assistance",
+        "hints",
+        "errors",
+        "corrections",
+        "sources",
+        "initial-state",
+        "final-state",
+        "fixture-limitations"
+      ]
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.miyota8215.explain-escapement-oscillator"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.miyota8215.prepare-disassembly"
+      ],
+      "assessesConceptIds": [
+        "concept.miyota8215.prepare-disassembly"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.miyota8215.plan-disassembly",
+        "blockId": "block.miyota8215.plan-disassembly",
+        "conceptIds": [
+          "concept.miyota8215.prepare-disassembly"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba reconocimiento o decisiones dentro de una reconstrucción educativa del MIYOTA 8215. No certifica destreza de taller, ajuste, lubricación, tolerancias ni el estado de una unidad física.",
+        "en": "This activity checks recognition or decisions in an educational reconstruction of the MIYOTA 8215. It does not certify bench skill, adjustment, lubrication, tolerances, or the condition of a physical unit."
+      }
+    }
+  }
+}

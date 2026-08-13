@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.toh-soneria-control.pieza-sorpresa",
+  "version": "1.1.0",
+  "title": {
+    "es": "pieza sorpresa",
+    "en": "pieza sorpresa"
+  },
+  "summary": {
+    "es": "Elemento que estabiliza la lectura de minutos durante la transición horaria.",
+    "en": "Elemento que estabiliza la lectura de minutos durante la transición horaria."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.toh-calendario-perpetuo.rueda-programa",
+    "concept.encyclopedia.complications.toh-calendario-perpetuo.gran-palanca",
+    "concept.encyclopedia.complications.toh-calendario-perpetuo.ciclo-bisiesto"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.toh-soneria-control"
+  ],
+  "movementIds": [],
+  "subsystem": "striking",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-soneria-control"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch10",
+    "source.private.daniels.movement-design",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.toh-soneria-control"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.toh-soneria-control",
+  "plainLanguage": {
+    "es": "Elemento que estabiliza la lectura de minutos durante la transición horaria.",
+    "en": "Elemento que estabiliza la lectura de minutos durante la transición horaria."
+  },
+  "technicalLanguage": {
+    "es": "pieza sorpresa se interpreta mediante la cadena cargar sonería → solicitar o alcanzar disparo → leer estado → liberar tren → regular cadencia → golpear timbres y las condiciones declaradas en la unidad.",
+    "en": "pieza sorpresa se interpreta mediante la cadena cargar sonería → solicitar o alcanzar disparo → leer estado → liberar tren → regular cadencia → golpear timbres y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo separan estos mecanismos almacenamiento, lectura de hora, control y producción de sonido?",
+    "en": "Permite explicar y comprobar ¿cómo separan estos mecanismos almacenamiento, lectura de hora, control y producción de sonido?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir pieza sorpresa sin circularidad.",
+      "en": "Definir pieza sorpresa sin circularidad."
+    },
+    {
+      "es": "Relacionar pieza sorpresa con una entrada, una interfaz y una salida.",
+      "en": "Relacionar pieza sorpresa con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.complications.sonerias-y-repeticiones",
+  "version": "1.1.0",
+  "title": "Sonerías, repetición y gobierno acústico",
+  "blockIds": [
+    "block.encyclopedia.complications.sonerias-y-repeticiones"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.sonerias-y-repeticiones"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Sonerías, repetición y gobierno acústico",
+      "en": "Sonerías, repetición y gobierno acústico"
+    },
+    "purpose": {
+      "es": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?",
+      "en": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Sonerías, repetición y gobierno acústico mediante relaciones causales.",
+        "en": "Explicar Sonerías, repetición y gobierno acústico mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-horizontal",
+      "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.embrague-vertical",
+      "concept.encyclopedia.complications.acoplamiento-y-puesta-a-cero.leva-corazon"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.complications.sonerias-y-repeticiones.caracol",
+      "concept.encyclopedia.complications.sonerias-y-repeticiones.rastrillo",
+      "concept.encyclopedia.complications.sonerias-y-repeticiones.regulador-de-soneria"
+    ],
+    "sourceIds": [
+      "source.external.horology-student.books",
+      "source.external.naked-watchmaker",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.caracol",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.rastrillo",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.regulador-de-soneria"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1162,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.complications.sonerias-y-repeticiones"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: caracol, rastrillo, regulador de sonería.",
+          "en": "Defino con mis palabras: caracol, rastrillo, regulador de sonería."
+        },
+        {
+          "es": "Sigo «Sonerías, repetición y gobierno acústico» desde usuario carga sonería hasta regulador espacia eventos y explico cada enlace.",
+          "en": "Sigo «Sonerías, repetición y gobierno acústico» desde usuario carga sonería hasta regulador espacia eventos y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Sonerías, repetición y gobierno acústico» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Sonerías, repetición y gobierno acústico» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Modela una repetición de cuartos como entradas, memoria, conteos y salidas; añade un interbloqueo y explica el daño que evita.",
+          "en": "Aplico el criterio a esta variante: Modela una repetición de cuartos como entradas, memoria, conteos y salidas; añade un interbloqueo y explica el daño que evita."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Sonerías, repetición y gobierno acústico» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Sonerías, repetición y gobierno acústico» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.caracol",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.rastrillo",
+        "concept.encyclopedia.complications.sonerias-y-repeticiones.regulador-de-soneria"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?",
+          "en": "¿Cómo se almacena energía, se lee la hora y se secuencia un mensaje acústico sin alterar la marcha?"
+        },
+        {
+          "es": "¿Qué relación causal de «Sonerías, repetición y gobierno acústico» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Sonerías, repetición y gobierno acústico» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

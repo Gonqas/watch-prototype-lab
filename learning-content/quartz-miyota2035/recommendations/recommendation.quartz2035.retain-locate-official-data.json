@@ -1,0 +1,21 @@
+{
+  "id": "recommendation.quartz2035.retain-locate-official-data",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: localizar datos oficiales"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra sesión, un intervalo, evidencia independiente y un contexto distinto; nunca se concede en la sesión de aprendizaje inicial."
+  },
+  "rule": "independent-later-evidence-different-session-minimum-7-days@1.0.0",
+  "priority": 54,
+  "target": {
+    "kind": "competency",
+    "id": "competency.quartz2035.locate-official-data"
+  },
+  "evidenceTemplateIds": [
+    "evidence.quartz2035.document-reading"
+  ],
+  "required": false
+}

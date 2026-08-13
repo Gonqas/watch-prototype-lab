@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.toh-automatico-rotor.rendimiento-de-carga",
+  "version": "1.1.0",
+  "title": {
+    "es": "rendimiento de carga",
+    "en": "rendimiento de carga"
+  },
+  "summary": {
+    "es": "Fracción del movimiento captado que termina como energía almacenada.",
+    "en": "Fracción del movimiento captado que termina como energía almacenada."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.gmt-independiente",
+    "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.tourbillon",
+    "concept.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.remontoir-de-igualdad"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.toh-automatico-rotor"
+  ],
+  "movementIds": [],
+  "subsystem": "automatic",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-automatico-rotor"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch08",
+    "source.private.chicago.6",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.toh-automatico-rotor"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.toh-automatico-rotor",
+  "plainLanguage": {
+    "es": "Fracción del movimiento captado que termina como energía almacenada.",
+    "en": "Fracción del movimiento captado que termina como energía almacenada."
+  },
+  "technicalLanguage": {
+    "es": "rendimiento de carga se interpreta mediante la cadena mover caja → rotar masa → transmitir a reversor → rectificar sentido → reducir y aumentar par → cargar muelle y las condiciones declaradas en la unidad.",
+    "en": "rendimiento de carga se interpreta mediante la cadena mover caja → rotar masa → transmitir a reversor → rectificar sentido → reducir y aumentar par → cargar muelle y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?",
+    "en": "Permite explicar y comprobar ¿cómo transforma un rotor movimientos irregulares de la muñeca en cuerda acumulada?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir rendimiento de carga sin circularidad.",
+      "en": "Definir rendimiento de carga sin circularidad."
+    },
+    {
+      "es": "Relacionar rendimiento de carga con una entrada, una interfaz y una salida.",
+      "en": "Relacionar rendimiento de carga con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

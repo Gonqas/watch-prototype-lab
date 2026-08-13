@@ -1,0 +1,71 @@
+{
+  "id": "concept.capstone.manufacturing.plates-bridges",
+  "version": "1.0.0",
+  "title": {
+    "es": "Platinas, puentes, apoyos y rubíes",
+    "en": "Platinas, puentes, apoyos y rubíes"
+  },
+  "summary": {
+    "es": "¿Cómo convertir platinas, puentes, apoyos y rubíes en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir platinas, puentes, apoyos y rubíes en un proceso seguro, medible y revisable?"
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.capstone.manufacturing.hands"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.capstone.manufacturing.hands",
+    "concept.capstone.manufacturing.micromechanics"
+  ],
+  "competencyIds": [
+    "competency.capstone.manufacturing.plates-bridges"
+  ],
+  "movementIds": [],
+  "subsystem": "manufacturing-plates-bridges",
+  "routeIds": [
+    "route.capstone.manufacturing-finishing"
+  ],
+  "activityIds": [
+    "activity.capstone.manufacturing.plates-bridges"
+  ],
+  "sourceIds": [
+    "source.iso.1101",
+    "source.iso.286-1",
+    "source.iso.14253-1",
+    "source.private.horologia-book"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Cómo convertir platinas, puentes, apoyos y rubíes en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir platinas, puentes, apoyos y rubíes en un proceso seguro, medible y revisable?"
+  },
+  "technicalLanguage": {
+    "es": "## Qué problema resuelve\n\nPlanificar referencias, centros, alojamientos, espigas, tornillos, rubíes, rigidez y secuencia de acabado. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Platinas, puentes, apoyos y rubíes**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Definir coordenadas y apoyos.** Relacionar tren, barrilete, escape, puentes y montaje. Entrada: Arquitectura aprobada. Salida verificable: Plano maestro de centros y apoyos.\n2. **Mecanizar referencias y alojamientos.** Preservar posiciones, perpendicularidad y material para acabado. Entrada: Material y plano. Salida verificable: Platina o puente mecanizado.\n3. **Preparar rubíes, roscas y acabado.** Evitar deformar apoyos y perder datums durante decoración y montaje. Entrada: Pieza mecanizada. Salida verificable: Pieza terminada para ensamblaje.\n\nRevisa la secuencia de **Definir coordenadas y apoyos** a **Preparar rubíes, roscas y acabado** también de atrás hacia delante. Para aceptar el resultado final de platinas, puentes, apoyos y rubíes, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿Material y estado proporcionan rigidez, estabilidad, mecanizado, protección y acabado compatibles?\n\n- **Plano maestro y par de referencias:** Centros de ruedas. Perpendicularidad de pivotes. Posición de puentes y espigas.\n\n- **Requisito:** Centros y alineación permiten juego axial y radial funcional. **Verificación:** Inspección de coordenadas y prueba incremental sin forzar puentes.\n\nSelecciona el material de **Platinas, puentes, apoyos y rubíes** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Cortes, virutas y proyección de partículas (serious):** Protección ocular adecuada. Retirada de viruta con útil, nunca con la mano. Desbarbado y orden del puesto. Detenerse si: Pantalla o protección ocular ausente. Viruta enredada con la máquina en marcha.\n- **Atrapamiento en maquinaria rotativa (critical):** Formación presencial y resguardos. Sujeción verificada y zona despejada. Nunca usar guantes ",
+    "en": "## Qué problema resuelve\n\nPlanificar referencias, centros, alojamientos, espigas, tornillos, rubíes, rigidez y secuencia de acabado. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Platinas, puentes, apoyos y rubíes**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Definir coordenadas y apoyos.** Relacionar tren, barrilete, escape, puentes y montaje. Entrada: Arquitectura aprobada. Salida verificable: Plano maestro de centros y apoyos.\n2. **Mecanizar referencias y alojamientos.** Preservar posiciones, perpendicularidad y material para acabado. Entrada: Material y plano. Salida verificable: Platina o puente mecanizado.\n3. **Preparar rubíes, roscas y acabado.** Evitar deformar apoyos y perder datums durante decoración y montaje. Entrada: Pieza mecanizada. Salida verificable: Pieza terminada para ensamblaje.\n\nRevisa la secuencia de **Definir coordenadas y apoyos** a **Preparar rubíes, roscas y acabado** también de atrás hacia delante. Para aceptar el resultado final de platinas, puentes, apoyos y rubíes, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿Material y estado proporcionan rigidez, estabilidad, mecanizado, protección y acabado compatibles?\n\n- **Plano maestro y par de referencias:** Centros de ruedas. Perpendicularidad de pivotes. Posición de puentes y espigas.\n\n- **Requisito:** Centros y alineación permiten juego axial y radial funcional. **Verificación:** Inspección de coordenadas y prueba incremental sin forzar puentes.\n\nSelecciona el material de **Platinas, puentes, apoyos y rubíes** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Cortes, virutas y proyección de partículas (serious):** Protección ocular adecuada. Retirada de viruta con útil, nunca con la mano. Desbarbado y orden del puesto. Detenerse si: Pantalla o protección ocular ausente. Viruta enredada con la máquina en marcha.\n- **Atrapamiento en maquinaria rotativa (critical):** Formación presencial y resguardos. Sujeción verificada y zona despejada. Nunca usar guantes "
+  },
+  "whyItMatters": {
+    "es": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables.",
+    "en": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables."
+  },
+  "observableActions": [
+    {
+      "es": "Compara alternativas.",
+      "en": "Compara alternativas."
+    },
+    {
+      "es": "Declara interfaces y riesgos.",
+      "en": "Declara interfaces y riesgos."
+    },
+    {
+      "es": "Define evidencia y criterios de parada.",
+      "en": "Define evidencia y criterios de parada."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.capstone.manufacturing.micromechanics"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

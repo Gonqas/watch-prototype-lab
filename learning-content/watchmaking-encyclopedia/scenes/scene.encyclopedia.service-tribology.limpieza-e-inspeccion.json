@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.service-tribology.limpieza-e-inspeccion",
+  "version": "1.1.0",
+  "title": "Cuaderno: Limpieza, inspección y clasificación de defectos",
+  "description": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Limpieza, inspección y clasificación de defectos. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.service-tribology.limpieza-e-inspeccion.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.service-tribology.limpieza-e-inspeccion.answer",
+      "instructionMarkdown": "Explica **Limpieza, inspección y clasificación de defectos** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.service-tribology.limpieza-e-inspeccion.explain",
+          "promptMarkdown": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.service-tribology.limpieza-e-inspeccion.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.limpieza-e-inspeccion.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.limpieza-e-inspeccion.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.limpieza-e-inspeccion.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.service-tribology.limpieza-e-inspeccion.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por inspeccionar antes y sigue hasta decidir conservar/reparar/sustituir.",
+                "en": "Empieza por inspeccionar antes y sigue hasta decidir conservar/reparar/sustituir."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.service-tribology.limpieza-e-inspeccion.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La limpieza hace visibles superficies pero puede también borrar residuos diagnósticos. Se inspecciona antes y después con criterios por pieza: forma, acabado, contacto, grietas, corrosión, ajuste y magnetismo. Un defecto se clasifica por función y evolución, no solo por apariencia.",
+                "en": "La limpieza hace visibles superficies pero puede también borrar residuos diagnósticos. Se inspecciona antes y después con criterios por pieza: forma, acabado, contacto, grietas, corrosión, ajuste y magnetismo. Un defecto se clasifica por función y evolución, no solo por apariencia."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?",
+              "en": "¿Cómo distinguir suciedad, desgaste, deformación y daño después de limpiar?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena inspeccionar antes → limpiar según material → inspeccionar bajo luz y aumento → medir si procede → clasificar efecto → decidir conservar/reparar/sustituir, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena inspeccionar antes → limpiar según material → inspeccionar bajo luz y aumento → medir si procede → clasificar efecto → decidir conservar/reparar/sustituir, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.service-tribology.limpieza-e-inspeccion.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.service-tribology.limpieza-e-inspeccion.mechanism",
+            "field.encyclopedia.service-tribology.limpieza-e-inspeccion.evidence",
+            "field.encyclopedia.service-tribology.limpieza-e-inspeccion.limit",
+            "field.encyclopedia.service-tribology.limpieza-e-inspeccion.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

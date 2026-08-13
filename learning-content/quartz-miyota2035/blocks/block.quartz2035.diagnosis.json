@@ -1,0 +1,55 @@
+{
+  "id": "block.quartz2035.diagnosis",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Comprobación y diagnóstico básico",
+  "bodyMarkdown": "## Propósito\n\nRelacionar síntoma, subsistema, hipótesis, comprobación y límites.\n\n## Objetivos\n\n## Conocimientos previos\n\n## Explicación\n\nLos casos incluyen pila ausente, contacto incorrecto, bobina inactiva, rotor o tren bloqueado, rueda ausente, puesta en hora o agujas mal posicionadas, orientación incorrecta y cierre incompleto. Cada caso separa lo observado de lo que no puede concluirse. No se inventan valores eléctricos.\n\n## Visual y actividad\n\nErrores simbólicos reversibles con observación y prueba adicional pendiente. La actividad conserva el mismo modelo de referencia en los modos guiado, asistido y libre. Los cambios solo afectan a la sesión de aprendizaje y nunca alteran el proyecto técnico original.\n\n## Fuentes y alcance de las afirmaciones\n\n Los datos específicos del 2035 se atribuyen solo a las fuentes MIYOTA curadas. Las reconstrucciones normalizadas y los órdenes inferidos conservan su clasificación.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nRelacionar síntoma, subsistema, hipótesis, comprobación y límites. La siguiente práctica es “Proyecto final MIYOTA 2035”.\n\n## Palabras y piezas clave\n\n- **Desmontar virtualmente de forma ordenada.** Concepto práctico: desmontar virtualmente de forma ordenada, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles.\n- **Razonar sobre un síntoma.** Concepto práctico: razonar sobre un síntoma, con procedencia y límites ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física visibles.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo se pasa de un síntoma a una comprobación discriminante sin sustituir mediciones eléctricas o inspección física por una animación?\n\n## Modelo causal ampliado\n\nDiagnosticar empieza por describir el síntoma y localizar qué funciones podrían producirlo. Después se generan hipótesis rivales, se elige una comprobación que produzca resultados distintos entre ellas y se actualiza la conclusión. Cambiar piezas al azar no es diagnóstico.\n\nEl modelo didáctico puede activar fallos visuales controlados y estados lógicos. No mide tensión, consumo, continuidad, magnetismo ni condición real. Cuando una hipótesis exige esas magnitudes, el resultado correcto es un plan de prueba física, no una certeza digital.\n\n## Ejemplo resuelto\n\nSíntoma: la indicación no avanza. Hipótesis A: fuente interrumpida; B: tren bloqueado. La observación del punto de entrada al tren discrimina: si el rotor recibe pasos y la salida no cambia, B gana apoyo; si no existe entrada, A sigue abierta junto con control y bobina. El ejemplo registra resultados y mantiene las alternativas no descartadas.\n\n## Práctica deliberada\n\nConstruye dos hipótesis por síntoma. Elige la primera comprobación que más las separe. Repite con un resultado ambiguo y evita cerrarlo como diagnóstico. Termina redactando qué instrumento o inspección real faltaría.\n\n## Comprobación antes del laboratorio\n\n- El síntoma no se confunde con la causa.\n- Comparas al menos dos hipótesis.\n- La prueba elegida puede cambiar la decisión.\n- Los límites eléctricos y físicos quedan explícitos.\n\n## Transferencia\n\nTransfiere el árbol de hipótesis a un cuarzo distinto conservando funciones, pero reiniciando valores, referencias y procedimientos.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo se pasa de un síntoma a una comprobación discriminante sin sustituir mediciones eléctricas o inspección física por una animación?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Transfiere el árbol de hipótesis a un cuarzo distinto conservando funciones, pero reiniciando valores, referencias y procedimientos.\n\n## Lectura técnica de relaciones y límites\n\nSepara tres niveles de salida: descartado, apoyado y no resuelto. “Apoyado” no significa confirmado si el modelo didáctico no observa la magnitud decisiva. Para cada prueba escribe antes qué resultado espera cada hipótesis; hacerlo después favorece reinterpretar cualquier resultado como confirmación. La siguiente prueba se elige por la información que aporta, no por lo vistosa que resulte la animación.\n\n## Profundización aplicada\n\nConstruye una matriz con una fila por hipótesis y columnas para predicción, observación disponible, resultado y decisión provisional. Una prueba es útil cuando produce resultados distintos entre filas. Si dos hipótesis siguen prediciendo lo mismo, no fuerces un cierre: busca otra frontera funcional o declara que el modelo no observa la magnitud necesaria. El informe debe mostrar también qué prueba no se realizó y por qué.",
+  "claims": [
+    {
+      "id": "claim.quartz2035.diagnosis",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "La práctica “Comprobación y diagnóstico básico” usa acciones semánticas y reversibles sin afirmar física ni servicio validado.",
+      "sourceStatement": "Explicación educativa original respaldada por el contrato del banco y sus limitaciones.",
+      "method": "Diseño educativo original y prueba del runtime",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+          "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4d:diagnosis:0.1.0",
+      "recordedAt": "2026-07-27T10:00:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-quartz-practical-route",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4D · ruta práctica Del ISA 8172 al MIYOTA 2035"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Arquitectura del banco, actividades, explicaciones y evaluación originales de la ruta práctica.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.quartz2035.reason-about-symptom"
+    ],
+    "estimatedMinutes": 4,
+    "userPaced": true
+  }
+}

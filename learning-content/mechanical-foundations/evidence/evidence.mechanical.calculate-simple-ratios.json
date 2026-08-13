@@ -1,0 +1,36 @@
+{
+  "id": "evidence.mechanical.calculate-simple-ratios",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.calculate-simple-ratios",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.mechanical.calculate-simple-ratios",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.mechanical.calculate-simple-ratios",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.calculate-pair-ratio",
+      "activity.mechanical.detect-impossible-mesh",
+      "activity.mechanical.calculate-total-ratio"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.calculate-simple-ratios",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

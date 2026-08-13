@@ -1,0 +1,235 @@
+{
+  "id": "lesson.encyclopedia.complications.calendarios",
+  "version": "1.1.0",
+  "title": "Fecha, día, calendario anual y perpetuo",
+  "blockIds": [
+    "block.encyclopedia.complications.calendarios"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.calendarios"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Fecha, día, calendario anual y perpetuo",
+      "en": "Fecha, día, calendario anual y perpetuo"
+    },
+    "purpose": {
+      "es": "¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?",
+      "en": "¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Fecha, día, calendario anual y perpetuo mediante relaciones causales.",
+        "en": "Explicar Fecha, día, calendario anual y perpetuo mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.complications.automatico-y-reserva.rotor",
+      "concept.encyclopedia.complications.automatico-y-reserva.embrague-unidireccional",
+      "concept.encyclopedia.complications.automatico-y-reserva.indicador-de-reserva"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.complications.calendarios.dedo-de-fecha",
+      "concept.encyclopedia.complications.calendarios.saltador",
+      "concept.encyclopedia.complications.calendarios.rueda-de-programa"
+    ],
+    "sourceIds": [
+      "source.official.miyota.8215",
+      "source.official.eta.2824",
+      "source.external.hodinkee-watch101"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.complications.calendarios.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Fecha, día, calendario anual y perpetuo después de estudiar su teoría.",
+        "en": "Observar y manipular Fecha, día, calendario anual y perpetuo después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "Un calendario simple indexa un disco por ciclo diario y requiere corrección en meses cortos. Calendarios anual y perpetuo añaden levas, programas o ruedas que codifican duraciones y años bisiestos. La zona de cambio acumula energía y dependencias; ajustar durante ella puede forzar componentes.",
+        "en": "Un calendario simple indexa un disco por ciclo diario y requiere corrección en meses cortos. Calendarios anual y perpetuo añaden levas, programas o ruedas que codifican duraciones y años bisiestos. La zona de cambio acumula energía y dependencias; ajustar durante ella puede forzar componentes."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema calendar con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "tren de horas alcanza fase",
+        "leva carga muelle",
+        "dedo libera o empuja",
+        "disco indexa",
+        "saltador centra",
+        "programa decide salto adicional"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "dedo de fecha",
+        "saltador",
+        "rueda de programa"
+      ],
+      "arrows": [
+        "tren de horas alcanza fase → leva carga muelle",
+        "leva carga muelle → dedo libera o empuja",
+        "dedo libera o empuja → disco indexa",
+        "disco indexa → saltador centra",
+        "saltador centra → programa decide salto adicional"
+      ],
+      "animations": [
+        "advance-calendar",
+        "change-crown-position",
+        "introduce-fault",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Fecha, día, calendario anual y perpetuo sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Fecha, día, calendario anual y perpetuo sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: tren de horas alcanza fase → leva carga muelle → dedo libera o empuja → disco indexa → saltador centra → programa decide salto adicional. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: tren de horas alcanza fase → leva carga muelle → dedo libera o empuja → disco indexa → saltador centra → programa decide salto adicional. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.complications.calendarios.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.complications.calendarios.dedo-de-fecha",
+        "concept.encyclopedia.complications.calendarios.saltador",
+        "concept.encyclopedia.complications.calendarios.rueda-de-programa"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1193,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.complications.calendarios"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: dedo de fecha, saltador, rueda de programa.",
+          "en": "Defino con mis palabras: dedo de fecha, saltador, rueda de programa."
+        },
+        {
+          "es": "Sigo «Fecha, día, calendario anual y perpetuo» desde tren de horas alcanza fase hasta programa decide salto adicional y explico cada enlace.",
+          "en": "Sigo «Fecha, día, calendario anual y perpetuo» desde tren de horas alcanza fase hasta programa decide salto adicional y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Fecha, día, calendario anual y perpetuo» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Fecha, día, calendario anual y perpetuo» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Modela calendario simple, anual y perpetuo como máquinas de estados; indica memoria, evento, excepción y corrección humana.",
+          "en": "Aplico el criterio a esta variante: Modela calendario simple, anual y perpetuo como máquinas de estados; indica memoria, evento, excepción y corrección humana."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Fecha, día, calendario anual y perpetuo» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Fecha, día, calendario anual y perpetuo» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.complications.calendarios.dedo-de-fecha",
+        "concept.encyclopedia.complications.calendarios.saltador",
+        "concept.encyclopedia.complications.calendarios.rueda-de-programa"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?",
+          "en": "¿Cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?"
+        },
+        {
+          "es": "¿Qué relación causal de «Fecha, día, calendario anual y perpetuo» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Fecha, día, calendario anual y perpetuo» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

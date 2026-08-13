@@ -1,0 +1,236 @@
+{
+  "id": "lesson.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+  "version": "1.1.0",
+  "title": "Acoplamiento de minutería y ajuste manual",
+  "blockIds": [
+    "block.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Acoplamiento de minutería y ajuste manual",
+      "en": "Acoplamiento de minutería y ajuste manual"
+    },
+    "purpose": {
+      "es": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+      "en": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Acoplamiento de minutería y ajuste manual mediante relaciones causales.",
+        "en": "Explicar Acoplamiento de minutería y ajuste manual mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.toh-potencia-tren.rendimiento-de-etapa",
+      "concept.encyclopedia.mechanical-energy-trains.toh-potencia-tren.margen-de-par",
+      "concept.encyclopedia.mechanical-energy-trains.toh-potencia-tren.perdida-parasitaria"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+      "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+      "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch05",
+      "source.private.chicago.9",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Acoplamiento de minutería y ajuste manual después de estudiar su teoría.",
+        "en": "Observar y manipular Acoplamiento de minutería y ajuste manual después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "La minutería toma una rotación del tren y la escala a minutos y horas. El acoplamiento de fricción permite arrastrar la indicación durante la puesta en hora y volver a transmitir durante la marcha. Su par debe superar la carga de agujas sin perturbar el tren.",
+        "en": "La minutería toma una rotación del tren y la escala a minutos y horas. El acoplamiento de fricción permite arrastrar la indicación durante la puesta en hora y volver a transmitir durante la marcha. Su par debe superar la carga de agujas sin perturbar el tren."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema motion-works con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "tomar giro del tren",
+        "acoplar por fricción",
+        "mover minutera",
+        "reducir hacia rueda horaria",
+        "indicar horas",
+        "desacoplar manualmente al ajustar"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "cañón de minutos",
+        "rueda de minutería",
+        "par de arrastre"
+      ],
+      "arrows": [
+        "tomar giro del tren → acoplar por fricción",
+        "acoplar por fricción → mover minutera",
+        "mover minutera → reducir hacia rueda horaria",
+        "reducir hacia rueda horaria → indicar horas",
+        "indicar horas → desacoplar manualmente al ajustar"
+      ],
+      "animations": [
+        "set-time",
+        "engage",
+        "disengage",
+        "rotate",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Acoplamiento de minutería y ajuste manual sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Acoplamiento de minutería y ajuste manual sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: tomar giro del tren → acoplar por fricción → mover minutera → reducir hacia rueda horaria → indicar horas → desacoplar manualmente al ajustar. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: tomar giro del tren → acoplar por fricción → mover minutera → reducir hacia rueda horaria → indicar horas → desacoplar manualmente al ajustar. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1150,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: cañón de minutos, rueda de minutería, par de arrastre.",
+          "en": "Defino con mis palabras: cañón de minutos, rueda de minutería, par de arrastre."
+        },
+        {
+          "es": "Sigo «Acoplamiento de minutería y ajuste manual» desde tomar giro del tren hasta desacoplar manualmente al ajustar y explico cada enlace.",
+          "en": "Sigo «Acoplamiento de minutería y ajuste manual» desde tomar giro del tren hasta desacoplar manualmente al ajustar y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Acoplamiento de minutería y ajuste manual» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Acoplamiento de minutería y ajuste manual» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Compara dos ubicaciones del acoplamiento y analiza sus síntomas.",
+          "en": "Aplico el criterio a esta variante: Compara dos ubicaciones del acoplamiento y analiza sus síntomas."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Acoplamiento de minutería y ajuste manual» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Acoplamiento de minutería y ajuste manual» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+        "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?",
+          "en": "¿Cómo puede el reloj indicar durante la marcha y permitir corregir las agujas sin romper el tren?"
+        },
+        {
+          "es": "¿Qué relación causal de «Acoplamiento de minutería y ajuste manual» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Acoplamiento de minutería y ajuste manual» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

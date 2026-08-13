@@ -1,0 +1,59 @@
+{
+  "id": "activity.example",
+  "version": "1.0.0",
+  "title": "Título editorial de la actividad",
+  "sceneIds": [
+    "scene.example"
+  ],
+  "competencyIds": [
+    "competency.example"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.example"
+  ],
+  "rubricId": "rubric.example",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "active-project-v5-projection"
+  },
+  "authoring": {
+    "lessonId": "lesson.example",
+    "title": {
+      "es": "Título de la actividad",
+      "en": "Activity title"
+    },
+    "description": {
+      "es": "Qué hará y observará el alumno.",
+      "en": "What the learner will do and observe."
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 5,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "example-subsystem",
+    "requiredCapabilities": [
+      "learning.scene-runtime"
+    ],
+    "languages": [
+      "es-ES",
+      "en-US"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Sin representación geométrica."
+      ]
+    },
+    "warnings": {
+      "es": [],
+      "en": []
+    },
+    "sourceIds": [],
+    "visualResourceIds": []
+  }
+}
+

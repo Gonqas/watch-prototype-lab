@@ -1,0 +1,65 @@
+{
+  "id": "concept.horology.mechanical-chain",
+  "version": "0.5.0",
+  "title": {
+    "es": "Cadena funcional mecánica"
+  },
+  "summary": {
+    "es": "Seguir muelle, barrilete, tren, escape, oscilador, minutería e indicación sin atribuirles física no validada."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.horology.functional-chain",
+    "concept.horology.part-language"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.horology.quartz-chain",
+    "concept.horology.functional-equivalence"
+  ],
+  "competencyIds": [
+    "competency.horology.explain-mechanical-energy-chain"
+  ],
+  "movementIds": [],
+  "subsystem": "horology-foundations",
+  "routeIds": [
+    "route.horology.orientation"
+  ],
+  "activityIds": [
+    "activity.horology.order-mechanical-chain",
+    "activity.horology.identify-escapement-oscillator"
+  ],
+  "sourceIds": [
+    "source.horology.original-functional-map"
+  ],
+  "misconceptionIds": [
+    "misconception.horology.train-is-energy-source",
+    "misconception.horology.escapement-creates-energy"
+  ],
+  "bridgeLessonId": "lesson.horology.mechanical-chain",
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available",
+  "plainLanguage": {
+    "es": "Seguir muelle, barrilete, tren, escape, oscilador, minutería e indicación sin atribuirles física no validada."
+  },
+  "technicalLanguage": {
+    "es": "Cadena funcional mecánica describe una relación causal dentro de fundamentos de relojería: una entrada produce un cambio observable mediante una interfaz declarada. Seguir muelle, barrilete, tren, escape, oscilador, minutería e indicación sin atribuirles física no validada. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Cadena funcional mecánica describe una relación causal dentro de fundamentos de relojería: una entrada produce un cambio observable mediante una interfaz declarada. Seguir muelle, barrilete, tren, escape, oscilador, minutería e indicación sin atribuirles física no validada. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "whyItMatters": {
+    "es": "Entender cadena funcional mecánica permite razonar sobre el reloj completo y no memorizar piezas aisladas."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega cadena funcional mecánica dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema fundamentos de relojería."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.horology.quartz-chain",
+    "concept.horology.functional-equivalence"
+  ]
+}

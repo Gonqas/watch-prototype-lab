@@ -1,0 +1,167 @@
+{
+  "id": "block.mechanical.theory.setting",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Teoría previa · setting",
+  "bodyMarkdown": "# Teoría fundamental · mecanismo de cuerda y puesta en hora\n\n## Antes de empezar\n\nLa corona ofrece dos entradas distintas: puede girar y puede cambiar de posición axial. El mecanismo de puesta en hora —cuerda y puesta en hora works— convierte esas entradas en estados mutuamente coherentes: dar cuerda, corregir la indicación y, en algunos movimientos, seleccionar calendario o parada. El error habitual es imaginar que tirar de la corona mueve directamente las agujas. En realidad, la tija selecciona una rama y el giro posterior transmite movimiento por una cadena de piezas.\n\nEsta unidad usa una arquitectura conceptual común, no una lista universal. Los nombres, formas, número de posiciones y sentidos de giro varían. Debes aprender roles e interfaces para poder reconocer soluciones diferentes.\n\n## Piezas y dos tipos de movimiento\n\nLa **tija** transmite giro desde la corona y también desplazamiento axial. El **piñón corredizo** puede desplazarse para acoplar ramas diferentes. El **piñón de canto** participa en la transmisión de cuerda en muchas arquitecturas. El **tirete** registra la posición de la tija; el **muelle de tirete** estabiliza estados; el **balancín** o yugo gobierna la posición del piñón corredizo. Ruedas intermedias llevan el movimiento a la rueda de corona y al rochete, o a la minutería.\n\nLa relación crítica es que selección y transmisión no son lo mismo. Empujar o tirar cambia el estado del mecanismo. Girar produce trabajo solo si el acoplamiento seleccionado es válido. Una tija puede girar visualmente mientras la rama aguas abajo permanece desacoplada.\n\n## Estado de cuerda\n\nEn la posición de cuerda, el giro de corona se transmite por tija, piñones y ruedas hasta el rochete unido al árbol del barrilete. El trinquete permite el avance de carga y evita que el árbol deshaga inmediatamente el giro. El sentido efectivo y el conjunto exacto dependen de la arquitectura. El laboratorio muestra una cadena semántica y un estado de carga normalizado; no reproduce dientes, deslizamientos ni fuerzas de una referencia concreta.\n\nAl invertir el giro, algunas arquitecturas desacoplan o permiten un movimiento sin cargar; otras emplean soluciones diferentes. No memorices «horario» como regla universal. Identifica qué interfaz está activa y qué documento describe el movimiento real.\n\n## Estado de puesta en hora\n\nAl extraer la corona, el tirete y el balancín desplazan el piñón corredizo hacia la rama de minutería. El giro de tija alcanza entonces ruedas de puesta en hora y, finalmente, el conjunto de cañón de minutos, rueda de minutería y rueda de horas. La relación típica mantiene doce vueltas de la aguja horaria por cada ciclo de doce horas de la minutera, pero la disposición exacta varía.\n\nPara poder ajustar las agujas sin arrastrar todo el tren y para que después el reloj vuelva a indicarlas durante la marcha, suele existir una unión de fricción, frecuentemente asociada al cañón de minutos. Debe transmitir el movimiento normal y permitir deslizamiento controlado durante el ajuste. Muy poca fricción puede provocar pérdida de indicación; demasiada puede cargar el tren. El laboratorio representa acoplado/desacoplado, no mide fuerza de fricción.\n\n## Estados, dependencias y reversibilidad\n\nUn estado válido combina posición de tija, posición del piñón corredizo, rama activa y relaciones disponibles. No basta cambiar una bandera de interfaz: las piezas vinculadas deben alcanzar un estado compatible. Por eso el modelo conserva una máquina de estados y permite restaurar.\n\nEn un calibre con fecha puede existir una posición adicional o un sentido de giro dedicado a corrección rápida. La corrección cerca del cambio de fecha puede estar restringida por el fabricante. Esta unidad no enseña esas ventanas ni autoriza operaciones sobre un movimiento real: se limita a cuerda e indicación conceptual.\n\n## Ejemplo resuelto\n\nEstado inicial: corona en posición de cuerda, rama del barrilete acoplada y rama de minutería desacoplada. Al girar, la predicción es aumento de carga normalizada sin cambio impuesto de hora. Después se extrae la corona: el balancín desplaza el piñón corredizo, se desacopla la rama de cuerda y se acopla la de puesta en hora. Un giro posterior mueve la indicación sin cargar el muelle.\n\nSi se introduce un fallo de acoplamiento del piñón corredizo, la corona y la tija pueden girar pero ninguna salida cambia. La observación localiza una interrupción entre entrada y rama, no demuestra qué pieza física está dañada.\n\n## Errores habituales\n\n- Confundir tirar de la corona con mover directamente las agujas.\n- Suponer el mismo número de posiciones y sentidos en todos los calibres.\n- Olvidar que la minutería necesita una unión de fricción controlada.\n- Tratar una corrección virtual como procedimiento seguro sobre calendario real.\n- Diagnosticar por la animación una pieza rota concreta.\n\n## Comprobación antes del laboratorio\n\nDibuja una tabla con filas «posición de cuerda» y «posición de puesta en hora». Añade entrada axial, entrada rotatoria, rama activa y salida observable. Predice el resultado de desacoplar el piñón corredizo en cada posición. Solo después utiliza los controles de corona y compara la máquina de estados con tu tabla.\n\n## Resumen\n\nEl mecanismo selecciona rutas: el desplazamiento axial configura, el giro transmite y una unión de fricción permite ajustar sin destruir la marcha. Comprender estados y relaciones es transferible; memorizar una forma concreta no lo es.",
+  "claims": [
+    {
+      "id": "claim.mechanical.theory.setting",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "La teoría de setting sintetiza principios generales y separa explícitamente el modelo educativo de una validación física o de calibre.",
+      "sourceStatement": "Síntesis original contrastada con las fuentes declaradas; sin copiar sus textos ni transferir autoridad de una fuente secundaria.",
+      "method": "Síntesis conceptual, derivación ideal y delimitación G/K/P para estudio previo al laboratorio.",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Geometría pedagógica normalizada; no representa un calibre fabricable.",
+          "La coordinación cinemática demuestra relaciones y sentidos, no tolerancias ni rendimiento real.",
+          "No modela elasticidad real, pérdidas, lubricación, desgaste, choque ni marcha cronométrica."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "mechanical-theory:setting:0.5.0",
+      "recordedAt": "2026-08-02T00:00:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.external.ciechanowski-mechanical-watch",
+          "authority": "educational-secondary",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "Mechanical Watch",
+            "locator": "https://ciechanow.ski/mechanical-watch/"
+          },
+          "authorOrManufacturer": "Bartosz Ciechanowski",
+          "sourceType": "educational-visualization",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "D",
+          "sourceClass": "educational-explainer",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "cadena energética",
+            "barrilete",
+            "tren",
+            "escape",
+            "volante",
+            "espiral",
+            "puesta en hora"
+          ],
+          "pedagogicalUses": [
+            "theory",
+            "visual-reference",
+            "worked-example"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar como explicación secundaria y patrón de interacción; validar cualquier dimensión o afirmación específica en fuentes técnicas.",
+          "limitations": [
+            "La claridad visual no convierte la geometría ilustrada en un calibre real ni en una simulación física validada."
+          ],
+          "supportedClaim": "Explicación visual integrada de cómo cooperan los principales subsistemas de un reloj mecánico.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.external.timezone-illustrated-glossary",
+          "authority": "technical-training",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "TimeZone Watch School · Illustrated Glossary of Watch Parts",
+            "locator": "https://www.timezonewatchschool.com/WatchSchool/Glossary/glossary.shtml"
+          },
+          "authorOrManufacturer": "Walt Odets · TimeZone Watch School",
+          "sourceType": "curated-external-resource",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "B",
+          "sourceClass": "institutional-training",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "platina",
+            "puentes",
+            "puesta en hora",
+            "minutería",
+            "volante",
+            "escape",
+            "barrilete",
+            "tren",
+            "tornillos"
+          ],
+          "pedagogicalUses": [
+            "terminology",
+            "theory",
+            "visual-reference"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar para preentrenamiento terminológico y contraste visual; no atribuir sus imágenes a otro calibre.",
+          "limitations": [
+            "Material formativo histórico y general, no documentación de fabricante."
+          ],
+          "supportedClaim": "Glosario ilustrado organizado por caras y subsistemas de un movimiento mecánico.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.external.hodinkee-watch101",
+          "authority": "educational-secondary",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "Hodinkee · Watch 101",
+            "locator": "https://www.hodinkee.com/watch101"
+          },
+          "authorOrManufacturer": "Hodinkee",
+          "sourceType": "curated-external-resource",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "D",
+          "sourceClass": "educational-explainer",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "vocabulario",
+            "piezas",
+            "mecánica básica",
+            "complicaciones",
+            "fabricación"
+          ],
+          "pedagogicalUses": [
+            "terminology",
+            "visual-reference",
+            "discovery"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar para orientación y vocabulario; contrastar afirmaciones técnicas y excepciones.",
+          "limitations": [
+            "Recurso divulgativo, no manual de servicio ni estándar técnico."
+          ],
+          "supportedClaim": "Glosario visual introductorio de piezas, mecánica básica, complicaciones y técnicas de fabricación.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.explain-keyless"
+    ],
+    "estimatedMinutes": 30,
+    "userPaced": true
+  }
+}

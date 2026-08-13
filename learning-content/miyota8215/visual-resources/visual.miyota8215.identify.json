@@ -1,0 +1,69 @@
+{
+  "id": "visual.miyota8215.identify",
+  "version": "0.5.0",
+  "type": "real-movement-3d",
+  "purpose": {
+    "es": "Identificar el MIYOTA 8215: modelo didáctico del 8215, autoridad, manipulación y alternativa textual.",
+    "en": "Identificar el MIYOTA 8215: modelo didáctico del 8215, autoridad, manipulación y alternativa textual."
+  },
+  "status": "ready",
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "fidelity": {
+    "geometry": "G2",
+    "kinematics": "K2",
+    "physics": "P0",
+    "limitations": [
+      "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+      "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+      "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+    ]
+  },
+  "lessonIds": [
+    "lesson.miyota8215.identify"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "partSelectors": [
+    {
+      "selector": {
+        "by": "calibre",
+        "value": "8215"
+      },
+      "cardinality": "exactly-one"
+    }
+  ],
+  "requiredCapabilities": [
+    "learning.scene-runtime",
+    "canonical-selectors-v1",
+    "viewport.selection",
+    "viewport.visibility",
+    "viewport.isolation",
+    "viewport.transparency",
+    "viewport.highlight",
+    "viewport.explode",
+    "viewport.camera",
+    "viewport.overlay.labels",
+    "timeline.scrub",
+    "reduced-motion",
+    "viewport.restore"
+  ],
+  "dataRequirements": [
+    "Registro técnico de 56 piezas sobre 63 referencias.",
+    "Autoridad de las operaciones.",
+    "Identidad de cada pieza.",
+    "Restauración.",
+    "Movimiento reducido y alternativa textual."
+  ],
+  "priority": "high",
+  "dependencyIds": [],
+  "currentModelSupport": "yes",
+  "viewportImpact": "configuration"
+}

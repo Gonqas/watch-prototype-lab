@@ -1,0 +1,34 @@
+{
+  "id": "evidence.quartz2035.observation",
+  "version": "0.5.0",
+  "competencyId": "competency.quartz2035.observe-before-disassembly",
+  "kind": "observation",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.quartz2035.observation",
+    "version": "0.5.0",
+    "triggerEventType": "workbench-command",
+    "evidenceType": "identification",
+    "competencyId": "competency.quartz2035.observe-before-disassembly",
+    "packageId": "wplab.horology.quartz-miyota2035",
+    "activityIds": [
+      "activity.quartz2035.identify-movement-zones",
+      "activity.quartz2035.record-initial-condition"
+    ],
+    "evidenceTemplateId": "evidence.quartz2035.observation",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "mode",
+      "assistance",
+      "diagnosticCodes"
+    ]
+  }
+}

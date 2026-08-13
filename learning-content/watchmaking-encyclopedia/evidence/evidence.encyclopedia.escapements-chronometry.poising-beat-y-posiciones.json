@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.escapements-chronometry.poising-beat-y-posiciones"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

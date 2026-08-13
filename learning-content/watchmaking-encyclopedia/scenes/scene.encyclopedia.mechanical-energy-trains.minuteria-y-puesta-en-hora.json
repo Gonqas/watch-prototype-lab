@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+  "version": "1.1.0",
+  "title": "Cuaderno: Minutería, cañón de minutos y puesta en hora",
+  "description": "¿Cómo puede el reloj mover agujas y permitir ajustarlas sin detener ni romper el tren?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Minutería, cañón de minutos y puesta en hora. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo puede el reloj mover agujas y permitir ajustarlas sin detener ni romper el tren?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo puede el reloj mover agujas y permitir ajustarlas sin detener ni romper el tren?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.answer",
+      "instructionMarkdown": "Explica **Minutería, cañón de minutos y puesta en hora** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.explain",
+          "promptMarkdown": "¿Cómo puede el reloj mover agujas y permitir ajustarlas sin detener ni romper el tren?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por extraer o girar corona y sigue hasta agujas cambian posición.",
+                "en": "Empieza por extraer o girar corona y sigue hasta agujas cambian posición."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La minutería deriva el tiempo desde la rueda central o arquitectura equivalente y crea relaciones de minutos y horas. El cañón de minutos incorpora fricción controlada para que el sistema pueda ser arrastrado al poner en hora y transmitido durante la marcha. La tija, piñón corredizo, tirete y báscula seleccionan cuerda o ajuste.",
+                "en": "La minutería deriva el tiempo desde la rueda central o arquitectura equivalente y crea relaciones de minutos y horas. El cañón de minutos incorpora fricción controlada para que el sistema pueda ser arrastrado al poner en hora y transmitido durante la marcha. La tija, piñón corredizo, tirete y báscula seleccionan cuerda o ajuste."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo puede el reloj mover agujas y permitir ajustarlas sin detener ni romper el tren?",
+              "en": "¿Cómo puede el reloj mover agujas y permitir ajustarlas sin detener ni romper el tren?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena extraer o girar corona → tija desplaza selector → piñón corredizo engrana → minutería recibe giro → cañón desliza de forma controlada → agujas cambian posición, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena extraer o girar corona → tija desplaza selector → piñón corredizo engrana → minutería recibe giro → cañón desliza de forma controlada → agujas cambian posición, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.evidence",
+            "field.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.limit",
+            "field.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

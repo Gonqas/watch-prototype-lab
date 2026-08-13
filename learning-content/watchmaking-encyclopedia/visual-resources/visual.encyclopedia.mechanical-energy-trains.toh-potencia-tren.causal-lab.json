@@ -1,0 +1,44 @@
+{
+  "id": "visual.encyclopedia.mechanical-energy-trains.toh-potencia-tren.causal-lab",
+  "version": "1.1.0",
+  "type": "energy-flow-diagram",
+  "purpose": {
+    "es": "Hacer observable la cadena causal de Par, velocidad, potencia y pérdidas en el tren mediante estados reversibles y controles explícitos.",
+    "en": "Hacer observable la cadena causal de Par, velocidad, potencia y pérdidas en el tren mediante estados reversibles y controles explícitos."
+  },
+  "status": "ready",
+  "sourceIds": [
+    "source.private.toh.ch05",
+    "source.private.daniels.wheels-pinions",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "fidelity": {
+    "geometry": "G1",
+    "kinematics": "K2",
+    "physics": "P0",
+    "limitations": [
+      "Modelo conceptual normalizado. Muestra relaciones y sentidos; no valida geometría, fuerzas, lubricación ni rendimiento de un calibre."
+    ]
+  },
+  "lessonIds": [
+    "lesson.encyclopedia.mechanical-energy-trains.toh-potencia-tren"
+  ],
+  "movementIds": [
+    "movement.conceptual.mechanical-chain"
+  ],
+  "partSelectors": [],
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.camera@^1.0.0"
+  ],
+  "dataRequirements": [
+    "Relaciones funcionales del fixture conceptual.",
+    "Comandos reversibles y restauración.",
+    "Alternativa textual completa."
+  ],
+  "priority": "high",
+  "dependencyIds": [],
+  "currentModelSupport": "yes",
+  "viewportImpact": "configuration"
+}

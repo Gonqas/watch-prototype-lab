@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.cases-water.juntas-y-sellado",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.cases-water.juntas-y-sellado",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.cases-water.juntas-y-sellado",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Juntas, compresión y rutas de fuga."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.cases-water.juntas-y-sellado",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.cases-water.juntas-y-sellado",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

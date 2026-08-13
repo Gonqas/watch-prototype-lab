@@ -1,0 +1,22 @@
+{
+  "id": "recommendation.quartz2035.retain-prepare-safe-workstation",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: preparar un puesto de trabajo seguro"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra sesión, un intervalo, evidencia independiente y un contexto distinto; nunca se concede en la sesión de aprendizaje inicial."
+  },
+  "rule": "independent-later-evidence-different-session-minimum-7-days@1.0.0",
+  "priority": 50,
+  "target": {
+    "kind": "competency",
+    "id": "competency.quartz2035.prepare-safe-workstation"
+  },
+  "evidenceTemplateIds": [
+    "evidence.quartz2035.preparation",
+    "evidence.quartz2035.safety"
+  ],
+  "required": false
+}

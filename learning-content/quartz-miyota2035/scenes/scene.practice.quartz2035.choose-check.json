@@ -1,0 +1,318 @@
+{
+  "id": "scene.practice.quartz2035.choose-check",
+  "version": "0.5.0",
+  "title": "Elegir una comprobación · práctica específica",
+  "description": "Elegir una comprobación en el banco virtual 2035, con comandos deterministas, evidencia, cancelación y restauración. La pregunta, el feedback y la evidencia pertenecen exclusivamente a este objetivo.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.miyota.2035.structural"
+  },
+  "accessibility": {
+    "textualAlternative": "Errores simbólicos reversibles con observación y prueba adicional pendiente. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.",
+    "reducedMotionAlternative": "Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.",
+    "keyboardActions": [
+      "Tabular en orden banco, herramientas, movimiento, bandeja y acciones.",
+      "Activar con Intro o Espacio.",
+      "Cancelar o restaurar mediante botones nombrados."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono, patrón y estado acompañan cada color.",
+      "Cada instancia tiene un nombre accesible único."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "durationMs": 0,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 700,
+      "operation": "explode",
+      "targets": [],
+      "value": 0.35,
+      "durationMs": 350,
+      "essential": false,
+      "waitFor": "none"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.quartz2035.diagnosis.scope",
+      "markdown": "Comprobación y diagnóstico básico: representación educativa reversible. No es un procedimiento físico validado; consulta la ficha técnica para conocer su alcance geométrico, de movimiento y de física.",
+      "accessibleLabel": "Comprobación y diagnóstico básico. Alcance educativo y limitaciones disponibles en texto."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.quartz2035.diagnosis.observe",
+      "instructionMarkdown": "Observa y registra el estado inicial de “Comprobación y diagnóstico básico” antes de actuar.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.quartz2035.diagnosis.execute",
+      "instructionMarkdown": "Ejecuta «Elegir una comprobación». Antes de confirmar, compara tu predicción, el cambio observable, la relación implicada y la autoridad de la fuente.",
+      "questions": [
+        {
+          "id": "question.practice.quartz2035.choose-check.criterion",
+          "promptMarkdown": "¿Qué comprobación es más útil entre dos hipótesis rivales?",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.practice.quartz2035.choose-check.evidence",
+              "label": "La que produciría resultados diferentes si una u otra fuese cierta",
+              "labels": {
+                "es": "La que produciría resultados diferentes si una u otra fuese cierta",
+                "en": "La que produciría resultados diferentes si una u otra fuese cierta"
+              }
+            },
+            {
+              "id": "option.practice.quartz2035.choose-check.appearance",
+              "label": "La más rápida aunque ambas hipótesis predigan el mismo resultado",
+              "labels": {
+                "es": "La más rápida aunque ambas hipótesis predigan el mismo resultado",
+                "en": "La más rápida aunque ambas hipótesis predigan el mismo resultado"
+              }
+            },
+            {
+              "id": "option.practice.quartz2035.choose-check.authority",
+              "label": "La que exige asumir un valor eléctrico no medido",
+              "labels": {
+                "es": "La que exige asumir un valor eléctrico no medido",
+                "en": "La que exige asumir un valor eléctrico no medido"
+              }
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué comprobación es más útil entre dos hipótesis rivales?"
+            },
+            "feedback": {
+              "es": "Una prueba diagnóstica reduce alternativas; confirmar el síntoma no basta."
+            }
+          }
+        },
+        {
+          "id": "question.practice.quartz2035.choose-check.reasoning",
+          "promptMarkdown": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Qué comprobación es más útil entre dos hipótesis rivales?",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué cambió o qué comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué relación, interfaz o regla explica el resultado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué fuente o límite condiciona la conclusión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Qué comprobación es más útil entre dos hipótesis rivales?"
+            },
+            "feedback": {
+              "es": "La revisión debe comprobar la relación específica: Una prueba diagnóstica reduce alternativas; confirmar el síntoma no basta."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.practice.quartz2035.choose-check.criterion",
+          "expectedOptionIds": [
+            "option.practice.quartz2035.choose-check.evidence"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.practice.quartz2035.choose-check.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Elegir una comprobación · práctica específica",
+      "en": "Elegir una comprobación · práctica específica"
+    },
+    "purpose": {
+      "es": "Resolver «Elegir una comprobación» mediante una decisión específica, explicación propia, restauración y transferencia."
+    },
+    "prerequisites": [
+      "concept.quartz2035.disassemble-virtually"
+    ],
+    "narrative": {
+      "es": "Anticipa el resultado esperado para cada hipótesis. Una prueba diagnóstica reduce alternativas; confirmar el síntoma no basta."
+    },
+    "initialFraming": {
+      "es": "Banco estable con pieza, herramienta, bandeja, fuentes y una ficha técnica de alcance accesible."
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "storyboard.step.quartz2035.diagnosis.observe",
+        "sceneStepId": "step.quartz2035.diagnosis.observe",
+        "narrative": {
+          "es": "Observar y documentar antes de manipular."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "inspect",
+          "record"
+        ],
+        "interaction": {
+          "es": "Usar teclado, lista accesible o selección directa."
+        },
+        "feedback": {
+          "es": "El feedback nombra herramienta, dependencia, identidad y autoridad de la regla."
+        },
+        "hint": {
+          "es": "Las pistas disminuyen según el modo y nunca penalizan una adaptación de accesibilidad."
+        }
+      },
+      {
+        "id": "storyboard.step.quartz2035.diagnosis.execute",
+        "sceneStepId": "step.quartz2035.diagnosis.execute",
+        "narrative": {
+          "es": "Ejecutar, comprobar y restaurar."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "workbench-command",
+          "checkpoint",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Usar teclado, lista accesible o selección directa."
+        },
+        "feedback": {
+          "es": "El feedback nombra herramienta, dependencia, identidad y autoridad de la regla."
+        },
+        "hint": {
+          "es": "Las pistas disminuyen según el modo y nunca penalizan una adaptación de accesibilidad."
+        }
+      }
+    ],
+    "ending": {
+      "es": "Guardar evidencia provisional y restaurar el estado inicial o conservar un punto de control explícito."
+    },
+    "restoration": {
+      "es": "Restaurar piezas, bandejas, herramientas, orientación, selección y vista de forma idempotente."
+    },
+    "accessibility": {
+      "es": "Banco, herramientas y bandeja equivalentes como listas ordenadas y menús de acción."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos, sin arrastre ni movimiento automático, con la misma rúbrica."
+    },
+    "evidenceTemplateIds": [
+      "evidence.quartz2035.diagnosis",
+      "evidence.quartz2035.explanation"
+    ],
+    "technicalCriteria": [
+      "Identidad de cada pieza estable.",
+      "Acción validada y resultado registrado.",
+      "El proyecto técnico y el modelo de práctica permanecen intactos."
+    ],
+    "limitations": [
+      "Los niveles de reconstrucción y fidelidad se conservan en la ficha técnica.",
+      "Sin secuencia completa de servicio, pares, lubricación, tolerancias ni valores eléctricos inventados."
+    ]
+  },
+  "restorePreviousState": true
+}

@@ -1,0 +1,68 @@
+{
+  "id": "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.consumo-medio",
+  "version": "1.1.0",
+  "title": {
+    "es": "consumo medio",
+    "en": "consumo medio"
+  },
+  "summary": {
+    "es": "Carga eléctrica por unidad de tiempo promediada entre reposo y eventos pulsados.",
+    "en": "Carga eléctrica por unidad de tiempo promediada entre reposo y eventos pulsados."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.efecto-piezoelectrico",
+    "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.resonador-de-horquilla",
+    "concept.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador.circuito-oscilador"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.divisor-circuito-y-consumo"
+  ],
+  "movementIds": [
+    "miyota-2035"
+  ],
+  "subsystem": "quartz-control",
+  "routeIds": [
+    "route.encyclopedia.quartz-electronics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.divisor-circuito-y-consumo"
+  ],
+  "sourceIds": [
+    "source.official.miyota.2035",
+    "source.external.watchguy-manuals",
+    "source.external.watch-movements-eu"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.quartz-electronics.divisor-circuito-y-consumo"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.quartz-electronics.divisor-circuito-y-consumo",
+  "plainLanguage": {
+    "es": "Carga eléctrica por unidad de tiempo promediada entre reposo y eventos pulsados.",
+    "en": "Carga eléctrica por unidad de tiempo promediada entre reposo y eventos pulsados."
+  },
+  "technicalLanguage": {
+    "es": "consumo medio se interpreta mediante la cadena amplificar resonancia → contar flancos → dividir frecuencia → decidir instante → formar pulso alterno → supervisar estado y las condiciones declaradas en la unidad.",
+    "en": "consumo medio se interpreta mediante la cadena amplificar resonancia → contar flancos → dividir frecuencia → decidir instante → formar pulso alterno → supervisar estado y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?",
+    "en": "Permite explicar y comprobar ¿cómo transforma el circuito una señal rápida y pequeña en decisiones temporales y pulsos útiles?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir consumo medio sin circularidad.",
+      "en": "Definir consumo medio sin circularidad."
+    },
+    {
+      "es": "Relacionar consumo medio con una entrada, una interfaz y una salida.",
+      "en": "Relacionar consumo medio con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

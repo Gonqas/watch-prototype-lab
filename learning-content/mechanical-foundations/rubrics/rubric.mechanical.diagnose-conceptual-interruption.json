@@ -1,0 +1,47 @@
+{
+  "id": "rubric.mechanical.diagnose-conceptual-interruption",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.diagnose-conceptual-interruption",
+  "rules": [
+    {
+      "id": "rule.mechanical.diagnose-conceptual-interruption.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Diagnosticar una interrupción conceptual: se evalúan relación, justificación, restauración y límites; el tiempo no penaliza."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.mechanical.diagnose-conceptual-interruption.demonstrated",
+    "version": "0.5.0",
+    "competencyId": "competency.mechanical.diagnose-conceptual-interruption",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "diagnosis",
+            "status": "active",
+            "minimumConfidence": 0.7
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

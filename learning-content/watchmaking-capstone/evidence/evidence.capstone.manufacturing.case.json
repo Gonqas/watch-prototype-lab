@@ -1,0 +1,33 @@
+{
+  "id": "evidence.capstone.manufacturing.case",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.manufacturing.case",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.manufacturing.case",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.capstone.manufacturing.case",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.manufacturing.case"
+    ],
+    "evidenceTemplateId": "evidence.capstone.manufacturing.case",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "sourceIds",
+      "risks",
+      "validation"
+    ]
+  }
+}

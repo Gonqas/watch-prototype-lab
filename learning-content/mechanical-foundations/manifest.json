@@ -1,0 +1,1250 @@
+{
+  "format": "wplab-learning-pack",
+  "formatVersion": 1,
+  "schemaId": "learning-pack-v1",
+  "packageVersion": "0.5.0",
+  "id": "wplab.horology.mechanical-foundations",
+  "title": "Fundamentos del reloj mecánico",
+  "distribution": "local-unsigned",
+  "editorialStatus": "in-review",
+  "authors": [
+    {
+      "name": "Watch Prototype Lab"
+    }
+  ],
+  "languages": [
+    "es-ES"
+  ],
+  "dependencies": [
+    {
+      "packageId": "wplab.horology.functional-map",
+      "versionRange": "^0.5.0"
+    }
+  ],
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "reduced-motion@^1.0.0"
+  ],
+  "movements": [
+    {
+      "manufacturer": "Conceptual",
+      "calibre": "mechanical-chain",
+      "referenceId": "fixture.conceptual.mechanical-chain"
+    },
+    {
+      "manufacturer": "MIYOTA",
+      "calibre": "8215",
+      "referenceId": "fixture.miyota.8215.structural"
+    }
+  ],
+  "assets": [],
+  "entries": {
+    "curricula": [
+      {
+        "id": "curriculum.mechanical-foundations",
+        "path": "curriculum/curriculum.mechanical-foundations.json"
+      }
+    ],
+    "routes": [
+      {
+        "id": "route.mechanical.foundations",
+        "path": "routes/route.mechanical.foundations.json"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module.mechanical.energy",
+        "path": "modules/module.mechanical.energy.json"
+      },
+      {
+        "id": "module.mechanical.barrel",
+        "path": "modules/module.mechanical.barrel.json"
+      },
+      {
+        "id": "module.mechanical.gear-pair",
+        "path": "modules/module.mechanical.gear-pair.json"
+      },
+      {
+        "id": "module.mechanical.train",
+        "path": "modules/module.mechanical.train.json"
+      },
+      {
+        "id": "module.mechanical.supports",
+        "path": "modules/module.mechanical.supports.json"
+      },
+      {
+        "id": "module.mechanical.escapement",
+        "path": "modules/module.mechanical.escapement.json"
+      },
+      {
+        "id": "module.mechanical.oscillator",
+        "path": "modules/module.mechanical.oscillator.json"
+      },
+      {
+        "id": "module.mechanical.escape-oscillator",
+        "path": "modules/module.mechanical.escape-oscillator.json"
+      },
+      {
+        "id": "module.mechanical.motion-works",
+        "path": "modules/module.mechanical.motion-works.json"
+      },
+      {
+        "id": "module.mechanical.keyless",
+        "path": "modules/module.mechanical.keyless.json"
+      },
+      {
+        "id": "module.mechanical.automatic-calendar",
+        "path": "modules/module.mechanical.automatic-calendar.json"
+      },
+      {
+        "id": "module.mechanical.final-project",
+        "path": "modules/module.mechanical.final-project.json"
+      }
+    ],
+    "concepts": [
+      {
+        "id": "concept.mechanical.explain-energy-chain",
+        "path": "concepts/concept.mechanical.explain-energy-chain.json"
+      },
+      {
+        "id": "concept.mechanical.explain-barrel",
+        "path": "concepts/concept.mechanical.explain-barrel.json"
+      },
+      {
+        "id": "concept.mechanical.calculate-simple-ratios",
+        "path": "concepts/concept.mechanical.calculate-simple-ratios.json"
+      },
+      {
+        "id": "concept.mechanical.determine-rotation-direction",
+        "path": "concepts/concept.mechanical.determine-rotation-direction.json"
+      },
+      {
+        "id": "concept.mechanical.build-functional-train",
+        "path": "concepts/concept.mechanical.build-functional-train.json"
+      },
+      {
+        "id": "concept.mechanical.recognize-supports-clearances",
+        "path": "concepts/concept.mechanical.recognize-supports-clearances.json"
+      },
+      {
+        "id": "concept.mechanical.order-escapement-phases",
+        "path": "concepts/concept.mechanical.order-escapement-phases.json"
+      },
+      {
+        "id": "concept.mechanical.distinguish-frequency-amplitude",
+        "path": "concepts/concept.mechanical.distinguish-frequency-amplitude.json"
+      },
+      {
+        "id": "concept.mechanical.explain-escape-oscillator-system",
+        "path": "concepts/concept.mechanical.explain-escape-oscillator-system.json"
+      },
+      {
+        "id": "concept.mechanical.explain-motion-works",
+        "path": "concepts/concept.mechanical.explain-motion-works.json"
+      },
+      {
+        "id": "concept.mechanical.explain-keyless",
+        "path": "concepts/concept.mechanical.explain-keyless.json"
+      },
+      {
+        "id": "concept.mechanical.explain-automatic-winding",
+        "path": "concepts/concept.mechanical.explain-automatic-winding.json"
+      },
+      {
+        "id": "concept.mechanical.explain-basic-calendar",
+        "path": "concepts/concept.mechanical.explain-basic-calendar.json"
+      },
+      {
+        "id": "concept.mechanical.diagnose-conceptual-interruption",
+        "path": "concepts/concept.mechanical.diagnose-conceptual-interruption.json"
+      },
+      {
+        "id": "concept.mechanical.compare-conceptual-real",
+        "path": "concepts/concept.mechanical.compare-conceptual-real.json"
+      },
+      {
+        "id": "concept.mechanical.document-fidelity-limits",
+        "path": "concepts/concept.mechanical.document-fidelity-limits.json"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "block.mechanical.energy",
+        "path": "blocks/block.mechanical.energy.json"
+      },
+      {
+        "id": "block.mechanical.barrel",
+        "path": "blocks/block.mechanical.barrel.json"
+      },
+      {
+        "id": "block.mechanical.gear-pair",
+        "path": "blocks/block.mechanical.gear-pair.json"
+      },
+      {
+        "id": "block.mechanical.train",
+        "path": "blocks/block.mechanical.train.json"
+      },
+      {
+        "id": "block.mechanical.supports",
+        "path": "blocks/block.mechanical.supports.json"
+      },
+      {
+        "id": "block.mechanical.escapement",
+        "path": "blocks/block.mechanical.escapement.json"
+      },
+      {
+        "id": "block.mechanical.oscillator",
+        "path": "blocks/block.mechanical.oscillator.json"
+      },
+      {
+        "id": "block.mechanical.escape-oscillator",
+        "path": "blocks/block.mechanical.escape-oscillator.json"
+      },
+      {
+        "id": "block.mechanical.motion-works",
+        "path": "blocks/block.mechanical.motion-works.json"
+      },
+      {
+        "id": "block.mechanical.keyless",
+        "path": "blocks/block.mechanical.keyless.json"
+      },
+      {
+        "id": "block.mechanical.automatic-calendar",
+        "path": "blocks/block.mechanical.automatic-calendar.json"
+      },
+      {
+        "id": "block.mechanical.final-project",
+        "path": "blocks/block.mechanical.final-project.json"
+      },
+      {
+        "id": "block.mechanical.theory.energy",
+        "path": "blocks/block.mechanical.theory.energy.json"
+      },
+      {
+        "id": "block.mechanical.theory.train",
+        "path": "blocks/block.mechanical.theory.train.json"
+      },
+      {
+        "id": "block.mechanical.theory.escapement",
+        "path": "blocks/block.mechanical.theory.escapement.json"
+      },
+      {
+        "id": "block.mechanical.theory.oscillator",
+        "path": "blocks/block.mechanical.theory.oscillator.json"
+      },
+      {
+        "id": "block.mechanical.theory.setting",
+        "path": "blocks/block.mechanical.theory.setting.json"
+      },
+      {
+        "id": "block.mechanical.theory.automatic",
+        "path": "blocks/block.mechanical.theory.automatic.json"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "lesson.mechanical.energy",
+        "path": "lessons/lesson.mechanical.energy.json"
+      },
+      {
+        "id": "lesson.mechanical.barrel",
+        "path": "lessons/lesson.mechanical.barrel.json"
+      },
+      {
+        "id": "lesson.mechanical.gear-pair",
+        "path": "lessons/lesson.mechanical.gear-pair.json"
+      },
+      {
+        "id": "lesson.mechanical.train",
+        "path": "lessons/lesson.mechanical.train.json"
+      },
+      {
+        "id": "lesson.mechanical.supports",
+        "path": "lessons/lesson.mechanical.supports.json"
+      },
+      {
+        "id": "lesson.mechanical.escapement",
+        "path": "lessons/lesson.mechanical.escapement.json"
+      },
+      {
+        "id": "lesson.mechanical.oscillator",
+        "path": "lessons/lesson.mechanical.oscillator.json"
+      },
+      {
+        "id": "lesson.mechanical.escape-oscillator",
+        "path": "lessons/lesson.mechanical.escape-oscillator.json"
+      },
+      {
+        "id": "lesson.mechanical.motion-works",
+        "path": "lessons/lesson.mechanical.motion-works.json"
+      },
+      {
+        "id": "lesson.mechanical.keyless",
+        "path": "lessons/lesson.mechanical.keyless.json"
+      },
+      {
+        "id": "lesson.mechanical.automatic-calendar",
+        "path": "lessons/lesson.mechanical.automatic-calendar.json"
+      },
+      {
+        "id": "lesson.mechanical.final-project",
+        "path": "lessons/lesson.mechanical.final-project.json"
+      }
+    ],
+    "activities": [
+      {
+        "id": "activity.mechanical.classify-energy-functions",
+        "path": "activities/activity.mechanical.classify-energy-functions.json"
+      },
+      {
+        "id": "activity.mechanical.interrupt-energy-chain",
+        "path": "activities/activity.mechanical.interrupt-energy-chain.json"
+      },
+      {
+        "id": "activity.mechanical.load-unload-barrel",
+        "path": "activities/activity.mechanical.load-unload-barrel.json"
+      },
+      {
+        "id": "activity.mechanical.identify-barrel-parts",
+        "path": "activities/activity.mechanical.identify-barrel-parts.json"
+      },
+      {
+        "id": "activity.mechanical.predict-pair-direction",
+        "path": "activities/activity.mechanical.predict-pair-direction.json"
+      },
+      {
+        "id": "activity.mechanical.calculate-pair-ratio",
+        "path": "activities/activity.mechanical.calculate-pair-ratio.json"
+      },
+      {
+        "id": "activity.mechanical.detect-impossible-mesh",
+        "path": "activities/activity.mechanical.detect-impossible-mesh.json"
+      },
+      {
+        "id": "activity.mechanical.build-train",
+        "path": "activities/activity.mechanical.build-train.json"
+      },
+      {
+        "id": "activity.mechanical.calculate-total-ratio",
+        "path": "activities/activity.mechanical.calculate-total-ratio.json"
+      },
+      {
+        "id": "activity.mechanical.interrupt-train",
+        "path": "activities/activity.mechanical.interrupt-train.json"
+      },
+      {
+        "id": "activity.mechanical.identify-pivots-supports",
+        "path": "activities/activity.mechanical.identify-pivots-supports.json"
+      },
+      {
+        "id": "activity.mechanical.detect-mis-seated-wheel",
+        "path": "activities/activity.mechanical.detect-mis-seated-wheel.json"
+      },
+      {
+        "id": "activity.mechanical.order-escapement-phases",
+        "path": "activities/activity.mechanical.order-escapement-phases.json"
+      },
+      {
+        "id": "activity.mechanical.identify-lock-impulse-drop",
+        "path": "activities/activity.mechanical.identify-lock-impulse-drop.json"
+      },
+      {
+        "id": "activity.mechanical.distinguish-frequency-amplitude",
+        "path": "activities/activity.mechanical.distinguish-frequency-amplitude.json"
+      },
+      {
+        "id": "activity.mechanical.configure-oscillator",
+        "path": "activities/activity.mechanical.configure-oscillator.json"
+      },
+      {
+        "id": "activity.mechanical.relate-escape-oscillator",
+        "path": "activities/activity.mechanical.relate-escape-oscillator.json"
+      },
+      {
+        "id": "activity.mechanical.predict-escapement-interruption",
+        "path": "activities/activity.mechanical.predict-escapement-interruption.json"
+      },
+      {
+        "id": "activity.mechanical.build-motion-works",
+        "path": "activities/activity.mechanical.build-motion-works.json"
+      },
+      {
+        "id": "activity.mechanical.set-indication",
+        "path": "activities/activity.mechanical.set-indication.json"
+      },
+      {
+        "id": "activity.mechanical.reconstruct-crown-states",
+        "path": "activities/activity.mechanical.reconstruct-crown-states.json"
+      },
+      {
+        "id": "activity.mechanical.operate-winding-setting",
+        "path": "activities/activity.mechanical.operate-winding-setting.json"
+      },
+      {
+        "id": "activity.mechanical.follow-automatic-energy",
+        "path": "activities/activity.mechanical.follow-automatic-energy.json"
+      },
+      {
+        "id": "activity.mechanical.explain-date-change",
+        "path": "activities/activity.mechanical.explain-date-change.json"
+      },
+      {
+        "id": "activity.mechanical.introduce-fault",
+        "path": "activities/activity.mechanical.introduce-fault.json"
+      },
+      {
+        "id": "activity.mechanical.formulate-hypothesis",
+        "path": "activities/activity.mechanical.formulate-hypothesis.json"
+      },
+      {
+        "id": "activity.mechanical.build-final-project",
+        "path": "activities/activity.mechanical.build-final-project.json"
+      },
+      {
+        "id": "activity.mechanical.compare-with-8215",
+        "path": "activities/activity.mechanical.compare-with-8215.json"
+      },
+      {
+        "id": "activity.mechanical.document-limitations",
+        "path": "activities/activity.mechanical.document-limitations.json"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "scene.mechanical.energy",
+        "path": "scenes/scene.mechanical.energy.json"
+      },
+      {
+        "id": "scene.mechanical.barrel",
+        "path": "scenes/scene.mechanical.barrel.json"
+      },
+      {
+        "id": "scene.mechanical.gear-pair",
+        "path": "scenes/scene.mechanical.gear-pair.json"
+      },
+      {
+        "id": "scene.mechanical.train",
+        "path": "scenes/scene.mechanical.train.json"
+      },
+      {
+        "id": "scene.mechanical.supports",
+        "path": "scenes/scene.mechanical.supports.json"
+      },
+      {
+        "id": "scene.mechanical.escapement",
+        "path": "scenes/scene.mechanical.escapement.json"
+      },
+      {
+        "id": "scene.mechanical.oscillator",
+        "path": "scenes/scene.mechanical.oscillator.json"
+      },
+      {
+        "id": "scene.mechanical.escape-oscillator",
+        "path": "scenes/scene.mechanical.escape-oscillator.json"
+      },
+      {
+        "id": "scene.mechanical.motion-works",
+        "path": "scenes/scene.mechanical.motion-works.json"
+      },
+      {
+        "id": "scene.mechanical.keyless",
+        "path": "scenes/scene.mechanical.keyless.json"
+      },
+      {
+        "id": "scene.mechanical.automatic-calendar",
+        "path": "scenes/scene.mechanical.automatic-calendar.json"
+      },
+      {
+        "id": "scene.mechanical.final-project",
+        "path": "scenes/scene.mechanical.final-project.json"
+      },
+      {
+        "id": "scene.practice.mechanical.build-final-project",
+        "path": "scenes/scene.practice.mechanical.build-final-project.json"
+      },
+      {
+        "id": "scene.practice.mechanical.build-motion-works",
+        "path": "scenes/scene.practice.mechanical.build-motion-works.json"
+      },
+      {
+        "id": "scene.practice.mechanical.build-train",
+        "path": "scenes/scene.practice.mechanical.build-train.json"
+      },
+      {
+        "id": "scene.practice.mechanical.calculate-pair-ratio",
+        "path": "scenes/scene.practice.mechanical.calculate-pair-ratio.json"
+      },
+      {
+        "id": "scene.practice.mechanical.calculate-total-ratio",
+        "path": "scenes/scene.practice.mechanical.calculate-total-ratio.json"
+      },
+      {
+        "id": "scene.practice.mechanical.classify-energy-functions",
+        "path": "scenes/scene.practice.mechanical.classify-energy-functions.json"
+      },
+      {
+        "id": "scene.practice.mechanical.compare-with-8215",
+        "path": "scenes/scene.practice.mechanical.compare-with-8215.json"
+      },
+      {
+        "id": "scene.practice.mechanical.configure-oscillator",
+        "path": "scenes/scene.practice.mechanical.configure-oscillator.json"
+      },
+      {
+        "id": "scene.practice.mechanical.detect-impossible-mesh",
+        "path": "scenes/scene.practice.mechanical.detect-impossible-mesh.json"
+      },
+      {
+        "id": "scene.practice.mechanical.detect-mis-seated-wheel",
+        "path": "scenes/scene.practice.mechanical.detect-mis-seated-wheel.json"
+      },
+      {
+        "id": "scene.practice.mechanical.distinguish-frequency-amplitude",
+        "path": "scenes/scene.practice.mechanical.distinguish-frequency-amplitude.json"
+      },
+      {
+        "id": "scene.practice.mechanical.document-limitations",
+        "path": "scenes/scene.practice.mechanical.document-limitations.json"
+      },
+      {
+        "id": "scene.practice.mechanical.explain-date-change",
+        "path": "scenes/scene.practice.mechanical.explain-date-change.json"
+      },
+      {
+        "id": "scene.practice.mechanical.follow-automatic-energy",
+        "path": "scenes/scene.practice.mechanical.follow-automatic-energy.json"
+      },
+      {
+        "id": "scene.practice.mechanical.formulate-hypothesis",
+        "path": "scenes/scene.practice.mechanical.formulate-hypothesis.json"
+      },
+      {
+        "id": "scene.practice.mechanical.identify-barrel-parts",
+        "path": "scenes/scene.practice.mechanical.identify-barrel-parts.json"
+      },
+      {
+        "id": "scene.practice.mechanical.identify-lock-impulse-drop",
+        "path": "scenes/scene.practice.mechanical.identify-lock-impulse-drop.json"
+      },
+      {
+        "id": "scene.practice.mechanical.identify-pivots-supports",
+        "path": "scenes/scene.practice.mechanical.identify-pivots-supports.json"
+      },
+      {
+        "id": "scene.practice.mechanical.interrupt-energy-chain",
+        "path": "scenes/scene.practice.mechanical.interrupt-energy-chain.json"
+      },
+      {
+        "id": "scene.practice.mechanical.interrupt-train",
+        "path": "scenes/scene.practice.mechanical.interrupt-train.json"
+      },
+      {
+        "id": "scene.practice.mechanical.introduce-fault",
+        "path": "scenes/scene.practice.mechanical.introduce-fault.json"
+      },
+      {
+        "id": "scene.practice.mechanical.load-unload-barrel",
+        "path": "scenes/scene.practice.mechanical.load-unload-barrel.json"
+      },
+      {
+        "id": "scene.practice.mechanical.operate-winding-setting",
+        "path": "scenes/scene.practice.mechanical.operate-winding-setting.json"
+      },
+      {
+        "id": "scene.practice.mechanical.order-escapement-phases",
+        "path": "scenes/scene.practice.mechanical.order-escapement-phases.json"
+      },
+      {
+        "id": "scene.practice.mechanical.predict-escapement-interruption",
+        "path": "scenes/scene.practice.mechanical.predict-escapement-interruption.json"
+      },
+      {
+        "id": "scene.practice.mechanical.predict-pair-direction",
+        "path": "scenes/scene.practice.mechanical.predict-pair-direction.json"
+      },
+      {
+        "id": "scene.practice.mechanical.reconstruct-crown-states",
+        "path": "scenes/scene.practice.mechanical.reconstruct-crown-states.json"
+      },
+      {
+        "id": "scene.practice.mechanical.relate-escape-oscillator",
+        "path": "scenes/scene.practice.mechanical.relate-escape-oscillator.json"
+      },
+      {
+        "id": "scene.practice.mechanical.set-indication",
+        "path": "scenes/scene.practice.mechanical.set-indication.json"
+      }
+    ],
+    "competencies": [
+      {
+        "id": "competency.mechanical.explain-energy-chain",
+        "path": "competencies/competency.mechanical.explain-energy-chain.json"
+      },
+      {
+        "id": "competency.mechanical.explain-barrel",
+        "path": "competencies/competency.mechanical.explain-barrel.json"
+      },
+      {
+        "id": "competency.mechanical.calculate-simple-ratios",
+        "path": "competencies/competency.mechanical.calculate-simple-ratios.json"
+      },
+      {
+        "id": "competency.mechanical.determine-rotation-direction",
+        "path": "competencies/competency.mechanical.determine-rotation-direction.json"
+      },
+      {
+        "id": "competency.mechanical.build-functional-train",
+        "path": "competencies/competency.mechanical.build-functional-train.json"
+      },
+      {
+        "id": "competency.mechanical.recognize-supports-clearances",
+        "path": "competencies/competency.mechanical.recognize-supports-clearances.json"
+      },
+      {
+        "id": "competency.mechanical.order-escapement-phases",
+        "path": "competencies/competency.mechanical.order-escapement-phases.json"
+      },
+      {
+        "id": "competency.mechanical.distinguish-frequency-amplitude",
+        "path": "competencies/competency.mechanical.distinguish-frequency-amplitude.json"
+      },
+      {
+        "id": "competency.mechanical.explain-escape-oscillator-system",
+        "path": "competencies/competency.mechanical.explain-escape-oscillator-system.json"
+      },
+      {
+        "id": "competency.mechanical.explain-motion-works",
+        "path": "competencies/competency.mechanical.explain-motion-works.json"
+      },
+      {
+        "id": "competency.mechanical.explain-keyless",
+        "path": "competencies/competency.mechanical.explain-keyless.json"
+      },
+      {
+        "id": "competency.mechanical.explain-automatic-winding",
+        "path": "competencies/competency.mechanical.explain-automatic-winding.json"
+      },
+      {
+        "id": "competency.mechanical.explain-basic-calendar",
+        "path": "competencies/competency.mechanical.explain-basic-calendar.json"
+      },
+      {
+        "id": "competency.mechanical.diagnose-conceptual-interruption",
+        "path": "competencies/competency.mechanical.diagnose-conceptual-interruption.json"
+      },
+      {
+        "id": "competency.mechanical.compare-conceptual-real",
+        "path": "competencies/competency.mechanical.compare-conceptual-real.json"
+      },
+      {
+        "id": "competency.mechanical.document-fidelity-limits",
+        "path": "competencies/competency.mechanical.document-fidelity-limits.json"
+      }
+    ],
+    "evidenceTemplates": [
+      {
+        "id": "evidence.mechanical.explain-energy-chain",
+        "path": "evidence/evidence.mechanical.explain-energy-chain.json"
+      },
+      {
+        "id": "evidence.mechanical.explain-barrel",
+        "path": "evidence/evidence.mechanical.explain-barrel.json"
+      },
+      {
+        "id": "evidence.mechanical.calculate-simple-ratios",
+        "path": "evidence/evidence.mechanical.calculate-simple-ratios.json"
+      },
+      {
+        "id": "evidence.mechanical.determine-rotation-direction",
+        "path": "evidence/evidence.mechanical.determine-rotation-direction.json"
+      },
+      {
+        "id": "evidence.mechanical.build-functional-train",
+        "path": "evidence/evidence.mechanical.build-functional-train.json"
+      },
+      {
+        "id": "evidence.mechanical.recognize-supports-clearances",
+        "path": "evidence/evidence.mechanical.recognize-supports-clearances.json"
+      },
+      {
+        "id": "evidence.mechanical.order-escapement-phases",
+        "path": "evidence/evidence.mechanical.order-escapement-phases.json"
+      },
+      {
+        "id": "evidence.mechanical.distinguish-frequency-amplitude",
+        "path": "evidence/evidence.mechanical.distinguish-frequency-amplitude.json"
+      },
+      {
+        "id": "evidence.mechanical.explain-escape-oscillator-system",
+        "path": "evidence/evidence.mechanical.explain-escape-oscillator-system.json"
+      },
+      {
+        "id": "evidence.mechanical.explain-motion-works",
+        "path": "evidence/evidence.mechanical.explain-motion-works.json"
+      },
+      {
+        "id": "evidence.mechanical.explain-keyless",
+        "path": "evidence/evidence.mechanical.explain-keyless.json"
+      },
+      {
+        "id": "evidence.mechanical.explain-automatic-winding",
+        "path": "evidence/evidence.mechanical.explain-automatic-winding.json"
+      },
+      {
+        "id": "evidence.mechanical.explain-basic-calendar",
+        "path": "evidence/evidence.mechanical.explain-basic-calendar.json"
+      },
+      {
+        "id": "evidence.mechanical.diagnose-conceptual-interruption",
+        "path": "evidence/evidence.mechanical.diagnose-conceptual-interruption.json"
+      },
+      {
+        "id": "evidence.mechanical.compare-conceptual-real",
+        "path": "evidence/evidence.mechanical.compare-conceptual-real.json"
+      },
+      {
+        "id": "evidence.mechanical.document-fidelity-limits",
+        "path": "evidence/evidence.mechanical.document-fidelity-limits.json"
+      }
+    ],
+    "rubrics": [
+      {
+        "id": "rubric.mechanical.explain-energy-chain",
+        "path": "rubrics/rubric.mechanical.explain-energy-chain.json"
+      },
+      {
+        "id": "rubric.mechanical.explain-barrel",
+        "path": "rubrics/rubric.mechanical.explain-barrel.json"
+      },
+      {
+        "id": "rubric.mechanical.calculate-simple-ratios",
+        "path": "rubrics/rubric.mechanical.calculate-simple-ratios.json"
+      },
+      {
+        "id": "rubric.mechanical.determine-rotation-direction",
+        "path": "rubrics/rubric.mechanical.determine-rotation-direction.json"
+      },
+      {
+        "id": "rubric.mechanical.build-functional-train",
+        "path": "rubrics/rubric.mechanical.build-functional-train.json"
+      },
+      {
+        "id": "rubric.mechanical.recognize-supports-clearances",
+        "path": "rubrics/rubric.mechanical.recognize-supports-clearances.json"
+      },
+      {
+        "id": "rubric.mechanical.order-escapement-phases",
+        "path": "rubrics/rubric.mechanical.order-escapement-phases.json"
+      },
+      {
+        "id": "rubric.mechanical.distinguish-frequency-amplitude",
+        "path": "rubrics/rubric.mechanical.distinguish-frequency-amplitude.json"
+      },
+      {
+        "id": "rubric.mechanical.explain-escape-oscillator-system",
+        "path": "rubrics/rubric.mechanical.explain-escape-oscillator-system.json"
+      },
+      {
+        "id": "rubric.mechanical.explain-motion-works",
+        "path": "rubrics/rubric.mechanical.explain-motion-works.json"
+      },
+      {
+        "id": "rubric.mechanical.explain-keyless",
+        "path": "rubrics/rubric.mechanical.explain-keyless.json"
+      },
+      {
+        "id": "rubric.mechanical.explain-automatic-winding",
+        "path": "rubrics/rubric.mechanical.explain-automatic-winding.json"
+      },
+      {
+        "id": "rubric.mechanical.explain-basic-calendar",
+        "path": "rubrics/rubric.mechanical.explain-basic-calendar.json"
+      },
+      {
+        "id": "rubric.mechanical.diagnose-conceptual-interruption",
+        "path": "rubrics/rubric.mechanical.diagnose-conceptual-interruption.json"
+      },
+      {
+        "id": "rubric.mechanical.compare-conceptual-real",
+        "path": "rubrics/rubric.mechanical.compare-conceptual-real.json"
+      },
+      {
+        "id": "rubric.mechanical.document-fidelity-limits",
+        "path": "rubrics/rubric.mechanical.document-fidelity-limits.json"
+      }
+    ],
+    "glossary": [
+      {
+        "id": "term.mechanical.energy",
+        "path": "glossary/term.mechanical.energy.json"
+      },
+      {
+        "id": "term.mechanical.force",
+        "path": "glossary/term.mechanical.force.json"
+      },
+      {
+        "id": "term.mechanical.torque",
+        "path": "glossary/term.mechanical.torque.json"
+      },
+      {
+        "id": "term.mechanical.work",
+        "path": "glossary/term.mechanical.work.json"
+      },
+      {
+        "id": "term.mechanical.angular-velocity",
+        "path": "glossary/term.mechanical.angular-velocity.json"
+      },
+      {
+        "id": "term.mechanical.gear-ratio",
+        "path": "glossary/term.mechanical.gear-ratio.json"
+      },
+      {
+        "id": "term.mechanical.driver-wheel",
+        "path": "glossary/term.mechanical.driver-wheel.json"
+      },
+      {
+        "id": "term.mechanical.driven-wheel",
+        "path": "glossary/term.mechanical.driven-wheel.json"
+      },
+      {
+        "id": "term.mechanical.arbor",
+        "path": "glossary/term.mechanical.arbor.json"
+      },
+      {
+        "id": "term.mechanical.pivot",
+        "path": "glossary/term.mechanical.pivot.json"
+      },
+      {
+        "id": "term.mechanical.endshake",
+        "path": "glossary/term.mechanical.endshake.json"
+      },
+      {
+        "id": "term.mechanical.sideshake",
+        "path": "glossary/term.mechanical.sideshake.json"
+      },
+      {
+        "id": "term.mechanical.barrel",
+        "path": "glossary/term.mechanical.barrel.json"
+      },
+      {
+        "id": "term.mechanical.barrel-arbor",
+        "path": "glossary/term.mechanical.barrel-arbor.json"
+      },
+      {
+        "id": "term.mechanical.drum",
+        "path": "glossary/term.mechanical.drum.json"
+      },
+      {
+        "id": "term.mechanical.cover",
+        "path": "glossary/term.mechanical.cover.json"
+      },
+      {
+        "id": "term.mechanical.slipping-bridle",
+        "path": "glossary/term.mechanical.slipping-bridle.json"
+      },
+      {
+        "id": "term.mechanical.going-train",
+        "path": "glossary/term.mechanical.going-train.json"
+      },
+      {
+        "id": "term.mechanical.center-wheel",
+        "path": "glossary/term.mechanical.center-wheel.json"
+      },
+      {
+        "id": "term.mechanical.third-wheel",
+        "path": "glossary/term.mechanical.third-wheel.json"
+      },
+      {
+        "id": "term.mechanical.fourth-wheel",
+        "path": "glossary/term.mechanical.fourth-wheel.json"
+      },
+      {
+        "id": "term.mechanical.escape-wheel",
+        "path": "glossary/term.mechanical.escape-wheel.json"
+      },
+      {
+        "id": "term.mechanical.escapement",
+        "path": "glossary/term.mechanical.escapement.json"
+      },
+      {
+        "id": "term.mechanical.pallet-fork",
+        "path": "glossary/term.mechanical.pallet-fork.json"
+      },
+      {
+        "id": "term.mechanical.pallet-stone",
+        "path": "glossary/term.mechanical.pallet-stone.json"
+      },
+      {
+        "id": "term.mechanical.locking",
+        "path": "glossary/term.mechanical.locking.json"
+      },
+      {
+        "id": "term.mechanical.drop",
+        "path": "glossary/term.mechanical.drop.json"
+      },
+      {
+        "id": "term.mechanical.impulse",
+        "path": "glossary/term.mechanical.impulse.json"
+      },
+      {
+        "id": "term.mechanical.balance",
+        "path": "glossary/term.mechanical.balance.json"
+      },
+      {
+        "id": "term.mechanical.hairspring",
+        "path": "glossary/term.mechanical.hairspring.json"
+      },
+      {
+        "id": "term.mechanical.frequency",
+        "path": "glossary/term.mechanical.frequency.json"
+      },
+      {
+        "id": "term.mechanical.period",
+        "path": "glossary/term.mechanical.period.json"
+      },
+      {
+        "id": "term.mechanical.alternation",
+        "path": "glossary/term.mechanical.alternation.json"
+      },
+      {
+        "id": "term.mechanical.amplitude",
+        "path": "glossary/term.mechanical.amplitude.json"
+      },
+      {
+        "id": "term.mechanical.isochronism",
+        "path": "glossary/term.mechanical.isochronism.json"
+      },
+      {
+        "id": "term.mechanical.beat-error",
+        "path": "glossary/term.mechanical.beat-error.json"
+      },
+      {
+        "id": "term.mechanical.cannon-pinion",
+        "path": "glossary/term.mechanical.cannon-pinion.json"
+      },
+      {
+        "id": "term.mechanical.minute-wheel",
+        "path": "glossary/term.mechanical.minute-wheel.json"
+      },
+      {
+        "id": "term.mechanical.hour-wheel",
+        "path": "glossary/term.mechanical.hour-wheel.json"
+      },
+      {
+        "id": "term.mechanical.stem",
+        "path": "glossary/term.mechanical.stem.json"
+      },
+      {
+        "id": "term.mechanical.sliding-pinion",
+        "path": "glossary/term.mechanical.sliding-pinion.json"
+      },
+      {
+        "id": "term.mechanical.setting-lever",
+        "path": "glossary/term.mechanical.setting-lever.json"
+      },
+      {
+        "id": "term.mechanical.yoke",
+        "path": "glossary/term.mechanical.yoke.json"
+      },
+      {
+        "id": "term.mechanical.crown-wheel",
+        "path": "glossary/term.mechanical.crown-wheel.json"
+      },
+      {
+        "id": "term.mechanical.automatic-rotor",
+        "path": "glossary/term.mechanical.automatic-rotor.json"
+      },
+      {
+        "id": "term.mechanical.reverser",
+        "path": "glossary/term.mechanical.reverser.json"
+      },
+      {
+        "id": "term.mechanical.calendar",
+        "path": "glossary/term.mechanical.calendar.json"
+      },
+      {
+        "id": "term.mechanical.quick-correction",
+        "path": "glossary/term.mechanical.quick-correction.json"
+      }
+    ],
+    "sources": [
+      {
+        "id": "source.horology.private-book.wheels-pinions",
+        "path": "sources/source.horology.private-book.wheels-pinions.json"
+      },
+      {
+        "id": "source.horology.private-book.jewelling",
+        "path": "sources/source.horology.private-book.jewelling.json"
+      },
+      {
+        "id": "source.horology.private-book.escapements",
+        "path": "sources/source.horology.private-book.escapements.json"
+      },
+      {
+        "id": "source.horology.private-book.mainsprings",
+        "path": "sources/source.horology.private-book.mainsprings.json"
+      },
+      {
+        "id": "source.horology.private-book.movement-design",
+        "path": "sources/source.horology.private-book.movement-design.json"
+      },
+      {
+        "id": "source.horology.private-book.balance-spring",
+        "path": "sources/source.horology.private-book.balance-spring.json"
+      },
+      {
+        "id": "source.miyota.8215.product-page",
+        "path": "sources/source.miyota.8215.product-page.json"
+      },
+      {
+        "id": "source.miyota.8215.specification",
+        "path": "sources/source.miyota.8215.specification.json"
+      },
+      {
+        "id": "source.miyota.8215.drawing",
+        "path": "sources/source.miyota.8215.drawing.json"
+      },
+      {
+        "id": "source.miyota.8215.instruction-manual",
+        "path": "sources/source.miyota.8215.instruction-manual.json"
+      },
+      {
+        "id": "source.miyota.8215.parts-list-exploded-view",
+        "path": "sources/source.miyota.8215.parts-list-exploded-view.json"
+      },
+      {
+        "id": "source.horology.original-mechanical-foundations",
+        "path": "sources/source.horology.original-mechanical-foundations.json"
+      },
+      {
+        "id": "source.external.horology-student.books",
+        "path": "sources/source.external.horology-student.books.json"
+      },
+      {
+        "id": "source.external.horology-student.shops",
+        "path": "sources/source.external.horology-student.shops.json"
+      },
+      {
+        "id": "source.external.watchbase",
+        "path": "sources/source.external.watchbase.json"
+      },
+      {
+        "id": "source.external.ranfft",
+        "path": "sources/source.external.ranfft.json"
+      },
+      {
+        "id": "source.external.caliber-corner",
+        "path": "sources/source.external.caliber-corner.json"
+      },
+      {
+        "id": "source.external.pocket-watch-database",
+        "path": "sources/source.external.pocket-watch-database.json"
+      },
+      {
+        "id": "source.external.ciechanowski-mechanical-watch",
+        "path": "sources/source.external.ciechanowski-mechanical-watch.json"
+      },
+      {
+        "id": "source.external.animagraffs-mechanical-watch",
+        "path": "sources/source.external.animagraffs-mechanical-watch.json"
+      },
+      {
+        "id": "source.external.timezone-illustrated-glossary",
+        "path": "sources/source.external.timezone-illustrated-glossary.json"
+      },
+      {
+        "id": "source.external.timezone-horologium",
+        "path": "sources/source.external.timezone-horologium.json"
+      },
+      {
+        "id": "source.external.hodinkee-watch101",
+        "path": "sources/source.external.hodinkee-watch101.json"
+      },
+      {
+        "id": "source.external.eta-swisslab-6497",
+        "path": "sources/source.external.eta-swisslab-6497.json"
+      },
+      {
+        "id": "source.external.horlogerie-suisse",
+        "path": "sources/source.external.horlogerie-suisse.json"
+      },
+      {
+        "id": "source.external.learnwatchmaking",
+        "path": "sources/source.external.learnwatchmaking.json"
+      },
+      {
+        "id": "source.external.jomashop-history",
+        "path": "sources/source.external.jomashop-history.json"
+      },
+      {
+        "id": "source.external.naked-watchmaker",
+        "path": "sources/source.external.naked-watchmaker.json"
+      },
+      {
+        "id": "source.external.watchguy-repair-blog",
+        "path": "sources/source.external.watchguy-repair-blog.json"
+      },
+      {
+        "id": "source.external.17jewels",
+        "path": "sources/source.external.17jewels.json"
+      },
+      {
+        "id": "source.external.ashton-tracy",
+        "path": "sources/source.external.ashton-tracy.json"
+      },
+      {
+        "id": "source.external.dean-dk",
+        "path": "sources/source.external.dean-dk.json"
+      },
+      {
+        "id": "source.external.bobinchak-school",
+        "path": "sources/source.external.bobinchak-school.json"
+      },
+      {
+        "id": "source.external.worn-wound-caliber-spec",
+        "path": "sources/source.external.worn-wound-caliber-spec.json"
+      },
+      {
+        "id": "source.external.watchguy-manuals",
+        "path": "sources/source.external.watchguy-manuals.json"
+      },
+      {
+        "id": "source.external.watch-movements-eu",
+        "path": "sources/source.external.watch-movements-eu.json"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "recommendation.mechanical.retain-explain-energy-chain",
+        "path": "recommendations/recommendation.mechanical.retain-explain-energy-chain.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-explain-barrel",
+        "path": "recommendations/recommendation.mechanical.retain-explain-barrel.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-calculate-simple-ratios",
+        "path": "recommendations/recommendation.mechanical.retain-calculate-simple-ratios.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-determine-rotation-direction",
+        "path": "recommendations/recommendation.mechanical.retain-determine-rotation-direction.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-build-functional-train",
+        "path": "recommendations/recommendation.mechanical.retain-build-functional-train.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-recognize-supports-clearances",
+        "path": "recommendations/recommendation.mechanical.retain-recognize-supports-clearances.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-order-escapement-phases",
+        "path": "recommendations/recommendation.mechanical.retain-order-escapement-phases.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-distinguish-frequency-amplitude",
+        "path": "recommendations/recommendation.mechanical.retain-distinguish-frequency-amplitude.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-explain-escape-oscillator-system",
+        "path": "recommendations/recommendation.mechanical.retain-explain-escape-oscillator-system.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-explain-motion-works",
+        "path": "recommendations/recommendation.mechanical.retain-explain-motion-works.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-explain-keyless",
+        "path": "recommendations/recommendation.mechanical.retain-explain-keyless.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-explain-automatic-winding",
+        "path": "recommendations/recommendation.mechanical.retain-explain-automatic-winding.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-explain-basic-calendar",
+        "path": "recommendations/recommendation.mechanical.retain-explain-basic-calendar.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-diagnose-conceptual-interruption",
+        "path": "recommendations/recommendation.mechanical.retain-diagnose-conceptual-interruption.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-compare-conceptual-real",
+        "path": "recommendations/recommendation.mechanical.retain-compare-conceptual-real.json"
+      },
+      {
+        "id": "recommendation.mechanical.retain-document-fidelity-limits",
+        "path": "recommendations/recommendation.mechanical.retain-document-fidelity-limits.json"
+      }
+    ],
+    "visualResources": [
+      {
+        "id": "visual.mechanical.energy",
+        "path": "visual-resources/visual.mechanical.energy.json"
+      },
+      {
+        "id": "visual.mechanical.barrel",
+        "path": "visual-resources/visual.mechanical.barrel.json"
+      },
+      {
+        "id": "visual.mechanical.gear-pair",
+        "path": "visual-resources/visual.mechanical.gear-pair.json"
+      },
+      {
+        "id": "visual.mechanical.train",
+        "path": "visual-resources/visual.mechanical.train.json"
+      },
+      {
+        "id": "visual.mechanical.supports",
+        "path": "visual-resources/visual.mechanical.supports.json"
+      },
+      {
+        "id": "visual.mechanical.escapement",
+        "path": "visual-resources/visual.mechanical.escapement.json"
+      },
+      {
+        "id": "visual.mechanical.oscillator",
+        "path": "visual-resources/visual.mechanical.oscillator.json"
+      },
+      {
+        "id": "visual.mechanical.escape-oscillator",
+        "path": "visual-resources/visual.mechanical.escape-oscillator.json"
+      },
+      {
+        "id": "visual.mechanical.motion-works",
+        "path": "visual-resources/visual.mechanical.motion-works.json"
+      },
+      {
+        "id": "visual.mechanical.keyless",
+        "path": "visual-resources/visual.mechanical.keyless.json"
+      },
+      {
+        "id": "visual.mechanical.automatic-calendar",
+        "path": "visual-resources/visual.mechanical.automatic-calendar.json"
+      },
+      {
+        "id": "visual.mechanical.final-project",
+        "path": "visual-resources/visual.mechanical.final-project.json"
+      }
+    ],
+    "misconceptions": [
+      {
+        "id": "misconception.mechanical.near-gears-mesh",
+        "path": "misconceptions/misconception.mechanical.near-gears-mesh.json"
+      },
+      {
+        "id": "misconception.mechanical.frequency-is-amplitude",
+        "path": "misconceptions/misconception.mechanical.frequency-is-amplitude.json"
+      },
+      {
+        "id": "misconception.mechanical.escapement-is-source",
+        "path": "misconceptions/misconception.mechanical.escapement-is-source.json"
+      }
+    ]
+  },
+  "minimumAppVersion": "0.10.0",
+  "createdAt": "2026-08-02T00:00:00.000Z"
+}

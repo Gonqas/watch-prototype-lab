@@ -1,0 +1,24 @@
+{
+  "id": "recommendation.authoring.review-storyboard",
+  "version": "1.0.0",
+  "kind": "continue-route",
+  "title": {
+    "es": "Revisar el storyboard después de ejecutar",
+    "en": "Review the storyboard after execution"
+  },
+  "reason": {
+    "es": "Comparar el resultado observado con la intención escrita permite detectar contratos incompletos.",
+    "en": "Comparing the observed result with the written intent helps detect incomplete contracts."
+  },
+  "rule": "authoring-activity-completed-before-storyboard-review@1.0.0",
+  "priority": 50,
+  "target": {
+    "kind": "route",
+    "id": "route.authoring-first-package"
+  },
+  "evidenceTemplateIds": [
+    "evidence.authoring.selection"
+  ],
+  "required": false
+}
+

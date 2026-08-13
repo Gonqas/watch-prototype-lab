@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.par",
+  "version": "1.1.0",
+  "title": {
+    "es": "par",
+    "en": "par"
+  },
+  "summary": {
+    "es": "Momento de una fuerza respecto a un eje, producto vectorial de brazo y fuerza.",
+    "en": "Momento de una fuerza respecto a un eje, producto vectorial de brazo y fuerza."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.magnitud",
+    "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.orden-de-magnitud",
+    "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.homogeneidad-dimensional"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.fuerza-par-energia"
+  ],
+  "movementIds": [],
+  "subsystem": "mechanics",
+  "routeIds": [
+    "route.encyclopedia.math-physics-metrology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.fuerza-par-energia"
+  ],
+  "sourceIds": [
+    "source.private.daniels.mainsprings",
+    "source.private.daniels.movement-design",
+    "source.private.vba-uhrentechnik"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.math-physics-metrology.fuerza-par-energia"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+  "plainLanguage": {
+    "es": "Momento de una fuerza respecto a un eje, producto vectorial de brazo y fuerza.",
+    "en": "Momento de una fuerza respecto a un eje, producto vectorial de brazo y fuerza."
+  },
+  "technicalLanguage": {
+    "es": "par se interpreta mediante la cadena almacenar energía → aplicar par → transmitir por engranes → vencer pérdidas → entregar impulso → mover indicación y las condiciones declaradas en la unidad.",
+    "en": "par se interpreta mediante la cadena almacenar energía → aplicar par → transmitir por engranes → vencer pérdidas → entregar impulso → mover indicación y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?",
+    "en": "Permite explicar y comprobar ¿cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir par sin circularidad.",
+      "en": "Definir par sin circularidad."
+    },
+    {
+      "es": "Relacionar par con una entrada, una interfaz y una salida.",
+      "en": "Relacionar par con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

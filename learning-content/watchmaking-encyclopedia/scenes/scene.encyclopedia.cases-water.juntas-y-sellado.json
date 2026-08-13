@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.cases-water.juntas-y-sellado",
+  "version": "1.1.0",
+  "title": "Cuaderno: Juntas, compresión y rutas de fuga",
+  "description": "¿Cómo crea una junta una barrera y por qué una junta nueva puede seguir fugando?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Juntas, compresión y rutas de fuga. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.cases-water.juntas-y-sellado.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo crea una junta una barrera y por qué una junta nueva puede seguir fugando?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo crea una junta una barrera y por qué una junta nueva puede seguir fugando?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.cases-water.juntas-y-sellado.answer",
+      "instructionMarkdown": "Explica **Juntas, compresión y rutas de fuga** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.cases-water.juntas-y-sellado.explain",
+          "promptMarkdown": "¿Cómo crea una junta una barrera y por qué una junta nueva puede seguir fugando?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.cases-water.juntas-y-sellado.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.juntas-y-sellado.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.juntas-y-sellado.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.juntas-y-sellado.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.cases-water.juntas-y-sellado.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por presión actúa y sigue hasta barrera se conserva o fuga.",
+                "en": "Empieza por presión actúa y sigue hasta barrera se conserva o fuga."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.cases-water.juntas-y-sellado.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Una junta funciona al deformarse contra superficies compatibles y mantener presión de contacto frente a tolerancias, presión, temperatura y movimiento. Sección, material, dureza, compresión, acabado, ranura y lubricación de montaje interactúan. Cada abertura crea una ruta de fuga independiente.",
+                "en": "Una junta funciona al deformarse contra superficies compatibles y mantener presión de contacto frente a tolerancias, presión, temperatura y movimiento. Sección, material, dureza, compresión, acabado, ranura y lubricación de montaje interactúan. Cada abertura crea una ruta de fuga independiente."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo crea una junta una barrera y por qué una junta nueva puede seguir fugando?",
+              "en": "¿Cómo crea una junta una barrera y por qué una junta nueva puede seguir fugando?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena presión actúa → fluido busca discontinuidad → junta mantiene contacto → superficie y ranura distribuyen carga → material recupera → barrera se conserva o fuga, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena presión actúa → fluido busca discontinuidad → junta mantiene contacto → superficie y ranura distribuyen carga → material recupera → barrera se conserva o fuga, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.cases-water.juntas-y-sellado.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.cases-water.juntas-y-sellado.mechanism",
+            "field.encyclopedia.cases-water.juntas-y-sellado.evidence",
+            "field.encyclopedia.cases-water.juntas-y-sellado.limit",
+            "field.encyclopedia.cases-water.juntas-y-sellado.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

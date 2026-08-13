@@ -1,0 +1,30 @@
+{
+  "id": "competency.miyota8215.declare-fidelity-limits",
+  "version": "0.5.0",
+  "title": "Declarar límites de fidelidad",
+  "description": "Declarar límites de fidelidad sobre el modelo estructural del MIYOTA 8215 mediante evidencia trazable y límites explícitos.",
+  "prerequisites": [],
+  "authoring": {
+    "title": {
+      "es": "Declarar límites de fidelidad",
+      "en": "Declarar límites de fidelidad"
+    },
+    "description": {
+      "es": "Declarar límites de fidelidad; el tiempo y las adaptaciones accesibles no penalizan.",
+      "en": "Declarar límites de fidelidad; el tiempo y las adaptaciones accesibles no penalizan."
+    },
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "subsystem": "diagnosis",
+    "skillType": "knowledge",
+    "sourceIds": [
+      "source.miyota.8215.product-page",
+      "source.miyota.8215.specification",
+      "source.miyota.8215.drawing",
+      "source.miyota.8215.instruction-manual",
+      "source.miyota.8215.parts-list-exploded-view",
+      "source.horology.original-miyota8215"
+    ]
+  }
+}

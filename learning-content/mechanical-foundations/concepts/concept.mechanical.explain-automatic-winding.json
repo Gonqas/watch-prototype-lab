@@ -1,0 +1,59 @@
+{
+  "id": "concept.mechanical.explain-automatic-winding",
+  "version": "0.5.0",
+  "title": {
+    "es": "Explicar la carga automática",
+    "en": "Explicar la carga automática"
+  },
+  "summary": {
+    "es": "Explicar la carga automática mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Explicar la carga automática mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.mechanical.explain-keyless"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.explain-automatic-winding"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "automatic",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.follow-automatic-energy"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Explicar la carga automática mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Explicar la carga automática mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Explicar la carga automática describe una relación causal dentro de carga automática: una entrada produce un cambio observable mediante una interfaz declarada. Explicar la carga automática mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Explicar la carga automática describe una relación causal dentro de carga automática: una entrada produce un cambio observable mediante una interfaz declarada. Explicar la carga automática mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "whyItMatters": {
+    "es": "Dominar explicar la carga automática permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega explicar la carga automática dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema automatic."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [],
+  "knowledgeType": "conceptual-causal",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.automatic-calendar",
+  "targetEvidenceLevel": "causal-explanation"
+}

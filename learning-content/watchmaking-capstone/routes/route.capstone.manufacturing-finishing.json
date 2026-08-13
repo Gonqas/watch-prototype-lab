@@ -1,0 +1,206 @@
+{
+  "id": "route.capstone.manufacturing-finishing",
+  "version": "1.0.0",
+  "title": {
+    "es": "Fabricación y acabados de un reloj",
+    "en": "Fabricación y acabados de un reloj"
+  },
+  "purpose": {
+    "es": "Convertir una intención funcional en planos, procesos, controles y acabados revisables sin fingir experiencia de taller.",
+    "en": "Convertir una intención funcional en planos, procesos, controles y acabados revisables sin fingir experiencia de taller."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.capstone.manufacturing.dfm-datums",
+    "module.capstone.manufacturing.case",
+    "module.capstone.manufacturing.dial",
+    "module.capstone.manufacturing.hands",
+    "module.capstone.manufacturing.plates-bridges",
+    "module.capstone.manufacturing.micromechanics",
+    "module.capstone.manufacturing.decoration"
+  ],
+  "competencyIds": [
+    "competency.capstone.manufacturing.dfm-datums",
+    "competency.capstone.manufacturing.case",
+    "competency.capstone.manufacturing.dial",
+    "competency.capstone.manufacturing.hands",
+    "competency.capstone.manufacturing.plates-bridges",
+    "competency.capstone.manufacturing.micromechanics",
+    "competency.capstone.manufacturing.decoration"
+  ],
+  "movementIds": [],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.iso.286-1",
+    "source.iso.1101",
+    "source.iso.21920-1",
+    "source.iso.14253-1",
+    "source.iso.22810",
+    "source.iso.14856",
+    "source.miyota.8215.official",
+    "source.w3c.wcag22",
+    "source.private.horologia-book",
+    "source.niosh.machine-safety",
+    "source.iso.3160-2",
+    "source.osha.metalworking-fluids"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.capstone.manufacturing.01",
+        "order": 1,
+        "title": {
+          "es": "Diseño para fabricar, medir y revisar",
+          "en": "Diseño para fabricar, medir y revisar"
+        },
+        "outcome": {
+          "es": "¿Cómo convertir diseño para fabricar, medir y revisar en un proceso seguro, medible y revisable?",
+          "en": "¿Cómo convertir diseño para fabricar, medir y revisar en un proceso seguro, medible y revisable?"
+        },
+        "lessonId": "lesson.capstone.manufacturing.dfm-datums",
+        "activityId": "activity.capstone.manufacturing.dfm-datums",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.manufacturing.dfm-datums"
+        ]
+      },
+      {
+        "id": "milestone.capstone.manufacturing.02",
+        "order": 2,
+        "title": {
+          "es": "Caja y arquitectura exterior",
+          "en": "Caja y arquitectura exterior"
+        },
+        "outcome": {
+          "es": "¿Cómo convertir caja y arquitectura exterior en un proceso seguro, medible y revisable?",
+          "en": "¿Cómo convertir caja y arquitectura exterior en un proceso seguro, medible y revisable?"
+        },
+        "lessonId": "lesson.capstone.manufacturing.case",
+        "activityId": "activity.capstone.manufacturing.case",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.manufacturing.case"
+        ]
+      },
+      {
+        "id": "milestone.capstone.manufacturing.03",
+        "order": 3,
+        "title": {
+          "es": "Esfera, índices y superficies gráficas",
+          "en": "Esfera, índices y superficies gráficas"
+        },
+        "outcome": {
+          "es": "¿Cómo convertir esfera, índices y superficies gráficas en un proceso seguro, medible y revisable?",
+          "en": "¿Cómo convertir esfera, índices y superficies gráficas en un proceso seguro, medible y revisable?"
+        },
+        "lessonId": "lesson.capstone.manufacturing.dial",
+        "activityId": "activity.capstone.manufacturing.dial",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.manufacturing.dial"
+        ]
+      },
+      {
+        "id": "milestone.capstone.manufacturing.04",
+        "order": 4,
+        "title": {
+          "es": "Agujas, cañones y holguras",
+          "en": "Agujas, cañones y holguras"
+        },
+        "outcome": {
+          "es": "¿Cómo convertir agujas, cañones y holguras en un proceso seguro, medible y revisable?",
+          "en": "¿Cómo convertir agujas, cañones y holguras en un proceso seguro, medible y revisable?"
+        },
+        "lessonId": "lesson.capstone.manufacturing.hands",
+        "activityId": "activity.capstone.manufacturing.hands",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.manufacturing.hands"
+        ]
+      },
+      {
+        "id": "milestone.capstone.manufacturing.05",
+        "order": 5,
+        "title": {
+          "es": "Platinas, puentes, apoyos y rubíes",
+          "en": "Platinas, puentes, apoyos y rubíes"
+        },
+        "outcome": {
+          "es": "¿Cómo convertir platinas, puentes, apoyos y rubíes en un proceso seguro, medible y revisable?",
+          "en": "¿Cómo convertir platinas, puentes, apoyos y rubíes en un proceso seguro, medible y revisable?"
+        },
+        "lessonId": "lesson.capstone.manufacturing.plates-bridges",
+        "activityId": "activity.capstone.manufacturing.plates-bridges",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.manufacturing.plates-bridges"
+        ]
+      },
+      {
+        "id": "milestone.capstone.manufacturing.06",
+        "order": 6,
+        "title": {
+          "es": "Micromecánica: ejes, piñones, tornillos y muelles",
+          "en": "Micromecánica: ejes, piñones, tornillos y muelles"
+        },
+        "outcome": {
+          "es": "¿Cómo convertir micromecánica: ejes, piñones, tornillos y muelles en un proceso seguro, medible y revisable?",
+          "en": "¿Cómo convertir micromecánica: ejes, piñones, tornillos y muelles en un proceso seguro, medible y revisable?"
+        },
+        "lessonId": "lesson.capstone.manufacturing.micromechanics",
+        "activityId": "activity.capstone.manufacturing.micromechanics",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.manufacturing.micromechanics"
+        ]
+      },
+      {
+        "id": "milestone.capstone.manufacturing.07",
+        "order": 7,
+        "title": {
+          "es": "Acabados y decoración funcionalmente seguros",
+          "en": "Acabados y decoración funcionalmente seguros"
+        },
+        "outcome": {
+          "es": "¿Cómo convertir acabados y decoración funcionalmente seguros en un proceso seguro, medible y revisable?",
+          "en": "¿Cómo convertir acabados y decoración funcionalmente seguros en un proceso seguro, medible y revisable?"
+        },
+        "lessonId": "lesson.capstone.manufacturing.decoration",
+        "activityId": "activity.capstone.manufacturing.decoration",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.capstone.manufacturing.decoration"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.capstone.manufacturing.dfm-datums",
+      "activity.capstone.manufacturing.case",
+      "activity.capstone.manufacturing.dial",
+      "activity.capstone.manufacturing.hands",
+      "activity.capstone.manufacturing.plates-bridges",
+      "activity.capstone.manufacturing.micromechanics",
+      "activity.capstone.manufacturing.decoration"
+    ]
+  }
+}

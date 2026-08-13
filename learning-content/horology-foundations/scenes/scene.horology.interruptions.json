@@ -1,0 +1,557 @@
+{
+  "id": "scene.horology.interruptions",
+  "version": "0.5.0",
+  "title": "Interrupciones y diagnóstico",
+  "description": "Interrupciones y diagnóstico. Escena reversible con alternativa textual funcional.",
+  "fixtureBinding": {
+    "kind": "composition",
+    "compositionId": "composition.horology.interruptions",
+    "fixtureIds": [
+      "fixture.conceptual.quartz-chain",
+      "fixture.miyota.2035.structural",
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "layout": "grid"
+  },
+  "accessibility": {
+    "textualAlternative": "Elementos presentes: los cuatro modelos del módulo, sin mezclar sus ensamblajes. Relación y secuencia: fuente de energía → bobina → rotor paso a paso → tren de ruedas → muelle real → rueda de escape → volante → indicación. El estado inicial está disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar la vista tridimensional.",
+    "reducedMotionAlternative": "La misma información se presenta como estados discretos y una lista numerada: fuente de energía → bobina → rotor paso a paso → tren de ruedas → muelle real → rueda de escape → volante → indicación. No hay movimiento automático de cámara ni rotación.",
+    "keyboardActions": [
+      "Tabular por controles y entidades.",
+      "Activar con Intro o Espacio.",
+      "Avanzar y retroceder mediante botones con nombre accesible.",
+      "Restaurar el estado desde el control Restaurar."
+    ],
+    "colorIndependentCues": [
+      "Patrón y grosor distinguen estados.",
+      "Icono y texto acompañan cada color.",
+      "La ruta tiene numeración explícita."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "viewport.overlay.arrows@^1.0.0",
+    "viewport.energy-route@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 900,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "coil"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:1",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 1800,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "stepper-rotor"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:2",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 2700,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:3",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 3600,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "mainspring"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:4",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "energy-path",
+      "id": "overlay.scene.horology.interruptions.path",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "coil"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "stepper-rotor"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "mainspring"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "escape-wheel"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "balance"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "state": "available",
+      "label": "Ruta Interrupciones y diagnóstico",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Ensamblaje R2 con geometría interna normalizada.",
+          "No es un gemelo exacto ni una validación de ingeniería."
+        ]
+      },
+      "accessibleLabel": "Ruta Interrupciones y diagnóstico. Ruta funcional educativa, no simulación física.",
+      "numberedAlternative": [
+        "1. fuente de energía",
+        "2. bobina",
+        "3. rotor paso a paso",
+        "4. tren de ruedas",
+        "5. muelle real",
+        "6. rueda de escape",
+        "7. volante",
+        "8. indicación"
+      ]
+    },
+    {
+      "kind": "rotation",
+      "id": "overlay.scene.horology.interruptions.rotation",
+      "target": {
+        "selector": {
+          "by": "role",
+          "value": "stepper-rotor"
+        },
+        "cardinality": "one-or-more"
+      },
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "direction": "clockwise",
+      "conceptualSpeed": "slow",
+      "state": "available",
+      "label": "Sentido conceptual",
+      "accessibleLabel": "Arco de giro conceptual. En el modo de movimiento reducido se sustituye por una flecha estática."
+    },
+    {
+      "kind": "arrow",
+      "id": "overlay.scene.horology.interruptions.arrow",
+      "start": {
+        "kind": "entity",
+        "target": {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        },
+        "offset": [
+          0,
+          0.2,
+          0
+        ]
+      },
+      "end": {
+        "kind": "entity",
+        "target": {
+          "selector": {
+            "by": "role",
+            "value": "coil"
+          },
+          "cardinality": "one-or-more"
+        },
+        "offset": [
+          0,
+          0.2,
+          0
+        ]
+      },
+      "label": "Relación funcional",
+      "state": "available",
+      "pattern": "dashed",
+      "accessibleLabel": "Flecha funcional desde fuente de energía hacia bobina; no expresa una trayectoria física."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene.horology.interruptions.question",
+      "instructionMarkdown": "Formula una hipótesis sin convertirla en conclusión.",
+      "questions": [
+        {
+          "id": "question.horology.hypothesis",
+          "promptMarkdown": "Formula una hipótesis sin convertirla en conclusión.",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.symptom",
+              "label": "Síntoma",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.subsystem",
+              "label": "Subsistema",
+              "kind": "choice",
+              "required": true,
+              "optionIds": [
+                "energy",
+                "control",
+                "transmission",
+                "indication"
+              ]
+            },
+            {
+              "id": "field.hypothesis",
+              "label": "Hipótesis",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.missing-data",
+              "label": "Dato que falta",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.check",
+              "label": "Comprobación no destructiva",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "hints": [
+            {
+              "id": "hint.horology.interruptions.1",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por localizar la función general relacionada con la fuente de energía."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.interruptions.2",
+              "level": 2,
+              "kind": "subsystem",
+              "content": {
+                "es": "Limita la búsqueda al subsistema al que pertenece la fuente de energía."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.interruptions.3",
+              "level": 3,
+              "kind": "functional-property",
+              "content": {
+                "es": "Busca el elemento cuya propiedad funcional explica la fuente de energía."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.interruptions.4",
+              "level": 4,
+              "kind": "comparison",
+              "content": {
+                "es": "Compáralo con el elemento que cumple la función equivalente en la otra cadena."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.interruptions.5",
+              "level": 5,
+              "kind": "near-answer",
+              "content": {
+                "es": "La respuesta está en la entidad o etapa inmediatamente asociada a la fuente de energía."
+              },
+              "availableAfterAttempts": 0,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.interruptions.6",
+              "level": 6,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Tras el intento: revisa la ruta numerada y separa fuente, control, conversión, transmisión e indicación."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "Formula una hipótesis sin convertirla en conclusión."
+            },
+            "feedback": {
+              "es": "La respuesta se contrasta con la función, la procedencia y las limitaciones declaradas."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.horology.hypothesis",
+          "requiredFieldIds": [
+            "field.symptom",
+            "field.subsystem",
+            "field.hypothesis",
+            "field.missing-data",
+            "field.check",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    },
+    {
+      "id": "step.scene.horology.interruptions.manipulate",
+      "instructionMarkdown": "Manipula o recorre la lista equivalente y confirma el resultado antes de restaurar.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Interrupciones y diagnóstico"
+    },
+    "purpose": {
+      "es": "Ejecutar interrupciones y diagnóstico de forma visual, accesible y evaluable."
+    },
+    "prerequisites": [
+      "concept.horology.system-interruption"
+    ],
+    "narrative": {
+      "es": "Observar, predecir, manipular y explicar antes de registrar evidencia."
+    },
+    "initialFraming": {
+      "es": "Encuadre general estable con procedencia y fidelidad disponibles bajo demanda."
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "storyboard.step.scene.horology.interruptions.question",
+        "sceneStepId": "step.scene.horology.interruptions.question",
+        "narrative": {
+          "es": "Observar la escena y formular una predicción."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "highlight",
+          "pause"
+        ],
+        "interaction": {
+          "es": "Usar los controles de teclado, la lista accesible o la vista tridimensional."
+        },
+        "feedback": {
+          "es": "La corrección distingue la respuesta, su procedencia y las limitaciones del modelo."
+        },
+        "hint": {
+          "es": "La pista se ofrece por niveles y se registra como evidencia de proceso."
+        }
+      },
+      {
+        "id": "storyboard.step.scene.horology.interruptions.manipulate",
+        "sceneStepId": "step.scene.horology.interruptions.manipulate",
+        "narrative": {
+          "es": "Manipular el estado y explicar el resultado."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "select",
+          "answer",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Usar los controles de teclado, la lista accesible o la vista tridimensional."
+        },
+        "feedback": {
+          "es": "La corrección distingue la respuesta, su procedencia y las limitaciones del modelo."
+        },
+        "hint": {
+          "es": "La pista se ofrece por niveles y se registra como evidencia de proceso."
+        }
+      }
+    ],
+    "ending": {
+      "es": "La escena muestra la evidencia registrada y la regla de evaluación aplicable."
+    },
+    "restoration": {
+      "es": "Restaurar la selección, las piezas visibles, las etiquetas, el encuadre y la secuencia a su estado inicial."
+    },
+    "accessibility": {
+      "es": "Lista funcional equivalente con entidades, relaciones, estados, cambios y controles completos."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos, flechas estáticas numeradas y avance manual con idéntica evaluación."
+    },
+    "evidenceTemplateIds": [
+      "evidence.horology.interruption-prediction",
+      "evidence.horology.affected-subsystem",
+      "evidence.horology.structured-justification"
+    ],
+    "technicalCriteria": [
+      "Selectores resolubles.",
+      "Restauración idempotente.",
+      "Procedencia y G/K/P conservados."
+    ],
+    "limitations": []
+  },
+  "restorePreviousState": true
+}

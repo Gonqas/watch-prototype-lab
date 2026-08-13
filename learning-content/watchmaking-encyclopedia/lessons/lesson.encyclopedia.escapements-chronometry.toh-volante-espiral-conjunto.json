@@ -1,0 +1,234 @@
+{
+  "id": "lesson.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto",
+  "version": "1.1.0",
+  "title": "Volante, espiral, pitón, virola y raqueta",
+  "blockIds": [
+    "block.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Volante, espiral, pitón, virola y raqueta",
+      "en": "Volante, espiral, pitón, virola y raqueta"
+    },
+    "purpose": {
+      "es": "¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?",
+      "en": "¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Volante, espiral, pitón, virola y raqueta mediante relaciones causales.",
+        "en": "Explicar Volante, espiral, pitón, virola y raqueta mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.draw",
+      "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.accion-de-guardia",
+      "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.run-to-banking"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.virola",
+      "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.piton",
+      "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.longitud-activa"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch07",
+      "source.private.bulova.06",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Volante, espiral, pitón, virola y raqueta después de estudiar su teoría.",
+        "en": "Observar y manipular Volante, espiral, pitón, virola y raqueta después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "La virola fija el extremo interior; el pitón fija el exterior; la raqueta modifica longitud activa en sistemas regulados. Plano, centrado, respiración y libertad respecto a pasadores afectan simetría e isocronismo.",
+        "en": "La virola fija el extremo interior; el pitón fija el exterior; la raqueta modifica longitud activa en sistemas regulados. Plano, centrado, respiración y libertad respecto a pasadores afectan simetría e isocronismo."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema oscillator con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "fijar interior",
+        "formar espiras",
+        "guiar exterior",
+        "pasar entre clavijas",
+        "fijar pitón",
+        "respirar sin contacto"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "virola",
+        "pitón",
+        "longitud activa"
+      ],
+      "arrows": [
+        "fijar interior → formar espiras",
+        "formar espiras → guiar exterior",
+        "guiar exterior → pasar entre clavijas",
+        "pasar entre clavijas → fijar pitón",
+        "fijar pitón → respirar sin contacto"
+      ],
+      "animations": [
+        "oscillate",
+        "set-hairspring-active-length",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Volante, espiral, pitón, virola y raqueta sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Volante, espiral, pitón, virola y raqueta sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: fijar interior → formar espiras → guiar exterior → pasar entre clavijas → fijar pitón → respirar sin contacto. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: fijar interior → formar espiras → guiar exterior → pasar entre clavijas → fijar pitón → respirar sin contacto. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.virola",
+        "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.piton",
+        "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.longitud-activa"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1079,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: virola, pitón, longitud activa.",
+          "en": "Defino con mis palabras: virola, pitón, longitud activa."
+        },
+        {
+          "es": "Sigo «Volante, espiral, pitón, virola y raqueta» desde fijar interior hasta respirar sin contacto y explico cada enlace.",
+          "en": "Sigo «Volante, espiral, pitón, virola y raqueta» desde fijar interior hasta respirar sin contacto y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Volante, espiral, pitón, virola y raqueta» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Volante, espiral, pitón, virola y raqueta» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Diseña una secuencia de observación que no confunda forma estática y respiración.",
+          "en": "Aplico el criterio a esta variante: Diseña una secuencia de observación que no confunda forma estática y respiración."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Volante, espiral, pitón, virola y raqueta» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Volante, espiral, pitón, virola y raqueta» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.virola",
+        "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.piton",
+        "concept.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto.longitud-activa"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?",
+          "en": "¿Qué hace cada interfaz del órgano regulador y cómo altera su comportamiento?"
+        },
+        {
+          "es": "¿Qué relación causal de «Volante, espiral, pitón, virola y raqueta» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Volante, espiral, pitón, virola y raqueta» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

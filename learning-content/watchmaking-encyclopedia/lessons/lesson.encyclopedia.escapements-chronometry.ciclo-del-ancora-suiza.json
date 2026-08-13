@@ -1,0 +1,232 @@
+{
+  "id": "lesson.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza",
+  "version": "1.1.0",
+  "title": "Ciclo completo del escape de áncora suiza",
+  "blockIds": [
+    "block.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Ciclo completo del escape de áncora suiza",
+      "en": "Ciclo completo del escape de áncora suiza"
+    },
+    "purpose": {
+      "es": "¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?",
+      "en": "¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Ciclo completo del escape de áncora suiza mediante relaciones causales.",
+        "en": "Explicar Ciclo completo del escape de áncora suiza mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-entrada",
+      "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-salida",
+      "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.accion-perdida"
+    ],
+    "sourceIds": [
+      "source.private.daniels.escapements",
+      "source.external.ciechanowski-mechanical-watch",
+      "source.external.horlogerie-suisse"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Ciclo completo del escape de áncora suiza después de estudiar su teoría.",
+        "en": "Observar y manipular Ciclo completo del escape de áncora suiza después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "El áncora suiza alterna bloqueo, desenganche, impulso y caída. El volante inicia el desenganche mediante clavija; la rueda entrega impulso a través de las paletas y el dardo con rodillo protege frente a desbloqueo accidental. El ciclo debe estudiarse en ambas direcciones y en las dos paletas.",
+        "en": "El áncora suiza alterna bloqueo, desenganche, impulso y caída. El volante inicia el desenganche mediante clavija; la rueda entrega impulso a través de las paletas y el dardo con rodillo protege frente a desbloqueo accidental. El ciclo debe estudiarse en ambas direcciones y en las dos paletas."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema escapement con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "bloqueo de entrada",
+        "desenganche",
+        "impulso de entrada",
+        "caída",
+        "bloqueo de salida",
+        "impulso de salida"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "paleta de entrada",
+        "paleta de salida",
+        "acción perdida"
+      ],
+      "arrows": [
+        "bloqueo de entrada → desenganche",
+        "desenganche → impulso de entrada",
+        "impulso de entrada → caída",
+        "caída → bloqueo de salida",
+        "bloqueo de salida → impulso de salida"
+      ],
+      "animations": [
+        "step-escapement",
+        "scrub-escapement",
+        "set-escapement-speed",
+        "pause-escapement",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Ciclo completo del escape de áncora suiza sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Ciclo completo del escape de áncora suiza sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: bloqueo de entrada → desenganche → impulso de entrada → caída → bloqueo de salida → impulso de salida. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: bloqueo de entrada → desenganche → impulso de entrada → caída → bloqueo de salida → impulso de salida. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-entrada",
+        "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-salida",
+        "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.accion-perdida"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1197,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: paleta de entrada, paleta de salida, acción perdida.",
+          "en": "Defino con mis palabras: paleta de entrada, paleta de salida, acción perdida."
+        },
+        {
+          "es": "Sigo «Ciclo completo del escape de áncora suiza» desde bloqueo de entrada hasta impulso de salida y explico cada enlace.",
+          "en": "Sigo «Ciclo completo del escape de áncora suiza» desde bloqueo de entrada hasta impulso de salida y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Ciclo completo del escape de áncora suiza» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Ciclo completo del escape de áncora suiza» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Narra una alternancia completa sin nombres decorativos: entrada, contacto, fuerza, salida y condición de seguridad en cada fase.",
+          "en": "Aplico el criterio a esta variante: Narra una alternancia completa sin nombres decorativos: entrada, contacto, fuerza, salida y condición de seguridad en cada fase."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Ciclo completo del escape de áncora suiza» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Ciclo completo del escape de áncora suiza» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-entrada",
+        "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.paleta-de-salida",
+        "concept.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza.accion-perdida"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?",
+          "en": "¿Qué fases coordinan rueda de escape, paletas, áncora, clavija y volante?"
+        },
+        {
+          "es": "¿Qué relación causal de «Ciclo completo del escape de áncora suiza» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Ciclo completo del escape de áncora suiza» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

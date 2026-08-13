@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.math-physics-metrology.toh-contar-tren",
+  "version": "1.1.0",
+  "title": "Cuaderno: Diseño inverso de un tren de conteo",
+  "description": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Diseño inverso de un tren de conteo. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.math-physics-metrology.toh-contar-tren.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.math-physics-metrology.toh-contar-tren.answer",
+      "instructionMarkdown": "Explica **Diseño inverso de un tren de conteo** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.math-physics-metrology.toh-contar-tren.explain",
+          "promptMarkdown": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-contar-tren.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-contar-tren.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-contar-tren.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-contar-tren.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.toh-contar-tren.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por convertir frecuencia a impulsos y sigue hasta comprobar geometría.",
+                "en": "Empieza por convertir frecuencia a impulsos y sigue hasta comprobar geometría."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.toh-contar-tren.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El diseño inverso parte de oscilaciones, impulsos por oscilación, dientes de escape y salida deseada. La relación global se factoriza en etapas fabricables, evitando piñones inviables y conflictos de centros.",
+                "en": "El diseño inverso parte de oscilaciones, impulsos por oscilación, dientes de escape y salida deseada. La relación global se factoriza en etapas fabricables, evitando piñones inviables y conflictos de centros."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+              "en": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena convertir frecuencia a impulsos → obtener vueltas del escape → fijar salida → calcular relación total → factorizar etapas → comprobar geometría, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena convertir frecuencia a impulsos → obtener vueltas del escape → fijar salida → calcular relación total → factorizar etapas → comprobar geometría, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.math-physics-metrology.toh-contar-tren.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.math-physics-metrology.toh-contar-tren.mechanism",
+            "field.encyclopedia.math-physics-metrology.toh-contar-tren.evidence",
+            "field.encyclopedia.math-physics-metrology.toh-contar-tren.limit",
+            "field.encyclopedia.math-physics-metrology.toh-contar-tren.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

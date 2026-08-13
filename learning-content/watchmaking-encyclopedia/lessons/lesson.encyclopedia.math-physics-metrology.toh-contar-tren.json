@@ -1,0 +1,236 @@
+{
+  "id": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+  "version": "1.1.0",
+  "title": "Diseño inverso de un tren de conteo",
+  "blockIds": [
+    "block.encyclopedia.math-physics-metrology.toh-contar-tren"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.toh-contar-tren"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Diseño inverso de un tren de conteo",
+      "en": "Diseño inverso de un tren de conteo"
+    },
+    "purpose": {
+      "es": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+      "en": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Diseño inverso de un tren de conteo mediante relaciones causales.",
+        "en": "Explicar Diseño inverso de un tren de conteo mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.math-physics-metrology.toh-normas-dentado.norma-dimensional",
+      "concept.encyclopedia.math-physics-metrology.toh-normas-dentado.coeficiente-de-perfil",
+      "concept.encyclopedia.math-physics-metrology.toh-normas-dentado.dominio-de-aplicacion"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.math-physics-metrology.toh-contar-tren.relacion-objetivo",
+      "concept.encyclopedia.math-physics-metrology.toh-contar-tren.factorizacion-de-tren",
+      "concept.encyclopedia.math-physics-metrology.toh-contar-tren.restriccion-geometrica"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch05",
+      "source.private.vba-uhrentechnik",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.math-physics-metrology.toh-contar-tren.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Diseño inverso de un tren de conteo después de estudiar su teoría.",
+        "en": "Observar y manipular Diseño inverso de un tren de conteo después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "El diseño inverso parte de oscilaciones, impulsos por oscilación, dientes de escape y salida deseada. La relación global se factoriza en etapas fabricables, evitando piñones inviables y conflictos de centros.",
+        "en": "El diseño inverso parte de oscilaciones, impulsos por oscilación, dientes de escape y salida deseada. La relación global se factoriza en etapas fabricables, evitando piñones inviables y conflictos de centros."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema train con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "convertir frecuencia a impulsos",
+        "obtener vueltas del escape",
+        "fijar salida",
+        "calcular relación total",
+        "factorizar etapas",
+        "comprobar geometría"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "relación objetivo",
+        "factorización de tren",
+        "restricción geométrica"
+      ],
+      "arrows": [
+        "convertir frecuencia a impulsos → obtener vueltas del escape",
+        "obtener vueltas del escape → fijar salida",
+        "fijar salida → calcular relación total",
+        "calcular relación total → factorizar etapas",
+        "factorizar etapas → comprobar geometría"
+      ],
+      "animations": [
+        "change-ratio",
+        "add-stage",
+        "remove-stage",
+        "rotate",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Diseño inverso de un tren de conteo sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Diseño inverso de un tren de conteo sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: convertir frecuencia a impulsos → obtener vueltas del escape → fijar salida → calcular relación total → factorizar etapas → comprobar geometría. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: convertir frecuencia a impulsos → obtener vueltas del escape → fijar salida → calcular relación total → factorizar etapas → comprobar geometría. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.math-physics-metrology.toh-contar-tren.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.relacion-objetivo",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.factorizacion-de-tren",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.restriccion-geometrica"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1052,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.math-physics-metrology.toh-contar-tren"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: relación objetivo, factorización de tren, restricción geométrica.",
+          "en": "Defino con mis palabras: relación objetivo, factorización de tren, restricción geométrica."
+        },
+        {
+          "es": "Separo en «Diseño inverso de un tren de conteo» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Diseño inverso de un tren de conteo» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Diseño inverso de un tren de conteo» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Diseño inverso de un tren de conteo» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Propón dos trenes para una misma frecuencia y compara compromisos.",
+          "en": "Aplico el criterio a esta variante: Propón dos trenes para una misma frecuencia y compara compromisos."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Diseño inverso de un tren de conteo» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Diseño inverso de un tren de conteo» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.relacion-objetivo",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.factorizacion-de-tren",
+        "concept.encyclopedia.math-physics-metrology.toh-contar-tren.restriccion-geometrica"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+          "en": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?"
+        },
+        {
+          "es": "¿Qué relación causal de «Diseño inverso de un tren de conteo» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Diseño inverso de un tren de conteo» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

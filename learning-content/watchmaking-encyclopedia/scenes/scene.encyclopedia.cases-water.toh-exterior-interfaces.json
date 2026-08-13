@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.cases-water.toh-exterior-interfaces",
+  "version": "1.1.0",
+  "title": "Cuaderno: Exterior del reloj como cadena de interfaces",
+  "description": "¿Cómo relaciona la caja movimiento, esfera, agujas, cristal, mandos y correa?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Exterior del reloj como cadena de interfaces. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.cases-water.toh-exterior-interfaces.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo relaciona la caja movimiento, esfera, agujas, cristal, mandos y correa?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo relaciona la caja movimiento, esfera, agujas, cristal, mandos y correa?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.cases-water.toh-exterior-interfaces.answer",
+      "instructionMarkdown": "Explica **Exterior del reloj como cadena de interfaces** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.cases-water.toh-exterior-interfaces.explain",
+          "promptMarkdown": "¿Cómo relaciona la caja movimiento, esfera, agujas, cristal, mandos y correa?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.cases-water.toh-exterior-interfaces.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.toh-exterior-interfaces.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.toh-exterior-interfaces.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.toh-exterior-interfaces.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.cases-water.toh-exterior-interfaces.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por posicionar movimiento y sigue hasta transmitir mando por tija.",
+                "en": "Empieza por posicionar movimiento y sigue hasta transmitir mando por tija."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.cases-water.toh-exterior-interfaces.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El exterior protege, posiciona, permite lectura y transmite acciones. Asientos, anillos, tija, tubo, corona, juntas, bisel, fondo y fijaciones construyen una pila axial y radial. Cambiar una interfaz puede alterar varias holguras.",
+                "en": "El exterior protege, posiciona, permite lectura y transmite acciones. Asientos, anillos, tija, tubo, corona, juntas, bisel, fondo y fijaciones construyen una pila axial y radial. Cambiar una interfaz puede alterar varias holguras."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo relaciona la caja movimiento, esfera, agujas, cristal, mandos y correa?",
+              "en": "¿Cómo relaciona la caja movimiento, esfera, agujas, cristal, mandos y correa?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena posicionar movimiento → fijar esfera → montar agujas → reservar holgura → cerrar cristal y fondo → transmitir mando por tija, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena posicionar movimiento → fijar esfera → montar agujas → reservar holgura → cerrar cristal y fondo → transmitir mando por tija, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.cases-water.toh-exterior-interfaces.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.cases-water.toh-exterior-interfaces.mechanism",
+            "field.encyclopedia.cases-water.toh-exterior-interfaces.evidence",
+            "field.encyclopedia.cases-water.toh-exterior-interfaces.limit",
+            "field.encyclopedia.cases-water.toh-exterior-interfaces.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

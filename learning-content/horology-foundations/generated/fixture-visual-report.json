@@ -1,0 +1,2059 @@
+{
+  "schemaVersion": 1,
+  "reportId": "report.learning.sistema4b.visual",
+  "generatedAt": "2026-07-28T09:16:01.537Z",
+  "moduleFixtureId": "fixture.module.horology.functional-map",
+  "moduleFixtureCompiled": true,
+  "moduleViewportBlockers": [],
+  "fixtures": [
+    {
+      "resource": "conceptual-quartz:functional-chain-v1",
+      "fixtureId": "fixture.conceptual.quartz-chain",
+      "fixtureVersion": "0.1.0",
+      "kind": "conceptual-quartz",
+      "selectorContracts": [
+        {
+          "id": "selector.conceptual.quartz.power-source",
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.quartz.electronic-control",
+          "selector": {
+            "by": "role",
+            "value": "electronic-control"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.quartz.quartz-resonator",
+          "selector": {
+            "by": "role",
+            "value": "quartz-resonator"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.quartz.coil",
+          "selector": {
+            "by": "role",
+            "value": "coil"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.quartz.stepper-rotor",
+          "selector": {
+            "by": "role",
+            "value": "stepper-rotor"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.quartz.train",
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.quartz.keyless",
+          "selector": {
+            "by": "role",
+            "value": "keyless"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.quartz.motion-works",
+          "selector": {
+            "by": "role",
+            "value": "motion-works"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.quartz.indication",
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.quartz.family",
+          "selector": {
+            "by": "family",
+            "value": "Conceptual quartz"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        }
+      ],
+      "availableParts": [
+        {
+          "canonicalId": "pd_fixture-conceptual-quart_2adkqol6wldb4",
+          "nameEs": "Fuente conceptual",
+          "nameEn": "Conceptual power source",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-quart_3kn7xvjm8a5fq",
+          "nameEs": "Control electrónico conceptual",
+          "nameEn": "Conceptual electronic control",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-quart_2i9becxyy6y4w",
+          "nameEs": "Referencia temporal conceptual",
+          "nameEn": "Conceptual quartz resonator",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-quart_3njyx0deja8u2",
+          "nameEs": "Bobina conceptual",
+          "nameEn": "Conceptual coil",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-quart_35479w6uhgpiz",
+          "nameEs": "Rotor paso a paso conceptual",
+          "nameEn": "Conceptual stepper rotor",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-quart_0e5k7hz9b00b5",
+          "nameEs": "Tren conceptual",
+          "nameEn": "Conceptual train",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-quart_0etmstrv395yl",
+          "nameEs": "Puesta en hora conceptual",
+          "nameEn": "Conceptual keyless works",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-quart_3d3cv1xzo2xag",
+          "nameEs": "Minutería conceptual",
+          "nameEn": "Conceptual motion works",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-quart_2pbu3pd4tdnuj",
+          "nameEs": "Indicación conceptual",
+          "nameEn": "Conceptual indication",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        }
+      ],
+      "missingPartRoles": [],
+      "reconstructionLevel": "R2",
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "officialDataCount": 0,
+      "estimatedDataCount": 0,
+      "measuredDataCount": 0,
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Topología pedagógica clara, sin geometría de calibre ni física eléctrica."
+        ]
+      },
+      "viewportCapabilities": [
+        {
+          "id": "fixture.entity-selection",
+          "status": "available",
+          "explanation": "Todas las instancias canónicas tienen identidad seleccionable.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.visibility",
+          "status": "available",
+          "explanation": "El overlay puede ocultar o mostrar entidades sin alterar el ensamblaje.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.isolation",
+          "status": "available",
+          "explanation": "Los subsistemas e instancias pueden aislarse semánticamente.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.transparency",
+          "status": "available",
+          "explanation": "El modelo técnico admite opacidad por entidad.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.highlight",
+          "status": "available",
+          "explanation": "El modelo técnico admite resaltado por entidad.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.explode",
+          "status": "limited",
+          "explanation": "Existe orden visual normalizado y dependencias parciales.",
+          "limitations": [
+            "No es una trayectoria física validada."
+          ]
+        },
+        {
+          "id": "fixture.labels",
+          "status": "available",
+          "explanation": "Cada entidad tiene nombres ES/EN e identidad estable.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.rotation-directions",
+          "status": "limited",
+          "explanation": "Las relaciones permiten declarar sentido posteriormente.",
+          "limitations": [
+            "No hay vectores ni animación anclada en el viewport real."
+          ]
+        },
+        {
+          "id": "fixture.energy-route",
+          "status": "limited",
+          "explanation": "Las relaciones drives/winds/impulses forman rutas consultables.",
+          "limitations": [
+            "El viewport no dibuja aún flechas espaciales."
+          ]
+        },
+        {
+          "id": "fixture.visual-errors",
+          "status": "limited",
+          "explanation": "Los errores visuales son estados simbólicos reversibles.",
+          "limitations": [
+            "No son fallos físicos ni diagnósticos de ingeniería validados."
+          ]
+        },
+        {
+          "id": "fixture.reversible-state",
+          "status": "available",
+          "explanation": "Las operaciones se aplican como overlay restaurable.",
+          "limitations": []
+        }
+      ],
+      "visualErrorScenarios": [],
+      "blockers": [],
+      "limitations": [
+        "No representa MIYOTA 2035 ni ISA 8172.",
+        "Las formas y separaciones son simbólicas."
+      ]
+    },
+    {
+      "resource": "official-calibre-quartz:2035",
+      "fixtureId": "fixture.miyota.2035.structural",
+      "fixtureVersion": "0.1.0",
+      "kind": "official-calibre-quartz",
+      "selectorContracts": [
+        {
+          "id": "selector.miyota.2035.power-source",
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.2035.electronic-control",
+          "selector": {
+            "by": "role",
+            "value": "electronic-control"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.2035.quartz-resonator",
+          "selector": {
+            "by": "role",
+            "value": "quartz-resonator"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.2035.coil",
+          "selector": {
+            "by": "role",
+            "value": "coil"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.2035.stepper-rotor",
+          "selector": {
+            "by": "role",
+            "value": "stepper-rotor"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.2035.train",
+          "selector": {
+            "by": "subsystem",
+            "value": "train"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 4,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.2035.keyless",
+          "selector": {
+            "by": "subsystem",
+            "value": "keyless"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 5,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.2035.motion-works",
+          "selector": {
+            "by": "subsystem",
+            "value": "motion-works"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 3,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.2035.indication",
+          "selector": {
+            "by": "subsystem",
+            "value": "indication"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 3,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.2035.calibre",
+          "selector": {
+            "by": "calibre",
+            "value": "2035"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.2035.family",
+          "selector": {
+            "by": "family",
+            "value": "Standard"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        }
+      ],
+      "availableParts": [
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_032rbc8alliyo",
+          "nameEs": "Envolvente oficial del movimiento",
+          "nameEn": "Official movement envelope",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_3p9dy2r6koual",
+          "nameEs": "Estructura base visible",
+          "nameEn": "Visible base structure",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_1p5xah1976br1",
+          "nameEs": "Pila SR626SW",
+          "nameEn": "Battery SR626SW",
+          "officialReference": "SR626SW",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2m19j99hdefb3",
+          "nameEs": "Abrazadera de pila",
+          "nameEn": "Battery clamp",
+          "officialReference": "234-C87",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_0qu69f63y4oef",
+          "nameEs": "Muelle conector de pila",
+          "nameEn": "Power-cell connector spring",
+          "officialReference": "231-999",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_0271qtx78dma4",
+          "nameEs": "Unidad de circuito electrónico",
+          "nameEn": "Electronic circuit unit",
+          "officialReference": "279-M31",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2y6hdrado17ia",
+          "nameEs": "Separador de circuito",
+          "nameEn": "Circuit spacer",
+          "officialReference": "212-B13",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2yr9abqm3htp4",
+          "nameEs": "Unidad de bobina",
+          "nameEn": "Coil unit",
+          "officialReference": "246-144",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2fnbul2d8mw7z",
+          "nameEs": "Estator",
+          "nameEn": "Stator",
+          "officialReference": "190-A43",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2fhczzca0vc9s",
+          "nameEs": "Rotor magnetizado",
+          "nameEn": "Rotor (magnetized)",
+          "officialReference": "285-202",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2gz7lnnz5ho2a",
+          "nameEs": "Puente del tren",
+          "nameEn": "Train wheel bridge",
+          "officialReference": "701-K14",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2bpp26wff7q6b",
+          "nameEs": "Tercera rueda y piñón",
+          "nameEn": "Third wheel and pinion",
+          "officialReference": "017-A14",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_0qv6kh1p719wu",
+          "nameEs": "Cuarta rueda y piñón",
+          "nameEn": "Fourth wheel and pinion",
+          "officialReference": "023-155",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_3b6hyh8pxv897",
+          "nameEs": "Quinta rueda y piñón",
+          "nameEn": "Fifth wheel and pinion",
+          "officialReference": "084-971",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_34kw3wt9oxk0b",
+          "nameEs": "Cañón de minutos con rueda conductora",
+          "nameEn": "Cannon pinion with driving wheel",
+          "officialReference": "028-610",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_10ehatp02yegm",
+          "nameEs": "Rueda de minutería y piñón",
+          "nameEn": "Minute wheel and pinion",
+          "officialReference": "072-760",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2un23c6y9ogcw",
+          "nameEs": "Rueda de horas",
+          "nameEn": "Hour wheel",
+          "officialReference": "075-193",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2z7o524y1i3vm",
+          "nameEs": "Puente de rueda central",
+          "nameEn": "Center wheel cock",
+          "officialReference": "711-281",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_3l5asktmz57vj",
+          "nameEs": "Piñón corredizo",
+          "nameEn": "Clutch wheel",
+          "officialReference": "064-660",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_0x31j6mtw3mvj",
+          "nameEs": "Protector del piñón corredizo",
+          "nameEn": "Clutch wheel guard",
+          "officialReference": "212-B17",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_0qwfahyhc04vh",
+          "nameEs": "Tirete",
+          "nameEn": "Setting lever",
+          "officialReference": "067-146",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_1agcwx3lg0jgy",
+          "nameEs": "Tija",
+          "nameEn": "Setting stem",
+          "officialReference": "065-468",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_0duwxxjnkqdfk",
+          "nameEs": "Báscula",
+          "nameEn": "Yoke",
+          "officialReference": "071-A14",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_0n4aqcl2sfuw9",
+          "nameEs": "Palanca de parada de cuarta rueda",
+          "nameEn": "Fourth wheel stop lever",
+          "officialReference": "269-413",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2dsugvfyyitxt",
+          "nameEs": "Arandela de esfera",
+          "nameEn": "Dial washer",
+          "officialReference": "078-040",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2wtrts0qd3gpc",
+          "nameEs": "Tornillo de bobina",
+          "nameEn": "Screw for coil unit",
+          "officialReference": "922-183",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_3thyg87kx9rws",
+          "nameEs": "Tornillo de circuito 1",
+          "nameEn": "Screw for electronic circuit unit (1)",
+          "officialReference": "922-183",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_3thyheawnrxyd",
+          "nameEs": "Tornillo de circuito 2",
+          "nameEn": "Screw for electronic circuit unit (2)",
+          "officialReference": "922-154",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_33s9jb4n8qer0",
+          "nameEs": "Tornillo de puente de tren 1",
+          "nameEn": "Screw for train wheel bridge (1)",
+          "officialReference": "922-154",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_33s9kh7yz8ksl",
+          "nameEs": "Tornillo de puente de tren 2",
+          "nameEn": "Screw for train wheel bridge (2)",
+          "officialReference": "934-440",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_341nckzmczmoy",
+          "nameEs": "Interfaz de aguja horaria",
+          "nameEn": "Hour hand interface",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_39n7id11tzoz0",
+          "nameEs": "Interfaz de aguja minutera",
+          "nameEn": "Minute hand interface",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-2035-stru_2j5nwvn9m2mvk",
+          "nameEs": "Interfaz de segundero",
+          "nameEn": "Second hand interface",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        }
+      ],
+      "missingPartRoles": [
+        "individual-quartz-resonator",
+        "physically-validated-main-plate",
+        "measured-internal-geometry"
+      ],
+      "reconstructionLevel": "R2",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "officialDataCount": 10,
+      "estimatedDataCount": 33,
+      "measuredDataCount": 0,
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "R2 estructural; tamaños y posiciones internos normalizados/estimados.",
+          "Sin física eléctrica validada."
+        ]
+      },
+      "viewportCapabilities": [
+        {
+          "id": "fixture.entity-selection",
+          "status": "available",
+          "explanation": "Todas las instancias canónicas tienen identidad seleccionable.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.visibility",
+          "status": "available",
+          "explanation": "El overlay puede ocultar o mostrar entidades sin alterar el ensamblaje.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.isolation",
+          "status": "available",
+          "explanation": "Los subsistemas e instancias pueden aislarse semánticamente.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.transparency",
+          "status": "available",
+          "explanation": "El modelo técnico admite opacidad por entidad.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.highlight",
+          "status": "available",
+          "explanation": "El modelo técnico admite resaltado por entidad.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.explode",
+          "status": "limited",
+          "explanation": "Existe orden visual normalizado y dependencias parciales.",
+          "limitations": [
+            "No es una trayectoria física validada."
+          ]
+        },
+        {
+          "id": "fixture.labels",
+          "status": "available",
+          "explanation": "Cada entidad tiene nombres ES/EN e identidad estable.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.rotation-directions",
+          "status": "limited",
+          "explanation": "Las relaciones permiten declarar sentido posteriormente.",
+          "limitations": [
+            "No hay vectores ni animación anclada en el viewport real."
+          ]
+        },
+        {
+          "id": "fixture.energy-route",
+          "status": "limited",
+          "explanation": "Las relaciones drives/winds/impulses forman rutas consultables.",
+          "limitations": [
+            "El viewport no dibuja aún flechas espaciales."
+          ]
+        },
+        {
+          "id": "fixture.visual-errors",
+          "status": "limited",
+          "explanation": "Los errores visuales son estados simbólicos reversibles.",
+          "limitations": [
+            "No son fallos físicos ni diagnósticos de ingeniería validados."
+          ]
+        },
+        {
+          "id": "fixture.reversible-state",
+          "status": "available",
+          "explanation": "Las operaciones se aplican como overlay restaurable.",
+          "limitations": []
+        }
+      ],
+      "visualErrorScenarios": [
+        {
+          "id": "error.fixture-miyota-2035-structural.coil-hidden",
+          "label": "Bobina ausente u oculta · estado visual",
+          "affectedInstanceIds": [
+            "pi_fixture-miyota-2035-stru_21y11bcu25f79"
+          ],
+          "effect": "hidden",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "reversible": true,
+          "engineeringValidated": false,
+          "limitations": [
+            "Solo representa una interrupción visual; no simula corriente, resistencia ni diagnóstico eléctrico."
+          ]
+        },
+        {
+          "id": "error.fixture-miyota-2035-structural.stepper-rotor-blocked",
+          "label": "Rotor paso a paso bloqueado · estado visual",
+          "affectedInstanceIds": [
+            "pi_fixture-miyota-2035-stru_19rctvth57srx"
+          ],
+          "effect": "blocked-symbolic",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "reversible": true,
+          "engineeringValidated": false,
+          "limitations": [
+            "Bloqueo simbólico sin par, fricción ni causa física validada."
+          ]
+        }
+      ],
+      "blockers": [
+        "Pieza o rol ausente: individual-quartz-resonator",
+        "Pieza o rol ausente: physically-validated-main-plate",
+        "Pieza o rol ausente: measured-internal-geometry"
+      ],
+      "limitations": [
+        "No es un gemelo exacto ni una reconstrucción R3.",
+        "Solo la envolvente y datos generales indicados en el ledger son nominales oficiales.",
+        "Las piezas internas usan identidad oficial, pero geometría visual normalizada.",
+        "Las opciones de tija larga no forman parte del ensamblaje canónico seleccionado."
+      ]
+    },
+    {
+      "resource": "conceptual-mechanical:complete-functional-chain-v1",
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "fixtureVersion": "0.1.0",
+      "kind": "conceptual-mechanical",
+      "selectorContracts": [
+        {
+          "id": "selector.conceptual.mechanical.case",
+          "selector": {
+            "by": "role",
+            "value": "case"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.dial",
+          "selector": {
+            "by": "role",
+            "value": "dial"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.hour-hand",
+          "selector": {
+            "by": "role",
+            "value": "hour-hand"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.minute-hand",
+          "selector": {
+            "by": "role",
+            "value": "minute-hand"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.mainspring",
+          "selector": {
+            "by": "role",
+            "value": "mainspring"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.barrel",
+          "selector": {
+            "by": "role",
+            "value": "barrel"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.train",
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.escape-wheel",
+          "selector": {
+            "by": "role",
+            "value": "escape-wheel"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.pallet-fork",
+          "selector": {
+            "by": "role",
+            "value": "pallet-fork"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.balance",
+          "selector": {
+            "by": "role",
+            "value": "balance"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.hairspring",
+          "selector": {
+            "by": "role",
+            "value": "hairspring"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.keyless",
+          "selector": {
+            "by": "role",
+            "value": "keyless"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.motion-works",
+          "selector": {
+            "by": "role",
+            "value": "motion-works"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.indication",
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.conceptual.mechanical.family",
+          "selector": {
+            "by": "family",
+            "value": "Conceptual mechanical"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        }
+      ],
+      "availableParts": [
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_36ttu2uh4oigx",
+          "nameEs": "Caja conceptual",
+          "nameEn": "Conceptual case",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_3gjflk3ilnsdv",
+          "nameEs": "Esfera conceptual",
+          "nameEn": "Conceptual dial",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_1i95e3tus6zqz",
+          "nameEs": "Aguja horaria conceptual",
+          "nameEn": "Conceptual hour hand",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_37dh6la0z74xp",
+          "nameEs": "Aguja minutera conceptual",
+          "nameEn": "Conceptual minute hand",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_34r01wx0hwput",
+          "nameEs": "Muelle real conceptual",
+          "nameEn": "Conceptual mainspring",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_3p0xuvt2ogk81",
+          "nameEs": "Barrilete conceptual",
+          "nameEn": "Conceptual barrel",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_1ap13e0fx9z7d",
+          "nameEs": "Tren conceptual",
+          "nameEn": "Conceptual going train",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_2gvmbgnknqtq8",
+          "nameEs": "Rueda de escape conceptual",
+          "nameEn": "Conceptual escape wheel",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_03pmdi5sk7lem",
+          "nameEs": "Áncora conceptual",
+          "nameEn": "Conceptual pallet fork",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_2x3yithvcvkvv",
+          "nameEs": "Volante conceptual",
+          "nameEn": "Conceptual balance",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_045majziiv1kg",
+          "nameEs": "Espiral conceptual",
+          "nameEn": "Conceptual hairspring",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_0qi44wmmjfakl",
+          "nameEs": "Puesta en hora conceptual",
+          "nameEn": "Conceptual keyless works",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_0s2j7xmmovnog",
+          "nameEs": "Minutería conceptual",
+          "nameEn": "Conceptual motion works",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-conceptual-mecha_0r0h1frs34h0z",
+          "nameEs": "Indicación conceptual",
+          "nameEn": "Conceptual indication",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        }
+      ],
+      "missingPartRoles": [],
+      "reconstructionLevel": "R2",
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "officialDataCount": 0,
+      "estimatedDataCount": 0,
+      "measuredDataCount": 0,
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Claridad funcional prioritaria; sin geometría real ni física validada."
+        ]
+      },
+      "viewportCapabilities": [
+        {
+          "id": "fixture.entity-selection",
+          "status": "available",
+          "explanation": "Todas las instancias canónicas tienen identidad seleccionable.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.visibility",
+          "status": "available",
+          "explanation": "El overlay puede ocultar o mostrar entidades sin alterar el ensamblaje.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.isolation",
+          "status": "available",
+          "explanation": "Los subsistemas e instancias pueden aislarse semánticamente.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.transparency",
+          "status": "available",
+          "explanation": "El modelo técnico admite opacidad por entidad.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.highlight",
+          "status": "available",
+          "explanation": "El modelo técnico admite resaltado por entidad.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.explode",
+          "status": "limited",
+          "explanation": "Existe orden visual normalizado y dependencias parciales.",
+          "limitations": [
+            "No es una trayectoria física validada."
+          ]
+        },
+        {
+          "id": "fixture.labels",
+          "status": "available",
+          "explanation": "Cada entidad tiene nombres ES/EN e identidad estable.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.rotation-directions",
+          "status": "limited",
+          "explanation": "Las relaciones permiten declarar sentido posteriormente.",
+          "limitations": [
+            "No hay vectores ni animación anclada en el viewport real."
+          ]
+        },
+        {
+          "id": "fixture.energy-route",
+          "status": "limited",
+          "explanation": "Las relaciones drives/winds/impulses forman rutas consultables.",
+          "limitations": [
+            "El viewport no dibuja aún flechas espaciales."
+          ]
+        },
+        {
+          "id": "fixture.visual-errors",
+          "status": "limited",
+          "explanation": "Los errores visuales son estados simbólicos reversibles.",
+          "limitations": [
+            "No son fallos físicos ni diagnósticos de ingeniería validados."
+          ]
+        },
+        {
+          "id": "fixture.reversible-state",
+          "status": "available",
+          "explanation": "Las operaciones se aplican como overlay restaurable.",
+          "limitations": []
+        }
+      ],
+      "visualErrorScenarios": [],
+      "blockers": [],
+      "limitations": [
+        "No se etiqueta ni se deriva como MIYOTA 8215.",
+        "Todas las formas son simbólicas."
+      ]
+    },
+    {
+      "resource": "official-calibre-mechanical:8215",
+      "fixtureId": "fixture.miyota.8215.structural",
+      "fixtureVersion": "0.1.0",
+      "kind": "official-calibre-mechanical",
+      "selectorContracts": [
+        {
+          "id": "selector.miyota.8215.mainspring",
+          "selector": {
+            "by": "role",
+            "value": "mainspring"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.barrel",
+          "selector": {
+            "by": "role",
+            "value": "barrel"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.escape-wheel",
+          "selector": {
+            "by": "role",
+            "value": "escape-wheel"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.pallet-fork",
+          "selector": {
+            "by": "role",
+            "value": "pallet-fork"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.balance",
+          "selector": {
+            "by": "role",
+            "value": "balance"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.hairspring",
+          "selector": {
+            "by": "role",
+            "value": "hairspring"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.train",
+          "selector": {
+            "by": "subsystem",
+            "value": "train"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 4,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.keyless",
+          "selector": {
+            "by": "subsystem",
+            "value": "keyless"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 9,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.motion-works",
+          "selector": {
+            "by": "subsystem",
+            "value": "motion-works"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 4,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.automatic-winding",
+          "selector": {
+            "by": "subsystem",
+            "value": "automatic"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 5,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.calendar",
+          "selector": {
+            "by": "subsystem",
+            "value": "calendar"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 7,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.indication",
+          "selector": {
+            "by": "subsystem",
+            "value": "indication"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 3,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.jewels",
+          "selector": {
+            "by": "role",
+            "value": "jewel-support"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 4,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.fasteners",
+          "selector": {
+            "by": "role",
+            "value": "fastener"
+          },
+          "expectedCardinality": "one-or-more",
+          "resolvedCount": 12,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.calibre",
+          "selector": {
+            "by": "calibre",
+            "value": "8215"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        },
+        {
+          "id": "selector.miyota.8215.family",
+          "selector": {
+            "by": "family",
+            "value": "Standard Automatic / 82"
+          },
+          "expectedCardinality": "exactly-one",
+          "resolvedCount": 1,
+          "cardinalitySatisfied": true
+        }
+      ],
+      "availableParts": [
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_02osuickpp06u",
+          "nameEs": "Envolvente oficial del movimiento",
+          "nameEn": "Official movement envelope",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_0yexlx56noeaz",
+          "nameEs": "Estructura base visible",
+          "nameEn": "Visible base structure",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_2r7qdj8fz2set",
+          "nameEs": "Puente de volante completo",
+          "nameEn": "Balance cock complete",
+          "officialReference": "350-005",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_2bwwrm1e1yrzp",
+          "nameEs": "Volante con espiral regulada",
+          "nameEn": "Balance with hairspring regulated",
+          "officialReference": "039-102",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_3kabe0882s8do",
+          "nameEs": "Puente de barrilete",
+          "nameEn": "Barrel bridge",
+          "officialReference": "701-263",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1vf3hum8v9jp2",
+          "nameEs": "Barrilete completo",
+          "nameEn": "Barrel complete",
+          "officialReference": "001-870",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_0k1pnqajgo1oh",
+          "nameEs": "Palanca de freno de segundero",
+          "nameEn": "Brake lever for second hand",
+          "officialReference": "269-408",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_11hrmrd2ec3pf",
+          "nameEs": "Palanca correctora de calendario",
+          "nameEn": "Calendar corrector lever",
+          "officialReference": "116-300",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_2q6tindyd826h",
+          "nameEs": "Rueda de centro y piñón",
+          "nameEn": "Center wheel and pinion",
+          "officialReference": "012-116",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_354ag7fp6qmss",
+          "nameEs": "Puente de rueda de centro",
+          "nameEn": "Center wheel cock",
+          "officialReference": "711-074",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_2lcf51tspmybq",
+          "nameEs": "Trinquete",
+          "nameEn": "Click",
+          "officialReference": "060-390",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_15torw9mtdlh4",
+          "nameEs": "Muelle de trinquete",
+          "nameEn": "Click spring",
+          "officialReference": "903-700",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_2hyxrxkfx1cs1",
+          "nameEs": "Piñón corredizo",
+          "nameEn": "Clutch wheel",
+          "officialReference": "064-450",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1pq8mdqi69vwj",
+          "nameEs": "Rueda de corona",
+          "nameEn": "Crown wheel",
+          "officialReference": "058-360",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1v185lb4tsv72",
+          "nameEs": "Muelle corrector de fecha",
+          "nameEn": "Date corrector spring",
+          "officialReference": "903-A31",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_3rzoy6bkzvhwb",
+          "nameEs": "Disco de fecha",
+          "nameEn": "Date dial",
+          "officialReference": "108-9500",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_31sp21v262a4m",
+          "nameEs": "Rueda conductora de fecha",
+          "nameEn": "Date dial driving wheel",
+          "officialReference": "103-650",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_16iukna3ebb3f",
+          "nameEs": "Protector del disco de fecha",
+          "nameEn": "Date dial guard",
+          "officialReference": "176-150",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_3m7960bhv51h2",
+          "nameEs": "Saltador de fecha",
+          "nameEn": "Date jumper",
+          "officialReference": "109-350",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1r7xixanb4xr7",
+          "nameEs": "Rueda de escape y piñón",
+          "nameEn": "Escape wheel and pinion",
+          "officialReference": "032-106",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_2rvj28nno3xis",
+          "nameEs": "Cuarta rueda y piñón",
+          "nameEn": "Fourth wheel and pinion",
+          "officialReference": "023-940",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_07o5zyic4nzzr",
+          "nameEs": "Muelle de fricción del piñón de segundero",
+          "nameEn": "Friction spring for sweep sec pinion",
+          "officialReference": "903-690",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_2iwt4whk3e6oa",
+          "nameEs": "Rueda de horas",
+          "nameEn": "Hour wheel",
+          "officialReference": "075-124",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1of7nhbovwg1c",
+          "nameEs": "Rueda intermedia de fecha",
+          "nameEn": "Intermediate date wheel",
+          "officialReference": "100-170",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_3hgxngjlypzah",
+          "nameEs": "Rueda intermedia",
+          "nameEn": "Intermediate wheel",
+          "officialReference": "087-250",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_3a6cqm472yhe8",
+          "nameEs": "Arandela de rueda intermedia",
+          "nameEn": "Intermediate wheel washer",
+          "officialReference": "078-150",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_08dhpyl8asrx7",
+          "nameEs": "Áncora enjoyada con eje",
+          "nameEn": "Jeweled pallet fork and staff",
+          "officialReference": "035-560",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1fv2ewfvooplg",
+          "nameEs": "Contrapiedra inferior montada",
+          "nameEn": "Lower cap jewel mounted",
+          "officialReference": "094-040",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_06weveq0meftw",
+          "nameEs": "Rueda de minutería y piñón",
+          "nameEn": "Minute wheel and pinion",
+          "officialReference": "072-520",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_0dj2kg5z3l8rs",
+          "nameEs": "Protector de rueda de minutería",
+          "nameEn": "Minute wheel guard",
+          "officialReference": "079-600",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_2a6jrqp3zb8ok",
+          "nameEs": "Portamovimiento plástico",
+          "nameEn": "Movement holder (Plastic)",
+          "officialReference": "500-710",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1n3k07m77ortm",
+          "nameEs": "Masa oscilante",
+          "nameEn": "Oscillating weight",
+          "officialReference": "119-A76",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_36uejsgvmobcv",
+          "nameEs": "Puente de áncora",
+          "nameEn": "Pallet cock",
+          "officialReference": "708-095",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_0ztjwwn7pgbcj",
+          "nameEs": "Rueda de carga con trinquete",
+          "nameEn": "Pawl winding wheel",
+          "officialReference": "141-190",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_17z3rzcbms3ht",
+          "nameEs": "Rueda de rochete",
+          "nameEn": "Ratchet wheel",
+          "officialReference": "059-560",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_31aypqucfa33t",
+          "nameEs": "Rueda reductora",
+          "nameEn": "Reduction wheel",
+          "officialReference": "088-120",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_2h9279wyvu4pj",
+          "nameEs": "Palanca de conexión del freno de segundero",
+          "nameEn": "Second hand brake connection lever",
+          "officialReference": "273-201",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1h4026ghb3amz",
+          "nameEs": "Tirete",
+          "nameEn": "Setting lever",
+          "officialReference": "067-860",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1bz3qx2n7t36n",
+          "nameEs": "Muelle de tirete",
+          "nameEn": "Setting lever spring",
+          "officialReference": "077-680",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_0ixy3cmk9gazo",
+          "nameEs": "Rueda de puesta en hora",
+          "nameEn": "Setting wheel",
+          "officialReference": "076-430",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_2sbd83o7wbdzd",
+          "nameEs": "Muelle espiral con rubí",
+          "nameEn": "Spiral spring with jewel",
+          "officialReference": "098-090",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 2
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_0c0c3j6wrcsqr",
+          "nameEs": "Piñón de segundero central",
+          "nameEn": "Sweep second pinion",
+          "officialReference": "025-670",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_3nyx72vq2uhkl",
+          "nameEs": "Tercera rueda y piñón",
+          "nameEn": "Third wheel and pinion",
+          "officialReference": "017-760",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_0xdyny6cepf61",
+          "nameEs": "Contrapiedra superior montada",
+          "nameEn": "Upper cap jewel mounted",
+          "officialReference": "094-010",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_03fx9lmbzqs18",
+          "nameEs": "Arandela para rueda",
+          "nameEn": "Washer for wheel",
+          "officialReference": "078-140",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_27igjztgfcg8y",
+          "nameEs": "Tija de remontuar",
+          "nameEn": "Winding stem",
+          "officialReference": "065-212",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_33lyepnbiuj7q",
+          "nameEs": "Báscula",
+          "nameEn": "Yoke",
+          "officialReference": "071-A04",
+          "modelState": "structurally-modelled",
+          "reconstructionLevel": "R2",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_0nf0znq9lzt0l",
+          "nameEs": "Tornillo de puente de barrilete/tren",
+          "nameEn": "Screw for barrel and train wheel bridge",
+          "officialReference": "924-460",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 3
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1lt26k4lymoq7",
+          "nameEs": "Tornillo de puente de rueda de centro",
+          "nameEn": "Screw for center wheel cock",
+          "officialReference": "923-600",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 2
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_3tgbhbzz7cy85",
+          "nameEs": "Tornillo de protector de fecha",
+          "nameEn": "Screw for date dial guard",
+          "officialReference": "923-630",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 4
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_3ax0cvpj2fevz",
+          "nameEs": "Tornillo de masa oscilante",
+          "nameEn": "Screw for oscillating weight",
+          "officialReference": "925-490",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1y93ec9h185ri",
+          "nameEs": "Tornillo de puente de áncora",
+          "nameEn": "Screw for pallet bridge",
+          "officialReference": "923-600",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_3erv12zfwgfdq",
+          "nameEs": "Tornillo de puente de volante",
+          "nameEn": "Screw for balance bridge",
+          "officialReference": "924-460",
+          "modelState": "documented",
+          "reconstructionLevel": "R0",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_16b7bc1yfz53c",
+          "nameEs": "Interfaz de aguja horaria",
+          "nameEn": "Hour hand interface",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_13nj0swavreoe",
+          "nameEs": "Interfaz de aguja minutera",
+          "nameEn": "Minute hand interface",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        },
+        {
+          "canonicalId": "pd_fixture-miyota-8215-stru_1b76wvi27t2mm",
+          "nameEs": "Interfaz de segundero",
+          "nameEn": "Second hand interface",
+          "modelState": "envelope-only",
+          "reconstructionLevel": "R1",
+          "geometryPrimitiveCount": 1
+        }
+      ],
+      "missingPartRoles": [
+        "all-21-individual-jewels",
+        "physically-validated-main-plate",
+        "complete-tooth-counts",
+        "measured-internal-geometry"
+      ],
+      "reconstructionLevel": "R2",
+      "sourceIds": [
+        "source.miyota.8215.product-page",
+        "source.miyota.8215.specification",
+        "source.miyota.8215.drawing",
+        "source.miyota.8215.instruction-manual",
+        "source.miyota.8215.parts-list-exploded-view"
+      ],
+      "officialDataCount": 12,
+      "estimatedDataCount": 63,
+      "measuredDataCount": 0,
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "R2 estructural con geometría interna normalizada.",
+          "Sin lubricación, desgaste, choque ni tolerancias internas validadas."
+        ]
+      },
+      "viewportCapabilities": [
+        {
+          "id": "fixture.entity-selection",
+          "status": "available",
+          "explanation": "Todas las instancias canónicas tienen identidad seleccionable.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.visibility",
+          "status": "available",
+          "explanation": "El overlay puede ocultar o mostrar entidades sin alterar el ensamblaje.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.isolation",
+          "status": "available",
+          "explanation": "Los subsistemas e instancias pueden aislarse semánticamente.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.transparency",
+          "status": "available",
+          "explanation": "El modelo técnico admite opacidad por entidad.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.highlight",
+          "status": "available",
+          "explanation": "El modelo técnico admite resaltado por entidad.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.explode",
+          "status": "limited",
+          "explanation": "Existe orden visual normalizado y dependencias parciales.",
+          "limitations": [
+            "No es una trayectoria física validada."
+          ]
+        },
+        {
+          "id": "fixture.labels",
+          "status": "available",
+          "explanation": "Cada entidad tiene nombres ES/EN e identidad estable.",
+          "limitations": []
+        },
+        {
+          "id": "fixture.rotation-directions",
+          "status": "limited",
+          "explanation": "Las relaciones permiten declarar sentido posteriormente.",
+          "limitations": [
+            "No hay vectores ni animación anclada en el viewport real."
+          ]
+        },
+        {
+          "id": "fixture.energy-route",
+          "status": "limited",
+          "explanation": "Las relaciones drives/winds/impulses forman rutas consultables.",
+          "limitations": [
+            "El viewport no dibuja aún flechas espaciales."
+          ]
+        },
+        {
+          "id": "fixture.visual-errors",
+          "status": "limited",
+          "explanation": "Los errores visuales son estados simbólicos reversibles.",
+          "limitations": [
+            "No son fallos físicos ni diagnósticos de ingeniería validados."
+          ]
+        },
+        {
+          "id": "fixture.reversible-state",
+          "status": "available",
+          "explanation": "Las operaciones se aplican como overlay restaurable.",
+          "limitations": []
+        }
+      ],
+      "visualErrorScenarios": [
+        {
+          "id": "error.fixture-miyota-8215-structural.balance-blocked",
+          "label": "Volante bloqueado · estado visual",
+          "affectedInstanceIds": [
+            "pi_fixture-miyota-8215-stru_1882dyb2de0is"
+          ],
+          "effect": "blocked-symbolic",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "reversible": true,
+          "engineeringValidated": false,
+          "limitations": [
+            "No representa amplitud, rozamiento, choque ni diagnóstico físico."
+          ]
+        },
+        {
+          "id": "error.fixture-miyota-8215-structural.center-cock-misaligned",
+          "label": "Puente de rueda de centro desalineado · estado visual",
+          "affectedInstanceIds": [
+            "pi_fixture-miyota-8215-stru_1p7c5altkaocp",
+            "pi_fixture-miyota-8215-stru_0xkiyy0h9arew"
+          ],
+          "effect": "misaligned-symbolic",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "reversible": true,
+          "engineeringValidated": false,
+          "limitations": [
+            "Desalineación simbólica; no expresa una tolerancia ni recomienda forzar el puente."
+          ]
+        },
+        {
+          "id": "error.fixture-miyota-8215-structural.rotor-before-fastener",
+          "label": "Orden incorrecto de retirada del rotor · estado visual",
+          "affectedInstanceIds": [
+            "pi_fixture-miyota-8215-stru_3hiodsr3ffioz",
+            "pi_fixture-miyota-8215-stru_1f12b9sqdbt62"
+          ],
+          "effect": "wrong-order-symbolic",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "reversible": true,
+          "engineeringValidated": false,
+          "limitations": [
+            "Solo visualiza la dependencia declarada; no sustituye un manual de servicio."
+          ]
+        }
+      ],
+      "blockers": [
+        "Pieza o rol ausente: all-21-individual-jewels",
+        "Pieza o rol ausente: physically-validated-main-plate",
+        "Pieza o rol ausente: complete-tooth-counts",
+        "Pieza o rol ausente: measured-internal-geometry"
+      ],
+      "limitations": [
+        "Un único ensamblaje contiene calendario, automático y rotor; las vistas solo cambian el overlay.",
+        "No es un gemelo exacto ni una reconstrucción R3.",
+        "La geometría interna no procede de medición y no se expresa en milímetros.",
+        "Se omiten del ensamblaje activo opciones, alternativas semiacabadas, abrazaderas opcionales y tijas largas.",
+        "No se modelan 21 rubíes individuales: solo conjuntos enjoyados identificables en la lista oficial."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+  "version": "1.1.0",
+  "title": "Ejes, pivotes, hombros y sustitución de staffs",
+  "blockIds": [
+    "block.encyclopedia.micromechanics.ejes-pivotes-y-reparacion"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.micromechanics.ejes-pivotes-y-reparacion"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Ejes, pivotes, hombros y sustitución de staffs",
+      "en": "Ejes, pivotes, hombros y sustitución de staffs"
+    },
+    "purpose": {
+      "es": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+      "en": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Ejes, pivotes, hombros y sustitución de staffs mediante relaciones causales.",
+        "en": "Explicar Ejes, pivotes, hombros y sustitución de staffs mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.trabajo-entre-puntos",
+      "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.excentricidad",
+      "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.buril"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.pivote",
+      "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.hombro",
+      "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.brunido"
+    ],
+    "sourceIds": [
+      "source.private.daniels.turning",
+      "source.private.daniels.small-components",
+      "source.external.bobinchak-school"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.pivote",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.hombro",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.brunido"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1137,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.micromechanics.ejes-pivotes-y-reparacion"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: pivote, hombro, bruñido.",
+          "en": "Defino con mis palabras: pivote, hombro, bruñido."
+        },
+        {
+          "es": "Relaciono las operaciones de «Ejes, pivotes, hombros y sustitución de staffs» con características medibles y riesgos de proceso.",
+          "en": "Relaciono las operaciones de «Ejes, pivotes, hombros y sustitución de staffs» con características medibles y riesgos de proceso."
+        },
+        {
+          "es": "Distingo qué parte de «Ejes, pivotes, hombros y sustitución de staffs» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Ejes, pivotes, hombros y sustitución de staffs» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Prepara un plano de proceso de un eje de práctica y distingue cotas copiadas, inferidas por conjunto y calculadas por función.",
+          "en": "Aplico el criterio a esta variante: Prepara un plano de proceso de un eje de práctica y distingue cotas copiadas, inferidas por conjunto y calculadas por función."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Ejes, pivotes, hombros y sustitución de staffs» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Ejes, pivotes, hombros y sustitución de staffs» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.pivote",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.hombro",
+        "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.brunido"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+          "en": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?"
+        },
+        {
+          "es": "¿Qué relación causal de «Ejes, pivotes, hombros y sustitución de staffs» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Ejes, pivotes, hombros y sustitución de staffs» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

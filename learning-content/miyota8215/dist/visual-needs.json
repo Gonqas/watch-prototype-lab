@@ -1,0 +1,842 @@
+[
+  {
+    "resourceId": "visual.miyota8215.architecture",
+    "lessonIds": [
+      "lesson.miyota8215.architecture"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.miyota8215.assembly-verification",
+    "lessonIds": [
+      "lesson.miyota8215.assembly-verification"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "extension"
+  },
+  {
+    "resourceId": "visual.miyota8215.assisted-free-disassembly",
+    "lessonIds": [
+      "lesson.miyota8215.assisted-free-disassembly"
+    ],
+    "type": "disassembly-sequence",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "extension"
+  },
+  {
+    "resourceId": "visual.miyota8215.automatic",
+    "lessonIds": [
+      "lesson.miyota8215.automatic"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.miyota8215.barrel-energy",
+    "lessonIds": [
+      "lesson.miyota8215.barrel-energy"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.miyota8215.calendar",
+    "lessonIds": [
+      "lesson.miyota8215.calendar"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.miyota8215.diagnosis-project",
+    "lessonIds": [
+      "lesson.miyota8215.diagnosis-project"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "extension"
+  },
+  {
+    "resourceId": "visual.miyota8215.documentation",
+    "lessonIds": [
+      "lesson.miyota8215.documentation"
+    ],
+    "type": "visual-table",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.miyota8215.escapement-oscillator",
+    "lessonIds": [
+      "lesson.miyota8215.escapement-oscillator"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.miyota8215.guided-disassembly",
+    "lessonIds": [
+      "lesson.miyota8215.guided-disassembly"
+    ],
+    "type": "disassembly-sequence",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "extension"
+  },
+  {
+    "resourceId": "visual.miyota8215.identify",
+    "lessonIds": [
+      "lesson.miyota8215.identify"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.miyota8215.inspection",
+    "lessonIds": [
+      "lesson.miyota8215.inspection"
+    ],
+    "type": "error-simulation",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "extension"
+  },
+  {
+    "resourceId": "visual.miyota8215.plan-disassembly",
+    "lessonIds": [
+      "lesson.miyota8215.plan-disassembly"
+    ],
+    "type": "disassembly-sequence",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "extension"
+  },
+  {
+    "resourceId": "visual.miyota8215.train",
+    "lessonIds": [
+      "lesson.miyota8215.train"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.miyota8215.winding-setting",
+    "lessonIds": [
+      "lesson.miyota8215.winding-setting"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "calibre",
+          "value": "8215"
+        },
+        "cardinality": "exactly-one"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Registro técnico de 56 piezas sobre 63 referencias.",
+      "Autoridad de las operaciones.",
+      "Identidad de cada pieza.",
+      "Restauración.",
+      "Movimiento reducido y alternativa textual."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  }
+]

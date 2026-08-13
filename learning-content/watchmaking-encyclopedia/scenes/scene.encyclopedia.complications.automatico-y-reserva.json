@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.complications.automatico-y-reserva",
+  "version": "1.1.0",
+  "title": "Cuaderno: Automático, embragues y reserva de marcha",
+  "description": "¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Automático, embragues y reserva de marcha. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.complications.automatico-y-reserva.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.complications.automatico-y-reserva.answer",
+      "instructionMarkdown": "Explica **Automático, embragues y reserva de marcha** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.complications.automatico-y-reserva.explain",
+          "promptMarkdown": "¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.complications.automatico-y-reserva.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.automatico-y-reserva.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.automatico-y-reserva.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.automatico-y-reserva.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.complications.automatico-y-reserva.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por muñeca acelera caja y sigue hasta diferencial muestra estado.",
+                "en": "Empieza por muñeca acelera caja y sigue hasta diferencial muestra estado."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.complications.automatico-y-reserva.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El sistema automático convierte oscilaciones del rotor en carga del barrilete mediante reducción y mecanismos reversores o unidireccionales. El indicador de reserva compara estados de árbol y barrilete o integra otra relación equivalente. Ambos subsistemas deben convivir con cuerda manual, brida deslizante, eficiencia y espacio.",
+                "en": "El sistema automático convierte oscilaciones del rotor en carga del barrilete mediante reducción y mecanismos reversores o unidireccionales. El indicador de reserva compara estados de árbol y barrilete o integra otra relación equivalente. Ambos subsistemas deben convivir con cuerda manual, brida deslizante, eficiencia y espacio."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?",
+              "en": "¿Cómo se capta movimiento irregular, se rectifica, se limita y se muestra energía disponible?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena muñeca acelera caja → rotor se desplaza → reversor rectifica → reducción aumenta par → barrilete se carga → diferencial muestra estado, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena muñeca acelera caja → rotor se desplaza → reversor rectifica → reducción aumenta par → barrilete se carga → diferencial muestra estado, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.complications.automatico-y-reserva.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.complications.automatico-y-reserva.mechanism",
+            "field.encyclopedia.complications.automatico-y-reserva.evidence",
+            "field.encyclopedia.complications.automatico-y-reserva.limit",
+            "field.encyclopedia.complications.automatico-y-reserva.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

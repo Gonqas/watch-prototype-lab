@@ -1,0 +1,386 @@
+{
+  "id": "activity.mechanical.detect-impossible-mesh",
+  "version": "0.5.0",
+  "title": "Detectar un engrane imposible",
+  "sceneIds": [
+    "scene.practice.mechanical.detect-impossible-mesh"
+  ],
+  "competencyIds": [
+    "competency.mechanical.calculate-simple-ratios"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.mechanical.calculate-simple-ratios"
+  ],
+  "rubricId": "rubric.mechanical.calculate-simple-ratios",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.mechanical.gear-pair",
+    "title": {
+      "es": "Detectar un engrane imposible",
+      "en": "Detectar un engrane imposible"
+    },
+    "description": {
+      "es": "Detectar un engrane imposible mediante el laboratorio funcional, cálculos declarados, evidencia y restauración.",
+      "en": "Detectar un engrane imposible mediante el laboratorio funcional, cálculos declarados, evidencia y restauración."
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 14,
+    "activityType": "prediction",
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "familyIds": [
+      "conceptual-mechanical"
+    ],
+    "subsystem": "gear-pair",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+        "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+        "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Modelo normalizado: no es física ni servicio de un calibre real.",
+        "El 8215 solo aporta comparación estructural documentada."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.horology.private-book.wheels-pinions",
+      "source.horology.original-mechanical-foundations"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.gear-pair"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.mechanical.detect-impossible-mesh.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Qué señal obliga a rechazar un engrane antes de calcular su relación?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.detect-impossible-mesh.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Comprueba ejes, distancia conceptual y estado de contacto."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.detect-impossible-mesh.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: Una relación numérica no valida que ejes, paso y distancia permitan engranar."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.detect-impossible-mesh.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.detect-impossible-mesh.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "Una relación numérica no valida que ejes, paso y distancia permitan engranar."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.detect-impossible-mesh.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Busca otra configuración con igual relación numérica pero geometría válida."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "mechanical-lab-command",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "gear-pair",
+      "commands": [
+        "change-ratio",
+        "engage",
+        "disengage",
+        "add-stage",
+        "remove-stage",
+        "restore"
+      ],
+      "viewModes": [
+        "normal",
+        "schematic",
+        "kinematics",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "Una relación numérica no valida que ejes, paso y distancia permitan engranar."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «Las ruedas tienen colores distintos» y «La conducida tiene más dientes que la conductora» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Qué señal obliga a rechazar un engrane antes de calcular su relación?"
+      },
+      "nextObservation": {
+        "es": "Comprueba ejes, distancia conceptual y estado de contacto."
+      },
+      "misconceptionIds": [
+        "misconception.mechanical.escapement-is-source"
+      ],
+      "transferPrompt": {
+        "es": "Busca otra configuración con igual relación numérica pero geometría válida."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.explain-barrel",
+        "concept.mechanical.calculate-simple-ratios"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Detectar un engrane imposible», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Detectar un engrane imposible», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué señal obliga a rechazar un engrane antes de calcular su relación?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Comprueba ejes, distancia conceptual y estado de contacto."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Detectar un engrane imposible»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: Una relación numérica no valida que ejes, paso y distancia permitan engranar."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "Una relación numérica no valida que ejes, paso y distancia permitan engranar."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Detectar un engrane imposible» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Detectar un engrane imposible» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Detectar un engrane imposible» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Busca otra configuración con igual relación numérica pero geometría válida."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La geometría declarada no permite contacto compatible entre los dientes"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Las ruedas tienen colores distintos"
+        },
+        {
+          "es": "La conducida tiene más dientes que la conductora"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Busca otra configuración con igual relación numérica pero geometría válida."
+        }
+      },
+      "transferPrompt": {
+        "es": "Busca otra configuración con igual relación numérica pero geometría válida."
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "diagnostic",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.mechanical.explain-barrel"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.mechanical.calculate-simple-ratios"
+      ],
+      "assessesConceptIds": [
+        "concept.mechanical.calculate-simple-ratios"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.mechanical.gear-pair",
+        "blockId": "block.mechanical.gear-pair",
+        "conceptIds": [
+          "concept.mechanical.calculate-simple-ratios"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba comprensión dentro de un modelo mecánico conceptual geometría conceptual y secuencia educativa, sin simulación física. No demuestra física validada, destreza manual ni capacidad de servicio sobre un calibre real.",
+        "en": "This activity checks understanding in a geometría conceptual y secuencia educativa, sin simulación física conceptual mechanical model. It does not demonstrate validated physics, manual skill, or the ability to service a real calibre."
+      }
+    }
+  }
+}

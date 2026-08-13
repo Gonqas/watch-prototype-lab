@@ -1,0 +1,28 @@
+{
+  "id": "competency.mechanical.explain-motion-works",
+  "version": "0.5.0",
+  "title": "Explicar la minutería",
+  "description": "Explicar la minutería mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.",
+  "prerequisites": [
+    "competency.mechanical.explain-escape-oscillator-system"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Explicar la minutería",
+      "en": "Explicar la minutería"
+    },
+    "description": {
+      "es": "Explicar la minutería; el tiempo y las adaptaciones accesibles no penalizan.",
+      "en": "Explicar la minutería; el tiempo y las adaptaciones accesibles no penalizan."
+    },
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "subsystem": "motion-works",
+    "skillType": "procedure",
+    "sourceIds": [
+      "source.horology.original-mechanical-foundations"
+    ]
+  }
+}

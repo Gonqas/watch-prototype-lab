@@ -1,0 +1,19 @@
+{
+  "id": "recommendation.metrology.retain.identificar-un-hallazgo",
+  "version": "0.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar: Identificar un hallazgo"
+  },
+  "reason": {
+    "es": "La retención exige una sesión independiente; el motor programará ventanas de 1, 7 y 21 días."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 288,
+  "target": {
+    "kind": "competency",
+    "id": "competency.metrology.identificar-un-hallazgo"
+  },
+  "evidenceTemplateIds": [],
+  "required": false
+}

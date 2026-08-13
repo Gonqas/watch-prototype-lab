@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.arco-de-conduccion",
+  "version": "1.1.0",
+  "title": {
+    "es": "arco de conducción",
+    "en": "arco de conducción"
+  },
+  "summary": {
+    "es": "Intervalo durante el que un par de perfiles permanece en contacto funcional.",
+    "en": "Intervalo durante el que un par de perfiles permanece en contacto funcional."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.going-barrel",
+    "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.motor-barrel",
+    "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.apoyo-del-arbol"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria"
+  ],
+  "movementIds": [],
+  "subsystem": "gear-pair",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch05",
+    "source.private.vba-uhrentechnik",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+  "plainLanguage": {
+    "es": "Intervalo durante el que un par de perfiles permanece en contacto funcional.",
+    "en": "Intervalo durante el que un par de perfiles permanece en contacto funcional."
+  },
+  "technicalLanguage": {
+    "es": "arco de conducción se interpreta mediante la cadena definir relación → seleccionar dientes → establecer módulo y perfiles → calcular centros → comprobar contacto → verificar bajo carga y las condiciones declaradas en la unidad.",
+    "en": "arco de conducción se interpreta mediante la cadena definir relación → seleccionar dientes → establecer módulo y perfiles → calcular centros → comprobar contacto → verificar bajo carga y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?",
+    "en": "Permite explicar y comprobar ¿qué debe cumplirse para transmitir giro entre rueda y piñón sin interferencia destructiva?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir arco de conducción sin circularidad.",
+      "en": "Definir arco de conducción sin circularidad."
+    },
+    {
+      "es": "Relacionar arco de conducción con una entrada, una interfaz y una salida.",
+      "en": "Relacionar arco de conducción con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

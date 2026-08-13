@@ -1,0 +1,317 @@
+{
+  "id": "activity.metrology.completar-dossier",
+  "version": "0.2.0",
+  "title": "Completar dossier",
+  "sceneIds": [
+    "scene.metrology.completar-dossier"
+  ],
+  "competencyIds": [
+    "competency.metrology.medir-en-dos-dimensiones"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.metrology.completar-dossier"
+  ],
+  "rubricId": "rubric.metrology.completar-dossier",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "active-project-v5-projection"
+  },
+  "authoring": {
+    "lessonId": "lesson.metrology.final-project",
+    "title": {
+      "es": "Completar dossier"
+    },
+    "description": {
+      "es": "Práctica independiente para completar dossier sobre una unidad o el espécimen sintético, conservando método, evidencia, confianza y límites."
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 35,
+    "activityType": "comparison",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "metrology",
+    "requiredCapabilities": [],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "La práctica registra evidencia; no simula ni certifica comportamiento físico."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "No generalizar una medida de una unidad ni inventar tolerancias."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ],
+    "visualResourceIds": [],
+    "interactionContract": {
+      "responseModel": "structured-response",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [
+        {
+          "id": "field.activity-metrology-completar-dossier.decision",
+          "label": {
+            "es": "¿Qué debe contener un dossier para que otra persona pueda reconstruir el razonamiento sin confiar en nuestra memoria?"
+          },
+          "kind": "choice",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-completar-dossier.justification",
+          "label": {
+            "es": "Justifica qué evidencia y qué límite hacen defendible tu elección."
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-completar-dossier.confidence",
+          "label": {
+            "es": "Confianza en la decisión"
+          },
+          "kind": "confidence",
+          "required": true
+        }
+      ],
+      "hints": [
+        {
+          "id": "hint.activity-metrology-completar-dossier.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Localiza qué evidencia responde a esta pregunta: ¿Qué debe contener un dossier para que otra persona pueda reconstruir el razonamiento sin confiar en nuestra memoria?"
+          },
+          "availableAfterAttempts": 0,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.activity-metrology-completar-dossier.2",
+          "level": 2,
+          "kind": "comparison",
+          "content": {
+            "es": "Compara la conclusión limitada con este error: Presentar únicamente el valor adoptado y ocultar lecturas, descartes o condiciones."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.activity-metrology-completar-dossier.3",
+          "level": 3,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "La opción defendible conserva este límite: Una persona externa puede seguir la cadena, localizar cada fuente y saber qué no se ha demostrado. Esa transparencia es el producto final."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "answer-submitted",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [
+          "field.activity-metrology-completar-dossier.decision"
+        ],
+        "requiresHumanReview": true,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "pedagogicalContract": {
+      "purpose": "independent-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.metrology.final-project"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [
+        "concept.metrology.final-project"
+      ],
+      "practicesConceptIds": [
+        "concept.metrology.final-project"
+      ],
+      "assessesConceptIds": [
+        "concept.metrology.final-project"
+      ],
+      "evidenceLevel": "transfer",
+      "supportLevel": "faded",
+      "remediation": {
+        "lessonId": "lesson.metrology.final-project",
+        "blockId": "block.metrology.final-project",
+        "conceptIds": [
+          "concept.metrology.final-project"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La práctica acredita un método documentado dentro de la Academia. No certifica destreza profesional, calibración ni validez industrial."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "En “Completar dossier” una respuesta sólida conserva característica, referencia, método, evidencia y alcance."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si en “Completar dossier” confundiste resolución con exactitud, observación con hipótesis o una unidad con toda una familia."
+      },
+      "causalQuestion": {
+        "es": "¿Qué decisión de “Completar dossier” cambia el resultado y cómo podrías comprobarla?"
+      },
+      "nextObservation": {
+        "es": "Repite “Completar dossier” cambiando una sola condición y documenta el efecto."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Aplica el criterio de “Completar dossier” a otra pieza sin suponer que comparte geometría o tolerancia."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.metrology.final-project"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar tolerancias, exactitudes, calibraciones, diagnósticos ni datos de fabricante."
+        },
+        {
+          "es": "No aprobar propuestas, elevar fidelidad o modificar CAD."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente?"
+        },
+        {
+          "es": "¿Qué método y referencia hacen repetible este resultado?"
+        },
+        {
+          "es": "¿Qué limitación impide generalizarlo?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué decisión de “Completar dossier” cambia el resultado y cómo podrías comprobarla?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Repite “Completar dossier” cambiando una sola condición y documenta el efecto."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Completar dossier»."
+          },
+          {
+            "es": "Sigue la relación causal declarada en la lección y conserva su fuente o límite."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "En “Completar dossier” una respuesta sólida conserva característica, referencia, método, evidencia y alcance."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Completar dossier» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Completar dossier» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Completar dossier» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Aplica el criterio de “Completar dossier” a otra pieza sin suponer que comparte geometría o tolerancia."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La conclusión responde al objetivo «Completar dossier» con una relación observable."
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Revisa si en “Completar dossier” confundiste resolución con exactitud, observación con hipótesis o una unidad con toda una familia."
+        },
+        {
+          "es": "La respuesta describe apariencia o autoridad, pero no la relación que produce el resultado."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Aplica el criterio de “Completar dossier” a otra pieza sin suponer que comparte geometría o tolerancia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Aplica el criterio de “Completar dossier” a otra pieza sin suponer que comparte geometría o tolerancia."
+      }
+    }
+  }
+}

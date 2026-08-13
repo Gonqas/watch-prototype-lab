@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.calendarios.rueda-de-programa",
+  "version": "1.1.0",
+  "title": {
+    "es": "rueda de programa",
+    "en": "rueda de programa"
+  },
+  "summary": {
+    "es": "Órgano que codifica la duración de meses o ciclos mediante perfiles o estados.",
+    "en": "Órgano que codifica la duración de meses o ciclos mediante perfiles o estados."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.automatico-y-reserva.rotor",
+    "concept.encyclopedia.complications.automatico-y-reserva.embrague-unidireccional",
+    "concept.encyclopedia.complications.automatico-y-reserva.indicador-de-reserva"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.calendarios"
+  ],
+  "movementIds": [],
+  "subsystem": "calendar",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.calendarios"
+  ],
+  "sourceIds": [
+    "source.official.miyota.8215",
+    "source.official.eta.2824",
+    "source.external.hodinkee-watch101"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.calendarios"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.calendarios",
+  "plainLanguage": {
+    "es": "Órgano que codifica la duración de meses o ciclos mediante perfiles o estados.",
+    "en": "Órgano que codifica la duración de meses o ciclos mediante perfiles o estados."
+  },
+  "technicalLanguage": {
+    "es": "rueda de programa se interpreta mediante la cadena tren de horas alcanza fase → leva carga muelle → dedo libera o empuja → disco indexa → saltador centra → programa decide salto adicional y las condiciones declaradas en la unidad.",
+    "en": "rueda de programa se interpreta mediante la cadena tren de horas alcanza fase → leva carga muelle → dedo libera o empuja → disco indexa → saltador centra → programa decide salto adicional y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?",
+    "en": "Permite explicar y comprobar ¿cómo representa un mecanismo fechas desiguales y cuándo necesita memoria o corrección?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir rueda de programa sin circularidad.",
+      "en": "Definir rueda de programa sin circularidad."
+    },
+    {
+      "es": "Relacionar rueda de programa con una entrada, una interfaz y una salida.",
+      "en": "Relacionar rueda de programa con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

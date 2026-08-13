@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.complications.toh-soneria-control",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.complications.toh-soneria-control",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.complications.toh-soneria-control",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Alarma, sonería y repetición a demanda."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.complications.toh-soneria-control",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.complications.toh-soneria-control",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

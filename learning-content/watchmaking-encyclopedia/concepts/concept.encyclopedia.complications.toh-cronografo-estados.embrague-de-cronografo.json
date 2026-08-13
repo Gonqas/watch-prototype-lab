@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.toh-cronografo-estados.embrague-de-cronografo",
+  "version": "1.1.0",
+  "title": {
+    "es": "embrague de cronógrafo",
+    "en": "embrague de cronógrafo"
+  },
+  "summary": {
+    "es": "Interfaz que conecta o desconecta el contador del tren.",
+    "en": "Interfaz que conecta o desconecta el contador del tren."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.toh-soneria-control.rastrillo",
+    "concept.encyclopedia.complications.toh-soneria-control.caracol",
+    "concept.encyclopedia.complications.toh-soneria-control.pieza-sorpresa"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "movementIds": [],
+  "subsystem": "chronograph",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch11",
+    "source.official.eta.7750",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.toh-cronografo-estados",
+  "plainLanguage": {
+    "es": "Interfaz que conecta o desconecta el contador del tren.",
+    "en": "Interfaz que conecta o desconecta el contador del tren."
+  },
+  "technicalLanguage": {
+    "es": "embrague de cronógrafo se interpreta mediante la cadena recibir pulsación → cambiar estado de mando → liberar freno → acoplar contador → detener y frenar → desacoplar y poner a cero y las condiciones declaradas en la unidad.",
+    "en": "embrague de cronógrafo se interpreta mediante la cadena recibir pulsación → cambiar estado de mando → liberar freno → acoplar contador → detener y frenar → desacoplar y poner a cero y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?",
+    "en": "Permite explicar y comprobar ¿qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir embrague de cronógrafo sin circularidad.",
+      "en": "Definir embrague de cronógrafo sin circularidad."
+    },
+    {
+      "es": "Relacionar embrague de cronógrafo con una entrada, una interfaz y una salida.",
+      "en": "Relacionar embrague de cronógrafo con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "transfer",
+  "availability": "prerequisite-blocked"
+}

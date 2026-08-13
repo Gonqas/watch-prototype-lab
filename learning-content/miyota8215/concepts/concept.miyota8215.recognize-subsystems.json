@@ -1,0 +1,74 @@
+{
+  "id": "concept.miyota8215.recognize-subsystems",
+  "version": "0.5.0",
+  "title": {
+    "es": "Reconocer subsistemas",
+    "en": "Reconocer subsistemas"
+  },
+  "summary": {
+    "es": "Reconocer subsistemas con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Reconocer subsistemas con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "concept",
+  "prerequisiteIds": [
+    "concept.miyota8215.read-official-documentation"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.distinguish-data-reconstruction"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.recognize-subsystems"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "structure",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.classify-subsystems",
+    "activity.miyota8215.reconstruct-layers"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Reconocer subsistemas se reconoce por su posición relativa, sus apoyos y sus interfaces dentro de estructura. Reconocer subsistemas con un modelo estructural, fuentes, operaciones y límites declarados. La proximidad visual no basta: la identificación exige una relación documentada o explícitamente reconstruida.",
+    "en": "Reconocer subsistemas se reconoce por su posición relativa, sus apoyos y sus interfaces dentro de estructura. Reconocer subsistemas con un modelo estructural, fuentes, operaciones y límites declarados. La proximidad visual no basta: la identificación exige una relación documentada o explícitamente reconstruida."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.explain-automatic",
+    "concept.miyota8215.explain-winding-setting",
+    "concept.miyota8215.explain-calendar",
+    "concept.miyota8215.explain-energy-chain"
+  ],
+  "plainLanguage": {
+    "es": "Reconocer subsistemas con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Reconocer subsistemas con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Entender reconocer subsistemas permite razonar sobre el reloj completo y no memorizar piezas aisladas."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega reconocer subsistemas dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema structure."
+    }
+  ],
+  "misconceptionIds": [
+    "misconception.miyota8215.hidden-subsystem-is-new-calibre"
+  ],
+  "knowledgeType": "spatial",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.architecture",
+  "targetEvidenceLevel": "recognition"
+}

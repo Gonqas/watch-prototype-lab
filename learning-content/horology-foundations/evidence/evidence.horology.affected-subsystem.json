@@ -1,0 +1,30 @@
+{
+  "id": "evidence.horology.affected-subsystem",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.identify-functional-subsystems",
+  "kind": "answer",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.horology.affected-subsystem",
+    "version": "0.2.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "classification",
+    "competencyId": "competency.horology.identify-functional-subsystems",
+    "packageId": "wplab.horology.functional-map",
+    "activityIds": [
+      "activity.horology.select-affected-subsystem"
+    ],
+    "evidenceTemplateId": "evidence.horology.affected-subsystem",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data"
+    ]
+  }
+}

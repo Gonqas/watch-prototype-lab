@@ -1,0 +1,70 @@
+{
+  "id": "concept.capstone.validation.accessibility",
+  "version": "1.0.0",
+  "title": {
+    "es": "Accesibilidad y equivalencia de interacción",
+    "en": "Accesibilidad y equivalencia de interacción"
+  },
+  "summary": {
+    "es": "¿Cómo ejecutar accesibilidad y equivalencia de interacción sin convertir una muestra limitada en una certeza?",
+    "en": "¿Cómo ejecutar accesibilidad y equivalencia de interacción sin convertir una muestra limitada en una certeza?"
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.capstone.validation.calibre-transfer"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.capstone.validation.calibre-transfer",
+    "concept.capstone.validation.deferred-retention"
+  ],
+  "competencyIds": [
+    "competency.capstone.validation.accessibility"
+  ],
+  "movementIds": [],
+  "subsystem": "validation-accessibility",
+  "routeIds": [
+    "route.capstone.validation"
+  ],
+  "activityIds": [
+    "activity.capstone.validation.accessibility"
+  ],
+  "sourceIds": [
+    "source.w3c.wcag22",
+    "source.iso.9241-11",
+    "source.nist.human-centered-design"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Cómo ejecutar accesibilidad y equivalencia de interacción sin convertir una muestra limitada en una certeza?",
+    "en": "¿Cómo ejecutar accesibilidad y equivalencia de interacción sin convertir una muestra limitada en una certeza?"
+  },
+  "technicalLanguage": {
+    "es": "## Qué se intenta validar\n\nComprobar que leer, practicar, responder, recuperar y revisar evidencia siguen siendo posibles con distintas formas de acceso. Validar no es demostrar que el equipo trabajó mucho. Es intentar refutar una afirmación importante bajo condiciones declaradas. Antes de ejecutar el protocolo se fija la versión del contenido, el calibre o unidad, el perfil de participante, las tareas, las ayudas permitidas, el criterio de éxito y los hallazgos que bloquearían la liberación.\n\nEn **Accesibilidad y equivalencia de interacción**, las dimensiones **accessibility** se valoran por separado. La revisión relojera busca exactitud y seguridad técnica; la prueba principiante, comprensión y acción; la transferencia, aplicación a otro calibre; la accesibilidad, equivalencia de acceso; y la retención diferida, recuperación tras una demora. Superar la dimensión principal de este protocolo no demuestra las demás.\n\n## Participantes y límites de rol\n\n- **Revisión de accesibilidad:** Comprueba teclado, texto, contraste, alternativas y movimiento reducido. Incluye evaluación humana además de automatización. Límite: Evalúa la experiencia y barreras observables; no representa todas las necesidades posibles.\n- **Persona principiante representativa:** No ha recibido formación específica sobre el flujo que se prueba. Representa el contexto y capacidades previstos. Límite: Prueba comprensibilidad y uso inicial; no valida exactitud relojera.\n\nLa muestra de **Accesibilidad y equivalencia de interacción** se documenta sin presentarla como universal. El perfil **Revisión de accesibilidad** no representa por sí solo a toda la población. Quien diseñó la actividad conoce su lógica; quien revisa accesibilidad no sustituye todas las experiencias; quien observa una operación física no concede competencia. Si el moderador ayuda, se registra y se exige otro intento independiente cuando la ayuda fue sustantiva.\n\n## Tareas y casos\n\n- **Recorrer una ruta:** Usar navegación, teoría y práctica con teclado y texto ampliado.\n- **Completar un workspace:** Resolver con alternativa textual y movimiento reducido.\n- **Interpretar estado y feedback:** Distinguir correcto, pendiente, límite y siguiente acción sin depender del color.\n\nEste protocolo no usa un caso de transferencia como criterio principal.\n\nNo se atribuye retención a un resultado inmediato.\n\nLas tareas de **Accesibilidad y equivalencia de interacción**, comenzando por **Recorrer una ruta**, se expresan como resultados observables. Registra camino, errores, dudas, tiempo cuando sea relevante, ayudas, evidencia y explicación posterior. Este protocolo conserva tanto éxitos como fallos: eliminar los fallos falsearía precisamente la robustez que intenta comprobar.\n\n## Accesibilidad y equivalencia\n\n- **Operación completa con teclado:** Todas las acciones, estados y salidas son alcanzables, visibles y ordenadas sin puntero. Pasa cuando: Sin trampa de foco. Nombre y estado accesibles. Orden de foco coherente.\n- **Texto ampliado y redistribución:** El contenido sigue siendo legible y operable con ampliación y ventanas estrechas. Pasa cuando: Sin solapamiento. Sin pérdida de controles o texto. Lectura en una columna útil cuando sea necesario.\n- **Contraste y señales no basadas solo en color:** Estado, autoridad, riesgo y resultado conservan texto o forma además del color. Pasa cuando: Contraste suficiente. Color no es la única señal. Foco visible.\n- **Movimiento reducido y estados discretos:** Toda animación esenci",
+    "en": "## Qué se intenta validar\n\nComprobar que leer, practicar, responder, recuperar y revisar evidencia siguen siendo posibles con distintas formas de acceso. Validar no es demostrar que el equipo trabajó mucho. Es intentar refutar una afirmación importante bajo condiciones declaradas. Antes de ejecutar el protocolo se fija la versión del contenido, el calibre o unidad, el perfil de participante, las tareas, las ayudas permitidas, el criterio de éxito y los hallazgos que bloquearían la liberación.\n\nEn **Accesibilidad y equivalencia de interacción**, las dimensiones **accessibility** se valoran por separado. La revisión relojera busca exactitud y seguridad técnica; la prueba principiante, comprensión y acción; la transferencia, aplicación a otro calibre; la accesibilidad, equivalencia de acceso; y la retención diferida, recuperación tras una demora. Superar la dimensión principal de este protocolo no demuestra las demás.\n\n## Participantes y límites de rol\n\n- **Revisión de accesibilidad:** Comprueba teclado, texto, contraste, alternativas y movimiento reducido. Incluye evaluación humana además de automatización. Límite: Evalúa la experiencia y barreras observables; no representa todas las necesidades posibles.\n- **Persona principiante representativa:** No ha recibido formación específica sobre el flujo que se prueba. Representa el contexto y capacidades previstos. Límite: Prueba comprensibilidad y uso inicial; no valida exactitud relojera.\n\nLa muestra de **Accesibilidad y equivalencia de interacción** se documenta sin presentarla como universal. El perfil **Revisión de accesibilidad** no representa por sí solo a toda la población. Quien diseñó la actividad conoce su lógica; quien revisa accesibilidad no sustituye todas las experiencias; quien observa una operación física no concede competencia. Si el moderador ayuda, se registra y se exige otro intento independiente cuando la ayuda fue sustantiva.\n\n## Tareas y casos\n\n- **Recorrer una ruta:** Usar navegación, teoría y práctica con teclado y texto ampliado.\n- **Completar un workspace:** Resolver con alternativa textual y movimiento reducido.\n- **Interpretar estado y feedback:** Distinguir correcto, pendiente, límite y siguiente acción sin depender del color.\n\nEste protocolo no usa un caso de transferencia como criterio principal.\n\nNo se atribuye retención a un resultado inmediato.\n\nLas tareas de **Accesibilidad y equivalencia de interacción**, comenzando por **Recorrer una ruta**, se expresan como resultados observables. Registra camino, errores, dudas, tiempo cuando sea relevante, ayudas, evidencia y explicación posterior. Este protocolo conserva tanto éxitos como fallos: eliminar los fallos falsearía precisamente la robustez que intenta comprobar.\n\n## Accesibilidad y equivalencia\n\n- **Operación completa con teclado:** Todas las acciones, estados y salidas son alcanzables, visibles y ordenadas sin puntero. Pasa cuando: Sin trampa de foco. Nombre y estado accesibles. Orden de foco coherente.\n- **Texto ampliado y redistribución:** El contenido sigue siendo legible y operable con ampliación y ventanas estrechas. Pasa cuando: Sin solapamiento. Sin pérdida de controles o texto. Lectura en una columna útil cuando sea necesario.\n- **Contraste y señales no basadas solo en color:** Estado, autoridad, riesgo y resultado conservan texto o forma además del color. Pasa cuando: Contraste suficiente. Color no es la única señal. Foco visible.\n- **Movimiento reducido y estados discretos:** Toda animación esenci"
+  },
+  "whyItMatters": {
+    "es": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables.",
+    "en": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables."
+  },
+  "observableActions": [
+    {
+      "es": "Compara alternativas.",
+      "en": "Compara alternativas."
+    },
+    {
+      "es": "Declara interfaces y riesgos.",
+      "en": "Declara interfaces y riesgos."
+    },
+    {
+      "es": "Define evidencia y criterios de parada.",
+      "en": "Define evidencia y criterios de parada."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.capstone.validation.deferred-retention"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

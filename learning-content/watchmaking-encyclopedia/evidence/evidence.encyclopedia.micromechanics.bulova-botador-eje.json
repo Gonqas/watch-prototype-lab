@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.micromechanics.bulova-botador-eje",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.bulova-botador-eje",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.micromechanics.bulova-botador-eje",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.micromechanics.bulova-botador-eje",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.micromechanics.bulova-botador-eje"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.micromechanics.bulova-botador-eje",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

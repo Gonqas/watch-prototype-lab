@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+  "version": "1.1.0",
+  "title": "Caso TM I: inspección antes de desmontar",
+  "blockIds": [
+    "block.encyclopedia.service-tribology.tm-inspeccion-previa"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.tm-inspeccion-previa"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Caso TM I: inspección antes de desmontar",
+      "en": "Caso TM I: inspección antes de desmontar"
+    },
+    "purpose": {
+      "es": "¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?",
+      "en": "¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Caso TM I: inspección antes de desmontar mediante relaciones causales.",
+        "en": "Explicar Caso TM I: inspección antes de desmontar mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.matriz-posicion-funcion",
+      "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.prueba-incremental",
+      "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.retroceso-de-corona"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.service-tribology.tm-inspeccion-previa.estado-de-entrada",
+      "concept.encyclopedia.service-tribology.tm-inspeccion-previa.inspeccion-funcional",
+      "concept.encyclopedia.service-tribology.tm-inspeccion-previa.registro-de-discrepancia"
+    ],
+    "sourceIds": [
+      "source.official.tm9-1575.inspection",
+      "source.institutional.awci.standards",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.service-tribology.tm-inspeccion-previa.estado-de-entrada",
+        "concept.encyclopedia.service-tribology.tm-inspeccion-previa.inspeccion-funcional",
+        "concept.encyclopedia.service-tribology.tm-inspeccion-previa.registro-de-discrepancia"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1052,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.service-tribology.tm-inspeccion-previa"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: estado de entrada, inspección funcional, registro de discrepancia.",
+          "en": "Defino con mis palabras: estado de entrada, inspección funcional, registro de discrepancia."
+        },
+        {
+          "es": "Separo en «Caso TM I: inspección antes de desmontar» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Caso TM I: inspección antes de desmontar» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Caso TM I: inspección antes de desmontar» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Caso TM I: inspección antes de desmontar» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Diseña una ficha de recepción aplicable a reloj de pulsera, bolsillo y cronómetro.",
+          "en": "Aplico el criterio a esta variante: Diseña una ficha de recepción aplicable a reloj de pulsera, bolsillo y cronómetro."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Caso TM I: inspección antes de desmontar» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Caso TM I: inspección antes de desmontar» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.service-tribology.tm-inspeccion-previa.estado-de-entrada",
+        "concept.encyclopedia.service-tribology.tm-inspeccion-previa.inspeccion-funcional",
+        "concept.encyclopedia.service-tribology.tm-inspeccion-previa.registro-de-discrepancia"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?",
+          "en": "¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?"
+        },
+        {
+          "es": "¿Qué relación causal de «Caso TM I: inspección antes de desmontar» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Caso TM I: inspección antes de desmontar» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

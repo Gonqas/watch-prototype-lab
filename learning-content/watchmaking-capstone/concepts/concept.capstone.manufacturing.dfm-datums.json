@@ -1,0 +1,68 @@
+{
+  "id": "concept.capstone.manufacturing.dfm-datums",
+  "version": "1.0.0",
+  "title": {
+    "es": "Diseño para fabricar, medir y revisar",
+    "en": "Diseño para fabricar, medir y revisar"
+  },
+  "summary": {
+    "es": "¿Cómo convertir diseño para fabricar, medir y revisar en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir diseño para fabricar, medir y revisar en un proceso seguro, medible y revisable?"
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.capstone.manufacturing.case"
+  ],
+  "competencyIds": [
+    "competency.capstone.manufacturing.dfm-datums"
+  ],
+  "movementIds": [],
+  "subsystem": "manufacturing-dfm-datums",
+  "routeIds": [
+    "route.capstone.manufacturing-finishing"
+  ],
+  "activityIds": [
+    "activity.capstone.manufacturing.dfm-datums"
+  ],
+  "sourceIds": [
+    "source.iso.286-1",
+    "source.iso.1101",
+    "source.iso.21920-1",
+    "source.iso.14253-1"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Cómo convertir diseño para fabricar, medir y revisar en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir diseño para fabricar, medir y revisar en un proceso seguro, medible y revisable?"
+  },
+  "technicalLanguage": {
+    "es": "## Qué problema resuelve\n\nConvertir intención funcional en datums, características críticas, tolerancias justificadas y una secuencia verificable. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Diseño para fabricar, medir y revisar**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Definir función e interfaces.** Fijar qué debe hacer la pieza y con qué se relaciona. Entrada: Necesidad o pliego. Salida verificable: Mapa de interfaces y características críticas.\n2. **Elegir referencias y secuencia.** Evitar cadenas de cota contradictorias y pérdida de referencias. Entrada: Mapa funcional. Salida verificable: Plan de datums, operaciones y control.\n3. **Revisar dibujo y regla de decisión.** Comprobar especificación, verificabilidad y aceptación. Entrada: Plan preliminar. Salida verificable: Dibujo revisado y plan de inspección.\n\nRevisa la secuencia de **Definir función e interfaces** a **Revisar dibujo y regla de decisión** también de atrás hacia delante. Para aceptar el resultado final de diseño para fabricar, medir y revisar, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿Qué propiedades funcionales, de proceso, corrosión y acabado exige la pieza?\n\n- **Datum funcional primario:** Posición de interfaces. Repetibilidad de sujeción. Coherencia de inspección.\n\n- **Requisito:** Cada tolerancia debe responder a una función o riesgo. **Verificación:** Instrumento, estrategia y regla de aceptación declarados antes de fabricar.\n\nSelecciona el material de **Diseño para fabricar, medir y revisar** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Cortes, virutas y proyección de partículas (serious):** Protección ocular adecuada. Retirada de viruta con útil, nunca con la mano. Desbarbado y orden del puesto. Detenerse si: Pantalla o protección ocular ausente. Viruta enredada con la máquina en marcha.\n- **Atrapamiento en maquinaria rotativa (critical):** Formación presencial y resguardos. Sujeción verificada y zona despejada. Nunca usar guantes junto a",
+    "en": "## Qué problema resuelve\n\nConvertir intención funcional en datums, características críticas, tolerancias justificadas y una secuencia verificable. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Diseño para fabricar, medir y revisar**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Definir función e interfaces.** Fijar qué debe hacer la pieza y con qué se relaciona. Entrada: Necesidad o pliego. Salida verificable: Mapa de interfaces y características críticas.\n2. **Elegir referencias y secuencia.** Evitar cadenas de cota contradictorias y pérdida de referencias. Entrada: Mapa funcional. Salida verificable: Plan de datums, operaciones y control.\n3. **Revisar dibujo y regla de decisión.** Comprobar especificación, verificabilidad y aceptación. Entrada: Plan preliminar. Salida verificable: Dibujo revisado y plan de inspección.\n\nRevisa la secuencia de **Definir función e interfaces** a **Revisar dibujo y regla de decisión** también de atrás hacia delante. Para aceptar el resultado final de diseño para fabricar, medir y revisar, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿Qué propiedades funcionales, de proceso, corrosión y acabado exige la pieza?\n\n- **Datum funcional primario:** Posición de interfaces. Repetibilidad de sujeción. Coherencia de inspección.\n\n- **Requisito:** Cada tolerancia debe responder a una función o riesgo. **Verificación:** Instrumento, estrategia y regla de aceptación declarados antes de fabricar.\n\nSelecciona el material de **Diseño para fabricar, medir y revisar** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Cortes, virutas y proyección de partículas (serious):** Protección ocular adecuada. Retirada de viruta con útil, nunca con la mano. Desbarbado y orden del puesto. Detenerse si: Pantalla o protección ocular ausente. Viruta enredada con la máquina en marcha.\n- **Atrapamiento en maquinaria rotativa (critical):** Formación presencial y resguardos. Sujeción verificada y zona despejada. Nunca usar guantes junto a"
+  },
+  "whyItMatters": {
+    "es": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables.",
+    "en": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables."
+  },
+  "observableActions": [
+    {
+      "es": "Compara alternativas.",
+      "en": "Compara alternativas."
+    },
+    {
+      "es": "Declara interfaces y riesgos.",
+      "en": "Declara interfaces y riesgos."
+    },
+    {
+      "es": "Define evidencia y criterios de parada.",
+      "en": "Define evidencia y criterios de parada."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.capstone.manufacturing.case"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.atlas-restoration-design.identidad-y-comparacion",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.atlas-restoration-design.identidad-y-comparacion",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.atlas-restoration-design.identidad-y-comparacion",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.atlas-restoration-design.identidad-y-comparacion",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.atlas-restoration-design.identidad-y-comparacion"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.atlas-restoration-design.identidad-y-comparacion",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

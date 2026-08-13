@@ -1,0 +1,248 @@
+{
+  "id": "lesson.mechanical.keyless",
+  "version": "0.5.0",
+  "title": "Cuerda y puesta en hora",
+  "blockIds": [
+    "block.mechanical.theory.setting",
+    "block.mechanical.keyless"
+  ],
+  "activityIds": [
+    "activity.mechanical.reconstruct-crown-states",
+    "activity.mechanical.operate-winding-setting"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Cuerda y puesta en hora",
+      "en": "Cuerda y puesta en hora"
+    },
+    "purpose": {
+      "es": "Reconstruir estados de corona sin atribuir una disposición universal.",
+      "en": "Reconstruir estados de corona sin atribuir una disposición universal."
+    },
+    "objectives": [
+      {
+        "es": "Predecir y manipular una relación mecánica.",
+        "en": "Predecir y manipular una relación mecánica."
+      },
+      {
+        "es": "Explicar el resultado con fórmula o estado.",
+        "en": "Explicar el resultado con fórmula o estado."
+      },
+      {
+        "es": "Declarar límites y restaurar.",
+        "en": "Declarar límites y restaurar."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.mechanical.explain-motion-works"
+    ],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.mechanical.explain-keyless"
+    ],
+    "sourceIds": [
+      "source.horology.private-book.movement-design",
+      "source.horology.original-mechanical-foundations",
+      "source.external.ciechanowski-mechanical-watch",
+      "source.external.timezone-illustrated-glossary",
+      "source.external.hodinkee-watch101",
+      "source.horology.private-book.wheels-pinions"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.keyless"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Reconstruir estados de corona sin atribuir una disposición universal.",
+        "en": "Reconstruir estados de corona sin atribuir una disposición universal."
+      },
+      "visibleConcept": {
+        "es": "Laboratorio keyless con estados, relaciones y resultados declarados.",
+        "en": "Laboratorio keyless con estados, relaciones y resultados declarados."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "fixture.conceptual.mechanical-chain",
+        "fixture.miyota.8215.structural"
+      ],
+      "involvedSelectors": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "keyless"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "initialState": {
+        "cameraIntent": "Vista estable del subsistema conceptual.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [
+        "mainspring",
+        "barrel",
+        "train",
+        "escapement",
+        "oscillator",
+        "motion-works",
+        "indication"
+      ],
+      "rotationDirections": [
+        "Dirección derivada de cada relación externa o interna."
+      ],
+      "labels": [
+        "entrada",
+        "salida",
+        "estado",
+        "fuente",
+        "G/K/P",
+        "limitación"
+      ],
+      "arrows": [
+        "flujo energético y relación cinemática derivados del mismo grafo"
+      ],
+      "animations": [
+        "timeline pausado, scrub y pasos discretos; reduced motion equivalente"
+      ],
+      "timelineIntent": "Observar, predecir, ejecutar, comparar, explicar, guardar y restaurar.",
+      "userInteraction": "Selección y acciones; teclado completo y sin arrastre obligatorio.",
+      "observableResult": {
+        "es": "El laboratorio produce un estado y un cálculo reproducibles sin alterar el proyecto técnico original.",
+        "en": "El laboratorio produce un estado y un cálculo reproducibles sin alterar el proyecto técnico original."
+      },
+      "successCriterion": {
+        "es": "Resultado correcto para las entradas declaradas, explicación de límites y restauración.",
+        "en": "Resultado correcto para las entradas declaradas, explicación de límites y restauración."
+      },
+      "restoration": {
+        "es": "Restaurar configuración, bloqueos, fallos, timeline y vista.",
+        "en": "Restaurar configuración, bloqueos, fallos, timeline y vista."
+      },
+      "textualAlternative": {
+        "es": "Entidades, relaciones, fórmulas, entradas, salidas y fases en orden equivalente.",
+        "en": "Entidades, relaciones, fórmulas, entradas, salidas y fases en orden equivalente."
+      },
+      "reducedMotionAlternative": {
+        "es": "Estados discretos y fases numeradas con idéntica evaluación.",
+        "en": "Estados discretos y fases numeradas con idéntica evaluación."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "unknownData": [
+        "geometría interna real",
+        "pérdidas reales",
+        "par real",
+        "tolerancias",
+        "conteos de dientes 8215 no documentados",
+        "lubricación"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.mechanical.keyless"
+      ]
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.explain-keyless"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 30,
+      "minimumReadingWords": 1617,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.mechanical.reconstruct-crown-states",
+        "activity.mechanical.operate-winding-setting"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Puedo distinguir selección axial de la tija y transmisión rotatoria de la corona.",
+          "en": "Puedo distinguir selección axial de la tija y transmisión rotatoria de la corona."
+        },
+        {
+          "es": "Puedo recorrer por separado la rama de cuerda y la rama de puesta en hora.",
+          "en": "Puedo recorrer por separado la rama de cuerda y la rama de puesta en hora."
+        },
+        {
+          "es": "Puedo explicar la función de la fricción de minutería sin generalizar una arquitectura concreta.",
+          "en": "Puedo explicar la función de la fricción de minutería sin generalizar una arquitectura concreta."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de abrir el laboratorio, escribe una predicción causal y una limitación del modelo que no debes olvidar.",
+        "en": "Before opening the lab, write one causal prediction and one model limitation you must not forget."
+      }
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.mechanical.explain-keyless"
+      ],
+      "reinforcesConceptIds": [
+        "concept.mechanical.explain-motion-works"
+      ],
+      "bridgeConceptIds": [
+        "concept.mechanical.explain-motion-works"
+      ]
+    }
+  }
+}

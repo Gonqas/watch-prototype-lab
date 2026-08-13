@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+  "version": "1.1.0",
+  "title": "Tourbillon, carrusel y promedio posicional",
+  "blockIds": [
+    "block.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Tourbillon, carrusel y promedio posicional",
+      "en": "Tourbillon, carrusel y promedio posicional"
+    },
+    "purpose": {
+      "es": "¿Qué error intentan promediar los reguladores rotatorios y qué no corrigen?",
+      "en": "¿Qué error intentan promediar los reguladores rotatorios y qué no corrigen?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Tourbillon, carrusel y promedio posicional mediante relaciones causales.",
+        "en": "Explicar Tourbillon, carrusel y promedio posicional mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.error-posicional",
+      "concept.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.poising-estatico",
+      "concept.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.poising-dinamico"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.jaula",
+      "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.periodo-de-rotacion",
+      "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.promedio-posicional"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch07",
+      "source.private.daniels.escapements",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.jaula",
+        "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.periodo-de-rotacion",
+        "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.promedio-posicional"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1085,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: jaula, periodo de rotación, promedio posicional.",
+          "en": "Defino con mis palabras: jaula, periodo de rotación, promedio posicional."
+        },
+        {
+          "es": "Sigo «Tourbillon, carrusel y promedio posicional» desde accionar jaula hasta mantener errores no correlacionados y explico cada enlace.",
+          "en": "Sigo «Tourbillon, carrusel y promedio posicional» desde accionar jaula hasta mantener errores no correlacionados y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Tourbillon, carrusel y promedio posicional» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Tourbillon, carrusel y promedio posicional» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Compara una arquitectura fija y otra rotatoria mediante presupuesto de error.",
+          "en": "Aplico el criterio a esta variante: Compara una arquitectura fija y otra rotatoria mediante presupuesto de error."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Tourbillon, carrusel y promedio posicional» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Tourbillon, carrusel y promedio posicional» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.jaula",
+        "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.periodo-de-rotacion",
+        "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.promedio-posicional"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué error intentan promediar los reguladores rotatorios y qué no corrigen?",
+          "en": "¿Qué error intentan promediar los reguladores rotatorios y qué no corrigen?"
+        },
+        {
+          "es": "¿Qué relación causal de «Tourbillon, carrusel y promedio posicional» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Tourbillon, carrusel y promedio posicional» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

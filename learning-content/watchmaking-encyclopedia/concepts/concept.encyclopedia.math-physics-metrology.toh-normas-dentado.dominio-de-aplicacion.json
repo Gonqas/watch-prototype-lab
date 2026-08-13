@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.math-physics-metrology.toh-normas-dentado.dominio-de-aplicacion",
+  "version": "1.1.0",
+  "title": {
+    "es": "dominio de aplicación",
+    "en": "dominio de aplicación"
+  },
+  "summary": {
+    "es": "Conjunto de dientes, perfiles y condiciones para los que una expresión es válida.",
+    "en": "Conjunto de dientes, perfiles y condiciones para los que una expresión es válida."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.cadena-de-tolerancias",
+    "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.capacidad-de-proceso",
+    "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.modo-de-fallo"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.toh-normas-dentado"
+  ],
+  "movementIds": [],
+  "subsystem": "engineering-math",
+  "routeIds": [
+    "route.encyclopedia.math-physics-metrology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.toh-normas-dentado"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch05",
+    "source.private.vba-uhrentechnik",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.math-physics-metrology.toh-normas-dentado"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.math-physics-metrology.toh-normas-dentado",
+  "plainLanguage": {
+    "es": "Conjunto de dientes, perfiles y condiciones para los que una expresión es válida.",
+    "en": "Conjunto de dientes, perfiles y condiciones para los que una expresión es válida."
+  },
+  "technicalLanguage": {
+    "es": "dominio de aplicación se interpreta mediante la cadena identificar norma → leer símbolos → confirmar unidades → seleccionar caso → calcular → verificar límites y las condiciones declaradas en la unidad.",
+    "en": "dominio de aplicación se interpreta mediante la cadena identificar norma → leer símbolos → confirmar unidades → seleccionar caso → calcular → verificar límites y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se transforma una tabla nhs/nihs en una geometría calculable sin inventar datos?",
+    "en": "Permite explicar y comprobar ¿cómo se transforma una tabla nhs/nihs en una geometría calculable sin inventar datos?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir dominio de aplicación sin circularidad.",
+      "en": "Definir dominio de aplicación sin circularidad."
+    },
+    {
+      "es": "Relacionar dominio de aplicación con una entrada, una interfaz y una salida.",
+      "en": "Relacionar dominio de aplicación con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

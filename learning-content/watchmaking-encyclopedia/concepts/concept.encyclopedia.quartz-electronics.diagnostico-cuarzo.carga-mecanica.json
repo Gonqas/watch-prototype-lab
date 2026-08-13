@@ -1,0 +1,69 @@
+{
+  "id": "concept.encyclopedia.quartz-electronics.diagnostico-cuarzo.carga-mecanica",
+  "version": "1.1.0",
+  "title": {
+    "es": "carga mecánica",
+    "en": "carga mecánica"
+  },
+  "summary": {
+    "es": "Par resistente que el motor y tren deben vencer durante el paso.",
+    "en": "Par resistente que el motor y tren deben vencer durante el paso."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.bobina",
+    "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.estator",
+    "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.rotor-paso-a-paso"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.diagnostico-cuarzo"
+  ],
+  "movementIds": [
+    "miyota-2035"
+  ],
+  "subsystem": "quartz-diagnosis",
+  "routeIds": [
+    "route.encyclopedia.quartz-electronics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.diagnostico-cuarzo"
+  ],
+  "sourceIds": [
+    "source.institutional.awci.standards",
+    "source.official.miyota.2035",
+    "source.external.watchguy-manuals",
+    "source.external.watchguy-repair-blog"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.quartz-electronics.diagnostico-cuarzo"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+  "plainLanguage": {
+    "es": "Par resistente que el motor y tren deben vencer durante el paso.",
+    "en": "Par resistente que el motor y tren deben vencer durante el paso."
+  },
+  "technicalLanguage": {
+    "es": "carga mecánica se interpreta mediante la cadena confirmar síntoma → verificar fuente y contacto → evaluar consumo u oscilación → comprobar pulso y bobina → aislar motor y tren → validar indicación y las condiciones declaradas en la unidad.",
+    "en": "carga mecánica se interpreta mediante la cadena confirmar síntoma → verificar fuente y contacto → evaluar consumo u oscilación → comprobar pulso y bobina → aislar motor y tren → validar indicación y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo localizar la primera función ausente sin sustituir piezas por ensayo?",
+    "en": "Permite explicar y comprobar ¿cómo localizar la primera función ausente sin sustituir piezas por ensayo?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir carga mecánica sin circularidad.",
+      "en": "Definir carga mecánica sin circularidad."
+    },
+    {
+      "es": "Relacionar carga mecánica con una entrada, una interfaz y una salida.",
+      "en": "Relacionar carga mecánica con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

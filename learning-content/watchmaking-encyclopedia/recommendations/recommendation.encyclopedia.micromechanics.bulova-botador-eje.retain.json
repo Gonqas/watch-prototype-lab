@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.micromechanics.bulova-botador-eje.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Pasaporte III: botador y sustitución de eje",
+    "en": "Repasar Pasaporte III: botador y sustitución de eje"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 414,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.micromechanics.bulova-botador-eje"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.micromechanics.bulova-botador-eje"
+  ],
+  "required": false
+}

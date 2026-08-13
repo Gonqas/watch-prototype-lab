@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.bulova-espiral",
+  "version": "1.1.0",
+  "title": "Cuaderno: Pasaporte X: plano, centrado, virola y vibrado de espiral",
+  "description": "¿Qué orden evita corregir frecuencia sobre una espiral geométricamente defectuosa?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Pasaporte X: plano, centrado, virola y vibrado de espiral. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.bulova-espiral.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué orden evita corregir frecuencia sobre una espiral geométricamente defectuosa?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué orden evita corregir frecuencia sobre una espiral geométricamente defectuosa?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.bulova-espiral.answer",
+      "instructionMarkdown": "Explica **Pasaporte X: plano, centrado, virola y vibrado de espiral** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.bulova-espiral.explain",
+          "promptMarkdown": "¿Qué orden evita corregir frecuencia sobre una espiral geométricamente defectuosa?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.bulova-espiral.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.bulova-espiral.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.bulova-espiral.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.bulova-espiral.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.bulova-espiral.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por fotografiar estado y sigue hasta vibrar y verificar.",
+                "en": "Empieza por fotografiar estado y sigue hasta vibrar y verificar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.bulova-espiral.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Primero se documenta y corrige plano y centrado, luego fijación de virola y pitón, libertad y batido; el vibrado compara frecuencia con referencia. Cada doblez altera relaciones vecinas y requiere nueva observación.",
+                "en": "Primero se documenta y corrige plano y centrado, luego fijación de virola y pitón, libertad y batido; el vibrado compara frecuencia con referencia. Cada doblez altera relaciones vecinas y requiere nueva observación."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué orden evita corregir frecuencia sobre una espiral geométricamente defectuosa?",
+              "en": "¿Qué orden evita corregir frecuencia sobre una espiral geométricamente defectuosa?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena fotografiar estado → corregir plano → corregir centrado → fijar virola y pitón → establecer batido → vibrar y verificar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena fotografiar estado → corregir plano → corregir centrado → fijar virola y pitón → establecer batido → vibrar y verificar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.bulova-espiral.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.bulova-espiral.mechanism",
+            "field.encyclopedia.escapements-chronometry.bulova-espiral.evidence",
+            "field.encyclopedia.escapements-chronometry.bulova-espiral.limit",
+            "field.encyclopedia.escapements-chronometry.bulova-espiral.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

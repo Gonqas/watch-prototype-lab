@@ -1,0 +1,142 @@
+{
+  "id": "scene.capstone.manufacturing.dfm-datums",
+  "version": "1.1.0",
+  "title": "Diseño para fabricar, medir y revisar · dossier aplicado",
+  "description": "Workspace documental posterior a la teoría. No simula una pieza, prueba o revisión inexistentes.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Pregunta, fuentes, relaciones, riesgos, criterios y respuesta están disponibles íntegramente como texto estructurado.",
+    "reducedMotionAlternative": "No existe movimiento esencial; el proceso se muestra como estados y relaciones.",
+    "keyboardActions": [
+      "Recorrer campos con Tab.",
+      "Guardar con el control nombrado."
+    ],
+    "colorIndependentCues": [
+      "Estado, autoridad, riesgo y resultado incluyen texto."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "reduced-motion"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.capstone.manufacturing.dfm-datums.boundary",
+      "markdown": "Planificación y validación documental. Sin declaración automática de fabricación, competencia física o liberación.",
+      "accessibleLabel": "Límite de autoridad de la actividad."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.capstone.manufacturing.dfm-datums.respond",
+      "instructionMarkdown": "¿Cómo convertir diseño para fabricar, medir y revisar en un proceso seguro, medible y revisable? Construye un expediente defendible después de estudiar la teoría y las fuentes.",
+      "questions": [
+        {
+          "id": "question.capstone.manufacturing.dfm-datums.response",
+          "promptMarkdown": "Resuelve **Diseño para fabricar, medir y revisar** separando especificación, alternativas, riesgos, verificación y confianza.",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.specification",
+              "label": "Requisitos, hechos y evidencia",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.alternatives",
+              "label": "Alternativas, interfaces y decisión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.risks",
+              "label": "Riesgos, desconocidos y criterio de parada",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.validation",
+              "label": "Plan de verificación y aceptación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza y qué la cambiaría",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo convertir diseño para fabricar, medir y revisar en un proceso seguro, medible y revisable?",
+              "en": "¿Cómo convertir diseño para fabricar, medir y revisar en un proceso seguro, medible y revisable?"
+            },
+            "feedback": {
+              "es": "La respuesta queda pendiente de revisión humana; completarla no prueba fabricación ni validación física.",
+              "en": "La respuesta queda pendiente de revisión humana; completarla no prueba fabricación ni validación física."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.capstone.manufacturing.dfm-datums.response",
+          "requiredFieldIds": [
+            "field.specification",
+            "field.alternatives",
+            "field.risks",
+            "field.validation",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,57 @@
+{
+  "id": "rubric.horology.source-confidence",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.state-source-confidence",
+  "rules": [
+    {
+      "id": "rule.horology.source-confidence.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "La evidencia correcta y completa demuestra la competencia en este módulo; el uso de pistas queda visible."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.horology.source-confidence.demonstrated",
+    "version": "0.2.0",
+    "competencyId": "competency.horology.state-source-confidence",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "decision",
+            "status": "active",
+            "minimumConfidence": 1
+          }
+        },
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "written-response",
+            "status": "active",
+            "minimumConfidence": 1
+          }
+        },
+        {
+          "op": "compare",
+          "metric": "distinct-sessions",
+          "compare": "gte",
+          "value": 2
+        }
+      ]
+    }
+  }
+}

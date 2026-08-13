@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Rotación, inercia, fricción y contacto",
+  "sceneIds": [
+    "scene.encyclopedia.math-physics-metrology.rotacion-friccion-contacto"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.rotacion-friccion-contacto"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.math-physics-metrology.rotacion-friccion-contacto"
+  ],
+  "rubricId": "rubric.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+    "title": {
+      "es": "Explicar y transferir: Rotación, inercia, fricción y contacto",
+      "en": "Explicar y transferir: Rotación, inercia, fricción y contacto"
+    },
+    "description": {
+      "es": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+      "en": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?"
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "mechanics",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.daniels.jewelling",
+      "source.private.daniels.wheels-pinions",
+      "source.private.vba-uhrentechnik"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+        "blockId": "block.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+        "conceptIds": [
+          "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+          "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+          "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Rotación, inercia, fricción y contacto sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Rotación, inercia, fricción y contacto sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Una rueda gira sobre un solo apoyo durante la inspección, pero con el puente montado pierde libertad. Las hipótesis incluyen desalineación de rubíes, pivote doblado, juego axial insuficiente o aceite fuera de lugar. Probar sin puente no replica la condición funcional.",
+          "en": "Una rueda gira sobre un solo apoyo durante la inspección, pero con el puente montado pierde libertad. Las hipótesis incluyen desalineación de rubíes, pivote doblado, juego axial insuficiente o aceite fuera de lugar. Probar sin puente no replica la condición funcional."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+            "en": "Identificar la pregunta: ¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?"
+          },
+          {
+            "es": "Dibujar la secuencia aplicar par → superar fricción estática → acelerar inercia → mantener contacto → disipar energía → alcanzar velocidad.",
+            "en": "Dibujar la secuencia aplicar par → superar fricción estática → acelerar inercia → mantener contacto → disipar energía → alcanzar velocidad."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: velocidad angular; aceleración angular; momento de inercia; coeficiente de fricción; presión de contacto.",
+            "en": "Asignar magnitudes y evidencia: velocidad angular; aceleración angular; momento de inercia; coeficiente de fricción; presión de contacto."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Propón una secuencia de pruebas que separe pivote doblado, rubí desalineado, falta de juego y contaminación sin sustituir piezas al azar.",
+          "en": "Propón una secuencia de pruebas que separe pivote doblado, rubí desalineado, falta de juego y contaminación sin sustituir piezas al azar."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: aplicar par → superar fricción estática → acelerar inercia → mantener contacto → disipar energía → alcanzar velocidad.",
+            "en": "Completa la cadena con las etapas visibles: aplicar par → superar fricción estática → acelerar inercia → mantener contacto → disipar energía → alcanzar velocidad."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+            "en": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Propón una secuencia de pruebas que separe pivote doblado, rubí desalineado, falta de juego y contaminación sin sustituir piezas al azar.",
+            "en": "Propón una secuencia de pruebas que separe pivote doblado, rubí desalineado, falta de juego y contaminación sin sustituir piezas al azar."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Si gira, el apoyo está bien",
+          "en": "Si gira, el apoyo está bien"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Rotación, inercia, fricción y contacto con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Rotación, inercia, fricción y contacto con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Propón una secuencia de pruebas que separe pivote doblado, rubí desalineado, falta de juego y contaminación sin sustituir piezas al azar.",
+        "en": "Propón una secuencia de pruebas que separe pivote doblado, rubí desalineado, falta de juego y contaminación sin sustituir piezas al azar."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena aplicar par → superar fricción estática → acelerar inercia → mantener contacto → disipar energía → alcanzar velocidad, su evidencia y límites.",
+        "en": "La explicación conserva la cadena aplicar par → superar fricción estática → acelerar inercia → mantener contacto → disipar energía → alcanzar velocidad, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Si gira, el apoyo está bien».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Si gira, el apoyo está bien»."
+      },
+      "causalQuestion": {
+        "es": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+        "en": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Interpretar rugosidad baja como forma geométrica correcta. de Aplicar aceite para ocultar un problema de alineación o juego..",
+        "en": "Busca evidencia para distinguir Interpretar rugosidad baja como forma geométrica correcta. de Aplicar aceite para ocultar un problema de alineación o juego.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.math-physics-metrology.rotacion-friccion-contacto"
+      ],
+      "transferPrompt": {
+        "es": "Propón una secuencia de pruebas que separe pivote doblado, rubí desalineado, falta de juego y contaminación sin sustituir piezas al azar.",
+        "en": "Propón una secuencia de pruebas que separe pivote doblado, rubí desalineado, falta de juego y contaminación sin sustituir piezas al azar."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+        "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+          "en": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?"
+        },
+        {
+          "es": "¿Qué relación causal de «Rotación, inercia, fricción y contacto» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Rotación, inercia, fricción y contacto» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

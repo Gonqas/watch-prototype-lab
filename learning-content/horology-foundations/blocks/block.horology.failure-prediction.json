@@ -1,0 +1,54 @@
+{
+  "id": "block.horology.failure-prediction",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Predicción prudente de interrupciones",
+  "bodyMarkdown": "## Propósito\n\nUsar las cadenas funcionales para anticipar un efecto observable, formular una hipótesis y elegir una comprobación no destructiva sin afirmar una avería real.\n\n## Conocimientos previos\n\nSe reconocen los subsistemas de cuarzo y mecánico, sus relaciones y los límites de una comparación funcional.\n\n## Objetivos observables\n\nDistinguir síntoma, hipótesis y conclusión; localizar el subsistema afectado; indicar qué dato falta; y proponer una comprobación no destructiva adecuada al nivel de información disponible.\n\n## Explicación principal\n\nUn síntoma es algo observado: por ejemplo, la indicación no avanza en la simulación. Una hipótesis propone una causa posible: la fuente podría estar ausente o una etapa podría estar interrumpida. Una conclusión requiere comprobaciones suficientes. Saltar del síntoma a una causa única borra alternativas y puede inducir una intervención innecesaria.\n\nEl mapa funcional permite preguntar hacia atrás. Si las agujas no avanzan, se revisa si la indicación está libre, si la transmisión recibe movimiento, si la conversión actúa, si el control produce la secuencia y si la fuente está disponible. En mecánico se pregunta por la energía del muelle, la transmisión, el estado funcional del escape y la oscilación. El orden no reemplaza un procedimiento de taller: organiza el razonamiento inicial.\n\nLos casos del módulo son simbólicos: pila agotada, bobina interrumpida, rotor bloqueado, rueda ausente o fuera de posición, muelle descargado, escape bloqueado, pivote fuera de apoyo y agujas rozando. La escena produce un estado observable controlado, pero no simula resistencia eléctrica, fricción, desgaste, choque ni lubricación. Cada caso evita simular una física no validada y puede restaurarse.\n\nUna comprobación no destructiva busca información antes de desmontar o modificar. Puede consistir en observar si las agujas se rozan, consultar una fuente aplicable, verificar el estado declarado de la fuente con un método apropiado o confirmar visualmente si una pieza ocupa su apoyo. Esta lección no enseña a aplicar instrumentos ni fija valores; solo exige elegir una comprobación coherente y declarar qué dato falta.\n\nLa confianza también forma parte de la respuesta. Una hipótesis apoyada únicamente por un síntoma general debe tener menos confianza que una afirmación respaldada por varias observaciones independientes. Aumentar confianza exige nueva evidencia, no repetir la misma suposición.\n\n## Explicación visual\n\nLa escena F permite activar una interrupción cada vez sobre los modelos conceptuales y, cuando procede, sobre las vistas estructurales. La ruta cambia a bloqueada o incompleta mediante patrón, icono y texto. La alternativa accesible enumera estado inicial, cambio, entidades afectadas, consecuencia y opciones disponibles. La opción de movimiento reducido usa pasos discretos.\n\n## Vocabulario\n\nUsamos hipótesis, inferencia, procedencia, pivote, rubí y transmisión. Bloqueado describe el estado simbólico de una relación en la escena; no certifica el fallo físico de una pieza.\n\n## Fuentes\n\nLos casos son simulaciones educativas originales. Las identidades que aparezcan en 2035 o 8215 se remiten a fuentes oficiales, pero ninguna fuente se utiliza para fingir una causa medida en una unidad concreta.\n\n## Ejemplo\n\nSíntoma: las agujas no avanzan. Hipótesis: podrían rozarse. Dato faltante: si existe contacto entre ellas o con la esfera. Comprobación: observar el espacio y el movimiento desde un ángulo adecuado, sin forzar. Conclusión: solo después de observar contacto podría afirmarse que el roce está presente en esa unidad.\n\n## Errores habituales\n\nLlamar diagnóstico a una animación; confundir correlación con causa; elegir una prueba destructiva antes de observar; aumentar confianza sin evidencia; o tratar desconocido como respuesta incorrecta.\n\n## Actividad\n\nPredice dos interrupciones, selecciona el subsistema afectado y completa una justificación con síntoma, hipótesis, dato faltante, comprobación y confianza. La explicación abierta se registra, mientras los componentes estructurados se evalúan de forma comprobable automáticamente.\n\n## Ayuda después de responder\n\nLa ayuda separa los campos y señala cuál mezcla hipótesis con conclusión. Las pistas avanzan desde la orientación general hasta una explicación posterior al intento.\n\n## Evidencia\n\nSe guardan predicción, subsistema, comprobación, confianza, fuentes, pistas y texto de justificación. El texto no se califica por coincidencia exacta; si requiere juicio humano queda marcado para revisión.\n\n## Criterio de éxito\n\nPredecir correctamente dos consecuencias, localizar sus subsistemas y justificar una hipótesis sin presentarla como conclusión.\n\n## Resumen\n\nLa cadena funcional permite formular hipótesis disciplinadas. Una simulación enseña relaciones, pero no diagnostica un reloj físico.\n\n## Siguiente conexión\n\nEl módulo termina con una recomendación de retención futura: aplicar el mismo razonamiento en otro contexto, con 2035, 8215, un despiece o un síntoma nuevo.",
+  "claims": [
+    {
+      "id": "claim.horology.symbolic-interruption",
+      "claimType": "hypothesis",
+      "classification": "hypothesis",
+      "claim": "Una interrupción simbólica permite anticipar una consecuencia funcional, pero no establece la causa de un síntoma en un reloj físico.",
+      "falsificationCondition": "La afirmación dejaría de ser válida si la actividad presentase la simulación como medición o diagnóstico de una unidad real.",
+      "method": "Simulación educativa declarativa y razonamiento por subsistemas",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K1",
+        "physics": "P0",
+        "limitations": [
+          "Sin fricción, corriente, desgaste, lubricación ni validación física."
+        ]
+      },
+      "reliability": "high",
+      "inputFingerprint": "simulation:horology-interruptions:0.1.0",
+      "recordedAt": "2026-07-23T15:30:00.000Z",
+      "methodVersion": "0.1.0",
+      "sources": [
+        {
+          "id": "source.horology.original-functional-map",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Blueprint editorial · primer módulo funcional"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-23",
+          "privateUse": true,
+          "supportedClaim": "Estructura pedagógica, escenas, actividades y explicaciones originales del primer módulo.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "worked-example",
+    "conceptIds": [
+      "concept.horology.system-interruption"
+    ],
+    "estimatedMinutes": 15,
+    "userPaced": true
+  }
+}

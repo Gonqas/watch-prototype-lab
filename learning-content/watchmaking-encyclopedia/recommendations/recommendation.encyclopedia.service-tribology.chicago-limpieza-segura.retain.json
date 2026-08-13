@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.service-tribology.chicago-limpieza-segura.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Expediente Chicago V: limpieza histórica y sustitución segura",
+    "en": "Repasar Expediente Chicago V: limpieza histórica y sustitución segura"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 410,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.service-tribology.chicago-limpieza-segura"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.service-tribology.chicago-limpieza-segura"
+  ],
+  "required": false
+}

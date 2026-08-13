@@ -1,0 +1,70 @@
+{
+  "id": "concept.capstone.manufacturing.decoration",
+  "version": "1.0.0",
+  "title": {
+    "es": "Acabados y decoración funcionalmente seguros",
+    "en": "Acabados y decoración funcionalmente seguros"
+  },
+  "summary": {
+    "es": "¿Cómo convertir acabados y decoración funcionalmente seguros en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir acabados y decoración funcionalmente seguros en un proceso seguro, medible y revisable?"
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.capstone.manufacturing.micromechanics"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.capstone.manufacturing.micromechanics"
+  ],
+  "competencyIds": [
+    "competency.capstone.manufacturing.decoration"
+  ],
+  "movementIds": [],
+  "subsystem": "manufacturing-decoration",
+  "routeIds": [
+    "route.capstone.manufacturing-finishing"
+  ],
+  "activityIds": [
+    "activity.capstone.manufacturing.decoration"
+  ],
+  "sourceIds": [
+    "source.iso.21920-1",
+    "source.iso.3160-2",
+    "source.osha.metalworking-fluids",
+    "source.private.horologia-book"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Cómo convertir acabados y decoración funcionalmente seguros en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir acabados y decoración funcionalmente seguros en un proceso seguro, medible y revisable?"
+  },
+  "technicalLanguage": {
+    "es": "## Qué problema resuelve\n\nElegir textura, dirección, secuencia, reservas y protección sin degradar datums, ajustes, espesores o limpieza. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Acabados y decoración funcionalmente seguros**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Especificar acabado y límites.** Definir intención, zonas, textura, dirección y muestra. Entrada: Pieza diseñada. Salida verificable: Mapa de acabado revisado.\n2. **Preparar superficie y enmascarar.** Eliminar defectos compatibles y proteger superficies funcionales. Entrada: Pieza mecanizada. Salida verificable: Superficie preparada.\n3. **Aplicar, limpiar e inspeccionar.** Crear acabado repetible sin contaminación ni redondeo funcional. Entrada: Superficie preparada. Salida verificable: Pieza decorada y aceptada.\n\nRevisa la secuencia de **Especificar acabado y límites** a **Aplicar, limpiar e inspeccionar** también de atrás hacia delante. Para aceptar el resultado final de acabados y decoración funcionalmente seguros, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿El material, recubrimiento y estado superficial aceptan el proceso y la limpieza sin degradación?\n\n- **Superficies funcionales protegidas:** Asientos y roscas. Alojamientos y planos de apoyo. Bordes y espesores críticos.\n\n- **Requisito:** El material retirado o añadido no invalida ajustes ni geometría. **Verificación:** Medición antes/después o muestra de proceso cuando sea necesario.\n\nSelecciona el material de **Acabados y decoración funcionalmente seguros** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Polvo y partículas de abrasión (serious):** Extracción localizada compatible con el material. Protección ocular y respiratoria definida por evaluación de riesgos. Separar abrasivos por material y acabado. Detenerse si: Polvo suspendido sin extracción. Material o recubrimiento no identificado.\n- **Químicos, baños y recubrimientos (critical):** Ficha de seguridad, compatibilidad, ventilación y gesti",
+    "en": "## Qué problema resuelve\n\nElegir textura, dirección, secuencia, reservas y protección sin degradar datums, ajustes, espesores o limpieza. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Acabados y decoración funcionalmente seguros**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Especificar acabado y límites.** Definir intención, zonas, textura, dirección y muestra. Entrada: Pieza diseñada. Salida verificable: Mapa de acabado revisado.\n2. **Preparar superficie y enmascarar.** Eliminar defectos compatibles y proteger superficies funcionales. Entrada: Pieza mecanizada. Salida verificable: Superficie preparada.\n3. **Aplicar, limpiar e inspeccionar.** Crear acabado repetible sin contaminación ni redondeo funcional. Entrada: Superficie preparada. Salida verificable: Pieza decorada y aceptada.\n\nRevisa la secuencia de **Especificar acabado y límites** a **Aplicar, limpiar e inspeccionar** también de atrás hacia delante. Para aceptar el resultado final de acabados y decoración funcionalmente seguros, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿El material, recubrimiento y estado superficial aceptan el proceso y la limpieza sin degradación?\n\n- **Superficies funcionales protegidas:** Asientos y roscas. Alojamientos y planos de apoyo. Bordes y espesores críticos.\n\n- **Requisito:** El material retirado o añadido no invalida ajustes ni geometría. **Verificación:** Medición antes/después o muestra de proceso cuando sea necesario.\n\nSelecciona el material de **Acabados y decoración funcionalmente seguros** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Polvo y partículas de abrasión (serious):** Extracción localizada compatible con el material. Protección ocular y respiratoria definida por evaluación de riesgos. Separar abrasivos por material y acabado. Detenerse si: Polvo suspendido sin extracción. Material o recubrimiento no identificado.\n- **Químicos, baños y recubrimientos (critical):** Ficha de seguridad, compatibilidad, ventilación y gesti"
+  },
+  "whyItMatters": {
+    "es": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables.",
+    "en": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables."
+  },
+  "observableActions": [
+    {
+      "es": "Compara alternativas.",
+      "en": "Compara alternativas."
+    },
+    {
+      "es": "Declara interfaces y riesgos.",
+      "en": "Declara interfaces y riesgos."
+    },
+    {
+      "es": "Define evidencia y criterios de parada.",
+      "en": "Define evidencia y criterios de parada."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.capstone.manufacturing.dfm-datums"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

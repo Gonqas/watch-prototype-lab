@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Expediente Chicago III: selección de muelle real",
+    "en": "Repasar Expediente Chicago III: selección de muelle real"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 407,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion"
+  ],
+  "required": false
+}

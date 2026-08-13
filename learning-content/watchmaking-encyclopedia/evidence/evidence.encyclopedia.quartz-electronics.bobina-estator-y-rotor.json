@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.quartz-electronics.bobina-estator-y-rotor"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

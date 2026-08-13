@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.cases-water.chicago-caja-corona-tija.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Expediente Chicago I: caja, corona, tubo y tija",
+    "en": "Repasar Expediente Chicago I: caja, corona, tubo y tija"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 412,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.cases-water.chicago-caja-corona-tija"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.cases-water.chicago-caja-corona-tija"
+  ],
+  "required": false
+}

@@ -1,0 +1,69 @@
+{
+  "id": "concept.advanced.service-clean-lube",
+  "version": "1.0.0",
+  "title": {
+    "es": "Limpieza y lubricación como decisiones documentadas",
+    "en": "Limpieza y lubricación como decisiones documentadas"
+  },
+  "summary": {
+    "es": "¿Qué material, superficie, producto, cantidad y fuente justifican cada proceso?",
+    "en": "¿Qué material, superficie, producto, cantidad y fuente justifican cada proceso?"
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.advanced.service-disassembly"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.advanced.service-disassembly",
+    "concept.advanced.service-assembly"
+  ],
+  "competencyIds": [
+    "competency.advanced.service-clean-lube"
+  ],
+  "movementIds": [],
+  "subsystem": "service",
+  "routeIds": [
+    "route.advanced.service-method"
+  ],
+  "activityIds": [
+    "activity.advanced.service-clean-lube"
+  ],
+  "sourceIds": [
+    "source.eta.6497-2.communication",
+    "source.eta.7750.communication"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Qué material, superficie, producto, cantidad y fuente justifican cada proceso?",
+    "en": "¿Qué material, superficie, producto, cantidad y fuente justifican cada proceso?"
+  },
+  "technicalLanguage": {
+    "es": "Limpiar no significa someter todo al mismo baño. Materiales, adhesivos, lacas, espirales, piedras pegadas, esferas y componentes electrónicos pueden exigir exclusión o procesos distintos. Lubricar tampoco significa poner aceite donde hay movimiento: cada punto necesita producto, cantidad, método y finalidad. Exceso, ausencia, migración y contaminación cambian el contacto. Sin documentación aplicable, la Academia enseña a marcar el dato como bloqueado.",
+    "en": "Limpiar no significa someter todo al mismo baño. Materiales, adhesivos, lacas, espirales, piedras pegadas, esferas y componentes electrónicos pueden exigir exclusión o procesos distintos. Lubricar tampoco significa poner aceite donde hay movimiento: cada punto necesita producto, cantidad, método y finalidad. Exceso, ausencia, migración y contaminación cambian el contacto. Sin documentación aplicable, la Academia enseña a marcar el dato como bloqueado."
+  },
+  "whyItMatters": {
+    "es": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física.",
+    "en": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física."
+  },
+  "observableActions": [
+    {
+      "es": "Separa hecho, inferencia y desconocido.",
+      "en": "Separa hecho, inferencia y desconocido."
+    },
+    {
+      "es": "Compara relaciones y compromisos.",
+      "en": "Compara relaciones y compromisos."
+    },
+    {
+      "es": "Declara fuentes, riesgos y límites.",
+      "en": "Declara fuentes, riesgos y límites."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.advanced.service-assembly"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "rubric.horology.mechanical-chain",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.explain-mechanical-energy-chain",
+  "rules": [
+    {
+      "id": "rule.horology.mechanical-chain.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "La evidencia correcta y completa demuestra la competencia en este módulo; el uso de pistas queda visible."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.horology.mechanical-chain.demonstrated",
+    "version": "0.5.0",
+    "competencyId": "competency.horology.explain-mechanical-energy-chain",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "sequence",
+            "status": "active",
+            "minimumConfidence": 1
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

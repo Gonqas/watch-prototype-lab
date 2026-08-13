@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.history-language.industrializacion-y-familias.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Industrialización, ébauches y familias de calibres",
+    "en": "Repasar Industrialización, ébauches y familias de calibres"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 417,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.history-language.industrializacion-y-familias"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.history-language.industrializacion-y-familias"
+  ],
+  "required": false
+}

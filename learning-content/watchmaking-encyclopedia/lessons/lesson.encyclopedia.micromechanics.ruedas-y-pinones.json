@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.micromechanics.ruedas-y-pinones",
+  "version": "1.1.0",
+  "title": "Fabricación de ruedas, piñones y cortadores",
+  "blockIds": [
+    "block.encyclopedia.micromechanics.ruedas-y-pinones"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.micromechanics.ruedas-y-pinones"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Fabricación de ruedas, piñones y cortadores",
+      "en": "Fabricación de ruedas, piñones y cortadores"
+    },
+    "purpose": {
+      "es": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?",
+      "en": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Fabricación de ruedas, piñones y cortadores mediante relaciones causales.",
+        "en": "Explicar Fabricación de ruedas, piñones y cortadores mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.pivote",
+      "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.hombro",
+      "concept.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.brunido"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.micromechanics.ruedas-y-pinones.fresa-de-modulo",
+      "concept.encyclopedia.micromechanics.ruedas-y-pinones.division-angular",
+      "concept.encyclopedia.micromechanics.ruedas-y-pinones.pinon-de-hojas"
+    ],
+    "sourceIds": [
+      "source.private.daniels.wheels-pinions",
+      "source.private.vba-uhrentechnik",
+      "source.private.daniels.movement-design"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.fresa-de-modulo",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.division-angular",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.pinon-de-hojas"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1151,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.micromechanics.ruedas-y-pinones"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: fresa de módulo, división angular, piñón de hojas.",
+          "en": "Defino con mis palabras: fresa de módulo, división angular, piñón de hojas."
+        },
+        {
+          "es": "Relaciono las operaciones de «Fabricación de ruedas, piñones y cortadores» con características medibles y riesgos de proceso.",
+          "en": "Relaciono las operaciones de «Fabricación de ruedas, piñones y cortadores» con características medibles y riesgos de proceso."
+        },
+        {
+          "es": "Distingo qué parte de «Fabricación de ruedas, piñones y cortadores» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Fabricación de ruedas, piñones y cortadores» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Elige un par rueda-piñón de práctica y produce una hoja de cálculo verificable con unidades, relación, blank, cortador, indexado y pruebas.",
+          "en": "Aplico el criterio a esta variante: Elige un par rueda-piñón de práctica y produce una hoja de cálculo verificable con unidades, relación, blank, cortador, indexado y pruebas."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Fabricación de ruedas, piñones y cortadores» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Fabricación de ruedas, piñones y cortadores» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.fresa-de-modulo",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.division-angular",
+        "concept.encyclopedia.micromechanics.ruedas-y-pinones.pinon-de-hojas"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?",
+          "en": "¿Cómo se transforma una relación cinemática en dientes fabricables y verificables?"
+        },
+        {
+          "es": "¿Qué relación causal de «Fabricación de ruedas, piñones y cortadores» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Fabricación de ruedas, piñones y cortadores» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

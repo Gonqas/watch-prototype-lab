@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.units-scale-resolution",
+  "version": "0.1.0",
+  "title": {
+    "es": "Unidades, escala y resolución"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para declarar magnitud, unidad, escala y capacidad de discriminación sin atribuir exactitud."
+  },
+  "kind": "concept",
+  "knowledgeType": "quantitative",
+  "prerequisiteIds": [
+    "concept.metrology.light-magnification-posture"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.observe-before-measuring"
+  ],
+  "competencyIds": [
+    "competency.metrology.diferenciar-conceptos-metrologicos"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.diferenciar-resolucion-y-precision",
+    "activity.metrology.redondear-sin-inventar-informacion"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a declarar magnitud, unidad, escala y capacidad de discriminación sin atribuir exactitud sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para declarar magnitud, unidad, escala y capacidad de discriminación sin atribuir exactitud."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.precision-accuracy-uncertainty"
+  ],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.history-language.toh-tiempo-escalas.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Tiempo, escalas y calendario civil",
+    "en": "Repasar Tiempo, escalas y calendario civil"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 414,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.history-language.toh-tiempo-escalas"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.history-language.toh-tiempo-escalas"
+  ],
+  "required": false
+}

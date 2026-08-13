@@ -1,0 +1,46 @@
+{
+  "id": "evidence.metrology.identificar-lectura-atipica",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.diferenciar-conceptos-metrologicos",
+  "kind": "artifact",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.activity-metrology-identificar-lectura-atipica",
+    "version": "0.1.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "measurement",
+    "competencyId": "competency.metrology.diferenciar-conceptos-metrologicos",
+    "packageId": "wplab.horology.inspection-metrology",
+    "activityIds": [
+      "activity.metrology.identificar-lectura-atipica"
+    ],
+    "evidenceTemplateId": "evidence.metrology.identificar-lectura-atipica",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "specimenId",
+      "componentId",
+      "imageAssetId",
+      "regionAnnotationId",
+      "instrumentId",
+      "instrumentVerificationId",
+      "readingIds",
+      "measurementSeriesId",
+      "calculation",
+      "uncertainty",
+      "findingId",
+      "confidence",
+      "comparisonId",
+      "proposalId",
+      "hintEventIds",
+      "adaptations"
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "id": "lesson.metrology.instruments",
+  "version": "0.2.0",
+  "title": "Instrumentos",
+  "blockIds": [
+    "block.metrology.instruments"
+  ],
+  "activityIds": [
+    "activity.metrology.seleccionar-instrumento",
+    "activity.metrology.detectar-paralaje"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Instrumentos"
+    },
+    "purpose": {
+      "es": "Comprender y aplicar cómo elegir un instrumento compatible con la característica, el rango y el acceso."
+    },
+    "objectives": [
+      {
+        "es": "Explicar cómo elegir un instrumento compatible con la característica, el rango y el acceso."
+      },
+      {
+        "es": "Reconocer un resultado inválido o insuficiente."
+      },
+      {
+        "es": "Conservar evidencia y alcance."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.metrology.precision-accuracy-uncertainty"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.metrology.instruments"
+    ],
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "guided-practice",
+      "entryCheck": "ungraded-diagnostic",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.metrology.instruments"
+      ],
+      "reinforcesConceptIds": [
+        "concept.metrology.precision-accuracy-uncertainty"
+      ],
+      "bridgeConceptIds": []
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.metrology.instruments"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar tolerancias, exactitudes, calibraciones, diagnósticos ni datos de fabricante."
+        },
+        {
+          "es": "No aprobar propuestas, elevar fidelidad o modificar CAD."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente?"
+        },
+        {
+          "es": "¿Qué método y referencia hacen repetible este resultado?"
+        },
+        {
+          "es": "¿Qué limitación impide generalizarlo?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 678,
+      "requiredSegmentRoles": [
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.metrology.seleccionar-instrumento",
+        "activity.metrology.detectar-paralaje"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Explicar cómo elegir un instrumento compatible con la característica, el rango y el acceso."
+        },
+        {
+          "es": "Reconocer un resultado inválido o insuficiente."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Instrumentos», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    }
+  }
+}

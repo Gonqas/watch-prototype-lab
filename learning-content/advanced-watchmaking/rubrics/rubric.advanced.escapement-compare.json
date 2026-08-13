@@ -1,0 +1,43 @@
+{
+  "id": "rubric.advanced.escapement-compare",
+  "version": "1.0.0",
+  "competencyId": "competency.advanced.escapement-compare",
+  "rules": [
+    {
+      "id": "rule.advanced.escapement-compare.demonstrated",
+      "version": "1.0.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.8,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Escapes: funciones comunes y geometrías no transferibles: una revisión humana confirma causalidad, procedencia, comparación, límites y transferencia."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.advanced.escapement-compare",
+    "version": "1.0.0",
+    "competencyId": "competency.advanced.escapement-compare",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "human-review",
+            "status": "active",
+            "minimumConfidence": 0.8
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

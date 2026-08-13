@@ -1,0 +1,290 @@
+{
+  "id": "route.encyclopedia.math-physics-metrology",
+  "version": "1.1.0",
+  "title": {
+    "es": "Matemáticas, física y metrología para relojería",
+    "en": "Matemáticas, física y metrología para relojería"
+  },
+  "purpose": {
+    "es": "Dar lenguaje cuantitativo al funcionamiento, la medida y la decisión técnica sin esconder hipótesis tras fórmulas.",
+    "en": "Dar lenguaje cuantitativo al funcionamiento, la medida y la decisión técnica sin esconder hipótesis tras fórmulas."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.math-physics-metrology.unidades-y-modelos",
+    "module.encyclopedia.math-physics-metrology.fuerza-par-energia",
+    "module.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+    "module.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+    "module.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad",
+    "module.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+    "module.encyclopedia.math-physics-metrology.toh-normas-dentado",
+    "module.encyclopedia.math-physics-metrology.toh-contar-tren",
+    "module.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+    "module.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.unidades-y-modelos",
+    "competency.encyclopedia.math-physics-metrology.fuerza-par-energia",
+    "competency.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+    "competency.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+    "competency.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad",
+    "competency.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+    "competency.encyclopedia.math-physics-metrology.toh-normas-dentado",
+    "competency.encyclopedia.math-physics-metrology.toh-contar-tren",
+    "competency.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+    "competency.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas"
+  ],
+  "movementIds": [],
+  "difficulty": "introductory",
+  "sourceIds": [
+    "source.official.bipm.vim",
+    "source.private.vba-uhrentechnik",
+    "source.encyclopedia.original-synthesis",
+    "source.private.daniels.mainsprings",
+    "source.private.daniels.movement-design",
+    "source.private.daniels.jewelling",
+    "source.private.daniels.wheels-pinions",
+    "source.private.daniels.balance-spring",
+    "source.external.ciechanowski-mechanical-watch",
+    "source.official.nist.uncertainty",
+    "source.institutional.wostep.watchmaker",
+    "source.private.toh.ch05",
+    "source.private.toh.ch07",
+    "source.private.chicago.33",
+    "source.private.chicago.34",
+    "source.private.chicago.11"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.math-physics-metrology.01",
+        "order": 1,
+        "title": {
+          "es": "Unidades, escalas y análisis dimensional",
+          "en": "Unidades, escalas y análisis dimensional"
+        },
+        "outcome": {
+          "es": "¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?",
+          "en": "¿Cómo detectar una cifra imposible antes de usarla para diseñar, medir o ajustar?"
+        },
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.unidades-y-modelos",
+        "activityId": "activity.encyclopedia.math-physics-metrology.unidades-y-modelos",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.magnitud",
+          "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.orden-de-magnitud",
+          "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.homogeneidad-dimensional"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.math-physics-metrology.02",
+        "order": 2,
+        "title": {
+          "es": "Fuerza, par, trabajo, energía y potencia",
+          "en": "Fuerza, par, trabajo, energía y potencia"
+        },
+        "outcome": {
+          "es": "¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?",
+          "en": "¿Cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?"
+        },
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+        "activityId": "activity.encyclopedia.math-physics-metrology.fuerza-par-energia",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.par",
+          "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.trabajo-mecanico",
+          "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.potencia"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.math-physics-metrology.03",
+        "order": 3,
+        "title": {
+          "es": "Rotación, inercia, fricción y contacto",
+          "en": "Rotación, inercia, fricción y contacto"
+        },
+        "outcome": {
+          "es": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?",
+          "en": "¿Por qué una pieza puede girar libremente en la mano y fallar cuando está montada y cargada?"
+        },
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+        "activityId": "activity.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+          "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+          "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.math-physics-metrology.04",
+        "order": 4,
+        "title": {
+          "es": "Oscilación, frecuencia, resonancia y amortiguamiento",
+          "en": "Oscilación, frecuencia, resonancia y amortiguamiento"
+        },
+        "outcome": {
+          "es": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+          "en": "¿Qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+        },
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+        "activityId": "activity.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+          "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+          "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.math-physics-metrology.05",
+        "order": 5,
+        "title": {
+          "es": "Medición, incertidumbre y trazabilidad",
+          "en": "Medición, incertidumbre y trazabilidad"
+        },
+        "outcome": {
+          "es": "¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?",
+          "en": "¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?"
+        },
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad",
+        "activityId": "activity.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.mensurando",
+          "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.incertidumbre-de-medida",
+          "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.trazabilidad-metrologica"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.math-physics-metrology.06",
+        "order": 6,
+        "title": {
+          "es": "Tolerancias, capacidad, FMEA y fiabilidad",
+          "en": "Tolerancias, capacidad, FMEA y fiabilidad"
+        },
+        "outcome": {
+          "es": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?",
+          "en": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?"
+        },
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+        "activityId": "activity.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.cadena-de-tolerancias",
+          "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.capacidad-de-proceso",
+          "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.modo-de-fallo"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.math-physics-metrology.07",
+        "order": 7,
+        "title": {
+          "es": "Normas, perfiles y lectura de tablas relojeras",
+          "en": "Normas, perfiles y lectura de tablas relojeras"
+        },
+        "outcome": {
+          "es": "¿Cómo se transforma una tabla NHS/NIHS en una geometría calculable sin inventar datos?",
+          "en": "¿Cómo se transforma una tabla NHS/NIHS en una geometría calculable sin inventar datos?"
+        },
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-normas-dentado",
+        "activityId": "activity.encyclopedia.math-physics-metrology.toh-normas-dentado",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.math-physics-metrology.toh-normas-dentado.norma-dimensional",
+          "concept.encyclopedia.math-physics-metrology.toh-normas-dentado.coeficiente-de-perfil",
+          "concept.encyclopedia.math-physics-metrology.toh-normas-dentado.dominio-de-aplicacion"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.math-physics-metrology.08",
+        "order": 8,
+        "title": {
+          "es": "Diseño inverso de un tren de conteo",
+          "en": "Diseño inverso de un tren de conteo"
+        },
+        "outcome": {
+          "es": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?",
+          "en": "¿Cómo se deduce una combinación de dientes desde la frecuencia del regulador y la indicación?"
+        },
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+        "activityId": "activity.encyclopedia.math-physics-metrology.toh-contar-tren",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.math-physics-metrology.toh-contar-tren.relacion-objetivo",
+          "concept.encyclopedia.math-physics-metrology.toh-contar-tren.factorizacion-de-tren",
+          "concept.encyclopedia.math-physics-metrology.toh-contar-tren.restriccion-geometrica"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.math-physics-metrology.09",
+        "order": 9,
+        "title": {
+          "es": "Modelo dinámico del volante-espiral",
+          "en": "Modelo dinámico del volante-espiral"
+        },
+        "outcome": {
+          "es": "¿Qué aproxima el oscilador armónico y dónde deja de describir un volante real?",
+          "en": "¿Qué aproxima el oscilador armónico y dónde deja de describir un volante real?"
+        },
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+        "activityId": "activity.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.math-physics-metrology.toh-oscilador-modelo.inercia-del-volante",
+          "concept.encyclopedia.math-physics-metrology.toh-oscilador-modelo.rigidez-angular",
+          "concept.encyclopedia.math-physics-metrology.toh-oscilador-modelo.amortiguamiento"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.math-physics-metrology.10",
+        "order": 10,
+        "title": {
+          "es": "Expediente Chicago VII: de Watch Master y Time-O-Graph al cronocomparador",
+          "en": "Expediente Chicago VII: de Watch Master y Time-O-Graph al cronocomparador"
+        },
+        "outcome": {
+          "es": "¿Qué principios de señal permanecen aunque cambie el instrumento?",
+          "en": "¿Qué principios de señal permanecen aunque cambie el instrumento?"
+        },
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas",
+        "activityId": "activity.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.traza-de-marcha",
+          "concept.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.beat-error",
+          "concept.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.artefacto-de-captacion"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas"
+    ]
+  }
+}

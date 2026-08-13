@@ -1,0 +1,136 @@
+{
+  "id": "scene.metrology.adoptar-un-valor",
+  "version": "0.2.0",
+  "title": "Adoptar un valor",
+  "description": "Escena textual y accesible que prepara la operación real “Adoptar un valor” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Adoptar un valor. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-adoptar-un-valor.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-adoptar-un-valor.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Adoptar un valor”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-adoptar-un-valor.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Adoptar un valor” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-adoptar-un-valor",
+          "promptMarkdown": "¿Cómo puede una medición mejorar un modelo sin borrar el canon ni convertir una unidad en verdad universal?\n\nEn «Adoptar un valor», elige la conclusión que no excede la evidencia del ejemplo y justifica por qué las otras dos opciones fallan.",
+          "responseKind": "structured-response",
+          "options": [
+            {
+              "id": "option.activity-metrology-adoptar-un-valor.defensible",
+              "label": "El modelo mejora mediante una propuesta trazable y reversible. El alcance de la evidencia determina el alcance del cambio.",
+              "labels": {
+                "es": "El modelo mejora mediante una propuesta trazable y reversible. El alcance de la evidencia determina el alcance del cambio.",
+                "en": "El modelo mejora mediante una propuesta trazable y reversible. El alcance de la evidencia determina el alcance del cambio."
+              }
+            },
+            {
+              "id": "option.activity-metrology-adoptar-un-valor.error-one",
+              "label": "Editar directamente el CAD desde una sola lectura.",
+              "labels": {
+                "es": "Editar directamente el CAD desde una sola lectura.",
+                "en": "Editar directamente el CAD desde una sola lectura."
+              }
+            },
+            {
+              "id": "option.activity-metrology-adoptar-un-valor.error-two",
+              "label": "Promover una medida de unidad a dimensión oficial del calibre.",
+              "labels": {
+                "es": "Promover una medida de unidad a dimensión oficial del calibre.",
+                "en": "Promover una medida de unidad a dimensión oficial del calibre."
+              }
+            }
+          ],
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-adoptar-un-valor.decision",
+              "label": "¿Cómo puede una medición mejorar un modelo sin borrar el canon ni convertir una unidad en verdad universal?",
+              "kind": "choice",
+              "required": true,
+              "optionIds": [
+                "option.activity-metrology-adoptar-un-valor.defensible",
+                "option.activity-metrology-adoptar-un-valor.error-one",
+                "option.activity-metrology-adoptar-un-valor.error-two"
+              ]
+            },
+            {
+              "id": "field.activity-metrology-adoptar-un-valor.justification",
+              "label": "Justifica qué evidencia y qué límite hacen defendible tu elección.",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-adoptar-un-valor.confidence",
+              "label": "Confianza en la decisión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Decide y justifica: ¿Cómo puede una medición mejorar un modelo sin borrar el canon ni convertir una unidad en verdad universal?"
+            },
+            "feedback": {
+              "es": "La conclusión defendible conserva evidencia y alcance: El modelo mejora mediante una propuesta trazable y reversible. El alcance de la evidencia determina el alcance del cambio."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-adoptar-un-valor",
+          "requiredFieldIds": [
+            "field.activity-metrology-adoptar-un-valor.decision",
+            "field.activity-metrology-adoptar-un-valor.justification",
+            "field.activity-metrology-adoptar-un-valor.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

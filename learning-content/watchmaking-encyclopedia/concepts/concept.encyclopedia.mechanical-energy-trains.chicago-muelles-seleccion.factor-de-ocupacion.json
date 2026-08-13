@@ -1,0 +1,67 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion.factor-de-ocupacion",
+  "version": "1.1.0",
+  "title": {
+    "es": "factor de ocupación",
+    "en": "factor de ocupación"
+  },
+  "summary": {
+    "es": "Proporción del barrilete ocupada por el muelle enrollado bajo un modelo declarado.",
+    "en": "Proporción del barrilete ocupada por el muelle enrollado bajo un modelo declarado."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.canon-de-minutos",
+    "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.rueda-de-minuteria",
+    "concept.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.par-de-arrastre"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion"
+  ],
+  "movementIds": [],
+  "subsystem": "mainspring",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion"
+  ],
+  "sourceIds": [
+    "source.private.chicago.5",
+    "source.private.chicago.7",
+    "source.private.toh.ch04",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion",
+  "plainLanguage": {
+    "es": "Proporción del barrilete ocupada por el muelle enrollado bajo un modelo declarado.",
+    "en": "Proporción del barrilete ocupada por el muelle enrollado bajo un modelo declarado."
+  },
+  "technicalLanguage": {
+    "es": "factor de ocupación se interpreta mediante la cadena buscar referencia → identificar arquitectura → medir barrilete y muelle → calcular ocupación → verificar ganchos → probar bajo protocolo y las condiciones declaradas en la unidad.",
+    "en": "factor de ocupación se interpreta mediante la cadena buscar referencia → identificar arquitectura → medir barrilete y muelle → calcular ocupación → verificar ganchos → probar bajo protocolo y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se elige un muelle cuando faltan referencias de pieza?",
+    "en": "Permite explicar y comprobar ¿cómo se elige un muelle cuando faltan referencias de pieza?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir factor de ocupación sin circularidad.",
+      "en": "Definir factor de ocupación sin circularidad."
+    },
+    {
+      "es": "Relacionar factor de ocupación con una entrada, una interfaz y una salida.",
+      "en": "Relacionar factor de ocupación con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

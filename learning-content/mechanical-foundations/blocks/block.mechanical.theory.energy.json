@@ -1,0 +1,127 @@
+{
+  "id": "block.mechanical.theory.energy",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Teoría previa · energy",
+  "bodyMarkdown": "# Teoría fundamental · energía y barrilete\n\n## Antes de empezar\n\nUn reloj mecánico no crea movimiento: administra una cantidad finita de energía. Para entenderlo conviene separar cuatro ideas que suelen mezclarse. **Energía** es la capacidad de producir trabajo; **par** es la tendencia de una fuerza a hacer girar un eje; **velocidad angular** expresa cuánto gira por unidad de tiempo; y **potencia** relaciona la rapidez con la que se entrega energía. Que una rueda gire deprisa no significa que almacene mucha energía, y que el muelle esté muy cargado no significa que el reloj ya esté regulando el tiempo.\n\nEl objetivo de esta unidad es construir una cadena causal completa: la corona permite cargar, el sistema de cuerda hace girar el árbol, el muelle almacena energía elástica, el barrilete entrega par al tren, el escape dosifica la liberación, el oscilador establece el ritmo y la minutería convierte una parte del movimiento en indicación. Antes del laboratorio debes ser capaz de contar esta secuencia sin mirar el modelo.\n\n## Vocabulario y fronteras\n\nEl **muelle real** es una lámina elástica enrollada. Su extremo interior se vincula al árbol y el exterior al tambor o a una brida, según la arquitectura. El **árbol de barrilete** recibe la cuerda; el **tambor** y su dentado entregan movimiento al tren; la **tapa** cierra el conjunto. La **rueda de rochete** transmite el giro de cuerda al árbol y el **trinquete** impide el retroceso inmediato. Estas funciones deben leerse como relaciones: una pieza cercana al barrilete no participa necesariamente en la carga.\n\nEn un movimiento de cuerda manual el extremo exterior puede quedar enganchado de forma estable. En muchos automáticos se emplea una brida deslizante para limitar la carga, pero esa solución no es universal. El laboratorio usa una reserva normalizada entre cero y uno: sirve para observar causa y efecto, no para afirmar julios, newton·milímetros ni horas de reserva de un calibre concreto.\n\n## Teoría: almacenar, entregar y dosificar\n\nEn una primera aproximación, un resorte torsional ideal puede describirse con un par proporcional al ángulo, τ = k·θ. La energía acumulada sería E = 1/2·k·θ². Un muelle real de reloj no se comporta como un resorte torsional perfecto: cambia su curvatura a lo largo de muchas espiras, contacta consigo mismo y con el tambor, presenta fricción e histéresis y trabaja dentro de límites materiales. La fórmula ideal es útil para pensar que duplicar la deformación no duplica necesariamente la energía, pero no autoriza a calcular un barrilete fabricable sin geometría, material y condiciones de contacto.\n\nLa potencia rotatoria ideal es P = τ·ω. Si el tren transforma velocidad y par, la potencia de salida nunca puede superar la de entrada en un sistema pasivo; en un reloj real será menor por las pérdidas. En un modelo sin pérdidas, una reducción que aumenta la velocidad reduce el par disponible en proporción inversa. Esta conservación ideal permite detectar respuestas imposibles, pero no predice autonomía ni amplitud real.\n\nEl barrilete no regula el tiempo. Su función es entregar energía con suficiente continuidad para que el tren y el escape trabajen. El escape tampoco es una fuente: alterna retención, liberación e impulso. El oscilador tampoco mueve por sí solo todo el tren: necesita reposición de energía porque las pérdidas amortiguarían su movimiento. El comportamiento del reloj aparece por cooperación entre subsistemas.\n\n## Lectura causal de una interrupción\n\nPara diagnosticar, divide siempre la cadena en **aguas arriba**, **interfaz** y **aguas abajo**. Si se bloquea la salida del barrilete mientras el muelle conserva carga, aguas arriba existe energía almacenada, la interfaz no transmite rotación y aguas abajo no recibe potencia. Si se retira el bloqueo, una simulación educativa puede reanudar la cadena; en un reloj físico habría que comprobar además libertad, daños y seguridad.\n\nSi el tren gira pero la indicación no cambia, no concluyas que el muelle está descargado: la interrupción puede estar en la rama de minutería. Si el oscilador se mueve un instante y se detiene, tampoco basta para acusar al escape: puede faltar reserva, existir una carga excesiva o haberse interrumpido el impulso. Una observación limita hipótesis; rara vez identifica una causa única.\n\n## Ejemplo resuelto\n\nSupón un estado educativo con carga 0,70. Se bloquea la relación entre barrilete y rueda central y se ordena liberar energía. Predicción: el valor de carga puede seguir representado, pero la rueda central, las etapas posteriores, el escape y la indicación no deben recibir giro. La observación correcta no es «el reloj está roto», sino «la transmisión está interrumpida en esta interfaz declarada; el modelo no demuestra qué ocurriría con tensiones o impactos reales».\n\nAhora desplaza el bloqueo a la minutería. El tren y el escape pueden seguir activos mientras las agujas quedan sin accionamiento. La diferencia entre ambos casos permite localizar funcionalmente el tramo interrumpido. Este razonamiento es más útil que memorizar colores o posiciones porque se transfiere a arquitecturas distintas.\n\n## Errores habituales\n\n- Llamar «energía» a cualquier giro visible.\n- Afirmar que el escape fabrica energía o que el volante impulsa continuamente el tren.\n- Confundir reserva normalizada con horas reales.\n- Suponer que más carga produce proporcionalmente más amplitud y mejor marcha.\n- Convertir una animación reversible en autorización para manipular un muelle físico cargado.\n\n## Comprobación antes del laboratorio\n\nSin mover el modelo, responde: ¿dónde se almacena la energía?, ¿qué pieza recibe la cuerda?, ¿qué conjunto entrega movimiento al tren?, ¿qué subsistema dosifica la liberación?, ¿qué establece el ritmo?, ¿qué rama produce la indicación? Después formula dos predicciones: una para un bloqueo en la salida del barrilete y otra para un desacoplamiento de la minutería. Solo entonces utiliza el laboratorio para intentar refutarlas.\n\n## Resumen\n\nLa cadena correcta no es una lista de piezas, sino una secuencia de transformaciones con interfaces verificables. La teoría ideal conserva energía y relaciona par, velocidad y potencia; el reloj real añade pérdidas, elasticidad no lineal, contacto y tolerancias que este laboratorio sin simulación física no valida.",
+  "claims": [
+    {
+      "id": "claim.mechanical.theory.energy",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "La teoría de energy sintetiza principios generales y separa explícitamente el modelo educativo de una validación física o de calibre.",
+      "sourceStatement": "Síntesis original contrastada con las fuentes declaradas; sin copiar sus textos ni transferir autoridad de una fuente secundaria.",
+      "method": "Síntesis conceptual, derivación ideal y delimitación G/K/P para estudio previo al laboratorio.",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Geometría pedagógica normalizada; no representa un calibre fabricable.",
+          "La coordinación cinemática demuestra relaciones y sentidos, no tolerancias ni rendimiento real.",
+          "No modela elasticidad real, pérdidas, lubricación, desgaste, choque ni marcha cronométrica."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "mechanical-theory:energy:0.5.0",
+      "recordedAt": "2026-08-02T00:00:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.external.ciechanowski-mechanical-watch",
+          "authority": "educational-secondary",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "Mechanical Watch",
+            "locator": "https://ciechanow.ski/mechanical-watch/"
+          },
+          "authorOrManufacturer": "Bartosz Ciechanowski",
+          "sourceType": "educational-visualization",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "D",
+          "sourceClass": "educational-explainer",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "cadena energética",
+            "barrilete",
+            "tren",
+            "escape",
+            "volante",
+            "espiral",
+            "puesta en hora"
+          ],
+          "pedagogicalUses": [
+            "theory",
+            "visual-reference",
+            "worked-example"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar como explicación secundaria y patrón de interacción; validar cualquier dimensión o afirmación específica en fuentes técnicas.",
+          "limitations": [
+            "La claridad visual no convierte la geometría ilustrada en un calibre real ni en una simulación física validada."
+          ],
+          "supportedClaim": "Explicación visual integrada de cómo cooperan los principales subsistemas de un reloj mecánico.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.external.timezone-illustrated-glossary",
+          "authority": "technical-training",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "TimeZone Watch School · Illustrated Glossary of Watch Parts",
+            "locator": "https://www.timezonewatchschool.com/WatchSchool/Glossary/glossary.shtml"
+          },
+          "authorOrManufacturer": "Walt Odets · TimeZone Watch School",
+          "sourceType": "curated-external-resource",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "B",
+          "sourceClass": "institutional-training",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "platina",
+            "puentes",
+            "puesta en hora",
+            "minutería",
+            "volante",
+            "escape",
+            "barrilete",
+            "tren",
+            "tornillos"
+          ],
+          "pedagogicalUses": [
+            "terminology",
+            "theory",
+            "visual-reference"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar para preentrenamiento terminológico y contraste visual; no atribuir sus imágenes a otro calibre.",
+          "limitations": [
+            "Material formativo histórico y general, no documentación de fabricante."
+          ],
+          "supportedClaim": "Glosario ilustrado organizado por caras y subsistemas de un movimiento mecánico.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.explain-energy-chain"
+    ],
+    "estimatedMinutes": 28,
+    "userPaced": true
+  }
+}

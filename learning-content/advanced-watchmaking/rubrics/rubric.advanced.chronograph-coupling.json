@@ -1,0 +1,43 @@
+{
+  "id": "rubric.advanced.chronograph-coupling",
+  "version": "1.0.0",
+  "competencyId": "competency.advanced.chronograph-coupling",
+  "rules": [
+    {
+      "id": "rule.advanced.chronograph-coupling.demonstrated",
+      "version": "1.0.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.8,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Acoplamiento horizontal y embrague vertical: una revisión humana confirma causalidad, procedencia, comparación, límites y transferencia."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.advanced.chronograph-coupling",
+    "version": "1.0.0",
+    "competencyId": "competency.advanced.chronograph-coupling",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "human-review",
+            "status": "active",
+            "minimumConfidence": 0.8
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

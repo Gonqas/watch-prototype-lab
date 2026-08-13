@@ -1,0 +1,330 @@
+{
+  "id": "scene.practice.miyota8215.identify-train",
+  "version": "0.5.0",
+  "title": "Identificar el tren · práctica específica",
+  "description": "Identificar el tren con identidad, autoridad, dependencias, evidencia y restauración. La pregunta, el feedback y la evidencia pertenecen exclusivamente a este objetivo.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.miyota.8215.structural"
+  },
+  "accessibility": {
+    "textualAlternative": "Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para De energía almacenada a movimiento.",
+    "reducedMotionAlternative": "Estados discretos y fases numeradas con los mismos cálculos y evaluación.",
+    "keyboardActions": [
+      "Tabular por subsistema, entidad y acción.",
+      "Activar con Intro o Espacio.",
+      "Deshacer y restaurar mediante controles nombrados."
+    ],
+    "colorIndependentCues": [
+      "Texto y estado acompañan cada color.",
+      "Dirección, bloqueo y confianza se expresan también con palabras."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "calibre",
+            "value": "8215"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "durationMs": 0,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 600,
+      "operation": "explode",
+      "targets": [],
+      "value": 0.1,
+      "durationMs": 300,
+      "essential": false,
+      "waitFor": "none"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.miyota8215.train.fidelity",
+      "markdown": "Tren de rodaje: modelo estructural del MIYOTA 8215. Cada operación muestra su autoridad y las referencias solo documentales no pueden manipularse. Consulta los niveles de reconstrucción y fidelidad en la ficha técnica.",
+      "accessibleLabel": "Tren de rodaje. Fidelidad, autoridad y limitaciones disponibles en texto."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.miyota8215.train.observe",
+      "instructionMarkdown": "Ejecuta «Identificar el tren». Antes de confirmar, compara tu predicción, el cambio observable, la relación implicada y la autoridad de la fuente.",
+      "questions": [
+        {
+          "id": "question.practice.miyota8215.identify-train.criterion",
+          "promptMarkdown": "¿Cómo se sigue correctamente el tren del 8215?",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.practice.miyota8215.identify-train.evidence",
+              "label": "Alternando engrana-con y comparte-árbol desde el barrilete hacia el escape",
+              "labels": {
+                "es": "Alternando engrana-con y comparte-árbol desde el barrilete hacia el escape",
+                "en": "Alternando engrana-con y comparte-árbol desde el barrilete hacia el escape"
+              }
+            },
+            {
+              "id": "option.practice.miyota8215.identify-train.appearance",
+              "label": "Saltando entre ruedas cercanas aunque no haya interfaz",
+              "labels": {
+                "es": "Saltando entre ruedas cercanas aunque no haya interfaz",
+                "en": "Saltando entre ruedas cercanas aunque no haya interfaz"
+              }
+            },
+            {
+              "id": "option.practice.miyota8215.identify-train.authority",
+              "label": "Siguiendo solo el orden vertical de la vista explosionada",
+              "labels": {
+                "es": "Siguiendo solo el orden vertical de la vista explosionada",
+                "en": "Siguiendo solo el orden vertical de la vista explosionada"
+              }
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se sigue correctamente el tren del 8215?"
+            },
+            "feedback": {
+              "es": "La cadena real depende de contactos y árboles, no de proximidad."
+            }
+          }
+        },
+        {
+          "id": "question.practice.miyota8215.identify-train.reasoning",
+          "promptMarkdown": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Cómo se sigue correctamente el tren del 8215?",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué cambió o qué comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué relación, interfaz o regla explica el resultado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué fuente o límite condiciona la conclusión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Cómo se sigue correctamente el tren del 8215?"
+            },
+            "feedback": {
+              "es": "La revisión debe comprobar la relación específica: La cadena real depende de contactos y árboles, no de proximidad."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.practice.miyota8215.identify-train.criterion",
+          "expectedOptionIds": [
+            "option.practice.miyota8215.identify-train.evidence"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.practice.miyota8215.identify-train.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    },
+    {
+      "id": "step.miyota8215.train.execute",
+      "instructionMarkdown": "Ejecuta acciones semánticas, registra evidencia, comprueba el resultado y restaura.",
+      "questions": []
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Identificar el tren · práctica específica",
+      "en": "Identificar el tren · práctica específica"
+    },
+    "purpose": {
+      "es": "Resolver «Identificar el tren» mediante una decisión específica, explicación propia, restauración y transferencia."
+    },
+    "prerequisites": [
+      "concept.miyota8215.explain-energy-chain"
+    ],
+    "narrative": {
+      "es": "Nombra una interfaz en cada salto. La cadena real depende de contactos y árboles, no de proximidad."
+    },
+    "initialFraming": {
+      "es": "Vista estable con fuente y ficha técnica de reconstrucción y fidelidad visibles.",
+      "en": "Vista estable con fuente y ficha técnica de reconstrucción y fidelidad visibles."
+    },
+    "protagonist": {
+      "selector": {
+        "by": "calibre",
+        "value": "8215"
+      },
+      "cardinality": "exactly-one"
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "story.miyota8215.train.observe",
+        "sceneStepId": "step.miyota8215.train.observe",
+        "narrative": {
+          "es": "Consultar, identificar, clasificar autoridad y predecir.",
+          "en": "Consultar, identificar, clasificar autoridad y predecir."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "calibre-select",
+          "documentation-review",
+          "predict"
+        ],
+        "interaction": {
+          "es": "Seleccionar mediante teclado o puntero.",
+          "en": "Seleccionar mediante teclado o puntero."
+        },
+        "feedback": {
+          "es": "La predicción se conserva antes de mostrar el resultado.",
+          "en": "La predicción se conserva antes de mostrar el resultado."
+        }
+      },
+      {
+        "id": "story.miyota8215.train.execute",
+        "sceneStepId": "step.miyota8215.train.execute",
+        "narrative": {
+          "es": "Manipular cuando esté permitido, comprobar, explicar y restaurar.",
+          "en": "Manipular cuando esté permitido, comprobar, explicar y restaurar."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "calibre-lab-command",
+          "workbench-command",
+          "checkpoint",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Botones y menús semánticos; sin arrastre obligatorio.",
+          "en": "Botones y menús semánticos; sin arrastre obligatorio."
+        },
+        "feedback": {
+          "es": "El diagnóstico señala entrada, relación o estado inválido sin fingir física.",
+          "en": "El diagnóstico señala entrada, relación o estado inválido sin fingir física."
+        }
+      }
+    ],
+    "ending": {
+      "es": "Estado restaurable y evidencia disponible.",
+      "en": "Estado restaurable y evidencia disponible."
+    },
+    "restoration": {
+      "es": "Restaurar 63 identidades, tornillos, bandejas, orientación, cámara y subsistema.",
+      "en": "Restaurar 63 identidades, tornillos, bandejas, orientación, cámara y subsistema."
+    },
+    "accessibility": {
+      "es": "Árbol y lista ordenados; acciones por teclado y sin arrastre.",
+      "en": "Árbol y lista ordenados; acciones por teclado y sin arrastre."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos con idéntica información y evaluación.",
+      "en": "Estados discretos con idéntica información y evaluación."
+    },
+    "evidenceTemplateIds": [
+      "evidence.miyota8215.identify-train",
+      "evidence.miyota8215.verify-partially"
+    ],
+    "technicalCriteria": [
+      "Identidad de cada pieza.",
+      "Autoridad visible.",
+      "Dependencias clasificadas.",
+      "El modelo de referencia y el proyecto técnico permanecen intactos."
+    ],
+    "limitations": [
+      "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+      "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+      "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física.",
+      "Sin conteos de dientes, perfiles, distancias entre centros o libertad física verificadas."
+    ]
+  },
+  "restorePreviousState": true
+}

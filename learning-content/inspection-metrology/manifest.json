@@ -1,0 +1,995 @@
+{
+  "format": "wplab-learning-pack",
+  "formatVersion": 1,
+  "schemaId": "learning-pack-v1",
+  "packageVersion": "0.2.0",
+  "id": "wplab.horology.inspection-metrology",
+  "title": "Inspección y metrología relojera",
+  "distribution": "local-unsigned",
+  "editorialStatus": "in-review",
+  "authors": [
+    {
+      "name": "Watch Prototype Lab"
+    }
+  ],
+  "languages": [
+    "es-ES"
+  ],
+  "dependencies": [],
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "movements": [],
+  "assets": [],
+  "entries": {
+    "curricula": [
+      {
+        "id": "curriculum.metrology.personal-watchmaking",
+        "path": "curriculum/curriculum.metrology.personal-watchmaking.json"
+      }
+    ],
+    "routes": [
+      {
+        "id": "route.metrology.physical-digital-bridge",
+        "path": "routes/route.metrology.physical-digital-bridge.json"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module.metrology.observe-before-measuring",
+        "path": "modules/module.metrology.observe-before-measuring.json"
+      },
+      {
+        "id": "module.metrology.light-magnification-posture",
+        "path": "modules/module.metrology.light-magnification-posture.json"
+      },
+      {
+        "id": "module.metrology.units-scale-resolution",
+        "path": "modules/module.metrology.units-scale-resolution.json"
+      },
+      {
+        "id": "module.metrology.precision-accuracy-uncertainty",
+        "path": "modules/module.metrology.precision-accuracy-uncertainty.json"
+      },
+      {
+        "id": "module.metrology.instruments",
+        "path": "modules/module.metrology.instruments.json"
+      },
+      {
+        "id": "module.metrology.verification-calibration",
+        "path": "modules/module.metrology.verification-calibration.json"
+      },
+      {
+        "id": "module.metrology.physical-specimen",
+        "path": "modules/module.metrology.physical-specimen.json"
+      },
+      {
+        "id": "module.metrology.technical-photography",
+        "path": "modules/module.metrology.technical-photography.json"
+      },
+      {
+        "id": "module.metrology.image-measurement",
+        "path": "modules/module.metrology.image-measurement.json"
+      },
+      {
+        "id": "module.metrology.physical-measurement",
+        "path": "modules/module.metrology.physical-measurement.json"
+      },
+      {
+        "id": "module.metrology.inspection-findings",
+        "path": "modules/module.metrology.inspection-findings.json"
+      },
+      {
+        "id": "module.metrology.compare-data",
+        "path": "modules/module.metrology.compare-data.json"
+      },
+      {
+        "id": "module.metrology.improve-virtual-model",
+        "path": "modules/module.metrology.improve-virtual-model.json"
+      },
+      {
+        "id": "module.metrology.final-project",
+        "path": "modules/module.metrology.final-project.json"
+      }
+    ],
+    "concepts": [
+      {
+        "id": "concept.metrology.observe-before-measuring",
+        "path": "concepts/concept.metrology.observe-before-measuring.json"
+      },
+      {
+        "id": "concept.metrology.light-magnification-posture",
+        "path": "concepts/concept.metrology.light-magnification-posture.json"
+      },
+      {
+        "id": "concept.metrology.units-scale-resolution",
+        "path": "concepts/concept.metrology.units-scale-resolution.json"
+      },
+      {
+        "id": "concept.metrology.precision-accuracy-uncertainty",
+        "path": "concepts/concept.metrology.precision-accuracy-uncertainty.json"
+      },
+      {
+        "id": "concept.metrology.instruments",
+        "path": "concepts/concept.metrology.instruments.json"
+      },
+      {
+        "id": "concept.metrology.verification-calibration",
+        "path": "concepts/concept.metrology.verification-calibration.json"
+      },
+      {
+        "id": "concept.metrology.physical-specimen",
+        "path": "concepts/concept.metrology.physical-specimen.json"
+      },
+      {
+        "id": "concept.metrology.technical-photography",
+        "path": "concepts/concept.metrology.technical-photography.json"
+      },
+      {
+        "id": "concept.metrology.image-measurement",
+        "path": "concepts/concept.metrology.image-measurement.json"
+      },
+      {
+        "id": "concept.metrology.physical-measurement",
+        "path": "concepts/concept.metrology.physical-measurement.json"
+      },
+      {
+        "id": "concept.metrology.inspection-findings",
+        "path": "concepts/concept.metrology.inspection-findings.json"
+      },
+      {
+        "id": "concept.metrology.compare-data",
+        "path": "concepts/concept.metrology.compare-data.json"
+      },
+      {
+        "id": "concept.metrology.improve-virtual-model",
+        "path": "concepts/concept.metrology.improve-virtual-model.json"
+      },
+      {
+        "id": "concept.metrology.final-project",
+        "path": "concepts/concept.metrology.final-project.json"
+      }
+    ],
+    "misconceptions": [],
+    "blocks": [
+      {
+        "id": "block.metrology.observe-before-measuring",
+        "path": "blocks/block.metrology.observe-before-measuring.json"
+      },
+      {
+        "id": "block.metrology.light-magnification-posture",
+        "path": "blocks/block.metrology.light-magnification-posture.json"
+      },
+      {
+        "id": "block.metrology.units-scale-resolution",
+        "path": "blocks/block.metrology.units-scale-resolution.json"
+      },
+      {
+        "id": "block.metrology.precision-accuracy-uncertainty",
+        "path": "blocks/block.metrology.precision-accuracy-uncertainty.json"
+      },
+      {
+        "id": "block.metrology.instruments",
+        "path": "blocks/block.metrology.instruments.json"
+      },
+      {
+        "id": "block.metrology.verification-calibration",
+        "path": "blocks/block.metrology.verification-calibration.json"
+      },
+      {
+        "id": "block.metrology.physical-specimen",
+        "path": "blocks/block.metrology.physical-specimen.json"
+      },
+      {
+        "id": "block.metrology.technical-photography",
+        "path": "blocks/block.metrology.technical-photography.json"
+      },
+      {
+        "id": "block.metrology.image-measurement",
+        "path": "blocks/block.metrology.image-measurement.json"
+      },
+      {
+        "id": "block.metrology.physical-measurement",
+        "path": "blocks/block.metrology.physical-measurement.json"
+      },
+      {
+        "id": "block.metrology.inspection-findings",
+        "path": "blocks/block.metrology.inspection-findings.json"
+      },
+      {
+        "id": "block.metrology.compare-data",
+        "path": "blocks/block.metrology.compare-data.json"
+      },
+      {
+        "id": "block.metrology.improve-virtual-model",
+        "path": "blocks/block.metrology.improve-virtual-model.json"
+      },
+      {
+        "id": "block.metrology.final-project",
+        "path": "blocks/block.metrology.final-project.json"
+      }
+    ],
+    "lessons": [
+      {
+        "id": "lesson.metrology.observe-before-measuring",
+        "path": "lessons/lesson.metrology.observe-before-measuring.json"
+      },
+      {
+        "id": "lesson.metrology.light-magnification-posture",
+        "path": "lessons/lesson.metrology.light-magnification-posture.json"
+      },
+      {
+        "id": "lesson.metrology.units-scale-resolution",
+        "path": "lessons/lesson.metrology.units-scale-resolution.json"
+      },
+      {
+        "id": "lesson.metrology.precision-accuracy-uncertainty",
+        "path": "lessons/lesson.metrology.precision-accuracy-uncertainty.json"
+      },
+      {
+        "id": "lesson.metrology.instruments",
+        "path": "lessons/lesson.metrology.instruments.json"
+      },
+      {
+        "id": "lesson.metrology.verification-calibration",
+        "path": "lessons/lesson.metrology.verification-calibration.json"
+      },
+      {
+        "id": "lesson.metrology.physical-specimen",
+        "path": "lessons/lesson.metrology.physical-specimen.json"
+      },
+      {
+        "id": "lesson.metrology.technical-photography",
+        "path": "lessons/lesson.metrology.technical-photography.json"
+      },
+      {
+        "id": "lesson.metrology.image-measurement",
+        "path": "lessons/lesson.metrology.image-measurement.json"
+      },
+      {
+        "id": "lesson.metrology.physical-measurement",
+        "path": "lessons/lesson.metrology.physical-measurement.json"
+      },
+      {
+        "id": "lesson.metrology.inspection-findings",
+        "path": "lessons/lesson.metrology.inspection-findings.json"
+      },
+      {
+        "id": "lesson.metrology.compare-data",
+        "path": "lessons/lesson.metrology.compare-data.json"
+      },
+      {
+        "id": "lesson.metrology.improve-virtual-model",
+        "path": "lessons/lesson.metrology.improve-virtual-model.json"
+      },
+      {
+        "id": "lesson.metrology.final-project",
+        "path": "lessons/lesson.metrology.final-project.json"
+      }
+    ],
+    "activities": [
+      {
+        "id": "activity.metrology.preparar-una-inspeccion",
+        "path": "activities/activity.metrology.preparar-una-inspeccion.json"
+      },
+      {
+        "id": "activity.metrology.separar-observacion-e-hipotesis",
+        "path": "activities/activity.metrology.separar-observacion-e-hipotesis.json"
+      },
+      {
+        "id": "activity.metrology.elegir-iluminacion",
+        "path": "activities/activity.metrology.elegir-iluminacion.json"
+      },
+      {
+        "id": "activity.metrology.elegir-aumento",
+        "path": "activities/activity.metrology.elegir-aumento.json"
+      },
+      {
+        "id": "activity.metrology.diferenciar-resolucion-y-precision",
+        "path": "activities/activity.metrology.diferenciar-resolucion-y-precision.json"
+      },
+      {
+        "id": "activity.metrology.redondear-sin-inventar-informacion",
+        "path": "activities/activity.metrology.redondear-sin-inventar-informacion.json"
+      },
+      {
+        "id": "activity.metrology.repetir-medicion",
+        "path": "activities/activity.metrology.repetir-medicion.json"
+      },
+      {
+        "id": "activity.metrology.declarar-incertidumbre",
+        "path": "activities/activity.metrology.declarar-incertidumbre.json"
+      },
+      {
+        "id": "activity.metrology.seleccionar-instrumento",
+        "path": "activities/activity.metrology.seleccionar-instrumento.json"
+      },
+      {
+        "id": "activity.metrology.detectar-paralaje",
+        "path": "activities/activity.metrology.detectar-paralaje.json"
+      },
+      {
+        "id": "activity.metrology.verificar-cero",
+        "path": "activities/activity.metrology.verificar-cero.json"
+      },
+      {
+        "id": "activity.metrology.interpretar-una-verificacion",
+        "path": "activities/activity.metrology.interpretar-una-verificacion.json"
+      },
+      {
+        "id": "activity.metrology.registrar-especimen",
+        "path": "activities/activity.metrology.registrar-especimen.json"
+      },
+      {
+        "id": "activity.metrology.contar-dientes",
+        "path": "activities/activity.metrology.contar-dientes.json"
+      },
+      {
+        "id": "activity.metrology.importar-fotografia",
+        "path": "activities/activity.metrology.importar-fotografia.json"
+      },
+      {
+        "id": "activity.metrology.clasificar-fotografia",
+        "path": "activities/activity.metrology.clasificar-fotografia.json"
+      },
+      {
+        "id": "activity.metrology.calibrar-escala",
+        "path": "activities/activity.metrology.calibrar-escala.json"
+      },
+      {
+        "id": "activity.metrology.medir-distancia",
+        "path": "activities/activity.metrology.medir-distancia.json"
+      },
+      {
+        "id": "activity.metrology.medir-diametro",
+        "path": "activities/activity.metrology.medir-diametro.json"
+      },
+      {
+        "id": "activity.metrology.medir-distancia-entre-centros",
+        "path": "activities/activity.metrology.medir-distancia-entre-centros.json"
+      },
+      {
+        "id": "activity.metrology.identificar-lectura-atipica",
+        "path": "activities/activity.metrology.identificar-lectura-atipica.json"
+      },
+      {
+        "id": "activity.metrology.registrar-hallazgo",
+        "path": "activities/activity.metrology.registrar-hallazgo.json"
+      },
+      {
+        "id": "activity.metrology.comparar-nominal-y-medido",
+        "path": "activities/activity.metrology.comparar-nominal-y-medido.json"
+      },
+      {
+        "id": "activity.metrology.determinar-validez-de-comparacion",
+        "path": "activities/activity.metrology.determinar-validez-de-comparacion.json"
+      },
+      {
+        "id": "activity.metrology.adoptar-un-valor",
+        "path": "activities/activity.metrology.adoptar-un-valor.json"
+      },
+      {
+        "id": "activity.metrology.crear-propuesta",
+        "path": "activities/activity.metrology.crear-propuesta.json"
+      },
+      {
+        "id": "activity.metrology.completar-dossier",
+        "path": "activities/activity.metrology.completar-dossier.json"
+      },
+      {
+        "id": "activity.metrology.defender-el-proyecto-final",
+        "path": "activities/activity.metrology.defender-el-proyecto-final.json"
+      }
+    ],
+    "scenes": [
+      {
+        "id": "scene.metrology.preparar-una-inspeccion",
+        "path": "scenes/scene.metrology.preparar-una-inspeccion.json"
+      },
+      {
+        "id": "scene.metrology.separar-observacion-e-hipotesis",
+        "path": "scenes/scene.metrology.separar-observacion-e-hipotesis.json"
+      },
+      {
+        "id": "scene.metrology.elegir-iluminacion",
+        "path": "scenes/scene.metrology.elegir-iluminacion.json"
+      },
+      {
+        "id": "scene.metrology.elegir-aumento",
+        "path": "scenes/scene.metrology.elegir-aumento.json"
+      },
+      {
+        "id": "scene.metrology.diferenciar-resolucion-y-precision",
+        "path": "scenes/scene.metrology.diferenciar-resolucion-y-precision.json"
+      },
+      {
+        "id": "scene.metrology.redondear-sin-inventar-informacion",
+        "path": "scenes/scene.metrology.redondear-sin-inventar-informacion.json"
+      },
+      {
+        "id": "scene.metrology.repetir-medicion",
+        "path": "scenes/scene.metrology.repetir-medicion.json"
+      },
+      {
+        "id": "scene.metrology.declarar-incertidumbre",
+        "path": "scenes/scene.metrology.declarar-incertidumbre.json"
+      },
+      {
+        "id": "scene.metrology.seleccionar-instrumento",
+        "path": "scenes/scene.metrology.seleccionar-instrumento.json"
+      },
+      {
+        "id": "scene.metrology.detectar-paralaje",
+        "path": "scenes/scene.metrology.detectar-paralaje.json"
+      },
+      {
+        "id": "scene.metrology.verificar-cero",
+        "path": "scenes/scene.metrology.verificar-cero.json"
+      },
+      {
+        "id": "scene.metrology.interpretar-una-verificacion",
+        "path": "scenes/scene.metrology.interpretar-una-verificacion.json"
+      },
+      {
+        "id": "scene.metrology.registrar-especimen",
+        "path": "scenes/scene.metrology.registrar-especimen.json"
+      },
+      {
+        "id": "scene.metrology.contar-dientes",
+        "path": "scenes/scene.metrology.contar-dientes.json"
+      },
+      {
+        "id": "scene.metrology.importar-fotografia",
+        "path": "scenes/scene.metrology.importar-fotografia.json"
+      },
+      {
+        "id": "scene.metrology.clasificar-fotografia",
+        "path": "scenes/scene.metrology.clasificar-fotografia.json"
+      },
+      {
+        "id": "scene.metrology.calibrar-escala",
+        "path": "scenes/scene.metrology.calibrar-escala.json"
+      },
+      {
+        "id": "scene.metrology.medir-distancia",
+        "path": "scenes/scene.metrology.medir-distancia.json"
+      },
+      {
+        "id": "scene.metrology.medir-diametro",
+        "path": "scenes/scene.metrology.medir-diametro.json"
+      },
+      {
+        "id": "scene.metrology.medir-distancia-entre-centros",
+        "path": "scenes/scene.metrology.medir-distancia-entre-centros.json"
+      },
+      {
+        "id": "scene.metrology.identificar-lectura-atipica",
+        "path": "scenes/scene.metrology.identificar-lectura-atipica.json"
+      },
+      {
+        "id": "scene.metrology.registrar-hallazgo",
+        "path": "scenes/scene.metrology.registrar-hallazgo.json"
+      },
+      {
+        "id": "scene.metrology.comparar-nominal-y-medido",
+        "path": "scenes/scene.metrology.comparar-nominal-y-medido.json"
+      },
+      {
+        "id": "scene.metrology.determinar-validez-de-comparacion",
+        "path": "scenes/scene.metrology.determinar-validez-de-comparacion.json"
+      },
+      {
+        "id": "scene.metrology.adoptar-un-valor",
+        "path": "scenes/scene.metrology.adoptar-un-valor.json"
+      },
+      {
+        "id": "scene.metrology.crear-propuesta",
+        "path": "scenes/scene.metrology.crear-propuesta.json"
+      },
+      {
+        "id": "scene.metrology.completar-dossier",
+        "path": "scenes/scene.metrology.completar-dossier.json"
+      },
+      {
+        "id": "scene.metrology.defender-el-proyecto-final",
+        "path": "scenes/scene.metrology.defender-el-proyecto-final.json"
+      }
+    ],
+    "competencies": [
+      {
+        "id": "competency.metrology.planificar-una-inspeccion",
+        "path": "competencies/competency.metrology.planificar-una-inspeccion.json"
+      },
+      {
+        "id": "competency.metrology.seleccionar-luz-y-aumento",
+        "path": "competencies/competency.metrology.seleccionar-luz-y-aumento.json"
+      },
+      {
+        "id": "competency.metrology.diferenciar-conceptos-metrologicos",
+        "path": "competencies/competency.metrology.diferenciar-conceptos-metrologicos.json"
+      },
+      {
+        "id": "competency.metrology.seleccionar-un-instrumento",
+        "path": "competencies/competency.metrology.seleccionar-un-instrumento.json"
+      },
+      {
+        "id": "competency.metrology.verificar-un-instrumento",
+        "path": "competencies/competency.metrology.verificar-un-instrumento.json"
+      },
+      {
+        "id": "competency.metrology.registrar-una-unidad-fisica",
+        "path": "competencies/competency.metrology.registrar-una-unidad-fisica.json"
+      },
+      {
+        "id": "competency.metrology.documentar-fotografias",
+        "path": "competencies/competency.metrology.documentar-fotografias.json"
+      },
+      {
+        "id": "competency.metrology.calibrar-una-imagen",
+        "path": "competencies/competency.metrology.calibrar-una-imagen.json"
+      },
+      {
+        "id": "competency.metrology.medir-en-dos-dimensiones",
+        "path": "competencies/competency.metrology.medir-en-dos-dimensiones.json"
+      },
+      {
+        "id": "competency.metrology.medir-una-pieza-fisica",
+        "path": "competencies/competency.metrology.medir-una-pieza-fisica.json"
+      },
+      {
+        "id": "competency.metrology.repetir-una-medicion",
+        "path": "competencies/competency.metrology.repetir-una-medicion.json"
+      },
+      {
+        "id": "competency.metrology.declarar-incertidumbre",
+        "path": "competencies/competency.metrology.declarar-incertidumbre.json"
+      },
+      {
+        "id": "competency.metrology.identificar-un-hallazgo",
+        "path": "competencies/competency.metrology.identificar-un-hallazgo.json"
+      },
+      {
+        "id": "competency.metrology.separar-observacion-e-hipotesis",
+        "path": "competencies/competency.metrology.separar-observacion-e-hipotesis.json"
+      },
+      {
+        "id": "competency.metrology.comparar-nominal-y-medido",
+        "path": "competencies/competency.metrology.comparar-nominal-y-medido.json"
+      },
+      {
+        "id": "competency.metrology.interpretar-una-discrepancia",
+        "path": "competencies/competency.metrology.interpretar-una-discrepancia.json"
+      },
+      {
+        "id": "competency.metrology.documentar-una-pieza",
+        "path": "competencies/competency.metrology.documentar-una-pieza.json"
+      },
+      {
+        "id": "competency.metrology.completar-un-dossier",
+        "path": "competencies/competency.metrology.completar-un-dossier.json"
+      }
+    ],
+    "evidenceTemplates": [
+      {
+        "id": "evidence.metrology.preparar-una-inspeccion",
+        "path": "evidence/evidence.metrology.preparar-una-inspeccion.json"
+      },
+      {
+        "id": "evidence.metrology.separar-observacion-e-hipotesis",
+        "path": "evidence/evidence.metrology.separar-observacion-e-hipotesis.json"
+      },
+      {
+        "id": "evidence.metrology.elegir-iluminacion",
+        "path": "evidence/evidence.metrology.elegir-iluminacion.json"
+      },
+      {
+        "id": "evidence.metrology.elegir-aumento",
+        "path": "evidence/evidence.metrology.elegir-aumento.json"
+      },
+      {
+        "id": "evidence.metrology.diferenciar-resolucion-y-precision",
+        "path": "evidence/evidence.metrology.diferenciar-resolucion-y-precision.json"
+      },
+      {
+        "id": "evidence.metrology.redondear-sin-inventar-informacion",
+        "path": "evidence/evidence.metrology.redondear-sin-inventar-informacion.json"
+      },
+      {
+        "id": "evidence.metrology.repetir-medicion",
+        "path": "evidence/evidence.metrology.repetir-medicion.json"
+      },
+      {
+        "id": "evidence.metrology.declarar-incertidumbre",
+        "path": "evidence/evidence.metrology.declarar-incertidumbre.json"
+      },
+      {
+        "id": "evidence.metrology.seleccionar-instrumento",
+        "path": "evidence/evidence.metrology.seleccionar-instrumento.json"
+      },
+      {
+        "id": "evidence.metrology.detectar-paralaje",
+        "path": "evidence/evidence.metrology.detectar-paralaje.json"
+      },
+      {
+        "id": "evidence.metrology.verificar-cero",
+        "path": "evidence/evidence.metrology.verificar-cero.json"
+      },
+      {
+        "id": "evidence.metrology.interpretar-una-verificacion",
+        "path": "evidence/evidence.metrology.interpretar-una-verificacion.json"
+      },
+      {
+        "id": "evidence.metrology.registrar-especimen",
+        "path": "evidence/evidence.metrology.registrar-especimen.json"
+      },
+      {
+        "id": "evidence.metrology.contar-dientes",
+        "path": "evidence/evidence.metrology.contar-dientes.json"
+      },
+      {
+        "id": "evidence.metrology.importar-fotografia",
+        "path": "evidence/evidence.metrology.importar-fotografia.json"
+      },
+      {
+        "id": "evidence.metrology.clasificar-fotografia",
+        "path": "evidence/evidence.metrology.clasificar-fotografia.json"
+      },
+      {
+        "id": "evidence.metrology.calibrar-escala",
+        "path": "evidence/evidence.metrology.calibrar-escala.json"
+      },
+      {
+        "id": "evidence.metrology.medir-distancia",
+        "path": "evidence/evidence.metrology.medir-distancia.json"
+      },
+      {
+        "id": "evidence.metrology.medir-diametro",
+        "path": "evidence/evidence.metrology.medir-diametro.json"
+      },
+      {
+        "id": "evidence.metrology.medir-distancia-entre-centros",
+        "path": "evidence/evidence.metrology.medir-distancia-entre-centros.json"
+      },
+      {
+        "id": "evidence.metrology.identificar-lectura-atipica",
+        "path": "evidence/evidence.metrology.identificar-lectura-atipica.json"
+      },
+      {
+        "id": "evidence.metrology.registrar-hallazgo",
+        "path": "evidence/evidence.metrology.registrar-hallazgo.json"
+      },
+      {
+        "id": "evidence.metrology.comparar-nominal-y-medido",
+        "path": "evidence/evidence.metrology.comparar-nominal-y-medido.json"
+      },
+      {
+        "id": "evidence.metrology.determinar-validez-de-comparacion",
+        "path": "evidence/evidence.metrology.determinar-validez-de-comparacion.json"
+      },
+      {
+        "id": "evidence.metrology.adoptar-un-valor",
+        "path": "evidence/evidence.metrology.adoptar-un-valor.json"
+      },
+      {
+        "id": "evidence.metrology.crear-propuesta",
+        "path": "evidence/evidence.metrology.crear-propuesta.json"
+      },
+      {
+        "id": "evidence.metrology.completar-dossier",
+        "path": "evidence/evidence.metrology.completar-dossier.json"
+      },
+      {
+        "id": "evidence.metrology.defender-el-proyecto-final",
+        "path": "evidence/evidence.metrology.defender-el-proyecto-final.json"
+      }
+    ],
+    "rubrics": [
+      {
+        "id": "rubric.metrology.preparar-una-inspeccion",
+        "path": "rubrics/rubric.metrology.preparar-una-inspeccion.json"
+      },
+      {
+        "id": "rubric.metrology.separar-observacion-e-hipotesis",
+        "path": "rubrics/rubric.metrology.separar-observacion-e-hipotesis.json"
+      },
+      {
+        "id": "rubric.metrology.elegir-iluminacion",
+        "path": "rubrics/rubric.metrology.elegir-iluminacion.json"
+      },
+      {
+        "id": "rubric.metrology.elegir-aumento",
+        "path": "rubrics/rubric.metrology.elegir-aumento.json"
+      },
+      {
+        "id": "rubric.metrology.diferenciar-resolucion-y-precision",
+        "path": "rubrics/rubric.metrology.diferenciar-resolucion-y-precision.json"
+      },
+      {
+        "id": "rubric.metrology.redondear-sin-inventar-informacion",
+        "path": "rubrics/rubric.metrology.redondear-sin-inventar-informacion.json"
+      },
+      {
+        "id": "rubric.metrology.repetir-medicion",
+        "path": "rubrics/rubric.metrology.repetir-medicion.json"
+      },
+      {
+        "id": "rubric.metrology.declarar-incertidumbre",
+        "path": "rubrics/rubric.metrology.declarar-incertidumbre.json"
+      },
+      {
+        "id": "rubric.metrology.seleccionar-instrumento",
+        "path": "rubrics/rubric.metrology.seleccionar-instrumento.json"
+      },
+      {
+        "id": "rubric.metrology.detectar-paralaje",
+        "path": "rubrics/rubric.metrology.detectar-paralaje.json"
+      },
+      {
+        "id": "rubric.metrology.verificar-cero",
+        "path": "rubrics/rubric.metrology.verificar-cero.json"
+      },
+      {
+        "id": "rubric.metrology.interpretar-una-verificacion",
+        "path": "rubrics/rubric.metrology.interpretar-una-verificacion.json"
+      },
+      {
+        "id": "rubric.metrology.registrar-especimen",
+        "path": "rubrics/rubric.metrology.registrar-especimen.json"
+      },
+      {
+        "id": "rubric.metrology.contar-dientes",
+        "path": "rubrics/rubric.metrology.contar-dientes.json"
+      },
+      {
+        "id": "rubric.metrology.importar-fotografia",
+        "path": "rubrics/rubric.metrology.importar-fotografia.json"
+      },
+      {
+        "id": "rubric.metrology.clasificar-fotografia",
+        "path": "rubrics/rubric.metrology.clasificar-fotografia.json"
+      },
+      {
+        "id": "rubric.metrology.calibrar-escala",
+        "path": "rubrics/rubric.metrology.calibrar-escala.json"
+      },
+      {
+        "id": "rubric.metrology.medir-distancia",
+        "path": "rubrics/rubric.metrology.medir-distancia.json"
+      },
+      {
+        "id": "rubric.metrology.medir-diametro",
+        "path": "rubrics/rubric.metrology.medir-diametro.json"
+      },
+      {
+        "id": "rubric.metrology.medir-distancia-entre-centros",
+        "path": "rubrics/rubric.metrology.medir-distancia-entre-centros.json"
+      },
+      {
+        "id": "rubric.metrology.identificar-lectura-atipica",
+        "path": "rubrics/rubric.metrology.identificar-lectura-atipica.json"
+      },
+      {
+        "id": "rubric.metrology.registrar-hallazgo",
+        "path": "rubrics/rubric.metrology.registrar-hallazgo.json"
+      },
+      {
+        "id": "rubric.metrology.comparar-nominal-y-medido",
+        "path": "rubrics/rubric.metrology.comparar-nominal-y-medido.json"
+      },
+      {
+        "id": "rubric.metrology.determinar-validez-de-comparacion",
+        "path": "rubrics/rubric.metrology.determinar-validez-de-comparacion.json"
+      },
+      {
+        "id": "rubric.metrology.adoptar-un-valor",
+        "path": "rubrics/rubric.metrology.adoptar-un-valor.json"
+      },
+      {
+        "id": "rubric.metrology.crear-propuesta",
+        "path": "rubrics/rubric.metrology.crear-propuesta.json"
+      },
+      {
+        "id": "rubric.metrology.completar-dossier",
+        "path": "rubrics/rubric.metrology.completar-dossier.json"
+      },
+      {
+        "id": "rubric.metrology.defender-el-proyecto-final",
+        "path": "rubrics/rubric.metrology.defender-el-proyecto-final.json"
+      }
+    ],
+    "glossary": [
+      {
+        "id": "term.metrology.metrologia",
+        "path": "glossary/term.metrology.metrologia.json"
+      },
+      {
+        "id": "term.metrology.magnitud",
+        "path": "glossary/term.metrology.magnitud.json"
+      },
+      {
+        "id": "term.metrology.mensurando",
+        "path": "glossary/term.metrology.mensurando.json"
+      },
+      {
+        "id": "term.metrology.unidad",
+        "path": "glossary/term.metrology.unidad.json"
+      },
+      {
+        "id": "term.metrology.resolucion",
+        "path": "glossary/term.metrology.resolucion.json"
+      },
+      {
+        "id": "term.metrology.exactitud",
+        "path": "glossary/term.metrology.exactitud.json"
+      },
+      {
+        "id": "term.metrology.precision",
+        "path": "glossary/term.metrology.precision.json"
+      },
+      {
+        "id": "term.metrology.repetibilidad",
+        "path": "glossary/term.metrology.repetibilidad.json"
+      },
+      {
+        "id": "term.metrology.error",
+        "path": "glossary/term.metrology.error.json"
+      },
+      {
+        "id": "term.metrology.incertidumbre",
+        "path": "glossary/term.metrology.incertidumbre.json"
+      },
+      {
+        "id": "term.metrology.tolerancia",
+        "path": "glossary/term.metrology.tolerancia.json"
+      },
+      {
+        "id": "term.metrology.calibracion",
+        "path": "glossary/term.metrology.calibracion.json"
+      },
+      {
+        "id": "term.metrology.verificacion",
+        "path": "glossary/term.metrology.verificacion.json"
+      },
+      {
+        "id": "term.metrology.trazabilidad",
+        "path": "glossary/term.metrology.trazabilidad.json"
+      },
+      {
+        "id": "term.metrology.datum",
+        "path": "glossary/term.metrology.datum.json"
+      },
+      {
+        "id": "term.metrology.paralaje",
+        "path": "glossary/term.metrology.paralaje.json"
+      },
+      {
+        "id": "term.metrology.serie",
+        "path": "glossary/term.metrology.serie.json"
+      },
+      {
+        "id": "term.metrology.hallazgo",
+        "path": "glossary/term.metrology.hallazgo.json"
+      },
+      {
+        "id": "term.metrology.hipotesis",
+        "path": "glossary/term.metrology.hipotesis.json"
+      },
+      {
+        "id": "term.metrology.nominal",
+        "path": "glossary/term.metrology.nominal.json"
+      },
+      {
+        "id": "term.metrology.valor-adoptado",
+        "path": "glossary/term.metrology.valor-adoptado.json"
+      },
+      {
+        "id": "term.metrology.especimen",
+        "path": "glossary/term.metrology.especimen.json"
+      },
+      {
+        "id": "term.metrology.instrumento",
+        "path": "glossary/term.metrology.instrumento.json"
+      },
+      {
+        "id": "term.metrology.evidencia",
+        "path": "glossary/term.metrology.evidencia.json"
+      }
+    ],
+    "sources": [
+      {
+        "id": "source.metrology.bipm.vim",
+        "path": "sources/source.metrology.bipm.vim.json"
+      },
+      {
+        "id": "source.metrology.bipm.gum",
+        "path": "sources/source.metrology.bipm.gum.json"
+      },
+      {
+        "id": "source.metrology.nist.handbook",
+        "path": "sources/source.metrology.nist.handbook.json"
+      },
+      {
+        "id": "source.metrology.original-course",
+        "path": "sources/source.metrology.original-course.json"
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "recommendation.metrology.retain.planificar-una-inspeccion",
+        "path": "recommendations/recommendation.metrology.retain.planificar-una-inspeccion.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.seleccionar-luz-y-aumento",
+        "path": "recommendations/recommendation.metrology.retain.seleccionar-luz-y-aumento.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.diferenciar-conceptos-metrologicos",
+        "path": "recommendations/recommendation.metrology.retain.diferenciar-conceptos-metrologicos.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.seleccionar-un-instrumento",
+        "path": "recommendations/recommendation.metrology.retain.seleccionar-un-instrumento.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.verificar-un-instrumento",
+        "path": "recommendations/recommendation.metrology.retain.verificar-un-instrumento.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.registrar-una-unidad-fisica",
+        "path": "recommendations/recommendation.metrology.retain.registrar-una-unidad-fisica.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.documentar-fotografias",
+        "path": "recommendations/recommendation.metrology.retain.documentar-fotografias.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.calibrar-una-imagen",
+        "path": "recommendations/recommendation.metrology.retain.calibrar-una-imagen.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.medir-en-dos-dimensiones",
+        "path": "recommendations/recommendation.metrology.retain.medir-en-dos-dimensiones.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.medir-una-pieza-fisica",
+        "path": "recommendations/recommendation.metrology.retain.medir-una-pieza-fisica.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.repetir-una-medicion",
+        "path": "recommendations/recommendation.metrology.retain.repetir-una-medicion.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.declarar-incertidumbre",
+        "path": "recommendations/recommendation.metrology.retain.declarar-incertidumbre.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.identificar-un-hallazgo",
+        "path": "recommendations/recommendation.metrology.retain.identificar-un-hallazgo.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.separar-observacion-e-hipotesis",
+        "path": "recommendations/recommendation.metrology.retain.separar-observacion-e-hipotesis.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.comparar-nominal-y-medido",
+        "path": "recommendations/recommendation.metrology.retain.comparar-nominal-y-medido.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.interpretar-una-discrepancia",
+        "path": "recommendations/recommendation.metrology.retain.interpretar-una-discrepancia.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.documentar-una-pieza",
+        "path": "recommendations/recommendation.metrology.retain.documentar-una-pieza.json"
+      },
+      {
+        "id": "recommendation.metrology.retain.completar-un-dossier",
+        "path": "recommendations/recommendation.metrology.retain.completar-un-dossier.json"
+      }
+    ],
+    "visualResources": []
+  },
+  "minimumAppVersion": "0.10.0",
+  "createdAt": "2026-08-02T10:00:00.000Z"
+}

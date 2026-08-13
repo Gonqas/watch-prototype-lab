@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Observación, óptica y manipulación",
+  "sceneIds": [
+    "scene.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+  ],
+  "rubricId": "rubric.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+    "title": {
+      "es": "Explicar y transferir: Observación, óptica y manipulación",
+      "en": "Explicar y transferir: Observación, óptica y manipulación"
+    },
+    "description": {
+      "es": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+      "en": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?"
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "inspection",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.daniels.hand-tools",
+      "source.external.naked-watchmaker",
+      "source.institutional.awci.standards"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+        "blockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+        "conceptIds": [
+          "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+          "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+          "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Observación, óptica y manipulación sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Observación, óptica y manipulación sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Una línea brillante en un pivote puede ser arañazo, suciedad o reflejo especular. Antes de pulir, se rota la pieza, cambia la luz y compara foco. Si la línea permanece ligada a la superficie, la hipótesis de daño gana apoyo; si se desplaza con la luz, era un artefacto.",
+          "en": "Una línea brillante en un pivote puede ser arañazo, suciedad o reflejo especular. Antes de pulir, se rota la pieza, cambia la luz y compara foco. Si la línea permanece ligada a la superficie, la hipótesis de daño gana apoyo; si se desplaza con la luz, era un artefacto."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+            "en": "Identificar la pregunta: ¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?"
+          },
+          {
+            "es": "Dibujar la secuencia preguntar → observar a bajo aumento → variar iluminación → aumentar localmente → manipular con apoyo → registrar comparación.",
+            "en": "Dibujar la secuencia preguntar → observar a bajo aumento → variar iluminación → aumentar localmente → manipular con apoyo → registrar comparación."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: aumento; distancia de trabajo; profundidad de campo; ángulo de iluminación; fuerza de sujeción.",
+            "en": "Asignar magnitudes y evidencia: aumento; distancia de trabajo; profundidad de campo; ángulo de iluminación; fuerza de sujeción."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Crea una secuencia fotográfica de una pieza no crítica a tres aumentos y dos luces; identifica qué afirmación permite cada vista y cuál sigue pendiente.",
+          "en": "Crea una secuencia fotográfica de una pieza no crítica a tres aumentos y dos luces; identifica qué afirmación permite cada vista y cuál sigue pendiente."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: preguntar → observar a bajo aumento → variar iluminación → aumentar localmente → manipular con apoyo → registrar comparación.",
+            "en": "Completa la cadena con las etapas visibles: preguntar → observar a bajo aumento → variar iluminación → aumentar localmente → manipular con apoyo → registrar comparación."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+            "en": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Crea una secuencia fotográfica de una pieza no crítica a tres aumentos y dos luces; identifica qué afirmación permite cada vista y cuál sigue pendiente.",
+            "en": "Crea una secuencia fotográfica de una pieza no crítica a tres aumentos y dos luces; identifica qué afirmación permite cada vista y cuál sigue pendiente."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Más aumento siempre permite diagnosticar mejor",
+          "en": "Más aumento siempre permite diagnosticar mejor"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Observación, óptica y manipulación con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Observación, óptica y manipulación con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Crea una secuencia fotográfica de una pieza no crítica a tres aumentos y dos luces; identifica qué afirmación permite cada vista y cuál sigue pendiente.",
+        "en": "Crea una secuencia fotográfica de una pieza no crítica a tres aumentos y dos luces; identifica qué afirmación permite cada vista y cuál sigue pendiente."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena preguntar → observar a bajo aumento → variar iluminación → aumentar localmente → manipular con apoyo → registrar comparación, su evidencia y límites.",
+        "en": "La explicación conserva la cadena preguntar → observar a bajo aumento → variar iluminación → aumentar localmente → manipular con apoyo → registrar comparación, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Más aumento siempre permite diagnosticar mejor».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Más aumento siempre permite diagnosticar mejor»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+        "en": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Empezar con el máximo aumento y perder contexto. de Apretar una pieza redonda con pinzas planas hasta marcarla..",
+        "en": "Busca evidencia para distinguir Empezar con el máximo aumento y perder contexto. de Apretar una pieza redonda con pinzas planas hasta marcarla.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "transferPrompt": {
+        "es": "Crea una secuencia fotográfica de una pieza no crítica a tres aumentos y dos luces; identifica qué afirmación permite cada vista y cuál sigue pendiente.",
+        "en": "Crea una secuencia fotográfica de una pieza no crítica a tres aumentos y dos luces; identifica qué afirmación permite cada vista y cuál sigue pendiente."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+          "en": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?"
+        },
+        {
+          "es": "¿Qué relación causal de «Observación, óptica y manipulación» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Observación, óptica y manipulación» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

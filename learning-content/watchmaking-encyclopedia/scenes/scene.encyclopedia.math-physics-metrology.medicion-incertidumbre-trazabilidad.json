@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad",
+  "version": "1.1.0",
+  "title": "Cuaderno: Medición, incertidumbre y trazabilidad",
+  "description": "¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Medición, incertidumbre y trazabilidad. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.answer",
+      "instructionMarkdown": "Explica **Medición, incertidumbre y trazabilidad** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.explain",
+          "promptMarkdown": "¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir mensurando y sigue hasta informar resultado.",
+                "en": "Empieza por definir mensurando y sigue hasta informar resultado."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Medir es obtener información cuantitativa mediante un procedimiento, no leer una pantalla. Mensurando, método, resolución, calibración, ambiente, repetición e incertidumbre determinan significado. Trazabilidad conecta el resultado con referencias mediante una cadena documentada; no equivale a que el instrumento sea caro.",
+                "en": "Medir es obtener información cuantitativa mediante un procedimiento, no leer una pantalla. Mensurando, método, resolución, calibración, ambiente, repetición e incertidumbre determinan significado. Trazabilidad conecta el resultado con referencias mediante una cadena documentada; no equivale a que el instrumento sea caro."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?",
+              "en": "¿Qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir mensurando → elegir método → controlar condiciones → adquirir lecturas → evaluar incertidumbre → informar resultado, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir mensurando → elegir método → controlar condiciones → adquirir lecturas → evaluar incertidumbre → informar resultado, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.mechanism",
+            "field.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.evidence",
+            "field.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.limit",
+            "field.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

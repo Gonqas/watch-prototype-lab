@@ -1,0 +1,2840 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-07-27",
+  "baseline": {
+    "fixtureId": "fixture.conceptual.mechanical-chain",
+    "version": "0.1.0",
+    "reconstructionLevel": "R2",
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Claridad funcional prioritaria; sin geometría real ni física validada."
+      ]
+    },
+    "definitions": 14,
+    "instances": 14,
+    "geometryPrimitives": 14,
+    "relations": 15,
+    "selectors": 15,
+    "capabilities": [
+      {
+        "id": "fixture.entity-selection",
+        "status": "available",
+        "explanation": "Todas las instancias canónicas tienen identidad seleccionable.",
+        "limitations": []
+      },
+      {
+        "id": "fixture.visibility",
+        "status": "available",
+        "explanation": "El overlay puede ocultar o mostrar entidades sin alterar el ensamblaje.",
+        "limitations": []
+      },
+      {
+        "id": "fixture.isolation",
+        "status": "available",
+        "explanation": "Los subsistemas e instancias pueden aislarse semánticamente.",
+        "limitations": []
+      },
+      {
+        "id": "fixture.transparency",
+        "status": "available",
+        "explanation": "El modelo técnico admite opacidad por entidad.",
+        "limitations": []
+      },
+      {
+        "id": "fixture.highlight",
+        "status": "available",
+        "explanation": "El modelo técnico admite resaltado por entidad.",
+        "limitations": []
+      },
+      {
+        "id": "fixture.explode",
+        "status": "limited",
+        "explanation": "Existe orden visual normalizado y dependencias parciales.",
+        "limitations": [
+          "No es una trayectoria física validada."
+        ]
+      },
+      {
+        "id": "fixture.labels",
+        "status": "available",
+        "explanation": "Cada entidad tiene nombres ES/EN e identidad estable.",
+        "limitations": []
+      },
+      {
+        "id": "fixture.rotation-directions",
+        "status": "limited",
+        "explanation": "Las relaciones permiten declarar sentido posteriormente.",
+        "limitations": [
+          "No hay vectores ni animación anclada en el viewport real."
+        ]
+      },
+      {
+        "id": "fixture.energy-route",
+        "status": "limited",
+        "explanation": "Las relaciones drives/winds/impulses forman rutas consultables.",
+        "limitations": [
+          "El viewport no dibuja aún flechas espaciales."
+        ]
+      },
+      {
+        "id": "fixture.visual-errors",
+        "status": "limited",
+        "explanation": "Los errores visuales son estados simbólicos reversibles.",
+        "limitations": [
+          "No son fallos físicos ni diagnósticos de ingeniería validados."
+        ]
+      },
+      {
+        "id": "fixture.reversible-state",
+        "status": "available",
+        "explanation": "Las operaciones se aplican como overlay restaurable.",
+        "limitations": []
+      }
+    ],
+    "limitations": [
+      "No se etiqueta ni se deriva como MIYOTA 8215.",
+      "Todas las formas son simbólicas."
+    ]
+  },
+  "entities": [
+    {
+      "id": "pd_fixture-conceptual-mecha_36ttu2uh4oigx",
+      "names": {
+        "es": "Caja conceptual",
+        "en": "Conceptual case"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_3snf3p2agb100"
+      ],
+      "subsystem": "structure",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.case.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.case.1",
+          "entityId": "pi_fixture-conceptual-mecha_3snf3p2agb100",
+          "shape": "ring",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            0,
+            -0.9,
+            0
+          ],
+          "size": [
+            9.5,
+            0.5,
+            9.5
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#8d989f",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+            "Envolvente educativa; no representa una caja fabricable."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.case-covers-chain.1",
+          "type": "covers",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_3snf3p2agb100",
+          "toInstanceId": "pi_fixture-conceptual-mecha_1caafsk06qt6g",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_2thbsxl97jw9h"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R1",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Envolvente educativa; no representa una caja fabricable."
+        ]
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [
+        "Envolvente educativa; no representa una caja fabricable."
+      ],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_3gjflk3ilnsdv",
+      "names": {
+        "es": "Esfera conceptual",
+        "en": "Conceptual dial"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_1yi0b4ipqm8i6"
+      ],
+      "subsystem": "indication",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.dial.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.dial.1",
+          "entityId": "pi_fixture-conceptual-mecha_1yi0b4ipqm8i6",
+          "shape": "disc",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            0,
+            1.1,
+            0
+          ],
+          "size": [
+            8.2,
+            0.12,
+            8.2
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#e8e5d8",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+            "Disco educativo sin dimensiones ni grafismo nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.dial-covers-motion.1",
+          "type": "covers",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_1yi0b4ipqm8i6",
+          "toInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [
+        {
+          "id": "selector.conceptual.mechanical.indication",
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "cardinality": "exactly-one",
+          "purpose": "Resolver el rol semántico indication."
+        }
+      ],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_2ha7s4779wmae"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R1",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Disco educativo sin dimensiones ni grafismo nominales."
+        ]
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [
+        "Disco educativo sin dimensiones ni grafismo nominales."
+      ],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_1i95e3tus6zqz",
+      "names": {
+        "es": "Aguja horaria conceptual",
+        "en": "Conceptual hour hand"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_1n9shdmxj56p2"
+      ],
+      "subsystem": "indication",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.hour-hand.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.hour-hand.1",
+          "entityId": "pi_fixture-conceptual-mecha_1n9shdmxj56p2",
+          "shape": "rod",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            0,
+            1.35,
+            0.8
+          ],
+          "size": [
+            2.5,
+            0.08,
+            0.16
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#e8e5d8",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.motion-hour-hand.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "toInstanceId": "pi_fixture-conceptual-mecha_1n9shdmxj56p2",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [
+        {
+          "id": "selector.conceptual.mechanical.indication",
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "cardinality": "exactly-one",
+          "purpose": "Resolver el rol semántico indication."
+        }
+      ],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_18hkwlucal5z7"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R1",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_37dh6la0z74xp",
+      "names": {
+        "es": "Aguja minutera conceptual",
+        "en": "Conceptual minute hand"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_06xf1reuv19do"
+      ],
+      "subsystem": "indication",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.minute-hand.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.minute-hand.1",
+          "entityId": "pi_fixture-conceptual-mecha_06xf1reuv19do",
+          "shape": "rod",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            1.2,
+            1.48,
+            0
+          ],
+          "size": [
+            3.5,
+            0.07,
+            0.14
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#e8e5d8",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.motion-minute-hand.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "toInstanceId": "pi_fixture-conceptual-mecha_06xf1reuv19do",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [
+        {
+          "id": "selector.conceptual.mechanical.indication",
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "cardinality": "exactly-one",
+          "purpose": "Resolver el rol semántico indication."
+        }
+      ],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_3d2ktag4cbchh"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R1",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_34r01wx0hwput",
+      "names": {
+        "es": "Muelle real conceptual",
+        "en": "Conceptual mainspring"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_3dldb0c14kjbo"
+      ],
+      "subsystem": "power-source",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.mainspring.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.mainspring.1",
+          "entityId": "pi_fixture-conceptual-mecha_3dldb0c14kjbo",
+          "shape": "spiral",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            -3.2,
+            0,
+            0
+          ],
+          "size": [
+            1.2,
+            0.2,
+            1.2
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#c6b25a",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.mainspring-part-of-barrel.1",
+          "type": "part-of",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_3dldb0c14kjbo",
+          "toInstanceId": "pi_fixture-conceptual-mecha_314aq4o4caz74",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.mainspring-barrel.1",
+          "type": "winds",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_3dldb0c14kjbo",
+          "toInstanceId": "pi_fixture-conceptual-mecha_314aq4o4caz74",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_1cfo2k8qm59rp",
+        "ai_fixture-conceptual-mecha_2icwgz6279nnd"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R2",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_3p0xuvt2ogk81",
+      "names": {
+        "es": "Barrilete conceptual",
+        "en": "Conceptual barrel"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_314aq4o4caz74"
+      ],
+      "subsystem": "power-source",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.barrel.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.barrel.1",
+          "entityId": "pi_fixture-conceptual-mecha_314aq4o4caz74",
+          "shape": "disc",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            -2.5,
+            0,
+            0
+          ],
+          "size": [
+            1.6,
+            0.35,
+            1.6
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#c6b25a",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.mainspring-part-of-barrel.1",
+          "type": "part-of",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_3dldb0c14kjbo",
+          "toInstanceId": "pi_fixture-conceptual-mecha_314aq4o4caz74",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.mainspring-barrel.1",
+          "type": "winds",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_3dldb0c14kjbo",
+          "toInstanceId": "pi_fixture-conceptual-mecha_314aq4o4caz74",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.barrel-train.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_314aq4o4caz74",
+          "toInstanceId": "pi_fixture-conceptual-mecha_1caafsk06qt6g",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_1cfo2k8qm59rp",
+        "ai_fixture-conceptual-mecha_2icwgz6279nnd",
+        "ai_fixture-conceptual-mecha_39hswv8a77r1b"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R2",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_1ap13e0fx9z7d",
+      "names": {
+        "es": "Tren conceptual",
+        "en": "Conceptual going train"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_1caafsk06qt6g"
+      ],
+      "subsystem": "train",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.train.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.train.1",
+          "entityId": "pi_fixture-conceptual-mecha_1caafsk06qt6g",
+          "shape": "wheel",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            -1,
+            0,
+            0
+          ],
+          "size": [
+            1.3,
+            0.2,
+            1.3
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#d6a13d",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.case-covers-chain.1",
+          "type": "covers",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_3snf3p2agb100",
+          "toInstanceId": "pi_fixture-conceptual-mecha_1caafsk06qt6g",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.barrel-train.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_314aq4o4caz74",
+          "toInstanceId": "pi_fixture-conceptual-mecha_1caafsk06qt6g",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.train-escape.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_1caafsk06qt6g",
+          "toInstanceId": "pi_fixture-conceptual-mecha_14ytngqw39yml",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.train-motion.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_1caafsk06qt6g",
+          "toInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [
+        {
+          "id": "selector.conceptual.mechanical.train",
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "cardinality": "exactly-one",
+          "purpose": "Resolver el rol semántico train."
+        }
+      ],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_2thbsxl97jw9h",
+        "ai_fixture-conceptual-mecha_39hswv8a77r1b",
+        "ai_fixture-conceptual-mecha_22iuon94zoape",
+        "ai_fixture-conceptual-mecha_07nbulvoxo7qn"
+      ],
+      "degreesOfFreedom": [
+        "rotation-conceptual"
+      ],
+      "reconstructionLevel": "R2",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_2gvmbgnknqtq8",
+      "names": {
+        "es": "Rueda de escape conceptual",
+        "en": "Conceptual escape wheel"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_14ytngqw39yml"
+      ],
+      "subsystem": "escapement",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.escape-wheel.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.escape-wheel.1",
+          "entityId": "pi_fixture-conceptual-mecha_14ytngqw39yml",
+          "shape": "wheel",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            0.25,
+            0,
+            0
+          ],
+          "size": [
+            0.9,
+            0.16,
+            0.9
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#cb6d86",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.train-escape.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_1caafsk06qt6g",
+          "toInstanceId": "pi_fixture-conceptual-mecha_14ytngqw39yml",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.escape-pallet-lock.1",
+          "type": "locks",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_14ytngqw39yml",
+          "toInstanceId": "pi_fixture-conceptual-mecha_3jp3hdfu5pumf",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.pallet-escape-release.1",
+          "type": "releases",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_3jp3hdfu5pumf",
+          "toInstanceId": "pi_fixture-conceptual-mecha_14ytngqw39yml",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_22iuon94zoape",
+        "ai_fixture-conceptual-mecha_2upbplwqq649s",
+        "ai_fixture-conceptual-mecha_0keq1xdkusczw"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R2",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_03pmdi5sk7lem",
+      "names": {
+        "es": "Áncora conceptual",
+        "en": "Conceptual pallet fork"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_3jp3hdfu5pumf"
+      ],
+      "subsystem": "escapement",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.pallet-fork.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.pallet-fork.1",
+          "entityId": "pi_fixture-conceptual-mecha_3jp3hdfu5pumf",
+          "shape": "rod",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            1.05,
+            0,
+            0
+          ],
+          "size": [
+            0.9,
+            0.12,
+            0.25
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#cb6d86",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.escape-pallet-lock.1",
+          "type": "locks",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_14ytngqw39yml",
+          "toInstanceId": "pi_fixture-conceptual-mecha_3jp3hdfu5pumf",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.pallet-escape-release.1",
+          "type": "releases",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_3jp3hdfu5pumf",
+          "toInstanceId": "pi_fixture-conceptual-mecha_14ytngqw39yml",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.pallet-balance.1",
+          "type": "impulses",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_3jp3hdfu5pumf",
+          "toInstanceId": "pi_fixture-conceptual-mecha_1pjy2a809xijq",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_2upbplwqq649s",
+        "ai_fixture-conceptual-mecha_0keq1xdkusczw",
+        "ai_fixture-conceptual-mecha_2eb86amxt83ov"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R2",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_2x3yithvcvkvv",
+      "names": {
+        "es": "Volante conceptual",
+        "en": "Conceptual balance"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_1pjy2a809xijq"
+      ],
+      "subsystem": "regulation",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.balance.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.balance.1",
+          "entityId": "pi_fixture-conceptual-mecha_1pjy2a809xijq",
+          "shape": "ring",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            2,
+            0,
+            0
+          ],
+          "size": [
+            1.2,
+            0.18,
+            1.2
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#d77575",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.pallet-balance.1",
+          "type": "impulses",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_3jp3hdfu5pumf",
+          "toInstanceId": "pi_fixture-conceptual-mecha_1pjy2a809xijq",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.hairspring-balance.1",
+          "type": "sets",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_0d2lbfz0sgsal",
+          "toInstanceId": "pi_fixture-conceptual-mecha_1pjy2a809xijq",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_2eb86amxt83ov",
+        "ai_fixture-conceptual-mecha_1ue2a5ymy2gtg"
+      ],
+      "degreesOfFreedom": [
+        "rotation-conceptual",
+        "oscillation-conceptual"
+      ],
+      "reconstructionLevel": "R2",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_045majziiv1kg",
+      "names": {
+        "es": "Espiral conceptual",
+        "en": "Conceptual hairspring"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_0d2lbfz0sgsal"
+      ],
+      "subsystem": "regulation",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.hairspring.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.hairspring.1",
+          "entityId": "pi_fixture-conceptual-mecha_0d2lbfz0sgsal",
+          "shape": "spiral",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            2,
+            0.25,
+            0
+          ],
+          "size": [
+            0.9,
+            0.08,
+            0.9
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#d77575",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.hairspring-balance.1",
+          "type": "sets",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_0d2lbfz0sgsal",
+          "toInstanceId": "pi_fixture-conceptual-mecha_1pjy2a809xijq",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_1ue2a5ymy2gtg"
+      ],
+      "degreesOfFreedom": [
+        "rotation-conceptual",
+        "oscillation-conceptual"
+      ],
+      "reconstructionLevel": "R2",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_0qi44wmmjfakl",
+      "names": {
+        "es": "Puesta en hora conceptual",
+        "en": "Conceptual keyless works"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_2fgkbwmaliz3o"
+      ],
+      "subsystem": "keyless",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.keyless.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.keyless.1",
+          "entityId": "pi_fixture-conceptual-mecha_2fgkbwmaliz3o",
+          "shape": "rod",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            -0.4,
+            0.5,
+            1.2
+          ],
+          "size": [
+            1.2,
+            0.15,
+            0.2
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#7992a8",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.keyless-motion.1",
+          "type": "sets",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_2fgkbwmaliz3o",
+          "toInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [
+        {
+          "id": "selector.conceptual.mechanical.keyless",
+          "selector": {
+            "by": "role",
+            "value": "keyless"
+          },
+          "cardinality": "exactly-one",
+          "purpose": "Resolver el rol semántico keyless."
+        }
+      ],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_1qjzu0af6jk5v"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R2",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_0s2j7xmmovnog",
+      "names": {
+        "es": "Minutería conceptual",
+        "en": "Conceptual motion works"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_37r7t47cwq2b1"
+      ],
+      "subsystem": "motion-works",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.motion-works.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.motion-works.1",
+          "entityId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "shape": "wheel",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            0.8,
+            0.5,
+            1.2
+          ],
+          "size": [
+            1,
+            0.16,
+            1
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#cfbf72",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.dial-covers-motion.1",
+          "type": "covers",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_1yi0b4ipqm8i6",
+          "toInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.motion-hour-hand.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "toInstanceId": "pi_fixture-conceptual-mecha_1n9shdmxj56p2",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.motion-minute-hand.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "toInstanceId": "pi_fixture-conceptual-mecha_06xf1reuv19do",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.train-motion.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_1caafsk06qt6g",
+          "toInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.keyless-motion.1",
+          "type": "sets",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_2fgkbwmaliz3o",
+          "toInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        },
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.motion-indication.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "toInstanceId": "pi_fixture-conceptual-mecha_266xz52zxwbbi",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [
+        {
+          "id": "selector.conceptual.mechanical.motion-works",
+          "selector": {
+            "by": "role",
+            "value": "motion-works"
+          },
+          "cardinality": "exactly-one",
+          "purpose": "Resolver el rol semántico motion-works."
+        }
+      ],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_2ha7s4779wmae",
+        "ai_fixture-conceptual-mecha_18hkwlucal5z7",
+        "ai_fixture-conceptual-mecha_3d2ktag4cbchh",
+        "ai_fixture-conceptual-mecha_07nbulvoxo7qn",
+        "ai_fixture-conceptual-mecha_1qjzu0af6jk5v",
+        "ai_fixture-conceptual-mecha_1oc0jlh11d2jx"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R2",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    },
+    {
+      "id": "pd_fixture-conceptual-mecha_0r0h1frs34h0z",
+      "names": {
+        "es": "Indicación conceptual",
+        "en": "Conceptual indication"
+      },
+      "instances": [
+        "pi_fixture-conceptual-mecha_266xz52zxwbbi"
+      ],
+      "subsystem": "indication",
+      "geometryPrimitiveIds": [
+        "geometry.fixture-conceptual-mechanical-chain.indication.1"
+      ],
+      "geometry": [
+        {
+          "id": "geometry.fixture-conceptual-mechanical-chain.indication.1",
+          "entityId": "pi_fixture-conceptual-mecha_266xz52zxwbbi",
+          "shape": "rod",
+          "coordinateSpace": "normalized-educational",
+          "position": [
+            2,
+            0.5,
+            1.2
+          ],
+          "size": [
+            1.3,
+            0.12,
+            0.18
+          ],
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "color": "#e8e5d8",
+          "opacity": 1,
+          "limitations": [
+            "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+          ]
+        }
+      ],
+      "relations": [
+        {
+          "id": "relation.fixture-conceptual-mechanical-chain.motion-indication.1",
+          "type": "drives",
+          "fromInstanceId": "pi_fixture-conceptual-mecha_37r7t47cwq2b1",
+          "toInstanceId": "pi_fixture-conceptual-mecha_266xz52zxwbbi",
+          "layer": "educational-simulation",
+          "sourceIds": [
+            "source.blueprint.sistema4b.v0.1"
+          ],
+          "confidence": "high",
+          "reversible": true,
+          "limitations": [
+            "Relación conceptual; no representa la arquitectura de un calibre concreto."
+          ]
+        }
+      ],
+      "selectors": [
+        {
+          "id": "selector.conceptual.mechanical.indication",
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "cardinality": "exactly-one",
+          "purpose": "Resolver el rol semántico indication."
+        }
+      ],
+      "anchors": [
+        "ai_fixture-conceptual-mecha_1oc0jlh11d2jx"
+      ],
+      "degreesOfFreedom": [],
+      "reconstructionLevel": "R2",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "sourceIds": [
+        "source.blueprint.sistema4b.v0.1"
+      ],
+      "limitations": [],
+      "representableOperations": [
+        "select",
+        "show",
+        "hide",
+        "isolate",
+        "highlight",
+        "explode",
+        "restore"
+      ],
+      "nonRepresentableBeforeSystem4e": [
+        "editable-teeth",
+        "physical-torque",
+        "measured-clearance",
+        "validated-service"
+      ]
+    }
+  ],
+  "moduleSuitability": [
+    {
+      "module": "energy",
+      "baselineStatus": "parcial",
+      "finding": "El fixture base contiene muelle, barrilete y cadena; el laboratorio añade bloqueo y energía normalizada."
+    },
+    {
+      "module": "barrel",
+      "baselineStatus": "parcial",
+      "finding": "El fixture base agrupa el barrilete; el laboratorio separa árbol, tambor, tapa y brida conceptual."
+    },
+    {
+      "module": "gear-pair",
+      "baselineStatus": "no representable antes de 4E",
+      "finding": "No existían dientes editables ni cálculo de relación."
+    },
+    {
+      "module": "train",
+      "baselineStatus": "parcial",
+      "finding": "Existía un marcador de tren, no etapas editables."
+    },
+    {
+      "module": "supports",
+      "baselineStatus": "no representable antes de 4E",
+      "finding": "No había pivotes, rubíes o grados de libertad conceptuales."
+    },
+    {
+      "module": "escapement",
+      "baselineStatus": "parcial",
+      "finding": "Existían rueda y áncora, sin ocho fases ni paso a paso."
+    },
+    {
+      "module": "oscillator",
+      "baselineStatus": "parcial",
+      "finding": "Existían volante y espiral, sin frecuencia y amplitud independientes."
+    },
+    {
+      "module": "integration",
+      "baselineStatus": "parcial",
+      "finding": "La cadena funcional existía como relaciones, no como laboratorio coordinado."
+    },
+    {
+      "module": "motion-works",
+      "baselineStatus": "parcial",
+      "finding": "Existía una entidad agrupada sin relación editable ni indicación horaria."
+    },
+    {
+      "module": "keyless",
+      "baselineStatus": "parcial",
+      "finding": "Existía una entidad agrupada sin estados de corona."
+    },
+    {
+      "module": "automatic",
+      "baselineStatus": "ausente",
+      "finding": "El conceptual base no contenía automático."
+    },
+    {
+      "module": "calendar",
+      "baselineStatus": "ausente",
+      "finding": "El conceptual base no contenía calendario."
+    }
+  ],
+  "laboratoryAddedBySystem4e": {
+    "entities": 30,
+    "kinematicRelations": 12,
+    "energySegments": 9,
+    "semanticCommands": [
+      "wind",
+      "release",
+      "block",
+      "unblock",
+      "change-ratio",
+      "step-escapement",
+      "scrub-escapement",
+      "set-oscillator",
+      "change-crown-position",
+      "advance-calendar",
+      "introduce-fault",
+      "undo"
+    ],
+    "escapementPhases": [
+      {
+        "index": 1,
+        "phase": "locked-left",
+        "description": "1. locked left."
+      },
+      {
+        "index": 2,
+        "phase": "unlock-left",
+        "description": "2. unlock left."
+      },
+      {
+        "index": 3,
+        "phase": "impulse-left",
+        "description": "3. impulse left."
+      },
+      {
+        "index": 4,
+        "phase": "drop-left",
+        "description": "4. drop left."
+      },
+      {
+        "index": 5,
+        "phase": "locked-right",
+        "description": "5. locked right."
+      },
+      {
+        "index": 6,
+        "phase": "unlock-right",
+        "description": "6. unlock right."
+      },
+      {
+        "index": 7,
+        "phase": "impulse-right",
+        "description": "7. impulse right."
+      },
+      {
+        "index": 8,
+        "phase": "drop-right",
+        "description": "8. drop right."
+      }
+    ],
+    "reducedMotion": {
+      "discreteStates": true,
+      "sameResults": true,
+      "automaticMotion": false
+    }
+  },
+  "miyota8215": {
+    "fixtureId": "fixture.miyota.8215.structural",
+    "reconstructionLevel": "R2",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "R2 estructural con geometría interna normalizada.",
+        "Sin lubricación, desgaste, choque ni tolerancias internas validadas."
+      ]
+    },
+    "definitions": 56,
+    "instances": 63,
+    "relations": 32,
+    "selectors": 16,
+    "examples": [
+      {
+        "id": "pd_fixture-miyota-8215-stru_02osuickpp06u",
+        "nameEs": "Envolvente oficial del movimiento",
+        "officialReference": null,
+        "subsystem": "structure",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": [
+            "Cilindro de envolvente, no contorno de platina."
+          ]
+        },
+        "limitations": [
+          "Cilindro de envolvente, no contorno de platina.",
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_0yexlx56noeaz",
+        "nameEs": "Estructura base visible",
+        "officialReference": null,
+        "subsystem": "structure",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": [
+            "Sin referencia oficial separada en la lista; contorno normalizado."
+          ]
+        },
+        "limitations": [
+          "Sin referencia oficial separada en la lista; contorno normalizado.",
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_2r7qdj8fz2set",
+        "nameEs": "Puente de volante completo",
+        "officialReference": "350-005",
+        "subsystem": "structure",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_2bwwrm1e1yrzp",
+        "nameEs": "Volante con espiral regulada",
+        "officialReference": "039-102",
+        "subsystem": "regulation",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": [
+            "La lista oficial identifica un conjunto; volante y espiral no se presentan como dos recambios independientes."
+          ]
+        },
+        "limitations": [
+          "La lista oficial identifica un conjunto; volante y espiral no se presentan como dos recambios independientes.",
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_3kabe0882s8do",
+        "nameEs": "Puente de barrilete",
+        "officialReference": "701-263",
+        "subsystem": "structure",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1vf3hum8v9jp2",
+        "nameEs": "Barrilete completo",
+        "officialReference": "001-870",
+        "subsystem": "power-source",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": [
+            "La lista oficial identifica el barrilete completo; el muelle no se modela como recambio separado."
+          ]
+        },
+        "limitations": [
+          "La lista oficial identifica el barrilete completo; el muelle no se modela como recambio separado.",
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_0k1pnqajgo1oh",
+        "nameEs": "Palanca de freno de segundero",
+        "officialReference": "269-408",
+        "subsystem": "keyless",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_11hrmrd2ec3pf",
+        "nameEs": "Palanca correctora de calendario",
+        "officialReference": "116-300",
+        "subsystem": "calendar",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_2q6tindyd826h",
+        "nameEs": "Rueda de centro y piñón",
+        "officialReference": "012-116",
+        "subsystem": "train",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_354ag7fp6qmss",
+        "nameEs": "Puente de rueda de centro",
+        "officialReference": "711-074",
+        "subsystem": "structure",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_2lcf51tspmybq",
+        "nameEs": "Trinquete",
+        "officialReference": "060-390",
+        "subsystem": "power-source",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_15torw9mtdlh4",
+        "nameEs": "Muelle de trinquete",
+        "officialReference": "903-700",
+        "subsystem": "power-source",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_2hyxrxkfx1cs1",
+        "nameEs": "Piñón corredizo",
+        "officialReference": "064-450",
+        "subsystem": "keyless",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1pq8mdqi69vwj",
+        "nameEs": "Rueda de corona",
+        "officialReference": "058-360",
+        "subsystem": "keyless",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1v185lb4tsv72",
+        "nameEs": "Muelle corrector de fecha",
+        "officialReference": "903-A31",
+        "subsystem": "calendar",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_3rzoy6bkzvhwb",
+        "nameEs": "Disco de fecha",
+        "officialReference": "108-9500",
+        "subsystem": "calendar",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_31sp21v262a4m",
+        "nameEs": "Rueda conductora de fecha",
+        "officialReference": "103-650",
+        "subsystem": "calendar",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_16iukna3ebb3f",
+        "nameEs": "Protector del disco de fecha",
+        "officialReference": "176-150",
+        "subsystem": "calendar",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_3m7960bhv51h2",
+        "nameEs": "Saltador de fecha",
+        "officialReference": "109-350",
+        "subsystem": "calendar",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1r7xixanb4xr7",
+        "nameEs": "Rueda de escape y piñón",
+        "officialReference": "032-106",
+        "subsystem": "escapement",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_2rvj28nno3xis",
+        "nameEs": "Cuarta rueda y piñón",
+        "officialReference": "023-940",
+        "subsystem": "train",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_07o5zyic4nzzr",
+        "nameEs": "Muelle de fricción del piñón de segundero",
+        "officialReference": "903-690",
+        "subsystem": "motion-works",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_2iwt4whk3e6oa",
+        "nameEs": "Rueda de horas",
+        "officialReference": "075-124",
+        "subsystem": "motion-works",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1of7nhbovwg1c",
+        "nameEs": "Rueda intermedia de fecha",
+        "officialReference": "100-170",
+        "subsystem": "calendar",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_3hgxngjlypzah",
+        "nameEs": "Rueda intermedia",
+        "officialReference": "087-250",
+        "subsystem": "automatic",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_3a6cqm472yhe8",
+        "nameEs": "Arandela de rueda intermedia",
+        "officialReference": "078-150",
+        "subsystem": "automatic",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_08dhpyl8asrx7",
+        "nameEs": "Áncora enjoyada con eje",
+        "officialReference": "035-560",
+        "subsystem": "escapement",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1fv2ewfvooplg",
+        "nameEs": "Contrapiedra inferior montada",
+        "officialReference": "094-040",
+        "subsystem": "regulation",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_06weveq0meftw",
+        "nameEs": "Rueda de minutería y piñón",
+        "officialReference": "072-520",
+        "subsystem": "motion-works",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_0dj2kg5z3l8rs",
+        "nameEs": "Protector de rueda de minutería",
+        "officialReference": "079-600",
+        "subsystem": "structure",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_2a6jrqp3zb8ok",
+        "nameEs": "Portamovimiento plástico",
+        "officialReference": "500-710",
+        "subsystem": "structure",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1n3k07m77ortm",
+        "nameEs": "Masa oscilante",
+        "officialReference": "119-A76",
+        "subsystem": "automatic",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_36uejsgvmobcv",
+        "nameEs": "Puente de áncora",
+        "officialReference": "708-095",
+        "subsystem": "structure",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_0ztjwwn7pgbcj",
+        "nameEs": "Rueda de carga con trinquete",
+        "officialReference": "141-190",
+        "subsystem": "automatic",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_17z3rzcbms3ht",
+        "nameEs": "Rueda de rochete",
+        "officialReference": "059-560",
+        "subsystem": "power-source",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_31aypqucfa33t",
+        "nameEs": "Rueda reductora",
+        "officialReference": "088-120",
+        "subsystem": "automatic",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_2h9279wyvu4pj",
+        "nameEs": "Palanca de conexión del freno de segundero",
+        "officialReference": "273-201",
+        "subsystem": "keyless",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1h4026ghb3amz",
+        "nameEs": "Tirete",
+        "officialReference": "067-860",
+        "subsystem": "keyless",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1bz3qx2n7t36n",
+        "nameEs": "Muelle de tirete",
+        "officialReference": "077-680",
+        "subsystem": "keyless",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_0ixy3cmk9gazo",
+        "nameEs": "Rueda de puesta en hora",
+        "officialReference": "076-430",
+        "subsystem": "keyless",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_2sbd83o7wbdzd",
+        "nameEs": "Muelle espiral con rubí",
+        "officialReference": "098-090",
+        "subsystem": "regulation",
+        "instances": 2,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_0c0c3j6wrcsqr",
+        "nameEs": "Piñón de segundero central",
+        "officialReference": "025-670",
+        "subsystem": "motion-works",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_3nyx72vq2uhkl",
+        "nameEs": "Tercera rueda y piñón",
+        "officialReference": "017-760",
+        "subsystem": "train",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_0xdyny6cepf61",
+        "nameEs": "Contrapiedra superior montada",
+        "officialReference": "094-010",
+        "subsystem": "regulation",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_03fx9lmbzqs18",
+        "nameEs": "Arandela para rueda",
+        "officialReference": "078-140",
+        "subsystem": "train",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_27igjztgfcg8y",
+        "nameEs": "Tija de remontuar",
+        "officialReference": "065-212",
+        "subsystem": "keyless",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_33lyepnbiuj7q",
+        "nameEs": "Báscula",
+        "officialReference": "071-A04",
+        "subsystem": "keyless",
+        "instances": 1,
+        "use": "visual-example-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_0nf0znq9lzt0l",
+        "nameEs": "Tornillo de puente de barrilete/tren",
+        "officialReference": "924-460",
+        "subsystem": "fasteners",
+        "instances": 3,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1lt26k4lymoq7",
+        "nameEs": "Tornillo de puente de rueda de centro",
+        "officialReference": "923-600",
+        "subsystem": "fasteners",
+        "instances": 2,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_3tgbhbzz7cy85",
+        "nameEs": "Tornillo de protector de fecha",
+        "officialReference": "923-630",
+        "subsystem": "fasteners",
+        "instances": 4,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_3ax0cvpj2fevz",
+        "nameEs": "Tornillo de masa oscilante",
+        "officialReference": "925-490",
+        "subsystem": "fasteners",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1y93ec9h185ri",
+        "nameEs": "Tornillo de puente de áncora",
+        "officialReference": "923-600",
+        "subsystem": "fasteners",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_3erv12zfwgfdq",
+        "nameEs": "Tornillo de puente de volante",
+        "officialReference": "924-460",
+        "subsystem": "fasteners",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G0",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_16b7bc1yfz53c",
+        "nameEs": "Interfaz de aguja horaria",
+        "officialReference": null,
+        "subsystem": "indication",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_13nj0swavreoe",
+        "nameEs": "Interfaz de aguja minutera",
+        "officialReference": null,
+        "subsystem": "indication",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      },
+      {
+        "id": "pd_fixture-miyota-8215-stru_1b76wvi27t2mm",
+        "nameEs": "Interfaz de segundero",
+        "officialReference": null,
+        "subsystem": "indication",
+        "instances": 1,
+        "use": "context-only",
+        "fidelity": {
+          "geometry": "G2",
+          "kinematics": "K2",
+          "physics": "P0",
+          "limitations": []
+        },
+        "limitations": [
+          "No hereda dientes, relaciones calculadas, cinemática o física del modelo conceptual."
+        ]
+      }
+    ],
+    "policy": "Referencia visual y estructural R2; nunca modelo principal ni autoridad cinemática del laboratorio."
+  },
+  "viewportCompatibility": {
+    "available": [
+      "selection",
+      "visibility",
+      "isolation",
+      "highlight",
+      "explode",
+      "timeline",
+      "scrub",
+      "reduced-motion",
+      "restore",
+      "multi-fixture"
+    ],
+    "laboratoryOwned": [
+      "editable-gear-stages",
+      "calculations",
+      "escapement-phases",
+      "oscillator-parameters",
+      "crown-state",
+      "calendar-state",
+      "fault-diagnostics"
+    ],
+    "unmeasured": [
+      "gpu-memory",
+      "draw-calls"
+    ],
+    "notRepresented": [
+      "real-tooth-profiles",
+      "real-spring-stress",
+      "real-endshake",
+      "real-torque",
+      "8215-service-sequence"
+    ]
+  }
+}

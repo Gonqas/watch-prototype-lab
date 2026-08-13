@@ -1,0 +1,28 @@
+{
+  "measuredAt": "2026-07-27",
+  "environment": "Node headless; dominio mecánico y cálculos, sin renderer GPU",
+  "durationsMs": {
+    "loadLab": 0.9659000000000049,
+    "wind": 0.9184999999999945,
+    "changeRatio": 0.2961999999999989,
+    "recalculateTrain": 0.014399999999994861,
+    "eightEscapementPhases": 0.9425999999999988,
+    "restoreSnapshot": 0.3552999999999997,
+    "reconfigureFunctions": 0.5478999999999985
+  },
+  "counts": {
+    "entities": 30,
+    "kinematicRelations": 12,
+    "energySegments": 9,
+    "gearStages": 4,
+    "snapshotBytesUtf8": 12102,
+    "materials": null,
+    "drawCalls": null,
+    "gpuMemoryBytes": null
+  },
+  "limitations": [
+    "Los tiempos son una muestra diagnóstica, no un presupuesto garantizado.",
+    "Materiales, draw calls y memoria GPU requieren instrumentación del renderer y quedan no medidos.",
+    "No se mide física, servicio ni montaje de un MIYOTA 8215."
+  ]
+}

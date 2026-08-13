@@ -1,0 +1,71 @@
+{
+  "id": "concept.capstone.design.external-components",
+  "version": "1.0.0",
+  "title": {
+    "es": "Caja, esfera, agujas y experiencia de uso",
+    "en": "Caja, esfera, agujas y experiencia de uso"
+  },
+  "summary": {
+    "es": "¿Qué evidencia permite superar la puerta de caja, esfera, agujas y experiencia de uso?",
+    "en": "¿Qué evidencia permite superar la puerta de caja, esfera, agujas y experiencia de uso?"
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.capstone.design.acquired-movement"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.capstone.design.acquired-movement",
+    "concept.capstone.design.controlled-modification"
+  ],
+  "competencyIds": [
+    "competency.capstone.design.external-components"
+  ],
+  "movementIds": [],
+  "subsystem": "personal-design-detail",
+  "routeIds": [
+    "route.capstone.personal-watch-design"
+  ],
+  "activityIds": [
+    "activity.capstone.design.external-components"
+  ],
+  "sourceIds": [
+    "source.iso.22810",
+    "source.iso.21920-1",
+    "source.iso.9241-11",
+    "source.w3c.wcag22"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Qué evidencia permite superar la puerta de caja, esfera, agujas y experiencia de uso?",
+    "en": "¿Qué evidencia permite superar la puerta de caja, esfera, agujas y experiencia de uso?"
+  },
+  "technicalLanguage": {
+    "es": "## El propósito de esta puerta\n\nCerrar la arquitectura exterior como un sistema funcional, fabricable, legible, mantenible y validable. Diseñar un reloj propio no consiste en saltar directamente a dibujar puentes. Es una progresión de autoridad: primero se integra un movimiento adquirido sin cambiar su arquitectura; después se estudian modificaciones controladas con interfaces y pruebas; finalmente se propone un movimiento propio. Cada nivel conserva lo aprendido en el anterior y añade incertidumbre, dependencia y responsabilidad.\n\nLa puerta **Caja, esfera, agujas y experiencia de uso** no premia la cantidad de imágenes ni la sofisticación del diseño asistido por ordenador. Decide si existe información suficiente para comprometer tiempo, material y riesgo en la fase siguiente. Su expediente debe permitir que otra persona reconstruya qué se decidió, qué alternativas se descartaron, con qué evidencia, qué sigue abierto y qué resultado obligaría a volver atrás.\n\n## Entradas que deben estar fijadas\n\n- **Control de interfaces aprobado:** Límites radiales, axiales y funcionales.\n- **Lenguaje visual:** Jerarquía, proporción, material, contraste y acabado.\n\nEn **Caja, esfera, agujas y experiencia de uso**, una entrada incierta —por ejemplo, **Control de interfaces aprobado**— se marca con responsable, plan de resolución y fecha. Si cambia la comunicación del fabricante, la unidad medida o el pliego, el registro identifica qué decisiones de esta puerta quedan afectadas. Así una cifra copiada no se convierte silenciosamente en arquitectura del proyecto.\n\n## Interfaces y restricciones\n\n- **Conjunto de caja:** Carrura, bisel, cristal, fondo, corona, tubo, asas y juntas.\n- **Sistema de lectura:** Esfera, índices, agujas, fecha, luminiscencia y contraste.\n\n- **Ruta de fabricación:** Cada forma debe tener proceso, datum, inspección y acabado plausibles.\n- **Accesibilidad:** No depender solo de color, tamaño mínimo o destreza extrema sin alternativa.\n\nPara superar **Caja, esfera, agujas y experiencia de uso**, trata cada interfaz —empezando por **Conjunto de caja**— como un contrato de geometría, posición, movimiento, carga, material, montaje, servicio y verificación. Dos componentes pueden caber por separado y resultar incompatibles al apilar tolerancias. Revisa qué controla la interfaz, qué variación admite, cómo se monta, cómo se inspecciona y qué ocurre cuando falla.\n\n## Alternativas y decisión\n\nLa puerta **Caja, esfera, agujas y experiencia de uso** exige al menos **3 alternativas reales**. No cuentan como alternativas la misma solución con otro color: deben cambiar arquitectura, proceso, interfaz o estrategia de validación. La matriz separa requisitos obligatorios de preferencias, usa unidades cuando existen y conserva incertidumbre. Una opción que incumple un requisito bloqueante de esta fase no se rescata sumando ventajas estéticas.\n\nLas preguntas de puerta son:\n\n- ¿Puede leerse y ajustarse sin explicación del diseñador?\n- ¿Qué superficie es funcional y cuál decorativa?\n- ¿Cómo se inspeccionará cada interfaz después del acabado?\n\nLa decisión de **Caja, esfera, agujas y experiencia de uso** registra autor, fecha, configuración, alternativas, criterios, evidencia, riesgos y condiciones de reapertura. Su objetivo no es eliminar toda incertidumbre, sino impedir que una incertidumbre crítica de esta puerta quede disfrazada de decisión cerrada.\n\n## Entregables y verificación\n\n- **Dossier de componentes exteriores:** Planos, materiales, acabados, inte",
+    "en": "## El propósito de esta puerta\n\nCerrar la arquitectura exterior como un sistema funcional, fabricable, legible, mantenible y validable. Diseñar un reloj propio no consiste en saltar directamente a dibujar puentes. Es una progresión de autoridad: primero se integra un movimiento adquirido sin cambiar su arquitectura; después se estudian modificaciones controladas con interfaces y pruebas; finalmente se propone un movimiento propio. Cada nivel conserva lo aprendido en el anterior y añade incertidumbre, dependencia y responsabilidad.\n\nLa puerta **Caja, esfera, agujas y experiencia de uso** no premia la cantidad de imágenes ni la sofisticación del diseño asistido por ordenador. Decide si existe información suficiente para comprometer tiempo, material y riesgo en la fase siguiente. Su expediente debe permitir que otra persona reconstruya qué se decidió, qué alternativas se descartaron, con qué evidencia, qué sigue abierto y qué resultado obligaría a volver atrás.\n\n## Entradas que deben estar fijadas\n\n- **Control de interfaces aprobado:** Límites radiales, axiales y funcionales.\n- **Lenguaje visual:** Jerarquía, proporción, material, contraste y acabado.\n\nEn **Caja, esfera, agujas y experiencia de uso**, una entrada incierta —por ejemplo, **Control de interfaces aprobado**— se marca con responsable, plan de resolución y fecha. Si cambia la comunicación del fabricante, la unidad medida o el pliego, el registro identifica qué decisiones de esta puerta quedan afectadas. Así una cifra copiada no se convierte silenciosamente en arquitectura del proyecto.\n\n## Interfaces y restricciones\n\n- **Conjunto de caja:** Carrura, bisel, cristal, fondo, corona, tubo, asas y juntas.\n- **Sistema de lectura:** Esfera, índices, agujas, fecha, luminiscencia y contraste.\n\n- **Ruta de fabricación:** Cada forma debe tener proceso, datum, inspección y acabado plausibles.\n- **Accesibilidad:** No depender solo de color, tamaño mínimo o destreza extrema sin alternativa.\n\nPara superar **Caja, esfera, agujas y experiencia de uso**, trata cada interfaz —empezando por **Conjunto de caja**— como un contrato de geometría, posición, movimiento, carga, material, montaje, servicio y verificación. Dos componentes pueden caber por separado y resultar incompatibles al apilar tolerancias. Revisa qué controla la interfaz, qué variación admite, cómo se monta, cómo se inspecciona y qué ocurre cuando falla.\n\n## Alternativas y decisión\n\nLa puerta **Caja, esfera, agujas y experiencia de uso** exige al menos **3 alternativas reales**. No cuentan como alternativas la misma solución con otro color: deben cambiar arquitectura, proceso, interfaz o estrategia de validación. La matriz separa requisitos obligatorios de preferencias, usa unidades cuando existen y conserva incertidumbre. Una opción que incumple un requisito bloqueante de esta fase no se rescata sumando ventajas estéticas.\n\nLas preguntas de puerta son:\n\n- ¿Puede leerse y ajustarse sin explicación del diseñador?\n- ¿Qué superficie es funcional y cuál decorativa?\n- ¿Cómo se inspeccionará cada interfaz después del acabado?\n\nLa decisión de **Caja, esfera, agujas y experiencia de uso** registra autor, fecha, configuración, alternativas, criterios, evidencia, riesgos y condiciones de reapertura. Su objetivo no es eliminar toda incertidumbre, sino impedir que una incertidumbre crítica de esta puerta quede disfrazada de decisión cerrada.\n\n## Entregables y verificación\n\n- **Dossier de componentes exteriores:** Planos, materiales, acabados, inte"
+  },
+  "whyItMatters": {
+    "es": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables.",
+    "en": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables."
+  },
+  "observableActions": [
+    {
+      "es": "Compara alternativas.",
+      "en": "Compara alternativas."
+    },
+    {
+      "es": "Declara interfaces y riesgos.",
+      "en": "Declara interfaces y riesgos."
+    },
+    {
+      "es": "Define evidencia y criterios de parada.",
+      "en": "Define evidencia y criterios de parada."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.capstone.design.controlled-modification"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

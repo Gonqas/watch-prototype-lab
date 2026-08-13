@@ -1,0 +1,62 @@
+{
+  "id": "concept.horology.source-confidence",
+  "version": "0.5.0",
+  "title": {
+    "es": "Observación, inferencia y confianza"
+  },
+  "summary": {
+    "es": "Separar lo visto, documentado, inferido, estimado y todavía desconocido."
+  },
+  "kind": "skill",
+  "knowledgeType": "epistemic",
+  "prerequisiteIds": [
+    "concept.horology.system-interruption"
+  ],
+  "recommendedPrerequisiteIds": [
+    "concept.horology.quartz-chain"
+  ],
+  "relatedIds": [
+    "concept.horology.system-interruption"
+  ],
+  "competencyIds": [
+    "competency.horology.state-source-confidence"
+  ],
+  "movementIds": [],
+  "subsystem": "horology-foundations",
+  "routeIds": [
+    "route.horology.orientation"
+  ],
+  "activityIds": [
+    "activity.horology.isa-confidence-map"
+  ],
+  "sourceIds": [
+    "source.horology.original-functional-map"
+  ],
+  "misconceptionIds": [
+    "misconception.horology.simulation-is-physical-proof"
+  ],
+  "bridgeLessonId": "lesson.horology.isa8172-confidence",
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available",
+  "plainLanguage": {
+    "es": "Separar lo visto, documentado, inferido, estimado y todavía desconocido."
+  },
+  "technicalLanguage": {
+    "es": "Observación, inferencia y confianza clasifica la autoridad de la información sobre fundamentos de relojería: oficial, observada, medida, deducida, estimada, educativa o desconocida. Separar lo visto, documentado, inferido, estimado y todavía desconocido. La conclusión técnica nunca puede tener más autoridad que su fuente.",
+    "en": "Observación, inferencia y confianza clasifica la autoridad de la información sobre fundamentos de relojería: oficial, observada, medida, deducida, estimada, educativa o desconocida. Separar lo visto, documentado, inferido, estimado y todavía desconocido. La conclusión técnica nunca puede tener más autoridad que su fuente."
+  },
+  "whyItMatters": {
+    "es": "Dominar observación, inferencia y confianza permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Distinguir qué parte de observación, inferencia y confianza es oficial, medida, deducida, estimada o desconocida."
+    },
+    {
+      "es": "Citar la fuente y declarar el límite antes de extraer una conclusión."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.horology.system-interruption"
+  ]
+}

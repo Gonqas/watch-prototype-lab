@@ -1,0 +1,57 @@
+{
+  "id": "block.miyota8215.train",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Tren de rodaje",
+  "bodyMarkdown": "## Propósito\n\nIdentificar ruedas, piñones, árboles, apoyos, puentes y engranes documentados.\n\n## Objetivos y prerrequisitos\n\n## Explicación\n\nRueda de centro, tercera, cuarta y escape se relacionan de forma estructural. Bloquear o retirar una instancia interrumpe la cadena visual; no se asignan conteos de dientes no verificados.\n\n## Visual e interacción\n\n- aislar\n- sentidos\n- relaciones\n- bloqueo\n- retirada simbólica\n\n## Fuentes, afirmaciones y vocabulario\n\nLas identidades, referencias y datos específicos proceden de documentación MIYOTA. La explicación es contenido educativo original. El libro privado solo aporta teoría general y no se copia. Los nombres en español conservan su equivalencia técnica en inglés y su referencia oficial.\n\n## Actividad, errores y ayuda\n\n- Identificar el tren.\n- Interrumpir y comprobar el tren.\n\n## Evidencia y criterios de revisión\n\n## Limitaciones\n\n- Sin conteos de dientes, perfiles, distancias entre centros o libertad física verificadas.\n- Los niveles de reconstrucción y fidelidad se consultan en la ficha técnica; no certifican servicio profesional ni funcionamiento físico.\n\n## Resumen y siguiente conexión\n\nIdentificar ruedas, piñones, árboles, apoyos, puentes y engranes documentados. Continúa con «Escape, volante y espiral».\n\n## Palabras y piezas clave\n\n- **Explicar la cadena energética.** Explicar la cadena energética con un modelo estructural, fuentes, operaciones y límites declarados.\n- **Identificar el tren.** Identificar el tren con un modelo estructural, fuentes, operaciones y límites declarados.\n- **Verificar parcialmente.** Verificar parcialmente con un modelo estructural, fuentes, operaciones y límites declarados.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo se identifica el tren del 8215 por sus engranes, árboles y apoyos y no por una fila de ruedas próximas?\n\n## Modelo causal ampliado\n\nEl tren conecta el barrilete con el escape mediante pares de ruedas y piñones solidarios a árboles. Cada etapa requiere un engrane real y apoyos que definan el eje. La posición aproximada puede derivarse del ensamblaje estructural, mientras que perfiles y tolerancias ocultas permanecen desconocidos.\n\nSeguir el tren exige alternar relaciones: engrana con y comparte árbol con. Saltar una de ellas produce una cadena falsa aunque todas las piezas estén cerca.\n\n## Ejemplo resuelto\n\nSe parte del barrilete y se selecciona el primer engrane. En el mismo árbol, la siguiente salida procede del piñón correspondiente; después se sigue el siguiente contacto. Al ocultar un apoyo, la cadena estructural queda incompleta aunque el dibujo de dientes no cambie.\n\n## Práctica deliberada\n\nRecorre con etiquetas. Repite alternando engrane y árbol sin nombres. En el intento independiente recibe un enlace basado solo en proximidad y debe sustituirlo por una relación declarada.\n\n## Comprobación antes del laboratorio\n\n- Cada salto nombra una interfaz.\n- No confundes rueda, piñón y árbol.\n- Incluyes apoyos.\n- Separas la relación estructural de una geometría exacta.\n\n## Transferencia\n\nTransfiere la ruta al tren conceptual y explica qué cálculos ideales no deben atribuirse automáticamente al 8215.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo se identifica el tren del 8215 por sus engranes, árboles y apoyos y no por una fila de ruedas próximas?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Transfiere la ruta al tren conceptual y explica qué cálculos ideales no deben atribuirse automáticamente al 8215.\n\n## Lectura técnica de relaciones y límites\n\nConstruye una tabla de etapas. Para cada árbol anota rueda solidaria, piñón solidario, pieza que lo impulsa, pieza impulsada y apoyos. Esta tabla detecta saltos falsos que una vista superior puede ocultar. Después recorre el grafo en sentido inverso: si no puedes regresar desde escape hasta barrilete por las mismas interfaces, falta una relación o has confundido dos instancias. Los conteos de dientes y relaciones exactas solo se usan cuando la fuente los proporciona o cuando el ejercicio se declara conceptual; la reconstrucción estructural no autoriza a contarlos desde siluetas normalizadas.\n\n## Profundización aplicada\n\nSepara el mapa funcional del mapa físico. El primero puede afirmar que una etapa transmite hacia la siguiente; el segundo necesita identidad de rueda y piñón, eje común, apoyo y contacto respaldado. Para cada salto del recorrido escribe qué fuente o relación lo autoriza. Si falta un apoyo o una interfaz, conserva el hueco y formula la observación que lo resolvería antes de calcular una relación.",
+  "claims": [
+    {
+      "id": "claim.miyota8215.train",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "Tren de rodaje se practica sobre el modelo estructural del 8215 con autoridad y limitaciones visibles.",
+      "sourceStatement": "Documentación MIYOTA para identidad y estructura; explicación educativa original para la secuencia de aprendizaje.",
+      "method": "Modelo estructural del 8215 y controles educativos del Sistema 4F",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+          "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+          "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4f:train:0.5.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-miyota8215",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4F · MIYOTA 8215 completo"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Arquitectura de laboratorio, explicaciones, actividades, operaciones educativas y evaluación originales del Sistema 4F.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.miyota8215.identify-train",
+      "concept.miyota8215.verify-partially"
+    ],
+    "estimatedMinutes": 4,
+    "userPaced": true
+  }
+}

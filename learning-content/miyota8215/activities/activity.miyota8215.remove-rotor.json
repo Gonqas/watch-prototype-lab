@@ -1,0 +1,421 @@
+{
+  "id": "activity.miyota8215.remove-rotor",
+  "version": "0.5.0",
+  "title": "Retirar rotor",
+  "sceneIds": [
+    "scene.practice.miyota8215.remove-rotor"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.virtual-disassembly"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.miyota8215.virtual-disassembly"
+  ],
+  "rubricId": "rubric.miyota8215.virtual-disassembly",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.miyota.8215.structural"
+  },
+  "authoring": {
+    "lessonId": "lesson.miyota8215.guided-disassembly",
+    "title": {
+      "es": "Retirar rotor",
+      "en": "Retirar rotor"
+    },
+    "description": {
+      "es": "Retirar rotor con identidad, autoridad, dependencias, evidencia y restauración.",
+      "en": "Retirar rotor con identidad, autoridad, dependencias, evidencia y restauración."
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 24,
+    "activityType": "guided-practice",
+    "movementIds": [
+      "fixture.miyota.8215.structural",
+      "fixture.conceptual.mechanical-chain"
+    ],
+    "familyIds": [
+      "miyota-82"
+    ],
+    "subsystem": "disassembly",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+        "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+        "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física.",
+        "El recorrido termina donde acaban geometría y dependencias respaldadas."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.miyota.8215.product-page",
+      "source.miyota.8215.specification",
+      "source.miyota.8215.drawing",
+      "source.miyota.8215.instruction-manual",
+      "source.miyota.8215.parts-list-exploded-view",
+      "source.horology.original-miyota8215"
+    ],
+    "visualResourceIds": [
+      "visual.miyota8215.guided-disassembly"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.miyota.8215.structural"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.miyota8215.remove-rotor.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Qué debe ocurrir antes de retirar virtualmente el rotor?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.remove-rotor.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Sigue la identidad del rotor y de su sujeción hasta la bandeja."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.remove-rotor.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: Retirar es una transición de estado trazable, no ocultar una pieza visual."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.remove-rotor.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.remove-rotor.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "Retirar es una transición de estado trazable, no ocultar una pieza visual."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.miyota8215.remove-rotor.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Explica qué riesgo físico no representa la operación digital."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "calibre-lab-command",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [
+          "instance-id",
+          "authority",
+          "dependency",
+          "state",
+          "fixture-version"
+        ],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "check-understanding",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "Retirar es una transición de estado trazable, no ocultar una pieza visual."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «Girar el rotor hasta que desaparezca de la cámara» y «Eliminar todo el automático como un único objeto sin identidad» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Qué debe ocurrir antes de retirar virtualmente el rotor?"
+      },
+      "nextObservation": {
+        "es": "Sigue la identidad del rotor y de su sujeción hasta la bandeja."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Explica qué riesgo físico no representa la operación digital."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.miyota8215.prepare-disassembly",
+        "concept.miyota8215.virtual-disassembly"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Retirar rotor», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Retirar rotor», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué debe ocurrir antes de retirar virtualmente el rotor?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Sigue la identidad del rotor y de su sujeción hasta la bandeja."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Retirar rotor»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: Retirar es una transición de estado trazable, no ocultar una pieza visual."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "Retirar es una transición de estado trazable, no ocultar una pieza visual."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Retirar rotor» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Retirar rotor» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Retirar rotor» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Explica qué riesgo físico no representa la operación digital."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "Confirmar instancia, sujeción, herramienta, orientación, destino y autoridad de la operación"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Girar el rotor hasta que desaparezca de la cámara"
+        },
+        {
+          "es": "Eliminar todo el automático como un único objeto sin identidad"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Explica qué riesgo físico no representa la operación digital."
+        }
+      },
+      "transferPrompt": {
+        "es": "Explica qué riesgo físico no representa la operación digital."
+      }
+    },
+    "calibreLabContract": {
+      "fixtureId": "fixture.miyota.8215.structural",
+      "modes": [
+        "guided",
+        "assisted",
+        "free"
+      ],
+      "subsystemIds": [
+        "subsystem.8215.structure"
+      ],
+      "operationPhases": [
+        "documentation",
+        "disassembly"
+      ],
+      "authorityVisible": true,
+      "instanceIdentityRequired": true,
+      "contextualMechanicalLabs": [],
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "workbenchContract": {
+      "fixtureId": "fixture.miyota.8215.structural",
+      "modes": [
+        "guided",
+        "assisted",
+        "free"
+      ],
+      "requiredZones": [
+        "zone.movement",
+        "zone.tools",
+        "zone.tray",
+        "zone.inspection",
+        "zone.documentation"
+      ],
+      "evidenceContext": [
+        "mode",
+        "assistance",
+        "hints",
+        "errors",
+        "corrections",
+        "sources",
+        "initial-state",
+        "final-state",
+        "fixture-limitations"
+      ]
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.miyota8215.prepare-disassembly"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.miyota8215.virtual-disassembly"
+      ],
+      "assessesConceptIds": [
+        "concept.miyota8215.virtual-disassembly"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.miyota8215.guided-disassembly",
+        "blockId": "block.miyota8215.guided-disassembly",
+        "conceptIds": [
+          "concept.miyota8215.virtual-disassembly"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba reconocimiento o decisiones dentro de una reconstrucción educativa del MIYOTA 8215. No certifica destreza de taller, ajuste, lubricación, tolerancias ni el estado de una unidad física.",
+        "en": "This activity checks recognition or decisions in an educational reconstruction of the MIYOTA 8215. It does not certify bench skill, adjustment, lubrication, tolerances, or the condition of a physical unit."
+      }
+    }
+  }
+}

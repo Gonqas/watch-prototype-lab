@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad.incertidumbre-de-medida",
+  "version": "1.1.0",
+  "title": {
+    "es": "incertidumbre de medida",
+    "en": "incertidumbre de medida"
+  },
+  "summary": {
+    "es": "Parámetro que expresa la dispersión atribuible razonablemente al resultado de una medición.",
+    "en": "Parámetro que expresa la dispersión atribuible razonablemente al resultado de una medición."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+    "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+    "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.factor-de-calidad"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.encyclopedia.math-physics-metrology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad"
+  ],
+  "sourceIds": [
+    "source.official.bipm.vim",
+    "source.official.nist.uncertainty",
+    "source.private.vba-uhrentechnik"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad",
+  "plainLanguage": {
+    "es": "Parámetro que expresa la dispersión atribuible razonablemente al resultado de una medición.",
+    "en": "Parámetro que expresa la dispersión atribuible razonablemente al resultado de una medición."
+  },
+  "technicalLanguage": {
+    "es": "incertidumbre de medida se interpreta mediante la cadena definir mensurando → elegir método → controlar condiciones → adquirir lecturas → evaluar incertidumbre → informar resultado y las condiciones declaradas en la unidad.",
+    "en": "incertidumbre de medida se interpreta mediante la cadena definir mensurando → elegir método → controlar condiciones → adquirir lecturas → evaluar incertidumbre → informar resultado y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?",
+    "en": "Permite explicar y comprobar ¿qué debe acompañar a una medida para que otra persona pueda interpretarla y repetirla?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir incertidumbre de medida sin circularidad.",
+      "en": "Definir incertidumbre de medida sin circularidad."
+    },
+    {
+      "es": "Relacionar incertidumbre de medida con una entrada, una interfaz y una salida.",
+      "en": "Relacionar incertidumbre de medida con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

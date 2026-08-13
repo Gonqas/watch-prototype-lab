@@ -1,0 +1,32 @@
+{
+  "id": "evidence.capstone.validation.calibre-transfer.human-review",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.validation.calibre-transfer",
+  "kind": "human-review",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.validation.calibre-transfer.human-review",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-human-review-completed",
+    "evidenceType": "human-review",
+    "competencyId": "competency.capstone.validation.calibre-transfer",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.validation.calibre-transfer"
+    ],
+    "evidenceTemplateId": "evidence.capstone.validation.calibre-transfer.human-review",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "reviewerId",
+      "criteria",
+      "result",
+      "notes"
+    ]
+  }
+}

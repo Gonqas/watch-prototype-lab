@@ -1,0 +1,68 @@
+{
+  "id": "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.rotor-paso-a-paso",
+  "version": "1.1.0",
+  "title": {
+    "es": "rotor paso a paso",
+    "en": "rotor paso a paso"
+  },
+  "summary": {
+    "es": "Imán permanente móvil que cambia entre posiciones estables por pulsos alternos.",
+    "en": "Imán permanente móvil que cambia entre posiciones estables por pulsos alternos."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.division-binaria",
+    "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.pulso-de-motor",
+    "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.consumo-medio"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.bobina-estator-y-rotor"
+  ],
+  "movementIds": [
+    "miyota-2035"
+  ],
+  "subsystem": "quartz-motor",
+  "routeIds": [
+    "route.encyclopedia.quartz-electronics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.bobina-estator-y-rotor"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch15",
+    "source.official.miyota.2035",
+    "source.external.watchguy-repair-blog"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.quartz-electronics.bobina-estator-y-rotor"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+  "plainLanguage": {
+    "es": "Imán permanente móvil que cambia entre posiciones estables por pulsos alternos.",
+    "en": "Imán permanente móvil que cambia entre posiciones estables por pulsos alternos."
+  },
+  "technicalLanguage": {
+    "es": "rotor paso a paso se interpreta mediante la cadena pulso circula por bobina → estator establece polos → rotor recibe par → rotor supera carga → se asienta en posición → tren transmite el paso y las condiciones declaradas en la unidad.",
+    "en": "rotor paso a paso se interpreta mediante la cadena pulso circula por bobina → estator establece polos → rotor recibe par → rotor supera carga → se asienta en posición → tren transmite el paso y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se convierte un pulso eléctrico alterno en un paso angular fiable?",
+    "en": "Permite explicar y comprobar ¿cómo se convierte un pulso eléctrico alterno en un paso angular fiable?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir rotor paso a paso sin circularidad.",
+      "en": "Definir rotor paso a paso sin circularidad."
+    },
+    {
+      "es": "Relacionar rotor paso a paso con una entrada, una interfaz y una salida.",
+      "en": "Relacionar rotor paso a paso con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,114 @@
+{
+  "id": "scene.metrology.contar-dientes",
+  "version": "0.2.0",
+  "title": "Contar dientes",
+  "description": "Escena textual y accesible que prepara la operación real “Contar dientes” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Contar dientes. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-contar-dientes.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-contar-dientes.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Contar dientes”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-contar-dientes.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Contar dientes” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-contar-dientes",
+          "promptMarkdown": "¿Cómo evitamos que una medida de “esta pieza” termine atribuida por error a todo un calibre?\n\nEn «Contar dientes», resuelve un contexto nuevo: Repite la ficha con dos unidades de una misma referencia. Compara sin fusionar sus mediciones y señala qué observaciones son compartidas y cuáles siguen siendo individuales. Documenta observación o resultado, método, límite y confianza sin copiar el dato del ejemplo.",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-contar-dientes.observation",
+              "label": "Observación o resultado transferido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-contar-dientes.method",
+              "label": "Método y referencia empleados",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-contar-dientes.limitation",
+              "label": "Límite, dato ausente o condición de invalidez",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-contar-dientes.confidence",
+              "label": "Confianza en la conclusión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Transfiere el criterio de «Contar dientes» a un contexto nuevo."
+            },
+            "feedback": {
+              "es": "La transferencia conserva el método y vuelve a declarar sus límites: Repite la ficha con dos unidades de una misma referencia. Compara sin fusionar sus mediciones y señala qué observaciones son compartidas y cuáles siguen siendo individuales."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-contar-dientes",
+          "requiredFieldIds": [
+            "field.activity-metrology-contar-dientes.observation",
+            "field.activity-metrology-contar-dientes.method",
+            "field.activity-metrology-contar-dientes.limitation",
+            "field.activity-metrology-contar-dientes.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

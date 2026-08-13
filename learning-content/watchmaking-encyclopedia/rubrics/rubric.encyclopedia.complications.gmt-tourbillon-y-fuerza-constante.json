@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de GMT, hora mundial, tourbillon y fuerza constante."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.mechanical.retain-recognize-supports-clearances",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: reconocer apoyos y holguras",
+    "en": "Práctica posterior: reconocer apoyos y holguras"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días.",
+    "en": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días."
+  },
+  "rule": "independent-later-evidence-different-activity-session-minimum-7-days@1.0.0",
+  "priority": 65,
+  "target": {
+    "kind": "competency",
+    "id": "competency.mechanical.recognize-supports-clearances"
+  },
+  "evidenceTemplateIds": [
+    "evidence.mechanical.recognize-supports-clearances"
+  ],
+  "required": false
+}

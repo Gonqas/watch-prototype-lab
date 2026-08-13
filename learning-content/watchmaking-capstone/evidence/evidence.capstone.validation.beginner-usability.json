@@ -1,0 +1,33 @@
+{
+  "id": "evidence.capstone.validation.beginner-usability",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.validation.beginner-usability",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.validation.beginner-usability",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.capstone.validation.beginner-usability",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.validation.beginner-usability"
+    ],
+    "evidenceTemplateId": "evidence.capstone.validation.beginner-usability",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "sourceIds",
+      "risks",
+      "validation"
+    ]
+  }
+}

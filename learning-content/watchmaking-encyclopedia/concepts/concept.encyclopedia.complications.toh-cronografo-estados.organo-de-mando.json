@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.toh-cronografo-estados.organo-de-mando",
+  "version": "1.1.0",
+  "title": {
+    "es": "órgano de mando",
+    "en": "órgano de mando"
+  },
+  "summary": {
+    "es": "Sistema que transforma pulsaciones en estados ordenados.",
+    "en": "Sistema que transforma pulsaciones en estados ordenados."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.toh-soneria-control.rastrillo",
+    "concept.encyclopedia.complications.toh-soneria-control.caracol",
+    "concept.encyclopedia.complications.toh-soneria-control.pieza-sorpresa"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "movementIds": [],
+  "subsystem": "chronograph",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch11",
+    "source.official.eta.7750",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.toh-cronografo-estados"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.toh-cronografo-estados",
+  "plainLanguage": {
+    "es": "Sistema que transforma pulsaciones en estados ordenados.",
+    "en": "Sistema que transforma pulsaciones en estados ordenados."
+  },
+  "technicalLanguage": {
+    "es": "órgano de mando se interpreta mediante la cadena recibir pulsación → cambiar estado de mando → liberar freno → acoplar contador → detener y frenar → desacoplar y poner a cero y las condiciones declaradas en la unidad.",
+    "en": "órgano de mando se interpreta mediante la cadena recibir pulsación → cambiar estado de mando → liberar freno → acoplar contador → detener y frenar → desacoplar y poner a cero y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?",
+    "en": "Permite explicar y comprobar ¿qué estados deben coordinarse para iniciar, detener y volver a cero sin conflicto?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir órgano de mando sin circularidad.",
+      "en": "Definir órgano de mando sin circularidad."
+    },
+    {
+      "es": "Relacionar órgano de mando con una entrada, una interfaz y una salida.",
+      "en": "Relacionar órgano de mando con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "transfer",
+  "availability": "prerequisite-blocked"
+}

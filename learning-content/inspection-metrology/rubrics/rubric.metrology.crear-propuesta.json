@@ -1,0 +1,34 @@
+{
+  "id": "rubric.metrology.crear-propuesta",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.calibrar-una-imagen",
+  "rules": [
+    {
+      "id": "rule.activity-metrology-crear-propuesta.practice",
+      "version": "0.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.7,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan método, unidad, repetición, trazabilidad, incertidumbre, interpretación y reconocimiento de invalidez; no solo el número."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.activity-metrology-crear-propuesta",
+    "version": "0.1.0",
+    "competencyId": "competency.metrology.calibrar-una-imagen",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

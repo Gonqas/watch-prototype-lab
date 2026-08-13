@@ -1,0 +1,32 @@
+{
+  "id": "evidence.capstone.design.capstone.human-review",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.design.capstone",
+  "kind": "human-review",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.design.capstone.human-review",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-human-review-completed",
+    "evidenceType": "human-review",
+    "competencyId": "competency.capstone.design.capstone",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.design.capstone"
+    ],
+    "evidenceTemplateId": "evidence.capstone.design.capstone.human-review",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "reviewerId",
+      "criteria",
+      "result",
+      "notes"
+    ]
+  }
+}

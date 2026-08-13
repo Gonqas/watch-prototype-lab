@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+  "version": "1.1.0",
+  "title": "Cuaderno: Anglage, perlage, Côtes y pulido negro",
+  "description": "¿Qué geometría y reflexión produce cada decoración y dónde termina la estética y empieza la función?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Anglage, perlage, Côtes y pulido negro. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué geometría y reflexión produce cada decoración y dónde termina la estética y empieza la función?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué geometría y reflexión produce cada decoración y dónde termina la estética y empieza la función?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.answer",
+      "instructionMarkdown": "Explica **Anglage, perlage, Côtes y pulido negro** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.explain",
+          "promptMarkdown": "¿Qué geometría y reflexión produce cada decoración y dónde termina la estética y empieza la función?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por proteger superficies funcionales y sigue hasta evaluar continuidad y reflexión.",
+                "en": "Empieza por proteger superficies funcionales y sigue hasta evaluar continuidad y reflexión."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Anglage crea un bisel regular que define aristas; perlage superpone círculos; Côtes genera bandas abrasivas; pulido negro produce una superficie tan plana que refleja de forma direccional. Cada técnica exige preparación, secuencia y referencias. No debe invadir asientos, roscas, muelles ni superficies de contacto.",
+                "en": "Anglage crea un bisel regular que define aristas; perlage superpone círculos; Côtes genera bandas abrasivas; pulido negro produce una superficie tan plana que refleja de forma direccional. Cada técnica exige preparación, secuencia y referencias. No debe invadir asientos, roscas, muelles ni superficies de contacto."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué geometría y reflexión produce cada decoración y dónde termina la estética y empieza la función?",
+              "en": "¿Qué geometría y reflexión produce cada decoración y dónde termina la estética y empieza la función?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena proteger superficies funcionales → preparar plano o borde → crear geometría → refinar abrasivos → limpiar → evaluar continuidad y reflexión, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena proteger superficies funcionales → preparar plano o borde → crear geometría → refinar abrasivos → limpiar → evaluar continuidad y reflexión, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.mechanism",
+            "field.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.evidence",
+            "field.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.limit",
+            "field.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

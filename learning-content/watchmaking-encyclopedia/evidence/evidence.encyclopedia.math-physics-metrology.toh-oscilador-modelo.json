@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.math-physics-metrology.toh-oscilador-modelo"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

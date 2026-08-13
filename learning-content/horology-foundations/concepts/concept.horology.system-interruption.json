@@ -1,0 +1,62 @@
+{
+  "id": "concept.horology.system-interruption",
+  "version": "0.5.0",
+  "title": {
+    "es": "Interrupción, hipótesis y prueba"
+  },
+  "summary": {
+    "es": "Predecir qué deja de ocurrir, proponer una causa y escoger una comprobación sin convertir la hipótesis en diagnóstico."
+  },
+  "kind": "skill",
+  "knowledgeType": "diagnostic",
+  "prerequisiteIds": [
+    "concept.horology.functional-equivalence"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.horology.functional-chain"
+  ],
+  "competencyIds": [
+    "competency.horology.predict-system-interruption"
+  ],
+  "movementIds": [],
+  "subsystem": "horology-foundations",
+  "routeIds": [
+    "route.horology.orientation"
+  ],
+  "activityIds": [
+    "activity.horology.predict-interruption",
+    "activity.horology.select-affected-subsystem",
+    "activity.horology.justify-hypothesis"
+  ],
+  "sourceIds": [
+    "source.horology.original-functional-map"
+  ],
+  "misconceptionIds": [
+    "misconception.horology.simulation-is-physical-proof"
+  ],
+  "bridgeLessonId": "lesson.horology.failure-prediction",
+  "targetEvidenceLevel": "transfer",
+  "availability": "available",
+  "plainLanguage": {
+    "es": "Predecir qué deja de ocurrir, proponer una causa y escoger una comprobación sin convertir la hipótesis en diagnóstico."
+  },
+  "technicalLanguage": {
+    "es": "Interrupción, hipótesis y prueba separa observación, síntoma, hipótesis y comprobación en fundamentos de relojería. Predecir qué deja de ocurrir, proponer una causa y escoger una comprobación sin convertir la hipótesis en diagnóstico. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles.",
+    "en": "Interrupción, hipótesis y prueba separa observación, síntoma, hipótesis y comprobación en fundamentos de relojería. Predecir qué deja de ocurrir, proponer una causa y escoger una comprobación sin convertir la hipótesis en diagnóstico. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles."
+  },
+  "whyItMatters": {
+    "es": "Dominar interrupción, hipótesis y prueba permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Separar síntoma, observación e hipótesis al trabajar con interrupción, hipótesis y prueba."
+    },
+    {
+      "es": "Proponer una comprobación que pueda confirmar o refutar la hipótesis."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.horology.functional-chain"
+  ]
+}

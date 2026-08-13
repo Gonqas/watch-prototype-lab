@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.cronografo-mandos.leva-de-mando",
+  "version": "1.1.0",
+  "title": {
+    "es": "leva de mando",
+    "en": "leva de mando"
+  },
+  "summary": {
+    "es": "Perfil que cambia estados de palancas al indexarse por los pulsadores.",
+    "en": "Perfil que cambia estados de palancas al indexarse por los pulsadores."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.calendarios.dedo-de-fecha",
+    "concept.encyclopedia.complications.calendarios.saltador",
+    "concept.encyclopedia.complications.calendarios.rueda-de-programa"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.cronografo-mandos"
+  ],
+  "movementIds": [],
+  "subsystem": "chronograph-control",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.cronografo-mandos"
+  ],
+  "sourceIds": [
+    "source.official.eta.7750",
+    "source.official.seiko.6138",
+    "source.external.naked-watchmaker"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.cronografo-mandos"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.cronografo-mandos",
+  "plainLanguage": {
+    "es": "Perfil que cambia estados de palancas al indexarse por los pulsadores.",
+    "en": "Perfil que cambia estados de palancas al indexarse por los pulsadores."
+  },
+  "technicalLanguage": {
+    "es": "leva de mando se interpreta mediante la cadena pulsador aporta carrera → mando indexa estado → palancas leen perfil → embrague conecta o desconecta → freno actúa → siguiente pulso cambia estado y las condiciones declaradas en la unidad.",
+    "en": "leva de mando se interpreta mediante la cadena pulsador aporta carrera → mando indexa estado → palancas leen perfil → embrague conecta o desconecta → freno actúa → siguiente pulso cambia estado y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?",
+    "en": "Permite explicar y comprobar ¿cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir leva de mando sin circularidad.",
+      "en": "Definir leva de mando sin circularidad."
+    },
+    {
+      "es": "Relacionar leva de mando con una entrada, una interfaz y una salida.",
+      "en": "Relacionar leva de mando con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

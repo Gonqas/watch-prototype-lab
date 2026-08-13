@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.workshop-tools-materials.materiales-relojeros",
+  "version": "1.1.0",
+  "title": "Cuaderno: Materiales relojeros y propiedades funcionales",
+  "description": "¿Cómo se elige y reconoce un material por su función y no solo por su color?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Materiales relojeros y propiedades funcionales. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.workshop-tools-materials.materiales-relojeros.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se elige y reconoce un material por su función y no solo por su color?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se elige y reconoce un material por su función y no solo por su color?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.workshop-tools-materials.materiales-relojeros.answer",
+      "instructionMarkdown": "Explica **Materiales relojeros y propiedades funcionales** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.workshop-tools-materials.materiales-relojeros.explain",
+          "promptMarkdown": "¿Cómo se elige y reconoce un material por su función y no solo por su color?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.materiales-relojeros.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.materiales-relojeros.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.materiales-relojeros.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.materiales-relojeros.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.materiales-relojeros.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir función y sigue hasta verificar comportamiento.",
+                "en": "Empieza por definir función y sigue hasta verificar comportamiento."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.materiales-relojeros.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Acero, latón, bronce, alpaca, rubí sintético, polímeros, elastómeros y recubrimientos combinan elasticidad, dureza, tenacidad, fricción, corrosión, estabilidad y procesabilidad. La propiedad relevante depende de carga, geometría, ambiente y acabado. El color o magnetismo puede orientar, nunca identificar por sí solo una aleación.",
+                "en": "Acero, latón, bronce, alpaca, rubí sintético, polímeros, elastómeros y recubrimientos combinan elasticidad, dureza, tenacidad, fricción, corrosión, estabilidad y procesabilidad. La propiedad relevante depende de carga, geometría, ambiente y acabado. El color o magnetismo puede orientar, nunca identificar por sí solo una aleación."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se elige y reconoce un material por su función y no solo por su color?",
+              "en": "¿Cómo se elige y reconoce un material por su función y no solo por su color?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir función → identificar cargas y entorno → seleccionar propiedades → elegir material y tratamiento → fabricar superficie → verificar comportamiento, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir función → identificar cargas y entorno → seleccionar propiedades → elegir material y tratamiento → fabricar superficie → verificar comportamiento, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.workshop-tools-materials.materiales-relojeros.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.workshop-tools-materials.materiales-relojeros.mechanism",
+            "field.encyclopedia.workshop-tools-materials.materiales-relojeros.evidence",
+            "field.encyclopedia.workshop-tools-materials.materiales-relojeros.limit",
+            "field.encyclopedia.workshop-tools-materials.materiales-relojeros.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

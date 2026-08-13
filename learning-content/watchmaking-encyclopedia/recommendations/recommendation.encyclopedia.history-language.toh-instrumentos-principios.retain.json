@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.history-language.toh-instrumentos-principios.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Instrumentos de tiempo: flujo, oscilación y conteo",
+    "en": "Repasar Instrumentos de tiempo: flujo, oscilación y conteo"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 413,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.history-language.toh-instrumentos-principios"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.history-language.toh-instrumentos-principios"
+  ],
+  "required": false
+}

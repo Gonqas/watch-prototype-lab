@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.micromechanics.bulova-eje-pivotes.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Pasaporte V: eje de volante, pivotes y hombros",
+    "en": "Repasar Pasaporte V: eje de volante, pivotes y hombros"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 412,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.micromechanics.bulova-eje-pivotes"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.micromechanics.bulova-eje-pivotes"
+  ],
+  "required": false
+}

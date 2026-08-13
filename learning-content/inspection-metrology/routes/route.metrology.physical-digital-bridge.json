@@ -1,0 +1,574 @@
+{
+  "id": "route.metrology.physical-digital-bridge",
+  "version": "0.1.0",
+  "title": {
+    "es": "Inspección y metrología relojera"
+  },
+  "purpose": {
+    "es": "Construir un dossier reproducible desde la observación inicial hasta una propuesta geométrica revisable."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.metrology.observe-before-measuring",
+    "module.metrology.light-magnification-posture",
+    "module.metrology.units-scale-resolution",
+    "module.metrology.precision-accuracy-uncertainty",
+    "module.metrology.instruments",
+    "module.metrology.verification-calibration",
+    "module.metrology.physical-specimen",
+    "module.metrology.technical-photography",
+    "module.metrology.image-measurement",
+    "module.metrology.physical-measurement",
+    "module.metrology.inspection-findings",
+    "module.metrology.compare-data",
+    "module.metrology.improve-virtual-model",
+    "module.metrology.final-project"
+  ],
+  "competencyIds": [
+    "competency.metrology.planificar-una-inspeccion",
+    "competency.metrology.seleccionar-luz-y-aumento",
+    "competency.metrology.diferenciar-conceptos-metrologicos",
+    "competency.metrology.seleccionar-un-instrumento",
+    "competency.metrology.verificar-un-instrumento",
+    "competency.metrology.registrar-una-unidad-fisica",
+    "competency.metrology.documentar-fotografias",
+    "competency.metrology.calibrar-una-imagen",
+    "competency.metrology.medir-en-dos-dimensiones",
+    "competency.metrology.medir-una-pieza-fisica",
+    "competency.metrology.repetir-una-medicion",
+    "competency.metrology.declarar-incertidumbre",
+    "competency.metrology.identificar-un-hallazgo",
+    "competency.metrology.separar-observacion-e-hipotesis",
+    "competency.metrology.comparar-nominal-y-medido",
+    "competency.metrology.interpretar-una-discrepancia",
+    "competency.metrology.documentar-una-pieza",
+    "competency.metrology.completar-un-dossier"
+  ],
+  "movementIds": [],
+  "difficulty": "intermediate",
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "diagnostic-optional",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.metrology.01",
+        "order": 1,
+        "title": {
+          "es": "Preparar una inspección"
+        },
+        "outcome": {
+          "es": "Ejecutar preparar una inspección con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.observe-before-measuring",
+        "activityId": "activity.metrology.preparar-una-inspeccion",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.observe-before-measuring"
+        ]
+      },
+      {
+        "id": "milestone.metrology.02",
+        "order": 2,
+        "title": {
+          "es": "Separar observación e hipótesis"
+        },
+        "outcome": {
+          "es": "Ejecutar separar observación e hipótesis con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.observe-before-measuring",
+        "activityId": "activity.metrology.separar-observacion-e-hipotesis",
+        "mode": "independent-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.observe-before-measuring"
+        ]
+      },
+      {
+        "id": "milestone.metrology.03",
+        "order": 3,
+        "title": {
+          "es": "Elegir iluminación"
+        },
+        "outcome": {
+          "es": "Ejecutar elegir iluminación con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.light-magnification-posture",
+        "activityId": "activity.metrology.elegir-iluminacion",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.light-magnification-posture"
+        ]
+      },
+      {
+        "id": "milestone.metrology.04",
+        "order": 4,
+        "title": {
+          "es": "Elegir aumento"
+        },
+        "outcome": {
+          "es": "Ejecutar elegir aumento con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.light-magnification-posture",
+        "activityId": "activity.metrology.elegir-aumento",
+        "mode": "independent-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.light-magnification-posture"
+        ]
+      },
+      {
+        "id": "milestone.metrology.05",
+        "order": 5,
+        "title": {
+          "es": "Diferenciar resolución y precisión"
+        },
+        "outcome": {
+          "es": "Ejecutar diferenciar resolución y precisión con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.units-scale-resolution",
+        "activityId": "activity.metrology.diferenciar-resolucion-y-precision",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.units-scale-resolution"
+        ]
+      },
+      {
+        "id": "milestone.metrology.06",
+        "order": 6,
+        "title": {
+          "es": "Redondear sin inventar información"
+        },
+        "outcome": {
+          "es": "Ejecutar redondear sin inventar información con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.units-scale-resolution",
+        "activityId": "activity.metrology.redondear-sin-inventar-informacion",
+        "mode": "independent-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.units-scale-resolution"
+        ]
+      },
+      {
+        "id": "milestone.metrology.07",
+        "order": 7,
+        "title": {
+          "es": "Repetir medición"
+        },
+        "outcome": {
+          "es": "Ejecutar repetir medición con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.precision-accuracy-uncertainty",
+        "activityId": "activity.metrology.repetir-medicion",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.precision-accuracy-uncertainty"
+        ]
+      },
+      {
+        "id": "milestone.metrology.08",
+        "order": 8,
+        "title": {
+          "es": "Declarar incertidumbre"
+        },
+        "outcome": {
+          "es": "Ejecutar declarar incertidumbre con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.precision-accuracy-uncertainty",
+        "activityId": "activity.metrology.declarar-incertidumbre",
+        "mode": "independent-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.precision-accuracy-uncertainty"
+        ]
+      },
+      {
+        "id": "milestone.metrology.09",
+        "order": 9,
+        "title": {
+          "es": "Seleccionar instrumento"
+        },
+        "outcome": {
+          "es": "Ejecutar seleccionar instrumento con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.instruments",
+        "activityId": "activity.metrology.seleccionar-instrumento",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.instruments"
+        ]
+      },
+      {
+        "id": "milestone.metrology.10",
+        "order": 10,
+        "title": {
+          "es": "Detectar paralaje"
+        },
+        "outcome": {
+          "es": "Ejecutar detectar paralaje con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.instruments",
+        "activityId": "activity.metrology.detectar-paralaje",
+        "mode": "independent-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.instruments"
+        ]
+      },
+      {
+        "id": "milestone.metrology.11",
+        "order": 11,
+        "title": {
+          "es": "Verificar cero"
+        },
+        "outcome": {
+          "es": "Ejecutar verificar cero con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.verification-calibration",
+        "activityId": "activity.metrology.verificar-cero",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.verification-calibration"
+        ]
+      },
+      {
+        "id": "milestone.metrology.12",
+        "order": 12,
+        "title": {
+          "es": "Interpretar una verificación"
+        },
+        "outcome": {
+          "es": "Ejecutar interpretar una verificación con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.verification-calibration",
+        "activityId": "activity.metrology.interpretar-una-verificacion",
+        "mode": "independent-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.verification-calibration"
+        ]
+      },
+      {
+        "id": "milestone.metrology.13",
+        "order": 13,
+        "title": {
+          "es": "Registrar espécimen"
+        },
+        "outcome": {
+          "es": "Ejecutar registrar espécimen con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.physical-specimen",
+        "activityId": "activity.metrology.registrar-especimen",
+        "mode": "guided-practice",
+        "evidenceLevel": "physical-observation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.physical-specimen"
+        ]
+      },
+      {
+        "id": "milestone.metrology.14",
+        "order": 14,
+        "title": {
+          "es": "Contar dientes"
+        },
+        "outcome": {
+          "es": "Ejecutar contar dientes con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.physical-specimen",
+        "activityId": "activity.metrology.contar-dientes",
+        "mode": "independent-practice",
+        "evidenceLevel": "physical-observation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.physical-specimen"
+        ]
+      },
+      {
+        "id": "milestone.metrology.15",
+        "order": 15,
+        "title": {
+          "es": "Importar fotografía"
+        },
+        "outcome": {
+          "es": "Ejecutar importar fotografía con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.technical-photography",
+        "activityId": "activity.metrology.importar-fotografia",
+        "mode": "guided-practice",
+        "evidenceLevel": "physical-observation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.technical-photography"
+        ]
+      },
+      {
+        "id": "milestone.metrology.16",
+        "order": 16,
+        "title": {
+          "es": "Clasificar fotografía"
+        },
+        "outcome": {
+          "es": "Ejecutar clasificar fotografía con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.technical-photography",
+        "activityId": "activity.metrology.clasificar-fotografia",
+        "mode": "independent-practice",
+        "evidenceLevel": "physical-observation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.technical-photography"
+        ]
+      },
+      {
+        "id": "milestone.metrology.17",
+        "order": 17,
+        "title": {
+          "es": "Calibrar escala"
+        },
+        "outcome": {
+          "es": "Ejecutar calibrar escala con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.image-measurement",
+        "activityId": "activity.metrology.calibrar-escala",
+        "mode": "guided-practice",
+        "evidenceLevel": "physical-observation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.image-measurement"
+        ]
+      },
+      {
+        "id": "milestone.metrology.18",
+        "order": 18,
+        "title": {
+          "es": "Medir distancia"
+        },
+        "outcome": {
+          "es": "Ejecutar medir distancia con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.image-measurement",
+        "activityId": "activity.metrology.medir-distancia",
+        "mode": "independent-practice",
+        "evidenceLevel": "physical-observation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.image-measurement"
+        ]
+      },
+      {
+        "id": "milestone.metrology.19",
+        "order": 19,
+        "title": {
+          "es": "Medir diámetro"
+        },
+        "outcome": {
+          "es": "Ejecutar medir diámetro con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.physical-measurement",
+        "activityId": "activity.metrology.medir-diametro",
+        "mode": "guided-practice",
+        "evidenceLevel": "physical-observation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.physical-measurement"
+        ]
+      },
+      {
+        "id": "milestone.metrology.20",
+        "order": 20,
+        "title": {
+          "es": "Medir distancia entre centros"
+        },
+        "outcome": {
+          "es": "Ejecutar medir distancia entre centros con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.physical-measurement",
+        "activityId": "activity.metrology.medir-distancia-entre-centros",
+        "mode": "independent-practice",
+        "evidenceLevel": "physical-observation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.physical-measurement"
+        ]
+      },
+      {
+        "id": "milestone.metrology.21",
+        "order": 21,
+        "title": {
+          "es": "Identificar lectura atípica"
+        },
+        "outcome": {
+          "es": "Ejecutar identificar lectura atípica con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.inspection-findings",
+        "activityId": "activity.metrology.identificar-lectura-atipica",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.inspection-findings"
+        ]
+      },
+      {
+        "id": "milestone.metrology.22",
+        "order": 22,
+        "title": {
+          "es": "Registrar hallazgo"
+        },
+        "outcome": {
+          "es": "Ejecutar registrar hallazgo con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.inspection-findings",
+        "activityId": "activity.metrology.registrar-hallazgo",
+        "mode": "independent-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.inspection-findings"
+        ]
+      },
+      {
+        "id": "milestone.metrology.23",
+        "order": 23,
+        "title": {
+          "es": "Comparar nominal y medido"
+        },
+        "outcome": {
+          "es": "Ejecutar comparar nominal y medido con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.compare-data",
+        "activityId": "activity.metrology.comparar-nominal-y-medido",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.compare-data"
+        ]
+      },
+      {
+        "id": "milestone.metrology.24",
+        "order": 24,
+        "title": {
+          "es": "Determinar validez de comparación"
+        },
+        "outcome": {
+          "es": "Ejecutar determinar validez de comparación con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.compare-data",
+        "activityId": "activity.metrology.determinar-validez-de-comparacion",
+        "mode": "independent-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.compare-data"
+        ]
+      },
+      {
+        "id": "milestone.metrology.25",
+        "order": 25,
+        "title": {
+          "es": "Adoptar un valor"
+        },
+        "outcome": {
+          "es": "Ejecutar adoptar un valor con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.improve-virtual-model",
+        "activityId": "activity.metrology.adoptar-un-valor",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.improve-virtual-model"
+        ]
+      },
+      {
+        "id": "milestone.metrology.26",
+        "order": 26,
+        "title": {
+          "es": "Crear propuesta"
+        },
+        "outcome": {
+          "es": "Ejecutar crear propuesta con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.improve-virtual-model",
+        "activityId": "activity.metrology.crear-propuesta",
+        "mode": "independent-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.improve-virtual-model"
+        ]
+      },
+      {
+        "id": "milestone.metrology.27",
+        "order": 27,
+        "title": {
+          "es": "Completar dossier"
+        },
+        "outcome": {
+          "es": "Ejecutar completar dossier con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.final-project",
+        "activityId": "activity.metrology.completar-dossier",
+        "mode": "guided-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.final-project"
+        ]
+      },
+      {
+        "id": "milestone.metrology.28",
+        "order": 28,
+        "title": {
+          "es": "Defender el proyecto final"
+        },
+        "outcome": {
+          "es": "Ejecutar defender el proyecto final con método, alcance, evidencia y límites."
+        },
+        "lessonId": "lesson.metrology.final-project",
+        "activityId": "activity.metrology.defender-el-proyecto-final",
+        "mode": "demonstration",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.metrology.final-project"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [
+      "activity.metrology.preparar-una-inspeccion"
+    ],
+    "demonstrationActivityIds": [
+      "activity.metrology.defender-el-proyecto-final"
+    ]
+  }
+}

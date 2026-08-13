@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Anglage, perlage, Côtes y pulido negro."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

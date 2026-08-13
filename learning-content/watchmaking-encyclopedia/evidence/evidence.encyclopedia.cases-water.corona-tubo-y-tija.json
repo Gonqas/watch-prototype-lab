@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.cases-water.corona-tubo-y-tija",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.cases-water.corona-tubo-y-tija",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.cases-water.corona-tubo-y-tija",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.cases-water.corona-tubo-y-tija",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.cases-water.corona-tubo-y-tija"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.cases-water.corona-tubo-y-tija",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

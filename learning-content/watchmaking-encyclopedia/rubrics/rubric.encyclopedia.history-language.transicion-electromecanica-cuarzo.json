@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de De lo electromecánico al cuarzo."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

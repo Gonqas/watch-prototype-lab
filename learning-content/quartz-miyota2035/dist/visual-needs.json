@@ -1,0 +1,532 @@
+[
+  {
+    "resourceId": "visual.quartz2035.anatomy",
+    "lessonIds": [
+      "lesson.quartz2035.anatomy"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "subsystem",
+          "value": "train"
+        },
+        "cardinality": "one-or-more"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Fixture 2035 intacto.",
+      "Identidad de instancia estable.",
+      "Alternativa textual y reduced motion."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.quartz2035.assembly",
+    "lessonIds": [
+      "lesson.quartz2035.assembly"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "role",
+          "value": "indication"
+        },
+        "cardinality": "one-or-more"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Fixture 2035 intacto.",
+      "Identidad de instancia estable.",
+      "Alternativa textual y reduced motion."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.quartz2035.diagnosis",
+    "lessonIds": [
+      "lesson.quartz2035.diagnosis"
+    ],
+    "type": "error-simulation",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "role",
+          "value": "power-source"
+        },
+        "cardinality": "one-or-more"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Fixture 2035 intacto.",
+      "Identidad de instancia estable.",
+      "Alternativa textual y reduced motion."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.quartz2035.disassembly",
+    "lessonIds": [
+      "lesson.quartz2035.disassembly"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "role",
+          "value": "fastener"
+        },
+        "cardinality": "one-or-more"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Fixture 2035 intacto.",
+      "Identidad de instancia estable.",
+      "Alternativa textual y reduced motion."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.quartz2035.documentation",
+    "lessonIds": [
+      "lesson.quartz2035.documentation"
+    ],
+    "type": "visual-table",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "subsystem",
+          "value": "train"
+        },
+        "cardinality": "one-or-more"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Fixture 2035 intacto.",
+      "Identidad de instancia estable.",
+      "Alternativa textual y reduced motion."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.quartz2035.final-project",
+    "lessonIds": [
+      "lesson.quartz2035.final-project"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "role",
+          "value": "electronic-control"
+        },
+        "cardinality": "one-or-more"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Fixture 2035 intacto.",
+      "Identidad de instancia estable.",
+      "Alternativa textual y reduced motion."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.quartz2035.isa-memory",
+    "lessonIds": [
+      "lesson.quartz2035.isa-memory"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "role",
+          "value": "stepper-rotor"
+        },
+        "cardinality": "one-or-more"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Fixture 2035 intacto.",
+      "Identidad de instancia estable.",
+      "Alternativa textual y reduced motion."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.quartz2035.observe",
+    "lessonIds": [
+      "lesson.quartz2035.observe"
+    ],
+    "type": "real-movement-3d",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "role",
+          "value": "coil"
+        },
+        "cardinality": "one-or-more"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Fixture 2035 intacto.",
+      "Identidad de instancia estable.",
+      "Alternativa textual y reduced motion."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.quartz2035.tools",
+    "lessonIds": [
+      "lesson.quartz2035.tools"
+    ],
+    "type": "schematic-2d",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "role",
+          "value": "electronic-control"
+        },
+        "cardinality": "one-or-more"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Fixture 2035 intacto.",
+      "Identidad de instancia estable.",
+      "Alternativa textual y reduced motion."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  },
+  {
+    "resourceId": "visual.quartz2035.workstation",
+    "lessonIds": [
+      "lesson.quartz2035.workstation"
+    ],
+    "type": "schematic-2d",
+    "movementIds": [
+      "fixture.miyota.2035.structural"
+    ],
+    "partSelectors": [
+      {
+        "selector": {
+          "by": "role",
+          "value": "power-source"
+        },
+        "cardinality": "one-or-more"
+      }
+    ],
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "dataRequirements": [
+      "Fixture 2035 intacto.",
+      "Identidad de instancia estable.",
+      "Alternativa textual y reduced motion."
+    ],
+    "status": "ready",
+    "priority": "high",
+    "fidelity": {
+      "geometry": "G2",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+        "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+      ]
+    },
+    "dependencyIds": [],
+    "currentModelSupport": "yes",
+    "viewportImpact": "configuration"
+  }
+]

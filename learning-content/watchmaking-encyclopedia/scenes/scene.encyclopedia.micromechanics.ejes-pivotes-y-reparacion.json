@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+  "version": "1.1.0",
+  "title": "Cuaderno: Ejes, pivotes, hombros y sustitución de staffs",
+  "description": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Ejes, pivotes, hombros y sustitución de staffs. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.answer",
+      "instructionMarkdown": "Explica **Ejes, pivotes, hombros y sustitución de staffs** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.explain",
+          "promptMarkdown": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por documentar pieza original y sigue hasta probar juegos y montaje.",
+                "en": "Empieza por documentar pieza original y sigue hasta probar juegos y montaje."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Un staff integra asientos, hombros, pivotes, roscas o remaches en un eje común. Secuencia, tratamiento térmico y acabado deben conservar concentricidad. El pivote necesita forma y superficie funcional; el hombro fija posición y el radio reduce tensión sin invadir el apoyo.",
+                "en": "Un staff integra asientos, hombros, pivotes, roscas o remaches en un eje común. Secuencia, tratamiento térmico y acabado deben conservar concentricidad. El pivote necesita forma y superficie funcional; el hombro fija posición y el radio reduce tensión sin invadir el apoyo."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?",
+              "en": "¿Cómo se fabrica un eje capaz de girar, apoyar y sobrevivir sin introducir concentraciones de tensión?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena documentar pieza original → establecer centros → tornear cuerpos y hombros → tratar térmicamente → rectificar y bruñir pivotes → probar juegos y montaje, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena documentar pieza original → establecer centros → tornear cuerpos y hombros → tratar térmicamente → rectificar y bruñir pivotes → probar juegos y montaje, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.mechanism",
+            "field.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.evidence",
+            "field.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.limit",
+            "field.encyclopedia.micromechanics.ejes-pivotes-y-reparacion.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,167 @@
+{
+  "id": "block.mechanical.theory.escapement",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Teoría previa · escapement",
+  "bodyMarkdown": "# Teoría fundamental · escape de áncora suizo\n\n## Antes de empezar\n\nEl escape conecta dos mundos: el tren intenta girar de forma continua bajo el par del barrilete, mientras el volante oscila alternativamente. El escape convierte esa interacción en avances discretos y devuelve pequeños impulsos al oscilador. Para comprenderlo no basta con ver tres piezas moverse; hay que distinguir qué contacto retiene, qué movimiento desbloquea, dónde se entrega impulso y cuándo aparece la caída libre hasta el siguiente bloqueo.\n\nEsta unidad usa una secuencia discreta y reversible. No enseña a ajustar un escape físico ni declara ángulos de leva, penetración, draw, seguridad, profundidad de bloqueo, recorrido perdido o lubricación. Su propósito es que puedas narrar la causalidad antes de observarla.\n\n## Piezas e interfaces\n\nLa **rueda de escape** recibe par del tren. Sus dientes interactúan alternativamente con las paletas de entrada y salida del **áncora**. La horquilla del áncora recibe la clavija o piedra de impulso asociada al volante. El volante y la espiral forman el oscilador; la áncora no fija por sí sola el periodo.\n\nHay dos interfaces centrales: diente–paleta y horquilla–clavija. En una representación correcta, el estado de una condiciona la otra. Un diente retenido explica por qué la rueda no avanza aunque exista par; el paso de la clavija explica por qué el áncora cambia de lado; la geometría de impulso explica cómo una fracción de energía alcanza al volante. Si las tres piezas giran sin estos eventos, solo hay coreografía, no una explicación mecánica.\n\n## Secuencia causal completa\n\n1. **Bloqueo:** un diente de la rueda descansa sobre la cara de bloqueo de una paleta. El tren aplica par, pero la rueda queda retenida.\n2. **Desbloqueo:** al regresar el volante, la clavija entra en la horquilla y desplaza el áncora. La paleta libera el diente retenido.\n3. **Impulso:** la rueda avanza bajo el par del tren; el contacto sobre la cara de impulso transmite energía al áncora y, mediante la horquilla, al volante.\n4. **Separación:** la clavija abandona la horquilla y el volante continúa su arco libre bajo su inercia y el par de la espiral.\n5. **Caída:** la rueda avanza el pequeño intervalo libre hasta que otro diente encuentra la paleta opuesta.\n6. **Nuevo bloqueo:** el tren vuelve a quedar retenido mientras el volante completa su alternancia y regresa desde el otro lado.\n\nEl siguiente semiperiodo repite la lógica con la paleta opuesta. «Tic» y «tac» no son dos mecanismos diferentes, sino dos mitades alternas del mismo ciclo. La rueda de escape avanza por pasos; el volante continúa oscilando entre impulsos.\n\n## Energía, tiempo y autonomía\n\nEl escape no produce el ritmo de manera aislada. El periodo emerge principalmente del oscilador y se perturba por la interacción con el escape, las pérdidas y la geometría. El tren aporta energía a través de la rueda; el escape decide cuándo puede avanzar; el oscilador determina cuándo regresa la clavija a la zona de interacción. Esta retroalimentación es la razón por la que no debe estudiarse cada pieza como una animación independiente.\n\nDurante el arco libre, idealmente el volante está poco perturbado. Durante el impulso recibe energía para compensar pérdidas. Una entrega insuficiente no demuestra por sí sola un defecto de escape: también podría existir baja fuerza, fricción en el tren o pérdida en el oscilador. Una entrega excesiva o una geometría insegura tampoco se modelan aquí.\n\n## Bloqueo, caída y seguridad conceptual\n\nBloqueo no significa que las piezas estén inmóviles para siempre, sino que una interfaz retiene el tren hasta el evento de desbloqueo. Caída no significa que una pieza se caiga: es el avance libre entre el fin de un contacto y el inicio del siguiente bloqueo. Impulso no significa golpe arbitrario: es una transferencia de energía a través de superficies previstas.\n\nEn un escape real existen condiciones de seguridad para evitar liberaciones no deseadas ante perturbaciones. También importan el draw, la profundidad de bloqueo, el recorrido total, el juego de cuernos y dardo, los ángulos y la lubricación. El modelo sin simulación física omite estos valores. Por eso ordenar fases es una competencia conceptual previa, no una licencia para intervenir sobre paletas o pitón.\n\n## Ejemplo resuelto\n\nEstado inicial: paleta de entrada bloquea un diente; el volante regresa desde la amplitud izquierda. Predicción: la clavija entra en la horquilla, desplaza el áncora, libera la paleta de entrada, la rueda avanza y transmite impulso; después cae hasta quedar retenida por la paleta de salida. Si se bloquea la interacción horquilla–clavija, la paleta no recibe la orden de desbloqueo y el tren permanece retenido.\n\nLa conclusión permitida es causal: «sin el retorno del oscilador a la interfaz, no se completa el desbloqueo». No se permite concluir una profundidad de bloqueo, una amplitud o una pérdida energética reales porque la escena no contiene esos datos.\n\n## Errores habituales\n\n- Decir que la rueda de escape empuja continuamente el volante.\n- Llamar escape al oscilador completo o afirmar que el escape es la fuente de energía.\n- Saltar de bloqueo a impulso sin explicar el desbloqueo.\n- Confundir caída con retroceso o con una avería.\n- Interpretar el tamaño de las paletas de la escena como geometría de ajuste.\n\n## Comprobación antes del laboratorio\n\nEscribe las seis fases sin mirar. Para cada una, nombra pieza activa, interfaz, energía que entra y resultado observable. Después predice qué se detiene si se bloquea: a) una paleta sobre la rueda; b) la horquilla respecto a la clavija; c) el tren antes de la rueda de escape. El laboratorio debe comprobar tus predicciones fase por fase, no sustituirlas.\n\n## Resumen\n\nEl escape es una máquina de eventos: retiene, recibe la orden del oscilador, libera, transmite impulso y vuelve a retener. La secuencia secuencia cinemática educativa es verificable; el ajuste y la física real permanecen fuera del alcance.",
+  "claims": [
+    {
+      "id": "claim.mechanical.theory.escapement",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "La teoría de escapement sintetiza principios generales y separa explícitamente el modelo educativo de una validación física o de calibre.",
+      "sourceStatement": "Síntesis original contrastada con las fuentes declaradas; sin copiar sus textos ni transferir autoridad de una fuente secundaria.",
+      "method": "Síntesis conceptual, derivación ideal y delimitación G/K/P para estudio previo al laboratorio.",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Geometría pedagógica normalizada; no representa un calibre fabricable.",
+          "La coordinación cinemática demuestra relaciones y sentidos, no tolerancias ni rendimiento real.",
+          "No modela elasticidad real, pérdidas, lubricación, desgaste, choque ni marcha cronométrica."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "mechanical-theory:escapement:0.5.0",
+      "recordedAt": "2026-08-02T00:00:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.external.ciechanowski-mechanical-watch",
+          "authority": "educational-secondary",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "Mechanical Watch",
+            "locator": "https://ciechanow.ski/mechanical-watch/"
+          },
+          "authorOrManufacturer": "Bartosz Ciechanowski",
+          "sourceType": "educational-visualization",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "D",
+          "sourceClass": "educational-explainer",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "cadena energética",
+            "barrilete",
+            "tren",
+            "escape",
+            "volante",
+            "espiral",
+            "puesta en hora"
+          ],
+          "pedagogicalUses": [
+            "theory",
+            "visual-reference",
+            "worked-example"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar como explicación secundaria y patrón de interacción; validar cualquier dimensión o afirmación específica en fuentes técnicas.",
+          "limitations": [
+            "La claridad visual no convierte la geometría ilustrada en un calibre real ni en una simulación física validada."
+          ],
+          "supportedClaim": "Explicación visual integrada de cómo cooperan los principales subsistemas de un reloj mecánico.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.external.timezone-illustrated-glossary",
+          "authority": "technical-training",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "TimeZone Watch School · Illustrated Glossary of Watch Parts",
+            "locator": "https://www.timezonewatchschool.com/WatchSchool/Glossary/glossary.shtml"
+          },
+          "authorOrManufacturer": "Walt Odets · TimeZone Watch School",
+          "sourceType": "curated-external-resource",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "B",
+          "sourceClass": "institutional-training",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "platina",
+            "puentes",
+            "puesta en hora",
+            "minutería",
+            "volante",
+            "escape",
+            "barrilete",
+            "tren",
+            "tornillos"
+          ],
+          "pedagogicalUses": [
+            "terminology",
+            "theory",
+            "visual-reference"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar para preentrenamiento terminológico y contraste visual; no atribuir sus imágenes a otro calibre.",
+          "limitations": [
+            "Material formativo histórico y general, no documentación de fabricante."
+          ],
+          "supportedClaim": "Glosario ilustrado organizado por caras y subsistemas de un movimiento mecánico.",
+          "derivedLayer": "source"
+        },
+        {
+          "id": "source.external.hodinkee-watch101",
+          "authority": "educational-secondary",
+          "usage": "external-linked",
+          "resource": {
+            "kind": "web-page",
+            "title": "Hodinkee · Watch 101",
+            "locator": "https://www.hodinkee.com/watch101"
+          },
+          "authorOrManufacturer": "Hodinkee",
+          "sourceType": "curated-external-resource",
+          "retrievedAt": "2026-08-02",
+          "authorityTier": "D",
+          "sourceClass": "educational-explainer",
+          "languages": [
+            "en"
+          ],
+          "topics": [
+            "vocabulario",
+            "piezas",
+            "mecánica básica",
+            "complicaciones",
+            "fabricación"
+          ],
+          "pedagogicalUses": [
+            "terminology",
+            "visual-reference",
+            "discovery"
+          ],
+          "availability": "online",
+          "checkedAt": "2026-08-02",
+          "rights": "link-only",
+          "offlineReady": false,
+          "validationPolicy": "Usar para orientación y vocabulario; contrastar afirmaciones técnicas y excepciones.",
+          "limitations": [
+            "Recurso divulgativo, no manual de servicio ni estándar técnico."
+          ],
+          "supportedClaim": "Glosario visual introductorio de piezas, mecánica básica, complicaciones y técnicas de fabricación.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.order-escapement-phases"
+    ],
+    "estimatedMinutes": 36,
+    "userPaced": true
+  }
+}

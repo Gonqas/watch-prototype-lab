@@ -1,0 +1,68 @@
+{
+  "id": "concept.advanced.service-diagnosis",
+  "version": "1.0.0",
+  "title": {
+    "es": "Diagnóstico causal e informe defendible",
+    "en": "Diagnóstico causal e informe defendible"
+  },
+  "summary": {
+    "es": "¿Qué prueba produciría resultados distintos si cada hipótesis fuera cierta?",
+    "en": "¿Qué prueba produciría resultados distintos si cada hipótesis fuera cierta?"
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.advanced.service-assembly"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.advanced.service-assembly"
+  ],
+  "competencyIds": [
+    "competency.advanced.service-diagnosis"
+  ],
+  "movementIds": [],
+  "subsystem": "diagnosis",
+  "routeIds": [
+    "route.advanced.service-method"
+  ],
+  "activityIds": [
+    "activity.advanced.service-diagnosis"
+  ],
+  "sourceIds": [
+    "source.eta.6497-2.communication",
+    "source.external.watchguy"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Qué prueba produciría resultados distintos si cada hipótesis fuera cierta?",
+    "en": "¿Qué prueba produciría resultados distintos si cada hipótesis fuera cierta?"
+  },
+  "technicalLanguage": {
+    "es": "Diagnosticar no es nombrar la primera causa compatible. Se define un síntoma con estado, entrada, salida y repetibilidad; se divide la cadena en aguas arriba, interfaz y aguas abajo; se generan varias hipótesis; y se elige una prueba discriminante, preferiblemente no invasiva. Una buena prueba no solo confirma: tiene resultados previstos para cada hipótesis y puede refutarlas.",
+    "en": "Diagnosticar no es nombrar la primera causa compatible. Se define un síntoma con estado, entrada, salida y repetibilidad; se divide la cadena en aguas arriba, interfaz y aguas abajo; se generan varias hipótesis; y se elige una prueba discriminante, preferiblemente no invasiva. Una buena prueba no solo confirma: tiene resultados previstos para cada hipótesis y puede refutarlas."
+  },
+  "whyItMatters": {
+    "es": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física.",
+    "en": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física."
+  },
+  "observableActions": [
+    {
+      "es": "Separa hecho, inferencia y desconocido.",
+      "en": "Separa hecho, inferencia y desconocido."
+    },
+    {
+      "es": "Compara relaciones y compromisos.",
+      "en": "Compara relaciones y compromisos."
+    },
+    {
+      "es": "Declara fuentes, riesgos y límites.",
+      "en": "Declara fuentes, riesgos y límites."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.advanced.service-baseline"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.bulova-poising",
+  "version": "1.1.0",
+  "title": "Cuaderno: Pasaporte IX: equilibrado estático del volante",
+  "description": "¿Qué demuestra y qué no demuestra una prueba de poising?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Pasaporte IX: equilibrado estático del volante. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.bulova-poising.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué demuestra y qué no demuestra una prueba de poising?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué demuestra y qué no demuestra una prueba de poising?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.bulova-poising.answer",
+      "instructionMarkdown": "Explica **Pasaporte IX: equilibrado estático del volante** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.bulova-poising.explain",
+          "promptMarkdown": "¿Qué demuestra y qué no demuestra una prueba de poising?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.bulova-poising.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.bulova-poising.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.bulova-poising.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.bulova-poising.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.bulova-poising.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por limpiar y verificar pivotes y sigue hasta revisar antes de corregir.",
+                "en": "Empieza por limpiar y verificar pivotes y sigue hasta revisar antes de corregir."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.bulova-poising.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Con fricción mínima, un punto pesado tiende a quedar abajo. Limpieza, pivotes, herramienta nivelada y repetición son condiciones previas. El equilibrio estático no prueba comportamiento dinámico ni corrige espiral.",
+                "en": "Con fricción mínima, un punto pesado tiende a quedar abajo. Limpieza, pivotes, herramienta nivelada y repetición son condiciones previas. El equilibrio estático no prueba comportamiento dinámico ni corrige espiral."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué demuestra y qué no demuestra una prueba de poising?",
+              "en": "¿Qué demuestra y qué no demuestra una prueba de poising?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena limpiar y verificar pivotes → nivelar herramienta → colocar volante → observar varias liberaciones → localizar tendencia → revisar antes de corregir, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena limpiar y verificar pivotes → nivelar herramienta → colocar volante → observar varias liberaciones → localizar tendencia → revisar antes de corregir, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.bulova-poising.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.bulova-poising.mechanism",
+            "field.encyclopedia.escapements-chronometry.bulova-poising.evidence",
+            "field.encyclopedia.escapements-chronometry.bulova-poising.limit",
+            "field.encyclopedia.escapements-chronometry.bulova-poising.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

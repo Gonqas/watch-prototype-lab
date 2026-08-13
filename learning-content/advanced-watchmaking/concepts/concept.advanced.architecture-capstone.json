@@ -1,0 +1,72 @@
+{
+  "id": "concept.advanced.architecture-capstone",
+  "version": "1.0.0",
+  "title": {
+    "es": "Proyecto: defender una arquitectura completa",
+    "en": "Proyecto: defender una arquitectura completa"
+  },
+  "summary": {
+    "es": "¿Qué arquitectura satisface el pliego y qué tendría que validarse antes de fabricar?",
+    "en": "¿Qué arquitectura satisface el pliego y qué tendría que validarse antes de fabricar?"
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.advanced.chronograph-coupling"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.advanced.chronograph-coupling"
+  ],
+  "competencyIds": [
+    "competency.advanced.architecture-capstone"
+  ],
+  "movementIds": [],
+  "subsystem": "architecture",
+  "routeIds": [
+    "route.advanced.architectures-complications"
+  ],
+  "activityIds": [
+    "activity.advanced.architecture-capstone"
+  ],
+  "sourceIds": [
+    "source.eta.6497-2.product",
+    "source.eta.2824-2.product",
+    "source.eta.7750.product",
+    "source.seiko.42.technical-guide",
+    "source.seiko.6138a.technical-guide",
+    "source.miyota.8215.official"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Qué arquitectura satisface el pliego y qué tendría que validarse antes de fabricar?",
+    "en": "¿Qué arquitectura satisface el pliego y qué tendría que validarse antes de fabricar?"
+  },
+  "technicalLanguage": {
+    "es": "Diseñar un reloj desde cero comienza convirtiendo deseos en requisitos verificables: indicaciones, reserva, frecuencia, cuerda, calendario, cronógrafo, diámetro, altura, robustez, servicio, coste y capacidad de fabricación. Cada arquitectura consume presupuesto y crea interfaces. Elegir segundos centrales puede afectar tren y altura; añadir automático afecta diámetro o espesor; un calendario crea estados y zonas de cambio; un cronógrafo multiplica control, acoplamiento y puesta a cero.",
+    "en": "Diseñar un reloj desde cero comienza convirtiendo deseos en requisitos verificables: indicaciones, reserva, frecuencia, cuerda, calendario, cronógrafo, diámetro, altura, robustez, servicio, coste y capacidad de fabricación. Cada arquitectura consume presupuesto y crea interfaces. Elegir segundos centrales puede afectar tren y altura; añadir automático afecta diámetro o espesor; un calendario crea estados y zonas de cambio; un cronógrafo multiplica control, acoplamiento y puesta a cero."
+  },
+  "whyItMatters": {
+    "es": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física.",
+    "en": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física."
+  },
+  "observableActions": [
+    {
+      "es": "Separa hecho, inferencia y desconocido.",
+      "en": "Separa hecho, inferencia y desconocido."
+    },
+    {
+      "es": "Compara relaciones y compromisos.",
+      "en": "Compara relaciones y compromisos."
+    },
+    {
+      "es": "Declara fuentes, riesgos y límites.",
+      "en": "Declara fuentes, riesgos y límites."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.advanced.escapement-compare"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

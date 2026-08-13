@@ -1,0 +1,35 @@
+{
+  "id": "evidence.mechanical.build-functional-train",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.build-functional-train",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.mechanical.build-functional-train",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.mechanical.build-functional-train",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.build-train",
+      "activity.mechanical.interrupt-train"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.build-functional-train",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

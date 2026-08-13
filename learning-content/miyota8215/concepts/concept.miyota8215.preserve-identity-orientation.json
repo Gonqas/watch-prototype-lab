@@ -1,0 +1,68 @@
+{
+  "id": "concept.miyota8215.preserve-identity-orientation",
+  "version": "0.5.0",
+  "title": {
+    "es": "Conservar identidad y orientación",
+    "en": "Conservar identidad y orientación"
+  },
+  "summary": {
+    "es": "Conservar identidad y orientación con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Conservar identidad y orientación con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.miyota8215.prepare-disassembly"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.read-official-documentation"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.preserve-identity-orientation"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "disassembly",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.manage-fasteners"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Conservar identidad y orientación es una secuencia reversible sobre desmontaje que conserva identidad, orientación, dependencias y estado inicial. Conservar identidad y orientación con un modelo estructural, fuentes, operaciones y límites declarados. Cada paso se valida antes de avanzar y deja evidencia de ayudas, errores y restauración.",
+    "en": "Conservar identidad y orientación es una secuencia reversible sobre desmontaje que conserva identidad, orientación, dependencias y estado inicial. Conservar identidad y orientación con un modelo estructural, fuentes, operaciones y límites declarados. Cada paso se valida antes de avanzar y deja evidencia de ayudas, errores y restauración."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.virtual-disassembly"
+  ],
+  "plainLanguage": {
+    "es": "Conservar identidad y orientación con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Conservar identidad y orientación con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Dominar conservar identidad y orientación permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega conservar identidad y orientación dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema disassembly."
+    }
+  ],
+  "misconceptionIds": [],
+  "knowledgeType": "procedural",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.guided-disassembly",
+  "targetEvidenceLevel": "independent-simulation"
+}

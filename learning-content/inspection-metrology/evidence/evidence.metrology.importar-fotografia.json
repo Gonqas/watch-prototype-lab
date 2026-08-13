@@ -1,0 +1,46 @@
+{
+  "id": "evidence.metrology.importar-fotografia",
+  "version": "0.1.0",
+  "competencyId": "competency.metrology.comparar-nominal-y-medido",
+  "kind": "artifact",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.activity-metrology-importar-fotografia",
+    "version": "0.1.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "measurement",
+    "competencyId": "competency.metrology.comparar-nominal-y-medido",
+    "packageId": "wplab.horology.inspection-metrology",
+    "activityIds": [
+      "activity.metrology.importar-fotografia"
+    ],
+    "evidenceTemplateId": "evidence.metrology.importar-fotografia",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "specimenId",
+      "componentId",
+      "imageAssetId",
+      "regionAnnotationId",
+      "instrumentId",
+      "instrumentVerificationId",
+      "readingIds",
+      "measurementSeriesId",
+      "calculation",
+      "uncertainty",
+      "findingId",
+      "confidence",
+      "comparisonId",
+      "proposalId",
+      "hintEventIds",
+      "adaptations"
+    ]
+  }
+}

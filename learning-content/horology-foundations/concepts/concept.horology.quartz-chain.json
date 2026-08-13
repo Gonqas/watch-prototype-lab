@@ -1,0 +1,64 @@
+{
+  "id": "concept.horology.quartz-chain",
+  "version": "0.5.0",
+  "title": {
+    "es": "Cadena funcional de cuarzo"
+  },
+  "summary": {
+    "es": "Seguir pila, control temporal, bobina, rotor paso a paso, tren e indicación como una cadena causal."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.horology.functional-chain",
+    "concept.horology.mechanical-chain"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.horology.mechanical-chain",
+    "concept.horology.functional-equivalence"
+  ],
+  "competencyIds": [
+    "competency.horology.explain-quartz-energy-chain"
+  ],
+  "movementIds": [],
+  "subsystem": "horology-foundations",
+  "routeIds": [
+    "route.horology.orientation"
+  ],
+  "activityIds": [
+    "activity.horology.order-quartz-chain",
+    "activity.horology.identify-time-reference"
+  ],
+  "sourceIds": [
+    "source.horology.original-functional-map"
+  ],
+  "misconceptionIds": [
+    "misconception.horology.quartz-has-no-train"
+  ],
+  "bridgeLessonId": "lesson.horology.quartz-chain",
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available",
+  "plainLanguage": {
+    "es": "Seguir pila, control temporal, bobina, rotor paso a paso, tren e indicación como una cadena causal."
+  },
+  "technicalLanguage": {
+    "es": "Cadena funcional de cuarzo describe una relación causal dentro de fundamentos de relojería: una entrada produce un cambio observable mediante una interfaz declarada. Seguir pila, control temporal, bobina, rotor paso a paso, tren e indicación como una cadena causal. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Cadena funcional de cuarzo describe una relación causal dentro de fundamentos de relojería: una entrada produce un cambio observable mediante una interfaz declarada. Seguir pila, control temporal, bobina, rotor paso a paso, tren e indicación como una cadena causal. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "whyItMatters": {
+    "es": "Entender cadena funcional de cuarzo permite razonar sobre el reloj completo y no memorizar piezas aisladas."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega cadena funcional de cuarzo dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema fundamentos de relojería."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.horology.mechanical-chain",
+    "concept.horology.functional-equivalence"
+  ]
+}

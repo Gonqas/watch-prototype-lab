@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.history-language.toh-instrumentos-principios",
+  "version": "1.1.0",
+  "title": "Cuaderno: Instrumentos de tiempo: flujo, oscilación y conteo",
+  "description": "¿Qué familias de instrumentos aparecen al cambiar la referencia y el modo de contar?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Instrumentos de tiempo: flujo, oscilación y conteo. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.history-language.toh-instrumentos-principios.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué familias de instrumentos aparecen al cambiar la referencia y el modo de contar?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué familias de instrumentos aparecen al cambiar la referencia y el modo de contar?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.history-language.toh-instrumentos-principios.answer",
+      "instructionMarkdown": "Explica **Instrumentos de tiempo: flujo, oscilación y conteo** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.history-language.toh-instrumentos-principios.explain",
+          "promptMarkdown": "¿Qué familias de instrumentos aparecen al cambiar la referencia y el modo de contar?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.history-language.toh-instrumentos-principios.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.toh-instrumentos-principios.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.toh-instrumentos-principios.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.toh-instrumentos-principios.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.history-language.toh-instrumentos-principios.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por elegir fenómeno y sigue hasta presentar resultado.",
+                "en": "Empieza por elegir fenómeno y sigue hasta presentar resultado."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.history-language.toh-instrumentos-principios.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Relojes solares, clepsidras, osciladores mecánicos y sistemas electrónicos materializan funciones comunes con fenómenos diferentes. La comparación útil separa fuente, referencia, mantenimiento, conteo, transmisión e indicación.",
+                "en": "Relojes solares, clepsidras, osciladores mecánicos y sistemas electrónicos materializan funciones comunes con fenómenos diferentes. La comparación útil separa fuente, referencia, mantenimiento, conteo, transmisión e indicación."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué familias de instrumentos aparecen al cambiar la referencia y el modo de contar?",
+              "en": "¿Qué familias de instrumentos aparecen al cambiar la referencia y el modo de contar?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena elegir fenómeno → mantener condiciones → observar repetición o flujo → acumular conteo → calibrar escala → presentar resultado, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena elegir fenómeno → mantener condiciones → observar repetición o flujo → acumular conteo → calibrar escala → presentar resultado, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.history-language.toh-instrumentos-principios.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.history-language.toh-instrumentos-principios.mechanism",
+            "field.encyclopedia.history-language.toh-instrumentos-principios.evidence",
+            "field.encyclopedia.history-language.toh-instrumentos-principios.limit",
+            "field.encyclopedia.history-language.toh-instrumentos-principios.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

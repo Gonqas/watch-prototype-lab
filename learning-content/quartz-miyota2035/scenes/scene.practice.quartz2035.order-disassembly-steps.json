@@ -1,0 +1,320 @@
+{
+  "id": "scene.practice.quartz2035.order-disassembly-steps",
+  "version": "0.5.0",
+  "title": "Ordenar pasos respaldados · práctica específica",
+  "description": "Ordenar pasos respaldados en el banco virtual 2035, con comandos deterministas, evidencia, cancelación y restauración. La pregunta, el feedback y la evidencia pertenecen exclusivamente a este objetivo.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.miyota.2035.structural"
+  },
+  "accessibility": {
+    "textualAlternative": "Banco 2035 con herramienta, dependencias, bandeja y registro de orientación. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.",
+    "reducedMotionAlternative": "Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.",
+    "keyboardActions": [
+      "Tabular en orden banco, herramientas, movimiento, bandeja y acciones.",
+      "Activar con Intro o Espacio.",
+      "Cancelar o restaurar mediante botones nombrados."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono, patrón y estado acompañan cada color.",
+      "Cada instancia tiene un nombre accesible único."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "fastener"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "durationMs": 0,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 700,
+      "operation": "explode",
+      "targets": [],
+      "value": 0.35,
+      "durationMs": 350,
+      "essential": false,
+      "waitFor": "none"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.quartz2035.disassembly.scope",
+      "markdown": "Desmontaje virtual guiado: representación educativa reversible. No es un procedimiento físico validado; consulta la ficha técnica para conocer su alcance geométrico, de movimiento y de física.",
+      "accessibleLabel": "Desmontaje virtual guiado. Alcance educativo y limitaciones disponibles en texto."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.quartz2035.disassembly.observe",
+      "instructionMarkdown": "Observa y registra el estado inicial de “Desmontaje virtual guiado” antes de actuar.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.quartz2035.disassembly.execute",
+      "instructionMarkdown": "Ejecuta «Ordenar pasos respaldados». Antes de confirmar, compara tu predicción, el cambio observable, la relación implicada y la autoridad de la fuente.",
+      "questions": [
+        {
+          "id": "question.practice.quartz2035.order-disassembly-steps.criterion",
+          "promptMarkdown": "¿Qué regla debe gobernar el orden educativo de desmontaje?",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.practice.quartz2035.order-disassembly-steps.evidence",
+              "label": "Retirar primero las sujeciones o cubiertas que bloquean el acceso según el grafo de dependencias",
+              "labels": {
+                "es": "Retirar primero las sujeciones o cubiertas que bloquean el acceso según el grafo de dependencias",
+                "en": "Retirar primero las sujeciones o cubiertas que bloquean el acceso según el grafo de dependencias"
+              }
+            },
+            {
+              "id": "option.practice.quartz2035.order-disassembly-steps.appearance",
+              "label": "Ordenar solo por tamaño, de la pieza mayor a la menor",
+              "labels": {
+                "es": "Ordenar solo por tamaño, de la pieza mayor a la menor",
+                "en": "Ordenar solo por tamaño, de la pieza mayor a la menor"
+              }
+            },
+            {
+              "id": "option.practice.quartz2035.order-disassembly-steps.authority",
+              "label": "Invertir el orden alfabético de las referencias",
+              "labels": {
+                "es": "Invertir el orden alfabético de las referencias",
+                "en": "Invertir el orden alfabético de las referencias"
+              }
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué regla debe gobernar el orden educativo de desmontaje?"
+            },
+            "feedback": {
+              "es": "Las relaciones “cubre”, “retiene” y “está fijado por” justifican el orden."
+            }
+          }
+        },
+        {
+          "id": "question.practice.quartz2035.order-disassembly-steps.reasoning",
+          "promptMarkdown": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Qué regla debe gobernar el orden educativo de desmontaje?",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué cambió o qué comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué relación, interfaz o regla explica el resultado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué fuente o límite condiciona la conclusión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Qué regla debe gobernar el orden educativo de desmontaje?"
+            },
+            "feedback": {
+              "es": "La revisión debe comprobar la relación específica: Las relaciones “cubre”, “retiene” y “está fijado por” justifican el orden."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.practice.quartz2035.order-disassembly-steps.criterion",
+          "expectedOptionIds": [
+            "option.practice.quartz2035.order-disassembly-steps.evidence"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.practice.quartz2035.order-disassembly-steps.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Ordenar pasos respaldados · práctica específica",
+      "en": "Ordenar pasos respaldados · práctica específica"
+    },
+    "purpose": {
+      "es": "Resolver «Ordenar pasos respaldados» mediante una decisión específica, explicación propia, restauración y transferencia."
+    },
+    "prerequisites": [
+      "concept.quartz2035.identify-2035-subsystems"
+    ],
+    "narrative": {
+      "es": "Señala qué dependencia libera cada paso. Las relaciones “cubre”, “retiene” y “está fijado por” justifican el orden."
+    },
+    "initialFraming": {
+      "es": "Banco estable con pieza, herramienta, bandeja, fuentes y una ficha técnica de alcance accesible."
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "storyboard.step.quartz2035.disassembly.observe",
+        "sceneStepId": "step.quartz2035.disassembly.observe",
+        "narrative": {
+          "es": "Observar y documentar antes de manipular."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "inspect",
+          "record"
+        ],
+        "interaction": {
+          "es": "Usar teclado, lista accesible o selección directa."
+        },
+        "feedback": {
+          "es": "El feedback nombra herramienta, dependencia, identidad y autoridad de la regla."
+        },
+        "hint": {
+          "es": "Las pistas disminuyen según el modo y nunca penalizan una adaptación de accesibilidad."
+        }
+      },
+      {
+        "id": "storyboard.step.quartz2035.disassembly.execute",
+        "sceneStepId": "step.quartz2035.disassembly.execute",
+        "narrative": {
+          "es": "Ejecutar, comprobar y restaurar."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "workbench-command",
+          "checkpoint",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Usar teclado, lista accesible o selección directa."
+        },
+        "feedback": {
+          "es": "El feedback nombra herramienta, dependencia, identidad y autoridad de la regla."
+        },
+        "hint": {
+          "es": "Las pistas disminuyen según el modo y nunca penalizan una adaptación de accesibilidad."
+        }
+      }
+    ],
+    "ending": {
+      "es": "Guardar evidencia provisional y restaurar el estado inicial o conservar un punto de control explícito."
+    },
+    "restoration": {
+      "es": "Restaurar piezas, bandejas, herramientas, orientación, selección y vista de forma idempotente."
+    },
+    "accessibility": {
+      "es": "Banco, herramientas y bandeja equivalentes como listas ordenadas y menús de acción."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos, sin arrastre ni movimiento automático, con la misma rúbrica."
+    },
+    "evidenceTemplateIds": [
+      "evidence.quartz2035.sequence",
+      "evidence.quartz2035.manipulation",
+      "evidence.quartz2035.order",
+      "evidence.quartz2035.disassembly"
+    ],
+    "technicalCriteria": [
+      "Identidad de cada pieza estable.",
+      "Acción validada y resultado registrado.",
+      "El proyecto técnico y el modelo de práctica permanecen intactos."
+    ],
+    "limitations": [
+      "Los niveles de reconstrucción y fidelidad se conservan en la ficha técnica.",
+      "Sin secuencia completa de servicio, pares, lubricación, tolerancias ni valores eléctricos inventados."
+    ]
+  },
+  "restorePreviousState": true
+}

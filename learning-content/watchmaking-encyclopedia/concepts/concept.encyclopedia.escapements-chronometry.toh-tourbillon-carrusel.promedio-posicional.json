@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel.promedio-posicional",
+  "version": "1.1.0",
+  "title": {
+    "es": "promedio posicional",
+    "en": "promedio posicional"
+  },
+  "summary": {
+    "es": "Reducción de una componente de error al recorrer orientaciones.",
+    "en": "Reducción de una componente de error al recorrer orientaciones."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.error-posicional",
+    "concept.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.poising-estatico",
+    "concept.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones.poising-dinamico"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel"
+  ],
+  "movementIds": [],
+  "subsystem": "rotating-regulator",
+  "routeIds": [
+    "route.encyclopedia.escapements-chronometry"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch07",
+    "source.private.daniels.escapements",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+  "plainLanguage": {
+    "es": "Reducción de una componente de error al recorrer orientaciones.",
+    "en": "Reducción de una componente de error al recorrer orientaciones."
+  },
+  "technicalLanguage": {
+    "es": "promedio posicional se interpreta mediante la cadena accionar jaula → cambiar orientación relativa → muestrear error posicional → integrar durante vuelta → obtener promedio → mantener errores no correlacionados y las condiciones declaradas en la unidad.",
+    "en": "promedio posicional se interpreta mediante la cadena accionar jaula → cambiar orientación relativa → muestrear error posicional → integrar durante vuelta → obtener promedio → mantener errores no correlacionados y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué error intentan promediar los reguladores rotatorios y qué no corrigen?",
+    "en": "Permite explicar y comprobar ¿qué error intentan promediar los reguladores rotatorios y qué no corrigen?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir promedio posicional sin circularidad.",
+      "en": "Definir promedio posicional sin circularidad."
+    },
+    {
+      "es": "Relacionar promedio posicional con una entrada, una interfaz y una salida.",
+      "en": "Relacionar promedio posicional con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

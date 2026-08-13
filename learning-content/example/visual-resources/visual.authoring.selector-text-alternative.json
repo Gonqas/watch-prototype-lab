@@ -1,0 +1,44 @@
+{
+  "id": "visual.authoring.selector-text-alternative",
+  "version": "1.0.0",
+  "type": "accessible-text-alternative",
+  "purpose": {
+    "es": "Enumerar la entidad resuelta, su identidad y estado de selección sin depender del viewport.",
+    "en": "List the resolved entity, identity and selection state without relying on the viewport."
+  },
+  "status": "approved",
+  "sourceIds": [
+    "source.authoring.original-guide"
+  ],
+  "fidelity": {
+    "geometry": "G0",
+    "kinematics": "K0",
+    "physics": "P0",
+    "limitations": [
+      "Alternativa semántica; no intenta reproducir geometría."
+    ]
+  },
+  "lessonIds": [
+    "lesson.authoring.traceability"
+  ],
+  "movementIds": [],
+  "partSelectors": [
+    {
+      "selector": {
+        "by": "role",
+        "value": "case"
+      },
+      "cardinality": "exactly-one"
+    }
+  ],
+  "requiredCapabilities": [
+    "canonical-selectors-v1"
+  ],
+  "dataRequirements": [
+    "Etiqueta accesible e ID estable de la entidad resuelta."
+  ],
+  "priority": "critical",
+  "dependencyIds": [],
+  "currentModelSupport": "yes",
+  "viewportImpact": "none"
+}

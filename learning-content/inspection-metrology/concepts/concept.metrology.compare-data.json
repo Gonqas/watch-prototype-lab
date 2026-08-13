@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.compare-data",
+  "version": "0.1.0",
+  "title": {
+    "es": "Comparar datos"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para contrastar nominal, reconstruido y medido con marcos y tolerancias explícitos."
+  },
+  "kind": "skill",
+  "knowledgeType": "diagnostic",
+  "prerequisiteIds": [
+    "concept.metrology.inspection-findings"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.physical-measurement"
+  ],
+  "competencyIds": [
+    "competency.metrology.declarar-incertidumbre"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.comparar-nominal-y-medido",
+    "activity.metrology.determinar-validez-de-comparacion"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a contrastar nominal, reconstruido y medido con marcos y tolerancias explícitos sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para contrastar nominal, reconstruido y medido con marcos y tolerancias explícitos."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.improve-virtual-model"
+  ],
+  "targetEvidenceLevel": "physical-observation",
+  "availability": "available"
+}

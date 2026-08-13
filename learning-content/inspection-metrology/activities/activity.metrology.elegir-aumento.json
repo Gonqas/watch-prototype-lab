@@ -1,0 +1,323 @@
+{
+  "id": "activity.metrology.elegir-aumento",
+  "version": "0.2.0",
+  "title": "Elegir aumento",
+  "sceneIds": [
+    "scene.metrology.elegir-aumento"
+  ],
+  "competencyIds": [
+    "competency.metrology.seleccionar-un-instrumento"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.metrology.elegir-aumento"
+  ],
+  "rubricId": "rubric.metrology.elegir-aumento",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "active-project-v5-projection"
+  },
+  "authoring": {
+    "lessonId": "lesson.metrology.light-magnification-posture",
+    "title": {
+      "es": "Elegir aumento"
+    },
+    "description": {
+      "es": "Práctica independiente para elegir aumento sobre una unidad o el espécimen sintético, conservando método, evidencia, confianza y límites."
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 12,
+    "activityType": "explanation",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "metrology",
+    "requiredCapabilities": [],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "La práctica registra evidencia; no simula ni certifica comportamiento físico."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "No generalizar una medida de una unidad ni inventar tolerancias."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ],
+    "visualResourceIds": [],
+    "interactionContract": {
+      "responseModel": "structured-response",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [
+        {
+          "id": "field.activity-metrology-elegir-aumento.observation",
+          "label": {
+            "es": "Observación o resultado transferido"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-elegir-aumento.method",
+          "label": {
+            "es": "Método y referencia empleados"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-elegir-aumento.limitation",
+          "label": {
+            "es": "Límite, dato ausente o condición de invalidez"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-elegir-aumento.confidence",
+          "label": {
+            "es": "Confianza en la conclusión"
+          },
+          "kind": "confidence",
+          "required": true
+        }
+      ],
+      "hints": [
+        {
+          "id": "hint.activity-metrology-elegir-aumento.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Vuelve a la pregunta del módulo: ¿Cómo hacemos visible una característica sin confundir un efecto de iluminación, aumento o postura con una propiedad de la pieza?"
+          },
+          "availableAfterAttempts": 0,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.activity-metrology-elegir-aumento.2",
+          "level": 2,
+          "kind": "comparison",
+          "content": {
+            "es": "Comprueba que transfieres el método, no el dato: Repite el método con una superficie mate y otra pulida, o con una abertura y un relieve. No transfieras la configuración de luz como receta: transfiere la comparación controlada."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.activity-metrology-elegir-aumento.3",
+          "level": 3,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Una conclusión limitada posible es: Dos configuraciones coherentes aportan más información que una única imagen extrema. El registro explica cómo la apariencia depende del montaje óptico."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "answer-submitted",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": true,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "pedagogicalContract": {
+      "purpose": "independent-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.metrology.light-magnification-posture"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [
+        "concept.metrology.light-magnification-posture"
+      ],
+      "practicesConceptIds": [
+        "concept.metrology.light-magnification-posture"
+      ],
+      "assessesConceptIds": [
+        "concept.metrology.light-magnification-posture"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "faded",
+      "remediation": {
+        "lessonId": "lesson.metrology.light-magnification-posture",
+        "blockId": "block.metrology.light-magnification-posture",
+        "conceptIds": [
+          "concept.metrology.light-magnification-posture"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La práctica acredita un método documentado dentro de la Academia. No certifica destreza profesional, calibración ni validez industrial."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "En “Elegir aumento” una respuesta sólida conserva característica, referencia, método, evidencia y alcance."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si en “Elegir aumento” confundiste resolución con exactitud, observación con hipótesis o una unidad con toda una familia."
+      },
+      "causalQuestion": {
+        "es": "¿Qué decisión de “Elegir aumento” cambia el resultado y cómo podrías comprobarla?"
+      },
+      "nextObservation": {
+        "es": "Repite “Elegir aumento” cambiando una sola condición y documenta el efecto."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Aplica el criterio de “Elegir aumento” a otra pieza sin suponer que comparte geometría o tolerancia."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.metrology.light-magnification-posture"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar tolerancias, exactitudes, calibraciones, diagnósticos ni datos de fabricante."
+        },
+        {
+          "es": "No aprobar propuestas, elevar fidelidad o modificar CAD."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente?"
+        },
+        {
+          "es": "¿Qué método y referencia hacen repetible este resultado?"
+        },
+        {
+          "es": "¿Qué limitación impide generalizarlo?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué decisión de “Elegir aumento” cambia el resultado y cómo podrías comprobarla?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Repite “Elegir aumento” cambiando una sola condición y documenta el efecto."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Elegir aumento»."
+          },
+          {
+            "es": "Sigue la relación causal declarada en la lección y conserva su fuente o límite."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "En “Elegir aumento” una respuesta sólida conserva característica, referencia, método, evidencia y alcance."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Elegir aumento» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Elegir aumento» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Elegir aumento» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Aplica el criterio de “Elegir aumento” a otra pieza sin suponer que comparte geometría o tolerancia."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La conclusión responde al objetivo «Elegir aumento» con una relación observable."
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Revisa si en “Elegir aumento” confundiste resolución con exactitud, observación con hipótesis o una unidad con toda una familia."
+        },
+        {
+          "es": "La respuesta describe apariencia o autoridad, pero no la relación que produce el resultado."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Aplica el criterio de “Elegir aumento” a otra pieza sin suponer que comparte geometría o tolerancia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Aplica el criterio de “Elegir aumento” a otra pieza sin suponer que comparte geometría o tolerancia."
+      }
+    }
+  }
+}

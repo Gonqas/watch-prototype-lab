@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+  "version": "1.1.0",
+  "title": "Cuaderno: Bobina, estator, rotor y motor paso a paso",
+  "description": "¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Bobina, estator, rotor y motor paso a paso. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.quartz-electronics.bobina-estator-y-rotor.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.quartz-electronics.bobina-estator-y-rotor.answer",
+      "instructionMarkdown": "Explica **Bobina, estator, rotor y motor paso a paso** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.quartz-electronics.bobina-estator-y-rotor.explain",
+          "promptMarkdown": "¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.quartz-electronics.bobina-estator-y-rotor.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.bobina-estator-y-rotor.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.bobina-estator-y-rotor.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.quartz-electronics.bobina-estator-y-rotor.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.quartz-electronics.bobina-estator-y-rotor.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por pulso circula por bobina y sigue hasta tren transmite el paso.",
+                "en": "Empieza por pulso circula por bobina y sigue hasta tren transmite el paso."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.quartz-electronics.bobina-estator-y-rotor.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La bobina crea flujo en el circuito magnético del estator; su geometría dirige polos y el rotor imantado busca una nueva posición estable. Alternar polaridad produce pasos sucesivos. Resistencia de bobina, entrehierro, magnetización, suciedad, pivotes y carga del tren determinan si el impulso termina en giro.",
+                "en": "La bobina crea flujo en el circuito magnético del estator; su geometría dirige polos y el rotor imantado busca una nueva posición estable. Alternar polaridad produce pasos sucesivos. Resistencia de bobina, entrehierro, magnetización, suciedad, pivotes y carga del tren determinan si el impulso termina en giro."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?",
+              "en": "¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena pulso circula por bobina → estator establece polos → rotor recibe par → rotor supera carga → se asienta en posición → tren transmite el paso, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena pulso circula por bobina → estator establece polos → rotor recibe par → rotor supera carga → se asienta en posición → tren transmite el paso, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.quartz-electronics.bobina-estator-y-rotor.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.quartz-electronics.bobina-estator-y-rotor.mechanism",
+            "field.encyclopedia.quartz-electronics.bobina-estator-y-rotor.evidence",
+            "field.encyclopedia.quartz-electronics.bobina-estator-y-rotor.limit",
+            "field.encyclopedia.quartz-electronics.bobina-estator-y-rotor.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

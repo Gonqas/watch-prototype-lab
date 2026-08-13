@@ -1,0 +1,59 @@
+{
+  "id": "concept.mechanical.determine-rotation-direction",
+  "version": "0.5.0",
+  "title": {
+    "es": "Determinar sentidos de giro",
+    "en": "Determinar sentidos de giro"
+  },
+  "summary": {
+    "es": "Determinar sentidos de giro mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Determinar sentidos de giro mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "concept",
+  "prerequisiteIds": [
+    "concept.mechanical.calculate-simple-ratios"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.determine-rotation-direction"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "gear-pair",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.predict-pair-direction"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Determinar sentidos de giro mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Determinar sentidos de giro mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Determinar sentidos de giro exige declarar magnitud, unidad, fórmula, entradas y margen de interpretación dentro de pareja de engranajes. Determinar sentidos de giro mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. Un valor normalizado o calculado no se presenta como dimensión oficial.",
+    "en": "Determinar sentidos de giro exige declarar magnitud, unidad, fórmula, entradas y margen de interpretación dentro de pareja de engranajes. Determinar sentidos de giro mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. Un valor normalizado o calculado no se presenta como dimensión oficial."
+  },
+  "whyItMatters": {
+    "es": "Entender determinar sentidos de giro permite razonar sobre el reloj completo y no memorizar piezas aisladas."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega determinar sentidos de giro dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema gear pair."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [],
+  "knowledgeType": "quantitative",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.gear-pair",
+  "targetEvidenceLevel": "causal-explanation"
+}

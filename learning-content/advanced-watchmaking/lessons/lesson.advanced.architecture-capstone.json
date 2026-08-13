@@ -1,0 +1,153 @@
+{
+  "id": "lesson.advanced.architecture-capstone",
+  "version": "1.1.0",
+  "title": "Proyecto: defender una arquitectura completa",
+  "blockIds": [
+    "block.advanced.architecture-capstone"
+  ],
+  "activityIds": [
+    "activity.advanced.architecture-capstone"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Proyecto: defender una arquitectura completa",
+      "en": "Proyecto: defender una arquitectura completa"
+    },
+    "purpose": {
+      "es": "¿Qué arquitectura satisface el pliego y qué tendría que validarse antes de fabricar?",
+      "en": "¿Qué arquitectura satisface el pliego y qué tendría que validarse antes de fabricar?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar relaciones y estados antes de usar ejemplos.",
+        "en": "Explicar relaciones y estados antes de usar ejemplos."
+      },
+      {
+        "es": "Comparar al menos dos alternativas con procedencia.",
+        "en": "Comparar al menos dos alternativas con procedencia."
+      },
+      {
+        "es": "Defender una decisión y declarar desconocidos.",
+        "en": "Defender una decisión y declarar desconocidos."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [
+      {
+        "packageId": "wplab.horology.mechanical-foundations",
+        "versionRange": "^0.5.0",
+        "moduleIds": [
+          "module.mechanical.train"
+        ],
+        "competencyIds": [
+          "competency.mechanical.build-functional-train"
+        ],
+        "recommendedButOptionalRouteIds": [
+          "route.mechanical.foundations"
+        ]
+      }
+    ],
+    "conceptIds": [
+      "concept.advanced.architecture-capstone"
+    ],
+    "sourceIds": [
+      "source.eta.6497-2.product",
+      "source.eta.2824-2.product",
+      "source.eta.7750.product",
+      "source.seiko.42.technical-guide",
+      "source.seiko.6138a.technical-guide",
+      "source.miyota.8215.official"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "transfer",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.advanced.architecture-capstone"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 809,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.advanced.architecture-capstone"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Puedo explicar la cadena causal sin mirar una animación.",
+          "en": "Puedo explicar la cadena causal sin mirar una animación."
+        },
+        {
+          "es": "Puedo separar fuente primaria, secundaria, inferencia y desconocido.",
+          "en": "Puedo separar fuente primaria, secundaria, inferencia y desconocido."
+        },
+        {
+          "es": "Puedo comparar compromisos y proponer evidencia que refute mi decisión.",
+          "en": "Puedo comparar compromisos y proponer evidencia que refute mi decisión."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Anota una afirmación confirmada, una inferencia y un desconocido antes de practicar.",
+        "en": "Anota una afirmación confirmada, una inferencia y un desconocido antes de practicar."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.advanced.architecture-capstone"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, materiales, contactos o procedimientos.",
+          "en": "No inventar dimensiones, materiales, contactos o procedimientos."
+        },
+        {
+          "es": "No presentar una actividad digital como competencia física.",
+          "en": "No presentar una actividad digital como competencia física."
+        },
+        {
+          "es": "No sustituir la revisión humana exigida.",
+          "en": "No sustituir la revisión humana exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué fuente respalda esa afirmación?",
+          "en": "¿Qué fuente respalda esa afirmación?"
+        },
+        {
+          "es": "¿Qué relación cambia entre los casos?",
+          "en": "¿Qué relación cambia entre los casos?"
+        },
+        {
+          "es": "¿Qué sigue siendo desconocido?",
+          "en": "¿Qué sigue siendo desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,383 @@
+{
+  "id": "activity.mechanical.classify-energy-functions",
+  "version": "0.5.0",
+  "title": "Clasificar energía, transmisión, regulación e indicación",
+  "sceneIds": [
+    "scene.practice.mechanical.classify-energy-functions"
+  ],
+  "competencyIds": [
+    "competency.mechanical.explain-energy-chain"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.mechanical.explain-energy-chain"
+  ],
+  "rubricId": "rubric.mechanical.explain-energy-chain",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.mechanical.energy",
+    "title": {
+      "es": "Clasificar energía, transmisión, regulación e indicación",
+      "en": "Clasificar energía, transmisión, regulación e indicación"
+    },
+    "description": {
+      "es": "Clasificar energía, transmisión, regulación e indicación mediante el laboratorio funcional, cálculos declarados, evidencia y restauración.",
+      "en": "Clasificar energía, transmisión, regulación e indicación mediante el laboratorio funcional, cálculos declarados, evidencia y restauración."
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 14,
+    "activityType": "guided-practice",
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "familyIds": [
+      "conceptual-mechanical"
+    ],
+    "subsystem": "energy",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+        "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+        "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Modelo normalizado: no es física ni servicio de un calibre real.",
+        "El 8215 solo aporta comparación estructural documentada."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.horology.private-book.mainsprings",
+      "source.horology.original-mechanical-foundations"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.energy"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.mechanical.classify-energy-functions.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Qué función cumple el tren cuando recibe movimiento del barrilete y lo entrega hacia el escape?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.classify-energy-functions.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Sigue un engrane de entrada y otro de salida del tren."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.classify-energy-functions.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: El tren no crea energía ni muestra por sí solo la hora; enlaza etapas mediante engranes."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.classify-energy-functions.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.classify-energy-functions.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "El tren no crea energía ni muestra por sí solo la hora; enlaza etapas mediante engranes."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.classify-energy-functions.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Clasifica el tren de otro movimiento por sus relaciones, no por su posición."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "mechanical-lab-command",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "energy",
+      "commands": [
+        "wind",
+        "release",
+        "block",
+        "unblock",
+        "inspect",
+        "restore"
+      ],
+      "viewModes": [
+        "normal",
+        "energy-flow",
+        "schematic",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "El tren no crea energía ni muestra por sí solo la hora; enlaza etapas mediante engranes."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «Fuente: crea la energía que utiliza el muelle real» y «Indicación: su función principal es mostrar directamente la hora» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Qué función cumple el tren cuando recibe movimiento del barrilete y lo entrega hacia el escape?"
+      },
+      "nextObservation": {
+        "es": "Sigue un engrane de entrada y otro de salida del tren."
+      },
+      "misconceptionIds": [
+        "misconception.mechanical.escapement-is-source"
+      ],
+      "transferPrompt": {
+        "es": "Clasifica el tren de otro movimiento por sus relaciones, no por su posición."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.explain-energy-chain"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Clasificar energía, transmisión, regulación e indicación», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Clasificar energía, transmisión, regulación e indicación», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué función cumple el tren cuando recibe movimiento del barrilete y lo entrega hacia el escape?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Sigue un engrane de entrada y otro de salida del tren."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Clasificar energía, transmisión, regulación e indicación»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: El tren no crea energía ni muestra por sí solo la hora; enlaza etapas mediante engranes."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "El tren no crea energía ni muestra por sí solo la hora; enlaza etapas mediante engranes."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Clasificar energía, transmisión, regulación e indicación» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Clasificar energía, transmisión, regulación e indicación» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Clasificar energía, transmisión, regulación e indicación» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Clasifica el tren de otro movimiento por sus relaciones, no por su posición."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "Transmisión: transporta y adapta el movimiento entre la fuente y la regulación"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Fuente: crea la energía que utiliza el muelle real"
+        },
+        {
+          "es": "Indicación: su función principal es mostrar directamente la hora"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Clasifica el tren de otro movimiento por sus relaciones, no por su posición."
+        }
+      },
+      "transferPrompt": {
+        "es": "Clasifica el tren de otro movimiento por sus relaciones, no por su posición."
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.mechanical.explain-energy-chain"
+      ],
+      "assessesConceptIds": [
+        "concept.mechanical.explain-energy-chain"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.mechanical.energy",
+        "blockId": "block.mechanical.energy",
+        "conceptIds": [
+          "concept.mechanical.explain-energy-chain"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba comprensión dentro de un modelo mecánico conceptual geometría conceptual y secuencia educativa, sin simulación física. No demuestra física validada, destreza manual ni capacidad de servicio sobre un calibre real.",
+        "en": "This activity checks understanding in a geometría conceptual y secuencia educativa, sin simulación física conceptual mechanical model. It does not demonstrate validated physics, manual skill, or the ability to service a real calibre."
+      }
+    }
+  }
+}

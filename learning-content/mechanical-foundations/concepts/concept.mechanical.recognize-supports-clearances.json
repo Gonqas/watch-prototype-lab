@@ -1,0 +1,62 @@
+{
+  "id": "concept.mechanical.recognize-supports-clearances",
+  "version": "0.5.0",
+  "title": {
+    "es": "Reconocer apoyos y holguras",
+    "en": "Reconocer apoyos y holguras"
+  },
+  "summary": {
+    "es": "Reconocer apoyos y holguras mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Reconocer apoyos y holguras mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.mechanical.build-functional-train"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.recognize-supports-clearances"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "supports",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.identify-pivots-supports",
+    "activity.mechanical.detect-mis-seated-wheel"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Reconocer apoyos y holguras mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Reconocer apoyos y holguras mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Reconocer apoyos y holguras se reconoce por su posición relativa, sus apoyos y sus interfaces dentro de apoyos y puentes. Reconocer apoyos y holguras mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La proximidad visual no basta: la identificación exige una relación documentada o explícitamente reconstruida.",
+    "en": "Reconocer apoyos y holguras se reconoce por su posición relativa, sus apoyos y sus interfaces dentro de apoyos y puentes. Reconocer apoyos y holguras mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La proximidad visual no basta: la identificación exige una relación documentada o explícitamente reconstruida."
+  },
+  "whyItMatters": {
+    "es": "Dominar reconocer apoyos y holguras permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega reconocer apoyos y holguras dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema supports."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [
+    "misconception.mechanical.near-gears-mesh"
+  ],
+  "knowledgeType": "spatial",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.supports",
+  "targetEvidenceLevel": "recognition"
+}

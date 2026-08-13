@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.escapements-chronometry.toh-seguridad-escape.accion-de-guardia",
+  "version": "1.1.0",
+  "title": {
+    "es": "acción de guardia",
+    "en": "acción de guardia"
+  },
+  "summary": {
+    "es": "Interacción que impide el desplazamiento indebido del áncora fuera de fase.",
+    "en": "Interacción que impide el desplazamiento indebido del áncora fuera de fase."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.escapements-chronometry.toh-escape-fases.despeje",
+    "concept.encyclopedia.escapements-chronometry.toh-escape-fases.impulso",
+    "concept.encyclopedia.escapements-chronometry.toh-escape-fases.caida"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.escapements-chronometry.toh-seguridad-escape"
+  ],
+  "movementIds": [],
+  "subsystem": "escapement",
+  "routeIds": [
+    "route.encyclopedia.escapements-chronometry"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.escapements-chronometry.toh-seguridad-escape"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch06",
+    "source.private.bulova.10",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.escapements-chronometry.toh-seguridad-escape"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+  "plainLanguage": {
+    "es": "Interacción que impide el desplazamiento indebido del áncora fuera de fase.",
+    "en": "Interacción que impide el desplazamiento indebido del áncora fuera de fase."
+  },
+  "technicalLanguage": {
+    "es": "acción de guardia se interpreta mediante la cadena diente bloqueado → draw asienta áncora → golpe intenta desplazarla → guardia limita movimiento → clavija entra en fase → despeje autorizado y las condiciones declaradas en la unidad.",
+    "en": "acción de guardia se interpreta mediante la cadena diente bloqueado → draw asienta áncora → golpe intenta desplazarla → guardia limita movimiento → clavija entra en fase → despeje autorizado y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?",
+    "en": "Permite explicar y comprobar ¿cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir acción de guardia sin circularidad.",
+      "en": "Definir acción de guardia sin circularidad."
+    },
+    {
+      "es": "Relacionar acción de guardia con una entrada, una interfaz y una salida.",
+      "en": "Relacionar acción de guardia con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

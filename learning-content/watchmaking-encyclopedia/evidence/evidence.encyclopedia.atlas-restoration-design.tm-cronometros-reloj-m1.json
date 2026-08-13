@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.9,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

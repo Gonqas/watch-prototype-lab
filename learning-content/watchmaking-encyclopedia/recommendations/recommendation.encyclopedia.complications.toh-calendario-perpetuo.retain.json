@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.complications.toh-calendario-perpetuo.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Calendarios completo, anual y perpetuo",
+    "en": "Repasar Calendarios completo, anual y perpetuo"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 411,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.complications.toh-calendario-perpetuo"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.complications.toh-calendario-perpetuo"
+  ],
+  "required": false
+}

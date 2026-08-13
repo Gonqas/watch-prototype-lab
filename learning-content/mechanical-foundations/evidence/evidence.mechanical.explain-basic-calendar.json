@@ -1,0 +1,34 @@
+{
+  "id": "evidence.mechanical.explain-basic-calendar",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.explain-basic-calendar",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.mechanical.explain-basic-calendar",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.mechanical.explain-basic-calendar",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.explain-date-change"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.explain-basic-calendar",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

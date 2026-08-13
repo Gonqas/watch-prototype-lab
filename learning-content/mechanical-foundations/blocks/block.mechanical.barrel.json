@@ -1,0 +1,56 @@
+{
+  "id": "block.mechanical.barrel",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Muelle real y barrilete",
+  "bodyMarkdown": "## Propósito\n\nRelacionar muelle, árbol, tambor, tapa, carga, descarga y reserva conceptual.\n\n## Objetivos observables\n\n## Prerrequisitos\n\n## Explicación\n\nEl laboratorio separa muelle, árbol, tambor y tapa. La carga cambia una magnitud normalizada; la deformación visual es didáctica y la reserva deriva únicamente de entradas simplificadas. La brida deslizante se presenta como familia conceptual de ciertos automáticos, no como propiedad universal.\n\n## Interacción y actividad\n\n## Fuentes y alcance de las afirmaciones\n\nEl libro privado se usa como teoría general en los capítulos declarados en la ficha de fuentes; no se copia texto. Cada explicación o cálculo del laboratorio indica si es una síntesis educativa o un resultado calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan el movimiento del modelo conceptual.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nRelacionar muelle, árbol, tambor, tapa, carga, descarga y reserva conceptual. Continúa con “Ruedas, piñones y engrane”.\n\n## Palabras y piezas clave\n\n- **Explicar la cadena energética mecánica.** Explicar la cadena energética mecánica mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n- **Explicar muelle real y barrilete.** Explicar muelle real y barrilete mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo puede el barrilete almacenar energía durante la cuerda y entregarla después sin confundir el recipiente, el muelle y el órgano que recibe el movimiento?\n\n## Modelo causal ampliado\n\nEl barrilete se estudia como un conjunto de relaciones. El muelle real almacena energía elástica; el árbol ofrece una interfaz para cargarlo; el tambor y su dentado entregan movimiento al tren. Durante la cuerda cambia el estado relativo entre árbol, muelle y tambor. Durante la marcha, la tendencia del muelle a recuperar una forma menos cargada produce un par sobre la salida. El modelo conceptual muestra esta dirección funcional, no fuerzas ni curvas reales.\n\nConviene separar tres preguntas: dónde está la energía, qué pieza cambia de estado al dar cuerda y por qué interfaz sale el movimiento. Llamar “fuente” al barrilete completo es útil en un mapa funcional, pero una explicación técnica debe decir que la energía está almacenada en el muelle y que el conjunto la contiene y la transmite. El gancho interior, el exterior y las condiciones de deslizamiento dependen de la arquitectura; no deben darse por idénticos en todos los calibres.\n\n## Ejemplo resuelto\n\nEstado inicial: muelle descargado en un barrilete conceptual. Primero se inmoviliza la salida y se gira el árbol en el sentido de carga declarado; aumenta el estado de carga, pero el tren no recibe todavía una rotación sostenida. Después se libera la salida: el tambor impulsa la primera rueda y la carga disminuye. Si se desacopla el engrane de salida, el muelle puede conservar carga mientras la indicación permanece detenida. La conclusión correcta distingue almacenamiento, mando de carga y salida.\n\n## Práctica deliberada\n\nHaz tres recorridos. En el primero sigue las etiquetas. En el segundo oculta los nombres y reconstruye entrada, almacenamiento y salida. En el tercero restaura la escena, cambia el punto de interrupción y predice qué estado conservará cada pieza. No cuentes el primer recorrido como dominio: la evidencia independiente es la explicación del tercero sin pista.\n\n## Comprobación antes del laboratorio\n\n- Puedes señalar árbol, muelle, tambor y dentado sin intercambiar sus funciones.\n- Puedes explicar qué cambia al cargar y qué cambia al descargar.\n- Puedes predecir la diferencia entre fuente descargada y transmisión desacoplada.\n- Delimitas que el modelo explica una geometría conceptual y una secuencia educativa, pero no valida par, reserva de marcha ni fricción.\n\n## Transferencia\n\nAplica el mismo mapa a un barrilete real documentado: identifica qué relaciones confirma la documentación y deja como desconocidos el perfil de fuerza, la lubricación, las holguras y el estado de una unidad física.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo puede el barrilete almacenar energía durante la cuerda y entregarla después sin confundir el recipiente, el muelle y el órgano que recibe el movimiento?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Aplica el mismo mapa a un barrilete real documentado: identifica qué relaciones confirma la documentación y deja como desconocidos el perfil de fuerza, la lubricación, las holguras y el estado de una unidad física.\n\n## Lectura técnica de relaciones y límites\n\nLee el conjunto en dos diagramas distintos. En el diagrama de estado, registra descargado, parcialmente cargado y cargado sin asignar valores físicos. En el diagrama de potencia, marca entrada de cuerda, almacenamiento y salida. Esta separación evita dibujar una flecha continua que haga parecer que la energía entra y sale simultáneamente por la misma pieza. Comprueba también el contrafactual: si la salida está desacoplada, cambia la transmisión, no la identidad de la fuente.",
+  "claims": [
+    {
+      "id": "claim.mechanical.barrel",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "Muelle real y barrilete se representa mediante un modelo conceptual reversible y no como comportamiento exacto del 8215.",
+      "sourceStatement": "Teoría privada y explicación educativa original; sin reproducción textual ni datos específicos trasladados.",
+      "method": "Modelo declarativo y cálculos deterministas del Sistema 4E",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4e:barrel:0.1.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-mechanical-foundations",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4E · Fundamentos del reloj mecánico"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Laboratorios, cálculos educativos, explicaciones, actividades y evaluación originales.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.explain-barrel"
+    ],
+    "estimatedMinutes": 5,
+    "userPaced": true
+  }
+}

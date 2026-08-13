@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.frecuencia-natural",
+  "version": "1.1.0",
+  "title": {
+    "es": "frecuencia natural",
+    "en": "frecuencia natural"
+  },
+  "summary": {
+    "es": "Frecuencia propia de oscilación determinada por inercia y rigidez bajo un modelo dado.",
+    "en": "Frecuencia propia de oscilación determinada por inercia y rigidez bajo un modelo dado."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+    "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+    "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "movementIds": [],
+  "subsystem": "oscillators",
+  "routeIds": [
+    "route.encyclopedia.math-physics-metrology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "sourceIds": [
+    "source.private.daniels.balance-spring",
+    "source.external.ciechanowski-mechanical-watch",
+    "source.private.vba-uhrentechnik"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+  "plainLanguage": {
+    "es": "Frecuencia propia de oscilación determinada por inercia y rigidez bajo un modelo dado.",
+    "en": "Frecuencia propia de oscilación determinada por inercia y rigidez bajo un modelo dado."
+  },
+  "technicalLanguage": {
+    "es": "frecuencia natural se interpreta mediante la cadena desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento y las condiciones declaradas en la unidad.",
+    "en": "frecuencia natural se interpreta mediante la cadena desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+    "en": "Permite explicar y comprobar ¿qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir frecuencia natural sin circularidad.",
+      "en": "Definir frecuencia natural sin circularidad."
+    },
+    {
+      "es": "Relacionar frecuencia natural con una entrada, una interfaz y una salida.",
+      "en": "Relacionar frecuencia natural con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

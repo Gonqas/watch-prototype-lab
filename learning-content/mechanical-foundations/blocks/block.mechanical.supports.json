@@ -1,0 +1,56 @@
+{
+  "id": "block.mechanical.supports",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Pivotes, rubíes, puentes y libertad",
+  "bodyMarkdown": "## Propósito\n\nReconocer apoyos superior e inferior y diferenciar libertad de desalineación.\n\n## Objetivos observables\n\n## Prerrequisitos\n\n## Explicación\n\nUna rueda necesita apoyos coherentes en platina y puente. El laboratorio exagera pivote fuera del rubí, exceso axial, ausencia de libertad y roce para hacerlos visibles. Endshake y sideshake se explican cualitativamente; no reciben tolerancias reales.\n\n## Interacción y actividad\n\n## Fuentes y alcance de las afirmaciones\n\nEl libro privado se usa como teoría general en los capítulos declarados en la ficha de fuentes; no se copia texto. Cada explicación o cálculo del laboratorio indica si es una síntesis educativa o un resultado calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan el movimiento del modelo conceptual.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nReconocer apoyos superior e inferior y diferenciar libertad de desalineación. Continúa con “El escape de áncora suizo”.\n\n## Palabras y piezas clave\n\n- **Construir un tren funcional.** Construir un tren funcional mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n- **Reconocer apoyos y holguras.** Reconocer apoyos y holguras mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Por qué una rueda correctamente dentada puede no girar si sus pivotes, rubíes y puentes no definen un eje libre y estable?\n\n## Modelo causal ampliado\n\nUna rueda no funciona solo por sus dientes. El árbol termina en pivotes que deben quedar apoyados y alineados entre la platina y el puente o cock correspondiente. Los rubíes ofrecen superficies de apoyo; su presencia no prueba por sí sola que la rueda esté bien asentada. Para girar, el conjunto necesita libertad axial y radial compatible con su función, contactos correctos y ausencia de interferencias.\n\nEn una vista explosionada los apoyos aparecen separados para ser legibles. Esa separación no representa la posición de marcha. Al montar, un pivote puede parecer cercano al orificio y seguir fuera de asiento. Apretar un puente sobre una rueda mal asentada no corrige la relación: puede inmovilizarla o dañar una pieza real. El simulador solo representa estados seguros y simbólicos; no enseña a aplicar presión física.\n\n## Ejemplo resuelto\n\nSe coloca una rueda con el pivote inferior en su apoyo y el superior fuera del rubí del puente. La rueda queda inclinada. El engrane visual puede parecer próximo, pero al cerrar el puente el eje no queda definido. La comprobación correcta no es “el tornillo entra”, sino verificar ambos pivotes, apoyar el puente sin forzar y comprobar libertad en el estado educativo. Restaurar y asentar los dos pivotes elimina el bloqueo simbólico.\n\n## Práctica deliberada\n\nRealiza una comparación A/B. En A, ambos pivotes están asentados; en B, uno queda desplazado. Predice antes de activar la comprobación. Luego oculta la vista 3D y repite desde la lista accesible de dependencias. Termina explicando qué observación física adicional necesitarías en un movimiento real.\n\n## Comprobación antes del laboratorio\n\n- Nombras los dos apoyos que definen el eje.\n- No usas la proximidad visual como prueba de asiento.\n- Compruebas libertad antes de aceptar el cierre.\n- No conviertes el estado simbólico en diagnóstico de daño real.\n\n## Transferencia\n\nBusca la misma lógica en una rueda apoyada por un puente compartido: explica cómo un único puente puede condicionar varias ruedas y por qué el orden de verificación importa.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Por qué una rueda correctamente dentada puede no girar si sus pivotes, rubíes y puentes no definen un eje libre y estable?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Busca la misma lógica en una rueda apoyada por un puente compartido: explica cómo un único puente puede condicionar varias ruedas y por qué el orden de verificación importa.\n\n## Lectura técnica de relaciones y límites\n\nConstruye una tabla con cuatro estados: ambos pivotes asentados, solo el inferior, solo el superior y ninguno. Para cada estado predice eje, libertad e interacción con el puente. La comparación entrena a buscar la relación que falta en vez de “arreglar” la pieza visible. En el banco real, cualquier resistencia exige detenerse; el modelo no enseña a forzar ni a enderezar componentes.",
+  "claims": [
+    {
+      "id": "claim.mechanical.supports",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "Pivotes, rubíes, puentes y libertad se representa mediante un modelo conceptual reversible y no como comportamiento exacto del 8215.",
+      "sourceStatement": "Teoría privada y explicación educativa original; sin reproducción textual ni datos específicos trasladados.",
+      "method": "Modelo declarativo y cálculos deterministas del Sistema 4E",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4e:supports:0.1.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-mechanical-foundations",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4E · Fundamentos del reloj mecánico"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Laboratorios, cálculos educativos, explicaciones, actividades y evaluación originales.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.recognize-supports-clearances"
+    ],
+    "estimatedMinutes": 5,
+    "userPaced": true
+  }
+}

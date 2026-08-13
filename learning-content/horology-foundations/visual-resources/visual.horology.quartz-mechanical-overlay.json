@@ -1,0 +1,53 @@
+{
+  "id": "visual.horology.quartz-mechanical-overlay",
+  "version": "0.5.0",
+  "type": "overlay-comparison",
+  "purpose": {
+    "es": "Soportar quartz mechanical overlay con selectores, procedencia y alternativa accesible."
+  },
+  "status": "ready",
+  "sourceIds": [
+    "source.horology.original-functional-map"
+  ],
+  "fidelity": {
+    "geometry": "G1",
+    "kinematics": "K2",
+    "physics": "P0",
+    "limitations": [
+      "Representación educativa normalizada; no expresa dimensiones ni física validada."
+    ]
+  },
+  "lessonIds": [
+    "lesson.horology.functional-equivalence"
+  ],
+  "movementIds": [
+    "fixture.conceptual.quartz-chain"
+  ],
+  "partSelectors": [],
+  "requiredCapabilities": [
+    "learning.scene-runtime",
+    "canonical-selectors-v1",
+    "viewport.selection",
+    "viewport.visibility",
+    "viewport.isolation",
+    "viewport.transparency",
+    "viewport.highlight",
+    "viewport.explode",
+    "viewport.camera",
+    "viewport.overlay.labels",
+    "viewport.overlay.arrows",
+    "viewport.energy-route",
+    "timeline.scrub",
+    "reduced-motion",
+    "viewport.restore"
+  ],
+  "dataRequirements": [
+    "Modelo técnico 4B intacto.",
+    "Identidad de cada pieza estable.",
+    "Alternativa textual funcional."
+  ],
+  "priority": "high",
+  "dependencyIds": [],
+  "currentModelSupport": "yes",
+  "viewportImpact": "configuration"
+}

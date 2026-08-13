@@ -1,0 +1,99 @@
+{
+  "id": "route.horology.bench-foundations",
+  "version": "0.5.0",
+  "title": {
+    "es": "Banco, herramientas y observación segura"
+  },
+  "purpose": {
+    "es": "Preparar el puesto, elegir herramientas por su función y registrar el estado inicial antes de intervenir un movimiento."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.quartz2035.workstation",
+    "module.quartz2035.tools",
+    "module.quartz2035.observe"
+  ],
+  "competencyIds": [
+    "competency.quartz2035.prepare-safe-workstation",
+    "competency.quartz2035.select-basic-tools",
+    "competency.quartz2035.observe-before-disassembly"
+  ],
+  "movementIds": [
+    "fixture.miyota.2035.structural"
+  ],
+  "difficulty": "introductory",
+  "sourceIds": [
+    "source.horology.original-quartz-practical-route"
+  ],
+  "visualResourceIds": [
+    "visual.quartz2035.workstation",
+    "visual.quartz2035.tools",
+    "visual.quartz2035.observe"
+  ],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "start-from-zero",
+    "completionPolicy": "practice",
+    "milestones": [
+      {
+        "id": "milestone.horology.bench-foundations.01",
+        "order": 1,
+        "title": {
+          "es": "El puesto de trabajo"
+        },
+        "outcome": {
+          "es": "Preparar un entorno ordenado antes de observar o manipular."
+        },
+        "lessonId": "lesson.quartz2035.workstation",
+        "activityId": "activity.quartz2035.prepare-workbench",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.quartz2035.prepare-safe-workstation"
+        ]
+      },
+      {
+        "id": "milestone.horology.bench-foundations.02",
+        "order": 2,
+        "title": {
+          "es": "Herramientas fundamentales"
+        },
+        "outcome": {
+          "es": "Elegir una capacidad semántica adecuada y reconocer sus límites."
+        },
+        "lessonId": "lesson.quartz2035.tools",
+        "activityId": "activity.quartz2035.select-tools",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.quartz2035.select-basic-tools"
+        ]
+      },
+      {
+        "id": "milestone.horology.bench-foundations.03",
+        "order": 3,
+        "title": {
+          "es": "Observar antes de desmontar"
+        },
+        "outcome": {
+          "es": "Aplicar un protocolo de identificación, observación y registro previo."
+        },
+        "lessonId": "lesson.quartz2035.observe",
+        "activityId": "activity.quartz2035.identify-movement-zones",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.quartz2035.observe-before-disassembly"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [
+      "activity.quartz2035.detect-unsafe-conditions"
+    ],
+    "demonstrationActivityIds": []
+  }
+}

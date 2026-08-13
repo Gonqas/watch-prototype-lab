@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.service-tribology.chicago-ensamblaje-control",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.service-tribology.chicago-ensamblaje-control",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.service-tribology.chicago-ensamblaje-control",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.service-tribology.chicago-ensamblaje-control",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.service-tribology.chicago-ensamblaje-control"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.service-tribology.chicago-ensamblaje-control",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

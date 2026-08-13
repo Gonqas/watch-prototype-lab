@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.micromechanics.bulova-torneado-fundamental.altura-de-corte",
+  "version": "1.1.0",
+  "title": {
+    "es": "altura de corte",
+    "en": "altura de corte"
+  },
+  "summary": {
+    "es": "Posición del filo respecto al eje que altera geometría y estabilidad.",
+    "en": "Posición del filo respecto al eje que altera geometría y estabilidad."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.micromechanics.bulova-botador-eje.apoyo-de-trabajo",
+    "concept.encyclopedia.micromechanics.bulova-botador-eje.punzon-compatible",
+    "concept.encyclopedia.micromechanics.bulova-botador-eje.remachado-concentrico"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.micromechanics.bulova-torneado-fundamental"
+  ],
+  "movementIds": [],
+  "subsystem": "lathe",
+  "routeIds": [
+    "route.encyclopedia.micromechanics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.micromechanics.bulova-torneado-fundamental"
+  ],
+  "sourceIds": [
+    "source.private.bulova.03",
+    "source.private.chicago.28",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.micromechanics.bulova-torneado-fundamental"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.micromechanics.bulova-torneado-fundamental",
+  "plainLanguage": {
+    "es": "Posición del filo respecto al eje que altera geometría y estabilidad.",
+    "en": "Posición del filo respecto al eje que altera geometría y estabilidad."
+  },
+  "technicalLanguage": {
+    "es": "altura de corte se interpreta mediante la cadena evaluar riesgo → preparar centros → afilar y apoyar buril → desbastar → medir sin rotación → acabar y verificar y las condiciones declaradas en la unidad.",
+    "en": "altura de corte se interpreta mediante la cadena evaluar riesgo → preparar centros → afilar y apoyar buril → desbastar → medir sin rotación → acabar y verificar y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué hábitos producen una superficie concéntrica sin convertir el torno en un riesgo?",
+    "en": "Permite explicar y comprobar ¿qué hábitos producen una superficie concéntrica sin convertir el torno en un riesgo?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir altura de corte sin circularidad.",
+      "en": "Definir altura de corte sin circularidad."
+    },
+    {
+      "es": "Relacionar altura de corte con una entrada, una interfaz y una salida.",
+      "en": "Relacionar altura de corte con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.service-tribology.tribologia-y-lubricantes",
+  "version": "1.1.0",
+  "title": "Tribología, lubricantes y cantidad aplicada",
+  "blockIds": [
+    "block.encyclopedia.service-tribology.tribologia-y-lubricantes"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.tribologia-y-lubricantes"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Tribología, lubricantes y cantidad aplicada",
+      "en": "Tribología, lubricantes y cantidad aplicada"
+    },
+    "purpose": {
+      "es": "¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?",
+      "en": "¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Tribología, lubricantes y cantidad aplicada mediante relaciones causales.",
+        "en": "Explicar Tribología, lubricantes y cantidad aplicada mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.huella-de-desgaste",
+      "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.defecto-funcional",
+      "concept.encyclopedia.service-tribology.limpieza-e-inspeccion.criterio-de-rechazo"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.regimen-de-lubricacion",
+      "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.capilaridad",
+      "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.migracion"
+    ],
+    "sourceIds": [
+      "source.institutional.awci.standards",
+      "source.private.daniels.jewelling",
+      "source.official.miyota.8215"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.regimen-de-lubricacion",
+        "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.capilaridad",
+        "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.migracion"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1108,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.service-tribology.tribologia-y-lubricantes"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: régimen de lubricación, capilaridad, migración.",
+          "en": "Defino con mis palabras: régimen de lubricación, capilaridad, migración."
+        },
+        {
+          "es": "Describo «Tribología, lubricantes y cantidad aplicada» con condición inicial, controles, punto de parada y comprobación final.",
+          "en": "Describo «Tribología, lubricantes y cantidad aplicada» con condición inicial, controles, punto de parada y comprobación final."
+        },
+        {
+          "es": "Distingo qué parte de «Tribología, lubricantes y cantidad aplicada» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Tribología, lubricantes y cantidad aplicada» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Para cinco interfaces, declara movimiento, carga, riesgo de migración y fuente requerida; no asignes producto si el fabricante no está documentado.",
+          "en": "Aplico el criterio a esta variante: Para cinco interfaces, declara movimiento, carga, riesgo de migración y fuente requerida; no asignes producto si el fabricante no está documentado."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Tribología, lubricantes y cantidad aplicada» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Tribología, lubricantes y cantidad aplicada» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.regimen-de-lubricacion",
+        "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.capilaridad",
+        "concept.encyclopedia.service-tribology.tribologia-y-lubricantes.migracion"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?",
+          "en": "¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?"
+        },
+        {
+          "es": "¿Qué relación causal de «Tribología, lubricantes y cantidad aplicada» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Tribología, lubricantes y cantidad aplicada» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

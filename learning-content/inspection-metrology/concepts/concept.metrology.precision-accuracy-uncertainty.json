@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.precision-accuracy-uncertainty",
+  "version": "0.1.0",
+  "title": {
+    "es": "Precisión, exactitud, repetibilidad e incertidumbre"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para distinguir dispersión, sesgo, error, repetibilidad e incertidumbre."
+  },
+  "kind": "concept",
+  "knowledgeType": "quantitative",
+  "prerequisiteIds": [
+    "concept.metrology.units-scale-resolution"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.light-magnification-posture"
+  ],
+  "competencyIds": [
+    "competency.metrology.seleccionar-un-instrumento"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.repetir-medicion",
+    "activity.metrology.declarar-incertidumbre"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a distinguir dispersión, sesgo, error, repetibilidad e incertidumbre sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para distinguir dispersión, sesgo, error, repetibilidad e incertidumbre."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.instruments"
+  ],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available"
+}

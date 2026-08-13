@@ -1,0 +1,41 @@
+{
+  "id": "evidence.miyota8215.explain-energy-chain",
+  "version": "0.5.0",
+  "competencyId": "competency.miyota8215.explain-energy-chain",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.miyota8215.explain-energy-chain",
+    "version": "0.5.0",
+    "triggerEventType": "calibre-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.miyota8215.explain-energy-chain",
+    "packageId": "wplab.horology.miyota8215",
+    "activityIds": [
+      "activity.miyota8215.follow-barrel-energy",
+      "activity.miyota8215.compare-barrel-conceptual"
+    ],
+    "evidenceTemplateId": "evidence.miyota8215.explain-energy-chain",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "instanceId",
+      "authority",
+      "dependencyIds",
+      "toolId",
+      "orientation",
+      "trayZoneId",
+      "verification",
+      "hypothesis",
+      "limitations"
+    ]
+  }
+}

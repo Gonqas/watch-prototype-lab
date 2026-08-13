@@ -1,0 +1,256 @@
+{
+  "id": "lesson.mechanical.final-project",
+  "version": "0.5.0",
+  "title": "Integración y proyecto final",
+  "blockIds": [
+    "block.mechanical.final-project"
+  ],
+  "activityIds": [
+    "activity.mechanical.introduce-fault",
+    "activity.mechanical.formulate-hypothesis",
+    "activity.mechanical.build-final-project",
+    "activity.mechanical.compare-with-8215",
+    "activity.mechanical.document-limitations"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Integración y proyecto final",
+      "en": "Integración y proyecto final"
+    },
+    "purpose": {
+      "es": "Construir, interrumpir, diagnosticar y documentar un movimiento conceptual completo.",
+      "en": "Construir, interrumpir, diagnosticar y documentar un movimiento conceptual completo."
+    },
+    "objectives": [
+      {
+        "es": "Predecir y manipular una relación mecánica.",
+        "en": "Predecir y manipular una relación mecánica."
+      },
+      {
+        "es": "Explicar el resultado con fórmula o estado.",
+        "en": "Explicar el resultado con fórmula o estado."
+      },
+      {
+        "es": "Declarar límites y restaurar.",
+        "en": "Declarar límites y restaurar."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.mechanical.explain-automatic-winding"
+    ],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.mechanical.diagnose-conceptual-interruption",
+      "concept.mechanical.compare-conceptual-real",
+      "concept.mechanical.document-fidelity-limits"
+    ],
+    "sourceIds": [
+      "source.horology.private-book.movement-design",
+      "source.horology.original-mechanical-foundations"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.final-project"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Construir, interrumpir, diagnosticar y documentar un movimiento conceptual completo.",
+        "en": "Construir, interrumpir, diagnosticar y documentar un movimiento conceptual completo."
+      },
+      "visibleConcept": {
+        "es": "Laboratorio integration con estados, relaciones y resultados declarados.",
+        "en": "Laboratorio integration con estados, relaciones y resultados declarados."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "fixture.conceptual.mechanical-chain",
+        "fixture.miyota.8215.structural"
+      ],
+      "involvedSelectors": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "initialState": {
+        "cameraIntent": "Vista estable del subsistema conceptual.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [
+        "mainspring",
+        "barrel",
+        "train",
+        "escapement",
+        "oscillator",
+        "motion-works",
+        "indication"
+      ],
+      "rotationDirections": [
+        "Dirección derivada de cada relación externa o interna."
+      ],
+      "labels": [
+        "entrada",
+        "salida",
+        "estado",
+        "fuente",
+        "G/K/P",
+        "limitación"
+      ],
+      "arrows": [
+        "flujo energético y relación cinemática derivados del mismo grafo"
+      ],
+      "animations": [
+        "timeline pausado, scrub y pasos discretos; reduced motion equivalente"
+      ],
+      "timelineIntent": "Observar, predecir, ejecutar, comparar, explicar, guardar y restaurar.",
+      "userInteraction": "Selección y acciones; teclado completo y sin arrastre obligatorio.",
+      "observableResult": {
+        "es": "El laboratorio produce un estado y un cálculo reproducibles sin alterar el proyecto técnico original.",
+        "en": "El laboratorio produce un estado y un cálculo reproducibles sin alterar el proyecto técnico original."
+      },
+      "successCriterion": {
+        "es": "Resultado correcto para las entradas declaradas, explicación de límites y restauración.",
+        "en": "Resultado correcto para las entradas declaradas, explicación de límites y restauración."
+      },
+      "restoration": {
+        "es": "Restaurar configuración, bloqueos, fallos, timeline y vista.",
+        "en": "Restaurar configuración, bloqueos, fallos, timeline y vista."
+      },
+      "textualAlternative": {
+        "es": "Entidades, relaciones, fórmulas, entradas, salidas y fases en orden equivalente.",
+        "en": "Entidades, relaciones, fórmulas, entradas, salidas y fases en orden equivalente."
+      },
+      "reducedMotionAlternative": {
+        "es": "Estados discretos y fases numeradas con idéntica evaluación.",
+        "en": "Estados discretos y fases numeradas con idéntica evaluación."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "unknownData": [
+        "geometría interna real",
+        "pérdidas reales",
+        "par real",
+        "tolerancias",
+        "conteos de dientes 8215 no documentados",
+        "lubricación"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.mechanical.final-project"
+      ]
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.diagnose-conceptual-interruption",
+        "concept.mechanical.compare-conceptual-real",
+        "concept.mechanical.document-fidelity-limits"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 735,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.mechanical.introduce-fault",
+        "activity.mechanical.formulate-hypothesis",
+        "activity.mechanical.build-final-project",
+        "activity.mechanical.compare-with-8215",
+        "activity.mechanical.document-limitations"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Predecir y manipular una relación mecánica.",
+          "en": "Predecir y manipular una relación mecánica."
+        },
+        {
+          "es": "Explicar el resultado con fórmula o estado.",
+          "en": "Explicar el resultado con fórmula o estado."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Integración y proyecto final», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "transfer",
+      "entryCheck": "ungraded-diagnostic",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.mechanical.compare-conceptual-real",
+        "concept.mechanical.document-fidelity-limits"
+      ],
+      "reinforcesConceptIds": [
+        "concept.mechanical.diagnose-conceptual-interruption",
+        "concept.mechanical.explain-automatic-winding"
+      ],
+      "bridgeConceptIds": [
+        "concept.mechanical.explain-automatic-winding"
+      ]
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "id": "block.horology.system",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Un reloj como sistema funcional",
+  "bodyMarkdown": "## Propósito\n\nConstruir una primera imagen del reloj sin pedirte vocabulario que todavía no has aprendido. Primero reconocerás el objeto completo, después las piezas y contactos mínimos, y solo entonces sus funciones.\n\n## Conocimientos previos\n\nNinguno. Basta con saber que un reloj muestra una hora. Si ya has desmontado uno, esa experiencia se usará más adelante como observación, no como una respuesta que debas adivinar ahora.\n\n## Objetivos observables\n\nAl terminar podrás distinguir reloj completo y movimiento; reconocer rueda, piñón, árbol, pivote, platina, puente y rubí; y explicar con palabras sencillas qué significa fuente, control o regulación, transmisión, indicación y estructura.\n\n## Explicación principal\n\nEl **reloj completo** es el objeto que llevas o consultas. Incluye caja, cristal, corona, esfera, agujas, elementos de sujeción y el {{term:term.horology.movement}}. El movimiento es el mecanismo interior; no es todo el reloj.\n\nAntes de seguir una cadena necesitas unas pocas palabras. Una **rueda** tiene dientes. Un **piñón** es un engranaje pequeño que suele trabajar con una rueda. Ambos pueden compartir un **árbol**. Sus extremos finos son **pivotes** y giran apoyados en la platina, un puente o un {{term:term.horology.jewel}}. Dos piezas transmiten movimiento cuando existe una interfaz real entre ellas; verlas cerca no demuestra que engranen.\n\nAhora puedes leer el sistema por funciones. La **fuente** aporta o almacena energía. El **control o la regulación** establece el ritmo. La **transmisión** lleva y adapta el movimiento entre etapas. La **indicación** lo convierte en una lectura mediante las agujas. La **estructura** mantiene cada pieza en la posición necesaria. Estas funciones describen lo que ocurre, no el color ni la forma de una pieza.\n\n## Explicación visual\n\nLa referencia empieza ensamblada. La separación de capas es una vista educativa reversible, no la posición de funcionamiento. En cada paso se resalta quién entrega energía, quién la recibe y qué contacto permite el cambio. Las flechas indican una relación funcional; no pretenden ser una trayectoria física.\n\n## Vocabulario\n\nNombre cotidiano primero y término profesional después: mecanismo interior ({{term:term.horology.movement}}), rueda, {{term:term.horology.pinion}}, árbol ({{term:term.horology.arbor}}), pivote ({{term:term.horology.pivot}}), platina, puente y rubí. **Engranar** significa que los dientes de dos ruedas o piñones contactan de forma que una puede impulsar a la otra.\n\n## Fuentes\n\nLa secuencia procede del blueprint editorial aprobado, de la terminología técnica del libro privado y de una síntesis educativa original. El libro se usa como fuente, no se copia. El modelo conceptual no aporta dimensiones oficiales ni valida una física real.\n\n## Ejemplo\n\nSigue una sola relación. El muelle almacena energía dentro del barrilete. El barrilete impulsa la primera etapa del tren mediante un engrane. El tren la transmite; no la crea. Una platina o un puente pueden permanecer inmóviles y ser esenciales porque conservan los pivotes alineados. Si el apoyo desaparece, la transmisión puede detenerse aunque la fuente siga cargada.\n\n## Errores habituales\n\nConfundir el reloj completo con el movimiento; creer que las ruedas crean energía; asumir que dos piezas cercanas se tocan; interpretar una vista explosionada como posición de trabajo; y pensar que una animación demuestra dimensiones o física validadas.\n\n## Actividad\n\nPrimero recorrerás la ruta con ayuda y localizarás el tren entre la fuente y la indicación. Después elegirás su función principal. Esta primera comprobación es formativa: sirve para encontrar una laguna, no para declarar que dominas la relojería.\n\n## Feedback\n\nEl feedback mostrará la relación causal: qué recibe la pieza, qué entrega y mediante qué contacto. Si fallas, volverás al segmento exacto que falta antes de intentarlo de nuevo.\n\n## Evidencia\n\nSe conserva la respuesta, si fue correcta, las pistas utilizadas y el contexto visual. Un acierto con ayuda cuenta como práctica; no se presenta como demostración independiente.\n\n## Criterio de éxito\n\nExplicar que el tren transmite movimiento, localizar al menos una relación de entrada y una de salida, y distinguir esa función de almacenar energía o mostrar la hora.\n\n## Resumen\n\nUn reloj completo contiene un movimiento. Sus piezas se entienden por los contactos y apoyos que las relacionan. La cadena funcional recibe energía, establece un ritmo, transmite movimiento y produce una indicación dentro de una estructura.\n\n## Siguiente conexión\n\nLa siguiente lección aplicará este mapa a la cadena mecánica: primero verás de dónde sale la energía, cómo se transmite y cómo el escape y el oscilador establecen el ritmo.",
+  "claims": [
+    {
+      "id": "claim.horology.watch-functional-system",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "El mapa educativo organiza el reloj en energía, control o regulación, transmisión, indicación y estructura.",
+      "sourceStatement": "Síntesis original del marco funcional; no afirma una distribución física idéntica en todos los movimientos.",
+      "method": "Síntesis editorial del blueprint y del marco teórico privado",
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K1",
+        "physics": "P0",
+        "limitations": [
+          "Clasificación funcional, no geometría ni validación de ingeniería."
+        ]
+      },
+      "reliability": "high",
+      "inputFingerprint": "source:horology-functional-map:0.1.0",
+      "recordedAt": "2026-07-23T15:30:00.000Z",
+      "methodVersion": "0.1.0",
+      "sources": [
+        {
+          "id": "source.horology.original-functional-map",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Blueprint editorial · primer módulo funcional"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-23",
+          "privateUse": true,
+          "supportedClaim": "Estructura pedagógica, escenas, actividades y explicaciones originales del primer módulo.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "pretrain",
+    "conceptIds": [
+      "concept.horology.watch-anatomy",
+      "concept.horology.part-language",
+      "concept.horology.functional-chain"
+    ],
+    "estimatedMinutes": 18,
+    "userPaced": true
+  }
+}

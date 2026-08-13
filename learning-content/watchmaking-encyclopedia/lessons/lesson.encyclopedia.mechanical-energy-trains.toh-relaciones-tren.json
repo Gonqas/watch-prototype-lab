@@ -1,0 +1,236 @@
+{
+  "id": "lesson.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+  "version": "1.1.0",
+  "title": "Relaciones del tren y sentido de giro",
+  "blockIds": [
+    "block.encyclopedia.mechanical-energy-trains.toh-relaciones-tren"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-relaciones-tren"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Relaciones del tren y sentido de giro",
+      "en": "Relaciones del tren y sentido de giro"
+    },
+    "purpose": {
+      "es": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?",
+      "en": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Relaciones del tren y sentido de giro mediante relaciones causales.",
+        "en": "Explicar Relaciones del tren y sentido de giro mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.modulo",
+      "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.distancia-entre-centros",
+      "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.arco-de-conduccion"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.relacion-de-transmision",
+      "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.tren-compuesto",
+      "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch05",
+      "source.private.vba-uhrentechnik",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Relaciones del tren y sentido de giro después de estudiar su teoría.",
+        "en": "Observar y manipular Relaciones del tren y sentido de giro después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "Cada engrane externo invierte sentido y escala velocidad de acuerdo con dientes conductores y conducidos. En un tren compuesto, las relaciones se multiplican; una rueda y su piñón solidarios comparten velocidad angular. Contar etapas sin identificar pares produce resultados falsos.",
+        "en": "Cada engrane externo invierte sentido y escala velocidad de acuerdo con dientes conductores y conducidos. En un tren compuesto, las relaciones se multiplican; una rueda y su piñón solidarios comparten velocidad angular. Contar etapas sin identificar pares produce resultados falsos."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema train con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "identificar conductor",
+        "identificar conducido",
+        "anotar dientes",
+        "calcular pareja",
+        "multiplicar etapas",
+        "comprobar frecuencia y sentido"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "relación de transmisión",
+        "tren compuesto",
+        "sentido alternante"
+      ],
+      "arrows": [
+        "identificar conductor → identificar conducido",
+        "identificar conducido → anotar dientes",
+        "anotar dientes → calcular pareja",
+        "calcular pareja → multiplicar etapas",
+        "multiplicar etapas → comprobar frecuencia y sentido"
+      ],
+      "animations": [
+        "rotate",
+        "change-ratio",
+        "add-stage",
+        "remove-stage",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Relaciones del tren y sentido de giro sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Relaciones del tren y sentido de giro sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: identificar conductor → identificar conducido → anotar dientes → calcular pareja → multiplicar etapas → comprobar frecuencia y sentido. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: identificar conductor → identificar conducido → anotar dientes → calcular pareja → multiplicar etapas → comprobar frecuencia y sentido. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.relacion-de-transmision",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.tren-compuesto",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1148,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.mechanical-energy-trains.toh-relaciones-tren"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: relación de transmisión, tren compuesto, sentido alternante.",
+          "en": "Defino con mis palabras: relación de transmisión, tren compuesto, sentido alternante."
+        },
+        {
+          "es": "Sigo «Relaciones del tren y sentido de giro» desde identificar conductor hasta comprobar frecuencia y sentido y explico cada enlace.",
+          "en": "Sigo «Relaciones del tren y sentido de giro» desde identificar conductor hasta comprobar frecuencia y sentido y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Relaciones del tren y sentido de giro» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Relaciones del tren y sentido de giro» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Resuelve un tren hacia delante y después deduce dientes faltantes desde una frecuencia objetivo.",
+          "en": "Aplico el criterio a esta variante: Resuelve un tren hacia delante y después deduce dientes faltantes desde una frecuencia objetivo."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Relaciones del tren y sentido de giro» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Relaciones del tren y sentido de giro» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.relacion-de-transmision",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.tren-compuesto",
+        "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?",
+          "en": "¿Cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?"
+        },
+        {
+          "es": "¿Qué relación causal de «Relaciones del tren y sentido de giro» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Relaciones del tren y sentido de giro» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

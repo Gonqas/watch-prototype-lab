@@ -1,0 +1,32 @@
+{
+  "id": "evidence.advanced.chronograph-coupling.human-review",
+  "version": "1.0.0",
+  "competencyId": "competency.advanced.chronograph-coupling",
+  "kind": "human-review",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.advanced.chronograph-coupling.human-review",
+    "version": "1.0.0",
+    "triggerEventType": "advanced-human-review-completed",
+    "evidenceType": "human-review",
+    "competencyId": "competency.advanced.chronograph-coupling",
+    "packageId": "wplab.horology.advanced-architecture-service",
+    "activityIds": [
+      "activity.advanced.chronograph-coupling"
+    ],
+    "evidenceTemplateId": "evidence.advanced.chronograph-coupling.human-review",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "reviewerId",
+      "criteria",
+      "result",
+      "notes"
+    ]
+  }
+}

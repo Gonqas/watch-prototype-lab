@@ -1,0 +1,114 @@
+{
+  "id": "scene.metrology.separar-observacion-e-hipotesis",
+  "version": "0.2.0",
+  "title": "Separar observación e hipótesis",
+  "description": "Escena textual y accesible que prepara la operación real “Separar observación e hipótesis” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Separar observación e hipótesis. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-separar-observacion-e-hipotesis.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-separar-observacion-e-hipotesis.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Separar observación e hipótesis”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-separar-observacion-e-hipotesis.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Separar observación e hipótesis” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-separar-observacion-e-hipotesis",
+          "promptMarkdown": "¿Qué sabemos de una pieza antes de acercarle un instrumento, y qué estamos suponiendo sin darnos cuenta?\n\nEn «Separar observación e hipótesis», resuelve un contexto nuevo: Aplica la misma separación a una esfera, una junta o un tornillo. La apariencia cambia, pero la cadena “observación → identidad → hipótesis → comprobación” debe seguir siendo inspeccionable. Documenta observación o resultado, método, límite y confianza sin copiar el dato del ejemplo.",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-separar-observacion-e-hipotesis.observation",
+              "label": "Observación o resultado transferido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-separar-observacion-e-hipotesis.method",
+              "label": "Método y referencia empleados",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-separar-observacion-e-hipotesis.limitation",
+              "label": "Límite, dato ausente o condición de invalidez",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-separar-observacion-e-hipotesis.confidence",
+              "label": "Confianza en la conclusión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Transfiere el criterio de «Separar observación e hipótesis» a un contexto nuevo."
+            },
+            "feedback": {
+              "es": "La transferencia conserva el método y vuelve a declarar sus límites: Aplica la misma separación a una esfera, una junta o un tornillo. La apariencia cambia, pero la cadena “observación → identidad → hipótesis → comprobación” debe seguir siendo inspeccionable."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-separar-observacion-e-hipotesis",
+          "requiredFieldIds": [
+            "field.activity-metrology-separar-observacion-e-hipotesis.observation",
+            "field.activity-metrology-separar-observacion-e-hipotesis.method",
+            "field.activity-metrology-separar-observacion-e-hipotesis.limitation",
+            "field.activity-metrology-separar-observacion-e-hipotesis.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

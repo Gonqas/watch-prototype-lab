@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.amortiguamiento",
+  "version": "1.1.0",
+  "title": {
+    "es": "amortiguamiento",
+    "en": "amortiguamiento"
+  },
+  "summary": {
+    "es": "Pérdida de energía que reduce la amplitud de una oscilación libre.",
+    "en": "Pérdida de energía que reduce la amplitud de una oscilación libre."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.momento-de-inercia",
+    "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.friccion-estatica",
+    "concept.encyclopedia.math-physics-metrology.rotacion-friccion-contacto.contacto-hertziano"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "movementIds": [],
+  "subsystem": "oscillators",
+  "routeIds": [
+    "route.encyclopedia.math-physics-metrology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "sourceIds": [
+    "source.private.daniels.balance-spring",
+    "source.external.ciechanowski-mechanical-watch",
+    "source.private.vba-uhrentechnik"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+  "plainLanguage": {
+    "es": "Pérdida de energía que reduce la amplitud de una oscilación libre.",
+    "en": "Pérdida de energía que reduce la amplitud de una oscilación libre."
+  },
+  "technicalLanguage": {
+    "es": "amortiguamiento se interpreta mediante la cadena desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento y las condiciones declaradas en la unidad.",
+    "en": "amortiguamiento se interpreta mediante la cadena desplazar del equilibrio → almacenar energía potencial → acelerar → cruzar equilibrio → perder energía → recibir mantenimiento y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?",
+    "en": "Permite explicar y comprobar ¿qué determina la frecuencia de un oscilador y por qué la amplitud revela más que “se mueve o no”?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir amortiguamiento sin circularidad.",
+      "en": "Definir amortiguamiento sin circularidad."
+    },
+    {
+      "es": "Relacionar amortiguamiento con una entrada, una interfaz y una salida.",
+      "en": "Relacionar amortiguamiento con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

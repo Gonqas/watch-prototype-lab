@@ -1,0 +1,19 @@
+{
+  "id": "recommendation.metrology.retain.medir-una-pieza-fisica",
+  "version": "0.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar: Medir una pieza física"
+  },
+  "reason": {
+    "es": "La retención exige una sesión independiente; el motor programará ventanas de 1, 7 y 21 días."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 291,
+  "target": {
+    "kind": "competency",
+    "id": "competency.metrology.medir-una-pieza-fisica"
+  },
+  "evidenceTemplateIds": [],
+  "required": false
+}

@@ -1,0 +1,47 @@
+{
+  "id": "rubric.mechanical.explain-motion-works",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.explain-motion-works",
+  "rules": [
+    {
+      "id": "rule.mechanical.explain-motion-works.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Explicar la minutería: se evalúan relación, justificación, restauración y límites; el tiempo no penaliza."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.mechanical.explain-motion-works.demonstrated",
+    "version": "0.5.0",
+    "competencyId": "competency.mechanical.explain-motion-works",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "simulation-result",
+            "status": "active",
+            "minimumConfidence": 1
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.quartz-electronics.toh-cadena-electronica-completa.consumo-funcional",
+  "version": "1.1.0",
+  "title": {
+    "es": "consumo funcional",
+    "en": "consumo funcional"
+  },
+  "summary": {
+    "es": "Corriente asociada al estado operativo bajo condiciones definidas.",
+    "en": "Corriente asociada al estado operativo bajo condiciones definidas."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.estator",
+    "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.rotor-imantado",
+    "concept.encyclopedia.quartz-electronics.toh-motor-paso-bipolar.pulso-bipolar"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.quartz-electronics.toh-cadena-electronica-completa"
+  ],
+  "movementIds": [],
+  "subsystem": "quartz-integration",
+  "routeIds": [
+    "route.encyclopedia.quartz-electronics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.toh-cadena-electronica-completa"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch15",
+    "source.official.miyota.2035",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.quartz-electronics.toh-cadena-electronica-completa"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+  "plainLanguage": {
+    "es": "Corriente asociada al estado operativo bajo condiciones definidas.",
+    "en": "Corriente asociada al estado operativo bajo condiciones definidas."
+  },
+  "technicalLanguage": {
+    "es": "consumo funcional se interpreta mediante la cadena entregar energía → generar referencia → dividir y decidir → excitar bobina → avanzar rotor → transmitir e indicar y las condiciones declaradas en la unidad.",
+    "en": "consumo funcional se interpreta mediante la cadena entregar energía → generar referencia → dividir y decidir → excitar bobina → avanzar rotor → transmitir e indicar y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?",
+    "en": "Permite explicar y comprobar ¿cómo se diagnostica sin mezclar energía, referencia, lógica, actuación y mecánica?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir consumo funcional sin circularidad.",
+      "en": "Definir consumo funcional sin circularidad."
+    },
+    {
+      "es": "Relacionar consumo funcional con una entrada, una interfaz y una salida.",
+      "en": "Relacionar consumo funcional con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "transfer",
+  "availability": "prerequisite-blocked"
+}

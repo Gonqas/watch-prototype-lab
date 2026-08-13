@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Bobina, estator, rotor y motor paso a paso."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

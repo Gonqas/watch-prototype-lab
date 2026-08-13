@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas",
+  "version": "1.1.0",
+  "title": "Cuaderno: Expediente Chicago VII: de Watch Master y Time-O-Graph al cronocomparador",
+  "description": "¿Qué principios de señal permanecen aunque cambie el instrumento?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Expediente Chicago VII: de Watch Master y Time-O-Graph al cronocomparador. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué principios de señal permanecen aunque cambie el instrumento?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué principios de señal permanecen aunque cambie el instrumento?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.answer",
+      "instructionMarkdown": "Explica **Expediente Chicago VII: de Watch Master y Time-O-Graph al cronocomparador** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.explain",
+          "promptMarkdown": "¿Qué principios de señal permanecen aunque cambie el instrumento?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por configurar frecuencia y sigue hasta correlacionar con observación.",
+                "en": "Empieza por configurar frecuencia y sigue hasta correlacionar con observación."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Los instrumentos históricos detectan impulsos acústicos y representan intervalos, marcha y beat. La tecnología cambia, pero siguen importando frecuencia configurada, calidad de captación, ruido, posición y ventana. Las trazas antiguas se estudian como casos de interpretación.",
+                "en": "Los instrumentos históricos detectan impulsos acústicos y representan intervalos, marcha y beat. La tecnología cambia, pero siguen importando frecuencia configurada, calidad de captación, ruido, posición y ventana. Las trazas antiguas se estudian como casos de interpretación."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué principios de señal permanecen aunque cambie el instrumento?",
+              "en": "¿Qué principios de señal permanecen aunque cambie el instrumento?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena configurar frecuencia → captar sonido → detectar eventos → comparar intervalos → dibujar traza → correlacionar con observación, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena configurar frecuencia → captar sonido → detectar eventos → comparar intervalos → dibujar traza → correlacionar con observación, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.mechanism",
+            "field.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.evidence",
+            "field.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.limit",
+            "field.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

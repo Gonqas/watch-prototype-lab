@@ -1,0 +1,56 @@
+{
+  "id": "block.mechanical.keyless",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Cuerda y puesta en hora",
+  "bodyMarkdown": "## Propósito\n\nReconstruir estados de corona sin atribuir una disposición universal.\n\n## Objetivos observables\n\n## Prerrequisitos\n\n## Explicación\n\nLos estados winding, neutral y time-setting declaran su función y rama activa. Corona, tija, piñón corredizo, tirete y báscula se representan conceptualmente. Una transición inválida produce diagnóstico y no fuerza el modelo.\n\n## Interacción y actividad\n\n## Fuentes y alcance de las afirmaciones\n\nEl libro privado se usa como teoría general en los capítulos declarados en la ficha de fuentes; no se copia texto. Cada explicación o cálculo del laboratorio indica si es una síntesis educativa o un resultado calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan el movimiento del modelo conceptual.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nReconstruir estados de corona sin atribuir una disposición universal. Continúa con “Carga automática y calendario básico”.\n\n## Palabras y piezas clave\n\n- **Explicar la minutería.** Explicar la minutería mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n- **Explicar cuerda y puesta en hora.** Explicar cuerda y puesta en hora mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo seleccionan corona, tija y mecanismo de puesta rutas distintas sin asumir que todas las arquitecturas colocan las mismas piezas del mismo modo?\n\n## Modelo causal ampliado\n\nEl mecanismo de cuerda y puesta se entiende como una máquina de estados. En posición de cuerda, la acción de la corona y la tija se transmite hacia la ruta que carga el muelle. En una posición de puesta, la selección cambia y la entrada llega a la minutería para mover la indicación. Puede existir un estado intermedio o neutro según la arquitectura. Corona, tija, piñón corredizo, tirete y báscula son piezas frecuentes en el modelo conceptual, pero su forma, posición y cooperación exactas deben confirmarse para cada calibre.\n\nUna transición válida necesita estado inicial, acción, relaciones activas y salida. Decir «girar la corona» es insuficiente porque la misma acción externa puede producir resultados distintos según la posición de la tija. Tampoco debe confundirse selección con transmisión: una pieza puede elegir qué engrane queda activo mientras otras conducen el movimiento. La escena representa cambios discretos y rechaza combinaciones incompatibles; no reproduce tacto, fuerza, elasticidad, desgaste ni seguridad de manipulación.\n\n## Ejemplo resuelto\n\nEn el estado de cuerda, la entrada llega a la rama de carga y la minutería no es la salida principal. Tras restaurar, la tija cambia al estado de puesta; ahora la cadena conduce hacia las agujas y no debe describirse como carga del barrilete. Un caso inválido conserva simultáneamente dos relaciones que el modelo declara incompatibles. La corrección no consiste en ocultar una rueda, sino en volver al último estado válido y reconstruir la selección.\n\n## Práctica deliberada\n\nCrea una tabla con posición de corona, acción, piezas seleccionadas, salida esperada y relaciones que deben quedar inactivas. Completa primero los estados con etiquetas y después a partir de un resultado observado. En el intento independiente recibe una secuencia mezclada, localiza la primera transición imposible y explica qué relación tendría que cambiar. Usa siempre nombres españoles visibles antes de consultar el término técnico en el glosario.\n\n## Comprobación antes del laboratorio\n\n- Distingues estado, selección, transmisión y salida.\n- Explicas por qué una misma acción externa puede activar otra ruta.\n- No conviertes el esquema conceptual en disposición universal.\n- Señalas qué sensaciones y fuerzas requieren una unidad física.\n\n## Transferencia\n\nCompara dos calibres documentados: conserva las funciones de cuerda y puesta, pero crea para cada uno su propio mapa de piezas, posiciones y restricciones.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo seleccionan corona, tija y mecanismo de puesta rutas distintas sin asumir que todas las arquitecturas colocan las mismas piezas del mismo modo?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Compara dos calibres documentados: conserva las funciones de cuerda y puesta, pero crea para cada uno su propio mapa de piezas, posiciones y restricciones.\n\n## Lectura técnica de relaciones y límites\n\nPara cada estado, registra cinco elementos: posición de la entrada, acción del usuario, relación de selección, cadena activa y resultado observable. Añade también una relación que deba permanecer inactiva; así se detectan estados contradictorios en vez de aceptar cualquier movimiento visible. El mapa funcional puede transferirse a otro calibre, pero las piezas, posiciones, muelles y restricciones no. Si una fuente solo nombra la función y no muestra la interfaz, conserva ese hueco: una transición plausible no se convierte en geometría documentada.",
+  "claims": [
+    {
+      "id": "claim.mechanical.keyless",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "Cuerda y puesta en hora se representa mediante un modelo conceptual reversible y no como comportamiento exacto del 8215.",
+      "sourceStatement": "Teoría privada y explicación educativa original; sin reproducción textual ni datos específicos trasladados.",
+      "method": "Modelo declarativo y cálculos deterministas del Sistema 4E",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4e:keyless:0.1.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-mechanical-foundations",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4E · Fundamentos del reloj mecánico"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Laboratorios, cálculos educativos, explicaciones, actividades y evaluación originales.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.explain-keyless"
+    ],
+    "estimatedMinutes": 5,
+    "userPaced": true
+  }
+}

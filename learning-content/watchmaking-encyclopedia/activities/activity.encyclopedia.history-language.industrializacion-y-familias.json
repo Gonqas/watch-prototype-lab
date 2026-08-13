@@ -1,0 +1,308 @@
+{
+  "id": "activity.encyclopedia.history-language.industrializacion-y-familias",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Industrialización, ébauches y familias de calibres",
+  "sceneIds": [
+    "scene.encyclopedia.history-language.industrializacion-y-familias"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.history-language.industrializacion-y-familias"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.history-language.industrializacion-y-familias"
+  ],
+  "rubricId": "rubric.encyclopedia.history-language.industrializacion-y-familias",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.history-language.industrializacion-y-familias",
+    "title": {
+      "es": "Explicar y transferir: Industrialización, ébauches y familias de calibres",
+      "en": "Explicar y transferir: Industrialización, ébauches y familias de calibres"
+    },
+    "description": {
+      "es": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?",
+      "en": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?"
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "calibre-identity",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.external.watchbase",
+      "source.external.ranfft",
+      "source.external.caliber-corner",
+      "source.external.worn-wound-caliber-spec",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.history-language.industrializacion-y-familias.ebauche",
+        "concept.encyclopedia.history-language.industrializacion-y-familias.familia-de-calibres",
+        "concept.encyclopedia.history-language.industrializacion-y-familias.variante"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.history-language.industrializacion-y-familias.ebauche",
+        "concept.encyclopedia.history-language.industrializacion-y-familias.familia-de-calibres",
+        "concept.encyclopedia.history-language.industrializacion-y-familias.variante"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.history-language.industrializacion-y-familias.ebauche",
+        "concept.encyclopedia.history-language.industrializacion-y-familias.familia-de-calibres",
+        "concept.encyclopedia.history-language.industrializacion-y-familias.variante"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.history-language.industrializacion-y-familias",
+        "blockId": "block.encyclopedia.history-language.industrializacion-y-familias",
+        "conceptIds": [
+          "concept.encyclopedia.history-language.industrializacion-y-familias.ebauche",
+          "concept.encyclopedia.history-language.industrializacion-y-familias.familia-de-calibres",
+          "concept.encyclopedia.history-language.industrializacion-y-familias.variante"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Industrialización, ébauches y familias de calibres sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Industrialización, ébauches y familias de calibres sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Dos movimientos de la misma familia pueden usar una platina semejante pero variar en calendario, altura de cañón de minutos o sistema automático. Una base de datos secundaria orienta la búsqueda; solo la lista de piezas, hoja técnica o comparación medida permite declarar compatibilidad.",
+          "en": "Dos movimientos de la misma familia pueden usar una platina semejante pero variar en calendario, altura de cañón de minutos o sistema automático. Una base de datos secundaria orienta la búsqueda; solo la lista de piezas, hoja técnica o comparación medida permite declarar compatibilidad."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?",
+            "en": "Identificar la pregunta: ¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?"
+          },
+          {
+            "es": "Dibujar la secuencia identificar firma y referencia → situar familia → determinar variante → consultar documentación → verificar pieza e interfaz → registrar incertidumbre.",
+            "en": "Dibujar la secuencia identificar firma y referencia → situar familia → determinar variante → consultar documentación → verificar pieza e interfaz → registrar incertidumbre."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: diámetro de encaje; altura; frecuencia; funciones; referencia de pieza.",
+            "en": "Asignar magnitudes y evidencia: diámetro de encaje; altura; frecuencia; funciones; referencia de pieza."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Compara tres fichas de una familia y redacta qué saberes se transfieren, qué datos deben reconfirmarse y qué documento primario falta.",
+          "en": "Compara tres fichas de una familia y redacta qué saberes se transfieren, qué datos deben reconfirmarse y qué documento primario falta."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: identificar firma y referencia → situar familia → determinar variante → consultar documentación → verificar pieza e interfaz → registrar incertidumbre.",
+            "en": "Completa la cadena con las etapas visibles: identificar firma y referencia → situar familia → determinar variante → consultar documentación → verificar pieza e interfaz → registrar incertidumbre."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?",
+            "en": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Compara tres fichas de una familia y redacta qué saberes se transfieren, qué datos deben reconfirmarse y qué documento primario falta.",
+            "en": "Compara tres fichas de una familia y redacta qué saberes se transfieren, qué datos deben reconfirmarse y qué documento primario falta."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Si dos calibres se parecen, sus piezas son intercambiables",
+          "en": "Si dos calibres se parecen, sus piezas son intercambiables"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Industrialización, ébauches y familias de calibres con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Industrialización, ébauches y familias de calibres con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Compara tres fichas de una familia y redacta qué saberes se transfieren, qué datos deben reconfirmarse y qué documento primario falta.",
+        "en": "Compara tres fichas de una familia y redacta qué saberes se transfieren, qué datos deben reconfirmarse y qué documento primario falta."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena identificar firma y referencia → situar familia → determinar variante → consultar documentación → verificar pieza e interfaz → registrar incertidumbre, su evidencia y límites.",
+        "en": "La explicación conserva la cadena identificar firma y referencia → situar familia → determinar variante → consultar documentación → verificar pieza e interfaz → registrar incertidumbre, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Si dos calibres se parecen, sus piezas son intercambiables».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Si dos calibres se parecen, sus piezas son intercambiables»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?",
+        "en": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Tratar una familia como si fuera una única lista de piezas. de Usar el nombre impreso en la esfera como identidad del movimiento..",
+        "en": "Busca evidencia para distinguir Tratar una familia como si fuera una única lista de piezas. de Usar el nombre impreso en la esfera como identidad del movimiento.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.history-language.industrializacion-y-familias"
+      ],
+      "transferPrompt": {
+        "es": "Compara tres fichas de una familia y redacta qué saberes se transfieren, qué datos deben reconfirmarse y qué documento primario falta.",
+        "en": "Compara tres fichas de una familia y redacta qué saberes se transfieren, qué datos deben reconfirmarse y qué documento primario falta."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.history-language.industrializacion-y-familias.ebauche",
+        "concept.encyclopedia.history-language.industrializacion-y-familias.familia-de-calibres",
+        "concept.encyclopedia.history-language.industrializacion-y-familias.variante"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?",
+          "en": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?"
+        },
+        {
+          "es": "¿Qué relación causal de «Industrialización, ébauches y familias de calibres» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Industrialización, ébauches y familias de calibres» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "block.horology.isa8172-confidence",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Experiencia, documentación e inferencia",
+  "bodyMarkdown": "## Propósito\n\nConvertir la experiencia previa con el ISA 8172 en información útil sin atribuirle detalles que no se han verificado.\n\n## Conocimientos previos\n\nSe conoce la cadena funcional de cuarzo. La lección no presupone que exista un modelo digital exacto del ISA ni que se recuerde cada pieza del desmontaje.\n\n## Objetivos observables\n\nClasificar una afirmación como observación, recuerdo, identificación por forma, inferencia, documentación o desconocido; declarar confianza; y explicar por qué una función parecida no demuestra compatibilidad física.\n\n## Explicación principal\n\nUna experiencia de taller tiene valor, pero su autoridad depende de lo que realmente se registró. Haber visto una pieza en una unidad concreta es una observación. Recordar haberla visto tiempo después es un recuerdo, no una fotografía ni un dato nominal. Reconocer una forma puede orientar una búsqueda, pero la forma por sí sola no demuestra referencia, medida o compatibilidad.\n\nLa {{term:term.horology.inference}} enlaza indicios con una conclusión provisional. Por ejemplo, observar un devanado y una pieza magnética próxima puede sugerir una función electromecánica. Esa interpretación no debe transformarse en identidad oficial sin documentación. La {{term:term.horology.provenance}} conserva quién afirmó algo, a partir de qué recurso y con qué método.\n\nUn documento del fabricante puede establecer una identidad o un {{term:term.horology.nominal-value}} para un calibre determinado. Una observación propia describe una unidad. Una {{term:term.horology.measurement}} añade instrumento, resolución y método. Ninguna de estas capas debe borrarse cuando se comparan. Si una casilla no puede justificarse, la respuesta correcta puede ser desconocido.\n\nLa escena no inventa un ISA 8172 detallado. Utiliza un mapa abstracto con espacios para registrar visto directamente, recordado, identificado por forma, inferido por función, documentado y desconocido. Las futuras fotografías propias podrán añadirse como fuentes separadas. Mientras no existan, el mapa no muestra una pieza reconstruida como si fuese la unidad real.\n\n## Explicación visual\n\nLa escena C presenta tarjetas de confianza y una representación abstracta, no un calibre falso. Cada tarjeta combina texto, icono y patrón. El alumno puede relacionar un recuerdo con una función del cuarzo conceptual, pero la interfaz mantiene visible que la equivalencia es funcional y no física.\n\n## Vocabulario\n\nUsamos procedencia, dato nominal, observación, medición, inferencia e {{term:term.horology.hypothesis}}. Una hipótesis propone una explicación comprobable; una conclusión exige haber realizado comprobaciones suficientes.\n\n## Fuentes\n\nEsta lección se basa en el marco editorial de procedencia y en contenido educativo original. No afirma detalles técnicos del ISA 8172, no usa una página no verificada del libro y no presenta recuerdos como documentación.\n\n## Ejemplo\n\nSi recuerdas una bobina de cobre, puedes registrar recordado y quizá identificado por forma. Si además existe una fotografía propia nítida, la fotografía pasa a ser una fuente de observación. Para afirmar una referencia oficial todavía sería necesario un documento aplicable a ese movimiento. Si no existe, la referencia continúa desconocida.\n\n## Errores habituales\n\nConfundir seguridad subjetiva con autoridad documental; usar probablemente como si significara confirmado; trasladar una referencia del 2035 al ISA; y suponer compatibilidad porque dos piezas desempeñan funciones similares.\n\n## Actividad\n\nCrea un mapa de confianza del ISA 8172. Para cada elemento selecciona la capa adecuada, declara un nivel de confianza y anota qué evidencia faltaría para avanzar a una afirmación más fuerte.\n\n## Ayuda después de responder\n\nLa ayuda no corrige recuerdos personales como verdaderos o falsos. Comprueba si la etiqueta elegida corresponde al tipo de apoyo declarado y pide separar observación de inferencia cuando se mezclan.\n\n## Evidencia\n\nSe conservan la capa elegida, la confianza, la justificación breve, las fuentes consultadas y los desconocidos explícitos. Una respuesta textual queda disponible para revisión, pero no concede dominio total mediante coincidencia de palabras.\n\n## Criterio de éxito\n\nDiferenciar de forma consistente dato oficial, observación e inferencia y evitar al menos una equivalencia física no demostrada.\n\n## Resumen\n\nLa experiencia orienta, la documentación delimita y la inferencia propone. Mantener sus autoridades separadas permite aprender sin fingir precisión.\n\n## Siguiente conexión\n\nEsta profundización opcional termina con una regla práctica: separar siempre experiencia, documentación e inferencia. Después puedes volver a la comparación funcional o al diagnóstico de interrupciones sin convertir un recuerdo en un dato oficial.",
+  "claims": [
+    {
+      "id": "claim.horology.confidence-layers",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "El mapa de confianza mantiene separadas observación, recuerdo, inferencia, documentación y desconocido.",
+      "sourceStatement": "Regla editorial original de procedencia; no aporta datos técnicos nuevos sobre el ISA 8172.",
+      "method": "Aplicación del marco de procedencia aprobado",
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K0",
+        "physics": "P0",
+        "limitations": [
+          "No representa un modelo exacto del ISA 8172."
+        ]
+      },
+      "reliability": "high",
+      "inputFingerprint": "source:horology-confidence-map:0.1.0",
+      "recordedAt": "2026-07-23T15:30:00.000Z",
+      "methodVersion": "0.1.0",
+      "sources": [
+        {
+          "id": "source.horology.original-functional-map",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Blueprint editorial · primer módulo funcional"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-23",
+          "privateUse": true,
+          "supportedClaim": "Estructura pedagógica, escenas, actividades y explicaciones originales del primer módulo.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.horology.source-confidence"
+    ],
+    "estimatedMinutes": 15,
+    "userPaced": true
+  }
+}

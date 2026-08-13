@@ -1,0 +1,26 @@
+{
+  "id": "competency.metrology.medir-una-pieza-fisica",
+  "version": "0.1.0",
+  "title": "Medir una pieza física",
+  "description": "Medir una pieza física con método, trazabilidad, límites y evidencia aplicados a una unidad concreta.",
+  "prerequisites": [
+    "competency.metrology.medir-en-dos-dimensiones"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Medir una pieza física"
+    },
+    "description": {
+      "es": "Medir una pieza física sin generalizar resultados ni ocultar incertidumbre."
+    },
+    "movementIds": [],
+    "subsystem": "metrology",
+    "skillType": "measurement",
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ]
+  }
+}

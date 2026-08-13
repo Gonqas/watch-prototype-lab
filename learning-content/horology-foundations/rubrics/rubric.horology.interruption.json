@@ -1,0 +1,47 @@
+{
+  "id": "rubric.horology.interruption",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.predict-system-interruption",
+  "rules": [
+    {
+      "id": "rule.horology.interruption.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "La evidencia correcta y completa demuestra la competencia en este módulo; el uso de pistas queda visible."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.horology.interruption.demonstrated",
+    "version": "0.5.0",
+    "competencyId": "competency.horology.predict-system-interruption",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "diagnosis",
+            "status": "active",
+            "minimumConfidence": 0.75
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

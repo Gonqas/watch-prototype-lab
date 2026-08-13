@@ -1,0 +1,367 @@
+{
+  "id": "activity.capstone.validation.accessibility",
+  "version": "1.1.0",
+  "title": "Accesibilidad y equivalencia de interacción",
+  "sceneIds": [
+    "scene.capstone.validation.accessibility"
+  ],
+  "competencyIds": [
+    "competency.capstone.validation.accessibility"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.capstone.validation.accessibility",
+    "evidence.capstone.validation.accessibility.human-review"
+  ],
+  "rubricId": "rubric.capstone.validation.accessibility",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.capstone.validation.accessibility",
+    "title": {
+      "es": "Accesibilidad y equivalencia de interacción",
+      "en": "Accesibilidad y equivalencia de interacción"
+    },
+    "description": {
+      "es": "Estudio aplicado: ¿Cómo ejecutar accesibilidad y equivalencia de interacción sin convertir una muestra limitada en una certeza?",
+      "en": "Estudio aplicado: ¿Cómo ejecutar accesibilidad y equivalencia de interacción sin convertir una muestra limitada en una certeza?"
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 60,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "validation-accessibility",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Workspace documental: no presenta geometría ni física inexistentes.",
+        "No inventa dimensiones ni resultados.",
+        "La evidencia digital no acredita destreza física ni libera un producto."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Comprueba revisión, fuente, unidad y contexto antes de ejecutar una decisión física.",
+        "Detente ante cualquier riesgo crítico o dato no controlado."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.w3c.wcag22",
+      "source.iso.9241-11",
+      "source.nist.human-centered-design"
+    ],
+    "visualResourceIds": [],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "interactionContract": {
+      "responseModel": "structured-response",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [
+        {
+          "id": "field.specification",
+          "label": {
+            "es": "Requisitos, hechos y evidencia",
+            "en": "Requisitos, hechos y evidencia"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.alternatives",
+          "label": {
+            "es": "Alternativas, interfaces y decisión",
+            "en": "Alternativas, interfaces y decisión"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.risks",
+          "label": {
+            "es": "Riesgos, desconocidos y criterio de parada",
+            "en": "Riesgos, desconocidos y criterio de parada"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.validation",
+          "label": {
+            "es": "Plan de verificación y aceptación",
+            "en": "Plan de verificación y aceptación"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.confidence",
+          "label": {
+            "es": "Confianza y qué la cambiaría",
+            "en": "Confianza y qué la cambiaría"
+          },
+          "kind": "confidence",
+          "required": true
+        }
+      ],
+      "hints": [],
+      "evidencePolicy": {
+        "eventType": "capstone-response-submitted",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": true,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "transfer",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.capstone.validation.accessibility"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.capstone.validation.accessibility"
+      ],
+      "assessesConceptIds": [
+        "concept.capstone.validation.accessibility"
+      ],
+      "evidenceLevel": "transfer",
+      "supportLevel": "independent",
+      "remediation": {
+        "lessonId": "lesson.capstone.validation.accessibility",
+        "blockId": "block.capstone.validation.accessibility",
+        "conceptIds": [
+          "concept.capstone.validation.accessibility"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Evalúa planificación y razonamiento. La fabricación, revisión profesional y validación física requieren personas, condiciones y evidencia reales.",
+        "en": "Evalúa planificación y razonamiento. La fabricación, revisión profesional y validación física requieren personas, condiciones y evidencia reales."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "El expediente conserva requisitos, alternativas, riesgos, evidencia, aceptación y límites.",
+        "en": "El expediente conserva requisitos, alternativas, riesgos, evidencia, aceptación y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si convertiste una suposición en hecho, omitiste una interfaz o aceptaste sin criterio de parada.",
+        "en": "Revisa si convertiste una suposición en hecho, omitiste una interfaz o aceptaste sin criterio de parada."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo ejecutar accesibilidad y equivalencia de interacción sin convertir una muestra limitada en una certeza?",
+        "en": "¿Cómo ejecutar accesibilidad y equivalencia de interacción sin convertir una muestra limitada en una certeza?"
+      },
+      "nextObservation": {
+        "es": "Localiza la primera decisión sin alternativa o la primera aceptación sin evidencia.",
+        "en": "Localiza la primera decisión sin alternativa o la primera aceptación sin evidencia."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Aplica el mismo método a otra pieza, arquitectura, calibre o perfil de usuario.",
+        "en": "Aplica el mismo método a otra pieza, arquitectura, calibre o perfil de usuario."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.capstone.validation.accessibility"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No declarar fabricada, segura o validada una pieza por completar un plan digital.",
+          "en": "No declarar fabricada, segura o validada una pieza por completar un plan digital."
+        },
+        {
+          "es": "No inventar dimensiones, materiales, resultados, participantes o revisiones.",
+          "en": "No inventar dimensiones, materiales, resultados, participantes o revisiones."
+        },
+        {
+          "es": "No sustituir la revisión humana exigida.",
+          "en": "No sustituir la revisión humana exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué requisito controla esa decisión?",
+          "en": "¿Qué requisito controla esa decisión?"
+        },
+        {
+          "es": "¿Qué alternativa real descartaste y por qué?",
+          "en": "¿Qué alternativa real descartaste y por qué?"
+        },
+        {
+          "es": "¿Qué hallazgo detendría el proceso?",
+          "en": "¿Qué hallazgo detendría el proceso?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "record-evidence"
+      ]
+    },
+    "validationContract": {
+      "protocolId": "validation.protocol.accessibility",
+      "dimensions": [
+        "accessibility"
+      ],
+      "participantProfileIds": [
+        "participant.validation.accessibility-reviewer",
+        "participant.validation.beginner"
+      ],
+      "taskIds": [
+        "validation-task.accessibility.route",
+        "validation-task.accessibility.workspace",
+        "validation-task.accessibility.feedback"
+      ],
+      "transferCaseIds": [],
+      "accessibilityCheckIds": [
+        "accessibility.validation.keyboard",
+        "accessibility.validation.text-scale",
+        "accessibility.validation.contrast-color",
+        "accessibility.validation.reduced-motion",
+        "accessibility.validation.textual-alternative"
+      ],
+      "retentionIntervalsDays": [],
+      "evidenceRequirementIds": [
+        "validation-evidence.accessibility.matrix",
+        "validation-evidence.accessibility.human-findings"
+      ],
+      "acceptanceCriterionIds": [
+        "validation-acceptance.accessibility.critical-path",
+        "validation-acceptance.accessibility.no-critical"
+      ],
+      "independentAttemptRequired": true,
+      "adverseFindingBlocksRelease": true,
+      "humanReviewRequired": true,
+      "automaticCompetenceClaim": false,
+      "textualAlternative": true
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Cómo ejecutar accesibilidad y equivalencia de interacción sin convertir una muestra limitada en una certeza?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Localiza la primera decisión sin alternativa o la primera aceptación sin evidencia."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Accesibilidad y equivalencia de interacción»."
+          },
+          {
+            "es": "Sigue la relación causal declarada en la lección y conserva su fuente o límite."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "El expediente conserva requisitos, alternativas, riesgos, evidencia, aceptación y límites."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Accesibilidad y equivalencia de interacción» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Accesibilidad y equivalencia de interacción» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Accesibilidad y equivalencia de interacción» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Aplica el mismo método a otra pieza, arquitectura, calibre o perfil de usuario."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La conclusión responde al objetivo «Accesibilidad y equivalencia de interacción» con una relación observable."
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Revisa si convertiste una suposición en hecho, omitiste una interfaz o aceptaste sin criterio de parada."
+        },
+        {
+          "es": "La respuesta describe apariencia o autoridad, pero no la relación que produce el resultado."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Aplica el mismo método a otra pieza, arquitectura, calibre o perfil de usuario."
+        }
+      },
+      "transferPrompt": {
+        "es": "Aplica el mismo método a otra pieza, arquitectura, calibre o perfil de usuario."
+      }
+    }
+  }
+}

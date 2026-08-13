@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+  "version": "1.1.0",
+  "title": "Oscilador de cuarzo y división de frecuencia",
+  "blockIds": [
+    "block.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Oscilador de cuarzo y división de frecuencia",
+      "en": "Oscilador de cuarzo y división de frecuencia"
+    },
+    "purpose": {
+      "es": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+      "en": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Oscilador de cuarzo y división de frecuencia mediante relaciones causales.",
+        "en": "Explicar Oscilador de cuarzo y división de frecuencia mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.quartz-electronics.cuarzo-avanzado.compensacion-termica",
+      "concept.encyclopedia.quartz-electronics.cuarzo-avanzado.disciplina-externa",
+      "concept.encyclopedia.quartz-electronics.cuarzo-avanzado.gestion-de-energia"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+      "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+      "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch15",
+      "source.official.miyota.2035",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1092,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: resonancia de cuarzo, divisor binario, capacitancia de carga.",
+          "en": "Defino con mis palabras: resonancia de cuarzo, divisor binario, capacitancia de carga."
+        },
+        {
+          "es": "Sigo «Oscilador de cuarzo y división de frecuencia» desde alimentar circuito hasta emitir pulso y explico cada enlace.",
+          "en": "Sigo «Oscilador de cuarzo y división de frecuencia» desde alimentar circuito hasta emitir pulso y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Oscilador de cuarzo y división de frecuencia» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Oscilador de cuarzo y división de frecuencia» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Dibuja una cadena de diagnóstico desde célula hasta pulso de bobina.",
+          "en": "Aplico el criterio a esta variante: Dibuja una cadena de diagnóstico desde célula hasta pulso de bobina."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Oscilador de cuarzo y división de frecuencia» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Oscilador de cuarzo y división de frecuencia» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.resonancia-de-cuarzo",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.divisor-binario",
+        "concept.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor.capacitancia-de-carga"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?",
+          "en": "¿Cómo se transforma la resonancia de alta frecuencia en un pulso temporal lento?"
+        },
+        {
+          "es": "¿Qué relación causal de «Oscilador de cuarzo y división de frecuencia» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Oscilador de cuarzo y división de frecuencia» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

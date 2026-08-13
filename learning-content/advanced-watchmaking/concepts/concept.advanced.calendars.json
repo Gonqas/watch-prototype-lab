@@ -1,0 +1,70 @@
+{
+  "id": "concept.advanced.calendars",
+  "version": "1.0.0",
+  "title": {
+    "es": "Calendarios como acumulación, salto, retención y corrección",
+    "en": "Calendarios como acumulación, salto, retención y corrección"
+  },
+  "summary": {
+    "es": "¿Cómo transforma el calendario una rotación diaria en un salto controlado y corregible?",
+    "en": "¿Cómo transforma el calendario una rotación diaria en un salto controlado y corregible?"
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.advanced.ultra-thin"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.advanced.ultra-thin",
+    "concept.advanced.chronograph-control"
+  ],
+  "competencyIds": [
+    "competency.advanced.calendars"
+  ],
+  "movementIds": [],
+  "subsystem": "calendar",
+  "routeIds": [
+    "route.advanced.architectures-complications"
+  ],
+  "activityIds": [
+    "activity.advanced.calendars"
+  ],
+  "sourceIds": [
+    "source.eta.2824-2.product",
+    "source.eta.7750.product",
+    "source.miyota.8215.official"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Cómo transforma el calendario una rotación diaria en un salto controlado y corregible?",
+    "en": "¿Cómo transforma el calendario una rotación diaria en un salto controlado y corregible?"
+  },
+  "technicalLanguage": {
+    "es": "Un calendario simple deriva una vuelta diaria desde la minutería, acumula o transmite movimiento, avanza un disco y usa un saltador para posicionarlo. La corrección rápida introduce otra ruta hacia el mismo indicador. Calendarios de día, fecha, anual o perpetuo añaden contadores y lógica mecánica para ciclos distintos. El concepto clave es una máquina de estados con entradas que no siempre pueden activarse simultáneamente.",
+    "en": "Un calendario simple deriva una vuelta diaria desde la minutería, acumula o transmite movimiento, avanza un disco y usa un saltador para posicionarlo. La corrección rápida introduce otra ruta hacia el mismo indicador. Calendarios de día, fecha, anual o perpetuo añaden contadores y lógica mecánica para ciclos distintos. El concepto clave es una máquina de estados con entradas que no siempre pueden activarse simultáneamente."
+  },
+  "whyItMatters": {
+    "es": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física.",
+    "en": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física."
+  },
+  "observableActions": [
+    {
+      "es": "Separa hecho, inferencia y desconocido.",
+      "en": "Separa hecho, inferencia y desconocido."
+    },
+    {
+      "es": "Compara relaciones y compromisos.",
+      "en": "Compara relaciones y compromisos."
+    },
+    {
+      "es": "Declara fuentes, riesgos y límites.",
+      "en": "Declara fuentes, riesgos y límites."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.advanced.chronograph-control"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

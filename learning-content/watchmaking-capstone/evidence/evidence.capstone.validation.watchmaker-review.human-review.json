@@ -1,0 +1,32 @@
+{
+  "id": "evidence.capstone.validation.watchmaker-review.human-review",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.validation.watchmaker-review",
+  "kind": "human-review",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.validation.watchmaker-review.human-review",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-human-review-completed",
+    "evidenceType": "human-review",
+    "competencyId": "competency.capstone.validation.watchmaker-review",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.validation.watchmaker-review"
+    ],
+    "evidenceTemplateId": "evidence.capstone.validation.watchmaker-review.human-review",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "reviewerId",
+      "criteria",
+      "result",
+      "notes"
+    ]
+  }
+}

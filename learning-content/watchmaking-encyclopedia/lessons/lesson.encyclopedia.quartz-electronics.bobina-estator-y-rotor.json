@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+  "version": "1.1.0",
+  "title": "Bobina, estator, rotor y motor paso a paso",
+  "blockIds": [
+    "block.encyclopedia.quartz-electronics.bobina-estator-y-rotor"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.quartz-electronics.bobina-estator-y-rotor"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Bobina, estator, rotor y motor paso a paso",
+      "en": "Bobina, estator, rotor y motor paso a paso"
+    },
+    "purpose": {
+      "es": "¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?",
+      "en": "¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Bobina, estator, rotor y motor paso a paso mediante relaciones causales.",
+        "en": "Explicar Bobina, estator, rotor y motor paso a paso mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.division-binaria",
+      "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.pulso-de-motor",
+      "concept.encyclopedia.quartz-electronics.divisor-circuito-y-consumo.consumo-medio"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.bobina",
+      "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.estator",
+      "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.rotor-paso-a-paso"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch15",
+      "source.official.miyota.2035",
+      "source.external.watchguy-repair-blog"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.bobina",
+        "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.estator",
+        "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.rotor-paso-a-paso"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1201,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.quartz-electronics.bobina-estator-y-rotor"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: bobina, estator, rotor paso a paso.",
+          "en": "Defino con mis palabras: bobina, estator, rotor paso a paso."
+        },
+        {
+          "es": "Sigo «Bobina, estator, rotor y motor paso a paso» desde pulso circula por bobina hasta tren transmite el paso y explico cada enlace.",
+          "en": "Sigo «Bobina, estator, rotor y motor paso a paso» desde pulso circula por bobina hasta tren transmite el paso y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Bobina, estator, rotor y motor paso a paso» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Bobina, estator, rotor y motor paso a paso» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Construye una tabla de fallos por dominio eléctrico, magnético y mecánico con una prueba segura que separe cada grupo.",
+          "en": "Aplico el criterio a esta variante: Construye una tabla de fallos por dominio eléctrico, magnético y mecánico con una prueba segura que separe cada grupo."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Bobina, estator, rotor y motor paso a paso» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Bobina, estator, rotor y motor paso a paso» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.bobina",
+        "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.estator",
+        "concept.encyclopedia.quartz-electronics.bobina-estator-y-rotor.rotor-paso-a-paso"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?",
+          "en": "¿Cómo se convierte un pulso eléctrico alterno en un paso angular fiable?"
+        },
+        {
+          "es": "¿Qué relación causal de «Bobina, estator, rotor y motor paso a paso» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Bobina, estator, rotor y motor paso a paso» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

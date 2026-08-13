@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.service-tribology.diagnostico-y-control-final",
+  "version": "1.1.0",
+  "title": "Cuaderno: Diagnóstico causal y control final",
+  "description": "¿Cómo demostrar que el objetivo del servicio se alcanzó sin confundir ausencia momentánea de síntomas con calidad?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Diagnóstico causal y control final. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.service-tribology.diagnostico-y-control-final.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo demostrar que el objetivo del servicio se alcanzó sin confundir ausencia momentánea de síntomas con calidad?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo demostrar que el objetivo del servicio se alcanzó sin confundir ausencia momentánea de síntomas con calidad?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.service-tribology.diagnostico-y-control-final.answer",
+      "instructionMarkdown": "Explica **Diagnóstico causal y control final** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.service-tribology.diagnostico-y-control-final.explain",
+          "promptMarkdown": "¿Cómo demostrar que el objetivo del servicio se alcanzó sin confundir ausencia momentánea de síntomas con calidad?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.service-tribology.diagnostico-y-control-final.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.diagnostico-y-control-final.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.diagnostico-y-control-final.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.diagnostico-y-control-final.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.service-tribology.diagnostico-y-control-final.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por repetir síntomas iniciales y sigue hasta documentar límites y seguimiento.",
+                "en": "Empieza por repetir síntomas iniciales y sigue hasta documentar límites y seguimiento."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.service-tribology.diagnostico-y-control-final.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El diagnóstico conecta síntoma con funciones y pruebas; el control final compara línea base, criterios y comportamiento temporal. Marcha, reserva, carga automática, puesta en hora, calendario, hermeticidad y apariencia se prueban según alcance. La retención diferida y la transferencia a posiciones reales capturan fallos que una prueba breve no ve.",
+                "en": "El diagnóstico conecta síntoma con funciones y pruebas; el control final compara línea base, criterios y comportamiento temporal. Marcha, reserva, carga automática, puesta en hora, calendario, hermeticidad y apariencia se prueban según alcance. La retención diferida y la transferencia a posiciones reales capturan fallos que una prueba breve no ve."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo demostrar que el objetivo del servicio se alcanzó sin confundir ausencia momentánea de síntomas con calidad?",
+              "en": "¿Cómo demostrar que el objetivo del servicio se alcanzó sin confundir ausencia momentánea de síntomas con calidad?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena repetir síntomas iniciales → probar funciones reparadas → medir criterios → observar durante tiempo → comparar línea base → documentar límites y seguimiento, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena repetir síntomas iniciales → probar funciones reparadas → medir criterios → observar durante tiempo → comparar línea base → documentar límites y seguimiento, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.service-tribology.diagnostico-y-control-final.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.service-tribology.diagnostico-y-control-final.mechanism",
+            "field.encyclopedia.service-tribology.diagnostico-y-control-final.evidence",
+            "field.encyclopedia.service-tribology.diagnostico-y-control-final.limit",
+            "field.encyclopedia.service-tribology.diagnostico-y-control-final.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.service-tribology.chicago-limpieza-segura",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.service-tribology.chicago-limpieza-segura",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.service-tribology.chicago-limpieza-segura",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.service-tribology.chicago-limpieza-segura",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.service-tribology.chicago-limpieza-segura"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.service-tribology.chicago-limpieza-segura",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

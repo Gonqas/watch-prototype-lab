@@ -1,0 +1,34 @@
+{
+  "id": "evidence.quartz2035.diagnosis",
+  "version": "0.5.0",
+  "competencyId": "competency.quartz2035.reason-about-symptom",
+  "kind": "observation",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.quartz2035.diagnosis",
+    "version": "0.5.0",
+    "triggerEventType": "workbench-command",
+    "evidenceType": "diagnosis",
+    "competencyId": "competency.quartz2035.reason-about-symptom",
+    "packageId": "wplab.horology.quartz-miyota2035",
+    "activityIds": [
+      "activity.quartz2035.identify-error-hypothesis",
+      "activity.quartz2035.choose-check"
+    ],
+    "evidenceTemplateId": "evidence.quartz2035.diagnosis",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "mode",
+      "assistance",
+      "diagnosticCodes"
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.atlas-restoration-design.tm-relojes-pulsera",
+  "version": "1.1.0",
+  "title": "Cuaderno: Caso oficial TM V: Hamilton, Elgin y Waltham de pulsera",
+  "description": "¿Qué cambia al pasar del bolsillo a movimientos de pulsera históricos?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Caso oficial TM V: Hamilton, Elgin y Waltham de pulsera. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué cambia al pasar del bolsillo a movimientos de pulsera históricos?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué cambia al pasar del bolsillo a movimientos de pulsera históricos?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.answer",
+      "instructionMarkdown": "Explica **Caso oficial TM V: Hamilton, Elgin y Waltham de pulsera** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.explain",
+          "promptMarkdown": "¿Qué cambia al pasar del bolsillo a movimientos de pulsera históricos?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar tamaño y caja y sigue hasta mantener secuencia específica.",
+                "en": "Empieza por identificar tamaño y caja y sigue hasta mantener secuencia específica."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Miniaturización, caja, mandos, protección y disposición afectan acceso y fragilidad. El TM permite comparar referencias concretas y revisar cómo un mismo principio de servicio cambia de escala.",
+                "en": "Miniaturización, caja, mandos, protección y disposición afectan acceso y fragilidad. El TM permite comparar referencias concretas y revisar cómo un mismo principio de servicio cambia de escala."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué cambia al pasar del bolsillo a movimientos de pulsera históricos?",
+              "en": "¿Qué cambia al pasar del bolsillo a movimientos de pulsera históricos?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar tamaño y caja → mapear acceso → comparar puentes → evaluar herramientas → adaptar evidencia → mantener secuencia específica, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar tamaño y caja → mapear acceso → comparar puentes → evaluar herramientas → adaptar evidencia → mantener secuencia específica, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.mechanism",
+            "field.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.evidence",
+            "field.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.limit",
+            "field.encyclopedia.atlas-restoration-design.tm-relojes-pulsera.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,191 @@
+.academy-ux-harness {
+  position: fixed;
+  z-index: 999;
+  right: 14px;
+  bottom: 14px;
+  width: 54px;
+  overflow: hidden;
+  border: 1px solid #3a4b4d;
+  border-radius: 10px;
+  background: #111718;
+  color: #edf3f1;
+  box-shadow: 0 18px 50px #000a;
+}
+
+.academy-ux-harness.is-open {
+  width: min(410px, calc(100vw - 28px));
+  max-height: min(760px, calc(100vh - 28px));
+}
+
+.academy-ux-harness > header {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 10px 7px 14px;
+  border-bottom: 1px solid #293638;
+}
+
+.academy-ux-harness > header div,
+.academy-ux-harness > header strong,
+.academy-ux-harness > header span {
+  display: block;
+}
+
+.academy-ux-harness:not(.is-open) > header div {
+  display: none;
+}
+
+.academy-ux-harness > header strong {
+  font-size: 12px;
+}
+
+.academy-ux-harness > header span {
+  margin-top: 2px;
+  color: #93a5a4;
+  font-size: 8px;
+}
+
+.academy-ux-harness button {
+  border: 1px solid #334244;
+  border-radius: 6px;
+  background: #182022;
+  color: #cbd5d3;
+  font: inherit;
+  cursor: pointer;
+}
+
+.academy-ux-harness > header button {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+}
+
+.academy-ux-harness__body {
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.academy-ux-harness section {
+  margin-bottom: 15px;
+}
+
+.academy-ux-harness h2 {
+  margin: 0 0 7px;
+  color: #7bc9ce;
+  font-size: 9px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.academy-ux-harness__journeys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.academy-ux-harness__journeys button,
+.academy-ux-harness__reset {
+  min-height: 30px;
+  padding: 5px 8px;
+  font-size: 9px;
+}
+
+.academy-ux-harness__states {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.academy-ux-harness__states button {
+  display: flex;
+  min-height: 46px;
+  align-items: center;
+  gap: 8px;
+  padding: 7px;
+  text-align: left;
+}
+
+.academy-ux-harness__states button.is-active {
+  border-color: #70c8cd;
+  box-shadow: inset 0 0 0 1px #70c8cd;
+}
+
+.academy-ux-harness__states span,
+.academy-ux-harness__states strong,
+.academy-ux-harness__states small {
+  display: block;
+}
+
+.academy-ux-harness__states strong {
+  font-size: 9px;
+}
+
+.academy-ux-harness__states small {
+  margin-top: 2px;
+  color: #91a09e;
+  font-size: 7px;
+}
+
+.academy-ux-harness__reset {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.academy-ux-harness__sample {
+  display: grid;
+  gap: 4px;
+  padding: 13px;
+  border: 1px dashed #536365;
+  border-left: 4px solid #70c8cd;
+  border-radius: 7px;
+}
+
+.academy-ux-harness__sample > span {
+  color: #70c8cd;
+  font-size: 7px;
+  font-weight: 800;
+}
+
+.academy-ux-harness__sample > strong {
+  font-size: 11px;
+}
+
+.academy-ux-harness__sample > p {
+  margin: 0;
+  color: #98a6a4;
+  font-size: 8px;
+  line-height: 1.45;
+}
+
+.academy-ux-harness__sample.is-error {
+  border-left-color: #ed8178;
+}
+
+.academy-ux-harness__sample.is-blocked,
+.academy-ux-harness__sample.is-offline {
+  border-left-color: #d9aa55;
+}
+
+html[data-academy-harness-scenario='high-contrast'] .learning-area {
+  filter: contrast(1.25);
+}
+
+html[data-academy-harness-scenario='large-text'] .learning-area {
+  --learning-text-scale: 1.5 !important;
+}
+
+html[data-academy-harness-scenario='reduced-motion'] .learning-area *,
+html[data-academy-harness-scenario='reduced-motion'] .learning-area *::before,
+html[data-academy-harness-scenario='reduced-motion'] .learning-area *::after {
+  transition: none !important;
+  animation: none !important;
+}
+
+html[data-academy-harness-scenario='narrow'] .learning-area {
+  width: min(700px, 100%);
+  margin-inline: auto;
+  border-inline: 1px solid #3a4b4d;
+}

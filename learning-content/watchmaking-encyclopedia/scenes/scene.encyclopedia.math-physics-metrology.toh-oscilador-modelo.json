@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+  "version": "1.1.0",
+  "title": "Cuaderno: Modelo dinámico del volante-espiral",
+  "description": "¿Qué aproxima el oscilador armónico y dónde deja de describir un volante real?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Modelo dinámico del volante-espiral. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.math-physics-metrology.toh-oscilador-modelo.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué aproxima el oscilador armónico y dónde deja de describir un volante real?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué aproxima el oscilador armónico y dónde deja de describir un volante real?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.math-physics-metrology.toh-oscilador-modelo.answer",
+      "instructionMarkdown": "Explica **Modelo dinámico del volante-espiral** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.math-physics-metrology.toh-oscilador-modelo.explain",
+          "promptMarkdown": "¿Qué aproxima el oscilador armónico y dónde deja de describir un volante real?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-oscilador-modelo.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-oscilador-modelo.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-oscilador-modelo.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.math-physics-metrology.toh-oscilador-modelo.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.toh-oscilador-modelo.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por desplazar volante y sigue hasta recibir impulso.",
+                "en": "Empieza por desplazar volante y sigue hasta recibir impulso."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.math-physics-metrology.toh-oscilador-modelo.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "En primera aproximación la frecuencia depende de rigidez angular e inercia. Amplitud, geometría de espiral, fricción, escape, gravedad, temperatura y magnetismo introducen perturbaciones. El modelo normalizado sirve para razonar, no para declarar marcha de una unidad.",
+                "en": "En primera aproximación la frecuencia depende de rigidez angular e inercia. Amplitud, geometría de espiral, fricción, escape, gravedad, temperatura y magnetismo introducen perturbaciones. El modelo normalizado sirve para razonar, no para declarar marcha de una unidad."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué aproxima el oscilador armónico y dónde deja de describir un volante real?",
+              "en": "¿Qué aproxima el oscilador armónico y dónde deja de describir un volante real?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena desplazar volante → almacenar energía en espiral → cruzar equilibrio → intercambiar energía cinética → perder energía → recibir impulso, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena desplazar volante → almacenar energía en espiral → cruzar equilibrio → intercambiar energía cinética → perder energía → recibir impulso, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.math-physics-metrology.toh-oscilador-modelo.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.math-physics-metrology.toh-oscilador-modelo.mechanism",
+            "field.encyclopedia.math-physics-metrology.toh-oscilador-modelo.evidence",
+            "field.encyclopedia.math-physics-metrology.toh-oscilador-modelo.limit",
+            "field.encyclopedia.math-physics-metrology.toh-oscilador-modelo.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

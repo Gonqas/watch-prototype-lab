@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.micromechanics.chicago-torno-repivotado",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.chicago-torno-repivotado",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.micromechanics.chicago-torno-repivotado",
+      "version": "1.1.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Expediente Chicago XI: torno, repivotado y piezas perdidas."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.micromechanics.chicago-torno-repivotado",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.micromechanics.chicago-torno-repivotado",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

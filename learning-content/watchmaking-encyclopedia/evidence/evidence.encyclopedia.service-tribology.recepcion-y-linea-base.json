@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.service-tribology.recepcion-y-linea-base",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.service-tribology.recepcion-y-linea-base",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.service-tribology.recepcion-y-linea-base",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.service-tribology.recepcion-y-linea-base",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.service-tribology.recepcion-y-linea-base"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.service-tribology.recepcion-y-linea-base",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

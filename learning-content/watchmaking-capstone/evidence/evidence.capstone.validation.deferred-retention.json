@@ -1,0 +1,33 @@
+{
+  "id": "evidence.capstone.validation.deferred-retention",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.validation.deferred-retention",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.validation.deferred-retention",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.capstone.validation.deferred-retention",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.validation.deferred-retention"
+    ],
+    "evidenceTemplateId": "evidence.capstone.validation.deferred-retention",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "sourceIds",
+      "risks",
+      "validation"
+    ]
+  }
+}

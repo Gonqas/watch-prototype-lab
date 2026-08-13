@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Tolerancias, capacidad, FMEA y fiabilidad",
+  "sceneIds": [
+    "scene.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad"
+  ],
+  "rubricId": "rubric.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+    "title": {
+      "es": "Explicar y transferir: Tolerancias, capacidad, FMEA y fiabilidad",
+      "en": "Explicar y transferir: Tolerancias, capacidad, FMEA y fiabilidad"
+    },
+    "description": {
+      "es": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?",
+      "en": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?"
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "engineering-validation",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.vba-uhrentechnik",
+      "source.institutional.wostep.watchmaker",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.cadena-de-tolerancias",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.capacidad-de-proceso",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.modo-de-fallo"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.cadena-de-tolerancias",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.capacidad-de-proceso",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.modo-de-fallo"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.cadena-de-tolerancias",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.capacidad-de-proceso",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.modo-de-fallo"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+        "blockId": "block.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+        "conceptIds": [
+          "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.cadena-de-tolerancias",
+          "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.capacidad-de-proceso",
+          "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.modo-de-fallo"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Tolerancias, capacidad, FMEA y fiabilidad sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Tolerancias, capacidad, FMEA y fiabilidad sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Un juego axial cumple por medida individual, pero la combinación de platina, puente, rubíes y hombros puede producir extremos inaceptables. Antes de estrechar todas las tolerancias se analiza sensibilidad: quizá una referencia común o un proceso de ajuste reduzca el riesgo con menor coste.",
+          "en": "Un juego axial cumple por medida individual, pero la combinación de platina, puente, rubíes y hombros puede producir extremos inaceptables. Antes de estrechar todas las tolerancias se analiza sensibilidad: quizá una referencia común o un proceso de ajuste reduzca el riesgo con menor coste."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?",
+            "en": "Identificar la pregunta: ¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?"
+          },
+          {
+            "es": "Dibujar la secuencia definir función → asignar característica crítica → analizar cadena → validar medición → evaluar proceso → priorizar riesgo y verificar.",
+            "en": "Dibujar la secuencia definir función → asignar característica crítica → analizar cadena → validar medición → evaluar proceso → priorizar riesgo y verificar."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: límite superior e inferior; juego funcional; sesgo y R&R; Cp/Cpk bajo supuestos; probabilidad y severidad.",
+            "en": "Asignar magnitudes y evidencia: límite superior e inferior; juego funcional; sesgo y R&R; Cp/Cpk bajo supuestos; probabilidad y severidad."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Construye una mini-FMEA para un apoyo de rueda y una cadena de cotas para su juego; declara datos faltantes y plan de verificación.",
+          "en": "Construye una mini-FMEA para un apoyo de rueda y una cadena de cotas para su juego; declara datos faltantes y plan de verificación."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: definir función → asignar característica crítica → analizar cadena → validar medición → evaluar proceso → priorizar riesgo y verificar.",
+            "en": "Completa la cadena con las etapas visibles: definir función → asignar característica crítica → analizar cadena → validar medición → evaluar proceso → priorizar riesgo y verificar."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?",
+            "en": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Construye una mini-FMEA para un apoyo de rueda y una cadena de cotas para su juego; declara datos faltantes y plan de verificación.",
+            "en": "Construye una mini-FMEA para un apoyo de rueda y una cadena de cotas para su juego; declara datos faltantes y plan de verificación."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Cuanto más estrecha la tolerancia, mejor el reloj",
+          "en": "Cuanto más estrecha la tolerancia, mejor el reloj"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Tolerancias, capacidad, FMEA y fiabilidad con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Tolerancias, capacidad, FMEA y fiabilidad con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Construye una mini-FMEA para un apoyo de rueda y una cadena de cotas para su juego; declara datos faltantes y plan de verificación.",
+        "en": "Construye una mini-FMEA para un apoyo de rueda y una cadena de cotas para su juego; declara datos faltantes y plan de verificación."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena definir función → asignar característica crítica → analizar cadena → validar medición → evaluar proceso → priorizar riesgo y verificar, su evidencia y límites.",
+        "en": "La explicación conserva la cadena definir función → asignar característica crítica → analizar cadena → validar medición → evaluar proceso → priorizar riesgo y verificar, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «Cuanto más estrecha la tolerancia, mejor el reloj».",
+        "en": "Revisa si omitiste una interfaz o caíste en «Cuanto más estrecha la tolerancia, mejor el reloj»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?",
+        "en": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Tratar tolerancia como objetivo de fabricación. de Calcular índices de capacidad con un proceso inestable o pocas muestras no representativas..",
+        "en": "Busca evidencia para distinguir Tratar tolerancia como objetivo de fabricación. de Calcular índices de capacidad con un proceso inestable o pocas muestras no representativas.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad"
+      ],
+      "transferPrompt": {
+        "es": "Construye una mini-FMEA para un apoyo de rueda y una cadena de cotas para su juego; declara datos faltantes y plan de verificación.",
+        "en": "Construye una mini-FMEA para un apoyo de rueda y una cadena de cotas para su juego; declara datos faltantes y plan de verificación."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.cadena-de-tolerancias",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.capacidad-de-proceso",
+        "concept.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad.modo-de-fallo"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?",
+          "en": "¿Cómo se pasa de una dimensión aislada a una decisión sobre función, fabricación y riesgo?"
+        },
+        {
+          "es": "¿Qué relación causal de «Tolerancias, capacidad, FMEA y fiabilidad» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Tolerancias, capacidad, FMEA y fiabilidad» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

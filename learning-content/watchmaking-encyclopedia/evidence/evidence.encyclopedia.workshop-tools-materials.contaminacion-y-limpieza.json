@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

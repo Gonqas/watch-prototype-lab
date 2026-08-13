@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.escapements-chronometry.bulova-espiral",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.escapements-chronometry.bulova-espiral",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.escapements-chronometry.bulova-espiral",
+      "version": "1.1.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Pasaporte X: plano, centrado, virola y vibrado de espiral."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.escapements-chronometry.bulova-espiral",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.escapements-chronometry.bulova-espiral",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

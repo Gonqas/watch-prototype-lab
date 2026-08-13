@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.mechanical.retain-calculate-simple-ratios",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: calcular relaciones simples",
+    "en": "Práctica posterior: calcular relaciones simples"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días.",
+    "en": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días."
+  },
+  "rule": "independent-later-evidence-different-activity-session-minimum-7-days@1.0.0",
+  "priority": 62,
+  "target": {
+    "kind": "competency",
+    "id": "competency.mechanical.calculate-simple-ratios"
+  },
+  "evidenceTemplateIds": [
+    "evidence.mechanical.calculate-simple-ratios"
+  ],
+  "required": false
+}

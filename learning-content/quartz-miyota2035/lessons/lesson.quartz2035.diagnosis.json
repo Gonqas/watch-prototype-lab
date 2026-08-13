@@ -1,0 +1,227 @@
+{
+  "id": "lesson.quartz2035.diagnosis",
+  "version": "0.5.0",
+  "title": "Comprobación y diagnóstico básico",
+  "blockIds": [
+    "block.quartz2035.diagnosis"
+  ],
+  "activityIds": [
+    "activity.quartz2035.identify-error-hypothesis",
+    "activity.quartz2035.choose-check"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Comprobación y diagnóstico básico"
+    },
+    "purpose": {
+      "es": "Relacionar síntoma, subsistema, hipótesis, comprobación y límites."
+    },
+    "objectives": [
+      {
+        "es": "Ejecutar la práctica con orden y trazabilidad."
+      },
+      {
+        "es": "Distinguir hecho, fuente, inferencia y simulación."
+      },
+      {
+        "es": "Registrar evidencia y restaurar el estado."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.quartz2035.disassemble-virtually"
+    ],
+    "conceptIds": [
+      "concept.quartz2035.reason-about-symptom"
+    ],
+    "sourceIds": [
+      "source.miyota.2035.product-page",
+      "source.miyota.2035.specification",
+      "source.miyota.2035.drawing",
+      "source.miyota.2035.instruction-manual",
+      "source.miyota.2035.parts-list-exploded-view",
+      "source.horology.original-quartz-practical-route"
+    ],
+    "visualResourceIds": [
+      "visual.quartz2035.diagnosis"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Relacionar síntoma, subsistema, hipótesis, comprobación y límites."
+      },
+      "visibleConcept": {
+        "es": "Errores simbólicos reversibles con observación y prueba adicional pendiente."
+      },
+      "modelReference": "fixture.miyota.2035.structural",
+      "movementIds": [
+        "fixture.miyota.2035.structural"
+      ],
+      "involvedSelectors": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "initialState": {
+        "cameraIntent": "Vista estable del banco y el 2035.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [
+        "pila",
+        "control",
+        "bobina",
+        "rotor",
+        "tren",
+        "indicación"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "identidad",
+        "subsistema",
+        "fuente",
+        "G/K/P",
+        "estado de banco"
+      ],
+      "arrows": [
+        "dependencia con autoridad explícita"
+      ],
+      "animations": [
+        "cambios discretos de estado; sin física arbitraria"
+      ],
+      "timelineIntent": "Observar, confirmar, ejecutar, guardar checkpoint y restaurar.",
+      "userInteraction": "Teclado, selección secuencial, menú de acción o viewport; nunca arrastre obligatorio.",
+      "observableResult": {
+        "es": "El estado del banco y la evidencia cambian sin alterar el modelo de referencia ni el proyecto técnico original."
+      },
+      "successCriterion": {
+        "es": "Acción válida, identidad conservada, fuente o limitación declarada y restauración correcta."
+      },
+      "restoration": {
+        "es": "Restaurar herramienta, pieza, orientación, bandeja, vista y paso."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada de zonas, herramientas, piezas, acciones, dependencias y estados."
+      },
+      "reducedMotionAlternative": {
+        "es": "Estados discretos con idéntica evaluación."
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Fixture MIYOTA 2035 R2 con geometría interna normalizada.",
+          "Banco semántico reversible; no es un procedimiento de servicio ni una simulación física validada."
+        ]
+      },
+      "unknownData": [
+        "secuencia completa de servicio",
+        "pares",
+        "lubricación",
+        "tolerancias internas",
+        "valores eléctricos y puntos de prueba"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.quartz2035.diagnosis"
+      ]
+    },
+    "externalPrerequisites": [],
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.quartz2035.reason-about-symptom"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 689,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.quartz2035.identify-error-hypothesis",
+        "activity.quartz2035.choose-check"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Ejecutar la práctica con orden y trazabilidad."
+        },
+        {
+          "es": "Distinguir hecho, fuente, inferencia y simulación."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Comprobación y diagnóstico básico», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "ungraded-diagnostic",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.quartz2035.reason-about-symptom"
+      ],
+      "reinforcesConceptIds": [
+        "concept.quartz2035.disassemble-virtually"
+      ],
+      "bridgeConceptIds": [
+        "concept.quartz2035.disassemble-virtually"
+      ]
+    }
+  }
+}

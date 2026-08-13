@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+  "version": "1.1.0",
+  "title": "Cuaderno: GMT, hora mundial, tourbillon y fuerza constante",
+  "description": "¿Qué problema intenta resolver cada mecanismo avanzado y qué afirmaciones comerciales deben descomponerse?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre GMT, hora mundial, tourbillon y fuerza constante. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué problema intenta resolver cada mecanismo avanzado y qué afirmaciones comerciales deben descomponerse?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué problema intenta resolver cada mecanismo avanzado y qué afirmaciones comerciales deben descomponerse?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.answer",
+      "instructionMarkdown": "Explica **GMT, hora mundial, tourbillon y fuerza constante** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.explain",
+          "promptMarkdown": "¿Qué problema intenta resolver cada mecanismo avanzado y qué afirmaciones comerciales deben descomponerse?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir error o información objetivo y sigue hasta validar solo el dominio previsto.",
+                "en": "Empieza por definir error o información objetivo y sigue hasta validar solo el dominio previsto."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "GMT y hora mundial transforman relaciones temporales y selección de zona. El tourbillon promedia ciertas influencias posicionales al rotar escape y regulador; no elimina todos los errores. Remontoir y cadena-husillo buscan controlar entrega de par. Cada solución tiene dominio, coste energético y sensibilidad propios.",
+                "en": "GMT y hora mundial transforman relaciones temporales y selección de zona. El tourbillon promedia ciertas influencias posicionales al rotar escape y regulador; no elimina todos los errores. Remontoir y cadena-husillo buscan controlar entrega de par. Cada solución tiene dominio, coste energético y sensibilidad propios."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué problema intenta resolver cada mecanismo avanzado y qué afirmaciones comerciales deben descomponerse?",
+              "en": "¿Qué problema intenta resolver cada mecanismo avanzado y qué afirmaciones comerciales deben descomponerse?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir error o información objetivo → captar entrada → transformar mediante relación → entregar salida → introducir pérdidas y estados → validar solo el dominio previsto, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir error o información objetivo → captar entrada → transformar mediante relación → entregar salida → introducir pérdidas y estados → validar solo el dominio previsto, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.mechanism",
+            "field.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.evidence",
+            "field.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.limit",
+            "field.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,28 @@
+{
+  "id": "competency.mechanical.explain-basic-calendar",
+  "version": "0.5.0",
+  "title": "Explicar el calendario básico",
+  "description": "Explicar el calendario básico mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.",
+  "prerequisites": [
+    "competency.mechanical.explain-automatic-winding"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Explicar el calendario básico",
+      "en": "Explicar el calendario básico"
+    },
+    "description": {
+      "es": "Explicar el calendario básico; el tiempo y las adaptaciones accesibles no penalizan.",
+      "en": "Explicar el calendario básico; el tiempo y las adaptaciones accesibles no penalizan."
+    },
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "subsystem": "calendar",
+    "skillType": "procedure",
+    "sourceIds": [
+      "source.horology.original-mechanical-foundations"
+    ]
+  }
+}

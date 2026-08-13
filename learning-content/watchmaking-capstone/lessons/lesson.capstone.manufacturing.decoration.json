@@ -1,0 +1,150 @@
+{
+  "id": "lesson.capstone.manufacturing.decoration",
+  "version": "1.1.0",
+  "title": "Acabados y decoración funcionalmente seguros",
+  "blockIds": [
+    "block.capstone.manufacturing.decoration"
+  ],
+  "activityIds": [
+    "activity.capstone.manufacturing.decoration"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Acabados y decoración funcionalmente seguros",
+      "en": "Acabados y decoración funcionalmente seguros"
+    },
+    "purpose": {
+      "es": "¿Cómo convertir acabados y decoración funcionalmente seguros en un proceso seguro, medible y revisable?",
+      "en": "¿Cómo convertir acabados y decoración funcionalmente seguros en un proceso seguro, medible y revisable?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar la teoría antes de abrir el expediente.",
+        "en": "Explicar la teoría antes de abrir el expediente."
+      },
+      {
+        "es": "Comparar alternativas y hacer visibles interfaces y riesgos.",
+        "en": "Comparar alternativas y hacer visibles interfaces y riesgos."
+      },
+      {
+        "es": "Definir verificación, aceptación y criterio de parada.",
+        "en": "Definir verificación, aceptación y criterio de parada."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [
+      {
+        "packageId": "wplab.horology.advanced-architecture-service",
+        "versionRange": "^1.1.0",
+        "moduleIds": [
+          "module.advanced.architecture-capstone"
+        ],
+        "competencyIds": [
+          "competency.advanced.architecture-capstone"
+        ],
+        "recommendedButOptionalRouteIds": [
+          "route.advanced.architectures-complications"
+        ]
+      }
+    ],
+    "conceptIds": [
+      "concept.capstone.manufacturing.decoration"
+    ],
+    "sourceIds": [
+      "source.iso.21920-1",
+      "source.iso.3160-2",
+      "source.osha.metalworking-fluids",
+      "source.private.horologia-book"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.capstone.manufacturing.decoration"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 25,
+      "minimumReadingWords": 998,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.capstone.manufacturing.decoration"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Puedo reconstruir la decisión sin copiar el ejemplo.",
+          "en": "Puedo reconstruir la decisión sin copiar el ejemplo."
+        },
+        {
+          "es": "Puedo comparar alternativas y declarar interfaces y riesgos.",
+          "en": "Puedo comparar alternativas y declarar interfaces y riesgos."
+        },
+        {
+          "es": "Puedo definir evidencia, aceptación y criterio de parada.",
+          "en": "Puedo definir evidencia, aceptación y criterio de parada."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Anota un requisito, una alternativa descartada, un riesgo abierto y la prueba que resolvería la duda.",
+        "en": "Anota un requisito, una alternativa descartada, un riesgo abierto y la prueba que resolvería la duda."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.capstone.manufacturing.decoration"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No declarar fabricada, segura o validada una pieza por completar un plan digital.",
+          "en": "No declarar fabricada, segura o validada una pieza por completar un plan digital."
+        },
+        {
+          "es": "No inventar dimensiones, materiales, resultados, participantes o revisiones.",
+          "en": "No inventar dimensiones, materiales, resultados, participantes o revisiones."
+        },
+        {
+          "es": "No sustituir la revisión humana exigida.",
+          "en": "No sustituir la revisión humana exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué requisito controla esa decisión?",
+          "en": "¿Qué requisito controla esa decisión?"
+        },
+        {
+          "es": "¿Qué alternativa real descartaste y por qué?",
+          "en": "¿Qué alternativa real descartaste y por qué?"
+        },
+        {
+          "es": "¿Qué hallazgo detendría el proceso?",
+          "en": "¿Qué hallazgo detendría el proceso?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "scene.metrology.redondear-sin-inventar-informacion",
+  "version": "0.2.0",
+  "title": "Redondear sin inventar información",
+  "description": "Escena textual y accesible que prepara la operación real “Redondear sin inventar información” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Redondear sin inventar información. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-redondear-sin-inventar-informacion.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-redondear-sin-inventar-informacion.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Redondear sin inventar información”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-redondear-sin-inventar-informacion.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Redondear sin inventar información” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-redondear-sin-inventar-informacion",
+          "promptMarkdown": "¿Qué expresa realmente una lectura y cuántos dígitos podemos conservar sin fabricar información?\n\nEn «Redondear sin inventar información», resuelve un contexto nuevo: Aplica el criterio a una lectura angular, temporal o de marcha. Cambia la unidad, pero conserva la separación entre indicación, resolución, método y resultado expresado. Documenta observación o resultado, método, límite y confianza sin copiar el dato del ejemplo.",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-redondear-sin-inventar-informacion.observation",
+              "label": "Observación o resultado transferido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-redondear-sin-inventar-informacion.method",
+              "label": "Método y referencia empleados",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-redondear-sin-inventar-informacion.limitation",
+              "label": "Límite, dato ausente o condición de invalidez",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-redondear-sin-inventar-informacion.confidence",
+              "label": "Confianza en la conclusión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Transfiere el criterio de «Redondear sin inventar información» a un contexto nuevo."
+            },
+            "feedback": {
+              "es": "La transferencia conserva el método y vuelve a declarar sus límites: Aplica el criterio a una lectura angular, temporal o de marcha. Cambia la unidad, pero conserva la separación entre indicación, resolución, método y resultado expresado."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-redondear-sin-inventar-informacion",
+          "requiredFieldIds": [
+            "field.activity-metrology-redondear-sin-inventar-informacion.observation",
+            "field.activity-metrology-redondear-sin-inventar-informacion.method",
+            "field.activity-metrology-redondear-sin-inventar-informacion.limitation",
+            "field.activity-metrology-redondear-sin-inventar-informacion.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,299 @@
+{
+  "id": "scene.quartz2035.workstation",
+  "version": "0.5.0",
+  "title": "El puesto de trabajo",
+  "description": "Banco con soporte, herramientas, bandeja, inspección y documentación. Operaciones reversibles, procedencia visible y alternativa textual.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.miyota.2035.structural"
+  },
+  "accessibility": {
+    "textualAlternative": "Banco con soporte, herramientas, bandeja, inspección y documentación. Las zonas, herramientas, piezas, dependencias, estados y cambios se presentan en el mismo orden que el banco visual. Todas las acciones tienen menú y botón; no se exige arrastre.",
+    "reducedMotionAlternative": "Los cambios se muestran como estados discretos sin movimiento automático y conservan idéntica evaluación.",
+    "keyboardActions": [
+      "Tabular en orden banco, herramientas, movimiento, bandeja y acciones.",
+      "Activar con Intro o Espacio.",
+      "Cancelar o restaurar mediante botones nombrados."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono, patrón y estado acompañan cada color.",
+      "Cada instancia tiene un nombre accesible único."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "durationMs": 0,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 700,
+      "operation": "explode",
+      "targets": [],
+      "value": 0.1,
+      "durationMs": 350,
+      "essential": false,
+      "waitFor": "none"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.quartz2035.workstation.scope",
+      "markdown": "El puesto de trabajo: representación educativa reversible. No es un procedimiento físico validado; consulta la ficha técnica para conocer su alcance geométrico, de movimiento y de física.",
+      "accessibleLabel": "El puesto de trabajo. Alcance educativo y limitaciones disponibles en texto."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.quartz2035.workstation.observe",
+      "instructionMarkdown": "Observa y registra el estado inicial de “El puesto de trabajo” antes de actuar.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.quartz2035.workstation.execute",
+      "instructionMarkdown": "Ejecuta la acción semántica, revisa sus límites y confirma la restauración.",
+      "questions": [
+        {
+          "id": "question.quartz2035.workstation.scope",
+          "promptMarkdown": "¿Qué afirmación conserva correctamente el alcance?",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.workstation.educational",
+              "label": "Operación educativa reversible",
+              "labels": {
+                "es": "Operación educativa reversible",
+                "en": "Operación educativa reversible"
+              }
+            },
+            {
+              "id": "option.workstation.official",
+              "label": "Secuencia oficial completa",
+              "labels": {
+                "es": "Secuencia oficial completa",
+                "en": "Secuencia oficial completa"
+              }
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué afirmación conserva correctamente el alcance?"
+            },
+            "feedback": {
+              "es": "La acción es educativa y reversible; la autoridad de cada dependencia se muestra por separado."
+            }
+          }
+        },
+        {
+          "id": "question.quartz2035.workstation.causal-explanation",
+          "promptMarkdown": "Explica con tus palabras qué observaste y qué relación causal justifica tu respuesta.",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué observaste antes y después",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué pieza o subsistema actúa y cuál recibe el efecto",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica con tus palabras qué observaste y qué relación causal justifica tu respuesta."
+            },
+            "feedback": {
+              "es": "La explicación queda registrada como evidencia razonada. El sistema comprueba que esté completa; una revisión humana puede valorar su calidad."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.quartz2035.workstation.scope",
+          "expectedOptionIds": [
+            "option.workstation.educational"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.quartz2035.workstation.causal-explanation",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "El puesto de trabajo"
+    },
+    "purpose": {
+      "es": "Preparar un entorno ordenado antes de observar o manipular."
+    },
+    "prerequisites": [],
+    "narrative": {
+      "es": "Registrar estado inicial, ejecutar una acción semántica, revisar procedencia y restaurar."
+    },
+    "initialFraming": {
+      "es": "Banco estable con pieza, herramienta, bandeja, fuentes y una ficha técnica de alcance accesible."
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "storyboard.step.quartz2035.workstation.observe",
+        "sceneStepId": "step.quartz2035.workstation.observe",
+        "narrative": {
+          "es": "Observar y documentar antes de manipular."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "inspect",
+          "record"
+        ],
+        "interaction": {
+          "es": "Usar teclado, lista accesible o selección directa."
+        },
+        "feedback": {
+          "es": "El feedback nombra herramienta, dependencia, identidad y autoridad de la regla."
+        },
+        "hint": {
+          "es": "Las pistas disminuyen según el modo y nunca penalizan una adaptación de accesibilidad."
+        }
+      },
+      {
+        "id": "storyboard.step.quartz2035.workstation.execute",
+        "sceneStepId": "step.quartz2035.workstation.execute",
+        "narrative": {
+          "es": "Ejecutar, comprobar y restaurar."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "workbench-command",
+          "checkpoint",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Usar teclado, lista accesible o selección directa."
+        },
+        "feedback": {
+          "es": "El feedback nombra herramienta, dependencia, identidad y autoridad de la regla."
+        },
+        "hint": {
+          "es": "Las pistas disminuyen según el modo y nunca penalizan una adaptación de accesibilidad."
+        }
+      }
+    ],
+    "ending": {
+      "es": "Guardar evidencia provisional y restaurar el estado inicial o conservar un punto de control explícito."
+    },
+    "restoration": {
+      "es": "Restaurar piezas, bandejas, herramientas, orientación, selección y vista de forma idempotente."
+    },
+    "accessibility": {
+      "es": "Banco, herramientas y bandeja equivalentes como listas ordenadas y menús de acción."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos, sin arrastre ni movimiento automático, con la misma rúbrica."
+    },
+    "evidenceTemplateIds": [
+      "evidence.quartz2035.preparation",
+      "evidence.quartz2035.safety"
+    ],
+    "technicalCriteria": [
+      "Identidad de cada pieza estable.",
+      "Acción validada y resultado registrado.",
+      "El proyecto técnico y el modelo de práctica permanecen intactos."
+    ],
+    "limitations": [
+      "Los niveles de reconstrucción y fidelidad se conservan en la ficha técnica.",
+      "Sin secuencia completa de servicio, pares, lubricación, tolerancias ni valores eléctricos inventados."
+    ]
+  },
+  "restorePreviousState": true
+}

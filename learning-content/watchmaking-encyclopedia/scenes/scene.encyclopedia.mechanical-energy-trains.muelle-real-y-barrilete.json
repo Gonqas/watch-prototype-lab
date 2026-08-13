@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+  "version": "1.1.0",
+  "title": "Cuaderno: Muelle real, barrilete y curva de par",
+  "description": "¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Muelle real, barrilete y curva de par. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.answer",
+      "instructionMarkdown": "Explica **Muelle real, barrilete y curva de par** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.explain",
+          "promptMarkdown": "¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por girar corona o rotor y sigue hasta alimentar tren.",
+                "en": "Empieza por girar corona o rotor y sigue hasta alimentar tren."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El muelle real almacena energía al deformarse dentro del barrilete. Sus extremos enlazan árbol y tambor; el modo de carga decide qué elemento gira. Espesor, altura, longitud, material, forma previa, lubricación y número de vueltas condicionan par, reserva y fatiga. El barrilete además guía, contiene y transmite, por lo que no es solo una caja.",
+                "en": "El muelle real almacena energía al deformarse dentro del barrilete. Sus extremos enlazan árbol y tambor; el modo de carga decide qué elemento gira. Espesor, altura, longitud, material, forma previa, lubricación y número de vueltas condicionan par, reserva y fatiga. El barrilete además guía, contiene y transmite, por lo que no es solo una caja."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?",
+              "en": "¿Cómo se almacena energía en un muelle y se entrega de forma utilizable al tren?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena girar corona o rotor → cargar árbol o barrilete → deformar muelle → retener carga → liberar par en el dentado → alimentar tren, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena girar corona o rotor → cargar árbol o barrilete → deformar muelle → retener carga → liberar par en el dentado → alimentar tren, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.evidence",
+            "field.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.limit",
+            "field.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,19 @@
+{
+  "id": "recommendation.metrology.retain.repetir-una-medicion",
+  "version": "0.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar: Repetir una medición"
+  },
+  "reason": {
+    "es": "La retención exige una sesión independiente; el motor programará ventanas de 1, 7 y 21 días."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 290,
+  "target": {
+    "kind": "competency",
+    "id": "competency.metrology.repetir-una-medicion"
+  },
+  "evidenceTemplateIds": [],
+  "required": false
+}

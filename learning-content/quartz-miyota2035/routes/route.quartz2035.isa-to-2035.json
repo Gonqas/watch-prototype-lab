@@ -1,0 +1,197 @@
+{
+  "id": "route.quartz2035.isa-to-2035",
+  "version": "0.5.0",
+  "title": {
+    "es": "Del ISA 8172 al MIYOTA 2035"
+  },
+  "purpose": {
+    "es": "Convertir experiencia previa en un método trazable sobre el banco virtual y el modelo didáctico del MIYOTA 2035."
+  },
+  "prerequisiteConceptIds": [
+    "concept.quartz2035.observe-before-disassembly"
+  ],
+  "moduleIds": [
+    "module.quartz2035.isa-memory",
+    "module.quartz2035.documentation",
+    "module.quartz2035.anatomy",
+    "module.quartz2035.disassembly",
+    "module.quartz2035.assembly",
+    "module.quartz2035.diagnosis",
+    "module.quartz2035.final-project"
+  ],
+  "competencyIds": [
+    "competency.quartz2035.distinguish-observation-inference",
+    "competency.quartz2035.locate-official-data",
+    "competency.quartz2035.identify-2035-subsystems",
+    "competency.quartz2035.identify-documented-parts",
+    "competency.quartz2035.disassemble-virtually",
+    "competency.quartz2035.preserve-identity-orientation",
+    "competency.quartz2035.assemble-virtually",
+    "competency.quartz2035.perform-partial-checks",
+    "competency.quartz2035.reason-about-symptom",
+    "competency.quartz2035.document-movement"
+  ],
+  "movementIds": [
+    "fixture.miyota.2035.structural"
+  ],
+  "difficulty": "intermediate",
+  "sourceIds": [
+    "source.horology.original-quartz-practical-route",
+    "source.miyota.2035.product-page",
+    "source.miyota.2035.specification",
+    "source.miyota.2035.drawing",
+    "source.miyota.2035.instruction-manual",
+    "source.miyota.2035.parts-list-exploded-view"
+  ],
+  "visualResourceIds": [
+    "visual.quartz2035.isa-memory",
+    "visual.quartz2035.documentation",
+    "visual.quartz2035.anatomy",
+    "visual.quartz2035.disassembly",
+    "visual.quartz2035.assembly",
+    "visual.quartz2035.diagnosis",
+    "visual.quartz2035.final-project"
+  ],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "diagnostic-optional",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.quartz2035.isa-to-2035.01",
+        "order": 1,
+        "title": {
+          "es": "Del recuerdo del ISA 8172 a una observación trazable"
+        },
+        "outcome": {
+          "es": "Separar memoria, observación, fotografía, inferencia y fuente oficial."
+        },
+        "lessonId": "lesson.quartz2035.isa-memory",
+        "activityId": "activity.quartz2035.create-isa-confidence-map",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.quartz2035.distinguish-observation-inference"
+        ]
+      },
+      {
+        "id": "milestone.quartz2035.isa-to-2035.02",
+        "order": 2,
+        "title": {
+          "es": "Cómo leer la documentación del MIYOTA 2035"
+        },
+        "outcome": {
+          "es": "Localizar, interpretar y clasificar información oficial sin memorizarla."
+        },
+        "lessonId": "lesson.quartz2035.documentation",
+        "activityId": "activity.quartz2035.read-drawing",
+        "mode": "worked-example",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.quartz2035.locate-official-data"
+        ]
+      },
+      {
+        "id": "milestone.quartz2035.isa-to-2035.03",
+        "order": 3,
+        "title": {
+          "es": "Anatomía completa del MIYOTA 2035"
+        },
+        "outcome": {
+          "es": "Organizar las piezas utilizables por subsistema, relación y procedencia."
+        },
+        "lessonId": "lesson.quartz2035.anatomy",
+        "activityId": "activity.quartz2035.classify-subsystems",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.quartz2035.identify-2035-subsystems"
+        ]
+      },
+      {
+        "id": "milestone.quartz2035.isa-to-2035.04",
+        "order": 4,
+        "title": {
+          "es": "Desmontaje virtual guiado"
+        },
+        "outcome": {
+          "es": "Ejecutar operaciones respaldadas, conservar identidad y crear checkpoints."
+        },
+        "lessonId": "lesson.quartz2035.disassembly",
+        "activityId": "activity.quartz2035.order-disassembly-steps",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.quartz2035.disassemble-virtually"
+        ]
+      },
+      {
+        "id": "milestone.quartz2035.isa-to-2035.05",
+        "order": 5,
+        "title": {
+          "es": "Montaje virtual y comprobaciones"
+        },
+        "outcome": {
+          "es": "Reconstruir desde bandeja validando soporte, orientación e identidad."
+        },
+        "lessonId": "lesson.quartz2035.assembly",
+        "activityId": "activity.quartz2035.assemble-guided",
+        "mode": "guided-practice",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.quartz2035.assemble-virtually"
+        ]
+      },
+      {
+        "id": "milestone.quartz2035.isa-to-2035.06",
+        "order": 6,
+        "title": {
+          "es": "Comprobación y diagnóstico básico"
+        },
+        "outcome": {
+          "es": "Relacionar síntoma, subsistema, hipótesis, comprobación y límites."
+        },
+        "lessonId": "lesson.quartz2035.diagnosis",
+        "activityId": "activity.quartz2035.identify-error-hypothesis",
+        "mode": "orientation",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.quartz2035.reason-about-symptom"
+        ]
+      },
+      {
+        "id": "milestone.quartz2035.isa-to-2035.07",
+        "order": 7,
+        "title": {
+          "es": "Proyecto final MIYOTA 2035"
+        },
+        "outcome": {
+          "es": "Completar un dossier trazable que demuestre método y comprensión."
+        },
+        "lessonId": "lesson.quartz2035.final-project",
+        "activityId": "activity.quartz2035.complete-final-project",
+        "mode": "independent-practice",
+        "evidenceLevel": "independent-simulation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.quartz2035.document-movement"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [
+      "activity.quartz2035.identify-error-hypothesis",
+      "activity.quartz2035.choose-check"
+    ],
+    "demonstrationActivityIds": [
+      "activity.quartz2035.complete-final-project",
+      "activity.quartz2035.review-final-dossier"
+    ]
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "id": "lesson.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas",
+  "version": "1.1.0",
+  "title": "Barrilete, árbol, tambor y apoyos",
+  "blockIds": [
+    "block.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Barrilete, árbol, tambor y apoyos",
+      "en": "Barrilete, árbol, tambor y apoyos"
+    },
+    "purpose": {
+      "es": "¿Qué interfaces convierten el muelle real en una fuente de par utilizable?",
+      "en": "¿Qué interfaces convierten el muelle real en una fuente de par utilizable?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Barrilete, árbol, tambor y apoyos mediante relaciones causales.",
+        "en": "Explicar Barrilete, árbol, tambor y apoyos mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.curva-de-par",
+      "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.numero-de-vueltas-utiles",
+      "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.brida-deslizante"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.going-barrel",
+      "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.motor-barrel",
+      "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.apoyo-del-arbol"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch04",
+      "source.private.chicago.6",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Barrilete, árbol, tambor y apoyos después de estudiar su teoría.",
+        "en": "Observar y manipular Barrilete, árbol, tambor y apoyos después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "El extremo interior se relaciona con el árbol y el exterior con tambor o pared según arquitectura. Tapa, fondo, pivotes, gancho, dentado y lubricación delimitan alineación, fricción y seguridad. Motor barrel y going barrel no transmiten de la misma manera.",
+        "en": "El extremo interior se relaciona con el árbol y el exterior con tambor o pared según arquitectura. Tapa, fondo, pivotes, gancho, dentado y lubricación delimitan alineación, fricción y seguridad. Motor barrel y going barrel no transmiten de la misma manera."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema barrel con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "anclar extremo interior",
+        "guiar el árbol",
+        "contener espiras",
+        "cerrar tapa",
+        "transmitir al dentado",
+        "controlar juego y fricción"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "going barrel",
+        "motor barrel",
+        "apoyo del árbol"
+      ],
+      "arrows": [
+        "anclar extremo interior → guiar el árbol",
+        "guiar el árbol → contener espiras",
+        "contener espiras → cerrar tapa",
+        "cerrar tapa → transmitir al dentado",
+        "transmitir al dentado → controlar juego y fricción"
+      ],
+      "animations": [
+        "wind",
+        "rotate",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Barrilete, árbol, tambor y apoyos sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Barrilete, árbol, tambor y apoyos sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: anclar extremo interior → guiar el árbol → contener espiras → cerrar tapa → transmitir al dentado → controlar juego y fricción. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: anclar extremo interior → guiar el árbol → contener espiras → cerrar tapa → transmitir al dentado → controlar juego y fricción. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.going-barrel",
+        "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.motor-barrel",
+        "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.apoyo-del-arbol"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1129,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: going barrel, motor barrel, apoyo del árbol.",
+          "en": "Defino con mis palabras: going barrel, motor barrel, apoyo del árbol."
+        },
+        {
+          "es": "Sigo «Barrilete, árbol, tambor y apoyos» desde anclar extremo interior hasta controlar juego y fricción y explico cada enlace.",
+          "en": "Sigo «Barrilete, árbol, tambor y apoyos» desde anclar extremo interior hasta controlar juego y fricción y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Barrilete, árbol, tambor y apoyos» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Barrilete, árbol, tambor y apoyos» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Dibuja interfaces y riesgos de dos arquitecturas de barrilete.",
+          "en": "Aplico el criterio a esta variante: Dibuja interfaces y riesgos de dos arquitecturas de barrilete."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Barrilete, árbol, tambor y apoyos» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Barrilete, árbol, tambor y apoyos» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.going-barrel",
+        "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.motor-barrel",
+        "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.apoyo-del-arbol"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué interfaces convierten el muelle real en una fuente de par utilizable?",
+          "en": "¿Qué interfaces convierten el muelle real en una fuente de par utilizable?"
+        },
+        {
+          "es": "¿Qué relación causal de «Barrilete, árbol, tambor y apoyos» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Barrilete, árbol, tambor y apoyos» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

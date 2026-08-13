@@ -1,0 +1,70 @@
+{
+  "id": "concept.capstone.manufacturing.dial",
+  "version": "1.0.0",
+  "title": {
+    "es": "Esfera, índices y superficies gráficas",
+    "en": "Esfera, índices y superficies gráficas"
+  },
+  "summary": {
+    "es": "¿Cómo convertir esfera, índices y superficies gráficas en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir esfera, índices y superficies gráficas en un proceso seguro, medible y revisable?"
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.capstone.manufacturing.case"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.capstone.manufacturing.case",
+    "concept.capstone.manufacturing.hands"
+  ],
+  "competencyIds": [
+    "competency.capstone.manufacturing.dial"
+  ],
+  "movementIds": [],
+  "subsystem": "manufacturing-dial",
+  "routeIds": [
+    "route.capstone.manufacturing-finishing"
+  ],
+  "activityIds": [
+    "activity.capstone.manufacturing.dial"
+  ],
+  "sourceIds": [
+    "source.iso.1101",
+    "source.iso.21920-1",
+    "source.w3c.wcag22"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Cómo convertir esfera, índices y superficies gráficas en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir esfera, índices y superficies gráficas en un proceso seguro, medible y revisable?"
+  },
+  "technicalLanguage": {
+    "es": "## Qué problema resuelve\n\nCoordinar sustrato, pies, abertura de fecha, índices, impresión, acabados y legibilidad con la pila del reloj. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Esfera, índices y superficies gráficas**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Definir layout e interfaces.** Fijar centros, pies, fecha, minutería y zonas de texto. Entrada: Movimiento, caja e intención visual. Salida verificable: Dibujo de esfera con interfaces.\n2. **Preparar sustrato y fijaciones.** Obtener planitud, espesor y fijación controlados. Entrada: Material identificado. Salida verificable: Sustrato preparado.\n3. **Aplicar acabado e indicaciones.** Crear superficie, índices y texto sin perder interfaces. Entrada: Sustrato aceptado. Salida verificable: Esfera terminada y protegida.\n\nRevisa la secuencia de **Definir layout e interfaces** a **Aplicar acabado e indicaciones** también de atrás hacia delante. Para aceptar el resultado final de esfera, índices y superficies gráficas, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿El sustrato y la capa decorativa son compatibles con fijación, proceso, espesor, estabilidad y reparación?\n\n- **Centro de indicación y cara de apoyo:** Posición de pies. Ventana de fecha. Orientación de índices.\n\n- **Requisito:** Planitud y espesor preservan las holguras de agujas y calendario. **Verificación:** Medición de sustrato y montaje de prueba documentado.\n\nSelecciona el material de **Esfera, índices y superficies gráficas** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Cortes, virutas y proyección de partículas (serious):** Protección ocular adecuada. Retirada de viruta con útil, nunca con la mano. Desbarbado y orden del puesto. Detenerse si: Pantalla o protección ocular ausente. Viruta enredada con la máquina en marcha.\n- **Atrapamiento en maquinaria rotativa (critical):** Formación presencial y resguardos. Sujeción verificada y zona despejada. Nunca usar guantes junto a elementos giratorios cuando e",
+    "en": "## Qué problema resuelve\n\nCoordinar sustrato, pies, abertura de fecha, índices, impresión, acabados y legibilidad con la pila del reloj. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Esfera, índices y superficies gráficas**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Definir layout e interfaces.** Fijar centros, pies, fecha, minutería y zonas de texto. Entrada: Movimiento, caja e intención visual. Salida verificable: Dibujo de esfera con interfaces.\n2. **Preparar sustrato y fijaciones.** Obtener planitud, espesor y fijación controlados. Entrada: Material identificado. Salida verificable: Sustrato preparado.\n3. **Aplicar acabado e indicaciones.** Crear superficie, índices y texto sin perder interfaces. Entrada: Sustrato aceptado. Salida verificable: Esfera terminada y protegida.\n\nRevisa la secuencia de **Definir layout e interfaces** a **Aplicar acabado e indicaciones** también de atrás hacia delante. Para aceptar el resultado final de esfera, índices y superficies gráficas, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿El sustrato y la capa decorativa son compatibles con fijación, proceso, espesor, estabilidad y reparación?\n\n- **Centro de indicación y cara de apoyo:** Posición de pies. Ventana de fecha. Orientación de índices.\n\n- **Requisito:** Planitud y espesor preservan las holguras de agujas y calendario. **Verificación:** Medición de sustrato y montaje de prueba documentado.\n\nSelecciona el material de **Esfera, índices y superficies gráficas** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Cortes, virutas y proyección de partículas (serious):** Protección ocular adecuada. Retirada de viruta con útil, nunca con la mano. Desbarbado y orden del puesto. Detenerse si: Pantalla o protección ocular ausente. Viruta enredada con la máquina en marcha.\n- **Atrapamiento en maquinaria rotativa (critical):** Formación presencial y resguardos. Sujeción verificada y zona despejada. Nunca usar guantes junto a elementos giratorios cuando e"
+  },
+  "whyItMatters": {
+    "es": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables.",
+    "en": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables."
+  },
+  "observableActions": [
+    {
+      "es": "Compara alternativas.",
+      "en": "Compara alternativas."
+    },
+    {
+      "es": "Declara interfaces y riesgos.",
+      "en": "Declara interfaces y riesgos."
+    },
+    {
+      "es": "Define evidencia y criterios de parada.",
+      "en": "Define evidencia y criterios de parada."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.capstone.manufacturing.hands"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

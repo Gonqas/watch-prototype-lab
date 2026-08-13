@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+  "version": "1.1.0",
+  "title": "Caso TM II: diagnóstico por síntomas y prueba discriminante",
+  "blockIds": [
+    "block.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Caso TM II: diagnóstico por síntomas y prueba discriminante",
+      "en": "Caso TM II: diagnóstico por síntomas y prueba discriminante"
+    },
+    "purpose": {
+      "es": "¿Cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?",
+      "en": "¿Cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Caso TM II: diagnóstico por síntomas y prueba discriminante mediante relaciones causales.",
+        "en": "Explicar Caso TM II: diagnóstico por síntomas y prueba discriminante mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.service-tribology.tm-inspeccion-previa.estado-de-entrada",
+      "concept.encyclopedia.service-tribology.tm-inspeccion-previa.inspeccion-funcional",
+      "concept.encyclopedia.service-tribology.tm-inspeccion-previa.registro-de-discrepancia"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.sintoma",
+      "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.hipotesis-rival",
+      "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.prueba-discriminante"
+    ],
+    "sourceIds": [
+      "source.official.tm9-1575.diagnosis",
+      "source.private.chicago.35",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "transfer",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.sintoma",
+        "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.hipotesis-rival",
+        "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.prueba-discriminante"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1073,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: síntoma, hipótesis rival, prueba discriminante.",
+          "en": "Defino con mis palabras: síntoma, hipótesis rival, prueba discriminante."
+        },
+        {
+          "es": "Separo en «Caso TM II: diagnóstico por síntomas y prueba discriminante» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Caso TM II: diagnóstico por síntomas y prueba discriminante» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Caso TM II: diagnóstico por síntomas y prueba discriminante» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Caso TM II: diagnóstico por síntomas y prueba discriminante» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Construye árboles para parada, no da cuerda y cambia de fecha mal.",
+          "en": "Aplico el criterio a esta variante: Construye árboles para parada, no da cuerda y cambia de fecha mal."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Caso TM II: diagnóstico por síntomas y prueba discriminante» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Caso TM II: diagnóstico por síntomas y prueba discriminante» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.sintoma",
+        "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.hipotesis-rival",
+        "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.prueba-discriminante"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?",
+          "en": "¿Cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?"
+        },
+        {
+          "es": "¿Qué relación causal de «Caso TM II: diagnóstico por síntomas y prueba discriminante» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Caso TM II: diagnóstico por síntomas y prueba discriminante» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

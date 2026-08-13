@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width">
+<title>Preview · Cómo funciona un reloj de principio a fin</title>
+<style>body{font:16px/1.55 system-ui;max-width:1200px;margin:auto;padding:2rem;color:#18201c;background:#f5f3ec}header,section,details{background:white;border:1px solid #d8d4c7;padding:1.25rem;margin:1rem 0}code{background:#e9ece7;padding:.15rem .35rem}pre{white-space:pre-wrap;font:14px/1.5 system-ui;background:#f5f3ec;padding:1rem}table{width:100%;border-collapse:collapse}th,td{border:1px solid #d8d4c7;padding:.55rem;text-align:left;vertical-align:top}.error{color:#9b1c1c}.warning{color:#855700}.badge{display:inline-block;border:1px solid;padding:.2rem .5rem;margin-right:.5rem}</style>
+</head><body><header><p>PREVISUALIZACIÓN DE AUTORÍA</p><h1>Cómo funciona un reloj de principio a fin</h1><p><code>wplab.horology.functional-map@0.1.0</code></p><p>Esta vista no sustituye la ejecución en Watch Prototype Lab.</p></header>
+<section><span class="badge">in-review</span><span class="badge">local-unsigned</span><span class="badge">es-ES</span><h2>Jerarquía</h2><section><h2>Orientación funcional relojera</h2><p>Reconocer las cadenas funcionales de cuarzo y mecánica, compararlas sin confundir sus soluciones físicas y razonar sobre interrupciones.</p><ul><li><strong>Cómo funciona un reloj de principio a fin</strong><ul><li><strong>Un reloj no es una colección de ruedas</strong><ul><li>Clasificar subsistemas</li></ul></li><li><strong>La cadena del cuarzo</strong><ul><li>Ordenar la cadena de cuarzo</li><li>Identificar la referencia temporal</li></ul></li><li><strong>Lo que ya conoces por el ISA 8172</strong><ul><li>Crear un mapa de confianza del ISA 8172</li></ul></li><li><strong>La cadena mecánica</strong><ul><li>Ordenar la cadena mecánica</li><li>Identificar escape, volante y espiral</li></ul></li><li><strong>Cuarzo y mecánico: equivalencias funcionales</strong><ul><li>Emparejar equivalencias funcionales</li></ul></li><li><strong>Predicción de fallos</strong><ul><li>Predecir una interrupción</li><li>Seleccionar el subsistema afectado</li><li>Justificar una hipótesis</li></ul></li></ul></li></ul></section></section>
+<section><h2>Lecciones, texto y claims</h2><details><summary><strong>Un reloj no es una colección de ruedas</strong> · 1 claims · 1 actividades</summary>
+      <article><h3>Un reloj como sistema funcional</h3><pre>## Propósito
+
+Construir una primera imagen completa del reloj: no como una acumulación de ruedas, sino como un sistema en el que varias funciones cooperan para producir una indicación legible.
+
+## Conocimientos previos
+
+No se presupone vocabulario relojero. Basta con haber observado un reloj y reconocer que muestra una hora. La experiencia previa de desmontaje puede ayudar, pero no es necesaria para completar la lección.
+
+## Objetivos observables
+
+Al terminar podrás separar reloj completo, movimiento, caja, esfera y agujas; clasificar elementos en energía, control o regulación, transmisión, indicación y estructura; y explicar por qué una pieza inmóvil puede resultar imprescindible.
+
+## Explicación principal
+
+Un reloj completo combina una envolvente que protege y permite usar el objeto con un {{term:term.horology.movement}} que produce el movimiento de la indicación. La caja no es el movimiento. La esfera y las agujas tampoco son el movimiento, aunque participen en el resultado que ve la persona usuaria. Esta distinción evita buscar toda explicación dentro del tren de ruedas.
+
+La primera función es disponer de energía. En un reloj de cuarzo la fuente habitual de este módulo es la {{term:term.horology.battery}}. En el modelo mecánico la energía queda almacenada en el {{term:term.horology.mainspring}}. Una fuente no establece por sí sola una marcha regular: únicamente hace posible que el sistema actúe.
+
+La segunda función es establecer una referencia temporal o regular la entrega. En cuarzo intervienen el resonador y el circuito; en mecánico, el volante y la espiral trabajan con el escape. La tercera función es transmitir movimiento entre etapas. El {{term:term.horology.gear-train}} lleva y adapta ese movimiento. La cuarta es convertirlo en una {{term:term.horology.indication}} comprensible mediante agujas. La estructura sostiene, posiciona y protege. Una platina, un puente o un apoyo pueden no desplazarse durante el funcionamiento normal y, sin embargo, determinar si un eje conserva su posición.
+
+Estas categorías describen funciones, no colores ni formas. Una pieza puede intervenir en más de una relación, y dos movimientos pueden repartir una misma función entre piezas diferentes. Por eso la clasificación debe justificarse por lo que el elemento hace dentro del conjunto.
+
+## Explicación visual
+
+La escena A separa de forma reversible caja, esfera, agujas y movimiento. Después permite atenuar el resto para observar cada capa funcional. El lenguaje visual combina color moderado, patrón, etiqueta e icono; nunca depende solo del color. La alternativa textual presenta la misma lista de entidades, relaciones y estados.
+
+## Vocabulario
+
+Usaremos {{term:term.horology.calibre}} para una designación técnica de movimiento; {{term:term.horology.main-plate}} y {{term:term.horology.bridge}} para elementos estructurales; {{term:term.horology.transmission}} para el paso de movimiento; y {{term:term.horology.regulation}} para la función que establece o mantiene el ritmo.
+
+## Fuentes
+
+La organización funcional se apoya en el capítulo de fundamentos del libro privado, sin copiar su texto, y en una explicación educativa original. Ningún detalle geométrico de los calibres reales se deduce de esta clasificación.
+
+## Ejemplo
+
+Si se retira una aguja, el movimiento puede continuar actuando, pero falta parte de la indicación. Si un puente deja de mantener un pivote en su apoyo, puede interrumpirse la transmisión aunque el puente no fuese una pieza móvil. En ambos casos la categoría funcional ayuda a describir qué resultado se ha perdido.
+
+## Errores habituales
+
+Llamar movimiento a todo el reloj; considerar que solo las ruedas realizan trabajo; confundir transmitir con regular; y asignar una función únicamente por el aspecto de una pieza. Otro error es creer que una etiqueta educativa demuestra la identidad oficial de un componente.
+
+## Actividad
+
+Clasifica los elementos propuestos en energía, control o regulación, transmisión, indicación y estructura. Puedes usar selección directa o una lista accesible. Cuando una elección admita matiz, indica cuál es la función principal en el contexto mostrado.
+
+## Feedback
+
+El feedback nombra la función y la relación observable. Una respuesta incorrecta no revela de inmediato toda la clasificación: primero orienta hacia el resultado que el elemento permite o impide.
+
+## Evidencia
+
+Se registra la clasificación confirmada, los cambios realizados, las pistas solicitadas y la procedencia consultada. Las adaptaciones de accesibilidad quedan registradas como contexto y no cuentan como pistas.
+
+## Criterio de éxito
+
+Clasificar correctamente los grupos principales y distinguir regulación de transmisión al justificar al menos un elemento estructural y uno de indicación.
+
+## Resumen
+
+Un reloj recibe o almacena energía, establece un ritmo, transmite movimiento y lo convierte en indicación dentro de una estructura. Las piezas cobran sentido por sus relaciones, no por estar aisladas.
+
+## Siguiente conexión
+
+La siguiente lección aplica este mapa a la cadena de cuarzo y distingue control temporal, conversión electromecánica y transmisión mecánica.</pre></article>
+      <h3>Claims</h3><ul><li>claim.horology.watch-functional-system · source/original-explanation · G0/K1/P0 · source.horology.original-functional-map</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.private-book.functional-systems</li><li>source.horology.original-functional-map</li><li>visual.horology.complete-watch-layers</li><li>visual.horology.functional-text-alternative</li></ul>
+    </details><details><summary><strong>La cadena del cuarzo</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>La cadena funcional del cuarzo</h3><pre>## Propósito
+
+Seguir de principio a fin cómo una fuente eléctrica termina produciendo el avance visible de las agujas, distinguiendo control temporal, conversión electromecánica y transmisión.
+
+## Conocimientos previos
+
+Se utiliza el mapa de la lección anterior: fuente, control o regulación, transmisión, indicación y estructura. No se requiere conocer electrónica ni calcular frecuencias.
+
+## Objetivos observables
+
+Ordenar pila, circuito y referencia de cuarzo, bobina, rotor paso a paso, tren y agujas; identificar dónde cambia la naturaleza de la señal; y explicar qué etapa deja de recibir acción cuando se interrumpe otra.
+
+## Explicación principal
+
+La {{term:term.horology.battery}} aporta energía eléctrica. Esa energía no se envía sin control al tren. El {{term:term.horology.integrated-circuit}} trabaja con una referencia proporcionada por el {{term:term.horology.quartz-resonator}} y establece una secuencia temporal de impulsos. En este nivel educativo importa la función: disponer de una referencia estable y dividirla para gobernar el avance. No se pretende representar internamente el circuito ni deducir componentes que la documentación no individualiza.
+
+La {{term:term.horology.coil}} recibe impulsos controlados y genera un campo magnético. Junto con el estator y el rotor constituye la zona donde una acción eléctrica produce un paso mecánico. El {{term:term.horology.stepper-rotor}} no gira libremente como una turbina; responde mediante pasos gobernados. A partir de ahí, el tren transmite y reduce el movimiento hasta la minutería y las agujas.
+
+La cadena funcional que se usa en el módulo es: pila → circuito y referencia de cuarzo → bobina → rotor paso a paso → tren de ruedas → agujas. Las flechas indican relaciones funcionales. No representan una simulación física validada de corriente, campo magnético, par o pérdidas. Por ello la ruta se declara como educativa y P0.
+
+El modelo conceptual muestra cada función con gran claridad. El MIYOTA 2035 se emplea cuando se señalan identidades de piezas que aparecen en su documentación oficial. Que el fixture R2 permita seleccionar una pieza no convierte su geometría reconstruida en geometría oficial completa. La procedencia visible mantiene separados identidad oficial, posición deducida y forma estimada.
+
+## Explicación visual
+
+La escena B presenta el cuarzo conceptual junto al 2035. Una ruta numerada activa una etapa cada vez, se pausa antes de pasar al rotor y ofrece una predicción. En reduced motion no gira la cámara ni se anima el rotor: cambian estados discretos y aparecen flechas estáticas numeradas. Al bloquear simbólicamente la bobina, las etapas posteriores quedan marcadas como inactivas sin afirmar una avería real.
+
+## Vocabulario
+
+Además de pila, circuito, resonador, bobina y rotor, distinguimos {{term:term.horology.wheel}}, {{term:term.horology.pinion}}, {{term:term.horology.arbor}} y {{term:term.horology.motion-works}}. Los términos describen funciones o familias de elementos; la referencia oficial concreta se muestra aparte.
+
+## Fuentes
+
+La identidad de las piezas específicas del 2035 procede de la lista oficial y su vista explosionada. La explicación de la cadena es original y funcional. No se asignan dimensiones, dientes ni tolerancias.
+
+## Ejemplo
+
+Si la pila está ausente, ninguna etapa recibe energía. Si el control no produce impulsos, la bobina no recibe la secuencia prevista. Si la bobina se desactiva en la simulación, el rotor no recibe el estímulo conceptual y el tren no obtiene pasos. El síntoma visual es parecido en las agujas, pero las hipótesis se sitúan en etapas distintas.
+
+## Errores habituales
+
+Decir que la pila marca el tiempo; confundir el resonador con el motor; afirmar que la bobina gira; considerar eléctrico todo lo que ocurre después de la pila; o tratar la ruta educativa como una medición de corriente real.
+
+## Actividad
+
+Ordena las seis etapas y, antes de confirmar el paso al rotor, predice cuál será el siguiente cambio. Después identifica la referencia temporal y separa la conversión electromecánica de la transmisión mecánica.
+
+## Feedback
+
+El feedback señala la primera relación fuera de orden sin reconstruir automáticamente la secuencia completa. Las pistas progresan desde la zona funcional hasta una explicación posterior al intento.
+
+## Evidencia
+
+Se registra el orden propuesto, la selección de la referencia temporal, las predicciones, las pistas y la restauración final. La respuesta abierta explica la función, pero el dominio se apoya en componentes estructurados verificables.
+
+## Criterio de éxito
+
+Ordenar correctamente la cadena, identificar circuito y resonador como referencia o control temporal y situar bobina y rotor en la conversión electromecánica.
+
+## Resumen
+
+El cuarzo combina referencia y control electrónicos con un motor paso a paso y una transmisión mecánica. La indicación visible depende de todas las etapas anteriores.
+
+## Siguiente conexión
+
+La próxima lección utiliza la experiencia con el ISA 8172 para separar lo visto, lo recordado, lo inferido y lo documentado.</pre></article>
+      <h3>Claims</h3><ul><li>claim.miyota.2035.documented-parts · source/official · G0/K0/P0 · source.miyota.2035.parts-list-exploded-view</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.miyota.2035.product-page</li><li>source.miyota.2035.parts-list-exploded-view</li><li>source.horology.original-functional-map</li><li>visual.horology.quartz-energy-flow</li><li>visual.horology.miyota2035-structural</li><li>visual.horology.functional-text-alternative</li></ul>
+    </details><details><summary><strong>Lo que ya conoces por el ISA 8172</strong> · 1 claims · 1 actividades</summary>
+      <article><h3>Experiencia, documentación e inferencia</h3><pre>## Propósito
+
+Convertir la experiencia previa con el ISA 8172 en información útil sin atribuirle detalles que no se han verificado.
+
+## Conocimientos previos
+
+Se conoce la cadena funcional de cuarzo. La lección no presupone que exista un modelo digital exacto del ISA ni que se recuerde cada pieza del desmontaje.
+
+## Objetivos observables
+
+Clasificar una afirmación como observación, recuerdo, identificación por forma, inferencia, documentación o desconocido; declarar confianza; y explicar por qué una función parecida no demuestra compatibilidad física.
+
+## Explicación principal
+
+Una experiencia de taller tiene valor, pero su autoridad depende de lo que realmente se registró. Haber visto una pieza en una unidad concreta es una observación. Recordar haberla visto tiempo después es un recuerdo, no una fotografía ni un dato nominal. Reconocer una forma puede orientar una búsqueda, pero la forma por sí sola no demuestra referencia, medida o compatibilidad.
+
+La {{term:term.horology.inference}} enlaza indicios con una conclusión provisional. Por ejemplo, observar un devanado y una pieza magnética próxima puede sugerir una función electromecánica. Esa interpretación no debe transformarse en identidad oficial sin documentación. La {{term:term.horology.provenance}} conserva quién afirmó algo, a partir de qué recurso y con qué método.
+
+Un documento del fabricante puede establecer una identidad o un {{term:term.horology.nominal-value}} para un calibre determinado. Una observación propia describe una unidad. Una {{term:term.horology.measurement}} añade instrumento, resolución y método. Ninguna de estas capas debe borrarse cuando se comparan. Si una casilla no puede justificarse, la respuesta correcta puede ser desconocido.
+
+La escena no inventa un ISA 8172 detallado. Utiliza un mapa abstracto con espacios para registrar visto directamente, recordado, identificado por forma, inferido por función, documentado y desconocido. Las futuras fotografías propias podrán añadirse como fuentes separadas. Mientras no existan, el mapa no muestra una pieza reconstruida como si fuese la unidad real.
+
+## Explicación visual
+
+La escena C presenta tarjetas de confianza y una representación abstracta, no un calibre falso. Cada tarjeta combina texto, icono y patrón. El alumno puede relacionar un recuerdo con una función del cuarzo conceptual, pero la interfaz mantiene visible que la equivalencia es funcional y no física.
+
+## Vocabulario
+
+Usamos procedencia, dato nominal, observación, medición, inferencia e {{term:term.horology.hypothesis}}. Una hipótesis propone una explicación comprobable; una conclusión exige haber realizado comprobaciones suficientes.
+
+## Fuentes
+
+Esta lección se basa en el marco editorial de procedencia y en contenido educativo original. No afirma detalles técnicos del ISA 8172, no usa una página no verificada del libro y no presenta recuerdos como documentación.
+
+## Ejemplo
+
+Si recuerdas una bobina de cobre, puedes registrar recordado y quizá identificado por forma. Si además existe una fotografía propia nítida, la fotografía pasa a ser una fuente de observación. Para afirmar una referencia oficial todavía sería necesario un documento aplicable a ese movimiento. Si no existe, la referencia continúa desconocida.
+
+## Errores habituales
+
+Confundir seguridad subjetiva con autoridad documental; usar probablemente como si significara confirmado; trasladar una referencia del 2035 al ISA; y suponer compatibilidad porque dos piezas desempeñan funciones similares.
+
+## Actividad
+
+Crea un mapa de confianza del ISA 8172. Para cada elemento selecciona la capa adecuada, declara un nivel de confianza y anota qué evidencia faltaría para avanzar a una afirmación más fuerte.
+
+## Feedback
+
+El feedback no corrige recuerdos personales como verdaderos o falsos. Comprueba si la etiqueta elegida corresponde al tipo de apoyo declarado y pide separar observación de inferencia cuando se mezclan.
+
+## Evidencia
+
+Se conservan la capa elegida, la confianza, la justificación breve, las fuentes consultadas y los desconocidos explícitos. Una respuesta textual queda disponible para revisión, pero no concede dominio total mediante coincidencia de palabras.
+
+## Criterio de éxito
+
+Diferenciar de forma consistente dato oficial, observación e inferencia y evitar al menos una equivalencia física no demostrada.
+
+## Resumen
+
+La experiencia orienta, la documentación delimita y la inferencia propone. Mantener sus autoridades separadas permite aprender sin fingir precisión.
+
+## Siguiente conexión
+
+Con esta disciplina de fuentes, la siguiente lección aborda la cadena mecánica y distingue claramente identidad documentada de animación conceptual.</pre></article>
+      <h3>Claims</h3><ul><li>claim.horology.confidence-layers · source/original-explanation · G0/K0/P0 · source.horology.original-functional-map</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.original-functional-map</li><li>visual.horology.isa8172-memory-map</li><li>visual.horology.functional-text-alternative</li></ul>
+    </details><details><summary><strong>La cadena mecánica</strong> · 1 claims · 2 actividades</summary>
+      <article><h3>La cadena funcional mecánica</h3><pre>## Propósito
+
+Seguir cómo la energía almacenada en un muelle llega a la indicación mientras un escape y un oscilador controlan su liberación.
+
+## Conocimientos previos
+
+Se distingue fuente, regulación, transmisión e indicación, y se mantiene separada una animación educativa de un dato oficial de calibre.
+
+## Objetivos observables
+
+Ordenar muelle real, barrilete, tren, escape, volante y espiral, minutería y agujas; explicar la relación bidireccional entre escape y oscilador; y diferenciar tren de marcha de minutería.
+
+## Explicación principal
+
+El {{term:term.horology.mainspring}} almacena energía cuando recibe cuerda. Se aloja en el {{term:term.horology.barrel}}, que permite entregarla al tren. La energía disponible tiende a mover las ruedas; por sí sola no establece un ritmo relojero.
+
+El tren lleva movimiento desde el barrilete hacia la {{term:term.horology.escape-wheel}}. El {{term:term.horology.escapement}} alterna bloqueo, liberación e impulso. El {{term:term.horology.pallet-fork}} relaciona la rueda de escape con el oscilador. El {{term:term.horology.balance-wheel}} y la {{term:term.horology.balance-spring}} forman el conjunto oscilante que establece el ritmo. El escape permite avanzar al tren por pasos y devuelve impulsos al oscilador. Por eso se representa escape ↔ volante y espiral, no como una simple flecha que atribuya toda la regulación a una sola pieza.
+
+La {{term:term.horology.oscillation}} es un movimiento alternativo alrededor de una posición. La {{term:term.horology.frequency}} describe cuántas oscilaciones se producen en una unidad de tiempo; la {{term:term.horology.amplitude}} describe la extensión angular del movimiento. Este módulo no calcula ni valida esos valores en el fixture. Su física permanece P0.
+
+Después, la minutería adapta el movimiento para la indicación de horas y minutos. Conviene separarla del tren de marcha: ambos contienen ruedas, pero su papel y relaciones no son idénticos. Las agujas muestran el resultado.
+
+El modelo mecánico conceptual usa proporciones claras y declara G1/K2/P0. El MIYOTA 8215 aparece como ensamblaje estructural R2. La lista oficial permite nombrar conjuntos y piezas, pero no convierte cada forma interna reconstruida en una superficie oficial ni valida lubricación, desgaste o choque.
+
+## Explicación visual
+
+La escena D coordina el modelo conceptual y el 8215. La ruta energética avanza de forma numerada. Una vista lenta separa estados conceptuales de bloqueo, desbloqueo e impulso. Detener simbólicamente el volante marca que la liberación controlada se interrumpe. Reduced motion sustituye el giro por estados y flechas estáticas.
+
+## Vocabulario
+
+Además de barrilete, escape, áncora, volante y espiral, usaremos {{term:term.horology.pivot}} y {{term:term.horology.jewel}} para describir apoyos sin inventar su geometría. La política terminológica utiliza espiral o balance spring según idioma; hairspring se reconoce como equivalente inglés, pero no se traduce de varias maneras en español.
+
+## Fuentes
+
+La identidad de piezas específicas del 8215 se apoya en su despiece oficial. La cadena funcional y la animación son explicaciones educativas originales. No se aportan dientes, tolerancias ni puntos de lubricación.
+
+## Ejemplo
+
+Un muelle con energía puede empujar el tren, pero si el escape permanece bloqueado no hay liberación ordenada. Si el oscilador se detiene, la interacción con el escape deja de sostener la secuencia prevista. El ejemplo muestra una consecuencia funcional, no diagnostica por qué se detuvo un reloj real.
+
+## Errores habituales
+
+Decir que el escape crea el tiempo; tratar el volante como una rueda más del tren; afirmar que el tren regula por sí solo; confundir rueda de escape con todo el escape; o presentar una ralentización conceptual como medición.
+
+## Actividad
+
+Ordena la cadena mecánica, identifica escape, áncora, volante y espiral y separa tren de marcha de minutería. Observa después un bloqueo simbólico y describe qué relación deja de avanzar.
+
+## Feedback
+
+El feedback indica la primera relación funcional incoherente y ofrece pistas graduadas. La explicación completa solo aparece después de un intento.
+
+## Evidencia
+
+Se registran el orden, las selecciones, la distinción entre regulación y transmisión, las pistas y la restauración. La evidencia no afirma destreza de desmontaje físico.
+
+## Criterio de éxito
+
+Ordenar la cadena y explicar correctamente que el escape dosifica la liberación y transmite impulsos al conjunto volante-espiral.
+
+## Resumen
+
+La fuente mecánica almacena energía; el tren la transmite; escape y oscilador gobiernan su liberación; la minutería la adapta a la indicación.
+
+## Siguiente conexión
+
+La siguiente lección compara esta solución con el cuarzo por funciones, delimitando dónde la analogía ayuda y dónde falla.</pre></article>
+      <h3>Claims</h3><ul><li>claim.miyota.8215.documented-parts · source/official · G0/K0/P0 · source.miyota.8215.parts-list-exploded-view</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.miyota.8215.product-page</li><li>source.miyota.8215.parts-list-exploded-view</li><li>source.horology.private-book.functional-systems</li><li>source.horology.original-functional-map</li><li>visual.horology.mechanical-energy-flow</li><li>visual.horology.swiss-lever-slow-motion</li><li>visual.horology.functional-text-alternative</li></ul>
+    </details><details><summary><strong>Cuarzo y mecánico: equivalencias funcionales</strong> · 1 claims · 1 actividades</summary>
+      <article><h3>Equivalencias funcionales con límites</h3><pre>## Propósito
+
+Comparar cuarzo y mecánico mediante las funciones que resuelven, sin afirmar que sus piezas sean física o geométricamente equivalentes.
+
+## Conocimientos previos
+
+Se han recorrido ambas cadenas y se distingue una identidad documentada de una explicación conceptual.
+
+## Objetivos observables
+
+Emparejar fuentes, referencias temporales, mecanismos de dosificación, conversión, transmisión e indicación; justificar una diferencia esencial; y señalar el límite de cada analogía.
+
+## Explicación principal
+
+Comparar por función permite reconocer una arquitectura común: algo aporta o almacena energía, algo establece una referencia o ritmo, el sistema convierte y dosifica la acción, un tren la transmite y una indicación la hace legible. Esa estructura común no borra las diferencias.
+
+En cuarzo la fuente es la pila. En mecánico es el muelle real. Ambos ocupan la función fuente, pero uno entrega energía eléctrica y el otro almacena energía mecánica. La referencia temporal del cuarzo combina resonador y circuito; la del mecánico se encuentra en el conjunto volante y espiral. Decir referencia temporal no significa que esos elementos funcionen igual.
+
+Los impulsos eléctricos que gobiernan el motor paso a paso pueden compararse, con cautela, con la dosificación que realiza el escape. La comparación sirve para localizar en qué punto el movimiento deja de ser continuo o indiferenciado y pasa a una secuencia controlada. Sin embargo, el escape también interactúa con el oscilador mediante bloqueo e impulso, mientras que el conjunto electrónico y electromecánico del cuarzo distribuye esas tareas de otra forma.
+
+El rotor paso a paso convierte una señal electromagnética en pasos mecánicos. En el reloj mecánico, barrilete, tren y escape participan en una cadena de entrega y control de energía sin un motor eléctrico equivalente. Ambos sistemas emplean trenes y agujas, pero sus relaciones, cargas, geometrías y piezas concretas no se deducen de la tabla.
+
+La tabla funcional es por tanto un mapa de orientación. Ayuda a preguntar dónde está la fuente, qué establece el ritmo, dónde se produce la conversión y qué transmite. Deja de ser válida cuando se usa para trasplantar piezas, inferir compatibilidad, copiar dimensiones o afirmar una correspondencia uno a uno.
+
+## Explicación visual
+
+La escena E muestra cuarzo conceptual, mecánico conceptual y 2035 en vista coordinada. Cada pareja comparte símbolo funcional, pero mantiene namespace, procedencia y G/K/P propios. Se puede alternar conceptual y real sin fusionar ensamblajes. La alternativa textual presenta una tabla y explica los límites de cada fila.
+
+## Vocabulario
+
+Revisamos {{term:term.horology.indication}}, {{term:term.horology.transmission}} y {{term:term.horology.regulation}}. Equivalencia funcional significa que dos soluciones contribuyen a una finalidad comparable; no significa intercambiabilidad.
+
+## Fuentes
+
+La tabla y sus límites son contenido educativo original. Las identidades del 2035 se remiten a su documentación oficial cuando aparecen. La comparación no añade dimensiones ni eleva la fidelidad de los modelos.
+
+## Ejemplo
+
+Pila y muelle real pueden ocupar la misma fila como fuentes. Sería incorrecto concluir que tienen una misma interfaz. Rotor paso a paso y escape pueden situarse en zonas de conversión o dosificación comparables, pero no son piezas homólogas ni realizan las mismas interacciones.
+
+## Errores habituales
+
+Buscar una correspondencia uno a uno para cada pieza; llamar regulador al tren; pensar que compartir agujas hace iguales los mecanismos; o utilizar el 2035 como representación universal de cualquier cuarzo.
+
+## Actividad
+
+Empareja las funciones y selecciona una diferencia esencial. Después justifica dónde deja de ser válida una de las comparaciones. La tarea admite teclado y no exige arrastrar.
+
+## Feedback
+
+El feedback confirma la función compartida y, en una segunda frase, recuerda el límite físico. Una pareja plausible pero demasiado amplia recibe una pregunta de comparación antes de mostrar la solución.
+
+## Evidencia
+
+Se registra cada pareja, la diferencia seleccionada, la justificación estructurada, las pistas y la consulta de procedencia. La parte abierta puede quedar pendiente de revisión sin bloquear los componentes deterministas.
+
+## Criterio de éxito
+
+Emparejar correctamente las seis filas y explicar al menos una diferencia esencial sin afirmar compatibilidad física.
+
+## Resumen
+
+Cuarzo y mecánico pueden compararse como sistemas, siempre que la función común no se transforme en identidad de pieza.
+
+## Siguiente conexión
+
+La última lección usa el mapa comparativo para predecir consecuencias de interrupciones sin convertirlas en diagnósticos de una unidad real.</pre></article>
+      <h3>Claims</h3><ul><li>claim.horology.functional-equivalence-limited · source/original-explanation · G0/K1/P0 · source.horology.original-functional-map</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.miyota.2035.parts-list-exploded-view</li><li>source.horology.original-functional-map</li><li>visual.horology.quartz-mechanical-overlay</li><li>visual.horology.functional-text-alternative</li></ul>
+    </details><details><summary><strong>Predicción de fallos</strong> · 1 claims · 3 actividades</summary>
+      <article><h3>Predicción prudente de interrupciones</h3><pre>## Propósito
+
+Usar las cadenas funcionales para anticipar un efecto observable, formular una hipótesis y elegir una comprobación no destructiva sin afirmar una avería real.
+
+## Conocimientos previos
+
+Se reconocen los subsistemas de cuarzo y mecánico, sus relaciones y los límites de una comparación funcional.
+
+## Objetivos observables
+
+Distinguir síntoma, hipótesis y conclusión; localizar el subsistema afectado; indicar qué dato falta; y proponer una comprobación no destructiva adecuada al nivel de información disponible.
+
+## Explicación principal
+
+Un síntoma es algo observado: por ejemplo, la indicación no avanza en la simulación. Una hipótesis propone una causa posible: la fuente podría estar ausente o una etapa podría estar interrumpida. Una conclusión requiere comprobaciones suficientes. Saltar del síntoma a una causa única borra alternativas y puede inducir una intervención innecesaria.
+
+El mapa funcional permite preguntar hacia atrás. Si las agujas no avanzan, se revisa si la indicación está libre, si la transmisión recibe movimiento, si la conversión actúa, si el control produce la secuencia y si la fuente está disponible. En mecánico se pregunta por la energía del muelle, la transmisión, el estado funcional del escape y la oscilación. El orden no reemplaza un procedimiento de taller: organiza el razonamiento inicial.
+
+Los casos del módulo son simbólicos: pila agotada, bobina interrumpida, rotor bloqueado, rueda ausente o fuera de posición, muelle descargado, escape bloqueado, pivote fuera de apoyo y agujas rozando. La escena produce un estado observable controlado, pero no simula resistencia eléctrica, fricción, desgaste, choque ni lubricación. Cada caso conserva P0 y se restaura.
+
+Una comprobación no destructiva busca información antes de desmontar o modificar. Puede consistir en observar si las agujas se rozan, consultar una fuente aplicable, verificar el estado declarado de la fuente con un método apropiado o confirmar visualmente si una pieza ocupa su apoyo. Esta lección no enseña a aplicar instrumentos ni fija valores; solo exige elegir una comprobación coherente y declarar qué dato falta.
+
+La confianza también forma parte de la respuesta. Una hipótesis apoyada únicamente por un síntoma general debe tener menos confianza que una afirmación respaldada por varias observaciones independientes. Aumentar confianza exige nueva evidencia, no repetir la misma suposición.
+
+## Explicación visual
+
+La escena F permite activar una interrupción cada vez sobre los modelos conceptuales y, cuando procede, sobre las vistas estructurales. La ruta cambia a bloqueada o incompleta mediante patrón, icono y texto. La alternativa accesible enumera estado inicial, cambio, entidades afectadas, consecuencia y opciones disponibles. Reduced motion usa pasos discretos.
+
+## Vocabulario
+
+Usamos hipótesis, inferencia, procedencia, pivote, rubí y transmisión. Bloqueado describe el estado simbólico de una relación en la escena; no certifica el fallo físico de una pieza.
+
+## Fuentes
+
+Los casos son simulaciones educativas originales. Las identidades que aparezcan en 2035 o 8215 se remiten a fuentes oficiales, pero ninguna fuente se utiliza para fingir una causa medida en una unidad concreta.
+
+## Ejemplo
+
+Síntoma: las agujas no avanzan. Hipótesis: podrían rozarse. Dato faltante: si existe contacto entre ellas o con la esfera. Comprobación: observar el espacio y el movimiento desde un ángulo adecuado, sin forzar. Conclusión: solo después de observar contacto podría afirmarse que el roce está presente en esa unidad.
+
+## Errores habituales
+
+Llamar diagnóstico a una animación; confundir correlación con causa; elegir una prueba destructiva antes de observar; aumentar confianza sin evidencia; o tratar desconocido como respuesta incorrecta.
+
+## Actividad
+
+Predice dos interrupciones, selecciona el subsistema afectado y completa una justificación con síntoma, hipótesis, dato faltante, comprobación y confianza. La explicación abierta se registra, mientras los componentes estructurados se evalúan de forma determinista.
+
+## Feedback
+
+El feedback separa los campos y señala cuál mezcla hipótesis con conclusión. Las pistas avanzan desde la orientación general hasta una explicación posterior al intento.
+
+## Evidencia
+
+Se guardan predicción, subsistema, comprobación, confianza, fuentes, pistas y texto de justificación. El texto no se califica por coincidencia exacta; si requiere juicio humano queda marcado para revisión.
+
+## Criterio de éxito
+
+Predecir correctamente dos consecuencias, localizar sus subsistemas y justificar una hipótesis sin presentarla como conclusión.
+
+## Resumen
+
+La cadena funcional permite formular hipótesis disciplinadas. Una simulación enseña relaciones, pero no diagnostica un reloj físico.
+
+## Siguiente conexión
+
+El módulo termina con una recomendación de retención futura: aplicar el mismo razonamiento en otro contexto, con 2035, 8215, un despiece o un síntoma nuevo.</pre></article>
+      <h3>Claims</h3><ul><li>claim.horology.symbolic-interruption · hypothesis/hypothesis · G1/K1/P0 · source.horology.original-functional-map</li></ul>
+      <h3>Fuentes y recursos</h3><ul><li>source.horology.original-functional-map</li><li>visual.horology.failure-simulation</li><li>visual.horology.functional-text-alternative</li></ul>
+    </details></section>
+<section><h2>Escenas, storyboards y operaciones</h2><details><summary><strong>Capas funcionales</strong> · 2 pasos · 5 operaciones</summary>
+    <p>Capas funcionales. Escena reversible con alternativa textual funcional.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.mechanical-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, overlay, overlay, overlay, overlay</p>
+    <p><strong>Overlays:</strong> energy-path:overlay.scene.horology.functional-layers.path, rotation:overlay.scene.horology.functional-layers.rotation, arrow:overlay.scene.horology.functional-layers.arrow</p>
+    <p><strong>Storyboard:</strong> Observar, predecir, manipular y explicar antes de registrar evidencia.</p>
+    <p><strong>Alternativa textual:</strong> Entidades presentes: estructura, fuente, regulación, transmisión e indicación del modelo conceptual. Relación y secuencia: case → dial → hour-hand → mainspring → balance → train → indication. Estado inicial disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar el 3D.</p>
+    <p><strong>Reduced motion:</strong> La misma información se presenta como estados discretos y una lista numerada: case → dial → hour-hand → mainspring → balance → train → indication. No hay movimiento automático de cámara ni rotación.</p>
+  </details><details><summary><strong>Cadena del cuarzo</strong> · 2 pasos · 5 operaciones</summary>
+    <p>Cadena del cuarzo. Escena reversible con alternativa textual funcional.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;composition&quot;,&quot;compositionId&quot;:&quot;composition.horology.quartz-chain&quot;,&quot;fixtureIds&quot;:[&quot;fixture.conceptual.quartz-chain&quot;,&quot;fixture.miyota.2035.structural&quot;],&quot;layout&quot;:&quot;split&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, overlay, overlay, overlay, overlay</p>
+    <p><strong>Overlays:</strong> energy-path:overlay.scene.horology.quartz-chain.path, rotation:overlay.scene.horology.quartz-chain.rotation, arrow:overlay.scene.horology.quartz-chain.arrow</p>
+    <p><strong>Storyboard:</strong> Observar, predecir, manipular y explicar antes de registrar evidencia.</p>
+    <p><strong>Alternativa textual:</strong> Entidades presentes: cuarzo conceptual y MIYOTA 2035, separados y con namespace. Relación y secuencia: power-source → electronic-control → coil → stepper-rotor → train → indication. Estado inicial disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar el 3D.</p>
+    <p><strong>Reduced motion:</strong> La misma información se presenta como estados discretos y una lista numerada: power-source → electronic-control → coil → stepper-rotor → train → indication. No hay movimiento automático de cámara ni rotación.</p>
+  </details><details><summary><strong>Mapa de confianza ISA 8172</strong> · 2 pasos · 4 operaciones</summary>
+    <p>Mapa de confianza ISA 8172. Escena reversible con alternativa textual funcional.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;fixture&quot;,&quot;fixtureId&quot;:&quot;fixture.conceptual.quartz-chain&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, overlay, overlay, overlay</p>
+    <p><strong>Overlays:</strong> energy-path:overlay.scene.horology.isa-confidence.path, rotation:overlay.scene.horology.isa-confidence.rotation, arrow:overlay.scene.horology.isa-confidence.arrow</p>
+    <p><strong>Storyboard:</strong> Observar, predecir, manipular y explicar antes de registrar evidencia.</p>
+    <p><strong>Alternativa textual:</strong> Entidades presentes: representación abstracta funcional; no existe un modelo atribuido al ISA 8172. Relación y secuencia: power-source → electronic-control → coil → train. Estado inicial disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar el 3D.</p>
+    <p><strong>Reduced motion:</strong> La misma información se presenta como estados discretos y una lista numerada: power-source → electronic-control → coil → train. No hay movimiento automático de cámara ni rotación.</p>
+  </details><details><summary><strong>Cadena mecánica</strong> · 2 pasos · 5 operaciones</summary>
+    <p>Cadena mecánica. Escena reversible con alternativa textual funcional.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;composition&quot;,&quot;compositionId&quot;:&quot;composition.horology.mechanical-chain&quot;,&quot;fixtureIds&quot;:[&quot;fixture.conceptual.mechanical-chain&quot;,&quot;fixture.miyota.8215.structural&quot;],&quot;layout&quot;:&quot;split&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, overlay, overlay, overlay, overlay</p>
+    <p><strong>Overlays:</strong> energy-path:overlay.scene.horology.mechanical-chain.path, rotation:overlay.scene.horology.mechanical-chain.rotation, arrow:overlay.scene.horology.mechanical-chain.arrow</p>
+    <p><strong>Storyboard:</strong> Observar, predecir, manipular y explicar antes de registrar evidencia.</p>
+    <p><strong>Alternativa textual:</strong> Entidades presentes: mecánico conceptual y MIYOTA 8215, separados y con namespace. Relación y secuencia: mainspring → barrel → train → escape-wheel → pallet-fork → balance → motion-works → indication. Estado inicial disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar el 3D.</p>
+    <p><strong>Reduced motion:</strong> La misma información se presenta como estados discretos y una lista numerada: mainspring → barrel → train → escape-wheel → pallet-fork → balance → motion-works → indication. No hay movimiento automático de cámara ni rotación.</p>
+  </details><details><summary><strong>Comparación funcional</strong> · 2 pasos · 5 operaciones</summary>
+    <p>Comparación funcional. Escena reversible con alternativa textual funcional.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;composition&quot;,&quot;compositionId&quot;:&quot;composition.horology.functional-comparison&quot;,&quot;fixtureIds&quot;:[&quot;fixture.conceptual.quartz-chain&quot;,&quot;fixture.conceptual.mechanical-chain&quot;,&quot;fixture.miyota.2035.structural&quot;],&quot;layout&quot;:&quot;grid&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, overlay, overlay, overlay, overlay</p>
+    <p><strong>Overlays:</strong> energy-path:overlay.scene.horology.functional-comparison.path, rotation:overlay.scene.horology.functional-comparison.rotation, arrow:overlay.scene.horology.functional-comparison.arrow</p>
+    <p><strong>Storyboard:</strong> Observar, predecir, manipular y explicar antes de registrar evidencia.</p>
+    <p><strong>Alternativa textual:</strong> Entidades presentes: cuarzo conceptual, mecánico conceptual y MIYOTA 2035. Relación y secuencia: power-source → mainspring → quartz-resonator → balance → train → indication. Estado inicial disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar el 3D.</p>
+    <p><strong>Reduced motion:</strong> La misma información se presenta como estados discretos y una lista numerada: power-source → mainspring → quartz-resonator → balance → train → indication. No hay movimiento automático de cámara ni rotación.</p>
+  </details><details><summary><strong>Interrupciones y diagnóstico</strong> · 2 pasos · 5 operaciones</summary>
+    <p>Interrupciones y diagnóstico. Escena reversible con alternativa textual funcional.</p>
+    <p><strong>Fixture:</strong> {&quot;kind&quot;:&quot;composition&quot;,&quot;compositionId&quot;:&quot;composition.horology.interruptions&quot;,&quot;fixtureIds&quot;:[&quot;fixture.conceptual.quartz-chain&quot;,&quot;fixture.miyota.2035.structural&quot;,&quot;fixture.conceptual.mechanical-chain&quot;,&quot;fixture.miyota.8215.structural&quot;],&quot;layout&quot;:&quot;grid&quot;}</p>
+    <p><strong>Operaciones:</strong> highlight, overlay, overlay, overlay, overlay</p>
+    <p><strong>Overlays:</strong> energy-path:overlay.scene.horology.interruptions.path, rotation:overlay.scene.horology.interruptions.rotation, arrow:overlay.scene.horology.interruptions.arrow</p>
+    <p><strong>Storyboard:</strong> Observar, predecir, manipular y explicar antes de registrar evidencia.</p>
+    <p><strong>Alternativa textual:</strong> Entidades presentes: los cuatro fixtures del módulo, sin fusionar ensamblajes. Relación y secuencia: power-source → coil → stepper-rotor → train → mainspring → escape-wheel → balance → indication. Estado inicial disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar el 3D.</p>
+    <p><strong>Reduced motion:</strong> La misma información se presenta como estados discretos y una lista numerada: power-source → coil → stepper-rotor → train → mainspring → escape-wheel → balance → indication. No hay movimiento automático de cámara ni rotación.</p>
+  </details></section>
+<section><h2>Banco, herramientas, piezas, bandejas y dependencias</h2>
+  <p>Este paquete no declara banco virtual.</p>
+</section>
+<section><h2>Laboratorio mecánico, cálculos, grafos y modos</h2>
+  <p>Este paquete no declara laboratorio mecánico.</p>
+</section>
+<section><h2>Laboratorio de calibre, operaciones y autoridad</h2>
+  <p>Este paquete no declara laboratorio de calibre.</p>
+</section>
+<section><h2>Competencias, evidencia y rúbricas</h2><table><thead><tr><th>Competencia</th><th>Descripción</th><th>Evidencia</th><th>Rúbricas</th></tr></thead><tbody><tr><td>competency.horology.identify-functional-subsystems</td><td>Clasificar energía, regulación o control, transmisión, indicación y estructura.</td><td>evidence.horology.subsystem-classification</td><td>rubric.horology.functional-subsystems→demonstrated</td></tr><tr><td>competency.horology.explain-quartz-energy-chain</td><td>Ordenar y explicar la cadena funcional del cuarzo sin confundir control y transmisión.</td><td>evidence.horology.quartz-sequence, evidence.horology.hint-use</td><td>rubric.horology.quartz-chain→demonstrated</td></tr><tr><td>competency.horology.explain-mechanical-energy-chain</td><td>Ordenar y explicar la cadena mecánica y el acoplamiento escape-oscilador.</td><td>evidence.horology.mechanical-sequence</td><td>rubric.horology.mechanical-chain→demonstrated</td></tr><tr><td>competency.horology.distinguish-regulation-from-transmission</td><td>Diferenciar la referencia temporal o regulación del transporte de energía y movimiento.</td><td>evidence.horology.component-selection, evidence.horology.functional-comparison</td><td>rubric.horology.regulation-transmission→demonstrated</td></tr><tr><td>competency.horology.predict-system-interruption</td><td>Predecir efectos observables y proponer comprobaciones no destructivas sin afirmar averías.</td><td>evidence.horology.interruption-prediction, evidence.horology.affected-subsystem, evidence.horology.structured-justification</td><td>rubric.horology.interruption→demonstrated</td></tr><tr><td>competency.horology.state-source-confidence</td><td>Declarar la autoridad y confianza de una afirmación técnica.</td><td>evidence.horology.source-consultation, evidence.horology.confidence-declaration</td><td>rubric.horology.source-confidence→demonstrated</td></tr></tbody></table></section>
+<section><h2>Fuentes</h2><table><thead><tr><th>ID</th><th>Autoridad</th><th>Recurso</th><th>Localizador</th><th>Claim respaldado</th></tr></thead><tbody><tr><td>source.miyota.2035.product-page</td><td>official-miyota</td><td>MIYOTA 2035 · página oficial</td><td>https://miyotamovement.com/product/2035/</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.2035.specification</td><td>official-miyota</td><td>MIYOTA 2035 · specification</td><td>https://miyotamovement.com/uploads/product/product_pgSIG6yWb0akqcUhDf.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.2035.drawing</td><td>official-miyota</td><td>MIYOTA 2035 · drawing</td><td>https://miyotamovement.com/uploads/product/product_4tdsbpNVQi1WcE5lUw.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.2035.instruction-manual</td><td>official-miyota</td><td>MIYOTA 2035 · instruction manual</td><td>https://miyotamovement.com/uploads/product/product_cKAJDxu3CLoa18GHXO.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.2035.parts-list-exploded-view</td><td>official-miyota</td><td>MIYOTA 2035 · parts list and exploded view</td><td>https://miyotamovement.com/uploads/product/product_j6P3s1O5naNRxHZWMK.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 2035; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.8215.product-page</td><td>official-miyota</td><td>MIYOTA 8215 · página oficial</td><td>https://miyotamovement.com/product/8215/</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.8215.specification</td><td>official-miyota</td><td>MIYOTA 8215 · specification</td><td>https://miyotamovement.com/uploads/product/product_8jT5DEdzRXAsaSN2Bu.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.8215.drawing</td><td>official-miyota</td><td>MIYOTA 8215 · drawing</td><td>https://miyotamovement.com/uploads/product/product_LGuS8EY5DX03RiBaJH.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.8215.instruction-manual</td><td>official-miyota</td><td>MIYOTA 8215 · instruction manual</td><td>https://miyotamovement.com/uploads/product/product_mRAnUkS0wHFurpOK3T.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.</td></tr><tr><td>source.miyota.8215.parts-list-exploded-view</td><td>official-miyota</td><td>MIYOTA 8215 · parts list and exploded view</td><td>https://miyotamovement.com/uploads/product/product_x2MOZCosd7iH59wu0K.pdf</td><td>Identidad, datos nominales o estructura documental oficial del MIYOTA 8215; el alcance depende del documento citado.</td></tr><tr><td>source.horology.private-book.functional-systems</td><td>private-book-theory</td><td>Libro privado de teoría relojera · sistemas funcionales</td><td>—</td><td>Marco teórico general usado a nivel de capítulo; no se copia texto ni se inventa paginación.</td></tr><tr><td>source.horology.original-functional-map</td><td>original-educational</td><td>Blueprint editorial · primer módulo funcional</td><td>—</td><td>Estructura pedagógica, escenas, actividades y explicaciones originales del primer módulo.</td></tr></tbody></table></section>
+<section><h2>Glosario</h2><table><thead><tr><th>ID</th><th>ES</th><th>EN</th><th>Definición</th></tr></thead><tbody><tr><td>term.horology.movement</td><td>movimiento</td><td>movement</td><td>movimiento: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.calibre</td><td>calibre</td><td>calibre</td><td>calibre: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.main-plate</td><td>platina</td><td>main plate</td><td>platina: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.bridge</td><td>puente</td><td>bridge</td><td>puente: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.battery</td><td>pila</td><td>battery / cell</td><td>pila: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.integrated-circuit</td><td>circuito integrado</td><td>integrated circuit</td><td>circuito integrado: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.quartz-resonator</td><td>resonador de cuarzo</td><td>quartz resonator</td><td>resonador de cuarzo: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.coil</td><td>bobina</td><td>coil</td><td>bobina: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.stepper-rotor</td><td>rotor paso a paso</td><td>stepper rotor</td><td>rotor paso a paso: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.gear-train</td><td>tren de ruedas</td><td>gear train</td><td>tren de ruedas: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.wheel</td><td>rueda</td><td>wheel</td><td>rueda: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.pinion</td><td>piñón</td><td>pinion</td><td>piñón: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.arbor</td><td>árbol</td><td>arbor</td><td>árbol: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.pivot</td><td>pivote</td><td>pivot</td><td>pivote: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.jewel</td><td>rubí</td><td>jewel</td><td>rubí: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.mainspring</td><td>muelle real</td><td>mainspring</td><td>muelle real: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.barrel</td><td>barrilete</td><td>barrel</td><td>barrilete: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.escape-wheel</td><td>rueda de escape</td><td>escape wheel</td><td>rueda de escape: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.pallet-fork</td><td>áncora</td><td>pallet fork</td><td>áncora: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.balance-wheel</td><td>volante</td><td>balance wheel</td><td>volante: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.balance-spring</td><td>espiral</td><td>balance spring</td><td>espiral: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.escapement</td><td>escape</td><td>escapement</td><td>escape: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.oscillation</td><td>oscilación</td><td>oscillation</td><td>oscilación: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.frequency</td><td>frecuencia</td><td>frequency</td><td>frecuencia: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.amplitude</td><td>amplitud</td><td>amplitude</td><td>amplitud: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.motion-works</td><td>minutería</td><td>motion works</td><td>minutería: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.stem</td><td>tija</td><td>stem</td><td>tija: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.time-setting</td><td>puesta en hora</td><td>time-setting mechanism</td><td>puesta en hora: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.indication</td><td>indicación</td><td>indication</td><td>indicación: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.transmission</td><td>transmisión</td><td>transmission</td><td>transmisión: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.regulation</td><td>regulación</td><td>regulation</td><td>regulación: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.provenance</td><td>procedencia</td><td>provenance</td><td>procedencia: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.nominal-value</td><td>dato nominal</td><td>nominal value</td><td>dato nominal: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.measurement</td><td>medición</td><td>measurement</td><td>medición: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.inference</td><td>inferencia</td><td>inference</td><td>inferencia: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr><tr><td>term.horology.hypothesis</td><td>hipótesis</td><td>hypothesis</td><td>hipótesis: término usado en el módulo según su función y contexto; su alcance técnico se conserva separado de las simplificaciones educativas.</td></tr></tbody></table></section>
+<section><h2>Recursos visuales</h2><table><thead><tr><th>ID</th><th>Tipo</th><th>Estado</th><th>Prioridad</th><th>G/K/P</th><th>Modelo actual</th><th>Cardinalidad</th></tr></thead><tbody><tr><td>visual.horology.complete-watch-layers</td><td>conceptual-3d</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>—</td></tr><tr><td>visual.horology.quartz-energy-flow</td><td>energy-flow-diagram</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>—</td></tr><tr><td>visual.horology.miyota2035-structural</td><td>real-movement-3d</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>—</td></tr><tr><td>visual.horology.isa8172-memory-map</td><td>schematic-2d</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>—</td></tr><tr><td>visual.horology.mechanical-energy-flow</td><td>energy-flow-diagram</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>—</td></tr><tr><td>visual.horology.swiss-lever-slow-motion</td><td>kinematic-animation</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>—</td></tr><tr><td>visual.horology.quartz-mechanical-overlay</td><td>overlay-comparison</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>—</td></tr><tr><td>visual.horology.failure-simulation</td><td>error-simulation</td><td>ready</td><td>high</td><td>G2/K2/P0</td><td>yes</td><td>—</td></tr><tr><td>visual.horology.functional-text-alternative</td><td>accessible-text-alternative</td><td>ready</td><td>high</td><td>G1/K2/P0</td><td>yes</td><td>—</td></tr></tbody></table></section>
+<section><h2>Warnings declarados</h2><ul><li>activity.horology.classify-subsystems: Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería.</li><li>activity.horology.order-quartz-chain: Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería.</li><li>activity.horology.identify-time-reference: Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería.</li><li>activity.horology.isa-confidence-map: Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería.</li><li>activity.horology.order-mechanical-chain: Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería.</li><li>activity.horology.identify-escapement-oscillator: Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería.</li><li>activity.horology.match-functional-equivalents: Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería.</li><li>activity.horology.predict-interruption: Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería.</li><li>activity.horology.select-affected-subsystem: Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería.</li><li>activity.horology.justify-hypothesis: Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería.</li></ul></section>
+<section><h2>Diagnósticos</h2><ul><li>Sin diagnósticos.</li></ul></section></body></html>

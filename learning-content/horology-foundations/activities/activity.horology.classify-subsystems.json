@@ -1,0 +1,369 @@
+{
+  "id": "activity.horology.classify-subsystems",
+  "version": "0.5.0",
+  "title": "Comprobar qué hace el tren de ruedas",
+  "sceneIds": [
+    "scene.horology.activity.classify-subsystems"
+  ],
+  "competencyIds": [
+    "competency.horology.identify-functional-subsystems"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.horology.subsystem-classification"
+  ],
+  "rubricId": "rubric.horology.functional-subsystems",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.horology.system",
+    "title": {
+      "es": "Comprobar qué hace el tren de ruedas"
+    },
+    "description": {
+      "es": "Recorre primero la relación entre barrilete, tren y minutería; después comprueba tu idea sin convertir este primer acierto en dominio."
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 8,
+    "activityType": "prediction",
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain"
+    ],
+    "familyIds": [],
+    "subsystem": "train",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "viewport.overlay.arrows",
+      "viewport.energy-route",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Representación educativa normalizada; no expresa dimensiones ni física validada."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Simulación educativa: no constituye diagnóstico físico ni validación de ingeniería."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.horology.original-functional-map",
+      "source.horology.private-book.functional-systems"
+    ],
+    "visualResourceIds": [],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.horology.classify-subsystems.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Vuelve al objetivo de «Comprobar qué hace el tren de ruedas»: Recorre primero la relación entre barrilete, tren y minutería; después comprueba tu idea sin convertir este primer acierto en dominio. Escribe primero qué resultado concreto tendrías que observar.",
+            "en": "Vuelve al objetivo de «Comprobar qué hace el tren de ruedas»: Recorre primero la relación entre barrilete, tren y minutería; después comprueba tu idea sin convertir este primer acierto en dominio. Escribe primero qué resultado concreto tendrías que observar."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.horology.classify-subsystems.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "En «Comprobar qué hace el tren de ruedas», limita la búsqueda al tren de ruedas. Separa las piezas que participan de las que solo están próximas en la vista.",
+            "en": "En «Comprobar qué hace el tren de ruedas», limita la búsqueda al tren de ruedas. Separa las piezas que participan de las que solo están próximas en la vista."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.horology.classify-subsystems.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Usa el criterio «Identificar subsistemas funcionales»: anota quién inicia el cambio, quién recibe el efecto y qué relación permite transmitirlo.",
+            "en": "Usa el criterio «Identificar subsistemas funcionales»: anota quién inicia el cambio, quién recibe el efecto y qué relación permite transmitirlo."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.horology.classify-subsystems.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Restaura «Comprobar qué hace el tren de ruedas» y compara un solo estado antes y después. Busca la primera diferencia que apoye o contradiga tu predicción.",
+            "en": "Restaura «Comprobar qué hace el tren de ruedas» y compara un solo estado antes y después. Busca la primera diferencia que apoye o contradiga tu predicción."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.horology.classify-subsystems.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "Para «Comprobar qué hace el tren de ruedas», vuelve a la observación exigida por «Identificar subsistemas funcionales». Descarta respuestas basadas solo en parecido, proximidad o autoridad no citada.",
+            "en": "Para «Comprobar qué hace el tren de ruedas», vuelve a la observación exigida por «Identificar subsistemas funcionales». Descarta respuestas basadas solo en parecido, proximidad o autoridad no citada."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.horology.classify-subsystems.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Revisa tu intento en «Comprobar qué hace el tren de ruedas»: nombra el enlace que faltó, la evidencia que lo corrige y el resultado que te haría cambiar otra vez de conclusión.",
+            "en": "Revisa tu intento en «Comprobar qué hace el tren de ruedas»: nombra el enlace que faltó, la evidencia que lo corrige y el resultado que te haría cambiar otra vez de conclusión."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "answer-submitted",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "compare",
+        "explain",
+        "check-understanding",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "En «Comprobar qué hace el tren de ruedas» has aportado una observación del tren de ruedas que respalda el objetivo «Identificar subsistemas funcionales». Ahora repite el mismo criterio sin ayuda y, cuando corresponda, aplícalo a otro caso.",
+        "en": "En «Comprobar qué hace el tren de ruedas» has aportado una observación del tren de ruedas que respalda el objetivo «Identificar subsistemas funcionales». Ahora repite el mismo criterio sin ayuda y, cuando corresponda, aplícalo a otro caso."
+      },
+      "incorrectDiagnosis": {
+        "es": "En «Comprobar qué hace el tren de ruedas» todavía falta justificar el objetivo «Identificar subsistemas funcionales». Comprueba si confundiste identidad con función, proximidad con contacto, orden visual con orden de montaje o una inferencia con un dato documentado.",
+        "en": "En «Comprobar qué hace el tren de ruedas» todavía falta justificar el objetivo «Identificar subsistemas funcionales». Comprueba si confundiste identidad con función, proximidad con contacto, orden visual con orden de montaje o una inferencia con un dato documentado."
+      },
+      "causalQuestion": {
+        "es": "En «Comprobar qué hace el tren de ruedas», ¿qué elemento inicia el cambio, mediante qué relación se transmite y qué resultado observable confirmaría tu explicación?",
+        "en": "En «Comprobar qué hace el tren de ruedas», ¿qué elemento inicia el cambio, mediante qué relación se transmite y qué resultado observable confirmaría tu explicación?"
+      },
+      "nextObservation": {
+        "es": "Restaura la escena de «Comprobar qué hace el tren de ruedas», aísla el tren de ruedas y compara un único estado antes y después. Anota también la fuente o el límite que permite interpretar el cambio.",
+        "en": "Restaura la escena de «Comprobar qué hace el tren de ruedas», aísla el tren de ruedas y compara un único estado antes y después. Anota también la fuente o el límite que permite interpretar el cambio."
+      },
+      "misconceptionIds": [
+        "misconception.horology.near-means-connected",
+        "misconception.horology.train-is-energy-source"
+      ],
+      "transferPrompt": {
+        "es": "¿Cómo aplicarías el criterio de «Comprobar qué hace el tren de ruedas» a otro movimiento o a una decisión de diseño propio sin suponer que la geometría es idéntica?",
+        "en": "¿Cómo aplicarías el criterio de «Comprobar qué hace el tren de ruedas» a otro movimiento o a una decisión de diseño propio sin suponer que la geometría es idéntica?"
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Comprobar qué hace el tren de ruedas», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Comprobar qué hace el tren de ruedas», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "En «Comprobar qué hace el tren de ruedas», ¿qué elemento inicia el cambio, mediante qué relación se transmite y qué resultado observable confirmaría tu explicación?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Restaura la escena de «Comprobar qué hace el tren de ruedas», aísla el tren de ruedas y compara un único estado antes y después. Anota también la fuente o el límite que permite interpretar el cambio."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Comprobar qué hace el tren de ruedas»."
+          },
+          {
+            "es": "Sigue la relación causal declarada en la lección y conserva su fuente o límite."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "En «Comprobar qué hace el tren de ruedas» has aportado una observación del tren de ruedas que respalda el objetivo «Identificar subsistemas funcionales». Ahora repite el mismo criterio sin ayuda y, cuando corresponda, aplícalo a otro caso."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Comprobar qué hace el tren de ruedas» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Comprobar qué hace el tren de ruedas» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Comprobar qué hace el tren de ruedas» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "¿Cómo aplicarías el criterio de «Comprobar qué hace el tren de ruedas» a otro movimiento o a una decisión de diseño propio sin suponer que la geometría es idéntica?"
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La conclusión responde al objetivo «Comprobar qué hace el tren de ruedas» con una relación observable."
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "En «Comprobar qué hace el tren de ruedas» todavía falta justificar el objetivo «Identificar subsistemas funcionales». Comprueba si confundiste identidad con función, proximidad con contacto, orden visual con orden de montaje o una inferencia con un dato documentado."
+        },
+        {
+          "es": "La respuesta describe apariencia o autoridad, pero no la relación que produce el resultado."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "¿Cómo aplicarías el criterio de «Comprobar qué hace el tren de ruedas» a otro movimiento o a una decisión de diseño propio sin suponer que la geometría es idéntica?"
+        }
+      },
+      "transferPrompt": {
+        "es": "¿Cómo aplicarías el criterio de «Comprobar qué hace el tren de ruedas» a otro movimiento o a una decisión de diseño propio sin suponer que la geometría es idéntica?"
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [
+        "concept.horology.functional-chain"
+      ],
+      "practicesConceptIds": [
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "assessesConceptIds": [
+        "concept.horology.functional-chain"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.horology.system",
+        "blockId": "block.horology.system",
+        "conceptIds": [
+          "concept.horology.part-language",
+          "concept.horology.functional-chain"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La actividad acredita comprensión o ejecución dentro de una simulación educativa. No acredita destreza manual, ajuste físico, lubricación, desgaste ni validación de ingeniería."
+      }
+    }
+  }
+}

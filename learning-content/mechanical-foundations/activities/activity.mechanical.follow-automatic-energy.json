@@ -1,0 +1,387 @@
+{
+  "id": "activity.mechanical.follow-automatic-energy",
+  "version": "0.5.0",
+  "title": "Seguir la carga automática",
+  "sceneIds": [
+    "scene.practice.mechanical.follow-automatic-energy"
+  ],
+  "competencyIds": [
+    "competency.mechanical.explain-automatic-winding"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.mechanical.explain-automatic-winding"
+  ],
+  "rubricId": "rubric.mechanical.explain-automatic-winding",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.mechanical.automatic-calendar",
+    "title": {
+      "es": "Seguir la carga automática",
+      "en": "Seguir la carga automática"
+    },
+    "description": {
+      "es": "Seguir la carga automática mediante el laboratorio funcional, cálculos declarados, evidencia y restauración.",
+      "en": "Seguir la carga automática mediante el laboratorio funcional, cálculos declarados, evidencia y restauración."
+    },
+    "difficulty": "advanced",
+    "durationMinutes": 14,
+    "activityType": "guided-practice",
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "familyIds": [
+      "conceptual-mechanical"
+    ],
+    "subsystem": "automatic",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+        "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+        "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Modelo normalizado: no es física ni servicio de un calibre real.",
+        "El 8215 solo aporta comparación estructural documentada."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.horology.private-book.mainsprings",
+      "source.horology.private-book.movement-design",
+      "source.horology.original-mechanical-foundations"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.automatic-calendar"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.mechanical.follow-automatic-energy.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Qué cadena describe la carga automática de forma funcional?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.follow-automatic-energy.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Sigue un enlace cada vez desde el rotor hacia el barrilete."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.follow-automatic-energy.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: El rotor es una entrada de energía al sistema de carga, no la fuente temporal ni la indicación."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.follow-automatic-energy.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.follow-automatic-energy.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "El rotor es una entrada de energía al sistema de carga, no la fuente temporal ni la indicación."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.follow-automatic-energy.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Compara el punto de convergencia con la cuerda manual."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "mechanical-lab-command",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "automatic",
+      "commands": [
+        "enable-automatic",
+        "disable-automatic",
+        "advance-calendar",
+        "introduce-fault",
+        "inspect",
+        "restore"
+      ],
+      "viewModes": [
+        "normal",
+        "schematic",
+        "energy-flow",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "El rotor es una entrada de energía al sistema de carga, no la fuente temporal ni la indicación."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «Rotor → esfera → agujas → muelle espiral» y «Calendario → escape → rotor → puente» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Qué cadena describe la carga automática de forma funcional?"
+      },
+      "nextObservation": {
+        "es": "Sigue un enlace cada vez desde el rotor hacia el barrilete."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Compara el punto de convergencia con la cuerda manual."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.explain-keyless",
+        "concept.mechanical.explain-automatic-winding"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Seguir la carga automática», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Seguir la carga automática», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué cadena describe la carga automática de forma funcional?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Sigue un enlace cada vez desde el rotor hacia el barrilete."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Seguir la carga automática»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: El rotor es una entrada de energía al sistema de carga, no la fuente temporal ni la indicación."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "El rotor es una entrada de energía al sistema de carga, no la fuente temporal ni la indicación."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Seguir la carga automática» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Seguir la carga automática» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Seguir la carga automática» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Compara el punto de convergencia con la cuerda manual."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "Movimiento del rotor → transmisión automática → cambio del estado de carga del barrilete"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Rotor → esfera → agujas → muelle espiral"
+        },
+        {
+          "es": "Calendario → escape → rotor → puente"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Compara el punto de convergencia con la cuerda manual."
+        }
+      },
+      "transferPrompt": {
+        "es": "Compara el punto de convergencia con la cuerda manual."
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "worked-example",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.mechanical.explain-keyless"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [
+        "concept.mechanical.explain-automatic-winding"
+      ],
+      "practicesConceptIds": [
+        "concept.mechanical.explain-automatic-winding"
+      ],
+      "assessesConceptIds": [
+        "concept.mechanical.explain-automatic-winding"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "full",
+      "remediation": {
+        "lessonId": "lesson.mechanical.automatic-calendar",
+        "blockId": "block.mechanical.automatic-calendar",
+        "conceptIds": [
+          "concept.mechanical.explain-automatic-winding"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba comprensión dentro de un modelo mecánico conceptual geometría conceptual y secuencia educativa, sin simulación física. No demuestra física validada, destreza manual ni capacidad de servicio sobre un calibre real.",
+        "en": "This activity checks understanding in a geometría conceptual y secuencia educativa, sin simulación física conceptual mechanical model. It does not demonstrate validated physics, manual skill, or the ability to service a real calibre."
+      }
+    }
+  }
+}

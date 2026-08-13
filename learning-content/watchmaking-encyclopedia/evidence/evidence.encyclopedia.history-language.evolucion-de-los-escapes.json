@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.history-language.evolucion-de-los-escapes",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.history-language.evolucion-de-los-escapes",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.history-language.evolucion-de-los-escapes",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.history-language.evolucion-de-los-escapes",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.history-language.evolucion-de-los-escapes"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.history-language.evolucion-de-los-escapes",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

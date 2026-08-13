@@ -1,0 +1,28 @@
+{
+  "id": "competency.mechanical.determine-rotation-direction",
+  "version": "0.5.0",
+  "title": "Determinar sentidos de giro",
+  "description": "Determinar sentidos de giro mediante un laboratorio conceptual, evidencia y límites de fidelidad explícitos.",
+  "prerequisites": [
+    "competency.mechanical.calculate-simple-ratios"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Determinar sentidos de giro",
+      "en": "Determinar sentidos de giro"
+    },
+    "description": {
+      "es": "Determinar sentidos de giro; el tiempo y las adaptaciones accesibles no penalizan.",
+      "en": "Determinar sentidos de giro; el tiempo y las adaptaciones accesibles no penalizan."
+    },
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "subsystem": "gear-pair",
+    "skillType": "knowledge",
+    "sourceIds": [
+      "source.horology.original-mechanical-foundations"
+    ]
+  }
+}

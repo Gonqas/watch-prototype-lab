@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+  "version": "1.1.0",
+  "title": "Herramientas de mano, ajuste y afilado",
+  "blockIds": [
+    "block.encyclopedia.workshop-tools-materials.herramientas-y-afilado"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.workshop-tools-materials.herramientas-y-afilado"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Herramientas de mano, ajuste y afilado",
+      "en": "Herramientas de mano, ajuste y afilado"
+    },
+    "purpose": {
+      "es": "¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?",
+      "en": "¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Herramientas de mano, ajuste y afilado mediante relaciones causales.",
+        "en": "Explicar Herramientas de mano, ajuste y afilado mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+      "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+      "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.ajuste-de-herramienta",
+      "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.angulo-de-desprendimiento",
+      "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.rebaba"
+    ],
+    "sourceIds": [
+      "source.private.daniels.hand-tools",
+      "source.private.daniels.finishing-metals",
+      "source.institutional.wostep.watchmaker"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.ajuste-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.angulo-de-desprendimiento",
+        "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.rebaba"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1178,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.workshop-tools-materials.herramientas-y-afilado"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: ajuste de herramienta, ángulo de desprendimiento, rebaba.",
+          "en": "Defino con mis palabras: ajuste de herramienta, ángulo de desprendimiento, rebaba."
+        },
+        {
+          "es": "Describo «Herramientas de mano, ajuste y afilado» con condición inicial, controles, punto de parada y comprobación final.",
+          "en": "Describo «Herramientas de mano, ajuste y afilado» con condición inicial, controles, punto de parada y comprobación final."
+        },
+        {
+          "es": "Distingo qué parte de «Herramientas de mano, ajuste y afilado» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Herramientas de mano, ajuste y afilado» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Documenta el ajuste de una punta a una ranura de práctica con medidas, fotos y criterio de rechazo, sin intervenir una pieza del reloj.",
+          "en": "Aplico el criterio a esta variante: Documenta el ajuste de una punta a una ranura de práctica con medidas, fotos y criterio de rechazo, sin intervenir una pieza del reloj."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Herramientas de mano, ajuste y afilado» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Herramientas de mano, ajuste y afilado» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.ajuste-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.angulo-de-desprendimiento",
+        "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.rebaba"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?",
+          "en": "¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?"
+        },
+        {
+          "es": "¿Qué relación causal de «Herramientas de mano, ajuste y afilado» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Herramientas de mano, ajuste y afilado» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

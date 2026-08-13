@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Acoplamiento de minutería y ajuste manual",
+    "en": "Repasar Acoplamiento de minutería y ajuste manual"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 408,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion"
+  ],
+  "required": false
+}

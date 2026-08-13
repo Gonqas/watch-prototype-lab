@@ -1,0 +1,70 @@
+{
+  "id": "concept.capstone.design.controlled-modification",
+  "version": "1.0.0",
+  "title": {
+    "es": "Modificación arquitectónica controlada",
+    "en": "Modificación arquitectónica controlada"
+  },
+  "summary": {
+    "es": "¿Qué evidencia permite superar la puerta de modificación arquitectónica controlada?",
+    "en": "¿Qué evidencia permite superar la puerta de modificación arquitectónica controlada?"
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.capstone.design.external-components"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.capstone.design.external-components",
+    "concept.capstone.design.own-movement"
+  ],
+  "competencyIds": [
+    "competency.capstone.design.controlled-modification"
+  ],
+  "movementIds": [],
+  "subsystem": "personal-design-architecture",
+  "routeIds": [
+    "route.capstone.personal-watch-design"
+  ],
+  "activityIds": [
+    "activity.capstone.design.controlled-modification"
+  ],
+  "sourceIds": [
+    "source.iso.14253-1",
+    "source.eta.6497-2.communication",
+    "source.miyota.8215.official"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Qué evidencia permite superar la puerta de modificación arquitectónica controlada?",
+    "en": "¿Qué evidencia permite superar la puerta de modificación arquitectónica controlada?"
+  },
+  "technicalLanguage": {
+    "es": "## El propósito de esta puerta\n\nModificar una función o relación manteniendo línea base, hipótesis, impactos, reversibilidad y comparación verificable. Diseñar un reloj propio no consiste en saltar directamente a dibujar puentes. Es una progresión de autoridad: primero se integra un movimiento adquirido sin cambiar su arquitectura; después se estudian modificaciones controladas con interfaces y pruebas; finalmente se propone un movimiento propio. Cada nivel conserva lo aprendido en el anterior y añade incertidumbre, dependencia y responsabilidad.\n\nLa puerta **Modificación arquitectónica controlada** no premia la cantidad de imágenes ni la sofisticación del diseño asistido por ordenador. Decide si existe información suficiente para comprometer tiempo, material y riesgo en la fase siguiente. Su expediente debe permitir que otra persona reconstruya qué se decidió, qué alternativas se descartaron, con qué evidencia, qué sigue abierto y qué resultado obligaría a volver atrás.\n\n## Entradas que deben estar fijadas\n\n- **Ensamblaje de referencia:** Identidad, revisión, estado y evidencia inicial.\n- **Necesidad de cambio:** Problema observado, resultado buscado y límites.\n\nEn **Modificación arquitectónica controlada**, una entrada incierta —por ejemplo, **Ensamblaje de referencia**— se marca con responsable, plan de resolución y fecha. Si cambia la comunicación del fabricante, la unidad medida o el pliego, el registro identifica qué decisiones de esta puerta quedan afectadas. Así una cifra copiada no se convierte silenciosamente en arquitectura del proyecto.\n\n## Interfaces y restricciones\n\n- **Frontera del cambio:** Piezas, relaciones y estados que pueden variar.\n- **Dependencias afectadas:** Apoyos, engranes, alturas, energía, montaje y servicio.\n\n- **Reversibilidad técnica:** Conservar línea base y forma de retorno cuando sea físicamente posible.\n- **Sin mutación silenciosa:** La propuesta no cambia modelo didáctico, CAD ni proyecto hasta aprobación explícita.\n\nPara superar **Modificación arquitectónica controlada**, trata cada interfaz —empezando por **Frontera del cambio**— como un contrato de geometría, posición, movimiento, carga, material, montaje, servicio y verificación. Dos componentes pueden caber por separado y resultar incompatibles al apilar tolerancias. Revisa qué controla la interfaz, qué variación admite, cómo se monta, cómo se inspecciona y qué ocurre cuando falla.\n\n## Alternativas y decisión\n\nLa puerta **Modificación arquitectónica controlada** exige al menos **3 alternativas reales**. No cuentan como alternativas la misma solución con otro color: deben cambiar arquitectura, proceso, interfaz o estrategia de validación. La matriz separa requisitos obligatorios de preferencias, usa unidades cuando existen y conserva incertidumbre. Una opción que incumple un requisito bloqueante de esta fase no se rescata sumando ventajas estéticas.\n\nLas preguntas de puerta son:\n\n- ¿Qué observación demuestra la necesidad del cambio?\n- ¿Qué dependencias podrían producir el mismo efecto?\n- ¿Qué evidencia obligaría a volver a la línea base?\n\nLa decisión de **Modificación arquitectónica controlada** registra autor, fecha, configuración, alternativas, criterios, evidencia, riesgos y condiciones de reapertura. Su objetivo no es eliminar toda incertidumbre, sino impedir que una incertidumbre crítica de esta puerta quede disfrazada de decisión cerrada.\n\n## Entregables y verificación\n\n- **Expediente de modificación:** Motivo, alternativa, piezas, relaciones, toler",
+    "en": "## El propósito de esta puerta\n\nModificar una función o relación manteniendo línea base, hipótesis, impactos, reversibilidad y comparación verificable. Diseñar un reloj propio no consiste en saltar directamente a dibujar puentes. Es una progresión de autoridad: primero se integra un movimiento adquirido sin cambiar su arquitectura; después se estudian modificaciones controladas con interfaces y pruebas; finalmente se propone un movimiento propio. Cada nivel conserva lo aprendido en el anterior y añade incertidumbre, dependencia y responsabilidad.\n\nLa puerta **Modificación arquitectónica controlada** no premia la cantidad de imágenes ni la sofisticación del diseño asistido por ordenador. Decide si existe información suficiente para comprometer tiempo, material y riesgo en la fase siguiente. Su expediente debe permitir que otra persona reconstruya qué se decidió, qué alternativas se descartaron, con qué evidencia, qué sigue abierto y qué resultado obligaría a volver atrás.\n\n## Entradas que deben estar fijadas\n\n- **Ensamblaje de referencia:** Identidad, revisión, estado y evidencia inicial.\n- **Necesidad de cambio:** Problema observado, resultado buscado y límites.\n\nEn **Modificación arquitectónica controlada**, una entrada incierta —por ejemplo, **Ensamblaje de referencia**— se marca con responsable, plan de resolución y fecha. Si cambia la comunicación del fabricante, la unidad medida o el pliego, el registro identifica qué decisiones de esta puerta quedan afectadas. Así una cifra copiada no se convierte silenciosamente en arquitectura del proyecto.\n\n## Interfaces y restricciones\n\n- **Frontera del cambio:** Piezas, relaciones y estados que pueden variar.\n- **Dependencias afectadas:** Apoyos, engranes, alturas, energía, montaje y servicio.\n\n- **Reversibilidad técnica:** Conservar línea base y forma de retorno cuando sea físicamente posible.\n- **Sin mutación silenciosa:** La propuesta no cambia modelo didáctico, CAD ni proyecto hasta aprobación explícita.\n\nPara superar **Modificación arquitectónica controlada**, trata cada interfaz —empezando por **Frontera del cambio**— como un contrato de geometría, posición, movimiento, carga, material, montaje, servicio y verificación. Dos componentes pueden caber por separado y resultar incompatibles al apilar tolerancias. Revisa qué controla la interfaz, qué variación admite, cómo se monta, cómo se inspecciona y qué ocurre cuando falla.\n\n## Alternativas y decisión\n\nLa puerta **Modificación arquitectónica controlada** exige al menos **3 alternativas reales**. No cuentan como alternativas la misma solución con otro color: deben cambiar arquitectura, proceso, interfaz o estrategia de validación. La matriz separa requisitos obligatorios de preferencias, usa unidades cuando existen y conserva incertidumbre. Una opción que incumple un requisito bloqueante de esta fase no se rescata sumando ventajas estéticas.\n\nLas preguntas de puerta son:\n\n- ¿Qué observación demuestra la necesidad del cambio?\n- ¿Qué dependencias podrían producir el mismo efecto?\n- ¿Qué evidencia obligaría a volver a la línea base?\n\nLa decisión de **Modificación arquitectónica controlada** registra autor, fecha, configuración, alternativas, criterios, evidencia, riesgos y condiciones de reapertura. Su objetivo no es eliminar toda incertidumbre, sino impedir que una incertidumbre crítica de esta puerta quede disfrazada de decisión cerrada.\n\n## Entregables y verificación\n\n- **Expediente de modificación:** Motivo, alternativa, piezas, relaciones, toler"
+  },
+  "whyItMatters": {
+    "es": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables.",
+    "en": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables."
+  },
+  "observableActions": [
+    {
+      "es": "Compara alternativas.",
+      "en": "Compara alternativas."
+    },
+    {
+      "es": "Declara interfaces y riesgos.",
+      "en": "Declara interfaces y riesgos."
+    },
+    {
+      "es": "Define evidencia y criterios de parada.",
+      "en": "Define evidencia y criterios de parada."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.capstone.design.own-movement"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

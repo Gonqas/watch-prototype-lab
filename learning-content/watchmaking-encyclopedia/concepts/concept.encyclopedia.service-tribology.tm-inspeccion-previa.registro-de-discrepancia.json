@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.tm-inspeccion-previa.registro-de-discrepancia",
+  "version": "1.1.0",
+  "title": {
+    "es": "registro de discrepancia",
+    "en": "registro de discrepancia"
+  },
+  "summary": {
+    "es": "Anotación trazable entre resultado esperado, observado y autoridad.",
+    "en": "Anotación trazable entre resultado esperado, observado y autoridad."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.matriz-posicion-funcion",
+    "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.prueba-incremental",
+    "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.retroceso-de-corona"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.tm-inspeccion-previa"
+  ],
+  "movementIds": [],
+  "subsystem": "service-baseline",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.tm-inspeccion-previa"
+  ],
+  "sourceIds": [
+    "source.official.tm9-1575.inspection",
+    "source.institutional.awci.standards",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.tm-inspeccion-previa"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+  "plainLanguage": {
+    "es": "Anotación trazable entre resultado esperado, observado y autoridad.",
+    "en": "Anotación trazable entre resultado esperado, observado y autoridad."
+  },
+  "technicalLanguage": {
+    "es": "registro de discrepancia se interpreta mediante la cadena identificar unidad → fotografiar exterior → probar mandos sin forzar → observar marcha → registrar síntomas → definir alcance y las condiciones declaradas en la unidad.",
+    "en": "registro de discrepancia se interpreta mediante la cadena identificar unidad → fotografiar exterior → probar mandos sin forzar → observar marcha → registrar síntomas → definir alcance y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?",
+    "en": "Permite explicar y comprobar ¿qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir registro de discrepancia sin circularidad.",
+      "en": "Definir registro de discrepancia sin circularidad."
+    },
+    {
+      "es": "Relacionar registro de discrepancia con una entrada, una interfaz y una salida.",
+      "en": "Relacionar registro de discrepancia con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

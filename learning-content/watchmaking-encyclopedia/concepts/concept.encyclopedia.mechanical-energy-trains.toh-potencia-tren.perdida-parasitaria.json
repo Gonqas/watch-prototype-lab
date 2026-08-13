@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.toh-potencia-tren.perdida-parasitaria",
+  "version": "1.1.0",
+  "title": {
+    "es": "pérdida parasitaria",
+    "en": "pérdida parasitaria"
+  },
+  "summary": {
+    "es": "Consumo de energía que no contribuye a la función deseada.",
+    "en": "Consumo de energía que no contribuye a la función deseada."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.relacion-de-transmision",
+    "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.tren-compuesto",
+    "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-potencia-tren"
+  ],
+  "movementIds": [],
+  "subsystem": "train",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-potencia-tren"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch05",
+    "source.private.daniels.wheels-pinions",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.toh-potencia-tren"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+  "plainLanguage": {
+    "es": "Consumo de energía que no contribuye a la función deseada.",
+    "en": "Consumo de energía que no contribuye a la función deseada."
+  },
+  "technicalLanguage": {
+    "es": "pérdida parasitaria se interpreta mediante la cadena recibir par → transformar velocidad → vencer fricción de apoyos → transmitir por dientes → acumular pérdidas → entregar margen al escape y las condiciones declaradas en la unidad.",
+    "en": "pérdida parasitaria se interpreta mediante la cadena recibir par → transformar velocidad → vencer fricción de apoyos → transmitir por dientes → acumular pérdidas → entregar margen al escape y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿por qué una relación cinemática correcta puede no mover el escape?",
+    "en": "Permite explicar y comprobar ¿por qué una relación cinemática correcta puede no mover el escape?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir pérdida parasitaria sin circularidad.",
+      "en": "Definir pérdida parasitaria sin circularidad."
+    },
+    {
+      "es": "Relacionar pérdida parasitaria con una entrada, una interfaz y una salida.",
+      "en": "Relacionar pérdida parasitaria con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.improve-virtual-model",
+  "version": "0.1.0",
+  "title": {
+    "es": "Mejorar un modelo virtual"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para formular una corrección versionada sin alterar canon ni CAD."
+  },
+  "kind": "skill",
+  "knowledgeType": "epistemic",
+  "prerequisiteIds": [
+    "concept.metrology.compare-data"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.inspection-findings"
+  ],
+  "competencyIds": [
+    "competency.metrology.identificar-un-hallazgo"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.adoptar-un-valor",
+    "activity.metrology.crear-propuesta"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a formular una corrección versionada sin alterar canon ni CAD sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para formular una corrección versionada sin alterar canon ni CAD."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.final-project"
+  ],
+  "targetEvidenceLevel": "physical-observation",
+  "availability": "available"
+}

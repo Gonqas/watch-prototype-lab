@@ -1,0 +1,43 @@
+{
+  "id": "rubric.advanced.service-disassembly",
+  "version": "1.0.0",
+  "competencyId": "competency.advanced.service-disassembly",
+  "rules": [
+    {
+      "id": "rule.advanced.service-disassembly.demonstrated",
+      "version": "1.0.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.8,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Desmontar por dependencias, no por memoria: una revisión humana confirma causalidad, procedencia, comparación, límites y transferencia."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.advanced.service-disassembly",
+    "version": "1.0.0",
+    "competencyId": "competency.advanced.service-disassembly",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "human-review",
+            "status": "active",
+            "minimumConfidence": 0.8
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

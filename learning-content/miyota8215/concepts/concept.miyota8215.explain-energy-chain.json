@@ -1,0 +1,70 @@
+{
+  "id": "concept.miyota8215.explain-energy-chain",
+  "version": "0.5.0",
+  "title": {
+    "es": "Explicar la cadena energética",
+    "en": "Explicar la cadena energética"
+  },
+  "summary": {
+    "es": "Explicar la cadena energética con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Explicar la cadena energética con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "concept",
+  "prerequisiteIds": [
+    "concept.miyota8215.recognize-subsystems"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.explain-automatic",
+    "concept.miyota8215.explain-winding-setting"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.explain-energy-chain"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "power-source",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.follow-barrel-energy",
+    "activity.miyota8215.compare-barrel-conceptual"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Explicar la cadena energética clasifica la autoridad de la información sobre fuente de energía: oficial, observada, medida, deducida, estimada, educativa o desconocida. Explicar la cadena energética con un modelo estructural, fuentes, operaciones y límites declarados. La conclusión técnica nunca puede tener más autoridad que su fuente.",
+    "en": "Explicar la cadena energética clasifica la autoridad de la información sobre fuente de energía: oficial, observada, medida, deducida, estimada, educativa o desconocida. Explicar la cadena energética con un modelo estructural, fuentes, operaciones y límites declarados. La conclusión técnica nunca puede tener más autoridad que su fuente."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.identify-train"
+  ],
+  "plainLanguage": {
+    "es": "Explicar la cadena energética con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Explicar la cadena energética con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Entender explicar la cadena energética permite razonar sobre el reloj completo y no memorizar piezas aisladas."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega explicar la cadena energética dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema fuente de energía."
+    }
+  ],
+  "misconceptionIds": [],
+  "knowledgeType": "epistemic",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.barrel-energy",
+  "targetEvidenceLevel": "causal-explanation"
+}

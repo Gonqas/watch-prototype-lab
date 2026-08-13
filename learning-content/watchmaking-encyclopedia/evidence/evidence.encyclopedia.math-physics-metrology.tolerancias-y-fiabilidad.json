@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

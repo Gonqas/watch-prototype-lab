@@ -1,0 +1,40 @@
+{
+  "id": "evidence.miyota8215.identify-calibre",
+  "version": "0.5.0",
+  "competencyId": "competency.miyota8215.identify-calibre",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.miyota8215.identify-calibre",
+    "version": "0.5.0",
+    "triggerEventType": "calibre-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.miyota8215.identify-calibre",
+    "packageId": "wplab.horology.miyota8215",
+    "activityIds": [
+      "activity.miyota8215.identify-calibre"
+    ],
+    "evidenceTemplateId": "evidence.miyota8215.identify-calibre",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "instanceId",
+      "authority",
+      "dependencyIds",
+      "toolId",
+      "orientation",
+      "trayZoneId",
+      "verification",
+      "hypothesis",
+      "limitations"
+    ]
+  }
+}

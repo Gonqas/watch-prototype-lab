@@ -1,0 +1,216 @@
+{
+  "id": "lesson.horology.failure-prediction",
+  "version": "0.5.0",
+  "title": "Predicción de fallos",
+  "blockIds": [
+    "block.horology.failure-prediction"
+  ],
+  "activityIds": [
+    "activity.horology.predict-interruption",
+    "activity.horology.select-affected-subsystem",
+    "activity.horology.justify-hypothesis"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Predicción de fallos"
+    },
+    "purpose": {
+      "es": "Formular hipótesis prudentes a partir de interrupciones simbólicas sin diagnosticar una unidad real."
+    },
+    "objectives": [
+      {
+        "es": "Predecir la consecuencia de dos interrupciones."
+      },
+      {
+        "es": "Distinguir síntoma, hipótesis y conclusión."
+      },
+      {
+        "es": "Elegir una comprobación no destructiva y declarar confianza."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.horology.functional-equivalence",
+      "concept.horology.functional-chain"
+    ],
+    "conceptIds": [
+      "concept.horology.system-interruption"
+    ],
+    "sourceIds": [
+      "source.horology.original-functional-map"
+    ],
+    "visualResourceIds": [
+      "visual.horology.failure-simulation",
+      "visual.horology.functional-text-alternative"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Hacer observable qué relaciones dejan de avanzar tras una interrupción educativa."
+      },
+      "visibleConcept": {
+        "es": "Una consecuencia funcional orienta una hipótesis, pero no demuestra una causa física."
+      },
+      "modelReference": "composition.functional-map",
+      "movementIds": [
+        "fixture.miyota.2035.structural",
+        "fixture.miyota.8215.structural"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Vista del modelo pertinente con ruta y estado inicial explícitos.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [
+        "ruta activa",
+        "tramo bloqueado",
+        "etapas posteriores inactivas o desconocidas"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "síntoma",
+        "hipótesis",
+        "dato faltante",
+        "comprobación",
+        "confianza"
+      ],
+      "arrows": [
+        "tramo afectado con estado textual"
+      ],
+      "animations": [
+        "interrupciones reversibles y controladas"
+      ],
+      "timelineIntent": "Aplicar un error, detenerse para predecir, observar y restaurar antes del siguiente caso.",
+      "userInteraction": "Predecir, seleccionar subsistema y completar una justificación estructurada.",
+      "predictionQuestionId": "question.horology.interruption",
+      "observableResult": {
+        "es": "La ruta muestra una consecuencia sin afirmar diagnóstico físico."
+      },
+      "successCriterion": {
+        "es": "Dos predicciones correctas y una hipótesis justificada sin confundirla con conclusión."
+      },
+      "restoration": {
+        "es": "Desactivar cada error y restaurar simultáneamente fixtures, rutas, cámaras y selección."
+      },
+      "textualAlternative": {
+        "es": "Tabla causa simbólica–estado–consecuencia–datos faltantes–opciones."
+      },
+      "reducedMotionAlternative": {
+        "es": "Cambios discretos, ruta numerada y avance manual con la misma evaluación."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K1",
+        "physics": "P0",
+        "limitations": [
+          "Errores simbólicos; sin diagnóstico, fricción, corriente o desgaste físicos."
+        ]
+      },
+      "unknownData": [
+        "causa física real, valores eléctricos, fricción, desgaste y tolerancias"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.horology.failure-simulation",
+        "visual.horology.functional-text-alternative"
+      ]
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "transfer",
+      "entryCheck": "ungraded-diagnostic",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.horology.system-interruption"
+      ],
+      "reinforcesConceptIds": [
+        "concept.horology.functional-equivalence",
+        "concept.horology.functional-chain"
+      ],
+      "bridgeConceptIds": [
+        "concept.horology.functional-equivalence",
+        "concept.horology.functional-chain"
+      ]
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.horology.system-interruption"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "externalPrerequisites": [],
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 699,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "observe",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.horology.predict-interruption",
+        "activity.horology.select-affected-subsystem",
+        "activity.horology.justify-hypothesis"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Predecir la consecuencia de dos interrupciones."
+        },
+        {
+          "es": "Distinguir síntoma, hipótesis y conclusión."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Predicción de fallos», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    }
+  }
+}

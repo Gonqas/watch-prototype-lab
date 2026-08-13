@@ -1,0 +1,122 @@
+{
+  "id": "lesson.metrology.observe-before-measuring",
+  "version": "0.2.0",
+  "title": "Observar antes de medir",
+  "blockIds": [
+    "block.metrology.observe-before-measuring"
+  ],
+  "activityIds": [
+    "activity.metrology.preparar-una-inspeccion",
+    "activity.metrology.separar-observacion-e-hipotesis"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Observar antes de medir"
+    },
+    "purpose": {
+      "es": "Comprender y aplicar cómo separar descripción, identificación e interpretación antes de escoger una magnitud."
+    },
+    "objectives": [
+      {
+        "es": "Explicar cómo separar descripción, identificación e interpretación antes de escoger una magnitud."
+      },
+      {
+        "es": "Reconocer un resultado inválido o insuficiente."
+      },
+      {
+        "es": "Conservar evidencia y alcance."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.metrology.observe-before-measuring"
+    ],
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "orientation",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.metrology.observe-before-measuring"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.metrology.observe-before-measuring"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar tolerancias, exactitudes, calibraciones, diagnósticos ni datos de fabricante."
+        },
+        {
+          "es": "No aprobar propuestas, elevar fidelidad o modificar CAD."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente?"
+        },
+        {
+          "es": "¿Qué método y referencia hacen repetible este resultado?"
+        },
+        {
+          "es": "¿Qué limitación impide generalizarlo?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 712,
+      "requiredSegmentRoles": [
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.metrology.preparar-una-inspeccion",
+        "activity.metrology.separar-observacion-e-hipotesis"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Explicar cómo separar descripción, identificación e interpretación antes de escoger una magnitud."
+        },
+        {
+          "es": "Reconocer un resultado inválido o insuficiente."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Observar antes de medir», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    }
+  }
+}

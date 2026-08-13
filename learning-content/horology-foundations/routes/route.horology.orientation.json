@@ -1,0 +1,234 @@
+{
+  "id": "route.horology.orientation",
+  "version": "0.5.0",
+  "title": {
+    "es": "Orientación funcional relojera"
+  },
+  "purpose": {
+    "es": "Reconocer las cadenas funcionales de cuarzo y mecánica, compararlas sin confundir sus soluciones físicas y razonar sobre interrupciones."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.horology.functional-map"
+  ],
+  "competencyIds": [
+    "competency.horology.identify-functional-subsystems",
+    "competency.horology.explain-quartz-energy-chain",
+    "competency.horology.explain-mechanical-energy-chain",
+    "competency.horology.distinguish-regulation-from-transmission",
+    "competency.horology.predict-system-interruption",
+    "competency.horology.state-source-confidence"
+  ],
+  "movementIds": [
+    "fixture.miyota.2035.structural",
+    "fixture.miyota.8215.structural"
+  ],
+  "difficulty": "introductory",
+  "sourceIds": [
+    "source.miyota.2035.parts-list-exploded-view",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.private-book.functional-systems",
+    "source.horology.original-functional-map"
+  ],
+  "visualResourceIds": [
+    "visual.horology.complete-watch-layers",
+    "visual.horology.quartz-energy-flow",
+    "visual.horology.miyota2035-structural",
+    "visual.horology.isa8172-memory-map",
+    "visual.horology.mechanical-energy-flow",
+    "visual.horology.swiss-lever-slow-motion",
+    "visual.horology.quartz-mechanical-overlay",
+    "visual.horology.failure-simulation",
+    "visual.horology.functional-text-alternative"
+  ],
+  "demo": false,
+  "learningDesign": {
+    "model": "gold-standard",
+    "entryPolicy": "start-from-zero",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.horology.gold.01",
+        "order": 1,
+        "title": {
+          "es": "Reconocer las funciones del reloj"
+        },
+        "outcome": {
+          "es": "Distinguir fuente, control o regulación, transmisión, indicación y estructura."
+        },
+        "lessonId": "lesson.horology.system",
+        "activityId": "activity.horology.classify-subsystems",
+        "mode": "orientation",
+        "evidenceLevel": "recognition",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.horology.functional-chain"
+        ]
+      },
+      {
+        "id": "milestone.horology.gold.05",
+        "order": 2,
+        "title": {
+          "es": "Reconocer escape y oscilador"
+        },
+        "outcome": {
+          "es": "Distinguir transmisión, liberación e impulsos en el modelo mecánico."
+        },
+        "lessonId": "lesson.horology.mechanical-chain",
+        "activityId": "activity.horology.identify-escapement-oscillator",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.horology.mechanical-chain"
+        ]
+      },
+      {
+        "id": "milestone.horology.gold.06",
+        "order": 3,
+        "title": {
+          "es": "Reconstruir la cadena mecánica"
+        },
+        "outcome": {
+          "es": "Ordenar de forma independiente la energía desde el muelle hasta las agujas."
+        },
+        "lessonId": "lesson.horology.mechanical-chain",
+        "activityId": "activity.horology.order-mechanical-chain",
+        "mode": "independent-practice",
+        "evidenceLevel": "independent-simulation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.horology.mechanical-chain"
+        ]
+      },
+      {
+        "id": "milestone.horology.gold.02",
+        "order": 4,
+        "title": {
+          "es": "Seguir la referencia temporal de cuarzo"
+        },
+        "outcome": {
+          "es": "Localizar control electrónico, bobina, rotor paso a paso y transmisión."
+        },
+        "lessonId": "lesson.horology.quartz-chain",
+        "activityId": "activity.horology.identify-time-reference",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.horology.quartz-chain"
+        ]
+      },
+      {
+        "id": "milestone.horology.gold.03",
+        "order": 5,
+        "title": {
+          "es": "Reconstruir la cadena de cuarzo"
+        },
+        "outcome": {
+          "es": "Ordenar de forma independiente la energía y el control hasta la indicación."
+        },
+        "lessonId": "lesson.horology.quartz-chain",
+        "activityId": "activity.horology.order-quartz-chain",
+        "mode": "independent-practice",
+        "evidenceLevel": "independent-simulation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.horology.quartz-chain"
+        ]
+      },
+      {
+        "id": "milestone.horology.gold.07",
+        "order": 6,
+        "title": {
+          "es": "Comparar cuarzo y mecánica"
+        },
+        "outcome": {
+          "es": "Relacionar soluciones distintas que cumplen una función equivalente."
+        },
+        "lessonId": "lesson.horology.functional-equivalence",
+        "activityId": "activity.horology.match-functional-equivalents",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.horology.functional-equivalence"
+        ]
+      },
+      {
+        "id": "milestone.horology.gold.08",
+        "order": 7,
+        "title": {
+          "es": "Predecir una interrupción"
+        },
+        "outcome": {
+          "es": "Anticipar qué deja de ocurrir cuando una relación funcional se bloquea."
+        },
+        "lessonId": "lesson.horology.failure-prediction",
+        "activityId": "activity.horology.predict-interruption",
+        "mode": "guided-practice",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.horology.system-interruption"
+        ]
+      },
+      {
+        "id": "milestone.horology.gold.09",
+        "order": 8,
+        "title": {
+          "es": "Localizar el subsistema afectado"
+        },
+        "outcome": {
+          "es": "Vincular un cambio observable con el subsistema que puede explicarlo."
+        },
+        "lessonId": "lesson.horology.failure-prediction",
+        "activityId": "activity.horology.select-affected-subsystem",
+        "mode": "independent-practice",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.horology.functional-chain"
+        ]
+      },
+      {
+        "id": "milestone.horology.gold.10",
+        "order": 9,
+        "title": {
+          "es": "Justificar una hipótesis comprobable"
+        },
+        "outcome": {
+          "es": "Cerrar el recorrido con una explicación causal, fuentes y límites."
+        },
+        "lessonId": "lesson.horology.failure-prediction",
+        "activityId": "activity.horology.justify-hypothesis",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.horology.system-interruption"
+        ]
+      },
+      {
+        "id": "milestone.horology.gold.04",
+        "order": 10,
+        "title": {
+          "es": "Profundizar en la confianza documental"
+        },
+        "outcome": {
+          "es": "Separar datos documentados, recuerdos e inferencias cuando necesites evaluar una fuente."
+        },
+        "lessonId": "lesson.horology.isa8172-confidence",
+        "activityId": "activity.horology.isa-confidence-map",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": true,
+        "transferTargetIds": [
+          "concept.horology.source-confidence"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": []
+  }
+}

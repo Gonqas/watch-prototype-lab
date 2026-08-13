@@ -1,0 +1,323 @@
+{
+  "id": "activity.metrology.detectar-paralaje",
+  "version": "0.2.0",
+  "title": "Detectar paralaje",
+  "sceneIds": [
+    "scene.metrology.detectar-paralaje"
+  ],
+  "competencyIds": [
+    "competency.metrology.medir-una-pieza-fisica"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.metrology.detectar-paralaje"
+  ],
+  "rubricId": "rubric.metrology.detectar-paralaje",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "active-project-v5-projection"
+  },
+  "authoring": {
+    "lessonId": "lesson.metrology.instruments",
+    "title": {
+      "es": "Detectar paralaje"
+    },
+    "description": {
+      "es": "Práctica independiente para detectar paralaje sobre una unidad o el espécimen sintético, conservando método, evidencia, confianza y límites."
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 12,
+    "activityType": "prediction",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "metrology",
+    "requiredCapabilities": [],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "La práctica registra evidencia; no simula ni certifica comportamiento físico."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "No generalizar una medida de una unidad ni inventar tolerancias."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ],
+    "visualResourceIds": [],
+    "interactionContract": {
+      "responseModel": "structured-response",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [
+        {
+          "id": "field.activity-metrology-detectar-paralaje.observation",
+          "label": {
+            "es": "Observación o resultado transferido"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-detectar-paralaje.method",
+          "label": {
+            "es": "Método y referencia empleados"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-detectar-paralaje.limitation",
+          "label": {
+            "es": "Límite, dato ausente o condición de invalidez"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-detectar-paralaje.confidence",
+          "label": {
+            "es": "Confianza en la conclusión"
+          },
+          "kind": "confidence",
+          "required": true
+        }
+      ],
+      "hints": [
+        {
+          "id": "hint.activity-metrology-detectar-paralaje.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Vuelve a la pregunta del módulo: ¿Qué instrumento responde al mensurando sin dañar, deformar o volver inaccesible la característica?"
+          },
+          "availableAfterAttempts": 0,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.activity-metrology-detectar-paralaje.2",
+          "level": 2,
+          "kind": "comparison",
+          "content": {
+            "es": "Comprueba que transfieres el método, no el dato: Aplica la ficha a una característica interna o a un conjunto montado. El instrumento puede cambiar; la justificación por mensurando y riesgo debe conservarse."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.activity-metrology-detectar-paralaje.3",
+          "level": 3,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Una conclusión limitada posible es: Dos piezas visualmente similares pueden exigir sistemas distintos. La compatibilidad entre mensurando, acceso y contacto precede a cualquier lectura."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "answer-submitted",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": true,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "pedagogicalContract": {
+      "purpose": "independent-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.metrology.instruments"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [
+        "concept.metrology.instruments"
+      ],
+      "practicesConceptIds": [
+        "concept.metrology.instruments"
+      ],
+      "assessesConceptIds": [
+        "concept.metrology.instruments"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "faded",
+      "remediation": {
+        "lessonId": "lesson.metrology.instruments",
+        "blockId": "block.metrology.instruments",
+        "conceptIds": [
+          "concept.metrology.instruments"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La práctica acredita un método documentado dentro de la Academia. No certifica destreza profesional, calibración ni validez industrial."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "En “Detectar paralaje” una respuesta sólida conserva característica, referencia, método, evidencia y alcance."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si en “Detectar paralaje” confundiste resolución con exactitud, observación con hipótesis o una unidad con toda una familia."
+      },
+      "causalQuestion": {
+        "es": "¿Qué decisión de “Detectar paralaje” cambia el resultado y cómo podrías comprobarla?"
+      },
+      "nextObservation": {
+        "es": "Repite “Detectar paralaje” cambiando una sola condición y documenta el efecto."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Aplica el criterio de “Detectar paralaje” a otra pieza sin suponer que comparte geometría o tolerancia."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.metrology.instruments"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar tolerancias, exactitudes, calibraciones, diagnósticos ni datos de fabricante."
+        },
+        {
+          "es": "No aprobar propuestas, elevar fidelidad o modificar CAD."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente?"
+        },
+        {
+          "es": "¿Qué método y referencia hacen repetible este resultado?"
+        },
+        {
+          "es": "¿Qué limitación impide generalizarlo?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué decisión de “Detectar paralaje” cambia el resultado y cómo podrías comprobarla?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Repite “Detectar paralaje” cambiando una sola condición y documenta el efecto."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Detectar paralaje»."
+          },
+          {
+            "es": "Sigue la relación causal declarada en la lección y conserva su fuente o límite."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "En “Detectar paralaje” una respuesta sólida conserva característica, referencia, método, evidencia y alcance."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Detectar paralaje» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Detectar paralaje» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Detectar paralaje» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Aplica el criterio de “Detectar paralaje” a otra pieza sin suponer que comparte geometría o tolerancia."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La conclusión responde al objetivo «Detectar paralaje» con una relación observable."
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Revisa si en “Detectar paralaje” confundiste resolución con exactitud, observación con hipótesis o una unidad con toda una familia."
+        },
+        {
+          "es": "La respuesta describe apariencia o autoridad, pero no la relación que produce el resultado."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Aplica el criterio de “Detectar paralaje” a otra pieza sin suponer que comparte geometría o tolerancia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Aplica el criterio de “Detectar paralaje” a otra pieza sin suponer que comparte geometría o tolerancia."
+      }
+    }
+  }
+}

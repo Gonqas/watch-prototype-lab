@@ -1,0 +1,234 @@
+{
+  "id": "lesson.encyclopedia.mechanical-energy-trains.toh-muelle-par",
+  "version": "1.1.0",
+  "title": "Muelle real: energía, par y curva de entrega",
+  "blockIds": [
+    "block.encyclopedia.mechanical-energy-trains.toh-muelle-par"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-muelle-par"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Muelle real: energía, par y curva de entrega",
+      "en": "Muelle real: energía, par y curva de entrega"
+    },
+    "purpose": {
+      "es": "¿Por qué un muelle con más vueltas no entrega un par constante?",
+      "en": "¿Por qué un muelle con más vueltas no entrega un par constante?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Muelle real: energía, par y curva de entrega mediante relaciones causales.",
+        "en": "Explicar Muelle real: energía, par y curva de entrega mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+      "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+      "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.curva-de-par",
+      "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.numero-de-vueltas-utiles",
+      "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.brida-deslizante"
+    ],
+    "sourceIds": [
+      "source.private.toh.ch04",
+      "source.private.daniels.mainsprings",
+      "source.encyclopedia.original-synthesis"
+    ],
+    "visualResourceIds": [
+      "visual.encyclopedia.mechanical-energy-trains.toh-muelle-par.causal-lab"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Observar y manipular Muelle real: energía, par y curva de entrega después de estudiar su teoría.",
+        "en": "Observar y manipular Muelle real: energía, par y curva de entrega después de estudiar su teoría."
+      },
+      "visibleConcept": {
+        "es": "El muelle real almacena energía al deformarse. Su momento depende de material, sección, longitud, curvatura, enrollamiento y fricción entre espiras y paredes. La zona útil de la curva se elige para evitar extremos de entrega y tensión.",
+        "en": "El muelle real almacena energía al deformarse. Su momento depende de material, sección, longitud, curvatura, enrollamiento y fricción entre espiras y paredes. La zona útil de la curva se elige para evitar extremos de entrega y tensión."
+      },
+      "modelReference": "fixture.conceptual.mechanical-chain",
+      "movementIds": [
+        "movement.conceptual.mechanical-chain"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Encuadre del subsistema barrel con la cadena funcional visible.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0
+      },
+      "energyFlow": [
+        "aplicar cuerda al árbol",
+        "enrollar el muelle",
+        "aumentar energía almacenada",
+        "liberar par al tambor",
+        "vencer pérdidas",
+        "alcanzar fin de reserva"
+      ],
+      "rotationDirections": [],
+      "labels": [
+        "curva de par",
+        "número de vueltas útiles",
+        "brida deslizante"
+      ],
+      "arrows": [
+        "aplicar cuerda al árbol → enrollar el muelle",
+        "enrollar el muelle → aumentar energía almacenada",
+        "aumentar energía almacenada → liberar par al tambor",
+        "liberar par al tambor → vencer pérdidas",
+        "vencer pérdidas → alcanzar fin de reserva"
+      ],
+      "animations": [
+        "wind",
+        "release",
+        "inspect",
+        "restore"
+      ],
+      "timelineIntent": "Avance manual y scrub para separar estados; la reproducción nunca sustituye la explicación causal.",
+      "userInteraction": "Cambiar vista, ejecutar un comando permitido, pausar, inspeccionar y restaurar antes de responder.",
+      "observableResult": {
+        "es": "La persona puede relacionar entradas, estados y salida de Muelle real: energía, par y curva de entrega sin atribuir exactitud física al modelo.",
+        "en": "La persona puede relacionar entradas, estados y salida de Muelle real: energía, par y curva de entrega sin atribuir exactitud física al modelo."
+      },
+      "successCriterion": {
+        "es": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva.",
+        "en": "Reconstruye la secuencia, predice una interrupción y restaura el estado sin ayuda sustantiva."
+      },
+      "restoration": {
+        "es": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial.",
+        "en": "Restaurar elimina todos los cambios educativos y devuelve el fixture a su estado inicial."
+      },
+      "textualAlternative": {
+        "es": "Lista ordenada y navegable: aplicar cuerda al árbol → enrollar el muelle → aumentar energía almacenada → liberar par al tambor → vencer pérdidas → alcanzar fin de reserva. Cada comando dispone de resultado y límite en texto.",
+        "en": "Lista ordenada y navegable: aplicar cuerda al árbol → enrollar el muelle → aumentar energía almacenada → liberar par al tambor → vencer pérdidas → alcanzar fin de reserva. Cada comando dispone de resultado y límite en texto."
+      },
+      "reducedMotionAlternative": {
+        "es": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática.",
+        "en": "Los mismos estados se recorren mediante pasos discretos sin reproducción automática."
+      },
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Representación educativa normalizada; no expresa tolerancias, contacto validado, lubricación ni carga real."
+        ]
+      },
+      "unknownData": [
+        "Dimensiones y fuerzas de un calibre real.",
+        "Pérdidas, elasticidad y tribología cuantitativa."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.encyclopedia.mechanical-energy-trains.toh-muelle-par.causal-lab"
+      ]
+    },
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.curva-de-par",
+        "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.numero-de-vueltas-utiles",
+        "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.brida-deslizante"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1165,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.mechanical-energy-trains.toh-muelle-par"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: curva de par, número de vueltas útiles, brida deslizante.",
+          "en": "Defino con mis palabras: curva de par, número de vueltas útiles, brida deslizante."
+        },
+        {
+          "es": "Sigo «Muelle real: energía, par y curva de entrega» desde aplicar cuerda al árbol hasta alcanzar fin de reserva y explico cada enlace.",
+          "en": "Sigo «Muelle real: energía, par y curva de entrega» desde aplicar cuerda al árbol hasta alcanzar fin de reserva y explico cada enlace."
+        },
+        {
+          "es": "Distingo qué parte de «Muelle real: energía, par y curva de entrega» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Muelle real: energía, par y curva de entrega» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Compara dos diseños manteniendo volumen exterior y declara qué variables cambian.",
+          "en": "Aplico el criterio a esta variante: Compara dos diseños manteniendo volumen exterior y declara qué variables cambian."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Muelle real: energía, par y curva de entrega» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Muelle real: energía, par y curva de entrega» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.curva-de-par",
+        "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.numero-de-vueltas-utiles",
+        "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.brida-deslizante"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Por qué un muelle con más vueltas no entrega un par constante?",
+          "en": "¿Por qué un muelle con más vueltas no entrega un par constante?"
+        },
+        {
+          "es": "¿Qué relación causal de «Muelle real: energía, par y curva de entrega» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Muelle real: energía, par y curva de entrega» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.platinas-puentes-y-jewelling",
+  "version": "1.1.0",
+  "title": "Cuaderno: Platinas, puentes, taladros, escariado y colocación de rubíes",
+  "description": "¿Cómo se crea una estructura que alinee centros y permita montar, ajustar y reparar?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Platinas, puentes, taladros, escariado y colocación de rubíes. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.platinas-puentes-y-jewelling.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se crea una estructura que alinee centros y permita montar, ajustar y reparar?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se crea una estructura que alinee centros y permita montar, ajustar y reparar?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.platinas-puentes-y-jewelling.answer",
+      "instructionMarkdown": "Explica **Platinas, puentes, taladros, escariado y colocación de rubíes** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.platinas-puentes-y-jewelling.explain",
+          "promptMarkdown": "¿Cómo se crea una estructura que alinee centros y permita montar, ajustar y reparar?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.platinas-puentes-y-jewelling.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.platinas-puentes-y-jewelling.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.platinas-puentes-y-jewelling.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.platinas-puentes-y-jewelling.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.platinas-puentes-y-jewelling.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir datums y tren y sigue hasta cerrar puentes y verificar depthing.",
+                "en": "Empieza por definir datums y tren y sigue hasta cerrar puentes y verificar depthing."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.platinas-puentes-y-jewelling.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La platina define referencias; puentes cierran apoyos y fijan alturas. Taladrar, mandrinar y escariar producen funciones diferentes. Los rubíes a presión necesitan alojamiento, interferencia, perpendicularidad y altura controlados. Un error de centro puede no corregirse agrandando el agujero.",
+                "en": "La platina define referencias; puentes cierran apoyos y fijan alturas. Taladrar, mandrinar y escariar producen funciones diferentes. Los rubíes a presión necesitan alojamiento, interferencia, perpendicularidad y altura controlados. Un error de centro puede no corregirse agrandando el agujero."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se crea una estructura que alinee centros y permita montar, ajustar y reparar?",
+              "en": "¿Cómo se crea una estructura que alinee centros y permita montar, ajustar y reparar?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir datums y tren → localizar centros → taladrar con sobrematerial → mandrinar/escariar → instalar rubíes a altura → cerrar puentes y verificar depthing, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir datums y tren → localizar centros → taladrar con sobrematerial → mandrinar/escariar → instalar rubíes a altura → cerrar puentes y verificar depthing, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.platinas-puentes-y-jewelling.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.platinas-puentes-y-jewelling.mechanism",
+            "field.encyclopedia.micromechanics.platinas-puentes-y-jewelling.evidence",
+            "field.encyclopedia.micromechanics.platinas-puentes-y-jewelling.limit",
+            "field.encyclopedia.micromechanics.platinas-puentes-y-jewelling.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

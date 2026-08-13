@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.dentado-y-engranes.linea-de-accion",
+  "version": "1.1.0",
+  "title": {
+    "es": "línea de acción",
+    "en": "línea de acción"
+  },
+  "summary": {
+    "es": "Trayectoria geométrica de las fuerzas de contacto entre perfiles durante el engrane.",
+    "en": "Trayectoria geométrica de las fuerzas de contacto entre perfiles durante el engrane."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.rochete",
+    "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.clic",
+    "concept.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico.reversor-automatico"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.dentado-y-engranes"
+  ],
+  "movementIds": [],
+  "subsystem": "train",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.dentado-y-engranes"
+  ],
+  "sourceIds": [
+    "source.private.daniels.wheels-pinions",
+    "source.private.vba-uhrentechnik",
+    "source.external.eta-swisslab-6497"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.dentado-y-engranes"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+  "plainLanguage": {
+    "es": "Trayectoria geométrica de las fuerzas de contacto entre perfiles durante el engrane.",
+    "en": "Trayectoria geométrica de las fuerzas de contacto entre perfiles durante el engrane."
+  },
+  "technicalLanguage": {
+    "es": "línea de acción se interpreta mediante la cadena diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media y las condiciones declaradas en la unidad.",
+    "en": "línea de acción se interpreta mediante la cadena diente conductor entra → contacto transmite fuerza → punto de contacto progresa → diente sale → siguiente pareja entra → piñón mantiene relación media y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?",
+    "en": "Permite explicar y comprobar ¿qué debe ocurrir entre rueda y piñón para transmitir movimiento con pérdida y error controlados?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir línea de acción sin circularidad.",
+      "en": "Definir línea de acción sin circularidad."
+    },
+    {
+      "es": "Relacionar línea de acción con una entrada, una interfaz y una salida.",
+      "en": "Relacionar línea de acción con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

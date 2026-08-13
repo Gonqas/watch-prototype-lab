@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+  "version": "1.1.0",
+  "title": "Cuaderno: Ruta de diseño: de movimiento adquirido a movimiento propio",
+  "description": "¿Qué progresión convierte conocimiento relojero en capacidad real de crear un reloj desde cero?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Ruta de diseño: de movimiento adquirido a movimiento propio. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué progresión convierte conocimiento relojero en capacidad real de crear un reloj desde cero?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué progresión convierte conocimiento relojero en capacidad real de crear un reloj desde cero?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.answer",
+      "instructionMarkdown": "Explica **Ruta de diseño: de movimiento adquirido a movimiento propio** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.explain",
+          "promptMarkdown": "¿Qué progresión convierte conocimiento relojero en capacidad real de crear un reloj desde cero?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir usuario y requisitos y sigue hasta verificar, revisar e iterar.",
+                "en": "Empieza por definir usuario y requisitos y sigue hasta verificar, revisar e iterar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La progresión comienza integrando un movimiento adquirido sin modificar su función; continúa con esfera, agujas, caja y pruebas; después permite modificar puentes o módulos con interfaces controladas; finalmente diseña fuente, tren, escape, regulador y fabricación propios. Cada etapa exige requisitos, cálculos, prototipos, FMEA, verificación y revisión externa.",
+                "en": "La progresión comienza integrando un movimiento adquirido sin modificar su función; continúa con esfera, agujas, caja y pruebas; después permite modificar puentes o módulos con interfaces controladas; finalmente diseña fuente, tren, escape, regulador y fabricación propios. Cada etapa exige requisitos, cálculos, prototipos, FMEA, verificación y revisión externa."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué progresión convierte conocimiento relojero en capacidad real de crear un reloj desde cero?",
+              "en": "¿Qué progresión convierte conocimiento relojero en capacidad real de crear un reloj desde cero?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir usuario y requisitos → integrar movimiento adquirido → diseñar interfaces propias → modificar arquitectura controlada → prototipar mecanismo propio → verificar, revisar e iterar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir usuario y requisitos → integrar movimiento adquirido → diseñar interfaces propias → modificar arquitectura controlada → prototipar mecanismo propio → verificar, revisar e iterar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.mechanism",
+            "field.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.evidence",
+            "field.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.limit",
+            "field.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

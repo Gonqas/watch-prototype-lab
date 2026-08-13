@@ -1,0 +1,30 @@
+{
+  "id": "competency.miyota8215.verify-partially",
+  "version": "0.5.0",
+  "title": "Verificar parcialmente",
+  "description": "Verificar parcialmente sobre el modelo estructural del MIYOTA 8215 mediante evidencia trazable y límites explícitos.",
+  "prerequisites": [],
+  "authoring": {
+    "title": {
+      "es": "Verificar parcialmente",
+      "en": "Verificar parcialmente"
+    },
+    "description": {
+      "es": "Verificar parcialmente; el tiempo y las adaptaciones accesibles no penalizan.",
+      "en": "Verificar parcialmente; el tiempo y las adaptaciones accesibles no penalizan."
+    },
+    "movementIds": [
+      "fixture.miyota.8215.structural"
+    ],
+    "subsystem": "train",
+    "skillType": "procedure",
+    "sourceIds": [
+      "source.miyota.8215.product-page",
+      "source.miyota.8215.specification",
+      "source.miyota.8215.drawing",
+      "source.miyota.8215.instruction-manual",
+      "source.miyota.8215.parts-list-exploded-view",
+      "source.horology.original-miyota8215"
+    ]
+  }
+}

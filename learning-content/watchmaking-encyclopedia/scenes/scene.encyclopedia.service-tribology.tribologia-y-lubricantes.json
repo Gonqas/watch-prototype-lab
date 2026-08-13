@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.service-tribology.tribologia-y-lubricantes",
+  "version": "1.1.0",
+  "title": "Cuaderno: Tribología, lubricantes y cantidad aplicada",
+  "description": "¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Tribología, lubricantes y cantidad aplicada. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.service-tribology.tribologia-y-lubricantes.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.service-tribology.tribologia-y-lubricantes.answer",
+      "instructionMarkdown": "Explica **Tribología, lubricantes y cantidad aplicada** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.service-tribology.tribologia-y-lubricantes.explain",
+          "promptMarkdown": "¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.service-tribology.tribologia-y-lubricantes.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.tribologia-y-lubricantes.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.tribologia-y-lubricantes.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.tribologia-y-lubricantes.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.service-tribology.tribologia-y-lubricantes.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar interfaz y sigue hasta inspeccionar menisco y función.",
+                "en": "Empieza por identificar interfaz y sigue hasta inspeccionar menisco y función."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.service-tribology.tribologia-y-lubricantes.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La tribología estudia fricción, desgaste y lubricación en contacto. Velocidad, carga, geometría, material, acabado, temperatura y contaminación determinan régimen. Aceites, grasas y recubrimientos no son intercambiables; la cantidad controla menisco y migración. El fabricante gobierna puntos y productos del calibre.",
+                "en": "La tribología estudia fricción, desgaste y lubricación en contacto. Velocidad, carga, geometría, material, acabado, temperatura y contaminación determinan régimen. Aceites, grasas y recubrimientos no son intercambiables; la cantidad controla menisco y migración. El fabricante gobierna puntos y productos del calibre."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?",
+              "en": "¿Cómo se decide si una interfaz necesita lubricante, cuál y cuánto?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar interfaz → consultar procedimiento → limpiar y secar → dosificar producto → montar sin contaminar → inspeccionar menisco y función, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar interfaz → consultar procedimiento → limpiar y secar → dosificar producto → montar sin contaminar → inspeccionar menisco y función, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.service-tribology.tribologia-y-lubricantes.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.service-tribology.tribologia-y-lubricantes.mechanism",
+            "field.encyclopedia.service-tribology.tribologia-y-lubricantes.evidence",
+            "field.encyclopedia.service-tribology.tribologia-y-lubricantes.limit",
+            "field.encyclopedia.service-tribology.tribologia-y-lubricantes.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

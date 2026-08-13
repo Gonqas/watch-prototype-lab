@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.history-language.evolucion-de-los-escapes",
+  "version": "1.1.0",
+  "title": "Cuaderno: Evolución de los escapes y de la regulación",
+  "description": "¿Por qué cambiaron los escapes y qué significa comparar soluciones sin convertir la historia en una lista?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Evolución de los escapes y de la regulación. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.history-language.evolucion-de-los-escapes.scope",
+      "markdown": "**Alcance del estudio:** ¿Por qué cambiaron los escapes y qué significa comparar soluciones sin convertir la historia en una lista?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Por qué cambiaron los escapes y qué significa comparar soluciones sin convertir la historia en una lista?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.history-language.evolucion-de-los-escapes.answer",
+      "instructionMarkdown": "Explica **Evolución de los escapes y de la regulación** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.history-language.evolucion-de-los-escapes.explain",
+          "promptMarkdown": "¿Por qué cambiaron los escapes y qué significa comparar soluciones sin convertir la historia en una lista?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.history-language.evolucion-de-los-escapes.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.evolucion-de-los-escapes.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.evolucion-de-los-escapes.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.evolucion-de-los-escapes.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.history-language.evolucion-de-los-escapes.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por tren entrega par y sigue hasta escape vuelve a bloquear.",
+                "en": "Empieza por tren entrega par y sigue hasta escape vuelve a bloquear."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.history-language.evolucion-de-los-escapes.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El escape dosifica energía al oscilador y convierte su cadencia en avance del tren. Retroceso, fricción, necesidad de aceite, sensibilidad geométrica, facilidad de fabricación y resistencia al uso portátil explican la aparición y persistencia de soluciones distintas. Comparar escape de rueda catalina, cilindro, duplex, detent y áncora suiza requiere criterios funcionales comunes.",
+                "en": "El escape dosifica energía al oscilador y convierte su cadencia en avance del tren. Retroceso, fricción, necesidad de aceite, sensibilidad geométrica, facilidad de fabricación y resistencia al uso portátil explican la aparición y persistencia de soluciones distintas. Comparar escape de rueda catalina, cilindro, duplex, detent y áncora suiza requiere criterios funcionales comunes."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Por qué cambiaron los escapes y qué significa comparar soluciones sin convertir la historia en una lista?",
+              "en": "¿Por qué cambiaron los escapes y qué significa comparar soluciones sin convertir la historia en una lista?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena tren entrega par → escape bloquea → oscilador desengancha → se transmite impulso → escape vuelve a bloquear, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena tren entrega par → escape bloquea → oscilador desengancha → se transmite impulso → escape vuelve a bloquear, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.history-language.evolucion-de-los-escapes.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.history-language.evolucion-de-los-escapes.mechanism",
+            "field.encyclopedia.history-language.evolucion-de-los-escapes.evidence",
+            "field.encyclopedia.history-language.evolucion-de-los-escapes.limit",
+            "field.encyclopedia.history-language.evolucion-de-los-escapes.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

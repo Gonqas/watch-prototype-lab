@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos.buril",
+  "version": "1.1.0",
+  "title": {
+    "es": "buril",
+    "en": "buril"
+  },
+  "summary": {
+    "es": "Herramienta de corte de una punta cuya geometría y apoyo controlan la viruta.",
+    "en": "Herramienta de corte de una punta cuya geometría y apoyo controlan la viruta."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.datum",
+    "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.cadena-de-proceso",
+    "concept.encyclopedia.micromechanics.trazado-medicion-y-sujecion.sobrematerial"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "movementIds": [],
+  "subsystem": "turning",
+  "routeIds": [
+    "route.encyclopedia.micromechanics"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "sourceIds": [
+    "source.private.daniels.turning",
+    "source.private.daniels.hand-tools",
+    "source.institutional.wostep.watchmaker"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+  "plainLanguage": {
+    "es": "Herramienta de corte de una punta cuya geometría y apoyo controlan la viruta.",
+    "en": "Herramienta de corte de una punta cuya geometría y apoyo controlan la viruta."
+  },
+  "technicalLanguage": {
+    "es": "buril se interpreta mediante la cadena preparar centros o superficie → elegir sujeción → alinear apoyo y buril → desbastar → medir sin retirar referencia → acabar y verificar al invertir y las condiciones declaradas en la unidad.",
+    "en": "buril se interpreta mediante la cadena preparar centros o superficie → elegir sujeción → alinear apoyo y buril → desbastar → medir sin retirar referencia → acabar y verificar al invertir y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?",
+    "en": "Permite explicar y comprobar ¿cuándo conviene sujetar en pinza, plato, mandril o entre puntos y qué error domina?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir buril sin circularidad.",
+      "en": "Definir buril sin circularidad."
+    },
+    {
+      "es": "Relacionar buril con una entrada, una interfaz y una salida.",
+      "en": "Relacionar buril con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

@@ -1,0 +1,188 @@
+{
+  "id": "route.encyclopedia.dials-hands-finishing",
+  "version": "1.1.0",
+  "title": {
+    "es": "Esferas, agujas y acabados",
+    "en": "Esferas, agujas y acabados"
+  },
+  "purpose": {
+    "es": "Integrar legibilidad, fabricación, ajuste y decoración sin sacrificar función ni geometría.",
+    "en": "Integrar legibilidad, fabricación, ajuste y decoración sin sacrificar función ni geometría."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+    "module.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+    "module.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+    "module.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado",
+    "module.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+    "module.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+    "competency.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+    "competency.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+    "competency.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado",
+    "competency.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+    "competency.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas"
+  ],
+  "movementIds": [],
+  "difficulty": "advanced",
+  "sourceIds": [
+    "source.private.daniels.engine-turning",
+    "source.private.daniels.casemaking",
+    "source.official.miyota.8215",
+    "source.external.ashton-tracy",
+    "source.encyclopedia.original-synthesis",
+    "source.private.daniels.small-components",
+    "source.official.miyota.2035",
+    "source.private.daniels.finishing-metals",
+    "source.external.naked-watchmaker",
+    "source.institutional.wostep.watchmaker"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.dials-hands-finishing.01",
+        "order": 1,
+        "title": {
+          "es": "Arquitectura de esfera, pies, aberturas e interfaces",
+          "en": "Arquitectura de esfera, pies, aberturas e interfaces"
+        },
+        "outcome": {
+          "es": "¿Cómo se diseña una esfera que se posicione, no roce y comunique una jerarquía legible?",
+          "en": "¿Cómo se diseña una esfera que se posicione, no roce y comunique una jerarquía legible?"
+        },
+        "lessonId": "lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+        "activityId": "activity.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.dials-hands-finishing.arquitectura-de-esfera.pie-de-esfera",
+          "concept.encyclopedia.dials-hands-finishing.arquitectura-de-esfera.plano-de-esfera",
+          "concept.encyclopedia.dials-hands-finishing.arquitectura-de-esfera.jerarquia-de-lectura"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.dials-hands-finishing.02",
+        "order": 2,
+        "title": {
+          "es": "Impresión, índices aplicados y material luminoso",
+          "en": "Impresión, índices aplicados y material luminoso"
+        },
+        "outcome": {
+          "es": "¿Cómo se producen marcas legibles y duraderas sin añadir altura o masa incontroladas?",
+          "en": "¿Cómo se producen marcas legibles y duraderas sin añadir altura o masa incontroladas?"
+        },
+        "lessonId": "lesson.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+        "activityId": "activity.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.tampografia",
+          "concept.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.registro-grafico",
+          "concept.encyclopedia.dials-hands-finishing.impresion-indices-y-lume.luminiscencia"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.dials-hands-finishing.03",
+        "order": 3,
+        "title": {
+          "es": "Agujas: geometría, masa, tubo, ajuste y alturas",
+          "en": "Agujas: geometría, masa, tubo, ajuste y alturas"
+        },
+        "outcome": {
+          "es": "¿Cómo transmite una aguja movimiento y mantiene lectura sin rozar ni soltarse?",
+          "en": "¿Cómo transmite una aguja movimiento y mantiene lectura sin rozar ni soltarse?"
+        },
+        "lessonId": "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+        "activityId": "activity.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.tubo-de-aguja",
+          "concept.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.ajuste-de-agujas",
+          "concept.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.paralelismo-de-agujas"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.dials-hands-finishing.04",
+        "order": 4,
+        "title": {
+          "es": "Pulido, satinado, cepillado y geometría",
+          "en": "Pulido, satinado, cepillado y geometría"
+        },
+        "outcome": {
+          "es": "¿Cómo se crea una textura controlada sin perder forma ni referencias?",
+          "en": "¿Cómo se crea una textura controlada sin perder forma ni referencias?"
+        },
+        "lessonId": "lesson.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado",
+        "activityId": "activity.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.secuencia-abrasiva",
+          "concept.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.direccion-de-grano",
+          "concept.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado.proteccion-de-arista"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.dials-hands-finishing.05",
+        "order": 5,
+        "title": {
+          "es": "Anglage, perlage, Côtes y pulido negro",
+          "en": "Anglage, perlage, Côtes y pulido negro"
+        },
+        "outcome": {
+          "es": "¿Qué geometría y reflexión produce cada decoración y dónde termina la estética y empieza la función?",
+          "en": "¿Qué geometría y reflexión produce cada decoración y dónde termina la estética y empieza la función?"
+        },
+        "lessonId": "lesson.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+        "activityId": "activity.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.anglage",
+          "concept.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.perlage",
+          "concept.encyclopedia.dials-hands-finishing.decoracion-del-movimiento.pulido-negro"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.dials-hands-finishing.06",
+        "order": 6,
+        "title": {
+          "es": "Guilloché, motor de línea recta y motor de rosas",
+          "en": "Guilloché, motor de línea recta y motor de rosas"
+        },
+        "outcome": {
+          "es": "¿Cómo se genera un patrón mediante movimiento guiado y qué diferencia corte real de imitación visual?",
+          "en": "¿Cómo se genera un patrón mediante movimiento guiado y qué diferencia corte real de imitación visual?"
+        },
+        "lessonId": "lesson.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas",
+        "activityId": "activity.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.motor-de-rosas",
+          "concept.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.indexado",
+          "concept.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas.fase-de-patron"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas"
+    ]
+  }
+}

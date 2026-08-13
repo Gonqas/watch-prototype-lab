@@ -1,0 +1,564 @@
+{
+  "id": "scene.horology.activity.order-quartz-chain",
+  "version": "0.5.0",
+  "title": "Ordenar la cadena de cuarzo",
+  "description": "Ordenar la cadena de cuarzo. Comprobación específica, reversible y accesible.",
+  "fixtureBinding": {
+    "kind": "composition",
+    "compositionId": "composition.horology.quartz-chain",
+    "fixtureIds": [
+      "fixture.conceptual.quartz-chain",
+      "fixture.miyota.2035.structural"
+    ],
+    "layout": "split"
+  },
+  "accessibility": {
+    "textualAlternative": "Elementos presentes: cuarzo conceptual y MIYOTA 2035, presentados por separado. Relación y secuencia: fuente de energía → control electrónico → bobina → rotor paso a paso → tren de ruedas → indicación. El estado inicial está disponible; los cambios se anuncian como selección, bloqueo, avance de ruta y restauración. Se puede seleccionar, avanzar, retroceder, pausar y restaurar sin usar la vista tridimensional.",
+    "reducedMotionAlternative": "La misma información se presenta como estados discretos y una lista numerada: fuente de energía → control electrónico → bobina → rotor paso a paso → tren de ruedas → indicación. No hay movimiento automático de cámara ni rotación.",
+    "keyboardActions": [
+      "Tabular por controles y entidades.",
+      "Activar con Intro o Espacio.",
+      "Avanzar y retroceder mediante botones con nombre accesible.",
+      "Restaurar el estado desde el control Restaurar."
+    ],
+    "colorIndependentCues": [
+      "Patrón y grosor distinguen estados.",
+      "Icono y texto acompañan cada color.",
+      "La ruta tiene numeración explícita."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "viewport.overlay.arrows@^1.0.0",
+    "viewport.energy-route@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 900,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "electronic-control"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:1",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 1800,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "coil"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:2",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 2700,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "stepper-rotor"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:3",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 3600,
+      "operation": "overlay",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "value": "segment:4",
+      "durationMs": 450,
+      "essential": false,
+      "waitFor": "interaction"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "energy-path",
+      "id": "overlay.scene.horology.quartz-chain.path",
+      "targets": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "electronic-control"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "coil"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "stepper-rotor"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        },
+        {
+          "selector": {
+            "by": "role",
+            "value": "indication"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "state": "available",
+      "label": "Ruta Cadena del cuarzo",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Ensamblaje R2 con geometría interna normalizada.",
+          "No es un gemelo exacto ni una validación de ingeniería."
+        ]
+      },
+      "accessibleLabel": "Ruta Cadena del cuarzo. Ruta funcional educativa, no simulación física.",
+      "numberedAlternative": [
+        "1. fuente de energía",
+        "2. control electrónico",
+        "3. bobina",
+        "4. rotor paso a paso",
+        "5. tren de ruedas",
+        "6. indicación"
+      ]
+    },
+    {
+      "kind": "rotation",
+      "id": "overlay.scene.horology.quartz-chain.rotation",
+      "target": {
+        "selector": {
+          "by": "role",
+          "value": "coil"
+        },
+        "cardinality": "one-or-more"
+      },
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "direction": "clockwise",
+      "conceptualSpeed": "slow",
+      "state": "available",
+      "label": "Sentido conceptual",
+      "accessibleLabel": "Arco de giro conceptual. En el modo de movimiento reducido se sustituye por una flecha estática."
+    },
+    {
+      "kind": "arrow",
+      "id": "overlay.scene.horology.quartz-chain.arrow",
+      "start": {
+        "kind": "entity",
+        "target": {
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "one-or-more"
+        },
+        "offset": [
+          0,
+          0.2,
+          0
+        ]
+      },
+      "end": {
+        "kind": "entity",
+        "target": {
+          "selector": {
+            "by": "role",
+            "value": "electronic-control"
+          },
+          "cardinality": "one-or-more"
+        },
+        "offset": [
+          0,
+          0.2,
+          0
+        ]
+      },
+      "label": "Relación funcional",
+      "state": "available",
+      "pattern": "dashed",
+      "accessibleLabel": "Flecha funcional desde fuente de energía hacia control electrónico; no expresa una trayectoria física."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.horology.activity.order-quartz-chain.question",
+      "instructionMarkdown": "Ordena la cadena de cuarzo desde la fuente de energía hasta la indicación.",
+      "questions": [
+        {
+          "id": "question.horology.activity.order-quartz-chain",
+          "promptMarkdown": "Ordena la cadena de cuarzo desde la fuente de energía hasta la indicación.",
+          "responseKind": "ordered-list",
+          "options": [
+            {
+              "id": "item.quartz.indication",
+              "label": "indicación",
+              "labels": {
+                "es": "indicación",
+                "en": "indicación"
+              }
+            },
+            {
+              "id": "item.quartz.train",
+              "label": "tren de ruedas",
+              "labels": {
+                "es": "tren de ruedas",
+                "en": "tren de ruedas"
+              }
+            },
+            {
+              "id": "item.quartz.stepper-rotor",
+              "label": "rotor paso a paso",
+              "labels": {
+                "es": "rotor paso a paso",
+                "en": "rotor paso a paso"
+              }
+            },
+            {
+              "id": "item.quartz.coil",
+              "label": "bobina",
+              "labels": {
+                "es": "bobina",
+                "en": "bobina"
+              }
+            },
+            {
+              "id": "item.quartz.electronic-control",
+              "label": "control electrónico",
+              "labels": {
+                "es": "control electrónico",
+                "en": "control electrónico"
+              }
+            },
+            {
+              "id": "item.quartz.power-source",
+              "label": "fuente de energía",
+              "labels": {
+                "es": "fuente de energía",
+                "en": "fuente de energía"
+              }
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.horology.activity.order-quartz-chain.1",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Vuelve a la pregunta de «Ordenar la cadena de cuarzo» y separa primero lo que ya está comprobado de lo que debes decidir."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.activity.order-quartz-chain.2",
+              "level": 2,
+              "kind": "subsystem",
+              "content": {
+                "es": "Centra la observación en la salida de cada etapa y la entrada de la siguiente; no elijas por color, tamaño o proximidad."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.horology.activity.order-quartz-chain.3",
+              "level": 3,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La fuente alimenta el control; el control excita la bobina, el rotor produce pasos y el tren los lleva a la indicación."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "Ordena la cadena de cuarzo desde la fuente de energía hasta la indicación."
+            },
+            "feedback": {
+              "es": "La fuente alimenta el control; el control excita la bobina, el rotor produce pasos y el tren los lleva a la indicación."
+            }
+          }
+        },
+        {
+          "id": "question.horology.activity.order-quartz-chain.reasoning",
+          "promptMarkdown": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: Ordena la cadena de cuarzo desde la fuente de energía hasta la indicación.",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué cambió o qué comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué relación, interfaz o regla explica el resultado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué fuente o límite condiciona la conclusión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: Ordena la cadena de cuarzo desde la fuente de energía hasta la indicación."
+            },
+            "feedback": {
+              "es": "La revisión debe comprobar la relación específica: En «Ordenar la cadena de cuarzo» has aportado una observación de fuente de energía que respalda el objetivo «Explicar la cadena de cuarzo». Ahora repite el mismo criterio sin ayuda y, cuando corresponda, aplícalo a otro caso."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.horology.activity.order-quartz-chain",
+          "expectedOptionIds": [
+            "item.quartz.power-source",
+            "item.quartz.electronic-control",
+            "item.quartz.coil",
+            "item.quartz.stepper-rotor",
+            "item.quartz.train",
+            "item.quartz.indication"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.horology.activity.order-quartz-chain.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    },
+    {
+      "id": "step.horology.activity.order-quartz-chain.explore",
+      "instructionMarkdown": "Explora solo las piezas necesarias para «Ordenar la cadena de cuarzo», explica el resultado y restaura el estado antes de continuar.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Ordenar la cadena de cuarzo"
+    },
+    "purpose": {
+      "es": "Comprobar ordenar la cadena de cuarzo mediante una pregunta propia, observación y explicación."
+    },
+    "prerequisites": [
+      "concept.horology.functional-chain"
+    ],
+    "narrative": {
+      "es": "La fuente alimenta el control; el control excita la bobina, el rotor produce pasos y el tren los lleva a la indicación."
+    },
+    "initialFraming": {
+      "es": "Encuadre general estable con procedencia y fidelidad disponibles bajo demanda."
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "storyboard.step.horology.activity.order-quartz-chain.question",
+        "sceneStepId": "step.horology.activity.order-quartz-chain.question",
+        "narrative": {
+          "es": "Observar la escena y formular una predicción."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "highlight",
+          "pause"
+        ],
+        "interaction": {
+          "es": "Usar los controles de teclado, la lista accesible o la vista tridimensional."
+        },
+        "feedback": {
+          "es": "La corrección distingue la respuesta, su procedencia y las limitaciones del modelo."
+        },
+        "hint": {
+          "es": "La pista se ofrece por niveles y se registra como evidencia de proceso."
+        }
+      },
+      {
+        "id": "storyboard.step.horology.activity.order-quartz-chain.explore",
+        "sceneStepId": "step.horology.activity.order-quartz-chain.explore",
+        "narrative": {
+          "es": "Manipular el estado y explicar el resultado."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "select",
+          "answer",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Usar los controles de teclado, la lista accesible o la vista tridimensional."
+        },
+        "feedback": {
+          "es": "La corrección distingue la respuesta, su procedencia y las limitaciones del modelo."
+        },
+        "hint": {
+          "es": "La pista se ofrece por niveles y se registra como evidencia de proceso."
+        }
+      }
+    ],
+    "ending": {
+      "es": "La escena muestra la evidencia registrada y la regla de evaluación aplicable."
+    },
+    "restoration": {
+      "es": "Restaurar la selección, las piezas visibles, las etiquetas, el encuadre y la secuencia a su estado inicial."
+    },
+    "accessibility": {
+      "es": "Lista funcional equivalente con entidades, relaciones, estados, cambios y controles completos."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos, flechas estáticas numeradas y avance manual con idéntica evaluación."
+    },
+    "evidenceTemplateIds": [
+      "evidence.horology.quartz-sequence",
+      "evidence.horology.hint-use"
+    ],
+    "technicalCriteria": [
+      "Selectores resolubles.",
+      "Restauración idempotente.",
+      "Procedencia y G/K/P conservados."
+    ],
+    "limitations": []
+  },
+  "restorePreviousState": true
+}

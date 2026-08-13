@@ -1,0 +1,57 @@
+{
+  "id": "block.mechanical.escape-oscillator",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Escape y oscilador como sistema",
+  "bodyMarkdown": "## Propósito\n\nExplicar cómo tren, escape y oscilador cooperan sin diagnosticar una causa única.\n\n## Objetivos observables\n\n## Prerrequisitos\n\n## Explicación\n\nEl tren aporta energía; el escape bloquea, libera e impulsa; el oscilador establece el ritmo y recibe reposición energética. Una amplitud baja puede tener múltiples causas. Los casos separan síntoma, hipótesis, prueba y conclusión permitida.\n\n## Interacción y actividad\n\n## Fuentes y alcance de las afirmaciones\n\nEl libro privado se usa como teoría general en los capítulos declarados en la ficha de fuentes; no se copia texto. Cada explicación o cálculo del laboratorio indica si es una síntesis educativa o un resultado calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan el movimiento del modelo conceptual.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nExplicar cómo tren, escape y oscilador cooperan sin diagnosticar una causa única. Continúa con “Minutería e indicación”.\n\n## Palabras y piezas clave\n\n- **Distinguir frecuencia y amplitud.** Distinguir frecuencia y amplitud mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n- **Explicar escape y oscilador como sistema.** Explicar escape y oscilador como sistema mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n- **Diagnosticar una interrupción conceptual.** Diagnosticar una interrupción conceptual mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo forman escape y oscilador un bucle de realimentación en el que ninguno cumple por sí solo las funciones de regular, contar y sostener la oscilación?\n\n## Modelo causal ampliado\n\nEl tren entrega energía a la rueda de escape. El áncora alterna bloqueo y liberación, y transmite impulsos al volante. El volante y la espiral devuelven una oscilación que gobierna cuándo el áncora puede liberar el siguiente diente. La secuencia une dos direcciones causales: energía desde el tren hacia el oscilador e información temporal desde el oscilador hacia la liberación del tren.\n\nPor eso el escape no crea energía y el volante aislado no puede mantener indefinidamente su amplitud. Frecuencia y amplitud describen aspectos distintos: la primera cuenta ciclos por tiempo; la segunda expresa el arco de oscilación. El modelo ordena fases y direcciones con intención educativa, pero no calcula pérdidas, impulso, fricción ni marcha.\n\n## Ejemplo resuelto\n\nCon el tren cargado se bloquea el áncora: la rueda de escape no avanza aunque exista energía aguas arriba. Al liberar una fase, llega un impulso al volante; su retorno permite la siguiente liberación. Si se interrumpe el impulso pero se conserva una oscilación inicial, una representación física esperaría decaimiento, pero esta simulación educativa solo puede declarar que la cadena de sostenimiento se ha roto.\n\n## Práctica deliberada\n\nSigue un ciclo completo con etiquetas. Repite ordenando tarjetas de bloqueo, desbloqueo, impulso y caída. En el intento independiente, comienza desde una fase elegida al azar y predice las dos siguientes, señalando entrada de energía y condición temporal en cada transición.\n\n## Comprobación antes del laboratorio\n\n- Distingues el flujo de energía de la regulación temporal.\n- Ordenas las fases sin saltar del bloqueo al siguiente bloqueo.\n- No atribuyes energía al áncora ni al volante.\n- Expresas qué secuencia explica el modelo y qué comportamiento físico queda fuera.\n\n## Transferencia\n\nCompara este bucle con el control de un cuarzo: encuentra la equivalencia funcional de referencia temporal y explica por qué las piezas y la física no son equivalentes.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo forman escape y oscilador un bucle de realimentación en el que ninguno cumple por sí solo las funciones de regular, contar y sostener la oscilación?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Compara este bucle con el control de un cuarzo: encuentra la equivalencia funcional de referencia temporal y explica por qué las piezas y la física no son equivalentes.\n\n## Lectura técnica de relaciones y límites\n\nAnota cada transición como estado anterior, condición de salida, transferencia de energía y estado posterior. Esta tabla obliga a distinguir una posición de una fase: una captura aislada puede parecer igual y pertenecer a momentos causales distintos. Después etiqueta qué observación necesitarías para hablar de marcha real. Sin medición temporal y física, la secuencia sigue siendo una explicación cinemática educativa.",
+  "claims": [
+    {
+      "id": "claim.mechanical.escape-oscillator",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "Escape y oscilador como sistema se representa mediante un modelo conceptual reversible y no como comportamiento exacto del 8215.",
+      "sourceStatement": "Teoría privada y explicación educativa original; sin reproducción textual ni datos específicos trasladados.",
+      "method": "Modelo declarativo y cálculos deterministas del Sistema 4E",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4e:escape-oscillator:0.1.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-mechanical-foundations",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4E · Fundamentos del reloj mecánico"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Laboratorios, cálculos educativos, explicaciones, actividades y evaluación originales.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.explain-escape-oscillator-system",
+      "concept.mechanical.diagnose-conceptual-interruption"
+    ],
+    "estimatedMinutes": 5,
+    "userPaced": true
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.going-barrel",
+  "version": "1.1.0",
+  "title": {
+    "es": "going barrel",
+    "en": "going barrel"
+  },
+  "summary": {
+    "es": "Arquitectura en la que gira el tambor dentado para impulsar el tren.",
+    "en": "Arquitectura en la que gira el tambor dentado para impulsar el tren."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.curva-de-par",
+    "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.numero-de-vueltas-utiles",
+    "concept.encyclopedia.mechanical-energy-trains.toh-muelle-par.brida-deslizante"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas"
+  ],
+  "movementIds": [],
+  "subsystem": "barrel",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch04",
+    "source.private.chicago.6",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas",
+  "plainLanguage": {
+    "es": "Arquitectura en la que gira el tambor dentado para impulsar el tren.",
+    "en": "Arquitectura en la que gira el tambor dentado para impulsar el tren."
+  },
+  "technicalLanguage": {
+    "es": "going barrel se interpreta mediante la cadena anclar extremo interior → guiar el árbol → contener espiras → cerrar tapa → transmitir al dentado → controlar juego y fricción y las condiciones declaradas en la unidad.",
+    "en": "going barrel se interpreta mediante la cadena anclar extremo interior → guiar el árbol → contener espiras → cerrar tapa → transmitir al dentado → controlar juego y fricción y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué interfaces convierten el muelle real en una fuente de par utilizable?",
+    "en": "Permite explicar y comprobar ¿qué interfaces convierten el muelle real en una fuente de par utilizable?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir going barrel sin circularidad.",
+      "en": "Definir going barrel sin circularidad."
+    },
+    {
+      "es": "Relacionar going barrel con una entrada, una interfaz y una salida.",
+      "en": "Relacionar going barrel con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

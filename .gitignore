@@ -1,0 +1,66 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.venv-cad
+cad-engine/build
+cad-engine/dist
+src-tauri/target
+src-tauri/binaries
+build
+tmp
+release
+.pytest_cache
+**/__pycache__
+.watchlab
+*.spec
+!cad-engine/watchlab-cad.spec
+
+# Local learning/runtime data and private source material
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.bak
+*.backup
+*.wplab
+*.wplab-learning.zip
+*.zip
+*.pdf
+*.iso
+user-data
+backups
+private
+learning-content/**/local-private
+
+# Integrated academy packs are required by the application at build time.
+!learning-content/**/dist/
+!learning-content/**/dist/pack.json
+
+# Curated private reference library (large originals are tracked with Git LFS)
+!reference-library/
+!reference-library/**
+
+# Keep only the curated current release assembled by installer:clean.
+!release/
+!release/**
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

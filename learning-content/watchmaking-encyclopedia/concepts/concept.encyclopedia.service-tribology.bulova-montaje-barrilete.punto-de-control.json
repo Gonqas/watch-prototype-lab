@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.bulova-montaje-barrilete.punto-de-control",
+  "version": "1.1.0",
+  "title": {
+    "es": "punto de control",
+    "en": "punto de control"
+  },
+  "summary": {
+    "es": "Observación o medida obligatoria antes de continuar.",
+    "en": "Observación o medida obligatoria antes de continuar."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.toh-lubricacion-retencion.retencion-capilar",
+    "concept.encyclopedia.service-tribology.toh-lubricacion-retencion.mapa-de-lubricacion",
+    "concept.encyclopedia.service-tribology.toh-lubricacion-retencion.migracion"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.bulova-montaje-barrilete"
+  ],
+  "movementIds": [],
+  "subsystem": "assembly",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.bulova-montaje-barrilete"
+  ],
+  "sourceIds": [
+    "source.private.bulova.09",
+    "source.private.bulova.09a",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.bulova-montaje-barrilete"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.bulova-montaje-barrilete",
+  "plainLanguage": {
+    "es": "Observación o medida obligatoria antes de continuar.",
+    "en": "Observación o medida obligatoria antes de continuar."
+  },
+  "technicalLanguage": {
+    "es": "punto de control se interpreta mediante la cadena verificar limpieza → montar subconjunto → asentar apoyos sin forzar → comprobar libertad → registrar resultado → continuar o detener y las condiciones declaradas en la unidad.",
+    "en": "punto de control se interpreta mediante la cadena verificar limpieza → montar subconjunto → asentar apoyos sin forzar → comprobar libertad → registrar resultado → continuar o detener y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿qué puntos de control impiden ocultar un defecto bajo la siguiente pieza?",
+    "en": "Permite explicar y comprobar ¿qué puntos de control impiden ocultar un defecto bajo la siguiente pieza?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir punto de control sin circularidad.",
+      "en": "Definir punto de control sin circularidad."
+    },
+    {
+      "es": "Relacionar punto de control con una entrada, una interfaz y una salida.",
+      "en": "Relacionar punto de control con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

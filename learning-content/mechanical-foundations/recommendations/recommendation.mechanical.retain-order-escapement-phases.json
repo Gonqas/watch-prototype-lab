@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.mechanical.retain-order-escapement-phases",
+  "version": "0.5.0",
+  "kind": "retention",
+  "title": {
+    "es": "Práctica posterior: ordenar las fases del escape",
+    "en": "Práctica posterior: ordenar las fases del escape"
+  },
+  "reason": {
+    "es": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días.",
+    "en": "Para considerarlo consolidado se exige otra actividad, una nueva sesión, evidencia independiente y al menos siete días."
+  },
+  "rule": "independent-later-evidence-different-activity-session-minimum-7-days@1.0.0",
+  "priority": 66,
+  "target": {
+    "kind": "competency",
+    "id": "competency.mechanical.order-escapement-phases"
+  },
+  "evidenceTemplateIds": [
+    "evidence.mechanical.order-escapement-phases"
+  ],
+  "required": false
+}

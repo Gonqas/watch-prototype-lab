@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

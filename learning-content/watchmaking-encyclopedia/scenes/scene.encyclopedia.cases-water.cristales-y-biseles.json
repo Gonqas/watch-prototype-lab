@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.cases-water.cristales-y-biseles",
+  "version": "1.1.0",
+  "title": "Cuaderno: Cristales, biseles, tensiones y adhesivos",
+  "description": "¿Cómo se retiene un cristal sin dañarlo y qué cambia entre ajuste, junta y adhesivo?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Cristales, biseles, tensiones y adhesivos. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.cases-water.cristales-y-biseles.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se retiene un cristal sin dañarlo y qué cambia entre ajuste, junta y adhesivo?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se retiene un cristal sin dañarlo y qué cambia entre ajuste, junta y adhesivo?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.cases-water.cristales-y-biseles.answer",
+      "instructionMarkdown": "Explica **Cristales, biseles, tensiones y adhesivos** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.cases-water.cristales-y-biseles.explain",
+          "promptMarkdown": "¿Cómo se retiene un cristal sin dañarlo y qué cambia entre ajuste, junta y adhesivo?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.cases-water.cristales-y-biseles.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.cristales-y-biseles.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.cristales-y-biseles.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.cases-water.cristales-y-biseles.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.cases-water.cristales-y-biseles.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar material y retención y sigue hasta verificar asiento y sellado.",
+                "en": "Empieza por identificar material y retención y sigue hasta verificar asiento y sellado."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.cases-water.cristales-y-biseles.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Cristales minerales, zafiro y polímeros difieren en rigidez, dureza, fractura y expansión. Pueden retenerse por interferencia, junta, bisel, aro o adhesivo. Perfil, limpieza, apoyo, concentricidad y carga de prensa son críticos; una cota nominal aislada no define la interferencia real.",
+                "en": "Cristales minerales, zafiro y polímeros difieren en rigidez, dureza, fractura y expansión. Pueden retenerse por interferencia, junta, bisel, aro o adhesivo. Perfil, limpieza, apoyo, concentricidad y carga de prensa son críticos; una cota nominal aislada no define la interferencia real."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se retiene un cristal sin dañarlo y qué cambia entre ajuste, junta y adhesivo?",
+              "en": "¿Cómo se retiene un cristal sin dañarlo y qué cambia entre ajuste, junta y adhesivo?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar material y retención → inspeccionar alojamiento → medir geometría → preparar junta o adhesivo → aplicar carga alineada → verificar asiento y sellado, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar material y retención → inspeccionar alojamiento → medir geometría → preparar junta o adhesivo → aplicar carga alineada → verificar asiento y sellado, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.cases-water.cristales-y-biseles.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.cases-water.cristales-y-biseles.mechanism",
+            "field.encyclopedia.cases-water.cristales-y-biseles.evidence",
+            "field.encyclopedia.cases-water.cristales-y-biseles.limit",
+            "field.encyclopedia.cases-water.cristales-y-biseles.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

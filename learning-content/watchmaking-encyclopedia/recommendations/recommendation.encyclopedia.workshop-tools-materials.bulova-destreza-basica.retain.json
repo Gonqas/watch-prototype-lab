@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.workshop-tools-materials.bulova-destreza-basica.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Pasaporte de banco I: lupa, pinzas y destornillador",
+    "en": "Repasar Pasaporte de banco I: lupa, pinzas y destornillador"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 414,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+  ],
+  "required": false
+}

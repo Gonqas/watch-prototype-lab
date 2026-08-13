@@ -1,0 +1,33 @@
+{
+  "id": "evidence.capstone.manufacturing.plates-bridges",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.manufacturing.plates-bridges",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.manufacturing.plates-bridges",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.capstone.manufacturing.plates-bridges",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.manufacturing.plates-bridges"
+    ],
+    "evidenceTemplateId": "evidence.capstone.manufacturing.plates-bridges",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "sourceIds",
+      "risks",
+      "validation"
+    ]
+  }
+}

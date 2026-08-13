@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Restauración, donantes y fabricación de repuesto",
+    "en": "Repasar Restauración, donantes y fabricación de repuesto"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 416,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto"
+  ],
+  "required": false
+}

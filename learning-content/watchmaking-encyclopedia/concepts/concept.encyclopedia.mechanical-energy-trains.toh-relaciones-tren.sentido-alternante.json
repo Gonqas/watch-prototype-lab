@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.mechanical-energy-trains.toh-relaciones-tren.sentido-alternante",
+  "version": "1.1.0",
+  "title": {
+    "es": "sentido alternante",
+    "en": "sentido alternante"
+  },
+  "summary": {
+    "es": "Inversión del giro producida por cada contacto exterior.",
+    "en": "Inversión del giro producida por cada contacto exterior."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.modulo",
+    "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.distancia-entre-centros",
+    "concept.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.arco-de-conduccion"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.mechanical-energy-trains.toh-relaciones-tren"
+  ],
+  "movementIds": [],
+  "subsystem": "train",
+  "routeIds": [
+    "route.encyclopedia.mechanical-energy-trains"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.mechanical-energy-trains.toh-relaciones-tren"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch05",
+    "source.private.vba-uhrentechnik",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.mechanical-energy-trains.toh-relaciones-tren"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+  "plainLanguage": {
+    "es": "Inversión del giro producida por cada contacto exterior.",
+    "en": "Inversión del giro producida por cada contacto exterior."
+  },
+  "technicalLanguage": {
+    "es": "sentido alternante se interpreta mediante la cadena identificar conductor → identificar conducido → anotar dientes → calcular pareja → multiplicar etapas → comprobar frecuencia y sentido y las condiciones declaradas en la unidad.",
+    "en": "sentido alternante se interpreta mediante la cadena identificar conductor → identificar conducido → anotar dientes → calcular pareja → multiplicar etapas → comprobar frecuencia y sentido y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?",
+    "en": "Permite explicar y comprobar ¿cómo se calcula la frecuencia de una rueda a partir de ruedas y piñones sucesivos?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir sentido alternante sin circularidad.",
+      "en": "Definir sentido alternante sin circularidad."
+    },
+    {
+      "es": "Relacionar sentido alternante con una entrada, una interfaz y una salida.",
+      "en": "Relacionar sentido alternante con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

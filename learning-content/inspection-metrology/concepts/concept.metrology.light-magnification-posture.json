@@ -1,0 +1,58 @@
+{
+  "id": "concept.metrology.light-magnification-posture",
+  "version": "0.1.0",
+  "title": {
+    "es": "Luz, aumento y postura"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para hacer visible una característica sin introducir reflejos, sombras o posturas inestables."
+  },
+  "kind": "concept",
+  "knowledgeType": "quantitative",
+  "prerequisiteIds": [
+    "concept.metrology.observe-before-measuring"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.metrology.seleccionar-luz-y-aumento"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.elegir-iluminacion",
+    "activity.metrology.elegir-aumento"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a hacer visible una característica sin introducir reflejos, sombras o posturas inestables sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para hacer visible una característica sin introducir reflejos, sombras o posturas inestables."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.units-scale-resolution"
+  ],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available"
+}

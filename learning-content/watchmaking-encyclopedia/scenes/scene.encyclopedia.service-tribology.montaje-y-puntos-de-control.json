@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+  "version": "1.1.0",
+  "title": "Cuaderno: Montaje por funciones y puntos de control",
+  "description": "¿Cómo se monta detectando el primer error cuando todavía es reversible?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Montaje por funciones y puntos de control. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.service-tribology.montaje-y-puntos-de-control.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se monta detectando el primer error cuando todavía es reversible?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se monta detectando el primer error cuando todavía es reversible?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.service-tribology.montaje-y-puntos-de-control.answer",
+      "instructionMarkdown": "Explica **Montaje por funciones y puntos de control** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.service-tribology.montaje-y-puntos-de-control.explain",
+          "promptMarkdown": "¿Cómo se monta detectando el primer error cuando todavía es reversible?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.service-tribology.montaje-y-puntos-de-control.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.montaje-y-puntos-de-control.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.montaje-y-puntos-de-control.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.montaje-y-puntos-de-control.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.service-tribology.montaje-y-puntos-de-control.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por preparar piezas y sigue hasta probar antes de siguiente capa.",
+                "en": "Empieza por preparar piezas y sigue hasta probar antes de siguiente capa."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.service-tribology.montaje-y-puntos-de-control.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Montar no es invertir una lista: cada capa debe cerrar una función y superar una comprobación antes de ocultarse. Limpieza, asiento, libertad, juego, engrane, tornillos y lubricación se verifican por subsistema. Restaurar estado entre pruebas evita que una corrección enmascare otra.",
+                "en": "Montar no es invertir una lista: cada capa debe cerrar una función y superar una comprobación antes de ocultarse. Limpieza, asiento, libertad, juego, engrane, tornillos y lubricación se verifican por subsistema. Restaurar estado entre pruebas evita que una corrección enmascare otra."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se monta detectando el primer error cuando todavía es reversible?",
+              "en": "¿Cómo se monta detectando el primer error cuando todavía es reversible?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena preparar piezas → montar subsistema → verificar asiento y libertad → lubricar según orden → cerrar retenedores → probar antes de siguiente capa, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena preparar piezas → montar subsistema → verificar asiento y libertad → lubricar según orden → cerrar retenedores → probar antes de siguiente capa, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.service-tribology.montaje-y-puntos-de-control.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.service-tribology.montaje-y-puntos-de-control.mechanism",
+            "field.encyclopedia.service-tribology.montaje-y-puntos-de-control.evidence",
+            "field.encyclopedia.service-tribology.montaje-y-puntos-de-control.limit",
+            "field.encyclopedia.service-tribology.montaje-y-puntos-de-control.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+  "version": "1.1.0",
+  "title": "Cuaderno: Trazado, referencias, medición y sujeción",
+  "description": "¿Cómo se conserva una referencia geométrica a través de varias operaciones microscópicas?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Trazado, referencias, medición y sujeción. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.trazado-medicion-y-sujecion.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se conserva una referencia geométrica a través de varias operaciones microscópicas?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se conserva una referencia geométrica a través de varias operaciones microscópicas?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.trazado-medicion-y-sujecion.answer",
+      "instructionMarkdown": "Explica **Trazado, referencias, medición y sujeción** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.trazado-medicion-y-sujecion.explain",
+          "promptMarkdown": "¿Cómo se conserva una referencia geométrica a través de varias operaciones microscópicas?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.trazado-medicion-y-sujecion.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.trazado-medicion-y-sujecion.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.trazado-medicion-y-sujecion.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.trazado-medicion-y-sujecion.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.trazado-medicion-y-sujecion.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir función y datum y sigue hasta medir y acabar.",
+                "en": "Empieza por definir función y datum y sigue hasta medir y acabar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.trazado-medicion-y-sujecion.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Fabricar comienza eligiendo datums y orden de operaciones. Trazado, taladro, torneado y fresado deben referirse a superficies controladas. La sujeción aporta rigidez pero puede deformar o marcar. Medir entre operaciones crea realimentación y reserva material para acabado.",
+                "en": "Fabricar comienza eligiendo datums y orden de operaciones. Trazado, taladro, torneado y fresado deben referirse a superficies controladas. La sujeción aporta rigidez pero puede deformar o marcar. Medir entre operaciones crea realimentación y reserva material para acabado."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se conserva una referencia geométrica a través de varias operaciones microscópicas?",
+              "en": "¿Cómo se conserva una referencia geométrica a través de varias operaciones microscópicas?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir función y datum → preparar material → sujetar sin deformar → generar referencia → mecanizar dejando sobrematerial → medir y acabar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir función y datum → preparar material → sujetar sin deformar → generar referencia → mecanizar dejando sobrematerial → medir y acabar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.trazado-medicion-y-sujecion.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.trazado-medicion-y-sujecion.mechanism",
+            "field.encyclopedia.micromechanics.trazado-medicion-y-sujecion.evidence",
+            "field.encyclopedia.micromechanics.trazado-medicion-y-sujecion.limit",
+            "field.encyclopedia.micromechanics.trazado-medicion-y-sujecion.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

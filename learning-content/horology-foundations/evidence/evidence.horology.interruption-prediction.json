@@ -1,0 +1,30 @@
+{
+  "id": "evidence.horology.interruption-prediction",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.predict-system-interruption",
+  "kind": "answer",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.horology.interruption-prediction",
+    "version": "0.5.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "diagnosis",
+    "competencyId": "competency.horology.predict-system-interruption",
+    "packageId": "wplab.horology.functional-map",
+    "activityIds": [
+      "activity.horology.predict-interruption"
+    ],
+    "evidenceTemplateId": "evidence.horology.interruption-prediction",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data"
+    ]
+  }
+}

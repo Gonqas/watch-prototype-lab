@@ -1,0 +1,146 @@
+{
+  "id": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+  "version": "1.1.0",
+  "title": "Observación, óptica y manipulación",
+  "blockIds": [
+    "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Observación, óptica y manipulación",
+      "en": "Observación, óptica y manipulación"
+    },
+    "purpose": {
+      "es": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+      "en": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar Observación, óptica y manipulación mediante relaciones causales.",
+        "en": "Explicar Observación, óptica y manipulación mediante relaciones causales."
+      },
+      {
+        "es": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia.",
+        "en": "Aplicar vocabulario, magnitudes y fuentes sin confundir clases de evidencia."
+      },
+      {
+        "es": "Resolver un caso y transferir el criterio a una variante.",
+        "en": "Resolver un caso y transferir el criterio a una variante."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+      "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+      "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+      "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+      "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+    ],
+    "sourceIds": [
+      "source.private.daniels.hand-tools",
+      "source.external.naked-watchmaker",
+      "source.institutional.awci.standards"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 1097,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Defino con mis palabras: campo de visión, iluminación rasante, manipulación atraumática.",
+          "en": "Defino con mis palabras: campo de visión, iluminación rasante, manipulación atraumática."
+        },
+        {
+          "es": "Separo en «Observación, óptica y manipulación» observación, hipótesis, prueba discriminante y conclusión.",
+          "en": "Separo en «Observación, óptica y manipulación» observación, hipótesis, prueba discriminante y conclusión."
+        },
+        {
+          "es": "Distingo qué parte de «Observación, óptica y manipulación» es un dato, una inferencia y una cuestión todavía abierta.",
+          "en": "Distingo qué parte de «Observación, óptica y manipulación» es un dato, una inferencia y una cuestión todavía abierta."
+        },
+        {
+          "es": "Aplico el criterio a esta variante: Crea una secuencia fotográfica de una pieza no crítica a tres aumentos y dos luces; identifica qué afirmación permite cada vista y cuál sigue pendiente.",
+          "en": "Aplico el criterio a esta variante: Crea una secuencia fotográfica de una pieza no crítica a tres aumentos y dos luces; identifica qué afirmación permite cada vista y cuál sigue pendiente."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Resume «Observación, óptica y manipulación» en una cadena causal, una magnitud, un error y una pregunta pendiente.",
+        "en": "Resume «Observación, óptica y manipulación» en una cadena causal, una magnitud, un error y una pregunta pendiente."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+          "en": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?"
+        },
+        {
+          "es": "¿Qué relación causal de «Observación, óptica y manipulación» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Observación, óptica y manipulación» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.9,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

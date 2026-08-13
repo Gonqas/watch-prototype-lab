@@ -1,0 +1,70 @@
+{
+  "id": "concept.miyota8215.form-hypothesis",
+  "version": "0.5.0",
+  "title": {
+    "es": "Formular hipótesis",
+    "en": "Formular hipótesis"
+  },
+  "summary": {
+    "es": "Formular hipótesis con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Formular hipótesis con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.miyota8215.inspect",
+    "concept.miyota8215.verify-partially"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.miyota8215.form-hypothesis"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "diagnosis",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.identify-affected-subsystem",
+    "activity.miyota8215.form-hypothesis"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Formular hipótesis separa observación, síntoma, hipótesis y comprobación en diagnóstico. Formular hipótesis con un modelo estructural, fuentes, operaciones y límites declarados. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles.",
+    "en": "Formular hipótesis separa observación, síntoma, hipótesis y comprobación en diagnóstico. Formular hipótesis con un modelo estructural, fuentes, operaciones y límites declarados. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.conceptual-diagnosis"
+  ],
+  "plainLanguage": {
+    "es": "Formular hipótesis con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Formular hipótesis con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Dominar formular hipótesis permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega formular hipótesis dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema diagnosis."
+    }
+  ],
+  "misconceptionIds": [
+    "misconception.miyota8215.symptom-is-cause"
+  ],
+  "knowledgeType": "diagnostic",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.diagnosis-project",
+  "targetEvidenceLevel": "transfer"
+}

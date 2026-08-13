@@ -1,0 +1,30 @@
+{
+  "id": "evidence.horology.source-consultation",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.state-source-confidence",
+  "kind": "observation",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.horology.source-consultation",
+    "version": "0.5.0",
+    "triggerEventType": "answer-submitted",
+    "evidenceType": "decision",
+    "competencyId": "competency.horology.state-source-confidence",
+    "packageId": "wplab.horology.functional-map",
+    "activityIds": [
+      "activity.horology.isa-confidence-map"
+    ],
+    "evidenceTemplateId": "evidence.horology.source-consultation",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data"
+    ]
+  }
+}

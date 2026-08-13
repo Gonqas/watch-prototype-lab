@@ -1,0 +1,129 @@
+{
+  "id": "lesson.authoring.traceability",
+  "version": "1.0.0",
+  "title": "Trazabilidad antes de animar",
+  "blockIds": [
+    "explanation.authoring.traceability"
+  ],
+  "activityIds": [
+    "activity.authoring.selector-walkthrough"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Trazabilidad antes de animar",
+      "en": "Traceability before animation"
+    },
+    "purpose": {
+      "es": "Mostrar cómo una intención visual se convierte en selectores, pasos y evidencia verificables.",
+      "en": "Show how a visual intent becomes verifiable selectors, steps and evidence."
+    },
+    "objectives": [
+      {
+        "es": "Distinguir propósito editorial, acción de runtime y criterio de éxito.",
+        "en": "Distinguish editorial purpose, runtime action and success criterion."
+      },
+      {
+        "es": "Comprobar que la escena tiene alternativa textual y de movimiento reducido.",
+        "en": "Verify that the scene has text and reduced-motion alternatives."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "conceptIds": [
+      "concept.authoring.traceability"
+    ],
+    "sourceIds": [
+      "source.authoring.system-contracts",
+      "source.authoring.original-guide"
+    ],
+    "visualResourceIds": [
+      "visual.authoring.selector-scene",
+      "visual.authoring.selector-text-alternative"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Hacer visible que un selector semántico identifica una entidad sin depender del texto mostrado.",
+        "en": "Make visible that a semantic selector identifies an entity without relying on displayed text."
+      },
+      "visibleConcept": {
+        "es": "La continuidad entre intención editorial, selector y evidencia.",
+        "en": "The continuity between editorial intent, selector and evidence."
+      },
+      "modelReference": "active-project-v5-projection",
+      "movementIds": [],
+      "involvedSelectors": [
+        {
+          "selector": {
+            "by": "role",
+            "value": "case"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "initialState": {
+        "cameraIntent": "Encuadre isométrico del proyecto activo; la entidad objetivo se aísla sin modificar el proyecto.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [
+          {
+            "selector": {
+              "by": "role",
+              "value": "case"
+            },
+            "cardinality": "exactly-one"
+          }
+        ],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [],
+      "rotationDirections": [],
+      "labels": [
+        "Selector role:case"
+      ],
+      "arrows": [],
+      "animations": [
+        "Explosionado breve de baja amplitud para evidenciar una acción declarativa."
+      ],
+      "timelineIntent": "Aislar, destacar, realizar un explosionado breve y volver al estado de partida.",
+      "userInteraction": "Predecir el selector correcto, seleccionar la entidad y confirmar.",
+      "predictionQuestionId": "question.authoring.predict-selector",
+      "observableResult": {
+        "es": "La selección queda registrada como evento semántico y el proyecto se restaura.",
+        "en": "The selection is recorded as a semantic event and the project is restored."
+      },
+      "successCriterion": {
+        "es": "La entidad resuelta por role:case se selecciona y se confirma.",
+        "en": "The entity resolved by role:case is selected and confirmed."
+      },
+      "restoration": {
+        "es": "Restaurar selección, aislamiento, explosionado y cámara capturados antes de la escena.",
+        "en": "Restore selection, isolation, exploded state and camera captured before the scene."
+      },
+      "textualAlternative": {
+        "es": "Una lista anuncia la entidad resuelta, su ID y si está seleccionada; todos los pasos tienen botones.",
+        "en": "A list announces the resolved entity, its ID and selection state; every step has buttons."
+      },
+      "reducedMotionAlternative": {
+        "es": "El explosionado se convierte en un cambio de estado inmediato y conserva la explicación textual.",
+        "en": "The exploded animation becomes an immediate state change while keeping the text explanation."
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K1",
+        "physics": "P0",
+        "limitations": [
+          "La geometría pertenece al proyecto activo.",
+          "El movimiento es ilustrativo y no simula física."
+        ]
+      },
+      "unknownData": [
+        "No se requiere ninguna dimensión ni dato interno del movimiento."
+      ],
+      "requiredVisualResourceIds": [
+        "visual.authoring.selector-scene",
+        "visual.authoring.selector-text-alternative"
+      ]
+    }
+  }
+}
+

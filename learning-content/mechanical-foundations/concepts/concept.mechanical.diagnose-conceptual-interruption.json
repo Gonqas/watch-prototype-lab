@@ -1,0 +1,61 @@
+{
+  "id": "concept.mechanical.diagnose-conceptual-interruption",
+  "version": "0.5.0",
+  "title": {
+    "es": "Diagnosticar una interrupción conceptual",
+    "en": "Diagnosticar una interrupción conceptual"
+  },
+  "summary": {
+    "es": "Diagnosticar una interrupción conceptual mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Diagnosticar una interrupción conceptual mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.mechanical.explain-basic-calendar"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.diagnose-conceptual-interruption"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "diagnosis",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.predict-escapement-interruption",
+    "activity.mechanical.introduce-fault",
+    "activity.mechanical.formulate-hypothesis"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Diagnosticar una interrupción conceptual mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Diagnosticar una interrupción conceptual mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Diagnosticar una interrupción conceptual separa observación, síntoma, hipótesis y comprobación en diagnóstico. Diagnosticar una interrupción conceptual mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles.",
+    "en": "Diagnosticar una interrupción conceptual separa observación, síntoma, hipótesis y comprobación en diagnóstico. Diagnosticar una interrupción conceptual mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles."
+  },
+  "whyItMatters": {
+    "es": "Dominar diagnosticar una interrupción conceptual permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega diagnosticar una interrupción conceptual dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema diagnosis."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [],
+  "knowledgeType": "diagnostic",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.escape-oscillator",
+  "targetEvidenceLevel": "transfer"
+}

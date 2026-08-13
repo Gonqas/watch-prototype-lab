@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.history-language.toh-instrumentos-principios",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.history-language.toh-instrumentos-principios",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.history-language.toh-instrumentos-principios",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.history-language.toh-instrumentos-principios",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.history-language.toh-instrumentos-principios"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.history-language.toh-instrumentos-principios",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "evidence.capstone.design.controlled-modification",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.design.controlled-modification",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.design.controlled-modification",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.capstone.design.controlled-modification",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.design.controlled-modification"
+    ],
+    "evidenceTemplateId": "evidence.capstone.design.controlled-modification",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "sourceIds",
+      "risks",
+      "validation"
+    ]
+  }
+}

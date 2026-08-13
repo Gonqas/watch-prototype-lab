@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.history-language.industrializacion-y-familias",
+  "version": "1.1.0",
+  "title": "Cuaderno: Industrialización, ébauches y familias de calibres",
+  "description": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Industrialización, ébauches y familias de calibres. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.history-language.industrializacion-y-familias.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.history-language.industrializacion-y-familias.answer",
+      "instructionMarkdown": "Explica **Industrialización, ébauches y familias de calibres** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.history-language.industrializacion-y-familias.explain",
+          "promptMarkdown": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.history-language.industrializacion-y-familias.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.industrializacion-y-familias.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.industrializacion-y-familias.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.industrializacion-y-familias.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.history-language.industrializacion-y-familias.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar firma y referencia y sigue hasta registrar incertidumbre.",
+                "en": "Empieza por identificar firma y referencia y sigue hasta registrar incertidumbre."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.history-language.industrializacion-y-familias.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La industrialización separó diseño, fabricación de componentes, ensamblaje, acabado y marca comercial. Un calibre puede pertenecer a una familia y compartir arquitectura sin compartir cada pieza. La variante puede modificar calendario, altura, segundero o decoración. Identificar correctamente evita comprar repuestos por parecido y permite transferir conocimiento con límites explícitos.",
+                "en": "La industrialización separó diseño, fabricación de componentes, ensamblaje, acabado y marca comercial. Un calibre puede pertenecer a una familia y compartir arquitectura sin compartir cada pieza. La variante puede modificar calendario, altura, segundero o decoración. Identificar correctamente evita comprar repuestos por parecido y permite transferir conocimiento con límites explícitos."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?",
+              "en": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar firma y referencia → situar familia → determinar variante → consultar documentación → verificar pieza e interfaz → registrar incertidumbre, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar firma y referencia → situar familia → determinar variante → consultar documentación → verificar pieza e interfaz → registrar incertidumbre, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.history-language.industrializacion-y-familias.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.history-language.industrializacion-y-familias.mechanism",
+            "field.encyclopedia.history-language.industrializacion-y-familias.evidence",
+            "field.encyclopedia.history-language.industrializacion-y-familias.limit",
+            "field.encyclopedia.history-language.industrializacion-y-familias.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rubric.example",
+  "version": "1.0.0",
+  "competencyId": "competency.example",
+  "rules": [
+    {
+      "id": "rule.example.introduced",
+      "version": "1.0.0",
+      "targetState": "introduced",
+      "acceptedEvidenceKinds": [
+        "answer"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "La evidencia válida introduce la competencia."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.example.demonstrated",
+    "version": "1.0.0",
+    "competencyId": "competency.example",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}
+

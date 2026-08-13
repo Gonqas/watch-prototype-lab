@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.cronografo-mandos.maquina-de-estados",
+  "version": "1.1.0",
+  "title": {
+    "es": "máquina de estados",
+    "en": "máquina de estados"
+  },
+  "summary": {
+    "es": "Modelo donde entradas provocan transiciones entre configuraciones discretas permitidas.",
+    "en": "Modelo donde entradas provocan transiciones entre configuraciones discretas permitidas."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.calendarios.dedo-de-fecha",
+    "concept.encyclopedia.complications.calendarios.saltador",
+    "concept.encyclopedia.complications.calendarios.rueda-de-programa"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.cronografo-mandos"
+  ],
+  "movementIds": [],
+  "subsystem": "chronograph-control",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.cronografo-mandos"
+  ],
+  "sourceIds": [
+    "source.official.eta.7750",
+    "source.official.seiko.6138",
+    "source.external.naked-watchmaker"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.cronografo-mandos"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.cronografo-mandos",
+  "plainLanguage": {
+    "es": "Modelo donde entradas provocan transiciones entre configuraciones discretas permitidas.",
+    "en": "Modelo donde entradas provocan transiciones entre configuraciones discretas permitidas."
+  },
+  "technicalLanguage": {
+    "es": "máquina de estados se interpreta mediante la cadena pulsador aporta carrera → mando indexa estado → palancas leen perfil → embrague conecta o desconecta → freno actúa → siguiente pulso cambia estado y las condiciones declaradas en la unidad.",
+    "en": "máquina de estados se interpreta mediante la cadena pulsador aporta carrera → mando indexa estado → palancas leen perfil → embrague conecta o desconecta → freno actúa → siguiente pulso cambia estado y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?",
+    "en": "Permite explicar y comprobar ¿cómo convierte un pulsador acciones sucesivas en arrancar, parar y poner a cero?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir máquina de estados sin circularidad.",
+      "en": "Definir máquina de estados sin circularidad."
+    },
+    {
+      "es": "Relacionar máquina de estados con una entrada, una interfaz y una salida.",
+      "en": "Relacionar máquina de estados con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

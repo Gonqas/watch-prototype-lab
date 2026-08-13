@@ -1,0 +1,58 @@
+{
+  "id": "concept.metrology.final-project",
+  "version": "0.1.0",
+  "title": {
+    "es": "Proyecto final"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para producir un dossier trazable y revisable de una unidad concreta."
+  },
+  "kind": "skill",
+  "knowledgeType": "epistemic",
+  "prerequisiteIds": [
+    "concept.metrology.improve-virtual-model"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.compare-data"
+  ],
+  "competencyIds": [
+    "competency.metrology.separar-observacion-e-hipotesis"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.completar-dossier",
+    "activity.metrology.defender-el-proyecto-final"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a producir un dossier trazable y revisable de una unidad concreta sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para producir un dossier trazable y revisable de una unidad concreta."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "physical-observation",
+  "availability": "available"
+}

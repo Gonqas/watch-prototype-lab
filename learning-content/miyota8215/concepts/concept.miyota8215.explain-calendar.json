@@ -1,0 +1,70 @@
+{
+  "id": "concept.miyota8215.explain-calendar",
+  "version": "0.5.0",
+  "title": {
+    "es": "Explicar el calendario",
+    "en": "Explicar el calendario"
+  },
+  "summary": {
+    "es": "Explicar el calendario con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Explicar el calendario con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "concept",
+  "prerequisiteIds": [
+    "concept.miyota8215.recognize-subsystems",
+    "concept.miyota8215.explain-winding-setting"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.explain-automatic"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.explain-calendar"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "calendar",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.explain-calendar",
+    "activity.miyota8215.run-calendar-cycle"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Explicar el calendario describe una relación causal dentro de calendario: una entrada produce un cambio observable mediante una interfaz declarada. Explicar el calendario con un modelo estructural, fuentes, operaciones y límites declarados. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Explicar el calendario describe una relación causal dentro de calendario: una entrada produce un cambio observable mediante una interfaz declarada. Explicar el calendario con un modelo estructural, fuentes, operaciones y límites declarados. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.prepare-disassembly"
+  ],
+  "plainLanguage": {
+    "es": "Explicar el calendario con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Explicar el calendario con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Entender explicar el calendario permite razonar sobre el reloj completo y no memorizar piezas aisladas."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega explicar el calendario dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema calendar."
+    }
+  ],
+  "misconceptionIds": [],
+  "knowledgeType": "conceptual-causal",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.calendar",
+  "targetEvidenceLevel": "causal-explanation"
+}

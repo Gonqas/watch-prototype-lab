@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.history-language.del-reloj-fijo-al-portatil",
+  "version": "1.1.0",
+  "title": "Cuaderno: Del reloj fijo al reloj portátil",
+  "description": "¿Qué problemas técnicos aparecieron al llevar la medición del tiempo desde una posición fija hasta la muñeca?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Del reloj fijo al reloj portátil. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.history-language.del-reloj-fijo-al-portatil.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué problemas técnicos aparecieron al llevar la medición del tiempo desde una posición fija hasta la muñeca?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué problemas técnicos aparecieron al llevar la medición del tiempo desde una posición fija hasta la muñeca?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.history-language.del-reloj-fijo-al-portatil.answer",
+      "instructionMarkdown": "Explica **Del reloj fijo al reloj portátil** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.history-language.del-reloj-fijo-al-portatil.explain",
+          "promptMarkdown": "¿Qué problemas técnicos aparecieron al llevar la medición del tiempo desde una posición fija hasta la muñeca?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.history-language.del-reloj-fijo-al-portatil.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.del-reloj-fijo-al-portatil.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.del-reloj-fijo-al-portatil.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.history-language.del-reloj-fijo-al-portatil.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.history-language.del-reloj-fijo-al-portatil.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por reloj fijo y sigue hasta reloj de pulsera.",
+                "en": "Empieza por reloj fijo y sigue hasta reloj de pulsera."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.history-language.del-reloj-fijo-al-portatil.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La portabilidad obliga a almacenar energía en poco volumen, tolerar cambios de orientación, golpes y temperatura, y mantener una referencia sin gravedad constante. El muelle real, el volante-espiral, la protección de pivotes y la caja transformaron la arquitectura. La evolución no fue lineal: distintas soluciones convivieron y cada una dejó compromisos observables.",
+                "en": "La portabilidad obliga a almacenar energía en poco volumen, tolerar cambios de orientación, golpes y temperatura, y mantener una referencia sin gravedad constante. El muelle real, el volante-espiral, la protección de pivotes y la caja transformaron la arquitectura. La evolución no fue lineal: distintas soluciones convivieron y cada una dejó compromisos observables."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué problemas técnicos aparecieron al llevar la medición del tiempo desde una posición fija hasta la muñeca?",
+              "en": "¿Qué problemas técnicos aparecieron al llevar la medición del tiempo desde una posición fija hasta la muñeca?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena reloj fijo → energía portátil → regulador portátil → protección y caja → reloj de bolsillo → reloj de pulsera, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena reloj fijo → energía portátil → regulador portátil → protección y caja → reloj de bolsillo → reloj de pulsera, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.history-language.del-reloj-fijo-al-portatil.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.history-language.del-reloj-fijo-al-portatil.mechanism",
+            "field.encyclopedia.history-language.del-reloj-fijo-al-portatil.evidence",
+            "field.encyclopedia.history-language.del-reloj-fijo-al-portatil.limit",
+            "field.encyclopedia.history-language.del-reloj-fijo-al-portatil.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

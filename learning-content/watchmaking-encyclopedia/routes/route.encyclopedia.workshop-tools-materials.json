@@ -1,0 +1,264 @@
+{
+  "id": "route.encyclopedia.workshop-tools-materials",
+  "version": "1.1.0",
+  "title": {
+    "es": "Taller, herramientas, materiales y seguridad",
+    "en": "Taller, herramientas, materiales y seguridad"
+  },
+  "purpose": {
+    "es": "Construir hábitos de banco y criterio material antes de desmontar, fabricar, limpiar o terminar componentes.",
+    "en": "Construir hábitos de banco y criterio material antes de desmontar, fabricar, limpiar o terminar componentes."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+    "module.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+    "module.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+    "module.encyclopedia.workshop-tools-materials.materiales-relojeros",
+    "module.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+    "module.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+    "module.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+    "module.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza",
+    "module.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+    "competency.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+    "competency.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+    "competency.encyclopedia.workshop-tools-materials.materiales-relojeros",
+    "competency.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+    "competency.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+    "competency.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+    "competency.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza",
+    "competency.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion"
+  ],
+  "movementIds": [],
+  "difficulty": "introductory",
+  "sourceIds": [
+    "source.private.daniels.workshop-equipment",
+    "source.institutional.wostep.watchmaker",
+    "source.institutional.awci.standards",
+    "source.private.daniels.hand-tools",
+    "source.external.naked-watchmaker",
+    "source.private.daniels.finishing-metals",
+    "source.private.daniels.jewelling",
+    "source.private.daniels.small-components",
+    "source.private.vba-uhrentechnik",
+    "source.external.watchguy-repair-blog",
+    "source.private.bulova.preliminary",
+    "source.private.chicago.1",
+    "source.encyclopedia.original-synthesis",
+    "source.private.chicago.tools"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "prerequisite-required",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.workshop-tools-materials.01",
+        "order": 1,
+        "title": {
+          "es": "Banco, postura, orden y seguridad",
+          "en": "Banco, postura, orden y seguridad"
+        },
+        "outcome": {
+          "es": "¿Cómo se diseña un puesto que reduzca pérdidas, contaminación, lesión y decisiones irreversibles?",
+          "en": "¿Cómo se diseña un puesto que reduzca pérdidas, contaminación, lesión y decisiones irreversibles?"
+        },
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+        "activityId": "activity.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+          "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+          "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.workshop-tools-materials.02",
+        "order": 2,
+        "title": {
+          "es": "Observación, óptica y manipulación",
+          "en": "Observación, óptica y manipulación"
+        },
+        "outcome": {
+          "es": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?",
+          "en": "¿Cómo observar una pieza sin dañarla ni convertir un artefacto óptico en un diagnóstico?"
+        },
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+        "activityId": "activity.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+          "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+          "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.workshop-tools-materials.03",
+        "order": 3,
+        "title": {
+          "es": "Herramientas de mano, ajuste y afilado",
+          "en": "Herramientas de mano, ajuste y afilado"
+        },
+        "outcome": {
+          "es": "¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?",
+          "en": "¿Por qué una herramienta debe adaptarse a la interfaz y cómo se conserva su geometría de corte?"
+        },
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+        "activityId": "activity.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.ajuste-de-herramienta",
+          "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.angulo-de-desprendimiento",
+          "concept.encyclopedia.workshop-tools-materials.herramientas-y-afilado.rebaba"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.workshop-tools-materials.04",
+        "order": 4,
+        "title": {
+          "es": "Materiales relojeros y propiedades funcionales",
+          "en": "Materiales relojeros y propiedades funcionales"
+        },
+        "outcome": {
+          "es": "¿Cómo se elige y reconoce un material por su función y no solo por su color?",
+          "en": "¿Cómo se elige y reconoce un material por su función y no solo por su color?"
+        },
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.materiales-relojeros",
+        "activityId": "activity.encyclopedia.workshop-tools-materials.materiales-relojeros",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.dureza",
+          "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.tenacidad",
+          "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.compatibilidad-tribologica"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.workshop-tools-materials.05",
+        "order": 5,
+        "title": {
+          "es": "Tratamiento térmico y acabado de superficies",
+          "en": "Tratamiento térmico y acabado de superficies"
+        },
+        "outcome": {
+          "es": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?",
+          "en": "¿Cómo cambian las propiedades al calentar, enfriar, rectificar, lapear o pulir una pieza?"
+        },
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+        "activityId": "activity.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.temple",
+          "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.revenido",
+          "concept.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies.integridad-superficial"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.workshop-tools-materials.06",
+        "order": 6,
+        "title": {
+          "es": "Contaminación, limpieza y química segura",
+          "en": "Contaminación, limpieza y química segura"
+        },
+        "outcome": {
+          "es": "¿Cómo se elimina suciedad sin redistribuirla, atacar materiales ni borrar evidencia?",
+          "en": "¿Cómo se elimina suciedad sin redistribuirla, atacar materiales ni borrar evidencia?"
+        },
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+        "activityId": "activity.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+          "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+          "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.workshop-tools-materials.07",
+        "order": 7,
+        "title": {
+          "es": "Pasaporte de banco I: lupa, pinzas y destornillador",
+          "en": "Pasaporte de banco I: lupa, pinzas y destornillador"
+        },
+        "outcome": {
+          "es": "¿Qué evidencia demuestra manipulación básica antes de tocar un movimiento?",
+          "en": "¿Qué evidencia demuestra manipulación básica antes de tocar un movimiento?"
+        },
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+        "activityId": "activity.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+          "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+          "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.workshop-tools-materials.08",
+        "order": 8,
+        "title": {
+          "es": "Pasaporte de banco II: repetición, calidad y revisión",
+          "en": "Pasaporte de banco II: repetición, calidad y revisión"
+        },
+        "outcome": {
+          "es": "¿Cómo se convierte una operación manual en evidencia revisable?",
+          "en": "¿Cómo se convierte una operación manual en evidencia revisable?"
+        },
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza",
+        "activityId": "activity.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.pasaporte-de-destreza",
+          "concept.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.intento-independiente",
+          "concept.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza.defecto-observable"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.workshop-tools-materials.09",
+        "order": 9,
+        "title": {
+          "es": "Expediente Chicago XII: elegir herramientas por capacidad",
+          "en": "Expediente Chicago XII: elegir herramientas por capacidad"
+        },
+        "outcome": {
+          "es": "¿Cómo se construye un taller personal sin comprar por listas históricas o por marca?",
+          "en": "¿Cómo se construye un taller personal sin comprar por listas históricas o por marca?"
+        },
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion",
+        "activityId": "activity.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion.capacidad-de-herramienta",
+          "concept.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion.herramienta-de-referencia",
+          "concept.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion.sustituto-controlado"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion"
+    ]
+  }
+}

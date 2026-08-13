@@ -1,0 +1,70 @@
+{
+  "id": "concept.capstone.manufacturing.hands",
+  "version": "1.0.0",
+  "title": {
+    "es": "Agujas, cañones y holguras",
+    "en": "Agujas, cañones y holguras"
+  },
+  "summary": {
+    "es": "¿Cómo convertir agujas, cañones y holguras en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir agujas, cañones y holguras en un proceso seguro, medible y revisable?"
+  },
+  "kind": "skill",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.capstone.manufacturing.dial"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.capstone.manufacturing.dial",
+    "concept.capstone.manufacturing.plates-bridges"
+  ],
+  "competencyIds": [
+    "competency.capstone.manufacturing.hands"
+  ],
+  "movementIds": [],
+  "subsystem": "manufacturing-hands",
+  "routeIds": [
+    "route.capstone.manufacturing-finishing"
+  ],
+  "activityIds": [
+    "activity.capstone.manufacturing.hands"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.official",
+    "source.iso.1101",
+    "source.w3c.wcag22"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Cómo convertir agujas, cañones y holguras en un proceso seguro, medible y revisable?",
+    "en": "¿Cómo convertir agujas, cañones y holguras en un proceso seguro, medible y revisable?"
+  },
+  "technicalLanguage": {
+    "es": "## Qué problema resuelve\n\nDiseñar forma, masa, tubo, asiento, apilado y acabado sin interferencias ni pérdida de legibilidad. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Agujas, cañones y holguras**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Definir tubos y apilado.** Relacionar diámetros de asiento, alturas y sentido de montaje. Entrada: Movimiento, esfera y cristal. Salida verificable: Especificación de cada aguja.\n2. **Formar cuerpo y cañón.** Conservar concentricidad, planitud y retención. Entrada: Material y útiles. Salida verificable: Aguja formada para inspección.\n3. **Acabar y verificar balance.** Evitar masa excéntrica, deformación y pérdida de contraste. Entrada: Aguja formada. Salida verificable: Juego terminado y documentado.\n\nRevisa la secuencia de **Definir tubos y apilado** a **Acabar y verificar balance** también de atrás hacia delante. Para aceptar el resultado final de agujas, cañones y holguras, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿Material, espesor y acabado permiten formar, fijar, equilibrar y leer cada aguja?\n\n- **Eje del cañón:** Concentricidad. Planitud del cuerpo. Altura de montaje.\n\n- **Requisito:** El ajuste retiene sin dañar el eje y permite montaje controlado. **Verificación:** Galga o ensayo de inserción definido para el componente real.\n\nSelecciona el material de **Agujas, cañones y holguras** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Cortes, virutas y proyección de partículas (serious):** Protección ocular adecuada. Retirada de viruta con útil, nunca con la mano. Desbarbado y orden del puesto. Detenerse si: Pantalla o protección ocular ausente. Viruta enredada con la máquina en marcha.\n- **Atrapamiento en maquinaria rotativa (critical):** Formación presencial y resguardos. Sujeción verificada y zona despejada. Nunca usar guantes junto a elementos giratorios cuando exista riesgo de atrapamiento. Detenerse si: Resguardo ausente. Pieza o herramienta mal sujeta. Ruido, vibración o e",
+    "en": "## Qué problema resuelve\n\nDiseñar forma, masa, tubo, asiento, apilado y acabado sin interferencias ni pérdida de legibilidad. Una pieza relojera no se vuelve fabricable porque tenga un sólido CAD convincente. Debe existir una relación explícita entre función, interfaces, material, referencia geométrica, secuencia, instrumento, regla de decisión y evidencia. La teoría de esta unidad trata el proceso como una cadena causal: cada operación recibe un estado conocido, modifica características concretas y entrega un estado que la siguiente operación debe poder sujetar, localizar e inspeccionar.\n\nEn **Agujas, cañones y holguras**, diseña desde la función que declara el plan. Una cota aislada no explica qué contacto protege, qué holgura conserva o qué alineación gobierna en esta pieza. Define primero el requisito funcional, después los datums que lo hacen repetible y solo entonces una tolerancia proporcional al riesgo. Una tolerancia más estrecha puede elevar coste, rechazo y dificultad de medida sin mejorar este resultado. La aceptación incorpora la incertidumbre del método y una regla de decisión previa.\n\n## Cadena de proceso propuesta\n\n1. **Definir tubos y apilado.** Relacionar diámetros de asiento, alturas y sentido de montaje. Entrada: Movimiento, esfera y cristal. Salida verificable: Especificación de cada aguja.\n2. **Formar cuerpo y cañón.** Conservar concentricidad, planitud y retención. Entrada: Material y útiles. Salida verificable: Aguja formada para inspección.\n3. **Acabar y verificar balance.** Evitar masa excéntrica, deformación y pérdida de contraste. Entrada: Aguja formada. Salida verificable: Juego terminado y documentado.\n\nRevisa la secuencia de **Definir tubos y apilado** a **Acabar y verificar balance** también de atrás hacia delante. Para aceptar el resultado final de agujas, cañones y holguras, pregunta qué debe observarse, qué superficie o datum debe seguir disponible y qué sujeción o sobrematerial exigía la operación anterior. Así evitas decorar antes de medir, eliminar una referencia necesaria o bloquear una interfaz con un tratamiento posterior.\n\n## Material, datums y tolerancias\n\n- ¿Material, espesor y acabado permiten formar, fijar, equilibrar y leer cada aguja?\n\n- **Eje del cañón:** Concentricidad. Planitud del cuerpo. Altura de montaje.\n\n- **Requisito:** El ajuste retiene sin dañar el eje y permite montaje controlado. **Verificación:** Galga o ensayo de inserción definido para el componente real.\n\nSelecciona el material de **Agujas, cañones y holguras** por propiedades, interfaces y proceso, no por prestigio. Declara estado metalúrgico, estabilidad, corrosión, contacto con piel cuando proceda, respuesta al mecanizado, compatibilidad con unión o recubrimiento y posibilidad real de inspección. Si cambia el material, reabre herramientas, radios, tratamientos, tolerancias y acabado de este plan; no lo trates como una sustitución neutra.\n\n## Seguridad y puntos de parada\n\n- **Cortes, virutas y proyección de partículas (serious):** Protección ocular adecuada. Retirada de viruta con útil, nunca con la mano. Desbarbado y orden del puesto. Detenerse si: Pantalla o protección ocular ausente. Viruta enredada con la máquina en marcha.\n- **Atrapamiento en maquinaria rotativa (critical):** Formación presencial y resguardos. Sujeción verificada y zona despejada. Nunca usar guantes junto a elementos giratorios cuando exista riesgo de atrapamiento. Detenerse si: Resguardo ausente. Pieza o herramienta mal sujeta. Ruido, vibración o e"
+  },
+  "whyItMatters": {
+    "es": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables.",
+    "en": "Conecta el conocimiento relojero con decisiones fabricables, revisables y comprobables."
+  },
+  "observableActions": [
+    {
+      "es": "Compara alternativas.",
+      "en": "Compara alternativas."
+    },
+    {
+      "es": "Declara interfaces y riesgos.",
+      "en": "Declara interfaces y riesgos."
+    },
+    {
+      "es": "Define evidencia y criterios de parada.",
+      "en": "Define evidencia y criterios de parada."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.capstone.manufacturing.plates-bridges"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

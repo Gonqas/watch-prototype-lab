@@ -1,0 +1,32 @@
+{
+  "id": "rubric.encyclopedia.complications.automatico-y-reserva",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.complications.automatico-y-reserva",
+  "rules": [
+    {
+      "id": "rule.encyclopedia.complications.automatico-y-reserva",
+      "version": "1.1.0",
+      "targetState": "practising",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.75,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Se evalúan mecanismo, evidencia, magnitudes, errores, límites y transferencia de Automático, embragues y reserva de marcha."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.encyclopedia.complications.automatico-y-reserva",
+    "version": "1.1.0",
+    "competencyId": "competency.encyclopedia.complications.automatico-y-reserva",
+    "targetState": "practising",
+    "condition": {
+      "op": "minimum-evidence",
+      "count": 1
+    }
+  }
+}

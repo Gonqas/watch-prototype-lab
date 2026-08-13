@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.math-physics-metrology.fuerza-par-energia.trabajo-mecanico",
+  "version": "1.1.0",
+  "title": {
+    "es": "trabajo mecánico",
+    "en": "trabajo mecánico"
+  },
+  "summary": {
+    "es": "Transferencia de energía asociada a una fuerza que actúa durante un desplazamiento.",
+    "en": "Transferencia de energía asociada a una fuerza que actúa durante un desplazamiento."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.magnitud",
+    "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.orden-de-magnitud",
+    "concept.encyclopedia.math-physics-metrology.unidades-y-modelos.homogeneidad-dimensional"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.math-physics-metrology.fuerza-par-energia"
+  ],
+  "movementIds": [],
+  "subsystem": "mechanics",
+  "routeIds": [
+    "route.encyclopedia.math-physics-metrology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.math-physics-metrology.fuerza-par-energia"
+  ],
+  "sourceIds": [
+    "source.private.daniels.mainsprings",
+    "source.private.daniels.movement-design",
+    "source.private.vba-uhrentechnik"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.math-physics-metrology.fuerza-par-energia"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+  "plainLanguage": {
+    "es": "Transferencia de energía asociada a una fuerza que actúa durante un desplazamiento.",
+    "en": "Transferencia de energía asociada a una fuerza que actúa durante un desplazamiento."
+  },
+  "technicalLanguage": {
+    "es": "trabajo mecánico se interpreta mediante la cadena almacenar energía → aplicar par → transmitir por engranes → vencer pérdidas → entregar impulso → mover indicación y las condiciones declaradas en la unidad.",
+    "en": "trabajo mecánico se interpreta mediante la cadena almacenar energía → aplicar par → transmitir por engranes → vencer pérdidas → entregar impulso → mover indicación y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?",
+    "en": "Permite explicar y comprobar ¿cómo viaja la capacidad de producir movimiento desde una fuente hasta una carga?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir trabajo mecánico sin circularidad.",
+      "en": "Definir trabajo mecánico sin circularidad."
+    },
+    {
+      "es": "Relacionar trabajo mecánico con una entrada, una interfaz y una salida.",
+      "en": "Relacionar trabajo mecánico con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

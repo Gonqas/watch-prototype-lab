@@ -1,0 +1,70 @@
+{
+  "id": "concept.miyota8215.explain-winding-setting",
+  "version": "0.5.0",
+  "title": {
+    "es": "Explicar cuerda y puesta en hora",
+    "en": "Explicar cuerda y puesta en hora"
+  },
+  "summary": {
+    "es": "Explicar cuerda y puesta en hora con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Explicar cuerda y puesta en hora con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "concept",
+  "prerequisiteIds": [
+    "concept.miyota8215.recognize-subsystems"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.explain-automatic"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.explain-winding-setting"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "keyless",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.reconstruct-winding-states",
+    "activity.miyota8215.trace-manual-winding"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Explicar cuerda y puesta en hora describe una relación causal dentro de cuerda y puesta en hora: una entrada produce un cambio observable mediante una interfaz declarada. Explicar cuerda y puesta en hora con un modelo estructural, fuentes, operaciones y límites declarados. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Explicar cuerda y puesta en hora describe una relación causal dentro de cuerda y puesta en hora: una entrada produce un cambio observable mediante una interfaz declarada. Explicar cuerda y puesta en hora con un modelo estructural, fuentes, operaciones y límites declarados. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.explain-calendar",
+    "concept.miyota8215.prepare-disassembly"
+  ],
+  "plainLanguage": {
+    "es": "Explicar cuerda y puesta en hora con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Explicar cuerda y puesta en hora con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Entender explicar cuerda y puesta en hora permite razonar sobre el reloj completo y no memorizar piezas aisladas."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega explicar cuerda y puesta en hora dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema cuerda y puesta en hora."
+    }
+  ],
+  "misconceptionIds": [],
+  "knowledgeType": "conceptual-causal",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.winding-setting",
+  "targetEvidenceLevel": "causal-explanation"
+}

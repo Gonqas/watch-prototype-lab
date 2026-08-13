@@ -1,0 +1,126 @@
+{
+  "id": "lesson.metrology.improve-virtual-model",
+  "version": "0.2.0",
+  "title": "Mejorar un modelo virtual",
+  "blockIds": [
+    "block.metrology.improve-virtual-model"
+  ],
+  "activityIds": [
+    "activity.metrology.adoptar-un-valor",
+    "activity.metrology.crear-propuesta"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Mejorar un modelo virtual"
+    },
+    "purpose": {
+      "es": "Comprender y aplicar cómo formular una corrección versionada sin alterar canon ni CAD."
+    },
+    "objectives": [
+      {
+        "es": "Explicar cómo formular una corrección versionada sin alterar canon ni CAD."
+      },
+      {
+        "es": "Reconocer un resultado inválido o insuficiente."
+      },
+      {
+        "es": "Conservar evidencia y alcance."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.metrology.compare-data"
+    ],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [],
+    "conceptIds": [
+      "concept.metrology.improve-virtual-model"
+    ],
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "worked-example",
+      "entryCheck": "ungraded-diagnostic",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.metrology.improve-virtual-model"
+      ],
+      "reinforcesConceptIds": [
+        "concept.metrology.compare-data"
+      ],
+      "bridgeConceptIds": []
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.metrology.improve-virtual-model"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar tolerancias, exactitudes, calibraciones, diagnósticos ni datos de fabricante."
+        },
+        {
+          "es": "No aprobar propuestas, elevar fidelidad o modificar CAD."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente?"
+        },
+        {
+          "es": "¿Qué método y referencia hacen repetible este resultado?"
+        },
+        {
+          "es": "¿Qué limitación impide generalizarlo?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 713,
+      "requiredSegmentRoles": [
+        "pretrain",
+        "explain",
+        "worked-example",
+        "practice"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.metrology.adoptar-un-valor",
+        "activity.metrology.crear-propuesta"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Explicar cómo formular una corrección versionada sin alterar canon ni CAD."
+        },
+        {
+          "es": "Reconocer un resultado inválido o insuficiente."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «Mejorar un modelo virtual», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    }
+  }
+}

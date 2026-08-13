@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.micromechanics.ruedas-y-pinones",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.ruedas-y-pinones",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.micromechanics.ruedas-y-pinones",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.micromechanics.ruedas-y-pinones",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.micromechanics.ruedas-y-pinones"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.micromechanics.ruedas-y-pinones",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

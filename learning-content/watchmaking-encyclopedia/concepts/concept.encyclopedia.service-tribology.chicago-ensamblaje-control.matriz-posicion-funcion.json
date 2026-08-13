@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.chicago-ensamblaje-control.matriz-posicion-funcion",
+  "version": "1.1.0",
+  "title": {
+    "es": "matriz posición-función",
+    "en": "matriz posición-función"
+  },
+  "summary": {
+    "es": "Tabla que relaciona cada posición de mando con engranes y resultados esperados.",
+    "en": "Tabla que relaciona cada posición de mando con engranes y resultados esperados."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.chicago-limpieza-segura.cuarentena-de-procedimiento",
+    "concept.encyclopedia.service-tribology.chicago-limpieza-segura.compatibilidad-de-limpieza",
+    "concept.encyclopedia.service-tribology.chicago-limpieza-segura.verificacion-poslimpieza"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.chicago-ensamblaje-control"
+  ],
+  "movementIds": [],
+  "subsystem": "assembly-keyless",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.chicago-ensamblaje-control"
+  ],
+  "sourceIds": [
+    "source.private.chicago.8",
+    "source.private.chicago.9",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.chicago-ensamblaje-control"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.chicago-ensamblaje-control",
+  "plainLanguage": {
+    "es": "Tabla que relaciona cada posición de mando con engranes y resultados esperados.",
+    "en": "Tabla que relaciona cada posición de mando con engranes y resultados esperados."
+  },
+  "technicalLanguage": {
+    "es": "matriz posición-función se interpreta mediante la cadena montar tren → probar libertad → añadir cuerda → probar retención → añadir puesta en hora → probar cada posición y las condiciones declaradas en la unidad.",
+    "en": "matriz posición-función se interpreta mediante la cadena montar tren → probar libertad → añadir cuerda → probar retención → añadir puesta en hora → probar cada posición y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se separan fallos de montaje, cuerda y puesta en hora?",
+    "en": "Permite explicar y comprobar ¿cómo se separan fallos de montaje, cuerda y puesta en hora?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir matriz posición-función sin circularidad.",
+      "en": "Definir matriz posición-función sin circularidad."
+    },
+    {
+      "es": "Relacionar matriz posición-función con una entrada, una interfaz y una salida.",
+      "en": "Relacionar matriz posición-función con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

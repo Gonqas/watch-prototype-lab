@@ -1,0 +1,69 @@
+{
+  "id": "concept.miyota8215.verify-partially",
+  "version": "0.5.0",
+  "title": {
+    "es": "Verificar parcialmente",
+    "en": "Verificar parcialmente"
+  },
+  "summary": {
+    "es": "Verificar parcialmente con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Verificar parcialmente con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.miyota8215.identify-train"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.inspect"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.verify-partially"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "train",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.interrupt-train",
+    "activity.miyota8215.partial-verifications"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Verificar parcialmente se reconoce por su posición relativa, sus apoyos y sus interfaces dentro de tren de ruedas. Verificar parcialmente con un modelo estructural, fuentes, operaciones y límites declarados. La proximidad visual no basta: la identificación exige una relación documentada o explícitamente reconstruida.",
+    "en": "Verificar parcialmente se reconoce por su posición relativa, sus apoyos y sus interfaces dentro de tren de ruedas. Verificar parcialmente con un modelo estructural, fuentes, operaciones y límites declarados. La proximidad visual no basta: la identificación exige una relación documentada o explícitamente reconstruida."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.form-hypothesis"
+  ],
+  "plainLanguage": {
+    "es": "Verificar parcialmente con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Verificar parcialmente con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Dominar verificar parcialmente permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega verificar parcialmente dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema train."
+    }
+  ],
+  "misconceptionIds": [],
+  "knowledgeType": "spatial",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.train",
+  "targetEvidenceLevel": "recognition"
+}

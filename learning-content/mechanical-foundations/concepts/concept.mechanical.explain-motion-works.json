@@ -1,0 +1,60 @@
+{
+  "id": "concept.mechanical.explain-motion-works",
+  "version": "0.5.0",
+  "title": {
+    "es": "Explicar la minutería",
+    "en": "Explicar la minutería"
+  },
+  "summary": {
+    "es": "Explicar la minutería mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Explicar la minutería mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.mechanical.explain-escape-oscillator-system"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.explain-motion-works"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "motion-works",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.build-motion-works",
+    "activity.mechanical.set-indication"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Explicar la minutería mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Explicar la minutería mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Explicar la minutería describe una relación causal dentro de minutería: una entrada produce un cambio observable mediante una interfaz declarada. Explicar la minutería mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Explicar la minutería describe una relación causal dentro de minutería: una entrada produce un cambio observable mediante una interfaz declarada. Explicar la minutería mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "whyItMatters": {
+    "es": "Dominar explicar la minutería permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega explicar la minutería dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema minutería."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [],
+  "knowledgeType": "conceptual-causal",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.motion-works",
+  "targetEvidenceLevel": "causal-explanation"
+}

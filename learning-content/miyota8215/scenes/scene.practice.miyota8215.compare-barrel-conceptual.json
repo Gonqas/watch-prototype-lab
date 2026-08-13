@@ -1,0 +1,329 @@
+{
+  "id": "scene.practice.miyota8215.compare-barrel-conceptual",
+  "version": "0.5.0",
+  "title": "Comparar barrilete real y conceptual · práctica específica",
+  "description": "Comparar barrilete real y conceptual con identidad, autoridad, dependencias, evidencia y restauración. La pregunta, el feedback y la evidencia pertenecen exclusivamente a este objetivo.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.miyota.8215.structural"
+  },
+  "accessibility": {
+    "textualAlternative": "Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para De energía almacenada a movimiento.",
+    "reducedMotionAlternative": "Estados discretos y fases numeradas con los mismos cálculos y evaluación.",
+    "keyboardActions": [
+      "Tabular por subsistema, entidad y acción.",
+      "Activar con Intro o Espacio.",
+      "Deshacer y restaurar mediante controles nombrados."
+    ],
+    "colorIndependentCues": [
+      "Texto y estado acompañan cada color.",
+      "Dirección, bloqueo y confianza se expresan también con palabras."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "comparison",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "calibre",
+            "value": "8215"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "durationMs": 0,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 600,
+      "operation": "explode",
+      "targets": [],
+      "value": 0.1,
+      "durationMs": 300,
+      "essential": false,
+      "waitFor": "none"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.miyota8215.barrel-energy.fidelity",
+      "markdown": "Barrilete y energía: modelo estructural del MIYOTA 8215. Cada operación muestra su autoridad y las referencias solo documentales no pueden manipularse. Consulta los niveles de reconstrucción y fidelidad en la ficha técnica.",
+      "accessibleLabel": "Barrilete y energía. Fidelidad, autoridad y limitaciones disponibles en texto."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.miyota8215.barrel-energy.observe",
+      "instructionMarkdown": "Ejecuta «Comparar barrilete real y conceptual». Antes de confirmar, compara tu predicción, el cambio observable, la relación implicada y la autoridad de la fuente.",
+      "questions": [
+        {
+          "id": "question.practice.miyota8215.compare-barrel-conceptual.criterion",
+          "promptMarkdown": "¿Qué conserva la comparación entre barrilete conceptual y 8215?",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.practice.miyota8215.compare-barrel-conceptual.evidence",
+              "label": "La función de almacenar y entregar energía, no dimensiones ni construcción exacta",
+              "labels": {
+                "es": "La función de almacenar y entregar energía, no dimensiones ni construcción exacta",
+                "en": "La función de almacenar y entregar energía, no dimensiones ni construcción exacta"
+              }
+            },
+            {
+              "id": "option.practice.miyota8215.compare-barrel-conceptual.appearance",
+              "label": "La forma exacta del muelle conceptual",
+              "labels": {
+                "es": "La forma exacta del muelle conceptual",
+                "en": "La forma exacta del muelle conceptual"
+              }
+            },
+            {
+              "id": "option.practice.miyota8215.compare-barrel-conceptual.authority",
+              "label": "El par y la reserva de marcha del modelo sin simulación física",
+              "labels": {
+                "es": "El par y la reserva de marcha del modelo sin simulación física",
+                "en": "El par y la reserva de marcha del modelo sin simulación física"
+              }
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué conserva la comparación entre barrilete conceptual y 8215?"
+            },
+            "feedback": {
+              "es": "La equivalencia funcional no valida física ni geometría."
+            }
+          }
+        },
+        {
+          "id": "question.practice.miyota8215.compare-barrel-conceptual.reasoning",
+          "promptMarkdown": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Qué conserva la comparación entre barrilete conceptual y 8215?",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué cambió o qué comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué relación, interfaz o regla explica el resultado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué fuente o límite condiciona la conclusión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: ¿Qué conserva la comparación entre barrilete conceptual y 8215?"
+            },
+            "feedback": {
+              "es": "La revisión debe comprobar la relación específica: La equivalencia funcional no valida física ni geometría."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.practice.miyota8215.compare-barrel-conceptual.criterion",
+          "expectedOptionIds": [
+            "option.practice.miyota8215.compare-barrel-conceptual.evidence"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.practice.miyota8215.compare-barrel-conceptual.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    },
+    {
+      "id": "step.miyota8215.barrel-energy.execute",
+      "instructionMarkdown": "Ejecuta acciones semánticas, registra evidencia, comprueba el resultado y restaura.",
+      "questions": []
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Comparar barrilete real y conceptual · práctica específica",
+      "en": "Comparar barrilete real y conceptual · práctica específica"
+    },
+    "purpose": {
+      "es": "Resolver «Comparar barrilete real y conceptual» mediante una decisión específica, explicación propia, restauración y transferencia."
+    },
+    "prerequisites": [
+      "concept.miyota8215.explain-calendar"
+    ],
+    "narrative": {
+      "es": "Separa relaciones compartidas y datos propios. La equivalencia funcional no valida física ni geometría."
+    },
+    "initialFraming": {
+      "es": "Vista estable con fuente y ficha técnica de reconstrucción y fidelidad visibles.",
+      "en": "Vista estable con fuente y ficha técnica de reconstrucción y fidelidad visibles."
+    },
+    "protagonist": {
+      "selector": {
+        "by": "calibre",
+        "value": "8215"
+      },
+      "cardinality": "exactly-one"
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "story.miyota8215.barrel-energy.observe",
+        "sceneStepId": "step.miyota8215.barrel-energy.observe",
+        "narrative": {
+          "es": "Consultar, identificar, clasificar autoridad y predecir.",
+          "en": "Consultar, identificar, clasificar autoridad y predecir."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "calibre-select",
+          "documentation-review",
+          "predict"
+        ],
+        "interaction": {
+          "es": "Seleccionar mediante teclado o puntero.",
+          "en": "Seleccionar mediante teclado o puntero."
+        },
+        "feedback": {
+          "es": "La predicción se conserva antes de mostrar el resultado.",
+          "en": "La predicción se conserva antes de mostrar el resultado."
+        }
+      },
+      {
+        "id": "story.miyota8215.barrel-energy.execute",
+        "sceneStepId": "step.miyota8215.barrel-energy.execute",
+        "narrative": {
+          "es": "Manipular cuando esté permitido, comprobar, explicar y restaurar.",
+          "en": "Manipular cuando esté permitido, comprobar, explicar y restaurar."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "calibre-lab-command",
+          "workbench-command",
+          "checkpoint",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Botones y menús semánticos; sin arrastre obligatorio.",
+          "en": "Botones y menús semánticos; sin arrastre obligatorio."
+        },
+        "feedback": {
+          "es": "El diagnóstico señala entrada, relación o estado inválido sin fingir física.",
+          "en": "El diagnóstico señala entrada, relación o estado inválido sin fingir física."
+        }
+      }
+    ],
+    "ending": {
+      "es": "Estado restaurable y evidencia disponible.",
+      "en": "Estado restaurable y evidencia disponible."
+    },
+    "restoration": {
+      "es": "Restaurar 63 identidades, tornillos, bandejas, orientación, cámara y subsistema.",
+      "en": "Restaurar 63 identidades, tornillos, bandejas, orientación, cámara y subsistema."
+    },
+    "accessibility": {
+      "es": "Árbol y lista ordenados; acciones por teclado y sin arrastre.",
+      "en": "Árbol y lista ordenados; acciones por teclado y sin arrastre."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos con idéntica información y evaluación.",
+      "en": "Estados discretos con idéntica información y evaluación."
+    },
+    "evidenceTemplateIds": [
+      "evidence.miyota8215.explain-energy-chain"
+    ],
+    "technicalCriteria": [
+      "Identidad de cada pieza.",
+      "Autoridad visible.",
+      "Dependencias clasificadas.",
+      "El modelo de referencia y el proyecto técnico permanecen intactos."
+    ],
+    "limitations": [
+      "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+      "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+      "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física.",
+      "Sin curva real de par, vueltas, eficiencia o estado físico del muelle."
+    ]
+  },
+  "restorePreviousState": true
+}

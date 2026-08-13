@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.micromechanics.chicago-escape-dibujo",
+  "version": "1.1.0",
+  "title": "Cuaderno: Expediente Chicago IX: construcción geométrica del escape",
+  "description": "¿Para qué sirve dibujar un escape antes de ajustarlo?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Expediente Chicago IX: construcción geométrica del escape. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.micromechanics.chicago-escape-dibujo.scope",
+      "markdown": "**Alcance del estudio:** ¿Para qué sirve dibujar un escape antes de ajustarlo?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Para qué sirve dibujar un escape antes de ajustarlo?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.micromechanics.chicago-escape-dibujo.answer",
+      "instructionMarkdown": "Explica **Expediente Chicago IX: construcción geométrica del escape** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.micromechanics.chicago-escape-dibujo.explain",
+          "promptMarkdown": "¿Para qué sirve dibujar un escape antes de ajustarlo?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-escape-dibujo.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-escape-dibujo.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-escape-dibujo.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.micromechanics.chicago-escape-dibujo.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.micromechanics.chicago-escape-dibujo.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por situar centros y sigue hasta comprobar seguridad.",
+                "en": "Empieza por situar centros y sigue hasta comprobar seguridad."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.micromechanics.chicago-escape-dibujo.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La construcción geométrica relaciona centros, líneas de acción, paletas, bloqueos, impulsos y seguridad. El dibujo ideal entrena dependencias; no reemplaza mediciones de una pieza ni autoriza mover paletas.",
+                "en": "La construcción geométrica relaciona centros, líneas de acción, paletas, bloqueos, impulsos y seguridad. El dibujo ideal entrena dependencias; no reemplaza mediciones de una pieza ni autoriza mover paletas."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Para qué sirve dibujar un escape antes de ajustarlo?",
+              "en": "¿Para qué sirve dibujar un escape antes de ajustarlo?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena situar centros → trazar arcos → definir paletas → construir bloqueo → construir impulso → comprobar seguridad, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena situar centros → trazar arcos → definir paletas → construir bloqueo → construir impulso → comprobar seguridad, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.micromechanics.chicago-escape-dibujo.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.micromechanics.chicago-escape-dibujo.mechanism",
+            "field.encyclopedia.micromechanics.chicago-escape-dibujo.evidence",
+            "field.encyclopedia.micromechanics.chicago-escape-dibujo.limit",
+            "field.encyclopedia.micromechanics.chicago-escape-dibujo.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

@@ -1,0 +1,60 @@
+{
+  "id": "concept.metrology.verification-calibration",
+  "version": "0.1.0",
+  "title": {
+    "es": "Verificación y calibración"
+  },
+  "summary": {
+    "es": "Modelo mental y procedimiento para registrar una comprobación funcional sin llamarla calibración acreditada."
+  },
+  "kind": "concept",
+  "knowledgeType": "procedural",
+  "prerequisiteIds": [
+    "concept.metrology.instruments"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.metrology.precision-accuracy-uncertainty"
+  ],
+  "competencyIds": [
+    "competency.metrology.registrar-una-unidad-fisica"
+  ],
+  "movementIds": [],
+  "subsystem": "metrology",
+  "routeIds": [
+    "route.metrology.physical-digital-bridge"
+  ],
+  "activityIds": [
+    "activity.metrology.verificar-cero",
+    "activity.metrology.interpretar-una-verificacion"
+  ],
+  "sourceIds": [
+    "source.metrology.bipm.vim",
+    "source.metrology.bipm.gum",
+    "source.metrology.nist.handbook",
+    "source.metrology.original-course"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "Aprender a registrar una comprobación funcional sin llamarla calibración acreditada sin ocultar lo que no se sabe."
+  },
+  "technicalLanguage": {
+    "es": "Contrato metrológico trazable para registrar una comprobación funcional sin llamarla calibración acreditada."
+  },
+  "whyItMatters": {
+    "es": "Permite repetir, revisar y limitar una conclusión sobre una unidad física concreta."
+  },
+  "observableActions": [
+    {
+      "es": "Define la característica y el marco."
+    },
+    {
+      "es": "Registra método, evidencia y limitaciones."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.metrology.physical-specimen"
+  ],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "available"
+}

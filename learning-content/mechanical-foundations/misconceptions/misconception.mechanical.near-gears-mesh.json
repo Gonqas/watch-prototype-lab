@@ -1,0 +1,28 @@
+{
+  "id": "misconception.mechanical.near-gears-mesh",
+  "version": "0.5.0",
+  "title": {
+    "es": "Dos ruedas próximas no necesariamente engranan"
+  },
+  "learnerExpression": {
+    "es": "Si dos ruedas se solapan en la vista, forman una pareja de engrane."
+  },
+  "diagnosis": {
+    "es": "Se infiere el engrane desde una proyección visual sin comprobar plano, distancia entre centros e interfaces."
+  },
+  "correction": {
+    "es": "El engrane debe estar declarado y ser compatible; la vista puede ocultar diferencias de altura."
+  },
+  "observableSignals": [
+    "Traza energía por ruedas sin relación meshes-with.",
+    "Ignora el orden de capas."
+  ],
+  "conceptIds": [
+    "concept.mechanical.build-functional-train",
+    "concept.mechanical.recognize-supports-clearances"
+  ],
+  "remediationLessonId": "lesson.mechanical.train",
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ]
+}

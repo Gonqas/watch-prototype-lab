@@ -1,0 +1,19 @@
+{
+  "id": "recommendation.metrology.retain.comparar-nominal-y-medido",
+  "version": "0.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar: Comparar nominal y medido"
+  },
+  "reason": {
+    "es": "La retención exige una sesión independiente; el motor programará ventanas de 1, 7 y 21 días."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 286,
+  "target": {
+    "kind": "competency",
+    "id": "competency.metrology.comparar-nominal-y-medido"
+  },
+  "evidenceTemplateIds": [],
+  "required": false
+}

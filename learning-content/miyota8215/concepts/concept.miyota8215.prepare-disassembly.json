@@ -1,0 +1,71 @@
+{
+  "id": "concept.miyota8215.prepare-disassembly",
+  "version": "0.5.0",
+  "title": {
+    "es": "Preparar un desmontaje",
+    "en": "Preparar un desmontaje"
+  },
+  "summary": {
+    "es": "Preparar un desmontaje con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Preparar un desmontaje con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.miyota8215.read-official-documentation",
+    "concept.miyota8215.explain-escapement-oscillator"
+  ],
+  "relatedIds": [
+    "concept.miyota8215.distinguish-data-reconstruction"
+  ],
+  "competencyIds": [
+    "competency.miyota8215.prepare-disassembly"
+  ],
+  "movementIds": [
+    "fixture.miyota.8215.structural"
+  ],
+  "subsystem": "planning",
+  "routeIds": [
+    "route.miyota8215.complete"
+  ],
+  "activityIds": [
+    "activity.miyota8215.prepare-workbench",
+    "activity.miyota8215.create-disassembly-plan"
+  ],
+  "sourceIds": [
+    "source.miyota.8215.product-page",
+    "source.miyota.8215.specification",
+    "source.miyota.8215.drawing",
+    "source.miyota.8215.instruction-manual",
+    "source.miyota.8215.parts-list-exploded-view",
+    "source.horology.original-miyota8215"
+  ],
+  "availability": "available",
+  "technicalLanguage": {
+    "es": "Preparar un desmontaje es una secuencia reversible sobre planificación que conserva identidad, orientación, dependencias y estado inicial. Preparar un desmontaje con un modelo estructural, fuentes, operaciones y límites declarados. Cada paso se valida antes de avanzar y deja evidencia de ayudas, errores y restauración.",
+    "en": "Preparar un desmontaje es una secuencia reversible sobre planificación que conserva identidad, orientación, dependencias y estado inicial. Preparar un desmontaje con un modelo estructural, fuentes, operaciones y límites declarados. Cada paso se valida antes de avanzar y deja evidencia de ayudas, errores y restauración."
+  },
+  "transferTargetIds": [
+    "concept.miyota8215.preserve-identity-orientation",
+    "concept.miyota8215.virtual-disassembly"
+  ],
+  "plainLanguage": {
+    "es": "Preparar un desmontaje con un modelo estructural, fuentes, operaciones y límites declarados.",
+    "en": "Preparar un desmontaje con un modelo estructural, fuentes, operaciones y límites declarados."
+  },
+  "whyItMatters": {
+    "es": "Dominar preparar un desmontaje permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega preparar un desmontaje dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema planning."
+    }
+  ],
+  "misconceptionIds": [],
+  "knowledgeType": "procedural",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.miyota8215.plan-disassembly",
+  "targetEvidenceLevel": "independent-simulation"
+}

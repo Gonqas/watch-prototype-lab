@@ -1,0 +1,69 @@
+{
+  "id": "concept.advanced.chronograph-coupling",
+  "version": "1.0.0",
+  "title": {
+    "es": "Acoplamiento horizontal y embrague vertical",
+    "en": "Acoplamiento horizontal y embrague vertical"
+  },
+  "summary": {
+    "es": "¿Cómo entra y sale la potencia del contador y qué síntomas dependen de esa interfaz?",
+    "en": "¿Cómo entra y sale la potencia del contador y qué síntomas dependen de esa interfaz?"
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.advanced.chronograph-control"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [
+    "concept.advanced.chronograph-control",
+    "concept.advanced.architecture-capstone"
+  ],
+  "competencyIds": [
+    "competency.advanced.chronograph-coupling"
+  ],
+  "movementIds": [],
+  "subsystem": "chronograph",
+  "routeIds": [
+    "route.advanced.architectures-complications"
+  ],
+  "activityIds": [
+    "activity.advanced.chronograph-coupling"
+  ],
+  "sourceIds": [
+    "source.eta.7750.communication",
+    "source.seiko.6138a.technical-guide"
+  ],
+  "misconceptionIds": [],
+  "plainLanguage": {
+    "es": "¿Cómo entra y sale la potencia del contador y qué síntomas dependen de esa interfaz?",
+    "en": "¿Cómo entra y sale la potencia del contador y qué síntomas dependen de esa interfaz?"
+  },
+  "technicalLanguage": {
+    "es": "El control decide cuándo; el acoplamiento decide cómo llega el movimiento. En el horizontal, una rueda se desplaza lateralmente hasta engranar con la rueda de cronógrafo. En el vertical, superficies coaxiales se presionan axialmente para transmitir por fricción. El primero hace visible el contacto dentado; el segundo integra el contador sobre el eje de acoplamiento. Ninguno puede reducirse a una animación de encendido.",
+    "en": "El control decide cuándo; el acoplamiento decide cómo llega el movimiento. En el horizontal, una rueda se desplaza lateralmente hasta engranar con la rueda de cronógrafo. En el vertical, superficies coaxiales se presionan axialmente para transmitir por fricción. El primero hace visible el contacto dentado; el segundo integra el contador sobre el eje de acoplamiento. Ninguno puede reducirse a una animación de encendido."
+  },
+  "whyItMatters": {
+    "es": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física.",
+    "en": "Permite tomar decisiones de arquitectura o servicio sin confundir documentación, simulación y realidad física."
+  },
+  "observableActions": [
+    {
+      "es": "Separa hecho, inferencia y desconocido.",
+      "en": "Separa hecho, inferencia y desconocido."
+    },
+    {
+      "es": "Compara relaciones y compromisos.",
+      "en": "Compara relaciones y compromisos."
+    },
+    {
+      "es": "Declara fuentes, riesgos y límites.",
+      "en": "Declara fuentes, riesgos y límites."
+    }
+  ],
+  "transferTargetIds": [
+    "concept.advanced.architecture-capstone"
+  ],
+  "targetEvidenceLevel": "transfer",
+  "availability": "available"
+}

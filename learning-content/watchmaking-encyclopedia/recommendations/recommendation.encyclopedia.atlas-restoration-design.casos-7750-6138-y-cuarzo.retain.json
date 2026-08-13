@@ -1,0 +1,23 @@
+{
+  "id": "recommendation.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo.retain",
+  "version": "1.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar Casos de transferencia: 7750, Seiko 6138 y cuarzo analógico",
+    "en": "Repasar Casos de transferencia: 7750, Seiko 6138 y cuarzo analógico"
+  },
+  "reason": {
+    "es": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos.",
+    "en": "Recuperar la cadena sin releer permite comprobar retención y corregir errores activos."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 418,
+  "target": {
+    "kind": "competency",
+    "id": "competency.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo"
+  },
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo"
+  ],
+  "required": false
+}

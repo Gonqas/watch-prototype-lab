@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+  "version": "1.1.0",
+  "title": "Cuaderno: Restauración, donantes y fabricación de repuesto",
+  "description": "¿Cómo se decide entre reparar, fabricar, adaptar, usar donante o no intervenir?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Restauración, donantes y fabricación de repuesto. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se decide entre reparar, fabricar, adaptar, usar donante o no intervenir?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se decide entre reparar, fabricar, adaptar, usar donante o no intervenir?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.answer",
+      "instructionMarkdown": "Explica **Restauración, donantes y fabricación de repuesto** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.explain",
+          "promptMarkdown": "¿Cómo se decide entre reparar, fabricar, adaptar, usar donante o no intervenir?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por definir función perdida y sigue hasta instalar, validar y registrar.",
+                "en": "Empieza por definir función perdida y sigue hasta instalar, validar y registrar."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La decisión parte de función, rareza, evidencia y capacidad. Reparar conserva material pero puede ocultar fatiga; fabricar exige plano funcional y material; adaptar altera interfaces; un donante transfiere una pieza cuya compatibilidad debe demostrarse. Toda opción necesita identificación permanente y registro.",
+                "en": "La decisión parte de función, rareza, evidencia y capacidad. Reparar conserva material pero puede ocultar fatiga; fabricar exige plano funcional y material; adaptar altera interfaces; un donante transfiere una pieza cuya compatibilidad debe demostrarse. Toda opción necesita identificación permanente y registro."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se decide entre reparar, fabricar, adaptar, usar donante o no intervenir?",
+              "en": "¿Cómo se decide entre reparar, fabricar, adaptar, usar donante o no intervenir?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena definir función perdida → documentar original → comparar opciones → medir interfaces y riesgo → prototipar fuera del original → instalar, validar y registrar, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena definir función perdida → documentar original → comparar opciones → medir interfaces y riesgo → prototipar fuera del original → instalar, validar y registrar, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.mechanism",
+            "field.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.evidence",
+            "field.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.limit",
+            "field.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

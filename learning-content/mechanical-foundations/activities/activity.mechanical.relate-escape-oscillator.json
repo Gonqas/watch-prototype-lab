@@ -1,0 +1,393 @@
+{
+  "id": "activity.mechanical.relate-escape-oscillator",
+  "version": "0.5.0",
+  "title": "Relacionar escape y oscilador",
+  "sceneIds": [
+    "scene.practice.mechanical.relate-escape-oscillator"
+  ],
+  "competencyIds": [
+    "competency.mechanical.explain-escape-oscillator-system"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.mechanical.explain-escape-oscillator-system"
+  ],
+  "rubricId": "rubric.mechanical.explain-escape-oscillator-system",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.mechanical.escape-oscillator",
+    "title": {
+      "es": "Relacionar escape y oscilador",
+      "en": "Relacionar escape y oscilador"
+    },
+    "description": {
+      "es": "Relacionar escape y oscilador mediante el laboratorio funcional, cálculos declarados, evidencia y restauración.",
+      "en": "Relacionar escape y oscilador mediante el laboratorio funcional, cálculos declarados, evidencia y restauración."
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 14,
+    "activityType": "guided-practice",
+    "movementIds": [
+      "fixture.conceptual.mechanical-chain",
+      "fixture.miyota.8215.structural"
+    ],
+    "familyIds": [
+      "conceptual-mechanical"
+    ],
+    "subsystem": "integration",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "canonical-selectors-v1",
+      "viewport.selection",
+      "viewport.visibility",
+      "viewport.isolation",
+      "viewport.transparency",
+      "viewport.highlight",
+      "viewport.explode",
+      "viewport.camera",
+      "viewport.overlay.labels",
+      "timeline.scrub",
+      "reduced-motion",
+      "viewport.restore"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G1",
+      "kinematics": "K2",
+      "physics": "P0",
+      "limitations": [
+        "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+        "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+        "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Modelo normalizado: no es física ni servicio de un calibre real.",
+        "El 8215 solo aporta comparación estructural documentada."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.horology.private-book.escapements",
+      "source.horology.private-book.balance-spring",
+      "source.horology.original-mechanical-foundations"
+    ],
+    "visualResourceIds": [
+      "visual.mechanical.escape-oscillator"
+    ],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "interactionContract": {
+      "responseModel": "single-choice",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [],
+      "hints": [
+        {
+          "id": "hint.mechanical.relate-escape-oscillator.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Reformula la pregunta con una entrada y una salida: ¿Qué relación de doble sentido une escape y oscilador?"
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.relate-escape-oscillator.2",
+          "level": 2,
+          "kind": "subsystem",
+          "content": {
+            "es": "Sigue por separado el impulso recibido y la condición temporal del escape."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.relate-escape-oscillator.3",
+          "level": 3,
+          "kind": "functional-property",
+          "content": {
+            "es": "Aplica la regla de esta unidad sin mirar todavía la opción: El escape impulsa al oscilador y la temporización de este condiciona el siguiente desbloqueo."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.relate-escape-oscillator.4",
+          "level": 4,
+          "kind": "comparison",
+          "content": {
+            "es": "Contrasta tu predicción con el estado restaurado y localiza la primera diferencia comprobable."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.relate-escape-oscillator.5",
+          "level": 5,
+          "kind": "near-answer",
+          "content": {
+            "es": "El escape impulsa al oscilador y la temporización de este condiciona el siguiente desbloqueo."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.mechanical.relate-escape-oscillator.6",
+          "level": 6,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "Explica por qué descartaste las otras opciones y resuelve después esta transferencia: Compara esta realimentación con el control de un cuarzo."
+          },
+          "availableAfterAttempts": 2,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "mechanical-lab-command",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": false,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "mechanicalLabContract": {
+      "fixtureId": "fixture.conceptual.mechanical-chain",
+      "comparisonFixtureId": "fixture.miyota.8215.structural",
+      "subsystem": "integration",
+      "commands": [
+        "set-oscillator",
+        "pause-oscillator",
+        "set-hairspring-active-length",
+        "step-escapement",
+        "scrub-escapement",
+        "oscillate",
+        "block",
+        "unblock",
+        "introduce-fault",
+        "inspect",
+        "restore"
+      ],
+      "viewModes": [
+        "normal",
+        "energy-flow",
+        "kinematics",
+        "step-by-step",
+        "textual"
+      ],
+      "normalizedPhysicsOnly": true,
+      "textualAlternative": true,
+      "reducedMotion": true
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "manipulate",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "El escape impulsa al oscilador y la temporización de este condiciona el siguiente desbloqueo."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa la relación específica. «El volante almacena toda la energía y el escape solo muestra la hora» y «Ambos giran libremente sin contacto ni realimentación» no explican el resultado observado."
+      },
+      "causalQuestion": {
+        "es": "¿Qué relación de doble sentido une escape y oscilador?"
+      },
+      "nextObservation": {
+        "es": "Sigue por separado el impulso recibido y la condición temporal del escape."
+      },
+      "misconceptionIds": [
+        "misconception.mechanical.frequency-is-amplitude"
+      ],
+      "transferPrompt": {
+        "es": "Compara esta realimentación con el control de un cuarzo."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.mechanical.distinguish-frequency-amplitude",
+        "concept.mechanical.explain-escape-oscillator-system"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico.",
+          "en": "No inventar dimensiones, contactos, materiales, tolerancias ni comportamiento físico."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o destreza manual.",
+          "en": "No presentar una simulación educativa como validación de ingeniería o destreza manual."
+        },
+        {
+          "es": "No calificar al estudiante ni completar por él la evidencia exigida.",
+          "en": "No calificar al estudiante ni completar por él la evidencia exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "En «Relacionar escape y oscilador», ¿qué observas sin interpretarlo todavía?",
+          "en": "En «Relacionar escape y oscilador», ¿qué observas sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué elemento inicia el cambio y cuál recibe el efecto?",
+          "en": "¿Qué elemento inicia el cambio y cuál recibe el efecto?"
+        },
+        {
+          "es": "¿Qué interfaz o dependencia permite esa relación?",
+          "en": "¿Qué interfaz o dependencia permite esa relación?"
+        },
+        {
+          "es": "¿Qué fuente respalda la conclusión y qué permanece desconocido?",
+          "en": "¿Qué fuente respalda la conclusión y qué permanece desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué relación de doble sentido une escape y oscilador?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Sigue por separado el impulso recibido y la condición temporal del escape."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Relacionar escape y oscilador»."
+          },
+          {
+            "es": "Contrasta la regla específica del ejemplo: El escape impulsa al oscilador y la temporización de este condiciona el siguiente desbloqueo."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "El escape impulsa al oscilador y la temporización de este condiciona el siguiente desbloqueo."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Relacionar escape y oscilador» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Relacionar escape y oscilador» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Relacionar escape y oscilador» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Compara esta realimentación con el control de un cuarzo."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "El escape entrega impulsos; el oscilador gobierna cuándo puede liberarse el siguiente diente"
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "El volante almacena toda la energía y el escape solo muestra la hora"
+        },
+        {
+          "es": "Ambos giran libremente sin contacto ni realimentación"
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Compara esta realimentación con el control de un cuarzo."
+        }
+      },
+      "transferPrompt": {
+        "es": "Compara esta realimentación con el control de un cuarzo."
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.mechanical.distinguish-frequency-amplitude"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.mechanical.explain-escape-oscillator-system"
+      ],
+      "assessesConceptIds": [
+        "concept.mechanical.explain-escape-oscillator-system"
+      ],
+      "evidenceLevel": "recognition",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.mechanical.escape-oscillator",
+        "blockId": "block.mechanical.escape-oscillator",
+        "conceptIds": [
+          "concept.mechanical.explain-escape-oscillator-system"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Esta práctica comprueba comprensión dentro de un modelo mecánico conceptual geometría conceptual y secuencia educativa, sin simulación física. No demuestra física validada, destreza manual ni capacidad de servicio sobre un calibre real.",
+        "en": "This activity checks understanding in a geometría conceptual y secuencia educativa, sin simulación física conceptual mechanical model. It does not demonstrate validated physics, manual skill, or the ability to service a real calibre."
+      }
+    }
+  }
+}

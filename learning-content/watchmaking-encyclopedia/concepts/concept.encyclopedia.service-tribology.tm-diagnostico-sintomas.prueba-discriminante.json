@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.service-tribology.tm-diagnostico-sintomas.prueba-discriminante",
+  "version": "1.1.0",
+  "title": {
+    "es": "prueba discriminante",
+    "en": "prueba discriminante"
+  },
+  "summary": {
+    "es": "Observación cuyos resultados previstos difieren entre hipótesis.",
+    "en": "Observación cuyos resultados previstos difieren entre hipótesis."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.service-tribology.tm-inspeccion-previa.estado-de-entrada",
+    "concept.encyclopedia.service-tribology.tm-inspeccion-previa.inspeccion-funcional",
+    "concept.encyclopedia.service-tribology.tm-inspeccion-previa.registro-de-discrepancia"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "movementIds": [],
+  "subsystem": "diagnosis",
+  "routeIds": [
+    "route.encyclopedia.service-tribology"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "sourceIds": [
+    "source.official.tm9-1575.diagnosis",
+    "source.private.chicago.35",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+  "plainLanguage": {
+    "es": "Observación cuyos resultados previstos difieren entre hipótesis.",
+    "en": "Observación cuyos resultados previstos difieren entre hipótesis."
+  },
+  "technicalLanguage": {
+    "es": "prueba discriminante se interpreta mediante la cadena definir síntoma → registrar condiciones → enumerar causas por función → elegir prueba reversible → actualizar confianza → intervenir solo con evidencia y las condiciones declaradas en la unidad.",
+    "en": "prueba discriminante se interpreta mediante la cadena definir síntoma → registrar condiciones → enumerar causas por función → elegir prueba reversible → actualizar confianza → intervenir solo con evidencia y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?",
+    "en": "Permite explicar y comprobar ¿cómo se usa una tabla histórica de averías sin convertirla en sustitución por receta?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir prueba discriminante sin circularidad.",
+      "en": "Definir prueba discriminante sin circularidad."
+    },
+    {
+      "es": "Relacionar prueba discriminante con una entrada, una interfaz y una salida.",
+      "en": "Relacionar prueba discriminante con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "transfer",
+  "availability": "prerequisite-blocked"
+}

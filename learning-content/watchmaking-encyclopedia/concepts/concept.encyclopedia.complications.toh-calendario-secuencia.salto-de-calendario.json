@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.complications.toh-calendario-secuencia.salto-de-calendario",
+  "version": "1.1.0",
+  "title": {
+    "es": "salto de calendario",
+    "en": "salto de calendario"
+  },
+  "summary": {
+    "es": "Transición discreta entre posiciones legibles.",
+    "en": "Transición discreta entre posiciones legibles."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.complications.toh-reversores-deslizamiento.rueda-inversora",
+    "concept.encyclopedia.complications.toh-reversores-deslizamiento.desacoplamiento",
+    "concept.encyclopedia.complications.toh-reversores-deslizamiento.par-de-deslizamiento"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.complications.toh-calendario-secuencia"
+  ],
+  "movementIds": [],
+  "subsystem": "calendar",
+  "routeIds": [
+    "route.encyclopedia.complications"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.complications.toh-calendario-secuencia"
+  ],
+  "sourceIds": [
+    "source.private.toh.ch09",
+    "source.official.eta.2824",
+    "source.encyclopedia.original-synthesis"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.complications.toh-calendario-secuencia"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.complications.toh-calendario-secuencia",
+  "plainLanguage": {
+    "es": "Transición discreta entre posiciones legibles.",
+    "en": "Transición discreta entre posiciones legibles."
+  },
+  "technicalLanguage": {
+    "es": "salto de calendario se interpreta mediante la cadena tomar ciclo de 24 horas → aproximar arrastre → cargar o empujar → vencer jumper → avanzar un paso → asentar nueva fecha y las condiciones declaradas en la unidad.",
+    "en": "salto de calendario se interpreta mediante la cadena tomar ciclo de 24 horas → aproximar arrastre → cargar o empujar → vencer jumper → avanzar un paso → asentar nueva fecha y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?",
+    "en": "Permite explicar y comprobar ¿cómo acumula un calendario un ciclo diario y lo transforma en avance discreto?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir salto de calendario sin circularidad.",
+      "en": "Definir salto de calendario sin circularidad."
+    },
+    {
+      "es": "Relacionar salto de calendario con una entrada, una interfaz y una salida.",
+      "en": "Relacionar salto de calendario con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

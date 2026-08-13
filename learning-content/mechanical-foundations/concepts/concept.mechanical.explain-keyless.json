@@ -1,0 +1,60 @@
+{
+  "id": "concept.mechanical.explain-keyless",
+  "version": "0.5.0",
+  "title": {
+    "es": "Explicar cuerda y puesta en hora",
+    "en": "Explicar cuerda y puesta en hora"
+  },
+  "summary": {
+    "es": "Explicar cuerda y puesta en hora mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Explicar cuerda y puesta en hora mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "kind": "skill",
+  "prerequisiteIds": [
+    "concept.mechanical.explain-motion-works"
+  ],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.mechanical.explain-keyless"
+  ],
+  "movementIds": [
+    "fixture.conceptual.mechanical-chain"
+  ],
+  "subsystem": "keyless",
+  "routeIds": [
+    "route.mechanical.foundations"
+  ],
+  "activityIds": [
+    "activity.mechanical.reconstruct-crown-states",
+    "activity.mechanical.operate-winding-setting"
+  ],
+  "sourceIds": [
+    "source.horology.original-mechanical-foundations"
+  ],
+  "availability": "prerequisite-blocked",
+  "plainLanguage": {
+    "es": "Explicar cuerda y puesta en hora mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.",
+    "en": "Explicar cuerda y puesta en hora mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica."
+  },
+  "technicalLanguage": {
+    "es": "Explicar cuerda y puesta en hora describe una relación causal dentro de cuerda y puesta en hora: una entrada produce un cambio observable mediante una interfaz declarada. Explicar cuerda y puesta en hora mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto.",
+    "en": "Explicar cuerda y puesta en hora describe una relación causal dentro de cuerda y puesta en hora: una entrada produce un cambio observable mediante una interfaz declarada. Explicar cuerda y puesta en hora mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica. La explicación técnica debe nombrar origen, receptor, relación y efecto."
+  },
+  "whyItMatters": {
+    "es": "Dominar explicar cuerda y puesta en hora permite actuar de forma trazable, reversible y segura."
+  },
+  "observableActions": [
+    {
+      "es": "Explicar qué recibe y qué entrega explicar cuerda y puesta en hora dentro de la cadena funcional."
+    },
+    {
+      "es": "Predecir qué cambia si se interrumpe su relación con el subsistema cuerda y puesta en hora."
+    }
+  ],
+  "transferTargetIds": [],
+  "misconceptionIds": [],
+  "knowledgeType": "conceptual-causal",
+  "recommendedPrerequisiteIds": [],
+  "bridgeLessonId": "lesson.mechanical.keyless",
+  "targetEvidenceLevel": "causal-explanation"
+}

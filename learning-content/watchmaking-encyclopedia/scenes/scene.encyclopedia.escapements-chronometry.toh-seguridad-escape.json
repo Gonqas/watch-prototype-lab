@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+  "version": "1.1.0",
+  "title": "Cuaderno: Seguridad: draw, guardia y cuernos",
+  "description": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Seguridad: draw, guardia y cuernos. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.escapements-chronometry.toh-seguridad-escape.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.escapements-chronometry.toh-seguridad-escape.answer",
+      "instructionMarkdown": "Explica **Seguridad: draw, guardia y cuernos** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.escapements-chronometry.toh-seguridad-escape.explain",
+          "promptMarkdown": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-seguridad-escape.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-seguridad-escape.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-seguridad-escape.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.escapements-chronometry.toh-seguridad-escape.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.toh-seguridad-escape.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por diente bloqueado y sigue hasta despeje autorizado.",
+                "en": "Empieza por diente bloqueado y sigue hasta despeje autorizado."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.escapements-chronometry.toh-seguridad-escape.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Draw mantiene el áncora apoyada contra los topes; dardo, platillo de seguridad y cuernos limitan relaciones no deseadas fuera del arco de desbloqueo. Las holguras deben permitir el ciclo sin perder protección.",
+                "en": "Draw mantiene el áncora apoyada contra los topes; dardo, platillo de seguridad y cuernos limitan relaciones no deseadas fuera del arco de desbloqueo. Las holguras deben permitir el ciclo sin perder protección."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?",
+              "en": "¿Cómo evita el escape una liberación accidental cuando el reloj recibe perturbaciones?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena diente bloqueado → draw asienta áncora → golpe intenta desplazarla → guardia limita movimiento → clavija entra en fase → despeje autorizado, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena diente bloqueado → draw asienta áncora → golpe intenta desplazarla → guardia limita movimiento → clavija entra en fase → despeje autorizado, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.escapements-chronometry.toh-seguridad-escape.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.escapements-chronometry.toh-seguridad-escape.mechanism",
+            "field.encyclopedia.escapements-chronometry.toh-seguridad-escape.evidence",
+            "field.encyclopedia.escapements-chronometry.toh-seguridad-escape.limit",
+            "field.encyclopedia.escapements-chronometry.toh-seguridad-escape.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

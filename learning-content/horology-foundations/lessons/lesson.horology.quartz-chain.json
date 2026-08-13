@@ -1,0 +1,222 @@
+{
+  "id": "lesson.horology.quartz-chain",
+  "version": "0.5.0",
+  "title": "La cadena del cuarzo",
+  "blockIds": [
+    "block.horology.quartz-chain"
+  ],
+  "activityIds": [
+    "activity.horology.order-quartz-chain",
+    "activity.horology.identify-time-reference"
+  ],
+  "authoring": {
+    "title": {
+      "es": "La cadena del cuarzo"
+    },
+    "purpose": {
+      "es": "Seguir la cadena desde la pila hasta las agujas y distinguir control temporal, conversión electromecánica y transmisión."
+    },
+    "objectives": [
+      {
+        "es": "Ordenar las seis etapas de la cadena de cuarzo."
+      },
+      {
+        "es": "Identificar circuito y resonador como referencia o control temporal."
+      },
+      {
+        "es": "Explicar la función de bobina y rotor paso a paso."
+      }
+    ],
+    "prerequisiteConceptIds": [
+      "concept.horology.functional-chain",
+      "concept.horology.mechanical-chain"
+    ],
+    "conceptIds": [
+      "concept.horology.quartz-chain"
+    ],
+    "sourceIds": [
+      "source.miyota.2035.product-page",
+      "source.miyota.2035.parts-list-exploded-view",
+      "source.horology.original-functional-map"
+    ],
+    "visualResourceIds": [
+      "visual.horology.quartz-energy-flow",
+      "visual.horology.miyota2035-structural",
+      "visual.horology.functional-text-alternative"
+    ],
+    "visualStrategy": {
+      "objective": {
+        "es": "Relacionar la cadena conceptual con identidades documentadas del 2035."
+      },
+      "visibleConcept": {
+        "es": "La señal controlada se convierte en pasos mecánicos antes de transmitirse a las agujas."
+      },
+      "modelReference": "composition.quartz-conceptual-2035",
+      "movementIds": [
+        "fixture.miyota.2035.structural"
+      ],
+      "involvedSelectors": [],
+      "initialState": {
+        "cameraIntent": "Vista dividida coordinada, conceptual a la izquierda y 2035 a la derecha.",
+        "visible": [],
+        "hidden": [],
+        "isolated": [],
+        "explode": 0,
+        "transparency": []
+      },
+      "energyFlow": [
+        "pila",
+        "circuito y resonador",
+        "bobina",
+        "rotor paso a paso",
+        "tren",
+        "agujas"
+      ],
+      "rotationDirections": [
+        "sentido conceptual del rotor y alternancia del tren; no implica cinemática medida"
+      ],
+      "labels": [
+        "fuente",
+        "control",
+        "conversión",
+        "transmisión",
+        "indicación"
+      ],
+      "arrows": [
+        "ruta energética funcional numerada"
+      ],
+      "animations": [
+        "avance controlado por etapas y bloqueo simbólico de la bobina"
+      ],
+      "timelineIntent": "Pausar antes del rotor, solicitar predicción, mostrar consecuencia y restaurar.",
+      "userInteraction": "Ordenar etapas, responder una predicción e identificar la referencia temporal.",
+      "predictionQuestionId": "question.horology.quartz-next",
+      "observableResult": {
+        "es": "La ruta muestra qué etapas dejan de activarse tras una interrupción simbólica."
+      },
+      "successCriterion": {
+        "es": "Orden correcto y separación entre control, conversión y transmisión."
+      },
+      "restoration": {
+        "es": "Retirar el bloqueo, restablecer ruta, selección, cámaras y modelos."
+      },
+      "textualAlternative": {
+        "es": "Secuencia numerada con estado de cada etapa, relación causal y opciones disponibles."
+      },
+      "reducedMotionAlternative": {
+        "es": "Flechas estáticas y avance manual por estados numerados."
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "2035 R2 estructural; ruta funcional educativa, no simulación electromagnética."
+        ]
+      },
+      "unknownData": [
+        "corriente, campo magnético, par, pérdidas y geometría interna no documentada"
+      ],
+      "requiredVisualResourceIds": [
+        "visual.horology.quartz-energy-flow",
+        "visual.horology.miyota2035-structural",
+        "visual.horology.functional-text-alternative"
+      ]
+    },
+    "recommendedPrerequisiteConceptIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "reinforcesConceptIds": [
+        "concept.horology.functional-chain",
+        "concept.horology.mechanical-chain"
+      ],
+      "bridgeConceptIds": [
+        "concept.horology.functional-chain",
+        "concept.horology.mechanical-chain"
+      ]
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, contactos, materiales ni comportamiento físico no declarado."
+        },
+        {
+          "es": "No presentar una simulación educativa como validación de ingeniería o competencia manual."
+        },
+        {
+          "es": "No calificar al estudiante ni sustituir la evidencia exigida por la actividad."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente, sin interpretarlo todavía?"
+        },
+        {
+          "es": "¿Qué pieza entrega movimiento y cuál lo recibe?"
+        },
+        {
+          "es": "¿Qué fuente respalda esa conclusión?"
+        },
+        {
+          "es": "¿Qué cambiaría si esa relación se interrumpiera?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "externalPrerequisites": [],
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 20,
+      "minimumReadingWords": 739,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "worked-example",
+        "observe",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.horology.order-quartz-chain",
+        "activity.horology.identify-time-reference"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Ordenar las seis etapas de la cadena de cuarzo."
+        },
+        {
+          "es": "Identificar circuito y resonador como referencia o control temporal."
+        },
+        {
+          "es": "Explicar la relación principal con una entrada, una interfaz y un resultado observable."
+        },
+        {
+          "es": "Distinguir qué está documentado, qué es educativo y qué permanece desconocido."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Antes de practicar «La cadena del cuarzo», resume el modelo causal, resuelve el ejemplo sin copiarlo y anota una duda que requiera fuente o comprobación."
+      }
+    }
+  }
+}

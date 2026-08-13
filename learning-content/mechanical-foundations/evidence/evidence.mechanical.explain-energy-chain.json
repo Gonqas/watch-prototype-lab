@@ -1,0 +1,35 @@
+{
+  "id": "evidence.mechanical.explain-energy-chain",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.explain-energy-chain",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.mechanical.explain-energy-chain",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.mechanical.explain-energy-chain",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.classify-energy-functions",
+      "activity.mechanical.interrupt-energy-chain"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.explain-energy-chain",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

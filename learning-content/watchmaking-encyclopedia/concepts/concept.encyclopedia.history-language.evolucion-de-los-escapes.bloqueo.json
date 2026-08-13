@@ -1,0 +1,66 @@
+{
+  "id": "concept.encyclopedia.history-language.evolucion-de-los-escapes.bloqueo",
+  "version": "1.1.0",
+  "title": {
+    "es": "bloqueo",
+    "en": "bloqueo"
+  },
+  "summary": {
+    "es": "Estado en que el órgano de escape retiene el tren de forma controlada entre impulsos.",
+    "en": "Estado en que el órgano de escape retiene el tren de forma controlada entre impulsos."
+  },
+  "kind": "concept",
+  "knowledgeType": "conceptual-causal",
+  "prerequisiteIds": [
+    "concept.encyclopedia.history-language.del-reloj-fijo-al-portatil.portabilidad",
+    "concept.encyclopedia.history-language.del-reloj-fijo-al-portatil.reserva-de-marcha",
+    "concept.encyclopedia.history-language.del-reloj-fijo-al-portatil.sensibilidad-posicional"
+  ],
+  "recommendedPrerequisiteIds": [],
+  "relatedIds": [],
+  "competencyIds": [
+    "competency.encyclopedia.history-language.evolucion-de-los-escapes"
+  ],
+  "movementIds": [],
+  "subsystem": "escapement-history",
+  "routeIds": [
+    "route.encyclopedia.history-language"
+  ],
+  "activityIds": [
+    "activity.encyclopedia.history-language.evolucion-de-los-escapes"
+  ],
+  "sourceIds": [
+    "source.private.daniels.escapements",
+    "source.external.timezone-horologium",
+    "source.external.horology-student.books"
+  ],
+  "misconceptionIds": [
+    "misconception.encyclopedia.history-language.evolucion-de-los-escapes"
+  ],
+  "bridgeLessonId": "lesson.encyclopedia.history-language.evolucion-de-los-escapes",
+  "plainLanguage": {
+    "es": "Estado en que el órgano de escape retiene el tren de forma controlada entre impulsos.",
+    "en": "Estado en que el órgano de escape retiene el tren de forma controlada entre impulsos."
+  },
+  "technicalLanguage": {
+    "es": "bloqueo se interpreta mediante la cadena tren entrega par → escape bloquea → oscilador desengancha → se transmite impulso → escape vuelve a bloquear y las condiciones declaradas en la unidad.",
+    "en": "bloqueo se interpreta mediante la cadena tren entrega par → escape bloquea → oscilador desengancha → se transmite impulso → escape vuelve a bloquear y las condiciones declaradas en la unidad."
+  },
+  "whyItMatters": {
+    "es": "Permite explicar y comprobar ¿por qué cambiaron los escapes y qué significa comparar soluciones sin convertir la historia en una lista?",
+    "en": "Permite explicar y comprobar ¿por qué cambiaron los escapes y qué significa comparar soluciones sin convertir la historia en una lista?"
+  },
+  "observableActions": [
+    {
+      "es": "Definir bloqueo sin circularidad.",
+      "en": "Definir bloqueo sin circularidad."
+    },
+    {
+      "es": "Relacionar bloqueo con una entrada, una interfaz y una salida.",
+      "en": "Relacionar bloqueo con una entrada, una interfaz y una salida."
+    }
+  ],
+  "transferTargetIds": [],
+  "targetEvidenceLevel": "causal-explanation",
+  "availability": "prerequisite-blocked"
+}

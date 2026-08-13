@@ -1,0 +1,306 @@
+{
+  "id": "activity.encyclopedia.workshop-tools-materials.materiales-relojeros",
+  "version": "1.1.0",
+  "title": "Explicar y transferir: Materiales relojeros y propiedades funcionales",
+  "sceneIds": [
+    "scene.encyclopedia.workshop-tools-materials.materiales-relojeros"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.workshop-tools-materials.materiales-relojeros"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.encyclopedia.workshop-tools-materials.materiales-relojeros"
+  ],
+  "rubricId": "rubric.encyclopedia.workshop-tools-materials.materiales-relojeros",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "watchmaking-encyclopedia-notebook"
+  },
+  "authoring": {
+    "lessonId": "lesson.encyclopedia.workshop-tools-materials.materiales-relojeros",
+    "title": {
+      "es": "Explicar y transferir: Materiales relojeros y propiedades funcionales",
+      "en": "Explicar y transferir: Materiales relojeros y propiedades funcionales"
+    },
+    "description": {
+      "es": "¿Cómo se elige y reconoce un material por su función y no solo por su color?",
+      "en": "¿Cómo se elige y reconoce un material por su función y no solo por su color?"
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 35,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "materials",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Actividad textual y causal; no valida geometría, física ni destreza manual."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ],
+      "en": [
+        "Contrasta cualquier procedimiento físico con documentación aplicable y condiciones seguras."
+      ]
+    },
+    "sourceIds": [
+      "source.private.daniels.finishing-metals",
+      "source.private.daniels.jewelling",
+      "source.institutional.wostep.watchmaker"
+    ],
+    "visualResourceIds": [],
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.dureza",
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.tenacidad",
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.compatibilidad-tribologica"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.dureza",
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.tenacidad",
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.compatibilidad-tribologica"
+      ],
+      "assessesConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.dureza",
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.tenacidad",
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.compatibilidad-tribologica"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.encyclopedia.workshop-tools-materials.materiales-relojeros",
+        "blockId": "block.encyclopedia.workshop-tools-materials.materiales-relojeros",
+        "conceptIds": [
+          "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.dureza",
+          "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.tenacidad",
+          "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.compatibilidad-tribologica"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana.",
+        "en": "La evidencia acredita razonamiento y documentación dentro de la Academia. La destreza manual y la validez física requieren banco, instrumentos, seguridad y revisión humana."
+      }
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "Reconstruir y aplicar Materiales relojeros y propiedades funcionales sin depender de reconocimiento superficial.",
+        "en": "Reconstruir y aplicar Materiales relojeros y propiedades funcionales sin depender de reconocimiento superficial."
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Un pivote necesita dureza y acabado para resistir desgaste, pero si es frágil o tiene transición aguda puede romper. El cojinete de rubí reduce desgaste y estabiliza geometría, aunque su comportamiento depende de juego, aceite, limpieza y choque.",
+          "en": "Un pivote necesita dureza y acabado para resistir desgaste, pero si es frágil o tiene transición aguda puede romper. El cojinete de rubí reduce desgaste y estabiliza geometría, aunque su comportamiento depende de juego, aceite, limpieza y choque."
+        },
+        "steps": [
+          {
+            "es": "Identificar la pregunta: ¿Cómo se elige y reconoce un material por su función y no solo por su color?",
+            "en": "Identificar la pregunta: ¿Cómo se elige y reconoce un material por su función y no solo por su color?"
+          },
+          {
+            "es": "Dibujar la secuencia definir función → identificar cargas y entorno → seleccionar propiedades → elegir material y tratamiento → fabricar superficie → verificar comportamiento.",
+            "en": "Dibujar la secuencia definir función → identificar cargas y entorno → seleccionar propiedades → elegir material y tratamiento → fabricar superficie → verificar comportamiento."
+          },
+          {
+            "es": "Asignar magnitudes y evidencia: módulo elástico; dureza; coeficiente de dilatación; coeficiente de fricción; resistencia a corrosión.",
+            "en": "Asignar magnitudes y evidencia: módulo elástico; dureza; coeficiente de dilatación; coeficiente de fricción; resistencia a corrosión."
+          },
+          {
+            "es": "Declarar el límite y probar una hipótesis rival.",
+            "en": "Declarar el límite y probar una hipótesis rival."
+          }
+        ],
+        "conclusion": {
+          "es": "Compara dos candidatos para pivote, muelle, junta y puente; justifica propiedades requeridas y ensayos que faltarían.",
+          "en": "Compara dos candidatos para pivote, muelle, junta y puente; justifica propiedades requeridas y ensayos que faltarían."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Completa la cadena con las etapas visibles: definir función → identificar cargas y entorno → seleccionar propiedades → elegir material y tratamiento → fabricar superficie → verificar comportamiento.",
+            "en": "Completa la cadena con las etapas visibles: definir función → identificar cargas y entorno → seleccionar propiedades → elegir material y tratamiento → fabricar superficie → verificar comportamiento."
+          },
+          "evidence": {
+            "es": "Cadena explicada con apoyo.",
+            "en": "Cadena explicada con apoyo."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Repite ocultando dos etapas y justifica las interfaces.",
+            "en": "Repite ocultando dos etapas y justifica las interfaces."
+          },
+          "evidence": {
+            "es": "Reconstrucción con ayuda reducida.",
+            "en": "Reconstrucción con ayuda reducida."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "¿Cómo se elige y reconoce un material por su función y no solo por su color?",
+            "en": "¿Cómo se elige y reconoce un material por su función y no solo por su color?"
+          },
+          "evidence": {
+            "es": "Respuesta estructurada sin pistas.",
+            "en": "Respuesta estructurada sin pistas."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Compara dos candidatos para pivote, muelle, junta y puente; justifica propiedades requeridas y ensayos que faltarían.",
+            "en": "Compara dos candidatos para pivote, muelle, junta y puente; justifica propiedades requeridas y ensayos que faltarían."
+          },
+          "evidence": {
+            "es": "Aplicación a una variante con nuevas fuentes o datos.",
+            "en": "Aplicación a una variante con nuevas fuentes o datos."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La cadena no omite la interfaz decisiva.",
+          "en": "La cadena no omite la interfaz decisiva."
+        },
+        {
+          "es": "La evidencia corresponde a la afirmación.",
+          "en": "La evidencia corresponde a la afirmación."
+        },
+        {
+          "es": "El límite y el desconocido están explícitos.",
+          "en": "El límite y el desconocido están explícitos."
+        },
+        {
+          "es": "La transferencia no hereda datos del caso inicial.",
+          "en": "La transferencia no hereda datos del caso inicial."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "El material más duro es siempre el mejor para una pieza pequeña",
+          "en": "El material más duro es siempre el mejor para una pieza pequeña"
+        },
+        {
+          "es": "La respuesta nombra piezas o pasos sin explicar relaciones.",
+          "en": "La respuesta nombra piezas o pasos sin explicar relaciones."
+        },
+        {
+          "es": "Una cifra aparece sin unidad, método o fuente.",
+          "en": "Una cifra aparece sin unidad, método o fuente."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Reintentar Materiales relojeros y propiedades funcionales con otra condición inicial o caso de transferencia.",
+          "en": "Reintentar Materiales relojeros y propiedades funcionales con otra condición inicial o caso de transferencia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Compara dos candidatos para pivote, muelle, junta y puente; justifica propiedades requeridas y ensayos que faltarían.",
+        "en": "Compara dos candidatos para pivote, muelle, junta y puente; justifica propiedades requeridas y ensayos que faltarían."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La explicación conserva la cadena definir función → identificar cargas y entorno → seleccionar propiedades → elegir material y tratamiento → fabricar superficie → verificar comportamiento, su evidencia y límites.",
+        "en": "La explicación conserva la cadena definir función → identificar cargas y entorno → seleccionar propiedades → elegir material y tratamiento → fabricar superficie → verificar comportamiento, su evidencia y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si omitiste una interfaz o caíste en «El material más duro es siempre el mejor para una pieza pequeña».",
+        "en": "Revisa si omitiste una interfaz o caíste en «El material más duro es siempre el mejor para una pieza pequeña»."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se elige y reconoce un material por su función y no solo por su color?",
+        "en": "¿Cómo se elige y reconoce un material por su función y no solo por su color?"
+      },
+      "nextObservation": {
+        "es": "Busca evidencia para distinguir Confundir dureza con resistencia a rotura. de Elegir material sin considerar pareja de contacto y ambiente..",
+        "en": "Busca evidencia para distinguir Confundir dureza con resistencia a rotura. de Elegir material sin considerar pareja de contacto y ambiente.."
+      },
+      "misconceptionIds": [
+        "misconception.encyclopedia.workshop-tools-materials.materiales-relojeros"
+      ],
+      "transferPrompt": {
+        "es": "Compara dos candidatos para pivote, muelle, junta y puente; justifica propiedades requeridas y ensayos que faltarían.",
+        "en": "Compara dos candidatos para pivote, muelle, junta y puente; justifica propiedades requeridas y ensayos que faltarían."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.dureza",
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.tenacidad",
+        "concept.encyclopedia.workshop-tools-materials.materiales-relojeros.compatibilidad-tribologica"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados.",
+          "en": "No inventar dimensiones, tolerancias, materiales, lubricantes, estados ni procedimientos no respaldados."
+        },
+        {
+          "es": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante.",
+          "en": "No presentar explicación digital como destreza manual, validación física o autoridad de fabricante."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Cómo se elige y reconoce un material por su función y no solo por su color?",
+          "en": "¿Cómo se elige y reconoce un material por su función y no solo por su color?"
+        },
+        {
+          "es": "¿Qué relación causal de «Materiales relojeros y propiedades funcionales» falta en mi explicación?",
+          "en": "¿Qué relación causal de «Materiales relojeros y propiedades funcionales» falta en mi explicación?"
+        },
+        {
+          "es": "¿Qué fuente respalda este dato y cuál es su alcance?",
+          "en": "¿Qué fuente respalda este dato y cuál es su alcance?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "check-understanding",
+        "record-evidence"
+      ]
+    }
+  }
+}

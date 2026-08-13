@@ -1,0 +1,136 @@
+{
+  "id": "scene.metrology.elegir-iluminacion",
+  "version": "0.2.0",
+  "title": "Elegir iluminación",
+  "description": "Escena textual y accesible que prepara la operación real “Elegir iluminación” en la estación de inspección y metrología.",
+  "accessibility": {
+    "textualAlternative": "Procedimiento numerado para Elegir iluminación. La operación real puede ejecutarse por teclado, coordenadas y tabla en la estación metrológica.",
+    "reducedMotionAlternative": "No contiene movimiento automático; todos los cambios son discretos y controlados.",
+    "keyboardActions": [
+      "Tab para recorrer controles.",
+      "Intro o Espacio para activar.",
+      "Coordenadas para sustituir el arrastre."
+    ],
+    "colorIndependentCues": [
+      "Texto, icono y estado acompañan cada color."
+    ]
+  },
+  "requiredCapabilities": [],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.scene-metrology-elegir-iluminacion.boundary",
+      "markdown": "Abre la estación **Inspección y metrología** para ejecutar la operación sobre el registro local. El original y el proyecto técnico permanecen intactos.",
+      "accessibleLabel": "La operación usa la estación metrológica local y no modifica el proyecto técnico."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.scene-metrology-elegir-iluminacion.prepare",
+      "instructionMarkdown": "Recupera el criterio del módulo y prepara “Elegir iluminación”. Identifica unidad, característica, referencia y riesgo de invalidez.",
+      "questions": [],
+      "success": [
+        {
+          "condition": "step-confirmed"
+        }
+      ]
+    },
+    {
+      "id": "step.scene-metrology-elegir-iluminacion.evidence",
+      "instructionMarkdown": "Ejecuta o documenta “Elegir iluminación” y conserva la evidencia solicitada.",
+      "questions": [
+        {
+          "id": "question.activity-metrology-elegir-iluminacion",
+          "promptMarkdown": "¿Cómo hacemos visible una característica sin confundir un efecto de iluminación, aumento o postura con una propiedad de la pieza?\n\nEn «Elegir iluminación», elige la conclusión que no excede la evidencia del ejemplo y justifica por qué las otras dos opciones fallan.",
+          "responseKind": "structured-response",
+          "options": [
+            {
+              "id": "option.activity-metrology-elegir-iluminacion.defensible",
+              "label": "Dos configuraciones coherentes aportan más información que una única imagen extrema. El registro explica cómo la apariencia depende del montaje óptico.",
+              "labels": {
+                "es": "Dos configuraciones coherentes aportan más información que una única imagen extrema. El registro explica cómo la apariencia depende del montaje óptico.",
+                "en": "Dos configuraciones coherentes aportan más información que una única imagen extrema. El registro explica cómo la apariencia depende del montaje óptico."
+              }
+            },
+            {
+              "id": "option.activity-metrology-elegir-iluminacion.error-one",
+              "label": "Buscar el aumento máximo antes de localizar la pieza y la cara.",
+              "labels": {
+                "es": "Buscar el aumento máximo antes de localizar la pieza y la cara.",
+                "en": "Buscar el aumento máximo antes de localizar la pieza y la cara."
+              }
+            },
+            {
+              "id": "option.activity-metrology-elegir-iluminacion.error-two",
+              "label": "Cambiar luz, orientación y enfoque a la vez, de modo que no se sepa qué causó la diferencia.",
+              "labels": {
+                "es": "Cambiar luz, orientación y enfoque a la vez, de modo que no se sepa qué causó la diferencia.",
+                "en": "Cambiar luz, orientación y enfoque a la vez, de modo que no se sepa qué causó la diferencia."
+              }
+            }
+          ],
+          "structuredFields": [
+            {
+              "id": "field.activity-metrology-elegir-iluminacion.decision",
+              "label": "¿Cómo hacemos visible una característica sin confundir un efecto de iluminación, aumento o postura con una propiedad de la pieza?",
+              "kind": "choice",
+              "required": true,
+              "optionIds": [
+                "option.activity-metrology-elegir-iluminacion.defensible",
+                "option.activity-metrology-elegir-iluminacion.error-one",
+                "option.activity-metrology-elegir-iluminacion.error-two"
+              ]
+            },
+            {
+              "id": "field.activity-metrology-elegir-iluminacion.justification",
+              "label": "Justifica qué evidencia y qué límite hacen defendible tu elección.",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.activity-metrology-elegir-iluminacion.confidence",
+              "label": "Confianza en la decisión",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Decide y justifica: ¿Cómo hacemos visible una característica sin confundir un efecto de iluminación, aumento o postura con una propiedad de la pieza?"
+            },
+            "feedback": {
+              "es": "La conclusión defendible conserva evidencia y alcance: Dos configuraciones coherentes aportan más información que una única imagen extrema. El registro explica cómo la apariencia depende del montaje óptico."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.activity-metrology-elegir-iluminacion",
+          "requiredFieldIds": [
+            "field.activity-metrology-elegir-iluminacion.decision",
+            "field.activity-metrology-elegir-iluminacion.justification",
+            "field.activity-metrology-elegir-iluminacion.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

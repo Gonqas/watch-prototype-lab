@@ -1,0 +1,34 @@
+{
+  "id": "evidence.mechanical.explain-automatic-winding",
+  "version": "0.5.0",
+  "competencyId": "competency.mechanical.explain-automatic-winding",
+  "kind": "procedure",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "rule.extract.mechanical.explain-automatic-winding",
+    "version": "0.5.0",
+    "triggerEventType": "mechanical-lab-command",
+    "evidenceType": "simulation-result",
+    "competencyId": "competency.mechanical.explain-automatic-winding",
+    "packageId": "wplab.horology.mechanical-foundations",
+    "activityIds": [
+      "activity.mechanical.follow-automatic-energy"
+    ],
+    "evidenceTemplateId": "evidence.mechanical.explain-automatic-winding",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "commandType",
+      "subsystem",
+      "activeFaults",
+      "projectDraft"
+    ]
+  }
+}

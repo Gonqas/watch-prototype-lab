@@ -1,0 +1,270 @@
+{
+  "id": "route.encyclopedia.history-language",
+  "version": "1.1.0",
+  "title": {
+    "es": "Historia, familias y lenguaje del reloj",
+    "en": "Historia, familias y lenguaje del reloj"
+  },
+  "purpose": {
+    "es": "Comprender por qué existen las arquitecturas actuales y aprender a leer sus nombres, documentos y límites antes de intervenir.",
+    "en": "Comprender por qué existen las arquitecturas actuales y aprender a leer sus nombres, documentos y límites antes de intervenir."
+  },
+  "prerequisiteConceptIds": [],
+  "moduleIds": [
+    "module.encyclopedia.history-language.medir-el-tiempo",
+    "module.encyclopedia.history-language.del-reloj-fijo-al-portatil",
+    "module.encyclopedia.history-language.evolucion-de-los-escapes",
+    "module.encyclopedia.history-language.industrializacion-y-familias",
+    "module.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+    "module.encyclopedia.history-language.leer-documentacion",
+    "module.encyclopedia.history-language.toh-tiempo-escalas",
+    "module.encyclopedia.history-language.toh-instrumentos-principios",
+    "module.encyclopedia.history-language.toh-cronometro-precision"
+  ],
+  "competencyIds": [
+    "competency.encyclopedia.history-language.medir-el-tiempo",
+    "competency.encyclopedia.history-language.del-reloj-fijo-al-portatil",
+    "competency.encyclopedia.history-language.evolucion-de-los-escapes",
+    "competency.encyclopedia.history-language.industrializacion-y-familias",
+    "competency.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+    "competency.encyclopedia.history-language.leer-documentacion",
+    "competency.encyclopedia.history-language.toh-tiempo-escalas",
+    "competency.encyclopedia.history-language.toh-instrumentos-principios",
+    "competency.encyclopedia.history-language.toh-cronometro-precision"
+  ],
+  "movementIds": [],
+  "difficulty": "introductory",
+  "sourceIds": [
+    "source.external.horology-student.books",
+    "source.external.hodinkee-watch101",
+    "source.encyclopedia.original-synthesis",
+    "source.external.jomashop-history",
+    "source.external.pocket-watch-database",
+    "source.private.daniels.escapements",
+    "source.external.timezone-horologium",
+    "source.external.watchbase",
+    "source.external.ranfft",
+    "source.external.caliber-corner",
+    "source.external.worn-wound-caliber-spec",
+    "source.external.watchguy-manuals",
+    "source.external.watch-movements-eu",
+    "source.official.miyota.2035",
+    "source.official.miyota.8215",
+    "source.external.timezone-illustrated-glossary",
+    "source.private.toh.ch01",
+    "source.official.bipm.vim",
+    "source.private.toh.ch02",
+    "source.official.nist.uncertainty"
+  ],
+  "visualResourceIds": [],
+  "demo": false,
+  "learningDesign": {
+    "model": "specialization",
+    "entryPolicy": "diagnostic-optional",
+    "completionPolicy": "evidence",
+    "milestones": [
+      {
+        "id": "milestone.encyclopedia.history-language.01",
+        "order": 1,
+        "title": {
+          "es": "Medir el tiempo: referencia, oscilador y contador",
+          "en": "Medir el tiempo: referencia, oscilador y contador"
+        },
+        "outcome": {
+          "es": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?",
+          "en": "¿Qué necesita cualquier reloj para transformar un fenómeno repetible en una indicación útil?"
+        },
+        "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+        "activityId": "activity.encyclopedia.history-language.medir-el-tiempo",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+          "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+          "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.history-language.02",
+        "order": 2,
+        "title": {
+          "es": "Del reloj fijo al reloj portátil",
+          "en": "Del reloj fijo al reloj portátil"
+        },
+        "outcome": {
+          "es": "¿Qué problemas técnicos aparecieron al llevar la medición del tiempo desde una posición fija hasta la muñeca?",
+          "en": "¿Qué problemas técnicos aparecieron al llevar la medición del tiempo desde una posición fija hasta la muñeca?"
+        },
+        "lessonId": "lesson.encyclopedia.history-language.del-reloj-fijo-al-portatil",
+        "activityId": "activity.encyclopedia.history-language.del-reloj-fijo-al-portatil",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.history-language.del-reloj-fijo-al-portatil.portabilidad",
+          "concept.encyclopedia.history-language.del-reloj-fijo-al-portatil.reserva-de-marcha",
+          "concept.encyclopedia.history-language.del-reloj-fijo-al-portatil.sensibilidad-posicional"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.history-language.03",
+        "order": 3,
+        "title": {
+          "es": "Evolución de los escapes y de la regulación",
+          "en": "Evolución de los escapes y de la regulación"
+        },
+        "outcome": {
+          "es": "¿Por qué cambiaron los escapes y qué significa comparar soluciones sin convertir la historia en una lista?",
+          "en": "¿Por qué cambiaron los escapes y qué significa comparar soluciones sin convertir la historia en una lista?"
+        },
+        "lessonId": "lesson.encyclopedia.history-language.evolucion-de-los-escapes",
+        "activityId": "activity.encyclopedia.history-language.evolucion-de-los-escapes",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.history-language.evolucion-de-los-escapes.bloqueo",
+          "concept.encyclopedia.history-language.evolucion-de-los-escapes.impulso",
+          "concept.encyclopedia.history-language.evolucion-de-los-escapes.desenganche"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.history-language.04",
+        "order": 4,
+        "title": {
+          "es": "Industrialización, ébauches y familias de calibres",
+          "en": "Industrialización, ébauches y familias de calibres"
+        },
+        "outcome": {
+          "es": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?",
+          "en": "¿Cómo se relacionan fabricante, ébauche, familia, calibre, variante y referencia de pieza?"
+        },
+        "lessonId": "lesson.encyclopedia.history-language.industrializacion-y-familias",
+        "activityId": "activity.encyclopedia.history-language.industrializacion-y-familias",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.history-language.industrializacion-y-familias.ebauche",
+          "concept.encyclopedia.history-language.industrializacion-y-familias.familia-de-calibres",
+          "concept.encyclopedia.history-language.industrializacion-y-familias.variante"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.history-language.05",
+        "order": 5,
+        "title": {
+          "es": "De lo electromecánico al cuarzo",
+          "en": "De lo electromecánico al cuarzo"
+        },
+        "outcome": {
+          "es": "¿Qué cambió realmente cuando la referencia, el mantenimiento y el conteo pasaron a dominios eléctricos y electrónicos?",
+          "en": "¿Qué cambió realmente cuando la referencia, el mantenimiento y el conteo pasaron a dominios eléctricos y electrónicos?"
+        },
+        "lessonId": "lesson.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+        "activityId": "activity.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.history-language.transicion-electromecanica-cuarzo.reloj-electromecanico",
+          "concept.encyclopedia.history-language.transicion-electromecanica-cuarzo.divisor-de-frecuencia",
+          "concept.encyclopedia.history-language.transicion-electromecanica-cuarzo.motor-paso-a-paso"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.history-language.06",
+        "order": 6,
+        "title": {
+          "es": "Leer nombres, especificaciones, planos y manuales",
+          "en": "Leer nombres, especificaciones, planos y manuales"
+        },
+        "outcome": {
+          "es": "¿Cómo se convierte un documento en conocimiento utilizable sin atribuirle más alcance del que tiene?",
+          "en": "¿Cómo se convierte un documento en conocimiento utilizable sin atribuirle más alcance del que tiene?"
+        },
+        "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+        "activityId": "activity.encyclopedia.history-language.leer-documentacion",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+          "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+          "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.history-language.07",
+        "order": 7,
+        "title": {
+          "es": "Tiempo, escalas y calendario civil",
+          "en": "Tiempo, escalas y calendario civil"
+        },
+        "outcome": {
+          "es": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?",
+          "en": "¿Cómo se pasa de un fenómeno astronómico irregular a una escala temporal utilizable?"
+        },
+        "lessonId": "lesson.encyclopedia.history-language.toh-tiempo-escalas",
+        "activityId": "activity.encyclopedia.history-language.toh-tiempo-escalas",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.history-language.toh-tiempo-escalas.escala-temporal",
+          "concept.encyclopedia.history-language.toh-tiempo-escalas.tiempo-solar-aparente",
+          "concept.encyclopedia.history-language.toh-tiempo-escalas.calendario-civil"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.history-language.08",
+        "order": 8,
+        "title": {
+          "es": "Instrumentos de tiempo: flujo, oscilación y conteo",
+          "en": "Instrumentos de tiempo: flujo, oscilación y conteo"
+        },
+        "outcome": {
+          "es": "¿Qué familias de instrumentos aparecen al cambiar la referencia y el modo de contar?",
+          "en": "¿Qué familias de instrumentos aparecen al cambiar la referencia y el modo de contar?"
+        },
+        "lessonId": "lesson.encyclopedia.history-language.toh-instrumentos-principios",
+        "activityId": "activity.encyclopedia.history-language.toh-instrumentos-principios",
+        "mode": "explanation",
+        "evidenceLevel": "causal-explanation",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.history-language.toh-instrumentos-principios.instrumento-de-flujo",
+          "concept.encyclopedia.history-language.toh-instrumentos-principios.reloj-oscilatorio",
+          "concept.encyclopedia.history-language.toh-instrumentos-principios.realizacion-de-la-referencia"
+        ]
+      },
+      {
+        "id": "milestone.encyclopedia.history-language.09",
+        "order": 9,
+        "title": {
+          "es": "Reloj, cronómetro, precisión y exactitud",
+          "en": "Reloj, cronómetro, precisión y exactitud"
+        },
+        "outcome": {
+          "es": "¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?",
+          "en": "¿Qué puede afirmarse cuando un reloj coincide con una referencia durante una observación?"
+        },
+        "lessonId": "lesson.encyclopedia.history-language.toh-cronometro-precision",
+        "activityId": "activity.encyclopedia.history-language.toh-cronometro-precision",
+        "mode": "transfer",
+        "evidenceLevel": "transfer",
+        "optional": false,
+        "transferTargetIds": [
+          "concept.encyclopedia.history-language.toh-cronometro-precision.error-de-indicacion",
+          "concept.encyclopedia.history-language.toh-cronometro-precision.marcha",
+          "concept.encyclopedia.history-language.toh-cronometro-precision.repetibilidad"
+        ]
+      }
+    ],
+    "diagnosticActivityIds": [],
+    "demonstrationActivityIds": [
+      "activity.encyclopedia.history-language.toh-cronometro-precision"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "evidence.authoring.selection",
+  "version": "1.0.0",
+  "competencyId": "competency.authoring.traceable-activity",
+  "kind": "answer",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "evidence.authoring.selection-confirmed",
+    "version": "1.0.0",
+    "triggerEventType": "selection-confirmed",
+    "evidenceType": "selection",
+    "competencyId": "competency.authoring.traceable-activity",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "entityIds"
+    ]
+  }
+}
+

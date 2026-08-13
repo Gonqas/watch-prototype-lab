@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.complications.toh-reversores-deslizamiento",
+  "version": "1.1.0",
+  "title": "Cuaderno: Reversores, desacoplamiento y limitación de carga",
+  "description": "¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Reversores, desacoplamiento y limitación de carga. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.complications.toh-reversores-deslizamiento.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.complications.toh-reversores-deslizamiento.answer",
+      "instructionMarkdown": "Explica **Reversores, desacoplamiento y limitación de carga** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.complications.toh-reversores-deslizamiento.explain",
+          "promptMarkdown": "¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.complications.toh-reversores-deslizamiento.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-reversores-deslizamiento.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-reversores-deslizamiento.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-reversores-deslizamiento.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.complications.toh-reversores-deslizamiento.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por recibir giro alterno y sigue hasta deslizar al alcanzar umbral.",
+                "en": "Empieza por recibir giro alterno y sigue hasta deslizar al alcanzar umbral."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.complications.toh-reversores-deslizamiento.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Ruedas inversoras, trinquetes o embragues seleccionan caminos de par. Cuando el muelle alcanza su rango, una brida puede deslizar de forma controlada. Suciedad, aceite incorrecto o desgaste pueden producir patinamiento prematuro o bloqueo.",
+                "en": "Ruedas inversoras, trinquetes o embragues seleccionan caminos de par. Cuando el muelle alcanza su rango, una brida puede deslizar de forma controlada. Suciedad, aceite incorrecto o desgaste pueden producir patinamiento prematuro o bloqueo."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?",
+              "en": "¿Cómo evita un automático transmitir en sentido incorrecto o sobrecargar el muelle?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena recibir giro alterno → seleccionar camino → bloquear sentido útil → liberar retorno → cargar barrilete → deslizar al alcanzar umbral, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena recibir giro alterno → seleccionar camino → bloquear sentido útil → liberar retorno → cargar barrilete → deslizar al alcanzar umbral, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.complications.toh-reversores-deslizamiento.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.complications.toh-reversores-deslizamiento.mechanism",
+            "field.encyclopedia.complications.toh-reversores-deslizamiento.evidence",
+            "field.encyclopedia.complications.toh-reversores-deslizamiento.limit",
+            "field.encyclopedia.complications.toh-reversores-deslizamiento.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

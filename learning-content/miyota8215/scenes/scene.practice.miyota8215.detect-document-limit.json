@@ -1,0 +1,330 @@
+{
+  "id": "scene.practice.miyota8215.detect-document-limit",
+  "version": "0.5.0",
+  "title": "Detectar lo que el documento no revela · práctica específica",
+  "description": "Detectar lo que el documento no revela con identidad, autoridad, dependencias, evidencia y restauración. La pregunta, el feedback y la evidencia pertenecen exclusivamente a este objetivo.",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.miyota.8215.structural"
+  },
+  "accessibility": {
+    "textualAlternative": "Lista de entidades, relaciones, entradas, fórmulas, resultados, estados y límites para De energía almacenada a movimiento.",
+    "reducedMotionAlternative": "Estados discretos y fases numeradas con los mismos cálculos y evaluación.",
+    "keyboardActions": [
+      "Tabular por subsistema, entidad y acción.",
+      "Activar con Intro o Espacio.",
+      "Deshacer y restaurar mediante controles nombrados."
+    ],
+    "colorIndependentCues": [
+      "Texto y estado acompañan cada color.",
+      "Dirección, bloqueo y confianza se expresan también con palabras."
+    ]
+  },
+  "cameraIntent": {
+    "intent": "overview",
+    "transition": "smooth"
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "canonical-selectors-v1@^1.0.0",
+    "viewport.selection@^1.0.0",
+    "viewport.visibility@^1.0.0",
+    "viewport.isolation@^1.0.0",
+    "viewport.transparency@^1.0.0",
+    "viewport.highlight@^1.0.0",
+    "viewport.explode@^1.0.0",
+    "viewport.camera@^1.0.0",
+    "viewport.overlay.labels@^1.0.0",
+    "timeline.scrub@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.restore@^1.0.0"
+  ],
+  "camera": {
+    "position": [
+      6,
+      5,
+      7
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ],
+    "projection": "perspective",
+    "fieldOfView": 42
+  },
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [
+    {
+      "atMs": 0,
+      "operation": "highlight",
+      "targets": [
+        {
+          "selector": {
+            "by": "calibre",
+            "value": "8215"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "durationMs": 0,
+      "essential": false,
+      "waitFor": "interaction"
+    },
+    {
+      "atMs": 600,
+      "operation": "explode",
+      "targets": [],
+      "value": 0.1,
+      "durationMs": 300,
+      "essential": false,
+      "waitFor": "none"
+    }
+  ],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.miyota8215.documentation.fidelity",
+      "markdown": "Leer su documentación: modelo estructural del MIYOTA 8215. Cada operación muestra su autoridad y las referencias solo documentales no pueden manipularse. Consulta los niveles de reconstrucción y fidelidad en la ficha técnica.",
+      "accessibleLabel": "Leer su documentación. Fidelidad, autoridad y limitaciones disponibles en texto."
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.miyota8215.documentation.observe",
+      "instructionMarkdown": "Ejecuta «Detectar lo que el documento no revela». Antes de confirmar, compara tu predicción, el cambio observable, la relación implicada y la autoridad de la fuente.",
+      "questions": [
+        {
+          "id": "question.practice.miyota8215.detect-document-limit.criterion",
+          "promptMarkdown": "Si el documento identifica una pieza pero no publica su geometría oculta, ¿qué debe registrar la ficha técnica?",
+          "responseKind": "single-choice",
+          "options": [
+            {
+              "id": "option.practice.miyota8215.detect-document-limit.evidence",
+              "label": "Identidad documentada y geometría desconocida o reconstruida con limitación",
+              "labels": {
+                "es": "Identidad documentada y geometría desconocida o reconstruida con limitación",
+                "en": "Identidad documentada y geometría desconocida o reconstruida con limitación"
+              }
+            },
+            {
+              "id": "option.practice.miyota8215.detect-document-limit.appearance",
+              "label": "Geometría oficial completa por pertenecer al calibre",
+              "labels": {
+                "es": "Geometría oficial completa por pertenecer al calibre",
+                "en": "Geometría oficial completa por pertenecer al calibre"
+              }
+            },
+            {
+              "id": "option.practice.miyota8215.detect-document-limit.authority",
+              "label": "Una medición estimada sin marcar su origen",
+              "labels": {
+                "es": "Una medición estimada sin marcar su origen",
+                "en": "Una medición estimada sin marcar su origen"
+              }
+            }
+          ],
+          "authoring": {
+            "prompt": {
+              "es": "Si el documento identifica una pieza pero no publica su geometría oculta, ¿qué debe registrar la ficha técnica?"
+            },
+            "feedback": {
+              "es": "La autoridad puede cubrir identidad sin cubrir forma, dimensión o estado."
+            }
+          }
+        },
+        {
+          "id": "question.practice.miyota8215.detect-document-limit.reasoning",
+          "promptMarkdown": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: Si el documento identifica una pieza pero no publica su geometría oculta, ¿qué debe registrar la ficha técnica?",
+          "responseKind": "structured-response",
+          "options": [],
+          "structuredFields": [
+            {
+              "id": "field.observation",
+              "label": "Qué cambió o qué comprobaste",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.causal-link",
+              "label": "Qué relación, interfaz o regla explica el resultado",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.source-limit",
+              "label": "Qué fuente o límite condiciona la conclusión",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.confidence",
+              "label": "Confianza en la explicación",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [],
+          "humanReviewRequired": true,
+          "authoring": {
+            "prompt": {
+              "es": "Explica qué observaste, qué regla aplicaste y por qué tu conclusión responde a: Si el documento identifica una pieza pero no publica su geometría oculta, ¿qué debe registrar la ficha técnica?"
+            },
+            "feedback": {
+              "es": "La revisión debe comprobar la relación específica: La autoridad puede cubrir identidad sin cubrir forma, dimensión o estado."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "answer",
+          "questionId": "question.practice.miyota8215.detect-document-limit.criterion",
+          "expectedOptionIds": [
+            "option.practice.miyota8215.detect-document-limit.evidence"
+          ]
+        },
+        {
+          "condition": "structured-answer",
+          "questionId": "question.practice.miyota8215.detect-document-limit.reasoning",
+          "requiredFieldIds": [
+            "field.observation",
+            "field.causal-link",
+            "field.source-limit",
+            "field.confidence"
+          ],
+          "pendingHumanReview": true
+        }
+      ]
+    },
+    {
+      "id": "step.miyota8215.documentation.execute",
+      "instructionMarkdown": "Ejecuta acciones semánticas, registra evidencia, comprueba el resultado y restaura.",
+      "questions": []
+    }
+  ],
+  "storyboard": {
+    "sceneName": {
+      "es": "Detectar lo que el documento no revela · práctica específica",
+      "en": "Detectar lo que el documento no revela · práctica específica"
+    },
+    "purpose": {
+      "es": "Resolver «Detectar lo que el documento no revela» mediante una decisión específica, explicación propia, restauración y transferencia."
+    },
+    "prerequisites": [
+      "concept.miyota8215.identify-calibre"
+    ],
+    "narrative": {
+      "es": "Separa las columnas de identidad, dimensión y modelo. La autoridad puede cubrir identidad sin cubrir forma, dimensión o estado."
+    },
+    "initialFraming": {
+      "es": "Vista estable con fuente y ficha técnica de reconstrucción y fidelidad visibles.",
+      "en": "Vista estable con fuente y ficha técnica de reconstrucción y fidelidad visibles."
+    },
+    "protagonist": {
+      "selector": {
+        "by": "calibre",
+        "value": "8215"
+      },
+      "cardinality": "exactly-one"
+    },
+    "secondaryParts": [],
+    "sequence": [
+      {
+        "id": "story.miyota8215.documentation.observe",
+        "sceneStepId": "step.miyota8215.documentation.observe",
+        "narrative": {
+          "es": "Consultar, identificar, clasificar autoridad y predecir.",
+          "en": "Consultar, identificar, clasificar autoridad y predecir."
+        },
+        "timelineIndexes": [
+          0
+        ],
+        "runtimeActions": [
+          "calibre-select",
+          "documentation-review",
+          "predict"
+        ],
+        "interaction": {
+          "es": "Seleccionar mediante teclado o puntero.",
+          "en": "Seleccionar mediante teclado o puntero."
+        },
+        "feedback": {
+          "es": "La predicción se conserva antes de mostrar el resultado.",
+          "en": "La predicción se conserva antes de mostrar el resultado."
+        }
+      },
+      {
+        "id": "story.miyota8215.documentation.execute",
+        "sceneStepId": "step.miyota8215.documentation.execute",
+        "narrative": {
+          "es": "Manipular cuando esté permitido, comprobar, explicar y restaurar.",
+          "en": "Manipular cuando esté permitido, comprobar, explicar y restaurar."
+        },
+        "timelineIndexes": [
+          1
+        ],
+        "runtimeActions": [
+          "calibre-lab-command",
+          "workbench-command",
+          "checkpoint",
+          "restore"
+        ],
+        "interaction": {
+          "es": "Botones y menús semánticos; sin arrastre obligatorio.",
+          "en": "Botones y menús semánticos; sin arrastre obligatorio."
+        },
+        "feedback": {
+          "es": "El diagnóstico señala entrada, relación o estado inválido sin fingir física.",
+          "en": "El diagnóstico señala entrada, relación o estado inválido sin fingir física."
+        }
+      }
+    ],
+    "ending": {
+      "es": "Estado restaurable y evidencia disponible.",
+      "en": "Estado restaurable y evidencia disponible."
+    },
+    "restoration": {
+      "es": "Restaurar 63 identidades, tornillos, bandejas, orientación, cámara y subsistema.",
+      "en": "Restaurar 63 identidades, tornillos, bandejas, orientación, cámara y subsistema."
+    },
+    "accessibility": {
+      "es": "Árbol y lista ordenados; acciones por teclado y sin arrastre.",
+      "en": "Árbol y lista ordenados; acciones por teclado y sin arrastre."
+    },
+    "reducedMotion": {
+      "es": "Estados discretos con idéntica información y evaluación.",
+      "en": "Estados discretos con idéntica información y evaluación."
+    },
+    "evidenceTemplateIds": [
+      "evidence.miyota8215.read-official-documentation",
+      "evidence.miyota8215.distinguish-data-reconstruction"
+    ],
+    "technicalCriteria": [
+      "Identidad de cada pieza.",
+      "Autoridad visible.",
+      "Dependencias clasificadas.",
+      "El modelo de referencia y el proyecto técnico permanecen intactos."
+    ],
+    "limitations": [
+      "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+      "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+      "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física.",
+      "No se implementa visor PDF; se usan metadatos y enlaces oficiales."
+    ]
+  },
+  "restorePreviousState": true
+}

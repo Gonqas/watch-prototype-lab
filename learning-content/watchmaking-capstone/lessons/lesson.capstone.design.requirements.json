@@ -1,0 +1,149 @@
+{
+  "id": "lesson.capstone.design.requirements",
+  "version": "1.1.0",
+  "title": "Pliego, usuario y arquitectura del producto",
+  "blockIds": [
+    "block.capstone.design.requirements"
+  ],
+  "activityIds": [
+    "activity.capstone.design.requirements"
+  ],
+  "authoring": {
+    "title": {
+      "es": "Pliego, usuario y arquitectura del producto",
+      "en": "Pliego, usuario y arquitectura del producto"
+    },
+    "purpose": {
+      "es": "¿Qué evidencia permite superar la puerta de pliego, usuario y arquitectura del producto?",
+      "en": "¿Qué evidencia permite superar la puerta de pliego, usuario y arquitectura del producto?"
+    },
+    "objectives": [
+      {
+        "es": "Explicar la teoría antes de abrir el expediente.",
+        "en": "Explicar la teoría antes de abrir el expediente."
+      },
+      {
+        "es": "Comparar alternativas y hacer visibles interfaces y riesgos.",
+        "en": "Comparar alternativas y hacer visibles interfaces y riesgos."
+      },
+      {
+        "es": "Definir verificación, aceptación y criterio de parada.",
+        "en": "Definir verificación, aceptación y criterio de parada."
+      }
+    ],
+    "prerequisiteConceptIds": [],
+    "recommendedPrerequisiteConceptIds": [],
+    "externalPrerequisites": [
+      {
+        "packageId": "wplab.horology.advanced-architecture-service",
+        "versionRange": "^1.1.0",
+        "moduleIds": [
+          "module.advanced.architecture-capstone"
+        ],
+        "competencyIds": [
+          "competency.advanced.architecture-capstone"
+        ],
+        "recommendedButOptionalRouteIds": [
+          "route.advanced.architectures-complications"
+        ]
+      }
+    ],
+    "conceptIds": [
+      "concept.capstone.design.requirements"
+    ],
+    "sourceIds": [
+      "source.iso.9241-11",
+      "source.iso.9241-210",
+      "source.w3c.wcag22"
+    ],
+    "visualResourceIds": [],
+    "pedagogy": {
+      "role": "conceptual-model",
+      "entryCheck": "self-check",
+      "userPacedSegments": true,
+      "introducesConceptIds": [
+        "concept.capstone.design.requirements"
+      ],
+      "reinforcesConceptIds": [],
+      "bridgeConceptIds": []
+    },
+    "studyContract": {
+      "sequence": "theory-first",
+      "minimumTheoryMinutes": 25,
+      "minimumReadingWords": 772,
+      "requiredSegmentRoles": [
+        "orient",
+        "pretrain",
+        "explain",
+        "practice",
+        "close"
+      ],
+      "practiceUnlock": "after-required-reading",
+      "labActivityIds": [
+        "activity.capstone.design.requirements"
+      ],
+      "readinessCriteria": [
+        {
+          "es": "Puedo reconstruir la decisión sin copiar el ejemplo.",
+          "en": "Puedo reconstruir la decisión sin copiar el ejemplo."
+        },
+        {
+          "es": "Puedo comparar alternativas y declarar interfaces y riesgos.",
+          "en": "Puedo comparar alternativas y declarar interfaces y riesgos."
+        },
+        {
+          "es": "Puedo definir evidencia, aceptación y criterio de parada.",
+          "en": "Puedo definir evidencia, aceptación y criterio de parada."
+        }
+      ],
+      "sourceReviewRequired": true,
+      "notePrompt": {
+        "es": "Anota un requisito, una alternativa descartada, un riesgo abierto y la prueba que resolvería la duda.",
+        "en": "Anota un requisito, una alternativa descartada, un riesgo abierto y la prueba que resolvería la duda."
+      }
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.capstone.design.requirements"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No declarar fabricada, segura o validada una pieza por completar un plan digital.",
+          "en": "No declarar fabricada, segura o validada una pieza por completar un plan digital."
+        },
+        {
+          "es": "No inventar dimensiones, materiales, resultados, participantes o revisiones.",
+          "en": "No inventar dimensiones, materiales, resultados, participantes o revisiones."
+        },
+        {
+          "es": "No sustituir la revisión humana exigida.",
+          "en": "No sustituir la revisión humana exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué requisito controla esa decisión?",
+          "en": "¿Qué requisito controla esa decisión?"
+        },
+        {
+          "es": "¿Qué alternativa real descartaste y por qué?",
+          "en": "¿Qué alternativa real descartaste y por qué?"
+        },
+        {
+          "es": "¿Qué hallazgo detendría el proceso?",
+          "en": "¿Qué hallazgo detendría el proceso?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    }
+  }
+}

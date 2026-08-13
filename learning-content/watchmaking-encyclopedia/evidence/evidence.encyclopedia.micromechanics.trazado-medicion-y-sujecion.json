@@ -1,0 +1,33 @@
+{
+  "id": "evidence.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+  "version": "1.1.0",
+  "competencyId": "competency.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+    "version": "1.1.0",
+    "triggerEventType": "structured-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+    "packageId": "wplab.horology.watchmaking-encyclopedia",
+    "activityIds": [
+      "activity.encyclopedia.micromechanics.trazado-medicion-y-sujecion"
+    ],
+    "evidenceTemplateId": "evidence.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "questionId",
+      "fields",
+      "sourceIds",
+      "confidence"
+    ]
+  }
+}

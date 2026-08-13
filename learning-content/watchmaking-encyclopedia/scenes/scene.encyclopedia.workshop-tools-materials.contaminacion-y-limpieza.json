@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+  "version": "1.1.0",
+  "title": "Cuaderno: Contaminación, limpieza y química segura",
+  "description": "¿Cómo se elimina suciedad sin redistribuirla, atacar materiales ni borrar evidencia?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Contaminación, limpieza y química segura. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo se elimina suciedad sin redistribuirla, atacar materiales ni borrar evidencia?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo se elimina suciedad sin redistribuirla, atacar materiales ni borrar evidencia?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.answer",
+      "instructionMarkdown": "Explica **Contaminación, limpieza y química segura** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.explain",
+          "promptMarkdown": "¿Cómo se elimina suciedad sin redistribuirla, atacar materiales ni borrar evidencia?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por documentar estado y sigue hasta inspeccionar y renovar baños.",
+                "en": "Empieza por documentar estado y sigue hasta inspeccionar y renovar baños."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "Aceite envejecido, partículas, fibras, sales, óxidos, restos de pulido y huellas requieren mecanismos de eliminación distintos. Solubilidad, agitación, tiempo, temperatura, compatibilidad y secado forman un proceso. El baño limpio no garantiza pieza limpia y una sustancia histórica no es automáticamente segura ni adecuada.",
+                "en": "Aceite envejecido, partículas, fibras, sales, óxidos, restos de pulido y huellas requieren mecanismos de eliminación distintos. Solubilidad, agitación, tiempo, temperatura, compatibilidad y secado forman un proceso. El baño limpio no garantiza pieza limpia y una sustancia histórica no es automáticamente segura ni adecuada."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo se elimina suciedad sin redistribuirla, atacar materiales ni borrar evidencia?",
+              "en": "¿Cómo se elimina suciedad sin redistribuirla, atacar materiales ni borrar evidencia?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena documentar estado → clasificar material y contaminante → seleccionar proceso → limpiar por etapas → aclarar y secar → inspeccionar y renovar baños, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena documentar estado → clasificar material y contaminante → seleccionar proceso → limpiar por etapas → aclarar y secar → inspeccionar y renovar baños, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.mechanism",
+            "field.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.evidence",
+            "field.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.limit",
+            "field.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

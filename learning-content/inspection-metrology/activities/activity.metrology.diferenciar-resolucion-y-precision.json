@@ -1,0 +1,315 @@
+{
+  "id": "activity.metrology.diferenciar-resolucion-y-precision",
+  "version": "0.2.0",
+  "title": "Diferenciar resolución y precisión",
+  "sceneIds": [
+    "scene.metrology.diferenciar-resolucion-y-precision"
+  ],
+  "competencyIds": [
+    "competency.metrology.verificar-un-instrumento"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.metrology.diferenciar-resolucion-y-precision"
+  ],
+  "rubricId": "rubric.metrology.diferenciar-resolucion-y-precision",
+  "projectReference": {
+    "kind": "template-readonly",
+    "templateId": "active-project-v5-projection"
+  },
+  "authoring": {
+    "lessonId": "lesson.metrology.units-scale-resolution",
+    "title": {
+      "es": "Diferenciar resolución y precisión"
+    },
+    "description": {
+      "es": "Práctica guiada para diferenciar resolución y precisión sobre una unidad o el espécimen sintético, conservando método, evidencia, confianza y límites."
+    },
+    "difficulty": "introductory",
+    "durationMinutes": 12,
+    "activityType": "guided-practice",
+    "movementIds": [],
+    "familyIds": [],
+    "subsystem": "metrology",
+    "requiredCapabilities": [],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "La práctica registra evidencia; no simula ni certifica comportamiento físico."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "No generalizar una medida de una unidad ni inventar tolerancias."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.metrology.bipm.vim",
+      "source.metrology.bipm.gum",
+      "source.metrology.nist.handbook",
+      "source.metrology.original-course"
+    ],
+    "visualResourceIds": [],
+    "interactionContract": {
+      "responseModel": "structured-response",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [
+        {
+          "id": "field.activity-metrology-diferenciar-resolucion-y-precision.decision",
+          "label": {
+            "es": "¿Qué expresa realmente una lectura y cuántos dígitos podemos conservar sin fabricar información?"
+          },
+          "kind": "choice",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-diferenciar-resolucion-y-precision.justification",
+          "label": {
+            "es": "Justifica qué evidencia y qué límite hacen defendible tu elección."
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.activity-metrology-diferenciar-resolucion-y-precision.confidence",
+          "label": {
+            "es": "Confianza en la decisión"
+          },
+          "kind": "confidence",
+          "required": true
+        }
+      ],
+      "hints": [
+        {
+          "id": "hint.activity-metrology-diferenciar-resolucion-y-precision.1",
+          "level": 1,
+          "kind": "orientation",
+          "content": {
+            "es": "Localiza qué evidencia responde a esta pregunta: ¿Qué expresa realmente una lectura y cuántos dígitos podemos conservar sin fabricar información?"
+          },
+          "availableAfterAttempts": 0,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.activity-metrology-diferenciar-resolucion-y-precision.2",
+          "level": 2,
+          "kind": "comparison",
+          "content": {
+            "es": "Compara la conclusión limitada con este error: Omitir unidades o mezclar milímetros, micrómetros y píxeles sin conversión registrada."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        },
+        {
+          "id": "hint.activity-metrology-diferenciar-resolucion-y-precision.3",
+          "level": 3,
+          "kind": "post-attempt-explanation",
+          "content": {
+            "es": "La opción defendible conserva este límite: La cifra defendible incluye unidad, escala, plano, puntos y redondeo. La resolución de píxel o de pantalla no prueba exactitud global."
+          },
+          "availableAfterAttempts": 1,
+          "countsAsHint": true
+        }
+      ],
+      "evidencePolicy": {
+        "eventType": "answer-submitted",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [
+          "field.activity-metrology-diferenciar-resolucion-y-precision.decision"
+        ],
+        "requiresHumanReview": true,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "execute-or-simulate",
+        "compare",
+        "explain",
+        "record-evidence"
+      ]
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.metrology.units-scale-resolution"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.metrology.units-scale-resolution"
+      ],
+      "assessesConceptIds": [
+        "concept.metrology.units-scale-resolution"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.metrology.units-scale-resolution",
+        "blockId": "block.metrology.units-scale-resolution",
+        "conceptIds": [
+          "concept.metrology.units-scale-resolution"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "La práctica acredita un método documentado dentro de la Academia. No certifica destreza profesional, calibración ni validez industrial."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "En “Diferenciar resolución y precisión” una respuesta sólida conserva característica, referencia, método, evidencia y alcance."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si en “Diferenciar resolución y precisión” confundiste resolución con exactitud, observación con hipótesis o una unidad con toda una familia."
+      },
+      "causalQuestion": {
+        "es": "¿Qué decisión de “Diferenciar resolución y precisión” cambia el resultado y cómo podrías comprobarla?"
+      },
+      "nextObservation": {
+        "es": "Repite “Diferenciar resolución y precisión” cambiando una sola condición y documenta el efecto."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Aplica el criterio de “Diferenciar resolución y precisión” a otra pieza sin suponer que comparte geometría o tolerancia."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.metrology.units-scale-resolution"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar tolerancias, exactitudes, calibraciones, diagnósticos ni datos de fabricante."
+        },
+        {
+          "es": "No aprobar propuestas, elevar fidelidad o modificar CAD."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué estás observando exactamente?"
+        },
+        {
+          "es": "¿Qué método y referencia hacen repetible este resultado?"
+        },
+        {
+          "es": "¿Qué limitación impide generalizarlo?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Qué decisión de “Diferenciar resolución y precisión” cambia el resultado y cómo podrías comprobarla?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Repite “Diferenciar resolución y precisión” cambiando una sola condición y documenta el efecto."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Diferenciar resolución y precisión»."
+          },
+          {
+            "es": "Sigue la relación causal declarada en la lección y conserva su fuente o límite."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "En “Diferenciar resolución y precisión” una respuesta sólida conserva característica, referencia, método, evidencia y alcance."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Diferenciar resolución y precisión» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Diferenciar resolución y precisión» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Diferenciar resolución y precisión» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Aplica el criterio de “Diferenciar resolución y precisión” a otra pieza sin suponer que comparte geometría o tolerancia."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La conclusión responde al objetivo «Diferenciar resolución y precisión» con una relación observable."
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Revisa si en “Diferenciar resolución y precisión” confundiste resolución con exactitud, observación con hipótesis o una unidad con toda una familia."
+        },
+        {
+          "es": "La respuesta describe apariencia o autoridad, pero no la relación que produce el resultado."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Aplica el criterio de “Diferenciar resolución y precisión” a otra pieza sin suponer que comparte geometría o tolerancia."
+        }
+      },
+      "transferPrompt": {
+        "es": "Aplica el criterio de “Diferenciar resolución y precisión” a otra pieza sin suponer que comparte geometría o tolerancia."
+      }
+    }
+  }
+}

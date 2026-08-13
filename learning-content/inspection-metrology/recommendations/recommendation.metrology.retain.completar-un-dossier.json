@@ -1,0 +1,19 @@
+{
+  "id": "recommendation.metrology.retain.completar-un-dossier",
+  "version": "0.1.0",
+  "kind": "retention",
+  "title": {
+    "es": "Repasar: Completar un dossier"
+  },
+  "reason": {
+    "es": "La retención exige una sesión independiente; el motor programará ventanas de 1, 7 y 21 días."
+  },
+  "rule": "after-demonstration:1d,7d,21d;different-session=true",
+  "priority": 283,
+  "target": {
+    "kind": "competency",
+    "id": "competency.metrology.completar-un-dossier"
+  },
+  "evidenceTemplateIds": [],
+  "required": false
+}

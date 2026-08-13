@@ -1,0 +1,43 @@
+{
+  "id": "rubric.capstone.design.capstone",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.design.capstone",
+  "rules": [
+    {
+      "id": "rule.capstone.design.capstone.demonstrated",
+      "version": "1.0.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 0.8,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "Dossier integral y puerta de prototipo: revisión humana de requisitos, alternativas, riesgos, evidencia y límites."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.capstone.design.capstone",
+    "version": "1.0.0",
+    "competencyId": "competency.capstone.design.capstone",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "exists",
+          "filter": {
+            "evidenceType": "human-review",
+            "status": "active",
+            "minimumConfidence": 0.8
+          }
+        },
+        {
+          "op": "minimum-evidence",
+          "count": 1
+        }
+      ]
+    }
+  }
+}

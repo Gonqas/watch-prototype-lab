@@ -1,0 +1,2782 @@
+{
+  "fixtureId": "fixture.miyota.2035.structural",
+  "fixtureVersion": "0.1.0",
+  "generatedAt": "2026-07-27",
+  "fidelity": {
+    "geometry": "G2",
+    "kinematics": "K2",
+    "physics": "P0",
+    "limitations": [
+      "R2 estructural; tamaños y posiciones internos normalizados/estimados.",
+      "Sin física eléctrica validada."
+    ]
+  },
+  "reconstructionLevel": "R2",
+  "totals": {
+    "ledgerRecords": 33,
+    "instances": 33,
+    "definitions": 33,
+    "geometries": 33,
+    "selectors": 11,
+    "relations": 19,
+    "disassemblyBlockingDependencies": 3,
+    "assemblyBlockingDependencies": 3
+  },
+  "statusCounts": {
+    "listo": 18,
+    "utilizable con limitaciones": 10,
+    "solo documental": 5,
+    "bloqueado": 0,
+    "desconocido": 0
+  },
+  "limitations": [
+    "No es un gemelo exacto ni una reconstrucción R3.",
+    "Solo la envolvente y datos generales indicados en el ledger son nominales oficiales.",
+    "Las piezas internas usan identidad oficial, pero geometría visual normalizada.",
+    "Las opciones de tija larga no forman parte del ensamblaje canónico seleccionado.",
+    "La auditoría no interpreta la vista explosionada como un manual de servicio.",
+    "Solo las dependencias explícitas se convierten en bloqueos del runtime."
+  ],
+  "records": [
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_032rbc8alliyo",
+      "instanceId": "pi_fixture-miyota-2035-stru_03r9vr757f2dp",
+      "nameEs": "Envolvente oficial del movimiento",
+      "nameEn": "Official movement envelope",
+      "officialReference": null,
+      "subsystem": "structure",
+      "sourceIds": [
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.official-envelope.1",
+        "shape": "box",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          6.2,
+          0.35,
+          5.2
+        ]
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [],
+      "layerOrder": 0,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R1",
+        "state": "envelope-only"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "No representa el contorno detallado de la platina."
+        ]
+      },
+      "limitations": [
+        "No representa el contorno detallado de la platina.",
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "No representa el contorno detallado de la platina."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": false,
+        "assemble": false,
+        "assess": true
+      },
+      "status": "utilizable con limitaciones"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_3p9dy2r6koual",
+      "instanceId": "pi_fixture-miyota-2035-stru_06s06rljo7knw",
+      "nameEs": "Estructura base visible",
+      "nameEn": "Visible base structure",
+      "officialReference": null,
+      "subsystem": "structure",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.base-structure.1",
+        "shape": "bridge",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          5.8,
+          0.18,
+          4.8
+        ]
+      },
+      "transform": {
+        "position": [
+          0,
+          0.1,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [],
+      "layerOrder": 0.1,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "La lista oficial no publica una referencia separada para la estructura base; contorno estimado."
+        ]
+      },
+      "limitations": [
+        "La lista oficial no publica una referencia separada para la estructura base; contorno estimado.",
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "La lista oficial no publica una referencia separada para la estructura base; contorno estimado."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": false,
+        "assemble": false,
+        "assess": true
+      },
+      "status": "utilizable con limitaciones"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_1p5xah1976br1",
+      "instanceId": "pi_fixture-miyota-2035-stru_0kxucoumyk3y4",
+      "nameEs": "Pila SR626SW",
+      "nameEn": "Battery SR626SW",
+      "officialReference": "SR626SW",
+      "subsystem": "power-source",
+      "sourceIds": [
+        "source.miyota.2035.specification"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.battery.1",
+        "shape": "disc",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          1.6,
+          0.32,
+          1.6
+        ]
+      },
+      "transform": {
+        "position": [
+          -1.7,
+          0.45,
+          0.9
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_258br2xwo4wms",
+        "ai_fixture-miyota-2035-stru_24qe4r2m6ecmn"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.battery-circuit.1",
+        "relation.fixture-miyota-2035-structural.battery-clamp-retains.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.power-source",
+          "selector": {
+            "by": "role",
+            "value": "power-source"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "layerOrder": 0.45,
+      "disassemblyDependencies": [
+        {
+          "id": "workbench.retains.relation.fixture-miyota-2035-structural.battery-clamp-retains.1",
+          "phase": "disassembly",
+          "kind": "retains",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_0o72gumny7lu2",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_0kxucoumyk3y4",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": false,
+          "limitations": []
+        }
+      ],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2m19j99hdefb3",
+      "instanceId": "pi_fixture-miyota-2035-stru_0o72gumny7lu2",
+      "nameEs": "Abrazadera de pila",
+      "nameEn": "Battery clamp",
+      "officialReference": "234-C87",
+      "subsystem": "power-source",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.battery-clamp.1",
+        "shape": "bridge",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          1.9,
+          0.12,
+          0.5
+        ]
+      },
+      "transform": {
+        "position": [
+          -1.7,
+          0.72,
+          0.9
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_24qe4r2m6ecmn"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.battery-clamp-retains.1"
+      ],
+      "selectors": [],
+      "layerOrder": 0.72,
+      "disassemblyDependencies": [
+        {
+          "id": "workbench.retains.relation.fixture-miyota-2035-structural.battery-clamp-retains.1",
+          "phase": "disassembly",
+          "kind": "retains",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_0o72gumny7lu2",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_0kxucoumyk3y4",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": false,
+          "limitations": []
+        }
+      ],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_0qu69f63y4oef",
+      "instanceId": "pi_fixture-miyota-2035-stru_3vx38hklkv3aa",
+      "nameEs": "Muelle conector de pila",
+      "nameEn": "Power-cell connector spring",
+      "officialReference": "231-999",
+      "subsystem": "power-source",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.powercell-connector.1",
+        "shape": "rod",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          1.1,
+          0.1,
+          0.18
+        ]
+      },
+      "transform": {
+        "position": [
+          -0.9,
+          0.48,
+          0.4
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [],
+      "layerOrder": 0.48,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_0271qtx78dma4",
+      "instanceId": "pi_fixture-miyota-2035-stru_2hetb4brb2j1l",
+      "nameEs": "Unidad de circuito electrónico",
+      "nameEn": "Electronic circuit unit",
+      "officialReference": "279-M31",
+      "subsystem": "electronic-control",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.electronic-circuit.1",
+        "shape": "box",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          2.2,
+          0.16,
+          1.4
+        ]
+      },
+      "transform": {
+        "position": [
+          0.8,
+          0.5,
+          1.2
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_258br2xwo4wms",
+        "ai_fixture-miyota-2035-stru_0a9jbmeuvq5ca"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.battery-circuit.1",
+        "relation.fixture-miyota-2035-structural.circuit-coil.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.electronic-control",
+          "selector": {
+            "by": "role",
+            "value": "electronic-control"
+          },
+          "cardinality": "exactly-one"
+        },
+        {
+          "id": "selector.miyota.2035.quartz-resonator",
+          "selector": {
+            "by": "role",
+            "value": "quartz-resonator"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "layerOrder": 0.5,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "El resonador de cuarzo no figura como recambio separado; el selector comparte esta unidad oficial."
+        ]
+      },
+      "limitations": [
+        "El resonador de cuarzo no figura como recambio separado; el selector comparte esta unidad oficial.",
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "El resonador de cuarzo no figura como recambio separado; el selector comparte esta unidad oficial."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2y6hdrado17ia",
+      "instanceId": "pi_fixture-miyota-2035-stru_32ytyu78hrfsr",
+      "nameEs": "Separador de circuito",
+      "nameEn": "Circuit spacer",
+      "officialReference": "212-B13",
+      "subsystem": "electronic-control",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.circuit-spacer.1",
+        "shape": "symbolic-marker",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          4.199999999999999,
+          0,
+          -1.25
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [],
+      "layerOrder": 0,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R0",
+        "state": "documented"
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "La identidad documental no demuestra que exista una pieza individual manipulable."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": false,
+        "disassemble": false,
+        "assemble": false,
+        "assess": true
+      },
+      "status": "solo documental"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2yr9abqm3htp4",
+      "instanceId": "pi_fixture-miyota-2035-stru_21y11bcu25f79",
+      "nameEs": "Unidad de bobina",
+      "nameEn": "Coil unit",
+      "officialReference": "246-144",
+      "subsystem": "motor",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.coil-unit.1",
+        "shape": "coil",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          1.4,
+          0.22,
+          1.1
+        ]
+      },
+      "transform": {
+        "position": [
+          1.4,
+          0.62,
+          -0.8
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_0a9jbmeuvq5ca",
+        "ai_fixture-miyota-2035-stru_1kttli5xjz39h"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.circuit-coil.1",
+        "relation.fixture-miyota-2035-structural.coil-rotor.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.coil",
+          "selector": {
+            "by": "role",
+            "value": "coil"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "layerOrder": 0.62,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2fnbul2d8mw7z",
+      "instanceId": "pi_fixture-miyota-2035-stru_0llf0k3r8vai2",
+      "nameEs": "Estator",
+      "nameEn": "Stator",
+      "officialReference": "190-A43",
+      "subsystem": "motor",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.stator.1",
+        "shape": "ring",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.9,
+          0.18,
+          0.9
+        ]
+      },
+      "transform": {
+        "position": [
+          0.55,
+          0.42,
+          -0.7
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_115urkizici7t"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.stator-rotor.1"
+      ],
+      "selectors": [],
+      "layerOrder": 0.42,
+      "disassemblyDependencies": [
+        {
+          "id": "workbench.supports.relation.fixture-miyota-2035-structural.stator-rotor.1",
+          "phase": "disassembly",
+          "kind": "supports",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_0llf0k3r8vai2",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_19rctvth57srx",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "medium",
+          "blocking": false,
+          "limitations": []
+        }
+      ],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2fhczzca0vc9s",
+      "instanceId": "pi_fixture-miyota-2035-stru_19rctvth57srx",
+      "nameEs": "Rotor magnetizado",
+      "nameEn": "Rotor (magnetized)",
+      "officialReference": "285-202",
+      "subsystem": "motor",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.stepper-rotor.1",
+        "shape": "wheel",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.45,
+          0.26,
+          0.45
+        ]
+      },
+      "transform": {
+        "position": [
+          0.55,
+          0.55,
+          -0.7
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_1kttli5xjz39h",
+        "ai_fixture-miyota-2035-stru_115urkizici7t",
+        "ai_fixture-miyota-2035-stru_2az9q8f1pi7yn"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.coil-rotor.1",
+        "relation.fixture-miyota-2035-structural.stator-rotor.1",
+        "relation.fixture-miyota-2035-structural.rotor-third.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.stepper-rotor",
+          "selector": {
+            "by": "role",
+            "value": "stepper-rotor"
+          },
+          "cardinality": "exactly-one"
+        }
+      ],
+      "layerOrder": 0.55,
+      "disassemblyDependencies": [
+        {
+          "id": "workbench.supports.relation.fixture-miyota-2035-structural.stator-rotor.1",
+          "phase": "disassembly",
+          "kind": "supports",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_0llf0k3r8vai2",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_19rctvth57srx",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "medium",
+          "blocking": false,
+          "limitations": []
+        }
+      ],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2gz7lnnz5ho2a",
+      "instanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+      "nameEs": "Puente del tren",
+      "nameEn": "Train wheel bridge",
+      "officialReference": "701-K14",
+      "subsystem": "structure",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.train-wheel-bridge.1",
+        "shape": "bridge",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          3.4,
+          0.2,
+          2.1
+        ]
+      },
+      "transform": {
+        "position": [
+          0,
+          1.28,
+          -0.55
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_1as6orhi64b4c",
+        "ai_fixture-miyota-2035-stru_3cqhq72arqgv0",
+        "ai_fixture-miyota-2035-stru_2ulfh49dlvi9j",
+        "ai_fixture-miyota-2035-stru_2pg2kcgr6jmha",
+        "ai_fixture-miyota-2035-stru_2lk1oxlmc1us8"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.bridge-covers-train.1",
+        "relation.fixture-miyota-2035-structural.third-pivots-in-bridge.1",
+        "relation.fixture-miyota-2035-structural.screw-before-bridge-1.1",
+        "relation.fixture-miyota-2035-structural.screw-before-bridge-2.1",
+        "relation.fixture-miyota-2035-structural.bridge-before-third.1"
+      ],
+      "selectors": [],
+      "layerOrder": 1.28,
+      "disassemblyDependencies": [
+        {
+          "id": "workbench.covers.relation.fixture-miyota-2035-structural.bridge-covers-train.1",
+          "phase": "disassembly",
+          "kind": "covers",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_2fddlb4xe4m3i",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": false,
+          "limitations": []
+        },
+        {
+          "id": "workbench.disassembly.relation.fixture-miyota-2035-structural.screw-before-bridge-1.1",
+          "phase": "disassembly",
+          "kind": "remove-before",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_3qba3zbaoc8ax",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": true,
+          "limitations": [
+            "Tornillo identificado por la lista oficial."
+          ]
+        },
+        {
+          "id": "workbench.disassembly.relation.fixture-miyota-2035-structural.screw-before-bridge-2.1",
+          "phase": "disassembly",
+          "kind": "remove-before",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_08yzlojtvcbas",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": true,
+          "limitations": [
+            "Tornillo identificado por la lista oficial."
+          ]
+        },
+        {
+          "id": "workbench.disassembly.relation.fixture-miyota-2035-structural.bridge-before-third.1",
+          "phase": "disassembly",
+          "kind": "remove-before",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_2fddlb4xe4m3i",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "medium",
+          "blocking": true,
+          "limitations": [
+            "Orden parcial derivado del despiece; requiere validación física para servicio."
+          ]
+        }
+      ],
+      "assemblyDependencies": [
+        {
+          "id": "workbench.assembly.relation.fixture-miyota-2035-structural.screw-before-bridge-1.1",
+          "phase": "assembly",
+          "kind": "requires-present",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_3qba3zbaoc8ax",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": true,
+          "limitations": [
+            "Inversión estructural de una dependencia de desmontaje; no se presenta como secuencia oficial completa.",
+            "Tornillo identificado por la lista oficial."
+          ]
+        },
+        {
+          "id": "workbench.assembly.relation.fixture-miyota-2035-structural.screw-before-bridge-2.1",
+          "phase": "assembly",
+          "kind": "requires-present",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_08yzlojtvcbas",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": true,
+          "limitations": [
+            "Inversión estructural de una dependencia de desmontaje; no se presenta como secuencia oficial completa.",
+            "Tornillo identificado por la lista oficial."
+          ]
+        },
+        {
+          "id": "workbench.assembly.relation.fixture-miyota-2035-structural.bridge-before-third.1",
+          "phase": "assembly",
+          "kind": "requires-present",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_2fddlb4xe4m3i",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "medium",
+          "blocking": true,
+          "limitations": [
+            "Inversión estructural de una dependencia de desmontaje; no se presenta como secuencia oficial completa.",
+            "Orden parcial derivado del despiece; requiere validación física para servicio."
+          ]
+        }
+      ],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2bpp26wff7q6b",
+      "instanceId": "pi_fixture-miyota-2035-stru_2fddlb4xe4m3i",
+      "nameEs": "Tercera rueda y piñón",
+      "nameEn": "Third wheel and pinion",
+      "officialReference": "017-A14",
+      "subsystem": "train",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.third-wheel.1",
+        "shape": "wheel",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.95,
+          0.15,
+          0.95
+        ]
+      },
+      "transform": {
+        "position": [
+          -0.1,
+          0.72,
+          -0.15
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_2az9q8f1pi7yn",
+        "ai_fixture-miyota-2035-stru_0vg8eqrwhuvw7",
+        "ai_fixture-miyota-2035-stru_1as6orhi64b4c",
+        "ai_fixture-miyota-2035-stru_3cqhq72arqgv0",
+        "ai_fixture-miyota-2035-stru_2lk1oxlmc1us8"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.rotor-third.1",
+        "relation.fixture-miyota-2035-structural.third-fourth.1",
+        "relation.fixture-miyota-2035-structural.bridge-covers-train.1",
+        "relation.fixture-miyota-2035-structural.third-pivots-in-bridge.1",
+        "relation.fixture-miyota-2035-structural.bridge-before-third.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.train",
+          "selector": {
+            "by": "subsystem",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 0.72,
+      "disassemblyDependencies": [
+        {
+          "id": "workbench.covers.relation.fixture-miyota-2035-structural.bridge-covers-train.1",
+          "phase": "disassembly",
+          "kind": "covers",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_2fddlb4xe4m3i",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": false,
+          "limitations": []
+        },
+        {
+          "id": "workbench.disassembly.relation.fixture-miyota-2035-structural.bridge-before-third.1",
+          "phase": "disassembly",
+          "kind": "remove-before",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_2fddlb4xe4m3i",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "medium",
+          "blocking": true,
+          "limitations": [
+            "Orden parcial derivado del despiece; requiere validación física para servicio."
+          ]
+        }
+      ],
+      "assemblyDependencies": [
+        {
+          "id": "workbench.assembly.relation.fixture-miyota-2035-structural.bridge-before-third.1",
+          "phase": "assembly",
+          "kind": "requires-present",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_2fddlb4xe4m3i",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "medium",
+          "blocking": true,
+          "limitations": [
+            "Inversión estructural de una dependencia de desmontaje; no se presenta como secuencia oficial completa.",
+            "Orden parcial derivado del despiece; requiere validación física para servicio."
+          ]
+        }
+      ],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_0qv6kh1p719wu",
+      "instanceId": "pi_fixture-miyota-2035-stru_04b574cq6o39z",
+      "nameEs": "Cuarta rueda y piñón",
+      "nameEn": "Fourth wheel and pinion",
+      "officialReference": "023-155",
+      "subsystem": "train",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.fourth-wheel.1",
+        "shape": "wheel",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.78,
+          0.14,
+          0.78
+        ]
+      },
+      "transform": {
+        "position": [
+          -0.8,
+          0.82,
+          -0.85
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_0vg8eqrwhuvw7",
+        "ai_fixture-miyota-2035-stru_1oasz7jx6nytf",
+        "ai_fixture-miyota-2035-stru_2jzghay812250"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.third-fourth.1",
+        "relation.fixture-miyota-2035-structural.fourth-fifth.1",
+        "relation.fixture-miyota-2035-structural.fourth-second-hand.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.train",
+          "selector": {
+            "by": "subsystem",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 0.82,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_3b6hyh8pxv897",
+      "instanceId": "pi_fixture-miyota-2035-stru_0p6hxfcc7zv3q",
+      "nameEs": "Quinta rueda y piñón",
+      "nameEn": "Fifth wheel and pinion",
+      "officialReference": "084-971",
+      "subsystem": "train",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.fifth-wheel.1",
+        "shape": "wheel",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.58,
+          0.12,
+          0.58
+        ]
+      },
+      "transform": {
+        "position": [
+          -1.25,
+          0.94,
+          -1.35
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_1oasz7jx6nytf",
+        "ai_fixture-miyota-2035-stru_0528k171fh0be"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.fourth-fifth.1",
+        "relation.fixture-miyota-2035-structural.fifth-cannon.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.train",
+          "selector": {
+            "by": "subsystem",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 0.94,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_34kw3wt9oxk0b",
+      "instanceId": "pi_fixture-miyota-2035-stru_0qw3rrb3c0ily",
+      "nameEs": "Cañón de minutos con rueda conductora",
+      "nameEn": "Cannon pinion with driving wheel",
+      "officialReference": "028-610",
+      "subsystem": "motion-works",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.cannon-pinion.1",
+        "shape": "wheel",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.32,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          0,
+          1.08,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_0528k171fh0be",
+        "ai_fixture-miyota-2035-stru_0nf0vqsxvlmev",
+        "ai_fixture-miyota-2035-stru_2e6ky9ykzk8q9"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.fifth-cannon.1",
+        "relation.fixture-miyota-2035-structural.cannon-minute.1",
+        "relation.fixture-miyota-2035-structural.cannon-minute-hand.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.motion-works",
+          "selector": {
+            "by": "subsystem",
+            "value": "motion-works"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 1.08,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_10ehatp02yegm",
+      "instanceId": "pi_fixture-miyota-2035-stru_0ds1qp0fcdipb",
+      "nameEs": "Rueda de minutería y piñón",
+      "nameEn": "Minute wheel and pinion",
+      "officialReference": "072-760",
+      "subsystem": "motion-works",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.minute-wheel.1",
+        "shape": "wheel",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.72,
+          0.14,
+          0.72
+        ]
+      },
+      "transform": {
+        "position": [
+          0.72,
+          1.1,
+          0.2
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_0nf0vqsxvlmev",
+        "ai_fixture-miyota-2035-stru_0g9o5l3rggg2e"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.cannon-minute.1",
+        "relation.fixture-miyota-2035-structural.minute-hour.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.motion-works",
+          "selector": {
+            "by": "subsystem",
+            "value": "motion-works"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 1.1,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2un23c6y9ogcw",
+      "instanceId": "pi_fixture-miyota-2035-stru_101dvoe26l00t",
+      "nameEs": "Rueda de horas",
+      "nameEn": "Hour wheel",
+      "officialReference": "075-193",
+      "subsystem": "motion-works",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.hour-wheel.1",
+        "shape": "wheel",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.88,
+          0.14,
+          0.88
+        ]
+      },
+      "transform": {
+        "position": [
+          0,
+          1.35,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_0g9o5l3rggg2e",
+        "ai_fixture-miyota-2035-stru_0apt9h5my67u1"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.minute-hour.1",
+        "relation.fixture-miyota-2035-structural.hour-wheel-hand.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.motion-works",
+          "selector": {
+            "by": "subsystem",
+            "value": "motion-works"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 1.35,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2z7o524y1i3vm",
+      "instanceId": "pi_fixture-miyota-2035-stru_04f9qnx98z8yj",
+      "nameEs": "Puente de rueda central",
+      "nameEn": "Center wheel cock",
+      "officialReference": "711-281",
+      "subsystem": "structure",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.center-wheel-cock.1",
+        "shape": "symbolic-marker",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          0,
+          0.9,
+          1.25
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [],
+      "layerOrder": 0.9,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R0",
+        "state": "documented"
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "La identidad documental no demuestra que exista una pieza individual manipulable."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": false,
+        "disassemble": false,
+        "assemble": false,
+        "assess": true
+      },
+      "status": "solo documental"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_3l5asktmz57vj",
+      "instanceId": "pi_fixture-miyota-2035-stru_38birdls7clt6",
+      "nameEs": "Piñón corredizo",
+      "nameEn": "Clutch wheel",
+      "officialReference": "064-660",
+      "subsystem": "keyless",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.clutch-wheel.1",
+        "shape": "wheel",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.5,
+          0.18,
+          0.5
+        ]
+      },
+      "transform": {
+        "position": [
+          2.1,
+          0.52,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.keyless",
+          "selector": {
+            "by": "subsystem",
+            "value": "keyless"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 0.52,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_0x31j6mtw3mvj",
+      "instanceId": "pi_fixture-miyota-2035-stru_2yrpwi9zc9al6",
+      "nameEs": "Protector del piñón corredizo",
+      "nameEn": "Clutch wheel guard",
+      "officialReference": "212-B17",
+      "subsystem": "keyless",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.clutch-wheel-guard.1",
+        "shape": "symbolic-marker",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          2.8,
+          0.9,
+          1.25
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.keyless",
+          "selector": {
+            "by": "subsystem",
+            "value": "keyless"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 0.9,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R0",
+        "state": "documented"
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "La identidad documental no demuestra que exista una pieza individual manipulable."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": false,
+        "disassemble": false,
+        "assemble": false,
+        "assess": true
+      },
+      "status": "solo documental"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_0qwfahyhc04vh",
+      "instanceId": "pi_fixture-miyota-2035-stru_3jgculqsh3ulo",
+      "nameEs": "Tirete",
+      "nameEn": "Setting lever",
+      "officialReference": "067-146",
+      "subsystem": "keyless",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.setting-lever.1",
+        "shape": "rod",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          1,
+          0.1,
+          0.18
+        ]
+      },
+      "transform": {
+        "position": [
+          2.25,
+          0.72,
+          0.55
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.keyless",
+          "selector": {
+            "by": "subsystem",
+            "value": "keyless"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 0.72,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_1agcwx3lg0jgy",
+      "instanceId": "pi_fixture-miyota-2035-stru_3v9shdo0yk8az",
+      "nameEs": "Tija",
+      "nameEn": "Setting stem",
+      "officialReference": "065-468",
+      "subsystem": "keyless",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.setting-stem.1",
+        "shape": "rod",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          2.6,
+          0.14,
+          0.14
+        ]
+      },
+      "transform": {
+        "position": [
+          3.1,
+          0.56,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.keyless",
+          "selector": {
+            "by": "subsystem",
+            "value": "keyless"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 0.56,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_0duwxxjnkqdfk",
+      "instanceId": "pi_fixture-miyota-2035-stru_06it48taeumtp",
+      "nameEs": "Báscula",
+      "nameEn": "Yoke",
+      "officialReference": "071-A14",
+      "subsystem": "keyless",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.yoke.1",
+        "shape": "rod",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.9,
+          0.1,
+          0.18
+        ]
+      },
+      "transform": {
+        "position": [
+          2.05,
+          0.76,
+          -0.45
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.keyless",
+          "selector": {
+            "by": "subsystem",
+            "value": "keyless"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 0.76,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R2",
+        "state": "structurally-modelled"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "listo"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_0n4aqcl2sfuw9",
+      "instanceId": "pi_fixture-miyota-2035-stru_0ng0gkrjolmnc",
+      "nameEs": "Palanca de parada de cuarta rueda",
+      "nameEn": "Fourth wheel stop lever",
+      "officialReference": "269-413",
+      "subsystem": "train",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.fourth-wheel-stop.1",
+        "shape": "symbolic-marker",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          -1.4,
+          1.35,
+          -1.25
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.train",
+          "selector": {
+            "by": "subsystem",
+            "value": "train"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 1.35,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R0",
+        "state": "documented"
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "La identidad documental no demuestra que exista una pieza individual manipulable."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": false,
+        "disassemble": false,
+        "assemble": false,
+        "assess": true
+      },
+      "status": "solo documental"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2dsugvfyyitxt",
+      "instanceId": "pi_fixture-miyota-2035-stru_2mm7y2ac81dnk",
+      "nameEs": "Arandela de esfera",
+      "nameEn": "Dial washer",
+      "officialReference": "078-040",
+      "subsystem": "structure",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.dial-washer.1",
+        "shape": "symbolic-marker",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          0,
+          1.35,
+          -1.25
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [],
+      "layerOrder": 1.35,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R0",
+        "state": "documented"
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "La identidad documental no demuestra que exista una pieza individual manipulable."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": false,
+        "disassemble": false,
+        "assemble": false,
+        "assess": true
+      },
+      "status": "solo documental"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2wtrts0qd3gpc",
+      "instanceId": "pi_fixture-miyota-2035-stru_3i99v5qjdto0t",
+      "nameEs": "Tornillo de bobina",
+      "nameEn": "Screw for coil unit",
+      "officialReference": "922-183",
+      "subsystem": "fasteners",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.screw-coil.1",
+        "shape": "screw",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          1.4,
+          1.35,
+          -1.25
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [],
+      "layerOrder": 1.35,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R0",
+        "state": "documented"
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "utilizable con limitaciones"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_3thyg87kx9rws",
+      "instanceId": "pi_fixture-miyota-2035-stru_030wa1u53ti7d",
+      "nameEs": "Tornillo de circuito 1",
+      "nameEn": "Screw for electronic circuit unit (1)",
+      "officialReference": "922-183",
+      "subsystem": "fasteners",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.screw-circuit-1.1",
+        "shape": "screw",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          2.8,
+          1.35,
+          -1.25
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [],
+      "layerOrder": 1.35,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R0",
+        "state": "documented"
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "utilizable con limitaciones"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_3thyheawnrxyd",
+      "instanceId": "pi_fixture-miyota-2035-stru_0gwgsypku20es",
+      "nameEs": "Tornillo de circuito 2",
+      "nameEn": "Screw for electronic circuit unit (2)",
+      "officialReference": "922-154",
+      "subsystem": "fasteners",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.screw-circuit-2.1",
+        "shape": "screw",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          4.199999999999999,
+          1.35,
+          -1.25
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [],
+      "relations": [],
+      "selectors": [],
+      "layerOrder": 1.35,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R0",
+        "state": "documented"
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "utilizable con limitaciones"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_33s9jb4n8qer0",
+      "instanceId": "pi_fixture-miyota-2035-stru_3qba3zbaoc8ax",
+      "nameEs": "Tornillo de puente de tren 1",
+      "nameEn": "Screw for train wheel bridge (1)",
+      "officialReference": "922-154",
+      "subsystem": "fasteners",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.screw-bridge-1.1",
+        "shape": "screw",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          -4.199999999999999,
+          1.8,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_2ulfh49dlvi9j"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.screw-before-bridge-1.1"
+      ],
+      "selectors": [],
+      "layerOrder": 1.8,
+      "disassemblyDependencies": [
+        {
+          "id": "workbench.disassembly.relation.fixture-miyota-2035-structural.screw-before-bridge-1.1",
+          "phase": "disassembly",
+          "kind": "remove-before",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_3qba3zbaoc8ax",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": true,
+          "limitations": [
+            "Tornillo identificado por la lista oficial."
+          ]
+        }
+      ],
+      "assemblyDependencies": [
+        {
+          "id": "workbench.assembly.relation.fixture-miyota-2035-structural.screw-before-bridge-1.1",
+          "phase": "assembly",
+          "kind": "requires-present",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_3qba3zbaoc8ax",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": true,
+          "limitations": [
+            "Inversión estructural de una dependencia de desmontaje; no se presenta como secuencia oficial completa.",
+            "Tornillo identificado por la lista oficial."
+          ]
+        }
+      ],
+      "reconstruction": {
+        "level": "R0",
+        "state": "documented"
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "utilizable con limitaciones"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_33s9kh7yz8ksl",
+      "instanceId": "pi_fixture-miyota-2035-stru_08yzlojtvcbas",
+      "nameEs": "Tornillo de puente de tren 2",
+      "nameEn": "Screw for train wheel bridge (2)",
+      "officialReference": "934-440",
+      "subsystem": "fasteners",
+      "sourceIds": [
+        "source.miyota.2035.product-page",
+        "source.miyota.2035.specification",
+        "source.miyota.2035.drawing",
+        "source.miyota.2035.instruction-manual",
+        "source.miyota.2035.parts-list-exploded-view"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.screw-bridge-2.1",
+        "shape": "screw",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          -2.8,
+          1.8,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_2pg2kcgr6jmha"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.screw-before-bridge-2.1"
+      ],
+      "selectors": [],
+      "layerOrder": 1.8,
+      "disassemblyDependencies": [
+        {
+          "id": "workbench.disassembly.relation.fixture-miyota-2035-structural.screw-before-bridge-2.1",
+          "phase": "disassembly",
+          "kind": "remove-before",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_08yzlojtvcbas",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": true,
+          "limitations": [
+            "Tornillo identificado por la lista oficial."
+          ]
+        }
+      ],
+      "assemblyDependencies": [
+        {
+          "id": "workbench.assembly.relation.fixture-miyota-2035-structural.screw-before-bridge-2.1",
+          "phase": "assembly",
+          "kind": "requires-present",
+          "beforeInstanceId": "pi_fixture-miyota-2035-stru_24sj0b2g1z6a3",
+          "afterInstanceId": "pi_fixture-miyota-2035-stru_08yzlojtvcbas",
+          "authority": "inferred",
+          "sourceIds": [
+            "source.miyota.2035.parts-list-exploded-view"
+          ],
+          "confidence": "high",
+          "blocking": true,
+          "limitations": [
+            "Inversión estructural de una dependencia de desmontaje; no se presenta como secuencia oficial completa.",
+            "Tornillo identificado por la lista oficial."
+          ]
+        }
+      ],
+      "reconstruction": {
+        "level": "R0",
+        "state": "documented"
+      },
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": []
+      },
+      "limitations": [
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": true,
+        "assemble": true,
+        "assess": true
+      },
+      "status": "utilizable con limitaciones"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_341nckzmczmoy",
+      "instanceId": "pi_fixture-miyota-2035-stru_1llsrl47z9wnv",
+      "nameEs": "Interfaz de aguja horaria",
+      "nameEn": "Hour hand interface",
+      "officialReference": null,
+      "subsystem": "indication",
+      "sourceIds": [
+        "source.miyota.2035.drawing"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.hour-hand-interface.1",
+        "shape": "rod",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          -1.4,
+          1.8,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_0apt9h5my67u1"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.hour-wheel-hand.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.indication",
+          "selector": {
+            "by": "subsystem",
+            "value": "indication"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 1.8,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R1",
+        "state": "envelope-only"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "La aguja no forma parte de la lista de piezas del movimiento."
+        ]
+      },
+      "limitations": [
+        "La aguja no forma parte de la lista de piezas del movimiento.",
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "La aguja no forma parte de la lista de piezas del movimiento."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": false,
+        "assemble": false,
+        "assess": true
+      },
+      "status": "utilizable con limitaciones"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_39n7id11tzoz0",
+      "instanceId": "pi_fixture-miyota-2035-stru_0w1om2tbstnux",
+      "nameEs": "Interfaz de aguja minutera",
+      "nameEn": "Minute hand interface",
+      "officialReference": null,
+      "subsystem": "indication",
+      "sourceIds": [
+        "source.miyota.2035.drawing"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.minute-hand-interface.1",
+        "shape": "rod",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          0,
+          1.8,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_2e6ky9ykzk8q9"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.cannon-minute-hand.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.indication",
+          "selector": {
+            "by": "subsystem",
+            "value": "indication"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 1.8,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R1",
+        "state": "envelope-only"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "La aguja no forma parte de la lista de piezas del movimiento."
+        ]
+      },
+      "limitations": [
+        "La aguja no forma parte de la lista de piezas del movimiento.",
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "La aguja no forma parte de la lista de piezas del movimiento."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": false,
+        "assemble": false,
+        "assess": true
+      },
+      "status": "utilizable con limitaciones"
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-2035-stru_2j5nwvn9m2mvk",
+      "instanceId": "pi_fixture-miyota-2035-stru_163s75qvay8kd",
+      "nameEs": "Interfaz de segundero",
+      "nameEn": "Second hand interface",
+      "officialReference": null,
+      "subsystem": "indication",
+      "sourceIds": [
+        "source.miyota.2035.drawing"
+      ],
+      "definitionExists": true,
+      "instanceCount": 1,
+      "geometry": {
+        "id": "geometry.fixture-miyota-2035-structural.second-hand-interface.1",
+        "shape": "rod",
+        "coordinateSpace": "normalized-educational",
+        "layer": "visual-reconstruction-estimate",
+        "size": [
+          0.55,
+          0.16,
+          0.55
+        ]
+      },
+      "transform": {
+        "position": [
+          1.4,
+          1.8,
+          0
+        ],
+        "units": "normalized-educational"
+      },
+      "interfaces": [
+        "ai_fixture-miyota-2035-stru_2jzghay812250"
+      ],
+      "relations": [
+        "relation.fixture-miyota-2035-structural.fourth-second-hand.1"
+      ],
+      "selectors": [
+        {
+          "id": "selector.miyota.2035.indication",
+          "selector": {
+            "by": "subsystem",
+            "value": "indication"
+          },
+          "cardinality": "one-or-more"
+        }
+      ],
+      "layerOrder": 1.8,
+      "disassemblyDependencies": [],
+      "assemblyDependencies": [],
+      "reconstruction": {
+        "level": "R1",
+        "state": "envelope-only"
+      },
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "La aguja no forma parte de la lista de piezas del movimiento."
+        ]
+      },
+      "limitations": [
+        "La aguja no forma parte de la lista de piezas del movimiento.",
+        "Coordenadas y tamaño normalizados; no son dimensiones ni posición nominales.",
+        "La aguja no forma parte de la lista de piezas del movimiento."
+      ],
+      "aptitude": {
+        "observe": true,
+        "select": true,
+        "hide": true,
+        "explode": true,
+        "disassemble": false,
+        "assemble": false,
+        "assess": true
+      },
+      "status": "utilizable con limitaciones"
+    }
+  ]
+}

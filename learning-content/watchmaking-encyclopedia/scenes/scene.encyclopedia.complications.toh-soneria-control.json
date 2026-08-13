@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.complications.toh-soneria-control",
+  "version": "1.1.0",
+  "title": "Cuaderno: Alarma, sonería y repetición a demanda",
+  "description": "¿Cómo separan estos mecanismos almacenamiento, lectura de hora, control y producción de sonido?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Alarma, sonería y repetición a demanda. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.complications.toh-soneria-control.scope",
+      "markdown": "**Alcance del estudio:** ¿Cómo separan estos mecanismos almacenamiento, lectura de hora, control y producción de sonido?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Cómo separan estos mecanismos almacenamiento, lectura de hora, control y producción de sonido?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.complications.toh-soneria-control.answer",
+      "instructionMarkdown": "Explica **Alarma, sonería y repetición a demanda** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.complications.toh-soneria-control.explain",
+          "promptMarkdown": "¿Cómo separan estos mecanismos almacenamiento, lectura de hora, control y producción de sonido?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.complications.toh-soneria-control.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-soneria-control.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-soneria-control.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.complications.toh-soneria-control.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.complications.toh-soneria-control.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por cargar sonería y sigue hasta golpear timbres.",
+                "en": "Empieza por cargar sonería y sigue hasta golpear timbres."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.complications.toh-soneria-control.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "La alarma libera energía en un instante programado; la repetición lee el estado horario al activarse y gobierna golpes mediante caracoles, rastrillos y sorpresa. Barrilete, regulador de sonería, martillos y timbres forman una cadena paralela.",
+                "en": "La alarma libera energía en un instante programado; la repetición lee el estado horario al activarse y gobierna golpes mediante caracoles, rastrillos y sorpresa. Barrilete, regulador de sonería, martillos y timbres forman una cadena paralela."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Cómo separan estos mecanismos almacenamiento, lectura de hora, control y producción de sonido?",
+              "en": "¿Cómo separan estos mecanismos almacenamiento, lectura de hora, control y producción de sonido?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena cargar sonería → solicitar o alcanzar disparo → leer estado → liberar tren → regular cadencia → golpear timbres, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena cargar sonería → solicitar o alcanzar disparo → leer estado → liberar tren → regular cadencia → golpear timbres, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.complications.toh-soneria-control.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.complications.toh-soneria-control.mechanism",
+            "field.encyclopedia.complications.toh-soneria-control.evidence",
+            "field.encyclopedia.complications.toh-soneria-control.limit",
+            "field.encyclopedia.complications.toh-soneria-control.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

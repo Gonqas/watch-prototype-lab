@@ -1,0 +1,138 @@
+{
+  "id": "scene.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas",
+  "version": "1.1.0",
+  "title": "Cuaderno: Barrilete, árbol, tambor y apoyos",
+  "description": "¿Qué interfaces convierten el muelle real en una fuente de par utilizable?",
+  "fixtureBinding": {
+    "kind": "fixture",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Barrilete, árbol, tambor y apoyos. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué interfaces convierten el muelle real en una fuente de par utilizable?\n\nEl movimiento mostrado ayuda a seguir relaciones y puede restaurarse; no reproduce fuerzas, tolerancias ni lubricación reales. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué interfaces convierten el muelle real en una fuente de par utilizable?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.answer",
+      "instructionMarkdown": "Explica **Barrilete, árbol, tambor y apoyos** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.explain",
+          "promptMarkdown": "¿Qué interfaces convierten el muelle real en una fuente de par utilizable?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por anclar extremo interior y sigue hasta controlar juego y fricción.",
+                "en": "Empieza por anclar extremo interior y sigue hasta controlar juego y fricción."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El extremo interior se relaciona con el árbol y el exterior con tambor o pared según arquitectura. Tapa, fondo, pivotes, gancho, dentado y lubricación delimitan alineación, fricción y seguridad. Motor barrel y going barrel no transmiten de la misma manera.",
+                "en": "El extremo interior se relaciona con el árbol y el exterior con tambor o pared según arquitectura. Tapa, fondo, pivotes, gancho, dentado y lubricación delimitan alineación, fricción y seguridad. Motor barrel y going barrel no transmiten de la misma manera."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué interfaces convierten el muelle real en una fuente de par utilizable?",
+              "en": "¿Qué interfaces convierten el muelle real en una fuente de par utilizable?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena anclar extremo interior → guiar el árbol → contener espiras → cerrar tapa → transmitir al dentado → controlar juego y fricción, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena anclar extremo interior → guiar el árbol → contener espiras → cerrar tapa → transmitir al dentado → controlar juego y fricción, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.mechanism",
+            "field.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.evidence",
+            "field.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.limit",
+            "field.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

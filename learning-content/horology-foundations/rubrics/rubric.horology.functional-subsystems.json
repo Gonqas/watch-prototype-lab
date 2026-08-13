@@ -1,0 +1,51 @@
+{
+  "id": "rubric.horology.functional-subsystems",
+  "version": "0.5.0",
+  "competencyId": "competency.horology.identify-functional-subsystems",
+  "rules": [
+    {
+      "id": "rule.horology.functional-subsystems.demonstrated",
+      "version": "0.5.0",
+      "targetState": "demonstrated",
+      "acceptedEvidenceKinds": [
+        "answer",
+        "procedure",
+        "observation",
+        "artifact",
+        "human-review"
+      ],
+      "minimumEvidence": 1,
+      "minimumScore": 1,
+      "minimumDistinctSessions": 1,
+      "minimumSpanDays": 0,
+      "explanationTemplate": "La evidencia correcta y completa demuestra la competencia en este módulo; el uso de pistas queda visible."
+    }
+  ],
+  "assessmentRule": {
+    "id": "rule.composite.horology.functional-subsystems.demonstrated",
+    "version": "0.2.0",
+    "competencyId": "competency.horology.identify-functional-subsystems",
+    "targetState": "demonstrated",
+    "condition": {
+      "op": "all",
+      "conditions": [
+        {
+          "op": "count",
+          "filter": {
+            "evidenceType": "classification",
+            "status": "active",
+            "minimumConfidence": 1
+          },
+          "compare": "gte",
+          "value": 2
+        },
+        {
+          "op": "compare",
+          "metric": "distinct-sessions",
+          "compare": "gte",
+          "value": 2
+        }
+      ]
+    }
+  }
+}

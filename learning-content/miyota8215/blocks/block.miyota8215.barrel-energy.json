@@ -1,0 +1,56 @@
+{
+  "id": "block.miyota8215.barrel-energy",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "Barrilete y energía",
+  "bodyMarkdown": "## Propósito\n\nRelacionar cuerda manual y automática con barrilete y salida hacia el tren.\n\n## Objetivos y prerrequisitos\n\n## Explicación\n\nEl conjunto Barrel complete conserva los roles de barrilete y muelle real sin fingir dos recambios. La energía normalizada permite seguir continuidad, no la curva real de par.\n\n## Visual e interacción\n\n- ruta corona-barrilete\n- ruta rotor-barrilete\n- salida al tren\n- laboratorio de barrilete\n\n## Fuentes, afirmaciones y vocabulario\n\nLas identidades, referencias y datos específicos proceden de documentación MIYOTA. La explicación es contenido educativo original. El libro privado solo aporta teoría general y no se copia. Los nombres en español conservan su equivalencia técnica en inglés y su referencia oficial.\n\n## Actividad, errores y ayuda\n\n- Seguir la energía desde el barrilete.\n- Comparar barrilete real y conceptual.\n\n## Evidencia y criterios de revisión\n\n## Limitaciones\n\n- Sin curva real de par, vueltas, eficiencia o estado físico del muelle.\n- Los niveles de reconstrucción y fidelidad se consultan en la ficha técnica; no certifican servicio profesional ni funcionamiento físico.\n\n## Resumen y siguiente conexión\n\nRelacionar cuerda manual y automática con barrilete y salida hacia el tren. Continúa con «Tren de rodaje».\n\n## Palabras y piezas clave\n\n- **Explicar el calendario.** Explicar el calendario con un modelo estructural, fuentes, operaciones y límites declarados.\n- **Explicar la cadena energética.** Explicar la cadena energética con un modelo estructural, fuentes, operaciones y límites declarados.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo se localiza la fuente de energía del 8215 y se sigue su salida hacia el tren sin atribuir al modelo valores físicos que no contiene?\n\n## Modelo causal ampliado\n\nEl muelle almacena energía dentro del conjunto de barrilete. La cuerda manual o automática modifica su estado y el dentado del barrilete entrega movimiento al tren. La arquitectura real se vincula a identidades documentadas; la visualización interna puede ser reconstruida.\n\nEl ensamblaje permite seguir relaciones estructurales y sentidos educativos, pero no aporta reserva de marcha medida, par, curva de entrega, lubricación ni condición de una unidad. Una carga simbólica es un estado del laboratorio.\n\n## Ejemplo resuelto\n\nSe marca la entrada de cuerda, el estado del muelle y el engrane de salida. Con la salida desacoplada, el estado puede quedar cargado sin mover el tren. Al reconectar, la energía se propaga. El ejemplo evita llamar “agotada” a una unidad física: solo describe el estado simulado.\n\n## Práctica deliberada\n\nSigue carga y descarga en rutas separadas. Repite desde el tren hacia la fuente. En el intento independiente diferencia fuente descargada, salida desacoplada y tren bloqueado.\n\n## Comprobación antes del laboratorio\n\n- Localizas almacenamiento y salida.\n- Distingues modos de carga.\n- Predices tres interrupciones distintas.\n- No presentas estados simbólicos como medidas.\n\n## Transferencia\n\nCompara con el barrilete conceptual y registra qué relaciones son equivalentes y qué detalles dependen del 8215.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo se localiza la fuente de energía del 8215 y se sigue su salida hacia el tren sin atribuir al modelo valores físicos que no contiene?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Compara con el barrilete conceptual y registra qué relaciones son equivalentes y qué detalles dependen del 8215.\n\n## Lectura técnica de relaciones y límites\n\nUsa dos recorridos complementarios. El recorrido de carga parte de corona o automático y termina en el estado del muelle. El recorrido de marcha parte del almacenamiento y termina en el primer engrane del tren. Mantenerlos separados ayuda a diagnosticar por qué una entrada puede funcionar mientras la otra no, o por qué existe carga sin salida. El modelo interno del muelle puede estar normalizado; por eso la forma visible de la espiral no es evidencia sobre vueltas, espesor ni curva de par. Las prestaciones nominales se consultan en la ficha o especificación y nunca se derivan de la animación.",
+  "claims": [
+    {
+      "id": "claim.miyota8215.barrel-energy",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "Barrilete y energía se practica sobre el modelo estructural del 8215 con autoridad y limitaciones visibles.",
+      "sourceStatement": "Documentación MIYOTA para identidad y estructura; explicación educativa original para la secuencia de aprendizaje.",
+      "method": "Modelo estructural del 8215 y controles educativos del Sistema 4F",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Ensamblaje estructural R2 con geometría interna normalizada; no es un gemelo exacto.",
+          "Las operaciones educativas no constituyen un procedimiento oficial completo de servicio.",
+          "No se simulan tolerancias, par, presión, lubricación, desgaste, choque ni marcha física."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4f:barrel-energy:0.5.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-miyota8215",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4F · MIYOTA 8215 completo"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Arquitectura de laboratorio, explicaciones, actividades, operaciones educativas y evaluación originales del Sistema 4F.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.miyota8215.explain-energy-chain"
+    ],
+    "estimatedMinutes": 4,
+    "userPaced": true
+  }
+}

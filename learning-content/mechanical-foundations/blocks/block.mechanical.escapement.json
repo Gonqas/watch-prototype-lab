@@ -1,0 +1,56 @@
+{
+  "id": "block.mechanical.escapement",
+  "version": "0.5.0",
+  "kind": "explanation",
+  "title": "El escape de áncora suizo",
+  "bodyMarkdown": "## Propósito\n\nOrdenar bloqueo, desbloqueo, impulso y caída sin formar para un ajuste físico.\n\n## Objetivos observables\n\n## Prerrequisitos\n\n## Explicación\n\nOcho estados discretos representan la alternancia izquierda y derecha: bloqueo, desbloqueo, impulso y caída. El timeline puede pausarse, retroceder y avanzar de fase. Las zonas de contacto son conceptuales; no se inventan ángulos, penetraciones, draw, pérdidas ni lubricación.\n\n## Interacción y actividad\n\n## Fuentes y alcance de las afirmaciones\n\nEl libro privado se usa como teoría general en los capítulos declarados en la ficha de fuentes; no se copia texto. Cada explicación o cálculo del laboratorio indica si es una síntesis educativa o un resultado calculado. Los datos del 8215 solo proceden de documentación MIYOTA y nunca heredan el movimiento del modelo conceptual.\n\n## Vocabulario\n\n## Errores habituales y ayuda\n\n## Evidencia y rúbrica\n\n## Resumen y conexión\n\nOrdenar bloqueo, desbloqueo, impulso y caída sin formar para un ajuste físico. Continúa con “Volante y espiral”.\n\n## Palabras y piezas clave\n\n- **Reconocer apoyos y holguras.** Reconocer apoyos y holguras mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n- **Ordenar las fases del escape.** Ordenar las fases del escape mediante relaciones explicadas, cálculos reproducibles y límites visibles en la ficha técnica.\n\n## Estudio en profundidad\n\n## Pregunta de estudio\n\n¿Cómo se encadenan bloqueo, desbloqueo, impulso y caída en un escape de áncora sin convertir una secuencia educativa en instrucciones de ajuste?\n\n## Modelo causal ampliado\n\nEl escape administra la liberación del tren mediante estados alternos. Durante el bloqueo, un diente de la rueda de escape queda retenido por una superficie del áncora. El movimiento del oscilador permite el desbloqueo; después aparece una fase de impulso que transfiere energía hacia el oscilador, y una caída conduce al siguiente bloqueo. La alternancia repite la gramática funcional en lados opuestos, pero no debe reducirse a una rueda que gira continuamente.\n\nCada nombre describe una relación y un cambio de estado. «Bloqueo» no significa ausencia de energía aguas arriba; significa que la salida está retenida en esa interfaz. «Impulso» no equivale a amplitud medida. «Caída» no autoriza a inferir un ángulo ni una holgura. La vista lenta ayuda a ordenar acontecimientos y contactos declarados, pero no proporciona penetración, seguridad, ángulos, lubricación, rozamiento ni calidad de ajuste. Esas decisiones requieren geometría, medidas, documentación y práctica supervisada.\n\n## Ejemplo resuelto\n\nParte de un bloqueo estable. El oscilador cambia de posición hasta permitir el desbloqueo; la rueda avanza dentro del estado educativo; se representa el impulso y después la llegada al bloqueo opuesto. Si se elimina el contacto de bloqueo, la secuencia ya no puede esperar a la referencia temporal. Si se elimina el impulso, el modelo puede señalar que el oscilador deja de recibir energía, pero no calcula cómo decae su amplitud. El ejemplo termina separando lo observado de las consecuencias físicas pendientes.\n\n## Práctica deliberada\n\nOrdena tarjetas de las cuatro fases y añade en cada una quién entrega energía, quién recibe y qué condición permite avanzar. Repite empezando desde una fase aleatoria para evitar memorizar siempre el mismo inicio. Después compara una secuencia válida con otra que salta del desbloqueo al bloqueo. En el intento independiente explica un ciclo completo sin reproducción automática y señala dos magnitudes que la escena no puede validar.\n\n## Comprobación antes del laboratorio\n\n- Ordenas las fases y justificas cada transición.\n- Distingues retención, liberación e impulso.\n- No conviertes una posición dibujada en un ajuste geométrico.\n- Declaras las mediciones y la revisión física que faltarían.\n\n## Transferencia\n\nCompara la misma gramática funcional con otro tipo de escape estudiado en las fuentes: conserva las preguntas sobre retención, liberación e impulso, pero no copies piezas ni geometría.\n\n## Contraste y autoexplicación\n\nVuelve a la pregunta «¿Cómo se encadenan bloqueo, desbloqueo, impulso y caída en un escape de áncora sin convertir una secuencia educativa en instrucciones de ajuste?» y construye dos casos: uno que satisfaga la relación estudiada y otro que se parezca visualmente pero falle en una interfaz, una dependencia o una fuente. Explica qué observación decide entre ambos antes de mirar el modelo. Después indica qué dato te haría cambiar de conclusión y qué parte seguiría siendo desconocida. Cierra enlazando el razonamiento con esta transferencia: Compara la misma gramática funcional con otro tipo de escape estudiado en las fuentes: conserva las preguntas sobre retención, liberación e impulso, pero no copies piezas ni geometría.\n\n## Lectura técnica de relaciones y límites\n\nConstruye para cada fase una ficha con estado anterior, contacto activo, condición de salida, transferencia de energía y estado posterior. La ficha obliga a explicar por qué la rueda permanece retenida y qué cambia cuando se libera. No uses una captura aislada como prueba de fase: posiciones parecidas pueden corresponder a direcciones o contactos distintos. En una unidad real, cualquier valoración de seguridad, caída, penetración o calidad de superficie exige medidas, iluminación adecuada, documentación y competencia práctica; esta unidad solo prepara el vocabulario causal.",
+  "claims": [
+    {
+      "id": "claim.mechanical.escapement",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "El escape de áncora suizo se representa mediante un modelo conceptual reversible y no como comportamiento exacto del 8215.",
+      "sourceStatement": "Teoría privada y explicación educativa original; sin reproducción textual ni datos específicos trasladados.",
+      "method": "Modelo declarativo y cálculos deterministas del Sistema 4E",
+      "fidelity": {
+        "geometry": "G1",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "Modelo mecánico conceptual normalizado; no representa un calibre fabricable.",
+          "Cálculos cinemáticos ideales y física relativa simplificada; no son validación de ingeniería.",
+          "MIYOTA 8215 se muestra únicamente como comparación estructural R2/G2/K2/P0."
+        ]
+      },
+      "reliability": "medium",
+      "inputFingerprint": "system4e:escapement:0.1.0",
+      "recordedAt": "2026-07-27T13:30:00.000Z",
+      "methodVersion": "0.5.0",
+      "sources": [
+        {
+          "id": "source.horology.original-mechanical-foundations",
+          "authority": "original-educational",
+          "usage": "user-created",
+          "resource": {
+            "kind": "note",
+            "title": "Sistema 4E · Fundamentos del reloj mecánico"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "sourceType": "original-educational-content",
+          "importedAt": "2026-07-27",
+          "privateUse": true,
+          "supportedClaim": "Laboratorios, cálculos educativos, explicaciones, actividades y evaluación originales.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "pedagogy": {
+    "role": "explain",
+    "conceptIds": [
+      "concept.mechanical.order-escapement-phases"
+    ],
+    "estimatedMinutes": 5,
+    "userPaced": true
+  }
+}

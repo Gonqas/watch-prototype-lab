@@ -1,0 +1,33 @@
+{
+  "id": "evidence.capstone.design.acquired-movement",
+  "version": "1.0.0",
+  "competencyId": "competency.capstone.design.acquired-movement",
+  "kind": "answer",
+  "scoringMethod": "rubric",
+  "extraction": {
+    "id": "rule.extract.capstone.design.acquired-movement",
+    "version": "1.0.0",
+    "triggerEventType": "capstone-response-submitted",
+    "evidenceType": "written-response",
+    "competencyId": "competency.capstone.design.acquired-movement",
+    "packageId": "wplab.horology.manufacturing-design-validation",
+    "activityIds": [
+      "activity.capstone.design.acquired-movement"
+    ],
+    "evidenceTemplateId": "evidence.capstone.design.acquired-movement",
+    "minimumSessionState": [
+      "active",
+      "paused",
+      "completed"
+    ],
+    "confidence": 0.8,
+    "contentFields": [
+      "sceneId",
+      "stepId",
+      "data",
+      "sourceIds",
+      "risks",
+      "validation"
+    ]
+  }
+}

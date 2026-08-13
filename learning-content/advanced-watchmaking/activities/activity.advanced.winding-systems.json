@@ -1,0 +1,347 @@
+{
+  "id": "activity.advanced.winding-systems",
+  "version": "1.1.0",
+  "title": "Inversores, palanca de uñas y carga unidireccional",
+  "sceneIds": [
+    "scene.advanced.winding-systems"
+  ],
+  "competencyIds": [
+    "competency.advanced.winding-systems"
+  ],
+  "evidenceTemplateIds": [
+    "evidence.advanced.winding-systems",
+    "evidence.advanced.winding-systems.human-review"
+  ],
+  "rubricId": "rubric.advanced.winding-systems",
+  "projectReference": {
+    "kind": "fixture-readonly",
+    "fixtureId": "fixture.conceptual.mechanical-chain"
+  },
+  "authoring": {
+    "lessonId": "lesson.advanced.winding-systems",
+    "title": {
+      "es": "Inversores, palanca de uñas y carga unidireccional",
+      "en": "Inversores, palanca de uñas y carga unidireccional"
+    },
+    "description": {
+      "es": "Estudio aplicado: ¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?",
+      "en": "Estudio aplicado: ¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?"
+    },
+    "difficulty": "intermediate",
+    "durationMinutes": 52,
+    "activityType": "comparison",
+    "movementIds": [],
+    "familyIds": [
+      "case.eta.2824-2",
+      "case.eta.7750",
+      "case.seiko.42-family",
+      "case.miyota.8215"
+    ],
+    "subsystem": "automatic-winding",
+    "requiredCapabilities": [
+      "learning.scene-runtime",
+      "reduced-motion"
+    ],
+    "languages": [
+      "es-ES"
+    ],
+    "offline": true,
+    "fidelity": {
+      "geometry": "G0",
+      "kinematics": "K0",
+      "physics": "P0",
+      "limitations": [
+        "Los casos sin fixture se estudian mediante documentos, tablas y diagramas.",
+        "No se inventan dimensiones ni geometría.",
+        "La actividad digital no acredita destreza física ni validación de ingeniería."
+      ]
+    },
+    "warnings": {
+      "es": [
+        "Comprueba la referencia y revisión antes de transferir un dato.",
+        "Toda competencia física requiere evidencia y revisión humanas."
+      ],
+      "en": []
+    },
+    "sourceIds": [
+      "source.eta.2824-2.product",
+      "source.eta.7750.product",
+      "source.seiko.42.technical-guide",
+      "source.seiko.6138a.technical-guide",
+      "source.miyota.8215.official"
+    ],
+    "visualResourceIds": [],
+    "fixtureBinding": {
+      "kind": "fixture",
+      "fixtureId": "fixture.conceptual.mechanical-chain"
+    },
+    "interactionContract": {
+      "responseModel": "structured-response",
+      "orderedItems": [],
+      "expectedOrderIds": [],
+      "structuredFields": [
+        {
+          "id": "field.claims",
+          "label": {
+            "es": "Hechos respaldados y sus fuentes",
+            "en": "Hechos respaldados y sus fuentes"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.reasoning",
+          "label": {
+            "es": "Relaciones, comparación y decisión",
+            "en": "Relaciones, comparación y decisión"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.unknowns",
+          "label": {
+            "es": "Desconocidos, riesgos y plan de verificación",
+            "en": "Desconocidos, riesgos y plan de verificación"
+          },
+          "kind": "short-text",
+          "required": true
+        },
+        {
+          "id": "field.confidence",
+          "label": {
+            "es": "Confianza y qué la cambiaría",
+            "en": "Confianza y qué la cambiaría"
+          },
+          "kind": "confidence",
+          "required": true
+        }
+      ],
+      "hints": [],
+      "evidencePolicy": {
+        "eventType": "advanced-response-submitted",
+        "recordsAnswerPayload": true,
+        "deterministicComponents": [],
+        "requiresHumanReview": true,
+        "accessibilityAdaptationsCountAsHints": false
+      }
+    },
+    "pedagogicalContract": {
+      "purpose": "guided-practice",
+      "assessmentIntent": "formative",
+      "requiresConceptIds": [
+        "concept.advanced.winding-systems"
+      ],
+      "introducesConceptIds": [],
+      "demonstratesConceptIds": [],
+      "practicesConceptIds": [
+        "concept.advanced.winding-systems"
+      ],
+      "assessesConceptIds": [
+        "concept.advanced.winding-systems"
+      ],
+      "evidenceLevel": "causal-explanation",
+      "supportLevel": "guided",
+      "remediation": {
+        "lessonId": "lesson.advanced.winding-systems",
+        "blockId": "block.advanced.winding-systems",
+        "conceptIds": [
+          "concept.advanced.winding-systems"
+        ]
+      },
+      "physicalBoundary": {
+        "es": "Evalúa razonamiento documental o simulado. No demuestra manipulación, ajuste, limpieza, lubricación ni servicio físico.",
+        "en": "Evalúa razonamiento documental o simulado. No demuestra manipulación, ajuste, limpieza, lubricación ni servicio físico."
+      }
+    },
+    "feedbackContract": {
+      "correctExplanation": {
+        "es": "La decisión conserva relaciones, procedencia, compromisos y límites.",
+        "en": "La decisión conserva relaciones, procedencia, compromisos y límites."
+      },
+      "incorrectDiagnosis": {
+        "es": "Revisa si confundiste apariencia con arquitectura, una inferencia con un dato o una simulación con evidencia física.",
+        "en": "Revisa si confundiste apariencia con arquitectura, una inferencia con un dato o una simulación con evidencia física."
+      },
+      "causalQuestion": {
+        "es": "¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?",
+        "en": "¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?"
+      },
+      "nextObservation": {
+        "es": "Busca la primera afirmación sin fuente o la primera relación no demostrada.",
+        "en": "Busca la primera afirmación sin fuente o la primera relación no demostrada."
+      },
+      "misconceptionIds": [],
+      "transferPrompt": {
+        "es": "Aplica el mismo criterio a un calibre o pliego no usado en el ejemplo.",
+        "en": "Aplica el mismo criterio a un calibre o pliego no usado en el ejemplo."
+      },
+      "requiresIndependentRetryAfterHint": true
+    },
+    "tutorContract": {
+      "scopeConceptIds": [
+        "concept.advanced.winding-systems"
+      ],
+      "allowedActions": [
+        "orient",
+        "ask-socratic-question",
+        "explain-declared-content",
+        "point-to-source",
+        "suggest-remediation",
+        "summarize-visible-state"
+      ],
+      "forbiddenClaims": [
+        {
+          "es": "No inventar dimensiones, materiales, contactos o procedimientos.",
+          "en": "No inventar dimensiones, materiales, contactos o procedimientos."
+        },
+        {
+          "es": "No presentar una actividad digital como competencia física.",
+          "en": "No presentar una actividad digital como competencia física."
+        },
+        {
+          "es": "No sustituir la revisión humana exigida.",
+          "en": "No sustituir la revisión humana exigida."
+        }
+      ],
+      "promptStarters": [
+        {
+          "es": "¿Qué fuente respalda esa afirmación?",
+          "en": "¿Qué fuente respalda esa afirmación?"
+        },
+        {
+          "es": "¿Qué relación cambia entre los casos?",
+          "en": "¿Qué relación cambia entre los casos?"
+        },
+        {
+          "es": "¿Qué sigue siendo desconocido?",
+          "en": "¿Qué sigue siendo desconocido?"
+        }
+      ],
+      "requiresSourceForTechnicalClaims": true,
+      "authority": "coach-not-assessor"
+    },
+    "pedagogicalPattern": {
+      "enabled": true,
+      "stages": [
+        "observe",
+        "predict",
+        "compare",
+        "explain",
+        "relate-to-real-object",
+        "record-evidence"
+      ]
+    },
+    "comparativeArchitectureContract": {
+      "caseIds": [
+        "case.eta.2824-2",
+        "case.eta.7750",
+        "case.seiko.42-family",
+        "case.miyota.8215"
+      ],
+      "comparisonAxes": [
+        "winding-system",
+        "serviceability",
+        "trade-offs"
+      ],
+      "representation": "causal-diagram",
+      "evidenceBoundary": "official-only",
+      "exactGeometryRequired": false,
+      "learnerMustSeparateFactInferenceUnknown": true,
+      "unsupportedDimensionsForbidden": true,
+      "textualAlternative": true
+    },
+    "deliberatePractice": {
+      "focus": {
+        "es": "¿Cómo se rectifica el movimiento variable del rotor para cargar el muelle en un sentido útil?"
+      },
+      "workedExample": {
+        "scenario": {
+          "es": "Busca la primera afirmación sin fuente o la primera relación no demostrada."
+        },
+        "steps": [
+          {
+            "es": "Delimita la entrada, el estado inicial y el resultado que debe explicar «Inversores, palanca de uñas y carga unidireccional»."
+          },
+          {
+            "es": "Sigue la relación causal declarada en la lección y conserva su fuente o límite."
+          },
+          {
+            "es": "Compara la predicción con el resultado, corrige la primera diferencia y restaura antes de repetir."
+          }
+        ],
+        "conclusion": {
+          "es": "La decisión conserva relaciones, procedencia, compromisos y límites."
+        }
+      },
+      "attempts": [
+        {
+          "phase": "guided",
+          "instruction": {
+            "es": "Resuelve «Inversores, palanca de uñas y carga unidireccional» con el ejemplo y las etiquetas disponibles; explica cada decisión antes de confirmarla."
+          },
+          "evidence": {
+            "es": "Se guarda como práctica con guía, incluidas las pistas y correcciones utilizadas."
+          }
+        },
+        {
+          "phase": "faded",
+          "instruction": {
+            "es": "Restaura el estado y repite «Inversores, palanca de uñas y carga unidireccional» con solo los puntos de control, sin la solución completa."
+          },
+          "evidence": {
+            "es": "Se compara qué apoyo fue necesario y en qué paso dejó de serlo."
+          }
+        },
+        {
+          "phase": "independent",
+          "instruction": {
+            "es": "Resuelve una variante restaurada de «Inversores, palanca de uñas y carga unidireccional» sin pistas y justifica observación, relación y límite."
+          },
+          "evidence": {
+            "es": "Solo este intento puede aportar evidencia independiente; una respuesta pendiente conserva revisión humana."
+          }
+        },
+        {
+          "phase": "transfer",
+          "instruction": {
+            "es": "Aplica el mismo criterio a un calibre o pliego no usado en el ejemplo."
+          },
+          "evidence": {
+            "es": "La transferencia se registra separada del caso practicado y no hereda geometría, autoridad ni medidas."
+          }
+        }
+      ],
+      "successCriteria": [
+        {
+          "es": "La conclusión responde al objetivo «Inversores, palanca de uñas y carga unidireccional» con una relación observable."
+        },
+        {
+          "es": "La explicación separa hecho, inferencia, desconocido y límite de la representación."
+        },
+        {
+          "es": "El intento final se completa sin pistas después de restaurar el estado."
+        }
+      ],
+      "errorSignals": [
+        {
+          "es": "Revisa si confundiste apariencia con arquitectura, una inferencia con un dato o una simulación con evidencia física."
+        },
+        {
+          "es": "La respuesta describe apariencia o autoridad, pero no la relación que produce el resultado."
+        }
+      ],
+      "independentRetry": {
+        "required": true,
+        "afterHint": true,
+        "restoreBeforeRetry": true,
+        "variant": {
+          "es": "Aplica el mismo criterio a un calibre o pliego no usado en el ejemplo."
+        }
+      },
+      "transferPrompt": {
+        "es": "Aplica el mismo criterio a un calibre o pliego no usado en el ejemplo."
+      }
+    }
+  }
+}

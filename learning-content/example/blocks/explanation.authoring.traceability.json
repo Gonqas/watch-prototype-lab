@@ -1,0 +1,63 @@
+{
+  "id": "explanation.authoring.traceability",
+  "version": "1.0.0",
+  "kind": "explanation",
+  "title": "De la fuente a la evidencia",
+  "bodyMarkdown": "Una actividad trazable enlaza una {{term:term.authoring.claim}}, una {{term:term.authoring.fidelity}} declarada y un {{term:term.authoring.selector}} estable. Este ejemplo enseña el contrato, no relojería.",
+  "claims": [
+    {
+      "id": "claim.authoring.declarative-chain",
+      "claimType": "source",
+      "classification": "original-explanation",
+      "claim": "El contenido visible y las acciones del runtime se relacionan mediante IDs estables.",
+      "sourceStatement": "Los contratos de Sistemas 0–3 separan paquete, escena, evidencia y evaluación.",
+      "method": "Síntesis editorial de los contratos implementados",
+      "fidelity": {
+        "geometry": "G0",
+        "kinematics": "K0",
+        "physics": "P0",
+        "limitations": [
+          "La afirmación describe arquitectura de contenido, no un mecanismo relojero."
+        ]
+      },
+      "reliability": "high",
+      "inputFingerprint": "authoring-example:contracts:1",
+      "recordedAt": "2026-07-23T15:00:00.000Z",
+      "methodVersion": "1.0.0",
+      "sources": [
+        {
+          "id": "source.authoring.system-contracts",
+          "authority": "original-educational",
+          "usage": "shareable",
+          "resource": {
+            "kind": "note",
+            "title": "Contratos aprobados de Aprender, Sistemas 0–3",
+            "locator": "docs/APRENDER-SISTEMA-3.md"
+          },
+          "authorOrManufacturer": "Watch Prototype Lab",
+          "edition": "Sistemas 0–3",
+          "year": 2026,
+          "sourceType": "original-educational-content",
+          "revision": "1.0",
+          "chapter": "Contratos de contenido y runtime",
+          "retrievedAt": "2026-07-23",
+          "privateUse": false,
+          "editorialComment": "Fuente interna para enseñar autoría; no contiene afirmaciones relojeras.",
+          "supportedClaim": "El paquete separa contenido declarativo, runtime, persistencia y presentación.",
+          "derivedLayer": "source"
+        }
+      ]
+    }
+  ],
+  "localization": {
+    "title": {
+      "es": "De la fuente a la evidencia",
+      "en": "From source to evidence"
+    },
+    "bodyMarkdown": {
+      "es": "Una actividad trazable enlaza afirmación, fidelidad y selector estable.",
+      "en": "A traceable activity links a claim, fidelity and a stable selector."
+    }
+  }
+}
+

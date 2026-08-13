@@ -1,0 +1,134 @@
+{
+  "id": "scene.encyclopedia.service-tribology.tm-inspeccion-previa",
+  "version": "1.1.0",
+  "title": "Cuaderno: Caso TM I: inspección antes de desmontar",
+  "description": "¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?",
+  "accessibility": {
+    "textualAlternative": "Lectura y respuesta estructurada sobre Caso TM I: inspección antes de desmontar. No requiere modelo 3D ni arrastre.",
+    "reducedMotionAlternative": "La unidad es textual y no contiene movimiento esencial.",
+    "keyboardActions": [
+      "Tab para recorrer campos",
+      "Escribir la explicación",
+      "Confirmar para entregar"
+    ],
+    "colorIndependentCues": [
+      "Cada campo tiene etiqueta y propósito textual"
+    ]
+  },
+  "requiredCapabilities": [
+    "learning.scene-runtime@^1.0.0",
+    "reduced-motion@^1.0.0",
+    "viewport.overlay.labels@^1.0.0"
+  ],
+  "state": {
+    "selected": [],
+    "visible": [],
+    "hidden": [],
+    "isolated": [],
+    "transparent": [],
+    "highlighted": [],
+    "explode": 0,
+    "speed": 1
+  },
+  "timeline": [],
+  "overlays": [
+    {
+      "kind": "text",
+      "id": "overlay.encyclopedia.service-tribology.tm-inspeccion-previa.scope",
+      "markdown": "**Alcance del estudio:** ¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?\n\nEsta actividad se resuelve con texto, fuentes y razonamiento; no representa geometría ni movimiento físico. Consulta los niveles de fidelidad en la ficha técnica.",
+      "accessibleLabel": "Pregunta y alcance del estudio: ¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?"
+    }
+  ],
+  "steps": [
+    {
+      "id": "step.encyclopedia.service-tribology.tm-inspeccion-previa.answer",
+      "instructionMarkdown": "Explica **Caso TM I: inspección antes de desmontar** con mecanismo, evidencia y límite.",
+      "questions": [
+        {
+          "id": "question.encyclopedia.service-tribology.tm-inspeccion-previa.explain",
+          "promptMarkdown": "¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?",
+          "responseKind": "structured-response",
+          "structuredFields": [
+            {
+              "id": "field.encyclopedia.service-tribology.tm-inspeccion-previa.mechanism",
+              "label": "Cadena o mecanismo",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.tm-inspeccion-previa.evidence",
+              "label": "Fuente, dato u observación",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.tm-inspeccion-previa.limit",
+              "label": "Límite o desconocido",
+              "kind": "short-text",
+              "required": true,
+              "optionIds": []
+            },
+            {
+              "id": "field.encyclopedia.service-tribology.tm-inspeccion-previa.confidence",
+              "label": "Confianza",
+              "kind": "confidence",
+              "required": true,
+              "optionIds": []
+            }
+          ],
+          "hints": [
+            {
+              "id": "hint.encyclopedia.service-tribology.tm-inspeccion-previa.orientation",
+              "level": 1,
+              "kind": "orientation",
+              "content": {
+                "es": "Empieza por identificar unidad y sigue hasta definir alcance.",
+                "en": "Empieza por identificar unidad y sigue hasta definir alcance."
+              },
+              "availableAfterAttempts": 1,
+              "countsAsHint": true
+            },
+            {
+              "id": "hint.encyclopedia.service-tribology.tm-inspeccion-previa.causal",
+              "level": 2,
+              "kind": "post-attempt-explanation",
+              "content": {
+                "es": "El manual militar exige observar identificación, caja, mandos, cuerda, puesta en hora, indicación, marcha y daños antes de desmontar. Esa disciplina sigue siendo válida; productos y procedimientos peligrosos del texto quedan bloqueados.",
+                "en": "El manual militar exige observar identificación, caja, mandos, cuerda, puesta en hora, indicación, marcha y daños antes de desmontar. Esa disciplina sigue siendo válida; productos y procedimientos peligrosos del texto quedan bloqueados."
+              },
+              "availableAfterAttempts": 2,
+              "countsAsHint": true
+            }
+          ],
+          "humanReviewRequired": false,
+          "authoring": {
+            "prompt": {
+              "es": "¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?",
+              "en": "¿Qué debe aprenderse del reloj mientras todavía conserva su estado de entrada?"
+            },
+            "feedback": {
+              "es": "La respuesta debe contener la cadena identificar unidad → fotografiar exterior → probar mandos sin forzar → observar marcha → registrar síntomas → definir alcance, una fuente o evidencia y un límite.",
+              "en": "La respuesta debe contener la cadena identificar unidad → fotografiar exterior → probar mandos sin forzar → observar marcha → registrar síntomas → definir alcance, una fuente o evidencia y un límite."
+            }
+          }
+        }
+      ],
+      "success": [
+        {
+          "condition": "structured-answer",
+          "questionId": "question.encyclopedia.service-tribology.tm-inspeccion-previa.explain",
+          "requiredFieldIds": [
+            "field.encyclopedia.service-tribology.tm-inspeccion-previa.mechanism",
+            "field.encyclopedia.service-tribology.tm-inspeccion-previa.evidence",
+            "field.encyclopedia.service-tribology.tm-inspeccion-previa.limit",
+            "field.encyclopedia.service-tribology.tm-inspeccion-previa.confidence"
+          ],
+          "pendingHumanReview": false
+        }
+      ]
+    }
+  ],
+  "restorePreviousState": true
+}

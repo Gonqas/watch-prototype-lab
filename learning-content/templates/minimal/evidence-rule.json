@@ -1,0 +1,20 @@
+{
+  "id": "evidence.example",
+  "version": "1.0.0",
+  "competencyId": "competency.example",
+  "kind": "answer",
+  "scoringMethod": "binary",
+  "extraction": {
+    "id": "evidence.example.selection-confirmed",
+    "version": "1.0.0",
+    "triggerEventType": "selection-confirmed",
+    "evidenceType": "selection",
+    "competencyId": "competency.example",
+    "confidence": 1,
+    "contentFields": [
+      "sceneId",
+      "entityIds"
+    ]
+  }
+}
+
