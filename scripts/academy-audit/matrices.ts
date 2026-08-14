@@ -442,7 +442,7 @@ function editorialStatusFor(issues: AuditIssue[], safety: SafetyStatus): Editori
 function addIssue(target: AuditIssue[], detectorId: DetectorId, severity: AuditIssue['severity'], entityType: AuditIssue['entityType'], entityId: string, message: string, evidence: string[] = []): void {
   const detector = DETECTORS.find(([id]) => id === detectorId)
   if (!detector) throw new Error(`Detector desconocido: ${detectorId}`)
-  target.push(AuditIssueSchema.parse({
+  const parsed = AuditIssueSchema.parse({
     detectorId,
     category: detector[1],
     severity,
@@ -451,7 +451,19 @@ function addIssue(target: AuditIssue[], detectorId: DetectorId, severity: AuditI
     message,
     evidence,
     manualReviewRequired: true,
-  }))
+  })
+  // 0.14A is an immutable baseline. Keep its serialized issue shape while the
+  // extended schema supplies defaults to the parallel 0.14A.1 pipeline.
+  target.push({
+    detectorId: parsed.detectorId,
+    category: parsed.category,
+    severity: parsed.severity,
+    entityType: parsed.entityType,
+    entityId: parsed.entityId,
+    message: parsed.message,
+    evidence: parsed.evidence,
+    manualReviewRequired: true,
+  } as AuditIssue)
 }
 
 export async function analyzeMatrices(repositoryRoot: string, corpus: AcademyCorpus, sourceRecords: SourceRecord[]): Promise<MatrixAnalysis> {

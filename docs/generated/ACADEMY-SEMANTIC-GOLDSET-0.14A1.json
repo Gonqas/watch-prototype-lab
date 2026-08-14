@@ -1,0 +1,2368 @@
+{
+  "schema": "wplab-academy-semantic-goldset-v1",
+  "phase": "0.14A.1",
+  "corpusDigest": "1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e",
+  "coverage": {
+    "macroStages": {
+      "0-prepare-bench-and-control": 4,
+      "1-understand-watch-as-system": 8,
+      "2-understand-mechanical-systems": 6,
+      "3-observe-measure-diagnose": 8,
+      "4-work-on-real-calibre": 8,
+      "5-build-complete-watch": 4,
+      "6-repair-adapt-manufacture-components": 5,
+      "7-design-validate-own-watch-or-movement": 4
+    },
+    "archetypes": {
+      "bench-procedure": 3,
+      "calculation": 1,
+      "calibre-service": 2,
+      "capstone-project": 4,
+      "design": 4,
+      "diagnosis-case": 4,
+      "historical-comparison": 3,
+      "inspection": 5,
+      "manufacturing": 2,
+      "measurement": 2,
+      "mechanism-explanation": 5,
+      "psychomotor-skill": 3,
+      "system-overview": 4,
+      "visual-anatomy": 5
+    },
+    "trackRoles": {
+      "core": 29,
+      "enrichment": 5,
+      "historical-case": 5,
+      "reference-only": 1,
+      "specialization": 7
+    }
+  },
+  "evaluation": {
+    "lessonFixtures": 47,
+    "activityFixtures": 33,
+    "assertions": 624,
+    "passed": 624,
+    "failed": 0,
+    "failures": []
+  },
+  "lessons": [
+    {
+      "lessonId": "lesson.quartz2035.workstation",
+      "macroStageExpected": "0-prepare-bench-and-control",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "bench-procedure",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Prepara el banco dentro de una experiencia educativa sin certificar ejecución física."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.quartz2035.tools",
+      "macroStageExpected": "0-prepare-bench-and-control",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "visual-anatomy",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Reconocimiento funcional de herramientas antes de operar."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "macroStageExpected": "0-prepare-bench-and-control",
+      "trackRoleExpected": "enrichment",
+      "archetypeExpected": "bench-procedure",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "caution",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Organiza banco, postura y criterios de seguridad sin ejecutar un procedimiento histórico."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "macroStageExpected": "0-prepare-bench-and-control",
+      "trackRoleExpected": "enrichment",
+      "archetypeExpected": "psychomotor-skill",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "P",
+          "R"
+        ],
+        "primaryModality": "P",
+        "physicalCompetenceClaim": true,
+        "physicalExecutionRequired": true,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": true,
+      "executionTierExpected": "home-bench",
+      "safetyExpected": "caution",
+      "historicalStatusExpected": "mixed",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "D-bulova-school"
+      ],
+      "reasons": [
+        "Pasaporte psicomotor explícito; la competencia completa necesita ejecución física documentada y revisión."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "system-overview",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Vista funcional inicial del reloj completo."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "mechanism-explanation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official",
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "Explica la cadena mecánica mediante orden causal y simulación; no afirma destreza manual."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "mechanism-explanation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Compara funciones de cuarzo y mecánico; las menciones de límites no son procedimientos."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "enrichment",
+      "archetypeExpected": "historical-comparison",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "G-watchmaker-or-visual-resource"
+      ],
+      "reasons": [
+        "Historia conceptual de referencia, oscilación y conteo; no psicomotricidad."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.toh-tiempo-escalas",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "enrichment",
+      "archetypeExpected": "historical-comparison",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "Lección conceptual e histórica; citar una obra histórica no crea riesgo operativo."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.toh-cronometro-precision",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "reference-only",
+      "archetypeExpected": "mechanism-explanation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "Referencia conceptual para distinguir reloj, cronómetro, precisión y exactitud; no bloquea el recorrido core."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "inspection",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Inspecciona procedencia, revisión y aplicabilidad documental."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.mechanical.energy",
+      "macroStageExpected": "2-understand-mechanical-systems",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "mechanism-explanation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Fundamento causal de energía almacenada y movimiento."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.mechanical.gear-pair",
+      "macroStageExpected": "2-understand-mechanical-systems",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "visual-anatomy",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Reconoce geometría y contacto de rueda y piñón mediante visualización."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.mechanical.escape-oscillator",
+      "macroStageExpected": "2-understand-mechanical-systems",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "system-overview",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Integra escape y oscilador como subsistema antes del detalle de servicio."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "system-overview",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [
+        "later-detail-before-overview"
+      ],
+      "sourceAuthorityExpected": [
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "La visión general debe introducir la cadena y no exigir minutería ni puesta en hora detalladas."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+      "macroStageExpected": "2-understand-mechanical-systems",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "calculation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "Cálculo de relaciones con resultado revisable; no requiere destreza física."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.advanced.calendars",
+      "macroStageExpected": "2-understand-mechanical-systems",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "mechanism-explanation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Explica acumulación, salto, retención y corrección; no es psicomotricidad."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.advanced.chronograph-control",
+      "macroStageExpected": "2-understand-mechanical-systems",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "visual-anatomy",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Compara levas y rueda de pilares mediante estados visibles; no es práctica manual."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+      "macroStageExpected": "6-repair-adapt-manufacture-components",
+      "trackRoleExpected": "historical-case",
+      "archetypeExpected": "psychomotor-skill",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "P",
+          "R"
+        ],
+        "primaryModality": "P",
+        "physicalCompetenceClaim": true,
+        "physicalExecutionRequired": true,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": true,
+      "executionTierExpected": "specialist-workshop",
+      "safetyExpected": "caution",
+      "historicalStatusExpected": "mixed",
+      "prerequisiteIssuesExpected": [
+        "advanced-complication-before-basic-skill"
+      ],
+      "sourceAuthorityExpected": [
+        "D-bulova-school"
+      ],
+      "reasons": [
+        "Centrado y alabeo son psicomotricidad real; tourbillon y carrusel son prerrequisitos impropios y no bloquean la habilidad básica."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.metrology.observe-before-measuring",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "inspection",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Ordena observación previa y decisión de medición."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.metrology.precision-accuracy-uncertainty",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "measurement",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Metrología con interpretación de resultados e incertidumbre."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.metrology.physical-measurement",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "measurement",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "P",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": true,
+        "physicalExecutionRequired": true,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": true,
+      "executionTierExpected": "home-bench",
+      "safetyExpected": "caution",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "El contrato de observación física admite evidencia P y resultado medido R."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.metrology.inspection-findings",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "inspection",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Clasifica hallazgos y conserva evidencia revisable."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "diagnosis-case",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Diagnóstico causal de cuarzo con hipótesis y prueba discriminante."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "historical-case",
+      "archetypeExpected": "inspection",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "F-tm-9-1575"
+      ],
+      "reasons": [
+        "El método de inspección es aplicable; los peligros solo se bloquean si existe una operación concreta."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "historical-case",
+      "archetypeExpected": "diagnosis-case",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "F-tm-9-1575"
+      ],
+      "reasons": [
+        "Caso histórico de diagnóstico por síntomas y comprobación."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.quartz2035.anatomy",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "visual-anatomy",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Anatomía específica del MIYOTA 2035 basada en documentación oficial."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.quartz2035.disassembly",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "calibre-service",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Desmontaje virtual de calibre; no acredita ejecución física."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.miyota8215.identify",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "visual-anatomy",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Identificación visual de un calibre concreto."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.miyota8215.architecture",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "system-overview",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Vista de arquitectura del MIYOTA 8215 antes del desmontaje."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.miyota8215.guided-disassembly",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "calibre-service",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Práctica virtual guiada; P solo sería válida con ejecución física solicitada y documentada."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.miyota8215.inspection",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "inspection",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Inspección específica con hallazgos revisables."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.miyota8215.diagnosis-project",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "diagnosis-case",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Cierra el trabajo de calibre mediante diagnóstico documentado."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.advanced.service-disassembly",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "bench-procedure",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Planifica y simula desmontaje por dependencias sin afirmar servicio físico."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.capstone.design.acquired-movement",
+      "macroStageExpected": "5-build-complete-watch",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "capstone-project",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Integra un movimiento adquirido mediante dossier de compatibilidad."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.capstone.design.external-components",
+      "macroStageExpected": "5-build-complete-watch",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "design",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Diseña interfaces de caja, esfera, agujas y uso; una mención a fabricación no lo vuelve psicomotor."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.capstone.design.capstone",
+      "macroStageExpected": "5-build-complete-watch",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "capstone-project",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Dossier integral y puerta de prototipo del reloj completo."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.arquitectura-de-caja",
+      "macroStageExpected": "5-build-complete-watch",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "design",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Aporta interfaces movimiento-caja a la integración del reloj."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+      "macroStageExpected": "6-repair-adapt-manufacture-components",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "historical-comparison",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "mixed",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Compara donante, repuesto rederivado e intervención; no acredita fabricación física."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.ruedas-y-pinones",
+      "macroStageExpected": "6-repair-adapt-manufacture-components",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "manufacturing",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "specialist-workshop",
+      "safetyExpected": "supervised",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "C-daniels-watchmaking"
+      ],
+      "reasons": [
+        "Fabricación explícita de ruedas y piñones con proceso especializado."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.bulova-torneado-fundamental",
+      "macroStageExpected": "6-repair-adapt-manufacture-components",
+      "trackRoleExpected": "enrichment",
+      "archetypeExpected": "psychomotor-skill",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "P",
+          "R"
+        ],
+        "primaryModality": "P",
+        "physicalCompetenceClaim": true,
+        "physicalExecutionRequired": true,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": true,
+      "executionTierExpected": "specialist-workshop",
+      "safetyExpected": "supervised",
+      "historicalStatusExpected": "mixed",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "D-bulova-school"
+      ],
+      "reasons": [
+        "Contrato psicomotor de torno; requiere supervisión y evidencia física real."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.micromechanics",
+      "macroStageExpected": "6-repair-adapt-manufacture-components",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "manufacturing",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "specialist-workshop",
+      "safetyExpected": "caution",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "El contrato de fabricación es de planificación y revisión, no una afirmación de pieza fabricada."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "historical-case",
+      "archetypeExpected": "diagnosis-case",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [
+        "modern-design-framework-before-historical-case"
+      ],
+      "sourceAuthorityExpected": [
+        "F-tm-9-1575",
+        "H-reference-database"
+      ],
+      "reasons": [
+        "Caso histórico de calibre; arquitectura de producto, presupuesto de error y modelo V son prerrequisitos impropios."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.chicago-escape-dibujo",
+      "macroStageExpected": "7-design-validate-own-watch-or-movement",
+      "trackRoleExpected": "historical-case",
+      "archetypeExpected": "design",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "E-chicago-school"
+      ],
+      "reasons": [
+        "Construcción geométrica histórica usada como caso de diseño sujeto a verificación."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.advanced.architecture-capstone",
+      "macroStageExpected": "7-design-validate-own-watch-or-movement",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "capstone-project",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Defensa integral de arquitectura con revisión."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.capstone.design.own-movement",
+      "macroStageExpected": "7-design-validate-own-watch-or-movement",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "design",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Diseño de arquitectura de movimiento propio."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "lessonId": "lesson.capstone.validation.watchmaker-review",
+      "macroStageExpected": "7-design-validate-own-watch-or-movement",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "capstone-project",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Validación independiente por revisión relojera."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    }
+  ],
+  "activities": [
+    {
+      "activityId": "activity.horology.order-mechanical-chain",
+      "lessonId": "lesson.horology.mechanical-chain",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "mechanism-explanation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official",
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "Caso de referencia de mechanism-explanation para lesson.horology.mechanical-chain."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.horology.identify-escapement-oscillator",
+      "lessonId": "lesson.horology.mechanical-chain",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "mechanism-explanation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official",
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "Caso de referencia de mechanism-explanation para lesson.horology.mechanical-chain."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.horology.match-functional-equivalents",
+      "lessonId": "lesson.horology.functional-equivalence",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "mechanism-explanation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de mechanism-explanation para lesson.horology.functional-equivalence."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.history-language.medir-el-tiempo",
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "enrichment",
+      "archetypeExpected": "historical-comparison",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "G-watchmaker-or-visual-resource"
+      ],
+      "reasons": [
+        "Caso de referencia de historical-comparison para lesson.encyclopedia.history-language.medir-el-tiempo."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.history-language.toh-tiempo-escalas",
+      "lessonId": "lesson.encyclopedia.history-language.toh-tiempo-escalas",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "enrichment",
+      "archetypeExpected": "historical-comparison",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "Caso de referencia de historical-comparison para lesson.encyclopedia.history-language.toh-tiempo-escalas."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.history-language.toh-cronometro-precision",
+      "lessonId": "lesson.encyclopedia.history-language.toh-cronometro-precision",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "reference-only",
+      "archetypeExpected": "mechanism-explanation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "Caso de referencia de mechanism-explanation para lesson.encyclopedia.history-language.toh-cronometro-precision."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "macroStageExpected": "1-understand-watch-as-system",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "system-overview",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [
+        "later-detail-before-overview"
+      ],
+      "sourceAuthorityExpected": [
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "Caso de referencia de system-overview para lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.math-physics-metrology.toh-contar-tren",
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+      "macroStageExpected": "2-understand-mechanical-systems",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "calculation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "B-theory-of-horology"
+      ],
+      "reasons": [
+        "Caso de referencia de calculation para lesson.encyclopedia.math-physics-metrology.toh-contar-tren."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.advanced.calendars",
+      "lessonId": "lesson.advanced.calendars",
+      "macroStageExpected": "2-understand-mechanical-systems",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "mechanism-explanation",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de mechanism-explanation para lesson.advanced.calendars."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.advanced.chronograph-control",
+      "lessonId": "lesson.advanced.chronograph-control",
+      "macroStageExpected": "2-understand-mechanical-systems",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "visual-anatomy",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de visual-anatomy para lesson.advanced.chronograph-control."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+      "macroStageExpected": "6-repair-adapt-manufacture-components",
+      "trackRoleExpected": "historical-case",
+      "archetypeExpected": "psychomotor-skill",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "specialist-workshop",
+      "safetyExpected": "caution",
+      "historicalStatusExpected": "mixed",
+      "prerequisiteIssuesExpected": [
+        "advanced-complication-before-basic-skill"
+      ],
+      "sourceAuthorityExpected": [
+        "D-bulova-school"
+      ],
+      "reasons": [
+        "La actividad actual es documental/simulada; no se le añade P aunque la competencia curricular completa sí la necesite."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+      "lessonId": "lesson.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "diagnosis-case",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de diagnosis-case para lesson.encyclopedia.quartz-electronics.diagnostico-cuarzo."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.service-tribology.tm-inspeccion-previa",
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "historical-case",
+      "archetypeExpected": "inspection",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "F-tm-9-1575"
+      ],
+      "reasons": [
+        "Caso de referencia de inspection para lesson.encyclopedia.service-tribology.tm-inspeccion-previa."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "historical-case",
+      "archetypeExpected": "diagnosis-case",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "F-tm-9-1575"
+      ],
+      "reasons": [
+        "Caso de referencia de diagnosis-case para lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.quartz2035.disassemble-to-tray",
+      "lessonId": "lesson.quartz2035.disassembly",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "calibre-service",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Caso de referencia de calibre-service para lesson.quartz2035.disassembly."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.miyota8215.remove-rotor",
+      "lessonId": "lesson.miyota8215.guided-disassembly",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "calibre-service",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Caso de referencia de calibre-service para lesson.miyota8215.guided-disassembly."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.miyota8215.manage-fasteners",
+      "lessonId": "lesson.miyota8215.guided-disassembly",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "calibre-service",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Caso de referencia de calibre-service para lesson.miyota8215.guided-disassembly."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.miyota8215.guided-disassembly",
+      "lessonId": "lesson.miyota8215.guided-disassembly",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "calibre-service",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Desmontaje real como objeto de aprendizaje, pero la actividad instalada solo ejecuta una reconstrucción virtual."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.miyota8215.inspect-parts",
+      "lessonId": "lesson.miyota8215.inspection",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "inspection",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Caso de referencia de inspection para lesson.miyota8215.inspection."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.miyota8215.complete-diagnosis",
+      "lessonId": "lesson.miyota8215.diagnosis-project",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "diagnosis-case",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "A-manufacturer-official"
+      ],
+      "reasons": [
+        "Caso de referencia de diagnosis-case para lesson.miyota8215.diagnosis-project."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.advanced.service-disassembly",
+      "lessonId": "lesson.advanced.service-disassembly",
+      "macroStageExpected": "4-work-on-real-calibre",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "bench-procedure",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de bench-procedure para lesson.advanced.service-disassembly."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.capstone.design.acquired-movement",
+      "lessonId": "lesson.capstone.design.acquired-movement",
+      "macroStageExpected": "5-build-complete-watch",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "capstone-project",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de capstone-project para lesson.capstone.design.acquired-movement."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.capstone.design.external-components",
+      "lessonId": "lesson.capstone.design.external-components",
+      "macroStageExpected": "5-build-complete-watch",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "design",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de design para lesson.capstone.design.external-components."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.capstone.design.capstone",
+      "lessonId": "lesson.capstone.design.capstone",
+      "macroStageExpected": "5-build-complete-watch",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "capstone-project",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de capstone-project para lesson.capstone.design.capstone."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+      "macroStageExpected": "6-repair-adapt-manufacture-components",
+      "trackRoleExpected": "specialization",
+      "archetypeExpected": "historical-comparison",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "mixed",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de historical-comparison para lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.micromechanics.ruedas-y-pinones",
+      "lessonId": "lesson.encyclopedia.micromechanics.ruedas-y-pinones",
+      "macroStageExpected": "6-repair-adapt-manufacture-components",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "manufacturing",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "specialist-workshop",
+      "safetyExpected": "supervised",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "C-daniels-watchmaking"
+      ],
+      "reasons": [
+        "Caso de referencia de manufacturing para lesson.encyclopedia.micromechanics.ruedas-y-pinones."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.micromechanics.bulova-torneado-fundamental",
+      "lessonId": "lesson.encyclopedia.micromechanics.bulova-torneado-fundamental",
+      "macroStageExpected": "6-repair-adapt-manufacture-components",
+      "trackRoleExpected": "enrichment",
+      "archetypeExpected": "psychomotor-skill",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "specialist-workshop",
+      "safetyExpected": "supervised",
+      "historicalStatusExpected": "mixed",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "D-bulova-school"
+      ],
+      "reasons": [
+        "Caso de referencia de psychomotor-skill para lesson.encyclopedia.micromechanics.bulova-torneado-fundamental."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.capstone.manufacturing.micromechanics",
+      "lessonId": "lesson.capstone.manufacturing.micromechanics",
+      "macroStageExpected": "6-repair-adapt-manufacture-components",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "manufacturing",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "specialist-workshop",
+      "safetyExpected": "caution",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "El contrato de fabricación declara process-planning y physicalCompletionClaim=false; por tanto no exige P."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
+      "macroStageExpected": "3-observe-measure-diagnose",
+      "trackRoleExpected": "historical-case",
+      "archetypeExpected": "diagnosis-case",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [
+        "modern-design-framework-before-historical-case"
+      ],
+      "sourceAuthorityExpected": [
+        "F-tm-9-1575",
+        "H-reference-database"
+      ],
+      "reasons": [
+        "Caso de referencia de diagnosis-case para lesson.encyclopedia.atlas-restoration-design.tm-hamilton-992b."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.encyclopedia.micromechanics.chicago-escape-dibujo",
+      "lessonId": "lesson.encyclopedia.micromechanics.chicago-escape-dibujo",
+      "macroStageExpected": "7-design-validate-own-watch-or-movement",
+      "trackRoleExpected": "historical-case",
+      "archetypeExpected": "design",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "historical-context",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [
+        "E-chicago-school"
+      ],
+      "reasons": [
+        "Caso de referencia de design para lesson.encyclopedia.micromechanics.chicago-escape-dibujo."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.advanced.architecture-capstone",
+      "lessonId": "lesson.advanced.architecture-capstone",
+      "macroStageExpected": "7-design-validate-own-watch-or-movement",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "capstone-project",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de capstone-project para lesson.advanced.architecture-capstone."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.capstone.design.own-movement",
+      "lessonId": "lesson.capstone.design.own-movement",
+      "macroStageExpected": "7-design-validate-own-watch-or-movement",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "design",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de design para lesson.capstone.design.own-movement."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    },
+    {
+      "activityId": "activity.capstone.validation.watchmaker-review",
+      "lessonId": "lesson.capstone.validation.watchmaker-review",
+      "macroStageExpected": "7-design-validate-own-watch-or-movement",
+      "trackRoleExpected": "core",
+      "archetypeExpected": "capstone-project",
+      "evidenceProfileExpected": {
+        "modalities": [
+          "K",
+          "R"
+        ],
+        "primaryModality": "R",
+        "physicalCompetenceClaim": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true
+      },
+      "physicalSkillClaimExpected": false,
+      "executionTierExpected": "simulation",
+      "safetyExpected": "normal",
+      "historicalStatusExpected": "current",
+      "prerequisiteIssuesExpected": [],
+      "sourceAuthorityExpected": [],
+      "reasons": [
+        "Caso de referencia de capstone-project para lesson.capstone.validation.watchmaker-review."
+      ],
+      "confidence": "high",
+      "reviewStatus": "confirmed"
+    }
+  ]
+}

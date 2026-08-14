@@ -42,11 +42,12 @@
     "learning:source-audit": "tsx scripts/academy-governance-audit.ts --scope=source",
     "learning:curriculum-audit": "tsx scripts/academy-governance-audit.ts --scope=curriculum",
     "learning:editorial-audit": "tsx scripts/academy-governance-audit.ts --scope=all",
+    "learning:semantic-audit": "tsx scripts/academy-semantic-audit.ts",
     "learning:text-scale": "node scripts/normalize-learning-text-scale.mjs",
     "learning:schema": "node scripts/generate-learning-schema-validator.mjs",
     "lint": "eslint .",
     "test": "vitest run",
-    "verify": "npm run lint && npm run test && npm run learning:academy-p1-audit && npm run learning:academy-p2-audit && npm run learning:content-quality-audit && npm run learning:editorial-audit -- --check && npm run build",
+    "verify": "npm run lint && npm run test && npm run learning:academy-p1-audit && npm run learning:academy-p2-audit && npm run learning:content-quality-audit && npm run learning:editorial-audit -- --check && npm run learning:semantic-audit -- --check && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {

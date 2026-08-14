@@ -1,0 +1,4554 @@
+{
+  "schema": "wplab-academy-curriculum-stage-map-v1",
+  "phase": "0.14A.1",
+  "corpusDigest": "1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e",
+  "stageNames": {
+    "0-prepare-bench-and-control": "0. Preparar el banco y adquirir control",
+    "1-understand-watch-as-system": "1. Entender el reloj como sistema",
+    "2-understand-mechanical-systems": "2. Comprender los sistemas mecánicos",
+    "3-observe-measure-diagnose": "3. Observar, medir y diagnosticar",
+    "4-work-on-real-calibre": "4. Trabajar sobre un calibre real",
+    "5-build-complete-watch": "5. Construir un reloj completo",
+    "6-repair-adapt-manufacture-components": "6. Reparar, adaptar y fabricar componentes",
+    "7-design-validate-own-watch-or-movement": "7. Diseñar y validar un reloj o movimiento propio"
+  },
+  "distributions": {
+    "macroStage": {
+      "0-prepare-bench-and-control": 5,
+      "1-understand-watch-as-system": 29,
+      "2-understand-mechanical-systems": 82,
+      "3-observe-measure-diagnose": 27,
+      "4-work-on-real-calibre": 23,
+      "5-build-complete-watch": 16,
+      "6-repair-adapt-manufacture-components": 35,
+      "7-design-validate-own-watch-or-movement": 5
+    },
+    "trackRole": {
+      "core": 132,
+      "enrichment": 15,
+      "historical-case": 29,
+      "reference-only": 1,
+      "specialization": 45
+    },
+    "archetypeBefore": {
+      "bench-procedure": 2,
+      "calibre-service": 11,
+      "design": 4,
+      "diagnosis-case": 5,
+      "inspection": 9,
+      "manufacturing": 57,
+      "mechanism-explanation": 12,
+      "psychomotor-skill": 121,
+      "visual-anatomy": 1
+    },
+    "archetypeAfter": {
+      "bench-procedure": 16,
+      "calculation": 8,
+      "calibre-service": 13,
+      "capstone-project": 8,
+      "design": 16,
+      "diagnosis-case": 8,
+      "historical-comparison": 19,
+      "inspection": 8,
+      "manufacturing": 18,
+      "measurement": 15,
+      "mechanism-explanation": 54,
+      "psychomotor-skill": 10,
+      "system-overview": 5,
+      "visual-anatomy": 24
+    }
+  },
+  "rows": [
+    {
+      "lessonId": "lesson.horology.system",
+      "routeId": "route.horology.orientation",
+      "moduleId": "module.horology.functional-map",
+      "currentOrder": 1,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "core",
+      "archetype": "system-overview",
+      "classification": {
+        "value": "system-overview",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.horology.system",
+          "Vista funcional inicial del reloj completo."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "routeId": "route.horology.orientation",
+      "moduleId": "module.horology.functional-map",
+      "currentOrder": 2,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.horology.mechanical-chain",
+          "Explica la cadena mecánica mediante orden causal y simulación; no afirma destreza manual."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "routeId": "route.horology.orientation",
+      "moduleId": "module.horology.functional-map",
+      "currentOrder": 3,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "heuristic-keyword",
+        "classificationConfidence": "low",
+        "evidenceUsed": [
+          "Seguir la cadena desde la pila hasta las agujas y distinguir control temporal, conversión electromecánica y transmisión."
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "mechanism-explanation"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "routeId": "route.horology.orientation",
+      "moduleId": "module.horology.functional-map",
+      "currentOrder": 4,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.horology.functional-equivalence",
+          "Compara funciones de cuarzo y mecánico; las menciones de límites no son procedimientos."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.horology.failure-prediction",
+      "routeId": "route.horology.orientation",
+      "moduleId": "module.horology.functional-map",
+      "currentOrder": 5,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "diagnosis-case",
+      "classification": {
+        "value": "diagnosis-case",
+        "classificationMethod": "heuristic-keyword",
+        "classificationConfidence": "low",
+        "evidenceUsed": [
+          "Formular hipótesis prudentes a partir de interrupciones simbólicas sin diagnosticar una unidad real."
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "mechanism-explanation"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.horology.isa8172-confidence",
+      "routeId": "route.horology.orientation",
+      "moduleId": "module.horology.functional-map",
+      "currentOrder": 6,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "heuristic-keyword",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "Registrar la experiencia previa distinguiendo observación, recuerdo, inferencia, documentación y desconocido."
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "routeId": "route.encyclopedia.history-language",
+      "moduleId": "module.encyclopedia.history-language.medir-el-tiempo",
+      "currentOrder": 7,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "enrichment",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.history-language.medir-el-tiempo",
+          "Historia conceptual de referencia, oscilación y conteo; no psicomotricidad."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.del-reloj-fijo-al-portatil",
+      "routeId": "route.encyclopedia.history-language",
+      "moduleId": "module.encyclopedia.history-language.del-reloj-fijo-al-portatil",
+      "currentOrder": 8,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "enrichment",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.history-language",
+          "title=Del reloj fijo al reloj portátil"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.evolucion-de-los-escapes",
+      "routeId": "route.encyclopedia.history-language",
+      "moduleId": "module.encyclopedia.history-language.evolucion-de-los-escapes",
+      "currentOrder": 9,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "enrichment",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.history-language",
+          "title=Evolución de los escapes y de la regulación"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.industrializacion-y-familias",
+      "routeId": "route.encyclopedia.history-language",
+      "moduleId": "module.encyclopedia.history-language.industrializacion-y-familias",
+      "currentOrder": 10,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "enrichment",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.history-language",
+          "title=Industrialización, ébauches y familias de calibres"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+      "routeId": "route.encyclopedia.history-language",
+      "moduleId": "module.encyclopedia.history-language.transicion-electromecanica-cuarzo",
+      "currentOrder": 11,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "enrichment",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.history-language",
+          "title=De lo electromecánico al cuarzo"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "routeId": "route.encyclopedia.history-language",
+      "moduleId": "module.encyclopedia.history-language.leer-documentacion",
+      "currentOrder": 12,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "core",
+      "archetype": "inspection",
+      "classification": {
+        "value": "inspection",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.history-language.leer-documentacion",
+          "Inspecciona procedencia, revisión y aplicabilidad documental."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.toh-tiempo-escalas",
+      "routeId": "route.encyclopedia.history-language",
+      "moduleId": "module.encyclopedia.history-language.toh-tiempo-escalas",
+      "currentOrder": 13,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "enrichment",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.history-language.toh-tiempo-escalas",
+          "Lección conceptual e histórica; citar una obra histórica no crea riesgo operativo."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.toh-instrumentos-principios",
+      "routeId": "route.encyclopedia.history-language",
+      "moduleId": "module.encyclopedia.history-language.toh-instrumentos-principios",
+      "currentOrder": 14,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "enrichment",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.history-language",
+          "title=Instrumentos de tiempo: flujo, oscilación y conteo"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.toh-cronometro-precision",
+      "routeId": "route.encyclopedia.history-language",
+      "moduleId": "module.encyclopedia.history-language.toh-cronometro-precision",
+      "currentOrder": 15,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "reference-only",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.history-language.toh-cronometro-precision",
+          "Referencia conceptual para distinguir reloj, cronómetro, precisión y exactitud; no bloquea el recorrido core."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.quartz2035.workstation",
+      "routeId": "route.horology.bench-foundations",
+      "moduleId": "module.quartz2035.workstation",
+      "currentOrder": 16,
+      "macroStage": "0-prepare-bench-and-control",
+      "trackRole": "core",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.quartz2035.workstation",
+          "Prepara el banco dentro de una experiencia educativa sin certificar ejecución física."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.quartz2035.tools",
+      "routeId": "route.horology.bench-foundations",
+      "moduleId": "module.quartz2035.tools",
+      "currentOrder": 17,
+      "macroStage": "0-prepare-bench-and-control",
+      "trackRole": "core",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.quartz2035.tools",
+          "Reconocimiento funcional de herramientas antes de operar."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.quartz2035.observe",
+      "routeId": "route.horology.bench-foundations",
+      "moduleId": "module.quartz2035.observe",
+      "currentOrder": 18,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "inspection",
+      "classification": {
+        "value": "inspection",
+        "classificationMethod": "heuristic-keyword",
+        "classificationConfidence": "low",
+        "evidenceUsed": [
+          "Aplicar un protocolo de identificación, observación y registro previo."
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "calibre-service"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "routeId": "route.encyclopedia.workshop-tools-materials",
+      "moduleId": "module.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "currentOrder": 19,
+      "macroStage": "0-prepare-bench-and-control",
+      "trackRole": "enrichment",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+          "Organiza banco, postura y criterios de seguridad sin ejecutar un procedimiento histórico."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "routeId": "route.encyclopedia.workshop-tools-materials",
+      "moduleId": "module.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "currentOrder": 20,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "enrichment",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.workshop-tools-materials",
+          "title=Observación, óptica y manipulación"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "bench-procedure"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+      "routeId": "route.encyclopedia.workshop-tools-materials",
+      "moduleId": "module.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+      "currentOrder": 21,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "enrichment",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.workshop-tools-materials",
+          "title=Herramientas de mano, ajuste y afilado"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "bench-procedure"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.materiales-relojeros",
+      "routeId": "route.encyclopedia.workshop-tools-materials",
+      "moduleId": "module.encyclopedia.workshop-tools-materials.materiales-relojeros",
+      "currentOrder": 22,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "enrichment",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.workshop-tools-materials",
+          "title=Materiales relojeros y propiedades funcionales"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "bench-procedure"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+      "routeId": "route.encyclopedia.workshop-tools-materials",
+      "moduleId": "module.encyclopedia.workshop-tools-materials.tratamiento-termico-y-superficies",
+      "currentOrder": 23,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "enrichment",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.workshop-tools-materials",
+          "title=Tratamiento térmico y acabado de superficies"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "bench-procedure"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "routeId": "route.encyclopedia.workshop-tools-materials",
+      "moduleId": "module.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "currentOrder": 24,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "enrichment",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.workshop-tools-materials",
+          "title=Contaminación, limpieza y química segura"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "routeId": "route.encyclopedia.workshop-tools-materials",
+      "moduleId": "module.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "currentOrder": 25,
+      "macroStage": "0-prepare-bench-and-control",
+      "trackRole": "enrichment",
+      "archetype": "psychomotor-skill",
+      "classification": {
+        "value": "psychomotor-skill",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+          "Pasaporte psicomotor explícito; la competencia completa necesita ejecución física documentada y revisión."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza",
+      "routeId": "route.encyclopedia.workshop-tools-materials",
+      "moduleId": "module.encyclopedia.workshop-tools-materials.bulova-evaluacion-destreza",
+      "currentOrder": 26,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "psychomotor-skill",
+      "classification": {
+        "value": "psychomotor-skill",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.workshop-tools-materials",
+          "title=Pasaporte de banco II: repetición, calidad y revisión"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "bench-procedure"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion",
+      "routeId": "route.encyclopedia.workshop-tools-materials",
+      "moduleId": "module.encyclopedia.workshop-tools-materials.chicago-herramientas-seleccion",
+      "currentOrder": 27,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.workshop-tools-materials",
+          "title=Expediente Chicago XII: elegir herramientas por capacidad"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "bench-procedure"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.energy",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.energy",
+      "currentOrder": 28,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.mechanical.energy",
+          "Fundamento causal de energía almacenada y movimiento."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.barrel",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.barrel",
+      "currentOrder": 29,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.mechanical.foundations",
+          "title=Muelle real y barrilete"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.gear-pair",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.gear-pair",
+      "currentOrder": 30,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.mechanical.gear-pair",
+          "Reconoce geometría y contacto de rueda y piñón mediante visualización."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.train",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.train",
+      "currentOrder": 31,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.mechanical.foundations",
+          "title=Construir un tren de rodaje"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.supports",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.supports",
+      "currentOrder": 32,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.mechanical.foundations",
+          "title=Pivotes, rubíes, puentes y libertad"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.escapement",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.escapement",
+      "currentOrder": 33,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.mechanical.foundations",
+          "title=El escape de áncora suizo"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.oscillator",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.oscillator",
+      "currentOrder": 34,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.mechanical.foundations",
+          "title=Volante y espiral"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.escape-oscillator",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.escape-oscillator",
+      "currentOrder": 35,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "system-overview",
+      "classification": {
+        "value": "system-overview",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.mechanical.escape-oscillator",
+          "Integra escape y oscilador como subsistema antes del detalle de servicio."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.motion-works",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.motion-works",
+      "currentOrder": 36,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.mechanical.foundations",
+          "title=Minutería e indicación"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.keyless",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.keyless",
+      "currentOrder": 37,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.mechanical.foundations",
+          "title=Cuerda y puesta en hora"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.automatic-calendar",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.automatic-calendar",
+      "currentOrder": 38,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.mechanical.foundations",
+          "title=Carga automática y calendario básico"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.final-project",
+      "routeId": "route.mechanical.foundations",
+      "moduleId": "module.mechanical.final-project",
+      "currentOrder": 39,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "capstone-project",
+      "classification": {
+        "value": "capstone-project",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.mechanical.foundations",
+          "title=Integración y proyecto final"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.unidades-y-modelos",
+      "routeId": "route.encyclopedia.math-physics-metrology",
+      "moduleId": "module.encyclopedia.math-physics-metrology.unidades-y-modelos",
+      "currentOrder": 40,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "calculation",
+      "classification": {
+        "value": "calculation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.math-physics-metrology",
+          "title=Unidades, escalas y análisis dimensional"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+      "routeId": "route.encyclopedia.math-physics-metrology",
+      "moduleId": "module.encyclopedia.math-physics-metrology.fuerza-par-energia",
+      "currentOrder": 41,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "calculation",
+      "classification": {
+        "value": "calculation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.math-physics-metrology",
+          "title=Fuerza, par, trabajo, energía y potencia"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+      "routeId": "route.encyclopedia.math-physics-metrology",
+      "moduleId": "module.encyclopedia.math-physics-metrology.rotacion-friccion-contacto",
+      "currentOrder": 42,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "calculation",
+      "classification": {
+        "value": "calculation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.math-physics-metrology",
+          "title=Rotación, inercia, fricción y contacto"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+      "routeId": "route.encyclopedia.math-physics-metrology",
+      "moduleId": "module.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+      "currentOrder": 43,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "calculation",
+      "classification": {
+        "value": "calculation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.math-physics-metrology",
+          "title=Oscilación, frecuencia, resonancia y amortiguamiento"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad",
+      "routeId": "route.encyclopedia.math-physics-metrology",
+      "moduleId": "module.encyclopedia.math-physics-metrology.medicion-incertidumbre-trazabilidad",
+      "currentOrder": 44,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.math-physics-metrology",
+          "title=Medición, incertidumbre y trazabilidad"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+      "routeId": "route.encyclopedia.math-physics-metrology",
+      "moduleId": "module.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+      "currentOrder": 45,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.math-physics-metrology",
+          "title=Tolerancias, capacidad, FMEA y fiabilidad"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-normas-dentado",
+      "routeId": "route.encyclopedia.math-physics-metrology",
+      "moduleId": "module.encyclopedia.math-physics-metrology.toh-normas-dentado",
+      "currentOrder": 46,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "calculation",
+      "classification": {
+        "value": "calculation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.math-physics-metrology",
+          "title=Normas, perfiles y lectura de tablas relojeras"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+      "routeId": "route.encyclopedia.math-physics-metrology",
+      "moduleId": "module.encyclopedia.math-physics-metrology.toh-contar-tren",
+      "currentOrder": 47,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "calculation",
+      "classification": {
+        "value": "calculation",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+          "Cálculo de relaciones con resultado revisable; no requiere destreza física."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+      "routeId": "route.encyclopedia.math-physics-metrology",
+      "moduleId": "module.encyclopedia.math-physics-metrology.toh-oscilador-modelo",
+      "currentOrder": 48,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "calculation",
+      "classification": {
+        "value": "calculation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.math-physics-metrology",
+          "title=Modelo dinámico del volante-espiral"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas",
+      "routeId": "route.encyclopedia.math-physics-metrology",
+      "moduleId": "module.encyclopedia.math-physics-metrology.chicago-cronometria-maquinas",
+      "currentOrder": 49,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "calculation",
+      "classification": {
+        "value": "calculation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.math-physics-metrology",
+          "title=Expediente Chicago VII: de Watch Master y Time-O-Graph al cronocomparador"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.observe-before-measuring",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.observe-before-measuring",
+      "currentOrder": 50,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "inspection",
+      "classification": {
+        "value": "inspection",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.metrology.observe-before-measuring",
+          "Ordena observación previa y decisión de medición."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.light-magnification-posture",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.light-magnification-posture",
+      "currentOrder": 51,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.metrology.physical-digital-bridge",
+          "title=Luz, aumento y postura"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.units-scale-resolution",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.units-scale-resolution",
+      "currentOrder": 52,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.metrology.physical-digital-bridge",
+          "title=Unidades, escala y resolución"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.precision-accuracy-uncertainty",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.precision-accuracy-uncertainty",
+      "currentOrder": 53,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.metrology.precision-accuracy-uncertainty",
+          "Metrología con interpretación de resultados e incertidumbre."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.instruments",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.instruments",
+      "currentOrder": 54,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.metrology.physical-digital-bridge",
+          "title=Instrumentos"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.verification-calibration",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.verification-calibration",
+      "currentOrder": 55,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.metrology.physical-digital-bridge",
+          "title=Verificación y calibración"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.physical-specimen",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.physical-specimen",
+      "currentOrder": 56,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.metrology.physical-digital-bridge",
+          "title=Registrar una unidad física"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.technical-photography",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.technical-photography",
+      "currentOrder": 57,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.metrology.physical-digital-bridge",
+          "title=Fotografía técnica"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.image-measurement",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.image-measurement",
+      "currentOrder": 58,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.metrology.physical-digital-bridge",
+          "title=Medir sobre una fotografía"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.physical-measurement",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.physical-measurement",
+      "currentOrder": 59,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.metrology.physical-measurement",
+          "El contrato de observación física admite evidencia P y resultado medido R."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.inspection-findings",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.inspection-findings",
+      "currentOrder": 60,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "inspection",
+      "classification": {
+        "value": "inspection",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.metrology.inspection-findings",
+          "Clasifica hallazgos y conserva evidencia revisable."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.compare-data",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.compare-data",
+      "currentOrder": 61,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.metrology.physical-digital-bridge",
+          "title=Comparar datos"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.improve-virtual-model",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.improve-virtual-model",
+      "currentOrder": 62,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "capstone-project",
+      "classification": {
+        "value": "capstone-project",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.metrology.physical-digital-bridge",
+          "title=Mejorar un modelo virtual"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.metrology.final-project",
+      "routeId": "route.metrology.physical-digital-bridge",
+      "moduleId": "module.metrology.final-project",
+      "currentOrder": 63,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "capstone-project",
+      "classification": {
+        "value": "capstone-project",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.metrology.physical-digital-bridge",
+          "title=Proyecto final"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.quartz-electronics.electricidad-y-celulas",
+      "routeId": "route.encyclopedia.quartz-electronics",
+      "moduleId": "module.encyclopedia.quartz-electronics.electricidad-y-celulas",
+      "currentOrder": 64,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.quartz-electronics",
+          "title=Tensión, corriente, resistencia y células"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador",
+      "routeId": "route.encyclopedia.quartz-electronics",
+      "moduleId": "module.encyclopedia.quartz-electronics.piezoelectricidad-y-resonador",
+      "currentOrder": 65,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.quartz-electronics",
+          "title=Piezoelectricidad y resonador de cuarzo"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.quartz-electronics.divisor-circuito-y-consumo",
+      "routeId": "route.encyclopedia.quartz-electronics",
+      "moduleId": "module.encyclopedia.quartz-electronics.divisor-circuito-y-consumo",
+      "currentOrder": 66,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.quartz-electronics",
+          "title=Circuito integrado, divisor, compensación y consumo"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+      "routeId": "route.encyclopedia.quartz-electronics",
+      "moduleId": "module.encyclopedia.quartz-electronics.bobina-estator-y-rotor",
+      "currentOrder": 67,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.quartz-electronics",
+          "title=Bobina, estator, rotor y motor paso a paso"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+      "routeId": "route.encyclopedia.quartz-electronics",
+      "moduleId": "module.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+      "currentOrder": 68,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "specialization",
+      "archetype": "diagnosis-case",
+      "classification": {
+        "value": "diagnosis-case",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.quartz-electronics.diagnostico-cuarzo",
+          "Diagnóstico causal de cuarzo con hipótesis y prueba discriminante."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.quartz-electronics.cuarzo-avanzado",
+      "routeId": "route.encyclopedia.quartz-electronics",
+      "moduleId": "module.encyclopedia.quartz-electronics.cuarzo-avanzado",
+      "currentOrder": 69,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.quartz-electronics",
+          "title=Cuarzo de alta precisión, solar, radio y conectividad"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+      "routeId": "route.encyclopedia.quartz-electronics",
+      "moduleId": "module.encyclopedia.quartz-electronics.toh-cuarzo-oscilador-divisor",
+      "currentOrder": 70,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.quartz-electronics",
+          "title=Oscilador de cuarzo y división de frecuencia"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+      "routeId": "route.encyclopedia.quartz-electronics",
+      "moduleId": "module.encyclopedia.quartz-electronics.toh-motor-paso-bipolar",
+      "currentOrder": 71,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.quartz-electronics",
+          "title=Bobina, estator y motor paso a paso bipolar"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+      "routeId": "route.encyclopedia.quartz-electronics",
+      "moduleId": "module.encyclopedia.quartz-electronics.toh-cadena-electronica-completa",
+      "currentOrder": 72,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "specialization",
+      "archetype": "system-overview",
+      "classification": {
+        "value": "system-overview",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.quartz-electronics",
+          "title=Cadena completa del reloj electrónico analógico"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.quartz2035.isa-memory",
+      "routeId": "route.quartz2035.isa-to-2035",
+      "moduleId": "module.quartz2035.isa-memory",
+      "currentOrder": 73,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.quartz2035.isa-to-2035",
+          "title=Del recuerdo del ISA 8172 a una observación trazable"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.quartz2035.documentation",
+      "routeId": "route.quartz2035.isa-to-2035",
+      "moduleId": "module.quartz2035.documentation",
+      "currentOrder": 74,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.quartz2035.isa-to-2035",
+          "title=Cómo leer la documentación del MIYOTA 2035"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.quartz2035.anatomy",
+      "routeId": "route.quartz2035.isa-to-2035",
+      "moduleId": "module.quartz2035.anatomy",
+      "currentOrder": 75,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.quartz2035.anatomy",
+          "Anatomía específica del MIYOTA 2035 basada en documentación oficial."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.quartz2035.disassembly",
+      "routeId": "route.quartz2035.isa-to-2035",
+      "moduleId": "module.quartz2035.disassembly",
+      "currentOrder": 76,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "specialization",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.quartz2035.disassembly",
+          "Desmontaje virtual de calibre; no acredita ejecución física."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.quartz2035.assembly",
+      "routeId": "route.quartz2035.isa-to-2035",
+      "moduleId": "module.quartz2035.assembly",
+      "currentOrder": 77,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "specialization",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.quartz2035.isa-to-2035",
+          "title=Montaje virtual y comprobaciones"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.quartz2035.diagnosis",
+      "routeId": "route.quartz2035.isa-to-2035",
+      "moduleId": "module.quartz2035.diagnosis",
+      "currentOrder": 78,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "specialization",
+      "archetype": "diagnosis-case",
+      "classification": {
+        "value": "diagnosis-case",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.quartz2035.isa-to-2035",
+          "title=Comprobación y diagnóstico básico"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.quartz2035.final-project",
+      "routeId": "route.quartz2035.isa-to-2035",
+      "moduleId": "module.quartz2035.final-project",
+      "currentOrder": 79,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "specialization",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.quartz2035.isa-to-2035",
+          "title=Proyecto final MIYOTA 2035"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+      "currentOrder": 80,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Muelle real, barrilete y curva de par"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico",
+      "currentOrder": 81,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Cuerda manual, rochete, rueda de corona y sistema automático"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.dentado-y-engranes",
+      "currentOrder": 82,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Dentado relojero y condiciones de engrane"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+      "currentOrder": 83,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Relaciones, velocidades y arquitectura del tren"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes",
+      "currentOrder": 84,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Pivotes, rubíes, juegos, platina y puentes"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+      "currentOrder": 85,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Minutería, cañón de minutos y puesta en hora"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "currentOrder": 86,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "core",
+      "archetype": "system-overview",
+      "classification": {
+        "value": "system-overview",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+          "La visión general debe introducir la cadena y no exigir minutería ni puesta en hora detalladas."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-muelle-par",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.toh-muelle-par",
+      "currentOrder": 87,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Muelle real: energía, par y curva de entrega"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas",
+      "currentOrder": 88,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Barrilete, árbol, tambor y apoyos"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+      "currentOrder": 89,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Geometría del engrane relojero"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.toh-relaciones-tren",
+      "currentOrder": 90,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Relaciones del tren y sentido de giro"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.toh-potencia-tren",
+      "currentOrder": 91,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Par, velocidad, potencia y pérdidas en el tren"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion",
+      "currentOrder": 92,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Acoplamiento de minutería y ajuste manual"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.chicago-muelles-seleccion",
+      "currentOrder": 93,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Expediente Chicago III: selección de muelle real"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+      "routeId": "route.encyclopedia.mechanical-energy-trains",
+      "moduleId": "module.encyclopedia.mechanical-energy-trains.chicago-barriletes-especiales",
+      "currentOrder": 94,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.mechanical-energy-trains",
+          "title=Expediente Chicago IV: barriletes motor, enjoyados y stopwork"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "system-overview"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.ciclo-del-ancora-suiza",
+      "currentOrder": 95,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Ciclo completo del escape de áncora suiza"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.geometria-del-escape",
+      "currentOrder": 96,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Bloqueo, draw, caída, impulso y seguridad"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.volante-y-espiral",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.volante-y-espiral",
+      "currentOrder": 97,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Volante, espiral, pitón, raqueta y frecuencia"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.isocronismo-y-curvas-terminales",
+      "currentOrder": 98,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Isocronismo, punto de sujeción y curvas terminales"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.poising-beat-y-posiciones",
+      "currentOrder": 99,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Poising, beat error y posiciones"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.cronocomparador-y-prueba",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.cronocomparador-y-prueba",
+      "currentOrder": 100,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Cronocomparador, reserva y validación cronométrica"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-escape-fases",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.toh-escape-fases",
+      "currentOrder": 101,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Fases completas del escape de áncora suizo"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.toh-seguridad-escape",
+      "currentOrder": 102,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Seguridad: draw, guardia y cuernos"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.toh-volante-espiral-conjunto",
+      "currentOrder": 103,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Volante, espiral, pitón, virola y raqueta"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-isocronismo",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.toh-isocronismo",
+      "currentOrder": 104,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Isocronismo y dependencia de amplitud"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.toh-posiciones-perturbaciones",
+      "currentOrder": 105,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Posiciones, gravedad, poising y perturbaciones"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.toh-tourbillon-carrusel",
+      "currentOrder": 106,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Tourbillon, carrusel y promedio posicional"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+      "currentOrder": 107,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "psychomotor-skill",
+      "classification": {
+        "value": "psychomotor-skill",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.escapements-chronometry.bulova-centrado-volante",
+          "Centrado y alabeo son psicomotricidad real; tourbillon y carrusel son prerrequisitos impropios y no bloquean la habilidad básica."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.bulova-poising",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.bulova-poising",
+      "currentOrder": 108,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "psychomotor-skill",
+      "classification": {
+        "value": "psychomotor-skill",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Pasaporte IX: equilibrado estático del volante"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.bulova-espiral",
+      "routeId": "route.encyclopedia.escapements-chronometry",
+      "moduleId": "module.encyclopedia.escapements-chronometry.bulova-espiral",
+      "currentOrder": 109,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "psychomotor-skill",
+      "classification": {
+        "value": "psychomotor-skill",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.escapements-chronometry",
+          "title=Pasaporte X: plano, centrado, virola y vibrado de espiral"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.recepcion-y-linea-base",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.recepcion-y-linea-base",
+      "currentOrder": 110,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "inspection",
+      "classification": {
+        "value": "inspection",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Recepción, historia y línea base"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.liberar-energia-y-desmontar",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.liberar-energia-y-desmontar",
+      "currentOrder": 111,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Liberar energía y desmontar con trazabilidad"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.limpieza-e-inspeccion",
+      "currentOrder": 112,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "inspection",
+      "classification": {
+        "value": "inspection",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Limpieza, inspección y clasificación de defectos"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tribologia-y-lubricantes",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.tribologia-y-lubricantes",
+      "currentOrder": 113,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Tribología, lubricantes y cantidad aplicada"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "currentOrder": 114,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Montaje por funciones y puntos de control"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.diagnostico-y-control-final",
+      "currentOrder": 115,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "diagnosis-case",
+      "classification": {
+        "value": "diagnosis-case",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Diagnóstico causal y control final"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.toh-friccion-desgaste",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.toh-friccion-desgaste",
+      "currentOrder": 116,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Fricción, desgaste y regímenes de contacto"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.toh-lubricacion-retencion",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.toh-lubricacion-retencion",
+      "currentOrder": 117,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Lubricación, cantidad y retención del aceite"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.bulova-montaje-barrilete",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.bulova-montaje-barrilete",
+      "currentOrder": 118,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Pasaporte XI: montaje del movimiento y barrilete"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.bulova-enjaltado-escape",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.bulova-enjaltado-escape",
+      "currentOrder": 119,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Pasaporte XII: enjaltado y examen del escape"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.chicago-limpieza-segura",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.chicago-limpieza-segura",
+      "currentOrder": 120,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Expediente Chicago V: limpieza histórica y sustitución segura"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.chicago-ensamblaje-control",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.chicago-ensamblaje-control",
+      "currentOrder": 121,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.service-tribology",
+          "title=Expediente Chicago VI: montaje, cuerda y puesta en hora"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.tm-inspeccion-previa",
+      "currentOrder": 122,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "historical-case",
+      "archetype": "inspection",
+      "classification": {
+        "value": "inspection",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+          "El método de inspección es aplicable; los peligros solo se bloquean si existe una operación concreta."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "routeId": "route.encyclopedia.service-tribology",
+      "moduleId": "module.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "currentOrder": 123,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "historical-case",
+      "archetype": "diagnosis-case",
+      "classification": {
+        "value": "diagnosis-case",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+          "Caso histórico de diagnóstico por síntomas y comprobación."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.automatico-y-reserva",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.automatico-y-reserva",
+      "currentOrder": 124,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Automático, embragues y reserva de marcha"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.calendarios",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.calendarios",
+      "currentOrder": 125,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Fecha, día, calendario anual y perpetuo"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.cronografo-mandos",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.cronografo-mandos",
+      "currentOrder": 126,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Cronógrafo: mando, rueda de pilares y sistema de levas"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.acoplamiento-y-puesta-a-cero",
+      "currentOrder": 127,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Acoplamiento, contadores, corazón y puesta a cero"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.sonerias-y-repeticiones",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.sonerias-y-repeticiones",
+      "currentOrder": 128,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Sonerías, repetición y gobierno acústico"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.gmt-tourbillon-y-fuerza-constante",
+      "currentOrder": 129,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=GMT, hora mundial, tourbillon y fuerza constante"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.toh-automatico-rotor",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.toh-automatico-rotor",
+      "currentOrder": 130,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Rotor, masa excéntrica y captación de movimiento"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.toh-reversores-deslizamiento",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.toh-reversores-deslizamiento",
+      "currentOrder": 131,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Reversores, desacoplamiento y limitación de carga"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.toh-calendario-secuencia",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.toh-calendario-secuencia",
+      "currentOrder": 132,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Calendario simple, salto y corrección"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.toh-calendario-perpetuo",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.toh-calendario-perpetuo",
+      "currentOrder": 133,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Calendarios completo, anual y perpetuo"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.toh-soneria-control",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.toh-soneria-control",
+      "currentOrder": 134,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Alarma, sonería y repetición a demanda"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.toh-cronografo-estados",
+      "routeId": "route.encyclopedia.complications",
+      "moduleId": "module.encyclopedia.complications.toh-cronografo-estados",
+      "currentOrder": 135,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.complications",
+          "title=Cronógrafo: mando, embrague, freno y puesta a cero"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.identify",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.identify",
+      "currentOrder": 136,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.miyota8215.identify",
+          "Identificación visual de un calibre concreto."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.documentation",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.documentation",
+      "currentOrder": 137,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.miyota8215.complete",
+          "title=Leer su documentación"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.architecture",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.architecture",
+      "currentOrder": 138,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "system-overview",
+      "classification": {
+        "value": "system-overview",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.miyota8215.architecture",
+          "Vista de arquitectura del MIYOTA 8215 antes del desmontaje."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.automatic",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.automatic",
+      "currentOrder": 139,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.miyota8215.complete",
+          "title=Rotor y carga automática"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.winding-setting",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.winding-setting",
+      "currentOrder": 140,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.miyota8215.complete",
+          "title=Cuerda manual y puesta en hora"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.calendar",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.calendar",
+      "currentOrder": 141,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.miyota8215.complete",
+          "title=Calendario"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.barrel-energy",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.barrel-energy",
+      "currentOrder": 142,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.miyota8215.complete",
+          "title=Barrilete y energía"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.train",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.train",
+      "currentOrder": 143,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.miyota8215.complete",
+          "title=Tren de rodaje"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.escapement-oscillator",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.escapement-oscillator",
+      "currentOrder": 144,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.miyota8215.complete",
+          "title=Escape, volante y espiral"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.plan-disassembly",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.plan-disassembly",
+      "currentOrder": 145,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.miyota8215.complete",
+          "title=Planificar el desmontaje"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.guided-disassembly",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.guided-disassembly",
+      "currentOrder": 146,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.miyota8215.guided-disassembly",
+          "Práctica virtual guiada; P solo sería válida con ejecución física solicitada y documentada."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.assisted-free-disassembly",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.assisted-free-disassembly",
+      "currentOrder": 147,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.miyota8215.complete",
+          "title=Desmontaje asistido y libre"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.inspection",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.inspection",
+      "currentOrder": 148,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "inspection",
+      "classification": {
+        "value": "inspection",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.miyota8215.inspection",
+          "Inspección específica con hallazgos revisables."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.assembly-verification",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.assembly-verification",
+      "currentOrder": 149,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "calibre-service",
+      "classification": {
+        "value": "calibre-service",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.miyota8215.complete",
+          "title=Montaje y comprobaciones"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.miyota8215.diagnosis-project",
+      "routeId": "route.miyota8215.complete",
+      "moduleId": "module.miyota8215.diagnosis-project",
+      "currentOrder": 150,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "core",
+      "archetype": "diagnosis-case",
+      "classification": {
+        "value": "diagnosis-case",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.miyota8215.diagnosis-project",
+          "Cierra el trabajo de calibre mediante diagnóstico documentado."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.arquitectura-de-caja",
+      "routeId": "route.encyclopedia.cases-water",
+      "moduleId": "module.encyclopedia.cases-water.arquitectura-de-caja",
+      "currentOrder": 151,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.cases-water.arquitectura-de-caja",
+          "Aporta interfaces movimiento-caja a la integración del reloj."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.corona-tubo-y-tija",
+      "routeId": "route.encyclopedia.cases-water",
+      "moduleId": "module.encyclopedia.cases-water.corona-tubo-y-tija",
+      "currentOrder": 152,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.cases-water",
+          "title=Corona, tubo, tija y órganos de mando"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.cristales-y-biseles",
+      "routeId": "route.encyclopedia.cases-water",
+      "moduleId": "module.encyclopedia.cases-water.cristales-y-biseles",
+      "currentOrder": 153,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.cases-water",
+          "title=Cristales, biseles, tensiones y adhesivos"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.juntas-y-sellado",
+      "routeId": "route.encyclopedia.cases-water",
+      "moduleId": "module.encyclopedia.cases-water.juntas-y-sellado",
+      "currentOrder": 154,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.cases-water",
+          "title=Juntas, compresión y rutas de fuga"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.pruebas-de-presion",
+      "routeId": "route.encyclopedia.cases-water",
+      "moduleId": "module.encyclopedia.cases-water.pruebas-de-presion",
+      "currentOrder": 155,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "core",
+      "archetype": "measurement",
+      "classification": {
+        "value": "measurement",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.cases-water",
+          "title=Pruebas de presión, condensación y límites de seguridad"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.brazaletes-y-restauracion-de-caja",
+      "routeId": "route.encyclopedia.cases-water",
+      "moduleId": "module.encyclopedia.cases-water.brazaletes-y-restauracion-de-caja",
+      "currentOrder": 156,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.cases-water",
+          "title=Brazaletes, cierres y restauración responsable de caja"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.toh-exterior-interfaces",
+      "routeId": "route.encyclopedia.cases-water",
+      "moduleId": "module.encyclopedia.cases-water.toh-exterior-interfaces",
+      "currentOrder": 157,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.cases-water",
+          "title=Exterior del reloj como cadena de interfaces"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.toh-materiales-exterior",
+      "routeId": "route.encyclopedia.cases-water",
+      "moduleId": "module.encyclopedia.cases-water.toh-materiales-exterior",
+      "currentOrder": 158,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.cases-water",
+          "title=Materiales, cristales, juntas y fijaciones exteriores"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.chicago-caja-corona-tija",
+      "routeId": "route.encyclopedia.cases-water",
+      "moduleId": "module.encyclopedia.cases-water.chicago-caja-corona-tija",
+      "currentOrder": 159,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.cases-water",
+          "title=Expediente Chicago I: caja, corona, tubo y tija"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.chicago-cristales-fijaciones",
+      "routeId": "route.encyclopedia.cases-water",
+      "moduleId": "module.encyclopedia.cases-water.chicago-cristales-fijaciones",
+      "currentOrder": 160,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.cases-water",
+          "title=Expediente Chicago II: cristales, biseles y fijaciones"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+      "currentOrder": 161,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Trazado, referencias, medición y sujeción"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+      "currentOrder": 162,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Torno relojero, pinzas y trabajo entre puntos"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+      "currentOrder": 163,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Ejes, pivotes, hombros y sustitución de staffs"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.ruedas-y-pinones",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.ruedas-y-pinones",
+      "currentOrder": 164,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.micromechanics.ruedas-y-pinones",
+          "Fabricación explícita de ruedas y piñones con proceso especializado."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+      "currentOrder": 165,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Tornillos, pasadores, muelles y piezas pequeñas"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.platinas-puentes-y-jewelling",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.platinas-puentes-y-jewelling",
+      "currentOrder": 166,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Platinas, puentes, taladros, escariado y colocación de rubíes"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.bulova-botador-eje",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.bulova-botador-eje",
+      "currentOrder": 167,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "psychomotor-skill",
+      "classification": {
+        "value": "psychomotor-skill",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Pasaporte III: botador y sustitución de eje"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.bulova-torneado-fundamental",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.bulova-torneado-fundamental",
+      "currentOrder": 168,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "enrichment",
+      "archetype": "psychomotor-skill",
+      "classification": {
+        "value": "psychomotor-skill",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.micromechanics.bulova-torneado-fundamental",
+          "Contrato psicomotor de torno; requiere supervisión y evidencia física real."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.bulova-eje-pivotes",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.bulova-eje-pivotes",
+      "currentOrder": 169,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "psychomotor-skill",
+      "classification": {
+        "value": "psychomotor-skill",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Pasaporte V: eje de volante, pivotes y hombros"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.bulova-tija",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.bulova-tija",
+      "currentOrder": 170,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "psychomotor-skill",
+      "classification": {
+        "value": "psychomotor-skill",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Pasaporte VI: fabricación y ajuste de una tija"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.bulova-brunido",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.bulova-brunido",
+      "currentOrder": 171,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "historical-case",
+      "archetype": "psychomotor-skill",
+      "classification": {
+        "value": "psychomotor-skill",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Pasaporte VII: bruñido de pivotes"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.chicago-rubies-antichoque",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.chicago-rubies-antichoque",
+      "currentOrder": 172,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Expediente Chicago VIII: rubíes, contrapiedras y antichoque"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.chicago-escape-dibujo",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.chicago-escape-dibujo",
+      "currentOrder": 173,
+      "macroStage": "7-design-validate-own-watch-or-movement",
+      "trackRole": "historical-case",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.micromechanics.chicago-escape-dibujo",
+          "Construcción geométrica histórica usada como caso de diseño sujeto a verificación."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.chicago-escape-emparejado",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.chicago-escape-emparejado",
+      "currentOrder": 174,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Expediente Chicago X: emparejar y reparar un escape"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.micromechanics.chicago-torno-repivotado",
+      "routeId": "route.encyclopedia.micromechanics",
+      "moduleId": "module.encyclopedia.micromechanics.chicago-torno-repivotado",
+      "currentOrder": 175,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.micromechanics",
+          "title=Expediente Chicago XI: torno, repivotado y piezas perdidas"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+      "routeId": "route.encyclopedia.dials-hands-finishing",
+      "moduleId": "module.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+      "currentOrder": 176,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.dials-hands-finishing",
+          "title=Arquitectura de esfera, pies, aberturas e interfaces"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+      "routeId": "route.encyclopedia.dials-hands-finishing",
+      "moduleId": "module.encyclopedia.dials-hands-finishing.impresion-indices-y-lume",
+      "currentOrder": 177,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.dials-hands-finishing",
+          "title=Impresión, índices aplicados y material luminoso"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+      "routeId": "route.encyclopedia.dials-hands-finishing",
+      "moduleId": "module.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+      "currentOrder": 178,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.dials-hands-finishing",
+          "title=Agujas: geometría, masa, tubo, ajuste y alturas"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado",
+      "routeId": "route.encyclopedia.dials-hands-finishing",
+      "moduleId": "module.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado",
+      "currentOrder": 179,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.dials-hands-finishing",
+          "title=Pulido, satinado, cepillado y geometría"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+      "routeId": "route.encyclopedia.dials-hands-finishing",
+      "moduleId": "module.encyclopedia.dials-hands-finishing.decoracion-del-movimiento",
+      "currentOrder": 180,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.dials-hands-finishing",
+          "title=Anglage, perlage, Côtes y pulido negro"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas",
+      "routeId": "route.encyclopedia.dials-hands-finishing",
+      "moduleId": "module.encyclopedia.dials-hands-finishing.guilloche-y-motores-de-rosas",
+      "currentOrder": 181,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.dials-hands-finishing",
+          "title=Guilloché, motor de línea recta y motor de rosas"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.identidad-y-comparacion",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.identidad-y-comparacion",
+      "currentOrder": 182,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "specialization",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.atlas-restoration-design",
+          "title=Identidad, atlas y comparación entre familias"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.casos-6497-2824-8215",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.casos-6497-2824-8215",
+      "currentOrder": 183,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "specialization",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.atlas-restoration-design",
+          "title=Casos de transferencia: ETA 6497, ETA 2824 y MIYOTA 8215"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.casos-7750-6138-y-cuarzo",
+      "currentOrder": 184,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "specialization",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.atlas-restoration-design",
+          "title=Casos de transferencia: 7750, Seiko 6138 y cuarzo analógico"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.vintage-bolsillo-y-electromecanico",
+      "currentOrder": 185,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "specialization",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.atlas-restoration-design",
+          "title=Relojes vintage, de bolsillo y electromecánicos"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+      "currentOrder": 186,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "specialization",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+          "Compara donante, repuesto rederivado e intervención; no acredita fabricación física."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+      "currentOrder": 187,
+      "macroStage": "7-design-validate-own-watch-or-movement",
+      "trackRole": "specialization",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.atlas-restoration-design",
+          "title=Ruta de diseño: de movimiento adquirido a movimiento propio"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
+      "currentOrder": 188,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "historical-case",
+      "archetype": "diagnosis-case",
+      "classification": {
+        "value": "diagnosis-case",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
+          "Caso histórico de calibre; arquitectura de producto, presupuesto de error y modelo V son prerrequisitos impropios."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-elgin-waltham",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.tm-elgin-waltham",
+      "currentOrder": 189,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.atlas-restoration-design",
+          "title=Caso oficial TM IV: Elgin y Waltham de bolsillo"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-relojes-pulsera",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.tm-relojes-pulsera",
+      "currentOrder": 190,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.atlas-restoration-design",
+          "title=Caso oficial TM V: Hamilton, Elgin y Waltham de pulsera"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-bulova-10ak",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.tm-bulova-10ak",
+      "currentOrder": 191,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.atlas-restoration-design",
+          "title=Caso oficial TM VI: Bulova 10AK y estanqueidad histórica"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1",
+      "routeId": "route.encyclopedia.atlas-restoration-design",
+      "moduleId": "module.encyclopedia.atlas-restoration-design.tm-cronometros-reloj-m1",
+      "currentOrder": 192,
+      "macroStage": "1-understand-watch-as-system",
+      "trackRole": "historical-case",
+      "archetype": "historical-comparison",
+      "classification": {
+        "value": "historical-comparison",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.encyclopedia.atlas-restoration-design",
+          "title=Caso oficial TM VII: stopwatches Elgin y Message Center Clock M1"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "routeId": "route.advanced.comparative-atlas",
+      "moduleId": "module.advanced.atlas-authority",
+      "currentOrder": 193,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.advanced.comparative-atlas",
+          "title=Leer un movimiento con autoridad y procedencia"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "mechanism-explanation"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.seconds-layout",
+      "routeId": "route.advanced.comparative-atlas",
+      "moduleId": "module.advanced.seconds-layout",
+      "currentOrder": 194,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.advanced.comparative-atlas",
+          "title=Pequeño segundero, central directo e indirecto"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "mechanism-explanation"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.winding-systems",
+      "routeId": "route.advanced.comparative-atlas",
+      "moduleId": "module.advanced.winding-systems",
+      "currentOrder": 195,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.advanced.comparative-atlas",
+          "title=Inversores, palanca de uñas y carga unidireccional"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "mechanism-explanation"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.construction-trade-study",
+      "routeId": "route.advanced.comparative-atlas",
+      "moduleId": "module.advanced.construction-trade-study",
+      "currentOrder": 196,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.advanced.comparative-atlas",
+          "title=Puentes, platinas y presupuesto de altura"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "mechanism-explanation"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.service-baseline",
+      "routeId": "route.advanced.service-method",
+      "moduleId": "module.advanced.service-baseline",
+      "currentOrder": 197,
+      "macroStage": "0-prepare-bench-and-control",
+      "trackRole": "specialization",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.serviceProcedureContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "calibre-service"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.service-disassembly",
+      "routeId": "route.advanced.service-method",
+      "moduleId": "module.advanced.service-disassembly",
+      "currentOrder": 198,
+      "macroStage": "4-work-on-real-calibre",
+      "trackRole": "specialization",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.advanced.service-disassembly",
+          "Planifica y simula desmontaje por dependencias sin afirmar servicio físico."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.service-clean-lube",
+      "routeId": "route.advanced.service-method",
+      "moduleId": "module.advanced.service-clean-lube",
+      "currentOrder": 199,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.serviceProcedureContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "calibre-service"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.service-assembly",
+      "routeId": "route.advanced.service-method",
+      "moduleId": "module.advanced.service-assembly",
+      "currentOrder": 200,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "bench-procedure",
+      "classification": {
+        "value": "bench-procedure",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.serviceProcedureContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "calibre-service"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.service-diagnosis",
+      "routeId": "route.advanced.service-method",
+      "moduleId": "module.advanced.service-diagnosis",
+      "currentOrder": 201,
+      "macroStage": "3-observe-measure-diagnose",
+      "trackRole": "specialization",
+      "archetype": "diagnosis-case",
+      "classification": {
+        "value": "diagnosis-case",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.serviceProcedureContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "calibre-service"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.escapement-compare",
+      "routeId": "route.advanced.architectures-complications",
+      "moduleId": "module.advanced.escapement-compare",
+      "currentOrder": 202,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.advanced.architectures-complications",
+          "title=Escapes: funciones comunes y geometrías no transferibles"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.ultra-thin",
+      "routeId": "route.advanced.architectures-complications",
+      "moduleId": "module.advanced.ultra-thin",
+      "currentOrder": 203,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.advanced.architectures-complications",
+          "title=Arquitectura extraplana y presupuesto axial"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.calendars",
+      "routeId": "route.advanced.architectures-complications",
+      "moduleId": "module.advanced.calendars",
+      "currentOrder": 204,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.advanced.calendars",
+          "Explica acumulación, salto, retención y corrección; no es psicomotricidad."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.chronograph-control",
+      "routeId": "route.advanced.architectures-complications",
+      "moduleId": "module.advanced.chronograph-control",
+      "currentOrder": 205,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "specialization",
+      "archetype": "visual-anatomy",
+      "classification": {
+        "value": "visual-anatomy",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.advanced.chronograph-control",
+          "Compara levas y rueda de pilares mediante estados visibles; no es práctica manual."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.chronograph-coupling",
+      "routeId": "route.advanced.architectures-complications",
+      "moduleId": "module.advanced.chronograph-coupling",
+      "currentOrder": 206,
+      "macroStage": "2-understand-mechanical-systems",
+      "trackRole": "core",
+      "archetype": "mechanism-explanation",
+      "classification": {
+        "value": "mechanism-explanation",
+        "classificationMethod": "semantic-rule",
+        "classificationConfidence": "medium",
+        "evidenceUsed": [
+          "route=route.advanced.architectures-complications",
+          "title=Acoplamiento horizontal y embrague vertical"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.architecture-capstone",
+      "routeId": "route.advanced.architectures-complications",
+      "moduleId": "module.advanced.architecture-capstone",
+      "currentOrder": 207,
+      "macroStage": "7-design-validate-own-watch-or-movement",
+      "trackRole": "core",
+      "archetype": "capstone-project",
+      "classification": {
+        "value": "capstone-project",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.advanced.architecture-capstone",
+          "Defensa integral de arquitectura con revisión."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.dfm-datums",
+      "routeId": "route.capstone.manufacturing-finishing",
+      "moduleId": "module.capstone.manufacturing.dfm-datums",
+      "currentOrder": 208,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.manufacturingContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.case",
+      "routeId": "route.capstone.manufacturing-finishing",
+      "moduleId": "module.capstone.manufacturing.case",
+      "currentOrder": 209,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.manufacturingContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.dial",
+      "routeId": "route.capstone.manufacturing-finishing",
+      "moduleId": "module.capstone.manufacturing.dial",
+      "currentOrder": 210,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.manufacturingContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.hands",
+      "routeId": "route.capstone.manufacturing-finishing",
+      "moduleId": "module.capstone.manufacturing.hands",
+      "currentOrder": 211,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.manufacturingContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.plates-bridges",
+      "routeId": "route.capstone.manufacturing-finishing",
+      "moduleId": "module.capstone.manufacturing.plates-bridges",
+      "currentOrder": 212,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.manufacturingContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.micromechanics",
+      "routeId": "route.capstone.manufacturing-finishing",
+      "moduleId": "module.capstone.manufacturing.micromechanics",
+      "currentOrder": 213,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.capstone.manufacturing.micromechanics",
+          "El contrato de fabricación es de planificación y revisión, no una afirmación de pieza fabricada."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.decoration",
+      "routeId": "route.capstone.manufacturing-finishing",
+      "moduleId": "module.capstone.manufacturing.decoration",
+      "currentOrder": 214,
+      "macroStage": "6-repair-adapt-manufacture-components",
+      "trackRole": "core",
+      "archetype": "manufacturing",
+      "classification": {
+        "value": "manufacturing",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.manufacturingContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.design.requirements",
+      "routeId": "route.capstone.personal-watch-design",
+      "moduleId": "module.capstone.design.requirements",
+      "currentOrder": 215,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.personalWatchDesignContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "capstone-project"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.design.acquired-movement",
+      "routeId": "route.capstone.personal-watch-design",
+      "moduleId": "module.capstone.design.acquired-movement",
+      "currentOrder": 216,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "capstone-project",
+      "classification": {
+        "value": "capstone-project",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.capstone.design.acquired-movement",
+          "Integra un movimiento adquirido mediante dossier de compatibilidad."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.design.external-components",
+      "routeId": "route.capstone.personal-watch-design",
+      "moduleId": "module.capstone.design.external-components",
+      "currentOrder": 217,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.capstone.design.external-components",
+          "Diseña interfaces de caja, esfera, agujas y uso; una mención a fabricación no lo vuelve psicomotor."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.design.controlled-modification",
+      "routeId": "route.capstone.personal-watch-design",
+      "moduleId": "module.capstone.design.controlled-modification",
+      "currentOrder": 218,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.personalWatchDesignContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "capstone-project"
+        ]
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.design.own-movement",
+      "routeId": "route.capstone.personal-watch-design",
+      "moduleId": "module.capstone.design.own-movement",
+      "currentOrder": 219,
+      "macroStage": "7-design-validate-own-watch-or-movement",
+      "trackRole": "core",
+      "archetype": "design",
+      "classification": {
+        "value": "design",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.capstone.design.own-movement",
+          "Diseño de arquitectura de movimiento propio."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.design.capstone",
+      "routeId": "route.capstone.personal-watch-design",
+      "moduleId": "module.capstone.design.capstone",
+      "currentOrder": 220,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "capstone-project",
+      "classification": {
+        "value": "capstone-project",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.capstone.design.capstone",
+          "Dossier integral y puerta de prototipo del reloj completo."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.validation.watchmaker-review",
+      "routeId": "route.capstone.watch-validation",
+      "moduleId": "module.capstone.validation.watchmaker-review",
+      "currentOrder": 221,
+      "macroStage": "7-design-validate-own-watch-or-movement",
+      "trackRole": "core",
+      "archetype": "capstone-project",
+      "classification": {
+        "value": "capstone-project",
+        "classificationMethod": "curated-override",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "gold-set:lesson.capstone.validation.watchmaker-review",
+          "Validación independiente por revisión relojera."
+        ],
+        "overrideApplied": true,
+        "alternativeCandidates": []
+      }
+    },
+    {
+      "lessonId": "lesson.capstone.validation.calibre-transfer",
+      "routeId": "route.capstone.watch-validation",
+      "moduleId": "module.capstone.validation.calibre-transfer",
+      "currentOrder": 222,
+      "macroStage": "5-build-complete-watch",
+      "trackRole": "core",
+      "archetype": "capstone-project",
+      "classification": {
+        "value": "capstone-project",
+        "classificationMethod": "explicit-metadata",
+        "classificationConfidence": "high",
+        "evidenceUsed": [
+          "activity.authoring.validationContract"
+        ],
+        "overrideApplied": false,
+        "alternativeCandidates": [
+          "design"
+        ]
+      }
+    }
+  ]
+}
