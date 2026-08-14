@@ -1,0 +1,3044 @@
+{
+  "schemaVersion": 1,
+  "phase": "0.14B",
+  "generatedBy": "scripts/academy-learner-path.ts",
+  "corpusDigest": "1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e",
+  "corpusCounts": {
+    "packages": 8,
+    "routes": 24,
+    "modules": 217,
+    "lessons": 222,
+    "activities": 289,
+    "concepts": 509,
+    "misconceptions": 149,
+    "sources": 182
+  },
+  "pathCounts": {
+    "stages": 8,
+    "chapters": 32,
+    "anchors": 83,
+    "uniqueSupportingLessons": 30,
+    "supportingLessonPlacements": 30,
+    "requiredActivities": 83,
+    "optionalBranches": 8,
+    "plannedContentRefs": 8
+  },
+  "validation": {
+    "valid": true,
+    "issues": []
+  },
+  "path": {
+    "pathId": "academy.path.watchmaker-main",
+    "version": "0.14B.0",
+    "title": "De cero a un reloj o movimiento propio",
+    "description": "Una ruta principal curada que conserva el catálogo completo como biblioteca secundaria.",
+    "learnerGoal": "Comprender un reloj desde cero, trabajar sobre un movimiento mecánico real, construir un reloj completo alrededor de un movimiento adquirido, aprender a adaptar o fabricar componentes y avanzar hacia el diseño y validación de un movimiento propio.",
+    "stageIds": [
+      "stage.0",
+      "stage.1",
+      "stage.2",
+      "stage.3",
+      "stage.4",
+      "stage.5",
+      "stage.6",
+      "stage.7"
+    ],
+    "defaultLocale": "es-ES",
+    "sourceAuditPhase": "0.14A.1",
+    "curationStatus": "manually-curated",
+    "stages": [
+      {
+        "stageId": "stage.0",
+        "order": 0,
+        "title": "Preparar el banco y adquirir control",
+        "shortTitle": "Preparar",
+        "promise": "Trabajar con orden y límites claros.",
+        "outcome": "Preparar el entorno y distinguir práctica virtual de destreza física.",
+        "rationale": "La manipulación básica precede a cualquier desmontaje.",
+        "chapterIds": [
+          "chapter.0.1",
+          "chapter.0.2"
+        ],
+        "prerequisiteStageIds": [],
+        "coverageStatus": "complete",
+        "optionalBranchIds": [
+          "branch.quartz-initiation"
+        ],
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        }
+      },
+      {
+        "stageId": "stage.1",
+        "order": 1,
+        "title": "Entender el reloj como sistema",
+        "shortTitle": "Entender el sistema",
+        "promise": "Ver funciones antes que listas de piezas.",
+        "outcome": "Explicar la cadena funcional de un reloj y leer su documentación.",
+        "rationale": "La visión general precede al detalle.",
+        "chapterIds": [
+          "chapter.1.1",
+          "chapter.1.2",
+          "chapter.1.3"
+        ],
+        "prerequisiteStageIds": [
+          "stage.0"
+        ],
+        "coverageStatus": "complete",
+        "optionalBranchIds": [
+          "branch.history-context",
+          "branch.quartz-theory"
+        ],
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        }
+      },
+      {
+        "stageId": "stage.2",
+        "order": 2,
+        "title": "Comprender los sistemas mecánicos",
+        "shortTitle": "Sistemas mecánicos",
+        "promise": "Seguir energía, transmisión, escape, regulación e indicación.",
+        "outcome": "Explicar los subsistemas mecánicos y sus dependencias.",
+        "rationale": "Las matemáticas aparecen cuando resuelven una necesidad.",
+        "chapterIds": [
+          "chapter.2.1",
+          "chapter.2.2",
+          "chapter.2.3",
+          "chapter.2.4",
+          "chapter.2.5",
+          "chapter.2.6"
+        ],
+        "prerequisiteStageIds": [
+          "stage.1"
+        ],
+        "coverageStatus": "complete",
+        "optionalBranchIds": [
+          "branch.complications"
+        ],
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        }
+      },
+      {
+        "stageId": "stage.3",
+        "order": 3,
+        "title": "Observar, medir y diagnosticar",
+        "shortTitle": "Medir y diagnosticar",
+        "promise": "Pasar de observación a hipótesis comprobable.",
+        "outcome": "Inspeccionar, medir y defender un diagnóstico causal.",
+        "rationale": "La inspección precede a la intervención.",
+        "chapterIds": [
+          "chapter.3.1",
+          "chapter.3.2",
+          "chapter.3.3",
+          "chapter.3.4"
+        ],
+        "prerequisiteStageIds": [
+          "stage.2"
+        ],
+        "coverageStatus": "complete",
+        "optionalBranchIds": [
+          "branch.historical-cases",
+          "branch.advanced-service"
+        ],
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        }
+      },
+      {
+        "stageId": "stage.4",
+        "order": 4,
+        "title": "Trabajar sobre un calibre real",
+        "shortTitle": "MIYOTA 8215",
+        "promise": "Transferir los fundamentos a un MIYOTA 8215 documentado.",
+        "outcome": "Completar estudio, desmontaje, montaje y diagnóstico virtual del 8215.",
+        "rationale": "Un calibre real se estudia después de entender sus subsistemas.",
+        "chapterIds": [
+          "chapter.4.1",
+          "chapter.4.2",
+          "chapter.4.3",
+          "chapter.4.4",
+          "chapter.4.5"
+        ],
+        "prerequisiteStageIds": [
+          "stage.3"
+        ],
+        "coverageStatus": "complete",
+        "optionalBranchIds": [
+          "branch.quartz-initiation",
+          "branch.comparative-atlas"
+        ],
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        }
+      },
+      {
+        "stageId": "stage.5",
+        "order": 5,
+        "title": "Construir un reloj completo",
+        "shortTitle": "Construir un reloj",
+        "promise": "Integrar un reloj alrededor de un movimiento adquirido.",
+        "outcome": "Defender un dossier de compatibilidad con cobertura y vacíos explícitos.",
+        "rationale": "Construir un reloj completo es un objetivo autónomo.",
+        "chapterIds": [
+          "chapter.5.1",
+          "chapter.5.2",
+          "chapter.5.3",
+          "chapter.5.4",
+          "chapter.5.5"
+        ],
+        "prerequisiteStageIds": [
+          "stage.4"
+        ],
+        "coverageStatus": "partial",
+        "optionalBranchIds": [
+          "branch.historical-cases"
+        ],
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        }
+      },
+      {
+        "stageId": "stage.6",
+        "order": 6,
+        "title": "Reparar, adaptar y fabricar componentes",
+        "shortTitle": "Fabricar y adaptar",
+        "promise": "Planificar intervenciones y fabricación sin fingir ejecución física.",
+        "outcome": "Defender procesos, riesgos, inspección y aceptación de componentes.",
+        "rationale": "Fabricar componentes viene después de integrar componentes existentes.",
+        "chapterIds": [
+          "chapter.6.1",
+          "chapter.6.2",
+          "chapter.6.3",
+          "chapter.6.4"
+        ],
+        "prerequisiteStageIds": [
+          "stage.5"
+        ],
+        "coverageStatus": "source-review-required",
+        "optionalBranchIds": [
+          "branch.bench-passports",
+          "branch.historical-cases"
+        ],
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        }
+      },
+      {
+        "stageId": "stage.7",
+        "order": 7,
+        "title": "Diseñar y validar un reloj o movimiento propio",
+        "shortTitle": "Diseñar y validar",
+        "promise": "Convertir requisitos en arquitectura, prototipo y validación.",
+        "outcome": "Defender una arquitectura propia y su dossier de validación independiente.",
+        "rationale": "Diseñar un movimiento propio es una etapa avanzada.",
+        "chapterIds": [
+          "chapter.7.1",
+          "chapter.7.2",
+          "chapter.7.3"
+        ],
+        "prerequisiteStageIds": [
+          "stage.6"
+        ],
+        "coverageStatus": "complete",
+        "optionalBranchIds": [],
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        }
+      }
+    ],
+    "chapters": [
+      {
+        "chapterId": "chapter.0.1",
+        "stageId": "stage.0",
+        "order": 1,
+        "title": "Banco, postura, iluminación y herramientas",
+        "description": "Preparar un entorno ordenado y seleccionar herramientas sin comenzar todavía un servicio real.",
+        "whyNow": "El control del entorno reduce errores antes de estudiar mecanismos o manipular componentes.",
+        "outcome": "Preparar un banco virtual seguro y justificar la herramienta adecuada.",
+        "optionalActivityIds": [
+          "activity.quartz2035.detect-unsafe-conditions",
+          "activity.quartz2035.reject-wrong-tool"
+        ],
+        "prerequisiteChapterIds": [],
+        "optionalBranchIds": [
+          "branch.quartz-initiation"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Entrada de baja carga cognitiva con objetivos observables y prácticas K/V ya implementadas.",
+        "anchorLessonIds": [
+          "lesson.quartz2035.workstation",
+          "lesson.quartz2035.tools"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.quartz2035.workstation",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Su objetivo y sus dos prácticas verifican preparación del banco y detección de condiciones inseguras sin atribuir trabajo físico."
+          },
+          {
+            "lessonId": "lesson.quartz2035.tools",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Presenta selección y rechazo de herramientas con una actividad virtual específica y segura."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+            "role": "support",
+            "reason": "Amplía postura, orden y seguridad; su cita amplia sigue en revisión editorial."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.quartz2035.prepare-workbench",
+          "activity.quartz2035.select-tools"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.0.2",
+        "stageId": "stage.0",
+        "order": 2,
+        "title": "Control, manipulación, limpieza y primeras evidencias",
+        "description": "Separar el gesto de banco, su simulación y la evidencia física que todavía no captura la Academia.",
+        "whyNow": "La manipulación básica debe preceder a cualquier desmontaje.",
+        "outcome": "Explicar una manipulación controlada y reconocer qué faltaría para demostrarla físicamente.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.0.1"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "source-review-required",
+        "curationReason": "Se conserva la progresión psicomotriz, separando aprendizaje conceptual de acreditación física.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+          "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "El objetivo trata observación y manipulación; la actividad existente es K/V y no se confunde con ejecución física."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Introduce contaminación y limpieza segura antes de intervenir, con límites operativos explícitos."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+            "role": "support",
+            "reason": "Pasaporte psicomotor valioso, mantenido como apoyo hasta existir una vía P documentada."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+          "activity.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": true,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "P",
+          "note": "La ruta conceptual puede avanzar con K/V/R, pero la competencia de banco queda pendiente hasta disponer de evidencia P documentada."
+        }
+      },
+      {
+        "chapterId": "chapter.1.1",
+        "stageId": "stage.1",
+        "order": 1,
+        "title": "El reloj como sistema funcional",
+        "description": "Ver energía, transmisión, regulación e indicación antes de memorizar piezas.",
+        "whyNow": "La visión general debe preceder al detalle.",
+        "outcome": "Clasificar una pieza por su función dentro del sistema completo.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.0.2"
+        ],
+        "optionalBranchIds": [
+          "branch.history-context"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Una única vista funcional evita iniciar con una pared de componentes.",
+        "anchorLessonIds": [
+          "lesson.horology.system"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.horology.system",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Lección inicial explícita con mapa funcional y práctica de clasificación; no exige prerrequisitos avanzados."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+            "role": "support",
+            "reason": "Vista sistémica valiosa cuyos tres prerrequisitos impropios se resuelven como no bloqueantes."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.horology.classify-subsystems"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.1.2",
+        "stageId": "stage.1",
+        "order": 2,
+        "title": "Cadena mecánica, cadena de cuarzo y equivalencias",
+        "description": "Comparar arquitecturas distintas mediante funciones equivalentes.",
+        "whyNow": "La comparación refuerza el modelo funcional sin convertir el cuarzo en requisito del itinerario mecánico.",
+        "outcome": "Ordenar la cadena mecánica y emparejar equivalencias funcionales.",
+        "optionalActivityIds": [
+          "activity.horology.identify-escapement-oscillator"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.1.1"
+        ],
+        "optionalBranchIds": [
+          "branch.quartz-theory"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Dos anchors de alta confianza comparan sistemas sin imponer una rama de cuarzo.",
+        "anchorLessonIds": [
+          "lesson.horology.mechanical-chain",
+          "lesson.horology.functional-equivalence"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.horology.mechanical-chain",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Objetivo causal y práctica de ordenación directamente alineados; gold set confirma arquetipo conceptual K/V."
+          },
+          {
+            "lessonId": "lesson.horology.functional-equivalence",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "La transferencia entre cuarzo y mecánico es conceptual y no hereda riesgos históricos ni destreza física."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.horology.quartz-chain"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.horology.quartz-chain",
+            "role": "support",
+            "reason": "Amplía la cadena de cuarzo sin volverla obligatoria para el recorrido mecánico."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.horology.order-mechanical-chain",
+          "activity.horology.match-functional-equivalents"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.1.3",
+        "stageId": "stage.1",
+        "order": 3,
+        "title": "Vocabulario, documentación y procedencia",
+        "description": "Leer nombres, especificaciones, planos, límites y autoridad de una fuente.",
+        "whyNow": "Antes de usar datos técnicos hay que distinguir documentación oficial, teoría, caso y referencia.",
+        "outcome": "Localizar una afirmación y justificar qué fuente puede sostenerla.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.1.2"
+        ],
+        "optionalBranchIds": [
+          "branch.history-context"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "source-review-required",
+        "curationReason": "El recorrido necesita alfabetización documental, pero no hereda toda la ruta histórica.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.history-language.leer-documentacion"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Su objetivo observable y actividad enseñan lectura documental; se acepta tras revisar su sourceRole y mantener pendiente la precisión de cita."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.history-language.medir-el-tiempo",
+          "lesson.advanced.atlas-authority"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+            "role": "optional-branch",
+            "reason": "Contexto histórico no bloqueante."
+          },
+          {
+            "lessonId": "lesson.advanced.atlas-authority",
+            "role": "reference",
+            "reason": "Consulta avanzada sobre autoridad y procedencia."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.encyclopedia.history-language.leer-documentacion"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.2.1",
+        "stageId": "stage.2",
+        "order": 1,
+        "title": "Fuente de energía, muelle real y barrilete",
+        "description": "Seguir cómo se almacena y entrega energía mecánica.",
+        "whyNow": "La energía es la causa inicial de todos los subsistemas posteriores.",
+        "outcome": "Explicar la función del barrilete y predecir una interrupción de energía.",
+        "optionalActivityIds": [
+          "activity.mechanical.interrupt-energy-chain",
+          "activity.mechanical.identify-barrel-parts"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.1.3"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Secuencia causal desde energía hasta entrega de par, con apoyo cuantitativo contextual.",
+        "anchorLessonIds": [
+          "lesson.mechanical.energy",
+          "lesson.mechanical.barrel",
+          "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.mechanical.energy",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "El objetivo y la práctica presentan la cadena energética antes de componentes detallados."
+          },
+          {
+            "lessonId": "lesson.mechanical.barrel",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "La actividad representa carga y descarga de forma virtual, con alcance explícito."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Aporta curva de par y vocabulario técnico como aplicación inmediata, no como muralla matemática."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+            "role": "support",
+            "reason": "Matemática justo a tiempo para distinguir par, trabajo, energía y potencia."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.mechanical.classify-energy-functions",
+          "activity.mechanical.load-unload-barrel",
+          "activity.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.2.2",
+        "stageId": "stage.2",
+        "order": 2,
+        "title": "Ruedas, piñones, relaciones y tren de rodaje",
+        "description": "Comprender engrane, sentido de giro y relación total.",
+        "whyNow": "Una vez disponible la energía, hay que seguir su transmisión.",
+        "outcome": "Construir un tren virtual y justificar relación y sentido de giro.",
+        "optionalActivityIds": [
+          "activity.mechanical.calculate-pair-ratio",
+          "activity.mechanical.calculate-total-ratio"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.2.1"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Va del par de ruedas al tren y aplaza la geometría avanzada.",
+        "anchorLessonIds": [
+          "lesson.mechanical.gear-pair",
+          "lesson.mechanical.train",
+          "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.mechanical.gear-pair",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Presenta el par mínimo antes de construir un tren."
+          },
+          {
+            "lessonId": "lesson.mechanical.train",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Su práctica reconstruye el sistema y comprueba la transmisión."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Amplía relaciones y arquitectura con actividad visual alineada."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+          "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+            "role": "support",
+            "reason": "Cálculo aplicado cuando la relación del tren ya tiene significado."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+            "role": "reference",
+            "reason": "Detalle geométrico posterior, sujeto a revisión de locadores."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.mechanical.predict-pair-direction",
+          "activity.mechanical.build-train",
+          "activity.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.2.3",
+        "stageId": "stage.2",
+        "order": 3,
+        "title": "Escape y entrega de impulso",
+        "description": "Separar bloqueo, impulso, caída y seguridad.",
+        "whyNow": "El escape conecta transmisión y oscilador.",
+        "outcome": "Ordenar fases y reconocer dónde se entrega o se detiene energía.",
+        "optionalActivityIds": [
+          "activity.mechanical.identify-lock-impulse-drop"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.2.2"
+        ],
+        "optionalBranchIds": [
+          "branch.complications"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "source-review-required",
+        "curationReason": "La secuencia base precede a comparación y geometría avanzada.",
+        "anchorLessonIds": [
+          "lesson.mechanical.escapement",
+          "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+          "lesson.encyclopedia.escapements-chronometry.toh-escape-fases"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.mechanical.escapement",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Objetivo causal y práctica de secuencia centrados en las fases del escape."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Aporta vocabulario geométrico y seguridad como detalle inmediatamente útil."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-escape-fases",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Segunda representación conceptual para transferencia; fórmulas y locadores siguen fuera del alcance de 0.14B."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.advanced.escapement-compare"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.advanced.escapement-compare",
+            "role": "optional-branch",
+            "reason": "Comparación avanzada de geometrías no transferibles."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.mechanical.order-escapement-phases",
+          "activity.encyclopedia.escapements-chronometry.geometria-del-escape",
+          "activity.encyclopedia.escapements-chronometry.toh-escape-fases"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.2.4",
+        "stageId": "stage.2",
+        "order": 4,
+        "title": "Volante, espiral, oscilación y marcha",
+        "description": "Relacionar frecuencia, amplitud, realimentación y perturbación.",
+        "whyNow": "Después de comprender el escape puede estudiarse el regulador como sistema.",
+        "outcome": "Distinguir frecuencia y amplitud y explicar la relación escape-oscilador.",
+        "optionalActivityIds": [
+          "activity.mechanical.predict-escapement-interruption"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.2.3"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Integra escape y regulador antes de introducir perturbaciones y cronocomparación.",
+        "anchorLessonIds": [
+          "lesson.mechanical.oscillator",
+          "lesson.mechanical.escape-oscillator",
+          "lesson.encyclopedia.escapements-chronometry.volante-y-espiral"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.mechanical.oscillator",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Lección conceptual con actividad que separa magnitudes sin exigir ajuste físico."
+          },
+          {
+            "lessonId": "lesson.mechanical.escape-oscillator",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Integra ambos subsistemas y produce una explicación causal."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.escapements-chronometry.volante-y-espiral",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Aporta anatomía y vocabulario técnico antes de regulación avanzada."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+            "role": "support",
+            "reason": "Modelo matemático justo cuando resuelve oscilación y amortiguamiento."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.mechanical.distinguish-frequency-amplitude",
+          "activity.mechanical.relate-escape-oscillator",
+          "activity.encyclopedia.escapements-chronometry.volante-y-espiral"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.2.5",
+        "stageId": "stage.2",
+        "order": 5,
+        "title": "Minutería, cuerda y puesta en hora",
+        "description": "Distinguir transmisión de marcha, indicación y mando del usuario.",
+        "whyNow": "La indicación y el sistema de puesta en hora se entienden después del tren y el regulador.",
+        "outcome": "Reconstruir estados de tija y construir la minutería virtual.",
+        "optionalActivityIds": [
+          "activity.mechanical.set-indication",
+          "activity.mechanical.operate-winding-setting"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.2.4"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Agrupa dos interfaces funcionales sin anticiparlas como requisitos de la visión general.",
+        "anchorLessonIds": [
+          "lesson.mechanical.motion-works",
+          "lesson.mechanical.keyless"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.mechanical.motion-works",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Presenta la indicación con práctica de construcción virtual."
+          },
+          {
+            "lessonId": "lesson.mechanical.keyless",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Se centra en estados de cuerda y puesta en hora con una secuencia observable."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+            "role": "support",
+            "reason": "Detalle técnico posterior; deja de contaminar como prerrequisito de la visión general."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.mechanical.build-motion-works",
+          "activity.mechanical.reconstruct-crown-states"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.2.6",
+        "stageId": "stage.2",
+        "order": 6,
+        "title": "Automático, calendario y ampliaciones funcionales",
+        "description": "Añadir captación automática y calendario sobre la arquitectura básica.",
+        "whyNow": "Las ampliaciones se entienden mejor después del movimiento mecánico simple.",
+        "outcome": "Seguir la carga automática y explicar un cambio de fecha.",
+        "optionalActivityIds": [
+          "activity.mechanical.explain-date-change"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.2.5"
+        ],
+        "optionalBranchIds": [
+          "branch.complications"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Cierra fundamentos con ampliaciones inmediatas y mantiene complicaciones como rama.",
+        "anchorLessonIds": [
+          "lesson.mechanical.automatic-calendar",
+          "lesson.encyclopedia.complications.automatico-y-reserva",
+          "lesson.encyclopedia.complications.calendarios"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.mechanical.automatic-calendar",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Integra automático y calendario básico sin convertir complicaciones en requisito."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.complications.automatico-y-reserva",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Profundiza en embragues y reserva mediante una actividad visual."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.complications.calendarios",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Ofrece anatomía visual del calendario básico antes de variantes avanzadas."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.advanced.calendars",
+          "lesson.advanced.chronograph-control"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.advanced.calendars",
+            "role": "optional-branch",
+            "reason": "Mecánica avanzada del calendario."
+          },
+          {
+            "lessonId": "lesson.advanced.chronograph-control",
+            "role": "optional-branch",
+            "reason": "Control de cronógrafo fuera de la columna vertebral."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.mechanical.follow-automatic-energy",
+          "activity.encyclopedia.complications.automatico-y-reserva",
+          "activity.encyclopedia.complications.calendarios"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.3.1",
+        "stageId": "stage.3",
+        "order": 1,
+        "title": "Observar e inspeccionar antes de desmontar",
+        "description": "Separar observación, inferencia, historia y línea base.",
+        "whyNow": "La inspección precede a la intervención.",
+        "outcome": "Registrar una observación sin convertirla prematuramente en diagnóstico.",
+        "optionalActivityIds": [
+          "activity.metrology.separar-observacion-e-hipotesis"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.2.6"
+        ],
+        "optionalBranchIds": [
+          "branch.historical-cases"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Tres perspectivas compatibles fijan el hábito de observar antes de intervenir.",
+        "anchorLessonIds": [
+          "lesson.metrology.observe-before-measuring",
+          "lesson.metrology.inspection-findings",
+          "lesson.encyclopedia.service-tribology.recepcion-y-linea-base"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.metrology.observe-before-measuring",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Objetivo y prácticas separan observación e hipótesis."
+          },
+          {
+            "lessonId": "lesson.metrology.inspection-findings",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Estructura un hallazgo y su evidencia R sin atribuir inspección física."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.service-tribology.recepcion-y-linea-base",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Introduce recepción e historia como línea base previa al servicio."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.service-tribology.tm-inspeccion-previa"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+            "role": "optional-branch",
+            "reason": "Caso histórico de inspección, no procedimiento prohibido por herencia de fuente."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.metrology.preparar-una-inspeccion",
+          "activity.metrology.registrar-hallazgo",
+          "activity.encyclopedia.service-tribology.recepcion-y-linea-base"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.3.2",
+        "stageId": "stage.3",
+        "order": 2,
+        "title": "Medir, registrar y comparar",
+        "description": "Elegir instrumento, resolución y registro adecuados.",
+        "whyNow": "Una hipótesis solo puede comprobarse con observaciones comparables.",
+        "outcome": "Elegir una medición y comunicar su límite sin inventar precisión.",
+        "optionalActivityIds": [
+          "activity.metrology.detectar-paralaje",
+          "activity.metrology.medir-distancia-entre-centros"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.3.1"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Metrología introducida por necesidad y con frontera física explícita.",
+        "anchorLessonIds": [
+          "lesson.metrology.units-scale-resolution",
+          "lesson.metrology.instruments",
+          "lesson.metrology.physical-measurement"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.metrology.units-scale-resolution",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Base cuantitativa explícita con práctica de resolución."
+          },
+          {
+            "lessonId": "lesson.metrology.instruments",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "La selección de instrumento resuelve una necesidad concreta."
+          },
+          {
+            "lessonId": "lesson.metrology.physical-measurement",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Conecta el registro con una pieza física, pero la actividad actual solo produce K/R y no acredita P."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.metrology.precision-accuracy-uncertainty",
+          "lesson.metrology.compare-data"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.metrology.precision-accuracy-uncertainty",
+            "role": "support",
+            "reason": "Profundiza incertidumbre cuando ya existe una tarea de medición."
+          },
+          {
+            "lessonId": "lesson.metrology.compare-data",
+            "role": "support",
+            "reason": "Comparación posterior de registros."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.metrology.diferenciar-resolucion-y-precision",
+          "activity.metrology.seleccionar-instrumento",
+          "activity.metrology.medir-diametro"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": true,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "P",
+          "note": "La ruta conceptual puede avanzar con K/V/R, pero la competencia de banco queda pendiente hasta disponer de evidencia P documentada."
+        }
+      },
+      {
+        "chapterId": "chapter.3.3",
+        "stageId": "stage.3",
+        "order": 3,
+        "title": "Síntoma, hipótesis y prueba diagnóstica",
+        "description": "Formular hipótesis y seleccionar una prueba discriminante.",
+        "whyNow": "Diagnosticar requiere observación y medición previas.",
+        "outcome": "Defender una hipótesis y explicar qué resultado la refutaría.",
+        "optionalActivityIds": [
+          "activity.horology.predict-interruption"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.3.2"
+        ],
+        "optionalBranchIds": [
+          "branch.historical-cases"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "La hipótesis se practica primero en modelo y después en casos documentales.",
+        "anchorLessonIds": [
+          "lesson.horology.failure-prediction",
+          "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+          "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.horology.failure-prediction",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Práctica de hipótesis, predicción y transferencia sobre un sistema conocido."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Alinea diagnóstico causal con control final."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Caso histórico con prueba discriminante y evidencia K/V/R, sin heredar peligro de la obra completa."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.atlas-restoration-design.tm-hamilton-992b"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
+            "role": "optional-branch",
+            "reason": "Caso histórico cuyos tres marcos modernos dejan de ser bloqueantes."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.horology.justify-hypothesis",
+          "activity.encyclopedia.service-tribology.diagnostico-y-control-final",
+          "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.3.4",
+        "stageId": "stage.3",
+        "order": 4,
+        "title": "Limpieza, lubricación, servicio y criterios de aceptación",
+        "description": "Planificar decisiones de servicio y puntos de control sin convertir fuentes históricas en instrucciones vigentes.",
+        "whyNow": "El servicio se plantea después del diagnóstico, no antes.",
+        "outcome": "Justificar una decisión de limpieza o lubricación y definir su aceptación.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.3.3"
+        ],
+        "optionalBranchIds": [
+          "branch.advanced-service"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "source-review-required",
+        "curationReason": "Separamos criterio moderno de servicio y contexto histórico.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+          "lesson.encyclopedia.service-tribology.tribologia-y-lubricantes",
+          "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Vincula limpieza con inspección y clasificación de defectos."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.service-tribology.tribologia-y-lubricantes",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Introduce lubricación como decisión documentada, no receta histórica."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Organiza el montaje por funciones y verificaciones parciales."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.advanced.service-clean-lube"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.advanced.service-clean-lube",
+            "role": "optional-branch",
+            "reason": "Método avanzado de servicio documentado."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.encyclopedia.service-tribology.limpieza-e-inspeccion",
+          "activity.encyclopedia.service-tribology.tribologia-y-lubricantes",
+          "activity.encyclopedia.service-tribology.montaje-y-puntos-de-control"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.4.1",
+        "stageId": "stage.4",
+        "order": 1,
+        "title": "Identificación, documentación y arquitectura del MIYOTA 8215",
+        "description": "Entrar en un calibre concreto desde su identidad y documentación oficial.",
+        "whyNow": "El calibre real se estudia después de comprender sus subsistemas.",
+        "outcome": "Identificar un 8215, localizar una especificación y reconstruir sus capas.",
+        "optionalActivityIds": [
+          "activity.miyota8215.classify-provenance",
+          "activity.miyota8215.detect-document-limit"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.3.4"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Tres unidades oficiales y estructurales abren la especialización mecánica real.",
+        "anchorLessonIds": [
+          "lesson.miyota8215.identify",
+          "lesson.miyota8215.documentation",
+          "lesson.miyota8215.architecture"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.miyota8215.identify",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Usa identidad y procedencia antes de interpretar piezas."
+          },
+          {
+            "lessonId": "lesson.miyota8215.documentation",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Practica documentación oficial y sus límites."
+          },
+          {
+            "lessonId": "lesson.miyota8215.architecture",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Conecta el sistema funcional con la arquitectura real del calibre."
+          }
+        ],
+        "supportingLessonIds": [],
+        "supportingLessons": [],
+        "requiredActivityIds": [
+          "activity.miyota8215.identify-calibre",
+          "activity.miyota8215.locate-specification",
+          "activity.miyota8215.classify-subsystems"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.4.2",
+        "stageId": "stage.4",
+        "order": 2,
+        "title": "Subsistemas del MIYOTA 8215",
+        "description": "Recorrer carga, mando, energía, tren, escape y calendario en el calibre real.",
+        "whyNow": "La arquitectura general se vuelve concreta subsistema a subsistema.",
+        "outcome": "Relacionar cada subsistema del 8215 con su función y dependencia.",
+        "optionalActivityIds": [
+          "activity.miyota8215.run-calendar-cycle"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.4.1"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Agrupa seis unidades existentes sin presentarlas como seis decisiones equivalentes.",
+        "anchorLessonIds": [
+          "lesson.miyota8215.automatic",
+          "lesson.miyota8215.winding-setting",
+          "lesson.miyota8215.barrel-energy",
+          "lesson.miyota8215.train",
+          "lesson.miyota8215.escapement-oscillator"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.miyota8215.automatic",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Transfiere la carga automática conceptual al 8215."
+          },
+          {
+            "lessonId": "lesson.miyota8215.winding-setting",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Reconstruye estados de cuerda y puesta en hora específicos."
+          },
+          {
+            "lessonId": "lesson.miyota8215.barrel-energy",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Sigue energía desde el barrilete real."
+          },
+          {
+            "lessonId": "lesson.miyota8215.train",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Identifica el tren y permite comprobar una interrupción."
+          },
+          {
+            "lessonId": "lesson.miyota8215.escapement-oscillator",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Transfiere escape y oscilador al modelo estructural del calibre."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.miyota8215.calendar"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.miyota8215.calendar",
+            "role": "support",
+            "reason": "Sexta unidad del bloque, visible como profundización para respetar el límite de cinco anchors."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.miyota8215.follow-automatic",
+          "activity.miyota8215.reconstruct-winding-states",
+          "activity.miyota8215.follow-barrel-energy",
+          "activity.miyota8215.identify-train",
+          "activity.miyota8215.follow-escapement"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.4.3",
+        "stageId": "stage.4",
+        "order": 3,
+        "title": "Desmontaje guiado y reducción de ayuda",
+        "description": "Planificar y ejecutar virtualmente una secuencia con ayuda decreciente.",
+        "whyNow": "La manipulación y la inspección ya se han trabajado antes del desmontaje.",
+        "outcome": "Completar un desmontaje virtual independiente y documentar la secuencia.",
+        "optionalActivityIds": [
+          "activity.miyota8215.remove-rotor",
+          "activity.miyota8215.assisted-disassembly"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.4.2"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "La secuencia conserva el andamiaje pedagógico real de las actividades.",
+        "anchorLessonIds": [
+          "lesson.miyota8215.plan-disassembly",
+          "lesson.miyota8215.guided-disassembly",
+          "lesson.miyota8215.assisted-free-disassembly"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.miyota8215.plan-disassembly",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Exige plan antes de acción."
+          },
+          {
+            "lessonId": "lesson.miyota8215.guided-disassembly",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Presenta la secuencia con apoyo explícito."
+          },
+          {
+            "lessonId": "lesson.miyota8215.assisted-free-disassembly",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Reduce ayuda y comprueba transferencia virtual; no se etiqueta como P."
+          }
+        ],
+        "supportingLessonIds": [],
+        "supportingLessons": [],
+        "requiredActivityIds": [
+          "activity.miyota8215.create-disassembly-plan",
+          "activity.miyota8215.guided-disassembly",
+          "activity.miyota8215.free-disassembly"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.4.4",
+        "stageId": "stage.4",
+        "order": 4,
+        "title": "Inspección, montaje y verificaciones",
+        "description": "Inspeccionar el estado y montar por capas con comprobaciones parciales.",
+        "whyNow": "No se monta sin inspeccionar y no se espera al final para verificar.",
+        "outcome": "Registrar un hallazgo y completar un montaje virtual con controles intermedios.",
+        "optionalActivityIds": [
+          "activity.miyota8215.guided-assembly",
+          "activity.miyota8215.free-assembly"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.4.3"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Respeta inspección antes de intervención y verificación por capas.",
+        "anchorLessonIds": [
+          "lesson.miyota8215.inspection",
+          "lesson.miyota8215.assembly-verification"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.miyota8215.inspection",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Pide inspección y resultado K/V/R sin afirmar observación física."
+          },
+          {
+            "lessonId": "lesson.miyota8215.assembly-verification",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Integra montaje y verificación parcial como un solo contrato."
+          }
+        ],
+        "supportingLessonIds": [],
+        "supportingLessons": [],
+        "requiredActivityIds": [
+          "activity.miyota8215.inspect-parts",
+          "activity.miyota8215.partial-verifications"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.4.5",
+        "stageId": "stage.4",
+        "order": 5,
+        "title": "Diagnóstico, transferencia y dossier final",
+        "description": "Cerrar el caso con hipótesis, comprobación y límites de transferencia.",
+        "whyNow": "El diagnóstico final necesita conocer arquitectura, secuencia e inspección del 8215.",
+        "outcome": "Completar y defender un diagnóstico virtual del calibre.",
+        "optionalActivityIds": [
+          "activity.miyota8215.final-project"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.4.4"
+        ],
+        "optionalBranchIds": [
+          "branch.quartz-initiation",
+          "branch.comparative-atlas"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Una única puerta final evita que las actividades de diagnóstico compitan entre sí.",
+        "anchorLessonIds": [
+          "lesson.miyota8215.diagnosis-project"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.miyota8215.diagnosis-project",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Proyecto final con hipótesis, prueba, mastery-check y transferencia explícita."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.advanced.service-disassembly"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.advanced.service-disassembly",
+            "role": "optional-branch",
+            "reason": "Método avanzado por dependencias, no memoria."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.miyota8215.complete-diagnosis"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.5.1",
+        "stageId": "stage.5",
+        "order": 1,
+        "title": "Requisitos y elección del movimiento",
+        "description": "Definir el reloj y justificar un movimiento adquirido antes de diseñar el exterior.",
+        "whyNow": "Construir un reloj completo es un objetivo autónomo después del servicio de un calibre.",
+        "outcome": "Redactar un pliego y seleccionar un movimiento con criterios verificables.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.4.5"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "El producto comienza por requisitos y selección, no por fabricar componentes.",
+        "anchorLessonIds": [
+          "lesson.capstone.design.requirements",
+          "lesson.capstone.design.acquired-movement"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.capstone.design.requirements",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Contrato de pliego y arquitectura con resultado revisable."
+          },
+          {
+            "lessonId": "lesson.capstone.design.acquired-movement",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Se centra explícitamente en integrar un movimiento adquirido."
+          }
+        ],
+        "supportingLessonIds": [],
+        "supportingLessons": [],
+        "requiredActivityIds": [
+          "activity.capstone.design.requirements",
+          "activity.capstone.design.acquired-movement"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.5.2",
+        "stageId": "stage.5",
+        "order": 2,
+        "title": "Movimiento, caja, aro, tija y cadena axial",
+        "description": "Relacionar encaje, mando y dimensiones exteriores sin fingir cobertura del aro o la holgura posterior.",
+        "whyNow": "Las interfaces estructurales condicionan esfera, agujas y cierre.",
+        "outcome": "Construir una matriz de compatibilidad parcial movimiento-caja-mando.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.5.1"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [
+          "stage5-gap.movement-holder",
+          "stage5-gap.caseback-clearance"
+        ],
+        "coverageStatus": "partial",
+        "curationReason": "Hay base real para caja y mando, pero faltan aro y holgura posterior verificables.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.cases-water.arquitectura-de-caja",
+          "lesson.encyclopedia.cases-water.corona-tubo-y-tija",
+          "lesson.encyclopedia.cases-water.toh-exterior-interfaces"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.cases-water.arquitectura-de-caja",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Objetivo explícito de arquitectura y encaje del movimiento."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.cases-water.corona-tubo-y-tija",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Cubre la cadena de mando y sus interfaces."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.cases-water.toh-exterior-interfaces",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Integra el exterior como cadena de interfaces."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.capstone.manufacturing.case"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.capstone.manufacturing.case",
+            "role": "support",
+            "reason": "Fabricación de caja posterior; no sustituye integración."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.encyclopedia.cases-water.arquitectura-de-caja",
+          "activity.encyclopedia.cases-water.corona-tubo-y-tija",
+          "activity.encyclopedia.cases-water.toh-exterior-interfaces"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.5.3",
+        "stageId": "stage.5",
+        "order": 3,
+        "title": "Esfera, pies, agujas y apilamiento",
+        "description": "Relacionar esfera y agujas con las interfaces del movimiento.",
+        "whyNow": "La cadena axial solo puede cerrarse después de fijar caja y mando.",
+        "outcome": "Definir las interfaces conocidas y marcar como desconocidas las cotas todavía ausentes.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.5.2"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [
+          "stage5-gap.dial-feet",
+          "stage5-gap.dial-diameter",
+          "stage5-gap.hand-holes-fit",
+          "stage5-gap.hour-wheel-stack"
+        ],
+        "coverageStatus": "partial",
+        "curationReason": "Las interfaces existen, pero cuatro datos de compatibilidad siguen sin cobertura completa.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+          "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Cubre arquitectura, pies, aberturas e interfaces sin inventar medidas."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Cubre geometría, tubos, ajuste y alturas de agujas."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.capstone.manufacturing.hands"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.capstone.manufacturing.hands",
+            "role": "support",
+            "reason": "Plan de fabricación posterior, no cobertura de integración completa."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+          "activity.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.5.4",
+        "stageId": "stage.5",
+        "order": 4,
+        "title": "Cristal, fondo, juntas, hermeticidad e interferencias",
+        "description": "Cerrar el volumen exterior y revisar rutas de fuga e interferencias.",
+        "whyNow": "El cierre solo puede evaluarse cuando la cadena axial ya está definida.",
+        "outcome": "Enumerar interfaces de cierre y distinguir verificación disponible de ensayo pendiente.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.5.3"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [
+          "stage5-gap.dynamic-interferences"
+        ],
+        "coverageStatus": "partial",
+        "curationReason": "Cristal y juntas están cubiertos; fondo, holgura e interferencias requieren blueprint y documentación oficial.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.cases-water.cristales-y-biseles",
+          "lesson.encyclopedia.cases-water.toh-materiales-exterior"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.cases-water.cristales-y-biseles",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Cubre cristal, bisel y tensiones con límites explícitos."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.cases-water.toh-materiales-exterior",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Integra materiales, juntas y fijaciones exteriores."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.cases-water.pruebas-de-presion"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.cases-water.pruebas-de-presion",
+            "role": "support",
+            "reason": "Ensayo especializado posterior con límites de seguridad."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.encyclopedia.cases-water.cristales-y-biseles",
+          "activity.encyclopedia.cases-water.toh-materiales-exterior"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.5.5",
+        "stageId": "stage.5",
+        "order": 5,
+        "title": "Montaje final, compatibilidad, piezas donantes y validación",
+        "description": "Consolidar decisiones en un dossier sin afirmar que el montaje físico ya se realizó.",
+        "whyNow": "La validación integra todas las interfaces anteriores.",
+        "outcome": "Defender un dossier de compatibilidad y registrar límites y pruebas pendientes.",
+        "optionalActivityIds": [
+          "activity.mechanical.document-limitations"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.5.4"
+        ],
+        "optionalBranchIds": [
+          "branch.historical-cases"
+        ],
+        "plannedContentRefs": [
+          "stage5-gap.final-assembly-verification"
+        ],
+        "coverageStatus": "partial",
+        "curationReason": "El contenido existente permite dossier parcial, pero no cubre orden final ni verificación integral.",
+        "anchorLessonIds": [
+          "lesson.capstone.design.capstone",
+          "lesson.mechanical.final-project",
+          "lesson.capstone.validation.calibre-transfer"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.capstone.design.capstone",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Puerta de prototipo con dossier y revisión, no acreditación de fabricación."
+          },
+          {
+            "lessonId": "lesson.mechanical.final-project",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Integra fallos, hipótesis y límites en un proyecto virtual."
+          },
+          {
+            "lessonId": "lesson.capstone.validation.calibre-transfer",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Comprueba transferencia sin generalizar dimensiones entre calibres."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+            "role": "support",
+            "reason": "Introduce donantes y repuestos como contexto, no como montaje completo."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.capstone.design.capstone",
+          "activity.mechanical.build-final-project",
+          "activity.capstone.validation.calibre-transfer"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.6.1",
+        "stageId": "stage.6",
+        "order": 1,
+        "title": "Micromecánica, herramientas y preparación",
+        "description": "Preparar referencias, sujeción y procesos antes de fabricar.",
+        "whyNow": "Fabricar componentes viene después de integrar componentes existentes.",
+        "outcome": "Definir datum, sujeción, secuencia e inspección de una pieza.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.5.5"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "source-review-required",
+        "curationReason": "Dos anchors separan planificación digital de ejecución especialista y conservan riesgos como restricciones.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+          "lesson.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Objetivo de trazado, referencia y sujeción con nivel specialist-workshop explícito."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Introduce el torno como operación real de taller especializado, sin fingir ejecución."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.workshop-tools-materials.herramientas-y-afilado"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.workshop-tools-materials.herramientas-y-afilado",
+            "role": "support",
+            "reason": "Consulta de herramientas y afilado antes de operaciones concretas."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.encyclopedia.micromechanics.trazado-medicion-y-sujecion",
+          "activity.encyclopedia.micromechanics.torno-y-trabajo-entre-puntos"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": true,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "P",
+          "note": "La ruta conceptual puede avanzar con K/V/R, pero la competencia de banco queda pendiente hasta disponer de evidencia P documentada."
+        }
+      },
+      {
+        "chapterId": "chapter.6.2",
+        "stageId": "stage.6",
+        "order": 2,
+        "title": "Ejes, pivotes, tijas, rubíes y cojinetes",
+        "description": "Planificar geometría, procesos y aceptación de componentes pequeños.",
+        "whyNow": "Estas piezas exigen control previo de torno, referencias e inspección.",
+        "outcome": "Proponer un proceso y criterio de aceptación sin declarar la pieza fabricada.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.6.1"
+        ],
+        "optionalBranchIds": [
+          "branch.bench-passports"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "source-review-required",
+        "curationReason": "La progresión de taller es válida, pero ninguna simulación acredita fabricación física.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+          "lesson.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+          "lesson.encyclopedia.micromechanics.platinas-puentes-y-jewelling"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Operaciones reales y nivel especialista revisados; la actividad sigue siendo K/V."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Amplía procesos de piezas pequeñas con riesgos y aceptación."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.micromechanics.platinas-puentes-y-jewelling",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Cubre taladro, escariado y rubíes como planificación especialista."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.micromechanics.bulova-tija"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.micromechanics.bulova-tija",
+            "role": "optional-branch",
+            "reason": "Pasaporte histórico de tija; competencia P queda pendiente."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.encyclopedia.micromechanics.ejes-pivotes-y-reparacion",
+          "activity.encyclopedia.micromechanics.tornillos-muelles-y-pequenas-piezas",
+          "activity.encyclopedia.micromechanics.platinas-puentes-y-jewelling"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": true,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "P",
+          "note": "La ruta conceptual puede avanzar con K/V/R, pero la competencia de banco queda pendiente hasta disponer de evidencia P documentada."
+        }
+      },
+      {
+        "chapterId": "chapter.6.3",
+        "stageId": "stage.6",
+        "order": 3,
+        "title": "Ruedas, piñones, platinas y puentes",
+        "description": "Relacionar geometría funcional, proceso e inspección de componentes estructurales.",
+        "whyNow": "Se abordan conjuntos mayores después de adquirir referencias y control de piezas pequeñas.",
+        "outcome": "Defender un plan de fabricación y medición para rueda o puente.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.6.2"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "source-review-required",
+        "curationReason": "Los anchors tienen contratos de fabricación, nivel de ejecución y resultados revisables.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.micromechanics.ruedas-y-pinones",
+          "lesson.capstone.manufacturing.plates-bridges",
+          "lesson.capstone.manufacturing.micromechanics"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.micromechanics.ruedas-y-pinones",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Contrato de fabricación K/V/R y taller especialista revisado."
+          },
+          {
+            "lessonId": "lesson.capstone.manufacturing.plates-bridges",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Integra apoyos, rubíes y criterios de aceptación."
+          },
+          {
+            "lessonId": "lesson.capstone.manufacturing.micromechanics",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Planifica ejes, piñones, tornillos y muelles bajo un contrato común."
+          }
+        ],
+        "supportingLessonIds": [],
+        "supportingLessons": [],
+        "requiredActivityIds": [
+          "activity.encyclopedia.micromechanics.ruedas-y-pinones",
+          "activity.capstone.manufacturing.plates-bridges",
+          "activity.capstone.manufacturing.micromechanics"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": true,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "P",
+          "note": "La ruta conceptual puede avanzar con K/V/R, pero la competencia de banco queda pendiente hasta disponer de evidencia P documentada."
+        }
+      },
+      {
+        "chapterId": "chapter.6.4",
+        "stageId": "stage.6",
+        "order": 4,
+        "title": "Repuestos, piezas donantes, cajas, esferas y acabados",
+        "description": "Decidir entre conservar, adaptar, sustituir o fabricar y documentar el acabado.",
+        "whyNow": "La decisión de intervención necesita dominio previo de interfaces y procesos.",
+        "outcome": "Defender una estrategia de repuesto y un plan de acabado seguro.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.6.3"
+        ],
+        "optionalBranchIds": [
+          "branch.historical-cases"
+        ],
+        "plannedContentRefs": [],
+        "coverageStatus": "source-review-required",
+        "curationReason": "Cierra adaptación y fabricación con contratos explícitos y revisión de seguridad.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+          "lesson.capstone.manufacturing.case",
+          "lesson.capstone.manufacturing.dial",
+          "lesson.capstone.manufacturing.hands",
+          "lesson.capstone.manufacturing.decoration"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Distingue donante, restauración y fabricación sin generalizar un caso."
+          },
+          {
+            "lessonId": "lesson.capstone.manufacturing.case",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Contrato de fabricación de caja con revisión K/V/R."
+          },
+          {
+            "lessonId": "lesson.capstone.manufacturing.dial",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Contrato de esfera y superficies gráficas."
+          },
+          {
+            "lessonId": "lesson.capstone.manufacturing.hands",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Contrato de agujas, cañones y holguras."
+          },
+          {
+            "lessonId": "lesson.capstone.manufacturing.decoration",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Acabado ligado a función y seguridad, no decoración aislada."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.encyclopedia.dials-hands-finishing.pulido-satinado-y-cepillado",
+            "role": "support",
+            "reason": "Profundización de acabados con riesgos y geometría."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+          "activity.capstone.manufacturing.case",
+          "activity.capstone.manufacturing.dial",
+          "activity.capstone.manufacturing.hands",
+          "activity.capstone.manufacturing.decoration"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": true,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "P",
+          "note": "La ruta conceptual puede avanzar con K/V/R, pero la competencia de banco queda pendiente hasta disponer de evidencia P documentada."
+        }
+      },
+      {
+        "chapterId": "chapter.7.1",
+        "stageId": "stage.7",
+        "order": 1,
+        "title": "Requisitos y arquitectura de un movimiento propio",
+        "description": "Pasar del movimiento adquirido a una arquitectura propia justificable.",
+        "whyNow": "Diseñar un movimiento propio es una etapa avanzada posterior a integración y fabricación.",
+        "outcome": "Definir requisitos, subsistemas, interfaces y decisiones de arquitectura.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.6.4"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Tres anchors forman una puerta de diseño sin requerir crear geometría ausente.",
+        "anchorLessonIds": [
+          "lesson.capstone.design.own-movement",
+          "lesson.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+          "lesson.advanced.architecture-capstone"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.capstone.design.own-movement",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Objetivo explícito de arquitectura propia con evidencia K/R."
+          },
+          {
+            "lessonId": "lesson.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Puente conceptual entre integración y movimiento propio."
+          },
+          {
+            "lessonId": "lesson.advanced.architecture-capstone",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Exige defender una arquitectura completa y sus compromisos."
+          }
+        ],
+        "supportingLessonIds": [],
+        "supportingLessons": [],
+        "requiredActivityIds": [
+          "activity.capstone.design.own-movement",
+          "activity.encyclopedia.atlas-restoration-design.de-movimiento-adquirido-a-propio",
+          "activity.advanced.architecture-capstone"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.7.2",
+        "stageId": "stage.7",
+        "order": 2,
+        "title": "Diseño, tolerancias, fabricación y planificación del prototipo",
+        "description": "Relacionar tolerancias, datums, riesgos y verificaciones antes del prototipo.",
+        "whyNow": "Una arquitectura necesita presupuestos verificables antes de fabricar.",
+        "outcome": "Construir un plan de prototipo con tolerancias, aceptación y riesgos.",
+        "optionalActivityIds": [],
+        "prerequisiteChapterIds": [
+          "chapter.7.1"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "Las matemáticas reaparecen cuando resuelven decisiones de tolerancia y fabricación.",
+        "anchorLessonIds": [
+          "lesson.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+          "lesson.capstone.manufacturing.dfm-datums"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Aplica tolerancia, capacidad y FMEA a una necesidad de diseño real."
+          },
+          {
+            "lessonId": "lesson.capstone.manufacturing.dfm-datums",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Contrato DFM con datums y verificación; se reutiliza como conocimiento transversal, pero su anchor canónico permanece aquí."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.advanced.ultra-thin"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.advanced.ultra-thin",
+            "role": "optional-branch",
+            "reason": "Caso avanzado de presupuesto axial."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.encyclopedia.math-physics-metrology.tolerancias-y-fiabilidad",
+          "activity.capstone.manufacturing.dfm-datums"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      },
+      {
+        "chapterId": "chapter.7.3",
+        "stageId": "stage.7",
+        "order": 3,
+        "title": "Ensayo, iteración, dossier y validación independiente",
+        "description": "Cerrar el ciclo con pruebas, hallazgos, iteración y revisión humana.",
+        "whyNow": "El diseño no termina hasta contrastar resultados con criterios independientes.",
+        "outcome": "Defender un dossier de validación y registrar decisiones de iteración.",
+        "optionalActivityIds": [
+          "activity.metrology.completar-dossier"
+        ],
+        "prerequisiteChapterIds": [
+          "chapter.7.2"
+        ],
+        "optionalBranchIds": [],
+        "plannedContentRefs": [],
+        "coverageStatus": "complete",
+        "curationReason": "La validación exige resultado revisado y decisión humana sin afirmar prototipo físico fabricado.",
+        "anchorLessonIds": [
+          "lesson.metrology.final-project",
+          "lesson.capstone.validation.watchmaker-review"
+        ],
+        "anchorReviews": [
+          {
+            "lessonId": "lesson.metrology.final-project",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "El dossier y su defensa usan K/V/R y no confunden revisión con ejecución física."
+          },
+          {
+            "lessonId": "lesson.capstone.validation.watchmaker-review",
+            "role": "anchor",
+            "titleReviewed": true,
+            "objectiveReviewed": true,
+            "activitiesReviewed": true,
+            "prerequisitesReviewed": true,
+            "sourceRolesReviewed": true,
+            "curationMethod": "manual-curation",
+            "curationConfidence": "high",
+            "reason": "Revisión relojera independiente como cierre explícito del recorrido."
+          }
+        ],
+        "supportingLessonIds": [
+          "lesson.capstone.design.capstone"
+        ],
+        "supportingLessons": [
+          {
+            "lessonId": "lesson.capstone.design.capstone",
+            "role": "reference",
+            "reason": "Dossier de integración consultable como antecedente, sin duplicarlo en el denominador."
+          }
+        ],
+        "requiredActivityIds": [
+          "activity.metrology.defender-el-proyecto-final",
+          "activity.capstone.validation.watchmaker-review"
+        ],
+        "curationMethod": "manual-curation",
+        "curationConfidence": "high",
+        "completionPolicy": {
+          "anchorLessons": "all-studied",
+          "requiredActivities": "all-satisfied",
+          "physicalEvidence": "tracked-separately"
+        },
+        "physicalEvidencePolicy": {
+          "physicalCompetenceClaim": false,
+          "conceptualProgressCanCompleteWithoutPhysicalEvidence": true,
+          "requiredPhysicalModality": "none",
+          "note": "La evidencia K/V/R disponible permite avance conceptual; no se declara destreza física."
+        }
+      }
+    ],
+    "optionalBranches": [
+      {
+        "branchId": "branch.quartz-initiation",
+        "stageId": "stage.0",
+        "title": "Iniciación en cuarzo MIYOTA 2035",
+        "description": "Especialización práctica no bloqueante.",
+        "routeIds": [
+          "route.quartz2035.isa-to-2035"
+        ],
+        "blocking": false
+      },
+      {
+        "branchId": "branch.history-context",
+        "stageId": "stage.1",
+        "title": "Historia y lenguaje relojero",
+        "description": "Contexto cultural e histórico.",
+        "routeIds": [
+          "route.encyclopedia.history-language"
+        ],
+        "blocking": false
+      },
+      {
+        "branchId": "branch.quartz-theory",
+        "stageId": "stage.1",
+        "title": "Teoría del cuarzo",
+        "description": "Arquitectura electrónica como comparación.",
+        "routeIds": [
+          "route.encyclopedia.quartz-electronics"
+        ],
+        "blocking": false
+      },
+      {
+        "branchId": "branch.complications",
+        "stageId": "stage.2",
+        "title": "Complicaciones",
+        "description": "Ampliaciones mecánicas posteriores a los fundamentos.",
+        "routeIds": [
+          "route.encyclopedia.complications",
+          "route.advanced.architectures-complications"
+        ],
+        "blocking": false
+      },
+      {
+        "branchId": "branch.historical-cases",
+        "stageId": "stage.3",
+        "title": "Casos históricos y restauración",
+        "description": "Casos para transferencia y contexto, no instrucciones modernas automáticas.",
+        "routeIds": [
+          "route.encyclopedia.atlas-restoration-design"
+        ],
+        "blocking": false
+      },
+      {
+        "branchId": "branch.advanced-service",
+        "stageId": "stage.3",
+        "title": "Método de servicio avanzado",
+        "description": "Métodos documentales y procedimientos avanzados.",
+        "routeIds": [
+          "route.advanced.service-method"
+        ],
+        "blocking": false
+      },
+      {
+        "branchId": "branch.comparative-atlas",
+        "stageId": "stage.4",
+        "title": "Atlas comparativo",
+        "description": "Comparación entre familias y calibres.",
+        "routeIds": [
+          "route.advanced.comparative-atlas"
+        ],
+        "blocking": false
+      },
+      {
+        "branchId": "branch.bench-passports",
+        "stageId": "stage.6",
+        "title": "Pasaportes de banco",
+        "description": "Progresión psicomotriz histórica con evidencia P separada.",
+        "routeIds": [
+          "route.encyclopedia.workshop-tools-materials"
+        ],
+        "blocking": false
+      }
+    ]
+  }
+}

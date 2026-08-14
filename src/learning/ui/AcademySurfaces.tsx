@@ -12,15 +12,12 @@ import {
   CircleAlert,
   ClipboardCheck,
   Clock3,
-  CloudOff,
   Download,
   DraftingCompass,
   Eye,
   Factory,
   FileCheck2,
-  Filter,
   Gauge,
-  GraduationCap,
   Layers3,
   ListChecks,
   Microscope,
@@ -50,7 +47,6 @@ import type { MasteryState } from '../assessment'
 import {
   academyMilestoneJourney,
   LEARNING_CYCLE,
-  personalizedStartingPoint,
 } from '../academy/academyPedagogy'
 import {
   academyActivityAchievement,
@@ -62,7 +58,6 @@ import {
   academyRoutePrerequisiteStatus,
   academyRouteTree,
   buildAcademySearchIndex,
-  currentAcademyRoute,
   humanizeLearningId,
   realAcademyRoutes,
   type AcademySearchEntry,
@@ -74,6 +69,7 @@ import {
 } from '../academy/academyLocalState'
 import { buildAcademyLearnerModel } from '../academy/academyPersonalization'
 import { useAcademyLocalState } from '../academy/useAcademyLocalState'
+import { effectiveLessonPrerequisiteConceptIds } from '../academy/path/academyPathPrerequisites'
 import { segmentLessonBlock } from '../academy/lessonSegmentation'
 import {
   ARCHITECTURE_FAMILIES,
@@ -90,6 +86,10 @@ import { INTEGRATED_LEARNING_CONTENT } from '../product/integratedContent'
 import type { EducationalSceneGraph, EducationalVisualState } from '../visual/model'
 import { createSceneComposition } from '../visual/sceneFixtures'
 import { useLearning } from './LearningContext'
+import { AcademyLibrarySurface } from './library/AcademyLibrarySurface'
+import { AcademyPathBreadcrumbs } from './path/AcademyPathBreadcrumbs'
+import { academyModuleEntryHref } from '../academy/path/academyPathLinks'
+import { AcademyPathHomeSurface, AcademyPathSurface } from './path/AcademyPathSurface'
 import {
   friendlyAssessmentSummary,
   friendlyAssessmentIntent,
@@ -167,17 +167,20 @@ function AcademyPage({
   eyebrow,
   title,
   description,
+  breadcrumbs,
   actions,
   children,
 }: {
   eyebrow: string
   title: string
   description: string
+  breadcrumbs?: ReactNode
   actions?: ReactNode
   children: ReactNode
 }) {
   return (
     <div className="academy-page">
+      {breadcrumbs}
       <header className="academy-page-header">
         <div>
           <span className="academy-kicker">{eyebrow}</span>
@@ -371,281 +374,6 @@ function LessonModelPreview({ activity, label }: { activity?: LearningActivityDe
   )
 }
 
-function HomeSurface() {
-  const { snapshot } = useLearning()
-  const { state: academyState } = useAcademyLocalState(snapshot.profile?.id)
-  const routes = realAcademyRoutes(snapshot.product)
-  const route = currentAcademyRoute(snapshot)
-  const routeProgress = route ? academyRouteProgress(snapshot, route.id) : undefined
-  const startingPoint = personalizedStartingPoint(snapshot, academyState)
-  const recovery = snapshot.sessions.items.filter(({ state }) => state === 'interrupted' || state === 'suspended')
-  const visibleActivityIds = new Set(routes.flatMap((item) => academyRouteTree(snapshot.product, item.id)?.activityIds ?? []))
-  const totalActivities = visibleActivityIds.size
-  const completed = new Set(snapshot.sessions.items
-    .filter(({ activityId, state }) => state === 'completed' && visibleActivityIds.has(activityId))
-    .map(({ activityId }) => activityId))
-  const nextLearningUnit = routeProgress?.nextLearningUnit
-  const nextActivity = nextLearningUnit?.kind === 'activity'
-    ? snapshot.product.activities.find(({ id }) => id === nextLearningUnit.activityId)
-    : undefined
-  return (
-    <AcademyPage
-      eyebrow="TU ACADEMIA"
-      title={`Hola, ${snapshot.profile?.displayName ?? 'perfil local'}`}
-      description="Retoma una ruta, practica con un modelo o consulta una pieza. Todo el progreso permanece en este dispositivo."
-      actions={<a className="academy-button is-secondary" href="#/learning/explore">Explorar rutas <ArrowRight size={16} /></a>}
-    >
-      {!snapshot.online && (
-        <div className="academy-offline-banner"><CloudOff size={17} /><span>Estás sin conexión. Las rutas y recursos instalados siguen disponibles.</span></div>
-      )}
-      {academyState && !academyState.onboarding.completed && (
-        <section className="academy-onboarding-invite">
-          <GraduationCap size={21} />
-          <div><strong>Personaliza tu punto de partida</strong><span>Tres elecciones locales adaptan las recomendaciones sin bloquear contenido.</span></div>
-          <a href="#/learning/onboarding">Configurar en un minuto</a>
-        </section>
-      )}
-      <section className="academy-hero-grid">
-        <article className="academy-next-card">
-          <span className="academy-kicker">{startingPoint.basis === 'progress' ? 'CONTINÚA TU RECORRIDO' : 'PUNTO DE PARTIDA RECOMENDADO'}</span>
-          <h2>{startingPoint.title}</h2>
-          <p>{startingPoint.reason}</p>
-          {nextLearningUnit && (
-            <div className="academy-next-card__meta">
-              {nextActivity
-                ? <span><Clock3 size={14} /> {nextActivity.durationMinutes} min</span>
-                : <span><BookOpen size={14} /> Explicación previa</span>}
-              <span>{nextActivity ? activityTypeLabels[nextActivity.activityType] : 'Aprender antes de responder'}</span>
-              <span>Funciona sin conexión</span>
-            </div>
-          )}
-          <div className="academy-button-row">
-            <a className="academy-button is-primary" href={startingPoint.href}>{startingPoint.actionLabel} <ArrowRight size={16} /></a>
-            {route && <a className="academy-text-link" href={`#/learning/route/${encodeURIComponent(route.id)}`}>Ver ruta completa</a>}
-          </div>
-          <details>
-            <summary>Por qué se recomienda</summary>
-            <p>{startingPoint.reason}</p>
-            {startingPoint.caution && <p>{startingPoint.caution}</p>}
-            <p>{startingPoint.basis === 'self-report'
-              ? 'Base: tus respuestas de orientación, claramente separadas de la evidencia.'
-              : startingPoint.basis === 'progress'
-                ? 'Base: sesiones y resultados persistidos en este dispositivo.'
-                : 'Base: recorrido inicial diseñado para no exigir conocimientos previos.'}</p>
-          </details>
-        </article>
-        <article className="academy-overview-card">
-          <span className="academy-kicker">TU PROGRESO</span>
-          <h2>{route ? localize(snapshot.profile?.locale, route.title) : 'Aún no hay una ruta activa'}</h2>
-          {routeProgress && (
-            <>
-              <ProgressMeter value={routeProgress.completedActivities} maximum={routeProgress.totalActivities} label="Prácticas completadas" />
-              <div className="academy-stat-pair">
-                <div><strong>{routeProgress.demonstratedCompetencies + routeProgress.retainedCompetencies}</strong><span>competencias demostradas</span></div>
-                <div><strong>{snapshot.evidence.total}</strong><span>resultados guardados</span></div>
-              </div>
-            </>
-          )}
-          <a href="#/learning/my-learning">Abrir Mi aprendizaje <ChevronRight size={15} /></a>
-        </article>
-      </section>
-      {recovery.length > 0 && (
-        <section className="academy-recovery-strip">
-          <RotateCcw size={20} />
-          <div><strong>{recovery.length === 1 ? 'Tienes una práctica por recuperar' : `Tienes ${recovery.length} prácticas por recuperar`}</strong><span>Revisa el estado guardado antes de reanudar; no se modificará tu proyecto técnico.</span></div>
-          <a href="#/learning/my-learning">Revisar</a>
-        </section>
-      )}
-      <section className="academy-section-heading academy-section-heading--clear">
-        <div><span className="academy-kicker">ELIGE QUÉ NECESITAS AHORA</span><h2>Tres formas de usar la Academia</h2></div>
-        <span>{routes.length} rutas · {totalActivities} prácticas disponibles · {completed.size} completadas</span>
-      </section>
-      <div className="academy-home-paths">
-        <article>
-          <BookOpenCheck size={24} />
-          <div><h3>Estudiar con calma</h3><p>Lee teoría amplia, ejemplos y conceptos previos en un orden guiado.</p></div>
-          <a href="#/learning/explore">Ver todas las rutas <ArrowRight size={15} /></a>
-        </article>
-        <article>
-          <Wrench size={24} />
-          <div><h3>Practicar lo aprendido</h3><p>Trabaja con modelos, procedimientos y ejercicios cuando ya tengas la base.</p></div>
-          <a href="#/learning/workshop">Abrir Taller <ArrowRight size={15} /></a>
-        </article>
-        <article>
-          <DraftingCompass size={24} />
-          <div><h3>Avanzar hacia tu reloj</h3><p>Consulta el mapa que une mecánica, cálculo, fabricación y diseño propio.</p></div>
-          <a href="#/learning/map">Ver mi camino <ArrowRight size={15} /></a>
-        </article>
-      </div>
-      <details className="academy-home-catalog">
-        <summary>Vista rápida de las {routes.length} rutas</summary>
-        <div className="academy-home-catalog__list">
-          {routes.map((item, index) => {
-            const progress = academyRouteProgress(snapshot, item.id)
-            return (
-              <a href={`#/learning/route/${encodeURIComponent(item.id)}`} key={item.id}>
-                <span>{String(index + 1).padStart(2, '0')}</span>
-                <strong>{localize(snapshot.profile?.locale, item.title)}</strong>
-                <small>{progress.completedActivities} de {progress.totalActivities} prácticas</small>
-                <ChevronRight size={15} />
-              </a>
-            )
-          })}
-        </div>
-      </details>
-    </AcademyPage>
-  )
-}
-
-function MyLearningSurface() {
-  const { snapshot } = useLearning()
-  const route = currentAcademyRoute(snapshot)
-  const routes = realAcademyRoutes(snapshot.product)
-  const recoverable = snapshot.sessions.items.filter(({ state }) => ['interrupted', 'suspended'].includes(state))
-  const recent = [...snapshot.sessions.items].sort((a, b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0, 6)
-  const routeProgress = new Map(routes.map((item) => [item.id, academyRouteProgress(snapshot, item.id)]))
-  const prioritizedRoutes = routes
-    .filter((item) => item.id === route?.id || (routeProgress.get(item.id)?.startedActivities ?? 0) > 0)
-    .sort((left, right) => left.id === route?.id ? -1 : right.id === route?.id ? 1 : 0)
-  if (prioritizedRoutes.length === 0) prioritizedRoutes.push(...routes.slice(0, 3))
-  const otherRoutes = routes.filter((item) => !prioritizedRoutes.some(({ id }) => id === item.id))
-  const renderRoute = (item: (typeof routes)[number]) => {
-    const progress = routeProgress.get(item.id) ?? academyRouteProgress(snapshot, item.id)
-    return (
-      <article key={item.id}>
-        <BookOpenCheck size={20} />
-        <div>
-          <h3>{localize(snapshot.profile?.locale, item.title)}</h3>
-          <p>{progress.startedActivities ? `${progress.startedActivities} prácticas iniciadas` : 'Todavía sin iniciar'}</p>
-          <ProgressMeter value={progress.completedActivities} maximum={progress.totalActivities} label="Completadas" />
-        </div>
-        <a href={`#/learning/route/${encodeURIComponent(item.id)}`}>{progress.startedActivities ? 'Continuar' : 'Abrir'}</a>
-      </article>
-    )
-  }
-  return (
-    <AcademyPage eyebrow="MI APRENDIZAJE" title="Tu recorrido, sin puntuaciones opacas" description="Distingue lo iniciado, lo que ya has demostrado y lo que conviene repasar.">
-      {route && (
-        <section className="academy-feature-card">
-          <div>
-            <span className="academy-kicker">RUTA EN CURSO</span>
-            <h2>{localize(snapshot.profile?.locale, route.title)}</h2>
-            <p>{friendlyRecommendationReason(localize(snapshot.profile?.locale, route.purpose))}</p>
-          </div>
-          <div className="academy-feature-card__progress">
-            <ProgressMeter
-              value={academyRouteProgress(snapshot, route.id).completedActivities}
-              maximum={academyRouteProgress(snapshot, route.id).totalActivities}
-              label="Prácticas"
-            />
-            <a className="academy-button is-primary" href={`#/learning/route/${encodeURIComponent(route.id)}`}>Continuar ruta <ArrowRight size={16} /></a>
-          </div>
-        </section>
-      )}
-      {recoverable.length > 0 && (
-        <>
-          <section className="academy-section-heading"><div><span className="academy-kicker">RECUPERACIÓN</span><h2>Prácticas pendientes</h2></div></section>
-          <div className="academy-list">
-            {recoverable.map((session) => {
-              const activity = snapshot.product.activities.find(({ id }) => id === session.activityId)
-              return (
-                <article key={session.id}>
-                  <RotateCcw size={19} />
-                  <div><h3>{activity ? localize(snapshot.profile?.locale, activity.title) : humanizeLearningId(session.activityId)}</h3><p>Intento {session.attempt} · guardado {learningDate(snapshot.profile?.locale, session.updatedAt)}</p></div>
-                  <a href={`#/learning/recovery/${encodeURIComponent(session.id)}`}>Revisar y recuperar</a>
-                </article>
-              )
-            })}
-          </div>
-        </>
-      )}
-      <section className="academy-two-columns">
-        <div>
-          <section className="academy-section-heading"><div><span className="academy-kicker">RUTAS</span><h2>Estado formativo</h2></div></section>
-          <div className="academy-list">
-            {prioritizedRoutes.map(renderRoute)}
-          </div>
-          {otherRoutes.length > 0 && (
-            <details className="academy-my-learning-more">
-              <summary>Explorar otras {otherRoutes.length} rutas</summary>
-              <div className="academy-list">{otherRoutes.map(renderRoute)}</div>
-            </details>
-          )}
-        </div>
-        <div>
-          <section className="academy-section-heading"><div><span className="academy-kicker">ACTIVIDAD</span><h2>Historial reciente</h2></div></section>
-          {recent.length ? (
-            <div className="academy-compact-timeline">
-              {recent.map((session) => {
-                const activity = snapshot.product.activities.find(({ id }) => id === session.activityId)
-                return (
-                  <a href={`#/learning/session/${encodeURIComponent(session.id)}`} key={session.id}>
-                    <i className={`is-${session.state}`} />
-                    <span><strong>{activity ? localize(snapshot.profile?.locale, activity.title) : humanizeLearningId(session.activityId)}</strong><small>{learningDate(snapshot.profile?.locale, session.updatedAt)} · {friendlyLearningTerm(session.state)}</small></span>
-                  </a>
-                )
-              })}
-            </div>
-          ) : <EmptyState icon={Clock3} title="Aún no hay historial" detail="Las sesiones aparecerán aquí después de iniciar la primera práctica." />}
-        </div>
-      </section>
-    </AcademyPage>
-  )
-}
-
-function ExploreSurface() {
-  const { service, snapshot } = useLearning()
-  const locale = snapshot.profile?.locale
-  const routes = realAcademyRoutes(snapshot.product)
-  const [query, setQuery] = useState(snapshot.location.query.q ?? '')
-  const [difficulty, setDifficulty] = useState(snapshot.location.query.difficulty ?? '')
-  const [facet, setFacet] = useState(snapshot.location.query.facet ?? '')
-  const filtered = routes.filter((route) => {
-    const haystack = `${localize(locale, route.title)} ${localize(locale, route.purpose)} ${route.movementIds.join(' ')}`.toLowerCase()
-    const metrologyFacet = ['inspection', 'instrument', 'magnitude', 'metrology', 'photography', 'competency'].includes(facet)
-    const facetMatches = !facet
-      || (metrologyFacet && route.id === 'route.metrology.physical-digital-bridge')
-      || (facet === 'movement' && route.movementIds.length > 0)
-      || (facet === 'part' && route.id !== 'route.metrology.physical-digital-bridge')
-    return (!query || haystack.includes(query.toLowerCase())) && (!difficulty || route.difficulty === difficulty) && facetMatches
-  })
-  return (
-    <AcademyPage eyebrow="EXPLORAR" title="Elige una ruta por objetivo" description="Consulta la estructura de cada ruta y abre sus lecciones, prácticas y modelos interactivos cuando quieras.">
-      <form className="academy-filter-bar" onSubmit={(event) => {
-        event.preventDefault()
-        service.navigate({ surface: 'explore', query: { q: query, difficulty, facet } }, true)
-      }}>
-        <label><Search size={16} /><span className="sr-only">Buscar rutas</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Buscar ruta, calibre o tema" /></label>
-        <label><Filter size={16} /><span className="sr-only">Dificultad</span><select value={difficulty} onChange={(event) => setDifficulty(event.target.value)}><option value="">Todos los niveles</option><option value="introductory">Inicial</option><option value="intermediate">Intermedio</option><option value="advanced">Avanzado</option></select></label>
-        <label><Microscope size={16} /><span className="sr-only">Tema</span><select value={facet} onChange={(event) => setFacet(event.target.value)}><option value="">Todos los temas</option><option value="inspection">Inspección</option><option value="instrument">Herramientas</option><option value="magnitude">Medición</option><option value="part">Piezas</option><option value="movement">Movimientos</option><option value="metrology">Metrología</option><option value="photography">Fotografía</option><option value="competency">Habilidades</option></select></label>
-        <button type="submit">Aplicar</button>
-      </form>
-      <div className="academy-route-grid is-wide">
-        {filtered.map((route, index) => {
-          const tree = academyRouteTree(snapshot.product, route.id)
-          const progress = academyRouteProgress(snapshot, route.id)
-          const prerequisiteStatus = academyRoutePrerequisiteStatus(snapshot, route.id)
-          return (
-            <article className="academy-route-card" key={route.id}>
-              <div className="academy-route-card__number">{String(index + 1).padStart(2, '0')}</div>
-              <span className="academy-kicker">{friendlyDifficulty(route.difficulty)}</span>
-              <h2>{localize(locale, route.title)}</h2>
-              <p>{friendlyRecommendationReason(localize(locale, route.purpose))}</p>
-              <div className="academy-stat-row">
-                <span><strong>{route.moduleIds.length}</strong> {route.moduleIds.length === 1 ? 'módulo' : 'módulos'}</span>
-                <span><strong>{tree?.modules.reduce((sum, item) => sum + item.lessons.length, 0) ?? 0}</strong> lecciones</span>
-                <span><strong>{progress.totalActivities}</strong> prácticas</span>
-              </div>
-              <ProgressMeter value={progress.completedActivities} maximum={progress.totalActivities} label="Completadas" />
-              <footer><span>{prerequisiteStatus.ready ? 'Teoría y práctica disponibles' : 'Teoría consultable · práctica bloqueada'}</span><a className="academy-button is-primary" href={`#/learning/route/${encodeURIComponent(route.id)}`}>{prerequisiteStatus.ready ? 'Ver contenidos' : 'Consultar ruta'} <ArrowRight size={15} /></a></footer>
-            </article>
-          )
-        })}
-      </div>
-      {!filtered.length && <EmptyState icon={Search} title="No hay rutas con estos filtros" detail="Prueba con un término más general o quita el filtro de nivel." />}
-    </AcademyPage>
-  )
-}
 
 function RouteSurface() {
   const { snapshot } = useLearning()
@@ -798,7 +526,8 @@ function RouteSurface() {
             <header>
               <span>{String(moduleIndex + 1).padStart(2, '0')}</span>
               <div><span className="academy-kicker">MÓDULO</span><h2>{localize(locale, module.title)}</h2></div>
-              <a href={`#/learning/module/${encodeURIComponent(module.id)}`}>Abrir módulo</a>
+              <a href={academyModuleEntryHref(module.id, lessons.map(({ id }) => id))}
+              >{lessons.length === 1 ? 'Abrir lección' : 'Abrir módulo'}</a>
             </header>
             <div>
               {lessons.map((lesson, lessonIndex) => {
@@ -831,6 +560,24 @@ function ModuleSurface() {
     const lesson = snapshot.product.lessons.find((item) => item.id === id)
     return lesson ? [lesson] : []
   })
+  if (lessons.length === 1) {
+    const lesson = lessons[0]
+    return (
+      <AcademyPage
+        eyebrow="ENLACE COMPATIBLE"
+        title={localize(snapshot.profile?.locale, lesson.title)}
+        description="Este enlace de módulo se conserva para no romper marcadores ni sesiones anteriores. El contenido continúa directamente en la lección."
+        breadcrumbs={<AcademyPathBreadcrumbs lessonId={lesson.id} />}
+        actions={route && <a className="academy-button is-secondary" href={`#/learning/route/${encodeURIComponent(route.id)}`}><ArrowLeft size={15} /> Volver a la ruta</a>}
+      >
+        <section className="academy-empty-state">
+          <BookOpenCheck size={30} aria-hidden="true" />
+          <div><h2>Un único paso, sin pantalla intermedia</h2><p>El ID del módulo sigue siendo válido; la ruta visible abre la lección directamente.</p></div>
+          <a className="academy-button is-primary" href={`#/learning/lesson/${encodeURIComponent(lesson.id)}`}>Abrir lección <ArrowRight size={15} /></a>
+        </section>
+      </AcademyPage>
+    )
+  }
   return (
     <AcademyPage
       eyebrow="MÓDULO"
@@ -977,7 +724,10 @@ function LessonSurface() {
   const canUnlockWithActiveSegment = requiredStudySegments.length === 0
     || requiredStudySegments.every(({ id }) => completedSegmentIds.has(id) || id === activeSegment?.id)
   const practiceLocked = Boolean(studyContract && !theoryComplete)
-  const prerequisiteNodes = descriptor.prerequisiteConceptIds.flatMap((id) => {
+  const prerequisiteNodes = effectiveLessonPrerequisiteConceptIds(
+    descriptor.id,
+    descriptor.prerequisiteConceptIds,
+  ).flatMap((id) => {
     const node = snapshot.product.knowledgeNodes.find((candidate) => candidate.id === id)
     return node ? [node] : []
   })
@@ -1026,6 +776,7 @@ function LessonSurface() {
       eyebrow="LECCIÓN"
       title={title}
       description={friendlyRecommendationReason(localize(snapshot.profile?.locale, descriptor.purpose))}
+      breadcrumbs={<AcademyPathBreadcrumbs lessonId={descriptor.id} />}
       actions={(
         <>
           <button
@@ -2375,9 +2126,9 @@ function NotFoundSurface() {
 export function AcademySurfaces() {
   const { snapshot } = useLearning()
   const surface = snapshot.location.surface
-  if (surface === 'home') return <HomeSurface />
-  if (surface === 'my-learning') return <MyLearningSurface />
-  if (surface === 'explore') return <ExploreSurface />
+  if (surface === 'home') return <AcademyPathHomeSurface />
+  if (surface === 'my-learning') return <AcademyPathSurface />
+  if (surface === 'explore') return <AcademyLibrarySurface />
   if (surface === 'route') return <RouteSurface />
   if (surface === 'module') return <ModuleSurface />
   if (surface === 'lesson') return <LessonSurface />

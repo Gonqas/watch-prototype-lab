@@ -39,6 +39,7 @@ import {
 } from '../product/demoPackage'
 import { academyStudyPlan } from '../academy/academyStudyPlan'
 import { academyLocalStore, normalizeAcademyLocalState } from '../academy/academyLocalState'
+import { effectiveLessonPrerequisiteConceptIds } from '../academy/path/academyPathPrerequisites'
 import {
   academyRoutePrerequisiteStatus,
   academyRouteTree,
@@ -2402,7 +2403,7 @@ export class LearningApplicationService {
     const explicitExternal = (activity?.pedagogicalContract?.requiresConceptIds ?? [])
       .filter((id) => !lessonConceptIds.has(id))
     return [
-      ...lesson.prerequisiteConceptIds,
+      ...effectiveLessonPrerequisiteConceptIds(lesson.id, lesson.prerequisiteConceptIds),
       ...explicitExternal,
       ...(lesson.externalPrerequisiteCompetencyIds ?? []),
     ].filter((id, index, values) => values.indexOf(id) === index)

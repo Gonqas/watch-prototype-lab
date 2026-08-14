@@ -413,7 +413,7 @@ function ExploreSurface() {
         <Filter size={16} aria-hidden="true" />
         <label>Dificultad<select value={snapshot.filters.difficulty} onChange={(event) => service.setFilter('difficulty', event.target.value)}><option value="">Todas</option><option value="introductory">Inicial</option><option value="intermediate">Intermedia</option><option value="advanced">Avanzada</option></select></label>
         <label>Tipo<select value={snapshot.filters.type} onChange={(event) => service.setFilter('type', event.target.value)}><option value="">Todos</option><option value="observation-3d">Observación 3D</option></select></label>
-        <label>Idioma<select value={snapshot.filters.language} onChange={(event) => service.setFilter('language', event.target.value)}><option value="">Todos</option><option value="es-ES">Español</option><option value="en-US">English</option></select></label>
+        <label>Idioma<select value={snapshot.filters.language === 'en-US' ? 'es-ES' : snapshot.filters.language} onChange={(event) => service.setFilter('language', event.target.value)}><option value="">Todos</option><option value="es-ES">Español</option><option value="en-US" disabled>English · traducción pendiente</option></select></label>
         <label>Orden<select value={order} onChange={(event) => setOrder(event.target.value)}><option value="title">Título</option><option value="duration">Duración</option></select></label>
         <details>
           <summary>Más filtros <ChevronDown size={14} /></summary>
@@ -1292,7 +1292,7 @@ function ProfileSurface({ preferencesOnly = false }: { preferencesOnly?: boolean
           <section>
             <h2>Idioma y presentación</h2>
             <div className="learning-form-grid">
-              <label><Languages size={15} />Idioma<select value={profile.locale} onChange={(event) => void service.updateProfile({ locale: event.target.value })}><option value="es-ES">Español</option><option value="en-US">English</option></select></label>
+              <label><Languages size={15} />Idioma<select value="es-ES" onChange={(event) => void service.updateProfile({ locale: event.target.value })}><option value="es-ES">Español</option><option value="en-US" disabled>English · traducción pendiente</option></select></label>
               <label>Escala de texto<input type="range" min="0.75" max="2" step="0.05" value={profile.accessibility.textScale} onChange={(event) => void service.updateProfile({ accessibility: { ...profile.accessibility, textScale: Number(event.target.value) } })} /><output>{profile.accessibility.textScale.toFixed(2)}×</output></label>
               <label>Contraste<select value={profile.accessibility.contrast} onChange={(event) => void service.updateProfile({ accessibility: { ...profile.accessibility, contrast: event.target.value as 'system' | 'normal' | 'high' } })}><option value="system">Sistema</option><option value="normal">Normal</option><option value="high">Alto</option></select></label>
               <label>Interacción<select value={profile.accessibility.interactionMode} onChange={(event) => void service.updateProfile({ accessibility: { ...profile.accessibility, interactionMode: event.target.value as typeof profile.accessibility.interactionMode } })}><option value="adaptive">Adaptativa</option><option value="pointer">Puntero</option><option value="keyboard">Teclado</option><option value="touch">Táctil</option></select></label>

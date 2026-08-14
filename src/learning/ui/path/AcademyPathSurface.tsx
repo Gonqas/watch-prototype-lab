@@ -1,0 +1,92 @@
+import { BookOpenCheck, LibraryBig, NotebookPen, ShieldCheck } from 'lucide-react'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { ACADEMY_LEARNER_PATH } from '../../academy/path/academyLearnerPath'
+import { academyNextAction } from '../../academy/path/academyNextAction'
+import { deriveAcademyPathProgress } from '../../academy/path/academyPathProgress'
+import { useAcademyLocalState } from '../../academy/useAcademyLocalState'
+import { useLearning } from '../LearningContext'
+import { AcademyNextActionCard } from './AcademyNextActionCard'
+import { AcademyStageCard } from './AcademyStageCard'
+import './academy-path.css'
+
+function PathPage({ eyebrow, title, description, children }: { eyebrow: string; title: string; description: string; children: ReactNode }) {
+  return <div className="academy-page academy-path-page"><header className="academy-page-header"><div><span className="academy-kicker">{eyebrow}</span><h1>{title}</h1><p>{description}</p></div></header>{children}</div>
+}
+
+export function AcademyPathHomeSurface() {
+  const { snapshot } = useLearning()
+  const { state } = useAcademyLocalState(snapshot.profile?.id, snapshot.profile?.educationalPreferences.academyStateV1)
+  const progress = useMemo(() => deriveAcademyPathProgress(snapshot, state), [snapshot, state])
+  const next = useMemo(() => academyNextAction(snapshot, state), [snapshot, state])
+  const currentStage = ACADEMY_LEARNER_PATH.stages.find(({ stageId }) => stageId === progress.currentStageId)
+  const currentChapter = ACADEMY_LEARNER_PATH.chapters.find(({ chapterId }) => chapterId === progress.currentChapterId)
+  const lastNote = state?.notes[0]
+  return (
+    <PathPage eyebrow="TU ACADEMIA" title={`Hola, ${snapshot.profile?.displayName ?? 'perfil local'}`} description="Una ruta principal, una siguiente acción y toda la biblioteca disponible cuando la necesites.">
+      <section className="academy-path-position" aria-label="Posición actual">
+        <div><span>DÓNDE ESTÁS</span><strong>{currentStage ? `Etapa ${currentStage.order} · ${currentStage.shortTitle}` : 'Ruta principal completada'}</strong><small>{currentChapter?.title ?? 'No queda ningún capítulo core pendiente'}</small></div>
+        <a href="#/learning/my-learning">Ver las ocho etapas</a>
+      </section>
+      <AcademyNextActionCard action={next} />
+      <section className="academy-path-home-secondary">
+        <article><BookOpenCheck size={21} /><div><span>PROGRESO CORE</span><strong>{progress.anchorLessonsCompleted}/{progress.anchorLessonsTotal} lecciones ancla</strong><small>{progress.requiredActivitiesCompleted}/{progress.requiredActivitiesTotal} prácticas requeridas · {progress.stagesCompleted}/{progress.stagesTotal} etapas</small></div></article>
+        <article><ShieldCheck size={21} /><div><span>COMPETENCIA DE BANCO</span><strong>{progress.benchEvidenceStatus.status === 'pending' ? 'Evidencia física pendiente' : progress.benchEvidenceStatus.status}</strong><small>Las sesiones virtuales no se cuentan como P.</small></div></article>
+        {lastNote ? <article><NotebookPen size={21} /><div><span>ÚLTIMA NOTA</span><strong>{lastNote.title}</strong><small>{lastNote.body.slice(0, 100)}</small></div></article> : <article><LibraryBig size={21} /><div><span>BIBLIOTECA</span><strong>24 rutas conservadas</strong><small>Especializaciones y consulta no inflan tu progreso core.</small></div></article>}
+      </section>
+      <a className="academy-path-library-link" href="#/learning/explore"><LibraryBig size={16} /> Explorar toda la biblioteca</a>
+    </PathPage>
+  )
+}
+
+export function AcademyPathSurface() {
+  const { snapshot } = useLearning()
+  const { state } = useAcademyLocalState(snapshot.profile?.id, snapshot.profile?.educationalPreferences.academyStateV1)
+  const progress = useMemo(() => deriveAcademyPathProgress(snapshot, state), [snapshot, state])
+  const requestedChapter = snapshot.location.query.chapter
+  const requestedStage = snapshot.location.query.stage
+  const initialChapter = requestedChapter && ACADEMY_LEARNER_PATH.chapters.some(({ chapterId }) => chapterId === requestedChapter)
+    ? requestedChapter
+    : progress.currentChapterId ?? ACADEMY_LEARNER_PATH.chapters[0]?.chapterId
+  const initialStage = requestedStage && ACADEMY_LEARNER_PATH.stages.some(({ stageId }) => stageId === requestedStage)
+    ? requestedStage
+    : ACADEMY_LEARNER_PATH.chapters.find(({ chapterId }) => chapterId === initialChapter)?.stageId ?? progress.currentStageId
+  const [expandedStageId, setExpandedStageId] = useState<string | undefined>(initialStage)
+  const [expandedChapterId, setExpandedChapterId] = useState<string | undefined>(initialChapter)
+  const linkedChapter = requestedChapter
+    ? ACADEMY_LEARNER_PATH.chapters.find(({ chapterId }) => chapterId === requestedChapter)
+    : undefined
+  const visibleStageId = linkedChapter?.stageId ?? expandedStageId
+  const visibleChapterId = linkedChapter?.chapterId ?? expandedChapterId
+
+  useEffect(() => {
+    if (!requestedChapter) return
+    const frame = requestAnimationFrame(() => document.getElementById(requestedChapter)?.scrollIntoView({ block: 'start' }))
+    return () => cancelAnimationFrame(frame)
+  }, [requestedChapter])
+
+  const chapterProgress = useMemo(() => new Map(progress.chapters.map((item) => [item.chapterId, item])), [progress.chapters])
+  return (
+    <PathPage eyebrow="MI RUTA" title={ACADEMY_LEARNER_PATH.title} description={ACADEMY_LEARNER_PATH.learnerGoal}>
+      <section className="academy-path-summary">
+        <div><span>RUTA PRINCIPAL</span><strong>{progress.stagesCompleted} de {progress.stagesTotal} etapas core</strong><small>El denominador excluye apoyos, historia, referencias y ramas opcionales.</small></div>
+        <div><span>BANCO</span><strong>{progress.benchEvidenceStatus.status === 'pending' ? 'P pendiente' : progress.benchEvidenceStatus.status}</strong><small>Avance conceptual y evidencia física se muestran por separado.</small></div>
+      </section>
+      <div className="academy-path-stages">
+        {ACADEMY_LEARNER_PATH.stages.map((stage) => (
+          <AcademyStageCard
+            key={stage.stageId}
+            stage={stage}
+            stageProgress={progress.stages.find(({ stageId }) => stageId === stage.stageId)!}
+            chapters={stage.chapterIds.map((chapterId) => ACADEMY_LEARNER_PATH.chapters.find((chapter) => chapter.chapterId === chapterId)!).filter(Boolean)}
+            chapterProgress={chapterProgress}
+            snapshot={snapshot}
+            expanded={visibleStageId === stage.stageId}
+            expandedChapterId={visibleStageId === stage.stageId ? visibleChapterId : undefined}
+            onToggleStage={() => setExpandedStageId((current) => current === stage.stageId ? undefined : stage.stageId)}
+            onToggleChapter={(chapterId) => setExpandedChapterId((current) => current === chapterId ? undefined : chapterId)}
+          />
+        ))}
+      </div>
+    </PathPage>
+  )
+}

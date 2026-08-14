@@ -3,6 +3,7 @@ import { WORKSPACE_NAV_COLUMNS } from '../../appLayout'
 import app from '../../App.tsx?raw'
 import area from './LearningArea.tsx?raw'
 import academy from './AcademyShell.tsx?raw'
+import primaryNavigation from './library/AcademyPrimaryNavigation.tsx?raw'
 import boundary from './AcademySurfaceBoundary.tsx?raw'
 import surfaces from './LearningSurfaces.tsx?raw'
 import map from './LearningMapSurface.tsx?raw'
@@ -63,7 +64,7 @@ describe('contrato estructural y accesible de la UI de Aprender', () => {
   it('incluye la alternativa al grafo, landmarks, skip link, live region y paneles ajustables por teclado', () => {
     expect(area).toContain('learning-skip-link')
     expect(area).toContain('aria-live="polite"')
-    expect(academy).toContain('aria-label={compact ? \'Ampliar navegación\' : \'Compactar navegación\'}')
+    expect(primaryNavigation).toContain('aria-label={compact ? \'Ampliar navegación\' : \'Compactar navegación\'}')
     expect(academy).toContain('ref={mainRef}')
     expect(map).toContain('Lista accesible')
     expect(map).toContain('aria-label="Lista jerárquica del mapa de conocimiento"')

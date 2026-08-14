@@ -224,7 +224,7 @@
   font-size: calc(8px * var(--learning-text-scale));
 }
 
-.academy-nav-group a, .academy-navigation__footer a, .academy-navigation__footer button {
+.academy-nav-group a, .academy-nav-group button, .academy-navigation__footer a, .academy-navigation__footer button {
   min-width: 0;
   min-height: 40px;
   color: var(--muted);
@@ -239,12 +239,13 @@
   display: flex;
 }
 
-.academy-nav-group a:hover, .academy-navigation__footer a:hover, .academy-navigation__footer button:hover {
+.academy-nav-group a:hover, .academy-nav-group button:hover, .academy-navigation__footer a:hover, .academy-navigation__footer button:hover {
   color: var(--text);
   background: var(--surface-2);
 }
 
 .academy-nav-group a.is-active,
+.academy-nav-group button.is-active,
 .academy-navigation__footer a.is-active {
   color: #f3f8f7;
   background: linear-gradient(90deg, #1d3739, #192b2d);
@@ -252,11 +253,12 @@
 }
 
 .academy-nav-group a.is-active svg,
+.academy-nav-group button.is-active svg,
 .academy-navigation__footer a.is-active svg {
   color: var(--accent);
 }
 
-.academy-nav-group a span, .academy-navigation__footer span {
+.academy-nav-group a span, .academy-nav-group button span, .academy-navigation__footer span {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -276,6 +278,12 @@
   display: grid;
 }
 
+.academy-nav-group button {
+  width: 100%;
+  cursor: pointer;
+  font-family: inherit;
+}
+
 .academy-navigation__footer {
   border-top: 1px solid var(--border);
   padding: 8px 9px 11px;
@@ -291,11 +299,11 @@
   padding: 0;
 }
 
-.academy-navigation.is-compact .academy-navigation__brand > span, .academy-navigation.is-compact .academy-nav-group h2, .academy-navigation.is-compact .academy-nav-group a span, .academy-navigation.is-compact .academy-navigation__footer span, .academy-navigation.is-compact .academy-nav-group a i {
+.academy-navigation.is-compact .academy-navigation__brand > span, .academy-navigation.is-compact .academy-nav-group h2, .academy-navigation.is-compact .academy-nav-group a span, .academy-navigation.is-compact .academy-nav-group button span, .academy-navigation.is-compact .academy-navigation__footer span, .academy-navigation.is-compact .academy-nav-group a i {
   display: none;
 }
 
-.academy-navigation.is-compact .academy-nav-group a, .academy-navigation.is-compact .academy-navigation__footer a, .academy-navigation.is-compact .academy-navigation__footer button {
+.academy-navigation.is-compact .academy-nav-group a, .academy-navigation.is-compact .academy-nav-group button, .academy-navigation.is-compact .academy-navigation__footer a, .academy-navigation.is-compact .academy-navigation__footer button {
   justify-content: center;
   padding: 0;
 }
@@ -659,11 +667,11 @@
     padding: 0;
   }
 
-  .academy-navigation__brand > span, .academy-nav-group h2, .academy-nav-group a span, .academy-navigation__footer span, .academy-nav-group a i {
+  .academy-navigation__brand > span, .academy-nav-group h2, .academy-nav-group a span, .academy-nav-group button span, .academy-navigation__footer span, .academy-nav-group a i {
     display: none;
   }
 
-  .academy-nav-group a, .academy-navigation__footer a, .academy-navigation__footer button {
+  .academy-nav-group a, .academy-nav-group button, .academy-navigation__footer a, .academy-navigation__footer button {
     justify-content: center;
     padding: 0;
   }
@@ -730,14 +738,14 @@
   }
 
   .academy-mobile-navigation {
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     width: 100%;
     padding: 4px max(4px, env(safe-area-inset-right)) max(4px, env(safe-area-inset-bottom)) max(4px, env(safe-area-inset-left));
     display: grid;
   }
 
   .academy-mobile-navigation > a,
-  .academy-mobile-navigation > details > summary {
+  .academy-mobile-navigation > button {
     color: var(--academy-muted);
     flex-direction: column;
     justify-content: center;
@@ -752,7 +760,14 @@
     display: flex;
   }
 
-  .academy-mobile-navigation > a.is-active {
+  .academy-mobile-navigation > button {
+    border: 0;
+    background: none;
+    font-family: inherit;
+  }
+
+  .academy-mobile-navigation > a.is-active,
+  .academy-mobile-navigation > button.is-active {
     color: var(--academy-ink);
     background: var(--academy-active);
     border-radius: 7px;

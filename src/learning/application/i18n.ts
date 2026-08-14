@@ -4,7 +4,7 @@ const messages = {
   'es-ES': {
     area: 'Aprender',
     home: 'Inicio',
-    myLearning: 'Mi aprendizaje',
+    myLearning: 'Mi ruta',
     explore: 'Explorar',
     workshop: 'Taller',
     engineering: 'Ingeniería',
@@ -54,7 +54,11 @@ const messages = {
 export type LearningMessageKey = keyof typeof messages['es-ES']
 
 export function normalizeLearningLocale(locale: string | undefined): LearningLocale {
-  return locale?.toLowerCase().startsWith('en') ? 'en-US' : 'es-ES'
+  // 0.14B: los campos `en` se conservan para compatibilidad, pero la auditoría
+  // confirma que son placeholders duplicados. Una preferencia antigua en-US
+  // permanece almacenada y cae de forma aditiva al único locale real: español.
+  void locale
+  return 'es-ES'
 }
 
 export function learningMessage(locale: string | undefined, key: LearningMessageKey): string {

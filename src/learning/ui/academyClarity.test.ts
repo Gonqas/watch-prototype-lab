@@ -3,14 +3,19 @@ import academy from './AcademySurfaces.tsx?raw'
 import shell from './AcademyShell.tsx?raw'
 import activity from './LearningSurfaces.tsx?raw'
 import workspace from './LearningActivityWorkspace.tsx?raw'
+import navigation from './library/AcademyPrimaryNavigation.tsx?raw'
+import library from './library/AcademyLibraryMenu.tsx?raw'
+import librarySurface from './library/AcademyLibrarySurface.tsx?raw'
+import path from './path/AcademyPathSurface.tsx?raw'
 
 
 describe('jerarquía clara de la Academia', () => {
-  it('separa orientación, catálogo y detalles en Inicio y rutas', () => {
-    expect(academy).toContain('Tres formas de usar la Academia')
-    expect(academy).toContain('prácticas disponibles')
-    expect(academy).toContain("visibleActivityIds.has(activityId)")
-    expect(academy).toContain('Vista rápida de las {routes.length} rutas')
+  it('separa la ruta principal, la Biblioteca y los detalles de ruta', () => {
+    expect(path).toContain('Una ruta principal, una siguiente acción')
+    expect(path).toContain('PROGRESO CORE')
+    expect(path).toContain('Ver las ocho etapas')
+    expect(librarySurface).toContain('Las 24 rutas, agrupadas por función')
+    expect(librarySurface).toContain('ACADEMY_LIBRARY_ROUTE_GROUPS')
     expect(academy).toContain('Recursos, alcance y fuentes')
     expect(academy).not.toContain('WATCHMAKER_JOURNEY.map')
   })
@@ -66,11 +71,15 @@ describe('jerarquía clara de la Academia', () => {
     expect(workspace).toContain('Fuentes, límites y fidelidad')
   })
 
-  it('mantiene la navegación móvil completa y cierra Más al cambiar de destino', () => {
-    expect(shell).toContain('mobileMoreSurface')
-    expect(shell).toContain('aria-expanded={mobileMoreOpen}')
-    expect(shell).toContain('setMobileMoreSurface(undefined)')
-    expect(shell).toContain('Navegación principal móvil')
+  it('reduce la navegación móvil a cuatro destinos y hace Biblioteca accesible', () => {
+    expect(navigation).toContain("{ surface: 'home' as const, label: 'Inicio'")
+    expect(navigation).toContain("{ surface: 'my-learning' as const, label: 'Mi ruta'")
+    expect(navigation).toContain("{ surface: 'workshop' as const, label: 'Taller'")
+    expect(navigation).toContain('Navegación principal móvil')
+    expect(navigation).toContain('<span>Biblioteca</span>')
+    expect(library).toContain("event.key === 'Escape'")
+    expect(library).toContain('role="dialog"')
+    expect(library).toContain('returnFocusRef.current?.focus()')
   })
 
   it('reserva los códigos internos para el detalle técnico opcional', () => {
