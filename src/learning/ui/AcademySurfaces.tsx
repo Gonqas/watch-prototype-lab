@@ -110,6 +110,7 @@ import './academy-journey.css'
 const EngineeringLabSurface = lazy(() => import('./EngineeringLabSurface'))
 const MetrologySurface = lazy(() => import('./MetrologySurface'))
 const EducationalViewport = lazy(() => import('./EducationalViewport'))
+const AcademyContinuousLessonSurface = lazy(() => import('./reader/AcademyContinuousLessonSurface'))
 
 const masteryLabels: Record<MasteryState, string> = {
   not_started: 'Sin iniciar',
@@ -663,7 +664,7 @@ export function RestrictedMarkdown({ markdown }: { markdown: string }) {
   )
 }
 
-function LessonSurface() {
+export function LegacyLessonSurface014B() {
   const { service, snapshot } = useLearning()
   const material = academyLessonMaterial(snapshot.product, snapshot.location.id ?? '')
   const descriptor = snapshot.product.lessons.find(({ id }) => id === snapshot.location.id)
@@ -2137,7 +2138,11 @@ export function AcademySurfaces() {
   if (surface === 'explore') return <AcademyLibrarySurface />
   if (surface === 'route') return <RouteSurface />
   if (surface === 'module') return <ModuleSurface />
-  if (surface === 'lesson') return <LessonSurface />
+  if (surface === 'lesson') return (
+    <Suspense fallback={<div className="academy-empty-state" role="status"><p>Preparando el lector continuo…</p></div>}>
+      <AcademyContinuousLessonSurface />
+    </Suspense>
+  )
   if (surface === 'workshop') return <WorkshopSurface />
   if (surface === 'engineering') return <EngineeringLabSurface />
   if (surface === 'metrology') return <MetrologySurface />

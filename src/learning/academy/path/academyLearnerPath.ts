@@ -2,6 +2,12 @@ export type AcademyPathNodeRole = 'anchor' | 'support' | 'optional-branch' | 're
 export type AcademyCoverageStatus = 'complete' | 'partial' | 'planned' | 'source-review-required'
 export type AcademyCurationMethod = 'manual-curation' | 'explicit-authoring'
 export type AcademyCurationConfidence = 'high'
+export type AcademyMasteryCoveragePolicy =
+  | 'none'
+  | 'per-assessed-step'
+  | 'all-required-steps'
+  | 'chapter-capstone'
+  | 'explicit-competency-set'
 
 export type AcademyStepCompletionPolicy =
   | 'study-only'
@@ -92,6 +98,9 @@ export interface AcademyLearnerChapter {
   estimatedDuration?: { minutes: number; basis: 'authored-required-activity-duration' }
   completionPolicy: AcademyPathCompletionPolicy
   physicalEvidencePolicy: AcademyPhysicalEvidencePolicy
+  masteryCoveragePolicy: AcademyMasteryCoveragePolicy
+  masteryCoverageCompetencyIds: string[]
+  masteryCapstoneStepId?: string
 }
 
 export interface AcademyLearnerStage {
@@ -169,12 +178,24 @@ const DEMONSTRATION_ACTIVITY_IDS = new Set([
 function chapter(input: Omit<AcademyLearnerChapter,
   'steps' | 'anchorLessonIds' | 'anchorReviews' | 'supportingLessonIds' | 'supportingLessons'
   | 'requiredActivityIds' | 'curationMethod' | 'curationConfidence' | 'completionPolicy'
-  | 'physicalEvidencePolicy'> & {
+  | 'physicalEvidencePolicy' | 'masteryCoveragePolicy' | 'masteryCoverageCompetencyIds'
+  | 'masteryCapstoneStepId'> & {
     anchors: AnchorInput[]
     support?: SupportInput[]
     physical?: boolean
+    masteryCoveragePolicy?: AcademyMasteryCoveragePolicy
+    masteryCoverageCompetencyIds?: string[]
+    masteryCapstoneStepId?: string
   }): AcademyLearnerChapter {
-  const { anchors, support = [], physical = false, ...fields } = input
+  const {
+    anchors,
+    support = [],
+    physical = false,
+    masteryCoveragePolicy = 'per-assessed-step',
+    masteryCoverageCompetencyIds = [],
+    masteryCapstoneStepId,
+    ...fields
+  } = input
   const steps: AcademyLearnerStep[] = anchors.map(([lessonId, activityId, reason], index) => ({
     stepId: `academy.step.${fields.chapterId.slice('chapter.'.length)}.${index + 1}`,
     chapterId: fields.chapterId,
@@ -188,8 +209,9 @@ function chapter(input: Omit<AcademyLearnerChapter,
       : activityId ? 'study-and-required-practice' : 'study-only',
     curationReason: reason,
   }))
-  const result = {
+  return {
     ...fields,
+    steps,
     anchorLessonIds: steps.map(({ lessonId }) => lessonId),
     anchorReviews: anchors.map(([lessonId, , reason]) => ({
       lessonId,
@@ -210,11 +232,10 @@ function chapter(input: Omit<AcademyLearnerChapter,
     curationConfidence: 'high',
     completionPolicy: COMPLETION_POLICY,
     physicalEvidencePolicy: physical ? BENCH_POLICY : CONCEPTUAL_POLICY,
-  } as AcademyLearnerChapter
-  // `steps` es la relación canónica de runtime. Se mantiene no enumerable para
-  // que el snapshot histórico 0.14B conserve exactamente sus bytes.
-  Object.defineProperty(result, 'steps', { value: steps, enumerable: false })
-  return result
+    masteryCoveragePolicy,
+    masteryCoverageCompetencyIds,
+    ...(masteryCapstoneStepId ? { masteryCapstoneStepId } : {}),
+  }
 }
 
 export const ACADEMY_STAGE_5_PLANNED_REFS = [
@@ -238,14 +259,14 @@ export interface AcademyPlannedContentMetadata {
 }
 
 export const ACADEMY_PLANNED_CONTENT: readonly AcademyPlannedContentMetadata[] = [
-  { ref: 'stage5-gap.movement-holder', title: 'Aro o soporte del movimiento', summary: 'Interfaz estructural entre movimiento, aro y caja.', stageId: 'stage.5', chapterId: 'chapter.5.1', status: 'planned' },
-  { ref: 'stage5-gap.dial-feet', title: 'Pies de esfera', summary: 'Posición, fijación y compatibilidad con movimiento y caja.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'planned' },
-  { ref: 'stage5-gap.dial-diameter', title: 'Diámetro y asiento de esfera', summary: 'Cadena dimensional entre esfera, asiento, apertura y rehaut.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'planned' },
-  { ref: 'stage5-gap.hand-holes-fit', title: 'Ajuste de agujas', summary: 'Agujeros, tubos y ajustes aplicables al movimiento elegido.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'source-review-required' },
-  { ref: 'stage5-gap.hour-wheel-stack', title: 'Rueda de horas y apilamiento axial', summary: 'Engrane, alturas y libertad a través del stack esfera-agujas.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'source-review-required' },
+  { ref: 'stage5-gap.movement-holder', title: 'Aro o soporte del movimiento', summary: 'Interfaz estructural entre movimiento, aro y caja.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'planned' },
+  { ref: 'stage5-gap.dial-feet', title: 'Pies de esfera', summary: 'Posición, fijación y compatibilidad con movimiento y caja.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'planned' },
+  { ref: 'stage5-gap.dial-diameter', title: 'Diámetro y asiento de esfera', summary: 'Cadena dimensional entre esfera, asiento, apertura y rehaut.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'planned' },
+  { ref: 'stage5-gap.hand-holes-fit', title: 'Ajuste de agujas', summary: 'Agujeros, tubos y ajustes aplicables al movimiento elegido.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'source-review-required' },
+  { ref: 'stage5-gap.hour-wheel-stack', title: 'Rueda de horas y apilamiento axial', summary: 'Engrane, alturas y libertad a través del stack esfera-agujas.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'source-review-required' },
   { ref: 'stage5-gap.caseback-clearance', title: 'Fondo y holgura posterior', summary: 'Envolvente posterior, rotor, fijación y cierre de caja.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'planned' },
-  { ref: 'stage5-gap.dynamic-interferences', title: 'Interferencias dinámicas', summary: 'Barridos de agujas, corona, tija, rotor y exterior.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'planned' },
-  { ref: 'stage5-gap.final-assembly-verification', title: 'Montaje final y verificación', summary: 'Secuencia de integración, checkpoints y criterios de liberación.', stageId: 'stage.5', chapterId: 'chapter.5.4', status: 'source-review-required' },
+  { ref: 'stage5-gap.dynamic-interferences', title: 'Interferencias dinámicas', summary: 'Barridos de agujas, corona, tija, rotor y exterior.', stageId: 'stage.5', chapterId: 'chapter.5.4', status: 'planned' },
+  { ref: 'stage5-gap.final-assembly-verification', title: 'Montaje final y verificación', summary: 'Secuencia de integración, checkpoints y criterios de liberación.', stageId: 'stage.5', chapterId: 'chapter.5.5', status: 'source-review-required' },
 ]
 
 const chapters: AcademyLearnerChapter[] = [
@@ -778,6 +799,32 @@ export const ACADEMY_LEARNER_PATH: AcademyLearnerPathDefinition = {
   stages,
   chapters,
   optionalBranches,
+}
+
+export type AcademyLearnerChapterLegacy014B = Omit<
+  AcademyLearnerChapter,
+  'steps' | 'masteryCoveragePolicy' | 'masteryCoverageCompetencyIds' | 'masteryCapstoneStepId'
+>
+
+export interface AcademyLearnerPathLegacy014B extends Omit<AcademyLearnerPathDefinition, 'chapters'> {
+  chapters: AcademyLearnerChapterLegacy014B[]
+}
+
+/** Reproduce la forma pública histórica 0.14B sin ocultar propiedades de runtime. */
+export function serializeAcademyLearnerPathLegacy014B(
+  path: AcademyLearnerPathDefinition = ACADEMY_LEARNER_PATH,
+): AcademyLearnerPathLegacy014B {
+  return {
+    ...path,
+    chapters: path.chapters.map((chapterItem) => {
+      const legacyChapter = { ...chapterItem } as Record<string, unknown>
+      delete legacyChapter.steps
+      delete legacyChapter.masteryCoveragePolicy
+      delete legacyChapter.masteryCoverageCompetencyIds
+      delete legacyChapter.masteryCapstoneStepId
+      return legacyChapter as unknown as AcademyLearnerChapterLegacy014B
+    }),
+  }
 }
 
 export function academyPathChapter(chapterId: string): AcademyLearnerChapter | undefined {

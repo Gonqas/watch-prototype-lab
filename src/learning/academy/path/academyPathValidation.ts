@@ -1,6 +1,7 @@
 import type { LearningProductIndex } from '../../product/demoPackage'
 import {
   ACADEMY_LEARNER_PATH,
+  ACADEMY_PLANNED_CONTENT,
   ACADEMY_STAGE_5_PLANNED_REFS,
   type AcademyLearnerPathDefinition,
 } from './academyLearnerPath'
@@ -128,9 +129,27 @@ export function validateAcademyLearnerPath(
       issues.push({ code: 'missing-optional-route', entityId: routeId, message: 'La ruta opcional no existe.' })
     }
   }
-  const planned = new Set(path.chapters.flatMap(({ plannedContentRefs }) => plannedContentRefs))
+  const plannedOwners = new Map<string, string>()
+  for (const chapter of path.chapters) {
+    for (const plannedRef of chapter.plannedContentRefs) {
+      const previousOwner = plannedOwners.get(plannedRef)
+      if (previousOwner && previousOwner !== chapter.chapterId) {
+        issues.push({ code: 'duplicate-planned-ref-owner', entityId: plannedRef, message: `El ref aparece en ${previousOwner} y ${chapter.chapterId}.` })
+      }
+      plannedOwners.set(plannedRef, chapter.chapterId)
+    }
+  }
+  const planned = new Set(plannedOwners.keys())
   for (const plannedRef of ACADEMY_STAGE_5_PLANNED_REFS) if (!planned.has(plannedRef)) {
     issues.push({ code: 'missing-stage5-gap', entityId: plannedRef, message: 'El vacío de etapa 5 no está representado.' })
+  }
+  for (const metadata of ACADEMY_PLANNED_CONTENT) {
+    const declaredOwner = plannedOwners.get(metadata.ref)
+    if (!declaredOwner) {
+      issues.push({ code: 'orphan-planned-metadata', entityId: metadata.ref, message: 'El metadata planificado no está declarado por ningún capítulo.' })
+    } else if (declaredOwner !== metadata.chapterId) {
+      issues.push({ code: 'planned-ref-chapter-mismatch', entityId: metadata.ref, message: `El metadata apunta a ${metadata.chapterId}, pero el manifiesto canónico lo declara en ${declaredOwner}.` })
+    }
   }
   if (path.stages.find(({ stageId }) => stageId === 'stage.5')?.coverageStatus !== 'partial') {
     issues.push({ code: 'stage5-not-partial', entityId: 'stage.5', message: 'La etapa 5 debe declarar cobertura parcial.' })

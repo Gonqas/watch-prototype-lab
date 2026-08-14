@@ -6,13 +6,14 @@ const actionLabels: Record<AcademyNextAction['type'], string> = {
   practice: 'PRACTICAR',
   demonstrate: 'DEMOSTRAR',
   review: 'REPASAR',
+  'retention-content-missing': 'REPASO PENDIENTE',
   resume: 'RETOMAR',
   chapter: 'SIGUIENTE CAPÍTULO',
   'available-path-complete': 'COBERTURA DEL RECORRIDO',
 }
 
 export function AcademyNextActionCard({ action }: { action: AcademyNextAction }) {
-  const Icon = action.type === 'resume' || action.type === 'review'
+  const Icon = action.type === 'resume' || action.type === 'review' || action.type === 'retention-content-missing'
     ? RotateCcw
     : action.type === 'practice'
       ? Wrench

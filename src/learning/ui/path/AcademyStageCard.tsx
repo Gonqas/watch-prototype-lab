@@ -88,7 +88,11 @@ function ChapterCard({
   ] as const
   const blocker = chapter.prerequisiteChapterIds.at(-1)
   const blockerTitle = blocker ? academyPathChapter(blocker)?.title ?? blocker : undefined
-  const chapterStatus = progress.coreAvailableComplete
+  const chapterStatus = progress.masteryCoverageStatus === 'partial' && progress.masteryStatus === 'partially-retained'
+    ? 'Evaluaciones disponibles retenidas · cobertura de evaluación parcial'
+    : progress.masteryCoverageStatus === 'partial' && progress.masteryStatus === 'partially-demonstrated'
+      ? 'Evaluaciones disponibles demostradas · cobertura de evaluación parcial'
+      : progress.coreAvailableComplete
     ? progress.coverageStatus === 'complete'
       ? progress.masteryStatus === 'retained' ? 'Contenido disponible retenido' : 'Contenido disponible completado'
       : 'Contenido disponible completado · cobertura curricular parcial'
@@ -113,6 +117,12 @@ function ChapterCard({
             <aside className="academy-path-coverage" role="note">
               <CircleAlert size={17} />
               <div><strong>{progress.coreAvailableComplete ? 'Contenido disponible completado · cobertura curricular parcial' : chapter.coverageStatus === 'partial' ? 'Cobertura curricular parcial' : 'Revisión de fuentes pendiente'}</strong><span>{chapter.curationReason}</span></div>
+            </aside>
+          )}
+          {progress.masteryCoverageStatus === 'partial' && (
+            <aside className="academy-path-coverage" role="note">
+              <CircleAlert size={17} />
+              <div><strong>Cobertura de evaluación parcial</strong><span>Los resultados disponibles representan los pasos evaluados; no acreditan mastery global del capítulo.</span></div>
             </aside>
           )}
           {progress.state === 'blocked' && blocker && (

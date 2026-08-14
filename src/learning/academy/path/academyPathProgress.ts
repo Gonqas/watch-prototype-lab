@@ -7,8 +7,9 @@ import {
   type AcademyLearnerChapter,
   type AcademyLearnerPathDefinition,
   type AcademyLearnerStep,
+  type AcademyMasteryCoveragePolicy,
 } from './academyLearnerPath'
-import { ACADEMY_LEGACY_STUDY_RECOGNITION_CUTOFF } from './academyPathCompatibility'
+import { ACADEMY_PROGRESS_COMPATIBILITY_POLICY } from './academyPathCompatibility'
 
 export { ACADEMY_LEGACY_STUDY_RECOGNITION_CUTOFF } from './academyPathCompatibility'
 
@@ -16,6 +17,8 @@ export type AcademyStudyRecognition = 'none' | 'explicit' | 'legacy-inferred'
 export type AcademyExposureStatus = 'not-started' | 'in-progress' | 'studied'
 export type AcademyPracticeStatus = 'not-started' | 'in-progress' | 'satisfied'
 export type AcademyMasteryStatus = 'not-assessed' | 'demonstration-due' | 'demonstrated' | 'retention-due' | 'retained'
+export type AcademyChapterMasteryStatus = AcademyMasteryStatus | 'partially-demonstrated' | 'partially-retained'
+export type AcademyMasteryCoverageStatus = 'none' | 'partial' | 'complete'
 export type AcademyPhysicalEvidenceStatus = 'not-required' | 'pending' | 'documented' | 'reviewed'
 
 export type AcademyPathLearningState =
@@ -59,7 +62,15 @@ export interface AcademyChapterProgress {
   state: AcademyPathLearningState
   exposureStatus: AcademyExposureStatus
   practiceStatus: AcademyPracticeStatus
-  masteryStatus: AcademyMasteryStatus
+  masteryStatus: AcademyChapterMasteryStatus
+  masteryCoveragePolicy: AcademyMasteryCoveragePolicy
+  masteryCoverageStatus: AcademyMasteryCoverageStatus
+  assessedStepIds: string[]
+  unassessedStepIds: string[]
+  representedCompetencyIds: string[]
+  /** Cobertura de evaluación, no cobertura curricular. */
+  coverageComplete: boolean
+  chapterMasteryClaimAllowed: boolean
   physicalEvidenceStatus: AcademyPhysicalEvidenceStatus
   coverageStatus: AcademyCoverageStatus
   coreAvailableComplete: boolean
@@ -137,7 +148,7 @@ export function academyStudyRecognitionForLesson(
   const historicalCompletion = snapshot.sessions.items.some(({ activityId, state, completedAt, updatedAt }) =>
     activityIds.has(activityId)
     && state === 'completed'
-    && (completedAt ?? updatedAt) <= ACADEMY_LEGACY_STUDY_RECOGNITION_CUTOFF)
+    && (completedAt ?? updatedAt) <= ACADEMY_PROGRESS_COMPATIBILITY_POLICY.legacyCutoff)
   return historicalCompletion ? 'legacy-inferred' : 'none'
 }
 
@@ -302,10 +313,87 @@ function aggregateMastery(steps: AcademyLearnerStepProgress[]): AcademyMasterySt
   return 'not-assessed'
 }
 
+interface AcademyMasteryCoverageProjection {
+  status: AcademyMasteryCoverageStatus
+  assessedStepIds: string[]
+  unassessedStepIds: string[]
+  representedCompetencyIds: string[]
+  complete: boolean
+  chapterMasteryClaimAllowed: boolean
+}
+
+function assessedCompetenciesForStep(
+  snapshot: LearningApplicationSnapshot,
+  step: AcademyLearnerStep,
+): string[] {
+  return unique(step.requiredActivityIds.flatMap((activityId) => {
+    const activity = snapshot.product.activities.find(({ id }) => id === activityId)
+    if (!activity) return []
+    const contract = activity.pedagogicalContract
+    return contract?.purpose === 'mastery-check' || contract?.assessmentIntent === 'demonstration'
+      ? activity.competencyIds
+      : []
+  }))
+}
+
+function projectMasteryCoverage(
+  snapshot: LearningApplicationSnapshot,
+  chapter: AcademyLearnerChapter,
+): AcademyMasteryCoverageProjection {
+  const competenciesByStep = new Map(chapter.steps.map((step) => [
+    step.stepId,
+    assessedCompetenciesForStep(snapshot, step),
+  ]))
+  const assessedStepIds = chapter.steps
+    .filter((step) => (competenciesByStep.get(step.stepId)?.length ?? 0) > 0)
+    .map(({ stepId }) => stepId)
+  const unassessedStepIds = chapter.steps
+    .filter(({ stepId }) => !assessedStepIds.includes(stepId))
+    .map(({ stepId }) => stepId)
+  const representedCompetencyIds = unique([...competenciesByStep.values()].flat())
+
+  if (chapter.masteryCoveragePolicy === 'none') {
+    return {
+      status: 'none',
+      assessedStepIds,
+      unassessedStepIds,
+      representedCompetencyIds,
+      complete: false,
+      chapterMasteryClaimAllowed: false,
+    }
+  }
+
+  const complete = chapter.masteryCoveragePolicy === 'chapter-capstone'
+    ? Boolean(chapter.masteryCapstoneStepId && assessedStepIds.includes(chapter.masteryCapstoneStepId))
+    : chapter.masteryCoveragePolicy === 'explicit-competency-set'
+      ? chapter.masteryCoverageCompetencyIds.length > 0
+        && chapter.masteryCoverageCompetencyIds.every((id) => representedCompetencyIds.includes(id))
+      : chapter.steps.length > 0 && unassessedStepIds.length === 0
+
+  return {
+    status: assessedStepIds.length === 0 ? 'none' : complete ? 'complete' : 'partial',
+    assessedStepIds,
+    unassessedStepIds,
+    representedCompetencyIds,
+    complete,
+    chapterMasteryClaimAllowed: complete,
+  }
+}
+
+function masteryWithCoverage(
+  masteryStatus: AcademyMasteryStatus,
+  coverage: AcademyMasteryCoverageProjection,
+): AcademyChapterMasteryStatus {
+  if (coverage.status !== 'partial') return masteryStatus
+  if (masteryStatus === 'retained') return 'partially-retained'
+  if (masteryStatus === 'demonstrated' || masteryStatus === 'retention-due') return 'partially-demonstrated'
+  return masteryStatus
+}
+
 function legacyState(
   exposureStatus: AcademyExposureStatus,
   practiceStatus: AcademyPracticeStatus,
-  masteryStatus: AcademyMasteryStatus,
+  masteryStatus: AcademyChapterMasteryStatus,
 ): AcademyPathLearningState {
   if (masteryStatus === 'retained') return 'consolidated'
   if (masteryStatus === 'demonstrated' || masteryStatus === 'retention-due') return 'demonstrated'
@@ -323,7 +411,8 @@ function rawChapterProgress(
   const steps = chapter.steps.map((step) => stepProgress(snapshot, localState, chapter, step, now))
   const exposureStatus = aggregateExposure(steps)
   const practiceStatus = aggregatePractice(steps)
-  const masteryStatus = aggregateMastery(steps)
+  const masteryCoverage = projectMasteryCoverage(snapshot, chapter)
+  const masteryStatus = masteryWithCoverage(aggregateMastery(steps), masteryCoverage)
   const benchEvidenceStatus = physicalEvidence(
     snapshot,
     chapter.steps.flatMap(({ requiredActivityIds, optionalActivityIds }) => [...requiredActivityIds, ...optionalActivityIds]),
@@ -340,6 +429,13 @@ function rawChapterProgress(
     exposureStatus,
     practiceStatus,
     masteryStatus,
+    masteryCoveragePolicy: chapter.masteryCoveragePolicy,
+    masteryCoverageStatus: masteryCoverage.status,
+    assessedStepIds: masteryCoverage.assessedStepIds,
+    unassessedStepIds: masteryCoverage.unassessedStepIds,
+    representedCompetencyIds: masteryCoverage.representedCompetencyIds,
+    coverageComplete: masteryCoverage.complete,
+    chapterMasteryClaimAllowed: masteryCoverage.chapterMasteryClaimAllowed,
     physicalEvidenceStatus: benchEvidenceStatus.status,
     coverageStatus: chapter.coverageStatus,
     coreAvailableComplete,

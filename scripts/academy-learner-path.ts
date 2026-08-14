@@ -1,7 +1,10 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { join, resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
-import { ACADEMY_LEARNER_PATH } from '../src/learning/academy/path/academyLearnerPath'
+import {
+  ACADEMY_LEARNER_PATH,
+  serializeAcademyLearnerPathLegacy014B,
+} from '../src/learning/academy/path/academyLearnerPath'
 import { ACADEMY_LIBRARY_DESTINATION_GROUPS, ACADEMY_LIBRARY_ROUTE_GROUPS } from '../src/learning/academy/path/academyLibrary'
 import { ACADEMY_PREREQUISITE_RESOLUTIONS } from '../src/learning/academy/path/academyPathPrerequisites'
 import { ACADEMY_STAGE_5_BLUEPRINT } from '../src/learning/academy/path/academyStage5Blueprint'
@@ -124,7 +127,7 @@ ${ACADEMY_LEARNER_PATH.optionalBranches.map((branch) => `| ${pipe(branch.title)}
       plannedContentRefs: plannedRefs.length,
     },
     validation: { valid: true, issues: validationIssues },
-    path: ACADEMY_LEARNER_PATH,
+    path: serializeAcademyLearnerPathLegacy014B(),
   })
 
   const informationArchitecture = md(`# Arquitectura de información 0.14B

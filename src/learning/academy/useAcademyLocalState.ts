@@ -27,6 +27,17 @@ export interface AcademyLocalStateActions {
     completedSegmentIds: string[],
     completed: boolean,
   ): void
+  recordReaderPosition(
+    lessonId: string,
+    input: {
+      activeSectionId: string
+      scrollAnchor: string
+      scrollOffset: number
+      documentVersion: string
+      visitedSectionIds: string[]
+    },
+  ): void
+  completeLesson(lessonId: string, activeSectionId: string, documentVersion: string): void
   postponeReview(competencyId: string, until: string): void
   clearReviewSnooze(competencyId: string): void
   recordMetric(metricId: string): void
@@ -127,6 +138,12 @@ export function useAcademyLocalState(profileId: string | undefined, persistedSta
       if (profileId && store) {
         announce(store.recordLessonSegment(profileId, lessonId, segmentId, completedSegmentIds, completed))
       }
+    },
+    recordReaderPosition(lessonId, input) {
+      if (profileId && store) announce(store.recordReaderPosition(profileId, lessonId, input))
+    },
+    completeLesson(lessonId, activeSectionId, documentVersion) {
+      if (profileId && store) announce(store.completeLesson(profileId, lessonId, activeSectionId, documentVersion))
     },
     postponeReview(competencyId, until) {
       if (profileId && store) announce(store.postponeReview(profileId, competencyId, until))

@@ -1,0 +1,15 @@
+# Fatiga y fricción del lector — 0.14C
+
+La comparación cuenta únicamente confirmaciones obligatorias de lectura; abrir el índice o cambiar de modo no es obligatorio.
+
+| Alcance | 0.14B.1: confirmaciones por segmento | 0.14C: confirmación final | Reducción |
+|---|---:|---:|---:|
+| Corpus completo | 1897 | 222 | 1675 (88 %) |
+| Ruta principal curada | 773 | 83 | 690 (89 %) |
+| stage.2 | 195 | 17 | 178 |
+| stage.4 | 150 | 14 | 136 |
+| stage.5 | 91 | 12 | 79 |
+
+La transición final consulta el primer `requiredActivityId` pendiente del paso curado; no abre `material.activities[0]`. El índice, la reanudación y los cambios de cue se miden localmente y siguen siendo opcionales. El abandono real y el valor pedagógico de la reducción solo pueden validarse con uso humano.
+
+No se atribuye comprensión al scroll ni al tiempo. La reducción elimina microconfirmaciones, no controles pedagógicos ni prácticas requeridas.

@@ -1,4 +1,5 @@
 export type AcademyLessonMode = 'reading' | 'visual' | 'split' | 'focus' | 'textual'
+export type AcademyReaderMode = 'learn' | 'read'
 export type AcademyDensity = 'comfortable' | 'compact'
 export type AcademyWorkspaceRatio = '35-65' | '50-50' | '65-35'
 export type AcademyTheme = 'system' | 'dark' | 'light'
@@ -99,6 +100,11 @@ export interface AcademyLessonProgress {
   lessonId: string
   currentSegmentId: string
   completedSegmentIds: string[]
+  activeSectionId?: string
+  scrollAnchor?: string
+  scrollOffset?: number
+  documentVersion?: string
+  visitedSectionIds?: string[]
   completedAt?: string
   updatedAt: string
 }
@@ -288,6 +294,13 @@ function normalizeLessonProgress(value: unknown): AcademyLessonProgress | undefi
     lessonId: value.lessonId.slice(0, 200),
     currentSegmentId: value.currentSegmentId.slice(0, 240),
     completedSegmentIds: stringArray(value.completedSegmentIds, 80),
+    activeSectionId: typeof value.activeSectionId === 'string' ? value.activeSectionId.slice(0, 240) : undefined,
+    scrollAnchor: typeof value.scrollAnchor === 'string' ? value.scrollAnchor.slice(0, 240) : undefined,
+    scrollOffset: typeof value.scrollOffset === 'number' && Number.isFinite(value.scrollOffset)
+      ? Math.max(0, Math.round(value.scrollOffset))
+      : undefined,
+    documentVersion: typeof value.documentVersion === 'string' ? value.documentVersion.slice(0, 120) : undefined,
+    visitedSectionIds: stringArray(value.visitedSectionIds, 240),
     completedAt: typeof value.completedAt === 'string' ? value.completedAt : undefined,
     updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : new Date(0).toISOString(),
   }
@@ -618,6 +631,75 @@ export class AcademyLocalStore {
         currentSegmentId: segmentId.slice(0, 240),
         completedSegmentIds: stringArray(completedSegmentIds, 80),
         completedAt: previous?.completedAt ?? (completed ? timestamp : undefined),
+        updatedAt: timestamp,
+      }
+      return {
+        ...state,
+        lessonProgress: [
+          progress,
+          ...state.lessonProgress.filter((item) => item.lessonId !== progress.lessonId),
+        ].slice(0, 500),
+      }
+    })
+  }
+
+  recordReaderPosition(
+    profileId: string,
+    lessonId: string,
+    input: {
+      activeSectionId: string
+      scrollAnchor: string
+      scrollOffset: number
+      documentVersion: string
+      visitedSectionIds: string[]
+    },
+  ): AcademyLocalState {
+    const timestamp = this.now()
+    return this.update(profileId, (state) => {
+      const normalizedLessonId = lessonId.slice(0, 200)
+      const previous = state.lessonProgress.find((item) => item.lessonId === normalizedLessonId)
+      const progress: AcademyLessonProgress = {
+        lessonId: normalizedLessonId,
+        currentSegmentId: previous?.currentSegmentId ?? input.activeSectionId.slice(0, 240),
+        completedSegmentIds: previous?.completedSegmentIds ?? [],
+        activeSectionId: input.activeSectionId.slice(0, 240),
+        scrollAnchor: input.scrollAnchor.slice(0, 240),
+        scrollOffset: Math.max(0, Math.round(input.scrollOffset)),
+        documentVersion: input.documentVersion.slice(0, 120),
+        visitedSectionIds: stringArray(input.visitedSectionIds, 240),
+        completedAt: previous?.completedAt,
+        updatedAt: timestamp,
+      }
+      return {
+        ...state,
+        lessonProgress: [
+          progress,
+          ...state.lessonProgress.filter((item) => item.lessonId !== progress.lessonId),
+        ].slice(0, 500),
+      }
+    })
+  }
+
+  completeLesson(
+    profileId: string,
+    lessonId: string,
+    activeSectionId: string,
+    documentVersion: string,
+  ): AcademyLocalState {
+    const timestamp = this.now()
+    return this.update(profileId, (state) => {
+      const normalizedLessonId = lessonId.slice(0, 200)
+      const previous = state.lessonProgress.find((item) => item.lessonId === normalizedLessonId)
+      const progress: AcademyLessonProgress = {
+        lessonId: normalizedLessonId,
+        currentSegmentId: previous?.currentSegmentId ?? activeSectionId.slice(0, 240),
+        completedSegmentIds: previous?.completedSegmentIds ?? [],
+        activeSectionId: activeSectionId.slice(0, 240),
+        scrollAnchor: previous?.scrollAnchor ?? activeSectionId.slice(0, 240),
+        scrollOffset: previous?.scrollOffset ?? 0,
+        documentVersion: documentVersion.slice(0, 120),
+        visitedSectionIds: previous?.visitedSectionIds ?? [],
+        completedAt: previous?.completedAt ?? timestamp,
         updatedAt: timestamp,
       }
       return {

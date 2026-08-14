@@ -14,6 +14,7 @@ export type AcademyNextActionType =
   | 'practice'
   | 'demonstrate'
   | 'review'
+  | 'retention-content-missing'
   | 'resume'
   | 'chapter'
   | 'available-path-complete'
@@ -44,6 +45,7 @@ export interface AcademyNextAction {
   lessonId?: string
   activityId?: string
   sessionId?: string
+  competencyId?: string
   secondaryAction?: AcademySecondaryAction
 }
 
@@ -107,26 +109,50 @@ export function academyNextAction(
       && candidate.competencyIds.includes(due.competencyId)
       && (candidate.pedagogicalContract?.purpose === 'retention'
         || candidate.pedagogicalContract?.assessmentIntent === 'retention'))
-      ?? snapshot.product.activities.find((candidate) =>
-        coreActivityIds.has(candidate.id) && candidate.competencyIds.includes(due.competencyId))
-    if (!activity) continue
-    const location = academyPathLocationForActivity(activity.id, path)
+    if (activity) {
+      const location = academyPathLocationForActivity(activity.id, path)
+      return {
+        actionId: `path-action.review.${due.competencyId}`,
+        precedence: 2,
+        stageId: location?.stage.stageId,
+        stageTitle: location?.stage.title ?? 'Repaso',
+        chapterId: location?.chapter.chapterId,
+        chapterTitle: location?.chapter.title ?? 'Retención pendiente',
+        title: localize(snapshot.profile?.locale, activity.title),
+        reason: 'La fecha de recuperación espaciada ya ha vencido; repasar ahora protege lo demostrado.',
+        type: 'review',
+        href: `#/learning/activity/${encodeURIComponent(activity.id)}?mode=retention`,
+        ctaLabel: 'Hacer repaso',
+        durationMinutes: activity.durationMinutes,
+        remainingCoreItems: remainingItems(path, snapshot, localState, location?.chapter.chapterId, now),
+        after: 'Después continuarás en el mismo punto de la ruta principal.',
+        activityId: activity.id,
+        competencyId: due.competencyId,
+      }
+    }
+
+    const owningStep = path.chapters
+      .flatMap((chapter) => chapter.steps.map((step) => ({ chapter, step })))
+      .find(({ step }) => step.requiredActivityIds.some((activityId) =>
+        snapshot.product.activities.find(({ id }) => id === activityId)?.competencyIds.includes(due.competencyId)))
+    if (!owningStep) continue
+    const stage = path.stages.find(({ stageId }) => stageId === owningStep.chapter.stageId)
     return {
-      actionId: `path-action.review.${due.competencyId}`,
+      actionId: `path-action.retention-content-missing.${due.competencyId}`,
       precedence: 2,
-      stageId: location?.stage.stageId,
-      stageTitle: location?.stage.title ?? 'Repaso',
-      chapterId: location?.chapter.chapterId,
-      chapterTitle: location?.chapter.title ?? 'Retención pendiente',
-      title: localize(snapshot.profile?.locale, activity.title),
-      reason: 'La fecha de recuperación espaciada ya ha vencido; repasar ahora protege lo demostrado.',
-      type: 'review',
-      href: `#/learning/activity/${encodeURIComponent(activity.id)}?mode=retention`,
-      ctaLabel: 'Hacer repaso',
-      durationMinutes: activity.durationMinutes,
-      remainingCoreItems: remainingItems(path, snapshot, localState, location?.chapter.chapterId, now),
-      after: 'Después continuarás en el mismo punto de la ruta principal.',
-      activityId: activity.id,
+      stageId: stage?.stageId,
+      stageTitle: stage?.title ?? 'Repaso',
+      chapterId: owningStep.chapter.chapterId,
+      chapterTitle: owningStep.chapter.title,
+      title: 'Repaso pendiente sin actividad específica',
+      reason: 'La competencia tiene retención vencida, pero la ruta no declara una actividad de retención explícita.',
+      type: 'retention-content-missing',
+      href: `#/learning/lesson/${encodeURIComponent(owningStep.step.lessonId)}`,
+      ctaLabel: 'Revisar contenido',
+      remainingCoreItems: remainingItems(path, snapshot, localState, owningStep.chapter.chapterId, now),
+      after: 'Revisar el contenido no acredita retención; hace falta una actividad específica antes de registrar ese resultado.',
+      lessonId: owningStep.step.lessonId,
+      competencyId: due.competencyId,
     }
   }
 

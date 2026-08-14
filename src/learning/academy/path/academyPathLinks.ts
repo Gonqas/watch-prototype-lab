@@ -43,6 +43,7 @@ function withExplicitStudy(
     ...state,
     lessonProgress: [
       {
+        ...previous,
         lessonId,
         currentSegmentId: previous?.currentSegmentId ?? '',
         completedSegmentIds: previous?.completedSegmentIds ?? [],
