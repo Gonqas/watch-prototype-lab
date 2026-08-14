@@ -1519,6 +1519,8 @@ export function LearningSurfaces() {
     'review',
     'results',
     'preferences',
+    'editorial-review',
+    'usability',
     'onboarding',
   ].includes(snapshot.location.surface)
   if (academySurface && snapshot.location.query.legacy !== '1') return <AcademySurfaces />

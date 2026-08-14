@@ -90,6 +90,7 @@ import type { EducationalSceneGraph, EducationalVisualState } from '../visual/mo
 import { createSceneComposition } from '../visual/sceneFixtures'
 import { useLearning } from './LearningContext'
 import { AcademyLibrarySurface } from './library/AcademyLibrarySurface'
+import { AcademyReaderMetricsPanel } from './reader/AcademyReaderMetricsPanel'
 import { AcademyPathBreadcrumbs } from './path/AcademyPathBreadcrumbs'
 import { academyLessonCompletionTransition, academyModuleEntryHref } from '../academy/path/academyPathLinks'
 import { AcademyPathHomeSurface, AcademyPathSurface } from './path/AcademyPathSurface'
@@ -111,6 +112,8 @@ const EngineeringLabSurface = lazy(() => import('./EngineeringLabSurface'))
 const MetrologySurface = lazy(() => import('./MetrologySurface'))
 const EducationalViewport = lazy(() => import('./EducationalViewport'))
 const AcademyContinuousLessonSurface = lazy(() => import('./reader/AcademyContinuousLessonSurface'))
+const AcademyEditorialReviewSurface = lazy(() => import('./reader/AcademyEditorialReviewSurface'))
+const AcademyUsabilityHarnessSurface = lazy(() => import('./reader/AcademyUsabilityHarnessSurface'))
 
 const masteryLabels: Record<MasteryState, string> = {
   not_started: 'Sin iniciar',
@@ -1474,7 +1477,7 @@ function NotebookSurface() {
             <article key={note.id}>
               <header><div><h2>{note.title}</h2><span>{learningDate(snapshot.profile?.locale, note.updatedAt)}</span></div><div><button type="button" onClick={() => edit(note.id)}>Editar</button><button type="button" aria-label={`Eliminar ${note.title}`} onClick={() => actions.deleteNote(note.id)}><Trash2 size={15} /></button></div></header>
               <p>{note.body}</p>
-              <footer><div>{note.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>{Object.keys(note.context).length > 0 && <small>{Object.values(note.context).map(humanizeLearningId).join(' · ')}</small>}</footer>
+              <footer><div>{note.tags.map((tag) => <span key={tag}>{tag}</span>)}</div>{Object.keys(note.context).length > 0 && <small>{Object.values(note.context).map(humanizeLearningId).join(' · ')}</small>}{note.context.lessonId && <a href={`#/learning/lesson/${encodeURIComponent(note.context.lessonId)}${note.context.sectionId ? `?section=${encodeURIComponent(note.context.sectionId)}` : ''}`}>Volver al apartado{note.context.sectionId ? '' : ' de la lección'}</a>}</footer>
             </article>
           ))}
           {!state?.notes.length && !state?.bookmarks.length && !state?.captures.length && <EmptyState icon={NotebookPen} title="Tu cuaderno está vacío" detail="Puedes crear una nota aquí o desde una lección. Nunca se publica ni se sincroniza por defecto." />}
@@ -2065,6 +2068,7 @@ function PreferencesSurface() {
           <a href="#/learning/profile">Administrar perfil, copias y eliminación</a>
         </section>
       </div>
+      <AcademyReaderMetricsPanel profileId={snapshot.profile.id} />
     </AcademyPage>
   )
 }
@@ -2155,6 +2159,8 @@ export function AcademySurfaces() {
   if (surface === 'review') return <ReviewSurface />
   if (surface === 'results') return <ResultsSurface />
   if (surface === 'preferences') return <PreferencesSurface />
+  if (surface === 'editorial-review') return <Suspense fallback={<div className="academy-empty-state" role="status"><p>Preparando la revisión editorial…</p></div>}><AcademyEditorialReviewSurface /></Suspense>
+  if (surface === 'usability') return <Suspense fallback={<div className="academy-empty-state" role="status"><p>Preparando la sesión guiada…</p></div>}><AcademyUsabilityHarnessSurface /></Suspense>
   if (surface === 'onboarding') return <OnboardingSurface />
   return <NotFoundSurface />
 }

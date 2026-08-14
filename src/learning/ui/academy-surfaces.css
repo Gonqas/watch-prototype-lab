@@ -4131,3 +4131,16 @@
   background: #8ffaff;
   border-color: #fff;
 }
+.academy-reader-metrics-panel {
+  margin-top: 24px;
+  padding: 22px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  background: var(--surface-raised);
+}
+
+.academy-reader-metrics-panel h2 { margin: 6px 0 10px; }
+.academy-reader-metrics-panel dl { display: flex; flex-wrap: wrap; gap: 12px; margin: 18px 0; }
+.academy-reader-metrics-panel dl div { min-width: 120px; padding: 10px 14px; border: 1px solid var(--border-subtle); border-radius: 10px; }
+.academy-reader-metrics-panel dt { color: var(--text-secondary); font-size: .72rem; text-transform: uppercase; }
+.academy-reader-metrics-panel dd { margin: 4px 0 0; font-size: 1.25rem; font-weight: 700; }

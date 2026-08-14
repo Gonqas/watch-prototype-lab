@@ -3,12 +3,14 @@ import {
   BookOpen,
   Boxes,
   CircleUserRound,
+  ClipboardCheck,
   Gauge,
   LibraryBig,
   ListChecks,
   NotebookPen,
   Search,
   Settings2,
+  TestTube2,
   Sigma,
   X,
 } from 'lucide-react'
@@ -30,6 +32,8 @@ const icons: Partial<Record<LearningSurface, typeof Search>> = {
   content: LibraryBig,
   profile: CircleUserRound,
   preferences: Settings2,
+  'editorial-review': ClipboardCheck,
+  usability: TestTube2,
 }
 
 export function AcademyLibraryMenu({

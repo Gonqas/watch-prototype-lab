@@ -21,7 +21,8 @@ const primaryItems = [
 
 const librarySurfaces = new Set<LearningSurface>([
   'explore', 'engineering', 'atlas', 'review', 'search', 'notebook', 'glossary', 'sources',
-  'progress', 'content', 'profile', 'preferences', 'route', 'module', 'package', 'competency', 'movement',
+  'progress', 'content', 'profile', 'preferences', 'editorial-review', 'usability',
+  'route', 'module', 'package', 'competency', 'movement',
 ])
 
 function activePrimary(surface: LearningSurface, item: LearningSurface, id?: string): boolean {

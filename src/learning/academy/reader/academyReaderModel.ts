@@ -27,6 +27,118 @@ export type AcademyVisualCuePurpose = 'locate' | 'follow' | 'compare' | 'sequenc
 export type AcademyVisualCueKind = 'scene-3d' | 'diagram' | 'comparison' | 'sequence' | 'table' | 'image' | 'none'
 export type AcademyVisualCueSourceType = 'existing-fixture' | 'existing-runtime-asset' | 'original-diagram' | 'licensed-asset' | 'none'
 
+export type AcademySemanticSpecificity = 'generic-scaffold' | 'topic-specific' | 'lesson-specific' | 'section-specific'
+export type AcademyVisualReviewStatus = 'unreviewed' | 'codex-assisted' | 'owner-reviewed' | 'technical-review-pending'
+export type AcademyReadingModePolicy = 'omit' | 'inline-essential' | 'inline-static-summary' | 'textual-alternative-only'
+export type AcademyVisualDecision =
+  | 'content-specific-diagram'
+  | 'content-specific-3d'
+  | 'content-specific-comparison'
+  | 'content-specific-sequence'
+  | 'essential-inline-image'
+  | 'text-sufficient'
+  | 'visual-gap'
+  | 'source-review-required'
+
+export type AcademyEditorialReviewStatus =
+  | 'automated-structural-migration'
+  | 'codex-assisted-curation'
+  | 'owner-review-pending'
+  | 'owner-reviewed'
+  | 'technical-expert-review-pending'
+  | 'technical-expert-reviewed'
+  | 'stale-after-content-change'
+
+export interface AcademyDiagramNode {
+  id: string
+  label: string
+  detail?: string
+  lane?: string
+  emphasis?: 'normal' | 'primary' | 'warning'
+}
+
+export interface AcademyDiagramEdge {
+  from: string
+  to: string
+  label?: string
+  direction?: 'forward' | 'reverse' | 'bidirectional'
+  kind?: 'energy' | 'timing' | 'mechanical' | 'decision' | 'comparison'
+}
+
+export interface AcademyDiagramData {
+  title: string
+  nodes: AcademyDiagramNode[]
+  edges: AcademyDiagramEdge[]
+  phases?: Array<{ id: string; label: string; detail?: string }>
+  annotations?: string[]
+  formula?: string
+  acceptanceCriteria?: string[]
+}
+
+export interface AcademyVisualLabelDefinition {
+  id: string
+  label: string
+  targetId?: string
+  description?: string
+}
+
+export interface AcademySectionVisualCuration {
+  curationId: string
+  lessonId: string
+  sectionId: string
+  contentHash: string
+  sectionHash: string
+  pedagogicalPurpose: string
+  pedagogicalQuestion: string
+  essentialConcepts: string[]
+  visualDecision: AcademyVisualDecision
+  visualDesignId?: string
+  visualKind: AcademyVisualCueKind
+  diagramSchemaId?: string
+  diagramData?: AcademyDiagramData
+  fixtureBinding?: NonNullable<LearningActivityDescriptor['fixtureBinding']>
+  activityId?: string
+  visualStateId?: string
+  cameraPreset?: string
+  selectorIds: string[]
+  isolationIds: string[]
+  transparencyById: Record<string, number>
+  explodedState?: string
+  animationState?: string
+  labelDefinitions: AcademyVisualLabelDefinition[]
+  expectedObservation: string
+  misconceptionAddressed?: string
+  readingModePolicy: AcademyReadingModePolicy
+  fidelity: 'conceptual' | 'calibre-specific' | 'not-applicable'
+  limitations: string[]
+  sourceBasis: string[]
+  curationMethod: 'codex-assisted-section-curation' | 'automated-structural-decision'
+  ownerReviewStatus: 'owner-review-pending' | 'owner-reviewed' | 'stale-after-content-change'
+  technicalReviewStatus: 'not-required' | 'technical-expert-review-pending' | 'technical-expert-reviewed'
+  gapReason?: string
+  notes: string[]
+}
+
+export interface Academy3dVisualState {
+  visualStateId: string
+  fixtureId: string
+  camera: {
+    presetId: string
+    position: [number, number, number]
+    target: [number, number, number]
+    fieldOfView: number
+  }
+  selectedIds: string[]
+  isolatedIds: string[]
+  transparency: Record<string, number>
+  explosion: Record<string, number>
+  animation: 'paused' | 'play-on-explicit-request' | 'static-phase'
+  labels: AcademyVisualLabelDefinition[]
+  expectedObservation: string
+  fidelity: 'conceptual' | 'calibre-specific'
+  limitations: string[]
+}
+
 export interface AcademyVisualCue {
   cueId: string
   lessonId: string
@@ -36,22 +148,38 @@ export interface AcademyVisualCue {
   kind: AcademyVisualCueKind
   sourceType: AcademyVisualCueSourceType
   diagramKind?: 'system-map' | 'causal-chain' | 'annotated-anatomy' | 'comparison' | 'inspection-path'
+  visualDecision?: AcademyVisualDecision
+  visualDesignId?: string
+  diagramSchemaId?: string
+  diagramData?: AcademyDiagramData
+  diagramPayloadHash?: string
+  compositionId?: string
+  visualStateId?: string
+  semanticSpecificity?: AcademySemanticSpecificity
+  evidenceOfSpecificity?: string[]
+  reviewStatus?: AcademyVisualReviewStatus
   activityId?: string
   fixtureBinding?: NonNullable<LearningActivityDescriptor['fixtureBinding']>
   modelReference?: string
   selectorIds: string[]
   cameraPreset?: string
   isolation: string[]
+  isolationIds?: string[]
+  transparencyById?: Record<string, number>
   transparency?: number
   explodedState?: string
   animationState?: string
   labels: string[]
+  labelDefinitions?: AcademyVisualLabelDefinition[]
   pedagogicalQuestion: string
   caption: string
   altText: string
   fidelity: 'conceptual' | 'calibre-specific' | 'not-applicable'
   limitations: string[]
-  implementationStatus: 'implemented' | 'not-required' | 'gap-recorded'
+  expectedObservation?: string
+  misconceptionAddressed?: string
+  readingModePolicy?: AcademyReadingModePolicy
+  implementationStatus: 'implemented' | 'not-required' | 'gap-recorded' | 'unavailable'
   provenance: 'existing-fixture' | 'original-data-driven-svg' | 'editorial-decision'
   sourceRole: 'supporting' | 'visual-inspiration' | 'none'
   curationStatus: 'implemented' | 'available-pending' | 'unnecessary' | 'gap'
@@ -119,7 +247,7 @@ export interface AcademyReaderCompletionContract {
 }
 
 export interface AcademyReaderDocument {
-  readerSchemaVersion: '0.14C'
+  readerSchemaVersion: '0.14C' | '0.14D'
   documentId: string
   documentVersion: string
   version: string
@@ -129,6 +257,7 @@ export interface AcademyReaderDocument {
   lessonVersion: string
   locale: string
   contentHash: string
+  identity?: AcademyReaderDocumentIdentity
   title: string
   purpose?: string
   whyNow?: string
@@ -138,6 +267,7 @@ export interface AcademyReaderDocument {
   chapterId?: string
   stepId?: string
   sections: AcademyReaderSection[]
+  sectionCurations?: AcademySectionVisualCuration[]
   referenceSections: AcademyReaderSection[]
   visualCues: AcademyVisualCue[]
   outline: AcademyReaderOutlineItem[]
@@ -156,7 +286,19 @@ export interface AcademyReaderDocument {
     method: 'automated-structural-migration' | 'codex-assisted-editorial-curation'
     confidence: 'high' | 'medium'
     ownerReviewPending: boolean
+    editorialStatus?: AcademyEditorialReviewStatus
+    ownerReviewStatus?: 'owner-review-pending' | 'owner-reviewed' | 'stale-after-content-change'
+    technicalReviewStatus?: 'not-required' | 'technical-expert-review-pending' | 'technical-expert-reviewed'
   }
+}
+
+export interface AcademyReaderDocumentIdentity {
+  schemaVersion: 1
+  contentHash: string
+  structureHash: string
+  compatibilityVersion: string
+  diagnosticSignature: string
+  legacyDocumentVersion: string
 }
 
 export interface AcademyReaderResumePoint {
@@ -183,9 +325,76 @@ export interface AcademyReaderValidationIssue {
     | 'missing-visual-decision'
     | 'unsafe-markdown-url'
     | 'completion-contract-invalid'
+    | 'missing-3d-activity'
+    | 'missing-3d-state'
+    | 'generic-diagram-misclassified'
   lessonId: string
   sectionId?: string
   message: string
+}
+
+export type AcademyReaderEventType =
+  | 'session-start'
+  | 'session-end'
+  | 'lesson-open'
+  | 'lesson-resume'
+  | 'section-enter'
+  | 'outline-open'
+  | 'outline-jump'
+  | 'cue-view'
+  | 'visual-expand'
+  | 'source-open'
+  | 'glossary-open'
+  | 'mode-change'
+  | 'note-created'
+  | 'bookmark-created'
+  | 'explicit-completion'
+  | 'practice-transition'
+  | 'route-leave-incomplete'
+  | 'pagehide-incomplete'
+  | 'return-after-incomplete'
+
+export interface AcademyReaderEvent {
+  eventId: string
+  sessionId: string
+  eventType: AcademyReaderEventType
+  timestamp: string
+  lessonId?: string
+  sectionId?: string
+  cueId?: string
+  mode?: AcademyReaderMode
+  viewportClass?: 'desktop' | 'tablet' | 'mobile' | 'reflow'
+  fromSectionId?: string
+  toSectionId?: string
+  transitionTarget?: string
+  durationBucket?: 'under-30s' | '30s-2m' | '2m-10m' | 'over-10m'
+  completed?: boolean
+  source: 'academy-reader' | 'editorial-review' | 'usability-harness'
+  metadata: Record<string, string | number | boolean>
+}
+
+export type AcademyUsabilityParticipantType = 'owner' | 'beginner' | 'enthusiast' | 'watchmaker'
+
+export interface AcademyUsabilityTaskResult {
+  taskId: string
+  success: 'pending' | 'yes' | 'partial' | 'no'
+  difficulty: 1 | 2 | 3 | 4 | 5
+  confidence: 1 | 2 | 3 | 4 | 5
+  comment: string
+  approximateSeconds: number
+  backtrackCount: number
+}
+
+export interface AcademyUsabilitySession {
+  sessionId: string
+  startedAt: string
+  finishedAt?: string
+  participantType: AcademyUsabilityParticipantType
+  taskIds: string[]
+  eventIds: string[]
+  observations: string
+  status: 'draft' | 'active' | 'completed' | 'abandoned'
+  taskResults: AcademyUsabilityTaskResult[]
 }
 
 export interface AcademyReaderBuildInput {

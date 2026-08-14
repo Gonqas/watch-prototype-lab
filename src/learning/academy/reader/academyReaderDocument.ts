@@ -1,6 +1,13 @@
 import { localize } from '../../application/i18n'
 import { segmentLessonBlock } from '../lessonSegmentation'
 import { academyReaderPilotCuration } from './academyReaderPilot'
+import {
+  academyDiagramIsContentSpecific,
+  academyDiagramPayloadHash,
+  academySectionVisualCuration,
+} from './academyReaderCuration'
+import { academy3dVisualState } from './academyReader3dStates'
+import { academyReaderShortDocumentVersion, academyReaderStableHash } from './academyReaderIdentity'
 import type {
   AcademyLegacySectionAlias,
   AcademyReaderBuildInput,
@@ -51,15 +58,6 @@ function countWords(value: string): number {
     .trim()
     .split(/\s+/)
     .filter(Boolean).length
-}
-
-function contentHash(value: string): string {
-  let hash = 0xcbf29ce484222325n
-  for (const character of new TextEncoder().encode(value)) {
-    hash ^= BigInt(character)
-    hash = BigInt.asUintN(64, hash * 0x100000001b3n)
-  }
-  return `fnv1a64:${hash.toString(16).padStart(16, '0')}`
 }
 
 function glossaryTerms(value: string): string[] {
@@ -129,7 +127,7 @@ function semanticDrafts(title: string, markdown: string): SectionDraft[] {
   return drafts
 }
 
-function visualCue(
+function legacyVisualCue(
   lessonId: string,
   sectionId: string,
   order: number,
@@ -253,6 +251,134 @@ function visualCue(
       }
 }
 
+function structuralVisualCue(
+  lessonId: string,
+  sectionId: string,
+  order: number,
+  title: string,
+  role: AcademyReaderSectionRole,
+): AcademyVisualCue {
+  const visualExpected = ['visual-anatomy', 'observation', 'worked-example', 'procedure'].includes(role)
+  return {
+    cueId: `reader.cue.${sectionId}`,
+    lessonId,
+    sectionId,
+    order,
+    purpose: role === 'visual-anatomy' ? 'locate' : role === 'procedure' ? 'sequence' : role === 'observation' ? 'diagnose' : 'follow',
+    kind: 'none',
+    sourceType: 'none',
+    visualDecision: visualExpected ? 'visual-gap' : 'text-sufficient',
+    selectorIds: [],
+    isolation: [],
+    isolationIds: [],
+    transparencyById: {},
+    labels: [],
+    labelDefinitions: [],
+    pedagogicalQuestion: `¿Necesita «${title}» un apoyo visual independiente?`,
+    caption: title,
+    altText: visualExpected
+      ? `No existe todavía un recurso visual específico verificado para «${title}»; el texto permanece completo.`
+      : `El apartado «${title}» se comprende íntegramente mediante el texto.`,
+    fidelity: 'not-applicable',
+    limitations: visualExpected
+      ? ['Vacío registrado; no se presenta una plantilla genérica ni un placeholder.']
+      : ['No se añade una imagen decorativa o redundante.'],
+    expectedObservation: visualExpected ? 'Pendiente de curación visual específica.' : 'El texto conserva el significado completo.',
+    readingModePolicy: 'omit',
+    semanticSpecificity: visualExpected ? 'topic-specific' : 'generic-scaffold',
+    evidenceOfSpecificity: visualExpected ? ['Decisión estructural por rol; sin payload visual implementado.'] : [],
+    reviewStatus: 'unreviewed',
+    implementationStatus: visualExpected ? 'gap-recorded' : 'not-required',
+    provenance: 'editorial-decision',
+    sourceRole: 'none',
+    curationStatus: visualExpected ? 'gap' : 'unnecessary',
+  }
+}
+
+function curatedVisualCue(
+  section: AcademyReaderSection,
+  curation: NonNullable<AcademyReaderDocument['sectionCurations']>[number],
+  activities: AcademyReaderBuildInput['material']['activities'],
+): AcademyVisualCue {
+  const activity = curation.activityId ? activities.find(({ id }) => id === curation.activityId) : undefined
+  const visualState = academy3dVisualState(curation.visualStateId)
+  const implementedDiagram = Boolean(curation.diagramData && academyDiagramIsContentSpecific(curation.diagramData))
+  const implementedScene = curation.visualKind === 'scene-3d' && Boolean(activity?.fixtureBinding && visualState)
+  const implemented = implementedDiagram || implementedScene
+  const gap = ['visual-gap', 'source-review-required'].includes(curation.visualDecision)
+  const compositionId = curation.fixtureBinding?.kind === 'composition'
+    ? curation.fixtureBinding.compositionId
+    : curation.fixtureBinding?.kind === 'fixture'
+      ? `composition.${curation.fixtureBinding.fixtureId}`
+      : undefined
+  return {
+    cueId: `reader.cue.${section.sectionId}`,
+    lessonId: section.lessonId,
+    sectionId: section.sectionId,
+    order: section.order,
+    purpose: section.role === 'visual-anatomy'
+      ? 'locate'
+      : section.role === 'procedure'
+        ? 'sequence'
+        : section.role === 'diagnosis' || section.role === 'observation'
+          ? 'diagnose'
+          : section.role === 'comparison' || section.role === 'worked-example'
+            ? 'compare'
+            : 'follow',
+    kind: implemented ? curation.visualKind : 'none',
+    sourceType: implementedScene ? 'existing-fixture' : implementedDiagram ? 'original-diagram' : 'none',
+    visualDecision: curation.visualDecision,
+    visualDesignId: curation.visualDesignId,
+    diagramSchemaId: curation.diagramSchemaId,
+    diagramData: curation.diagramData,
+    diagramPayloadHash: academyDiagramPayloadHash(curation.diagramData),
+    activityId: curation.activityId,
+    fixtureBinding: activity?.fixtureBinding,
+    compositionId,
+    visualStateId: curation.visualStateId,
+    diagramKind: curation.visualKind === 'comparison'
+      ? 'comparison'
+      : curation.visualKind === 'sequence'
+        ? 'inspection-path'
+        : curation.visualKind === 'diagram'
+          ? 'system-map'
+          : undefined,
+    modelReference: visualState?.fixtureId ?? curation.visualDesignId,
+    selectorIds: curation.selectorIds,
+    cameraPreset: curation.cameraPreset,
+    isolation: curation.isolationIds,
+    isolationIds: curation.isolationIds,
+    transparencyById: curation.transparencyById,
+    explodedState: curation.explodedState,
+    animationState: curation.animationState,
+    labels: curation.labelDefinitions.map(({ label }) => label),
+    labelDefinitions: curation.labelDefinitions,
+    pedagogicalQuestion: curation.pedagogicalQuestion,
+    caption: curation.diagramData?.title ?? section.title,
+    altText: curation.expectedObservation,
+    fidelity: curation.fidelity,
+    limitations: curation.limitations,
+    expectedObservation: curation.expectedObservation,
+    misconceptionAddressed: curation.misconceptionAddressed,
+    readingModePolicy: curation.readingModePolicy,
+    semanticSpecificity: implemented ? 'section-specific' : gap ? 'topic-specific' : 'generic-scaffold',
+    evidenceOfSpecificity: implementedDiagram
+      ? curation.diagramData?.nodes.map(({ label }) => label) ?? []
+      : implementedScene
+        ? [visualState?.visualStateId ?? '', ...curation.selectorIds].filter(Boolean)
+        : [],
+    reviewStatus: 'codex-assisted',
+    implementationStatus: implemented
+      ? 'implemented'
+      : curation.visualKind === 'scene-3d' && curation.visualDecision === 'content-specific-3d'
+        ? 'unavailable'
+        : gap ? 'gap-recorded' : 'not-required',
+    provenance: implementedScene ? 'existing-fixture' : implementedDiagram ? 'original-data-driven-svg' : 'editorial-decision',
+    sourceRole: implemented ? 'supporting' : 'none',
+    curationStatus: implemented ? 'implemented' : gap ? 'gap' : 'unnecessary',
+  }
+}
+
 function aliasesForDocument(
   input: AcademyReaderBuildInput,
   sections: AcademyReaderSection[],
@@ -301,11 +427,17 @@ export function academyReaderDocumentVersion(input: AcademyReaderBuildInput): st
   ].join(':')
 }
 
-export function buildAcademyReaderDocument(input: AcademyReaderBuildInput): AcademyReaderDocument {
+export function buildAcademyReaderDocument(
+  input: AcademyReaderBuildInput,
+  options: { compatibility?: '0.14C' } = {},
+): AcademyReaderDocument {
+  const legacy014C = options.compatibility === '0.14C'
   const lessonId = input.material.lesson.id
   const pilot = academyReaderPilotCuration(lessonId)
   const fixtureActivity = input.material.activities.find(({ fixtureBinding }) => Boolean(fixtureBinding))
   const visualDeclared = Boolean(input.material.lesson.authoring?.visualStrategy)
+  const contentBasis = input.material.blocks.map(({ bodyMarkdown }) => bodyMarkdown.replaceAll('\r\n', '\n').trim()).join('\n\n')
+  const documentContentHash = academyReaderStableHash(contentBasis)
   const sectionIds = new Map<string, number>()
   const sections: AcademyReaderSection[] = []
   for (const block of input.material.blocks) {
@@ -320,7 +452,9 @@ export function buildAcademyReaderDocument(input: AcademyReaderBuildInput): Acad
       const sectionId = occurrence === 1 ? base : `${base}.${occurrence}`
       const wordCount = countWords(draft.markdown)
       const role = sectionRole(block.kind, block.pedagogy?.role, draft.title)
-      const cue = visualCue(lessonId, sectionId, sections.length + 1, draft.title, role, pilot, visualDeclared, fixtureActivity)
+      const cue = legacy014C
+        ? legacyVisualCue(lessonId, sectionId, sections.length + 1, draft.title, role, pilot, visualDeclared, fixtureActivity)
+        : structuralVisualCue(lessonId, sectionId, sections.length + 1, draft.title, role)
       const reference = ['reference', 'sources', 'limitations'].includes(role)
       sections.push({
         sectionId,
@@ -351,6 +485,30 @@ export function buildAcademyReaderDocument(input: AcademyReaderBuildInput): Acad
       })
     }
   }
+  const sourceIds = input.material.sources.map(({ id }) => id)
+  const sectionCurations = legacy014C ? [] : sections.flatMap((section) => {
+    const curation = academySectionVisualCuration({
+      lessonId,
+      section,
+      contentHash: documentContentHash,
+      sectionHash: academyReaderStableHash(section.markdown),
+      activities: input.material.activities,
+      sourceIds,
+    })
+    return curation ? [curation] : []
+  })
+  if (!legacy014C) {
+    const curationBySection = new Map(sectionCurations.map((curation) => [curation.sectionId, curation]))
+    for (const section of sections) {
+      const curation = curationBySection.get(section.sectionId)
+      if (!curation) continue
+      const cue = curatedVisualCue(section, curation, input.material.activities)
+      section.visualCue = cue
+      section.visualCueIds = [cue.cueId]
+      section.curationMethod = 'pilot-override'
+      section.curationConfidence = 'high'
+    }
+  }
   const requiredActivityIds = [...(input.requiredActivityIds ?? [])]
   const optionalActivityIds = input.material.activities
     .map(({ id }) => id)
@@ -369,18 +527,40 @@ export function buildAcademyReaderDocument(input: AcademyReaderBuildInput): Acad
   const estimatedDurationMinutes = blockDurations.length > 0 && blockDurations.every((value): value is number => value !== undefined)
     ? blockDurations.reduce((total, value) => total + value, 0)
     : undefined
-  const contentBasis = input.material.blocks.map(({ bodyMarkdown }) => bodyMarkdown.replaceAll('\r\n', '\n').trim()).join('\n\n')
+  const legacyVersion = academyReaderDocumentVersion(input)
+  const structureHash = academyReaderStableHash(sections.map(({ sectionId, sourceBlockVersion, headingLevel, title }) =>
+    `${sectionId}|${sourceBlockVersion}|${headingLevel}|${title}`).join('\n'))
+  const diagnosticSignature = `reader-0.14D:${legacyVersion}:${documentContentHash}:${structureHash}`
+  const compatibilityVersion = 'legacy-section-aliases-0.14C-v1'
+  const shortVersion = academyReaderShortDocumentVersion({
+    contentHash: documentContentHash,
+    structureHash,
+    compatibilityVersion,
+    diagnosticSignature,
+    legacyDocumentVersion: legacyVersion,
+  })
+  const documentVersion = legacy014C ? legacyVersion : shortVersion
   return {
-    readerSchemaVersion: '0.14C',
+    readerSchemaVersion: legacy014C ? '0.14C' : '0.14D',
     documentId: `reader.document.${lessonId}`,
-    documentVersion: academyReaderDocumentVersion(input),
-    version: academyReaderDocumentVersion(input),
+    documentVersion,
+    version: documentVersion,
     packageId: input.material.packageId,
     packageVersion: input.material.packageVersion,
     lessonId,
     lessonVersion: input.material.lesson.version,
     locale: input.locale ?? 'es-ES',
-    contentHash: contentHash(contentBasis),
+    contentHash: documentContentHash,
+    ...(!legacy014C ? {
+      identity: {
+        schemaVersion: 1 as const,
+        contentHash: documentContentHash,
+        structureHash,
+        compatibilityVersion,
+        diagnosticSignature,
+        legacyDocumentVersion: legacyVersion,
+      },
+    } : {}),
     title: input.title,
     purpose: input.purpose,
     whyNow: input.whyNow,
@@ -390,11 +570,12 @@ export function buildAcademyReaderDocument(input: AcademyReaderBuildInput): Acad
     chapterId: input.chapterId,
     stepId: input.stepId,
     sections,
+    ...(!legacy014C ? { sectionCurations } : {}),
     referenceSections: sections.filter(({ role }) => ['reference', 'sources', 'limitations'].includes(role)),
     visualCues: sections.map(({ visualCue }) => visualCue),
     outline: sections.map(({ sectionId, title, headingLevel, role }) => ({ sectionId, title, level: headingLevel, role })),
     glossaryTermIds: [...new Set(sections.flatMap(({ glossaryTermIds: ids }) => ids))],
-    sourceIds: input.material.sources.map(({ id }) => id),
+    sourceIds,
     legacyAliases: aliases,
     compatibility: { legacyAliases: aliases, legacyModePolicy: 'map-to-learn-or-read' },
     completion,
@@ -404,7 +585,14 @@ export function buildAcademyReaderDocument(input: AcademyReaderBuildInput): Acad
     curation: {
       method: pilot ? 'codex-assisted-editorial-curation' : 'automated-structural-migration',
       confidence: pilot ? 'high' : 'medium',
-      ownerReviewPending: Boolean(pilot),
+      ownerReviewPending: legacy014C ? Boolean(pilot) : true,
+      ...(!legacy014C ? {
+        editorialStatus: pilot ? 'codex-assisted-curation' as const : 'automated-structural-migration' as const,
+        ownerReviewStatus: 'owner-review-pending' as const,
+        technicalReviewStatus: sectionCurations.some(({ technicalReviewStatus }) => technicalReviewStatus === 'technical-expert-review-pending')
+          ? 'technical-expert-review-pending' as const
+          : 'not-required' as const,
+      } : {}),
     },
   }
 }
@@ -436,6 +624,18 @@ export function validateAcademyReaderDocument(document: AcademyReaderDocument): 
     if (seen.has(section.sectionId)) issues.push({ code: 'duplicate-section-id', lessonId: document.lessonId, sectionId: section.sectionId, message: 'El ID de apartado está duplicado.' })
     seen.add(section.sectionId)
     if (!section.visualCue) issues.push({ code: 'missing-visual-decision', lessonId: document.lessonId, sectionId: section.sectionId, message: 'Falta una decisión visual explícita.' })
+    if (document.readerSchemaVersion === '0.14D' && section.visualCue.kind === 'scene-3d' && !section.visualCue.activityId) {
+      issues.push({ code: 'missing-3d-activity', lessonId: document.lessonId, sectionId: section.sectionId, message: 'El cue 3D no declara una actividad exacta.' })
+    }
+    if (document.readerSchemaVersion === '0.14D' && section.visualCue.kind === 'scene-3d' && !section.visualCue.visualStateId) {
+      issues.push({ code: 'missing-3d-state', lessonId: document.lessonId, sectionId: section.sectionId, message: 'El cue 3D no declara un estado visual exacto.' })
+    }
+    if (document.readerSchemaVersion === '0.14D'
+      && section.visualCue.visualDecision?.startsWith('content-specific')
+      && section.visualCue.diagramData
+      && !academyDiagramIsContentSpecific(section.visualCue.diagramData)) {
+      issues.push({ code: 'generic-diagram-misclassified', lessonId: document.lessonId, sectionId: section.sectionId, message: 'Un payload genérico se marcó como contenido específico.' })
+    }
     if (/\]\(\s*(?:javascript|vbscript|data):/i.test(section.markdown)) {
       issues.push({ code: 'unsafe-markdown-url', lessonId: document.lessonId, sectionId: section.sectionId, message: 'El Markdown contiene una URL no permitida.' })
     }

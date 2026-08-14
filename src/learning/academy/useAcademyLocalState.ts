@@ -8,8 +8,10 @@ import {
   type AcademyLocalRecovery,
   type AcademyNote,
   type AcademyOnboarding,
+  type AcademyEditorialReview,
   type AcademyUxPreferences,
 } from './academyLocalState'
+import type { AcademyReaderEvent, AcademyUsabilitySession } from './reader/academyReaderModel'
 
 export interface AcademyLocalStateActions {
   setPreferences(patch: Partial<AcademyUxPreferences>): void
@@ -42,6 +44,11 @@ export interface AcademyLocalStateActions {
   clearReviewSnooze(competencyId: string): void
   recordMetric(metricId: string): void
   clearMetrics(): void
+  recordReaderEvent(input: Omit<AcademyReaderEvent, 'eventId' | 'timestamp'>): AcademyReaderEvent
+  clearReaderEvents(): void
+  saveEditorialReview(input: AcademyEditorialReview): AcademyEditorialReview
+  saveUsabilitySession(input: AcademyUsabilitySession): AcademyUsabilitySession
+  deleteUsabilitySession(sessionId: string): void
 }
 
 export function useAcademyLocalState(profileId: string | undefined, persistedState?: unknown): {
@@ -156,6 +163,30 @@ export function useAcademyLocalState(profileId: string | undefined, persistedSta
     },
     clearMetrics() {
       if (profileId && store) announce(store.clearMetrics(profileId))
+    },
+    recordReaderEvent(input) {
+      if (!profileId || !store) throw new Error('No hay un perfil local activo.')
+      const event = store.recordReaderEvent(profileId, input)
+      announce(store.load(profileId))
+      return event
+    },
+    clearReaderEvents() {
+      if (profileId && store) announce(store.clearReaderEvents(profileId))
+    },
+    saveEditorialReview(input) {
+      if (!profileId || !store) throw new Error('No hay un perfil local activo.')
+      const review = store.saveEditorialReview(profileId, input)
+      announce(store.load(profileId))
+      return review
+    },
+    saveUsabilitySession(input) {
+      if (!profileId || !store) throw new Error('No hay un perfil local activo.')
+      const session = store.saveUsabilitySession(profileId, input)
+      announce(store.load(profileId))
+      return session
+    },
+    deleteUsabilitySession(sessionId) {
+      if (profileId && store) announce(store.deleteUsabilitySession(profileId, sessionId))
     },
   }), [announce, profileId, store])
 

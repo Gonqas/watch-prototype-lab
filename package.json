@@ -46,11 +46,12 @@
     "learning:path-audit": "tsx scripts/academy-learner-path.ts",
     "learning:path-semantics": "tsx scripts/academy-path-semantics.ts",
     "learning:reader-audit": "tsx scripts/academy-reader-audit.ts",
+    "learning:reader-hardening": "tsx scripts/academy-reader-hardening.ts",
     "learning:text-scale": "node scripts/normalize-learning-text-scale.mjs",
     "learning:schema": "node scripts/generate-learning-schema-validator.mjs",
     "lint": "eslint .",
     "test": "vitest run",
-    "verify": "npm run lint && npm run test && npm run learning:academy-p1-audit && npm run learning:academy-p2-audit && npm run learning:content-quality-audit && npm run learning:editorial-audit -- --check && npm run learning:semantic-audit -- --check && npm run learning:path-audit -- --check && npm run learning:path-semantics -- --check && npm run learning:reader-audit -- --check && npm run build",
+    "verify": "npm run lint && npm run test && npm run learning:academy-p1-audit && npm run learning:academy-p2-audit && npm run learning:content-quality-audit && npm run learning:editorial-audit -- --check && npm run learning:semantic-audit -- --check && npm run learning:path-audit -- --check && npm run learning:path-semantics -- --check && npm run learning:reader-audit -- --check && npm run learning:reader-hardening -- --check && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {

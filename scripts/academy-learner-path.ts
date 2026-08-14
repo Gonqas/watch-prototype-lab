@@ -40,6 +40,10 @@ export async function buildAcademyLearnerPathOutputs(repositoryRoot: string): Pr
   const activityById = new Map(activities.map((item) => [item.id, item]))
   const routeById = new Map(routes.map((item) => [item.id, item]))
   const allLibraryRoutes = ACADEMY_LIBRARY_ROUTE_GROUPS.flatMap(({ routeIds }) => routeIds)
+  const libraryDestinations014B = ACADEMY_LIBRARY_DESTINATION_GROUPS.map((group) => ({
+    ...group,
+    destinations: group.destinations.filter(({ surface }) => surface !== 'editorial-review' && surface !== 'usability'),
+  }))
   const visibleRouteIds = routes.filter(({ demo }) => !demo).map(({ id }) => id)
   const missingLibraryRoutes = visibleRouteIds.filter((id) => !allLibraryRoutes.includes(id))
   const duplicateLibraryRoutes = allLibraryRoutes.filter((id, index) => allLibraryRoutes.indexOf(id) !== index)
@@ -150,7 +154,7 @@ ${ACADEMY_LEARNER_PATH.optionalBranches.map((branch) => `| ${pipe(branch.title)}
 
 Biblioteca es una entrada secundaria y conserva todas las superficies:
 
-${ACADEMY_LIBRARY_DESTINATION_GROUPS.map((group) => `- **${group.title}:** ${group.destinations.map(({ label }) => label).join(', ')}.`).join('\n')}
+${libraryDestinations014B.map((group) => `- **${group.title}:** ${group.destinations.map(({ label }) => label).join(', ')}.`).join('\n')}
 
 En móvil se muestran exactamente cuatro destinos: Inicio, Mi ruta, Taller y Biblioteca.
 

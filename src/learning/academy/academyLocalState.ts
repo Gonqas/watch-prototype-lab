@@ -1,3 +1,8 @@
+import type {
+  AcademyReaderEvent,
+  AcademyUsabilitySession,
+} from './reader/academyReaderModel'
+
 export type AcademyLessonMode = 'reading' | 'visual' | 'split' | 'focus' | 'textual'
 export type AcademyReaderMode = 'learn' | 'read'
 export type AcademyDensity = 'comfortable' | 'compact'
@@ -19,6 +24,8 @@ export interface AcademyNoteContext {
   sourceId?: string
   evidenceId?: string
   stepId?: string
+  sectionId?: string
+  cueId?: string
   specimenId?: string
   physicalComponentId?: string
   imageAssetId?: string
@@ -26,6 +33,42 @@ export interface AcademyNoteContext {
   measurementSeriesId?: string
   findingId?: string
   geometryProposalId?: string
+}
+
+export type AcademyEditorialReviewFlag =
+  | 'clear'
+  | 'confusing'
+  | 'too-long'
+  | 'repetitive'
+  | 'visual-useful'
+  | 'visual-unnecessary'
+  | 'visual-incorrect'
+  | 'visual-insufficient'
+  | 'terminology-doubtful'
+  | 'source-doubtful'
+  | 'sequence-correct'
+  | 'should-move'
+  | 'watchmaker-review-required'
+
+export interface AcademyEditorialSectionReview {
+  sectionId: string
+  sectionHash: string
+  flags: AcademyEditorialReviewFlag[]
+  comment: string
+  approved: boolean
+  reviewedAt: string
+}
+
+export interface AcademyEditorialReview {
+  lessonId: string
+  contentHash: string
+  readerDocumentHash: string
+  status: 'draft' | 'owner-reviewed' | 'reopened'
+  reviewedFields: string[]
+  sectionReviews: AcademyEditorialSectionReview[]
+  ownerReviewedAt?: string
+  version: '0.14D'
+  updatedAt: string
 }
 
 export interface AcademyNote {
@@ -120,6 +163,9 @@ export interface AcademyLocalState {
   lessonProgress: AcademyLessonProgress[]
   reviewSnoozes: AcademyReviewSnooze[]
   metrics: AcademyLocalMetric[]
+  readerEvents: AcademyReaderEvent[]
+  editorialReviews: AcademyEditorialReview[]
+  usabilitySessions: AcademyUsabilitySession[]
   updatedAt: string
 }
 
@@ -155,6 +201,14 @@ function stringArray(value: unknown, maximum = 24): string[] {
   return value.filter((item): item is string => typeof item === 'string' && item.trim().length > 0)
     .slice(0, maximum)
     .map((item) => item.trim().slice(0, 120))
+}
+
+function sectionIdArray(value: unknown, maximum = 1_000): string[] {
+  if (!Array.isArray(value)) return []
+  return [...new Set(value
+    .filter((item): item is string => typeof item === 'string' && item.trim().length > 0)
+    .slice(0, maximum)
+    .map((item) => item.trim().slice(0, 512)))]
 }
 
 function enumValue<T extends string | number>(value: unknown, values: readonly T[], fallback: T): T {
@@ -210,6 +264,9 @@ export function createDefaultAcademyLocalState(
     lessonProgress: [],
     reviewSnoozes: [],
     metrics: [],
+    readerEvents: [],
+    editorialReviews: [],
+    usabilitySessions: [],
     updatedAt: now,
   }
 }
@@ -227,7 +284,7 @@ function normalizeNote(value: unknown): AcademyNote | undefined {
       Object.entries(context)
         .filter(([key, item]) => [
           'routeId', 'moduleId', 'lessonId', 'activityId', 'sceneId', 'fixtureId', 'instanceId',
-          'movementId', 'partId', 'termId', 'sourceId', 'evidenceId', 'stepId',
+          'movementId', 'partId', 'termId', 'sourceId', 'evidenceId', 'stepId', 'sectionId', 'cueId',
         ].includes(key) && typeof item === 'string')
         .map(([key, item]) => [key, (item as string).slice(0, 200)]),
     ),
@@ -247,7 +304,7 @@ function normalizeBookmark(value: unknown): AcademyBookmark | undefined {
       Object.entries(context)
         .filter(([key, item]) => [
           'routeId', 'moduleId', 'lessonId', 'activityId', 'sceneId', 'fixtureId', 'instanceId',
-          'movementId', 'partId', 'termId', 'sourceId', 'evidenceId', 'stepId',
+          'movementId', 'partId', 'termId', 'sourceId', 'evidenceId', 'stepId', 'sectionId', 'cueId',
         ].includes(key) && typeof item === 'string')
         .map(([key, item]) => [key, (item as string).slice(0, 200)]),
     ),
@@ -274,7 +331,7 @@ function normalizeCapture(value: unknown): AcademyCapture | undefined {
       Object.entries(context)
         .filter(([key, item]) => [
           'routeId', 'moduleId', 'lessonId', 'activityId', 'sceneId', 'fixtureId', 'instanceId',
-          'movementId', 'partId', 'termId', 'sourceId', 'evidenceId', 'stepId',
+          'movementId', 'partId', 'termId', 'sourceId', 'evidenceId', 'stepId', 'sectionId', 'cueId',
         ].includes(key) && typeof item === 'string')
         .map(([key, item]) => [key, (item as string).slice(0, 200)]),
     ),
@@ -292,17 +349,117 @@ function normalizeLessonProgress(value: unknown): AcademyLessonProgress | undefi
   if (!isRecord(value) || typeof value.lessonId !== 'string' || typeof value.currentSegmentId !== 'string') return undefined
   return {
     lessonId: value.lessonId.slice(0, 200),
-    currentSegmentId: value.currentSegmentId.slice(0, 240),
+    currentSegmentId: value.currentSegmentId.slice(0, 512),
     completedSegmentIds: stringArray(value.completedSegmentIds, 80),
-    activeSectionId: typeof value.activeSectionId === 'string' ? value.activeSectionId.slice(0, 240) : undefined,
-    scrollAnchor: typeof value.scrollAnchor === 'string' ? value.scrollAnchor.slice(0, 240) : undefined,
+    activeSectionId: typeof value.activeSectionId === 'string' ? value.activeSectionId.slice(0, 512) : undefined,
+    scrollAnchor: typeof value.scrollAnchor === 'string' ? value.scrollAnchor.slice(0, 512) : undefined,
     scrollOffset: typeof value.scrollOffset === 'number' && Number.isFinite(value.scrollOffset)
       ? Math.max(0, Math.round(value.scrollOffset))
       : undefined,
-    documentVersion: typeof value.documentVersion === 'string' ? value.documentVersion.slice(0, 120) : undefined,
-    visitedSectionIds: stringArray(value.visitedSectionIds, 240),
+    documentVersion: typeof value.documentVersion === 'string' ? value.documentVersion.slice(0, 1_000) : undefined,
+    visitedSectionIds: sectionIdArray(value.visitedSectionIds),
     completedAt: typeof value.completedAt === 'string' ? value.completedAt : undefined,
     updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : new Date(0).toISOString(),
+  }
+}
+
+const editorialReviewFlags: AcademyEditorialReviewFlag[] = [
+  'clear', 'confusing', 'too-long', 'repetitive', 'visual-useful', 'visual-unnecessary', 'visual-incorrect',
+  'visual-insufficient', 'terminology-doubtful', 'source-doubtful', 'sequence-correct', 'should-move',
+  'watchmaker-review-required',
+]
+
+const readerEventTypes: AcademyReaderEvent['eventType'][] = [
+  'session-start', 'session-end', 'lesson-open', 'lesson-resume', 'section-enter', 'outline-open', 'outline-jump',
+  'cue-view', 'visual-expand', 'source-open', 'glossary-open', 'mode-change', 'note-created', 'bookmark-created',
+  'explicit-completion', 'practice-transition', 'route-leave-incomplete', 'pagehide-incomplete', 'return-after-incomplete',
+]
+
+function normalizeReaderEvent(value: unknown): AcademyReaderEvent | undefined {
+  if (!isRecord(value) || typeof value.eventId !== 'string' || typeof value.sessionId !== 'string') return undefined
+  if (!readerEventTypes.includes(value.eventType as AcademyReaderEvent['eventType'])) return undefined
+  const metadataEntries: Array<[string, string | number | boolean]> = []
+  if (isRecord(value.metadata)) {
+    for (const [key, item] of Object.entries(value.metadata)) {
+      if (metadataEntries.length >= 20 || !/^[a-z][a-z0-9_.-]{0,48}$/i.test(key)) continue
+      if (typeof item === 'number' && Number.isFinite(item)) metadataEntries.push([key, item])
+      else if (typeof item === 'boolean') metadataEntries.push([key, item])
+      else if (typeof item === 'string' && !/:\/\//.test(item)) metadataEntries.push([key, item.slice(0, 160)])
+    }
+  }
+  const metadata = Object.fromEntries(metadataEntries)
+  const optionalId = (item: unknown) => typeof item === 'string' ? item.slice(0, 512) : undefined
+  return {
+    eventId: value.eventId.slice(0, 160),
+    sessionId: value.sessionId.slice(0, 160),
+    eventType: value.eventType as AcademyReaderEvent['eventType'],
+    timestamp: typeof value.timestamp === 'string' ? value.timestamp : new Date(0).toISOString(),
+    lessonId: optionalId(value.lessonId), sectionId: optionalId(value.sectionId), cueId: optionalId(value.cueId),
+    mode: value.mode === 'learn' || value.mode === 'read' ? value.mode : undefined,
+    viewportClass: ['desktop', 'tablet', 'mobile', 'reflow'].includes(String(value.viewportClass))
+      ? value.viewportClass as AcademyReaderEvent['viewportClass'] : undefined,
+    fromSectionId: optionalId(value.fromSectionId), toSectionId: optionalId(value.toSectionId),
+    transitionTarget: optionalId(value.transitionTarget),
+    durationBucket: ['under-30s', '30s-2m', '2m-10m', 'over-10m'].includes(String(value.durationBucket))
+      ? value.durationBucket as AcademyReaderEvent['durationBucket'] : undefined,
+    completed: typeof value.completed === 'boolean' ? value.completed : undefined,
+    source: ['academy-reader', 'editorial-review', 'usability-harness'].includes(String(value.source))
+      ? value.source as AcademyReaderEvent['source'] : 'academy-reader',
+    metadata,
+  }
+}
+
+function normalizeEditorialReview(value: unknown): AcademyEditorialReview | undefined {
+  if (!isRecord(value) || typeof value.lessonId !== 'string' || typeof value.contentHash !== 'string' || typeof value.readerDocumentHash !== 'string') return undefined
+  const sectionReviews: AcademyEditorialSectionReview[] = Array.isArray(value.sectionReviews)
+    ? value.sectionReviews.filter(isRecord).flatMap((item) => {
+      if (typeof item.sectionId !== 'string' || typeof item.sectionHash !== 'string') return []
+      return [{
+        sectionId: item.sectionId.slice(0, 512),
+        sectionHash: item.sectionHash.slice(0, 80),
+        flags: Array.isArray(item.flags) ? item.flags.filter((flag): flag is AcademyEditorialReviewFlag => editorialReviewFlags.includes(flag as AcademyEditorialReviewFlag)).slice(0, editorialReviewFlags.length) : [],
+        comment: typeof item.comment === 'string' ? item.comment.slice(0, 4_000) : '',
+        approved: item.approved === true,
+        reviewedAt: typeof item.reviewedAt === 'string' ? item.reviewedAt : new Date(0).toISOString(),
+      }]
+    }).slice(0, 1_000)
+    : []
+  return {
+    lessonId: value.lessonId.slice(0, 200),
+    contentHash: value.contentHash.slice(0, 80),
+    readerDocumentHash: value.readerDocumentHash.slice(0, 80),
+    status: ['draft', 'owner-reviewed', 'reopened'].includes(String(value.status)) ? value.status as AcademyEditorialReview['status'] : 'draft',
+    reviewedFields: stringArray(value.reviewedFields, 40),
+    sectionReviews,
+    ownerReviewedAt: typeof value.ownerReviewedAt === 'string' ? value.ownerReviewedAt : undefined,
+    version: '0.14D',
+    updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : new Date(0).toISOString(),
+  }
+}
+
+function normalizeUsabilitySession(value: unknown): AcademyUsabilitySession | undefined {
+  if (!isRecord(value) || typeof value.sessionId !== 'string' || typeof value.startedAt !== 'string') return undefined
+  const taskResults = Array.isArray(value.taskResults) ? value.taskResults.filter(isRecord).flatMap((item) => {
+    if (typeof item.taskId !== 'string') return []
+    const clampRating = (rating: unknown) => Math.min(5, Math.max(1, Math.round(typeof rating === 'number' ? rating : 3))) as 1 | 2 | 3 | 4 | 5
+    return [{
+      taskId: item.taskId.slice(0, 160),
+      success: ['pending', 'yes', 'partial', 'no'].includes(String(item.success)) ? item.success as 'pending' | 'yes' | 'partial' | 'no' : 'pending',
+      difficulty: clampRating(item.difficulty), confidence: clampRating(item.confidence),
+      comment: typeof item.comment === 'string' ? item.comment.slice(0, 2_000) : '',
+      approximateSeconds: typeof item.approximateSeconds === 'number' ? Math.max(0, Math.round(item.approximateSeconds)) : 0,
+      backtrackCount: typeof item.backtrackCount === 'number' ? Math.max(0, Math.round(item.backtrackCount)) : 0,
+    }]
+  }).slice(0, 100) : []
+  return {
+    sessionId: value.sessionId.slice(0, 160), startedAt: value.startedAt,
+    finishedAt: typeof value.finishedAt === 'string' ? value.finishedAt : undefined,
+    participantType: ['owner', 'beginner', 'enthusiast', 'watchmaker'].includes(String(value.participantType))
+      ? value.participantType as AcademyUsabilitySession['participantType'] : 'owner',
+    taskIds: stringArray(value.taskIds, 100), eventIds: stringArray(value.eventIds, 2_500),
+    observations: typeof value.observations === 'string' ? value.observations.slice(0, 10_000) : '',
+    status: ['draft', 'active', 'completed', 'abandoned'].includes(String(value.status)) ? value.status as AcademyUsabilitySession['status'] : 'draft',
+    taskResults,
   }
 }
 
@@ -342,6 +499,15 @@ export function normalizeAcademyLocalState(profileId: string, value: unknown, no
       }]
     }).slice(0, 500)
     : []
+  const readerEvents = Array.isArray(value.readerEvents)
+    ? value.readerEvents.map(normalizeReaderEvent).filter((item): item is AcademyReaderEvent => Boolean(item)).slice(-2_500)
+    : []
+  const editorialReviews = Array.isArray(value.editorialReviews)
+    ? value.editorialReviews.map(normalizeEditorialReview).filter((item): item is AcademyEditorialReview => Boolean(item)).slice(0, 500)
+    : []
+  const usabilitySessions = Array.isArray(value.usabilitySessions)
+    ? value.usabilitySessions.map(normalizeUsabilitySession).filter((item): item is AcademyUsabilitySession => Boolean(item)).slice(0, 100)
+    : []
   return {
     schemaVersion: 1,
     profileId,
@@ -376,6 +542,9 @@ export function normalizeAcademyLocalState(profileId: string, value: unknown, no
     lessonProgress,
     reviewSnoozes,
     metrics,
+    readerEvents,
+    editorialReviews,
+    usabilitySessions,
     updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : now,
   }
 }
@@ -660,13 +829,13 @@ export class AcademyLocalStore {
       const previous = state.lessonProgress.find((item) => item.lessonId === normalizedLessonId)
       const progress: AcademyLessonProgress = {
         lessonId: normalizedLessonId,
-        currentSegmentId: previous?.currentSegmentId ?? input.activeSectionId.slice(0, 240),
+        currentSegmentId: previous?.currentSegmentId ?? input.activeSectionId.slice(0, 512),
         completedSegmentIds: previous?.completedSegmentIds ?? [],
-        activeSectionId: input.activeSectionId.slice(0, 240),
-        scrollAnchor: input.scrollAnchor.slice(0, 240),
+        activeSectionId: input.activeSectionId.slice(0, 512),
+        scrollAnchor: input.scrollAnchor.slice(0, 512),
         scrollOffset: Math.max(0, Math.round(input.scrollOffset)),
-        documentVersion: input.documentVersion.slice(0, 120),
-        visitedSectionIds: stringArray(input.visitedSectionIds, 240),
+        documentVersion: input.documentVersion.slice(0, 1_000),
+        visitedSectionIds: sectionIdArray(input.visitedSectionIds),
         completedAt: previous?.completedAt,
         updatedAt: timestamp,
       }
@@ -692,12 +861,12 @@ export class AcademyLocalStore {
       const previous = state.lessonProgress.find((item) => item.lessonId === normalizedLessonId)
       const progress: AcademyLessonProgress = {
         lessonId: normalizedLessonId,
-        currentSegmentId: previous?.currentSegmentId ?? activeSectionId.slice(0, 240),
+        currentSegmentId: previous?.currentSegmentId ?? activeSectionId.slice(0, 512),
         completedSegmentIds: previous?.completedSegmentIds ?? [],
-        activeSectionId: activeSectionId.slice(0, 240),
-        scrollAnchor: previous?.scrollAnchor ?? activeSectionId.slice(0, 240),
+        activeSectionId: activeSectionId.slice(0, 512),
+        scrollAnchor: previous?.scrollAnchor ?? activeSectionId.slice(0, 512),
         scrollOffset: previous?.scrollOffset ?? 0,
-        documentVersion: documentVersion.slice(0, 120),
+        documentVersion: documentVersion.slice(0, 1_000),
         visitedSectionIds: previous?.visitedSectionIds ?? [],
         completedAt: previous?.completedAt ?? timestamp,
         updatedAt: timestamp,
@@ -740,6 +909,55 @@ export class AcademyLocalStore {
         : [{ id: metricId.slice(0, 160), count: 1, lastRecordedAt: timestamp }, ...state.metrics]
       return { ...state, metrics: metrics.slice(0, 500) }
     })
+  }
+
+  recordReaderEvent(
+    profileId: string,
+    input: Omit<AcademyReaderEvent, 'eventId' | 'timestamp'>,
+  ): AcademyReaderEvent {
+    const event = normalizeReaderEvent({
+      ...structuredClone(input),
+      eventId: `academy-reader-event.${this.createId()}`,
+      timestamp: this.now(),
+    })
+    if (!event) throw new Error('El evento local del lector no cumple el contrato seguro.')
+    this.update(profileId, (state) => ({
+      ...state,
+      readerEvents: [...state.readerEvents, event].slice(-2_500),
+    }))
+    return structuredClone(event)
+  }
+
+  clearReaderEvents(profileId: string): AcademyLocalState {
+    return this.update(profileId, (state) => ({ ...state, readerEvents: [] }))
+  }
+
+  saveEditorialReview(profileId: string, input: AcademyEditorialReview): AcademyEditorialReview {
+    const review = normalizeEditorialReview({ ...structuredClone(input), updatedAt: this.now() })
+    if (!review) throw new Error('La revisión editorial no cumple el contrato local.')
+    this.update(profileId, (state) => ({
+      ...state,
+      editorialReviews: [review, ...state.editorialReviews.filter(({ lessonId }) => lessonId !== review.lessonId)].slice(0, 500),
+    }))
+    return structuredClone(review)
+  }
+
+  saveUsabilitySession(profileId: string, input: AcademyUsabilitySession): AcademyUsabilitySession {
+    const session = normalizeUsabilitySession(structuredClone(input))
+    if (!session) throw new Error('La sesión de uso no cumple el contrato local.')
+    this.update(profileId, (state) => ({
+      ...state,
+      usabilitySessions: [session, ...state.usabilitySessions.filter(({ sessionId }) => sessionId !== session.sessionId)].slice(0, 100),
+    }))
+    return structuredClone(session)
+  }
+
+  deleteUsabilitySession(profileId: string, sessionId: string): AcademyLocalState {
+    return this.update(profileId, (state) => ({
+      ...state,
+      usabilitySessions: state.usabilitySessions.filter((session) => session.sessionId !== sessionId),
+      readerEvents: state.readerEvents.filter((event) => event.sessionId !== sessionId || event.source !== 'usability-harness'),
+    }))
   }
 
   clearMetrics(profileId: string): AcademyLocalState {

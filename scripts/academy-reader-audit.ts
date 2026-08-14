@@ -407,7 +407,7 @@ export async function buildAcademyReaderOutputs(repositoryRoot: string): Promise
       stepId: pathLocation?.step.stepId,
       locale: 'es-ES',
       requiredActivityIds,
-    })
+    }, { compatibility: '0.14C' })
     const contentBasis = material.blocks.map(({ bodyMarkdown }) => bodyMarkdown.replaceAll('\r\n', '\n').trim()).join('\n\n')
     return {
       document,

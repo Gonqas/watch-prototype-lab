@@ -31,6 +31,8 @@ export type LearningSurface =
   | 'content'
   | 'profile'
   | 'preferences'
+  | 'editorial-review'
+  | 'usability'
   | 'results'
   | 'not-found'
 
@@ -50,7 +52,7 @@ const SURFACES = new Set<LearningSurface>([
   'route', 'module', 'lesson', 'activity', 'workspace',
   'session', 'recovery', 'evidence', 'assessment', 'competency', 'movement',
   'package', 'sessions', 'progress', 'history', 'content', 'profile',
-  'preferences', 'results',
+  'preferences', 'editorial-review', 'usability', 'results',
 ])
 
 export function parseLearningLocation(url: URL = new URL(window.location.href)): LearningLocation {
