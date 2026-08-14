@@ -20,6 +20,9 @@ import {
   TriangleAlert,
 } from 'lucide-react'
 import { currentAcademyRoute } from '../academy/academyCatalog'
+import { ACADEMY_LEARNER_PATH, academyPathLocationForLesson } from '../academy/path/academyLearnerPath'
+import { academyNextAction, type AcademyNextAction } from '../academy/path/academyNextAction'
+import { deriveAcademyPathProgress, type AcademyPathProgress } from '../academy/path/academyPathProgress'
 import { readUxSession, writeUxSession } from '../academy/academyEntryRecovery'
 import { useAcademyLocalState } from '../academy/useAcademyLocalState'
 import {
@@ -45,15 +48,23 @@ function AcademyContextPanel({
   drawer,
   panelRef,
   closeButtonRef,
+  nextAction,
+  pathProgress,
 }: {
   onClose: () => void
   drawer: boolean
   panelRef: RefObject<HTMLElement | null>
   closeButtonRef: RefObject<HTMLButtonElement | null>
+  nextAction: AcademyNextAction
+  pathProgress: AcademyPathProgress
 }) {
   const { service, snapshot } = useLearning()
   const route = currentAcademyRoute(snapshot)
-  const recommendation = snapshot.recommendations[0]
+  const lessonLocation = snapshot.location.surface === 'lesson' && snapshot.location.id
+    ? academyPathLocationForLesson(snapshot.location.id)
+    : undefined
+  const currentStage = ACADEMY_LEARNER_PATH.stages.find(({ stageId }) => stageId === pathProgress.currentStageId)
+  const currentChapter = ACADEMY_LEARNER_PATH.chapters.find(({ chapterId }) => chapterId === pathProgress.currentChapterId)
   return (
     <aside
       className="academy-context-panel"
@@ -67,30 +78,32 @@ function AcademyContextPanel({
         <div><span>CONTEXTO</span><strong id="academy-context-title">{route ? 'Ruta en curso' : 'Academia local'}</strong></div>
         <button ref={closeButtonRef} type="button" onClick={onClose} aria-label="Cerrar contexto"><ChevronRight size={17} /></button>
       </header>
+      <section>
+        <span className="academy-kicker">POSICIÓN EN LA RUTA</span>
+        <h2>{lessonLocation
+          ? `Etapa ${lessonLocation.stage.order} · ${lessonLocation.chapter.title}`
+          : currentStage ? `Etapa ${currentStage.order} · ${currentStage.shortTitle}` : 'Recorrido disponible completado'}</h2>
+        <p>{lessonLocation && snapshot.location.id
+          ? `${lessonLocation.stage.title} > ${lessonLocation.chapter.title} > ${localize(snapshot.profile?.locale, snapshot.product.lessons.find(({ id }) => id === snapshot.location.id)?.title ?? { es: snapshot.location.id })}`
+          : currentChapter?.title ?? 'Queda cobertura planificada o pendiente de revisión.'}</p>
+        <a href={lessonLocation ? `#/learning/my-learning?chapter=${encodeURIComponent(lessonLocation.chapter.chapterId)}` : '#/learning/my-learning'} onClick={drawer ? onClose : undefined}>Ver en Mi ruta</a>
+      </section>
+      <section data-next-action-id={nextAction.actionId}>
+        <span className="academy-kicker">SIGUIENTE ACCIÓN</span>
+        <h2>{nextAction.title}</h2>
+        <p>{nextAction.reason}</p>
+        <a className="academy-inline-action" href={nextAction.href} onClick={drawer ? onClose : undefined}>{nextAction.ctaLabel}</a>
+        <details><summary>Por qué es el siguiente paso</summary><p>{nextAction.after}</p></details>
+      </section>
       {route && (
         <section>
-          <span className="academy-kicker">RUTA</span>
+          <span className="academy-kicker">PROCEDENCIA DEL CATÁLOGO</span>
           <h2>{localize(snapshot.profile?.locale, route.title)}</h2>
           <p>{friendlyRecommendationReason(localize(snapshot.profile?.locale, route.purpose))}</p>
           <a href={`#/learning/route/${encodeURIComponent(route.id)}`} onClick={drawer ? onClose : undefined}>Ver estructura</a>
         </section>
       )}
-      {recommendation && (
-        <section>
-          <span className="academy-kicker">{recommendation.required ? 'ACCIÓN NECESARIA' : 'SIGUIENTE PASO'}</span>
-          <h2>{recommendation.title}</h2>
-          <p>{friendlyRecommendationReason(recommendation.reason)}</p>
-          <a className="academy-inline-action" href={recommendation.href} onClick={drawer ? onClose : undefined}>
-            {recommendation.required ? 'Resolver ahora' : 'Continuar'}
-          </a>
-          <details>
-            <summary>Por qué es el siguiente paso</summary>
-            <p>{recommendation.required
-              ? 'Hay una base pendiente que conviene resolver antes de continuar con una actividad evaluable.'
-              : 'La recomendación combina tu recorrido actual, lo que ya has estudiado y tus repasos pendientes.'}</p>
-          </details>
-        </section>
-      )}
+      {snapshot.recommendations.length > 0 && <section className="academy-context-suggestions"><span className="academy-kicker">SUGERENCIAS DE BIBLIOTECA</span><p>Son consultas opcionales y nunca sustituyen la siguiente acción core.</p><details><summary>Ver sugerencias</summary>{snapshot.recommendations.slice(0, 3).map((recommendation) => <a href={recommendation.href} key={`${recommendation.href}:${recommendation.title}`} onClick={drawer ? onClose : undefined}>{recommendation.title}</a>)}</details></section>}
       <section>
         <span className="academy-kicker">DISPONIBILIDAD</span>
         <h2>Tu Academia está en este equipo</h2>
@@ -216,6 +229,8 @@ export function AcademyShell({ onExit }: { onExit: () => void }) {
   )
   const [contextDrawer, setContextDrawer] = useState(() => window.innerWidth <= 1060)
   const density = state?.preferences.density ?? 'comfortable'
+  const pathProgress = useMemo(() => deriveAcademyPathProgress(snapshot, state), [snapshot, state])
+  const nextAction = useMemo(() => academyNextAction(snapshot, state), [snapshot, state])
   const theme = state?.preferences.theme ?? 'system'
   const readingWidth = state?.preferences.readingWidth ?? 'comfortable'
   const lineHeight = state?.preferences.lineHeight ?? 1.7
@@ -367,7 +382,7 @@ export function AcademyShell({ onExit }: { onExit: () => void }) {
         <AcademySurfaceBoundary scope="context" onReset={closeContext}>
           <div className={`academy-context-layer ${contextDrawer ? 'is-drawer' : ''}`}>
             {contextDrawer && <button className="academy-context-backdrop" type="button" onClick={closeContext} aria-label="Cerrar ayuda contextual" tabIndex={-1} />}
-            <AcademyContextPanel onClose={closeContext} drawer={contextDrawer} panelRef={contextPanelRef} closeButtonRef={contextCloseRef} />
+            <AcademyContextPanel onClose={closeContext} drawer={contextDrawer} panelRef={contextPanelRef} closeButtonRef={contextCloseRef} nextAction={nextAction} pathProgress={pathProgress} />
           </div>
         </AcademySurfaceBoundary>
       )}

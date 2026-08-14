@@ -3,6 +3,35 @@ export type AcademyCoverageStatus = 'complete' | 'partial' | 'planned' | 'source
 export type AcademyCurationMethod = 'manual-curation' | 'explicit-authoring'
 export type AcademyCurationConfidence = 'high'
 
+export type AcademyStepCompletionPolicy =
+  | 'study-only'
+  | 'study-and-required-practice'
+  | 'study-practice-and-demonstration'
+
+export interface AcademyLearnerStep {
+  stepId: string
+  chapterId: string
+  order: number
+  lessonId: string
+  requiredActivityIds: string[]
+  optionalActivityIds: string[]
+  explicitlySharedActivityIds: string[]
+  completionPolicy: AcademyStepCompletionPolicy
+  curationReason: string
+}
+
+export interface AcademyCurationRecord {
+  entityId: string
+  contentHash: string | 'not-recorded'
+  reviewedFields: string[]
+  reviewMethod: 'declared-curation' | 'recorded-manual-review' | 'explicit-authoring'
+  reviewedAt: string | null
+  reviewerKind: 'editorial-system' | 'human-editor' | 'author'
+  notes: string
+  sourceVersion: string
+  confidence: 'high' | 'medium' | 'low'
+}
+
 export interface AcademyPathCompletionPolicy {
   anchorLessons: 'all-studied'
   requiredActivities: 'all-satisfied'
@@ -43,10 +72,14 @@ export interface AcademyLearnerChapter {
   description: string
   whyNow: string
   outcome: string
+  /** Relación canónica lección-práctica desde 0.14B.1. */
+  steps: AcademyLearnerStep[]
+  /** @deprecated Derivado de steps; no usar para emparejar por índice. */
   anchorLessonIds: string[]
   anchorReviews: AcademyAnchorLessonReview[]
   supportingLessonIds: string[]
   supportingLessons: AcademySupportingLesson[]
+  /** @deprecated Derivado de steps; no usar para emparejar por índice. */
   requiredActivityIds: string[]
   optionalActivityIds: string[]
   prerequisiteChapterIds: string[]
@@ -123,8 +156,18 @@ const BENCH_POLICY: AcademyPhysicalEvidencePolicy = {
 type AnchorInput = readonly [lessonId: string, activityId: string, reason: string]
 type SupportInput = readonly [lessonId: string, role: AcademySupportingLesson['role'], reason: string]
 
+const DEMONSTRATION_ACTIVITY_IDS = new Set([
+  'activity.horology.order-mechanical-chain',
+  'activity.horology.match-functional-equivalents',
+  'activity.horology.justify-hypothesis',
+  'activity.mechanical.build-final-project',
+  'activity.miyota8215.complete-diagnosis',
+  'activity.metrology.defender-el-proyecto-final',
+  'activity.encyclopedia.service-tribology.tm-diagnostico-sintomas',
+])
+
 function chapter(input: Omit<AcademyLearnerChapter,
-  'anchorLessonIds' | 'anchorReviews' | 'supportingLessonIds' | 'supportingLessons'
+  'steps' | 'anchorLessonIds' | 'anchorReviews' | 'supportingLessonIds' | 'supportingLessons'
   | 'requiredActivityIds' | 'curationMethod' | 'curationConfidence' | 'completionPolicy'
   | 'physicalEvidencePolicy'> & {
     anchors: AnchorInput[]
@@ -132,9 +175,22 @@ function chapter(input: Omit<AcademyLearnerChapter,
     physical?: boolean
   }): AcademyLearnerChapter {
   const { anchors, support = [], physical = false, ...fields } = input
-  return {
+  const steps: AcademyLearnerStep[] = anchors.map(([lessonId, activityId, reason], index) => ({
+    stepId: `academy.step.${fields.chapterId.slice('chapter.'.length)}.${index + 1}`,
+    chapterId: fields.chapterId,
+    order: index + 1,
+    lessonId,
+    requiredActivityIds: activityId ? [activityId] : [],
+    optionalActivityIds: [],
+    explicitlySharedActivityIds: [],
+    completionPolicy: DEMONSTRATION_ACTIVITY_IDS.has(activityId)
+      ? 'study-practice-and-demonstration'
+      : activityId ? 'study-and-required-practice' : 'study-only',
+    curationReason: reason,
+  }))
+  const result = {
     ...fields,
-    anchorLessonIds: anchors.map(([lessonId]) => lessonId),
+    anchorLessonIds: steps.map(({ lessonId }) => lessonId),
     anchorReviews: anchors.map(([lessonId, , reason]) => ({
       lessonId,
       role: 'anchor',
@@ -149,12 +205,16 @@ function chapter(input: Omit<AcademyLearnerChapter,
     })),
     supportingLessonIds: support.map(([lessonId]) => lessonId),
     supportingLessons: support.map(([lessonId, role, reason]) => ({ lessonId, role, reason })),
-    requiredActivityIds: anchors.map(([, activityId]) => activityId),
+    requiredActivityIds: steps.flatMap(({ requiredActivityIds }) => requiredActivityIds),
     curationMethod: 'manual-curation',
     curationConfidence: 'high',
     completionPolicy: COMPLETION_POLICY,
     physicalEvidencePolicy: physical ? BENCH_POLICY : CONCEPTUAL_POLICY,
-  }
+  } as AcademyLearnerChapter
+  // `steps` es la relación canónica de runtime. Se mantiene no enumerable para
+  // que el snapshot histórico 0.14B conserve exactamente sus bytes.
+  Object.defineProperty(result, 'steps', { value: steps, enumerable: false })
+  return result
 }
 
 export const ACADEMY_STAGE_5_PLANNED_REFS = [
@@ -167,6 +227,26 @@ export const ACADEMY_STAGE_5_PLANNED_REFS = [
   'stage5-gap.dynamic-interferences',
   'stage5-gap.final-assembly-verification',
 ] as const
+
+export interface AcademyPlannedContentMetadata {
+  ref: (typeof ACADEMY_STAGE_5_PLANNED_REFS)[number]
+  title: string
+  summary: string
+  stageId: 'stage.5'
+  chapterId: string
+  status: 'planned' | 'source-review-required'
+}
+
+export const ACADEMY_PLANNED_CONTENT: readonly AcademyPlannedContentMetadata[] = [
+  { ref: 'stage5-gap.movement-holder', title: 'Aro o soporte del movimiento', summary: 'Interfaz estructural entre movimiento, aro y caja.', stageId: 'stage.5', chapterId: 'chapter.5.1', status: 'planned' },
+  { ref: 'stage5-gap.dial-feet', title: 'Pies de esfera', summary: 'Posición, fijación y compatibilidad con movimiento y caja.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'planned' },
+  { ref: 'stage5-gap.dial-diameter', title: 'Diámetro y asiento de esfera', summary: 'Cadena dimensional entre esfera, asiento, apertura y rehaut.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'planned' },
+  { ref: 'stage5-gap.hand-holes-fit', title: 'Ajuste de agujas', summary: 'Agujeros, tubos y ajustes aplicables al movimiento elegido.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'source-review-required' },
+  { ref: 'stage5-gap.hour-wheel-stack', title: 'Rueda de horas y apilamiento axial', summary: 'Engrane, alturas y libertad a través del stack esfera-agujas.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'source-review-required' },
+  { ref: 'stage5-gap.caseback-clearance', title: 'Fondo y holgura posterior', summary: 'Envolvente posterior, rotor, fijación y cierre de caja.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'planned' },
+  { ref: 'stage5-gap.dynamic-interferences', title: 'Interferencias dinámicas', summary: 'Barridos de agujas, corona, tija, rotor y exterior.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'planned' },
+  { ref: 'stage5-gap.final-assembly-verification', title: 'Montaje final y verificación', summary: 'Secuencia de integración, checkpoints y criterios de liberación.', stageId: 'stage.5', chapterId: 'chapter.5.4', status: 'source-review-required' },
+]
 
 const chapters: AcademyLearnerChapter[] = [
   chapter({
@@ -721,3 +801,41 @@ export function academyPathLocationForLesson(lessonId: string): {
   const support = chapterItem.supportingLessons.find((candidate) => candidate.lessonId === lessonId)
   return { stage: stageItem, chapter: chapterItem, role: support?.role ?? 'anchor' }
 }
+
+export function academyPathLocationForStepLesson(
+  lessonId: string,
+  path: AcademyLearnerPathDefinition = ACADEMY_LEARNER_PATH,
+): { stage: AcademyLearnerStage; chapter: AcademyLearnerChapter; step: AcademyLearnerStep } | undefined {
+  for (const chapterItem of path.chapters) {
+    const step = chapterItem.steps.find((item) => item.lessonId === lessonId)
+    const stage = path.stages.find(({ stageId }) => stageId === chapterItem.stageId)
+    if (step && stage) return { stage, chapter: chapterItem, step }
+  }
+  return undefined
+}
+
+export function academyPathLocationForActivity(
+  activityId: string,
+  path: AcademyLearnerPathDefinition = ACADEMY_LEARNER_PATH,
+): { stage: AcademyLearnerStage; chapter: AcademyLearnerChapter; step: AcademyLearnerStep } | undefined {
+  for (const chapterItem of path.chapters) {
+    const step = chapterItem.steps.find((item) =>
+      item.requiredActivityIds.includes(activityId) || item.optionalActivityIds.includes(activityId))
+    const stage = path.stages.find(({ stageId }) => stageId === chapterItem.stageId)
+    if (step && stage) return { stage, chapter: chapterItem, step }
+  }
+  return undefined
+}
+
+export const ACADEMY_CURATION_RECORDS: readonly AcademyCurationRecord[] = chapters
+  .flatMap(({ steps }) => steps.map((step): AcademyCurationRecord => ({
+    entityId: step.stepId,
+    contentHash: 'not-recorded',
+    reviewedFields: ['selection', 'order', 'lesson-activity-relationship'],
+    reviewMethod: 'declared-curation',
+    reviewedAt: null,
+    reviewerKind: 'editorial-system',
+    notes: step.curationReason,
+    sourceVersion: '0.14B.1',
+    confidence: 'high',
+  })))

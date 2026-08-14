@@ -60,11 +60,52 @@ export function validateAcademyLearnerPath(
     }
   }
   const seenAnchors = new Set<string>()
+  const seenStepIds = new Set<string>()
+  const seenRequiredActivities = new Map<string, string>()
   for (const chapter of path.chapters) {
     if (!stageIds.has(chapter.stageId)) issues.push({ code: 'orphan-chapter', entityId: chapter.chapterId, message: 'La etapa del capítulo no existe.' })
     if (chapter.anchorLessonIds.length < 1 || chapter.anchorLessonIds.length > 5) issues.push({ code: 'anchor-count', entityId: chapter.chapterId, message: 'Cada capítulo debe tener entre 1 y 5 anchors.' })
     if (chapter.anchorLessonIds.join('|') !== chapter.anchorReviews.map(({ lessonId }) => lessonId).join('|')) {
       issues.push({ code: 'anchor-review-mismatch', entityId: chapter.chapterId, message: 'Los anchors no coinciden con sus revisiones curadas.' })
+    }
+    if (chapter.anchorLessonIds.join('|') !== chapter.steps.map(({ lessonId }) => lessonId).join('|')) {
+      issues.push({ code: 'step-anchor-mismatch', entityId: chapter.chapterId, message: 'Los campos legacy de anchors no se derivan de steps.' })
+    }
+    if (chapter.requiredActivityIds.join('|') !== chapter.steps.flatMap(({ requiredActivityIds }) => requiredActivityIds).join('|')) {
+      issues.push({ code: 'step-activity-mismatch', entityId: chapter.chapterId, message: 'Los campos legacy de prácticas no se derivan de steps.' })
+    }
+    for (const step of chapter.steps) {
+      if (seenStepIds.has(step.stepId)) issues.push({ code: 'duplicate-step', entityId: step.stepId, message: 'El stepId no es único.' })
+      seenStepIds.add(step.stepId)
+      if (step.chapterId !== chapter.chapterId) issues.push({ code: 'step-chapter-mismatch', entityId: step.stepId, message: 'El paso declara otro capítulo.' })
+      if (!lessonIds.has(step.lessonId)) issues.push({ code: 'missing-step-lesson', entityId: step.lessonId, message: 'La lección del paso no existe.' })
+      for (const activityId of [...step.requiredActivityIds, ...step.optionalActivityIds]) {
+        const activity = product.activities.find(({ id }) => id === activityId)
+        if (!activity) {
+          issues.push({ code: 'missing-step-activity', entityId: activityId, message: 'La actividad del paso no existe.' })
+          continue
+        }
+        if (activity.lessonId !== step.lessonId && !step.explicitlySharedActivityIds.includes(activityId)) {
+          issues.push({ code: 'implicit-shared-activity', entityId: activityId, message: 'La actividad no pertenece a la lección y no está declarada como compartida.' })
+        }
+      }
+      const requiresDemonstration = step.requiredActivityIds.some((activityId) => {
+        const contract = product.activities.find(({ id }) => id === activityId)?.pedagogicalContract
+        return contract?.purpose === 'mastery-check' || contract?.assessmentIntent === 'demonstration'
+      })
+      if (requiresDemonstration && step.completionPolicy !== 'study-practice-and-demonstration') {
+        issues.push({ code: 'step-demonstration-policy', entityId: step.stepId, message: 'El paso contiene una demostración sin declararla en completionPolicy.' })
+      }
+      if (step.requiredActivityIds.length === 0 && step.completionPolicy !== 'study-only') {
+        issues.push({ code: 'step-study-only-policy', entityId: step.stepId, message: 'El paso sin prácticas debe usar study-only.' })
+      }
+      for (const activityId of step.requiredActivityIds) {
+        const previousStepId = seenRequiredActivities.get(activityId)
+        if (previousStepId && !step.explicitlySharedActivityIds.includes(activityId)) {
+          issues.push({ code: 'duplicate-required-activity', entityId: activityId, message: `La actividad ya es obligatoria en ${previousStepId} y no está compartida explícitamente.` })
+        }
+        seenRequiredActivities.set(activityId, step.stepId)
+      }
     }
     for (const lessonId of chapter.anchorLessonIds) {
       if (!lessonIds.has(lessonId)) issues.push({ code: 'missing-anchor-lesson', entityId: lessonId, message: 'La lección anchor no existe.' })
@@ -76,12 +117,6 @@ export function validateAcademyLearnerPath(
     }
     for (const activityId of [...chapter.requiredActivityIds, ...chapter.optionalActivityIds]) if (!activityIds.has(activityId)) {
       issues.push({ code: 'missing-activity', entityId: activityId, message: 'La actividad declarada no existe.' })
-    }
-    for (const activityId of chapter.requiredActivityIds) {
-      const owningLesson = product.lessons.find(({ activityIds }) => activityIds.includes(activityId))
-      if (owningLesson && !chapter.anchorLessonIds.includes(owningLesson.id)) {
-        issues.push({ code: 'activity-outside-anchor', entityId: activityId, message: 'La actividad obligatoria no pertenece a una lección anchor del capítulo.' })
-      }
     }
     for (const prerequisiteId of chapter.prerequisiteChapterIds) if (!chapterIds.has(prerequisiteId)) {
       issues.push({ code: 'missing-chapter-prerequisite', entityId: chapter.chapterId, message: `No existe ${prerequisiteId}.` })

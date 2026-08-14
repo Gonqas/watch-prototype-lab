@@ -44,6 +44,7 @@
 .academy-path-next dt { color: var(--academy-muted, #a4b1af); font-size: .68rem; text-transform: uppercase; }
 .academy-path-next dd { display: flex; align-items: center; gap: 5px; margin: 5px 0 0; overflow-wrap: anywhere; }
 .academy-path-next > a { justify-self: start; }
+.academy-path-next__secondary { color: var(--academy-muted, #a4b1af); font-size: .82rem; }
 
 .academy-path-home-secondary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
 .academy-path-home-secondary article { display: flex; min-width: 0; gap: 13px; padding: 16px; border: 1px solid var(--academy-line, #344244); border-radius: 9px; }
@@ -107,9 +108,13 @@
 .academy-chapter-anchors strong,
 .academy-chapter-anchors small { display: block; }
 .academy-chapter-anchors small { margin-top: 3px; color: var(--academy-muted, #a4b1af); }
+.academy-path-step > div > small { display: block; }
+.academy-path-step__legacy { color: #d6b36d !important; }
+.academy-path-step > a.is-secondary { color: var(--academy-muted, #a4b1af); }
 .academy-chapter-support { margin-top: 9px; border: 1px solid var(--academy-line, #344244); border-radius: 7px; }
 .academy-chapter-support summary { min-height: 42px; padding: 11px 12px; cursor: pointer; }
 .academy-chapter-support > div { display: grid; padding: 0 12px 12px; }
+.academy-chapter-support.is-planned > div > span { display: grid; gap: 3px; padding: 9px 0; border-top: 1px solid var(--academy-line, #344244); }
 .academy-chapter-support a { display: grid; gap: 3px; padding: 9px 0; border-top: 1px solid var(--academy-line, #344244); }
 .academy-chapter-support small { color: var(--academy-muted, #a4b1af); }
 .academy-chapter-support > p { padding: 0 12px 12px; color: var(--academy-muted, #a4b1af); }

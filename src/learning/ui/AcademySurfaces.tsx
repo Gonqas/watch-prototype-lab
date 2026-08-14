@@ -70,6 +70,7 @@ import {
 import { buildAcademyLearnerModel } from '../academy/academyPersonalization'
 import { useAcademyLocalState } from '../academy/useAcademyLocalState'
 import { effectiveLessonPrerequisiteConceptIds } from '../academy/path/academyPathPrerequisites'
+import { academyPathLocationForStepLesson } from '../academy/path/academyLearnerPath'
 import { segmentLessonBlock } from '../academy/lessonSegmentation'
 import {
   ARCHITECTURE_FAMILIES,
@@ -80,7 +81,9 @@ import {
   learningDate,
   learningNumber,
   localize,
+  normalizeLearningLocale,
 } from '../application/i18n'
+import { parseLearningLocation } from '../application/navigation'
 import type { LearningActivityDescriptor, LearningProductIndex } from '../product/demoPackage'
 import { INTEGRATED_LEARNING_CONTENT } from '../product/integratedContent'
 import type { EducationalSceneGraph, EducationalVisualState } from '../visual/model'
@@ -88,7 +91,7 @@ import { createSceneComposition } from '../visual/sceneFixtures'
 import { useLearning } from './LearningContext'
 import { AcademyLibrarySurface } from './library/AcademyLibrarySurface'
 import { AcademyPathBreadcrumbs } from './path/AcademyPathBreadcrumbs'
-import { academyModuleEntryHref } from '../academy/path/academyPathLinks'
+import { academyLessonCompletionTransition, academyModuleEntryHref } from '../academy/path/academyPathLinks'
 import { AcademyPathHomeSurface, AcademyPathSurface } from './path/AcademyPathSurface'
 import {
   friendlyAssessmentSummary,
@@ -715,6 +718,8 @@ function LessonSurface() {
   const activeSegment = lessonSegments[activeSegmentIndex]
   const completedSegmentIds = new Set(savedProgress?.completedSegmentIds ?? [])
   const studyContract = descriptor.studyContract
+  const curatedStep = academyPathLocationForStepLesson(descriptor.id)
+  const completionHasPractice = Boolean(curatedStep?.step.requiredActivityIds.length || studyContract?.labActivityIds.length)
   const requiredStudySegments = studyContract
     ? lessonSegments.filter(({ role }) => role !== 'reference' && studyContract.requiredSegmentRoles.includes(role))
     : []
@@ -768,8 +773,9 @@ function LessonSurface() {
       return
     }
     actions.recordLessonSegment(descriptor.id, activeSegment.id, completed, true)
-    const firstActivity = material?.activities[0]
-    if (firstActivity) service.navigate({ surface: 'activity', id: firstActivity.id, query: {} })
+    const transition = academyLessonCompletionTransition(snapshot, state, descriptor.id)
+    actions.recordMetric(transition.metric)
+    service.navigate(parseLearningLocation(new URL(transition.href, window.location.href)))
   }
   return (
     <AcademyPage
@@ -973,7 +979,7 @@ function LessonSurface() {
                       <button className="academy-button is-primary" type="button" onClick={() => completeCurrentAndMove(activeSegmentIndex + 1)}>
                         Marcar como estudiado y continuar <ArrowRight size={15} />
                       </button>
-                    ) : material.activities.length > 0 ? (
+                    ) : completionHasPractice ? (
                       <button className="academy-button is-primary" type="button" disabled={!canUnlockWithActiveSegment} aria-describedby={!canUnlockWithActiveSegment ? 'academy-practice-lock-reason' : undefined} onClick={finishLesson}>
                         Marcar como estudiado y preparar práctica <ArrowRight size={15} />
                       </button>
@@ -1239,7 +1245,7 @@ function AtlasSurface() {
             {records.map((record) => (
               <a className={record.canonicalId === partId ? 'is-active' : undefined} href={`#/learning/atlas?fixture=${encodeURIComponent(fixture.id)}&part=${encodeURIComponent(record.canonicalId)}`} key={record.canonicalId}>
                 <span className={`academy-reconstruction-level is-${record.reconstructionLevel.toLowerCase()}`} title="Nivel de detalle de esta pieza">{friendlyReconstructionLevel(record.reconstructionLevel)}</span>
-                <span><strong>{snapshot.profile?.locale.startsWith('en') ? record.nameEn : record.nameEs}</strong><small>{friendlyLearningTerm(record.subsystem)} · {friendlyLearningTerm(record.modelState)}</small></span>
+                <span><strong>{localize(snapshot.profile?.locale, { es: record.nameEs, en: record.nameEn })}</strong><small>{friendlyLearningTerm(record.subsystem)} · {friendlyLearningTerm(record.modelState)}</small></span>
                 <ChevronRight size={15} />
               </a>
             ))}
@@ -1249,7 +1255,7 @@ function AtlasSurface() {
           {selectedPart ? (
             <>
               <span className="academy-kicker">FICHA DE PIEZA</span>
-              <h2>{snapshot.profile?.locale.startsWith('en') ? selectedPart.nameEn : selectedPart.nameEs}</h2>
+              <h2>{localize(snapshot.profile?.locale, { es: selectedPart.nameEs, en: selectedPart.nameEn })}</h2>
               <div className="academy-tag-row">
                 <span title="Nivel de detalle de esta pieza">{friendlyReconstructionLevel(selectedPart.reconstructionLevel)}</span>
                 <span title={friendlyFidelity(selectedPart.fidelity).summary}>{friendlyFidelity(selectedPart.fidelity).title}</span>
@@ -1282,7 +1288,7 @@ function AtlasSurface() {
                           <li key={relation.id}>
                             <span>{friendlyLearningTerm(relation.type)}</span>
                             {other
-                              ? <a href={`#/learning/atlas?fixture=${encodeURIComponent(fixture.id)}&part=${encodeURIComponent(other.canonicalId)}`}>{snapshot.profile?.locale.startsWith('en') ? other.nameEn : other.nameEs}</a>
+                              ? <a href={`#/learning/atlas?fixture=${encodeURIComponent(fixture.id)}&part=${encodeURIComponent(other.canonicalId)}`}>{localize(snapshot.profile?.locale, { es: other.nameEs, en: other.nameEn })}</a>
                               : <span>{humanizeLearningId(otherInstanceId)}</span>}
                           </li>
                         )
@@ -1524,7 +1530,7 @@ function GlossarySurface() {
                   <section><span className="academy-kicker">CONTEXTO</span><p>{localize(snapshot.profile?.locale, selected.authoring.context)}</p></section>
                   <dl>
                     <div><dt>Inglés</dt><dd>{selected.authoring.terms.en}</dd></div>
-                    <div><dt>Sinónimos</dt><dd>{(snapshot.profile?.locale.startsWith('en') ? selected.authoring.synonyms.en : selected.authoring.synonyms.es).join(', ') || 'Ninguno'}</dd></div>
+                    <div><dt>Sinónimos</dt><dd>{(normalizeLearningLocale(snapshot.profile?.locale) === 'en-US' ? selected.authoring.synonyms.en : selected.authoring.synonyms.es).join(', ') || 'Ninguno'}</dd></div>
                     <div><dt>Términos desaconsejados</dt><dd>{selected.authoring.discouragedTerms.join(', ') || 'Ninguno'}</dd></div>
                     <div><dt>Fuentes</dt><dd><a href={`#/learning/sources?term=${encodeURIComponent(selected.id)}`}>{selected.authoring.sourceIds.length} referencias</a></dd></div>
                   </dl>

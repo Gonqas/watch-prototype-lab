@@ -7,6 +7,8 @@ import navigation from './library/AcademyPrimaryNavigation.tsx?raw'
 import library from './library/AcademyLibraryMenu.tsx?raw'
 import librarySurface from './library/AcademyLibrarySurface.tsx?raw'
 import path from './path/AcademyPathSurface.tsx?raw'
+import stageCard from './path/AcademyStageCard.tsx?raw'
+import pathLinks from '../academy/path/academyPathLinks.ts?raw'
 
 
 describe('jerarquía clara de la Academia', () => {
@@ -41,6 +43,23 @@ describe('jerarquía clara de la Academia', () => {
     expect(moveToSegment).toContain('actions.recordLessonSegment(descriptor.id, next.id, [...completedSegmentIds], false)')
     expect(moveToSegment).not.toContain('activeSegment.id')
     expect(academy).toContain('Marcar como estudiado y continuar')
+  })
+
+  it('continúa mediante pasos curados y nunca por arrays posicionales', () => {
+    expect(stageCard).toContain('chapter.steps.map')
+    expect(stageCard).toContain('pendingRequiredActivityIds[0]')
+    expect(stageCard).not.toContain('requiredActivityIds[index]')
+    expect(academy).toContain('academyLessonCompletionTransition')
+    expect(academy).not.toContain('material?.activities[0]')
+    expect(pathLinks).toContain("'lesson-complete-to-required-activity'")
+  })
+
+  it('usa una única siguiente acción en Inicio y Contexto', () => {
+    expect(path).toContain('academyNextAction(snapshot, state)')
+    expect(shell).toContain('academyNextAction(snapshot, state)')
+    expect(shell).toContain('data-next-action-id={nextAction.actionId}')
+    expect(shell).not.toContain('const recommendation = snapshot.recommendations[0]')
+    expect(shell).toContain('SUGERENCIAS DE BIBLIOTECA')
   })
 
   it('mantiene visible la acción principal de una práctica', () => {

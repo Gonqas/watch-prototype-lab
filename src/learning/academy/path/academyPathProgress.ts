@@ -3,9 +3,20 @@ import { academyActivitySatisfiesProgression } from '../academyCatalog'
 import type { AcademyLocalState } from '../academyLocalState'
 import {
   ACADEMY_LEARNER_PATH,
+  type AcademyCoverageStatus,
   type AcademyLearnerChapter,
   type AcademyLearnerPathDefinition,
+  type AcademyLearnerStep,
 } from './academyLearnerPath'
+import { ACADEMY_LEGACY_STUDY_RECOGNITION_CUTOFF } from './academyPathCompatibility'
+
+export { ACADEMY_LEGACY_STUDY_RECOGNITION_CUTOFF } from './academyPathCompatibility'
+
+export type AcademyStudyRecognition = 'none' | 'explicit' | 'legacy-inferred'
+export type AcademyExposureStatus = 'not-started' | 'in-progress' | 'studied'
+export type AcademyPracticeStatus = 'not-started' | 'in-progress' | 'satisfied'
+export type AcademyMasteryStatus = 'not-assessed' | 'demonstration-due' | 'demonstrated' | 'retention-due' | 'retained'
+export type AcademyPhysicalEvidenceStatus = 'not-required' | 'pending' | 'documented' | 'reviewed'
 
 export type AcademyPathLearningState =
   | 'not-started'
@@ -21,21 +32,51 @@ export type AcademyPathLearningState =
 
 export interface AcademyBenchEvidenceStatus {
   required: boolean
-  status: 'not-required' | 'pending' | 'documented' | 'reviewed'
+  status: AcademyPhysicalEvidenceStatus
   physicalEvidenceIds: string[]
   note: string
 }
 
+export interface AcademyLearnerStepProgress {
+  stepId: string
+  lessonId: string
+  studyRecognition: AcademyStudyRecognition
+  exposureStatus: AcademyExposureStatus
+  practiceStatus: AcademyPracticeStatus
+  masteryStatus: AcademyMasteryStatus
+  physicalEvidenceStatus: AcademyPhysicalEvidenceStatus
+  completedRequiredActivityIds: string[]
+  pendingRequiredActivityIds: string[]
+  startedRequiredActivityIds: string[]
+  demonstratedCompetencyIds: string[]
+  retainedCompetencyIds: string[]
+  coreAvailableComplete: boolean
+}
+
 export interface AcademyChapterProgress {
   chapterId: string
+  /** Compatibilidad 0.14B. Se deriva de las dimensiones siguientes. */
   state: AcademyPathLearningState
-  studiedAnchorLessonIds: string[]
+  exposureStatus: AcademyExposureStatus
+  practiceStatus: AcademyPracticeStatus
+  masteryStatus: AcademyMasteryStatus
+  physicalEvidenceStatus: AcademyPhysicalEvidenceStatus
+  coverageStatus: AcademyCoverageStatus
+  coreAvailableComplete: boolean
+  curriculumComplete: boolean
+  studyRecognitionByLesson: Record<string, AcademyStudyRecognition>
   completedRequiredActivityIds: string[]
+  pendingRequiredActivityIds: string[]
+  demonstratedCompetencyIds: string[]
+  retainedCompetencyIds: string[]
+  steps: AcademyLearnerStepProgress[]
+  studiedAnchorLessonIds: string[]
   startedRequiredActivityIds: string[]
   anchorLessonsCompleted: number
   anchorLessonsTotal: number
   requiredActivitiesCompleted: number
   requiredActivitiesTotal: number
+  /** @deprecated Alias aditivo de coreAvailableComplete. */
   coreComplete: boolean
   benchEvidenceStatus: AcademyBenchEvidenceStatus
 }
@@ -46,8 +87,11 @@ export interface AcademyStageProgress {
   completedChapterIds: string[]
   chaptersCompleted: number
   chaptersTotal: number
+  coreAvailableComplete: boolean
+  curriculumComplete: boolean
+  /** @deprecated Alias aditivo de coreAvailableComplete. */
   coreComplete: boolean
-  coverageStatus: AcademyLearnerPathDefinition['stages'][number]['coverageStatus']
+  coverageStatus: AcademyCoverageStatus
 }
 
 export interface AcademyOptionalExplorationProgress {
@@ -67,6 +111,11 @@ export interface AcademyPathProgress {
   anchorLessonsTotal: number
   requiredActivitiesCompleted: number
   requiredActivitiesTotal: number
+  coreAvailableComplete: boolean
+  curriculumComplete: boolean
+  coveragePendingStageIds: string[]
+  plannedCurriculumItems: number
+  /** @deprecated Alias aditivo de coreAvailableComplete. */
   coreComplete: boolean
   chapters: AcademyChapterProgress[]
   stages: AcademyStageProgress[]
@@ -74,87 +123,241 @@ export interface AcademyPathProgress {
   optionalExplorationProgress: AcademyOptionalExplorationProgress
 }
 
-function lessonStudied(
+function unique(values: string[]): string[] {
+  return [...new Set(values)]
+}
+
+export function academyStudyRecognitionForLesson(
   snapshot: LearningApplicationSnapshot,
   localState: AcademyLocalState | undefined,
   lessonId: string,
-): boolean {
-  if (localState?.lessonProgress.some((item) => item.lessonId === lessonId && Boolean(item.completedAt))) return true
-  const activityIds = new Set(
-    snapshot.product.lessons.find(({ id }) => id === lessonId)?.activityIds ?? [],
-  )
-  return snapshot.sessions.items.some(({ activityId, state }) =>
-    activityIds.has(activityId) && state === 'completed')
+): AcademyStudyRecognition {
+  if (localState?.lessonProgress.some((item) => item.lessonId === lessonId && Boolean(item.completedAt))) return 'explicit'
+  const activityIds = new Set(snapshot.product.lessons.find(({ id }) => id === lessonId)?.activityIds ?? [])
+  const historicalCompletion = snapshot.sessions.items.some(({ activityId, state, completedAt, updatedAt }) =>
+    activityIds.has(activityId)
+    && state === 'completed'
+    && (completedAt ?? updatedAt) <= ACADEMY_LEGACY_STUDY_RECOGNITION_CUTOFF)
+  return historicalCompletion ? 'legacy-inferred' : 'none'
 }
 
-function physicalEvidenceForChapter(
+function exposureForLesson(
   snapshot: LearningApplicationSnapshot,
-  chapter: AcademyLearnerChapter,
+  localState: AcademyLocalState | undefined,
+  lessonId: string,
+  recognition: AcademyStudyRecognition,
+): AcademyExposureStatus {
+  if (recognition !== 'none') return 'studied'
+  const localProgress = localState?.lessonProgress.find((item) => item.lessonId === lessonId)
+  const activityIds = new Set(snapshot.product.lessons.find(({ id }) => id === lessonId)?.activityIds ?? [])
+  return (localProgress?.completedSegmentIds.length ?? 0) > 0
+    || snapshot.sessions.items.some(({ activityId }) => activityIds.has(activityId))
+    ? 'in-progress'
+    : 'not-started'
+}
+
+function physicalEvidence(
+  snapshot: LearningApplicationSnapshot,
+  activityIds: readonly string[],
+  required: boolean,
+  note: string,
 ): AcademyBenchEvidenceStatus {
-  if (!chapter.physicalEvidencePolicy.physicalCompetenceClaim) {
-    return {
-      required: false,
-      status: 'not-required',
-      physicalEvidenceIds: [],
-      note: chapter.physicalEvidencePolicy.note,
-    }
-  }
-  const chapterActivityIds = new Set([...chapter.requiredActivityIds, ...chapter.optionalActivityIds])
-  const physical = snapshot.evidence.items.filter((evidence) => {
-    if (!chapterActivityIds.has(evidence.activityId) || evidence.status !== 'active') return false
+  if (!required) return { required: false, status: 'not-required', physicalEvidenceIds: [], note }
+  const scopedIds = new Set(activityIds)
+  const records = snapshot.evidence.items.filter((evidence) => {
+    if (!scopedIds.has(evidence.activityId) || evidence.status !== 'active') return false
     const content = evidence.content as Record<string, unknown>
     return content.modality === 'P'
       || content.evidenceModality === 'P'
       || content.physicalExecutionDocumented === true
   })
-  const reviewed = physical.some((evidence) =>
+  const reviewed = records.some((evidence) =>
     evidence.evidenceType === 'human-review'
     || evidence.provenance.some(({ kind }) => kind === 'human-review'))
   return {
     required: true,
-    status: physical.length === 0 ? 'pending' : reviewed ? 'reviewed' : 'documented',
-    physicalEvidenceIds: physical.map(({ id }) => id),
-    note: physical.length === 0
-      ? chapter.physicalEvidencePolicy.note
+    status: records.length === 0 ? 'pending' : reviewed ? 'reviewed' : 'documented',
+    physicalEvidenceIds: records.map(({ id }) => id),
+    note: records.length === 0
+      ? note
       : reviewed
-        ? 'Existe evidencia P documentada y revisada; se mantiene separada del avance conceptual.'
+        ? 'Existe evidencia P documentada y revisada; no acredita retención por sí sola.'
         : 'Existe evidencia P documentada pendiente de revisión humana.',
   }
+}
+
+function masteryForStep(
+  snapshot: LearningApplicationSnapshot,
+  step: AcademyLearnerStep,
+  exposureStatus: AcademyExposureStatus,
+  now: string,
+): Pick<AcademyLearnerStepProgress, 'masteryStatus' | 'demonstratedCompetencyIds' | 'retainedCompetencyIds'> {
+  const required = step.requiredActivityIds.flatMap((id) => {
+    const activity = snapshot.product.activities.find((item) => item.id === id)
+    return activity ? [activity] : []
+  })
+  const demonstrations = required.filter(({ pedagogicalContract }) =>
+    pedagogicalContract?.purpose === 'mastery-check'
+    || pedagogicalContract?.assessmentIntent === 'demonstration')
+  const competencyIds = unique(demonstrations.flatMap(({ competencyIds }) => competencyIds))
+  if (competencyIds.length === 0) {
+    return { masteryStatus: 'not-assessed', demonstratedCompetencyIds: [], retainedCompetencyIds: [] }
+  }
+  const projections = competencyIds.flatMap((competencyId) => {
+    const projection = snapshot.mastery.items.find((item) => item.competencyId === competencyId)
+    return projection ? [projection] : []
+  })
+  const demonstratedCompetencyIds = competencyIds.filter((competencyId) => projections.some((item) =>
+    item.competencyId === competencyId && (item.state === 'demonstrated' || item.state === 'retained')))
+  const retainedCompetencyIds = competencyIds.filter((competencyId) => projections.some((item) =>
+    item.competencyId === competencyId && item.state === 'retained'))
+  if (retainedCompetencyIds.length === competencyIds.length) {
+    return { masteryStatus: 'retained', demonstratedCompetencyIds, retainedCompetencyIds }
+  }
+  if (demonstratedCompetencyIds.length === competencyIds.length) {
+    const due = projections.some(({ state, nextReviewAt }) => state === 'demonstrated' && Boolean(nextReviewAt) && nextReviewAt! <= now)
+    return { masteryStatus: due ? 'retention-due' : 'demonstrated', demonstratedCompetencyIds, retainedCompetencyIds }
+  }
+  const nonDemonstrationReady = required
+    .filter((activity) => !demonstrations.includes(activity))
+    .every((activity) => academyActivitySatisfiesProgression(snapshot, activity))
+  return {
+    masteryStatus: exposureStatus === 'studied' && nonDemonstrationReady ? 'demonstration-due' : 'not-assessed',
+    demonstratedCompetencyIds,
+    retainedCompetencyIds,
+  }
+}
+
+function stepProgress(
+  snapshot: LearningApplicationSnapshot,
+  localState: AcademyLocalState | undefined,
+  chapter: AcademyLearnerChapter,
+  step: AcademyLearnerStep,
+  now: string,
+): AcademyLearnerStepProgress {
+  const studyRecognition = academyStudyRecognitionForLesson(snapshot, localState, step.lessonId)
+  const exposureStatus = exposureForLesson(snapshot, localState, step.lessonId, studyRecognition)
+  const completedRequiredActivityIds = step.requiredActivityIds.filter((activityId) => {
+    const activity = snapshot.product.activities.find(({ id }) => id === activityId)
+    return Boolean(activity && academyActivitySatisfiesProgression(snapshot, activity))
+  })
+  const pendingRequiredActivityIds = step.requiredActivityIds.filter((id) => !completedRequiredActivityIds.includes(id))
+  const startedRequiredActivityIds = step.requiredActivityIds.filter((activityId) =>
+    snapshot.sessions.items.some((session) => session.activityId === activityId))
+  const practiceActivityIds = step.requiredActivityIds.filter((activityId) => {
+    const contract = snapshot.product.activities.find(({ id }) => id === activityId)?.pedagogicalContract
+    return contract?.purpose !== 'mastery-check'
+      && contract?.assessmentIntent !== 'demonstration'
+      && contract?.purpose !== 'retention'
+      && contract?.assessmentIntent !== 'retention'
+  })
+  const pendingPracticeIds = practiceActivityIds.filter((id) => !completedRequiredActivityIds.includes(id))
+  const startedPractice = practiceActivityIds.some((id) => startedRequiredActivityIds.includes(id))
+  const practiceStatus: AcademyPracticeStatus = pendingPracticeIds.length === 0
+    ? 'satisfied'
+    : startedPractice ? 'in-progress' : 'not-started'
+  const mastery = masteryForStep(snapshot, step, exposureStatus, now)
+  const evidence = physicalEvidence(
+    snapshot,
+    [...step.requiredActivityIds, ...step.optionalActivityIds],
+    chapter.physicalEvidencePolicy.physicalCompetenceClaim,
+    chapter.physicalEvidencePolicy.note,
+  )
+  return {
+    stepId: step.stepId,
+    lessonId: step.lessonId,
+    studyRecognition,
+    exposureStatus,
+    practiceStatus,
+    masteryStatus: mastery.masteryStatus,
+    physicalEvidenceStatus: evidence.status,
+    completedRequiredActivityIds,
+    pendingRequiredActivityIds,
+    startedRequiredActivityIds,
+    demonstratedCompetencyIds: mastery.demonstratedCompetencyIds,
+    retainedCompetencyIds: mastery.retainedCompetencyIds,
+    coreAvailableComplete: exposureStatus === 'studied' && pendingRequiredActivityIds.length === 0,
+  }
+}
+
+function aggregateExposure(steps: AcademyLearnerStepProgress[]): AcademyExposureStatus {
+  return steps.every(({ exposureStatus }) => exposureStatus === 'studied')
+    ? 'studied'
+    : steps.some(({ exposureStatus }) => exposureStatus !== 'not-started') ? 'in-progress' : 'not-started'
+}
+
+function aggregatePractice(steps: AcademyLearnerStepProgress[]): AcademyPracticeStatus {
+  return steps.every(({ practiceStatus }) => practiceStatus === 'satisfied')
+    ? 'satisfied'
+    : steps.some(({ practiceStatus }) => practiceStatus !== 'not-started') ? 'in-progress' : 'not-started'
+}
+
+function aggregateMastery(steps: AcademyLearnerStepProgress[]): AcademyMasteryStatus {
+  const assessed = steps.filter(({ masteryStatus }) => masteryStatus !== 'not-assessed')
+  if (assessed.length === 0) return 'not-assessed'
+  if (assessed.every(({ masteryStatus }) => masteryStatus === 'retained')) return 'retained'
+  if (assessed.some(({ masteryStatus }) => masteryStatus === 'retention-due')) return 'retention-due'
+  if (assessed.every(({ masteryStatus }) => masteryStatus === 'demonstrated' || masteryStatus === 'retained')) return 'demonstrated'
+  if (assessed.some(({ masteryStatus }) => masteryStatus === 'demonstration-due')) return 'demonstration-due'
+  return 'not-assessed'
+}
+
+function legacyState(
+  exposureStatus: AcademyExposureStatus,
+  practiceStatus: AcademyPracticeStatus,
+  masteryStatus: AcademyMasteryStatus,
+): AcademyPathLearningState {
+  if (masteryStatus === 'retained') return 'consolidated'
+  if (masteryStatus === 'demonstrated' || masteryStatus === 'retention-due') return 'demonstrated'
+  if (practiceStatus === 'in-progress') return 'practising'
+  if (exposureStatus !== 'not-started' || practiceStatus === 'satisfied') return 'studying'
+  return 'not-started'
 }
 
 function rawChapterProgress(
   snapshot: LearningApplicationSnapshot,
   localState: AcademyLocalState | undefined,
   chapter: AcademyLearnerChapter,
+  now: string,
 ): AcademyChapterProgress {
-  const studiedAnchorLessonIds = chapter.anchorLessonIds.filter((lessonId) =>
-    lessonStudied(snapshot, localState, lessonId))
-  const completedRequiredActivityIds = chapter.requiredActivityIds.filter((activityId) => {
-    const activity = snapshot.product.activities.find(({ id }) => id === activityId)
-    return Boolean(activity && academyActivitySatisfiesProgression(snapshot, activity))
-  })
-  const startedRequiredActivityIds = chapter.requiredActivityIds.filter((activityId) =>
-    snapshot.sessions.items.some((session) => session.activityId === activityId))
-  const coreComplete = studiedAnchorLessonIds.length === chapter.anchorLessonIds.length
-    && completedRequiredActivityIds.length === chapter.requiredActivityIds.length
+  const steps = chapter.steps.map((step) => stepProgress(snapshot, localState, chapter, step, now))
+  const exposureStatus = aggregateExposure(steps)
+  const practiceStatus = aggregatePractice(steps)
+  const masteryStatus = aggregateMastery(steps)
+  const benchEvidenceStatus = physicalEvidence(
+    snapshot,
+    chapter.steps.flatMap(({ requiredActivityIds, optionalActivityIds }) => [...requiredActivityIds, ...optionalActivityIds]),
+    chapter.physicalEvidencePolicy.physicalCompetenceClaim,
+    chapter.physicalEvidencePolicy.note,
+  )
+  const completedRequiredActivityIds = steps.flatMap(({ completedRequiredActivityIds: ids }) => ids)
+  const pendingRequiredActivityIds = steps.flatMap(({ pendingRequiredActivityIds: ids }) => ids)
+  const studiedAnchorLessonIds = steps.filter(({ exposureStatus: status }) => status === 'studied').map(({ lessonId }) => lessonId)
+  const coreAvailableComplete = steps.every(({ coreAvailableComplete }) => coreAvailableComplete)
   return {
     chapterId: chapter.chapterId,
-    state: coreComplete
-      ? 'demonstrated'
-      : startedRequiredActivityIds.length > 0
-        ? 'practising'
-        : studiedAnchorLessonIds.length > 0
-          ? 'studying'
-          : 'not-started',
-    studiedAnchorLessonIds,
+    state: legacyState(exposureStatus, practiceStatus, masteryStatus),
+    exposureStatus,
+    practiceStatus,
+    masteryStatus,
+    physicalEvidenceStatus: benchEvidenceStatus.status,
+    coverageStatus: chapter.coverageStatus,
+    coreAvailableComplete,
+    curriculumComplete: coreAvailableComplete && chapter.coverageStatus === 'complete',
+    studyRecognitionByLesson: Object.fromEntries(steps.map(({ lessonId, studyRecognition }) => [lessonId, studyRecognition])),
     completedRequiredActivityIds,
-    startedRequiredActivityIds,
+    pendingRequiredActivityIds,
+    demonstratedCompetencyIds: unique(steps.flatMap(({ demonstratedCompetencyIds: ids }) => ids)),
+    retainedCompetencyIds: unique(steps.flatMap(({ retainedCompetencyIds: ids }) => ids)),
+    steps,
+    studiedAnchorLessonIds,
+    startedRequiredActivityIds: unique(steps.flatMap(({ startedRequiredActivityIds }) => startedRequiredActivityIds)),
     anchorLessonsCompleted: studiedAnchorLessonIds.length,
-    anchorLessonsTotal: chapter.anchorLessonIds.length,
+    anchorLessonsTotal: steps.length,
     requiredActivitiesCompleted: completedRequiredActivityIds.length,
-    requiredActivitiesTotal: chapter.requiredActivityIds.length,
-    coreComplete,
-    benchEvidenceStatus: physicalEvidenceForChapter(snapshot, chapter),
+    requiredActivitiesTotal: chapter.steps.reduce((total, step) => total + step.requiredActivityIds.length, 0),
+    coreComplete: coreAvailableComplete,
+    benchEvidenceStatus,
   }
 }
 
@@ -162,8 +365,8 @@ function optionalProgress(
   snapshot: LearningApplicationSnapshot,
   path: AcademyLearnerPathDefinition,
 ): AcademyOptionalExplorationProgress {
-  const coreActivityIds = new Set(path.chapters.flatMap(({ requiredActivityIds }) => requiredActivityIds))
-  const optionalActivityIds = new Set(path.chapters.flatMap(({ optionalActivityIds }) => optionalActivityIds))
+  const coreActivityIds = new Set(path.chapters.flatMap(({ steps }) => steps.flatMap(({ requiredActivityIds }) => requiredActivityIds)))
+  const optionalActivityIds = new Set(path.chapters.flatMap(({ steps }) => steps.flatMap(({ optionalActivityIds }) => optionalActivityIds)))
   const branchRouteIds = new Set(path.optionalBranches.flatMap(({ routeIds }) => routeIds))
   for (const route of snapshot.product.routes.filter(({ id }) => branchRouteIds.has(id))) {
     for (const moduleId of route.moduleIds) {
@@ -189,73 +392,86 @@ export function deriveAcademyPathProgress(
   snapshot: LearningApplicationSnapshot,
   localState?: AcademyLocalState,
   path: AcademyLearnerPathDefinition = ACADEMY_LEARNER_PATH,
+  now = new Date().toISOString(),
 ): AcademyPathProgress {
-  const chapters = path.chapters.map((chapterItem) => rawChapterProgress(snapshot, localState, chapterItem))
+  const chapters = path.chapters.map((item) => rawChapterProgress(snapshot, localState, item, now))
   const chapterById = new Map(chapters.map((item) => [item.chapterId, item]))
   let currentChapterId: string | undefined
   for (const chapterItem of path.chapters) {
     const progress = chapterById.get(chapterItem.chapterId)!
-    const prerequisitesComplete = chapterItem.prerequisiteChapterIds.every((id) => chapterById.get(id)?.coreComplete)
-    if (!progress.coreComplete && !currentChapterId && prerequisitesComplete) currentChapterId = chapterItem.chapterId
-    if (progress.coreComplete) {
-      progress.state = progress.benchEvidenceStatus.status === 'reviewed' ? 'consolidated' : 'demonstrated'
-    } else if (!prerequisitesComplete) {
-      progress.state = chapterItem.coverageStatus === 'planned' ? 'planned' : 'blocked'
-    } else if (progress.state === 'not-started') {
-      progress.state = currentChapterId === chapterItem.chapterId ? 'current' : 'available'
-    }
-    if (!progress.coreComplete && chapterItem.coverageStatus === 'partial' && progress.state !== 'blocked') {
-      progress.state = ['current', 'available'].includes(progress.state) ? 'partial-content' : progress.state
-    }
+    const prerequisitesComplete = chapterItem.prerequisiteChapterIds.every((id) => chapterById.get(id)?.coreAvailableComplete)
+    if (!progress.coreAvailableComplete && !currentChapterId && prerequisitesComplete) currentChapterId = chapterItem.chapterId
+    if (!prerequisitesComplete) progress.state = chapterItem.coverageStatus === 'planned' ? 'planned' : 'blocked'
+    else if (progress.state === 'not-started') progress.state = currentChapterId === chapterItem.chapterId ? 'current' : 'available'
+    if (progress.coreAvailableComplete && chapterItem.coverageStatus !== 'complete') progress.state = 'partial-content'
+    else if (!progress.coreAvailableComplete && chapterItem.coverageStatus === 'partial' && ['current', 'available'].includes(progress.state)) progress.state = 'partial-content'
   }
   const stages: AcademyStageProgress[] = path.stages.map((stageItem) => {
     const stageChapters = stageItem.chapterIds.map((id) => chapterById.get(id)!).filter(Boolean)
-    const completedChapterIds = stageChapters.filter(({ coreComplete }) => coreComplete).map(({ chapterId }) => chapterId)
-    const coreComplete = completedChapterIds.length === stageChapters.length
-    const hasStarted = stageChapters.some(({ state }) => ['studying', 'practising', 'demonstrated', 'consolidated'].includes(state))
+    const completedChapterIds = stageChapters.filter(({ coreAvailableComplete }) => coreAvailableComplete).map(({ chapterId }) => chapterId)
+    const coreAvailableComplete = completedChapterIds.length === stageChapters.length
+    const curriculumComplete = coreAvailableComplete
+      && stageItem.coverageStatus === 'complete'
+      && stageChapters.every((chapter) => chapter.curriculumComplete)
+    const hasStarted = stageChapters.some(({ exposureStatus, practiceStatus }) =>
+      exposureStatus !== 'not-started' || practiceStatus !== 'not-started')
     return {
       stageId: stageItem.stageId,
-      state: coreComplete ? 'demonstrated' : hasStarted ? 'studying' : 'not-started',
+      state: coreAvailableComplete
+        ? stageItem.coverageStatus === 'complete' ? 'studying' : 'partial-content'
+        : hasStarted ? 'studying' : 'not-started',
       completedChapterIds,
       chaptersCompleted: completedChapterIds.length,
       chaptersTotal: stageChapters.length,
-      coreComplete,
+      coreAvailableComplete,
+      curriculumComplete,
+      coreComplete: coreAvailableComplete,
       coverageStatus: stageItem.coverageStatus,
     }
   })
-  const currentStageId = stages.find((item) => !item.coreComplete)?.stageId
+  const currentStageId = stages.find((item) => !item.coreAvailableComplete)?.stageId
   for (const stage of stages) {
-    if (stage.coreComplete) continue
+    if (stage.coreAvailableComplete) continue
     const prerequisites = path.stages.find(({ stageId }) => stageId === stage.stageId)?.prerequisiteStageIds ?? []
-    const prerequisitesComplete = prerequisites.every((id) => stages.find(({ stageId }) => stageId === id)?.coreComplete)
-    stage.state = stage.stageId === currentStageId
-      ? 'current'
-      : prerequisitesComplete ? 'available' : 'blocked'
+    const prerequisitesComplete = prerequisites.every((id) => stages.find(({ stageId }) => stageId === id)?.coreAvailableComplete)
+    stage.state = stage.stageId === currentStageId ? 'current' : prerequisitesComplete ? 'available' : 'blocked'
   }
-  const physicalEvidenceIds = chapters.flatMap(({ benchEvidenceStatus }) => benchEvidenceStatus.physicalEvidenceIds)
-  const benchRequired = chapters.some(({ benchEvidenceStatus }) => benchEvidenceStatus.required)
-  const allRequiredReviewed = chapters
-    .filter(({ benchEvidenceStatus }) => benchEvidenceStatus.required)
-    .every(({ benchEvidenceStatus }) => benchEvidenceStatus.status === 'reviewed')
+  const physicalEvidenceIds = unique(chapters.flatMap(({ benchEvidenceStatus }) => benchEvidenceStatus.physicalEvidenceIds))
+  const physicalChapters = chapters.filter(({ benchEvidenceStatus }) => benchEvidenceStatus.required)
+  const coveragePendingStageIds = stages.filter(({ coverageStatus }) => coverageStatus !== 'complete').map(({ stageId }) => stageId)
+  const coreAvailableComplete = stages.every(({ coreAvailableComplete }) => coreAvailableComplete)
+  const curriculumComplete = stages.every(({ curriculumComplete }) => curriculumComplete)
   return {
     pathId: path.pathId,
     currentStageId,
     currentChapterId,
-    completedStageIds: stages.filter(({ coreComplete }) => coreComplete).map(({ stageId }) => stageId),
-    stagesCompleted: stages.filter(({ coreComplete }) => coreComplete).length,
+    completedStageIds: stages.filter(({ coreAvailableComplete: complete }) => complete).map(({ stageId }) => stageId),
+    stagesCompleted: stages.filter(({ coreAvailableComplete: complete }) => complete).length,
     stagesTotal: stages.length,
     anchorLessonsCompleted: chapters.reduce((total, item) => total + item.anchorLessonsCompleted, 0),
     anchorLessonsTotal: chapters.reduce((total, item) => total + item.anchorLessonsTotal, 0),
     requiredActivitiesCompleted: chapters.reduce((total, item) => total + item.requiredActivitiesCompleted, 0),
     requiredActivitiesTotal: chapters.reduce((total, item) => total + item.requiredActivitiesTotal, 0),
-    coreComplete: stages.every(({ coreComplete }) => coreComplete),
+    coreAvailableComplete,
+    curriculumComplete,
+    coveragePendingStageIds,
+    plannedCurriculumItems: new Set(path.chapters
+      .filter(({ stageId }) => coveragePendingStageIds.includes(stageId))
+      .flatMap(({ plannedContentRefs }) => plannedContentRefs)).size,
+    coreComplete: coreAvailableComplete,
     chapters,
     stages,
     benchEvidenceStatus: {
-      required: benchRequired,
-      status: !benchRequired ? 'not-required' : physicalEvidenceIds.length === 0 ? 'pending' : allRequiredReviewed ? 'reviewed' : 'documented',
+      required: physicalChapters.length > 0,
+      status: physicalChapters.length === 0
+        ? 'not-required'
+        : physicalChapters.every(({ physicalEvidenceStatus }) => physicalEvidenceStatus === 'reviewed')
+          ? 'reviewed'
+          : physicalChapters.some(({ physicalEvidenceStatus }) => physicalEvidenceStatus === 'documented' || physicalEvidenceStatus === 'reviewed')
+            ? 'documented'
+            : 'pending',
       physicalEvidenceIds,
-      note: 'La evidencia de banco se calcula aparte y no se infiere de sesiones virtuales.',
+      note: 'La evidencia de banco se calcula aparte y nunca se convierte en demostración o retención por sí sola.',
     },
     optionalExplorationProgress: optionalProgress(snapshot, path),
   }

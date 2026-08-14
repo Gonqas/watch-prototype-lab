@@ -76,6 +76,7 @@ function compactPath(chapterCount: 1 | 2): AcademyLearnerPathDefinition {
     ...chapter,
     stageId: 'stage.test',
     order: index + 1,
+    steps: chapter.steps.map((step) => ({ ...step, chapterId: chapter.chapterId, requiredActivityIds: [], optionalActivityIds: [] })),
     requiredActivityIds: [],
     optionalActivityIds: [],
     prerequisiteChapterIds: index === 0 ? [] : [sourceChapters[index - 1].chapterId],
@@ -205,7 +206,7 @@ describe('progreso compatible y siguiente acción', () => {
     const studied = studiedState([firstChapter.anchorLessonIds[0]])
     expect(academyNextAction(base, studied, now).precedence).toBe(3)
 
-    const competencyId = base.product.activities[0].competencyIds[0]
+    const competencyId = base.product.activities.find(({ id }) => id === firstChapter.requiredActivityIds[0])!.competencyIds[0]
     const due: LearningMasteryProjection = {
       schemaVersion: 1, profileId: 'profile.local-default', competencyId, state: 'demonstrated', strength: 1,
       primaryEvidenceIds: ['evidence.old'], retentionEvidenceIds: [], nextReviewAt: '2026-08-13T10:00:00.000Z',
@@ -227,7 +228,7 @@ describe('progreso compatible y siguiente acción', () => {
     base.sessions = page([]); base.mastery = page([])
     expect(academyNextAction(base, firstDone, now, twoChapterPath).precedence).toBe(5)
     const complete = studiedState(twoChapterPath.chapters.flatMap(({ anchorLessonIds }) => anchorLessonIds))
-    expect(academyNextAction(base, complete, now, twoChapterPath).precedence).toBe(6)
+    expect(academyNextAction(base, complete, now, twoChapterPath)).toMatchObject({ precedence: 6, type: 'available-path-complete' })
   })
 
   it('nunca deja que una actividad opcional desplace una tarea core', () => {

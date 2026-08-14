@@ -24,7 +24,7 @@ export function AcademyPathHomeSurface() {
   return (
     <PathPage eyebrow="TU ACADEMIA" title={`Hola, ${snapshot.profile?.displayName ?? 'perfil local'}`} description="Una ruta principal, una siguiente acción y toda la biblioteca disponible cuando la necesites.">
       <section className="academy-path-position" aria-label="Posición actual">
-        <div><span>DÓNDE ESTÁS</span><strong>{currentStage ? `Etapa ${currentStage.order} · ${currentStage.shortTitle}` : 'Ruta principal completada'}</strong><small>{currentChapter?.title ?? 'No queda ningún capítulo core pendiente'}</small></div>
+        <div><span>DÓNDE ESTÁS</span><strong>{currentStage ? `Etapa ${currentStage.order} · ${currentStage.shortTitle}` : 'Recorrido disponible completado'}</strong><small>{currentChapter?.title ?? (progress.curriculumComplete ? 'Currículo completo' : 'Queda cobertura planificada o pendiente de revisión')}</small></div>
         <a href="#/learning/my-learning">Ver las ocho etapas</a>
       </section>
       <AcademyNextActionCard action={next} />
@@ -68,7 +68,7 @@ export function AcademyPathSurface() {
   return (
     <PathPage eyebrow="MI RUTA" title={ACADEMY_LEARNER_PATH.title} description={ACADEMY_LEARNER_PATH.learnerGoal}>
       <section className="academy-path-summary">
-        <div><span>RUTA PRINCIPAL</span><strong>{progress.stagesCompleted} de {progress.stagesTotal} etapas core</strong><small>El denominador excluye apoyos, historia, referencias y ramas opcionales.</small></div>
+        <div><span>RUTA PRINCIPAL</span><strong>{progress.stagesCompleted} de {progress.stagesTotal} etapas con contenido disponible cerrado</strong><small>{progress.curriculumComplete ? 'Currículo completo.' : `${progress.coveragePendingStageIds.length} etapa(s) conservan cobertura parcial, planificada o pendiente de revisión.`}</small></div>
         <div><span>BANCO</span><strong>{progress.benchEvidenceStatus.status === 'pending' ? 'P pendiente' : progress.benchEvidenceStatus.status}</strong><small>Avance conceptual y evidencia física se muestran por separado.</small></div>
       </section>
       <div className="academy-path-stages">

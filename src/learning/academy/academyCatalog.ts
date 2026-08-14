@@ -649,7 +649,7 @@ export function buildAcademySearchIndex(
       ...fixture.ledger.map((record): AcademySearchEntry => ({
         id: `${fixture.id}:${record.canonicalId}`,
         kind: 'part',
-        title: locale?.startsWith('en') ? record.nameEn : record.nameEs,
+        title: localize(locale, { es: record.nameEs, en: record.nameEn }),
         description: `${record.subsystem} · ${record.reconstructionLevel} · ${record.modelState}`,
         keywords: [
           record.nameEs,

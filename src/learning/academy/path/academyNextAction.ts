@@ -1,16 +1,28 @@
 import type { LearningApplicationSnapshot } from '../../application/service'
 import { localize } from '../../application/i18n'
-import { academyActivitySatisfiesProgression } from '../academyCatalog'
 import type { AcademyLocalState } from '../academyLocalState'
 import {
   ACADEMY_LEARNER_PATH,
   academyPathChapter,
-  academyPathStage,
+  academyPathLocationForActivity,
   type AcademyLearnerPathDefinition,
 } from './academyLearnerPath'
 import { deriveAcademyPathProgress } from './academyPathProgress'
 
-export type AcademyNextActionType = 'read' | 'practice' | 'demonstrate' | 'review' | 'resume' | 'chapter' | 'optional'
+export type AcademyNextActionType =
+  | 'read'
+  | 'practice'
+  | 'demonstrate'
+  | 'review'
+  | 'resume'
+  | 'chapter'
+  | 'available-path-complete'
+
+export interface AcademySecondaryAction {
+  title: string
+  href: string
+  ctaLabel: string
+}
 
 export interface AcademyNextAction {
   actionId: string
@@ -26,31 +38,29 @@ export interface AcademyNextAction {
   ctaLabel: string
   durationMinutes?: number
   remainingCoreItems: number
+  plannedCurriculumItems?: number
+  coveragePendingStageIds?: string[]
   after: string
   lessonId?: string
   activityId?: string
   sessionId?: string
+  secondaryAction?: AcademySecondaryAction
 }
 
 const recoverableStates = new Set(['active', 'paused', 'suspended', 'interrupted', 'recovering'])
-
-function locationForActivity(path: AcademyLearnerPathDefinition, activityId: string) {
-  const chapter = path.chapters.find((item) =>
-    item.requiredActivityIds.includes(activityId) || item.optionalActivityIds.includes(activityId))
-  return chapter ? { chapter, stage: path.stages.find(({ stageId }) => stageId === chapter.stageId)! } : undefined
-}
 
 function remainingItems(
   path: AcademyLearnerPathDefinition,
   snapshot: LearningApplicationSnapshot,
   localState: AcademyLocalState | undefined,
   chapterId: string | undefined,
+  now: string,
 ): number {
   if (!chapterId) return 0
-  const progress = deriveAcademyPathProgress(snapshot, localState, path).chapters.find((item) => item.chapterId === chapterId)
+  const progress = deriveAcademyPathProgress(snapshot, localState, path, now).chapters.find((item) => item.chapterId === chapterId)
   return progress
-    ? (progress.anchorLessonsTotal - progress.anchorLessonsCompleted)
-      + (progress.requiredActivitiesTotal - progress.requiredActivitiesCompleted)
+    ? progress.steps.filter(({ exposureStatus }) => exposureStatus !== 'studied').length
+      + progress.pendingRequiredActivityIds.length
     : 0
 }
 
@@ -60,12 +70,14 @@ export function academyNextAction(
   now = new Date().toISOString(),
   path: AcademyLearnerPathDefinition = ACADEMY_LEARNER_PATH,
 ): AcademyNextAction {
+  const coreActivityIds = new Set(path.chapters.flatMap(({ steps }) =>
+    steps.flatMap(({ requiredActivityIds }) => requiredActivityIds)))
   const recovery = [...snapshot.sessions.items]
-    .filter(({ state }) => recoverableStates.has(state))
+    .filter(({ activityId, state }) => coreActivityIds.has(activityId) && recoverableStates.has(state))
     .sort((left, right) => right.updatedAt.localeCompare(left.updatedAt))[0]
   if (recovery) {
     const activity = snapshot.product.activities.find(({ id }) => id === recovery.activityId)
-    const location = locationForActivity(path, recovery.activityId)
+    const location = academyPathLocationForActivity(recovery.activityId, path)
     return {
       actionId: `path-action.recovery.${recovery.id}`,
       precedence: 1,
@@ -74,28 +86,31 @@ export function academyNextAction(
       chapterId: location?.chapter.chapterId,
       chapterTitle: location?.chapter.title ?? 'Sesión guardada',
       title: activity ? localize(snapshot.profile?.locale, activity.title) : 'Retomar la práctica guardada',
-      reason: 'Existe una sesión con un punto de recuperación seguro; se resuelve antes de abrir trabajo nuevo.',
+      reason: 'Existe una sesión core con un punto de recuperación seguro; se resuelve antes de abrir trabajo nuevo.',
       type: 'resume',
       href: `#/learning/recovery/${encodeURIComponent(recovery.id)}`,
       ctaLabel: 'Retomar sesión',
       durationMinutes: activity?.durationMinutes,
-      remainingCoreItems: remainingItems(path, snapshot, localState, location?.chapter.chapterId),
+      remainingCoreItems: remainingItems(path, snapshot, localState, location?.chapter.chapterId, now),
       after: 'Al terminar volverás al capítulo activo sin perder el estado guardado.',
       activityId: recovery.activityId,
       sessionId: recovery.id,
     }
   }
 
-  const due = snapshot.mastery.items
-    .filter(({ state, nextReviewAt }) =>
-      state === 'demonstrated' && Boolean(nextReviewAt) && nextReviewAt! <= now)
-    .sort((left, right) => (left.nextReviewAt ?? '').localeCompare(right.nextReviewAt ?? ''))[0]
-  if (due) {
+  const dueCandidates = snapshot.mastery.items
+    .filter(({ state, nextReviewAt }) => state === 'demonstrated' && Boolean(nextReviewAt) && nextReviewAt! <= now)
+    .sort((left, right) => (left.nextReviewAt ?? '').localeCompare(right.nextReviewAt ?? ''))
+  for (const due of dueCandidates) {
     const activity = snapshot.product.activities.find((candidate) =>
-      candidate.competencyIds.includes(due.competencyId)
+      coreActivityIds.has(candidate.id)
+      && candidate.competencyIds.includes(due.competencyId)
       && (candidate.pedagogicalContract?.purpose === 'retention'
         || candidate.pedagogicalContract?.assessmentIntent === 'retention'))
-    const location = activity ? locationForActivity(path, activity.id) : undefined
+      ?? snapshot.product.activities.find((candidate) =>
+        coreActivityIds.has(candidate.id) && candidate.competencyIds.includes(due.competencyId))
+    if (!activity) continue
+    const location = academyPathLocationForActivity(activity.id, path)
     return {
       actionId: `path-action.review.${due.competencyId}`,
       precedence: 2,
@@ -103,19 +118,19 @@ export function academyNextAction(
       stageTitle: location?.stage.title ?? 'Repaso',
       chapterId: location?.chapter.chapterId,
       chapterTitle: location?.chapter.title ?? 'Retención pendiente',
-      title: activity ? localize(snapshot.profile?.locale, activity.title) : 'Repaso de retención pendiente',
+      title: localize(snapshot.profile?.locale, activity.title),
       reason: 'La fecha de recuperación espaciada ya ha vencido; repasar ahora protege lo demostrado.',
       type: 'review',
-      href: activity ? `#/learning/activity/${encodeURIComponent(activity.id)}?mode=retention` : '#/learning/review',
+      href: `#/learning/activity/${encodeURIComponent(activity.id)}?mode=retention`,
       ctaLabel: 'Hacer repaso',
-      durationMinutes: activity?.durationMinutes,
-      remainingCoreItems: remainingItems(path, snapshot, localState, location?.chapter.chapterId),
+      durationMinutes: activity.durationMinutes,
+      remainingCoreItems: remainingItems(path, snapshot, localState, location?.chapter.chapterId, now),
       after: 'Después continuarás en el mismo punto de la ruta principal.',
-      activityId: activity?.id,
+      activityId: activity.id,
     }
   }
 
-  const pathProgress = deriveAcademyPathProgress(snapshot, localState, path)
+  const pathProgress = deriveAcademyPathProgress(snapshot, localState, path, now)
   const chapter = pathProgress.currentChapterId
     ? path.chapters.find(({ chapterId }) => chapterId === pathProgress.currentChapterId)
     : undefined
@@ -126,9 +141,9 @@ export function academyNextAction(
   if (chapter && chapterProgress && stage) {
     const chapterIndex = path.chapters.findIndex(({ chapterId }) => chapterId === chapter.chapterId)
     const previousChapter = chapterIndex > 0 ? pathProgress.chapters[chapterIndex - 1] : undefined
-    const chapterIsPristine = chapterProgress.studiedAnchorLessonIds.length === 0
-      && chapterProgress.startedRequiredActivityIds.length === 0
-    if (previousChapter?.coreComplete && chapterIsPristine) {
+    const chapterIsPristine = chapterProgress.steps.every(({ exposureStatus, startedRequiredActivityIds }) =>
+      exposureStatus === 'not-started' && startedRequiredActivityIds.length === 0)
+    if (previousChapter?.coreAvailableComplete && chapterIsPristine) {
       return {
         actionId: `path-action.chapter.${chapter.chapterId}`,
         precedence: 5,
@@ -141,19 +156,18 @@ export function academyNextAction(
         type: 'chapter',
         href: `#/learning/my-learning?chapter=${encodeURIComponent(chapter.chapterId)}`,
         ctaLabel: 'Abrir capítulo',
-        remainingCoreItems: remainingItems(path, snapshot, localState, chapter.chapterId),
+        remainingCoreItems: remainingItems(path, snapshot, localState, chapter.chapterId, now),
         after: 'La primera lección ancla aparecerá como siguiente acción.',
       }
     }
-    const pendingActivityId = chapter.requiredActivityIds.find((activityId) => {
-      const activity = snapshot.product.activities.find(({ id }) => id === activityId)
-      if (!activity || academyActivitySatisfiesProgression(snapshot, activity)) return false
-      const lessonStudied = chapterProgress.studiedAnchorLessonIds.includes(activity.lessonId)
-      const attempted = snapshot.sessions.items.some((session) => session.activityId === activityId)
-      return lessonStudied || attempted
-    })
-    if (pendingActivityId) {
-      const activity = snapshot.product.activities.find(({ id }) => id === pendingActivityId)!
+
+    for (const step of chapter.steps) {
+      const progress = chapterProgress.steps.find(({ stepId }) => stepId === step.stepId)!
+      if (progress.exposureStatus !== 'studied') continue
+      const pendingActivityId = progress.pendingRequiredActivityIds[0]
+      if (!pendingActivityId) continue
+      const activity = snapshot.product.activities.find(({ id }) => id === pendingActivityId)
+      if (!activity) continue
       const isDemonstration = activity.pedagogicalContract?.assessmentIntent === 'demonstration'
         || activity.pedagogicalContract?.purpose === 'mastery-check'
       return {
@@ -165,82 +179,75 @@ export function academyNextAction(
         chapterTitle: chapter.title,
         title: localize(snapshot.profile?.locale, activity.title),
         reason: isDemonstration
-          ? 'La explicación necesaria ya está estudiada; toca una comprobación independiente.'
-          : 'La explicación necesaria ya está estudiada y esta práctica es obligatoria para cerrar el capítulo.',
+          ? 'La explicación y la práctica necesarias ya están disponibles; toca una comprobación independiente.'
+          : 'La explicación necesaria ya está estudiada y esta práctica es obligatoria para cerrar el paso.',
         type: isDemonstration ? 'demonstrate' : 'practice',
         href: `#/learning/activity/${encodeURIComponent(activity.id)}${isDemonstration ? '?mode=demonstration' : ''}`,
-        ctaLabel: isDemonstration ? 'Demostrar' : 'Practicar',
+        ctaLabel: isDemonstration ? 'Demostrar' : progress.practiceStatus === 'in-progress' ? 'Retomar práctica' : 'Practicar',
         durationMinutes: activity.durationMinutes,
-        remainingCoreItems: remainingItems(path, snapshot, localState, chapter.chapterId),
-        after: 'Al completarla se actualizará el capítulo a partir de la sesión y sus resultados existentes.',
+        remainingCoreItems: remainingItems(path, snapshot, localState, chapter.chapterId, now),
+        after: 'Al completarla se actualizarán práctica, mastery y evidencia física por separado.',
         activityId: activity.id,
-        lessonId: activity.lessonId,
+        lessonId: step.lessonId,
       }
     }
 
-    const nextLessonId = chapter.anchorLessonIds.find((lessonId) =>
-      !chapterProgress.studiedAnchorLessonIds.includes(lessonId))
-    if (nextLessonId) {
-      const lesson = snapshot.product.lessons.find(({ id }) => id === nextLessonId)
+    const nextStep = chapter.steps.find((step) =>
+      chapterProgress.steps.find(({ stepId }) => stepId === step.stepId)?.exposureStatus !== 'studied')
+    if (nextStep) {
+      const lesson = snapshot.product.lessons.find(({ id }) => id === nextStep.lessonId)
       return {
-        actionId: `path-action.lesson.${nextLessonId}`,
+        actionId: `path-action.lesson.${nextStep.lessonId}`,
         precedence: 4,
         stageId: stage.stageId,
         stageTitle: stage.title,
         chapterId: chapter.chapterId,
         chapterTitle: chapter.title,
-        title: lesson ? localize(snapshot.profile?.locale, lesson.title) : nextLessonId,
+        title: lesson ? localize(snapshot.profile?.locale, lesson.title) : nextStep.lessonId,
         reason: `Es la siguiente explicación ancla de ${chapter.title}; sus apoyos y ramas opcionales no desplazan este paso.`,
         type: 'read',
-        href: `#/learning/lesson/${encodeURIComponent(nextLessonId)}`,
+        href: `#/learning/lesson/${encodeURIComponent(nextStep.lessonId)}`,
         ctaLabel: 'Abrir lección',
-        remainingCoreItems: remainingItems(path, snapshot, localState, chapter.chapterId),
-        after: chapter.requiredActivityIds.some((activityId) =>
-          snapshot.product.activities.find(({ id }) => id === activityId)?.lessonId === nextLessonId)
-          ? 'Después aparecerá la práctica obligatoria asociada.'
-          : 'Después continuarás con la siguiente ancla del capítulo.',
-        lessonId: nextLessonId,
+        remainingCoreItems: remainingItems(path, snapshot, localState, chapter.chapterId, now),
+        after: nextStep.requiredActivityIds.length > 0
+          ? 'Después aparecerá la primera práctica obligatoria pendiente declarada en este paso.'
+          : 'Después continuarás con el siguiente paso del capítulo.',
+        lessonId: nextStep.lessonId,
       }
-    }
-
-    return {
-      actionId: `path-action.chapter.${chapter.chapterId}`,
-      precedence: 5,
-      stageId: stage.stageId,
-      stageTitle: stage.title,
-      chapterId: chapter.chapterId,
-      chapterTitle: chapter.title,
-      title: `Abrir ${chapter.title}`,
-      reason: 'El capítulo anterior está cerrado y este es el siguiente bloque de la ruta principal.',
-      type: 'chapter',
-      href: `#/learning/my-learning?chapter=${encodeURIComponent(chapter.chapterId)}`,
-      ctaLabel: 'Abrir capítulo',
-      remainingCoreItems: remainingItems(path, snapshot, localState, chapter.chapterId),
-      after: 'La primera lección ancla aparecerá como siguiente acción.',
     }
   }
 
   const optional = path.optionalBranches[0]
   const optionalRoute = optional?.routeIds[0]
   return {
-    actionId: 'path-action.optional-library',
+    actionId: 'path-action.available-path-complete',
     precedence: 6,
-    stageId: optional?.stageId,
-    stageTitle: optional ? academyPathStage(optional.stageId)?.title ?? 'Ruta completada' : 'Ruta completada',
-    chapterTitle: 'Ampliación opcional',
-    title: optional?.title ?? 'Explorar la biblioteca',
-    reason: 'No queda ninguna tarea core pendiente; esta ampliación es voluntaria y no cambia el progreso principal.',
-    type: 'optional',
-    href: optionalRoute ? `#/learning/route/${encodeURIComponent(optionalRoute)}` : '#/learning/explore',
-    ctaLabel: 'Explorar ampliación',
+    stageTitle: 'Ruta principal',
+    chapterTitle: 'Cobertura curricular',
+    title: 'Recorrido disponible completado',
+    reason: pathProgress.coveragePendingStageIds.length > 0
+      ? 'Quedan contenidos planificados o pendientes de revisión antes de cerrar el currículo completo.'
+      : 'No queda ninguna tarea core disponible pendiente.',
+    type: 'available-path-complete',
+    href: '#/learning/my-learning',
+    ctaLabel: 'Ver cobertura',
     remainingCoreItems: 0,
-    after: 'La ruta principal seguirá completa aunque no abras esta ampliación.',
+    plannedCurriculumItems: pathProgress.plannedCurriculumItems,
+    coveragePendingStageIds: pathProgress.coveragePendingStageIds,
+    after: 'Las ampliaciones de Biblioteca son opcionales y no cambian este estado.',
+    secondaryAction: optional
+      ? {
+          title: optional.title,
+          href: optionalRoute ? `#/learning/route/${encodeURIComponent(optionalRoute)}` : '#/learning/explore',
+          ctaLabel: 'Explorar ampliación opcional',
+        }
+      : undefined,
   }
 }
 
 export function academyNextActionForChapter(chapterId: string): string {
   const chapter = academyPathChapter(chapterId)
-  return chapter?.anchorLessonIds[0]
-    ? `#/learning/lesson/${encodeURIComponent(chapter.anchorLessonIds[0])}`
+  return chapter?.steps[0]
+    ? `#/learning/lesson/${encodeURIComponent(chapter.steps[0].lessonId)}`
     : '#/learning/my-learning'
 }

@@ -103,7 +103,7 @@ export function LearningArea({
   useEffect(() => {
     const locale = normalizeLearningLocale(snapshot.profile?.locale)
     window.dispatchEvent(new CustomEvent('wplab-learning-locale', { detail: locale }))
-    document.documentElement.lang = locale.startsWith('en') ? 'en' : 'es'
+    document.documentElement.lang = locale.split('-')[0]
   }, [snapshot.profile?.locale])
 
   const textScale = Math.max(1, snapshot.profile?.accessibility.textScale ?? 1)

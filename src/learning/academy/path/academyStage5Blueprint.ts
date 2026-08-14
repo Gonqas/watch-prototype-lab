@@ -1,12 +1,27 @@
 export type AcademyStage5BlueprintStatus = 'gap' | 'partial'
 
+export interface AcademyStage5DataAuthorityNeed {
+  authorityKind: 'official-document' | 'supplier' | 'measured' | 'unknown' | 'source-needed'
+  requirement: string
+  sourceId?: string
+}
+
 export interface AcademyStage5BlueprintItem {
   blueprintRef: string
   status: AcademyStage5BlueprintStatus
   title: string
   observableObjective: string
+  /** @deprecated Snapshot 0.14B; no representa autoridad primaria en 0.14B.1. */
   primarySourceIds: string[]
+  /** @deprecated Alias 0.14B de requiredOfficialDocuments. */
   officialDocumentationNeeded: string[]
+  primaryDataAuthority: AcademyStage5DataAuthorityNeed[]
+  conceptualSources: string[]
+  methodologicalSources: string[]
+  supportingSources: string[]
+  requiredOfficialDocuments: string[]
+  visualInspirationSources: string[]
+  unresolvedSourceNeeds: string[]
   requiredVisual: string
   proposedPractice: string
   evidenceModalities: Array<'K' | 'V' | 'P' | 'R'>
@@ -23,7 +38,11 @@ const COMMON_SOURCES = [
   'source.encyclopedia.original-synthesis',
 ]
 
-export const ACADEMY_STAGE_5_BLUEPRINT: readonly AcademyStage5BlueprintItem[] = [
+type LegacyStage5BlueprintItem = Omit<AcademyStage5BlueprintItem,
+  'primaryDataAuthority' | 'conceptualSources' | 'methodologicalSources' | 'supportingSources'
+  | 'requiredOfficialDocuments' | 'visualInspirationSources' | 'unresolvedSourceNeeds'>
+
+const LEGACY_STAGE_5_BLUEPRINT: readonly LegacyStage5BlueprintItem[] = [
   {
     blueprintRef: 'stage5-gap.movement-holder', status: 'gap', title: 'Aro o movement holder como interfaz estructural',
     observableObjective: 'Comparar el movimiento, la caja y un aro propuesto y registrar apoyos, retención y cotas desconocidas.',
@@ -149,3 +168,26 @@ export const ACADEMY_STAGE_5_BLUEPRINT: readonly AcademyStage5BlueprintItem[] = 
     technicalWplRelation: 'Vincular alternativas de componente al proyecto sin sustituir la geometría aprobada.', productionLessonId: null,
   },
 ] as const
+
+export const ACADEMY_STAGE_5_BLUEPRINT: readonly AcademyStage5BlueprintItem[] = LEGACY_STAGE_5_BLUEPRINT.map((item) => {
+  const daniels = item.primarySourceIds.includes('source.private.daniels.watchmaking-volume')
+    ? ['source.private.daniels.watchmaking-volume']
+    : []
+  const standards = item.primarySourceIds.filter((sourceId) => sourceId !== 'source.private.daniels.watchmaking-volume'
+    && sourceId !== 'source.encyclopedia.original-synthesis')
+  return {
+    ...item,
+    primaryDataAuthority: item.officialDocumentationNeeded.map((requirement) => ({
+      authorityKind: 'source-needed' as const,
+      requirement,
+    })),
+    conceptualSources: daniels,
+    methodologicalSources: [...daniels, ...standards],
+    supportingSources: item.primarySourceIds.includes('source.encyclopedia.original-synthesis')
+      ? ['source.encyclopedia.original-synthesis']
+      : [],
+    requiredOfficialDocuments: [...item.officialDocumentationNeeded],
+    visualInspirationSources: daniels,
+    unresolvedSourceNeeds: [...item.officialDocumentationNeeded],
+  }
+})
