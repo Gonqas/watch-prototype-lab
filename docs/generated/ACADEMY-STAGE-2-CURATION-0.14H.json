@@ -1,0 +1,3726 @@
+{
+  "schema": "wplab-academy-stage2-curation-v1",
+  "phase": "0.14H",
+  "sequence": [
+    "stage-2.1",
+    "stage-2.2",
+    "stage-2.3",
+    "stage-2.4",
+    "stage-2.5",
+    "stage-2.6"
+  ],
+  "counts": {
+    "lessons": 25,
+    "anchors": 17,
+    "supports": 5,
+    "optionalBranches": 3,
+    "sections": 225
+  },
+  "lessons": [
+    {
+      "lessonId": "lesson.mechanical.energy",
+      "sourceBlockId": "block.mechanical.energy",
+      "macroStage": 2,
+      "chapterId": "stage-2.1",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo pasa la energía almacenada a movimiento útil sin confundir energía, par, potencia y velocidad?",
+      "whyNow": "Pertenece a stage-2.1 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Trazar la cadena energética y explicar qué magnitud describe cada cambio.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.mechanical.energy.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Trazar la cadena energética y explicar qué magnitud describe cada cambio.\n\nEsta orientación refina la revisión piloto 0.14E y conserva su pregunta funcional en la cabecera del lector.",
+          "legacySectionAliases": [
+            "reader.section.block.mechanical.energy.proposito"
+          ]
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.energy.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Energía, trabajo, par, potencia, velocidad y pérdida describen propiedades distintas; ninguna de ellas crea energía.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.energy.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El muelle real almacena energía elástica. El barrilete entrega par al tren; el tren transmite movimiento y el escape limita su avance mientras el oscilador aporta la referencia temporal.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.energy.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.energy.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Si el barrilete conserva energía pero el tren queda interrumpido, la fuente sigue cargada y la indicación deja de avanzar: la interrupción cambia la transmisión, no el origen.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.energy.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No equiparar par con velocidad, potencia con reserva de marcha ni movimiento visible con energía disponible.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.energy.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.energy.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El barrilete permite localizar físicamente el acumulador y separar sus funciones durante cuerda y marcha.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.energy.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Modelo conceptual basado en Theory of Horology, capítulo 4; no prescribe medidas, lubricación ni apertura del barrilete.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.mechanical-energy.flow",
+        "visual.stage2.energy-quantities.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.mechanical.classify-energy-functions",
+          "lessonId": "lesson.mechanical.energy",
+          "visibleTitle": "Aplicar: Trazar la cadena energética y explicar qué magnitud describe cada cambio",
+          "purpose": "Trazar la cadena energética y explicar qué magnitud describe cada cambio.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.mechanical.energy.core"
+      ],
+      "limitations": [
+        "Modelo conceptual basado en Theory of Horology, capítulo 4; no prescribe medidas, lubricación ni apertura del barrilete.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.mechanical.barrel",
+      "sourceBlockId": "block.mechanical.barrel",
+      "macroStage": 2,
+      "chapterId": "stage-2.1",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Qué funciones cumplen árbol, muelle, tambor y tapa durante la cuerda y durante la marcha?",
+      "whyNow": "Pertenece a stage-2.1 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Comparar los dos estados funcionales del barrilete sin convertir el modelo en un procedimiento de apertura.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.mechanical.barrel.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Comparar los dos estados funcionales del barrilete sin convertir el modelo en un procedimiento de apertura.\n\nEsta orientación refina la revisión piloto 0.14E y conserva su pregunta funcional en la cabecera del lector.",
+          "legacySectionAliases": [
+            "reader.section.block.mechanical.barrel.proposito"
+          ]
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.barrel.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Árbol, núcleo, muelle real, gancho, tambor, dentado y tapa forman un acumulador con interfaces diferenciadas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.barrel.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "Durante la cuerda el árbol carga el muelle respecto al tambor retenido. Durante la marcha el árbol queda retenido y el tambor entrega movimiento al tren por su dentado.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.barrel.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.barrel.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "La misma pieza puede cambiar de papel relativo: el árbol recibe la acción de cuerda, mientras el tambor es la salida hacia el tren durante la descarga.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.barrel.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No abrir un barrilete real, no inferir una lubricación y no tratar toda arquitectura como idéntica al esquema conceptual.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.barrel.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.barrel.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "La salida dentada del tambor introduce la primera pareja de engrane.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.barrel.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Anatomía y principio verificados visualmente en Theory of Horology, p. 46, fig. 4-4; las variantes de construcción requieren documentación aplicable.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.barrel.anatomy",
+        "visual.barrel.winding-discharge"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.mechanical.load-unload-barrel",
+          "lessonId": "lesson.mechanical.barrel",
+          "visibleTitle": "Aplicar: Comparar los dos estados funcionales del barrilete sin convertir el modelo en un procedimiento de apertura",
+          "purpose": "Comparar los dos estados funcionales del barrilete sin convertir el modelo en un procedimiento de apertura.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.mechanical.barrel.core"
+      ],
+      "limitations": [
+        "Anatomía y principio verificados visualmente en Theory of Horology, p. 46, fig. 4-4; las variantes de construcción requieren documentación aplicable.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+      "macroStage": 2,
+      "chapterId": "stage-2.1",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo relacionar el estado del muelle con la entrega de par sin inventar una curva universal?",
+      "whyNow": "Pertenece a stage-2.1 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Explicar cualitativamente carga, descarga y variación de entrega, dejando los valores concretos ligados a una fuente.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Explicar cualitativamente carga, descarga y variación de entrega, dejando los valores concretos ligados a una fuente.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Reserva, armado, desarmado, brida, gancho y curva de par se usan con alcance declarado.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "La forma, material, geometría y sistema de fijación condicionan la entrega; una curva conceptual muestra tendencia, no tolerancias de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Dos estados con igual posición de agujas pueden conservar reservas distintas; la indicación instantánea no demuestra cuánta energía queda.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No atribuir una curva genérica a un calibre, no copiar valores OCR y no confundir reserva declarada con una medición.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El apoyo cuantitativo distingue fuerza, par, energía y potencia antes de calcular relaciones.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Theory of Horology aporta el principio general; Bulova y Chicago son contexto histórico secundario, no autoridad moderna operativa.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.barrel-states.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+          "lessonId": "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+          "visibleTitle": "Aplicar: Explicar cualitativamente carga, descarga y variación de entrega, dejando los valores concretos ligados a una fuente",
+          "purpose": "Explicar cualitativamente carga, descarga y variación de entrega, dejando los valores concretos ligados a una fuente.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.core"
+      ],
+      "limitations": [
+        "Theory of Horology aporta el principio general; Bulova y Chicago son contexto histórico secundario, no autoridad moderna operativa.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+      "sourceBlockId": "block.encyclopedia.math-physics-metrology.fuerza-par-energia",
+      "macroStage": 2,
+      "chapterId": "stage-2.1",
+      "pathRole": "support",
+      "centralQuestion": "¿Qué pregunta responde cada magnitud cuando analizamos un sistema rotatorio?",
+      "whyNow": "Pertenece a stage-2.1 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Elegir entre fuerza, par, energía, potencia y velocidad para describir una observación.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.fuerza-par-energia.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Elegir entre fuerza, par, energía, potencia y velocidad para describir una observación.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.fuerza-par-energia.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Fuerza actúa; par expresa tendencia de giro; energía cuantifica capacidad; potencia relaciona transferencia y tiempo; velocidad describe cambio de posición.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.fuerza-par-energia.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "Las magnitudes se conectan mediante modelos y unidades declaradas, pero no son intercambiables ni bastan para predecir un movimiento real.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.fuerza-par-energia.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.fuerza-par-energia.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Afirmar que una rueda gira más deprisa no permite concluir por sí solo que transmite más par o más potencia.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.fuerza-par-energia.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "Evitar unidades omitidas, datos sin aplicabilidad y fórmulas usadas fuera de las condiciones que definen sus variables.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.fuerza-par-energia.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.fuerza-par-energia.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "Estas distinciones ayudan a leer una pareja de engranajes sin atribuirle pérdidas no modeladas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.fuerza-par-energia.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Apoyo conceptual; ninguna fórmula OCR de Daniels se publica como verificada en esta fase.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.energy-quantities.v1"
+      ],
+      "activityPresentations": [],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.math-physics-metrology.fuerza-par-energia.core"
+      ],
+      "limitations": [
+        "Apoyo conceptual; ninguna fórmula OCR de Daniels se publica como verificada en esta fase.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.mechanical.gear-pair",
+      "sourceBlockId": "block.mechanical.gear-pair",
+      "macroStage": 2,
+      "chapterId": "stage-2.2",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Qué cambia cuando una rueda conductora engrana con otra conducida?",
+      "whyNow": "Pertenece a stage-2.2 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Predecir sentido y relación ideal a partir de los dientes declarados.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.mechanical.gear-pair.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Predecir sentido y relación ideal a partir de los dientes declarados.\n\nEsta orientación refina la revisión piloto 0.14E y conserva su pregunta funcional en la cabecera del lector.",
+          "legacySectionAliases": [
+            "reader.section.block.mechanical.gear-pair.proposito"
+          ]
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.gear-pair.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Conductora, conducida, rueda, piñón, número de dientes, círculo primitivo y engrane externo delimitan el modelo.\n\nUna **rueda** transmite mediante dientes; un **piñón** es una rueda dentada pequeña dentro de una relación; un **árbol** transmite giro o par a lo largo de su cuerpo; un **pivote** es el extremo de apoyo que gira en un cojinete o rubí.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.gear-pair.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "Dos ruedas externas invierten el sentido. En el modelo ideal, la relación de velocidades depende de sus números de dientes; la geometría válida exige más que proximidad visual.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.gear-pair.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.gear-pair.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Una rueda mayor que conduce a una menor produce mayor velocidad angular de salida en el modelo ideal, a cambio de otra relación de par.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.gear-pair.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No sumar dientes para obtener una relación, no usar diámetro visible como sustituto documentado y no ignorar el sentido.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.gear-pair.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.gear-pair.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "Varias parejas enlazadas forman un tren; ruedas y piñones solidarios comparten eje.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.gear-pair.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Relaciones y círculo primitivo verificados visualmente en Theory of Horology, pp. 53–56; el modelo omite pérdidas y depthing.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.gear-pair.ratio",
+        "visual.gear-pair.direction-torque"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.mechanical.predict-pair-direction",
+          "lessonId": "lesson.mechanical.gear-pair",
+          "visibleTitle": "Aplicar: Predecir sentido y relación ideal a partir de los dientes declarados",
+          "purpose": "Predecir sentido y relación ideal a partir de los dientes declarados.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.mechanical.gear-pair.core"
+      ],
+      "limitations": [
+        "Relaciones y círculo primitivo verificados visualmente en Theory of Horology, pp. 53–56; el modelo omite pérdidas y depthing.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.mechanical.train",
+      "sourceBlockId": "block.mechanical.train",
+      "macroStage": 2,
+      "chapterId": "stage-2.2",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo se combinan varias etapas sin perder de vista ejes, interfaces y sentido?",
+      "whyNow": "Pertenece a stage-2.2 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Construir un tren virtual y justificar cada transmisión desde entrada hasta salida.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.mechanical.train.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Construir un tren virtual y justificar cada transmisión desde entrada hasta salida.\n\nEsta orientación refina la revisión piloto 0.14E y conserva su pregunta funcional en la cabecera del lector.",
+          "legacySectionAliases": [
+            "reader.section.block.mechanical.train.proposito"
+          ]
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.train.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Móvil, eje, rueda, piñón, etapa, tren intermedio y relación total organizan la cadena.\n\nUna **rueda** transmite mediante dientes; un **piñón** es una rueda dentada pequeña dentro de una relación; un **árbol** transmite giro o par a lo largo de su cuerpo; un **pivote** es el extremo de apoyo que gira en un cojinete o rubí.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.train.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "Una rueda y su piñón solidario giran juntos; el siguiente engrane ocurre entre ejes. La relación total se obtiene de las etapas que realmente transmiten.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.train.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.train.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Una rueda intermedia puede cambiar el sentido final sin alterar la magnitud ideal de la relación entre entrada y salida cuando sus términos se cancelan.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.train.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No tratar todos los círculos como ruedas independientes ni multiplicar relaciones que no pertenecen al camino activo.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.train.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.train.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El tren de rodaje lleva energía al escape; la minutería deriva otra salida hacia la indicación.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.train.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Trenes verificados visualmente en Theory of Horology, p. 56, figs. 5-14 y 5-15; la vista 3D es conceptual.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.train.real-order",
+        "visual.train.3d-overview",
+        "visual.stage2.compound-train.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.mechanical.build-train",
+          "lessonId": "lesson.mechanical.train",
+          "visibleTitle": "Aplicar: Construir un tren virtual y justificar cada transmisión desde entrada hasta salida",
+          "purpose": "Construir un tren virtual y justificar cada transmisión desde entrada hasta salida.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.mechanical.train.core"
+      ],
+      "limitations": [
+        "Trenes verificados visualmente en Theory of Horology, p. 56, figs. 5-14 y 5-15; la vista 3D es conceptual.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+      "macroStage": 2,
+      "chapterId": "stage-2.2",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo distinguir el tren de rodaje de la rama que mueve las agujas?",
+      "whyNow": "Pertenece a stage-2.2 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Separar ruta energética, ejes del tren y derivación de indicación en un mapa causal.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Separar ruta energética, ejes del tren y derivación de indicación en un mapa causal.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Tren de rodaje, segunda, tercera y cuarta rueda, rueda de escape, cañón de minutos y minutería tienen papeles distintos.\n\nUna **rueda** transmite mediante dientes; un **piñón** es una rueda dentada pequeña dentro de una relación; un **árbol** transmite giro o par a lo largo de su cuerpo; un **pivote** es el extremo de apoyo que gira en un cojinete o rubí.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El tren de rodaje conduce energía hacia el escape. La indicación toma una relación mecánica del movimiento, pero no sustituye la función reguladora.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "La cuarta rueda puede asociarse a segundos en muchas arquitecturas, aunque esa función no convierte toda cuarta rueda en una especificación universal.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No confundir orden didáctico con disposición espacial ni trasladar nombres de un calibre a todos los movimientos.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El escape recibe la salida del tren y alterna retención con liberación.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Arquitectura conceptual apoyada por Theory of Horology, capítulo 5; los nombres de calibre exigen documentación específica.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.going-vs-motion.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+          "lessonId": "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+          "visibleTitle": "Aplicar: Separar ruta energética, ejes del tren y derivación de indicación en un mapa causal",
+          "purpose": "Separar ruta energética, ejes del tren y derivación de indicación en un mapa causal.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.core"
+      ],
+      "limitations": [
+        "Arquitectura conceptual apoyada por Theory of Horology, capítulo 5; los nombres de calibre exigen documentación específica.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+      "sourceBlockId": "block.encyclopedia.math-physics-metrology.toh-contar-tren",
+      "macroStage": 2,
+      "chapterId": "stage-2.2",
+      "pathRole": "support",
+      "centralQuestion": "¿Cómo comprobar una relación de tren sin perder factores ni unidades?",
+      "whyNow": "Pertenece a stage-2.2 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Escribir las etapas activas, simplificar términos intermedios y explicar el sentido final.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.toh-contar-tren.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Escribir las etapas activas, simplificar términos intermedios y explicar el sentido final.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.toh-contar-tren.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Entrada, salida, etapa, producto, cancelación y signo se declaran antes del cálculo.\n\nUna **rueda** transmite mediante dientes; un **piñón** es una rueda dentada pequeña dentro de una relación; un **árbol** transmite giro o par a lo largo de su cuerpo; un **pivote** es el extremo de apoyo que gira en un cojinete o rubí.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.toh-contar-tren.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El cálculo empieza en el camino físico definido; el producto algebraico solo representa las interfaces incluidas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.toh-contar-tren.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.toh-contar-tren.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Si una rueda intermedia aparece arriba y abajo en relaciones consecutivas, su número de dientes puede cancelarse aunque siga determinando geometría y sentido.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.toh-contar-tren.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No calcular desde una imagen ambigua, no redondear dientes y no atribuir el resultado a un calibre sin datos oficiales.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.toh-contar-tren.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.toh-contar-tren.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "La geometría de engrane explica por qué una relación aritmética no garantiza una pareja realizable.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.toh-contar-tren.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Cálculo conceptual basado en Theory of Horology, p. 56; no usa tablas OCR.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.compound-train.v1"
+      ],
+      "activityPresentations": [],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.math-physics-metrology.toh-contar-tren.core"
+      ],
+      "limitations": [
+        "Cálculo conceptual basado en Theory of Horology, p. 56; no usa tablas OCR.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+      "macroStage": 2,
+      "chapterId": "stage-2.2",
+      "pathRole": "support",
+      "centralQuestion": "¿Qué condiciones geométricas deben acompañar una relación numérica para que exista engrane?",
+      "whyNow": "Pertenece a stage-2.2 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Distinguir círculo primitivo, paso y número de dientes de una simple proximidad gráfica.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Distinguir círculo primitivo, paso y número de dientes de una simple proximidad gráfica.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Paso circular, círculo primitivo, radio primitivo, flanco y depthing son parámetros, no adornos del dibujo.\n\nUna **rueda** transmite mediante dientes; un **piñón** es una rueda dentada pequeña dentro de una relación; un **árbol** transmite giro o par a lo largo de su cuerpo; un **pivote** es el extremo de apoyo que gira en un cojinete o rubí.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "La transmisión ideal presupone geometría compatible. El número de dientes interviene en la relación, pero no verifica perfil, distancia entre centros ni contacto.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Dos ruedas con una relación aritmética plausible pueden seguir siendo incompatibles si el paso o la distancia entre centros no coinciden.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No convertir una captura en plano de fabricación ni usar fórmulas OCR sin comprobación visual.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El escape usa contactos geométricos especializados con funciones de bloqueo e impulso.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Theory of Horology p. 53 confirma círculos primitivos; la geometría de fabricación avanzada permanece fuera de alcance.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.gear-pair.ratio"
+      ],
+      "activityPresentations": [],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.core"
+      ],
+      "limitations": [
+        "Theory of Horology p. 53 confirma círculos primitivos; la geometría de fabricación avanzada permanece fuera de alcance.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.mechanical.escapement",
+      "sourceBlockId": "block.mechanical.escapement",
+      "macroStage": 2,
+      "chapterId": "stage-2.3",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo alterna un escape de áncora suizo bloqueo, desbloqueo, impulso y caída?",
+      "whyNow": "Pertenece a stage-2.3 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Ordenar las fases e identificar qué órgano entrega, recibe o retiene energía.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.mechanical.escapement.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Ordenar las fases e identificar qué órgano entrega, recibe o retiene energía.\n\nEsta orientación refina la revisión piloto 0.14E y conserva su pregunta funcional en la cabecera del lector.",
+          "legacySectionAliases": [
+            "reader.section.block.mechanical.escapement.proposito"
+          ]
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escapement.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Rueda de escape, paleta de entrada, paleta de salida, áncora, clavija de impulso, rodillo y seguros forman interfaces diferenciadas.\n\nEl ciclo funcional distingue **bloqueo, desbloqueo, impulso y caída**; cada término describe una condición diferente de contacto o avance.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escapement.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El tren mantiene tendencia al avance; una paleta bloquea. El oscilador provoca el desbloqueo, el escape entrega impulso y la rueda avanza hasta el siguiente bloqueo.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escapement.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escapement.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Si no se completa el desbloqueo, el impulso no aparece: el tren conserva tendencia, pero la secuencia queda detenida en la interfaz.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escapement.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No confundir caída con impulso, no ajustar una geometría real desde el diagrama y no tocar paletas o espiral.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escapement.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escapement.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El oscilador determina cuándo se libera el escape y recibe energía para compensar pérdidas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escapement.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Componentes y funciones verificados en Theory of Horology pp. 101 y 106; los ángulos no se reutilizan como tolerancias.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.escapement.phases",
+        "visual.escapement.interfaces"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.mechanical.order-escapement-phases",
+          "lessonId": "lesson.mechanical.escapement",
+          "visibleTitle": "Aplicar: Ordenar las fases e identificar qué órgano entrega, recibe o retiene energía",
+          "purpose": "Ordenar las fases e identificar qué órgano entrega, recibe o retiene energía.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.mechanical.escapement.core"
+      ],
+      "limitations": [
+        "Componentes y funciones verificados en Theory of Horology pp. 101 y 106; los ángulos no se reutilizan como tolerancias.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+      "sourceBlockId": "block.encyclopedia.escapements-chronometry.geometria-del-escape",
+      "macroStage": 2,
+      "chapterId": "stage-2.3",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Qué relaciones geométricas hacen posible bloqueo, impulso y seguridad sin convertirlas en instrucciones de ajuste?",
+      "whyNow": "Pertenece a stage-2.3 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Localizar superficies e interfaces y explicar su función con límites de fuente.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.geometria-del-escape.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Localizar superficies e interfaces y explicar su función con límites de fuente.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.geometria-del-escape.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Plano de bloqueo, plano de impulso, caída, draw, cuernos, dardo y rodillo describen relaciones funcionales.\n\nEl ciclo funcional distingue **bloqueo, desbloqueo, impulso y caída**; cada término describe una condición diferente de contacto o avance.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.geometria-del-escape.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "Las superficies organizan retención y transferencia; los elementos de seguridad reducen contactos indebidos cuando el conjunto está fuera de la trayectoria normal.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.geometria-del-escape.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.geometria-del-escape.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Una etiqueta de “impulso” identifica una función de contacto, pero no autoriza mover la paleta ni prescribe su profundidad.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.geometria-del-escape.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No leer ángulos aproximados como tolerancias universales ni tratar el esquema como plantilla dimensional.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.geometria-del-escape.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.geometria-del-escape.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "La siguiente representación recorre cada fase temporalmente para comprobar la anatomía.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.geometria-del-escape.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Anatomía general verificada en Theory of Horology p. 101; datos de ajuste requieren fuente de servicio aplicable.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.escapement-safety.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.encyclopedia.escapements-chronometry.geometria-del-escape",
+          "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+          "visibleTitle": "Aplicar: Localizar superficies e interfaces y explicar su función con límites de fuente",
+          "purpose": "Localizar superficies e interfaces y explicar su función con límites de fuente.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.escapements-chronometry.geometria-del-escape.core"
+      ],
+      "limitations": [
+        "Anatomía general verificada en Theory of Horology p. 101; datos de ajuste requieren fuente de servicio aplicable.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-escape-fases",
+      "sourceBlockId": "block.encyclopedia.escapements-chronometry.toh-escape-fases",
+      "macroStage": 2,
+      "chapterId": "stage-2.3",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Qué cambia en rueda, áncora y rodillo a lo largo de un ciclo del escape?",
+      "whyNow": "Pertenece a stage-2.3 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Narrar un ciclo completo y diferenciar estado, transición y condición de seguridad.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Narrar un ciclo completo y diferenciar estado, transición y condición de seguridad.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Bloqueo, desbloqueo, impulso, caída y arco libre son estados o transiciones con agentes distintos.\n\nEl ciclo funcional distingue **bloqueo, desbloqueo, impulso y caída**; cada término describe una condición diferente de contacto o avance.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El ciclo no es una lista de piezas: cada fase expresa quién está en contacto, qué movimiento queda permitido y dónde se transfiere energía.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Tras el impulso, la rueda puede avanzar durante la caída hasta que la otra paleta restablece el bloqueo; ese avance no es un segundo impulso.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No memorizar ángulos sin aplicabilidad y no representar el movimiento lento como velocidad real.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "La comparación avanzada muestra que otras arquitecturas resuelven estas funciones de manera distinta.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Tabla de funciones inspeccionada en Theory of Horology p. 106; sus ángulos no se importan al contenido visible.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.escapement.phases"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.encyclopedia.escapements-chronometry.toh-escape-fases",
+          "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-escape-fases",
+          "visibleTitle": "Aplicar: Narrar un ciclo completo y diferenciar estado, transición y condición de seguridad",
+          "purpose": "Narrar un ciclo completo y diferenciar estado, transición y condición de seguridad.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.escapements-chronometry.toh-escape-fases.core"
+      ],
+      "limitations": [
+        "Tabla de funciones inspeccionada en Theory of Horology p. 106; sus ángulos no se importan al contenido visible.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.advanced.escapement-compare",
+      "sourceBlockId": "block.advanced.escapement-compare",
+      "macroStage": 2,
+      "chapterId": "stage-2.3",
+      "pathRole": "optional-branch",
+      "centralQuestion": "¿Qué funciones pueden compararse entre escapes sin asumir que sus piezas o geometrías son equivalentes?",
+      "whyNow": "Pertenece a stage-2.3 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Comparar bloqueo, impulso, seguridad y acoplamiento declarando el límite de cada analogía.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.advanced.escapement-compare.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Comparar bloqueo, impulso, seguridad y acoplamiento declarando el límite de cada analogía.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.escapement-compare.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Escape suizo, directo, de retén y coaxial son familias con compromisos y fuentes específicas.\n\nEl ciclo funcional distingue **bloqueo, desbloqueo, impulso y caída**; cada término describe una condición diferente de contacto o avance.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.escapement-compare.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "La comparación útil parte de funciones comunes y vuelve después a arquitectura, fabricación, sensibilidad y contexto de uso.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.escapement-compare.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.escapement-compare.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Que dos escapes entreguen impulso no significa que lo hagan por la misma interfaz ni con la misma dependencia de lubricación.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.escapement-compare.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No generalizar un caso, no mezclar tolerancias y no tratar un diagrama conceptual como guía de servicio.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.escapement-compare.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.escapement-compare.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El recorrido principal continúa con el oscilador del reloj mecánico básico.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.escapement-compare.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Rama de ampliación; cualquier detalle técnico queda pendiente de fuente hasta revisión de la fuente específica.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.escapement.interfaces"
+      ],
+      "activityPresentations": [],
+      "sourceClaimIds": [
+        "claim.014h.advanced.escapement-compare.core"
+      ],
+      "limitations": [
+        "Rama de ampliación; cualquier detalle técnico queda source-limited hasta revisión de la fuente específica.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-limited"
+    },
+    {
+      "lessonId": "lesson.mechanical.oscillator",
+      "sourceBlockId": "block.mechanical.oscillator",
+      "macroStage": 2,
+      "chapterId": "stage-2.4",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo producen volante y espiral una oscilación y por qué frecuencia y amplitud no son lo mismo?",
+      "whyNow": "Pertenece a stage-2.4 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Distinguir periodo, frecuencia, alternancia y amplitud en una representación temporal.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.mechanical.oscillator.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Distinguir periodo, frecuencia, alternancia y amplitud en una representación temporal.\n\nEsta orientación refina la revisión piloto 0.14E y conserva su pregunta funcional en la cabecera del lector.",
+          "legacySectionAliases": [
+            "reader.section.block.mechanical.oscillator.proposito"
+          ]
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.oscillator.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Equilibrio, extremo, periodo, frecuencia, alternancia, amplitud, inercia y retorno elástico describen el movimiento.\n\n**Frecuencia y amplitud** son independientes: la primera cuenta ciclos por unidad de tiempo; la segunda describe el alejamiento respecto al equilibrio.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.oscillator.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El volante aporta inercia y la espiral un par restaurador. La oscilación intercambia estados; las pérdidas reducen la amplitud si no llega energía.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.oscillator.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.oscillator.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Dos oscilaciones pueden compartir frecuencia aproximada y mostrar amplitudes distintas; una captura de posición no basta para deducir ambas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.oscillator.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No confundir alternancias con ciclos, amplitud con rapidez ni representación conceptual con marcha real.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.oscillator.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.oscillator.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El escape repone parte de las pérdidas y recibe del oscilador el momento de liberación.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.oscillator.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Balance y espiral verificados visualmente en Theory of Horology p. 133; no se ajusta longitud activa ni marcha.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.oscillator.feedback",
+        "visual.oscillator.active-length",
+        "visual.stage2.frequency-amplitude.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.mechanical.distinguish-frequency-amplitude",
+          "lessonId": "lesson.mechanical.oscillator",
+          "visibleTitle": "Aplicar: Distinguir periodo, frecuencia, alternancia y amplitud en una representación temporal",
+          "purpose": "Distinguir periodo, frecuencia, alternancia y amplitud en una representación temporal.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.mechanical.oscillator.core"
+      ],
+      "limitations": [
+        "Balance y espiral verificados visualmente en Theory of Horology p. 133; no se ajusta longitud activa ni marcha.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.mechanical.escape-oscillator",
+      "sourceBlockId": "block.mechanical.escape-oscillator",
+      "macroStage": 2,
+      "chapterId": "stage-2.4",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo se cierra el bucle entre la entrega de impulso y la referencia oscilante?",
+      "whyNow": "Pertenece a stage-2.4 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Explicar las dos direcciones de la interacción escape–oscilador.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.mechanical.escape-oscillator.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Explicar las dos direcciones de la interacción escape–oscilador.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escape-oscillator.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Impulso, liberación, arco, pérdida, reposición y realimentación separan energía de temporización.\n\n**Frecuencia y amplitud** son independientes: la primera cuenta ciclos por unidad de tiempo; la segunda describe el alejamiento respecto al equilibrio.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escape-oscillator.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El escape aporta impulsos discretos; el oscilador determina momentos de liberación. Ninguno cumple por sí solo las dos funciones.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escape-oscillator.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escape-oscillator.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Aumentar energía disponible no garantiza una referencia correcta: el bucle también depende de la respuesta del oscilador y de las interfaces.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escape-oscillator.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No dibujar una cadena unidireccional ni presentar el escape como creador de frecuencia.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escape-oscillator.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escape-oscillator.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "La anatomía de volante y espiral permite localizar dónde aparecen inercia y retorno.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.escape-oscillator.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Modelo conceptual basado en Theory of Horology capítulos 6 y 7; no simula dinámica cuantitativa.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.feedback-loop.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.mechanical.relate-escape-oscillator",
+          "lessonId": "lesson.mechanical.escape-oscillator",
+          "visibleTitle": "Aplicar: Explicar las dos direcciones de la interacción escape–oscilador",
+          "purpose": "Explicar las dos direcciones de la interacción escape–oscilador.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.mechanical.escape-oscillator.core"
+      ],
+      "limitations": [
+        "Modelo conceptual basado en Theory of Horology capítulos 6 y 7; no simula dinámica cuantitativa.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.volante-y-espiral",
+      "sourceBlockId": "block.encyclopedia.escapements-chronometry.volante-y-espiral",
+      "macroStage": 2,
+      "chapterId": "stage-2.4",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Qué piezas sostienen, fijan y condicionan el órgano regulador?",
+      "whyNow": "Pertenece a stage-2.4 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Localizar volante, eje, espiral, pitón, virola, puente e índice sin inferir un ajuste.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.volante-y-espiral.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Localizar volante, eje, espiral, pitón, virola, puente e índice sin inferir un ajuste.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.volante-y-espiral.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Volante, eje, espiral, virola, pitón, puente, raqueta e índices delimitan apoyos y fijaciones.\n\n**Frecuencia y amplitud** son independientes: la primera cuenta ciclos por unidad de tiempo; la segunda describe el alejamiento respecto al equilibrio.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.volante-y-espiral.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El extremo interior se fija al eje mediante la virola y el exterior al puente mediante pitón; ciertas arquitecturas incluyen órganos de regulación.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.volante-y-espiral.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.volante-y-espiral.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Mover el índice en el diagrama cambia una longitud activa conceptual, pero no demuestra corrección de marcha ni autoriza intervenir un movimiento.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.volante-y-espiral.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No tocar espiral o volante, no universalizar la raqueta y no diagnosticar deformación desde un SVG.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.volante-y-espiral.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.volante-y-espiral.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El apoyo de oscilación y amortiguamiento formaliza por qué la amplitud cambia ante pérdidas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.volante-y-espiral.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Anatomía verificada en Theory of Horology p. 133, figs. 7-8 a 7-10; las variantes dependen del calibre.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.oscillator.active-length"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.encyclopedia.escapements-chronometry.volante-y-espiral",
+          "lessonId": "lesson.encyclopedia.escapements-chronometry.volante-y-espiral",
+          "visibleTitle": "Aplicar: Localizar volante, eje, espiral, pitón, virola, puente e índice sin inferir un ajuste",
+          "purpose": "Localizar volante, eje, espiral, pitón, virola, puente e índice sin inferir un ajuste.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.escapements-chronometry.volante-y-espiral.core"
+      ],
+      "limitations": [
+        "Anatomía verificada en Theory of Horology p. 133, figs. 7-8 a 7-10; las variantes dependen del calibre.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+      "sourceBlockId": "block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+      "macroStage": 2,
+      "chapterId": "stage-2.4",
+      "pathRole": "support",
+      "centralQuestion": "¿Cómo describir una oscilación amortiguada sin convertir un modelo ideal en marcha medida?",
+      "whyNow": "Pertenece a stage-2.4 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Relacionar periodo, frecuencia y tendencia de amplitud con supuestos explícitos.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Relacionar periodo, frecuencia y tendencia de amplitud con supuestos explícitos.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Oscilación libre, amortiguamiento, excitación, régimen y perturbación pertenecen al modelo declarado.\n\n**Frecuencia y amplitud** son independientes: la primera cuenta ciclos por unidad de tiempo; la segunda describe el alejamiento respecto al equilibrio.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "Las pérdidas reducen energía y amplitud; una excitación periódica puede compensarlas. El resultado real depende de parámetros no contenidos en un esquema.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Una envolvente descendente representa pérdida cualitativa; no permite calcular error diario sin medición y modelo aplicable.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No deducir precisión desde frecuencia nominal ni usar una curva conceptual como cronocomparador.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "Tras comprender la base temporal, la indicación y el mando muestran cómo se presenta y ajusta la hora.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Apoyo matemático conceptual; las fórmulas OCR no verificadas quedan excluidas.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.frequency-amplitude.v1"
+      ],
+      "activityPresentations": [],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.core"
+      ],
+      "limitations": [
+        "Apoyo matemático conceptual; las fórmulas OCR no verificadas quedan excluidas.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.mechanical.motion-works",
+      "sourceBlockId": "block.mechanical.motion-works",
+      "macroStage": 2,
+      "chapterId": "stage-2.5",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo transforma la minutería una rotación de entrada en indicaciones coordinadas?",
+      "whyNow": "Pertenece a stage-2.5 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Construir virtualmente la rama de indicación y distinguirla del tren de rodaje.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.mechanical.motion-works.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Construir virtualmente la rama de indicación y distinguirla del tren de rodaje.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.motion-works.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Cañón de minutos, rueda de minutería, piñón de minutos y rueda de horas forman la relación de indicación.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.motion-works.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "La minutería toma movimiento y produce rotaciones coordinadas para minutos y horas; su fricción o acoplamiento concreto depende de la arquitectura.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.motion-works.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.motion-works.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "La aguja de minutos puede completar una vuelta mientras la de horas avanza una fracción; eso describe la función, no el ajuste de los tubos.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.motion-works.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No confundir rueda de minutos con cañón, no prescribir apriete y no trasladar piezas de un calibre a otro.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.motion-works.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.motion-works.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El sistema sin llave permite al usuario seleccionar cuerda o puesta en hora.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.motion-works.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Minutería y puesta en hora verificadas en Theory of Horology p. 62; sin medidas ni procedimiento físico.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.going-vs-motion.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.mechanical.build-motion-works",
+          "lessonId": "lesson.mechanical.motion-works",
+          "visibleTitle": "Aplicar: Construir virtualmente la rama de indicación y distinguirla del tren de rodaje",
+          "purpose": "Construir virtualmente la rama de indicación y distinguirla del tren de rodaje.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.mechanical.motion-works.core"
+      ],
+      "limitations": [
+        "Minutería y puesta en hora verificadas en Theory of Horology p. 62; sin medidas ni procedimiento físico.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.mechanical.keyless",
+      "sourceBlockId": "block.mechanical.keyless",
+      "macroStage": 2,
+      "chapterId": "stage-2.5",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo cambia la ruta mecánica cuando la corona selecciona cuerda o puesta en hora?",
+      "whyNow": "Pertenece a stage-2.5 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Reconstruir estados funcionales de tija y explicar qué transmisión queda activa.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.mechanical.keyless.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Reconstruir estados funcionales de tija y explicar qué transmisión queda activa.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.keyless.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Corona, tija, piñón deslizante, piñón de corona, tirete, báscula y rueda intermedia describen selección y transmisión.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.keyless.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El desplazamiento axial selecciona interfaces distintas. Un estado transmite al sistema de cuerda y otro a la puesta en hora; las posiciones reales son específicas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.keyless.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.keyless.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "La misma rotación de corona puede producir efectos distintos porque la posición de la tija cambia qué engrane queda conectado.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.keyless.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No inferir orden de desmontaje, fuerza o lubricación y no operar una corona real desde una animación.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.keyless.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.keyless.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "La ampliación automática añade otra entrada de energía y el calendario otra salida funcional.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.keyless.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Principio de puesta en hora apoyado por Theory of Horology p. 62 y contexto histórico Chicago; no es guía de servicio.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.keyless-states.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.mechanical.reconstruct-crown-states",
+          "lessonId": "lesson.mechanical.keyless",
+          "visibleTitle": "Aplicar: Reconstruir estados funcionales de tija y explicar qué transmisión queda activa",
+          "purpose": "Reconstruir estados funcionales de tija y explicar qué transmisión queda activa.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.mechanical.keyless.core"
+      ],
+      "limitations": [
+        "Principio de puesta en hora apoyado por Theory of Horology p. 62 y contexto histórico Chicago; no es guía de servicio.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+      "macroStage": 2,
+      "chapterId": "stage-2.5",
+      "pathRole": "support",
+      "centralQuestion": "¿Cómo se relacionan indicación y mando sin mezclar sus trenes?",
+      "whyNow": "Pertenece a stage-2.5 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Dibujar la interfaz entre sistema sin llave, puesta en hora y minutería.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Dibujar la interfaz entre sistema sin llave, puesta en hora y minutería.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Mando, selección, transmisión, indicación y fricción controlada se separan por función.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El sistema sin llave selecciona una ruta; la puesta en hora entrega movimiento a la minutería, que coordina las agujas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Reconstruir el camino desde corona hasta rueda de horas exige nombrar cada interfaz, no solo ordenar piezas por proximidad.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No usar esta síntesis como secuencia de montaje ni atribuir una disposición genérica al MIYOTA 8215.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El automático entrega energía sin usar la corona; el calendario aprovecha la indicación horaria.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Síntesis conceptual de Theory of Horology capítulo 5; documentación de calibre necesaria para aplicación.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.keyless-states.v1"
+      ],
+      "activityPresentations": [],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.core"
+      ],
+      "limitations": [
+        "Síntesis conceptual de Theory of Horology capítulo 5; documentación de calibre necesaria para aplicación.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.mechanical.automatic-calendar",
+      "sourceBlockId": "block.mechanical.automatic-calendar",
+      "macroStage": 2,
+      "chapterId": "stage-2.6",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo añaden el automático y el calendario funciones sin alterar la cadena básica?",
+      "whyNow": "Pertenece a stage-2.6 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Seguir la energía desde el rotor y explicar una secuencia conceptual de cambio de fecha.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.mechanical.automatic-calendar.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Seguir la energía desde el rotor y explicar una secuencia conceptual de cambio de fecha.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.automatic-calendar.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Rotor, tren reductor, inversión, carga, rueda de horas, arrastre, estrella, disco y jumper describen dos ampliaciones.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.automatic-calendar.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El automático convierte movimiento del usuario en una ruta adicional de carga. El calendario toma una señal lenta de la indicación y la convierte en un cambio discreto.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.automatic-calendar.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.automatic-calendar.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Rotor y disco de fecha pertenecen a ramas diferentes: uno alimenta la fuente, el otro presenta una información derivada del tiempo indicado.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.automatic-calendar.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No universalizar sentidos de carga, zonas de cambio rápido ni prohibiciones específicas sin documentación de calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.automatic-calendar.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.automatic-calendar.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "Las lecciones siguientes separan el sistema automático de la secuencia de calendario.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.mechanical.automatic-calendar.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Funciones generales verificadas en Theory of Horology capítulos 8 y 9; ningún procedimiento físico.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.automatic-flow.v1",
+        "visual.stage2.calendar-sequence.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.mechanical.follow-automatic-energy",
+          "lessonId": "lesson.mechanical.automatic-calendar",
+          "visibleTitle": "Aplicar: Seguir la energía desde el rotor y explicar una secuencia conceptual de cambio de fecha",
+          "purpose": "Seguir la energía desde el rotor y explicar una secuencia conceptual de cambio de fecha.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.mechanical.automatic-calendar.core"
+      ],
+      "limitations": [
+        "Funciones generales verificadas en Theory of Horology capítulos 8 y 9; ningún procedimiento físico.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.automatico-y-reserva",
+      "sourceBlockId": "block.encyclopedia.complications.automatico-y-reserva",
+      "macroStage": 2,
+      "chapterId": "stage-2.6",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo llega el movimiento del rotor al muelle y qué significa realmente reserva?",
+      "whyNow": "Pertenece a stage-2.6 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Reconstruir una ruta funcional de carga y separar reserva nominal, estado y medición.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Reconstruir una ruta funcional de carga y separar reserva nominal, estado y medición.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Masa oscilante, reducción, inversión, embrague, brida deslizante y reserva pertenecen a arquitecturas específicas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El rotor transmite movimiento mediante un tren; mecanismos de inversión o embrague determinan qué movimiento contribuye a la carga.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Un rotor visible no demuestra carga efectiva: hay que seguir las interfaces y conocer el sistema documentado.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No inferir eficiencia, duración de reserva o sentido de carga desde un esquema conceptual.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El calendario usa el movimiento ya regulado para activar una indicación discreta.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Rotor y transmisión general verificados en Theory of Horology p. 171; variantes requieren documentación oficial.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.automatic-flow.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.encyclopedia.complications.automatico-y-reserva",
+          "lessonId": "lesson.encyclopedia.complications.automatico-y-reserva",
+          "visibleTitle": "Aplicar: Reconstruir una ruta funcional de carga y separar reserva nominal, estado y medición",
+          "purpose": "Reconstruir una ruta funcional de carga y separar reserva nominal, estado y medición.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.complications.automatico-y-reserva.core"
+      ],
+      "limitations": [
+        "Rotor y transmisión general verificados en Theory of Horology p. 171; variantes requieren documentación oficial.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.calendarios",
+      "sourceBlockId": "block.encyclopedia.complications.calendarios",
+      "macroStage": 2,
+      "chapterId": "stage-2.6",
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo se convierte una rotación continua en un avance de fecha estable?",
+      "whyNow": "Pertenece a stage-2.6 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Ordenar arrastre, liberación, salto y retención de un calendario simple.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.calendarios.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Ordenar arrastre, liberación, salto y retención de un calendario simple.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.calendarios.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Rueda de horas, rueda de arrastre, dedo, estrella o disco y jumper forman una secuencia, no una lista aislada.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.calendarios.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "La indicación horaria activa un tren reductor; un elemento de arrastre acumula o transmite desplazamiento y el jumper estabiliza la nueva posición.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.calendarios.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.calendarios.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Que el disco muestre el número siguiente no prueba cómo ocurrió el salto ni permite deducir la zona segura de corrección.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.calendarios.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No aplicar una ventana horaria universal, no forzar corrección y no confundir calendario simple con perpetuo.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.calendarios.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.calendarios.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "Las ramas avanzadas comparan calendarios más complejos y control de cronógrafo sin bloquear el recorrido.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.complications.calendarios.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Calendario simple verificado en Theory of Horology p. 191, fig. 9-5; sin instrucciones de ajuste.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.calendar-sequence.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.encyclopedia.complications.calendarios",
+          "lessonId": "lesson.encyclopedia.complications.calendarios",
+          "visibleTitle": "Aplicar: Ordenar arrastre, liberación, salto y retención de un calendario simple",
+          "purpose": "Ordenar arrastre, liberación, salto y retención de un calendario simple.",
+          "instructions": [
+            "Reconstruye la relación con el modelo virtual.",
+            "Justifica cada enlace con vocabulario de la lección.",
+            "Registra una limitación y una pregunta que necesitaría otra fuente."
+          ],
+          "availableHelp": [
+            "Vuelve al diagrama esencial.",
+            "Separa energía, movimiento y temporización.",
+            "Compara tu respuesta con el ejemplo razonado."
+          ],
+          "successCriteria": [
+            "La secuencia conserva causalidad.",
+            "La respuesta no inventa datos de calibre.",
+            "La conclusión distingue evidencia de inferencia."
+          ],
+          "feedback": "Revisa la primera interfaz donde tu predicción y el modelo divergen; no corrijas al azar.",
+          "limitations": [
+            "La interacción es K/V/R y no demuestra manipulación física.",
+            "No autoriza servicio, ajuste ni apertura de componentes."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "Nombra entrada, relación y resultado.",
+              "Distingue lo observado de lo inferido.",
+              "Declara al menos un límite del modelo."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación revisable"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014h.encyclopedia.complications.calendarios.core"
+      ],
+      "limitations": [
+        "Calendario simple verificado en Theory of Horology p. 191, fig. 9-5; sin instrucciones de ajuste.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.advanced.calendars",
+      "sourceBlockId": "block.advanced.calendars",
+      "macroStage": 2,
+      "chapterId": "stage-2.6",
+      "pathRole": "optional-branch",
+      "centralQuestion": "¿Qué información adicional necesita un calendario cuando debe representar ciclos más largos?",
+      "whyNow": "Pertenece a stage-2.6 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Comparar calendario simple, completo, anual y perpetuo por información y mecanismo, no por prestigio.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.advanced.calendars.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Comparar calendario simple, completo, anual y perpetuo por información y mecanismo, no por prestigio.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.calendars.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Fecha, día, mes, ciclo, corrección y memoria mecánica describen niveles funcionales.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.calendars.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "Cada ampliación añade reglas y estados; resolver una excepción del calendario exige almacenar o derivar información adicional.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.calendars.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.calendars.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Un calendario perpetuo necesita representar el ciclo aplicable; esa necesidad no convierte un calendario simple en una versión incompleta del mismo mecanismo.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.calendars.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No inferir arquitectura por nombre comercial ni presentar una comparación como procedimiento.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.calendars.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.calendars.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "La rama de cronógrafo muestra otro tipo de control de estados, independiente del calendario.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.calendars.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Comparación conceptual; datos de un movimiento concreto quedan pendientes de documentación oficial.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.calendar-sequence.v1"
+      ],
+      "activityPresentations": [],
+      "sourceClaimIds": [
+        "claim.014h.advanced.calendars.core"
+      ],
+      "limitations": [
+        "Comparación conceptual; datos de un movimiento concreto quedan pendientes de documentación oficial.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-limited"
+    },
+    {
+      "lessonId": "lesson.advanced.chronograph-control",
+      "sourceBlockId": "block.advanced.chronograph-control",
+      "macroStage": 2,
+      "chapterId": "stage-2.6",
+      "pathRole": "optional-branch",
+      "centralQuestion": "¿Cómo coordina un cronógrafo inicio, parada y puesta a cero como estados controlados?",
+      "whyNow": "Pertenece a stage-2.6 y aparece después del sistema que proporciona su entrada funcional.",
+      "observableOutcome": "Distinguir control, acoplamiento y puesta a cero en un mapa de estados.",
+      "recommendedPrerequisiteLessonIds": [],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.advanced.chronograph-control.014h-orientacion",
+          "title": "Por qué aparece ahora y resultado observable",
+          "role": "orientation",
+          "markdown": "Esta lección aparece después del sistema que proporciona su entrada funcional y antes del mecanismo que recibe su salida.\n\n**Al terminar:** Distinguir control, acoplamiento y puesta a cero en un mapa de estados.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.chronograph-control.014h-vocabulario",
+          "title": "Vocabulario que organiza el mecanismo",
+          "role": "vocabulary",
+          "markdown": "Mando, embrague, bloqueo, martillo, corazón y contador expresan funciones de control.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.chronograph-control.014h-modelo-causal",
+          "title": "Modelo causal paso a paso",
+          "role": "explanation",
+          "markdown": "El mecanismo debe coordinar transiciones y evitar estados incompatibles; las soluciones de rueda de pilares o levas no son idénticas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.chronograph-control.014h-visual",
+          "title": "Qué mirar en el diagrama",
+          "role": "visual-anatomy",
+          "markdown": "Sigue las flechas, identifica las interfaces y explica qué cambia entre estados. Relaciona el gráfico con la pregunta central mostrada en la cabecera. Su geometría es didáctica: no reproduce escala, fuerza, holgura ni tolerancia de un calibre.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.chronograph-control.014h-ejemplo",
+          "title": "Ejemplo razonado",
+          "role": "worked-example",
+          "markdown": "Pulsar “parada” conserva una lectura mientras desacopla o bloquea la medición según la arquitectura documentada.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.chronograph-control.014h-errores",
+          "title": "Errores de interpretación y límites de acción",
+          "role": "common-errors",
+          "markdown": "No considerar el cronógrafo parte obligatoria de la cadena básica ni derivar servicio de un diagrama.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.chronograph-control.014h-comprobacion",
+          "title": "Comprobación personal",
+          "role": "checkpoint",
+          "markdown": "Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado. Señala después una afirmación que el diagrama **no** demuestra. Evidencia K/V/R; no acredita ejecución física.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.chronograph-control.014h-conexion",
+          "title": "Conexión con el siguiente sistema",
+          "role": "next-connection",
+          "markdown": "El cierre de etapa integra energía, transmisión, escape, oscilador, mando, automático y calendario.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.chronograph-control.014h-fuentes-limites",
+          "title": "Fuentes, alcance y preguntas abiertas",
+          "role": "sources",
+          "markdown": "Rama conceptual y visual; cualquier afirmación de calibre permanece pendiente de fuente.\n\nNo se trasladan fórmulas, cifras, tolerancias ni procedimientos desde OCR sin verificación visual y aplicabilidad.",
+          "requiredForStudy": false,
+          "collapsible": true,
+          "legacySectionAliases": []
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage2.control-states.v1"
+      ],
+      "activityPresentations": [],
+      "sourceClaimIds": [
+        "claim.014h.advanced.chronograph-control.core"
+      ],
+      "limitations": [
+        "Rama conceptual y visual; cualquier afirmación de calibre permanece source-limited.",
+        "No acredita ejecución física ni servicio de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-limited"
+    }
+  ],
+  "checkpoint": {
+    "checkpointId": "checkpoint.academy.stage2-complete",
+    "fromStageId": "stage.2",
+    "toStageId": "stage.3",
+    "blocking": false,
+    "affectsProgress": false,
+    "title": "Cierre personal de sistemas mecánicos",
+    "questions": [
+      "¿Puedo seguir la energía desde el muelle hasta el escape?",
+      "¿Distingo energía, par, potencia y velocidad?",
+      "¿Puedo explicar cuerda y marcha del barrilete?",
+      "¿Predigo sentido y relación de una pareja ideal?",
+      "¿Reconozco ejes e interfaces de un tren?",
+      "¿Ordeno bloqueo, desbloqueo, impulso y caída?",
+      "¿Distingo frecuencia de amplitud?",
+      "¿Explico las dos direcciones del bucle escape–oscilador?",
+      "¿Separo tren de rodaje, minutería y sistema sin llave?",
+      "¿Sigo la ruta de carga automática?",
+      "¿Explico un cambio de fecha sin inventar una ventana de corrección?"
+    ],
+    "actions": [
+      "revisar el mapa de energía",
+      "reconstruir un tren virtual",
+      "repasar el ciclo del escape",
+      "comparar frecuencia y amplitud",
+      "reconstruir los estados de corona",
+      "integrar automático y calendario",
+      "continuar a inspección y diagnóstico"
+    ],
+    "evidence": "Autocomprobación K/V/R local; no crea mastery ni acredita P."
+  },
+  "documents": [
+    {
+      "lessonId": "lesson.mechanical.energy",
+      "sections": 9,
+      "documentVersion": "reader-v1:9a7093a69713241c",
+      "contentHash": "fnv1a64:40ec1dbcfa063245",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:5645fc1d6f1bbe0d",
+          "contentHash": "fnv1a64:9cf0ccc727ef9ae2"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:5645fc1d6f1bbe0d",
+          "contentHash": "fnv1a64:9cf0ccc727ef9ae2"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:5645fc1d6f1bbe0d",
+          "contentHash": "fnv1a64:9cf0ccc727ef9ae2"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.barrel",
+      "sections": 9,
+      "documentVersion": "reader-v1:2caf73a479b60df2",
+      "contentHash": "fnv1a64:0709d491dbc2d8db",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:01809bb99a1ad7b6",
+          "contentHash": "fnv1a64:f379aefdf7bee4da"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:01809bb99a1ad7b6",
+          "contentHash": "fnv1a64:f379aefdf7bee4da"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:01809bb99a1ad7b6",
+          "contentHash": "fnv1a64:f379aefdf7bee4da"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+      "sections": 9,
+      "documentVersion": "reader-v1:bf05fe673c8e34c4",
+      "contentHash": "fnv1a64:773ba3e73729e259",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:7bb9474ba5a73a81",
+          "contentHash": "fnv1a64:46160e22713572fb"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:7bb9474ba5a73a81",
+          "contentHash": "fnv1a64:46160e22713572fb"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:7bb9474ba5a73a81",
+          "contentHash": "fnv1a64:46160e22713572fb"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+      "sections": 9,
+      "documentVersion": "reader-v1:263141c6898948f6",
+      "contentHash": "fnv1a64:a044d87b5992ae2e",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:463b71089395897f",
+          "contentHash": "fnv1a64:ca76fa5e3799a9bd"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:463b71089395897f",
+          "contentHash": "fnv1a64:ca76fa5e3799a9bd"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:463b71089395897f",
+          "contentHash": "fnv1a64:ca76fa5e3799a9bd"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.gear-pair",
+      "sections": 9,
+      "documentVersion": "reader-v1:466bba6533422270",
+      "contentHash": "fnv1a64:47ac9133f1198309",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:3c43541922eefd8b",
+          "contentHash": "fnv1a64:11ee4e4779248000"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:3c43541922eefd8b",
+          "contentHash": "fnv1a64:11ee4e4779248000"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:3c43541922eefd8b",
+          "contentHash": "fnv1a64:11ee4e4779248000"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.train",
+      "sections": 9,
+      "documentVersion": "reader-v1:f2d47d358114029d",
+      "contentHash": "fnv1a64:db9d6af10daf6679",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:66cc975fcda6ebbf",
+          "contentHash": "fnv1a64:2f2f340dc285bf63"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:66cc975fcda6ebbf",
+          "contentHash": "fnv1a64:2f2f340dc285bf63"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:66cc975fcda6ebbf",
+          "contentHash": "fnv1a64:2f2f340dc285bf63"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+      "sections": 9,
+      "documentVersion": "reader-v1:eaee859484c67447",
+      "contentHash": "fnv1a64:c8f63228279d19a8",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:3809b24122ccb16c",
+          "contentHash": "fnv1a64:c9688e4950e114a9"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:3809b24122ccb16c",
+          "contentHash": "fnv1a64:c9688e4950e114a9"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:3809b24122ccb16c",
+          "contentHash": "fnv1a64:c9688e4950e114a9"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+      "sections": 9,
+      "documentVersion": "reader-v1:a06b8edfb4f8fe61",
+      "contentHash": "fnv1a64:899a17ee56506e6a",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:69b88f8dca5f8f94",
+          "contentHash": "fnv1a64:7da34b8719ed7e52"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:69b88f8dca5f8f94",
+          "contentHash": "fnv1a64:7da34b8719ed7e52"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:69b88f8dca5f8f94",
+          "contentHash": "fnv1a64:7da34b8719ed7e52"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+      "sections": 9,
+      "documentVersion": "reader-v1:e014f03e169058fe",
+      "contentHash": "fnv1a64:eb779941854e2d5b",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:7dcdd114f262c2a1",
+          "contentHash": "fnv1a64:f60a0cb44b338dd2"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:7dcdd114f262c2a1",
+          "contentHash": "fnv1a64:f60a0cb44b338dd2"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:7dcdd114f262c2a1",
+          "contentHash": "fnv1a64:f60a0cb44b338dd2"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.escapement",
+      "sections": 9,
+      "documentVersion": "reader-v1:2fa43e57005bcd75",
+      "contentHash": "fnv1a64:a6e18c3f94c7b722",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:724a4cea73c3b2ca",
+          "contentHash": "fnv1a64:bd29405cd2606ee7"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:724a4cea73c3b2ca",
+          "contentHash": "fnv1a64:bd29405cd2606ee7"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:724a4cea73c3b2ca",
+          "contentHash": "fnv1a64:bd29405cd2606ee7"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+      "sections": 9,
+      "documentVersion": "reader-v1:ed1479a176cafa53",
+      "contentHash": "fnv1a64:5b38ad450604599f",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:597525a0ad3fa117",
+          "contentHash": "fnv1a64:f266c0dd172c5cfb"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:597525a0ad3fa117",
+          "contentHash": "fnv1a64:f266c0dd172c5cfb"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:597525a0ad3fa117",
+          "contentHash": "fnv1a64:f266c0dd172c5cfb"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-escape-fases",
+      "sections": 9,
+      "documentVersion": "reader-v1:b71df84822474dfe",
+      "contentHash": "fnv1a64:2d7724912d596fe1",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:8bb7cc5740f31b7e",
+          "contentHash": "fnv1a64:832c99f7e45f7e6f"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:8bb7cc5740f31b7e",
+          "contentHash": "fnv1a64:832c99f7e45f7e6f"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:8bb7cc5740f31b7e",
+          "contentHash": "fnv1a64:832c99f7e45f7e6f"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.escapement-compare",
+      "sections": 9,
+      "documentVersion": "reader-v1:e893829e10325196",
+      "contentHash": "fnv1a64:0ba68b5e2971c6dc",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:34019bb75bf7aaec",
+          "contentHash": "fnv1a64:65de4f12925c2595"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:34019bb75bf7aaec",
+          "contentHash": "fnv1a64:65de4f12925c2595"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:34019bb75bf7aaec",
+          "contentHash": "fnv1a64:65de4f12925c2595"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.oscillator",
+      "sections": 9,
+      "documentVersion": "reader-v1:4a4df0d2be4a7446",
+      "contentHash": "fnv1a64:c9fe7597ab04f408",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:77f93a07751950a8",
+          "contentHash": "fnv1a64:c51935505247e264"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:77f93a07751950a8",
+          "contentHash": "fnv1a64:c51935505247e264"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:77f93a07751950a8",
+          "contentHash": "fnv1a64:c51935505247e264"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.escape-oscillator",
+      "sections": 9,
+      "documentVersion": "reader-v1:b8f27757bb1d6910",
+      "contentHash": "fnv1a64:118c13130fe574e7",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:a9ada6baff25ab28",
+          "contentHash": "fnv1a64:772fffff29f7197c"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:a9ada6baff25ab28",
+          "contentHash": "fnv1a64:772fffff29f7197c"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:a9ada6baff25ab28",
+          "contentHash": "fnv1a64:772fffff29f7197c"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.volante-y-espiral",
+      "sections": 9,
+      "documentVersion": "reader-v1:6e5297c547fb0b89",
+      "contentHash": "fnv1a64:9eafcd9420db9863",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:b62cfff24380bd54",
+          "contentHash": "fnv1a64:a77701337b2fef1e"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:b62cfff24380bd54",
+          "contentHash": "fnv1a64:a77701337b2fef1e"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:b62cfff24380bd54",
+          "contentHash": "fnv1a64:a77701337b2fef1e"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+      "sections": 9,
+      "documentVersion": "reader-v1:dd383993bd6297cf",
+      "contentHash": "fnv1a64:f8b513ad318dc413",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:e87e43a625396e35",
+          "contentHash": "fnv1a64:750e68f047e54eab"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:e87e43a625396e35",
+          "contentHash": "fnv1a64:750e68f047e54eab"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:e87e43a625396e35",
+          "contentHash": "fnv1a64:750e68f047e54eab"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.motion-works",
+      "sections": 9,
+      "documentVersion": "reader-v1:0aa06b1447306de8",
+      "contentHash": "fnv1a64:a53d89b0880b564e",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:22d5653118ac915c",
+          "contentHash": "fnv1a64:6d69c95095b2c1b1"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:22d5653118ac915c",
+          "contentHash": "fnv1a64:6d69c95095b2c1b1"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:22d5653118ac915c",
+          "contentHash": "fnv1a64:6d69c95095b2c1b1"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.keyless",
+      "sections": 9,
+      "documentVersion": "reader-v1:e6c2da62955dc62d",
+      "contentHash": "fnv1a64:060fbb03304c45ad",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:81fda5c6b4965ec3",
+          "contentHash": "fnv1a64:a19ba7fec815f790"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:81fda5c6b4965ec3",
+          "contentHash": "fnv1a64:a19ba7fec815f790"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:81fda5c6b4965ec3",
+          "contentHash": "fnv1a64:a19ba7fec815f790"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+      "sections": 9,
+      "documentVersion": "reader-v1:c6def27c405ee06e",
+      "contentHash": "fnv1a64:781e4ff0396a8ab3",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:82087f1a453234b0",
+          "contentHash": "fnv1a64:002df3c2bfe96099"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:82087f1a453234b0",
+          "contentHash": "fnv1a64:002df3c2bfe96099"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:82087f1a453234b0",
+          "contentHash": "fnv1a64:002df3c2bfe96099"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.mechanical.automatic-calendar",
+      "sections": 9,
+      "documentVersion": "reader-v1:2e2cc62bbc761130",
+      "contentHash": "fnv1a64:66b9e4c262d10975",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:a7bcdb7d12c5ae76",
+          "contentHash": "fnv1a64:c86d639804413ef6"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:a7bcdb7d12c5ae76",
+          "contentHash": "fnv1a64:c86d639804413ef6"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:a7bcdb7d12c5ae76",
+          "contentHash": "fnv1a64:c86d639804413ef6"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.automatico-y-reserva",
+      "sections": 9,
+      "documentVersion": "reader-v1:6ebf1cbacb785af4",
+      "contentHash": "fnv1a64:98ca51c2be47a3c7",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:c2120880245306ee",
+          "contentHash": "fnv1a64:051ecba95421f33f"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:c2120880245306ee",
+          "contentHash": "fnv1a64:051ecba95421f33f"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:c2120880245306ee",
+          "contentHash": "fnv1a64:051ecba95421f33f"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.calendarios",
+      "sections": 9,
+      "documentVersion": "reader-v1:2416425b76505a41",
+      "contentHash": "fnv1a64:242363bffe1e2931",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:edbaa271207ac7c7",
+          "contentHash": "fnv1a64:3e415c2d0808b0ff"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:edbaa271207ac7c7",
+          "contentHash": "fnv1a64:3e415c2d0808b0ff"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:edbaa271207ac7c7",
+          "contentHash": "fnv1a64:3e415c2d0808b0ff"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.calendars",
+      "sections": 9,
+      "documentVersion": "reader-v1:b1cdf13a32f4144f",
+      "contentHash": "fnv1a64:caef460b71bf9b1d",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:3219535b36f49ef0",
+          "contentHash": "fnv1a64:382ef599530eb147"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:3219535b36f49ef0",
+          "contentHash": "fnv1a64:382ef599530eb147"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:3219535b36f49ef0",
+          "contentHash": "fnv1a64:382ef599530eb147"
+        }
+      }
+    },
+    {
+      "lessonId": "lesson.advanced.chronograph-control",
+      "sections": 9,
+      "documentVersion": "reader-v1:1b8d827c61d82968",
+      "contentHash": "fnv1a64:53c3e6abf6a0e749",
+      "historical": {
+        "0.14E": {
+          "documentVersion": "reader-v1:f294fcfc63dde30c",
+          "contentHash": "fnv1a64:cd8b93d3e6041151"
+        },
+        "0.14F": {
+          "documentVersion": "reader-v1:f294fcfc63dde30c",
+          "contentHash": "fnv1a64:cd8b93d3e6041151"
+        },
+        "0.14G": {
+          "documentVersion": "reader-v1:f294fcfc63dde30c",
+          "contentHash": "fnv1a64:cd8b93d3e6041151"
+        }
+      }
+    }
+  ],
+  "validationIssues": []
+}

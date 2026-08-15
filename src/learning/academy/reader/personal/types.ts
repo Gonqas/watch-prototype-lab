@@ -5,7 +5,7 @@ import type {
   AcademyReaderSectionRole,
 } from '../academyReaderModel'
 
-export type AcademyPersonalCurationPhase = '0.14E' | '0.14F' | '0.14G'
+export type AcademyPersonalCurationPhase = '0.14E' | '0.14F' | '0.14G' | '0.14H'
 export type AcademyEvidenceModality = 'K' | 'V' | 'P' | 'R'
 export type AcademyCurriculumPathRole = 'anchor' | 'support' | 'optional-branch' | 'reference'
 
@@ -178,3 +178,32 @@ export type AcademyStage1SectionSpec = AcademyStage0SectionSpec
 export type AcademyStage1ActivityPresentation = AcademyStage0ActivityPresentation
 export type AcademyStage1VisualDesign = AcademyStage0VisualDesign
 export type AcademyStage1PersonalPractice = AcademyStage0PersonalPractice
+
+export interface AcademyStage2LessonCuration extends Omit<AcademyStage1LessonCuration, 'macroStage'> {
+  macroStage: 2
+  chapterId: 'stage-2.1' | 'stage-2.2' | 'stage-2.3' | 'stage-2.4' | 'stage-2.5' | 'stage-2.6'
+}
+
+export interface AcademyStage2ClaimReview extends AcademyStage1ClaimReview {
+  claimHash: string
+  sourceAuthority: 'conceptual-primary' | 'historical-secondary' | 'official-example' | 'source-limited'
+}
+
+export interface AcademyStage2PrerequisiteOverride extends Omit<AcademyStage1PrerequisiteOverride, 'phase'> {
+  phase: '0.14H'
+}
+
+export interface AcademyStage2FormulaReview {
+  formulaId: string
+  lessonId: string
+  expression: string
+  decision: 'reused-verified' | 'not-used' | 'ocr-unverified'
+  sourceId: string
+  locator?: AcademySourceLocator
+  reason: string
+}
+
+export type AcademyStage2SectionSpec = AcademyStage0SectionSpec
+export type AcademyStage2ActivityPresentation = AcademyStage0ActivityPresentation
+export type AcademyStage2VisualDesign = AcademyStage0VisualDesign
+export type AcademyStage2PersonalPractice = AcademyStage0PersonalPractice

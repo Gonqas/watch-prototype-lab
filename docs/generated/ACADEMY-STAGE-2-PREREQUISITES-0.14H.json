@@ -1,0 +1,319 @@
+{
+  "schema": "wplab-academy-stage2-prerequisites-v1",
+  "phase": "0.14H",
+  "chapterSequence": [
+    "stage-2.1",
+    "stage-2.2",
+    "stage-2.3",
+    "stage-2.4",
+    "stage-2.5",
+    "stage-2.6"
+  ],
+  "overrides": [
+    {
+      "lessonId": "lesson.mechanical.energy",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.mechanical.barrel",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.mechanical.energy"
+      ],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Apoyo o rama accesible bajo demanda; enriquece la etapa sin bloquear su secuencia principal.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.mechanical.gear-pair",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.energy-flow"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.mechanical.train",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.energy-flow"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.energy-flow"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.mechanical.gear-pair"
+      ],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Apoyo o rama accesible bajo demanda; enriquece la etapa sin bloquear su secuencia principal.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.mechanical.gear-pair"
+      ],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Apoyo o rama accesible bajo demanda; enriquece la etapa sin bloquear su secuencia principal.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.mechanical.escapement",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.train"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.train"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-escape-fases",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.train"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.advanced.escapement-compare",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.mechanical.escapement"
+      ],
+      "pathRole": "optional-branch",
+      "blocking": false,
+      "rationale": "Apoyo o rama accesible bajo demanda; enriquece la etapa sin bloquear su secuencia principal.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.mechanical.oscillator",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.escapement"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.mechanical.escape-oscillator",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.escapement"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.volante-y-espiral",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.escapement"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.mechanical.oscillator"
+      ],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Apoyo o rama accesible bajo demanda; enriquece la etapa sin bloquear su secuencia principal.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.mechanical.motion-works",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.train",
+        "concept.mechanical.oscillator"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.mechanical.keyless",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.train",
+        "concept.mechanical.oscillator"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.mechanical.motion-works"
+      ],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Apoyo o rama accesible bajo demanda; enriquece la etapa sin bloquear su secuencia principal.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.mechanical.automatic-calendar",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.motion-works",
+        "concept.mechanical.barrel"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.automatico-y-reserva",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.motion-works",
+        "concept.mechanical.barrel"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.calendarios",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.mechanical.motion-works",
+        "concept.mechanical.barrel"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento del sistema anterior; no exige detalles posteriores, especializaciones ni aplicaciones de calibre.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.advanced.calendars",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.mechanical.automatic-calendar"
+      ],
+      "pathRole": "optional-branch",
+      "blocking": false,
+      "rationale": "Apoyo o rama accesible bajo demanda; enriquece la etapa sin bloquear su secuencia principal.",
+      "phase": "0.14H"
+    },
+    {
+      "lessonId": "lesson.advanced.chronograph-control",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.mechanical.automatic-calendar"
+      ],
+      "pathRole": "optional-branch",
+      "blocking": false,
+      "rationale": "Apoyo o rama accesible bajo demanda; enriquece la etapa sin bloquear su secuencia principal.",
+      "phase": "0.14H"
+    }
+  ]
+}

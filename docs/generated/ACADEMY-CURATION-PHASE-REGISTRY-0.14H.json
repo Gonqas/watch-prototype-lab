@@ -1,0 +1,137 @@
+{
+  "schema": "wplab-academy-curation-phase-registry-v1",
+  "currentPhase": "0.14H",
+  "compatibilityPhases": [
+    "0.14C"
+  ],
+  "readerPhases": [
+    "0.14D",
+    "0.14E",
+    "0.14F",
+    "0.14G",
+    "0.14H"
+  ],
+  "personalPhases": [
+    "0.14E",
+    "0.14F",
+    "0.14G",
+    "0.14H"
+  ],
+  "layers": [
+    {
+      "phase": "0.14C",
+      "layerId": "compatibility",
+      "purpose": "compatibilidad de segmentos y progreso históricos"
+    },
+    {
+      "phase": "0.14D",
+      "layerId": "editorial-base",
+      "purpose": "lector continuo y decisiones visuales editoriales"
+    },
+    {
+      "phase": "0.14E",
+      "layerId": "personal-pilots",
+      "purpose": "pilotos personales y visuales revisados"
+    },
+    {
+      "phase": "0.14F",
+      "layerId": "stage-0",
+      "purpose": "etapa 0 completa"
+    },
+    {
+      "phase": "0.14G",
+      "layerId": "stage-1",
+      "purpose": "etapa 1 completa"
+    },
+    {
+      "phase": "0.14H",
+      "layerId": "stage-2",
+      "purpose": "etapa 2 completa"
+    }
+  ],
+  "historicalBuildPolicy": "Cada fase explícita compone únicamente sus capas acumuladas; la fase desconocida o vacía produce error.",
+  "helpers": [
+    "academyPhaseRank",
+    "academyPhaseIncludes",
+    "academyPhaseIsBefore",
+    "academyPhaseIsAfter",
+    "academyPhaseLayers"
+  ],
+  "matrix": [
+    {
+      "phase": "0.14D",
+      "rank": 0,
+      "includes": [
+        "0.14D"
+      ],
+      "layers": [
+        "compatibility",
+        "editorial-base"
+      ]
+    },
+    {
+      "phase": "0.14E",
+      "rank": 1,
+      "includes": [
+        "0.14D",
+        "0.14E"
+      ],
+      "layers": [
+        "compatibility",
+        "editorial-base",
+        "personal-pilots"
+      ]
+    },
+    {
+      "phase": "0.14F",
+      "rank": 2,
+      "includes": [
+        "0.14D",
+        "0.14E",
+        "0.14F"
+      ],
+      "layers": [
+        "compatibility",
+        "editorial-base",
+        "personal-pilots",
+        "stage-0"
+      ]
+    },
+    {
+      "phase": "0.14G",
+      "rank": 3,
+      "includes": [
+        "0.14D",
+        "0.14E",
+        "0.14F",
+        "0.14G"
+      ],
+      "layers": [
+        "compatibility",
+        "editorial-base",
+        "personal-pilots",
+        "stage-0",
+        "stage-1"
+      ]
+    },
+    {
+      "phase": "0.14H",
+      "rank": 4,
+      "includes": [
+        "0.14D",
+        "0.14E",
+        "0.14F",
+        "0.14G",
+        "0.14H"
+      ],
+      "layers": [
+        "compatibility",
+        "editorial-base",
+        "personal-pilots",
+        "stage-0",
+        "stage-1",
+        "stage-2"
+      ]
+    }
+  ]
+}

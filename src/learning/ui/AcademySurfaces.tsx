@@ -2051,9 +2051,9 @@ function PreferencesSurface() {
         </section>
         <section>
           <span className="academy-kicker">ACCESIBILIDAD</span><h2>Lectura e interacción</h2>
-          <label>Escala de texto<input type="range" min="1" max="1.6" step="0.05" value={Math.max(1, accessibility.textScale)} onChange={(event) => void service.updateProfile({ accessibility: { ...accessibility, textScale: Number(event.target.value) } })} /><span>{learningNumber(snapshot.profile.locale, Math.max(1, accessibility.textScale), { style: 'percent' })}</span></label>
+          <label>Escala de texto<input type="range" min="1" max="2" step="0.05" value={Math.max(1, accessibility.textScale)} onChange={(event) => void service.updateProfile({ accessibility: { ...accessibility, textScale: Number(event.target.value) } })} /><span>{learningNumber(snapshot.profile.locale, Math.max(1, accessibility.textScale), { style: 'percent' })}</span></label>
           <div className="academy-text-scale-presets" role="group" aria-label="Tamaños de texto rápidos">
-            {[1, 1.25, 1.5].map((scale) => (
+            {[1, 1.25, 1.5, 2].map((scale) => (
               <button
                 type="button"
                 className={Math.abs(accessibility.textScale - scale) < 0.01 ? 'is-active' : undefined}

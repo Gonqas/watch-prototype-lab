@@ -1,0 +1,1805 @@
+{
+  "schema": "wplab-academy-stage2-visuals-v1",
+  "phase": "0.14H",
+  "essentialQuestionCount": 15,
+  "designs": [
+    {
+      "visualDesignId": "visual.mechanical-energy.flow",
+      "questionGroupId": "q01-energy-flow",
+      "lessonIds": [
+        "lesson.mechanical.energy"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.energy.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Por dónde circula la energía y dónde se limita su entrega?",
+      "semanticPayload": {
+        "title": "Flujo de energía mecánica",
+        "nodes": [
+          {
+            "id": "spring",
+            "label": "Muelle",
+            "detail": "almacena",
+            "emphasis": "primary"
+          },
+          {
+            "id": "barrel",
+            "label": "Barrilete",
+            "detail": "entrega par",
+            "emphasis": "normal"
+          },
+          {
+            "id": "train",
+            "label": "Tren",
+            "detail": "transmite",
+            "emphasis": "normal"
+          },
+          {
+            "id": "escape",
+            "label": "Escape",
+            "detail": "dosifica",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "spring",
+            "to": "barrel",
+            "label": "descarga",
+            "kind": "mechanical"
+          },
+          {
+            "from": "barrel",
+            "to": "train",
+            "label": "par",
+            "kind": "mechanical"
+          },
+          {
+            "from": "train",
+            "to": "escape",
+            "label": "avance",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch04"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch04",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 2 / impresa 46",
+          "figure": "Fig. 4-4",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Flujo conceptual, sin pérdidas cuantitativas."
+      ],
+      "accessibilitySummary": "Flujo de energía mecánica: Muelle, Barrilete, Tren, Escape.",
+      "longDescription": "Flujo de energía mecánica. spring se relaciona con barrel: descarga. barrel se relaciona con train: par. train se relaciona con escape: avance.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:753202eb53d49c2d",
+      "visualHash": "fnv1a64:721fc6b71e9a4de3",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.energy-quantities.v1",
+      "questionGroupId": "q02-energy-quantities",
+      "lessonIds": [
+        "lesson.mechanical.energy",
+        "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.energy.014h-visual",
+        "reader.section.block.encyclopedia.math-physics-metrology.fuerza-par-energia.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Qué diferencia energía, par, potencia y velocidad?",
+      "semanticPayload": {
+        "title": "Magnitudes no intercambiables",
+        "nodes": [
+          {
+            "id": "energy",
+            "label": "Energía",
+            "detail": "capacidad",
+            "emphasis": "primary"
+          },
+          {
+            "id": "torque",
+            "label": "Par",
+            "detail": "tendencia de giro",
+            "emphasis": "normal"
+          },
+          {
+            "id": "power",
+            "label": "Potencia",
+            "detail": "transferencia por tiempo",
+            "emphasis": "normal"
+          },
+          {
+            "id": "speed",
+            "label": "Velocidad",
+            "detail": "cambio de posición",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "energy",
+            "to": "power",
+            "label": "transferida en tiempo",
+            "kind": "mechanical"
+          },
+          {
+            "from": "torque",
+            "to": "speed",
+            "label": "variables distintas",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch04"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch04",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 2 / impresa 46",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No se muestran valores ni una fórmula aplicable."
+      ],
+      "accessibilitySummary": "Magnitudes no intercambiables: Energía, Par, Potencia, Velocidad.",
+      "longDescription": "Magnitudes no intercambiables. energy se relaciona con power: transferida en tiempo. torque se relaciona con speed: variables distintas.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:7310dc47eb5ee099",
+      "visualHash": "fnv1a64:55cce25fd9149177",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.barrel.anatomy",
+      "questionGroupId": "q03-barrel-anatomy",
+      "lessonIds": [
+        "lesson.mechanical.barrel"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.barrel.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Dónde están árbol, muelle, tambor y tapa?",
+      "semanticPayload": {
+        "title": "Anatomía funcional del barrilete",
+        "nodes": [
+          {
+            "id": "cover",
+            "label": "Tapa",
+            "detail": "cierra y apoya",
+            "emphasis": "primary"
+          },
+          {
+            "id": "arbor",
+            "label": "Árbol",
+            "detail": "recibe cuerda",
+            "emphasis": "normal"
+          },
+          {
+            "id": "spring",
+            "label": "Muelle",
+            "detail": "almacena",
+            "emphasis": "normal"
+          },
+          {
+            "id": "drum",
+            "label": "Tambor",
+            "detail": "entrega al tren",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "arbor",
+            "to": "spring",
+            "label": "gancho interior",
+            "kind": "mechanical"
+          },
+          {
+            "from": "spring",
+            "to": "drum",
+            "label": "gancho exterior",
+            "kind": "mechanical"
+          },
+          {
+            "from": "cover",
+            "to": "drum",
+            "label": "cierre",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch04"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch04",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 2 / impresa 46",
+          "figure": "Fig. 4-4",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Despiece esquemático; no guía una apertura."
+      ],
+      "accessibilitySummary": "Anatomía funcional del barrilete: Tapa, Árbol, Muelle, Tambor.",
+      "longDescription": "Anatomía funcional del barrilete. arbor se relaciona con spring: gancho interior. spring se relaciona con drum: gancho exterior. cover se relaciona con drum: cierre.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:5b2464139d95b3ea",
+      "visualHash": "fnv1a64:44f03a14a96accaa",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.barrel.winding-discharge",
+      "questionGroupId": "q04-barrel-states",
+      "lessonIds": [
+        "lesson.mechanical.barrel"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.barrel.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Qué gira durante la cuerda y durante la marcha?",
+      "semanticPayload": {
+        "title": "Estados del barrilete",
+        "nodes": [
+          {
+            "id": "wind",
+            "label": "Cuerda",
+            "detail": "árbol accionado",
+            "emphasis": "primary"
+          },
+          {
+            "id": "hold-drum",
+            "label": "Tambor retenido",
+            "detail": "estado de carga",
+            "emphasis": "normal"
+          },
+          {
+            "id": "hold-arbor",
+            "label": "Árbol retenido",
+            "detail": "estado de marcha",
+            "emphasis": "normal"
+          },
+          {
+            "id": "run",
+            "label": "Marcha",
+            "detail": "tambor entrega",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "wind",
+            "to": "hold-drum",
+            "label": "carga",
+            "kind": "mechanical"
+          },
+          {
+            "from": "hold-arbor",
+            "to": "run",
+            "label": "descarga",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch04"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch04",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 2 / impresa 46",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Estados relativos; no representa fuerzas reales."
+      ],
+      "accessibilitySummary": "Estados del barrilete: Cuerda, Tambor retenido, Árbol retenido, Marcha.",
+      "longDescription": "Estados del barrilete. wind se relaciona con hold-drum: carga. hold-arbor se relaciona con run: descarga.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:08e9dd2ca9f766d0",
+      "visualHash": "fnv1a64:fa7b4974dc021b74",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.barrel-states.v1",
+      "questionGroupId": "q04-barrel-states",
+      "lessonIds": [
+        "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Cómo cambia el estado del acumulador entre carga y entrega?",
+      "semanticPayload": {
+        "title": "Carga, reserva y entrega",
+        "nodes": [
+          {
+            "id": "low",
+            "label": "Reserva baja",
+            "detail": "estado",
+            "emphasis": "primary"
+          },
+          {
+            "id": "charged",
+            "label": "Reserva mayor",
+            "detail": "estado",
+            "emphasis": "normal"
+          },
+          {
+            "id": "delivery",
+            "label": "Entrega",
+            "detail": "salida al tren",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "low",
+            "to": "charged",
+            "label": "cuerda",
+            "kind": "mechanical"
+          },
+          {
+            "from": "charged",
+            "to": "delivery",
+            "label": "marcha",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch04"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch04",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 2 / impresa 46",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No es una curva de par ni una reserva de calibre."
+      ],
+      "accessibilitySummary": "Carga, reserva y entrega: Reserva baja, Reserva mayor, Entrega.",
+      "longDescription": "Carga, reserva y entrega. low se relaciona con charged: cuerda. charged se relaciona con delivery: marcha.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:2ec67d41b65e128c",
+      "visualHash": "fnv1a64:0ff401ed2cd67c4f",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.gear-pair.ratio",
+      "questionGroupId": "q05-gear-pair",
+      "lessonIds": [
+        "lesson.mechanical.gear-pair",
+        "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.gear-pair.014h-visual",
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Cómo cambian relación y sentido en una pareja?",
+      "semanticPayload": {
+        "title": "Pareja de engrane externa",
+        "nodes": [
+          {
+            "id": "driver",
+            "label": "Conductora Z₁",
+            "detail": "entrada",
+            "emphasis": "primary"
+          },
+          {
+            "id": "driven",
+            "label": "Conducida Z₂",
+            "detail": "salida",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "driver",
+            "to": "driven",
+            "label": "engrane: invierte sentido",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 9 / impresa 53",
+          "figure": "Fig. 5-10",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Modelo ideal sin pérdidas ni depthing."
+      ],
+      "accessibilitySummary": "Pareja de engrane externa: Conductora Z₁, Conducida Z₂.",
+      "longDescription": "Pareja de engrane externa. driver se relaciona con driven: engrane: invierte sentido.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:a4cb6cf6dddcd80d",
+      "visualHash": "fnv1a64:cb243dd112d401c8",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.gear-pair.direction-torque",
+      "questionGroupId": "q05-gear-pair",
+      "lessonIds": [
+        "lesson.mechanical.gear-pair"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.gear-pair.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Qué predice la pareja sobre dirección y adaptación?",
+      "semanticPayload": {
+        "title": "Dirección, velocidad y par ideal",
+        "nodes": [
+          {
+            "id": "input",
+            "label": "Entrada",
+            "detail": "sentido A",
+            "emphasis": "primary"
+          },
+          {
+            "id": "interface",
+            "label": "Contacto",
+            "detail": "círculos primitivos",
+            "emphasis": "normal"
+          },
+          {
+            "id": "output",
+            "label": "Salida",
+            "detail": "sentido opuesto",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "input",
+            "to": "interface",
+            "label": "conduce",
+            "kind": "mechanical"
+          },
+          {
+            "from": "interface",
+            "to": "output",
+            "label": "adapta",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 9 / impresa 53",
+          "figure": "Fig. 5-10",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No predice eficiencia o resistencia."
+      ],
+      "accessibilitySummary": "Dirección, velocidad y par ideal: Entrada, Contacto, Salida.",
+      "longDescription": "Dirección, velocidad y par ideal. input se relaciona con interface: conduce. interface se relaciona con output: adapta.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:8707cb535d29f20e",
+      "visualHash": "fnv1a64:d6c1775b5bfaab63",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.train.real-order",
+      "questionGroupId": "q06-compound-train",
+      "lessonIds": [
+        "lesson.mechanical.train"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.train.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Cómo se enlazan ruedas y piñones solidarios?",
+      "semanticPayload": {
+        "title": "Tren por ejes e interfaces",
+        "nodes": [
+          {
+            "id": "axis1",
+            "label": "Eje 1",
+            "detail": "rueda conductora",
+            "emphasis": "primary"
+          },
+          {
+            "id": "axis2",
+            "label": "Eje 2",
+            "detail": "piñón y rueda solidarios",
+            "emphasis": "normal"
+          },
+          {
+            "id": "axis3",
+            "label": "Eje 3",
+            "detail": "salida",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "axis1",
+            "to": "axis2",
+            "label": "engrane 1",
+            "kind": "mechanical"
+          },
+          {
+            "from": "axis2",
+            "to": "axis3",
+            "label": "engrane 2",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 12 / impresa 56",
+          "figure": "Fig. 5-15",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No reproduce la planta de un calibre."
+      ],
+      "accessibilitySummary": "Tren por ejes e interfaces: Eje 1, Eje 2, Eje 3.",
+      "longDescription": "Tren por ejes e interfaces. axis1 se relaciona con axis2: engrane 1. axis2 se relaciona con axis3: engrane 2.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:b726102620ca2fb4",
+      "visualHash": "fnv1a64:d8a269404585fa1f",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.train.3d-overview",
+      "questionGroupId": "q06-compound-train",
+      "lessonIds": [
+        "lesson.mechanical.train"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.train.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Qué añade una vista espacial del tren?",
+      "semanticPayload": {
+        "title": "Vista espacial conceptual del tren",
+        "nodes": [
+          {
+            "id": "barrel",
+            "label": "Barrilete",
+            "detail": "entrada",
+            "emphasis": "primary"
+          },
+          {
+            "id": "centres",
+            "label": "Ejes sucesivos",
+            "detail": "interfaces",
+            "emphasis": "normal"
+          },
+          {
+            "id": "escape",
+            "label": "Rueda de escape",
+            "detail": "salida",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "barrel",
+            "to": "centres",
+            "label": "transmite",
+            "kind": "mechanical"
+          },
+          {
+            "from": "centres",
+            "to": "escape",
+            "label": "entrega",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 12 / impresa 56",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Se reutiliza el estado 3D conceptual de 0.14E; no es un fixture de calibre."
+      ],
+      "accessibilitySummary": "Vista espacial conceptual del tren: Barrilete, Ejes sucesivos, Rueda de escape.",
+      "longDescription": "Vista espacial conceptual del tren. barrel se relaciona con centres: transmite. centres se relaciona con escape: entrega.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:8344f98f6c8c64a3",
+      "visualHash": "fnv1a64:1c89d74369c9edc7",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.compound-train.v1",
+      "questionGroupId": "q06-compound-train",
+      "lessonIds": [
+        "lesson.mechanical.train",
+        "lesson.encyclopedia.math-physics-metrology.toh-contar-tren"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.train.014h-visual",
+        "reader.section.block.encyclopedia.math-physics-metrology.toh-contar-tren.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Qué factores forman la relación total?",
+      "semanticPayload": {
+        "title": "Producto de etapas activas",
+        "nodes": [
+          {
+            "id": "stage1",
+            "label": "Etapa 1",
+            "detail": "Z₁/Z₂",
+            "emphasis": "primary"
+          },
+          {
+            "id": "shaft",
+            "label": "Eje común",
+            "detail": "misma velocidad",
+            "emphasis": "normal"
+          },
+          {
+            "id": "stage2",
+            "label": "Etapa 2",
+            "detail": "Z₃/Z₄",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "stage1",
+            "to": "shaft",
+            "label": "solidario",
+            "kind": "mechanical"
+          },
+          {
+            "from": "shaft",
+            "to": "stage2",
+            "label": "continúa",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 12 / impresa 56",
+          "figure": "Fig. 5-15",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Solo representa las etapas declaradas."
+      ],
+      "accessibilitySummary": "Producto de etapas activas: Etapa 1, Eje común, Etapa 2.",
+      "longDescription": "Producto de etapas activas. stage1 se relaciona con shaft: solidario. shaft se relaciona con stage2: continúa.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:d5eda66a87c394f8",
+      "visualHash": "fnv1a64:6c9d94fdac2ef01a",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.going-vs-motion.v1",
+      "questionGroupId": "q07-going-vs-motion",
+      "lessonIds": [
+        "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+        "lesson.mechanical.motion-works"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-visual",
+        "reader.section.block.mechanical.motion-works.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Qué diferencia el tren de rodaje de la minutería?",
+      "semanticPayload": {
+        "title": "Ruta al escape y rama de indicación",
+        "nodes": [
+          {
+            "id": "source",
+            "label": "Barrilete",
+            "detail": "entrada",
+            "emphasis": "primary"
+          },
+          {
+            "id": "going",
+            "label": "Tren de rodaje",
+            "detail": "hacia escape",
+            "emphasis": "normal"
+          },
+          {
+            "id": "motion",
+            "label": "Minutería",
+            "detail": "hacia agujas",
+            "emphasis": "normal"
+          },
+          {
+            "id": "display",
+            "label": "Indicación",
+            "detail": "salida",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "source",
+            "to": "going",
+            "label": "energía",
+            "kind": "mechanical"
+          },
+          {
+            "from": "going",
+            "to": "motion",
+            "label": "derivación",
+            "kind": "mechanical"
+          },
+          {
+            "from": "motion",
+            "to": "display",
+            "label": "indica",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 18 / impresa 62",
+          "figure": "Fig. 5-26",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Arquitectura funcional, no disposición universal."
+      ],
+      "accessibilitySummary": "Ruta al escape y rama de indicación: Barrilete, Tren de rodaje, Minutería, Indicación.",
+      "longDescription": "Ruta al escape y rama de indicación. source se relaciona con going: energía. going se relaciona con motion: derivación. motion se relaciona con display: indica.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:174607c07830859d",
+      "visualHash": "fnv1a64:c0f78e2862432abc",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.escapement.interfaces",
+      "questionGroupId": "q08-escapement-anatomy",
+      "lessonIds": [
+        "lesson.mechanical.escapement",
+        "lesson.advanced.escapement-compare"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.escapement.014h-visual",
+        "reader.section.block.advanced.escapement-compare.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Qué órganos se encuentran en las interfaces del escape?",
+      "semanticPayload": {
+        "title": "Anatomía del escape de áncora",
+        "nodes": [
+          {
+            "id": "wheel",
+            "label": "Rueda de escape",
+            "detail": "tren",
+            "emphasis": "primary"
+          },
+          {
+            "id": "pallets",
+            "label": "Paletas y áncora",
+            "detail": "bloqueo e impulso",
+            "emphasis": "normal"
+          },
+          {
+            "id": "roller",
+            "label": "Rodillo y clavija",
+            "detail": "oscilador",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "wheel",
+            "to": "pallets",
+            "label": "contacto",
+            "kind": "mechanical"
+          },
+          {
+            "from": "pallets",
+            "to": "roller",
+            "label": "horquilla",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch06"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch06",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 06.pdf",
+          "page": "PDF 3 / impresa 101",
+          "figure": "Figs. 6-6 y 6-7",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No es geometría de ajuste."
+      ],
+      "accessibilitySummary": "Anatomía del escape de áncora: Rueda de escape, Paletas y áncora, Rodillo y clavija.",
+      "longDescription": "Anatomía del escape de áncora. wheel se relaciona con pallets: contacto. pallets se relaciona con roller: horquilla.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:23b451ac8f5af7d2",
+      "visualHash": "fnv1a64:efe5d811620a0c9d",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.escapement.phases",
+      "questionGroupId": "q09-escapement-cycle",
+      "lessonIds": [
+        "lesson.mechanical.escapement",
+        "lesson.encyclopedia.escapements-chronometry.toh-escape-fases"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.escapement.014h-visual",
+        "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Cómo se suceden bloqueo, desbloqueo, impulso y caída?",
+      "semanticPayload": {
+        "title": "Ciclo funcional del escape",
+        "nodes": [
+          {
+            "id": "lock",
+            "label": "Bloqueo",
+            "detail": "retiene",
+            "emphasis": "primary"
+          },
+          {
+            "id": "unlock",
+            "label": "Desbloqueo",
+            "detail": "libera",
+            "emphasis": "normal"
+          },
+          {
+            "id": "impulse",
+            "label": "Impulso",
+            "detail": "transfiere",
+            "emphasis": "normal"
+          },
+          {
+            "id": "drop",
+            "label": "Caída",
+            "detail": "avanza al bloqueo",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "lock",
+            "to": "unlock",
+            "label": "oscilador",
+            "kind": "mechanical"
+          },
+          {
+            "from": "unlock",
+            "to": "impulse",
+            "label": "contacto",
+            "kind": "mechanical"
+          },
+          {
+            "from": "impulse",
+            "to": "drop",
+            "label": "salida",
+            "kind": "mechanical"
+          },
+          {
+            "from": "drop",
+            "to": "lock",
+            "label": "siguiente paleta",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch06"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch06",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 06.pdf",
+          "page": "PDF 8 / impresa 106",
+          "figure": "Tabla 6.3.1",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No importa ángulos ni velocidad real."
+      ],
+      "accessibilitySummary": "Ciclo funcional del escape: Bloqueo, Desbloqueo, Impulso, Caída.",
+      "longDescription": "Ciclo funcional del escape. lock se relaciona con unlock: oscilador. unlock se relaciona con impulse: contacto. impulse se relaciona con drop: salida. drop se relaciona con lock: siguiente paleta.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:00a842bf9e10ace2",
+      "visualHash": "fnv1a64:ab5e30bf72dcc9b1",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.escapement-safety.v1",
+      "questionGroupId": "q10-escapement-safety",
+      "lessonIds": [
+        "lesson.encyclopedia.escapements-chronometry.geometria-del-escape"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.escapements-chronometry.geometria-del-escape.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Qué evita contactos o liberaciones indebidas?",
+      "semanticPayload": {
+        "title": "Funciones de seguridad del escape",
+        "nodes": [
+          {
+            "id": "horns",
+            "label": "Cuernos",
+            "detail": "guían interfaz",
+            "emphasis": "primary"
+          },
+          {
+            "id": "guard",
+            "label": "Dardo/seguro",
+            "detail": "limita desplazamiento",
+            "emphasis": "normal"
+          },
+          {
+            "id": "roller",
+            "label": "Rodillo de seguridad",
+            "detail": "condición geométrica",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "guard",
+            "to": "roller",
+            "label": "controla",
+            "kind": "mechanical"
+          },
+          {
+            "from": "horns",
+            "to": "roller",
+            "label": "interfaz",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch06"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch06",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 06.pdf",
+          "page": "PDF 3 / impresa 101",
+          "figure": "Fig. 6-6",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No prescribe holguras o correcciones."
+      ],
+      "accessibilitySummary": "Funciones de seguridad del escape: Cuernos, Dardo/seguro, Rodillo de seguridad.",
+      "longDescription": "Funciones de seguridad del escape. guard se relaciona con roller: controla. horns se relaciona con roller: interfaz.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:d0ca9757b7b0bc76",
+      "visualHash": "fnv1a64:445467aaf33bfcb1",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.oscillator.active-length",
+      "questionGroupId": "q11-frequency-amplitude",
+      "lessonIds": [
+        "lesson.mechanical.oscillator",
+        "lesson.encyclopedia.escapements-chronometry.volante-y-espiral"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.oscillator.014h-visual",
+        "reader.section.block.encyclopedia.escapements-chronometry.volante-y-espiral.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Dónde se sitúan inercia, retorno y longitud activa?",
+      "semanticPayload": {
+        "title": "Volante y espiral",
+        "nodes": [
+          {
+            "id": "balance",
+            "label": "Volante",
+            "detail": "inercia",
+            "emphasis": "primary"
+          },
+          {
+            "id": "spring",
+            "label": "Espiral",
+            "detail": "retorno",
+            "emphasis": "normal"
+          },
+          {
+            "id": "collet",
+            "label": "Virola",
+            "detail": "fijación interior",
+            "emphasis": "normal"
+          },
+          {
+            "id": "stud",
+            "label": "Pitón",
+            "detail": "fijación exterior",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "spring",
+            "to": "balance",
+            "label": "par restaurador",
+            "kind": "mechanical"
+          },
+          {
+            "from": "collet",
+            "to": "spring",
+            "label": "une",
+            "kind": "mechanical"
+          },
+          {
+            "from": "spring",
+            "to": "stud",
+            "label": "termina",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch07"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch07",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 07.pdf",
+          "page": "PDF 5 / impresa 133",
+          "figure": "Figs. 7-8 a 7-10",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No muestra deformación ni ajuste real."
+      ],
+      "accessibilitySummary": "Volante y espiral: Volante, Espiral, Virola, Pitón.",
+      "longDescription": "Volante y espiral. spring se relaciona con balance: par restaurador. collet se relaciona con spring: une. spring se relaciona con stud: termina.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:054d32ab8894a868",
+      "visualHash": "fnv1a64:1da97d9521ff8e2b",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.frequency-amplitude.v1",
+      "questionGroupId": "q11-frequency-amplitude",
+      "lessonIds": [
+        "lesson.mechanical.oscillator",
+        "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.oscillator.014h-visual",
+        "reader.section.block.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Cómo se distinguen frecuencia y amplitud?",
+      "semanticPayload": {
+        "title": "Periodo, frecuencia y amplitud",
+        "nodes": [
+          {
+            "id": "left",
+            "label": "Extremo A",
+            "detail": "amplitud",
+            "emphasis": "primary"
+          },
+          {
+            "id": "centre",
+            "label": "Equilibrio",
+            "detail": "máxima velocidad cualitativa",
+            "emphasis": "normal"
+          },
+          {
+            "id": "right",
+            "label": "Extremo B",
+            "detail": "amplitud",
+            "emphasis": "normal"
+          },
+          {
+            "id": "cycle",
+            "label": "Ciclo",
+            "detail": "periodo completo",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "left",
+            "to": "centre",
+            "label": "media alternancia",
+            "kind": "mechanical"
+          },
+          {
+            "from": "centre",
+            "to": "right",
+            "label": "media alternancia",
+            "kind": "mechanical"
+          },
+          {
+            "from": "right",
+            "to": "cycle",
+            "label": "retorno",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch07"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch07",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 07.pdf",
+          "page": "PDF 5 / impresa 133",
+          "figure": "Fig. 7-10",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Curva cualitativa, sin marcha medida."
+      ],
+      "accessibilitySummary": "Periodo, frecuencia y amplitud: Extremo A, Equilibrio, Extremo B, Ciclo.",
+      "longDescription": "Periodo, frecuencia y amplitud. left se relaciona con centre: media alternancia. centre se relaciona con right: media alternancia. right se relaciona con cycle: retorno.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:b57f6f2a2303e566",
+      "visualHash": "fnv1a64:8d8883a650b6aee2",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.oscillator.feedback",
+      "questionGroupId": "q12-feedback-loop",
+      "lessonIds": [
+        "lesson.mechanical.oscillator"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.oscillator.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Cómo se relacionan impulso y liberación?",
+      "semanticPayload": {
+        "title": "Bucle escape–oscilador",
+        "nodes": [
+          {
+            "id": "escape",
+            "label": "Escape",
+            "detail": "entrega impulso",
+            "emphasis": "primary"
+          },
+          {
+            "id": "oscillator",
+            "label": "Oscilador",
+            "detail": "marca liberación",
+            "emphasis": "normal"
+          },
+          {
+            "id": "loss",
+            "label": "Pérdidas",
+            "detail": "reducen amplitud",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "escape",
+            "to": "oscillator",
+            "label": "energía",
+            "kind": "mechanical"
+          },
+          {
+            "from": "oscillator",
+            "to": "escape",
+            "label": "temporización",
+            "kind": "mechanical"
+          },
+          {
+            "from": "loss",
+            "to": "oscillator",
+            "label": "amortigua",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch06"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch06",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 06.pdf",
+          "page": "PDF 8 / impresa 106",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No es simulación dinámica."
+      ],
+      "accessibilitySummary": "Bucle escape–oscilador: Escape, Oscilador, Pérdidas.",
+      "longDescription": "Bucle escape–oscilador. escape se relaciona con oscillator: energía. oscillator se relaciona con escape: temporización. loss se relaciona con oscillator: amortigua.",
+      "implementationStatus": "reused-and-versioned",
+      "contentHash": "fnv1a64:1935113262b5e489",
+      "visualHash": "fnv1a64:c4a2bfd684096eec",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.feedback-loop.v1",
+      "questionGroupId": "q12-feedback-loop",
+      "lessonIds": [
+        "lesson.mechanical.escape-oscillator"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.escape-oscillator.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Por qué el sistema no es una cadena unidireccional?",
+      "semanticPayload": {
+        "title": "Dos direcciones del conjunto regulador",
+        "nodes": [
+          {
+            "id": "train",
+            "label": "Tren",
+            "detail": "tendencia al avance",
+            "emphasis": "primary"
+          },
+          {
+            "id": "escape",
+            "label": "Escape",
+            "detail": "dosifica",
+            "emphasis": "normal"
+          },
+          {
+            "id": "oscillator",
+            "label": "Oscilador",
+            "detail": "referencia",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "train",
+            "to": "escape",
+            "label": "energía",
+            "kind": "mechanical"
+          },
+          {
+            "from": "escape",
+            "to": "oscillator",
+            "label": "impulso",
+            "kind": "mechanical"
+          },
+          {
+            "from": "oscillator",
+            "to": "escape",
+            "label": "liberación",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch06"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch06",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 06.pdf",
+          "page": "PDF 8 / impresa 106",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Sin fuerzas ni geometría cuantitativa."
+      ],
+      "accessibilitySummary": "Dos direcciones del conjunto regulador: Tren, Escape, Oscilador.",
+      "longDescription": "Dos direcciones del conjunto regulador. train se relaciona con escape: energía. escape se relaciona con oscillator: impulso. oscillator se relaciona con escape: liberación.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:0caa2b515c9b3a47",
+      "visualHash": "fnv1a64:069af529193c830c",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.keyless-states.v1",
+      "questionGroupId": "q13-keyless-states",
+      "lessonIds": [
+        "lesson.mechanical.keyless",
+        "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.keyless.014h-visual",
+        "reader.section.block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Qué ruta activa cada posición de corona?",
+      "semanticPayload": {
+        "title": "Estados del sistema sin llave",
+        "nodes": [
+          {
+            "id": "crown",
+            "label": "Corona y tija",
+            "detail": "entrada",
+            "emphasis": "primary"
+          },
+          {
+            "id": "select",
+            "label": "Selección",
+            "detail": "posición axial",
+            "emphasis": "normal"
+          },
+          {
+            "id": "wind",
+            "label": "Cuerda",
+            "detail": "ruta A",
+            "emphasis": "normal"
+          },
+          {
+            "id": "set",
+            "label": "Puesta en hora",
+            "detail": "ruta B",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "crown",
+            "to": "select",
+            "label": "desplaza y gira",
+            "kind": "mechanical"
+          },
+          {
+            "from": "select",
+            "to": "wind",
+            "label": "estado cuerda",
+            "kind": "mechanical"
+          },
+          {
+            "from": "select",
+            "to": "set",
+            "label": "estado puesta",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 18 / impresa 62",
+          "figure": "Fig. 5-26",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Estados conceptuales; no operación física."
+      ],
+      "accessibilitySummary": "Estados del sistema sin llave: Corona y tija, Selección, Cuerda, Puesta en hora.",
+      "longDescription": "Estados del sistema sin llave. crown se relaciona con select: desplaza y gira. select se relaciona con wind: estado cuerda. select se relaciona con set: estado puesta.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:5decbcd2dce09e04",
+      "visualHash": "fnv1a64:0f35b37c700bc537",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.automatic-flow.v1",
+      "questionGroupId": "q14-automatic-flow",
+      "lessonIds": [
+        "lesson.mechanical.automatic-calendar",
+        "lesson.encyclopedia.complications.automatico-y-reserva"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.automatic-calendar.014h-visual",
+        "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Cómo llega el movimiento del usuario al muelle?",
+      "semanticPayload": {
+        "title": "Ruta funcional de carga automática",
+        "nodes": [
+          {
+            "id": "wearer",
+            "label": "Movimiento del usuario",
+            "detail": "entrada",
+            "emphasis": "primary"
+          },
+          {
+            "id": "rotor",
+            "label": "Masa oscilante",
+            "detail": "captación",
+            "emphasis": "normal"
+          },
+          {
+            "id": "reduction",
+            "label": "Tren reductor",
+            "detail": "transmite",
+            "emphasis": "normal"
+          },
+          {
+            "id": "spring",
+            "label": "Muelle",
+            "detail": "almacena",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "wearer",
+            "to": "rotor",
+            "label": "mueve",
+            "kind": "mechanical"
+          },
+          {
+            "from": "rotor",
+            "to": "reduction",
+            "label": "gira",
+            "kind": "mechanical"
+          },
+          {
+            "from": "reduction",
+            "to": "spring",
+            "label": "carga",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch08"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch08",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 08.pdf",
+          "page": "PDF 3 / impresa 171",
+          "figure": "Figs. 8-6 y 8-7",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No universaliza inversión, eficiencia o sentido."
+      ],
+      "accessibilitySummary": "Ruta funcional de carga automática: Movimiento del usuario, Masa oscilante, Tren reductor, Muelle.",
+      "longDescription": "Ruta funcional de carga automática. wearer se relaciona con rotor: mueve. rotor se relaciona con reduction: gira. reduction se relaciona con spring: carga.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:418864d613445987",
+      "visualHash": "fnv1a64:140922b67ba8771c",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.calendar-sequence.v1",
+      "questionGroupId": "q15-calendar-sequence",
+      "lessonIds": [
+        "lesson.mechanical.automatic-calendar",
+        "lesson.encyclopedia.complications.calendarios",
+        "lesson.advanced.calendars"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.automatic-calendar.014h-visual",
+        "reader.section.block.encyclopedia.complications.calendarios.014h-visual",
+        "reader.section.block.advanced.calendars.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Cómo se convierte movimiento continuo en un cambio de fecha?",
+      "semanticPayload": {
+        "title": "Secuencia de calendario simple",
+        "nodes": [
+          {
+            "id": "hour",
+            "label": "Rueda de horas",
+            "detail": "entrada lenta",
+            "emphasis": "primary"
+          },
+          {
+            "id": "drive",
+            "label": "Arrastre",
+            "detail": "transmite",
+            "emphasis": "normal"
+          },
+          {
+            "id": "date",
+            "label": "Estrella o disco",
+            "detail": "salta",
+            "emphasis": "normal"
+          },
+          {
+            "id": "jumper",
+            "label": "Jumper",
+            "detail": "retiene",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "hour",
+            "to": "drive",
+            "label": "reduce",
+            "kind": "mechanical"
+          },
+          {
+            "from": "drive",
+            "to": "date",
+            "label": "activa",
+            "kind": "mechanical"
+          },
+          {
+            "from": "jumper",
+            "to": "date",
+            "label": "posiciona",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch09"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch09",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 09.pdf",
+          "page": "PDF 3 / impresa 191",
+          "figure": "Fig. 9-5",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No define zona segura ni procedimiento de corrección."
+      ],
+      "accessibilitySummary": "Secuencia de calendario simple: Rueda de horas, Arrastre, Estrella o disco, Jumper.",
+      "longDescription": "Secuencia de calendario simple. hour se relaciona con drive: reduce. drive se relaciona con date: activa. jumper se relaciona con date: posiciona.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:1b1d4525f2d24be0",
+      "visualHash": "fnv1a64:ab9e90fb8a865b15",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage2.control-states.v1",
+      "questionGroupId": "q15-calendar-sequence",
+      "lessonIds": [
+        "lesson.advanced.chronograph-control"
+      ],
+      "sectionIds": [
+        "reader.section.block.advanced.chronograph-control.014h-visual"
+      ],
+      "pedagogicalQuestion": "¿Cómo se comparan estados discretos de calendario y cronógrafo?",
+      "semanticPayload": {
+        "title": "Control de estados como ampliación",
+        "nodes": [
+          {
+            "id": "input",
+            "label": "Mando o arrastre",
+            "detail": "entrada",
+            "emphasis": "primary"
+          },
+          {
+            "id": "state",
+            "label": "Estado controlado",
+            "detail": "transición",
+            "emphasis": "normal"
+          },
+          {
+            "id": "output",
+            "label": "Indicación",
+            "detail": "resultado",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "input",
+            "to": "state",
+            "label": "activa",
+            "kind": "mechanical"
+          },
+          {
+            "from": "state",
+            "to": "output",
+            "label": "conserva",
+            "kind": "mechanical"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y relaciones transmiten la información sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.toh.ch09"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.toh.ch09",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 09.pdf",
+          "page": "PDF 3 / impresa 191",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "La analogía no identifica una arquitectura de cronógrafo."
+      ],
+      "accessibilitySummary": "Control de estados como ampliación: Mando o arrastre, Estado controlado, Indicación.",
+      "longDescription": "Control de estados como ampliación. input se relaciona con state: activa. state se relaciona con output: conserva.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:4965c38bc2384d9f",
+      "visualHash": "fnv1a64:ea9b92fd09a19da7",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    }
+  ],
+  "threeDimensionalPolicy": {
+    "reusedState": "visual.train.3d-overview",
+    "fidelity": "conceptual",
+    "newCalibreFixture": false
+  }
+}

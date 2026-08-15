@@ -106,6 +106,7 @@ async function assertHistoricalReports(repositoryRoot: string): Promise<void> {
       && !fileName.startsWith('APRENDER-')
       && !fileName.includes('0.14F')
       && !fileName.includes('0.14G')
+      && !fileName.includes('0.14H')
     ))
     .sort()
   if (fileNames.length !== ACADEMY_014E_BASELINE.historicalReportCount) {

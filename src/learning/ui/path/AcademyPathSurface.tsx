@@ -1,7 +1,7 @@
 import { BookOpenCheck, LibraryBig, NotebookPen, ShieldCheck } from 'lucide-react'
 import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { ACADEMY_LEARNER_PATH } from '../../academy/path/academyLearnerPath'
-import { ACADEMY_STAGE_0_TO_1_CHECKPOINT } from '../../academy/reader/academyPersonalCurriculum'
+import { ACADEMY_STAGE_0_TO_1_CHECKPOINT, ACADEMY_STAGE_2_FINAL_CHECKPOINT } from '../../academy/reader/academyPersonalCurriculum'
 import { academyNextAction } from '../../academy/path/academyNextAction'
 import { deriveAcademyPathProgress } from '../../academy/path/academyPathProgress'
 import { useAcademyLocalState } from '../../academy/useAcademyLocalState'
@@ -86,6 +86,22 @@ export function AcademyPathSurface() {
                 <nav aria-label="Acciones del punto de control">
                   <a className="academy-button" href="#/learning/my-learning?stage=stage.0">Revisar etapa 0</a>
                   <a className="academy-button is-primary" href="#/learning/my-learning?stage=stage.1&chapter=chapter.1.1">Continuar a etapa 1</a>
+                  <a className="academy-button" href="#/learning/notebook">Anotar una duda</a>
+                </nav>
+              </aside>
+            )}
+            {stage.stageId === 'stage.3' && (
+              <aside className="academy-stage-checkpoint" aria-labelledby="academy-stage-2-checkpoint-title">
+                <div>
+                  <span className="academy-kicker">CIERRE PERSONAL DE ETAPA 2</span>
+                  <h2 id="academy-stage-2-checkpoint-title">{ACADEMY_STAGE_2_FINAL_CHECKPOINT.title}</h2>
+                  <p>No bloquea la ruta, no crea mastery y no acredita destreza física. Sirve para comprobar si el mapa mecánico completo ya es utilizable.</p>
+                  <ul>{ACADEMY_STAGE_2_FINAL_CHECKPOINT.questions.map((question) => <li key={question}>{question}</li>)}</ul>
+                  <p><strong>Acciones disponibles:</strong> {ACADEMY_STAGE_2_FINAL_CHECKPOINT.actions.join(' · ')}.</p>
+                </div>
+                <nav aria-label="Acciones del cierre de etapa 2">
+                  <a className="academy-button" href="#/learning/my-learning?stage=stage.2&chapter=chapter.2.1">Revisar etapa 2</a>
+                  <a className="academy-button is-primary" href="#/learning/my-learning?stage=stage.3&chapter=chapter.3.1">Continuar a etapa 3</a>
                   <a className="academy-button" href="#/learning/notebook">Anotar una duda</a>
                 </nav>
               </aside>

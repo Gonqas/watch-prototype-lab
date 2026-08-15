@@ -3,10 +3,12 @@ import { academyStage0PersonalPracticesForLesson } from '../phase014f/stage0Prac
 import { academyStage1ActivityPresentation } from './stage1Activities'
 import { academyStage1PersonalPracticesForLesson } from './stage1Practices'
 
-export function academyPersonalActivityPresentation(activityId: string) {
+/** @deprecated Use academyPersonalActivityPresentation014H through the public facade. */
+export function academyPersonalActivityPresentation014G(activityId: string) {
   return academyStage1ActivityPresentation(activityId) ?? academyStage0ActivityPresentation(activityId)
 }
 
-export function academyPersonalPracticesForLesson(lessonId: string) {
+/** @deprecated Use academyPersonalPracticesForLesson014H through the public facade. */
+export function academyPersonalPracticesForLesson014G(lessonId: string) {
   return [...academyStage0PersonalPracticesForLesson(lessonId), ...academyStage1PersonalPracticesForLesson(lessonId)]
 }

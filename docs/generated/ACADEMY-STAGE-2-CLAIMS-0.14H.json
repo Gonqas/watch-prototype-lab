@@ -1,0 +1,489 @@
+{
+  "schema": "wplab-academy-stage2-claims-v1",
+  "phase": "0.14H",
+  "claims": [
+    {
+      "claimId": "claim.014h.energy.storage-delivery",
+      "lessonId": "lesson.mechanical.energy",
+      "sectionId": "reader.section.block.mechanical.energy.014h-modelo-causal",
+      "claim": "El muelle real almacena energía y el barrilete transmite par al tren durante la marcha.",
+      "claimHash": "fnv1a64:7f6adab7b48c1ae2",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch04"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch04",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 2 / impresa 46",
+          "figure": "Fig. 4-4",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Arquitectura mecánica general.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "No cuantifica reserva, potencia o pérdidas."
+      ]
+    },
+    {
+      "claimId": "claim.014h.barrel.parts",
+      "lessonId": "lesson.mechanical.barrel",
+      "sectionId": "reader.section.block.mechanical.barrel.014h-modelo-causal",
+      "claim": "Tambor, muelle, árbol y tapa cumplen funciones diferenciadas en el conjunto del barrilete.",
+      "claimHash": "fnv1a64:e6cd8fbc0a861f3f",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch04"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch04",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 2 / impresa 46",
+          "figure": "Fig. 4-4",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Barrilete convencional descrito por la fuente.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "No prescribe apertura o lubricación."
+      ]
+    },
+    {
+      "claimId": "claim.014h.gears.pitch-circles",
+      "lessonId": "lesson.mechanical.gear-pair",
+      "sectionId": "reader.section.block.mechanical.gear-pair.014h-modelo-causal",
+      "claim": "Dos ruedas dentadas compatibles transmiten movimiento mediante sus círculos primitivos conceptuales.",
+      "claimHash": "fnv1a64:02d593363b6e70e1",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 9 / impresa 53",
+          "figure": "Fig. 5-10",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Modelo geométrico ideal.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "No verifica depthing o perfil real."
+      ]
+    },
+    {
+      "claimId": "claim.014h.train.intermediate",
+      "lessonId": "lesson.mechanical.train",
+      "sectionId": "reader.section.block.mechanical.train.014h-modelo-causal",
+      "claim": "Un tren intermedio enlaza ejes sucesivos mediante pares de engrane.",
+      "claimHash": "fnv1a64:2b3522df6dc208ba",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 12 / impresa 56",
+          "figure": "Figs. 5-14 y 5-15",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Trenes de ruedas convencionales.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "No representa la planta de un calibre."
+      ]
+    },
+    {
+      "claimId": "claim.014h.train.motion-branch",
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+      "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-modelo-causal",
+      "claim": "La minutería constituye una rama de indicación distinta de la transmisión hacia el escape.",
+      "claimHash": "fnv1a64:1e19641bd4006230",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 18 / impresa 62",
+          "figure": "Fig. 5-26",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Arquitectura funcional general.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "La disposición concreta varía."
+      ]
+    },
+    {
+      "claimId": "claim.014h.escapement.components",
+      "lessonId": "lesson.mechanical.escapement",
+      "sectionId": "reader.section.block.mechanical.escapement.014h-modelo-causal",
+      "claim": "Rueda de escape, áncora con paletas y rodillo forman interfaces del escape de áncora suizo.",
+      "claimHash": "fnv1a64:184c875de32d41ae",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch06"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch06",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 06.pdf",
+          "page": "PDF 3 / impresa 101",
+          "figure": "Figs. 6-6 y 6-7",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Escape de áncora suizo.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "No se generaliza a otros escapes."
+      ]
+    },
+    {
+      "claimId": "claim.014h.escapement.sequence",
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-escape-fases",
+      "sectionId": "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-modelo-causal",
+      "claim": "El ciclo funcional distingue bloqueo, desbloqueo, impulso y seguridad.",
+      "claimHash": "fnv1a64:093fd7f12cf3ad85",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch06"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch06",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 06.pdf",
+          "page": "PDF 8 / impresa 106",
+          "figure": "Tabla 6.3.1",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Escape de áncora suizo.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "Los ángulos de la tabla no se importan."
+      ]
+    },
+    {
+      "claimId": "claim.014h.oscillator.parts",
+      "lessonId": "lesson.mechanical.oscillator",
+      "sectionId": "reader.section.block.mechanical.oscillator.014h-modelo-causal",
+      "claim": "Volante y espiral forman un oscilador en el que inercia y retorno elástico tienen funciones diferentes.",
+      "claimHash": "fnv1a64:766db56c31469234",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch07"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch07",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 07.pdf",
+          "page": "PDF 5 / impresa 133",
+          "figure": "Figs. 7-8 a 7-10",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Órgano regulador mecánico descrito.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "No predice marcha real."
+      ]
+    },
+    {
+      "claimId": "claim.014h.oscillator.feedback",
+      "lessonId": "lesson.mechanical.escape-oscillator",
+      "sectionId": "reader.section.block.mechanical.escape-oscillator.014h-modelo-causal",
+      "claim": "El escape entrega impulso al oscilador y el oscilador determina momentos de liberación del escape.",
+      "claimHash": "fnv1a64:cf661726b88c6a4a",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch06"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch06",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 06.pdf",
+          "page": "PDF 8 / impresa 106",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Modelo funcional del escape de áncora.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "No simula fuerzas."
+      ]
+    },
+    {
+      "claimId": "claim.014h.motion-works.indication",
+      "lessonId": "lesson.mechanical.motion-works",
+      "sectionId": "reader.section.block.mechanical.motion-works.014h-modelo-causal",
+      "claim": "La minutería transmite la puesta en hora hacia las indicaciones de minutos y horas.",
+      "claimHash": "fnv1a64:e0240c9f8581c53b",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 18 / impresa 62",
+          "figure": "Fig. 5-26",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Tren de puesta en hora representado por la fuente.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "No prescribe ajuste de agujas."
+      ]
+    },
+    {
+      "claimId": "claim.014h.keyless.selection",
+      "lessonId": "lesson.mechanical.keyless",
+      "sectionId": "reader.section.block.mechanical.keyless.014h-modelo-causal",
+      "claim": "La posición de la tija selecciona una ruta funcional de mando.",
+      "claimHash": "fnv1a64:652eb665f579aeea",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch05"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch05",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
+          "page": "PDF 18 / impresa 62",
+          "figure": "Fig. 5-26",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Principio general de puesta en hora.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "Las posiciones y piezas dependen del calibre."
+      ]
+    },
+    {
+      "claimId": "claim.014h.automatic.rotor",
+      "lessonId": "lesson.encyclopedia.complications.automatico-y-reserva",
+      "sectionId": "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-modelo-causal",
+      "claim": "Una masa oscilante transmite movimiento hacia el muelle mediante un tren de reducción.",
+      "claimHash": "fnv1a64:9098a15e92f29a15",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch08"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch08",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 08.pdf",
+          "page": "PDF 3 / impresa 171",
+          "figure": "Figs. 8-6 y 8-7",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Sistema automático general.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "No afirma sentido, eficiencia o reserva."
+      ]
+    },
+    {
+      "claimId": "claim.014h.calendar.date-train",
+      "lessonId": "lesson.encyclopedia.complications.calendarios",
+      "sectionId": "reader.section.block.encyclopedia.complications.calendarios.014h-modelo-causal",
+      "claim": "La rueda de horas puede activar un tren de fecha que produce un avance diario discreto.",
+      "claimHash": "fnv1a64:4a5b29336e623bdb",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch09"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch09",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 09.pdf",
+          "page": "PDF 3 / impresa 191",
+          "figure": "Fig. 9-5",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Calendario de fecha simple descrito.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "No define ventana segura de corrección."
+      ]
+    },
+    {
+      "claimId": "claim.014h.stage2.functional-chain",
+      "lessonId": "lesson.mechanical.automatic-calendar",
+      "sectionId": "reader.section.block.mechanical.automatic-calendar.014h-modelo-causal",
+      "claim": "Automático y calendario son ampliaciones de entrada y salida sobre la cadena mecánica básica.",
+      "claimHash": "fnv1a64:0326e11b858c64e3",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch08"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch08",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 08.pdf",
+          "page": "PDF 3 / impresa 171",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Clasificación curricular conceptual.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "La relación es editorial y no afirma una arquitectura única."
+      ]
+    },
+    {
+      "claimId": "claim.014h.calendar.discrete-state",
+      "lessonId": "lesson.advanced.calendars",
+      "sectionId": "reader.section.block.advanced.calendars.014h-modelo-causal",
+      "claim": "Un calendario más complejo necesita representar estados o ciclos adicionales respecto a una fecha simple.",
+      "claimHash": "fnv1a64:974d97cbaf096732",
+      "claimType": "mechanism",
+      "technicalStatus": "source-reviewed",
+      "sourceIds": [
+        "source.private.toh.ch09"
+      ],
+      "locators": [
+        {
+          "sourceId": "source.private.toh.ch09",
+          "documentLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 09.pdf",
+          "page": "PDF 3 / impresa 191",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-15"
+        }
+      ],
+      "verificationStatus": "visually-verified",
+      "applicability": "Comparación conceptual.",
+      "sourceAuthority": "conceptual-primary",
+      "limitations": [
+        "Los mecanismos concretos siguen source-limited."
+      ]
+    }
+  ],
+  "formulas": [
+    {
+      "formulaId": "formula.014e.gear-pair-ratio",
+      "lessonId": "lesson.mechanical.gear-pair",
+      "expression": "n₂/n₁ = Z₁/Z₂ para el par ideal declarado",
+      "decision": "reused-verified",
+      "sourceId": "source.horology.private-book.wheels-pinions",
+      "reason": "Revisión 0.14E conservada: No expresa pérdidas, perfil, depthing ni resistencia."
+    },
+    {
+      "formulaId": "formula.014e.train-product",
+      "lessonId": "lesson.mechanical.train",
+      "expression": "i_total = producto de las relaciones de etapa declaradas",
+      "decision": "reused-verified",
+      "sourceId": "source.horology.private-book.wheels-pinions",
+      "reason": "Revisión 0.14E conservada: Solo se aplica a las etapas y signos definidos en el ejercicio."
+    },
+    {
+      "formulaId": "formula.014e.oscillator-period",
+      "lessonId": "lesson.mechanical.oscillator",
+      "expression": "T = 1/f",
+      "decision": "reused-verified",
+      "sourceId": "source.horology.private-book.balance-spring",
+      "reason": "Revisión 0.14E conservada: Relación definitoria; no calcula marcha real."
+    },
+    {
+      "formulaId": "formula.014e.oscillator-alternations",
+      "lessonId": "lesson.mechanical.oscillator",
+      "expression": "alternancias por hora = 2 · f · 3600",
+      "decision": "reused-verified",
+      "sourceId": "source.horology.private-book.balance-spring",
+      "reason": "Revisión 0.14E conservada: f se expresa en ciclos por segundo; no sustituye la especificación del calibre."
+    },
+    {
+      "formulaId": "formula.014h.daniels-mainspring",
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+      "expression": "no publicada",
+      "decision": "not-used",
+      "sourceId": "source.private.daniels.mainsprings",
+      "reason": "La fuente OCR no se verificó visualmente para una fórmula concreta."
+    },
+    {
+      "formulaId": "formula.014h.daniels-gear-geometry",
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+      "expression": "no publicada",
+      "decision": "not-used",
+      "sourceId": "source.private.daniels.wheels-pinions",
+      "reason": "No se transfiere geometría de fabricación desde OCR."
+    },
+    {
+      "formulaId": "formula.014h.daniels-escapement",
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+      "expression": "no publicada",
+      "decision": "not-used",
+      "sourceId": "source.private.daniels.escapements",
+      "reason": "Ángulos y tablas de escape requieren verificación visual y aplicabilidad."
+    },
+    {
+      "formulaId": "formula.014h.daniels-balance",
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+      "expression": "no publicada",
+      "decision": "not-used",
+      "sourceId": "source.private.daniels.balance-spring",
+      "reason": "No se presenta una fórmula OCR como relación verificada."
+    }
+  ]
+}

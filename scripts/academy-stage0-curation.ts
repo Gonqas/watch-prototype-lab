@@ -4,7 +4,6 @@ import { join, resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { academyPathLocationForStepLesson } from '../src/learning/academy/path/academyLearnerPath'
 import {
-  ACADEMY_PERSONAL_REVIEW_QUEUE,
   ACADEMY_STAGE_0_ACTIVITY_PRESENTATIONS,
   ACADEMY_STAGE_0_CLAIM_REVIEWS,
   ACADEMY_STAGE_0_LESSON_CURATIONS,
@@ -13,8 +12,8 @@ import {
   ACADEMY_STAGE_0_PHOTO_BRIEFS,
   ACADEMY_STAGE_0_PREREQUISITE_OVERRIDES,
   ACADEMY_STAGE_0_VISUAL_DESIGNS,
-  CURRENT_ACADEMY_CURATION_PHASE,
 } from '../src/learning/academy/reader/academyPersonalCurriculum'
+import { ACADEMY_PERSONAL_REVIEW_QUEUE } from '../src/learning/academy/reader/personal/phase014f/reviewQueue'
 import { buildAcademyReaderDocument, validateAcademyReaderDocument } from '../src/learning/academy/reader/academyReaderDocument'
 import type { AcademyReaderBuildInput, AcademyReaderDocument } from '../src/learning/academy/reader/academyReaderModel'
 import type { LearningPack } from '../src/learning/content/learningPack'
@@ -87,7 +86,7 @@ interface PerformanceSnapshot {
 async function historicalReportSnapshot(repositoryRoot: string): Promise<HistoricalReportSnapshot> {
   const root = join(repositoryRoot, 'docs', 'generated')
   const fileNames = (await readdir(root))
-    .filter((name) => !name.startsWith('APRENDER-') && !name.includes('0.14F') && !name.includes('0.14G'))
+    .filter((name) => !name.startsWith('APRENDER-') && !name.includes('0.14F') && !name.includes('0.14G') && !name.includes('0.14H'))
     .sort()
   const rows = await Promise.all(fileNames.map(async (name) => `${name}:${sha256(await readFile(join(root, name)))}`))
   return { count: fileNames.length, digest: sha256(rows.join('\n')), fileNames }
@@ -187,7 +186,7 @@ function stage0Records(corpus: Awaited<ReturnType<typeof loadAcademyCorpus>>): {
     return {
       title: descriptor.title.es,
       document014e: buildAcademyReaderDocument(input, { curationPhase: '0.14E' }),
-      document014f: buildAcademyReaderDocument(input, { curationPhase: CURRENT_ACADEMY_CURATION_PHASE }),
+      document014f: buildAcademyReaderDocument(input, { curationPhase: '0.14F' }),
     }
   })
   return { records, titles: new Map(product.lessons.map(({ id, title }) => [id, title.es])) }

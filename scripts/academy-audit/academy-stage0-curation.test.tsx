@@ -14,7 +14,6 @@ import {
   ACADEMY_PERSONAL_3D_REVIEWS,
   ACADEMY_PERSONAL_CLAIM_REVIEWS,
   ACADEMY_PERSONAL_PILOT_REVIEWS,
-  ACADEMY_PERSONAL_REVIEW_QUEUE,
   ACADEMY_PILOT_FORMULA_REVIEWS,
   ACADEMY_STAGE_0_ACTIVITY_PRESENTATIONS,
   ACADEMY_STAGE_0_CLAIM_REVIEWS,
@@ -24,8 +23,8 @@ import {
   ACADEMY_STAGE_0_PHOTO_BRIEFS,
   ACADEMY_STAGE_0_PREREQUISITE_OVERRIDES,
   ACADEMY_STAGE_0_VISUAL_DESIGNS,
-  academyPersonalReviewQueueEntry,
 } from '../../src/learning/academy/reader/academyPersonalCurriculum'
+import { ACADEMY_PERSONAL_REVIEW_QUEUE, academyPersonalReviewQueueEntry } from '../../src/learning/academy/reader/personal/phase014f/reviewQueue'
 import { buildAcademyReaderDocument, resolveAcademyReaderSection } from '../../src/learning/academy/reader/academyReaderDocument'
 import {
   academyPersonalReviewStatus,
