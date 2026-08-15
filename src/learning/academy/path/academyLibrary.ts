@@ -91,8 +91,8 @@ export const ACADEMY_LIBRARY_DESTINATION_GROUPS = [
       { surface: 'content', label: 'Contenido local' },
       { surface: 'profile', label: 'Perfil local' },
       { surface: 'preferences', label: 'Preferencias' },
-      { surface: 'editorial-review', label: 'Revisión editorial' },
-      { surface: 'usability', label: 'Prueba de uso guiada' },
+      { surface: 'editorial-review', label: 'Revisión personal' },
+      { surface: 'usability', label: 'Recorrido personal' },
     ],
   },
 ] as const

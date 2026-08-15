@@ -2,6 +2,43 @@ import type { LearningPack } from '../../content/learningPack'
 import type { LearningActivityDescriptor } from '../../product/demoPackage'
 
 export type AcademyReaderMode = 'learn' | 'read'
+export type AcademyReaderCurationPhase = '0.14D' | '0.14E'
+
+export type AcademyPersonalTechnicalStatus = 'source-reviewed' | 'source-limited' | 'source-needed' | 'technical-conflict'
+export type AcademyPersonalReviewStatus = 'not-reviewed' | 'clear' | 'needs-rework'
+export type AcademyPersonalReviewFlag =
+  | 'se-entiende'
+  | 'no-se-entiende'
+  | 'demasiado-tecnico'
+  | 'falta-explicacion'
+  | 'falta-ejemplo'
+  | 'falta-visual'
+  | 'visual-no-ayuda'
+  | 'demasiado-repetitivo'
+  | 'practica-confusa'
+  | 'fuente-dudosa'
+  | 'revisar-mas-adelante'
+
+export type AcademyPilotResultStatus =
+  | 'ready-for-personal-use'
+  | 'ready-but-user-review-pending'
+  | 'needs-source'
+  | 'needs-visual'
+  | 'needs-editorial-rework'
+  | 'blocked'
+
+export type AcademyPilotReviewDecision =
+  | 'keep'
+  | 'edit'
+  | 'reorder'
+  | 'merge-sections'
+  | 'split-section'
+  | 'replace-example'
+  | 'correct-claim'
+  | 'qualify-claim'
+  | 'remove-repetition'
+  | 'improve-visual'
+  | 'block-by-source'
 
 export type AcademyReaderSectionRole =
   | 'orientation'
@@ -112,9 +149,10 @@ export interface AcademySectionVisualCuration {
   fidelity: 'conceptual' | 'calibre-specific' | 'not-applicable'
   limitations: string[]
   sourceBasis: string[]
-  curationMethod: 'codex-assisted-section-curation' | 'automated-structural-decision'
+  curationMethod: 'codex-assisted-section-curation' | 'codex-assisted-personal-curation' | 'automated-structural-decision'
   ownerReviewStatus: 'owner-review-pending' | 'owner-reviewed' | 'stale-after-content-change'
   technicalReviewStatus: 'not-required' | 'technical-expert-review-pending' | 'technical-expert-reviewed'
+  technicalStatus?: AcademyPersonalTechnicalStatus
   gapReason?: string
   notes: string[]
 }
@@ -247,7 +285,7 @@ export interface AcademyReaderCompletionContract {
 }
 
 export interface AcademyReaderDocument {
-  readerSchemaVersion: '0.14C' | '0.14D'
+  readerSchemaVersion: '0.14C' | '0.14D' | '0.14E'
   documentId: string
   documentVersion: string
   version: string
@@ -283,12 +321,13 @@ export interface AcademyReaderDocument {
   pilot: boolean
   centralQuestion?: string
   curation: {
-    method: 'automated-structural-migration' | 'codex-assisted-editorial-curation'
+    method: 'automated-structural-migration' | 'codex-assisted-editorial-curation' | 'codex-assisted-personal-curation'
     confidence: 'high' | 'medium'
     ownerReviewPending: boolean
     editorialStatus?: AcademyEditorialReviewStatus
     ownerReviewStatus?: 'owner-review-pending' | 'owner-reviewed' | 'stale-after-content-change'
     technicalReviewStatus?: 'not-required' | 'technical-expert-review-pending' | 'technical-expert-reviewed'
+    technicalStatus?: AcademyPersonalTechnicalStatus
   }
 }
 

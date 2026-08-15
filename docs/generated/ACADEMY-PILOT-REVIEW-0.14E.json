@@ -1,0 +1,880 @@
+{
+  "schema": "wplab-academy-personal-pilot-review-v1",
+  "phase": "0.14E",
+  "baseline": {
+    "initialCommit": "f2acf7f351bb8e7f4f9f1a7a6ee5f085792cb501",
+    "corpusDigest": "1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e",
+    "historicalReportCount": 67,
+    "historicalReportsDigest": "8c5ae7d7454c02a13dd49840c59e7f8a2c4cef9ee3041476dbf9ff618b5eddef",
+    "sections014d": 2568,
+    "detailedPilots014d": 16,
+    "curatedSections014d": 254,
+    "visualDesigns014d": 32,
+    "diagrams014d": 23,
+    "states3d014d": 9,
+    "visualGaps014d": 138,
+    "criticalGaps014d": 2,
+    "highGaps014d": 7,
+    "ocrFormulaGaps014d": 17,
+    "broadClaimGaps014d": 110,
+    "stage5Gaps014d": 8
+  },
+  "counts": {
+    "packages": 8,
+    "routes": 24,
+    "modules": 217,
+    "lessons": 222,
+    "activities": 289,
+    "concepts": 509,
+    "misconceptions": 149,
+    "sources": 182
+  },
+  "sectionPatchCount": 50,
+  "reviews": [
+    {
+      "lessonId": "lesson.horology.system",
+      "centralQuestion": "¿Qué funciones debe cumplir un reloj completo antes de que tenga sentido estudiar sus piezas?",
+      "whyNow": "Es el punto de entrada: primero se construye un mapa del objeto completo y después se estudian sus mecanismos.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-reviewed",
+      "decisions": [
+        "edit",
+        "remove-repetition",
+        "improve-visual"
+      ],
+      "summary": "Distingue reloj completo, movimiento, funciones y estructura sin exigir vocabulario previo.",
+      "practiceIntent": "Clasificar funciones y justificar relaciones; evidencia K+V, nunca destreza física.",
+      "patchedSectionIds": [
+        "reader.section.block.horology.system.proposito",
+        "reader.section.block.horology.system.actividad"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "centralQuestion": "¿Cómo viajan la energía y la referencia temporal desde el barrilete hasta las agujas?",
+      "whyNow": "Aplica el mapa funcional anterior a un reloj mecánico sin convertir un calibre concreto en regla universal.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-reviewed",
+      "decisions": [
+        "edit",
+        "qualify-claim",
+        "improve-visual"
+      ],
+      "summary": "Separa el flujo de energía de la información temporal y limita el 8215 a ejemplo documentado.",
+      "practiceIntent": "Ordenar la cadena, localizar una interrupción y explicar su consecuencia con K+V+R.",
+      "patchedSectionIds": [
+        "reader.section.block.horology.mechanical-chain.conocimientos-previos",
+        "reader.section.block.horology.mechanical-chain.actividad"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "centralQuestion": "¿Qué problemas resuelven tanto un reloj mecánico como uno de cuarzo, y con qué soluciones distintas?",
+      "whyNow": "Permite transferir el mapa funcional sin confundir analogía pedagógica con identidad física.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-reviewed",
+      "decisions": [
+        "edit",
+        "qualify-claim",
+        "improve-visual"
+      ],
+      "summary": "Conserva equivalencias funcionales y hace explícito dónde termina cada analogía.",
+      "practiceIntent": "Emparejar funciones y escribir el límite de cada pareja; evidencia K+V+R.",
+      "patchedSectionIds": [
+        "reader.section.block.horology.functional-equivalence.conocimientos-previos",
+        "reader.section.block.horology.functional-equivalence.actividad"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.failure-prediction",
+      "centralQuestion": "¿Cómo se pasa de un síntoma a una prueba útil sin confundir hipótesis con diagnóstico?",
+      "whyNow": "Usa las cadenas ya conocidas para razonar sobre fallos antes de introducir procedimientos de banco.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-reviewed",
+      "decisions": [
+        "edit",
+        "qualify-claim",
+        "improve-visual"
+      ],
+      "summary": "Organiza síntoma, hipótesis rival, prueba discriminante, resultado y decisión revisable.",
+      "practiceIntent": "Formular dos hipótesis y elegir una prueba que las distinga; evidencia K+V+R.",
+      "patchedSectionIds": [
+        "reader.section.block.horology.failure-prediction.proposito",
+        "reader.section.block.horology.failure-prediction.actividad"
+      ]
+    },
+    {
+      "lessonId": "lesson.mechanical.energy",
+      "centralQuestion": "¿Cómo puede un reloj almacenar energía y entregarla poco a poco sin crearla?",
+      "whyNow": "Abre los fundamentos mecánicos separando energía, par, movimiento, ritmo y pérdidas.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-limited",
+      "decisions": [
+        "edit",
+        "reorder",
+        "remove-repetition",
+        "qualify-claim"
+      ],
+      "summary": "La introducción breve pasa a orientar la explicación extensa en vez de duplicarla.",
+      "practiceIntent": "Reconstruir la cadena, interrumpir una interfaz y documentar qué cambia; K+V+R.",
+      "patchedSectionIds": [
+        "reader.section.block.mechanical.energy.proposito",
+        "reader.section.block.mechanical.energy.palabras-y-piezas-clave",
+        "reader.section.block.mechanical.energy.resumen-y-conexion"
+      ]
+    },
+    {
+      "lessonId": "lesson.mechanical.barrel",
+      "centralQuestion": "¿Cómo cambia el papel del árbol y del tambor entre la cuerda y la marcha?",
+      "whyNow": "Concreta dónde se almacena la energía antes de seguirla por el tren.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-limited",
+      "decisions": [
+        "edit",
+        "remove-repetition",
+        "qualify-claim"
+      ],
+      "summary": "Diferencia muelle, árbol, tambor, tapa y ganchos sin convertir el esquema en procedimiento.",
+      "practiceIntent": "Identificar piezas y comparar cuerda con descarga en el modelo conceptual; K+V.",
+      "patchedSectionIds": [
+        "reader.section.block.mechanical.barrel.proposito",
+        "reader.section.block.mechanical.barrel.palabras-y-piezas-clave",
+        "reader.section.block.mechanical.barrel.resumen-y-conexion"
+      ]
+    },
+    {
+      "lessonId": "lesson.mechanical.gear-pair",
+      "centralQuestion": "¿Qué determina el sentido y la relación de velocidad entre una rueda conductora y un piñón conducido?",
+      "whyNow": "Introduce la relación elemental que luego se encadena en un tren completo.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-limited",
+      "decisions": [
+        "edit",
+        "remove-repetition",
+        "qualify-claim"
+      ],
+      "summary": "Separa relación ideal, sentido, contacto posible y límites geométricos del modelo.",
+      "practiceIntent": "Predecir sentido, calcular una relación declarada y detectar un engrane imposible; K+V+R.",
+      "patchedSectionIds": [
+        "reader.section.block.mechanical.gear-pair.proposito",
+        "reader.section.block.mechanical.gear-pair.palabras-y-piezas-clave",
+        "reader.section.block.mechanical.gear-pair.resumen-y-conexion"
+      ]
+    },
+    {
+      "lessonId": "lesson.mechanical.train",
+      "centralQuestion": "¿Cómo se combinan varios pares de engranajes para llevar movimiento hasta el escape y la indicación?",
+      "whyNow": "Amplía la pareja de engranajes a una cadena con varias interfaces y posibles interrupciones.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-limited",
+      "decisions": [
+        "edit",
+        "remove-repetition",
+        "improve-visual",
+        "qualify-claim"
+      ],
+      "summary": "El tren conceptual queda separado de cualquier conteo o geometría del MIYOTA 8215.",
+      "practiceIntent": "Construir, calcular y bloquear etapas declaradas; evidencia K+V+R.",
+      "patchedSectionIds": [
+        "reader.section.block.mechanical.train.proposito",
+        "reader.section.block.mechanical.train.palabras-y-piezas-clave",
+        "reader.section.block.mechanical.train.resumen-y-conexion"
+      ]
+    },
+    {
+      "lessonId": "lesson.mechanical.escapement",
+      "centralQuestion": "¿Cómo alterna el escape bloqueo, desbloqueo, impulso y caída para dosificar la energía?",
+      "whyNow": "Explica cómo el tren continuo coopera con un oscilador alternativo.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-limited",
+      "decisions": [
+        "edit",
+        "remove-repetition",
+        "qualify-claim",
+        "improve-visual"
+      ],
+      "summary": "Las fases son conceptuales y no autorizan ajuste, lubricación ni geometría de un calibre.",
+      "practiceIntent": "Ordenar fases y distinguir caras de bloqueo e impulso; K+V.",
+      "patchedSectionIds": [
+        "reader.section.block.mechanical.escapement.proposito",
+        "reader.section.block.mechanical.escapement.palabras-y-piezas-clave",
+        "reader.section.block.mechanical.escapement.resumen-y-conexion"
+      ]
+    },
+    {
+      "lessonId": "lesson.mechanical.oscillator",
+      "centralQuestion": "¿Cómo forman el volante y la espiral una referencia periódica sin confundirse con el escape?",
+      "whyNow": "Completa la regulación después de entender la entrega dosificada de energía.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-limited",
+      "decisions": [
+        "edit",
+        "remove-repetition",
+        "qualify-claim",
+        "improve-visual"
+      ],
+      "summary": "Distingue periodo, frecuencia, alternancia y amplitud antes de introducir regulación física.",
+      "practiceIntent": "Relacionar magnitudes y explicar tendencias del modelo, no ajustar una espiral real; K+V+R.",
+      "patchedSectionIds": [
+        "reader.section.block.mechanical.oscillator.proposito",
+        "reader.section.block.mechanical.oscillator.palabras-y-piezas-clave",
+        "reader.section.block.mechanical.oscillator.resumen-y-conexion"
+      ]
+    },
+    {
+      "lessonId": "lesson.metrology.observe-before-measuring",
+      "centralQuestion": "¿Qué sabemos de una pieza antes de medirla y qué estamos suponiendo?",
+      "whyNow": "Prepara el diagnóstico: una medición útil empieza con una observación y una pregunta explícitas.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-reviewed",
+      "decisions": [
+        "edit",
+        "remove-repetition",
+        "improve-visual"
+      ],
+      "summary": "Separa descripción, identificación, hipótesis, magnitud, instrumento e incertidumbre.",
+      "practiceIntent": "Registrar observaciones neutrales y justificar una medición; K+V+R.",
+      "patchedSectionIds": [
+        "reader.section.block.metrology.observe-before-measuring.palabras-y-piezas-clave",
+        "reader.section.block.metrology.observe-before-measuring.practica-deliberada"
+      ]
+    },
+    {
+      "lessonId": "lesson.miyota8215.architecture",
+      "centralQuestion": "¿Cómo se relacionan los subsistemas documentados del 8215 dentro de un mismo movimiento?",
+      "whyNow": "Transfiere principios generales a un calibre real con documentación oficial, sin convertirlo en arquitectura universal.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-reviewed",
+      "decisions": [
+        "edit",
+        "qualify-claim",
+        "improve-visual",
+        "replace-example"
+      ],
+      "summary": "El 8215 queda como calibre de referencia, caso trabajado y laboratorio de aplicación.",
+      "practiceIntent": "Localizar subsistemas y comparar su función con el modelo general; K+V+R.",
+      "patchedSectionIds": [
+        "reader.section.block.miyota8215.architecture.proposito",
+        "reader.section.block.miyota8215.architecture.explicacion",
+        "reader.section.block.miyota8215.architecture.visual-e-interaccion",
+        "reader.section.block.miyota8215.architecture.ejemplo-resuelto",
+        "reader.section.block.miyota8215.architecture.actividad-errores-y-ayuda"
+      ]
+    },
+    {
+      "lessonId": "lesson.miyota8215.guided-disassembly",
+      "centralQuestion": "¿Qué dependencias estructurales pueden leerse con seguridad antes de intentar un desmontaje físico?",
+      "whyNow": "Aplica identificación y documentación a un caso real, pero separa el despiece de una secuencia oficial de servicio.",
+      "result": "needs-source",
+      "technicalStatus": "source-needed",
+      "decisions": [
+        "edit",
+        "correct-claim",
+        "qualify-claim",
+        "block-by-source",
+        "improve-visual"
+      ],
+      "summary": "La actividad digital pasa a leer fijaciones y dependencias; no prescribe una secuencia completa.",
+      "practiceIntent": "Reconstruir dependencias documentadas virtualmente; V no produce P.",
+      "patchedSectionIds": [
+        "reader.section.block.miyota8215.guided-disassembly.proposito",
+        "reader.section.block.miyota8215.guided-disassembly.explicacion",
+        "reader.section.block.miyota8215.guided-disassembly.visual-e-interaccion",
+        "reader.section.block.miyota8215.guided-disassembly.actividad-errores-y-ayuda",
+        "reader.section.block.miyota8215.guided-disassembly.ejemplo-resuelto",
+        "reader.section.block.miyota8215.guided-disassembly.limitaciones"
+      ]
+    },
+    {
+      "lessonId": "lesson.miyota8215.inspection",
+      "centralQuestion": "¿Qué puede observarse en el modelo y qué exigiría una pieza real, aumento o medición?",
+      "whyNow": "Después de localizar piezas, enseña a separar evidencia visible, defecto posible e incertidumbre.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-limited",
+      "decisions": [
+        "edit",
+        "qualify-claim",
+        "improve-visual"
+      ],
+      "summary": "Los defectos digitales quedan identificados como símbolos; no prueban desgaste ni tolerancia.",
+      "practiceIntent": "Clasificar observación, símbolo e inferencia y proponer la siguiente comprobación; K+V+R.",
+      "patchedSectionIds": [
+        "reader.section.block.miyota8215.inspection.proposito",
+        "reader.section.block.miyota8215.inspection.visual-e-interaccion",
+        "reader.section.block.miyota8215.inspection.actividad-errores-y-ayuda",
+        "reader.section.block.miyota8215.inspection.ejemplo-resuelto"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.arquitectura-de-caja",
+      "centralQuestion": "¿Qué interfaces deben ser compatibles para convertir un movimiento y una caja en un reloj utilizable?",
+      "whyNow": "Introduce la integración de un reloj completo sin reducir compatibilidad a un único diámetro.",
+      "result": "ready-but-user-review-pending",
+      "technicalStatus": "source-limited",
+      "decisions": [
+        "edit",
+        "qualify-claim",
+        "improve-visual"
+      ],
+      "summary": "Distingue cadena axial, línea de tija, retención, cierre y datos todavía desconocidos.",
+      "practiceIntent": "Construir un dossier de compatibilidad con datos oficiales, medidas pendientes y pruebas; K+R.",
+      "patchedSectionIds": [
+        "reader.section.block.encyclopedia.cases-water.arquitectura-de-caja.resultado-buscado-y-condicion-segura",
+        "reader.section.block.encyclopedia.cases-water.arquitectura-de-caja.secuencia-controles-y-puntos-de-parada",
+        "reader.section.block.encyclopedia.cases-water.arquitectura-de-caja.practica-deliberada-y-transferencia"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+      "centralQuestion": "¿Qué relaciones geométricas permiten que las agujas permanezcan sujetas, legibles y libres durante todo el giro?",
+      "whyNow": "Completa la cadena axial con una interfaz que requiere documentación dimensional y comprobación física.",
+      "result": "needs-source",
+      "technicalStatus": "source-needed",
+      "decisions": [
+        "edit",
+        "qualify-claim",
+        "block-by-source"
+      ],
+      "summary": "Se conserva la explicación geométrica, pero no se inventan diámetros, alturas, interferencias ni métodos de ajuste.",
+      "practiceIntent": "Preparar una lista de datos y comprobaciones; cualquier manipulación física es opcional, autodocumentada y no certificada.",
+      "patchedSectionIds": [
+        "reader.section.block.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.caracteristica-que-se-quiere-fabricar",
+        "reader.section.block.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.proceso-de-fabricacion-y-verificaciones",
+        "reader.section.block.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.dimensiones-tolerancias-y-estado-superficial",
+        "reader.section.block.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.practica-deliberada-y-transferencia"
+      ]
+    }
+  ],
+  "claimReviews": [
+    {
+      "claimId": "claim.horology.watch-functional-system",
+      "lessonId": "lesson.horology.system",
+      "sectionId": "reader.section.block.horology.system.explicacion-principal",
+      "claimType": "principle",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.horology.original-functional-map",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "inferred",
+      "scope": "Mapa funcional educativo de un reloj completo.",
+      "limitations": [
+        "No es una taxonomía de fabricante ni una geometría universal."
+      ],
+      "decision": "keep"
+    },
+    {
+      "claimId": "claim.miyota.8215.documented-parts",
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sectionId": "reader.section.block.horology.mechanical-chain.explicacion-principal",
+      "claimType": "identity",
+      "generalOrCalibreSpecific": "calibre-specific",
+      "primarySourceId": "source.miyota.8215.parts-list-exploded-view",
+      "supportingSourceIds": [
+        "source.horology.private-book.functional-systems"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": true,
+      "verificationStatus": "verified-primary",
+      "scope": "Identidad y agrupación de componentes visibles en el despiece 8215.",
+      "limitations": [
+        "El despiece no demuestra la cadena cinemática completa ni orden de servicio."
+      ],
+      "decision": "narrow"
+    },
+    {
+      "claimId": "claim.horology.functional-equivalence-limited",
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sectionId": "reader.section.block.horology.functional-equivalence.explicacion-principal",
+      "claimType": "principle",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.horology.original-functional-map",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "inferred",
+      "scope": "Comparación de funciones entre cuarzo y mecánico.",
+      "limitations": [
+        "Una función análoga no implica identidad física ni compatibilidad."
+      ],
+      "decision": "keep"
+    },
+    {
+      "claimId": "claim.horology.symbolic-interruption",
+      "lessonId": "lesson.horology.failure-prediction",
+      "sectionId": "reader.section.block.horology.failure-prediction.explicacion-principal",
+      "claimType": "diagnosis",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.horology.original-functional-map",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "inferred",
+      "scope": "Razonamiento causal dentro de una simulación.",
+      "limitations": [
+        "La interrupción simbólica no diagnostica una unidad física."
+      ],
+      "decision": "clarify"
+    },
+    {
+      "claimId": "claim.mechanical.theory.energy",
+      "lessonId": "lesson.mechanical.energy",
+      "sectionId": "reader.section.block.mechanical.theory.energy.teoria-almacenar-entregar-y-dosificar",
+      "claimType": "principle",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.horology.private-book.mainsprings",
+      "supportingSourceIds": [
+        "source.horology.original-mechanical-foundations"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "unknown",
+      "scope": "Energía, par y entrega en una arquitectura mecánica general.",
+      "limitations": [
+        "Falta localizador de página para elevar detalles cuantitativos; el modelo permanece cualitativo."
+      ],
+      "decision": "clarify"
+    },
+    {
+      "claimId": "claim.mechanical.barrel",
+      "lessonId": "lesson.mechanical.barrel",
+      "sectionId": "reader.section.block.mechanical.barrel.modelo-causal-ampliado",
+      "claimType": "principle",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.horology.private-book.mainsprings",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "unknown",
+      "scope": "Funciones generales de árbol, muelle y tambor.",
+      "limitations": [
+        "No prescribe apertura, lubricación, ganchos ni brida de un calibre concreto."
+      ],
+      "decision": "clarify"
+    },
+    {
+      "claimId": "claim.mechanical.gear-pair",
+      "lessonId": "lesson.mechanical.gear-pair",
+      "sectionId": "reader.section.block.mechanical.gear-pair.explicacion",
+      "claimType": "calculation",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.horology.private-book.wheels-pinions",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "unknown",
+      "scope": "Relación ideal y sentido de un engrane externo declarado.",
+      "limitations": [
+        "No valida módulo, perfil, depthing, eficiencia ni geometría fabricable."
+      ],
+      "decision": "clarify"
+    },
+    {
+      "claimId": "claim.mechanical.theory.train",
+      "lessonId": "lesson.mechanical.train",
+      "sectionId": "reader.section.block.mechanical.theory.train.relacion-de-una-etapa",
+      "claimType": "calculation",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.horology.private-book.wheels-pinions",
+      "supportingSourceIds": [
+        "source.horology.private-book.movement-design"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "unknown",
+      "scope": "Producto de relaciones ideales en un tren declarado.",
+      "limitations": [
+        "No atribuye conteos ni dimensiones al 8215."
+      ],
+      "decision": "clarify"
+    },
+    {
+      "claimId": "claim.mechanical.theory.escapement",
+      "lessonId": "lesson.mechanical.escapement",
+      "sectionId": "reader.section.block.mechanical.theory.escapement.secuencia-causal-completa",
+      "claimType": "principle",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.horology.private-book.escapements",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "unknown",
+      "scope": "Fases funcionales del escape de áncora suizo.",
+      "limitations": [
+        "No valida ángulos, draw, penetración, lubricación o ajuste de calibre."
+      ],
+      "decision": "clarify"
+    },
+    {
+      "claimId": "claim.mechanical.theory.oscillator",
+      "lessonId": "lesson.mechanical.oscillator",
+      "sectionId": "reader.section.block.mechanical.theory.oscillator.frecuencia-alternancias-y-periodo",
+      "claimType": "calculation",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.horology.private-book.balance-spring",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "unknown",
+      "scope": "Definiciones de periodo, frecuencia, alternancia y amplitud.",
+      "limitations": [
+        "El modelo no calcula marcha real ni regula una espiral física."
+      ],
+      "decision": "clarify"
+    },
+    {
+      "claimId": "claim.metrology.observe-before-measuring.014e",
+      "lessonId": "lesson.metrology.observe-before-measuring",
+      "sectionId": "reader.section.block.metrology.observe-before-measuring.explicacion-paso-a-paso",
+      "claimType": "diagnosis",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.metrology.bipm.vim",
+      "supportingSourceIds": [
+        "source.metrology.bipm.gum"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": true,
+      "verificationStatus": "verified-primary",
+      "scope": "Separación entre observación, pregunta, magnitud, medida e incertidumbre.",
+      "limitations": [
+        "La elección del instrumento sigue dependiendo de la característica y la decisión."
+      ],
+      "decision": "keep"
+    },
+    {
+      "claimId": "claim.miyota8215.architecture",
+      "lessonId": "lesson.miyota8215.architecture",
+      "sectionId": "reader.section.block.miyota8215.architecture.explicacion",
+      "claimType": "identity",
+      "generalOrCalibreSpecific": "calibre-specific",
+      "primarySourceId": "source.miyota.8215.parts-list-exploded-view",
+      "supportingSourceIds": [
+        "source.miyota.8215.product-page"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": true,
+      "verificationStatus": "verified-primary",
+      "scope": "Nombres, presencia, agrupación y posición relativa aproximada de piezas 8215.",
+      "limitations": [
+        "El fixture no expresa dimensiones, holguras, desgaste, lubricación ni servicio."
+      ],
+      "decision": "narrow"
+    },
+    {
+      "claimId": "claim.miyota8215.guided-disassembly",
+      "lessonId": "lesson.miyota8215.guided-disassembly",
+      "sectionId": "reader.section.block.miyota8215.guided-disassembly.explicacion",
+      "claimType": "procedure",
+      "generalOrCalibreSpecific": "calibre-specific",
+      "primarySourceId": "source.miyota.8215.parts-list-exploded-view",
+      "supportingSourceIds": [
+        "source.miyota.8215.instruction-manual"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": true,
+      "verificationStatus": "verified-primary",
+      "scope": "Dependencias estructurales visibles entre fijaciones y subconjuntos.",
+      "limitations": [
+        "No existe fuente suficiente para presentar una secuencia completa de desmontaje."
+      ],
+      "decision": "correct"
+    },
+    {
+      "claimId": "claim.miyota8215.inspection",
+      "lessonId": "lesson.miyota8215.inspection",
+      "sectionId": "reader.section.block.miyota8215.inspection.explicacion",
+      "claimType": "diagnosis",
+      "generalOrCalibreSpecific": "calibre-specific",
+      "primarySourceId": "source.miyota.8215.parts-list-exploded-view",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": true,
+      "verificationStatus": "verified-primary",
+      "scope": "Identidad y localización de piezas que pueden convertirse en objeto de inspección.",
+      "limitations": [
+        "La documentación y el modelo no demuestran desgaste, suciedad real ni tolerancia."
+      ],
+      "decision": "narrow"
+    },
+    {
+      "claimId": "claim.encyclopedia.cases-water.arquitectura-de-caja",
+      "lessonId": "lesson.encyclopedia.cases-water.arquitectura-de-caja",
+      "sectionId": "reader.section.block.encyclopedia.cases-water.arquitectura-de-caja.resultado-buscado-y-condicion-segura",
+      "claimType": "compatibility",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.private.daniels.casemaking",
+      "supportingSourceIds": [
+        "source.official.miyota.2035",
+        "source.official.miyota.8215"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "unknown",
+      "scope": "Interfaces generales de caja y encaje; aplicación concreta mediante documentación de movimiento y medidas propias.",
+      "limitations": [
+        "El capítulo no es documentación de un calibre; las especificaciones MIYOTA solo se aplican a su variante."
+      ],
+      "decision": "clarify"
+    },
+    {
+      "claimId": "claim.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+      "sectionId": "reader.section.block.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.caracteristica-que-se-quiere-fabricar",
+      "claimType": "compatibility",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.private.daniels.small-components",
+      "supportingSourceIds": [
+        "source.official.miyota.2035",
+        "source.official.miyota.8215"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "unknown",
+      "scope": "Relaciones geométricas generales de tubos, agujas y cadena axial.",
+      "limitations": [
+        "Diámetros, alturas, interferencias y método de ajuste requieren documento de variante o medición verificada."
+      ],
+      "decision": "source-needed"
+    },
+    {
+      "claimId": "claim.encyclopedia.service-tribology.limpieza-e-inspeccion",
+      "lessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.limpieza-e-inspeccion.de-la-observacion-a-la-prueba-discriminante",
+      "claimType": "diagnosis",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.institutional.awci.standards",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "verified-secondary",
+      "scope": "Separar observación, hipótesis y prueba reversible.",
+      "limitations": [
+        "El visual no prescribe sustancias ni convierte una huella en diagnóstico."
+      ],
+      "decision": "clarify"
+    },
+    {
+      "claimId": "claim.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.montaje-y-puntos-de-control.secuencia-controles-y-puntos-de-parada",
+      "claimType": "procedure",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.institutional.awci.standards",
+      "supportingSourceIds": [
+        "source.official.miyota.8215"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "verified-secondary",
+      "scope": "Patrón funcional de montaje con control y parada.",
+      "limitations": [
+        "No es una secuencia de montaje del 8215 ni define tolerancias."
+      ],
+      "decision": "narrow"
+    },
+    {
+      "claimId": "claim.encyclopedia.history-language.leer-documentacion",
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.cambio-continuidad-y-consecuencia",
+      "claimType": "identity",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.official.miyota.8215",
+      "supportingSourceIds": [
+        "source.official.miyota.2035"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": true,
+      "verificationStatus": "verified-primary",
+      "scope": "Método para distinguir documento, revisión, variante y alcance.",
+      "limitations": [
+        "No presupone equivalencia entre revisiones ni familias."
+      ],
+      "decision": "keep"
+    },
+    {
+      "claimId": "claim.encyclopedia.service-tribology.diagnostico-y-control-final",
+      "lessonId": "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.diagnostico-y-control-final.de-la-observacion-a-la-prueba-discriminante",
+      "claimType": "diagnosis",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.institutional.awci.standards",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "verified-secondary",
+      "scope": "Control final derivado de la hipótesis y del resultado esperado.",
+      "limitations": [
+        "Los criterios numéricos siguen ligados al calibre y a la fuente aplicable."
+      ],
+      "decision": "clarify"
+    },
+    {
+      "claimId": "claim.encyclopedia.service-tribology.recepcion-y-linea-base",
+      "lessonId": "lesson.encyclopedia.service-tribology.recepcion-y-linea-base",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.recepcion-y-linea-base.secuencia-controles-y-puntos-de-parada",
+      "claimType": "procedure",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.institutional.awci.standards",
+      "supportingSourceIds": [],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "verified-secondary",
+      "scope": "Registro del estado inicial antes de pruebas que puedan alterarlo.",
+      "limitations": [
+        "No prescribe un protocolo comercial ni una prueba universal."
+      ],
+      "decision": "keep"
+    },
+    {
+      "claimId": "claim.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.tm-diagnostico-sintomas.de-la-observacion-a-la-prueba-discriminante",
+      "claimType": "diagnosis",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.official.tm9-1575.diagnosis",
+      "supportingSourceIds": [
+        "source.private.chicago.35"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "requires-modern-corroboration",
+      "scope": "Patrón histórico de síntoma, hipótesis y comprobación.",
+      "limitations": [
+        "Sustancias, intervalos, tolerancias y procedimientos históricos no se trasladan."
+      ],
+      "decision": "narrow"
+    },
+    {
+      "claimId": "claim.encyclopedia.service-tribology.tribologia-y-lubricantes",
+      "lessonId": "lesson.encyclopedia.service-tribology.tribologia-y-lubricantes",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.tribologia-y-lubricantes.secuencia-controles-y-puntos-de-parada",
+      "claimType": "procedure",
+      "generalOrCalibreSpecific": "calibre-specific",
+      "primarySourceId": "source.institutional.awci.standards",
+      "supportingSourceIds": [
+        "source.official.miyota.8215"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "requires-modern-corroboration",
+      "scope": "Relación general entre contacto, función y decisión de lubricación.",
+      "limitations": [
+        "Producto, punto y cantidad necesitan documentación moderna del calibre; el 8215 público no los aporta."
+      ],
+      "decision": "source-needed"
+    },
+    {
+      "claimId": "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.secuencia-controles-y-puntos-de-parada",
+      "claimType": "safety",
+      "generalOrCalibreSpecific": "general",
+      "primarySourceId": "source.institutional.awci.standards",
+      "supportingSourceIds": [
+        "source.private.daniels.workshop-equipment"
+      ],
+      "page": null,
+      "figure": null,
+      "table": null,
+      "officialDocument": false,
+      "verificationStatus": "requires-modern-corroboration",
+      "scope": "Fuentes y rutas de transferencia de contaminación en el banco.",
+      "limitations": [
+        "No prescribe química; cualquier procedimiento histórico requiere seguridad moderna."
+      ],
+      "decision": "clarify"
+    }
+  ],
+  "formulaReviews": [
+    {
+      "formulaId": "formula.014e.gear-pair-ratio",
+      "lessonId": "lesson.mechanical.gear-pair",
+      "expression": "n₂/n₁ = Z₁/Z₂ para el par ideal declarado",
+      "ocrDerived": false,
+      "sourceId": "source.horology.private-book.wheels-pinions",
+      "status": "verified-with-secondary-source",
+      "limitations": [
+        "No expresa pérdidas, perfil, depthing ni resistencia."
+      ]
+    },
+    {
+      "formulaId": "formula.014e.train-product",
+      "lessonId": "lesson.mechanical.train",
+      "expression": "i_total = producto de las relaciones de etapa declaradas",
+      "ocrDerived": false,
+      "sourceId": "source.horology.private-book.wheels-pinions",
+      "status": "verified-with-secondary-source",
+      "limitations": [
+        "Solo se aplica a las etapas y signos definidos en el ejercicio."
+      ]
+    },
+    {
+      "formulaId": "formula.014e.oscillator-period",
+      "lessonId": "lesson.mechanical.oscillator",
+      "expression": "T = 1/f",
+      "ocrDerived": false,
+      "sourceId": "source.horology.private-book.balance-spring",
+      "status": "verified-with-secondary-source",
+      "limitations": [
+        "Relación definitoria; no calcula marcha real."
+      ]
+    },
+    {
+      "formulaId": "formula.014e.oscillator-alternations",
+      "lessonId": "lesson.mechanical.oscillator",
+      "expression": "alternancias por hora = 2 · f · 3600",
+      "ocrDerived": false,
+      "sourceId": "source.horology.private-book.balance-spring",
+      "status": "verified-with-secondary-source",
+      "limitations": [
+        "f se expresa en ciclos por segundo; no sustituye la especificación del calibre."
+      ]
+    }
+  ]
+}

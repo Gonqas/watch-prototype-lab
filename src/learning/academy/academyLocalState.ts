@@ -1,4 +1,6 @@
 import type {
+  AcademyPersonalReviewFlag,
+  AcademyPersonalReviewStatus,
   AcademyReaderEvent,
   AcademyUsabilitySession,
 } from './reader/academyReaderModel'
@@ -36,6 +38,7 @@ export interface AcademyNoteContext {
 }
 
 export type AcademyEditorialReviewFlag =
+  | AcademyPersonalReviewFlag
   | 'clear'
   | 'confusing'
   | 'too-long'
@@ -67,7 +70,9 @@ export interface AcademyEditorialReview {
   reviewedFields: string[]
   sectionReviews: AcademyEditorialSectionReview[]
   ownerReviewedAt?: string
-  version: '0.14D'
+  personalStatus?: AcademyPersonalReviewStatus
+  personalReviewedAt?: string
+  version: '0.14D' | '0.14E'
   updatedAt: string
 }
 
@@ -364,6 +369,9 @@ function normalizeLessonProgress(value: unknown): AcademyLessonProgress | undefi
 }
 
 const editorialReviewFlags: AcademyEditorialReviewFlag[] = [
+  'se-entiende', 'no-se-entiende', 'demasiado-tecnico', 'falta-explicacion', 'falta-ejemplo',
+  'falta-visual', 'visual-no-ayuda', 'demasiado-repetitivo', 'practica-confusa', 'fuente-dudosa',
+  'revisar-mas-adelante',
   'clear', 'confusing', 'too-long', 'repetitive', 'visual-useful', 'visual-unnecessary', 'visual-incorrect',
   'visual-insufficient', 'terminology-doubtful', 'source-doubtful', 'sequence-correct', 'should-move',
   'watchmaker-review-required',
@@ -432,7 +440,11 @@ function normalizeEditorialReview(value: unknown): AcademyEditorialReview | unde
     reviewedFields: stringArray(value.reviewedFields, 40),
     sectionReviews,
     ownerReviewedAt: typeof value.ownerReviewedAt === 'string' ? value.ownerReviewedAt : undefined,
-    version: '0.14D',
+    personalStatus: ['not-reviewed', 'clear', 'needs-rework'].includes(String(value.personalStatus))
+      ? value.personalStatus as AcademyPersonalReviewStatus
+      : value.status === 'owner-reviewed' ? 'clear' : 'not-reviewed',
+    personalReviewedAt: typeof value.personalReviewedAt === 'string' ? value.personalReviewedAt : undefined,
+    version: value.version === '0.14E' ? '0.14E' : '0.14D',
     updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : new Date(0).toISOString(),
   }
 }

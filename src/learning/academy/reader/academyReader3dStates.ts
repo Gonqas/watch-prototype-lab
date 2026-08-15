@@ -1,4 +1,4 @@
-import type { Academy3dVisualState } from './academyReaderModel'
+import type { Academy3dVisualState, AcademyReaderCurationPhase } from './academyReaderModel'
 
 const conceptualLimit = 'Geometría y posición didácticas; no representan medidas fabricables ni un calibre concreto.'
 const miyotaLimit = 'Fixture R2 estructural del MIYOTA 8215; la geometría interna está normalizada y no expresa tolerancias de servicio.'
@@ -124,4 +124,36 @@ export const ACADEMY_3D_VISUAL_STATES: readonly Academy3dVisualState[] = [
 
 export function academy3dVisualState(visualStateId: string | undefined): Academy3dVisualState | undefined {
   return visualStateId ? ACADEMY_3D_VISUAL_STATES.find((state) => state.visualStateId === visualStateId) : undefined
+}
+
+export function academy3dVisualStateForPhase(
+  visualStateId: string | undefined,
+  phase: AcademyReaderCurationPhase,
+): Academy3dVisualState | undefined {
+  const base = academy3dVisualState(visualStateId)
+  if (!base || phase === '0.14D') return base
+  if (base.visualStateId === 'reader.3d.miyota8215.automatic-isolated') {
+    return {
+      ...base,
+      expectedObservation: 'La documentación oficial permite agrupar masa oscilante, rueda de carga con trinquete y rueda reductora dentro del automático; el despiece no demuestra por sí solo toda la ruta cinemática.',
+      limitations: [...base.limitations, 'La vista identifica piezas y proximidad estructural, no sentido, relación, rendimiento ni secuencia de servicio.'],
+    }
+  }
+  if (base.visualStateId === 'reader.3d.miyota8215.rotor-checkpoint') {
+    return {
+      ...base,
+      explosion: {},
+      expectedObservation: 'La fijación y la masa oscilante forman una dependencia estructural documentada; la vista no indica que deba ser el primer paso ni cómo retirarla.',
+      limitations: [...base.limitations, 'No se representan herramienta, sentido de giro, par, sujeción ni dirección de retirada.'],
+    }
+  }
+  if (base.visualStateId === 'reader.3d.miyota8215.barrel-bridge-checkpoint') {
+    return {
+      ...base,
+      explosion: {},
+      expectedObservation: 'El despiece permite relacionar fijaciones, puente y barrilete como conjunto estructural; no establece una secuencia oficial de desmontaje.',
+      limitations: [...base.limitations, 'Estado bloqueado como procedimiento: requiere una fuente de servicio que confirme orden, herramienta y puntos de control.'],
+    }
+  }
+  return base
 }

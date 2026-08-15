@@ -1,0 +1,882 @@
+{
+  "schema": "wplab-academy-critical-high-visuals-v1",
+  "phase": "0.14E",
+  "scope": {
+    "critical": 2,
+    "high": 7,
+    "mediumLowTouched": 0
+  },
+  "targets": [
+    {
+      "targetId": "visual-gap.014e.cleaning-inspection-discriminating-test",
+      "priority": "critical",
+      "lessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.limpieza-e-inspeccion.de-la-observacion-a-la-prueba-discriminante",
+      "title": "De la observación a la prueba discriminante",
+      "result": "implemented",
+      "visualDesignId": "visual.diagnosis.cleaning-inspection.v1",
+      "diagramSchemaId": "diagram.hypothesis-test-decision.v1",
+      "pedagogicalQuestion": "¿Qué prueba separa una huella superficial de un defecto funcional sin destruir evidencia?",
+      "expectedObservation": "Una observación admite hipótesis rivales; la prueba se elige porque produciría resultados diferentes.",
+      "limitations": [
+        "Árbol de razonamiento; no prescribe productos, tiempos, tolerancias ni criterios universales de limpieza."
+      ],
+      "data": {
+        "title": "Observación, hipótesis y prueba",
+        "nodes": [
+          {
+            "id": "observation",
+            "label": "Huella observada",
+            "emphasis": "primary"
+          },
+          {
+            "id": "h1",
+            "label": "Residuo superficial"
+          },
+          {
+            "id": "h2",
+            "label": "Daño o desgaste"
+          },
+          {
+            "id": "test",
+            "label": "Prueba reversible"
+          },
+          {
+            "id": "r1",
+            "label": "Cambia la huella"
+          },
+          {
+            "id": "r2",
+            "label": "Permanece la huella"
+          },
+          {
+            "id": "decision",
+            "label": "Registrar y decidir"
+          }
+        ],
+        "edges": [
+          {
+            "from": "observation",
+            "to": "h1",
+            "label": "hipótesis A",
+            "kind": "decision"
+          },
+          {
+            "from": "observation",
+            "to": "h2",
+            "label": "hipótesis B",
+            "kind": "decision"
+          },
+          {
+            "from": "h1",
+            "to": "test",
+            "kind": "decision"
+          },
+          {
+            "from": "h2",
+            "to": "test",
+            "kind": "decision"
+          },
+          {
+            "from": "test",
+            "to": "r1",
+            "label": "resultado A",
+            "kind": "decision"
+          },
+          {
+            "from": "test",
+            "to": "r2",
+            "label": "resultado B",
+            "kind": "decision"
+          },
+          {
+            "from": "r1",
+            "to": "decision",
+            "kind": "decision"
+          },
+          {
+            "from": "r2",
+            "to": "decision",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Conservar el estado inicial antes de limpiar.",
+          "Detenerse si la prueba puede borrar evidencia o dañar la pieza."
+        ]
+      }
+    },
+    {
+      "targetId": "visual-gap.014e.assembly-control-points",
+      "priority": "critical",
+      "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.montaje-y-puntos-de-control.secuencia-controles-y-puntos-de-parada",
+      "title": "Secuencia, controles y puntos de parada",
+      "result": "implemented",
+      "visualDesignId": "visual.assembly.control-gates.v1",
+      "diagramSchemaId": "diagram.sequence-control-gates.v1",
+      "pedagogicalQuestion": "¿Qué debe comprobarse antes de liberar la siguiente función del montaje?",
+      "expectedObservation": "Cada etapa termina en un control reversible; un fallo detiene la secuencia antes de acumular daño.",
+      "limitations": [
+        "Secuencia funcional general, no orden oficial de montaje de un calibre ni criterio dimensional de aceptación."
+      ],
+      "data": {
+        "title": "Montaje por funciones y puertas de control",
+        "nodes": [
+          {
+            "id": "baseline",
+            "label": "Estado previo registrado"
+          },
+          {
+            "id": "seat",
+            "label": "Asentar sin forzar"
+          },
+          {
+            "id": "control",
+            "label": "Comprobar libertad",
+            "emphasis": "primary"
+          },
+          {
+            "id": "pass",
+            "label": "Resultado coherente"
+          },
+          {
+            "id": "stop",
+            "label": "Roce, tensión o duda",
+            "emphasis": "warning"
+          },
+          {
+            "id": "next",
+            "label": "Liberar siguiente función"
+          }
+        ],
+        "edges": [
+          {
+            "from": "baseline",
+            "to": "seat",
+            "kind": "decision"
+          },
+          {
+            "from": "seat",
+            "to": "control",
+            "kind": "decision"
+          },
+          {
+            "from": "control",
+            "to": "pass",
+            "label": "pasa",
+            "kind": "decision"
+          },
+          {
+            "from": "control",
+            "to": "stop",
+            "label": "no pasa",
+            "kind": "decision"
+          },
+          {
+            "from": "pass",
+            "to": "next",
+            "kind": "decision"
+          },
+          {
+            "from": "stop",
+            "to": "baseline",
+            "label": "detener y revisar",
+            "kind": "decision"
+          }
+        ],
+        "phases": [
+          {
+            "id": "prepare",
+            "label": "Preparar"
+          },
+          {
+            "id": "assemble",
+            "label": "Asentar"
+          },
+          {
+            "id": "check",
+            "label": "Controlar"
+          },
+          {
+            "id": "release",
+            "label": "Continuar o parar"
+          }
+        ]
+      }
+    },
+    {
+      "targetId": "visual-gap.014e.reading-documentation-change",
+      "priority": "high",
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.cambio-continuidad-y-consecuencia",
+      "title": "Cambio, continuidad y consecuencia",
+      "result": "implemented",
+      "visualDesignId": "visual.documentation.revision-consequence.v1",
+      "diagramSchemaId": "diagram.document-revision-comparison.v1",
+      "pedagogicalQuestion": "¿Cómo se decide si un dato antiguo sigue siendo aplicable a la variante consultada?",
+      "expectedObservation": "La coincidencia de nombre no basta: documento, revisión, variante y claim deben conservar trazabilidad.",
+      "limitations": [
+        "Método de lectura documental; no afirma equivalencia entre revisiones concretas."
+      ],
+      "data": {
+        "title": "Documento, revisión y alcance",
+        "nodes": [
+          {
+            "id": "claim",
+            "label": "Dato que necesitas",
+            "lane": "question",
+            "emphasis": "primary"
+          },
+          {
+            "id": "old",
+            "label": "Documento anterior",
+            "lane": "sources"
+          },
+          {
+            "id": "current",
+            "label": "Documento vigente",
+            "lane": "sources"
+          },
+          {
+            "id": "same",
+            "label": "Coincide y aplica",
+            "lane": "outcome"
+          },
+          {
+            "id": "changed",
+            "label": "Cambió o no consta",
+            "lane": "outcome",
+            "emphasis": "warning"
+          },
+          {
+            "id": "use",
+            "label": "Usar con localizador",
+            "lane": "decision"
+          },
+          {
+            "id": "limit",
+            "label": "Limitar o bloquear",
+            "lane": "decision"
+          }
+        ],
+        "edges": [
+          {
+            "from": "claim",
+            "to": "old",
+            "kind": "decision"
+          },
+          {
+            "from": "claim",
+            "to": "current",
+            "kind": "decision"
+          },
+          {
+            "from": "old",
+            "to": "same",
+            "label": "comparar",
+            "kind": "decision"
+          },
+          {
+            "from": "current",
+            "to": "same",
+            "label": "comparar",
+            "kind": "decision"
+          },
+          {
+            "from": "old",
+            "to": "changed",
+            "label": "diferencia",
+            "kind": "decision"
+          },
+          {
+            "from": "current",
+            "to": "changed",
+            "label": "diferencia",
+            "kind": "decision"
+          },
+          {
+            "from": "same",
+            "to": "use",
+            "kind": "decision"
+          },
+          {
+            "from": "changed",
+            "to": "limit",
+            "kind": "decision"
+          }
+        ]
+      }
+    },
+    {
+      "targetId": "visual-gap.014e.final-diagnosis",
+      "priority": "high",
+      "lessonId": "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.diagnostico-y-control-final.de-la-observacion-a-la-prueba-discriminante",
+      "title": "Observación, hipótesis y control final",
+      "result": "implemented",
+      "visualDesignId": "visual.diagnosis.final-control.v1",
+      "diagramSchemaId": "diagram.hypothesis-test-decision.v1",
+      "pedagogicalQuestion": "¿Qué resultado final apoya la causa propuesta y qué resultado obliga a reabrirla?",
+      "expectedObservation": "El control final se deriva de la hipótesis y conserva una salida explícita de reabrir el diagnóstico.",
+      "limitations": [
+        "No define tolerancias, posiciones de medida ni intervalos universales."
+      ],
+      "data": {
+        "title": "Diagnóstico causal y control final",
+        "nodes": [
+          {
+            "id": "symptom",
+            "label": "Síntoma inicial"
+          },
+          {
+            "id": "hypotheses",
+            "label": "Hipótesis rivales"
+          },
+          {
+            "id": "test",
+            "label": "Prueba discriminante",
+            "emphasis": "primary"
+          },
+          {
+            "id": "intervention",
+            "label": "Intervención justificada"
+          },
+          {
+            "id": "final",
+            "label": "Control final"
+          },
+          {
+            "id": "pass",
+            "label": "Resultado estable"
+          },
+          {
+            "id": "reopen",
+            "label": "Resultado incoherente",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "symptom",
+            "to": "hypotheses",
+            "kind": "decision"
+          },
+          {
+            "from": "hypotheses",
+            "to": "test",
+            "kind": "decision"
+          },
+          {
+            "from": "test",
+            "to": "intervention",
+            "kind": "decision"
+          },
+          {
+            "from": "intervention",
+            "to": "final",
+            "kind": "decision"
+          },
+          {
+            "from": "final",
+            "to": "pass",
+            "label": "confirma",
+            "kind": "decision"
+          },
+          {
+            "from": "final",
+            "to": "reopen",
+            "label": "no confirma",
+            "kind": "decision"
+          },
+          {
+            "from": "reopen",
+            "to": "hypotheses",
+            "label": "reabrir",
+            "kind": "decision"
+          }
+        ]
+      }
+    },
+    {
+      "targetId": "visual-gap.014e.assembly-worked-example",
+      "priority": "high",
+      "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.montaje-y-puntos-de-control.ejemplo-de-trabajo-razonado",
+      "title": "Ejemplo de trabajo razonado",
+      "result": "implemented",
+      "visualDesignId": "visual.assembly.reasoned-example.v1",
+      "diagramSchemaId": "diagram.observation-action-stop.v1",
+      "pedagogicalQuestion": "¿Por qué una pieza que no asienta libremente obliga a detenerse?",
+      "expectedObservation": "La resistencia inesperada es información: no se compensa con fuerza, se revisan orientación, apoyo e interferencia.",
+      "limitations": [
+        "Ejemplo causal general; no identifica una pieza ni una fuerza válida para todos los movimientos."
+      ],
+      "data": {
+        "title": "Asiento dudoso: decidir antes de forzar",
+        "nodes": [
+          {
+            "id": "place",
+            "label": "Presentar la pieza"
+          },
+          {
+            "id": "observe",
+            "label": "No asienta libremente",
+            "emphasis": "warning"
+          },
+          {
+            "id": "h1",
+            "label": "Orientación incorrecta"
+          },
+          {
+            "id": "h2",
+            "label": "Interferencia o apoyo"
+          },
+          {
+            "id": "stop",
+            "label": "Detener acción",
+            "emphasis": "primary"
+          },
+          {
+            "id": "inspect",
+            "label": "Revisar evidencia"
+          },
+          {
+            "id": "retry",
+            "label": "Reintentar solo si se resuelve"
+          }
+        ],
+        "edges": [
+          {
+            "from": "place",
+            "to": "observe",
+            "kind": "decision"
+          },
+          {
+            "from": "observe",
+            "to": "h1",
+            "kind": "decision"
+          },
+          {
+            "from": "observe",
+            "to": "h2",
+            "kind": "decision"
+          },
+          {
+            "from": "h1",
+            "to": "stop",
+            "kind": "decision"
+          },
+          {
+            "from": "h2",
+            "to": "stop",
+            "kind": "decision"
+          },
+          {
+            "from": "stop",
+            "to": "inspect",
+            "kind": "decision"
+          },
+          {
+            "from": "inspect",
+            "to": "retry",
+            "label": "condición resuelta",
+            "kind": "decision"
+          }
+        ]
+      }
+    },
+    {
+      "targetId": "visual-gap.014e.intake-baseline",
+      "priority": "high",
+      "lessonId": "lesson.encyclopedia.service-tribology.recepcion-y-linea-base",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.recepcion-y-linea-base.secuencia-controles-y-puntos-de-parada",
+      "title": "Secuencia y puntos de parada de recepción",
+      "result": "implemented",
+      "visualDesignId": "visual.intake.baseline-sequence.v1",
+      "diagramSchemaId": "diagram.sequence-stop-points.v1",
+      "pedagogicalQuestion": "¿Qué debe conservarse antes de una prueba que pueda cambiar el estado recibido?",
+      "expectedObservation": "La línea base precede a la intervención y contiene puntos de no prueba cuando existe riesgo de perder evidencia o causar daño.",
+      "limitations": [
+        "No define un protocolo comercial, químico ni de servicio universal."
+      ],
+      "data": {
+        "title": "Recepción y línea base",
+        "nodes": [
+          {
+            "id": "receive",
+            "label": "Recibir sin intervenir"
+          },
+          {
+            "id": "history",
+            "label": "Registrar historia"
+          },
+          {
+            "id": "external",
+            "label": "Observar estado externo"
+          },
+          {
+            "id": "risk",
+            "label": "Evaluar si probar cambia el estado",
+            "emphasis": "primary"
+          },
+          {
+            "id": "safe",
+            "label": "Prueba reversible"
+          },
+          {
+            "id": "stop",
+            "label": "No probar todavía",
+            "emphasis": "warning"
+          },
+          {
+            "id": "baseline",
+            "label": "Guardar línea base"
+          }
+        ],
+        "edges": [
+          {
+            "from": "receive",
+            "to": "history",
+            "kind": "decision"
+          },
+          {
+            "from": "history",
+            "to": "external",
+            "kind": "decision"
+          },
+          {
+            "from": "external",
+            "to": "risk",
+            "kind": "decision"
+          },
+          {
+            "from": "risk",
+            "to": "safe",
+            "label": "riesgo controlado",
+            "kind": "decision"
+          },
+          {
+            "from": "risk",
+            "to": "stop",
+            "label": "riesgo o duda",
+            "kind": "decision"
+          },
+          {
+            "from": "safe",
+            "to": "baseline",
+            "kind": "decision"
+          },
+          {
+            "from": "stop",
+            "to": "baseline",
+            "kind": "decision"
+          }
+        ]
+      }
+    },
+    {
+      "targetId": "visual-gap.014e.tm-symptom-tree",
+      "priority": "high",
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.tm-diagnostico-sintomas.de-la-observacion-a-la-prueba-discriminante",
+      "title": "Árbol de razonamiento por síntomas",
+      "result": "implemented",
+      "visualDesignId": "visual.diagnosis.tm-symptom-tree.v1",
+      "diagramSchemaId": "diagram.competing-hypotheses.v1",
+      "pedagogicalQuestion": "¿Qué prueba separa dos causas posibles de un mismo síntoma?",
+      "expectedObservation": "Un síntoma abre ramas rivales; la siguiente observación se elige por su capacidad de descartar, no por tradición.",
+      "limitations": [
+        "Patrón diagnóstico inspirado en la fuente histórica; sustancias, tolerancias e intervalos de época no se trasladan."
+      ],
+      "data": {
+        "title": "Síntoma → hipótesis rivales → prueba",
+        "nodes": [
+          {
+            "id": "symptom",
+            "label": "Síntoma observado",
+            "emphasis": "primary"
+          },
+          {
+            "id": "energy",
+            "label": "Hipótesis: energía"
+          },
+          {
+            "id": "train",
+            "label": "Hipótesis: transmisión"
+          },
+          {
+            "id": "indication",
+            "label": "Hipótesis: indicación"
+          },
+          {
+            "id": "test",
+            "label": "Prueba no destructiva"
+          },
+          {
+            "id": "evidence",
+            "label": "Resultado registrado"
+          },
+          {
+            "id": "next",
+            "label": "Siguiente decisión"
+          }
+        ],
+        "edges": [
+          {
+            "from": "symptom",
+            "to": "energy",
+            "kind": "decision"
+          },
+          {
+            "from": "symptom",
+            "to": "train",
+            "kind": "decision"
+          },
+          {
+            "from": "symptom",
+            "to": "indication",
+            "kind": "decision"
+          },
+          {
+            "from": "energy",
+            "to": "test",
+            "kind": "decision"
+          },
+          {
+            "from": "train",
+            "to": "test",
+            "kind": "decision"
+          },
+          {
+            "from": "indication",
+            "to": "test",
+            "kind": "decision"
+          },
+          {
+            "from": "test",
+            "to": "evidence",
+            "kind": "decision"
+          },
+          {
+            "from": "evidence",
+            "to": "next",
+            "kind": "decision"
+          }
+        ]
+      }
+    },
+    {
+      "targetId": "visual-gap.014e.tribology-contact",
+      "priority": "high",
+      "lessonId": "lesson.encyclopedia.service-tribology.tribologia-y-lubricantes",
+      "sectionId": "reader.section.block.encyclopedia.service-tribology.tribologia-y-lubricantes.secuencia-controles-y-puntos-de-parada",
+      "title": "Contacto, función y contaminación",
+      "result": "implemented",
+      "visualDesignId": "visual.tribology.contact-function.v1",
+      "diagramSchemaId": "diagram.contact-lubrication-outcomes.v1",
+      "pedagogicalQuestion": "¿Por qué el tipo de contacto y la función deben conocerse antes de elegir un lubricante?",
+      "expectedObservation": "La decisión parte del contacto documentado; exceso, defecto y contaminación son fallos distintos que no se resuelven con una cantidad universal.",
+      "limitations": [
+        "No recomienda producto, cantidad ni punto de lubricación para ningún calibre. Requiere documentación moderna aplicable."
+      ],
+      "data": {
+        "title": "Del contacto a la decisión de lubricación",
+        "nodes": [
+          {
+            "id": "contact",
+            "label": "Tipo de contacto"
+          },
+          {
+            "id": "function",
+            "label": "Función y régimen"
+          },
+          {
+            "id": "official",
+            "label": "Documento aplicable",
+            "emphasis": "primary"
+          },
+          {
+            "id": "apply",
+            "label": "Aplicación controlada"
+          },
+          {
+            "id": "deficit",
+            "label": "Defecto"
+          },
+          {
+            "id": "excess",
+            "label": "Exceso"
+          },
+          {
+            "id": "contamination",
+            "label": "Contaminación",
+            "emphasis": "warning"
+          },
+          {
+            "id": "verify",
+            "label": "Verificar y registrar"
+          }
+        ],
+        "edges": [
+          {
+            "from": "contact",
+            "to": "function",
+            "kind": "decision"
+          },
+          {
+            "from": "function",
+            "to": "official",
+            "kind": "decision"
+          },
+          {
+            "from": "official",
+            "to": "apply",
+            "kind": "decision"
+          },
+          {
+            "from": "apply",
+            "to": "deficit",
+            "label": "insuficiente",
+            "kind": "decision"
+          },
+          {
+            "from": "apply",
+            "to": "excess",
+            "label": "sobrante",
+            "kind": "decision"
+          },
+          {
+            "from": "apply",
+            "to": "contamination",
+            "label": "migración/arrastre",
+            "kind": "decision"
+          },
+          {
+            "from": "deficit",
+            "to": "verify",
+            "kind": "decision"
+          },
+          {
+            "from": "excess",
+            "to": "verify",
+            "kind": "decision"
+          },
+          {
+            "from": "contamination",
+            "to": "verify",
+            "kind": "decision"
+          }
+        ]
+      }
+    },
+    {
+      "targetId": "visual-gap.014e.bench-contamination",
+      "priority": "high",
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.secuencia-controles-y-puntos-de-parada",
+      "title": "Fuentes y transferencias de contaminación",
+      "result": "implemented",
+      "visualDesignId": "visual.bench.contamination-transfer.v1",
+      "diagramSchemaId": "diagram.contamination-transfer-map.v1",
+      "pedagogicalQuestion": "¿Cómo llega un contaminante desde una fuente hasta una pieza aparentemente limpia?",
+      "expectedObservation": "Manos, herramienta, superficie, recipiente y aire forman rutas de transferencia que deben interrumpirse y registrarse.",
+      "limitations": [
+        "Mapa preventivo general; no prescribe sustancias ni compatibilidad química. Los procedimientos históricos peligrosos permanecen no accionables."
+      ],
+      "data": {
+        "title": "Cadena de contaminación del banco",
+        "nodes": [
+          {
+            "id": "source",
+            "label": "Fuente de contaminación",
+            "emphasis": "warning"
+          },
+          {
+            "id": "hands",
+            "label": "Manos o guantes"
+          },
+          {
+            "id": "tool",
+            "label": "Herramienta"
+          },
+          {
+            "id": "surface",
+            "label": "Superficie o recipiente"
+          },
+          {
+            "id": "part",
+            "label": "Pieza limpia",
+            "emphasis": "primary"
+          },
+          {
+            "id": "control",
+            "label": "Separar · limpiar · cubrir"
+          },
+          {
+            "id": "check",
+            "label": "Inspeccionar y registrar"
+          }
+        ],
+        "edges": [
+          {
+            "from": "source",
+            "to": "hands",
+            "label": "transferencia",
+            "kind": "decision"
+          },
+          {
+            "from": "source",
+            "to": "tool",
+            "label": "transferencia",
+            "kind": "decision"
+          },
+          {
+            "from": "source",
+            "to": "surface",
+            "label": "transferencia",
+            "kind": "decision"
+          },
+          {
+            "from": "hands",
+            "to": "part",
+            "label": "contacto",
+            "kind": "decision"
+          },
+          {
+            "from": "tool",
+            "to": "part",
+            "label": "contacto",
+            "kind": "decision"
+          },
+          {
+            "from": "surface",
+            "to": "part",
+            "label": "contacto",
+            "kind": "decision"
+          },
+          {
+            "from": "control",
+            "to": "hands",
+            "kind": "decision"
+          },
+          {
+            "from": "control",
+            "to": "tool",
+            "kind": "decision"
+          },
+          {
+            "from": "control",
+            "to": "surface",
+            "kind": "decision"
+          },
+          {
+            "from": "part",
+            "to": "check",
+            "kind": "decision"
+          }
+        ]
+      }
+    }
+  ]
+}

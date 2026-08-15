@@ -2159,8 +2159,8 @@ export function AcademySurfaces() {
   if (surface === 'review') return <ReviewSurface />
   if (surface === 'results') return <ResultsSurface />
   if (surface === 'preferences') return <PreferencesSurface />
-  if (surface === 'editorial-review') return <Suspense fallback={<div className="academy-empty-state" role="status"><p>Preparando la revisión editorial…</p></div>}><AcademyEditorialReviewSurface /></Suspense>
-  if (surface === 'usability') return <Suspense fallback={<div className="academy-empty-state" role="status"><p>Preparando la sesión guiada…</p></div>}><AcademyUsabilityHarnessSurface /></Suspense>
+  if (surface === 'editorial-review') return <Suspense fallback={<div className="academy-empty-state" role="status"><p>Preparando la revisión personal…</p></div>}><AcademyEditorialReviewSurface /></Suspense>
+  if (surface === 'usability') return <Suspense fallback={<div className="academy-empty-state" role="status"><p>Preparando el recorrido personal…</p></div>}><AcademyUsabilityHarnessSurface /></Suspense>
   if (surface === 'onboarding') return <OnboardingSurface />
   return <NotFoundSurface />
 }

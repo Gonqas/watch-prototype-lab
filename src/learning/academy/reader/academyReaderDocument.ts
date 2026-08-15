@@ -6,11 +6,17 @@ import {
   academyDiagramPayloadHash,
   academySectionVisualCuration,
 } from './academyReaderCuration'
-import { academy3dVisualState } from './academyReader3dStates'
+import { academy3dVisualStateForPhase } from './academyReader3dStates'
+import {
+  academyPersonalPilotReview,
+  academyPersonalSectionVisualCuration,
+  applyAcademyPersonalSectionPatches,
+} from './academyPersonalCurriculum'
 import { academyReaderShortDocumentVersion, academyReaderStableHash } from './academyReaderIdentity'
 import type {
   AcademyLegacySectionAlias,
   AcademyReaderBuildInput,
+  AcademyReaderCurationPhase,
   AcademyReaderDocument,
   AcademyReaderSection,
   AcademyReaderSectionRole,
@@ -299,9 +305,10 @@ function curatedVisualCue(
   section: AcademyReaderSection,
   curation: NonNullable<AcademyReaderDocument['sectionCurations']>[number],
   activities: AcademyReaderBuildInput['material']['activities'],
+  phase: AcademyReaderCurationPhase,
 ): AcademyVisualCue {
   const activity = curation.activityId ? activities.find(({ id }) => id === curation.activityId) : undefined
-  const visualState = academy3dVisualState(curation.visualStateId)
+  const visualState = academy3dVisualStateForPhase(curation.visualStateId, phase)
   const implementedDiagram = Boolean(curation.diagramData && academyDiagramIsContentSpecific(curation.diagramData))
   const implementedScene = curation.visualKind === 'scene-3d' && Boolean(activity?.fixtureBinding && visualState)
   const implemented = implementedDiagram || implementedScene
@@ -429,17 +436,19 @@ export function academyReaderDocumentVersion(input: AcademyReaderBuildInput): st
 
 export function buildAcademyReaderDocument(
   input: AcademyReaderBuildInput,
-  options: { compatibility?: '0.14C' } = {},
+  options: { compatibility?: '0.14C'; curationPhase?: AcademyReaderCurationPhase } = {},
 ): AcademyReaderDocument {
   const legacy014C = options.compatibility === '0.14C'
+  const curationPhase = options.curationPhase ?? '0.14D'
   const lessonId = input.material.lesson.id
   const pilot = academyReaderPilotCuration(lessonId)
+  const personalReview = curationPhase === '0.14E' ? academyPersonalPilotReview(lessonId) : undefined
   const fixtureActivity = input.material.activities.find(({ fixtureBinding }) => Boolean(fixtureBinding))
   const visualDeclared = Boolean(input.material.lesson.authoring?.visualStrategy)
   const contentBasis = input.material.blocks.map(({ bodyMarkdown }) => bodyMarkdown.replaceAll('\r\n', '\n').trim()).join('\n\n')
-  const documentContentHash = academyReaderStableHash(contentBasis)
+  let documentContentHash = academyReaderStableHash(contentBasis)
   const sectionIds = new Map<string, number>()
-  const sections: AcademyReaderSection[] = []
+  let sections: AcademyReaderSection[] = []
   for (const block of input.material.blocks) {
     const markdown = block.localization?.bodyMarkdown
       ? localize(input.locale, block.localization.bodyMarkdown)
@@ -485,9 +494,13 @@ export function buildAcademyReaderDocument(
       })
     }
   }
+  if (!legacy014C && curationPhase === '0.14E') {
+    sections = applyAcademyPersonalSectionPatches(lessonId, sections)
+    documentContentHash = academyReaderStableHash(sections.map(({ sectionId, markdown }) => `${sectionId}\n${markdown}`).join('\n\n'))
+  }
   const sourceIds = input.material.sources.map(({ id }) => id)
   const sectionCurations = legacy014C ? [] : sections.flatMap((section) => {
-    const curation = academySectionVisualCuration({
+    const baseCuration = academySectionVisualCuration({
       lessonId,
       section,
       contentHash: documentContentHash,
@@ -495,14 +508,32 @@ export function buildAcademyReaderDocument(
       activities: input.material.activities,
       sourceIds,
     })
-    return curation ? [curation] : []
+    const personalVisual = curationPhase === '0.14E' ? academyPersonalSectionVisualCuration({
+      lessonId,
+      section,
+      contentHash: documentContentHash,
+      sectionHash: academyReaderStableHash(section.markdown),
+      sourceIds,
+    }) : undefined
+    const curation = personalVisual ?? baseCuration
+    if (!curation) return []
+    return curationPhase === '0.14E' ? [{
+      ...curation,
+      curationId: curation.curationId.replace('curation.0.14d.', 'curation.0.14e.'),
+      contentHash: documentContentHash,
+      sectionHash: academyReaderStableHash(section.markdown),
+      curationMethod: 'codex-assisted-personal-curation' as const,
+      technicalReviewStatus: 'not-required' as const,
+      technicalStatus: personalReview?.technicalStatus ?? curation.technicalStatus ?? 'source-reviewed' as const,
+      notes: [...curation.notes, 'Revisada para uso personal en español en 0.14E; claridad pendiente del propietario.'],
+    }] : [curation]
   })
   if (!legacy014C) {
     const curationBySection = new Map(sectionCurations.map((curation) => [curation.sectionId, curation]))
     for (const section of sections) {
       const curation = curationBySection.get(section.sectionId)
       if (!curation) continue
-      const cue = curatedVisualCue(section, curation, input.material.activities)
+      const cue = curatedVisualCue(section, curation, input.material.activities, curationPhase)
       section.visualCue = cue
       section.visualCueIds = [cue.cueId]
       section.curationMethod = 'pilot-override'
@@ -530,7 +561,7 @@ export function buildAcademyReaderDocument(
   const legacyVersion = academyReaderDocumentVersion(input)
   const structureHash = academyReaderStableHash(sections.map(({ sectionId, sourceBlockVersion, headingLevel, title }) =>
     `${sectionId}|${sourceBlockVersion}|${headingLevel}|${title}`).join('\n'))
-  const diagnosticSignature = `reader-0.14D:${legacyVersion}:${documentContentHash}:${structureHash}`
+  const diagnosticSignature = `reader-${curationPhase}:${legacyVersion}:${documentContentHash}:${structureHash}`
   const compatibilityVersion = 'legacy-section-aliases-0.14C-v1'
   const shortVersion = academyReaderShortDocumentVersion({
     contentHash: documentContentHash,
@@ -541,7 +572,7 @@ export function buildAcademyReaderDocument(
   })
   const documentVersion = legacy014C ? legacyVersion : shortVersion
   return {
-    readerSchemaVersion: legacy014C ? '0.14C' : '0.14D',
+    readerSchemaVersion: legacy014C ? '0.14C' : curationPhase,
     documentId: `reader.document.${lessonId}`,
     documentVersion,
     version: documentVersion,
@@ -563,7 +594,7 @@ export function buildAcademyReaderDocument(
     } : {}),
     title: input.title,
     purpose: input.purpose,
-    whyNow: input.whyNow,
+    whyNow: personalReview?.whyNow ?? input.whyNow,
     outcome: input.outcome,
     estimatedDurationMinutes,
     stageId: input.stageId,
@@ -581,17 +612,20 @@ export function buildAcademyReaderDocument(
     completion,
     completionPolicy: completion,
     pilot: Boolean(pilot),
-    centralQuestion: pilot?.centralQuestion,
+    centralQuestion: personalReview?.centralQuestion ?? pilot?.centralQuestion,
     curation: {
-      method: pilot ? 'codex-assisted-editorial-curation' : 'automated-structural-migration',
+      method: personalReview ? 'codex-assisted-personal-curation' : pilot ? 'codex-assisted-editorial-curation' : 'automated-structural-migration',
       confidence: pilot ? 'high' : 'medium',
       ownerReviewPending: legacy014C ? Boolean(pilot) : true,
       ...(!legacy014C ? {
         editorialStatus: pilot ? 'codex-assisted-curation' as const : 'automated-structural-migration' as const,
         ownerReviewStatus: 'owner-review-pending' as const,
-        technicalReviewStatus: sectionCurations.some(({ technicalReviewStatus }) => technicalReviewStatus === 'technical-expert-review-pending')
-          ? 'technical-expert-review-pending' as const
-          : 'not-required' as const,
+        technicalReviewStatus: curationPhase === '0.14E'
+          ? 'not-required' as const
+          : sectionCurations.some(({ technicalReviewStatus }) => technicalReviewStatus === 'technical-expert-review-pending')
+            ? 'technical-expert-review-pending' as const
+            : 'not-required' as const,
+        ...(curationPhase === '0.14E' ? { technicalStatus: personalReview?.technicalStatus ?? 'source-reviewed' as const } : {}),
       } : {}),
     },
   }
@@ -624,13 +658,13 @@ export function validateAcademyReaderDocument(document: AcademyReaderDocument): 
     if (seen.has(section.sectionId)) issues.push({ code: 'duplicate-section-id', lessonId: document.lessonId, sectionId: section.sectionId, message: 'El ID de apartado está duplicado.' })
     seen.add(section.sectionId)
     if (!section.visualCue) issues.push({ code: 'missing-visual-decision', lessonId: document.lessonId, sectionId: section.sectionId, message: 'Falta una decisión visual explícita.' })
-    if (document.readerSchemaVersion === '0.14D' && section.visualCue.kind === 'scene-3d' && !section.visualCue.activityId) {
+    if (document.readerSchemaVersion !== '0.14C' && section.visualCue.kind === 'scene-3d' && !section.visualCue.activityId) {
       issues.push({ code: 'missing-3d-activity', lessonId: document.lessonId, sectionId: section.sectionId, message: 'El cue 3D no declara una actividad exacta.' })
     }
-    if (document.readerSchemaVersion === '0.14D' && section.visualCue.kind === 'scene-3d' && !section.visualCue.visualStateId) {
+    if (document.readerSchemaVersion !== '0.14C' && section.visualCue.kind === 'scene-3d' && !section.visualCue.visualStateId) {
       issues.push({ code: 'missing-3d-state', lessonId: document.lessonId, sectionId: section.sectionId, message: 'El cue 3D no declara un estado visual exacto.' })
     }
-    if (document.readerSchemaVersion === '0.14D'
+    if (document.readerSchemaVersion !== '0.14C'
       && section.visualCue.visualDecision?.startsWith('content-specific')
       && section.visualCue.diagramData
       && !academyDiagramIsContentSpecific(section.visualCue.diagramData)) {

@@ -65,7 +65,7 @@ export default function AcademyContinuousLessonSurface() {
         stepId: curatedLocation?.step.stepId,
         locale: snapshot.profile?.locale,
         requiredActivityIds: curatedLocation?.step.requiredActivityIds ?? descriptor.studyContract?.labActivityIds,
-      })
+      }, { curationPhase: '0.14E' })
     : undefined, [
       curatedLocation?.chapter,
       curatedLocation?.stage,
