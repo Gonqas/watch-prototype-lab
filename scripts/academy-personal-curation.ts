@@ -101,7 +101,12 @@ async function assertHistoricalReports(repositoryRoot: string): Promise<void> {
   const generatedRoot = join(repositoryRoot, 'docs', 'generated')
   const outputNames = new Set<string>(ACADEMY_PERSONAL_CURATION_OUTPUT_FILES)
   const fileNames = (await readdir(generatedRoot))
-    .filter((fileName) => !outputNames.has(fileName) && !fileName.startsWith('APRENDER-') && !fileName.includes('0.14F'))
+    .filter((fileName) => (
+      !outputNames.has(fileName)
+      && !fileName.startsWith('APRENDER-')
+      && !fileName.includes('0.14F')
+      && !fileName.includes('0.14G')
+    ))
     .sort()
   if (fileNames.length !== ACADEMY_014E_BASELINE.historicalReportCount) {
     throw new Error(`El conjunto histórico de informes cambió: ${fileNames.length}/${ACADEMY_014E_BASELINE.historicalReportCount}.`)

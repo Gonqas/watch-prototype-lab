@@ -3,14 +3,15 @@ import type { AcademyDiagramData, AcademyVisualCue } from '../../academy/reader/
 interface Point { x: number; y: number }
 
 function coordinates(data: AcademyDiagramData): Map<string, Point> {
-  const lanes = [...new Set(data.nodes.flatMap(({ lane }) => lane ? [lane] : []))]
+  const hasExplicitLane = data.nodes.some(({ lane }) => Boolean(lane))
+  const lanes = hasExplicitLane ? [...new Set(data.nodes.map(({ lane }) => lane ?? 'general'))] : []
   if (lanes.length > 0) {
     const points = new Map<string, Point>()
     for (const [laneIndex, lane] of lanes.entries()) {
-      const laneNodes = data.nodes.filter((item) => item.lane === lane)
+      const laneNodes = data.nodes.filter((item) => (item.lane ?? 'general') === lane)
       laneNodes.forEach((item, index) => points.set(item.id, {
-        x: 110 + index * (440 / Math.max(1, laneNodes.length - 1)),
-        y: 92 + laneIndex * (130 / Math.max(1, lanes.length - 1)),
+        x: laneNodes.length === 1 ? 320 : 110 + index * (440 / (laneNodes.length - 1)),
+        y: lanes.length === 1 ? 150 : 54 + laneIndex * (212 / Math.max(1, lanes.length - 1)),
       }))
     }
     return points
@@ -52,10 +53,23 @@ export function AcademySpecificDiagram({ cue }: { cue: AcademyVisualCue }) {
         if (!from || !to) return null
         const middleX = (from.x + to.x) / 2
         const middleY = (from.y + to.y) / 2
+        const reverseIndex = data.edges.findIndex((candidate) => candidate.from === item.to && candidate.to === item.from)
+        const reciprocal = reverseIndex >= 0
+        const deltaX = to.x - from.x
+        const deltaY = to.y - from.y
+        const length = Math.max(1, Math.hypot(deltaX, deltaY))
+        const normalX = -deltaY / length
+        const normalY = deltaX / length
+        const controlX = middleX + normalX * 45
+        const controlY = middleY + normalY * 45
+        const labelX = reciprocal ? middleX + normalX * 30 : middleX
+        const labelY = reciprocal ? middleY + normalY * 30 : middleY - 7
         return (
           <g className={`academy-reader-diagram__edge is-${item.kind ?? 'mechanical'}`} key={`${item.from}-${item.to}-${index}`}>
-            <line x1={from.x} y1={from.y} x2={to.x} y2={to.y} markerEnd={`url(#${markerId})`} />
-            {item.label && <text x={middleX} y={middleY - 7}>{item.label}</text>}
+            {reciprocal
+              ? <path d={`M ${from.x} ${from.y} Q ${controlX} ${controlY} ${to.x} ${to.y}`} markerEnd={`url(#${markerId})`} />
+              : <line x1={from.x} y1={from.y} x2={to.x} y2={to.y} markerEnd={`url(#${markerId})`} />}
+            {item.label && <text x={labelX} y={labelY}>{item.label}</text>}
           </g>
         )
       })}

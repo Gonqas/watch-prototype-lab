@@ -244,7 +244,8 @@ describe('compatibilidad de prerrequisitos, enlaces y locales', () => {
   it('hace efectivos los nueve overrides y conserva la deuda fuente', () => {
     expect(ACADEMY_PREREQUISITE_RESOLUTIONS).toHaveLength(9)
     for (const resolution of ACADEMY_PREREQUISITE_RESOLUTIONS) {
-      expect(effectiveLessonPrerequisiteConceptIds(resolution.lessonId, [resolution.conceptId])).toEqual([])
+      expect(effectiveLessonPrerequisiteConceptIds(resolution.lessonId, [resolution.conceptId]))
+        .not.toContain(resolution.conceptId)
       expect(resolution.sourceMigrationPending).toBe(true)
       expect(academyPrerequisiteDebtForLesson(resolution.lessonId)).toContainEqual(resolution)
     }

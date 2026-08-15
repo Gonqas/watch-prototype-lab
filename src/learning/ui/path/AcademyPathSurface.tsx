@@ -1,6 +1,7 @@
 import { BookOpenCheck, LibraryBig, NotebookPen, ShieldCheck } from 'lucide-react'
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { Fragment, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { ACADEMY_LEARNER_PATH } from '../../academy/path/academyLearnerPath'
+import { ACADEMY_STAGE_0_TO_1_CHECKPOINT } from '../../academy/reader/academyPersonalCurriculum'
 import { academyNextAction } from '../../academy/path/academyNextAction'
 import { deriveAcademyPathProgress } from '../../academy/path/academyPathProgress'
 import { useAcademyLocalState } from '../../academy/useAcademyLocalState'
@@ -73,18 +74,34 @@ export function AcademyPathSurface() {
       </section>
       <div className="academy-path-stages">
         {ACADEMY_LEARNER_PATH.stages.map((stage) => (
-          <AcademyStageCard
-            key={stage.stageId}
-            stage={stage}
-            stageProgress={progress.stages.find(({ stageId }) => stageId === stage.stageId)!}
-            chapters={stage.chapterIds.map((chapterId) => ACADEMY_LEARNER_PATH.chapters.find((chapter) => chapter.chapterId === chapterId)!).filter(Boolean)}
-            chapterProgress={chapterProgress}
-            snapshot={snapshot}
-            expanded={visibleStageId === stage.stageId}
-            expandedChapterId={visibleStageId === stage.stageId ? visibleChapterId : undefined}
-            onToggleStage={() => setExpandedStageId((current) => current === stage.stageId ? undefined : stage.stageId)}
-            onToggleChapter={(chapterId) => setExpandedChapterId((current) => current === chapterId ? undefined : chapterId)}
-          />
+          <Fragment key={stage.stageId}>
+            {stage.stageId === 'stage.1' && (
+              <aside className="academy-stage-checkpoint" aria-labelledby="academy-stage-checkpoint-title">
+                <div>
+                  <span className="academy-kicker">PUNTO DE CONTROL RECOMENDADO</span>
+                  <h2 id="academy-stage-checkpoint-title">{ACADEMY_STAGE_0_TO_1_CHECKPOINT.title}</h2>
+                  <p>No bloquea tu ruta ni modifica tu progreso. Úsalo para decidir si quieres repasar antes de construir el mapa del reloj.</p>
+                  <ul>{ACADEMY_STAGE_0_TO_1_CHECKPOINT.questions.map((question) => <li key={question}>{question}</li>)}</ul>
+                </div>
+                <nav aria-label="Acciones del punto de control">
+                  <a className="academy-button" href="#/learning/my-learning?stage=stage.0">Revisar etapa 0</a>
+                  <a className="academy-button is-primary" href="#/learning/my-learning?stage=stage.1&chapter=chapter.1.1">Continuar a etapa 1</a>
+                  <a className="academy-button" href="#/learning/notebook">Anotar una duda</a>
+                </nav>
+              </aside>
+            )}
+            <AcademyStageCard
+              stage={stage}
+              stageProgress={progress.stages.find(({ stageId }) => stageId === stage.stageId)!}
+              chapters={stage.chapterIds.map((chapterId) => ACADEMY_LEARNER_PATH.chapters.find((chapter) => chapter.chapterId === chapterId)!).filter(Boolean)}
+              chapterProgress={chapterProgress}
+              snapshot={snapshot}
+              expanded={visibleStageId === stage.stageId}
+              expandedChapterId={visibleStageId === stage.stageId ? visibleChapterId : undefined}
+              onToggleStage={() => setExpandedStageId((current) => current === stage.stageId ? undefined : stage.stageId)}
+              onToggleChapter={(chapterId) => setExpandedChapterId((current) => current === chapterId ? undefined : chapterId)}
+            />
+          </Fragment>
         ))}
       </div>
     </PathPage>

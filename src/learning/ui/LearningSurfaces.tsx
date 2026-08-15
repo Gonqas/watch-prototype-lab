@@ -36,7 +36,7 @@ import {
 import type { MasteryState } from '../assessment'
 import { contextualTutorGuidance, LEARNING_CYCLE } from '../academy/academyPedagogy'
 import { competencyLabel, humanizeLearningId } from '../academy/academyCatalog'
-import { academyStage0ActivityPresentation } from '../academy/reader/personal/phase014f'
+import { academyPersonalActivityPresentation } from '../academy/reader/academyPersonalCurriculum'
 import { learningDate, learningNumber, localize } from '../application/i18n'
 import type { LearningDeletionPreview } from '../persistence/deletionService'
 import type {
@@ -534,7 +534,7 @@ function ActivitySurface() {
   const { service, snapshot } = useLearning()
   const activity = snapshot.product.activities.find(({ id }) => id === snapshot.location.id)
   if (!activity) return <NotFoundSurface />
-  const personalPresentation = academyStage0ActivityPresentation(activity.id)
+  const personalPresentation = academyPersonalActivityPresentation(activity.id)
   const preflight = snapshot.preflight?.activityId === activity.id ? snapshot.preflight : undefined
   const learningMode = snapshot.location.query.mode === 'demonstration' || snapshot.location.query.mode === 'retention' || snapshot.location.query.mode === 'transfer' || snapshot.location.query.mode === 'remediation'
     ? snapshot.location.query.mode
@@ -1337,10 +1337,10 @@ function ProfileSurface({ preferencesOnly = false }: { preferencesOnly?: boolean
           <section>
             <h2>Preferencias de aprendizaje y conservación</h2>
             <div className="learning-form-grid">
-              <label>Ritmo<select value={String(profile.educationalPreferences.learningPace ?? 'guided')} onChange={(event) => void service.updateProfile({ educationalPreferences: { ...profile.educationalPreferences, learningPace: event.target.value } })}><option value="guided">Guiado</option><option value="exploratory">Exploratorio</option></select></label>
-              <label>Profundidad preferida<select value={String(profile.educationalPreferences.preferredDepth ?? 'balanced')} onChange={(event) => void service.updateProfile({ educationalPreferences: { ...profile.educationalPreferences, preferredDepth: event.target.value } })}><option value="balanced">Equilibrada</option><option value="visual">Más visual</option><option value="technical">Más técnica</option></select></label>
-              <label>Conservación local<select value={String(profile.educationalPreferences.retentionPolicy ?? 'keep')} onChange={(event) => void service.updateProfile({ educationalPreferences: { ...profile.educationalPreferences, retentionPolicy: event.target.value } })}><option value="keep">Conservar hasta borrado explícito</option><option value="archive-year">Archivar tras un año</option></select></label>
-              <label>Contenido privado en exportación<select value={String(profile.educationalPreferences.privateExportPolicy ?? 'exclude')} onChange={(event) => void service.updateProfile({ educationalPreferences: { ...profile.educationalPreferences, privateExportPolicy: event.target.value } })}><option value="exclude">Excluir</option><option value="confirm">Preguntar siempre</option></select></label>
+              <label>Ritmo<select value={String(profile.educationalPreferences.learningPace ?? 'guided')} onChange={(event) => void service.updateEducationalPreferences((current) => ({ ...current, learningPace: event.target.value }))}><option value="guided">Guiado</option><option value="exploratory">Exploratorio</option></select></label>
+              <label>Profundidad preferida<select value={String(profile.educationalPreferences.preferredDepth ?? 'balanced')} onChange={(event) => void service.updateEducationalPreferences((current) => ({ ...current, preferredDepth: event.target.value }))}><option value="balanced">Equilibrada</option><option value="visual">Más visual</option><option value="technical">Más técnica</option></select></label>
+              <label>Conservación local<select value={String(profile.educationalPreferences.retentionPolicy ?? 'keep')} onChange={(event) => void service.updateEducationalPreferences((current) => ({ ...current, retentionPolicy: event.target.value }))}><option value="keep">Conservar hasta borrado explícito</option><option value="archive-year">Archivar tras un año</option></select></label>
+              <label>Contenido privado en exportación<select value={String(profile.educationalPreferences.privateExportPolicy ?? 'exclude')} onChange={(event) => void service.updateEducationalPreferences((current) => ({ ...current, privateExportPolicy: event.target.value }))}><option value="exclude">Excluir</option><option value="confirm">Preguntar siempre</option></select></label>
             </div>
             <p>Estas preferencias son pedagógicas y de privacidad; no describen condiciones médicas.</p>
           </section>

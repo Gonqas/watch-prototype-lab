@@ -2023,8 +2023,18 @@ function ResultsSurface() {
 function PreferencesSurface() {
   const { service, snapshot } = useLearning()
   const { state, actions } = useAcademyLocalState(snapshot.profile?.id)
+  const [diagnosticRevision, setDiagnosticRevision] = useState(0)
   if (!state || !snapshot.profile) return null
   const accessibility = snapshot.profile.accessibility
+  const mutationDiagnostics = service.profileMutationDiagnostics()
+  const exportMutationDiagnostics = () => {
+    const url = URL.createObjectURL(new Blob([service.exportProfileMutationDiagnostics()], { type: 'application/json' }))
+    const anchor = document.createElement('a')
+    anchor.href = url
+    anchor.download = 'watchmaking-academy-diagnostico-persistencia.json'
+    anchor.click()
+    URL.revokeObjectURL(url)
+  }
   return (
     <AcademyPage eyebrow="PREFERENCIAS" title="Una Academia que se adapta a ti" description="Las preferencias de interfaz son locales. Las adaptaciones de accesibilidad nunca penalizan la evaluación.">
       <div className="academy-preferences-grid">
@@ -2064,6 +2074,15 @@ function PreferencesSurface() {
           <p>El perfil, las sesiones, los resultados y las notas permanecen en este dispositivo. No se envían ni sincronizan por sí solos.</p>
           <dl><div><dt>Notas privadas</dt><dd>{state.notes.length}</dd></div><div><dt>Métricas agregadas</dt><dd>{state.metrics.length}</dd></div><div><dt>Estado</dt><dd>{snapshot.online ? 'Con conexión' : 'Sin conexión'}</dd></div></dl>
           <details><summary>Detalles del almacenamiento</summary><p>{snapshot.backend === 'sqlite' ? 'Aplicación de escritorio · base de datos local' : 'Navegador · almacenamiento local'}</p></details>
+          <details key={diagnosticRevision}>
+            <summary>Diagnóstico técnico de guardado</summary>
+            <p>{service.profileMutationPending(snapshot.profile.id)} escritura(s) pendiente(s) · {mutationDiagnostics.length} operación(es) en el registro acotado.</p>
+            <p>El diagnóstico usa un hash local del perfil y no incluye el contenido de notas o prácticas.</p>
+            <div className="academy-inline-actions">
+              <button className="academy-button is-secondary" type="button" onClick={exportMutationDiagnostics} disabled={!mutationDiagnostics.length}><Download size={15} /> Exportar diagnóstico</button>
+              <button className="academy-button is-secondary" type="button" onClick={() => { service.clearProfileMutationDiagnostics(); setDiagnosticRevision((value) => value + 1) }} disabled={!mutationDiagnostics.length}><Trash2 size={15} /> Borrar diagnóstico</button>
+            </div>
+          </details>
           <button className="academy-button is-secondary" type="button" onClick={() => actions.clearMetrics()} disabled={!state.metrics.length}>Borrar datos de uso de la interfaz</button>
           <a href="#/learning/profile">Administrar perfil, copias y eliminación</a>
         </section>
@@ -2099,8 +2118,8 @@ function OnboardingSurface() {
       accessibilityNeeds,
     })
     if (snapshot.profile) {
+      await service.updateEducationalPreferences((current) => ({ ...current, academyOnboardingVersion: 1 }))
       await service.updateProfile({
-        educationalPreferences: { ...snapshot.profile.educationalPreferences, academyOnboardingVersion: 1 },
         accessibility: {
           ...snapshot.profile.accessibility,
           reducedMotion: accessibilityNeeds.includes('reduced-motion') || snapshot.profile.accessibility.reducedMotion,

@@ -1,0 +1,48 @@
+{
+  "schema": "wplab-academy-persistence-concurrency-v1",
+  "phase": "0.14G",
+  "maxAttempts": 3,
+  "reproducedBaseline": [
+    {
+      "backend": "memory",
+      "concurrentMutations": 2,
+      "result": "one-fulfilled-one-conflict",
+      "finalRecordVersion": 2,
+      "lostField": "educationalPreferences.academyStateV1"
+    },
+    {
+      "backend": "indexeddb",
+      "concurrentMutations": 2,
+      "result": "one-fulfilled-one-conflict",
+      "finalRecordVersion": 2,
+      "lostField": "educationalPreferences"
+    }
+  ],
+  "fixedStressContract": {
+    "backends": [
+      "memory",
+      "indexeddb",
+      "sqlite-adapter"
+    ],
+    "academyTransitions": 100,
+    "competingAccessibilityMutations": 1,
+    "expectedRecordVersion": 102,
+    "expectedLostMutations": 0,
+    "deterministicTest": "src/learning/persistence/profileMutationCoordinator.test.ts"
+  },
+  "serialization": "one functional queue per profileId",
+  "merge": "entity-aware Academy merge plus shallow preference/accessibility merge",
+  "diagnostics": {
+    "pii": false,
+    "profileId": "stable local hash only",
+    "boundedRecords": 200,
+    "exportable": true,
+    "clearable": true
+  },
+  "conflictPolicy": {
+    "retries": 3,
+    "reReadOnRetry": true,
+    "blindOverwrite": false,
+    "finalErrorRetryable": true
+  }
+}

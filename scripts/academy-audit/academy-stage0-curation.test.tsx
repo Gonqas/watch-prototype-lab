@@ -24,7 +24,6 @@ import {
   ACADEMY_STAGE_0_PHOTO_BRIEFS,
   ACADEMY_STAGE_0_PREREQUISITE_OVERRIDES,
   ACADEMY_STAGE_0_VISUAL_DESIGNS,
-  CURRENT_ACADEMY_CURATION_PHASE,
   academyPersonalReviewQueueEntry,
 } from '../../src/learning/academy/reader/academyPersonalCurriculum'
 import { buildAcademyReaderDocument, resolveAcademyReaderSection } from '../../src/learning/academy/reader/academyReaderDocument'
@@ -87,7 +86,6 @@ describe('0.14F · integridad, versionado y modularización', () => {
   })
 
   it('11–16 · compone 0.14F sin contaminar 0.14E y conserva revisiones antiguas', () => {
-    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14F')
     const historical = readerDocument('lesson.quartz2035.workstation', '0.14E')
     const current = readerDocument('lesson.quartz2035.workstation', '0.14F')
     expect(historical.readerSchemaVersion).toBe('0.14E')
@@ -219,7 +217,7 @@ describe('0.14F · visuales, prácticas, claims y evidencia honesta', () => {
     expect(ACADEMY_STAGE_0_PERSONAL_PRACTICES.map((item) => JSON.stringify(item)).join('\n')).not.toMatch(/ácido sulfúrico|cianuro|llama|abrir barrilete|manipular espiral/i)
     expect(ACADEMY_STAGE_0_ACTIVITY_PRESENTATIONS.every(({ evidenceProfile }) => !evidenceProfile.modalities.includes('P') && !evidenceProfile.physicalCompetenceClaim)).toBe(true)
     const activitySurface = await readFile(join(repositoryRoot, 'src/learning/ui/LearningSurfaces.tsx'), 'utf8')
-    expect(activitySurface).toContain('academyStage0ActivityPresentation(activity.id)')
+    expect(activitySurface).toContain('academyPersonalActivityPresentation(activity.id)')
     expect(activitySurface).toContain('personalPresentation?.visibleTitle')
     expect(activitySurface).toContain('personalPresentation.limitations')
   })

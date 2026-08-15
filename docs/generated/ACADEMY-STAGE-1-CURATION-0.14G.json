@@ -1,0 +1,1630 @@
+{
+  "schema": "wplab-academy-stage1-curation-v1",
+  "phase": "0.14G",
+  "lessons": [
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceBlockId": "block.horology.system",
+      "macroStage": 1,
+      "pathRole": "anchor",
+      "centralQuestion": "¿Qué convierte movimiento, indicación, interfaz y estructura en un reloj completo?",
+      "whyNow": "Tras adquirir control básico del banco, necesitas un mapa del objeto completo antes de memorizar órganos.",
+      "observableOutcome": "Clasificar elementos por función y distinguir reloj completo, movimiento, indicación, interfaz y protección.",
+      "recommendedPrerequisiteLessonIds": [
+        "lesson.quartz2035.workstation",
+        "lesson.quartz2035.tools"
+      ],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.horology.system.014g-pregunta",
+          "title": "El reloj completo, antes que sus piezas",
+          "role": "orientation",
+          "markdown": "Un reloj terminado no es solo el movimiento. La caja lo protege y establece su relación con la muñeca; esfera y agujas convierten estados internos en una lectura; corona, pulsadores u otras interfaces permiten actuar sobre él. En esta lección usarás funciones para orientarte sin suponer todavía cómo las resuelve cada arquitectura.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.system.014g-capas",
+          "title": "Reloj completo y movimiento",
+          "role": "visual-anatomy",
+          "markdown": "Separa mentalmente cuatro capas: **estructura y protección**, **movimiento**, **indicación** e **interfaz**. El movimiento contiene los órganos que almacenan o reciben energía, mantienen una referencia temporal, controlan la entrega y transmiten movimiento. Las demás capas no son decoración: hacen que ese movimiento pueda conservarse, ajustarse y leerse como reloj.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.system.014g-funciones",
+          "title": "Un mapa de funciones",
+          "role": "explanation",
+          "markdown": "Pregunta qué trabajo cumple un elemento antes de memorizar su nombre. Un reloj necesita una fuente o acumulador de energía, una referencia temporal, un medio de control, una transmisión, una indicación y una estructura que sostenga las relaciones. Una misma pieza puede contribuir a más de una función y una función puede estar distribuida entre varias piezas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.system.014g-relaciones",
+          "title": "Las relaciones producen el sistema",
+          "role": "explanation",
+          "markdown": "Una rueda inmóvil puede ser esencial si sostiene un eje, limita una posición o conserva la alineación. Del mismo modo, una pieza móvil deja de ser útil si no entrega su resultado a la siguiente interfaz. El inventario de piezas responde «qué hay»; el mapa funcional añade «qué recibe, qué transforma y qué entrega».",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.system.014g-caso",
+          "title": "Caso: una caja sin movimiento y un movimiento sin caja",
+          "role": "worked-example",
+          "markdown": "La caja vacía conserva forma de reloj, pero no produce una referencia temporal ni una indicación cambiante. El movimiento fuera de caja puede funcionar, pero carece de protección, fijación e interfaz completa con la persona. Ninguno equivale por sí solo al reloj terminado. La comparación evita usar «reloj» y «movimiento» como sinónimos.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.system.014g-actividad",
+          "title": "Cómo clasificar sin adivinar",
+          "role": "checkpoint",
+          "markdown": "En la actividad, elige una función principal y justifícala mediante entrada, relación y resultado observable. Si un elemento admite varias funciones, declara la principal en este contexto y una contribución secundaria. El objetivo es construir un mapa revisable, no acertar una etiqueta por parecido visual.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.system.014g-errores",
+          "title": "Confusiones que conviene detener",
+          "role": "common-errors",
+          "markdown": "- Confundir movimiento con reloj completo.\n- Llamar transmisión a todo lo que gira.\n- Considerar prescindible una pieza porque no se mueve.\n- Tratar caja, esfera o interfaz como elementos sin función técnica.\n\nCuando no puedas justificar una relación, marca la función como desconocida y vuelve a la fuente adecuada.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.system.014g-fuentes",
+          "title": "Fuentes y límites",
+          "role": "sources",
+          "markdown": "Theory of Horology presenta el movimiento mecánico simple y sus funciones generales en el capítulo 3; la inspección visual usada para esta curación corresponde a las páginas impresas 33 y 38 del PDF de capítulos 1–3. El diagrama es una síntesis conceptual: no representa escala, piezas de un calibre ni compatibilidades.",
+          "legacySectionAliases": [],
+          "requiredForStudy": false,
+          "collapsible": true
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage1.watch-system.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.horology.classify-subsystems",
+          "lessonId": "lesson.horology.system",
+          "visibleTitle": "Clasificar el reloj por funciones",
+          "purpose": "Distinguir reloj completo, movimiento y capas funcionales sin depender de que una pieza se mueva.",
+          "instructions": [
+            "Clasifica cada elemento por su función principal.",
+            "Justifica una pieza inmóvil.",
+            "Distingue movimiento, indicación, interfaz y protección."
+          ],
+          "availableHelp": [
+            "Vuelve al mapa visual de la lección.",
+            "Nombra entrada, relación, resultado y límite."
+          ],
+          "successCriteria": [
+            "No se confunde reloj con movimiento.",
+            "Cada clasificación incluye una relación observable.",
+            "Se admite función distribuida o desconocida."
+          ],
+          "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+          "limitations": [
+            "La interacción digital no demuestra manipulación, medida ni servicio físico."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación guardada"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014g.stage1.complete-watch-system"
+      ],
+      "limitations": [
+        "Mapa conceptual sin escala ni identidades de un calibre."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "macroStage": 1,
+      "pathRole": "support",
+      "centralQuestion": "¿Cómo cooperan acumulador, tren, escape, regulador e indicación sin formar una cadena puramente lineal?",
+      "whyNow": "Amplía la visión del reloj con el modelo general que la cadena mecánica desarrollará después.",
+      "observableOutcome": "Dibujar ruta de energía, bucle de temporización y rama de indicación sin exigir detalles posteriores.",
+      "recommendedPrerequisiteLessonIds": [
+        "lesson.horology.system"
+      ],
+      "effectivePrerequisiteConceptIds": [
+        "concept.horology.functional-chain"
+      ],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-pregunta",
+          "title": "El movimiento como sistema cerrado de relaciones",
+          "role": "orientation",
+          "markdown": "Antes de estudiar trenes, escape o regulación por separado, necesitas ver por qué cooperan. Un movimiento mecánico simple conserva energía, la transmite, la libera a intervalos y convierte ese comportamiento en indicación. La visión general introduce esas funciones; no debe exigir como prerrequisito detalles que todavía pretende situar.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-organos",
+          "title": "Cinco órganos funcionales",
+          "role": "visual-anatomy",
+          "markdown": "El mapa conceptual reúne acumulador de energía, tren de transmisión y conteo, escape, órgano regulador e indicación. No los leas como una lista lineal. El tren lleva energía hacia el escape, el escape interactúa con el regulador y una rama del movimiento termina en la visualización del tiempo.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-energia",
+          "title": "Ruta de energía",
+          "role": "explanation",
+          "markdown": "La energía almacenada crea una tendencia al movimiento. El tren la comunica y adapta a través de relaciones mecánicas. El escape no es otra fuente: administra la liberación y entrega impulsos que compensan pérdidas del regulador. Esta ruta explica por qué detener un órgano puede cambiar el comportamiento del conjunto.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-tiempo",
+          "title": "Bucle de temporización",
+          "role": "explanation",
+          "markdown": "Escape y regulador se condicionan mutuamente. El escape deja avanzar el tren en pasos; el regulador determina cuándo puede producirse cada liberación y recibe impulsos para mantener su oscilación. Por eso la temporización se representa como un bucle de interacción, no como una flecha que termina sin retorno.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-indicacion",
+          "title": "La rama de indicación",
+          "role": "explanation",
+          "markdown": "La indicación aprovecha el movimiento contado y lo transforma en posiciones legibles. Minutería y puesta en hora son desarrollos posteriores de esta rama, no fundamentos necesarios para comprender la visión general. Aquí basta reconocer que mostrar el tiempo es una salida del sistema y que su arquitectura detallada exige otra lección.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-caso",
+          "title": "Caso: el tren quiere avanzar",
+          "role": "worked-example",
+          "markdown": "Imagina energía disponible y un tren ensamblado, pero sin control temporal. La tendencia al avance existe, aunque el reloj no produciría una indicación regulada. Añadir un escape sin un regulador tampoco completa el modelo. El caso muestra que enumerar componentes no basta: la función aparece en sus relaciones.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-puente",
+          "title": "Qué estudiar después",
+          "role": "next-connection",
+          "markdown": "La cadena mecánica detallará la ruta energética y la interacción escape–oscilador. Más adelante estudiarás relaciones de engranajes, puesta en hora, ajuste y diagnóstico. Esos contenidos amplían este mapa; no se convierten retrospectivamente en requisitos para entenderlo.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-fuentes",
+          "title": "Fuentes y límites",
+          "role": "sources",
+          "markdown": "La síntesis se apoya en Theory of Horology, capítulo 3, páginas impresas 33, 38 y 39 del PDF inspeccionado visualmente. El esquema no afirma fuerzas, rendimientos, frecuencias, tolerancias ni diseño de un calibre. La numeración del archivo dividido se conserva como localizador editorial para evitar confundirla con otro PDF.",
+          "legacySectionAliases": [],
+          "requiredForStudy": false,
+          "collapsible": true
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage1.mechanical-feedback.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+          "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+          "visibleTitle": "Reconstruir el movimiento simple",
+          "purpose": "Representar ruta de energía, bucle de temporización y rama de indicación.",
+          "instructions": [
+            "Coloca las cinco funciones.",
+            "Dibuja el retorno entre escape y regulador.",
+            "Separa la salida de indicación."
+          ],
+          "availableHelp": [
+            "Vuelve al mapa visual de la lección.",
+            "Nombra entrada, relación, resultado y límite."
+          ],
+          "successCriteria": [
+            "El escape no aparece como fuente.",
+            "La temporización no queda como cadena lineal.",
+            "Los detalles posteriores no se tratan como prerrequisito."
+          ],
+          "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+          "limitations": [
+            "La interacción digital no demuestra manipulación, medida ni servicio físico."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación guardada"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014g.stage1.simple-mechanical-system"
+      ],
+      "limitations": [
+        "No incluye minutería, puesta en hora, fuerzas ni tolerancias."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "macroStage": 1,
+      "pathRole": "anchor",
+      "centralQuestion": "¿Cómo se relacionan la ruta energética, el bucle escape–oscilador y la rama de indicación?",
+      "whyNow": "Con el sistema general situado, ya puedes seguir la arquitectura mecánica sin confundir tren, regulación e indicación.",
+      "observableOutcome": "Ordenar la ruta energética y explicar el retorno de temporización entre escape y oscilador.",
+      "recommendedPrerequisiteLessonIds": [
+        "lesson.horology.system"
+      ],
+      "effectivePrerequisiteConceptIds": [
+        "concept.horology.functional-chain",
+        "concept.horology.part-language"
+      ],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.horology.mechanical-chain.014g-pregunta",
+          "title": "Tres relaciones, no una sola cadena",
+          "role": "orientation",
+          "markdown": "La expresión «cadena mecánica» ayuda a ordenar órganos, pero puede ocultar la estructura real. Distingue una ruta de energía, un bucle de temporización entre escape y oscilador y una rama de indicación. Las tres cooperan; ninguna debe presentarse como una fila de piezas que solo empuja hacia delante.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.mechanical-chain.014g-mapa",
+          "title": "Mapa causal de la arquitectura mecánica",
+          "role": "visual-anatomy",
+          "markdown": "La fuente y el barrilete alimentan el tren. El tren llega al escape. Escape, áncora y conjunto volante–espiral forman la interacción que dosifica el avance. Otra relación lleva el movimiento contado a la indicación. El diagrama usa funciones y conexiones; la vista del MIYOTA 8215 sirve solo como ejemplo estructural documentado.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.mechanical-chain.014g-energia",
+          "title": "Ruta de energía: fuente, tren y escape",
+          "role": "explanation",
+          "markdown": "El muelle conserva energía y el barrilete la entrega al tren. Las ruedas transmiten movimiento entre ejes y relaciones. Al final de la ruta, el escape alterna bloqueo, liberación e impulso. Decir que el tren «crea» energía invierte la causalidad: la transmite desde una fuente y sus pérdidas forman parte del sistema real.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.mechanical-chain.014g-bucle",
+          "title": "Bucle de temporización: escape y oscilador",
+          "role": "explanation",
+          "markdown": "El escape permite un avance cuando el regulador alcanza una condición adecuada; a la vez, proporciona impulsos al regulador. El volante y la espiral no son una rueda más del tren, y el escape no actúa como metrónomo independiente. La regularidad observable nace de su interacción y de condiciones físicas que este diagrama no calcula.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.mechanical-chain.014g-indicacion",
+          "title": "Rama de indicación y puesta en hora",
+          "role": "comparison",
+          "markdown": "El tren de marcha transmite la energía controlada; la minutería transforma una salida en relaciones apropiadas para las agujas. La puesta en hora añade una interfaz capaz de cambiar la indicación. Estas funciones se conectan, pero no son idénticas: una lección posterior deberá mostrar sus piezas y estados específicos.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.mechanical-chain.014g-fallo",
+          "title": "Caso: el oscilador deja de interactuar",
+          "role": "worked-example",
+          "markdown": "Si se inmoviliza el oscilador en el modelo conceptual, el escape deja de recibir la temporización que permite su secuencia normal. El tren no debe representarse simplemente como una animación que sigue avanzando. La predicción es cualitativa y educativa; no diagnostica por qué un reloj real se detuvo.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.mechanical-chain.014g-actividad",
+          "title": "Ordenar y explicar",
+          "role": "checkpoint",
+          "markdown": "Ordena los órganos por la ruta energética y, después, añade el retorno de temporización. El criterio no es solo colocar tarjetas: debes explicar qué entrega cada relación y señalar por qué la rama de indicación no sustituye al regulador. La identificación del conjunto escape–oscilador permanece como actividad opcional de apoyo.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.mechanical-chain.014g-fuentes",
+          "title": "Fuentes, ejemplo de calibre y límites",
+          "role": "sources",
+          "markdown": "Theory of Horology, capítulo 6, página PDF 1 / impresa 99, describe la función general del escape; el capítulo 3 sustenta el mapa del movimiento simple. Las páginas y despieces oficiales del MIYOTA 8215 respaldan identidades del ejemplo, no fuerzas, lubricación, tolerancias ni una secuencia de servicio.",
+          "legacySectionAliases": [],
+          "requiredForStudy": false,
+          "collapsible": true
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage1.mechanical-feedback.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.horology.order-mechanical-chain",
+          "lessonId": "lesson.horology.mechanical-chain",
+          "visibleTitle": "Ordenar la ruta y cerrar el bucle",
+          "purpose": "Explicar la arquitectura mecánica sin reducirla a una fila de ruedas.",
+          "instructions": [
+            "Ordena la ruta energética.",
+            "Añade la interacción escape–oscilador.",
+            "Señala la rama de indicación."
+          ],
+          "availableHelp": [
+            "Vuelve al mapa visual de la lección.",
+            "Nombra entrada, relación, resultado y límite."
+          ],
+          "successCriteria": [
+            "La fuente precede al tren.",
+            "Escape y oscilador se condicionan mutuamente.",
+            "Minutería e indicación no sustituyen al regulador."
+          ],
+          "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+          "limitations": [
+            "La interacción digital no demuestra manipulación, medida ni servicio físico."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación guardada"
+            ]
+          }
+        },
+        {
+          "activityId": "activity.horology.identify-escapement-oscillator",
+          "lessonId": "lesson.horology.mechanical-chain",
+          "visibleTitle": "Identificar el conjunto de temporización",
+          "purpose": "Practicar de forma opcional la distinción entre escape, áncora, volante y espiral.",
+          "instructions": [
+            "Localiza el conjunto en la representación.",
+            "Asigna función a cada órgano.",
+            "Declara una limitación del modelo."
+          ],
+          "availableHelp": [
+            "Vuelve al mapa visual de la lección.",
+            "Nombra entrada, relación, resultado y límite."
+          ],
+          "successCriteria": [
+            "Se distingue escape de oscilador.",
+            "No se infieren fuerzas, lubricación ni estado real."
+          ],
+          "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+          "limitations": [
+            "La interacción digital no demuestra manipulación, medida ni servicio físico."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación guardada"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014g.stage1.escapement-regulator-loop"
+      ],
+      "limitations": [
+        "El 8215 es ejemplo estructural y no una simulación física validada."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "macroStage": 1,
+      "pathRole": "support",
+      "centralQuestion": "¿Cómo pasan energía y referencia temporal a movimiento e indicación en un cuarzo analógico?",
+      "whyNow": "Ofrece un contraste temprano y una especialización de apoyo sin bloquear la progresión mecánica.",
+      "observableOutcome": "Ordenar energía, referencia/división, conversión, transmisión e indicación y declarar el alcance del 2035.",
+      "recommendedPrerequisiteLessonIds": [
+        "lesson.horology.system"
+      ],
+      "effectivePrerequisiteConceptIds": [
+        "concept.horology.functional-chain"
+      ],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.horology.quartz-chain.014g-pregunta",
+          "title": "Una especialización de apoyo",
+          "role": "orientation",
+          "markdown": "El cuarzo analógico ofrece otra solución al mismo problema general de medir e indicar el tiempo. Esta lección es apoyo y especialización inicial: ayuda a comparar arquitecturas, pero no bloquea el recorrido mecánico. Se estudia por funciones y con el MIYOTA 2035 como ejemplo documentado, sin convertirlo en modelo universal.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.quartz-chain.014g-mapa",
+          "title": "Mapa funcional del cuarzo analógico",
+          "role": "visual-anatomy",
+          "markdown": "Distingue cuatro zonas: energía eléctrica, referencia y división temporal, conversión electromecánica y transmisión hacia la indicación. En el 2035, batería, circuito integrado, cristal de cuarzo, bobina, estator, rotor y tren aparecen como identidades documentadas. El mapa no afirma que toda arquitectura de cuarzo las disponga igual.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.quartz-chain.014g-energia",
+          "title": "Energía y control electrónico",
+          "role": "explanation",
+          "markdown": "La batería proporciona energía eléctrica. El circuito mantiene la oscilación de la referencia de cuarzo y organiza una señal temporal utilizable. «Electrónico» no significa que las agujas reciban energía sin intermediarios: aún hace falta convertir la señal en movimiento y transmitirlo.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.quartz-chain.014g-referencia",
+          "title": "Referencia y división temporal",
+          "role": "explanation",
+          "markdown": "El cuarzo funciona como referencia periódica dentro del circuito. La división transforma esa oscilación en una cadencia adecuada para controlar la etapa siguiente. Esta explicación conserva el principio sin introducir valores numéricos; cualquier frecuencia, tolerancia o consumo concreto requiere su afirmación y localizador verificables.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.quartz-chain.014g-conversion",
+          "title": "De señal a movimiento",
+          "role": "explanation",
+          "markdown": "La corriente en la bobina crea un campo magnético en el conjunto de estator y rotor. El motor paso a paso convierte la orden eléctrica en desplazamientos mecánicos. A partir del rotor, el tren transmite el movimiento hacia las agujas. Conversión y transmisión son funciones distintas aunque estén próximas físicamente.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.quartz-chain.014g-comparacion",
+          "title": "Qué cambia frente a un mecánico",
+          "role": "comparison",
+          "markdown": "La fuente, la referencia temporal y el modo de dosificar el avance cambian. Un circuito y un cristal no son equivalentes físicos de escape, volante y espiral; solo pueden compararse por ciertas funciones. La parte final vuelve a ser mecánica en un cuarzo analógico: motor, tren e indicación conservan relaciones de movimiento.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.quartz-chain.014g-actividad",
+          "title": "Seguir la cadena sin atribuir de más",
+          "role": "checkpoint",
+          "markdown": "Ordena energía, referencia/división, conversión, transmisión e indicación. Explica una interfaz entre dos zonas y nombra un dato que el diagrama no puede probar. Identificar la referencia temporal es una práctica opcional: el resultado digital demuestra comprensión y ejecución virtual, no competencia física sobre un 2035.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.quartz-chain.014g-fuentes",
+          "title": "Fuentes y límites",
+          "role": "sources",
+          "markdown": "La arquitectura general se verificó visualmente en Theory of Horology, capítulo 15: PDF 3 / impresa 331 para el conjunto, PDF 11 / impresa 339 para circuito y división, PDF 13 / impresa 341 para el tren y PDF 14 / impresa 342 para motor. El MIYOTA 2035 se limita a su documentación oficial declarada.",
+          "legacySectionAliases": [],
+          "requiredForStudy": false,
+          "collapsible": true
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage1.quartz-functional.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.horology.order-quartz-chain",
+          "lessonId": "lesson.horology.quartz-chain",
+          "visibleTitle": "Ordenar la arquitectura de cuarzo",
+          "purpose": "Seguir energía, referencia/división, conversión, transmisión e indicación.",
+          "instructions": [
+            "Ordena las zonas funcionales.",
+            "Explica dos interfaces.",
+            "Marca un dato que necesita documentación oficial."
+          ],
+          "availableHelp": [
+            "Vuelve al mapa visual de la lección.",
+            "Nombra entrada, relación, resultado y límite."
+          ],
+          "successCriteria": [
+            "La batería no se conecta directamente a las agujas.",
+            "Motor y tren se distinguen.",
+            "No se universaliza el 2035."
+          ],
+          "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+          "limitations": [
+            "La interacción digital no demuestra manipulación, medida ni servicio físico."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación guardada"
+            ]
+          }
+        },
+        {
+          "activityId": "activity.horology.identify-time-reference",
+          "lessonId": "lesson.horology.quartz-chain",
+          "visibleTitle": "Reconocer la referencia temporal",
+          "purpose": "Distinguir referencia, circuito y motor sin exigir la especialización al recorrido mecánico.",
+          "instructions": [
+            "Identifica la referencia.",
+            "Explica qué hace el circuito.",
+            "Separa la orden eléctrica del movimiento mecánico."
+          ],
+          "availableHelp": [
+            "Vuelve al mapa visual de la lección.",
+            "Nombra entrada, relación, resultado y límite."
+          ],
+          "successCriteria": [
+            "El cristal no se presenta como motor.",
+            "Se declara el alcance conceptual."
+          ],
+          "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+          "limitations": [
+            "La interacción digital no demuestra manipulación, medida ni servicio físico."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación guardada"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014g.stage1.quartz-analogue-chain"
+      ],
+      "limitations": [
+        "El MIYOTA 2035 no representa todas las arquitecturas de cuarzo."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "macroStage": 1,
+      "pathRole": "anchor",
+      "centralQuestion": "¿Qué funciones son comparables entre cuarzo y mecánico y dónde termina cada analogía?",
+      "whyNow": "Con el mapa mecánico disponible puedes transferir funciones sin convertir parecidos en igualdad física.",
+      "observableOutcome": "Clasificar equivalencias como parciales, distribuidas o sin equivalente directo y justificar sus límites.",
+      "recommendedPrerequisiteLessonIds": [
+        "lesson.horology.mechanical-chain",
+        "lesson.horology.quartz-chain"
+      ],
+      "effectivePrerequisiteConceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.horology.functional-equivalence.014g-pregunta",
+          "title": "Comparar funciones sin igualar objetos",
+          "role": "orientation",
+          "markdown": "Dos arquitecturas pueden resolver una necesidad parecida con piezas y principios diferentes. Una equivalencia funcional responde «¿qué papel comparable cumple?»; no demuestra igualdad física, compatibilidad, precisión equivalente ni posibilidad de sustitución. El mapa mecánico es requisito; el mapa de cuarzo permanece como apoyo accesible desde esta comparación.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.functional-equivalence.014g-matriz",
+          "title": "Una matriz de equivalencias y límites",
+          "role": "visual-anatomy",
+          "markdown": "Cada fila comienza por una función: aportar energía, mantener referencia, dosificar el avance, convertir, transmitir o indicar. Las columnas describen cómo participa cada arquitectura y una tercera columna declara el límite. Algunas relaciones son parciales, otras están distribuidas y algunas carecen de equivalente directo útil.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.functional-equivalence.014g-parcial",
+          "title": "Equivalencia parcial",
+          "role": "comparison",
+          "markdown": "La batería y el muelle son comparables como fuentes dentro del sistema, pero almacenan y entregan energía de forma distinta. El cristal de cuarzo y el conjunto volante–espiral participan en la referencia temporal, aunque sus fenómenos físicos y su relación con el control no son intercambiables. La función compartida no borra la diferencia.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.functional-equivalence.014g-distribuida",
+          "title": "Función distribuida",
+          "role": "comparison",
+          "markdown": "En un reloj mecánico, referencia, control e impulso se reparten entre regulador y escape. En un cuarzo analógico, cristal, circuito y motor dividen otras partes del trabajo. Forzar pares uno a uno produce analogías engañosas. Cuando una función pertenece a un conjunto, la matriz debe nombrar el conjunto.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.functional-equivalence.014g-sin-equivalente",
+          "title": "Cuando no hay equivalente directo",
+          "role": "explanation",
+          "markdown": "Una función puede existir solo en una arquitectura o combinarse de forma tan distinta que el emparejamiento deje de ayudar. La respuesta correcta puede ser «sin equivalente directo». Esa negativa es información: protege contra inferencias de compatibilidad, reparación o comportamiento que las fuentes no respaldan.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.functional-equivalence.014g-caso",
+          "title": "Caso: el impulso no es una señal",
+          "role": "worked-example",
+          "markdown": "El impulso mecánico que recibe un regulador y la señal que gobierna un motor paso a paso participan en secuencias temporizadas, pero no son la misma entidad ni actúan sobre el mismo órgano. La comparación válida se mantiene en el nivel funcional; bajar al nivel físico exige describir cada mecanismo por separado.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.functional-equivalence.014g-actividad",
+          "title": "Emparejar, justificar y limitar",
+          "role": "checkpoint",
+          "markdown": "Para cada pareja, indica función común, solución mecánica, solución de cuarzo y límite. Se considera correcta una relación justificada, incluida la decisión de no emparejar. La actividad solicita K, V y un resultado revisable; no solicita desmontar ni medir un movimiento.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.horology.functional-equivalence.014g-fuentes",
+          "title": "Fuentes y límites",
+          "role": "sources",
+          "markdown": "La comparación combina los modelos conceptuales verificados en Theory of Horology con identidades declaradas por la documentación oficial del MIYOTA 2035. La matriz es una síntesis editorial original. No afirma equivalencia física, rendimiento, precisión, dimensiones ni compatibilidad entre componentes.",
+          "legacySectionAliases": [],
+          "requiredForStudy": false,
+          "collapsible": true
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage1.functional-equivalence.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.horology.match-functional-equivalents",
+          "lessonId": "lesson.horology.functional-equivalence",
+          "visibleTitle": "Comparar funciones y declarar límites",
+          "purpose": "Emparejar soluciones mecánicas y de cuarzo sin afirmar igualdad física.",
+          "instructions": [
+            "Empareja por función.",
+            "Clasifica la equivalencia como parcial, distribuida o sin equivalente directo.",
+            "Escribe el límite de cada pareja."
+          ],
+          "availableHelp": [
+            "Vuelve al mapa visual de la lección.",
+            "Nombra entrada, relación, resultado y límite."
+          ],
+          "successCriteria": [
+            "Se justifican las relaciones.",
+            "No se afirma compatibilidad.",
+            "Se acepta rechazar una pareja engañosa."
+          ],
+          "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+          "limitations": [
+            "La interacción digital no demuestra manipulación, medida ni servicio físico."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación guardada"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014g.stage1.functional-equivalence-limits"
+      ],
+      "limitations": [
+        "La rama de cuarzo es ayuda recomendada, no prerrequisito bloqueante."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-limited"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "macroStage": 1,
+      "pathRole": "anchor",
+      "centralQuestion": "¿Qué puede demostrar cada tipo de documento y qué queda fuera de su alcance?",
+      "whyNow": "Antes de avanzar a mecanismos concretos necesitas vincular cada afirmación con una autoridad aplicable.",
+      "observableOutcome": "Auditar afirmaciones por tipo de documento, localizador, aplicabilidad y estado de verificación.",
+      "recommendedPrerequisiteLessonIds": [
+        "lesson.horology.functional-equivalence"
+      ],
+      "effectivePrerequisiteConceptIds": [
+        "concept.horology.functional-chain"
+      ],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.014g-pregunta",
+          "title": "Un documento responde una clase de pregunta",
+          "role": "orientation",
+          "markdown": "Leer documentación técnica consiste en ajustar la afirmación al alcance real del documento. Un nombre comercial, una ficha, un despiece, un manual de servicio y una base de datos no prueban lo mismo. La autoridad depende de la materia, del producto, de la edición y del localizador concreto.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.014g-tipos",
+          "title": "Qué puede y qué no puede demostrar cada documento",
+          "role": "visual-anatomy",
+          "markdown": "Una ficha oficial puede confirmar especificaciones que declara. Un despiece ayuda a identificar piezas y relaciones de montaje representadas. Un manual aplicable puede documentar secuencias y criterios de servicio. Una base secundaria facilita descubrimiento y equivalencias preliminares. Ninguno debe utilizarse para responder una pregunta que no trata.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.014g-despiece",
+          "title": "Un despiece no es una secuencia de servicio",
+          "role": "comparison",
+          "markdown": "La posición gráfica o la numeración de un despiece no demuestra por sí sola el orden de desmontaje, el método de manipulación, la lubricación ni una tolerancia. Para afirmar una secuencia hacen falta instrucciones aplicables. El dibujo puede inspirar una pregunta o confirmar una identidad, pero no completa el procedimiento.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.014g-afirmacion",
+          "title": "Procedencia por afirmación",
+          "role": "explanation",
+          "markdown": "Divide una conclusión extensa en afirmaciones comprobables. Para cada una registra documento, localizador, aplicabilidad y estado de verificación. Si el dato es una inferencia, llámalo inferencia. Si dos fuentes difieren, conserva el conflicto. El orden incidental de una lista nunca decide cuál es la fuente principal.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.014g-jerarquia",
+          "title": "Autoridad por materia",
+          "role": "explanation",
+          "markdown": "Para una pieza o secuencia de un calibre, prioriza documentación oficial aplicable. Para teoría general, usa una fuente conceptual. Para identificación histórica o descubrimiento, una base puede orientar la búsqueda. La misma fuente puede ser fuerte en una materia y débil en otra; «oficial» tampoco convierte en universal una afirmación específica.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.014g-caso",
+          "title": "Caso: identificar no es autorizar",
+          "role": "worked-example",
+          "markdown": "Una base secundaria y un despiece oficial coinciden en el nombre de una pieza. La coincidencia mejora la identificación, pero no autoriza a concluir qué lubricante usa o en qué orden debe retirarse. Esas son afirmaciones distintas y necesitan localizadores aplicables. El hueco se registra como pendiente, no se rellena por analogía.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.014g-actividad",
+          "title": "Auditar cinco afirmaciones",
+          "role": "checkpoint",
+          "markdown": "Elige una ficha oficial y una fuente secundaria ya registrada. Redacta afirmaciones breves, asigna a cada una su fuente y declara qué pregunta queda fuera de alcance. El éxito depende de justificar autoridad y límite, no de acumular enlaces. No abras recursos privados ni introduzcas identificadores internos en la interfaz.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.014g-fuentes",
+          "title": "Fuentes y límites",
+          "role": "sources",
+          "markdown": "La lección usa como casos las páginas y documentos oficiales MIYOTA 2035 y 8215 registrados por el proyecto, junto con recursos secundarios para contraste. No se inventan páginas ausentes ni se trata una URL como prueba de contenido no inspeccionado. Las tres dependencias avanzadas de cuarzo del contenido bruto no son requisitos efectivos.",
+          "legacySectionAliases": [],
+          "requiredForStudy": false,
+          "collapsible": true
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage1.document-authority.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.encyclopedia.history-language.leer-documentacion",
+          "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+          "visibleTitle": "Auditar el alcance de un documento",
+          "purpose": "Relacionar cada afirmación con una fuente que pueda demostrarla.",
+          "instructions": [
+            "Formula una pregunta técnica.",
+            "Elige tipo de documento.",
+            "Registra afirmación, localizador, aplicabilidad y pregunta abierta."
+          ],
+          "availableHelp": [
+            "Vuelve al mapa visual de la lección.",
+            "Nombra entrada, relación, resultado y límite."
+          ],
+          "successCriteria": [
+            "Un despiece no se trata como secuencia.",
+            "Una base no sustituye documentación oficial de servicio.",
+            "El orden incidental de una lista no decide autoridad."
+          ],
+          "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+          "limitations": [
+            "La interacción digital no demuestra manipulación, medida ni servicio físico."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación guardada"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014g.stage1.exploded-view-scope"
+      ],
+      "limitations": [
+        "No abre recursos externos ni convierte bases en documentación de servicio."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-reviewed"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "macroStage": 1,
+      "pathRole": "optional-branch",
+      "centralQuestion": "¿Cómo convierte un reloj una referencia repetible en conteo, escala e indicación?",
+      "whyNow": "Amplía el lenguaje común para comparar tecnologías sin bloquear el recorrido principal.",
+      "observableOutcome": "Aplicar referencia, conteo, escala e indicación a cuatro arquitecturas y separar estabilidad, resolución y error.",
+      "recommendedPrerequisiteLessonIds": [
+        "lesson.horology.system"
+      ],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-pregunta",
+          "title": "De un fenómeno repetible a una lectura",
+          "role": "orientation",
+          "markdown": "Medir tiempo exige escoger una referencia, reconocer repeticiones, contarlas y presentarlas en una escala útil. Esta rama es enriquecimiento histórico y conceptual: amplía el mapa del sistema, pero no bloquea el camino mecánico. No presupone una tecnología concreta ni convierte una comparación histórica en procedimiento.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-mapa",
+          "title": "Referencia, conteo, escala e indicación",
+          "role": "visual-anatomy",
+          "markdown": "El mapa separa el fenómeno que se repite, el medio que detecta o cuenta repeticiones, la escala que asigna significado y la visualización. La estabilidad de la referencia y los errores de lectura afectan al resultado. Una indicación legible no demuestra por sí sola que la referencia sea estable.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-referencia",
+          "title": "La referencia temporal",
+          "role": "explanation",
+          "markdown": "Una referencia ofrece sucesos o estados repetibles que pueden compararse. Péndulo, volante–espiral y cuarzo pertenecen a historias y mecanismos distintos. Agruparlos bajo «referencia» permite preguntar por regularidad y perturbaciones sin afirmar que compartan física, rendimiento o forma de control.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-conteo",
+          "title": "Contar y convertir",
+          "role": "explanation",
+          "markdown": "El sistema debe conservar alguna correspondencia entre repeticiones y unidades mostradas. Esa correspondencia puede construirse mecánica, electrónica o digitalmente. El conteo no es la visualización: puede existir un estado contado antes de representarse mediante agujas, discos o cifras.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-error",
+          "title": "Estabilidad, resolución y error",
+          "role": "comparison",
+          "markdown": "La estabilidad describe cuánto conserva la referencia su comportamiento; la resolución, cuánto detalle puede distinguir la indicación; el error, la diferencia respecto de una comparación declarada. Son ideas relacionadas, no sinónimos. Esta lección no fija fórmulas ni valores: prepara las preguntas que más adelante exigirán metrología y fuentes exactas.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-caso",
+          "title": "Caso: cuatro relojes, un mismo mapa",
+          "role": "worked-example",
+          "markdown": "Aplica las cuatro funciones a un péndulo, un reloj mecánico, un cuarzo analógico y un cronómetro digital. En todos puedes buscar referencia, conteo, escala e indicación; las piezas y fenómenos cambian. Si una función está distribuida, nombra el conjunto en lugar de forzar una pieza única.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-actividad",
+          "title": "Comparar sin borrar la historia",
+          "role": "checkpoint",
+          "markdown": "Dibuja los cuatro mapas y marca qué permanece a nivel funcional. Después añade una diferencia que impida tratar las soluciones como equivalentes físicas. El producto es una explicación K/V revisable; no acredita ajuste, medición instrumental ni destreza de banco.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-fuentes",
+          "title": "Fuentes y límites",
+          "role": "sources",
+          "markdown": "La estructura es una síntesis conceptual de fuentes generales ya registradas y del mapa funcional de etapa 1. Se conserva como enrichment y con estado source-limited: no introduce cronologías, cifras de estabilidad, fórmulas ni comparaciones de precisión sin localizador primario.",
+          "legacySectionAliases": [],
+          "requiredForStudy": false,
+          "collapsible": true
+        }
+      ],
+      "visualDesignIds": [],
+      "activityPresentations": [
+        {
+          "activityId": "activity.encyclopedia.history-language.medir-el-tiempo",
+          "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+          "visibleTitle": "Comparar cuatro formas de medir tiempo",
+          "purpose": "Transferir el mapa referencia–conteo–escala–indicación a arquitecturas distintas.",
+          "instructions": [
+            "Dibuja cuatro mapas.",
+            "Marca funciones comunes.",
+            "Añade una diferencia física esencial."
+          ],
+          "availableHelp": [
+            "Vuelve al mapa visual de la lección.",
+            "Nombra entrada, relación, resultado y límite."
+          ],
+          "successCriteria": [
+            "No se confunden estabilidad, resolución y error.",
+            "La comparación permanece conceptual."
+          ],
+          "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+          "limitations": [
+            "La interacción digital no demuestra manipulación, medida ni servicio físico."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación guardada"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014g.stage1.measurement-functional-map"
+      ],
+      "limitations": [
+        "Enriquecimiento source-limited sin cifras, fórmulas ni cronología detallada."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-limited"
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "sourceBlockId": "block.advanced.atlas-authority",
+      "macroStage": 1,
+      "pathRole": "reference",
+      "centralQuestion": "¿Qué fuente puede responder mi pregunta y cómo separo lo confirmado, inferido y desconocido?",
+      "whyNow": "La guía de autoridad queda disponible desde el inicio como referencia, sin exigir el recorrido avanzado.",
+      "observableOutcome": "Construir una ficha de procedencia que relacione pregunta, autoridad, aplicabilidad y estado de conocimiento.",
+      "recommendedPrerequisiteLessonIds": [
+        "lesson.encyclopedia.history-language.leer-documentacion"
+      ],
+      "effectivePrerequisiteConceptIds": [],
+      "sections": [
+        {
+          "sectionId": "reader.section.block.advanced.atlas-authority.014g-pregunta",
+          "title": "Buscar con una pregunta verificable",
+          "role": "orientation",
+          "markdown": "Un atlas útil no empieza por una lista de movimientos, sino por una pregunta: identificar, fechar, comparar una familia, confirmar una pieza o localizar documentación de servicio. Esta lección funciona como referencia temprana. No requiere completar la ruta avanzada ni presupone competencia de reparación.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.atlas-authority.014g-ruta",
+          "title": "De la pregunta a la autoridad adecuada",
+          "role": "visual-anatomy",
+          "markdown": "La ruta de decisión distingue documentación oficial, fuentes históricas, bases de identificación y recursos secundarios. Cada salida conserva procedencia, aplicabilidad y una pregunta que sigue abierta. La interfaz muestra nombres legibles y tipos de fuente; los identificadores internos permanecen en los datos editoriales.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.atlas-authority.014g-primaria",
+          "title": "Documentación primaria y aplicabilidad",
+          "role": "explanation",
+          "markdown": "Una comunicación técnica del fabricante puede respaldar los datos que declara para la variante y edición indicadas. Antes de trasladar una cifra o pieza, comprueba calibre, variante, fecha y localizador. Que el documento sea primario no lo convierte en teoría general ni extiende automáticamente su alcance a una familia completa.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.atlas-authority.014g-bases",
+          "title": "Bases de datos: descubrir y contrastar",
+          "role": "explanation",
+          "markdown": "Una base puede ayudar a encontrar nombres alternativos, familias, fechas o pistas documentales. Trátala como ruta de descubrimiento y contraste, no como autoridad final de lubricación, tolerancias, compatibilidad o servicio. Cuando dos bases coinciden, la coincidencia sigue necesitando una fuente apropiada para la afirmación técnica.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.atlas-authority.014g-estados",
+          "title": "Confirmado, inferido y desconocido",
+          "role": "comparison",
+          "markdown": "«Confirmado» necesita una fuente y un localizador aplicables. «Inferido» describe un razonamiento que puede ser plausible sin estar documentado. «Desconocido» conserva una pregunta que aún no puede cerrarse. Separar los tres estados evita que una búsqueda termine en una certeza artificial.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.atlas-authority.014g-caso",
+          "title": "Caso: el nombre coincide, la variante no",
+          "role": "worked-example",
+          "markdown": "Encuentras el mismo nombre de calibre en una base y en un documento oficial, pero la variante del documento no coincide con el objeto estudiado. Puedes registrar una identificación provisional y buscar una comunicación aplicable; no debes copiar dimensiones ni piezas como si la coincidencia nominal resolviera la variante.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.atlas-authority.014g-actividad",
+          "title": "Construir una ficha de procedencia",
+          "role": "checkpoint",
+          "markdown": "Formula una pregunta, elige el tipo de fuente adecuado y registra una afirmación confirmada, una inferencia y un desconocido. Añade qué evidencia podría refutar tu decisión. La actividad evalúa razonamiento documental; no certifica identificación física ni autoriza una intervención.",
+          "legacySectionAliases": []
+        },
+        {
+          "sectionId": "reader.section.block.advanced.atlas-authority.014g-fuentes",
+          "title": "Fuentes y límites",
+          "role": "sources",
+          "markdown": "El caso editorial usa una comunicación oficial ETA 6497-2 y bases de datos ya declaradas en el corpus. La curación no copia sus contenidos ni muestra IDs internos. Cada recurso conserva su autoridad limitada; las URLs antiguas y alias se resuelven en el registro de fuentes, no en el texto visible.",
+          "legacySectionAliases": [],
+          "requiredForStudy": false,
+          "collapsible": true
+        }
+      ],
+      "visualDesignIds": [
+        "visual.stage1.claim-trace.v1"
+      ],
+      "activityPresentations": [
+        {
+          "activityId": "activity.advanced.atlas-authority",
+          "lessonId": "lesson.advanced.atlas-authority",
+          "visibleTitle": "Construir una ficha de procedencia",
+          "purpose": "Elegir autoridad por materia y separar confirmado, inferido y desconocido.",
+          "instructions": [
+            "Formula la pregunta.",
+            "Selecciona una fuente por su autoridad.",
+            "Registra un confirmado, una inferencia y un desconocido."
+          ],
+          "availableHelp": [
+            "Vuelve al mapa visual de la lección.",
+            "Nombra entrada, relación, resultado y límite."
+          ],
+          "successCriteria": [
+            "La variante y aplicabilidad se declaran.",
+            "Una base secundaria se usa para descubrir o contrastar.",
+            "Se propone evidencia que podría refutar la decisión."
+          ],
+          "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+          "limitations": [
+            "La interacción digital no demuestra manipulación, medida ni servicio físico."
+          ],
+          "evidenceProfile": {
+            "modalities": [
+              "K",
+              "V",
+              "R"
+            ],
+            "primaryModality": "V",
+            "knowledgeExplanationRequired": true,
+            "virtualDemonstrationRequired": true,
+            "physicalExecutionRequired": false,
+            "measuredOrReviewedResultRequired": true,
+            "physicalCompetenceClaim": false,
+            "reviewerRequired": false,
+            "measurableAcceptanceCriteria": [
+              "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+            ],
+            "evidenceArtifacts": [
+              "respuesta digital",
+              "explicación guardada"
+            ]
+          }
+        }
+      ],
+      "sourceClaimIds": [
+        "claim.014g.stage1.authority-by-subject"
+      ],
+      "limitations": [
+        "Referencia temprana; no afirma identificación física ni datos de una variante sin localizador."
+      ],
+      "personalReviewStatus": "not-reviewed",
+      "technicalStatus": "source-limited"
+    }
+  ],
+  "activityPresentations": [
+    {
+      "activityId": "activity.horology.classify-subsystems",
+      "lessonId": "lesson.horology.system",
+      "visibleTitle": "Clasificar el reloj por funciones",
+      "purpose": "Distinguir reloj completo, movimiento y capas funcionales sin depender de que una pieza se mueva.",
+      "instructions": [
+        "Clasifica cada elemento por su función principal.",
+        "Justifica una pieza inmóvil.",
+        "Distingue movimiento, indicación, interfaz y protección."
+      ],
+      "availableHelp": [
+        "Vuelve al mapa visual de la lección.",
+        "Nombra entrada, relación, resultado y límite."
+      ],
+      "successCriteria": [
+        "No se confunde reloj con movimiento.",
+        "Cada clasificación incluye una relación observable.",
+        "Se admite función distribuida o desconocida."
+      ],
+      "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+      "limitations": [
+        "La interacción digital no demuestra manipulación, medida ni servicio físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+        ],
+        "evidenceArtifacts": [
+          "respuesta digital",
+          "explicación guardada"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "visibleTitle": "Reconstruir el movimiento simple",
+      "purpose": "Representar ruta de energía, bucle de temporización y rama de indicación.",
+      "instructions": [
+        "Coloca las cinco funciones.",
+        "Dibuja el retorno entre escape y regulador.",
+        "Separa la salida de indicación."
+      ],
+      "availableHelp": [
+        "Vuelve al mapa visual de la lección.",
+        "Nombra entrada, relación, resultado y límite."
+      ],
+      "successCriteria": [
+        "El escape no aparece como fuente.",
+        "La temporización no queda como cadena lineal.",
+        "Los detalles posteriores no se tratan como prerrequisito."
+      ],
+      "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+      "limitations": [
+        "La interacción digital no demuestra manipulación, medida ni servicio físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+        ],
+        "evidenceArtifacts": [
+          "respuesta digital",
+          "explicación guardada"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.horology.order-mechanical-chain",
+      "lessonId": "lesson.horology.mechanical-chain",
+      "visibleTitle": "Ordenar la ruta y cerrar el bucle",
+      "purpose": "Explicar la arquitectura mecánica sin reducirla a una fila de ruedas.",
+      "instructions": [
+        "Ordena la ruta energética.",
+        "Añade la interacción escape–oscilador.",
+        "Señala la rama de indicación."
+      ],
+      "availableHelp": [
+        "Vuelve al mapa visual de la lección.",
+        "Nombra entrada, relación, resultado y límite."
+      ],
+      "successCriteria": [
+        "La fuente precede al tren.",
+        "Escape y oscilador se condicionan mutuamente.",
+        "Minutería e indicación no sustituyen al regulador."
+      ],
+      "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+      "limitations": [
+        "La interacción digital no demuestra manipulación, medida ni servicio físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+        ],
+        "evidenceArtifacts": [
+          "respuesta digital",
+          "explicación guardada"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.horology.identify-escapement-oscillator",
+      "lessonId": "lesson.horology.mechanical-chain",
+      "visibleTitle": "Identificar el conjunto de temporización",
+      "purpose": "Practicar de forma opcional la distinción entre escape, áncora, volante y espiral.",
+      "instructions": [
+        "Localiza el conjunto en la representación.",
+        "Asigna función a cada órgano.",
+        "Declara una limitación del modelo."
+      ],
+      "availableHelp": [
+        "Vuelve al mapa visual de la lección.",
+        "Nombra entrada, relación, resultado y límite."
+      ],
+      "successCriteria": [
+        "Se distingue escape de oscilador.",
+        "No se infieren fuerzas, lubricación ni estado real."
+      ],
+      "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+      "limitations": [
+        "La interacción digital no demuestra manipulación, medida ni servicio físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+        ],
+        "evidenceArtifacts": [
+          "respuesta digital",
+          "explicación guardada"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.horology.order-quartz-chain",
+      "lessonId": "lesson.horology.quartz-chain",
+      "visibleTitle": "Ordenar la arquitectura de cuarzo",
+      "purpose": "Seguir energía, referencia/división, conversión, transmisión e indicación.",
+      "instructions": [
+        "Ordena las zonas funcionales.",
+        "Explica dos interfaces.",
+        "Marca un dato que necesita documentación oficial."
+      ],
+      "availableHelp": [
+        "Vuelve al mapa visual de la lección.",
+        "Nombra entrada, relación, resultado y límite."
+      ],
+      "successCriteria": [
+        "La batería no se conecta directamente a las agujas.",
+        "Motor y tren se distinguen.",
+        "No se universaliza el 2035."
+      ],
+      "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+      "limitations": [
+        "La interacción digital no demuestra manipulación, medida ni servicio físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+        ],
+        "evidenceArtifacts": [
+          "respuesta digital",
+          "explicación guardada"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.horology.identify-time-reference",
+      "lessonId": "lesson.horology.quartz-chain",
+      "visibleTitle": "Reconocer la referencia temporal",
+      "purpose": "Distinguir referencia, circuito y motor sin exigir la especialización al recorrido mecánico.",
+      "instructions": [
+        "Identifica la referencia.",
+        "Explica qué hace el circuito.",
+        "Separa la orden eléctrica del movimiento mecánico."
+      ],
+      "availableHelp": [
+        "Vuelve al mapa visual de la lección.",
+        "Nombra entrada, relación, resultado y límite."
+      ],
+      "successCriteria": [
+        "El cristal no se presenta como motor.",
+        "Se declara el alcance conceptual."
+      ],
+      "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+      "limitations": [
+        "La interacción digital no demuestra manipulación, medida ni servicio físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+        ],
+        "evidenceArtifacts": [
+          "respuesta digital",
+          "explicación guardada"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.horology.match-functional-equivalents",
+      "lessonId": "lesson.horology.functional-equivalence",
+      "visibleTitle": "Comparar funciones y declarar límites",
+      "purpose": "Emparejar soluciones mecánicas y de cuarzo sin afirmar igualdad física.",
+      "instructions": [
+        "Empareja por función.",
+        "Clasifica la equivalencia como parcial, distribuida o sin equivalente directo.",
+        "Escribe el límite de cada pareja."
+      ],
+      "availableHelp": [
+        "Vuelve al mapa visual de la lección.",
+        "Nombra entrada, relación, resultado y límite."
+      ],
+      "successCriteria": [
+        "Se justifican las relaciones.",
+        "No se afirma compatibilidad.",
+        "Se acepta rechazar una pareja engañosa."
+      ],
+      "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+      "limitations": [
+        "La interacción digital no demuestra manipulación, medida ni servicio físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+        ],
+        "evidenceArtifacts": [
+          "respuesta digital",
+          "explicación guardada"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.encyclopedia.history-language.leer-documentacion",
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "visibleTitle": "Auditar el alcance de un documento",
+      "purpose": "Relacionar cada afirmación con una fuente que pueda demostrarla.",
+      "instructions": [
+        "Formula una pregunta técnica.",
+        "Elige tipo de documento.",
+        "Registra afirmación, localizador, aplicabilidad y pregunta abierta."
+      ],
+      "availableHelp": [
+        "Vuelve al mapa visual de la lección.",
+        "Nombra entrada, relación, resultado y límite."
+      ],
+      "successCriteria": [
+        "Un despiece no se trata como secuencia.",
+        "Una base no sustituye documentación oficial de servicio.",
+        "El orden incidental de una lista no decide autoridad."
+      ],
+      "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+      "limitations": [
+        "La interacción digital no demuestra manipulación, medida ni servicio físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+        ],
+        "evidenceArtifacts": [
+          "respuesta digital",
+          "explicación guardada"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.encyclopedia.history-language.medir-el-tiempo",
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "visibleTitle": "Comparar cuatro formas de medir tiempo",
+      "purpose": "Transferir el mapa referencia–conteo–escala–indicación a arquitecturas distintas.",
+      "instructions": [
+        "Dibuja cuatro mapas.",
+        "Marca funciones comunes.",
+        "Añade una diferencia física esencial."
+      ],
+      "availableHelp": [
+        "Vuelve al mapa visual de la lección.",
+        "Nombra entrada, relación, resultado y límite."
+      ],
+      "successCriteria": [
+        "No se confunden estabilidad, resolución y error.",
+        "La comparación permanece conceptual."
+      ],
+      "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+      "limitations": [
+        "La interacción digital no demuestra manipulación, medida ni servicio físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+        ],
+        "evidenceArtifacts": [
+          "respuesta digital",
+          "explicación guardada"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.advanced.atlas-authority",
+      "lessonId": "lesson.advanced.atlas-authority",
+      "visibleTitle": "Construir una ficha de procedencia",
+      "purpose": "Elegir autoridad por materia y separar confirmado, inferido y desconocido.",
+      "instructions": [
+        "Formula la pregunta.",
+        "Selecciona una fuente por su autoridad.",
+        "Registra un confirmado, una inferencia y un desconocido."
+      ],
+      "availableHelp": [
+        "Vuelve al mapa visual de la lección.",
+        "Nombra entrada, relación, resultado y límite."
+      ],
+      "successCriteria": [
+        "La variante y aplicabilidad se declaran.",
+        "Una base secundaria se usa para descubrir o contrastar.",
+        "Se propone evidencia que podría refutar la decisión."
+      ],
+      "feedback": "Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.",
+      "limitations": [
+        "La interacción digital no demuestra manipulación, medida ni servicio físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "La respuesta identifica la función, justifica la relación y declara al menos un límite."
+        ],
+        "evidenceArtifacts": [
+          "respuesta digital",
+          "explicación guardada"
+        ]
+      }
+    }
+  ],
+  "checkpoint": {
+    "checkpointId": "checkpoint.academy.stage0-to-stage1.014g",
+    "title": "Antes de estudiar el reloj como sistema",
+    "status": "recommended-non-blocking",
+    "questions": [
+      "¿Puedes preparar y cerrar una sesión de banco sin perder su estado?",
+      "¿Puedes elegir una herramienta por su contacto y reconocer cuándo detenerte?",
+      "¿Puedes separar observación, interpretación y diagnóstico?"
+    ],
+    "actions": [
+      {
+        "actionId": "review-stage0",
+        "label": "Revisar etapa 0",
+        "intent": "review-stage"
+      },
+      {
+        "actionId": "continue-stage1",
+        "label": "Continuar a etapa 1",
+        "intent": "continue"
+      },
+      {
+        "actionId": "record-question",
+        "label": "Anotar una duda",
+        "intent": "record-note"
+      }
+    ],
+    "blocking": false,
+    "affectsProgress": false
+  }
+}

@@ -38,7 +38,13 @@ import {
   type LearningProductIndex,
 } from '../product/demoPackage'
 import { academyStudyPlan } from '../academy/academyStudyPlan'
-import { academyLocalStore, normalizeAcademyLocalState } from '../academy/academyLocalState'
+import {
+  academyLocalStore,
+  mergeAcademyLocalState,
+  normalizeAcademyLocalState,
+  type AcademyLocalState,
+} from '../academy/academyLocalState'
+import type { ProfileMutationDiagnostic, ProfileMutationKind } from '../persistence/profileMutationCoordinator'
 import { effectiveLessonPrerequisiteConceptIds } from '../academy/path/academyPathPrerequisites'
 import {
   academyRoutePrerequisiteStatus,
@@ -873,6 +879,8 @@ export class LearningApplicationService {
 
   async switchProfile(profileId: string): Promise<void> {
     const repository = this.requiredRepository()
+    const currentProfileId = this.snapshotValue.profile?.id
+    if (currentProfileId) await this.requiredProfileService().flush(currentProfileId)
     const next = await repository.getProfile(profileId)
     if (!next || next.deletedAt || next.archived) throw new Error('El perfil seleccionado no está disponible.')
     if (this.workspace.persistentSessionId) await this.saveAndExit('profile-switch')
@@ -900,6 +908,60 @@ export class LearningApplicationService {
     await this.refresh()
   }
 
+  async updateEducationalPreferences(
+    mutation: (current: Readonly<LearningProfile['educationalPreferences']>) => LearningProfile['educationalPreferences'],
+    kind: ProfileMutationKind = 'educational-preferences',
+  ): Promise<void> {
+    const profile = this.requiredProfile()
+    const updated = await this.requiredProfileService().updateEducationalPreferences(profile.id, mutation, kind)
+    if (this.snapshotValue.profile?.id === updated.id) this.set({ profile: updated })
+  }
+
+  async persistAcademyState(state: AcademyLocalState): Promise<void> {
+    const updated = await this.requiredProfileService().updateEducationalPreferences(state.profileId, (current) => ({
+      ...current,
+      academyStateV1: JSON.parse(JSON.stringify(mergeAcademyLocalState(
+        state.profileId,
+        current.academyStateV1,
+        state,
+        new Date().toISOString(),
+      ))) as never,
+    }), 'academy-state')
+    if (this.snapshotValue.profile?.id === updated.id) this.set({ profile: updated })
+  }
+
+  async getEffectiveAcademyState(profileId: string = this.requiredProfile().id): Promise<AcademyLocalState> {
+    await this.requiredProfileService().flush(profileId)
+    const profile = await this.requiredRepository().getProfile(profileId)
+    if (!profile) throw new Error(`Perfil inexistente: ${profileId}.`)
+    const timestamp = new Date().toISOString()
+    const persisted = profile.educationalPreferences.academyStateV1
+    if (typeof window === 'undefined') return normalizeAcademyLocalState(profileId, persisted, timestamp)
+    return mergeAcademyLocalState(profileId, persisted, academyLocalStore().load(profileId), timestamp)
+  }
+
+  flushProfileMutations(profileId?: string): Promise<void> {
+    return profileId
+      ? this.requiredProfileService().flush(profileId)
+      : this.requiredProfileService().flushAll()
+  }
+
+  profileMutationPending(profileId: string = this.requiredProfile().id): number {
+    return this.requiredProfileService().pending(profileId)
+  }
+
+  profileMutationDiagnostics(): ProfileMutationDiagnostic[] {
+    return this.requiredProfileService().diagnostics()
+  }
+
+  exportProfileMutationDiagnostics(): string {
+    return this.requiredProfileService().exportDiagnostics()
+  }
+
+  clearProfileMutationDiagnostics(): void {
+    this.requiredProfileService().clearDiagnostics()
+  }
+
   async archiveProfile(profileId: string): Promise<void> {
     await this.requiredProfileController().archive(profileId)
     const next = (await this.requiredProfileController().list()).items.find(({ id }) => id !== profileId && !this.snapshotValue.profiles.find((profile) => profile.id === id)?.archived)
@@ -911,16 +973,16 @@ export class LearningApplicationService {
   }
 
   async markNotificationRead(id: string): Promise<void> {
-    const profile = this.requiredProfile()
-    const current = Array.isArray(profile.educationalPreferences.learningNotificationReadIds)
-      ? profile.educationalPreferences.learningNotificationReadIds.filter((value): value is string => typeof value === 'string')
-      : []
-    await this.updateProfile({
-      educationalPreferences: {
-        ...profile.educationalPreferences,
+    await this.updateEducationalPreferences((currentPreferences) => {
+      const current = Array.isArray(currentPreferences.learningNotificationReadIds)
+        ? currentPreferences.learningNotificationReadIds.filter((value): value is string => typeof value === 'string')
+        : []
+      return {
+        ...currentPreferences,
         learningNotificationReadIds: [...new Set([...current, id])],
-      },
-    })
+      }
+    }, 'notification-read')
+    await this.refresh()
   }
 
   private async createActivityVisualContext(
@@ -1053,10 +1115,7 @@ export class LearningApplicationService {
         : {}),
     })
     const lesson = this.snapshotValue.product.lessons.find(({ activityIds }) => activityIds.includes(activityId))
-    const academyStateValue = this.requiredProfile().educationalPreferences.academyStateV1
-    const academyState = academyStateValue
-      ? normalizeAcademyLocalState(this.requiredProfile().id, academyStateValue, new Date().toISOString())
-      : undefined
+    const academyState = await this.getEffectiveAcademyState(this.requiredProfile().id)
     const theoryRequired = Boolean(lesson?.studyContract?.sequence === 'theory-first')
     const theoryCompleted = !theoryRequired || Boolean(academyState?.lessonProgress.some((progress) =>
       progress.lessonId === lesson?.id && progress.completedAt))
@@ -1790,6 +1849,7 @@ export class LearningApplicationService {
     try {
       if (this.workspace.persistentSessionId) await this.saveAndExit(reason)
       await this.workspace.dispose()
+      await this.profileService?.flushAll()
       await this.repository?.close()
       await this.closeStorage?.()
     } finally {

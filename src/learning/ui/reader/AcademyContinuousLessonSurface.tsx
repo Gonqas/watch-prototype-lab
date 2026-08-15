@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState, type FormEvent, type MouseEvent }
 import { academyLessonMaterial } from '../../academy/academyCatalog'
 import { academyLegacyModeForReader, academyReaderModeFromLegacy } from '../../academy/reader/academyReaderCompatibility'
 import { buildAcademyReaderDocument, resolveAcademyReaderSection } from '../../academy/reader/academyReaderDocument'
-import { CURRENT_ACADEMY_CURATION_PHASE, academyStage0PersonalPracticesForLesson } from '../../academy/reader/academyPersonalCurriculum'
+import { CURRENT_ACADEMY_CURATION_PHASE, academyPersonalPracticesForLesson } from '../../academy/reader/academyPersonalCurriculum'
 import type { AcademyReaderMode } from '../../academy/reader/academyReaderModel'
 import { academyReaderDocumentVersionMatches } from '../../academy/reader/academyReaderIdentity'
 import { academyEditorialReviewStatus, academyVisibleEditorialStatusLabel } from '../../academy/reader/academyReaderReview'
@@ -298,7 +298,7 @@ export default function AcademyContinuousLessonSurface() {
       ? ownerReviewStatus
       : readerDocument.curation.method,
   )
-  const personalPractices = academyStage0PersonalPracticesForLesson(descriptor.id)
+  const personalPractices = academyPersonalPracticesForLesson(descriptor.id)
   const showVisualRail = mode === 'learn' && !mobileNarrative && activeSection?.visualCue.implementationStatus === 'implemented'
   const completed = Boolean(saved?.completedAt)
   const pathLocation = curatedLocation
@@ -488,6 +488,25 @@ export default function AcademyContinuousLessonSurface() {
                     <h3>Pasos</h3><ol>{practice.steps.map((item) => <li key={item}>{item}</li>)}</ol>
                     <p><strong>Señal de parada:</strong> {practice.stopSignal}</p>
                     <p><strong>Qué registrar:</strong> {practice.record.join(' · ')}</p>
+                    <form className="academy-reader-personal-practice-record" onSubmit={(event) => {
+                      event.preventDefault()
+                      const form = new FormData(event.currentTarget)
+                      actions.savePersonalPractice({
+                        personalPracticeId: practice.personalPracticeId,
+                        lessonId: descriptor.id,
+                        note: String(form.get('practice-note') ?? '').trim(),
+                      })
+                    }}>
+                      <label htmlFor={`${practice.personalPracticeId}-note`}>Registro personal opcional</label>
+                      <textarea
+                        id={`${practice.personalPracticeId}-note`}
+                        name="practice-note"
+                        defaultValue={state?.personalPractices.find(({ personalPracticeId }) => personalPracticeId === practice.personalPracticeId)?.note ?? ''}
+                        placeholder="Observaciones, límites y una duda para volver después"
+                      />
+                      <button className="academy-button" type="submit">Guardar solo en mi perfil</button>
+                      <small>No completa la lección, no crea dominio y no certifica destreza.</small>
+                    </form>
                   </details>
                 ))}
               </div>

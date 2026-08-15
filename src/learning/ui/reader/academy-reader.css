@@ -3,6 +3,28 @@
   container-type: inline-size;
 }
 
+.academy-reader-personal-practice-record {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--academy-line, rgba(128, 128, 128, 0.28));
+}
+
+.academy-reader-personal-practice-record label {
+  font-weight: 700;
+}
+
+.academy-reader-personal-practice-record textarea {
+  width: 100%;
+  min-height: 7rem;
+  resize: vertical;
+}
+
+.academy-reader-personal-practice-record .academy-button {
+  justify-self: start;
+}
+
 .academy-reader-skip {
   position: fixed;
   inset: .75rem auto auto .75rem;
@@ -192,11 +214,11 @@
 .academy-reader-diagram__panel text { fill: currentColor; font-size: 17px; text-anchor: middle; }
 .academy-reader-diagram__label rect,
 .academy-reader-diagram__panel rect { fill: color-mix(in srgb, currentColor 5%, transparent); stroke: currentColor; stroke-width: 2; }
-.academy-reader-diagram__edge line { stroke: color-mix(in srgb, currentColor 66%, transparent); stroke-width: 2.5; }
-.academy-reader-diagram__edge.is-energy line { stroke: #b56a3d; }
-.academy-reader-diagram__edge.is-timing line { stroke: #2f8c9b; stroke-dasharray: 7 5; }
-.academy-reader-diagram__edge.is-decision line { stroke: #8b6bb3; }
-.academy-reader-diagram__edge text { fill: currentColor; font-size: 11px; text-anchor: middle; paint-order: stroke; stroke: var(--academy-surface, #fff); stroke-width: 4px; }
+.academy-reader-diagram__edge line, .academy-reader-diagram__edge path { fill: none; stroke: color-mix(in srgb, currentColor 66%, transparent); stroke-width: 2.5; }
+.academy-reader-diagram__edge.is-energy line, .academy-reader-diagram__edge.is-energy path { stroke: #b56a3d; }
+.academy-reader-diagram__edge.is-timing line, .academy-reader-diagram__edge.is-timing path { stroke: #2f8c9b; stroke-dasharray: 7 5; }
+.academy-reader-diagram__edge.is-decision line, .academy-reader-diagram__edge.is-decision path { stroke: #8b6bb3; }
+.academy-reader-diagram__edge text { fill: currentColor; font-size: 9.5px; text-anchor: middle; paint-order: stroke; stroke: var(--academy-surface, #fff); stroke-width: 4px; }
 .academy-reader-diagram marker path { fill: currentColor; }
 .academy-reader-diagram__semantic-node rect { fill: color-mix(in srgb, var(--academy-surface, #fff) 91%, var(--academy-accent, #b88941)); stroke: color-mix(in srgb, currentColor 46%, transparent); stroke-width: 1.5; }
 .academy-reader-diagram__semantic-node.is-primary rect { stroke: var(--academy-accent, #b88941); stroke-width: 3; }

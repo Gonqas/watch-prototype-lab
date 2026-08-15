@@ -72,7 +72,15 @@ export interface AcademyEditorialReview {
   ownerReviewedAt?: string
   personalStatus?: AcademyPersonalReviewStatus
   personalReviewedAt?: string
-  version: '0.14D' | '0.14E' | '0.14F'
+  version: '0.14D' | '0.14E' | '0.14F' | '0.14G'
+  updatedAt: string
+}
+
+export interface AcademyPersonalPracticeRecord {
+  personalPracticeId: string
+  lessonId: string
+  note: string
+  recordedAt: string
   updatedAt: string
 }
 
@@ -163,13 +171,17 @@ export interface AcademyLocalState {
   onboarding: AcademyOnboarding
   preferences: AcademyUxPreferences
   notes: AcademyNote[]
+  deletedNoteIds: string[]
   bookmarks: AcademyBookmark[]
+  deletedBookmarkIds: string[]
   captures: AcademyCapture[]
+  deletedCaptureIds: string[]
   lessonProgress: AcademyLessonProgress[]
   reviewSnoozes: AcademyReviewSnooze[]
   metrics: AcademyLocalMetric[]
   readerEvents: AcademyReaderEvent[]
   editorialReviews: AcademyEditorialReview[]
+  personalPractices: AcademyPersonalPracticeRecord[]
   usabilitySessions: AcademyUsabilitySession[]
   updatedAt: string
 }
@@ -264,13 +276,17 @@ export function createDefaultAcademyLocalState(
       autoplayEducationalMotion: false,
     },
     notes: [],
+    deletedNoteIds: [],
     bookmarks: [],
+    deletedBookmarkIds: [],
     captures: [],
+    deletedCaptureIds: [],
     lessonProgress: [],
     reviewSnoozes: [],
     metrics: [],
     readerEvents: [],
     editorialReviews: [],
+    personalPractices: [],
     usabilitySessions: [],
     updatedAt: now,
   }
@@ -444,8 +460,20 @@ function normalizeEditorialReview(value: unknown): AcademyEditorialReview | unde
       ? value.personalStatus as AcademyPersonalReviewStatus
       : value.status === 'owner-reviewed' ? 'clear' : 'not-reviewed',
     personalReviewedAt: typeof value.personalReviewedAt === 'string' ? value.personalReviewedAt : undefined,
-    version: value.version === '0.14F' ? '0.14F' : value.version === '0.14E' ? '0.14E' : '0.14D',
+    version: value.version === '0.14G' ? '0.14G' : value.version === '0.14F' ? '0.14F' : value.version === '0.14E' ? '0.14E' : '0.14D',
     updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : new Date(0).toISOString(),
+  }
+}
+
+function normalizePersonalPractice(value: unknown): AcademyPersonalPracticeRecord | undefined {
+  if (!isRecord(value) || typeof value.personalPracticeId !== 'string' || typeof value.lessonId !== 'string') return undefined
+  const recordedAt = typeof value.recordedAt === 'string' ? value.recordedAt : new Date(0).toISOString()
+  return {
+    personalPracticeId: value.personalPracticeId.slice(0, 200),
+    lessonId: value.lessonId.slice(0, 200),
+    note: typeof value.note === 'string' ? value.note.slice(0, 4_000) : '',
+    recordedAt,
+    updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : recordedAt,
   }
 }
 
@@ -483,12 +511,15 @@ export function normalizeAcademyLocalState(profileId: string, value: unknown, no
   const notes = Array.isArray(value.notes)
     ? value.notes.map(normalizeNote).filter((note): note is AcademyNote => Boolean(note)).slice(0, 500)
     : []
+  const deletedNoteIds = stringArray(value.deletedNoteIds, 500)
   const bookmarks = Array.isArray(value.bookmarks)
     ? value.bookmarks.map(normalizeBookmark).filter((item): item is AcademyBookmark => Boolean(item)).slice(0, 300)
     : []
+  const deletedBookmarkIds = stringArray(value.deletedBookmarkIds, 300)
   const captures = Array.isArray(value.captures)
     ? value.captures.map(normalizeCapture).filter((item): item is AcademyCapture => Boolean(item)).slice(0, 64)
     : []
+  const deletedCaptureIds = stringArray(value.deletedCaptureIds, 128)
   const lessonProgress = Array.isArray(value.lessonProgress)
     ? value.lessonProgress
       .map(normalizeLessonProgress)
@@ -516,6 +547,9 @@ export function normalizeAcademyLocalState(profileId: string, value: unknown, no
     : []
   const editorialReviews = Array.isArray(value.editorialReviews)
     ? value.editorialReviews.map(normalizeEditorialReview).filter((item): item is AcademyEditorialReview => Boolean(item)).slice(0, 500)
+    : []
+  const personalPractices = Array.isArray(value.personalPractices)
+    ? value.personalPractices.map(normalizePersonalPractice).filter((item): item is AcademyPersonalPracticeRecord => Boolean(item)).slice(0, 500)
     : []
   const usabilitySessions = Array.isArray(value.usabilitySessions)
     ? value.usabilitySessions.map(normalizeUsabilitySession).filter((item): item is AcademyUsabilitySession => Boolean(item)).slice(0, 100)
@@ -548,17 +582,107 @@ export function normalizeAcademyLocalState(profileId: string, value: unknown, no
       showTechnicalIds: preferences.showTechnicalIds === true,
       autoplayEducationalMotion: preferences.autoplayEducationalMotion === true,
     },
-    notes,
-    bookmarks,
-    captures,
+    notes: notes.filter(({ id }) => !deletedNoteIds.includes(id)),
+    deletedNoteIds,
+    bookmarks: bookmarks.filter(({ id }) => !deletedBookmarkIds.includes(id)),
+    deletedBookmarkIds,
+    captures: captures.filter(({ id }) => !deletedCaptureIds.includes(id)),
+    deletedCaptureIds,
     lessonProgress,
     reviewSnoozes,
     metrics,
     readerEvents,
     editorialReviews,
+    personalPractices,
     usabilitySessions,
     updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : now,
   }
+}
+
+function instantValue(value: string | undefined): number {
+  const parsed = value ? Date.parse(value) : Number.NaN
+  return Number.isFinite(parsed) ? parsed : 0
+}
+
+function mergeEntities<T>(
+  left: readonly T[],
+  right: readonly T[],
+  identity: (value: T) => string,
+  updatedAt: (value: T) => string,
+  limit: number,
+): T[] {
+  const values = new Map<string, T>()
+  for (const value of [...left, ...right]) {
+    const id = identity(value)
+    const existing = values.get(id)
+    if (!existing || instantValue(updatedAt(value)) >= instantValue(updatedAt(existing))) values.set(id, structuredClone(value))
+  }
+  return [...values.values()]
+    .sort((a, b) => instantValue(updatedAt(b)) - instantValue(updatedAt(a)) || identity(a).localeCompare(identity(b)))
+    .slice(0, limit)
+}
+
+function mergeProgress(left: readonly AcademyLessonProgress[], right: readonly AcademyLessonProgress[]): AcademyLessonProgress[] {
+  const lessonIds = new Set([...left, ...right].map(({ lessonId }) => lessonId))
+  return [...lessonIds].map((lessonId) => {
+    const candidates = [...left, ...right].filter((item) => item.lessonId === lessonId)
+    const newest = candidates.reduce((current, candidate) =>
+      instantValue(candidate.updatedAt) >= instantValue(current.updatedAt) ? candidate : current)
+    const completedAt = candidates.map(({ completedAt: value }) => value).filter((value): value is string => Boolean(value)).sort()[0]
+    return {
+      ...structuredClone(newest),
+      completedSegmentIds: [...new Set(candidates.flatMap(({ completedSegmentIds }) => completedSegmentIds))],
+      visitedSectionIds: [...new Set(candidates.flatMap(({ visitedSectionIds }) => visitedSectionIds ?? []))],
+      ...(completedAt ? { completedAt } : {}),
+    }
+  }).sort((a, b) => instantValue(b.updatedAt) - instantValue(a.updatedAt) || a.lessonId.localeCompare(b.lessonId)).slice(0, 500)
+}
+
+/** Combines the immediate local copy with its profile mirror without using either as a blind winner. */
+export function mergeAcademyLocalState(
+  profileId: string,
+  persistedValue: unknown,
+  localValue: unknown,
+  now: string = new Date().toISOString(),
+): AcademyLocalState {
+  const persisted = normalizeAcademyLocalState(profileId, persistedValue, now)
+  const local = normalizeAcademyLocalState(profileId, localValue, now)
+  const localIsNewest = instantValue(local.updatedAt) >= instantValue(persisted.updatedAt)
+  const newest = localIsNewest ? local : persisted
+  const deletedNoteIds = [...new Set([...persisted.deletedNoteIds, ...local.deletedNoteIds])].slice(-500)
+  const deletedBookmarkIds = [...new Set([...persisted.deletedBookmarkIds, ...local.deletedBookmarkIds])].slice(-300)
+  const deletedCaptureIds = [...new Set([...persisted.deletedCaptureIds, ...local.deletedCaptureIds])].slice(-128)
+  const readerEvents = mergeEntities(
+    persisted.readerEvents,
+    local.readerEvents,
+    ({ eventId }) => eventId,
+    ({ timestamp }) => timestamp,
+    2_500,
+  ).sort((a, b) => instantValue(a.timestamp) - instantValue(b.timestamp) || a.eventId.localeCompare(b.eventId)).slice(-2_500)
+  const metrics = [...new Set([...persisted.metrics, ...local.metrics].map(({ id }) => id))].map((id) => {
+    const candidates = [...persisted.metrics, ...local.metrics].filter((item) => item.id === id)
+    const recent = candidates.reduce((current, candidate) => instantValue(candidate.lastRecordedAt) >= instantValue(current.lastRecordedAt) ? candidate : current)
+    return { ...recent, count: Math.max(...candidates.map(({ count }) => count)) }
+  }).slice(0, 500)
+  return normalizeAcademyLocalState(profileId, {
+    ...newest,
+    notes: mergeEntities(persisted.notes, local.notes, ({ id }) => id, ({ updatedAt }) => updatedAt, 500)
+      .filter(({ id }) => !deletedNoteIds.includes(id)),
+    deletedNoteIds,
+    bookmarks: mergeEntities(persisted.bookmarks, local.bookmarks, ({ id }) => id, ({ createdAt }) => createdAt, 300)
+      .filter(({ id }) => !deletedBookmarkIds.includes(id)),
+    deletedBookmarkIds,
+    captures: mergeEntities(persisted.captures, local.captures, ({ id }) => id, ({ createdAt }) => createdAt, 64)
+      .filter(({ id }) => !deletedCaptureIds.includes(id)),
+    deletedCaptureIds,
+    lessonProgress: mergeProgress(persisted.lessonProgress, local.lessonProgress),
+    readerEvents,
+    metrics,
+    editorialReviews: mergeEntities(persisted.editorialReviews, local.editorialReviews, ({ lessonId }) => lessonId, ({ updatedAt }) => updatedAt, 500),
+    personalPractices: mergeEntities(persisted.personalPractices, local.personalPractices, ({ personalPracticeId }) => personalPracticeId, ({ updatedAt }) => updatedAt, 500),
+    usabilitySessions: mergeEntities(persisted.usabilitySessions, local.usabilitySessions, ({ sessionId }) => sessionId, ({ finishedAt, startedAt }) => finishedAt ?? startedAt, 100),
+    updatedAt: instantValue(local.updatedAt) >= instantValue(persisted.updatedAt) ? local.updatedAt : persisted.updatedAt,
+  }, now)
 }
 
 export class AcademyLocalStore {
@@ -664,12 +788,8 @@ export class AcademyLocalStore {
     } catch {
       stored = undefined
     }
-    if (
-      stored
-      && Number.isFinite(Date.parse(stored.updatedAt))
-      && Date.parse(stored.updatedAt) > Date.parse(candidate.updatedAt)
-    ) return stored
-    const serialized = JSON.stringify(candidate)
+    const effective = stored ? mergeAcademyLocalState(profileId, candidate, stored, this.now()) : candidate
+    const serialized = JSON.stringify(effective)
     this.volatileValues.set(key, serialized)
     try {
       this.storage.setItem(key, serialized)
@@ -682,7 +802,7 @@ export class AcademyLocalStore {
         reason: 'storage-unavailable',
       })
     }
-    return structuredClone(candidate)
+    return structuredClone(effective)
   }
 
   setPreferences(profileId: string, patch: Partial<AcademyUxPreferences>): AcademyLocalState {
@@ -745,6 +865,7 @@ export class AcademyLocalStore {
     return this.update(profileId, (state) => ({
       ...state,
       notes: state.notes.filter(({ id }) => id !== noteId),
+      deletedNoteIds: [...new Set([...state.deletedNoteIds, noteId])].slice(-500),
     }))
   }
 
@@ -770,6 +891,7 @@ export class AcademyLocalStore {
     return this.update(profileId, (state) => ({
       ...state,
       bookmarks: state.bookmarks.filter(({ id }) => id !== bookmarkId),
+      deletedBookmarkIds: [...new Set([...state.deletedBookmarkIds, bookmarkId])].slice(-300),
     }))
   }
 
@@ -793,6 +915,7 @@ export class AcademyLocalStore {
     return this.update(profileId, (state) => ({
       ...state,
       captures: state.captures.filter(({ id }) => id !== captureId),
+      deletedCaptureIds: [...new Set([...state.deletedCaptureIds, captureId])].slice(-128),
     }))
   }
 
@@ -952,6 +1075,25 @@ export class AcademyLocalStore {
       editorialReviews: [review, ...state.editorialReviews.filter(({ lessonId }) => lessonId !== review.lessonId)].slice(0, 500),
     }))
     return structuredClone(review)
+  }
+
+  savePersonalPractice(
+    profileId: string,
+    input: Pick<AcademyPersonalPracticeRecord, 'personalPracticeId' | 'lessonId' | 'note'>,
+  ): AcademyPersonalPracticeRecord {
+    const previous = this.load(profileId).personalPractices.find(({ personalPracticeId }) => personalPracticeId === input.personalPracticeId)
+    const timestamp = this.now()
+    const record = normalizePersonalPractice({
+      ...structuredClone(input),
+      recordedAt: previous?.recordedAt ?? timestamp,
+      updatedAt: timestamp,
+    })
+    if (!record) throw new Error('La práctica personal no cumple el contrato local.')
+    this.update(profileId, (state) => ({
+      ...state,
+      personalPractices: [record, ...state.personalPractices.filter(({ personalPracticeId }) => personalPracticeId !== record.personalPracticeId)].slice(0, 500),
+    }))
+    return structuredClone(record)
   }
 
   saveUsabilitySession(profileId: string, input: AcademyUsabilitySession): AcademyUsabilitySession {

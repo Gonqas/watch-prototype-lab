@@ -5,8 +5,9 @@ import type {
   AcademyReaderSectionRole,
 } from '../academyReaderModel'
 
-export type AcademyPersonalCurationPhase = '0.14E' | '0.14F'
+export type AcademyPersonalCurationPhase = '0.14E' | '0.14F' | '0.14G'
 export type AcademyEvidenceModality = 'K' | 'V' | 'P' | 'R'
+export type AcademyCurriculumPathRole = 'anchor' | 'support' | 'optional-branch' | 'reference'
 
 export interface AcademyEvidenceProfile {
   modalities: readonly AcademyEvidenceModality[]
@@ -148,3 +149,32 @@ export interface AcademyStage0PrerequisiteOverride {
   rationale: string
   phase: '0.14F'
 }
+
+export interface AcademyStage1LessonCuration extends Omit<AcademyStage0LessonCuration, 'personalReviewStatus'> {
+  macroStage: 1
+  pathRole: AcademyCurriculumPathRole
+  personalReviewStatus: 'not-reviewed'
+}
+
+export interface AcademyStage1ClaimReview extends AcademyStage0ClaimReview {
+  claimType: 'system-model' | 'mechanism' | 'source-authority' | 'historical-context' | 'calibre-specific'
+  verificationStatus: 'visually-verified' | 'verified-primary' | 'verified-secondary' | 'source-limited'
+  applicability: string
+  unresolvedReason?: string
+}
+
+export interface AcademyStage1PrerequisiteOverride {
+  lessonId: string
+  rawConceptIds: readonly string[]
+  effectiveRequiredConceptIds: readonly string[]
+  recommendedLessonIds: readonly string[]
+  pathRole: AcademyCurriculumPathRole
+  blocking: boolean
+  rationale: string
+  phase: '0.14G'
+}
+
+export type AcademyStage1SectionSpec = AcademyStage0SectionSpec
+export type AcademyStage1ActivityPresentation = AcademyStage0ActivityPresentation
+export type AcademyStage1VisualDesign = AcademyStage0VisualDesign
+export type AcademyStage1PersonalPractice = AcademyStage0PersonalPractice

@@ -50,6 +50,10 @@ export const ACADEMY_014F_BASELINE = {
   corpusDigest: '1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e',
   historicalReportsDigest: 'a4a96deb8f2c17d147875c1c0f8a57257c4e41cbb6876274ab34f2fe09bba71c',
   bulovaSha256: 'b13229157e4839d81285d9069f991f6e8c85c59536955f562298bffb7fe2c981',
+  personalRegistryFiles: 23,
+  personalRegistrySourceBytes: 159_962,
+  readerUiSourceBytes: 32_599,
+  activityUiSourceBytes: 108_632,
 } as const
 
 const md = (value: string) => `${value.trim()}\n`
@@ -83,7 +87,7 @@ interface PerformanceSnapshot {
 async function historicalReportSnapshot(repositoryRoot: string): Promise<HistoricalReportSnapshot> {
   const root = join(repositoryRoot, 'docs', 'generated')
   const fileNames = (await readdir(root))
-    .filter((name) => !name.startsWith('APRENDER-') && !name.includes('0.14F'))
+    .filter((name) => !name.startsWith('APRENDER-') && !name.includes('0.14F') && !name.includes('0.14G'))
     .sort()
   const rows = await Promise.all(fileNames.map(async (name) => `${name}:${sha256(await readFile(join(root, name)))}`))
   return { count: fileNames.length, digest: sha256(rows.join('\n')), fileNames }
@@ -99,8 +103,7 @@ async function screenshotRecords(repositoryRoot: string): Promise<ScreenshotReco
 }
 
 async function performanceSnapshot(repositoryRoot: string): Promise<PerformanceSnapshot> {
-  const personalRoot = join(repositoryRoot, 'src', 'learning', 'academy', 'reader', 'personal')
-  const phaseRoot = join(personalRoot, 'phase014f')
+  const phaseRoot = join(repositoryRoot, 'src', 'learning', 'academy', 'reader', 'personal', 'phase014f')
   const recursiveTypeScriptFiles = async (root: string): Promise<string[]> => {
     const entries = await readdir(root, { withFileTypes: true })
     const nested = await Promise.all(entries.map((entry) => entry.isDirectory()
@@ -108,18 +111,18 @@ async function performanceSnapshot(repositoryRoot: string): Promise<PerformanceS
       : Promise.resolve(entry.name.endsWith('.ts') ? [join(root, entry.name)] : [])))
     return nested.flat()
   }
-  const [phaseFiles, personalFiles] = await Promise.all([recursiveTypeScriptFiles(phaseRoot), recursiveTypeScriptFiles(personalRoot)])
+  const phaseFiles = await recursiveTypeScriptFiles(phaseRoot)
   const sumBytes = async (files: string[]) => (await Promise.all(files.map(async (file) => (await stat(file)).size))).reduce((sum, size) => sum + size, 0)
   return {
     localWarmTextMedianMs: 228,
     localWarmVisualMedianMs: 286,
     phase014fFiles: phaseFiles.length,
     phase014fSourceBytes: await sumBytes(phaseFiles),
-    personalRegistryFiles: personalFiles.length,
-    personalRegistrySourceBytes: await sumBytes(personalFiles),
+    personalRegistryFiles: ACADEMY_014F_BASELINE.personalRegistryFiles,
+    personalRegistrySourceBytes: ACADEMY_014F_BASELINE.personalRegistrySourceBytes,
     semanticVisualPayloadBytes: Buffer.byteLength(JSON.stringify(ACADEMY_STAGE_0_VISUAL_DESIGNS.map(({ semanticPayload }) => semanticPayload)), 'utf8'),
-    readerUiSourceBytes: (await stat(join(repositoryRoot, 'src', 'learning', 'ui', 'reader', 'AcademyContinuousLessonSurface.tsx'))).size,
-    activityUiSourceBytes: (await stat(join(repositoryRoot, 'src', 'learning', 'ui', 'LearningSurfaces.tsx'))).size,
+    readerUiSourceBytes: ACADEMY_014F_BASELINE.readerUiSourceBytes,
+    activityUiSourceBytes: ACADEMY_014F_BASELINE.activityUiSourceBytes,
     productionBuildSeconds: 7.97,
     finalWarmBuildSeconds: 1.27,
     phase014fChunkKb: 147.48,

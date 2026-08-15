@@ -1,6 +1,6 @@
 import type { AcademyPersonalCurationPhase } from './types'
 
-export const CURRENT_ACADEMY_CURATION_PHASE = '0.14F' as const
+export const CURRENT_ACADEMY_CURATION_PHASE = '0.14G' as const
 
 export const ACADEMY_PERSONAL_CURATION_PHASES: readonly AcademyPersonalCurationPhase[] = [
   '0.14E',

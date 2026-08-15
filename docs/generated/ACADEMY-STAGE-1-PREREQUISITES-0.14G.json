@@ -1,0 +1,132 @@
+{
+  "schema": "wplab-academy-stage1-prerequisites-v1",
+  "phase": "0.14G",
+  "overrides": [
+    {
+      "lessonId": "lesson.horology.system",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.quartz2035.workstation",
+        "lesson.quartz2035.tools"
+      ],
+      "pathRole": "anchor",
+      "blocking": false,
+      "rationale": "La visión del reloj completo es la entrada conceptual de etapa 1; etapa 0 se recomienda como preparación personal.",
+      "phase": "0.14G"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "rawConceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.minuteria-puesta-hora.minuteria",
+        "concept.encyclopedia.mechanical-energy-trains.minuteria-puesta-hora.puesta-en-hora",
+        "concept.encyclopedia.mechanical-energy-trains.minuteria-puesta-hora.canon-deslizante"
+      ],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.functional-chain"
+      ],
+      "recommendedLessonIds": [
+        "lesson.horology.system"
+      ],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "La visión general introduce el sistema y no debe exigir detalles posteriores de minutería o puesta en hora.",
+      "phase": "0.14G"
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "rawConceptIds": [
+        "concept.horology.functional-chain",
+        "concept.horology.part-language"
+      ],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.functional-chain",
+        "concept.horology.part-language"
+      ],
+      "recommendedLessonIds": [
+        "lesson.horology.system"
+      ],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "El mapa funcional y el lenguaje básico se introducen en la primera ancla de la etapa.",
+      "phase": "0.14G"
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "rawConceptIds": [
+        "concept.horology.functional-chain",
+        "concept.horology.mechanical-chain"
+      ],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.functional-chain"
+      ],
+      "recommendedLessonIds": [
+        "lesson.horology.system"
+      ],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "La rama de cuarzo es especialización de apoyo y no debe bloquear ni ser bloqueada por la ruta mecánica.",
+      "phase": "0.14G"
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "rawConceptIds": [
+        "concept.horology.quartz-chain",
+        "concept.horology.mechanical-chain"
+      ],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "recommendedLessonIds": [
+        "lesson.horology.mechanical-chain",
+        "lesson.horology.quartz-chain"
+      ],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La comparación necesita el mapa mecánico; el mapa de cuarzo permanece recomendado y accesible como apoyo, no como bloqueo.",
+      "phase": "0.14G"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "rawConceptIds": [
+        "concept.encyclopedia.history-language.transicion-electromecanica-cuarzo.reloj-electromecanico",
+        "concept.encyclopedia.history-language.transicion-electromecanica-cuarzo.divisor-de-frecuencia",
+        "concept.encyclopedia.history-language.transicion-electromecanica-cuarzo.motor-paso-a-paso"
+      ],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.functional-chain"
+      ],
+      "recommendedLessonIds": [
+        "lesson.horology.functional-equivalence"
+      ],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Leer documentación es una competencia de procedencia; los detalles avanzados de transición electromecánica son semánticamente impropios.",
+      "phase": "0.14G"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.horology.system"
+      ],
+      "pathRole": "optional-branch",
+      "blocking": false,
+      "rationale": "El contenido histórico y conceptual enriquece la etapa sin bloquear el recorrido principal.",
+      "phase": "0.14G"
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.encyclopedia.history-language.leer-documentacion"
+      ],
+      "pathRole": "reference",
+      "blocking": false,
+      "rationale": "La guía de autoridad se ofrece como consulta transversal; su prerequisito externo avanzado no se aplica a este uso de referencia.",
+      "phase": "0.14G"
+    }
+  ]
+}

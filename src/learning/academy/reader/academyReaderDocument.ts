@@ -13,7 +13,11 @@ import {
   academyStage0LegacyAliases,
   academyStage0LessonCuration,
   academyStage0SectionVisualCuration,
+  academyStage1LegacyAliases,
+  academyStage1LessonCuration,
+  academyStage1SectionVisualCuration,
   applyAcademyStage0LessonCuration,
+  applyAcademyStage1LessonCuration,
   applyAcademyPersonalSectionPatches,
 } from './academyPersonalCurriculum'
 import { academyReaderShortDocumentVersion, academyReaderStableHash } from './academyReaderIdentity'
@@ -446,10 +450,11 @@ export function buildAcademyReaderDocument(
   const curationPhase = options.curationPhase ?? '0.14D'
   const lessonId = input.material.lesson.id
   const pilot = academyReaderPilotCuration(lessonId)
-  const personalReview = curationPhase === '0.14E' || curationPhase === '0.14F'
+  const personalReview = curationPhase === '0.14E' || curationPhase === '0.14F' || curationPhase === '0.14G'
     ? academyPersonalPilotReview(lessonId)
     : undefined
-  const stage0Curation = curationPhase === '0.14F' ? academyStage0LessonCuration(lessonId) : undefined
+  const stage0Curation = curationPhase === '0.14F' || curationPhase === '0.14G' ? academyStage0LessonCuration(lessonId) : undefined
+  const stage1Curation = curationPhase === '0.14G' ? academyStage1LessonCuration(lessonId) : undefined
   const fixtureActivity = input.material.activities.find(({ fixtureBinding }) => Boolean(fixtureBinding))
   const visualDeclared = Boolean(input.material.lesson.authoring?.visualStrategy)
   const contentBasis = input.material.blocks.map(({ bodyMarkdown }) => bodyMarkdown.replaceAll('\r\n', '\n').trim()).join('\n\n')
@@ -501,13 +506,18 @@ export function buildAcademyReaderDocument(
       })
     }
   }
-  if (!legacy014C && (curationPhase === '0.14E' || curationPhase === '0.14F')) {
+  if (!legacy014C && (curationPhase === '0.14E' || curationPhase === '0.14F' || curationPhase === '0.14G')) {
     sections = applyAcademyPersonalSectionPatches(lessonId, sections)
     documentContentHash = academyReaderStableHash(sections.map(({ sectionId, markdown }) => `${sectionId}\n${markdown}`).join('\n\n'))
   }
-  const historical014eSections = curationPhase === '0.14F' ? sections.map((section) => ({ ...section })) : []
-  if (!legacy014C && curationPhase === '0.14F') {
+  const historical014eSections = curationPhase === '0.14F' || curationPhase === '0.14G' ? sections.map((section) => ({ ...section })) : []
+  if (!legacy014C && (curationPhase === '0.14F' || curationPhase === '0.14G')) {
     sections = applyAcademyStage0LessonCuration(lessonId, sections)
+    documentContentHash = academyReaderStableHash(sections.map(({ sectionId, markdown }) => `${sectionId}\n${markdown}`).join('\n\n'))
+  }
+  const historical014fSections = curationPhase === '0.14G' ? sections.map((section) => ({ ...section })) : []
+  if (!legacy014C && curationPhase === '0.14G') {
+    sections = applyAcademyStage1LessonCuration(lessonId, sections)
     documentContentHash = academyReaderStableHash(sections.map(({ sectionId, markdown }) => `${sectionId}\n${markdown}`).join('\n\n'))
   }
   const sourceIds = input.material.sources.map(({ id }) => id)
@@ -520,28 +530,33 @@ export function buildAcademyReaderDocument(
       activities: input.material.activities,
       sourceIds,
     })
-    const personalVisual = curationPhase === '0.14E' || curationPhase === '0.14F' ? academyPersonalSectionVisualCuration({
+    const personalVisual = curationPhase === '0.14E' || curationPhase === '0.14F' || curationPhase === '0.14G' ? academyPersonalSectionVisualCuration({
       lessonId,
       section,
       contentHash: documentContentHash,
       sectionHash: academyReaderStableHash(section.markdown),
       sourceIds,
     }) : undefined
-    const stage0Visual = curationPhase === '0.14F' ? academyStage0SectionVisualCuration({
+    const stage0Visual = curationPhase === '0.14F' || curationPhase === '0.14G' ? academyStage0SectionVisualCuration({
       lessonId,
       section,
       contentHash: documentContentHash,
     }) : undefined
-    const curation = stage0Visual ?? personalVisual ?? baseCuration
+    const stage1Visual = curationPhase === '0.14G' ? academyStage1SectionVisualCuration({
+      lessonId,
+      section,
+      contentHash: documentContentHash,
+    }) : undefined
+    const curation = stage1Visual ?? stage0Visual ?? personalVisual ?? baseCuration
     if (!curation) return []
-    return curationPhase === '0.14E' || curationPhase === '0.14F' ? [{
+    return curationPhase === '0.14E' || curationPhase === '0.14F' || curationPhase === '0.14G' ? [{
       ...curation,
       curationId: curation.curationId.replace('curation.0.14d.', `curation.${curationPhase.toLowerCase()}.`),
       contentHash: documentContentHash,
       sectionHash: academyReaderStableHash(section.markdown),
       curationMethod: 'codex-assisted-personal-curation' as const,
       technicalReviewStatus: 'not-required' as const,
-      technicalStatus: personalReview?.technicalStatus ?? curation.technicalStatus ?? 'source-reviewed' as const,
+      technicalStatus: stage1Curation?.technicalStatus ?? stage0Curation?.technicalStatus ?? personalReview?.technicalStatus ?? curation.technicalStatus ?? 'source-reviewed' as const,
       notes: [
         ...curation.notes,
         curationPhase === '0.14E'
@@ -569,6 +584,7 @@ export function buildAcademyReaderDocument(
   const aliases = [
     ...aliasesForDocument(input, sections),
     ...academyStage0LegacyAliases(lessonId, historical014eSections, sections),
+    ...academyStage1LegacyAliases(lessonId, historical014fSections, sections),
   ]
   const completion = {
     explicitActionRequired: true as const,
@@ -619,8 +635,8 @@ export function buildAcademyReaderDocument(
     } : {}),
     title: input.title,
     purpose: input.purpose,
-    whyNow: stage0Curation?.whyNow ?? personalReview?.whyNow ?? input.whyNow,
-    outcome: stage0Curation?.observableOutcome ?? input.outcome,
+    whyNow: stage1Curation?.whyNow ?? stage0Curation?.whyNow ?? personalReview?.whyNow ?? input.whyNow,
+    outcome: stage1Curation?.observableOutcome ?? stage0Curation?.observableOutcome ?? input.outcome,
     estimatedDurationMinutes,
     stageId: input.stageId,
     chapterId: input.chapterId,
@@ -637,21 +653,21 @@ export function buildAcademyReaderDocument(
     completion,
     completionPolicy: completion,
     pilot: Boolean(pilot),
-    centralQuestion: stage0Curation?.centralQuestion ?? personalReview?.centralQuestion ?? pilot?.centralQuestion,
+    centralQuestion: stage1Curation?.centralQuestion ?? stage0Curation?.centralQuestion ?? personalReview?.centralQuestion ?? pilot?.centralQuestion,
     curation: {
-      method: personalReview || stage0Curation ? 'codex-assisted-personal-curation' : pilot ? 'codex-assisted-editorial-curation' : 'automated-structural-migration',
-      confidence: pilot || stage0Curation ? 'high' : 'medium',
+      method: personalReview || stage0Curation || stage1Curation ? 'codex-assisted-personal-curation' : pilot ? 'codex-assisted-editorial-curation' : 'automated-structural-migration',
+      confidence: pilot || stage0Curation || stage1Curation ? 'high' : 'medium',
       ownerReviewPending: legacy014C ? Boolean(pilot) : true,
       ...(!legacy014C ? {
-        editorialStatus: personalReview || stage0Curation ? 'codex-assisted-curation' as const : pilot ? 'codex-assisted-curation' as const : 'automated-structural-migration' as const,
+        editorialStatus: personalReview || stage0Curation || stage1Curation ? 'codex-assisted-curation' as const : pilot ? 'codex-assisted-curation' as const : 'automated-structural-migration' as const,
         ownerReviewStatus: 'owner-review-pending' as const,
-        technicalReviewStatus: curationPhase === '0.14E' || curationPhase === '0.14F'
+        technicalReviewStatus: curationPhase === '0.14E' || curationPhase === '0.14F' || curationPhase === '0.14G'
           ? 'not-required' as const
           : sectionCurations.some(({ technicalReviewStatus }) => technicalReviewStatus === 'technical-expert-review-pending')
             ? 'technical-expert-review-pending' as const
             : 'not-required' as const,
-        ...(curationPhase === '0.14E' || curationPhase === '0.14F'
-          ? { technicalStatus: stage0Curation?.technicalStatus ?? personalReview?.technicalStatus ?? 'source-reviewed' as const }
+        ...(curationPhase === '0.14E' || curationPhase === '0.14F' || curationPhase === '0.14G'
+          ? { technicalStatus: stage1Curation?.technicalStatus ?? stage0Curation?.technicalStatus ?? personalReview?.technicalStatus ?? 'source-reviewed' as const }
           : {}),
       } : {}),
     },

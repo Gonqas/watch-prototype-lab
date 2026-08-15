@@ -1,0 +1,62 @@
+import type { AcademyStage1ClaimReview } from '../types'
+
+export const ACADEMY_STAGE_1_CLAIM_REVIEWS: readonly AcademyStage1ClaimReview[] = [
+  {
+    claimId: 'claim.014g.stage1.complete-watch-system', lessonId: 'lesson.horology.system', sectionId: 'reader.section.block.horology.system.014g-capas',
+    claim: 'El reloj completo comprende movimiento, indicación y caja o estructura, con funciones que permiten conservar, ajustar y leer el sistema.',
+    claimType: 'system-model', technicalStatus: 'source-reviewed', verificationStatus: 'visually-verified', applicability: 'Teoría general del reloj como sistema.',
+    sourceIds: ['source.private.toh.ch03'], locators: [{ sourceId: 'source.private.toh.ch03', documentLocator: 'reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 1-3.pdf', page: 'PDF 33 / impresa 33', verificationMethod: 'visual-pdf-inspection', verifiedAt: '2026-08-15' }],
+    limitations: ['La interfaz se presenta como extensión editorial del mapa y no como taxonomía exclusiva de la fuente.'],
+  },
+  {
+    claimId: 'claim.014g.stage1.simple-mechanical-system', lessonId: 'lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple', sectionId: 'reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-organos',
+    claim: 'Un movimiento mecánico simple relaciona acumulación de energía, transmisión/conteo, distribución, regulación e indicación.',
+    claimType: 'system-model', technicalStatus: 'source-reviewed', verificationStatus: 'visually-verified', applicability: 'Visión conceptual general; no servicio de calibre.',
+    sourceIds: ['source.private.toh.ch03'], locators: [{ sourceId: 'source.private.toh.ch03', documentLocator: 'reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 1-3.pdf', page: 'PDF 38–39 / impresas 38–39', verificationMethod: 'visual-pdf-inspection', verifiedAt: '2026-08-15' }], limitations: ['No afirma fuerzas, rendimientos ni relaciones de engranaje.'],
+  },
+  {
+    claimId: 'claim.014g.stage1.escapement-regulator-loop', lessonId: 'lesson.horology.mechanical-chain', sectionId: 'reader.section.block.horology.mechanical-chain.014g-bucle',
+    claim: 'El escape libera periódicamente la fuerza motriz y aporta impulsos al órgano regulador, que a su vez condiciona el momento de liberación.',
+    claimType: 'mechanism', technicalStatus: 'source-reviewed', verificationStatus: 'visually-verified', applicability: 'Función general de un escape mecánico; esquema no cuantitativo.',
+    sourceIds: ['source.private.toh.ch06'], locators: [{ sourceId: 'source.private.toh.ch06', documentLocator: 'reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 6.pdf', page: 'PDF 1 / impresa 99', figure: 'Fig. 6-1', verificationMethod: 'visual-pdf-inspection', verifiedAt: '2026-08-15' }], limitations: ['No describe geometría, amplitud, fuerza, fricción o ajuste.'],
+  },
+  {
+    claimId: 'claim.014g.stage1.quartz-analogue-chain', lessonId: 'lesson.horology.quartz-chain', sectionId: 'reader.section.block.horology.quartz-chain.014g-mapa',
+    claim: 'En el modelo analógico de cuarzo inspeccionado, batería, circuito y cuarzo preceden a motor, tren e indicación.',
+    claimType: 'mechanism', technicalStatus: 'source-reviewed', verificationStatus: 'visually-verified', applicability: 'Arquitectura analógica de cuarzo mostrada por Theory of Horology; 2035 solo como caso oficial.',
+    sourceIds: ['source.private.toh.ch15', 'source.miyota.2035.parts-list-exploded-view'], locators: [
+      { sourceId: 'source.private.toh.ch15', documentLocator: 'reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#TOH chap. 15.pdf', page: 'PDF 3 / impresa 331', figure: 'Fig. 15-6', verificationMethod: 'visual-pdf-inspection', verifiedAt: '2026-08-15' },
+      { sourceId: 'source.miyota.2035.parts-list-exploded-view', documentLocator: 'Registro canónico: documentación oficial MIYOTA 2035', section: 'parts list / exploded view', verificationMethod: 'official-document' },
+    ], limitations: ['No universaliza la disposición ni introduce cifras no localizadas.'],
+  },
+  {
+    claimId: 'claim.014g.stage1.functional-equivalence-limits', lessonId: 'lesson.horology.functional-equivalence', sectionId: 'reader.section.block.horology.functional-equivalence.014g-parcial',
+    claim: 'Una equivalencia funcional no demuestra igualdad física, compatibilidad ni sustitución entre componentes.',
+    claimType: 'system-model', technicalStatus: 'source-limited', verificationStatus: 'source-limited', applicability: 'Regla editorial para comparaciones entre arquitecturas.',
+    sourceIds: ['source.horology.original-functional-map'], locators: [{ sourceId: 'source.horology.original-functional-map', documentLocator: 'Mapa funcional original declarado por el paquete', section: 'límites de equivalencia', verificationMethod: 'source-limited' }], limitations: ['Síntesis editorial; cada comparación concreta requiere las fuentes de ambas arquitecturas.'],
+  },
+  {
+    claimId: 'claim.014g.stage1.exploded-view-scope', lessonId: 'lesson.encyclopedia.history-language.leer-documentacion', sectionId: 'reader.section.block.encyclopedia.history-language.leer-documentacion.014g-despiece',
+    claim: 'La posición o numeración de un despiece no basta para demostrar una secuencia de servicio, lubricación o tolerancia.',
+    claimType: 'source-authority', technicalStatus: 'source-reviewed', verificationStatus: 'verified-primary', applicability: 'Política editorial de procedencia aplicada a documentación de fabricante.',
+    sourceIds: ['source.official.miyota.2035', 'source.official.miyota.8215'], locators: [
+      { sourceId: 'source.official.miyota.2035', documentLocator: 'Registro canónico: recurso oficial MIYOTA 2035', verificationMethod: 'official-document' },
+      { sourceId: 'source.official.miyota.8215', documentLocator: 'Registro canónico: recurso oficial MIYOTA 8215', verificationMethod: 'official-document' },
+    ], limitations: ['No afirma que ningún fabricante publique secuencias en otros documentos.'],
+  },
+  {
+    claimId: 'claim.014g.stage1.measurement-functional-map', lessonId: 'lesson.encyclopedia.history-language.medir-el-tiempo', sectionId: 'reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-mapa',
+    claim: 'Referencia, conteo, escala e indicación forman un mapa funcional transferible entre tecnologías sin afirmar equivalencia física.',
+    claimType: 'historical-context', technicalStatus: 'source-limited', verificationStatus: 'source-limited', applicability: 'Enriquecimiento conceptual e histórico.',
+    sourceIds: ['source.encyclopedia.original-synthesis'], locators: [{ sourceId: 'source.encyclopedia.original-synthesis', documentLocator: 'Síntesis editorial original declarada por el corpus', section: 'medir el tiempo', verificationMethod: 'source-limited' }], limitations: ['No incluye cronología, valores ni comparación metrológica.'], unresolvedReason: 'Requiere revisión humana antes de ampliar ejemplos históricos concretos.',
+  },
+  {
+    claimId: 'claim.014g.stage1.authority-by-subject', lessonId: 'lesson.advanced.atlas-authority', sectionId: 'reader.section.block.advanced.atlas-authority.014g-primaria',
+    claim: 'La autoridad de una fuente depende de la pregunta, la materia y la aplicabilidad del documento a la variante estudiada.',
+    claimType: 'source-authority', technicalStatus: 'source-limited', verificationStatus: 'source-limited', applicability: 'Guía editorial transversal para el atlas.',
+    sourceIds: ['source.eta.6497-2.communication', 'source.external.pocketwatchdatabase'], locators: [
+      { sourceId: 'source.eta.6497-2.communication', documentLocator: 'Registro canónico: comunicación técnica ETA 6497-2', verificationMethod: 'official-document' },
+      { sourceId: 'source.external.pocketwatchdatabase', documentLocator: 'Registro canónico: Pocket Watch Database', verificationMethod: 'source-limited' },
+    ], limitations: ['No valida por sí sola ningún dato de un calibre.'], unresolvedReason: 'Los ejemplos concretos deben revisarse cuando se vincule una afirmación técnica.',
+  },
+] as const

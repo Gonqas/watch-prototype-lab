@@ -1,0 +1,82 @@
+import type { AcademyEvidenceProfile, AcademyStage1ActivityPresentation } from '../types'
+
+const evidence = (modalities: AcademyEvidenceProfile['modalities'] = ['K', 'V', 'R']): AcademyEvidenceProfile => ({
+  modalities,
+  primaryModality: modalities.includes('V') ? 'V' : 'K',
+  knowledgeExplanationRequired: modalities.includes('K'),
+  virtualDemonstrationRequired: modalities.includes('V'),
+  physicalExecutionRequired: false,
+  measuredOrReviewedResultRequired: modalities.includes('R'),
+  physicalCompetenceClaim: false,
+  reviewerRequired: false,
+  measurableAcceptanceCriteria: ['La respuesta identifica la función, justifica la relación y declara al menos un límite.'],
+  evidenceArtifacts: ['respuesta digital', 'explicación guardada'],
+})
+
+const activity = (
+  activityId: string,
+  lessonId: string,
+  visibleTitle: string,
+  purpose: string,
+  instructions: readonly string[],
+  successCriteria: readonly string[],
+  modalities: AcademyEvidenceProfile['modalities'] = ['K', 'V', 'R'],
+): AcademyStage1ActivityPresentation => ({
+  activityId,
+  lessonId,
+  visibleTitle,
+  purpose,
+  instructions,
+  availableHelp: ['Vuelve al mapa visual de la lección.', 'Nombra entrada, relación, resultado y límite.'],
+  successCriteria,
+  feedback: 'Revisa si has explicado una relación causal y si el alcance de tu respuesta coincide con la fuente disponible.',
+  limitations: ['La interacción digital no demuestra manipulación, medida ni servicio físico.'],
+  evidenceProfile: evidence(modalities),
+})
+
+export const ACADEMY_STAGE_1_ACTIVITY_PRESENTATIONS: readonly AcademyStage1ActivityPresentation[] = [
+  activity('activity.horology.classify-subsystems', 'lesson.horology.system', 'Clasificar el reloj por funciones',
+    'Distinguir reloj completo, movimiento y capas funcionales sin depender de que una pieza se mueva.',
+    ['Clasifica cada elemento por su función principal.', 'Justifica una pieza inmóvil.', 'Distingue movimiento, indicación, interfaz y protección.'],
+    ['No se confunde reloj con movimiento.', 'Cada clasificación incluye una relación observable.', 'Se admite función distribuida o desconocida.']),
+  activity('activity.encyclopedia.mechanical-energy-trains.toh-movimiento-simple', 'lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple', 'Reconstruir el movimiento simple',
+    'Representar ruta de energía, bucle de temporización y rama de indicación.',
+    ['Coloca las cinco funciones.', 'Dibuja el retorno entre escape y regulador.', 'Separa la salida de indicación.'],
+    ['El escape no aparece como fuente.', 'La temporización no queda como cadena lineal.', 'Los detalles posteriores no se tratan como prerrequisito.']),
+  activity('activity.horology.order-mechanical-chain', 'lesson.horology.mechanical-chain', 'Ordenar la ruta y cerrar el bucle',
+    'Explicar la arquitectura mecánica sin reducirla a una fila de ruedas.',
+    ['Ordena la ruta energética.', 'Añade la interacción escape–oscilador.', 'Señala la rama de indicación.'],
+    ['La fuente precede al tren.', 'Escape y oscilador se condicionan mutuamente.', 'Minutería e indicación no sustituyen al regulador.']),
+  activity('activity.horology.identify-escapement-oscillator', 'lesson.horology.mechanical-chain', 'Identificar el conjunto de temporización',
+    'Practicar de forma opcional la distinción entre escape, áncora, volante y espiral.',
+    ['Localiza el conjunto en la representación.', 'Asigna función a cada órgano.', 'Declara una limitación del modelo.'],
+    ['Se distingue escape de oscilador.', 'No se infieren fuerzas, lubricación ni estado real.']),
+  activity('activity.horology.order-quartz-chain', 'lesson.horology.quartz-chain', 'Ordenar la arquitectura de cuarzo',
+    'Seguir energía, referencia/división, conversión, transmisión e indicación.',
+    ['Ordena las zonas funcionales.', 'Explica dos interfaces.', 'Marca un dato que necesita documentación oficial.'],
+    ['La batería no se conecta directamente a las agujas.', 'Motor y tren se distinguen.', 'No se universaliza el 2035.']),
+  activity('activity.horology.identify-time-reference', 'lesson.horology.quartz-chain', 'Reconocer la referencia temporal',
+    'Distinguir referencia, circuito y motor sin exigir la especialización al recorrido mecánico.',
+    ['Identifica la referencia.', 'Explica qué hace el circuito.', 'Separa la orden eléctrica del movimiento mecánico.'],
+    ['El cristal no se presenta como motor.', 'Se declara el alcance conceptual.']),
+  activity('activity.horology.match-functional-equivalents', 'lesson.horology.functional-equivalence', 'Comparar funciones y declarar límites',
+    'Emparejar soluciones mecánicas y de cuarzo sin afirmar igualdad física.',
+    ['Empareja por función.', 'Clasifica la equivalencia como parcial, distribuida o sin equivalente directo.', 'Escribe el límite de cada pareja.'],
+    ['Se justifican las relaciones.', 'No se afirma compatibilidad.', 'Se acepta rechazar una pareja engañosa.']),
+  activity('activity.encyclopedia.history-language.leer-documentacion', 'lesson.encyclopedia.history-language.leer-documentacion', 'Auditar el alcance de un documento',
+    'Relacionar cada afirmación con una fuente que pueda demostrarla.',
+    ['Formula una pregunta técnica.', 'Elige tipo de documento.', 'Registra afirmación, localizador, aplicabilidad y pregunta abierta.'],
+    ['Un despiece no se trata como secuencia.', 'Una base no sustituye documentación oficial de servicio.', 'El orden incidental de una lista no decide autoridad.']),
+  activity('activity.encyclopedia.history-language.medir-el-tiempo', 'lesson.encyclopedia.history-language.medir-el-tiempo', 'Comparar cuatro formas de medir tiempo',
+    'Transferir el mapa referencia–conteo–escala–indicación a arquitecturas distintas.',
+    ['Dibuja cuatro mapas.', 'Marca funciones comunes.', 'Añade una diferencia física esencial.'],
+    ['No se confunden estabilidad, resolución y error.', 'La comparación permanece conceptual.']),
+  activity('activity.advanced.atlas-authority', 'lesson.advanced.atlas-authority', 'Construir una ficha de procedencia',
+    'Elegir autoridad por materia y separar confirmado, inferido y desconocido.',
+    ['Formula la pregunta.', 'Selecciona una fuente por su autoridad.', 'Registra un confirmado, una inferencia y un desconocido.'],
+    ['La variante y aplicabilidad se declaran.', 'Una base secundaria se usa para descubrir o contrastar.', 'Se propone evidencia que podría refutar la decisión.']),
+] as const
+
+export function academyStage1ActivityPresentation(activityId: string): AcademyStage1ActivityPresentation | undefined {
+  return ACADEMY_STAGE_1_ACTIVITY_PRESENTATIONS.find((item) => item.activityId === activityId)
+}

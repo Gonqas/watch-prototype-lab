@@ -216,6 +216,8 @@ export function AcademyShell({ onExit }: { onExit: () => void }) {
     snapshot.profile?.id,
     persistedAcademyState,
   )
+  const academyStateRef = useRef(state)
+  const [persistenceWarning, setPersistenceWarning] = useState<string>()
   const mainRef = useRef<HTMLElement>(null)
   const contextPanelRef = useRef<HTMLElement>(null)
   const contextCloseRef = useRef<HTMLButtonElement>(null)
@@ -235,6 +237,7 @@ export function AcademyShell({ onExit }: { onExit: () => void }) {
   const readingWidth = state?.preferences.readingWidth ?? 'comfortable'
   const lineHeight = state?.preferences.lineHeight ?? 1.7
   const isWorkspace = snapshot.location.surface === 'workspace'
+  const conflictFixture = import.meta.env.DEV && snapshot.location.query['academy-conflict-fixture'] === '1'
   const shellClass = useMemo(
     () => `academy-shell density-${density} theme-${theme} reading-${readingWidth} ${compact ? 'is-nav-compact' : ''} ${contextOpen ? 'has-context' : ''}`,
     [compact, contextOpen, density, readingWidth, theme],
@@ -246,26 +249,43 @@ export function AcademyShell({ onExit }: { onExit: () => void }) {
     if (contextDrawer) requestAnimationFrame(() => contextTriggerRef.current?.focus())
   }, [actions, contextDrawer])
 
+  const persistedUpdatedAt = persistedAcademyState
+    && typeof persistedAcademyState === 'object'
+    && !Array.isArray(persistedAcademyState)
+    && typeof (persistedAcademyState as Record<string, unknown>).updatedAt === 'string'
+    ? String((persistedAcademyState as Record<string, unknown>).updatedAt)
+    : undefined
+
   useEffect(() => {
-    const profile = snapshot.profile
-    if (!profile || !state) return
-    const persistedUpdatedAt = persistedAcademyState
-      && typeof persistedAcademyState === 'object'
-      && !Array.isArray(persistedAcademyState)
-      && typeof (persistedAcademyState as Record<string, unknown>).updatedAt === 'string'
-      ? String((persistedAcademyState as Record<string, unknown>).updatedAt)
-      : undefined
-    if (persistedUpdatedAt === state.updatedAt) return
+    academyStateRef.current = state
+  }, [state])
+
+  useEffect(() => {
+    if (!state || persistedUpdatedAt === state.updatedAt) return
     const timeout = window.setTimeout(() => {
-      void service.updateProfile({
-        educationalPreferences: {
-          ...profile.educationalPreferences,
-          academyStateV1: JSON.parse(JSON.stringify(state)) as never,
-        },
-      })
+      void service.persistAcademyState(state)
+        .then(() => setPersistenceWarning(undefined))
+        .catch(() => setPersistenceWarning('No se ha podido completar la copia durable. Tus cambios siguen guardados localmente y puedes reintentar.'))
     }, 300)
     return () => window.clearTimeout(timeout)
-  }, [persistedAcademyState, service, snapshot.profile, state])
+  }, [persistedUpdatedAt, service, state])
+
+  useEffect(() => {
+    const profileId = snapshot.profile?.id
+    if (!profileId) return
+    const flushCurrent = () => {
+      const current = academyStateRef.current
+      if (!current || current.profileId !== profileId) return
+      void service.persistAcademyState(current)
+        .then(() => service.flushProfileMutations(profileId))
+        .catch(() => setPersistenceWarning('La copia durable queda pendiente. El estado inmediato permanece en este dispositivo.'))
+    }
+    window.addEventListener('pagehide', flushCurrent)
+    return () => {
+      window.removeEventListener('pagehide', flushCurrent)
+      flushCurrent()
+    }
+  }, [service, snapshot.profile?.id])
 
   useEffect(() => {
     const main = mainRef.current
@@ -361,6 +381,15 @@ export function AcademyShell({ onExit }: { onExit: () => void }) {
                   : 'Las preferencias visuales usan memoria temporal.'}
               </strong>
               <span>El progreso, los resultados, las sesiones, las notas y el contenido no se han eliminado.</span>
+            </div>
+          </aside>
+        )}
+        {(persistenceWarning || conflictFixture) && (
+          <aside className="academy-recovery-notice" role="status" data-qa-fixture={conflictFixture ? 'profile-conflict-recovery' : undefined}>
+            <TriangleAlert size={17} />
+            <div>
+              <strong>{conflictFixture ? 'Fixture QA · conflicto de guardado recuperable' : 'La copia durable necesita atención.'}</strong>
+              <span>{conflictFixture ? 'Esta vista simula el aviso; no representa una pérdida real ni contiene datos personales.' : persistenceWarning}</span>
             </div>
           </aside>
         )}

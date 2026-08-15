@@ -1,13 +1,26 @@
 import type { LearningProfile } from './models'
 import type { LearningRepository } from './repository'
+import {
+  profileMutationCoordinatorFor,
+  type ProfileMutation,
+  type ProfileMutationCoordinator,
+  type ProfileMutationDiagnostic,
+  type ProfileMutationKind,
+} from './profileMutationCoordinator'
 
 export class LearningProfileService {
   private readonly repository: LearningRepository
   private readonly now: () => string
+  private readonly mutations: ProfileMutationCoordinator
 
-  constructor(repository: LearningRepository, now: () => string = () => new Date().toISOString()) {
+  constructor(
+    repository: LearningRepository,
+    now: () => string = () => new Date().toISOString(),
+    mutations: ProfileMutationCoordinator = profileMutationCoordinatorFor(repository),
+  ) {
     this.repository = repository
     this.now = now
+    this.mutations = mutations
   }
 
   async ensureDefaultProfile(locale = 'es-ES'): Promise<LearningProfile> {
@@ -43,42 +56,63 @@ export class LearningProfileService {
   }
 
   async update(profileId: string, changes: Partial<Pick<LearningProfile, 'displayName' | 'locale' | 'accessibility' | 'educationalPreferences'>>): Promise<LearningProfile> {
-    const current = await this.required(profileId)
-    const updated: LearningProfile = {
+    return this.mutateProfile(profileId, (current) => ({
       ...current,
       ...structuredClone(changes),
-      id: current.id,
-      schemaVersion: 1,
-      createdAt: current.createdAt,
-      modifiedAt: this.now(),
-      recordVersion: current.recordVersion + 1,
-    }
-    await this.repository.putProfile(updated)
-    return updated
+      ...(changes.accessibility
+        ? { accessibility: { ...current.accessibility, ...structuredClone(changes.accessibility) } }
+        : {}),
+      ...(changes.educationalPreferences
+        ? { educationalPreferences: { ...current.educationalPreferences, ...structuredClone(changes.educationalPreferences) } }
+        : {}),
+    }), changes.educationalPreferences ? 'educational-preferences' : changes.accessibility ? 'accessibility' : 'profile-update')
+  }
+
+  mutateProfile(profileId: string, mutation: ProfileMutation, kind: ProfileMutationKind = 'profile-update'): Promise<LearningProfile> {
+    return this.mutations.enqueue(profileId, kind, mutation)
+  }
+
+  updateEducationalPreferences(
+    profileId: string,
+    mutation: (current: Readonly<LearningProfile['educationalPreferences']>) => LearningProfile['educationalPreferences'],
+    kind: ProfileMutationKind = 'educational-preferences',
+  ): Promise<LearningProfile> {
+    return this.mutateProfile(profileId, (current) => ({
+      ...current,
+      educationalPreferences: structuredClone(mutation(structuredClone(current.educationalPreferences))),
+    }), kind)
   }
 
   async archive(profileId: string, archived = true): Promise<LearningProfile> {
-    const current = await this.required(profileId)
-    const updated = { ...current, archived, modifiedAt: this.now(), recordVersion: current.recordVersion + 1 }
-    await this.repository.putProfile(updated)
-    return updated
+    return this.mutateProfile(profileId, (current) => ({ ...current, archived }), 'profile-archive')
   }
 
   async softDelete(profileId: string): Promise<LearningProfile> {
-    const current = await this.required(profileId)
-    const updated = {
-      ...current,
-      deletedAt: this.now(),
-      modifiedAt: this.now(),
-      recordVersion: current.recordVersion + 1,
-    }
-    await this.repository.putProfile(updated)
-    return updated
+    return this.mutateProfile(profileId, (current) => ({ ...current, deletedAt: this.now() }), 'profile-delete')
   }
 
-  private async required(profileId: string): Promise<LearningProfile> {
-    const profile = await this.repository.getProfile(profileId)
-    if (!profile) throw new Error(`Perfil inexistente: ${profileId}.`)
-    return profile
+  flush(profileId: string): Promise<void> {
+    return this.mutations.flush(profileId)
   }
+
+  flushAll(): Promise<void> {
+    return this.mutations.flushAll()
+  }
+
+  pending(profileId: string): number {
+    return this.mutations.pending(profileId)
+  }
+
+  diagnostics(): ProfileMutationDiagnostic[] {
+    return this.mutations.diagnostics()
+  }
+
+  exportDiagnostics(): string {
+    return this.mutations.exportDiagnostics()
+  }
+
+  clearDiagnostics(): void {
+    this.mutations.clearDiagnostics()
+  }
+
 }

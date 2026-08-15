@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import {
   AcademyLocalStore,
   createDefaultAcademyLocalState,
+  mergeAcademyLocalState,
   type AcademyStorage,
 } from './academyLocalState'
 
@@ -175,5 +176,22 @@ describe('AcademyLocalStore', () => {
       completedAt: '2026-07-28T10:05:00.000Z',
       updatedAt: '2026-07-28T10:10:00.000Z',
     })
+  })
+  it('fusiona snapshots con el mismo timestamp sin perder notas, progreso ni tombstones', () => {
+    const now = '2026-08-15T10:00:00.000Z'
+    const persisted = createDefaultAcademyLocalState('profile.a', now)
+    persisted.notes = [{ id: 'note.persisted', title: 'Persistida', body: 'A', tags: [], context: {}, createdAt: now, updatedAt: now }]
+    persisted.lessonProgress = [{ lessonId: 'lesson.horology.system', currentSegmentId: 'section.a', completedSegmentIds: ['section.a'], visitedSectionIds: ['section.a'], updatedAt: now }]
+    persisted.deletedBookmarkIds = ['bookmark.deleted']
+    const local = createDefaultAcademyLocalState('profile.a', now)
+    local.notes = [{ id: 'note.local', title: 'Local', body: 'B', tags: [], context: {}, createdAt: now, updatedAt: now }]
+    local.lessonProgress = [{ lessonId: 'lesson.horology.system', currentSegmentId: 'section.b', completedSegmentIds: ['section.b'], visitedSectionIds: ['section.b'], completedAt: now, updatedAt: now }]
+    local.bookmarks = [{ id: 'bookmark.deleted', title: 'No debe revivir', href: '#/learning', context: {}, createdAt: now }]
+    const merged = mergeAcademyLocalState('profile.a', persisted, local, now)
+    expect(merged.notes.map(({ id }) => id).sort()).toEqual(['note.local', 'note.persisted'])
+    expect(merged.lessonProgress[0].completedSegmentIds.sort()).toEqual(['section.a', 'section.b'])
+    expect(merged.lessonProgress[0].completedAt).toBe(now)
+    expect(merged.bookmarks).toEqual([])
+    expect(merged.deletedBookmarkIds).toEqual(['bookmark.deleted'])
   })
 })

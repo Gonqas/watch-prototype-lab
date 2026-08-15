@@ -9,6 +9,7 @@ import {
   type AcademyNote,
   type AcademyOnboarding,
   type AcademyEditorialReview,
+  type AcademyPersonalPracticeRecord,
   type AcademyUxPreferences,
 } from './academyLocalState'
 import type { AcademyReaderEvent, AcademyUsabilitySession } from './reader/academyReaderModel'
@@ -47,6 +48,7 @@ export interface AcademyLocalStateActions {
   recordReaderEvent(input: Omit<AcademyReaderEvent, 'eventId' | 'timestamp'>): AcademyReaderEvent
   clearReaderEvents(): void
   saveEditorialReview(input: AcademyEditorialReview): AcademyEditorialReview
+  savePersonalPractice(input: Pick<AcademyPersonalPracticeRecord, 'personalPracticeId' | 'lessonId' | 'note'>): AcademyPersonalPracticeRecord
   saveUsabilitySession(input: AcademyUsabilitySession): AcademyUsabilitySession
   deleteUsabilitySession(sessionId: string): void
 }
@@ -178,6 +180,12 @@ export function useAcademyLocalState(profileId: string | undefined, persistedSta
       const review = store.saveEditorialReview(profileId, input)
       announce(store.load(profileId))
       return review
+    },
+    savePersonalPractice(input) {
+      if (!profileId || !store) throw new Error('No hay un perfil local activo.')
+      const practice = store.savePersonalPractice(profileId, input)
+      announce(store.load(profileId))
+      return practice
     },
     saveUsabilitySession(input) {
       if (!profileId || !store) throw new Error('No hay un perfil local activo.')
