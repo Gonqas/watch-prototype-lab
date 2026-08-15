@@ -2,7 +2,7 @@ import type { LearningPack } from '../../content/learningPack'
 import type { LearningActivityDescriptor } from '../../product/demoPackage'
 
 export type AcademyReaderMode = 'learn' | 'read'
-export type AcademyReaderCurationPhase = '0.14D' | '0.14E'
+export type AcademyReaderCurationPhase = '0.14D' | '0.14E' | '0.14F'
 
 export type AcademyPersonalTechnicalStatus = 'source-reviewed' | 'source-limited' | 'source-needed' | 'technical-conflict'
 export type AcademyPersonalReviewStatus = 'not-reviewed' | 'clear' | 'needs-rework'
@@ -285,7 +285,7 @@ export interface AcademyReaderCompletionContract {
 }
 
 export interface AcademyReaderDocument {
-  readerSchemaVersion: '0.14C' | '0.14D' | '0.14E'
+  readerSchemaVersion: '0.14C' | '0.14D' | '0.14E' | '0.14F'
   documentId: string
   documentVersion: string
   version: string

@@ -3,6 +3,7 @@ import type { EducationalVisualState, VisualDiagnostic, VisualEntityId } from '.
 import { parseVisualEntityId } from '../../visual/model'
 import { createSpatialLabel } from '../../visual/overlays'
 import { academy3dVisualStateForPhase } from './academyReader3dStates'
+import { CURRENT_ACADEMY_CURATION_PHASE } from './academyPersonalCurriculum'
 import type { AcademyVisualCue } from './academyReaderModel'
 
 type WebGlCanvas = Pick<HTMLCanvasElement, 'getContext'>
@@ -46,7 +47,7 @@ export function applyAcademy3dCueState(
   cue: AcademyVisualCue,
   reducedMotion: boolean,
 ): { state?: EducationalVisualState; diagnostics: VisualDiagnostic[] } {
-  const visualState = academy3dVisualStateForPhase(cue.visualStateId, '0.14E')
+  const visualState = academy3dVisualStateForPhase(cue.visualStateId, CURRENT_ACADEMY_CURATION_PHASE)
   if (!visualState) return { diagnostics: [{ code: 'AR-3D-STATE-MISSING', severity: 'error', message: `Estado inexistente: ${cue.visualStateId ?? 'sin ID'}.`, accessibleMessage: 'La vista solicitada no tiene un estado visual registrado.' }] }
   const tokens = [...new Set([
     ...visualState.selectedIds,

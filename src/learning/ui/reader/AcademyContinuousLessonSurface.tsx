@@ -3,9 +3,10 @@ import { useEffect, useMemo, useRef, useState, type FormEvent, type MouseEvent }
 import { academyLessonMaterial } from '../../academy/academyCatalog'
 import { academyLegacyModeForReader, academyReaderModeFromLegacy } from '../../academy/reader/academyReaderCompatibility'
 import { buildAcademyReaderDocument, resolveAcademyReaderSection } from '../../academy/reader/academyReaderDocument'
+import { CURRENT_ACADEMY_CURATION_PHASE, academyStage0PersonalPracticesForLesson } from '../../academy/reader/academyPersonalCurriculum'
 import type { AcademyReaderMode } from '../../academy/reader/academyReaderModel'
 import { academyReaderDocumentVersionMatches } from '../../academy/reader/academyReaderIdentity'
-import { academyEditorialReviewStatus, academyEditorialStatusLabel } from '../../academy/reader/academyReaderReview'
+import { academyEditorialReviewStatus, academyVisibleEditorialStatusLabel } from '../../academy/reader/academyReaderReview'
 import { useAcademyLocalState } from '../../academy/useAcademyLocalState'
 import { academyPathLocationForStepLesson } from '../../academy/path/academyLearnerPath'
 import { academyLessonCompletionTransition } from '../../academy/path/academyPathLinks'
@@ -65,7 +66,7 @@ export default function AcademyContinuousLessonSurface() {
         stepId: curatedLocation?.step.stepId,
         locale: snapshot.profile?.locale,
         requiredActivityIds: curatedLocation?.step.requiredActivityIds ?? descriptor.studyContract?.labActivityIds,
-      }, { curationPhase: '0.14E' })
+      }, { curationPhase: CURRENT_ACADEMY_CURATION_PHASE })
     : undefined, [
       curatedLocation?.chapter,
       curatedLocation?.stage,
@@ -292,11 +293,12 @@ export default function AcademyContinuousLessonSurface() {
   const legacyLessonBookmark = state?.bookmarks.find(({ context }) => context.lessonId === descriptor.id && !context.sectionId)
   const storedReview = state?.editorialReviews.find(({ lessonId }) => lessonId === descriptor.id)
   const ownerReviewStatus = academyEditorialReviewStatus(readerDocument, storedReview)
-  const editorialLabel = ownerReviewStatus === 'owner-reviewed' || ownerReviewStatus === 'stale-after-content-change'
-    ? academyEditorialStatusLabel(ownerReviewStatus)
-    : readerDocument.curation.method === 'codex-assisted-editorial-curation'
-      ? academyEditorialStatusLabel('codex-assisted-curation')
-      : academyEditorialStatusLabel('automated-structural-migration')
+  const editorialLabel = academyVisibleEditorialStatusLabel(
+    ownerReviewStatus === 'owner-reviewed' || ownerReviewStatus === 'stale-after-content-change'
+      ? ownerReviewStatus
+      : readerDocument.curation.method,
+  )
+  const personalPractices = academyStage0PersonalPracticesForLesson(descriptor.id)
   const showVisualRail = mode === 'learn' && !mobileNarrative && activeSection?.visualCue.implementationStatus === 'implemented'
   const completed = Boolean(saved?.completedAt)
   const pathLocation = curatedLocation
@@ -402,7 +404,7 @@ export default function AcademyContinuousLessonSurface() {
           <span className="academy-kicker">LECCIÓN CONTINUA</span><h1>{title}</h1><p>{localize(snapshot.profile?.locale, descriptor.purpose)}</p>
           <div className="academy-reader-header-meta">
             {readerDocument.whyNow && <span><strong>Por qué aparece ahora:</strong> {readerDocument.whyNow}</span>}
-            {readerDocument.estimatedDurationMinutes !== undefined && <span><strong>Duración authored:</strong> {readerDocument.estimatedDurationMinutes} min</span>}
+            {readerDocument.estimatedDurationMinutes !== undefined && <span><strong>Duración estimada:</strong> {readerDocument.estimatedDurationMinutes} min</span>}
             <span><strong>Estado editorial:</strong> {editorialLabel}</span>
           </div>
         </div>
@@ -472,6 +474,25 @@ export default function AcademyContinuousLessonSurface() {
                 )}
             </section>
           ))}
+          {personalPractices.length > 0 && (
+            <section className="academy-reader-personal-practices" aria-labelledby="academy-personal-practices-title">
+              <span className="academy-kicker">PRÁCTICA PERSONAL OPCIONAL</span>
+              <h2 id="academy-personal-practices-title">Practica sin arriesgar un reloj</h2>
+              <p>Estas propuestas son locales y autodocumentadas. No completan la lección, no crean dominio y no acreditan destreza física.</p>
+              <div className="academy-reader-personal-practices__list">
+                {personalPractices.map((practice) => (
+                  <details key={practice.personalPracticeId}>
+                    <summary>{practice.title}</summary>
+                    <p>{practice.objective}</p>
+                    <h3>Material barato</h3><ul>{practice.inexpensiveMaterials.map((item) => <li key={item}>{item}</li>)}</ul>
+                    <h3>Pasos</h3><ol>{practice.steps.map((item) => <li key={item}>{item}</li>)}</ol>
+                    <p><strong>Señal de parada:</strong> {practice.stopSignal}</p>
+                    <p><strong>Qué registrar:</strong> {practice.record.join(' · ')}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
           <footer className="academy-reader-completion">
             <CheckCircle2 size={24} aria-hidden="true" />
             <div><h2>{completed ? 'Lección estudiada' : 'Cierra la lección cuando hayas terminado'}</h2><p>Desplazarte, permanecer en la página o visitar todos los apartados no registra la finalización.</p></div>

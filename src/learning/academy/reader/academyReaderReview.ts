@@ -85,12 +85,27 @@ export function academyPersonalReviewStatusLabel(
 export function academyEditorialStatusLabel(status: AcademyEditorialReviewStatus): string {
   const labels: Record<AcademyEditorialReviewStatus, string> = {
     'automated-structural-migration': 'Estructura generada automáticamente · pendiente de revisión',
-    'codex-assisted-curation': 'Curación asistida · pendiente de revisión',
-    'owner-review-pending': 'Pendiente de revisión del propietario',
-    'owner-reviewed': 'Revisada por el propietario',
+    'codex-assisted-curation': 'Curación editorial aplicada · pendiente de tu revisión',
+    'owner-review-pending': 'Pendiente de tu revisión',
+    'owner-reviewed': 'Revisada por ti',
     'technical-expert-review-pending': 'Pendiente de revisión relojera',
     'technical-expert-reviewed': 'Revisada por especialista técnico',
-    'stale-after-content-change': 'Revisión obsoleta tras un cambio de contenido',
+    'stale-after-content-change': 'Tu revisión quedó desactualizada tras cambiar la lección',
   }
   return labels[status]
+}
+
+export type AcademyVisibleEditorialState =
+  | AcademyReaderDocument['curation']['method']
+  | 'owner-reviewed'
+  | 'stale-after-content-change'
+
+export function academyVisibleEditorialStatusLabel(status: AcademyVisibleEditorialState): string {
+  return {
+    'automated-structural-migration': 'Estructura generada automáticamente · pendiente de revisión',
+    'codex-assisted-editorial-curation': 'Curación editorial aplicada · pendiente de tu revisión',
+    'codex-assisted-personal-curation': 'Curación personal aplicada · pendiente de tu revisión',
+    'owner-reviewed': 'Revisada por ti',
+    'stale-after-content-change': 'Tu revisión quedó desactualizada tras cambiar la lección',
+  }[status]
 }

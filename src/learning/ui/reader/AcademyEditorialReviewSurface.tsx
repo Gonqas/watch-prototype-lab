@@ -3,8 +3,9 @@ import { useMemo, useState } from 'react'
 import { academyLessonMaterial } from '../../academy/academyCatalog'
 import type { AcademyEditorialReview, AcademyEditorialSectionReview } from '../../academy/academyLocalState'
 import {
-  ACADEMY_PERSONAL_PILOT_REVIEWS,
-  academyPersonalPilotReview,
+  ACADEMY_PERSONAL_REVIEW_QUEUE,
+  CURRENT_ACADEMY_CURATION_PHASE,
+  academyPersonalReviewQueueEntry,
 } from '../../academy/reader/academyPersonalCurriculum'
 import { buildAcademyReaderDocument } from '../../academy/reader/academyReaderDocument'
 import { academyReaderStableHash } from '../../academy/reader/academyReaderIdentity'
@@ -76,7 +77,7 @@ function sectionReview(
 export default function AcademyEditorialReviewSurface() {
   const { snapshot } = useLearning()
   const { state, actions } = useAcademyLocalState(snapshot.profile?.id)
-  const availablePilots = ACADEMY_PERSONAL_PILOT_REVIEWS.filter(({ lessonId }) => (
+  const availablePilots = ACADEMY_PERSONAL_REVIEW_QUEUE.filter(({ lessonId }) => (
     snapshot.product.lessons.some(({ id }) => id === lessonId)
   ))
   const requestedLessonId = snapshot.location.query.lesson
@@ -93,10 +94,10 @@ export default function AcademyEditorialReviewSurface() {
     purpose: localize(snapshot.profile?.locale, descriptor.purpose),
     locale: snapshot.profile?.locale,
     requiredActivityIds: descriptor.studyContract?.labActivityIds,
-  }, { curationPhase: '0.14E' }) : undefined, [descriptor, material, snapshot.profile?.locale])
+  }, { curationPhase: CURRENT_ACADEMY_CURATION_PHASE }) : undefined, [descriptor, material, snapshot.profile?.locale])
   const storedReview = state?.editorialReviews.find(({ lessonId }) => lessonId === selectedLessonId)
   const baseDraft = useMemo(() => readerDocument
-    ? storedReview ?? createAcademyEditorialReviewDraft(readerDocument, undefined, '0.14E')
+    ? storedReview ?? createAcademyEditorialReviewDraft(readerDocument, undefined, CURRENT_ACADEMY_CURATION_PHASE)
     : undefined, [readerDocument, storedReview])
   const [drafts, setDrafts] = useState<Record<string, AcademyEditorialReview>>({})
   const draft = drafts[selectedLessonId] ?? baseDraft
@@ -122,7 +123,11 @@ export default function AcademyEditorialReviewSurface() {
   const activeSectionHash = curation?.sectionHash ?? academyReaderStableHash(activeSection.markdown)
   const activeReview = sectionReview(draft, activeSection.sectionId, activeSectionHash, new Date(0).toISOString())
   const personalStatus = academyPersonalReviewStatus(readerDocument, storedReview)
-  const pilotReview = academyPersonalPilotReview(selectedLessonId)
+  const queueEntry = academyPersonalReviewQueueEntry(selectedLessonId)
+  const reviewedCount = availablePilots.filter(({ lessonId }) => {
+    const review = state?.editorialReviews.find((item) => item.lessonId === lessonId)
+    return review?.personalStatus === 'clear' || review?.personalStatus === 'needs-rework'
+  }).length
   const sourceTitles = [...new Set(material.sources.map((source) => source.resource.title))]
 
   const updateSection = (patch: Partial<AcademyEditorialSectionReview>) => setDraft((current) => {
@@ -160,7 +165,7 @@ export default function AcademyEditorialReviewSurface() {
       personalStatus: nextStatus,
       personalReviewedAt: nextStatus === 'not-reviewed' ? undefined : now,
       ownerReviewedAt: undefined,
-      version: '0.14E',
+      version: CURRENT_ACADEMY_CURATION_PHASE,
       updatedAt: now,
     }
     setDraft(next)
@@ -168,7 +173,7 @@ export default function AcademyEditorialReviewSurface() {
   }
   const restartForCurrentContent = () => {
     if (!window.confirm('Tu revisión anterior se conservará hasta que guardes la nueva. ¿Preparar una revisión para el contenido actual?')) return
-    setDraft(createAcademyEditorialReviewDraft(readerDocument, undefined, '0.14E'))
+    setDraft(createAcademyEditorialReviewDraft(readerDocument, undefined, CURRENT_ACADEMY_CURATION_PHASE))
   }
 
   return (
@@ -176,7 +181,7 @@ export default function AcademyEditorialReviewSurface() {
       <header className="academy-editorial-review__header">
         <div>
           <span>ACADEMIA · REVISIÓN PERSONAL</span>
-          <h1>Comprueba qué entiendes y qué necesita otra explicación</h1>
+          <h1>Revisión personal de la Academia</h1>
           <p>Esta pantalla es solo para ti. Tu valoración ayuda a mejorar la claridad, pero no certifica la exactitud técnica ni una destreza física.</p>
         </div>
         <label>Lección
@@ -191,7 +196,8 @@ export default function AcademyEditorialReviewSurface() {
 
       <section className="academy-editorial-review__status" aria-label="Estado de revisión">
         <strong>{academyPersonalReviewStatusLabel(personalStatus)}</strong>
-        <span>Estado técnico: {technicalStatusLabels[pilotReview?.technicalStatus ?? 'source-needed']}</span>
+        <span>Cola: {reviewedCount} de {availablePilots.length} lecciones valoradas</span>
+        <span>Estado técnico: {technicalStatusLabels[queueEntry?.technicalStatus ?? 'source-needed']}</span>
       </section>
 
       <section className="academy-editorial-review__question">

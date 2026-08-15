@@ -1,3 +1,5 @@
+import { academyStage0EffectivePrerequisiteConceptIds } from '../reader/personal/phase014f/stage0Prerequisites'
+
 export type AcademyRawPrerequisiteStatus = 'required'
 export type AcademyEffectivePrerequisiteStatus = 'recommended' | 'later-transfer'
 
@@ -79,6 +81,8 @@ export function effectiveLessonPrerequisiteConceptIds(
   lessonId: string,
   rawConceptIds: readonly string[],
 ): string[] {
+  const stage0Override = academyStage0EffectivePrerequisiteConceptIds(lessonId, rawConceptIds)
+  if (stage0Override) return stage0Override
   return rawConceptIds.filter((conceptId) => !academyPrerequisiteResolution(lessonId, conceptId))
 }
 

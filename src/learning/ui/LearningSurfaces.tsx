@@ -36,6 +36,7 @@ import {
 import type { MasteryState } from '../assessment'
 import { contextualTutorGuidance, LEARNING_CYCLE } from '../academy/academyPedagogy'
 import { competencyLabel, humanizeLearningId } from '../academy/academyCatalog'
+import { academyStage0ActivityPresentation } from '../academy/reader/personal/phase014f'
 import { learningDate, learningNumber, localize } from '../application/i18n'
 import type { LearningDeletionPreview } from '../persistence/deletionService'
 import type {
@@ -533,6 +534,7 @@ function ActivitySurface() {
   const { service, snapshot } = useLearning()
   const activity = snapshot.product.activities.find(({ id }) => id === snapshot.location.id)
   if (!activity) return <NotFoundSurface />
+  const personalPresentation = academyStage0ActivityPresentation(activity.id)
   const preflight = snapshot.preflight?.activityId === activity.id ? snapshot.preflight : undefined
   const learningMode = snapshot.location.query.mode === 'demonstration' || snapshot.location.query.mode === 'retention' || snapshot.location.query.mode === 'transfer' || snapshot.location.query.mode === 'remediation'
     ? snapshot.location.query.mode
@@ -579,7 +581,7 @@ function ActivitySurface() {
       ? friendlyLearningTerm(activity.fixtureBinding.fixtureId)
       : activity.fixtureBinding.fixtureIds.map(friendlyLearningTerm).join(' y ')
     : 'una copia de solo lectura de tu proyecto'
-  const practicePreparation = isManufacturingStudy
+  const historicalPracticePreparation = isManufacturingStudy
     ? 'Prepararemos un expediente de fabricación con operaciones, material, datums, tolerancias, riesgos, inspecciones y aceptación. No ejecutará ninguna operación física.'
     : isPersonalDesignStudy
       ? 'Prepararemos una puerta de diseño con entradas, interfaces, alternativas, riesgos, entregables y verificación. Tu proyecto técnico no se modificará.'
@@ -592,6 +594,7 @@ function ActivitySurface() {
       : activity.fixtureBinding
         ? `Prepararemos ${referenceModels} para que puedas observarlo y responder paso a paso. Tu avance se guardará en este equipo.`
         : 'Prepararemos una copia segura de tu proyecto para la práctica. El original no se modificará y tu avance se guardará en este equipo.'
+  const practicePreparation = personalPresentation?.purpose ?? historicalPracticePreparation
   const practiceResourceLabel = isManufacturingStudy
     ? 'Expediente de fabricación'
     : isPersonalDesignStudy
@@ -724,7 +727,11 @@ function ActivitySurface() {
   }
   return (
     <>
-      <PageHeader eyebrow="ACTIVIDAD" title={localize(locale, activity.title)} description={friendlyRecommendationReason(localize(locale, activity.description))} />
+      <PageHeader
+        eyebrow="ACTIVIDAD"
+        title={personalPresentation?.visibleTitle ?? localize(locale, activity.title)}
+        description={personalPresentation?.purpose ?? friendlyRecommendationReason(localize(locale, activity.description))}
+      />
       {learningMode !== 'authored' && (
         <section className={`learning-adaptive-mode-banner is-${learningMode}`}>
           {independentDemonstration ? <ShieldCheck size={20} /> : learningMode === 'retention' ? <RotateCcw size={20} /> : learningMode === 'transfer' ? <Sparkles size={20} /> : <BookMarked size={20} />}
@@ -775,7 +782,14 @@ function ActivitySurface() {
           )}
           <h3 className="learning-practice-cycle-title">Cómo vas a practicar</h3>
           <ol className="learning-practice-cycle" aria-label="Secuencia de práctica deliberada">
-            {adaptivePracticeSteps
+            {personalPresentation && learningMode === 'authored'
+              ? personalPresentation.instructions.map((instruction, index) => (
+                  <li key={instruction}>
+                    <span>{index + 1}</span>
+                    <div><strong>Paso {index + 1}</strong><small>{instruction}</small></div>
+                  </li>
+                ))
+              : adaptivePracticeSteps
               ? adaptivePracticeSteps.map((step, index) => (
                   <li key={step.label}>
                     <span>{index + 1}</span>
@@ -804,6 +818,23 @@ function ActivitySurface() {
                   </li>
                 ))}
           </ol>
+          {personalPresentation && (
+            <details className="learning-deliberate-practice">
+              <summary>Ayuda, criterio y límites de esta práctica</summary>
+              <h4>Ayuda disponible</h4>
+              <ul>{personalPresentation.availableHelp.map((item) => <li key={item}>{item}</li>)}</ul>
+              <h4>El resultado es adecuado cuando</h4>
+              <ul>{personalPresentation.successCriteria.map((item) => <li key={item}>{item}</li>)}</ul>
+              <p><strong>Al terminar:</strong> {personalPresentation.feedback}</p>
+              <p><strong>Qué puedes conservar:</strong> {personalPresentation.evidenceProfile.modalities.map((modality) => ({
+                K: 'Puedo explicarlo',
+                V: 'Puedo aplicarlo en el laboratorio virtual',
+                P: 'Lo he practicado físicamente',
+                R: 'He documentado o comprobado el resultado',
+              })[modality]).join(' · ')}</p>
+              {personalPresentation.limitations.map((item) => <p key={item}><CircleAlert size={15} />{item}</p>)}
+            </details>
+          )}
           {deliberatePractice && !adaptivePracticeSteps && (
             <details className="learning-deliberate-practice">
               <summary>Ejemplo resuelto y criterio de éxito</summary>

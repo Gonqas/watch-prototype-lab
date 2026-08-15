@@ -72,7 +72,7 @@ export interface AcademyEditorialReview {
   ownerReviewedAt?: string
   personalStatus?: AcademyPersonalReviewStatus
   personalReviewedAt?: string
-  version: '0.14D' | '0.14E'
+  version: '0.14D' | '0.14E' | '0.14F'
   updatedAt: string
 }
 
@@ -444,7 +444,7 @@ function normalizeEditorialReview(value: unknown): AcademyEditorialReview | unde
       ? value.personalStatus as AcademyPersonalReviewStatus
       : value.status === 'owner-reviewed' ? 'clear' : 'not-reviewed',
     personalReviewedAt: typeof value.personalReviewedAt === 'string' ? value.personalReviewedAt : undefined,
-    version: value.version === '0.14E' ? '0.14E' : '0.14D',
+    version: value.version === '0.14F' ? '0.14F' : value.version === '0.14E' ? '0.14E' : '0.14D',
     updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : new Date(0).toISOString(),
   }
 }

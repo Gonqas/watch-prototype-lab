@@ -10,6 +10,10 @@ import { academy3dVisualStateForPhase } from './academyReader3dStates'
 import {
   academyPersonalPilotReview,
   academyPersonalSectionVisualCuration,
+  academyStage0LegacyAliases,
+  academyStage0LessonCuration,
+  academyStage0SectionVisualCuration,
+  applyAcademyStage0LessonCuration,
   applyAcademyPersonalSectionPatches,
 } from './academyPersonalCurriculum'
 import { academyReaderShortDocumentVersion, academyReaderStableHash } from './academyReaderIdentity'
@@ -442,7 +446,10 @@ export function buildAcademyReaderDocument(
   const curationPhase = options.curationPhase ?? '0.14D'
   const lessonId = input.material.lesson.id
   const pilot = academyReaderPilotCuration(lessonId)
-  const personalReview = curationPhase === '0.14E' ? academyPersonalPilotReview(lessonId) : undefined
+  const personalReview = curationPhase === '0.14E' || curationPhase === '0.14F'
+    ? academyPersonalPilotReview(lessonId)
+    : undefined
+  const stage0Curation = curationPhase === '0.14F' ? academyStage0LessonCuration(lessonId) : undefined
   const fixtureActivity = input.material.activities.find(({ fixtureBinding }) => Boolean(fixtureBinding))
   const visualDeclared = Boolean(input.material.lesson.authoring?.visualStrategy)
   const contentBasis = input.material.blocks.map(({ bodyMarkdown }) => bodyMarkdown.replaceAll('\r\n', '\n').trim()).join('\n\n')
@@ -494,8 +501,13 @@ export function buildAcademyReaderDocument(
       })
     }
   }
-  if (!legacy014C && curationPhase === '0.14E') {
+  if (!legacy014C && (curationPhase === '0.14E' || curationPhase === '0.14F')) {
     sections = applyAcademyPersonalSectionPatches(lessonId, sections)
+    documentContentHash = academyReaderStableHash(sections.map(({ sectionId, markdown }) => `${sectionId}\n${markdown}`).join('\n\n'))
+  }
+  const historical014eSections = curationPhase === '0.14F' ? sections.map((section) => ({ ...section })) : []
+  if (!legacy014C && curationPhase === '0.14F') {
+    sections = applyAcademyStage0LessonCuration(lessonId, sections)
     documentContentHash = academyReaderStableHash(sections.map(({ sectionId, markdown }) => `${sectionId}\n${markdown}`).join('\n\n'))
   }
   const sourceIds = input.material.sources.map(({ id }) => id)
@@ -508,24 +520,34 @@ export function buildAcademyReaderDocument(
       activities: input.material.activities,
       sourceIds,
     })
-    const personalVisual = curationPhase === '0.14E' ? academyPersonalSectionVisualCuration({
+    const personalVisual = curationPhase === '0.14E' || curationPhase === '0.14F' ? academyPersonalSectionVisualCuration({
       lessonId,
       section,
       contentHash: documentContentHash,
       sectionHash: academyReaderStableHash(section.markdown),
       sourceIds,
     }) : undefined
-    const curation = personalVisual ?? baseCuration
+    const stage0Visual = curationPhase === '0.14F' ? academyStage0SectionVisualCuration({
+      lessonId,
+      section,
+      contentHash: documentContentHash,
+    }) : undefined
+    const curation = stage0Visual ?? personalVisual ?? baseCuration
     if (!curation) return []
-    return curationPhase === '0.14E' ? [{
+    return curationPhase === '0.14E' || curationPhase === '0.14F' ? [{
       ...curation,
-      curationId: curation.curationId.replace('curation.0.14d.', 'curation.0.14e.'),
+      curationId: curation.curationId.replace('curation.0.14d.', `curation.${curationPhase.toLowerCase()}.`),
       contentHash: documentContentHash,
       sectionHash: academyReaderStableHash(section.markdown),
       curationMethod: 'codex-assisted-personal-curation' as const,
       technicalReviewStatus: 'not-required' as const,
       technicalStatus: personalReview?.technicalStatus ?? curation.technicalStatus ?? 'source-reviewed' as const,
-      notes: [...curation.notes, 'Revisada para uso personal en español en 0.14E; claridad pendiente del propietario.'],
+      notes: [
+        ...curation.notes,
+        curationPhase === '0.14E'
+          ? 'Revisada para uso personal en español en 0.14E; claridad pendiente del propietario.'
+          : 'Revisada para uso personal en español; claridad pendiente de tu revisión.',
+      ],
     }] : [curation]
   })
   if (!legacy014C) {
@@ -544,7 +566,10 @@ export function buildAcademyReaderDocument(
   const optionalActivityIds = input.material.activities
     .map(({ id }) => id)
     .filter((id) => !requiredActivityIds.includes(id))
-  const aliases = aliasesForDocument(input, sections)
+  const aliases = [
+    ...aliasesForDocument(input, sections),
+    ...academyStage0LegacyAliases(lessonId, historical014eSections, sections),
+  ]
   const completion = {
     explicitActionRequired: true as const,
     scrollNeverCompletes: true as const,
@@ -594,8 +619,8 @@ export function buildAcademyReaderDocument(
     } : {}),
     title: input.title,
     purpose: input.purpose,
-    whyNow: personalReview?.whyNow ?? input.whyNow,
-    outcome: input.outcome,
+    whyNow: stage0Curation?.whyNow ?? personalReview?.whyNow ?? input.whyNow,
+    outcome: stage0Curation?.observableOutcome ?? input.outcome,
     estimatedDurationMinutes,
     stageId: input.stageId,
     chapterId: input.chapterId,
@@ -612,20 +637,22 @@ export function buildAcademyReaderDocument(
     completion,
     completionPolicy: completion,
     pilot: Boolean(pilot),
-    centralQuestion: personalReview?.centralQuestion ?? pilot?.centralQuestion,
+    centralQuestion: stage0Curation?.centralQuestion ?? personalReview?.centralQuestion ?? pilot?.centralQuestion,
     curation: {
-      method: personalReview ? 'codex-assisted-personal-curation' : pilot ? 'codex-assisted-editorial-curation' : 'automated-structural-migration',
-      confidence: pilot ? 'high' : 'medium',
+      method: personalReview || stage0Curation ? 'codex-assisted-personal-curation' : pilot ? 'codex-assisted-editorial-curation' : 'automated-structural-migration',
+      confidence: pilot || stage0Curation ? 'high' : 'medium',
       ownerReviewPending: legacy014C ? Boolean(pilot) : true,
       ...(!legacy014C ? {
-        editorialStatus: pilot ? 'codex-assisted-curation' as const : 'automated-structural-migration' as const,
+        editorialStatus: personalReview || stage0Curation ? 'codex-assisted-curation' as const : pilot ? 'codex-assisted-curation' as const : 'automated-structural-migration' as const,
         ownerReviewStatus: 'owner-review-pending' as const,
-        technicalReviewStatus: curationPhase === '0.14E'
+        technicalReviewStatus: curationPhase === '0.14E' || curationPhase === '0.14F'
           ? 'not-required' as const
           : sectionCurations.some(({ technicalReviewStatus }) => technicalReviewStatus === 'technical-expert-review-pending')
             ? 'technical-expert-review-pending' as const
             : 'not-required' as const,
-        ...(curationPhase === '0.14E' ? { technicalStatus: personalReview?.technicalStatus ?? 'source-reviewed' as const } : {}),
+        ...(curationPhase === '0.14E' || curationPhase === '0.14F'
+          ? { technicalStatus: stage0Curation?.technicalStatus ?? personalReview?.technicalStatus ?? 'source-reviewed' as const }
+          : {}),
       } : {}),
     },
   }

@@ -278,3 +278,15 @@
   .academy-continuous-reader *::before,
   .academy-continuous-reader *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+.academy-reader-personal-practices {
+  margin-top: 32px;
+  padding: 22px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  background: color-mix(in srgb, var(--surface-raised) 86%, var(--accent-primary) 4%);
+}
+.academy-reader-personal-practices > p { color: var(--text-secondary); }
+.academy-reader-personal-practices__list { display: grid; gap: 10px; margin-top: 16px; }
+.academy-reader-personal-practices__list details { padding: 12px 14px; border: 1px solid var(--border-subtle); border-radius: 12px; background: var(--surface-raised); }
+.academy-reader-personal-practices__list summary { cursor: pointer; font-weight: 700; }
+.academy-reader-personal-practices__list h3 { margin: 14px 0 4px; font-size: .85rem; }
