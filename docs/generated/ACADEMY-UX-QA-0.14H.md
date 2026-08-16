@@ -7,20 +7,27 @@
 | path-tablet | `03-path-tablet.png` | 1024x768 | light | no | passed | Etapa 2 y capítulos reordenan sin solapamiento. |
 | path-narrow | `04-path-narrow.png` | 760x900 | light | no | passed | Tarjetas sin solapamiento ni desplazamiento horizontal. |
 | path-mobile | `05-path-mobile.png` | 480x900 | light | no | passed | Reflujo móvil y navegación inferior comprobados. |
-| reader-energy-desktop | `06-reader-energy-desktop.png` | 1440x1000 | light | no | passed | Pregunta central, índice y narrativa continua sincronizados. |
-| reader-barrel-dark | `07-reader-barrel-dark.png` | 1440x1000 | dark | no | passed | Barrilete legible y contrastado en tema oscuro. |
+| reader-energy-desktop | `06-reader-energy-desktop.png` | 1440x1000 | light | no | passed | Orientación humana, teoría fuente extensa e índice semántico visibles sin IDs internos. |
+| reader-barrel-dark | `07-reader-barrel-dark.png` | 1440x1000 | dark | no | passed | Barrilete curado y teoría fuente legibles en tema oscuro. |
 | reader-gears-tablet | `08-reader-gears-tablet.png` | 1024x768 | light | no | passed | Pareja de engrane conserva jerarquía en tableta. |
-| reader-train-mobile | `09-reader-train-mobile.png` | 480x900 | light | no | passed | Tren, controles e índice refluye sin desbordamiento. |
-| reader-escapement-desktop | `10-reader-escapement-desktop.png` | 1440x1000 | light | no | passed | Ciclo del escape mantiene pregunta y resultado observables. |
+| reader-train-mobile | `09-reader-train-mobile.png` | 480x900 | light | no | passed | Tren, controles y teoría extensa refluyen sin desbordamiento. |
+| reader-escapement-desktop | `10-reader-escapement-desktop.png` | 1440x1000 | light | no | passed | Ciclo del escape conserva pregunta, teoría fuente y resultado observables. |
 | reader-oscillator-dark | `11-reader-oscillator-dark.png` | 1024x768 | dark | no | passed | Frecuencia y amplitud permanecen diferenciadas y legibles. |
 | reader-keyless-narrow | `12-reader-keyless-narrow.png` | 760x900 | light | no | passed | Estados de corona refluye en ancho estrecho. |
 | reader-automatic-mobile | `13-reader-automatic-mobile.png` | 480x900 | light | no | passed | Carga automática legible como ampliación funcional. |
 | reader-calendar-desktop | `14-reader-calendar-desktop.png` | 1440x1000 | light | no | passed | Secuencia de fecha legible sin instrucción universal de corrección. |
-| reader-reduced-motion | `15-reader-reduced-motion.png` | 1024x768 | light | sí | passed | Visual estático comprobado; cero elementos con animación activa. |
-| reader-fallback-text | `16-reader-fallback-text.png` | 760x900 | light | sí | passed | Descripción textual, pregunta visual y límites siguen disponibles. |
+| reader-reduced-motion | `15-reader-reduced-motion.png` | 1024x768 | light | sí | passed | La preferencia reduced motion activa la variante semántica discreta del lector. |
+| reader-fallback-text | `16-reader-fallback-text.png` | 760x900 | light | sí | passed | Etiquetas textuales, pregunta visual y límites siguen disponibles sin depender de animación. |
 | activity-overlay | `17-activity-overlay.png` | 1440x1000 | light | no | passed | Overlay presenta la actividad histórica sin cambiar su activityId. |
 | personal-practice | `18-personal-practice.png` | 1024x768 | light | no | passed | Práctica opcional declara que no completa ni acredita destreza. |
 | stage2-checkpoint | `19-stage2-checkpoint.png` | 1440x1000 | light | no | passed | Once preguntas y siete acciones comprobadas antes de etapa 3. |
 | keyboard-focus-reflow | `20-keyboard-focus-reflow.png` | 480x900@200% | dark | sí | passed | Foco visible, teclado y reflujo real al 200 %, sin desbordamiento. |
+| reader-escapement-compare-mobile | `21-reader-escapement-compare-mobile.png` | 480x900 | light | no | passed | La rama comparativa avanzada conserva límites de transferencia y refluye sin IDs internos. |
 
-Los estados se actualizan únicamente después de inspeccionar el navegador real. Accesibilidad cubierta: teclado, foco, reflujo al 200 %, tema oscuro, movimiento reducido, descripción textual y fallback sin visual.
+## Reinspección del addendum de preservación
+
+Se abrieron en el navegador real `lesson.mechanical.energy`, `lesson.mechanical.barrel`, `lesson.mechanical.train`, `lesson.mechanical.escapement`, `lesson.mechanical.oscillator`, `lesson.mechanical.keyless`, `lesson.encyclopedia.complications.calendarios` y `lesson.advanced.escapement-compare`.
+
+En las ocho se comprobaron teoría fuente extensa dentro del flujo normal, orden semántico, checkpoint específico, fuentes visibles y ausencia de la instrucción visual genérica prohibida. El conjunto cubrió escritorio, ancho estrecho y móvil, modos Lectura y Aprender, tema oscuro, movimiento reducido y reflow al 200 % sin desbordamiento horizontal. En la lección de energía se verificaron además marcador, nota privada, scrollspy y un deep link histórico resuelto hacia el apartado semánticamente equivalente; los datos temporales de QA se retiraron al terminar.
+
+Los estados se actualizan únicamente después de inspeccionar el navegador real. Accesibilidad cubierta: teclado, foco visible, reflujo al 200 %, tema oscuro, movimiento reducido, descripción textual y fallback sin visual. Esta inspección técnica no demuestra por sí sola claridad, suficiencia didáctica ni validación humana.

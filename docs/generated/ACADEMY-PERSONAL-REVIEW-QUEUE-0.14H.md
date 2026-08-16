@@ -4,6 +4,7 @@
 - Lecciones con origen activo 0.14H: 25.
 - Las seis pilotos mecánicas de 0.14E se actualizan por lessonId y no se duplican.
 - Todos los estados personales siguen `not-reviewed`; Codex no inventa validación humana.
+- La preservación de teoría está comprobada estructuralmente; claridad, orden fino y suficiencia didáctica siguen pendientes de revisión humana.
 
 | Lección | Origen | Estado técnico | Estado personal |
 |---|---|---|---|

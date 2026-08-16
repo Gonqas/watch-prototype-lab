@@ -2,6 +2,7 @@ import { academyReaderStableHash } from '../../academyReaderIdentity'
 import type { AcademyDiagramData, AcademyReaderSection, AcademySectionVisualCuration } from '../../academyReaderModel'
 import type { AcademySourceLocator, AcademyStage2VisualDesign } from '../types'
 import { ACADEMY_STAGE_2_CATALOG } from './stage2Catalog'
+import { academyStage2SectionId } from './stage2Sections'
 
 interface VisualSpec {
   visualDesignId: string
@@ -54,7 +55,7 @@ const payload = (spec: VisualSpec): AcademyDiagramData => ({
 
 export const ACADEMY_STAGE_2_VISUAL_DESIGNS: readonly (AcademyStage2VisualDesign & { questionGroupId: string })[] = specs.map((spec) => {
   const lessonIds = ACADEMY_STAGE_2_CATALOG.filter(({ visualDesignIds }) => visualDesignIds.includes(spec.visualDesignId)).map(({ lessonId }) => lessonId)
-  const sectionIds = lessonIds.map((lessonId) => `reader.section.${lessonId.replace('lesson.', 'block.')}.014h-visual`)
+  const sectionIds = lessonIds.map((lessonId) => academyStage2SectionId.visual(lessonId, spec.visualDesignId))
   const semanticPayload = payload(spec)
   return {
     visualDesignId: spec.visualDesignId, questionGroupId: spec.questionGroupId, lessonIds, sectionIds,

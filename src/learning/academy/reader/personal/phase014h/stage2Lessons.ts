@@ -1,6 +1,7 @@
 import type { AcademyStage2LessonCuration } from '../types'
 import { ACADEMY_STAGE_2_ACTIVITY_PRESENTATIONS } from './stage2Activities'
 import { ACADEMY_STAGE_2_CATALOG } from './stage2Catalog'
+import { ACADEMY_STAGE_2_CLAIM_REVIEWS } from './stage2Claims'
 import { ACADEMY_STAGE_2_SECTIONS } from './stage2Sections'
 
 export const ACADEMY_STAGE_2_LESSON_CURATIONS: readonly AcademyStage2LessonCuration[] = ACADEMY_STAGE_2_CATALOG.map((item) => ({
@@ -9,15 +10,20 @@ export const ACADEMY_STAGE_2_LESSON_CURATIONS: readonly AcademyStage2LessonCurat
   macroStage: 2,
   chapterId: item.chapterId,
   pathRole: item.pathRole,
+  compositionMode: 'augment',
+  editorialArchetype: item.editorialArchetype,
   centralQuestion: item.centralQuestion,
-  whyNow: `Pertenece a ${item.chapterId} y aparece después del sistema que proporciona su entrada funcional.`,
+  whyNow: item.whyNow,
   observableOutcome: item.observableOutcome,
+  checkpointPrompt: item.checkpointPrompt,
+  checkpointExpectedElements: item.checkpointExpectedElements,
+  checkpointCommonFailure: item.checkpointCommonFailure,
   recommendedPrerequisiteLessonIds: [],
   effectivePrerequisiteConceptIds: [],
   sections: ACADEMY_STAGE_2_SECTIONS[item.lessonId] ?? [],
   visualDesignIds: item.visualDesignIds,
   activityPresentations: ACADEMY_STAGE_2_ACTIVITY_PRESENTATIONS.filter(({ lessonId }) => lessonId === item.lessonId),
-  sourceClaimIds: [`claim.014h.${item.lessonId.replace('lesson.', '')}.core`],
+  sourceClaimIds: ACADEMY_STAGE_2_CLAIM_REVIEWS.filter(({ lessonId }) => lessonId === item.lessonId).map(({ claimId }) => claimId),
   limitations: [item.sourceScope, 'No acredita ejecución física ni servicio de un calibre.'],
   personalReviewStatus: 'not-reviewed',
   technicalStatus: item.sourceScope.includes('source-limited') || item.pathRole === 'optional-branch' ? 'source-limited' : 'source-reviewed',

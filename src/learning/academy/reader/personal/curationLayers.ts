@@ -11,7 +11,7 @@ type VisualInput = { lessonId: string; section: AcademyReaderSection; contentHas
 interface AcademyCurationLayer {
   phase: AcademyReaderCurationPhase
   layerId: string
-  applySections?: (lessonId: string, sections: readonly AcademyReaderSection[]) => AcademyReaderSection[]
+  applySections?: (lessonId: string, sections: readonly AcademyReaderSection[], authoredSourceSections?: readonly AcademyReaderSection[]) => AcademyReaderSection[]
   legacyAliases?: (lessonId: string, previous: readonly AcademyReaderSection[], current: readonly AcademyReaderSection[]) => AcademyLegacySectionAlias[]
   metadata?: (lessonId: string) => PersonalMetadata
   visual?: (input: VisualInput) => AcademySectionVisualCuration | undefined
@@ -30,6 +30,7 @@ export function academyCurationLayersForPhase(phase: AcademyReaderCurationPhase)
 }
 
 export function applyAcademyCurationLayers(phase: AcademyReaderCurationPhase, lessonId: string, sourceSections: readonly AcademyReaderSection[]) {
+  const authoredSourceSections = sourceSections.map((section) => ({ ...section }))
   let sections = [...sourceSections]
   const aliases: AcademyLegacySectionAlias[] = []
   let transformed = false
@@ -37,7 +38,7 @@ export function applyAcademyCurationLayers(phase: AcademyReaderCurationPhase, le
     if (!layer.applySections) continue
     transformed = true
     const previous = sections.map((section) => ({ ...section }))
-    sections = layer.applySections(lessonId, sections)
+    sections = layer.applySections(lessonId, sections, authoredSourceSections)
     if (layer.legacyAliases) aliases.push(...layer.legacyAliases(lessonId, previous, sections))
   }
   return { sections, aliases, transformed }

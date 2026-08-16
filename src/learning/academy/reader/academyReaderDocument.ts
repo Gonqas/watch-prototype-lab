@@ -488,6 +488,16 @@ export function buildAcademyReaderDocument(
           : {}),
         visualCueIds: [cue.cueId],
         glossaryTermIds: glossaryTerms(draft.markdown),
+        ...(!legacy014C ? {
+          conceptIds: [...(block.pedagogy?.conceptIds ?? [])],
+          claimIds: block.claims.map(({ id }) => id),
+          sourceLocators: [...new Set(block.claims.flatMap(({ sources }) => sources.map((source) => [
+            source.id,
+            source.page ? `p. ${source.page}` : '',
+            source.figure ? `fig. ${source.figure}` : '',
+            source.resource.locator ?? '',
+          ].filter(Boolean).join(' · '))))],
+        } : {}),
         requiredForStudy: !reference,
         collapsible: reference,
         defaultExpanded: !reference,

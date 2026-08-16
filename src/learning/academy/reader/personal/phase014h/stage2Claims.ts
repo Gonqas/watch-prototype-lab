@@ -1,6 +1,7 @@
 import { academyReaderStableHash } from '../../academyReaderIdentity'
 import type { AcademySourceLocator, AcademyStage2ClaimReview, AcademyStage2FormulaReview } from '../types'
 import { ACADEMY_PILOT_FORMULA_REVIEWS } from '../phase014e/formulaReviews'
+import { academyStage2PrimaryVisualSectionId } from './stage2Sections'
 
 const toh = (chapter: 'ch04' | 'ch05' | 'ch06' | 'ch07' | 'ch08' | 'ch09', page: string, figure?: string): AcademySourceLocator => ({
   sourceId: `source.private.toh.${chapter}`,
@@ -9,7 +10,7 @@ const toh = (chapter: 'ch04' | 'ch05' | 'ch06' | 'ch07' | 'ch08' | 'ch09', page:
 })
 
 const claim = (claimId: string, lessonId: string, text: string, locator: AcademySourceLocator, applicability: string, limitations: readonly string[] = []): AcademyStage2ClaimReview => ({
-  claimId, lessonId, sectionId: `reader.section.${lessonId.replace('lesson.', 'block.')}.014h-modelo-causal`, claim: text,
+  claimId, lessonId, sectionId: academyStage2PrimaryVisualSectionId(lessonId), claim: text,
   claimHash: academyReaderStableHash(text), claimType: 'mechanism', technicalStatus: 'source-reviewed', sourceIds: [locator.sourceId], locators: [locator],
   verificationStatus: 'visually-verified', applicability, sourceAuthority: 'conceptual-primary', limitations,
 })

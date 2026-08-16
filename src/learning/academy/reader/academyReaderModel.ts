@@ -241,6 +241,10 @@ export interface AcademyReaderSection {
   estimatedMinutes?: number
   visualCueIds: string[]
   glossaryTermIds: string[]
+  /** Conceptos y claims heredados del bloque fuente. La curación puede añadir, pero no borrar, estos enlaces. */
+  conceptIds?: string[]
+  claimIds?: string[]
+  sourceLocators?: string[]
   requiredForStudy: boolean
   collapsible: boolean
   defaultExpanded: boolean
@@ -272,6 +276,7 @@ export interface AcademyLegacySectionAlias {
   matchMethod: AcademyLegacyAliasMethod
   confidence: 'high' | 'medium' | 'low'
   fallbackSectionId: string
+  reason?: string
 }
 
 export interface AcademyReaderCompletionContract {

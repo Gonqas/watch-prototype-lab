@@ -1,0 +1,325 @@
+{
+  "schema": "wplab-academy-stage2-claim-links-v1",
+  "phase": "0.14H",
+  "registeredClaims": [
+    "claim.014h.energy.storage-delivery",
+    "claim.014h.barrel.parts",
+    "claim.014h.gears.pitch-circles",
+    "claim.014h.train.intermediate",
+    "claim.014h.train.motion-branch",
+    "claim.014h.escapement.components",
+    "claim.014h.escapement.sequence",
+    "claim.014h.oscillator.parts",
+    "claim.014h.oscillator.feedback",
+    "claim.014h.motion-works.indication",
+    "claim.014h.keyless.selection",
+    "claim.014h.automatic.rotor",
+    "claim.014h.calendar.date-train",
+    "claim.014h.stage2.functional-chain",
+    "claim.014h.calendar.discrete-state"
+  ],
+  "links": [
+    {
+      "lessonId": "lesson.mechanical.energy",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.energy.storage-delivery"
+      ],
+      "resolved": [
+        "claim.014h.energy.storage-delivery"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.mechanical.energy.014h-explicacion-mechanical-energy-flow"
+      ]
+    },
+    {
+      "lessonId": "lesson.mechanical.barrel",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.barrel.parts"
+      ],
+      "resolved": [
+        "claim.014h.barrel.parts"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.mechanical.barrel.014h-explicacion-barrel-anatomy"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [],
+      "resolved": [],
+      "missing": [],
+      "targets": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [],
+      "resolved": [],
+      "missing": [],
+      "targets": []
+    },
+    {
+      "lessonId": "lesson.mechanical.gear-pair",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.gears.pitch-circles"
+      ],
+      "resolved": [
+        "claim.014h.gears.pitch-circles"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.mechanical.gear-pair.014h-explicacion-gear-pair-ratio"
+      ]
+    },
+    {
+      "lessonId": "lesson.mechanical.train",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.train.intermediate"
+      ],
+      "resolved": [
+        "claim.014h.train.intermediate"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.mechanical.train.014h-explicacion-train-real-order"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.train.motion-branch"
+      ],
+      "resolved": [
+        "claim.014h.train.motion-branch"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren.014h-explicacion-stage2-going-vs-motion-v1"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [],
+      "resolved": [],
+      "missing": [],
+      "targets": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [],
+      "resolved": [],
+      "missing": [],
+      "targets": []
+    },
+    {
+      "lessonId": "lesson.mechanical.escapement",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.escapement.components"
+      ],
+      "resolved": [
+        "claim.014h.escapement.components"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.mechanical.escapement.014h-explicacion-escapement-phases"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [],
+      "resolved": [],
+      "missing": [],
+      "targets": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.toh-escape-fases",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.escapement.sequence"
+      ],
+      "resolved": [
+        "claim.014h.escapement.sequence"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.encyclopedia.escapements-chronometry.toh-escape-fases.014h-explicacion-escapement-phases"
+      ]
+    },
+    {
+      "lessonId": "lesson.advanced.escapement-compare",
+      "technicalStatus": "source-limited",
+      "sourceClaimIds": [],
+      "resolved": [],
+      "missing": [],
+      "targets": []
+    },
+    {
+      "lessonId": "lesson.mechanical.oscillator",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.oscillator.parts"
+      ],
+      "resolved": [
+        "claim.014h.oscillator.parts"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.mechanical.oscillator.014h-explicacion-oscillator-feedback"
+      ]
+    },
+    {
+      "lessonId": "lesson.mechanical.escape-oscillator",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.oscillator.feedback"
+      ],
+      "resolved": [
+        "claim.014h.oscillator.feedback"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.mechanical.escape-oscillator.014h-explicacion-stage2-feedback-loop-v1"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.escapements-chronometry.volante-y-espiral",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [],
+      "resolved": [],
+      "missing": [],
+      "targets": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [],
+      "resolved": [],
+      "missing": [],
+      "targets": []
+    },
+    {
+      "lessonId": "lesson.mechanical.motion-works",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.motion-works.indication"
+      ],
+      "resolved": [
+        "claim.014h.motion-works.indication"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.mechanical.motion-works.014h-explicacion-stage2-going-vs-motion-v1"
+      ]
+    },
+    {
+      "lessonId": "lesson.mechanical.keyless",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.keyless.selection"
+      ],
+      "resolved": [
+        "claim.014h.keyless.selection"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.mechanical.keyless.014h-explicacion-stage2-keyless-states-v1"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [],
+      "resolved": [],
+      "missing": [],
+      "targets": []
+    },
+    {
+      "lessonId": "lesson.mechanical.automatic-calendar",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.stage2.functional-chain"
+      ],
+      "resolved": [
+        "claim.014h.stage2.functional-chain"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.mechanical.automatic-calendar.014h-explicacion-stage2-automatic-flow-v1"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.automatico-y-reserva",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.automatic.rotor"
+      ],
+      "resolved": [
+        "claim.014h.automatic.rotor"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.encyclopedia.complications.automatico-y-reserva.014h-explicacion-stage2-automatic-flow-v1"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.complications.calendarios",
+      "technicalStatus": "source-reviewed",
+      "sourceClaimIds": [
+        "claim.014h.calendar.date-train"
+      ],
+      "resolved": [
+        "claim.014h.calendar.date-train"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.encyclopedia.complications.calendarios.014h-explicacion-stage2-calendar-sequence-v1"
+      ]
+    },
+    {
+      "lessonId": "lesson.advanced.calendars",
+      "technicalStatus": "source-limited",
+      "sourceClaimIds": [
+        "claim.014h.calendar.discrete-state"
+      ],
+      "resolved": [
+        "claim.014h.calendar.discrete-state"
+      ],
+      "missing": [],
+      "targets": [
+        "reader.section.block.advanced.calendars.014h-explicacion-stage2-calendar-sequence-v1"
+      ]
+    },
+    {
+      "lessonId": "lesson.advanced.chronograph-control",
+      "technicalStatus": "source-limited",
+      "sourceClaimIds": [],
+      "resolved": [],
+      "missing": [],
+      "targets": []
+    }
+  ],
+  "pendingLessonIds": [
+    "lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete",
+    "lesson.encyclopedia.math-physics-metrology.fuerza-par-energia",
+    "lesson.encyclopedia.math-physics-metrology.toh-contar-tren",
+    "lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria",
+    "lesson.encyclopedia.escapements-chronometry.geometria-del-escape",
+    "lesson.advanced.escapement-compare",
+    "lesson.encyclopedia.escapements-chronometry.volante-y-espiral",
+    "lesson.encyclopedia.math-physics-metrology.oscilacion-amortiguamiento",
+    "lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora",
+    "lesson.advanced.chronograph-control"
+  ]
+}

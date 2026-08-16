@@ -3,6 +3,7 @@
 - Preguntas visuales esenciales: 15.
 - Diseños versionados: 22; reutilizados: 11; nuevos: 11.
 - El único 3D reutilizado es la vista conceptual del tren de 0.14E; no se crea un calibre ficticio.
+- Cada diseño apunta a un apartado explicativo específico; ya no existe el apartado universal «Qué mirar en el diagrama». IDs, `contentHash` y `visualHash` permanecen estables respecto a la implementación H anterior.
 
 | Pregunta | Diseño | Lecciones | Estado | Fuente verificada | Límite |
 |---|---|---:|---|---|---|

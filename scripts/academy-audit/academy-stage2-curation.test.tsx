@@ -13,9 +13,13 @@ import {
   ACADEMY_STAGE_2_ESSENTIAL_VISUAL_QUESTION_COUNT,
   ACADEMY_STAGE_2_FINAL_CHECKPOINT,
   ACADEMY_STAGE_2_FORMULA_REVIEWS,
+  ACADEMY_STAGE_2_LESSON_CURATIONS,
   ACADEMY_STAGE_2_PERSONAL_PRACTICES,
   ACADEMY_STAGE_2_PREREQUISITE_OVERRIDES,
   ACADEMY_STAGE_2_VISUAL_DESIGNS,
+  academyStage2ContentPreservation,
+  academyStage2SectionId,
+  academyStage2SourceSectionDispositions,
 } from '../../src/learning/academy/reader/academyPersonalCurriculum'
 import { buildAcademyReaderDocument, resolveAcademyReaderSection, validateAcademyReaderDocument } from '../../src/learning/academy/reader/academyReaderDocument'
 import { academyEditorialReviewStatus, createAcademyEditorialReviewDraft } from '../../src/learning/academy/reader/academyReaderReview'
@@ -30,13 +34,24 @@ const root = resolve(process.cwd())
 const corpusPromise = loadAcademyCorpus(root)
 const sha256 = (value: string | Uint8Array) => createHash('sha256').update(value).digest('hex')
 
-async function productAndPacks() {
-  const corpus = await corpusPromise
+const productAndPacksPromise = corpusPromise.then((corpus) => {
   const product = mergeLearningProductIndexes(corpus.packs.map(({ pack }) => createLearningProductIndex(pack)))
   return { corpus, product, packByLesson: new Map(corpus.packs.flatMap(({ pack }) => pack.lessons.map(({ id }) => [id, pack] as const))) }
+})
+
+function productAndPacks() {
+  return productAndPacksPromise
 }
 
-function materialFor(pack: LearningPack, lessonId: string, product: Awaited<ReturnType<typeof productAndPacks>>['product']): AcademyReaderBuildInput['material'] {
+async function buildDocuments(phase: '0.14D' | '0.14E' | '0.14F' | '0.14G' | '0.14H') {
+  const { product, packByLesson } = await productAndPacks()
+  return ACADEMY_STAGE_2_CATALOG.map(({ lessonId }) => {
+    const descriptor = product.lessons.find(({ id }) => id === lessonId)!
+    return buildAcademyReaderDocument({ material: materialFor(packByLesson.get(lessonId)!, lessonId, product), title: descriptor.title.es, purpose: descriptor.purpose.es, locale: 'es-ES', requiredActivityIds: descriptor.studyContract?.labActivityIds }, { curationPhase: phase })
+  })
+}
+
+function materialFor(pack: LearningPack, lessonId: string, product: Awaited<typeof productAndPacksPromise>['product']): AcademyReaderBuildInput['material'] {
   const lesson = pack.lessons.find(({ id }) => id === lessonId)!
   const descriptor = product.lessons.find(({ id }) => id === lessonId)!
   const blocks = pack.blocks.filter(({ id }) => lesson.blockIds.includes(id))
@@ -44,12 +59,12 @@ function materialFor(pack: LearningPack, lessonId: string, product: Awaited<Retu
   return { packageId: pack.manifest.id, packageVersion: pack.manifest.packageVersion, pack, lesson, blocks, activities: descriptor.activityIds.flatMap((id) => product.activities.filter((activity) => activity.id === id)), sources: pack.sources.filter(({ id }) => sourceIds.has(id)), glossary: [] }
 }
 
-async function documents(phase: '0.14E' | '0.14F' | '0.14G' | '0.14H' = '0.14H') {
-  const { product, packByLesson } = await productAndPacks()
-  return ACADEMY_STAGE_2_CATALOG.map(({ lessonId }) => {
-    const descriptor = product.lessons.find(({ id }) => id === lessonId)!
-    return buildAcademyReaderDocument({ material: materialFor(packByLesson.get(lessonId)!, lessonId, product), title: descriptor.title.es, purpose: descriptor.purpose.es, locale: 'es-ES', requiredActivityIds: descriptor.studyContract?.labActivityIds }, { curationPhase: phase })
-  })
+const documentsByPhase = new Map<'0.14D' | '0.14E' | '0.14F' | '0.14G' | '0.14H', ReturnType<typeof buildDocuments>>()
+
+function documents(phase: '0.14D' | '0.14E' | '0.14F' | '0.14G' | '0.14H' = '0.14H') {
+  const cached = documentsByPhase.get(phase) ?? buildDocuments(phase)
+  documentsByPhase.set(phase, cached)
+  return cached
 }
 
 async function walk(path: string): Promise<string[]> {
@@ -115,7 +130,9 @@ describe('0.14H · versionado y compatibilidad (pruebas 11–23)', () => {
     const [oldDocument] = await documents('0.14G')
     const [currentDocument] = await documents('0.14H')
     const legacyId = oldDocument.sections[0].sectionId
-    expect(resolveAcademyReaderSection(currentDocument, legacyId).restoredFromLegacyAlias).toBe(true)
+    expect(resolveAcademyReaderSection(currentDocument, legacyId)).toEqual({ sectionId: legacyId, restoredFromLegacyAlias: false })
+    const oldHOrientation = 'reader.section.block.mechanical.energy.014h-orientacion'
+    expect(resolveAcademyReaderSection(currentDocument, oldHOrientation).sectionId).toBe(academyStage2SectionId.orientation('lesson.mechanical.energy'))
     const oldReview = createAcademyEditorialReviewDraft(oldDocument, '2026-08-14T00:00:00.000Z', '0.14G')
     expect(academyEditorialReviewStatus(currentDocument, oldReview)).toBe('stale-after-content-change')
   })
@@ -165,7 +182,7 @@ describe('0.14H · mapa de etapa 2 (pruebas 24–34)', () => {
 describe('0.14H · contenido mecánico (pruebas 35–50)', () => {
   it('mantiene las distinciones mecánicas esenciales', async () => {
     const text = (await documents()).flatMap(({ sections }) => sections.map(({ markdown }) => markdown)).join('\n').toLowerCase()
-    for (const word of ['energía', 'par', 'potencia', 'velocidad', 'rueda', 'piñón', 'árbol', 'eje', 'pivote', 'móvil', 'solidario', 'minutería', 'reserva']) expect(text).toContain(word)
+    for (const word of ['energía', 'par', 'potencia', 'velocidad', 'rueda', 'piñón', 'árbol', 'eje', 'pivote', 'móvil', 'solidario', 'barrilete', 'escape', 'oscilador', 'periodo', 'frecuencia', 'amplitud', 'minutería', 'tija', 'calendario', 'reserva']) expect(text).toContain(word)
     expect(text).toContain('invierten el sentido')
     expect(text).toContain('relación total')
     expect(text).toContain('bloqueo, desbloqueo, impulso y caída')
@@ -246,6 +263,119 @@ describe('0.14H · actividades y prácticas (pruebas 63–71)', () => {
   })
 })
 
+describe('0.14H · addendum de preservación y trazabilidad (pruebas 72–95)', () => {
+  it('representa las 25 lecciones y decide el destino de toda sección authored', async () => {
+    const source = await documents('0.14D')
+    const current = await documents('0.14H')
+    expect(source).toHaveLength(25)
+    expect(current).toHaveLength(25)
+    for (const sourceDocument of source) {
+      const dispositions = academyStage2SourceSectionDispositions(sourceDocument.lessonId, sourceDocument.sections)
+      expect(dispositions).toHaveLength(sourceDocument.sections.length)
+      expect(new Set(dispositions.map(({ sourceSectionId }) => sourceSectionId))).toEqual(new Set(sourceDocument.sections.map(({ sectionId }) => sectionId)))
+      expect(dispositions.every(({ action, targetSectionIds }) => action === 'retained' && targetSectionIds.length === 1)).toBe(true)
+    }
+  })
+
+  it('conserva el 100 % de teoría sustantiva sin límite artificial de palabras', async () => {
+    const sourceById = new Map((await documents('0.14D')).map((document) => [document.lessonId, document]))
+    const current = await documents('0.14H')
+    for (const document of current) {
+      const source = sourceById.get(document.lessonId)!
+      const { row } = academyStage2ContentPreservation(document.lessonId, source.sections, document.sections)
+      expect(row.substantiveCoverage).toBe(1)
+      expect(row.retainedSourceWords).toBe(row.sourceSubstantiveWords)
+      expect(row.removedWords).toBe(0)
+      expect(new Set(document.sections.filter(({ sectionId }) => source.sections.some((item) => item.sectionId === sectionId)).map(({ sectionId }) => sectionId))).toEqual(new Set(source.sections.map(({ sectionId }) => sectionId)))
+    }
+    expect(Math.max(...current.flatMap(({ sections }) => sections.map(({ wordCount }) => wordCount)))).toBeGreaterThan(210)
+  })
+
+  it('usa estructuras variables y orientación humana explícita', () => {
+    const structures = ACADEMY_STAGE_2_LESSON_CURATIONS.map(({ sections }) => sections.map(({ role }) => role).join('>'))
+    expect(new Set(structures).size).toBeGreaterThanOrEqual(6)
+    for (const curation of ACADEMY_STAGE_2_LESSON_CURATIONS) {
+      expect(curation.compositionMode).toBe('augment')
+      expect(curation.whyNow).not.toMatch(/stage-|phase|block\.|lesson\.|activity\.|reader\.|014h/i)
+      expect(curation.whyNow.length).toBeGreaterThan(70)
+    }
+  })
+
+  it('elimina la instrucción visual y el checkpoint universales', () => {
+    const markdown = ACADEMY_STAGE_2_LESSON_CURATIONS.flatMap(({ sections }) => sections.map(({ markdown }) => markdown))
+    expect(markdown).not.toContain('Sigue las flechas, identifica las interfaces y explica qué cambia entre estados.')
+    expect(markdown).not.toContain('Explica con tus palabras la relación central, cambia una condición del modelo y predice el resultado.')
+    expect(new Set(ACADEMY_STAGE_2_LESSON_CURATIONS.map(({ checkpointPrompt }) => checkpointPrompt))).toHaveLength(25)
+  })
+
+  it('no filtra identificadores internos al texto visible añadido', () => {
+    const forbidden = /(?:stage-|\bphase\b|\bblock\.|\blesson\.|\bactivity\.|\breader\.|014h)/i
+    for (const curation of ACADEMY_STAGE_2_LESSON_CURATIONS) {
+      expect([curation.whyNow, ...curation.sections.map(({ title, markdown }) => `${title}\n${markdown}`)].join('\n')).not.toMatch(forbidden)
+    }
+  })
+
+  it('preserva glosario, conceptos, claims authored y sourceBlockIds', async () => {
+    const sourceById = new Map((await documents('0.14D')).map((document) => [document.lessonId, document]))
+    for (const document of await documents('0.14H')) {
+      const source = sourceById.get(document.lessonId)!
+      for (const original of source.sections) {
+        const retained = document.sections.find(({ sectionId }) => sectionId === original.sectionId)!
+        expect(retained.glossaryTermIds).toEqual(original.glossaryTermIds)
+        expect(retained.conceptIds).toEqual(original.conceptIds)
+        expect(retained.claimIds).toEqual(original.claimIds)
+        expect(retained.sourceBlockIds).toEqual(original.sourceBlockIds)
+      }
+    }
+  })
+
+  it('resuelve todos los enlaces de claims reales y deja vacías las lecciones pendientes', async () => {
+    const current = new Map((await documents('0.14H')).map((document) => [document.lessonId, document]))
+    const registered = new Map(ACADEMY_STAGE_2_CLAIM_REVIEWS.map((claim) => [claim.claimId, claim]))
+    expect(registered).toHaveLength(15)
+    for (const curation of ACADEMY_STAGE_2_LESSON_CURATIONS) {
+      for (const claimId of curation.sourceClaimIds) {
+        const claim = registered.get(claimId)
+        expect(claim?.lessonId).toBe(curation.lessonId)
+        expect(current.get(curation.lessonId)?.sections.some(({ sectionId }) => sectionId === claim?.sectionId)).toBe(true)
+      }
+      if (curation.sourceClaimIds.length === 0) expect(['source-reviewed', 'source-limited', 'source-needed']).toContain(curation.technicalStatus)
+    }
+    expect(new Set(ACADEMY_STAGE_2_LESSON_CURATIONS.flatMap(({ sourceClaimIds }) => sourceClaimIds))).toEqual(new Set(ACADEMY_STAGE_2_CLAIM_REVIEWS.map(({ claimId }) => claimId)))
+  })
+
+  it('une los 22 visuales a apartados sustantivos sin cambiar sus hashes', async () => {
+    const current = new Map((await documents('0.14H')).map((document) => [document.lessonId, document]))
+    expect(ACADEMY_STAGE_2_VISUAL_DESIGNS).toHaveLength(22)
+    for (const visual of ACADEMY_STAGE_2_VISUAL_DESIGNS) {
+      for (const sectionId of visual.sectionIds) {
+        const lessonId = visual.lessonIds.find((id) => current.get(id)?.sections.some((section) => section.sectionId === sectionId))
+        const section = lessonId ? current.get(lessonId)?.sections.find((item) => item.sectionId === sectionId) : undefined
+        expect(section?.wordCount).toBeGreaterThan(10)
+        expect(section?.visualCue.visualDesignId).toBe(visual.visualDesignId)
+      }
+      expect(visual.contentHash).toMatch(/^fnv1a64:[a-f0-9]{16}$/)
+      expect(visual.visualHash).toMatch(/^fnv1a64:[a-f0-9]{16}$/)
+    }
+    expect(new Set(ACADEMY_STAGE_2_VISUAL_DESIGNS.map(({ visualDesignId }) => visualDesignId))).toHaveLength(22)
+  })
+
+  it('mapea explícitamente los nueve anchors de la presentación H anterior', async () => {
+    const suffixes = ['orientacion', 'vocabulario', 'modelo-causal', 'visual', 'ejemplo', 'errores', 'comprobacion', 'conexion', 'fuentes-limites']
+    for (const document of await documents('0.14H')) {
+      const block = document.lessonId.replace('lesson.', 'block.')
+      for (const suffix of suffixes) {
+        const resolved = resolveAcademyReaderSection(document, `reader.section.${block}.014h-${suffix}`)
+        expect(document.sections.some(({ sectionId }) => sectionId === resolved.sectionId)).toBe(true)
+        if (!document.sections.some(({ sectionId }) => sectionId === `reader.section.${block}.014h-${suffix}`)) {
+          expect(resolved.restoredFromLegacyAlias).toBe(true)
+          expect(document.legacyAliases.find(({ legacySegmentId }) => legacySegmentId === `reader.section.${block}.014h-${suffix}`)?.reason).toBeTruthy()
+        }
+      }
+    }
+  })
+})
+
 describe('0.14H · UX, determinismo y cierre (pruebas 72–87)', () => {
   it('preserva deep links, aliases y documentos sin incidencias', async () => {
     for (const document of await documents()) {
@@ -271,7 +401,8 @@ describe('0.14H · UX, determinismo y cierre (pruebas 72–87)', () => {
       expect(sectionText.split(document.centralQuestion ?? 'impossible').length - 1).toBe(0)
       expect(sectionText).not.toMatch(/source-limited|payload|fixture|contentHash|0\.14H/i)
       expect(document.sections.every(({ wordCount }) => wordCount !== 210)).toBe(true)
-      expect(document.sections.every(({ title }) => !/continuaci[oó]n/i.test(title))).toBe(true)
+      const addedTitles = ACADEMY_STAGE_2_LESSON_CURATIONS.find(({ lessonId }) => lessonId === document.lessonId)!.sections.map(({ title }) => title)
+      expect(addedTitles.every((title) => !/continuaci[oó]n/i.test(title))).toBe(true)
     }
   })
 
@@ -283,7 +414,7 @@ describe('0.14H · UX, determinismo y cierre (pruebas 72–87)', () => {
     expect(ACADEMY_PERSONAL_REVIEW_QUEUE_014H.every(({ personalStatus }) => personalStatus === 'not-reviewed')).toBe(true)
   })
 
-  it('genera exactamente 19 informes deterministas', async () => {
+  it('genera exactamente 26 informes deterministas', async () => {
     const first = await buildAcademy014HOutputs(root)
     const second = await buildAcademy014HOutputs(root)
     expect([...first.keys()]).toEqual([...ACADEMY_014H_OUTPUT_FILES])

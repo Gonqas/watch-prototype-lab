@@ -1,6 +1,7 @@
 import type { AcademyCurriculumPathRole } from '../types'
+import { academyStage2EditorialContract, type AcademyStage2EditorialContract } from './stage2EditorialContracts'
 
-export interface AcademyStage2CatalogEntry {
+export interface AcademyStage2CatalogEntry extends AcademyStage2EditorialContract {
   lessonId: string
   chapterId: 'stage-2.1' | 'stage-2.2' | 'stage-2.3' | 'stage-2.4' | 'stage-2.5' | 'stage-2.6'
   pathRole: AcademyCurriculumPathRole
@@ -17,7 +18,11 @@ export interface AcademyStage2CatalogEntry {
   pilotHeritage?: '0.14E'
 }
 
-const entry = (value: AcademyStage2CatalogEntry) => value
+type AcademyStage2CatalogSource = Omit<AcademyStage2CatalogEntry, keyof AcademyStage2EditorialContract>
+const entry = (value: AcademyStage2CatalogSource): AcademyStage2CatalogEntry => ({
+  ...value,
+  ...academyStage2EditorialContract(value.lessonId),
+})
 
 export const ACADEMY_STAGE_2_CATALOG: readonly AcademyStage2CatalogEntry[] = [
   entry({ lessonId: 'lesson.mechanical.energy', chapterId: 'stage-2.1', pathRole: 'anchor', pilotHeritage: '0.14E', requiredActivityId: 'activity.mechanical.classify-energy-functions', visualDesignIds: ['visual.mechanical-energy.flow', 'visual.stage2.energy-quantities.v1'], centralQuestion: '¿Cómo pasa la energía almacenada a movimiento útil sin confundir energía, par, potencia y velocidad?', observableOutcome: 'Trazar la cadena energética y explicar qué magnitud describe cada cambio.', vocabulary: 'Energía, trabajo, par, potencia, velocidad y pérdida describen propiedades distintas; ninguna de ellas crea energía.', explanation: 'El muelle real almacena energía elástica. El barrilete entrega par al tren; el tren transmite movimiento y el escape limita su avance mientras el oscilador aporta la referencia temporal.', workedExample: 'Si el barrilete conserva energía pero el tren queda interrumpido, la fuente sigue cargada y la indicación deja de avanzar: la interrupción cambia la transmisión, no el origen.', commonErrors: 'No equiparar par con velocidad, potencia con reserva de marcha ni movimiento visible con energía disponible.', nextConnection: 'El barrilete permite localizar físicamente el acumulador y separar sus funciones durante cuerda y marcha.', sourceScope: 'Modelo conceptual basado en Theory of Horology, capítulo 4; no prescribe medidas, lubricación ni apertura del barrilete.' }),

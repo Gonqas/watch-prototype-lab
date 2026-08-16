@@ -179,9 +179,63 @@ export type AcademyStage1ActivityPresentation = AcademyStage0ActivityPresentatio
 export type AcademyStage1VisualDesign = AcademyStage0VisualDesign
 export type AcademyStage1PersonalPractice = AcademyStage0PersonalPractice
 
-export interface AcademyStage2LessonCuration extends Omit<AcademyStage1LessonCuration, 'macroStage'> {
+export interface AcademyStage2LessonCuration extends Omit<AcademyStage1LessonCuration, 'macroStage' | 'sections'> {
   macroStage: 2
   chapterId: 'stage-2.1' | 'stage-2.2' | 'stage-2.3' | 'stage-2.4' | 'stage-2.5' | 'stage-2.6'
+  compositionMode: AcademyLessonCurationMode
+  editorialArchetype: AcademyStage2EditorialArchetype
+  checkpointPrompt: string
+  checkpointExpectedElements: readonly string[]
+  checkpointCommonFailure: string
+  sections: readonly AcademyStage2SectionSpec[]
+}
+
+export type AcademyLessonCurationMode = 'augment' | 'merge' | 'replace'
+
+export type AcademyStage2EditorialArchetype =
+  | 'mechanism'
+  | 'visual-anatomy'
+  | 'calculation'
+  | 'comparison'
+  | 'state-system'
+  | 'advanced-reference'
+
+export type AcademySourceSectionDispositionAction =
+  | 'retained'
+  | 'merged'
+  | 'replaced-equivalent'
+  | 'removed-empty'
+  | 'removed-duplicate'
+  | 'removed-template'
+  | 'removed-internal-metadata'
+  | 'removed-unsafe-actionable'
+  | 'manual-review'
+
+export interface AcademySourceSectionDisposition {
+  lessonId: string
+  sourceSectionId: string
+  sourceBlockId: string
+  sourceRole: AcademyReaderSectionRole
+  sourceHeading: string
+  sourceWordCount: number
+  action: AcademySourceSectionDispositionAction
+  targetSectionIds: readonly string[]
+  reason: string
+  conceptIds: readonly string[]
+  claimIds: readonly string[]
+  glossaryTermIds: readonly string[]
+}
+
+export interface AcademyStage2ReplacementContract {
+  lessonId: string
+  sourceSectionIds: readonly string[]
+  targetSectionIds: readonly string[]
+  reason: string
+  sourceWordCount: number
+  replacementWordCount: number
+  conceptsPreserved: readonly string[]
+  claimsPreserved: readonly string[]
+  sourceLocatorsPreserved: readonly string[]
 }
 
 export interface AcademyStage2ClaimReview extends AcademyStage1ClaimReview {
@@ -203,7 +257,10 @@ export interface AcademyStage2FormulaReview {
   reason: string
 }
 
-export type AcademyStage2SectionSpec = AcademyStage0SectionSpec
+export interface AcademyStage2SectionSpec extends AcademyStage0SectionSpec {
+  placement: 'before-source' | 'after-first-substantive-source' | 'after-source' | 'reference-tail'
+  visualDesignId?: string
+}
 export type AcademyStage2ActivityPresentation = AcademyStage0ActivityPresentation
 export type AcademyStage2VisualDesign = AcademyStage0VisualDesign
 export type AcademyStage2PersonalPractice = AcademyStage0PersonalPractice
