@@ -54,7 +54,7 @@ describe('0.14G · corpus, historial y versionado', () => {
   })
 
   it('mantiene 0.14F reproducible y añade aliases explícitos a 0.14G', () => {
-    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14H')
+    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14I')
     for (const lessonId of ACADEMY_STAGE_1_LESSON_IDS) {
       const previous = readerDocument(lessonId, '0.14F')
       const current = readerDocument(lessonId, '0.14G')
@@ -70,7 +70,7 @@ describe('0.14G · corpus, historial y versionado', () => {
 
   it('conserva byte a byte los 95 informes 0.14A–0.14F', async () => {
     const root = join(repositoryRoot, 'docs', 'generated')
-    const names = (await readdir(root)).filter((name) => !name.startsWith('APRENDER-') && !name.includes('0.14G') && !name.includes('0.14H')).sort()
+    const names = (await readdir(root)).filter((name) => !name.startsWith('APRENDER-') && !/0\.14[G-Z]/i.test(name)).sort()
     const rows = await Promise.all(names.map(async (name) => `${name}:${sha256(await readFile(join(root, name)))}`))
     expect(names).toHaveLength(ACADEMY_014G_BASELINE.historicalReportsCount)
     expect(sha256(rows.join('\n'))).toBe(ACADEMY_014G_BASELINE.historicalReportsDigest)

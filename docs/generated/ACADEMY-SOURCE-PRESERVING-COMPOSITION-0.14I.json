@@ -1,0 +1,282 @@
+{
+  "schema": "wplab-academy-source-preserving-composition-v1",
+  "phase": "0.14I",
+  "currentPhase": "0.14I",
+  "readerPhases": [
+    "0.14D",
+    "0.14E",
+    "0.14F",
+    "0.14G",
+    "0.14H",
+    "0.14I"
+  ],
+  "personalPhases": [
+    "0.14E",
+    "0.14F",
+    "0.14G",
+    "0.14H",
+    "0.14I"
+  ],
+  "layers": [
+    {
+      "phase": "0.14C",
+      "layerId": "compatibility",
+      "purpose": "compatibilidad de segmentos y progreso históricos"
+    },
+    {
+      "phase": "0.14D",
+      "layerId": "editorial-base",
+      "purpose": "lector continuo y decisiones visuales editoriales"
+    },
+    {
+      "phase": "0.14E",
+      "layerId": "personal-pilots",
+      "purpose": "pilotos personales y visuales revisados"
+    },
+    {
+      "phase": "0.14F",
+      "layerId": "stage-0",
+      "purpose": "etapa 0 completa"
+    },
+    {
+      "phase": "0.14G",
+      "layerId": "stage-1",
+      "purpose": "etapa 1 completa"
+    },
+    {
+      "phase": "0.14H",
+      "layerId": "stage-2",
+      "purpose": "etapa 2 completa"
+    },
+    {
+      "phase": "0.14I",
+      "layerId": "stage-0-1-remediation-and-stage-3",
+      "purpose": "preservación activa de etapas 0–1 y etapa 3 completa"
+    }
+  ],
+  "requiredContextFields": [
+    "lessonId",
+    "phase",
+    "authoredSections",
+    "previousPhaseSections",
+    "currentSections",
+    "historicalAliases",
+    "sourceBlockIds"
+  ],
+  "historicalSnapshot014H": {
+    "schema": "wplab-academy-curation-phase-registry-v1",
+    "currentPhase": "0.14H",
+    "compatibilityPhases": [
+      "0.14C"
+    ],
+    "readerPhases": [
+      "0.14D",
+      "0.14E",
+      "0.14F",
+      "0.14G",
+      "0.14H"
+    ],
+    "personalPhases": [
+      "0.14E",
+      "0.14F",
+      "0.14G",
+      "0.14H"
+    ],
+    "layers": [
+      {
+        "phase": "0.14C",
+        "layerId": "compatibility",
+        "purpose": "compatibilidad de segmentos y progreso históricos"
+      },
+      {
+        "phase": "0.14D",
+        "layerId": "editorial-base",
+        "purpose": "lector continuo y decisiones visuales editoriales"
+      },
+      {
+        "phase": "0.14E",
+        "layerId": "personal-pilots",
+        "purpose": "pilotos personales y visuales revisados"
+      },
+      {
+        "phase": "0.14F",
+        "layerId": "stage-0",
+        "purpose": "etapa 0 completa"
+      },
+      {
+        "phase": "0.14G",
+        "layerId": "stage-1",
+        "purpose": "etapa 1 completa"
+      },
+      {
+        "phase": "0.14H",
+        "layerId": "stage-2",
+        "purpose": "etapa 2 completa"
+      }
+    ],
+    "historicalBuildPolicy": "Cada fase explícita compone únicamente sus capas acumuladas; la fase desconocida o vacía produce error."
+  },
+  "compositionMatrix": [
+    {
+      "phase": "0.14E",
+      "includes": [
+        "0.14E"
+      ],
+      "layers": [
+        "0.14C",
+        "0.14D",
+        "0.14E"
+      ]
+    },
+    {
+      "phase": "0.14F",
+      "includes": [
+        "0.14E",
+        "0.14F"
+      ],
+      "layers": [
+        "0.14C",
+        "0.14D",
+        "0.14E",
+        "0.14F"
+      ]
+    },
+    {
+      "phase": "0.14G",
+      "includes": [
+        "0.14E",
+        "0.14F",
+        "0.14G"
+      ],
+      "layers": [
+        "0.14C",
+        "0.14D",
+        "0.14E",
+        "0.14F",
+        "0.14G"
+      ]
+    },
+    {
+      "phase": "0.14H",
+      "includes": [
+        "0.14E",
+        "0.14F",
+        "0.14G",
+        "0.14H"
+      ],
+      "layers": [
+        "0.14C",
+        "0.14D",
+        "0.14E",
+        "0.14F",
+        "0.14G",
+        "0.14H"
+      ]
+    },
+    {
+      "phase": "0.14I",
+      "includes": [
+        "0.14E",
+        "0.14F",
+        "0.14G",
+        "0.14H",
+        "0.14I"
+      ],
+      "layers": [
+        "0.14C",
+        "0.14D",
+        "0.14E",
+        "0.14F",
+        "0.14G",
+        "0.14H",
+        "0.14I"
+      ]
+    }
+  ],
+  "compatibility": [
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "historicalPhase": "0.14F",
+      "historicalHash": "fnv1a64:bd837c4f8095c8a3",
+      "hHash": "fnv1a64:bd837c4f8095c8a3",
+      "iHash": "fnv1a64:bf0e864fcea330c8"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "historicalPhase": "0.14F",
+      "historicalHash": "fnv1a64:d670ebc74dac5cfd",
+      "hHash": "fnv1a64:d670ebc74dac5cfd",
+      "iHash": "fnv1a64:decb6b6ceace50a1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "historicalPhase": "0.14F",
+      "historicalHash": "fnv1a64:cbc1dfc44fc496e3",
+      "hHash": "fnv1a64:cbc1dfc44fc496e3",
+      "iHash": "fnv1a64:9be66db6b12ec175"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "historicalPhase": "0.14F",
+      "historicalHash": "fnv1a64:c3d60312798aa99a",
+      "hHash": "fnv1a64:c3d60312798aa99a",
+      "iHash": "fnv1a64:8b7577cf0367890b"
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "historicalPhase": "0.14G",
+      "historicalHash": "fnv1a64:ccb3c9e306d00903",
+      "hHash": "fnv1a64:ccb3c9e306d00903",
+      "iHash": "fnv1a64:c4691239c1e2238e"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "historicalPhase": "0.14G",
+      "historicalHash": "fnv1a64:06ff1926764c3d40",
+      "hHash": "fnv1a64:06ff1926764c3d40",
+      "iHash": "fnv1a64:f7fd6cd429e6a654"
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "historicalPhase": "0.14G",
+      "historicalHash": "fnv1a64:91113640a1feecca",
+      "hHash": "fnv1a64:91113640a1feecca",
+      "iHash": "fnv1a64:e8b7a070201bfa7f"
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "historicalPhase": "0.14G",
+      "historicalHash": "fnv1a64:bcbccfbf07ad935c",
+      "hHash": "fnv1a64:bcbccfbf07ad935c",
+      "iHash": "fnv1a64:89972ada98e29b15"
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "historicalPhase": "0.14G",
+      "historicalHash": "fnv1a64:5d0e15a62f95c174",
+      "hHash": "fnv1a64:5d0e15a62f95c174",
+      "iHash": "fnv1a64:3a95f041a14daff6"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "historicalPhase": "0.14G",
+      "historicalHash": "fnv1a64:b42ec290b5cbd162",
+      "hHash": "fnv1a64:b42ec290b5cbd162",
+      "iHash": "fnv1a64:e99a5b5f1369f1ad"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "historicalPhase": "0.14G",
+      "historicalHash": "fnv1a64:677b4ce6304c2097",
+      "hHash": "fnv1a64:677b4ce6304c2097",
+      "iHash": "fnv1a64:55a08e1338b9667b"
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "historicalPhase": "0.14G",
+      "historicalHash": "fnv1a64:b5f2645343aea2ca",
+      "hHash": "fnv1a64:b5f2645343aea2ca",
+      "iHash": "fnv1a64:56804fe104624d1a"
+    }
+  ]
+}

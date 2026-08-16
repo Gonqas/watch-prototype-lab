@@ -86,7 +86,7 @@ interface PerformanceSnapshot {
 async function historicalReportSnapshot(repositoryRoot: string): Promise<HistoricalReportSnapshot> {
   const root = join(repositoryRoot, 'docs', 'generated')
   const fileNames = (await readdir(root))
-    .filter((name) => !name.startsWith('APRENDER-') && !name.includes('0.14F') && !name.includes('0.14G') && !name.includes('0.14H'))
+    .filter((name) => !name.startsWith('APRENDER-') && !/0\.14[F-Z]/i.test(name))
     .sort()
   const rows = await Promise.all(fileNames.map(async (name) => `${name}:${sha256(await readFile(join(root, name)))}`))
   return { count: fileNames.length, digest: sha256(rows.join('\n')), fileNames }

@@ -4,10 +4,10 @@
  */
 export * from './personal'
 export {
-  academyPersonalActivityPresentation014H as academyPersonalActivityPresentation,
-  academyPersonalPracticesForLesson014H as academyPersonalPracticesForLesson,
-} from './personal/phase014h/stage2Registry'
+  academyPersonalActivityPresentation014I as academyPersonalActivityPresentation,
+  academyPersonalPracticesForLesson014I as academyPersonalPracticesForLesson,
+} from './personal/phase014i/stage3Registry'
 export {
-  ACADEMY_PERSONAL_REVIEW_QUEUE_014H as ACADEMY_PERSONAL_REVIEW_QUEUE,
-  academyPersonalReviewQueue014HEntry as academyPersonalReviewQueueEntry,
-} from './personal/phase014h/reviewQueue'
+  ACADEMY_PERSONAL_REVIEW_QUEUE_014I as ACADEMY_PERSONAL_REVIEW_QUEUE,
+  academyPersonalReviewQueue014IEntry as academyPersonalReviewQueueEntry,
+} from './personal/phase014i/reviewQueue'

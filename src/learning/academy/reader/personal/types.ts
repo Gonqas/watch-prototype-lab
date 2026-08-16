@@ -1,11 +1,14 @@
 import type {
+  AcademyLegacySectionAlias,
+  AcademyReaderCurationPhase,
+  AcademyReaderSection,
   AcademyDiagramData,
   AcademyPersonalReviewStatus,
   AcademyPersonalTechnicalStatus,
   AcademyReaderSectionRole,
 } from '../academyReaderModel'
 
-export type AcademyPersonalCurationPhase = '0.14E' | '0.14F' | '0.14G' | '0.14H'
+export type AcademyPersonalCurationPhase = '0.14E' | '0.14F' | '0.14G' | '0.14H' | '0.14I'
 export type AcademyEvidenceModality = 'K' | 'V' | 'P' | 'R'
 export type AcademyCurriculumPathRole = 'anchor' | 'support' | 'optional-branch' | 'reference'
 
@@ -192,6 +195,31 @@ export interface AcademyStage2LessonCuration extends Omit<AcademyStage1LessonCur
 
 export type AcademyLessonCurationMode = 'augment' | 'merge' | 'replace'
 
+/** Contexto inmutable que impide que una capa confunda autoría con el resultado de overlays previos. */
+export interface AcademySourcePreservingLessonContext {
+  lessonId: string
+  phase: AcademyReaderCurationPhase
+  authoredSections: readonly AcademyReaderSection[]
+  previousPhaseSections: readonly AcademyReaderSection[]
+  currentSections: readonly AcademyReaderSection[]
+  historicalAliases: readonly AcademyLegacySectionAlias[]
+  sourceBlockIds: readonly string[]
+}
+
+export interface AcademyContentPreservationRow {
+  lessonId: string
+  sourceSectionCount: number
+  sourceTotalWords: number
+  sourceSubstantiveWords: number
+  visibleWords: number
+  retainedSourceWords: number
+  rewrittenEquivalentWords: number
+  removedWords: number
+  substantiveCoverage: number
+  reductionJustifications: readonly string[]
+  glossaryTermIdsPreserved: readonly string[]
+}
+
 export type AcademyStage2EditorialArchetype =
   | 'mechanism'
   | 'visual-anatomy'
@@ -264,3 +292,41 @@ export interface AcademyStage2SectionSpec extends AcademyStage0SectionSpec {
 export type AcademyStage2ActivityPresentation = AcademyStage0ActivityPresentation
 export type AcademyStage2VisualDesign = AcademyStage0VisualDesign
 export type AcademyStage2PersonalPractice = AcademyStage0PersonalPractice
+
+export type AcademyStage3EditorialArchetype =
+  | 'observation-inspection'
+  | 'measurement'
+  | 'diagnosis'
+  | 'reasoned-service'
+  | 'historical-case'
+  | 'data-comparison'
+
+export type AcademyStage3SectionSpec = AcademyStage2SectionSpec
+
+export interface AcademyStage3LessonCuration {
+  lessonId: string
+  sourceBlockId: string
+  macroStage: 3
+  chapterId: 'chapter.3.1' | 'chapter.3.2' | 'chapter.3.3' | 'chapter.3.4'
+  pathRole: AcademyCurriculumPathRole
+  compositionMode: AcademyLessonCurationMode
+  editorialArchetype: AcademyStage3EditorialArchetype
+  centralQuestion: string
+  whyNow: string
+  observableOutcome: string
+  sections: readonly AcademyStage3SectionSpec[]
+  visualDesignIds: readonly string[]
+  activityPresentations: readonly AcademyStage0ActivityPresentation[]
+  sourceClaimIds: readonly string[]
+  limitations: readonly string[]
+  personalReviewStatus: 'not-reviewed'
+  technicalStatus: AcademyPersonalTechnicalStatus
+}
+
+export interface AcademyStage3PrerequisiteOverride extends Omit<AcademyStage1PrerequisiteOverride, 'phase'> {
+  phase: '0.14I'
+}
+
+export type AcademyStage3ActivityPresentation = AcademyStage0ActivityPresentation
+export type AcademyStage3VisualDesign = AcademyStage0VisualDesign
+export type AcademyStage3PersonalPractice = AcademyStage0PersonalPractice

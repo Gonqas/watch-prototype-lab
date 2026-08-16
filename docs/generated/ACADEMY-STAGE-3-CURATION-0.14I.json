@@ -1,0 +1,343 @@
+{
+  "schema": "wplab-academy-stage3-curation-v1",
+  "phase": "0.14I",
+  "chapters": [
+    "chapter.3.1",
+    "chapter.3.2",
+    "chapter.3.3",
+    "chapter.3.4"
+  ],
+  "counts": {
+    "lessons": 17,
+    "anchors": 12,
+    "supports": 2,
+    "optionalBranches": 3,
+    "visibleSections": 271,
+    "validationIssues": 0
+  },
+  "archetypes": {
+    "observation-inspection": 3,
+    "historical-case": 3,
+    "measurement": 4,
+    "data-comparison": 1,
+    "diagnosis": 2,
+    "reasoned-service": 4
+  },
+  "lessons": [
+    {
+      "lessonId": "lesson.metrology.observe-before-measuring",
+      "chapterId": "chapter.3.1",
+      "pathRole": "anchor",
+      "archetype": "observation-inspection",
+      "sourceSections": 9,
+      "sourceWords": 687,
+      "visibleSections": 14,
+      "visibleWords": 819,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:a6d1d91301d4c141",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.metrology.preparar-una-inspeccion",
+        "activity.metrology.separar-observacion-e-hipotesis"
+      ]
+    },
+    {
+      "lessonId": "lesson.metrology.inspection-findings",
+      "chapterId": "chapter.3.1",
+      "pathRole": "anchor",
+      "archetype": "observation-inspection",
+      "sourceSections": 10,
+      "sourceWords": 624,
+      "visibleSections": 16,
+      "visibleWords": 787,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:974c4369e3ed0f68",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.metrology.identificar-lectura-atipica",
+        "activity.metrology.registrar-hallazgo"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.recepcion-y-linea-base",
+      "chapterId": "chapter.3.1",
+      "pathRole": "anchor",
+      "archetype": "observation-inspection",
+      "sourceSections": 11,
+      "sourceWords": 1096,
+      "visibleSections": 16,
+      "visibleWords": 1227,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:9e1bf3964e154598",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.encyclopedia.service-tribology.recepcion-y-linea-base"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+      "chapterId": "chapter.3.1",
+      "pathRole": "optional-branch",
+      "archetype": "historical-case",
+      "sourceSections": 11,
+      "sourceWords": 1008,
+      "visibleSections": 16,
+      "visibleWords": 1155,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:dce59e6b33a46321",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.encyclopedia.service-tribology.tm-inspeccion-previa"
+      ]
+    },
+    {
+      "lessonId": "lesson.metrology.units-scale-resolution",
+      "chapterId": "chapter.3.2",
+      "pathRole": "anchor",
+      "archetype": "measurement",
+      "sourceSections": 9,
+      "sourceWords": 665,
+      "visibleSections": 15,
+      "visibleWords": 827,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:bd9078698493c3e4",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.metrology.diferenciar-resolucion-y-precision",
+        "activity.metrology.redondear-sin-inventar-informacion"
+      ]
+    },
+    {
+      "lessonId": "lesson.metrology.instruments",
+      "chapterId": "chapter.3.2",
+      "pathRole": "anchor",
+      "archetype": "measurement",
+      "sourceSections": 9,
+      "sourceWords": 652,
+      "visibleSections": 15,
+      "visibleWords": 819,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:d5808cad33986a5d",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.metrology.seleccionar-instrumento",
+        "activity.metrology.detectar-paralaje"
+      ]
+    },
+    {
+      "lessonId": "lesson.metrology.physical-measurement",
+      "chapterId": "chapter.3.2",
+      "pathRole": "anchor",
+      "archetype": "measurement",
+      "sourceSections": 10,
+      "sourceWords": 696,
+      "visibleSections": 16,
+      "visibleWords": 846,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:d114456c6795c0ff",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.metrology.medir-diametro",
+        "activity.metrology.medir-distancia-entre-centros"
+      ]
+    },
+    {
+      "lessonId": "lesson.metrology.precision-accuracy-uncertainty",
+      "chapterId": "chapter.3.2",
+      "pathRole": "support",
+      "archetype": "measurement",
+      "sourceSections": 9,
+      "sourceWords": 642,
+      "visibleSections": 15,
+      "visibleWords": 794,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:45d92c965f532113",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.metrology.repetir-medicion",
+        "activity.metrology.declarar-incertidumbre"
+      ]
+    },
+    {
+      "lessonId": "lesson.metrology.compare-data",
+      "chapterId": "chapter.3.2",
+      "pathRole": "support",
+      "archetype": "data-comparison",
+      "sourceSections": 10,
+      "sourceWords": 688,
+      "visibleSections": 16,
+      "visibleWords": 834,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:9783b135ba19aded",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.metrology.comparar-nominal-y-medido",
+        "activity.metrology.determinar-validez-de-comparacion"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.failure-prediction",
+      "chapterId": "chapter.3.3",
+      "pathRole": "anchor",
+      "archetype": "diagnosis",
+      "sourceSections": 15,
+      "sourceWords": 678,
+      "visibleSections": 20,
+      "visibleWords": 801,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:041b5d5c21de3269",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.horology.predict-interruption",
+        "activity.horology.select-affected-subsystem",
+        "activity.horology.justify-hypothesis"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+      "chapterId": "chapter.3.3",
+      "pathRole": "anchor",
+      "archetype": "diagnosis",
+      "sourceSections": 11,
+      "sourceWords": 1095,
+      "visibleSections": 17,
+      "visibleWords": 1250,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:05e51db76dedee9b",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.encyclopedia.service-tribology.diagnostico-y-control-final"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "chapterId": "chapter.3.3",
+      "pathRole": "anchor",
+      "archetype": "historical-case",
+      "sourceSections": 11,
+      "sourceWords": 1031,
+      "visibleSections": 16,
+      "visibleWords": 1165,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:4344a43511d06c8f",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.encyclopedia.service-tribology.tm-diagnostico-sintomas"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
+      "chapterId": "chapter.3.3",
+      "pathRole": "optional-branch",
+      "archetype": "historical-case",
+      "sourceSections": 11,
+      "sourceWords": 1014,
+      "visibleSections": 16,
+      "visibleWords": 1140,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:a0ff93862214eb18",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.encyclopedia.atlas-restoration-design.tm-hamilton-992b"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+      "chapterId": "chapter.3.4",
+      "pathRole": "anchor",
+      "archetype": "reasoned-service",
+      "sourceSections": 11,
+      "sourceWords": 1055,
+      "visibleSections": 16,
+      "visibleWords": 1196,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:5c080739bc3bbb4d",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.encyclopedia.service-tribology.limpieza-e-inspeccion"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tribologia-y-lubricantes",
+      "chapterId": "chapter.3.4",
+      "pathRole": "anchor",
+      "archetype": "reasoned-service",
+      "sourceSections": 11,
+      "sourceWords": 1070,
+      "visibleSections": 16,
+      "visibleWords": 1205,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:a3a40875d27e7ded",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.encyclopedia.service-tribology.tribologia-y-lubricantes"
+      ]
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "chapterId": "chapter.3.4",
+      "pathRole": "anchor",
+      "archetype": "reasoned-service",
+      "sourceSections": 11,
+      "sourceWords": 1114,
+      "visibleSections": 18,
+      "visibleWords": 1416,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:ee252af26d01ed25",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.encyclopedia.service-tribology.montaje-y-puntos-de-control"
+      ]
+    },
+    {
+      "lessonId": "lesson.advanced.service-clean-lube",
+      "chapterId": "chapter.3.4",
+      "pathRole": "optional-branch",
+      "archetype": "reasoned-service",
+      "sourceSections": 8,
+      "sourceWords": 749,
+      "visibleSections": 13,
+      "visibleWords": 868,
+      "substantiveCoverage": 1,
+      "contentHash": "fnv1a64:1406df7721bf5ba3",
+      "validationIssues": [],
+      "activityIds": [
+        "activity.advanced.service-clean-lube"
+      ]
+    }
+  ],
+  "checkpoint": {
+    "checkpointId": "checkpoint.academy.stage3-complete",
+    "fromStageId": "stage.3",
+    "toStageId": "stage.4",
+    "blocking": false,
+    "affectsProgress": false,
+    "createsMastery": false,
+    "title": "Cierre personal de observación, medición y diagnóstico",
+    "questions": [
+      "¿Puedo describir algo sin diagnosticarlo?",
+      "¿Sé qué registrar antes de intervenir?",
+      "¿Distingo síntoma, hallazgo e hipótesis?",
+      "¿Puedo elegir una magnitud adecuada?",
+      "¿Distingo resolución, precisión, exactitud e incertidumbre?",
+      "¿Sé qué hace comparables dos mediciones?",
+      "¿Puedo formular dos hipótesis rivales?",
+      "¿Puedo elegir una prueba que las diferencie?",
+      "¿Sé por qué limpiar puede destruir evidencia?",
+      "¿Puedo explicar qué dato necesito antes de elegir un lubricante?",
+      "¿Puedo definir un control intermedio?",
+      "¿Sé de dónde debe proceder un criterio de aceptación?",
+      "¿Puedo declarar qué sigue sin saberse?"
+    ],
+    "actions": [
+      "repasar observación",
+      "repasar metrología",
+      "repasar diagnóstico",
+      "repasar limpieza y tribología",
+      "repasar montaje y aceptación",
+      "abrir una práctica personal",
+      "continuar al calibre real"
+    ],
+    "evidence": "Autocomprobación local K/V/R; no altera progreso, mastery, revisión o evidencia física."
+  }
+}

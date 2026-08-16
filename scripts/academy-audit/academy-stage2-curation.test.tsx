@@ -97,7 +97,7 @@ describe('0.14H · integridad (pruebas 1–10)', () => {
 
   it('conserva todos los informes A–G byte por byte', async () => {
     const generated = join(root, 'docs', 'generated')
-    const names = (await readdir(generated)).filter((name) => !name.startsWith('APRENDER-') && !name.includes('0.14H')).sort()
+    const names = (await readdir(generated)).filter((name) => !name.startsWith('APRENDER-') && !/0\.14[H-Z]/i.test(name)).sort()
     const rows = await Promise.all(names.map(async (name) => `${name}:${sha256(await readFile(join(generated, name)))}`))
     expect({ count: names.length, digest: sha256(rows.join('\n')) }).toEqual(ACADEMY_014H_BASELINE.historicalReports)
   })

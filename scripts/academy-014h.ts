@@ -4,10 +4,7 @@ import { join, relative, resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import {
   ACADEMY_014H_PHASE_REGISTRY_SNAPSHOT,
-  ACADEMY_COMPATIBILITY_PHASES,
-  ACADEMY_CURATION_LAYER_REGISTRY,
   ACADEMY_PERSONAL_REVIEW_QUEUE_014H,
-  ACADEMY_READER_CURATION_PHASES,
   ACADEMY_STAGE_2_ACTIVITY_PRESENTATIONS,
   ACADEMY_STAGE_2_CATALOG,
   ACADEMY_STAGE_2_CHAPTER_SEQUENCE,
@@ -22,7 +19,6 @@ import {
   ACADEMY_STAGE_2_FINAL_CHECKPOINT,
   ACADEMY_STAGE_0_LESSON_CURATIONS,
   ACADEMY_STAGE_1_LESSON_CURATIONS,
-  CURRENT_ACADEMY_CURATION_PHASE,
   academyStage2ContentPreservation,
   academyPhaseIncludes,
   academyPhaseLayers,
@@ -88,7 +84,7 @@ async function treeSnapshot(root: string) {
 
 async function historicalReportSnapshot(repositoryRoot: string) {
   const root = join(repositoryRoot, 'docs', 'generated')
-  const fileNames = (await readdir(root)).filter((name) => !name.startsWith('APRENDER-') && !name.includes('0.14H')).sort()
+  const fileNames = (await readdir(root)).filter((name) => !name.startsWith('APRENDER-') && !/0\.14[H-Z]/i.test(name)).sort()
   const rows = await Promise.all(fileNames.map(async (name) => `${name}:${sha256(await readFile(join(root, name)))}`))
   return { count: fileNames.length, digest: sha256(rows.join('\n')), fileNames }
 }
@@ -190,7 +186,8 @@ export async function buildAcademy014HOutputs(repositoryRoot: string): Promise<M
   })
   const outputs = new Map<string, string>()
 
-  const registryJson = { ...ACADEMY_014H_PHASE_REGISTRY_SNAPSHOT, helpers: ['academyPhaseRank','academyPhaseIncludes','academyPhaseIsBefore','academyPhaseIsAfter','academyPhaseLayers'], matrix: ACADEMY_READER_CURATION_PHASES.map((phase) => ({ phase, rank: academyPhaseRank(phase), includes: ACADEMY_READER_CURATION_PHASES.filter((candidate) => academyPhaseIncludes(phase, candidate)), layers: academyPhaseLayers(phase).map(({ layerId }) => layerId) })) }
+  const hReaderPhases = ACADEMY_014H_PHASE_REGISTRY_SNAPSHOT.readerPhases
+  const registryJson = { ...ACADEMY_014H_PHASE_REGISTRY_SNAPSHOT, helpers: ['academyPhaseRank','academyPhaseIncludes','academyPhaseIsBefore','academyPhaseIsAfter','academyPhaseLayers'], matrix: hReaderPhases.map((phase) => ({ phase, rank: academyPhaseRank(phase), includes: hReaderPhases.filter((candidate) => academyPhaseIncludes(phase, candidate)), layers: academyPhaseLayers(phase).map(({ layerId }) => layerId) })) }
   outputs.set('ACADEMY-CURATION-PHASE-REGISTRY-0.14H.json', json(registryJson))
   outputs.set('ACADEMY-CURATION-PHASE-REGISTRY-0.14H.md', md(`# Registro acumulativo de fases · 0.14H
 
@@ -198,16 +195,16 @@ export async function buildAcademy014HOutputs(repositoryRoot: string): Promise<M
 
 | Propiedad | Baseline 0.14G | 0.14H |
 |---|---|---|
-| Fase activa | 0.14G | ${CURRENT_ACADEMY_CURATION_PHASE} |
+| Fase activa | 0.14G | ${ACADEMY_014H_PHASE_REGISTRY_SNAPSHOT.currentPhase} |
 | Orden personal | 0.14E, 0.14G | 0.14E, 0.14F, 0.14G, 0.14H |
 | Comparación | indexOf sin validar; -1 podía parecer válido | rango explícito; vacío y desconocido producen error |
 | Composición | condicionales repetidos en el constructor | capas declarativas C→D→E→F→G→H |
 
-Compatibilidad: ${ACADEMY_COMPATIBILITY_PHASES.join(', ')}. Fases de lector: ${ACADEMY_READER_CURATION_PHASES.join(' → ')}.
+Compatibilidad: ${ACADEMY_014H_PHASE_REGISTRY_SNAPSHOT.compatibilityPhases.join(', ')}. Fases de lector: ${hReaderPhases.join(' → ')}.
 
 | Rango | Fase | Capa | Función |
 |---:|---|---|---|
-${ACADEMY_CURATION_LAYER_REGISTRY.map((layer, index) => `| ${index} | ${layer.phase} | ${layer.layerId} | ${pipe(layer.purpose)} |`).join('\n')}
+${ACADEMY_014H_PHASE_REGISTRY_SNAPSHOT.layers.map((layer, index) => `| ${index} | ${layer.phase} | ${layer.layerId} | ${pipe(layer.purpose)} |`).join('\n')}
 
 Las construcciones explícitas 0.14E, 0.14F y 0.14G siguen componiendo exactamente hasta su capa; activar 0.14H no las redirige a la fase actual.`))
 

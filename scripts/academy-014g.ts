@@ -141,7 +141,7 @@ function documentFor(product: LearningProductIndex, pack: LearningPack, lessonId
 
 async function historicalReportSnapshot(repositoryRoot: string) {
   const root = join(repositoryRoot, 'docs', 'generated')
-  const fileNames = (await readdir(root)).filter((name) => !name.startsWith('APRENDER-') && !name.includes('0.14G') && !name.includes('0.14H')).sort()
+  const fileNames = (await readdir(root)).filter((name) => !name.startsWith('APRENDER-') && !/0\.14[G-Z]/i.test(name)).sort()
   const rows = await Promise.all(fileNames.map(async (name) => `${name}:${sha256(await readFile(join(root, name)))}`))
   return { count: fileNames.length, digest: sha256(rows.join('\n')), fileNames }
 }

@@ -11,11 +11,11 @@ import {
 } from '../../src/learning/academy/reader/academyPersonalCurriculum'
 import type { AcademyReaderCurationPhase } from '../../src/learning/academy/reader/academyReaderModel'
 
-describe('registro acumulativo de curación 0.14H', () => {
+describe('registro acumulativo de curación 0.14I', () => {
   it('define el orden canónico completo y la fase activa', () => {
-    expect(ACADEMY_READER_CURATION_PHASES).toEqual(['0.14D', '0.14E', '0.14F', '0.14G', '0.14H'])
-    expect(ACADEMY_PERSONAL_CURATION_PHASES).toEqual(['0.14E', '0.14F', '0.14G', '0.14H'])
-    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14H')
+    expect(ACADEMY_READER_CURATION_PHASES).toEqual(['0.14D', '0.14E', '0.14F', '0.14G', '0.14H', '0.14I'])
+    expect(ACADEMY_PERSONAL_CURATION_PHASES).toEqual(['0.14E', '0.14F', '0.14G', '0.14H', '0.14I'])
+    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14I')
   })
 
   it.each(ACADEMY_READER_CURATION_PHASES.flatMap((phase, phaseRank) =>
@@ -29,12 +29,12 @@ describe('registro acumulativo de curación 0.14H', () => {
   it('compone C como compatibilidad y solo las capas acumuladas de lector', () => {
     expect(academyPhaseLayers('0.14F').map(({ phase }) => phase)).toEqual(['0.14C', '0.14D', '0.14E', '0.14F'])
     expect(academyPhaseLayers('0.14G').map(({ phase }) => phase)).toEqual(['0.14C', '0.14D', '0.14E', '0.14F', '0.14G'])
-    expect(academyPhaseLayers('0.14H').map(({ phase }) => phase)).toEqual(['0.14C', '0.14D', '0.14E', '0.14F', '0.14G', '0.14H'])
+    expect(academyPhaseLayers('0.14I').map(({ phase }) => phase)).toEqual(['0.14C', '0.14D', '0.14E', '0.14F', '0.14G', '0.14H', '0.14I'])
   })
 
   it('rechaza valores vacíos y desconocidos sin convertir -1 en rango válido', () => {
     expect(() => academyPhaseRank('' as AcademyReaderCurationPhase)).toThrow(/vacía/)
     expect(() => academyPhaseRank('0.14Z' as AcademyReaderCurationPhase)).toThrow(/desconocida/)
-    expect(() => academyPhaseIncludes('0.14H', '0.14Z' as AcademyReaderCurationPhase)).toThrow(/desconocida/)
+    expect(() => academyPhaseIncludes('0.14I', '0.14Z' as AcademyReaderCurationPhase)).toThrow(/desconocida/)
   })
 })

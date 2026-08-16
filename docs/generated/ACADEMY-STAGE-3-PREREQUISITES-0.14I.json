@@ -1,0 +1,248 @@
+{
+  "schema": "wplab-stage3-prerequisites-v1",
+  "phase": "0.14I",
+  "chapterSequence": [
+    "chapter.3.1",
+    "chapter.3.2",
+    "chapter.3.3",
+    "chapter.3.4"
+  ],
+  "transitions": [
+    {
+      "fromChapterId": "chapter.2.6",
+      "toChapterId": "chapter.3.1",
+      "blocking": true,
+      "meaning": "La etapa 2 disponible abre observación e inspección."
+    },
+    {
+      "fromChapterId": "chapter.3.1",
+      "toChapterId": "chapter.3.2",
+      "blocking": true,
+      "meaning": "La línea base precede a la medición."
+    },
+    {
+      "fromChapterId": "chapter.3.2",
+      "toChapterId": "chapter.3.3",
+      "blocking": true,
+      "meaning": "La evidencia comparable precede al diagnóstico."
+    },
+    {
+      "fromChapterId": "chapter.3.3",
+      "toChapterId": "chapter.3.4",
+      "blocking": true,
+      "meaning": "El diagnóstico precede a una decisión de servicio."
+    },
+    {
+      "fromChapterId": "chapter.3.4",
+      "toChapterId": "chapter.4.1",
+      "blocking": true,
+      "meaning": "El cierre conceptual abre el calibre real sin acreditar servicio."
+    }
+  ],
+  "overrides": [
+    {
+      "lessonId": "lesson.metrology.observe-before-measuring",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.metrology.inspection-findings",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.recepcion-y-linea-base",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.metrology.observe-before-measuring"
+      ],
+      "pathRole": "optional-branch",
+      "blocking": false,
+      "rationale": "Apoyo o caso opcional accesible sin bloquear la secuencia.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.metrology.units-scale-resolution",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.metrology.observe-before-measuring"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.metrology.instruments",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.metrology.observe-before-measuring"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.metrology.physical-measurement",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.metrology.observe-before-measuring"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.metrology.precision-accuracy-uncertainty",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.metrology.units-scale-resolution"
+      ],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Apoyo o caso opcional accesible sin bloquear la secuencia.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.metrology.compare-data",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.metrology.units-scale-resolution"
+      ],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Apoyo o caso opcional accesible sin bloquear la secuencia.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.horology.failure-prediction",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.metrology.compare-data"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.metrology.compare-data"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.metrology.compare-data"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.horology.failure-prediction"
+      ],
+      "pathRole": "optional-branch",
+      "blocking": false,
+      "rationale": "Apoyo o caso opcional accesible sin bloquear la secuencia.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.system-interruption"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tribologia-y-lubricantes",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.system-interruption"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.system-interruption"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Conserva solo el fundamento del capítulo anterior.",
+      "phase": "0.14I"
+    },
+    {
+      "lessonId": "lesson.advanced.service-clean-lube",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion"
+      ],
+      "pathRole": "optional-branch",
+      "blocking": false,
+      "rationale": "Apoyo o caso opcional accesible sin bloquear la secuencia.",
+      "phase": "0.14I"
+    }
+  ]
+}

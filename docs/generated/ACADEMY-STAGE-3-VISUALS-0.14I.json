@@ -1,0 +1,1071 @@
+{
+  "schema": "wplab-stage3-visuals-v1",
+  "phase": "0.14I",
+  "counts": {
+    "reused": 9,
+    "new": 7,
+    "questionsCovered": 15,
+    "photoBriefs": 10
+  },
+  "reusedVisualIds": [
+    "visual.metrology.observe-first.v1",
+    "visual.failure-prediction.hypothesis.v1",
+    "visual.intake.baseline-sequence.v1",
+    "visual.diagnosis.final-control.v1",
+    "visual.diagnosis.tm-symptom-tree.v1",
+    "visual.diagnosis.cleaning-inspection.v1",
+    "visual.tribology.contact-function.v1",
+    "visual.assembly.control-gates.v1",
+    "visual.assembly.reasoned-example.v1"
+  ],
+  "newDesigns": [
+    {
+      "visualDesignId": "visual.stage3.finding-record.v1",
+      "questionId": "q03-finding",
+      "lessonIds": [
+        "lesson.metrology.inspection-findings"
+      ],
+      "sectionIds": [
+        "reader.section.block.metrology.inspection-findings.014i-visual-stage3-finding-record-v1"
+      ],
+      "pedagogicalQuestion": "¿Cómo se estructura un hallazgo?",
+      "semanticPayload": {
+        "title": "Hallazgo trazable",
+        "nodes": [
+          {
+            "id": "object",
+            "label": "Objeto y zona",
+            "detail": "localización",
+            "emphasis": "primary"
+          },
+          {
+            "id": "condition",
+            "label": "Condición observada",
+            "detail": "sin causa",
+            "emphasis": "normal"
+          },
+          {
+            "id": "evidence",
+            "label": "Medio y evidencia",
+            "detail": "condiciones",
+            "emphasis": "normal"
+          },
+          {
+            "id": "hypotheses",
+            "label": "Hipótesis rivales",
+            "detail": "abiertas",
+            "emphasis": "normal"
+          },
+          {
+            "id": "next",
+            "label": "Siguiente comprobación",
+            "detail": "confianza",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "object",
+            "to": "condition",
+            "label": "delimita",
+            "kind": "decision"
+          },
+          {
+            "from": "condition",
+            "to": "evidence",
+            "label": "documenta",
+            "kind": "decision"
+          },
+          {
+            "from": "evidence",
+            "to": "hypotheses",
+            "label": "permite",
+            "kind": "decision"
+          },
+          {
+            "from": "hypotheses",
+            "to": "next",
+            "label": "diferencia",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Orden, etiquetas y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.metrology.bipm.vim"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.metrology.bipm.vim",
+          "documentLocator": "https://www.bipm.org/en/doi/10.59161/jcgm200-2012",
+          "section": "§2.3 y vocabulario de medición",
+          "verificationMethod": "official-document"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Plantilla educativa; no clasifica automáticamente defectos."
+      ],
+      "accessibilitySummary": "Hallazgo trazable: Objeto y zona, Condición observada, Medio y evidencia, Hipótesis rivales, Siguiente comprobación.",
+      "longDescription": "Hallazgo trazable. object conduce a condition: delimita. condition conduce a evidence: documenta. evidence conduce a hypotheses: permite. hypotheses conduce a next: diferencia.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:206b5e39fe816fe5",
+      "visualHash": "fnv1a64:a5222c191ef695a1",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage3.historical-boundary.v1",
+      "questionId": "q02-baseline",
+      "lessonIds": [
+        "lesson.encyclopedia.service-tribology.tm-inspeccion-previa"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.service-tribology.tm-inspeccion-previa.014i-visual-stage3-historical-boundary-v1"
+      ],
+      "pedagogicalQuestion": "¿Qué se registra antes de intervenir?",
+      "semanticPayload": {
+        "title": "Método histórico y frontera actual",
+        "nodes": [
+          {
+            "id": "observe",
+            "label": "Orden de observación",
+            "detail": "principio útil",
+            "emphasis": "primary"
+          },
+          {
+            "id": "record",
+            "label": "Registro previo",
+            "detail": "conserva evidencia",
+            "emphasis": "normal"
+          },
+          {
+            "id": "historic",
+            "label": "Dato de 1945",
+            "detail": "contexto",
+            "emphasis": "warning"
+          },
+          {
+            "id": "modern",
+            "label": "Fuente actual",
+            "detail": "obligatoria para operación",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "observe",
+            "to": "record",
+            "label": "aplica",
+            "kind": "decision"
+          },
+          {
+            "from": "historic",
+            "to": "modern",
+            "label": "no se transfiere",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Orden, etiquetas y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.official.tm9-1575.inspection"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.official.tm9-1575.inspection",
+          "documentLocator": "reference-library/originals/TM 9-1575.pdf",
+          "page": "impresas 20–22",
+          "section": "III",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-16"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No contiene valores, sustancias ni pasos operativos del manual."
+      ],
+      "accessibilitySummary": "Método histórico y frontera actual: Orden de observación, Registro previo, Dato de 1945, Fuente actual.",
+      "longDescription": "Método histórico y frontera actual. observe conduce a record: aplica. historic conduce a modern: no se transfiere.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:57e6acb29d436478",
+      "visualHash": "fnv1a64:384c65a7add1d64f",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage3.measurement-terms.v1",
+      "questionId": "q06-terms",
+      "lessonIds": [
+        "lesson.metrology.units-scale-resolution",
+        "lesson.metrology.precision-accuracy-uncertainty"
+      ],
+      "sectionIds": [
+        "reader.section.block.metrology.units-scale-resolution.014i-visual-stage3-measurement-terms-v1",
+        "reader.section.block.metrology.precision-accuracy-uncertainty.014i-visual-stage3-measurement-terms-v1"
+      ],
+      "pedagogicalQuestion": "¿Qué diferencia resolución, precisión, exactitud e incertidumbre?",
+      "semanticPayload": {
+        "title": "Cuatro conceptos no equivalentes",
+        "nodes": [
+          {
+            "id": "resolution",
+            "label": "Resolución",
+            "detail": "incremento mostrado",
+            "emphasis": "primary"
+          },
+          {
+            "id": "precision",
+            "label": "Precisión",
+            "detail": "proximidad repetida",
+            "emphasis": "normal"
+          },
+          {
+            "id": "accuracy",
+            "label": "Exactitud",
+            "detail": "relación con referencia",
+            "emphasis": "normal"
+          },
+          {
+            "id": "uncertainty",
+            "label": "Incertidumbre",
+            "detail": "duda asociada",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "resolution",
+            "to": "precision",
+            "label": "no implica",
+            "kind": "decision"
+          },
+          {
+            "from": "precision",
+            "to": "accuracy",
+            "label": "no implica",
+            "kind": "decision"
+          },
+          {
+            "from": "accuracy",
+            "to": "uncertainty",
+            "label": "se interpreta con",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Orden, etiquetas y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.metrology.bipm.vim"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.metrology.bipm.vim",
+          "documentLocator": "https://www.bipm.org/en/doi/10.59161/jcgm200-2012",
+          "section": "§§2.13, 2.15, 2.26 y 4.14",
+          "verificationMethod": "official-document"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No asigna valores a instrumentos o resultados."
+      ],
+      "accessibilitySummary": "Cuatro conceptos no equivalentes: Resolución, Precisión, Exactitud, Incertidumbre.",
+      "longDescription": "Cuatro conceptos no equivalentes. resolution conduce a precision: no implica. precision conduce a accuracy: no implica. accuracy conduce a uncertainty: se interpreta con.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:f2812d38e3521f9d",
+      "visualHash": "fnv1a64:890057de5026e7a7",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage3.instrument-choice.v1",
+      "questionId": "q05-instrument",
+      "lessonIds": [
+        "lesson.metrology.instruments"
+      ],
+      "sectionIds": [
+        "reader.section.block.metrology.instruments.014i-visual-stage3-instrument-choice-v1"
+      ],
+      "pedagogicalQuestion": "¿Cómo se elige un instrumento?",
+      "semanticPayload": {
+        "title": "De la pregunta al instrumento",
+        "nodes": [
+          {
+            "id": "question",
+            "label": "Magnitud y pregunta",
+            "detail": "entrada",
+            "emphasis": "primary"
+          },
+          {
+            "id": "geometry",
+            "label": "Rango, acceso y geometría",
+            "detail": "condición",
+            "emphasis": "normal"
+          },
+          {
+            "id": "interaction",
+            "label": "Fuerza, alineación y riesgo",
+            "detail": "interfaz",
+            "emphasis": "normal"
+          },
+          {
+            "id": "instrument",
+            "label": "Instrumento y método",
+            "detail": "decisión",
+            "emphasis": "normal"
+          },
+          {
+            "id": "record",
+            "label": "Unidad, referencia y resolución",
+            "detail": "registro",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "question",
+            "to": "geometry",
+            "label": "delimita",
+            "kind": "decision"
+          },
+          {
+            "from": "geometry",
+            "to": "interaction",
+            "label": "condiciona",
+            "kind": "decision"
+          },
+          {
+            "from": "interaction",
+            "to": "instrument",
+            "label": "selecciona",
+            "kind": "decision"
+          },
+          {
+            "from": "instrument",
+            "to": "record",
+            "label": "produce",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Orden, etiquetas y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.metrology.bipm.vim"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.metrology.bipm.vim",
+          "documentLocator": "https://www.bipm.org/en/doi/10.59161/jcgm200-2012",
+          "section": "§3.1 y capítulo 4",
+          "verificationMethod": "official-document"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No recomienda marca, modelo o calibración concreta."
+      ],
+      "accessibilitySummary": "De la pregunta al instrumento: Magnitud y pregunta, Rango, acceso y geometría, Fuerza, alineación y riesgo, Instrumento y método, Unidad, referencia y resolución.",
+      "longDescription": "De la pregunta al instrumento. question conduce a geometry: delimita. geometry conduce a interaction: condiciona. interaction conduce a instrument: selecciona. instrument conduce a record: produce.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:738b4522a7f309a2",
+      "visualHash": "fnv1a64:3ea10243a8a8326b",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage3.repeat-measurement.v1",
+      "questionId": "q08-repeat",
+      "lessonIds": [
+        "lesson.metrology.physical-measurement"
+      ],
+      "sectionIds": [
+        "reader.section.block.metrology.physical-measurement.014i-visual-stage3-repeat-measurement-v1"
+      ],
+      "pedagogicalQuestion": "¿Por qué se repite una medición?",
+      "semanticPayload": {
+        "title": "Serie, dispersión y duda",
+        "nodes": [
+          {
+            "id": "method",
+            "label": "Método declarado",
+            "detail": "constante",
+            "emphasis": "primary"
+          },
+          {
+            "id": "read1",
+            "label": "Lectura 1",
+            "detail": "resultado",
+            "emphasis": "normal"
+          },
+          {
+            "id": "read2",
+            "label": "Lectura 2",
+            "detail": "resultado",
+            "emphasis": "normal"
+          },
+          {
+            "id": "read3",
+            "label": "Lectura 3",
+            "detail": "resultado",
+            "emphasis": "normal"
+          },
+          {
+            "id": "series",
+            "label": "Serie registrada",
+            "detail": "dispersión",
+            "emphasis": "normal"
+          },
+          {
+            "id": "limit",
+            "label": "Incertidumbre y límite",
+            "detail": "conclusión",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "method",
+            "to": "read1",
+            "label": "aplica",
+            "kind": "decision"
+          },
+          {
+            "from": "method",
+            "to": "read2",
+            "label": "repite",
+            "kind": "decision"
+          },
+          {
+            "from": "method",
+            "to": "read3",
+            "label": "repite",
+            "kind": "decision"
+          },
+          {
+            "from": "read1",
+            "to": "series",
+            "label": "integra",
+            "kind": "decision"
+          },
+          {
+            "from": "read2",
+            "to": "series",
+            "label": "integra",
+            "kind": "decision"
+          },
+          {
+            "from": "read3",
+            "to": "series",
+            "label": "integra",
+            "kind": "decision"
+          },
+          {
+            "from": "series",
+            "to": "limit",
+            "label": "informa",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Orden, etiquetas y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.metrology.bipm.vim"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.metrology.bipm.vim",
+          "documentLocator": "https://www.bipm.org/en/doi/10.59161/jcgm200-2012",
+          "section": "§§2.20 y 2.26",
+          "verificationMethod": "official-document"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No calcula una incertidumbre ni demuestra exactitud."
+      ],
+      "accessibilitySummary": "Serie, dispersión y duda: Método declarado, Lectura 1, Lectura 2, Lectura 3, Serie registrada, Incertidumbre y límite.",
+      "longDescription": "Serie, dispersión y duda. method conduce a read1: aplica. method conduce a read2: repite. method conduce a read3: repite. read1 conduce a series: integra. read2 conduce a series: integra. read3 conduce a series: integra. series conduce a limit: informa.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:23d85a30867b3beb",
+      "visualHash": "fnv1a64:4e9f8ff34593719a",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage3.comparability.v1",
+      "questionId": "q09-compare",
+      "lessonIds": [
+        "lesson.metrology.compare-data"
+      ],
+      "sectionIds": [
+        "reader.section.block.metrology.compare-data.014i-visual-stage3-comparability-v1"
+      ],
+      "pedagogicalQuestion": "¿Cuándo dos medidas son comparables?",
+      "semanticPayload": {
+        "title": "Puertas de comparabilidad",
+        "nodes": [
+          {
+            "id": "magnitude",
+            "label": "Misma magnitud",
+            "detail": "puerta 1",
+            "emphasis": "primary"
+          },
+          {
+            "id": "unit",
+            "label": "Unidad compatible",
+            "detail": "puerta 2",
+            "emphasis": "normal"
+          },
+          {
+            "id": "datum",
+            "label": "Datum y método",
+            "detail": "puerta 3",
+            "emphasis": "normal"
+          },
+          {
+            "id": "condition",
+            "label": "Condición y orientación",
+            "detail": "puerta 4",
+            "emphasis": "normal"
+          },
+          {
+            "id": "uncertainty",
+            "label": "Redondeo e incertidumbre",
+            "detail": "puerta 5",
+            "emphasis": "normal"
+          },
+          {
+            "id": "comparison",
+            "label": "Comparación permitida",
+            "detail": "salida",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "magnitude",
+            "to": "unit",
+            "label": "comprueba",
+            "kind": "decision"
+          },
+          {
+            "from": "unit",
+            "to": "datum",
+            "label": "comprueba",
+            "kind": "decision"
+          },
+          {
+            "from": "datum",
+            "to": "condition",
+            "label": "comprueba",
+            "kind": "decision"
+          },
+          {
+            "from": "condition",
+            "to": "uncertainty",
+            "label": "comprueba",
+            "kind": "decision"
+          },
+          {
+            "from": "uncertainty",
+            "to": "comparison",
+            "label": "habilita",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Orden, etiquetas y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.metrology.original-course"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.metrology.original-course",
+          "documentLocator": "Síntesis educativa original del curso de metrología",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No crea un criterio de aceptación."
+      ],
+      "accessibilitySummary": "Puertas de comparabilidad: Misma magnitud, Unidad compatible, Datum y método, Condición y orientación, Redondeo e incertidumbre, Comparación permitida.",
+      "longDescription": "Puertas de comparabilidad. magnitude conduce a unit: comprueba. unit conduce a datum: comprueba. datum conduce a condition: comprueba. condition conduce a uncertainty: comprueba. uncertainty conduce a comparison: habilita.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:26299284806d422c",
+      "visualHash": "fnv1a64:a4cf1b3e19ece3d6",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage3.acceptance-authority.v1",
+      "questionId": "q15-acceptance",
+      "lessonIds": [
+        "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+        "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.service-tribology.diagnostico-y-control-final.014i-visual-stage3-acceptance-authority-v1",
+        "reader.section.block.encyclopedia.service-tribology.montaje-y-puntos-de-control.014i-visual-stage3-acceptance-authority-v1"
+      ],
+      "pedagogicalQuestion": "¿De dónde procede un criterio de aceptación?",
+      "semanticPayload": {
+        "title": "Autoridad del criterio",
+        "nodes": [
+          {
+            "id": "manufacturer",
+            "label": "Fabricante",
+            "detail": "aplicabilidad",
+            "emphasis": "primary"
+          },
+          {
+            "id": "design",
+            "label": "Diseño",
+            "detail": "requisito",
+            "emphasis": "normal"
+          },
+          {
+            "id": "measurement",
+            "label": "Medición propia",
+            "detail": "resultado",
+            "emphasis": "normal"
+          },
+          {
+            "id": "educational",
+            "label": "Criterio educativo",
+            "detail": "aprendizaje",
+            "emphasis": "normal"
+          },
+          {
+            "id": "historic",
+            "label": "Comparación histórica",
+            "detail": "no vigente",
+            "emphasis": "warning"
+          },
+          {
+            "id": "unknown",
+            "label": "Desconocido",
+            "detail": "bloquea afirmación",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "manufacturer",
+            "to": "measurement",
+            "label": "se comprueba con",
+            "kind": "decision"
+          },
+          {
+            "from": "design",
+            "to": "measurement",
+            "label": "se valida con",
+            "kind": "decision"
+          },
+          {
+            "from": "educational",
+            "to": "unknown",
+            "label": "no sustituye",
+            "kind": "decision"
+          },
+          {
+            "from": "historic",
+            "to": "unknown",
+            "label": "requiere corroboración",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Orden, etiquetas y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.institutional.awci.standards"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.institutional.awci.standards",
+          "documentLocator": "AWCI Official Standards and Practices for Watchmakers (2011)",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No contiene valores; el fabricante conserva prioridad para un calibre concreto."
+      ],
+      "accessibilitySummary": "Autoridad del criterio: Fabricante, Diseño, Medición propia, Criterio educativo, Comparación histórica, Desconocido.",
+      "longDescription": "Autoridad del criterio. manufacturer conduce a measurement: se comprueba con. design conduce a measurement: se valida con. educational conduce a unknown: no sustituye. historic conduce a unknown: requiere corroboración.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:61d69179aced4619",
+      "visualHash": "fnv1a64:5f9a5eafecab8d41",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    }
+  ],
+  "catalogReferences": [
+    {
+      "lessonId": "lesson.metrology.observe-before-measuring",
+      "visualDesignId": "visual.metrology.observe-first.v1"
+    },
+    {
+      "lessonId": "lesson.metrology.inspection-findings",
+      "visualDesignId": "visual.stage3.finding-record.v1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.recepcion-y-linea-base",
+      "visualDesignId": "visual.intake.baseline-sequence.v1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-inspeccion-previa",
+      "visualDesignId": "visual.stage3.historical-boundary.v1"
+    },
+    {
+      "lessonId": "lesson.metrology.units-scale-resolution",
+      "visualDesignId": "visual.stage3.measurement-terms.v1"
+    },
+    {
+      "lessonId": "lesson.metrology.instruments",
+      "visualDesignId": "visual.stage3.instrument-choice.v1"
+    },
+    {
+      "lessonId": "lesson.metrology.physical-measurement",
+      "visualDesignId": "visual.stage3.repeat-measurement.v1"
+    },
+    {
+      "lessonId": "lesson.metrology.precision-accuracy-uncertainty",
+      "visualDesignId": "visual.stage3.measurement-terms.v1"
+    },
+    {
+      "lessonId": "lesson.metrology.compare-data",
+      "visualDesignId": "visual.stage3.comparability.v1"
+    },
+    {
+      "lessonId": "lesson.horology.failure-prediction",
+      "visualDesignId": "visual.failure-prediction.hypothesis.v1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+      "visualDesignId": "visual.diagnosis.final-control.v1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.diagnostico-y-control-final",
+      "visualDesignId": "visual.stage3.acceptance-authority.v1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tm-diagnostico-sintomas",
+      "visualDesignId": "visual.diagnosis.tm-symptom-tree.v1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.limpieza-e-inspeccion",
+      "visualDesignId": "visual.diagnosis.cleaning-inspection.v1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.tribologia-y-lubricantes",
+      "visualDesignId": "visual.tribology.contact-function.v1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "visualDesignId": "visual.assembly.control-gates.v1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "visualDesignId": "visual.assembly.reasoned-example.v1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.service-tribology.montaje-y-puntos-de-control",
+      "visualDesignId": "visual.stage3.acceptance-authority.v1"
+    }
+  ],
+  "questionCoverage": [
+    "observación-inferencia-hipótesis-diagnóstico",
+    "línea-base",
+    "hallazgo",
+    "magnitud",
+    "instrumento",
+    "resolución-precisión-exactitud-incertidumbre",
+    "paralaje-alineación",
+    "repetición",
+    "comparabilidad",
+    "hipótesis-rivales",
+    "prueba-discriminante",
+    "evidencia-antes-de-limpiar",
+    "contacto-movimiento-lubricación",
+    "controles-de-montaje",
+    "autoridad-de-aceptación"
+  ],
+  "photoBriefs": [
+    {
+      "photoBriefId": "photo-brief.014i.desgaste",
+      "subject": "desgaste",
+      "scale": "macro con escala visible",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "zona completa y detalle localizado",
+      "comparison": "estado de referencia o segunda condición cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "objeto y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "fibra",
+        "polvo de la preparación",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014i.suciedad",
+      "subject": "suciedad",
+      "scale": "macro con escala visible",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "zona completa y detalle localizado",
+      "comparison": "estado de referencia o segunda condición cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "objeto y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "fibra",
+        "polvo de la preparación",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014i.exceso-de-lubricante",
+      "subject": "exceso-de-lubricante",
+      "scale": "macro con escala visible",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "zona completa y detalle localizado",
+      "comparison": "estado de referencia o segunda condición cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "objeto y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "fibra",
+        "polvo de la preparación",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014i.defecto-de-lubricante",
+      "subject": "defecto-de-lubricante",
+      "scale": "macro con escala visible",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "zona completa y detalle localizado",
+      "comparison": "estado de referencia o segunda condición cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "objeto y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "fibra",
+        "polvo de la preparación",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014i.corrosion",
+      "subject": "corrosion",
+      "scale": "macro con escala visible",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "zona completa y detalle localizado",
+      "comparison": "estado de referencia o segunda condición cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "objeto y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "fibra",
+        "polvo de la preparación",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014i.rebabas",
+      "subject": "rebabas",
+      "scale": "macro con escala visible",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "zona completa y detalle localizado",
+      "comparison": "estado de referencia o segunda condición cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "objeto y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "fibra",
+        "polvo de la preparación",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014i.aranazos",
+      "subject": "aranazos",
+      "scale": "macro con escala visible",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "zona completa y detalle localizado",
+      "comparison": "estado de referencia o segunda condición cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "objeto y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "fibra",
+        "polvo de la preparación",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014i.pivotes",
+      "subject": "pivotes",
+      "scale": "macro con escala visible",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "zona completa y detalle localizado",
+      "comparison": "estado de referencia o segunda condición cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "objeto y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "fibra",
+        "polvo de la preparación",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014i.joyas",
+      "subject": "joyas",
+      "scale": "macro con escala visible",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "zona completa y detalle localizado",
+      "comparison": "estado de referencia o segunda condición cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "objeto y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "fibra",
+        "polvo de la preparación",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014i.marcas-de-herramienta",
+      "subject": "marcas-de-herramienta",
+      "scale": "macro con escala visible",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "zona completa y detalle localizado",
+      "comparison": "estado de referencia o segunda condición cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "objeto y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "fibra",
+        "polvo de la preparación",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    }
+  ]
+}

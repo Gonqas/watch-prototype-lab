@@ -1,21 +1,23 @@
 import type { AcademyPersonalCurationPhase } from './types'
 import type { AcademyReaderCurationPhase } from '../academyReaderModel'
 
-export const CURRENT_ACADEMY_CURATION_PHASE = '0.14H' as const
+export const CURRENT_ACADEMY_CURATION_PHASE = '0.14I' as const
 
 export const ACADEMY_READER_CURATION_PHASES: readonly AcademyReaderCurationPhase[] = [
   '0.14D',
   '0.14E',
   '0.14F',
   '0.14G',
-  CURRENT_ACADEMY_CURATION_PHASE,
+  '0.14H',
+  '0.14I',
 ] as const
 
 export const ACADEMY_PERSONAL_CURATION_PHASES: readonly AcademyPersonalCurationPhase[] = [
   '0.14E',
   '0.14F',
   '0.14G',
-  CURRENT_ACADEMY_CURATION_PHASE,
+  '0.14H',
+  '0.14I',
 ] as const
 
 export const ACADEMY_COMPATIBILITY_PHASES = ['0.14C'] as const
@@ -27,6 +29,7 @@ export const ACADEMY_CURATION_LAYER_REGISTRY = [
   { phase: '0.14F', layerId: 'stage-0', purpose: 'etapa 0 completa' },
   { phase: '0.14G', layerId: 'stage-1', purpose: 'etapa 1 completa' },
   { phase: '0.14H', layerId: 'stage-2', purpose: 'etapa 2 completa' },
+  { phase: '0.14I', layerId: 'stage-0-1-remediation-and-stage-3', purpose: 'preservación activa de etapas 0–1 y etapa 3 completa' },
 ] as const
 
 function phaseRank(phase: string): number {

@@ -72,7 +72,7 @@ export interface AcademyEditorialReview {
   ownerReviewedAt?: string
   personalStatus?: AcademyPersonalReviewStatus
   personalReviewedAt?: string
-  version: '0.14D' | '0.14E' | '0.14F' | '0.14G' | '0.14H'
+  version: '0.14D' | '0.14E' | '0.14F' | '0.14G' | '0.14H' | '0.14I'
   updatedAt: string
 }
 
@@ -460,7 +460,7 @@ function normalizeEditorialReview(value: unknown): AcademyEditorialReview | unde
       ? value.personalStatus as AcademyPersonalReviewStatus
       : value.status === 'owner-reviewed' ? 'clear' : 'not-reviewed',
     personalReviewedAt: typeof value.personalReviewedAt === 'string' ? value.personalReviewedAt : undefined,
-    version: value.version === '0.14H' ? '0.14H' : value.version === '0.14G' ? '0.14G' : value.version === '0.14F' ? '0.14F' : value.version === '0.14E' ? '0.14E' : '0.14D',
+    version: value.version === '0.14I' ? '0.14I' : value.version === '0.14H' ? '0.14H' : value.version === '0.14G' ? '0.14G' : value.version === '0.14F' ? '0.14F' : value.version === '0.14E' ? '0.14E' : '0.14D',
     updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : new Date(0).toISOString(),
   }
 }
@@ -1136,7 +1136,9 @@ let browserStore: AcademyLocalStore | undefined
 export function academyLocalStore(): AcademyLocalStore {
   if (browserStore) return browserStore
   try {
-    browserStore = new AcademyLocalStore(window.localStorage)
+    const storage = (globalThis as typeof globalThis & { localStorage?: AcademyStorage }).localStorage
+    if (!storage) throw new Error('localStorage no disponible')
+    browserStore = new AcademyLocalStore(storage)
   } catch {
     const values = new Map<string, string>()
     browserStore = new AcademyLocalStore({

@@ -1,0 +1,3350 @@
+{
+  "schema": "wplab-stage-0-1-preservation-remediation-v1",
+  "phase": "0.14I",
+  "counts": {
+    "lessons": 12,
+    "stage0": 4,
+    "stage1": 8,
+    "sourceSections": 145,
+    "sourceWords": 11345,
+    "dispositions": 145,
+    "substantiveCoverage": 1
+  },
+  "auditedUnchanged": [
+    {
+      "lessonId": "lesson.quartz2035.workstation",
+      "decision": "unchanged",
+      "reason": "No se demostró pérdida semántica en la lectura activa."
+    },
+    {
+      "lessonId": "lesson.quartz2035.tools",
+      "decision": "unchanged",
+      "reason": "No se demostró pérdida semántica en la lectura activa."
+    }
+  ],
+  "lessons": [
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "macroStage": 0,
+      "historicalPhase": "0.14F",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.014f-caso-razonado",
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.014f-decision-segura"
+      ],
+      "rationale": "Recupera la teoría authored y conserva el caso de control de piezas y la decisión de no empezar.",
+      "sourceSections": 11,
+      "sourceWords": 1105,
+      "historicalVisibleWords": 438,
+      "visible014IWords": 1218,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 11,
+      "historicContentHash": "fnv1a64:bd837c4f8095c8a3",
+      "activeContentHash": "fnv1a64:bf0e864fcea330c8"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "macroStage": 0,
+      "historicalPhase": "0.14F",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.014f-luz-y-aumento",
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.014f-caso-brillo-o-defecto"
+      ],
+      "rationale": "Conserva el visual de cambio de condición y el contraste entre apariencia e interpretación.",
+      "sourceSections": 11,
+      "sourceWords": 1061,
+      "historicalVisibleWords": 440,
+      "visible014IWords": 1180,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 11,
+      "historicContentHash": "fnv1a64:d670ebc74dac5cfd",
+      "activeContentHash": "fnv1a64:decb6b6ceace50a1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "macroStage": 0,
+      "historicalPhase": "0.14F",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.014f-mapa-de-transferencia",
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.014f-limpieza-sin-recetas"
+      ],
+      "rationale": "Conserva el mapa preventivo y el límite explícito que evita recetas.",
+      "sourceSections": 11,
+      "sourceWords": 1110,
+      "historicalVisibleWords": 432,
+      "visible014IWords": 1231,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 11,
+      "historicContentHash": "fnv1a64:cbc1dfc44fc496e3",
+      "activeContentHash": "fnv1a64:9be66db6b12ec175"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "macroStage": 0,
+      "historicalPhase": "0.14F",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.014f-criterio-personal",
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.014f-errores-y-danos"
+      ],
+      "rationale": "Conserva autoobservación, daños y señales de parada sin certificar destreza.",
+      "sourceSections": 11,
+      "sourceWords": 1078,
+      "historicalVisibleWords": 463,
+      "visible014IWords": 1193,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 11,
+      "historicContentHash": "fnv1a64:c3d60312798aa99a",
+      "activeContentHash": "fnv1a64:8b7577cf0367890b"
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "macroStage": 1,
+      "historicalPhase": "0.14G",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.horology.system.014g-capas",
+        "reader.section.block.horology.system.014g-caso"
+      ],
+      "rationale": "Conserva el visual de capas y el caso que distingue reloj completo y movimiento.",
+      "sourceSections": 15,
+      "sourceWords": 666,
+      "historicalVisibleWords": 409,
+      "visible014IWords": 769,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 15,
+      "historicContentHash": "fnv1a64:ccb3c9e306d00903",
+      "activeContentHash": "fnv1a64:c4691239c1e2238e"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "macroStage": 1,
+      "historicalPhase": "0.14G",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-organos",
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.014g-puente"
+      ],
+      "rationale": "Conserva el mapa funcional y el puente, sin exigir detalles que la visión general introduce.",
+      "sourceSections": 11,
+      "sourceWords": 1085,
+      "historicalVisibleWords": 378,
+      "visible014IWords": 1169,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 11,
+      "historicContentHash": "fnv1a64:06ff1926764c3d40",
+      "activeContentHash": "fnv1a64:f7fd6cd429e6a654"
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "macroStage": 1,
+      "historicalPhase": "0.14G",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.horology.mechanical-chain.014g-mapa",
+        "reader.section.block.horology.mechanical-chain.014g-fallo"
+      ],
+      "rationale": "Conserva el bucle visual y el caso de interrupción junto a la teoría extensa.",
+      "sourceSections": 15,
+      "sourceWords": 677,
+      "historicalVisibleWords": 401,
+      "visible014IWords": 776,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 15,
+      "historicContentHash": "fnv1a64:91113640a1feecca",
+      "activeContentHash": "fnv1a64:e8b7a070201bfa7f"
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "macroStage": 1,
+      "historicalPhase": "0.14G",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.horology.quartz-chain.014g-mapa",
+        "reader.section.block.horology.quartz-chain.014g-comparacion"
+      ],
+      "rationale": "Conserva la especialización visual de cuarzo y su comparación limitada.",
+      "sourceSections": 15,
+      "sourceWords": 738,
+      "historicalVisibleWords": 383,
+      "visible014IWords": 836,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 15,
+      "historicContentHash": "fnv1a64:bcbccfbf07ad935c",
+      "activeContentHash": "fnv1a64:89972ada98e29b15"
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "macroStage": 1,
+      "historicalPhase": "0.14G",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.horology.functional-equivalence.014g-matriz",
+        "reader.section.block.horology.functional-equivalence.014g-caso"
+      ],
+      "rationale": "Conserva equivalencias parciales y el límite de transferencia.",
+      "sourceSections": 15,
+      "sourceWords": 654,
+      "historicalVisibleWords": 370,
+      "visible014IWords": 751,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 15,
+      "historicContentHash": "fnv1a64:5d0e15a62f95c174",
+      "activeContentHash": "fnv1a64:3a95f041a14daff6"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "macroStage": 1,
+      "historicalPhase": "0.14G",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.014g-tipos",
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.014g-caso"
+      ],
+      "rationale": "Conserva el visual de autoridad documental y el caso de aplicabilidad.",
+      "sourceSections": 11,
+      "sourceWords": 1195,
+      "historicalVisibleWords": 397,
+      "visible014IWords": 1294,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 11,
+      "historicContentHash": "fnv1a64:b42ec290b5cbd162",
+      "activeContentHash": "fnv1a64:e99a5b5f1369f1ad"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "macroStage": 1,
+      "historicalPhase": "0.14G",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-mapa",
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.014g-caso"
+      ],
+      "rationale": "Conserva el mapa referencia–conteo–escala y la comparación histórica.",
+      "sourceSections": 11,
+      "sourceWords": 1159,
+      "historicalVisibleWords": 346,
+      "visible014IWords": 1254,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 11,
+      "historicContentHash": "fnv1a64:677b4ce6304c2097",
+      "activeContentHash": "fnv1a64:55a08e1338b9667b"
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "macroStage": 1,
+      "historicalPhase": "0.14G",
+      "selectedHistoricalSectionIds": [
+        "reader.section.block.advanced.atlas-authority.014g-ruta",
+        "reader.section.block.advanced.atlas-authority.014g-caso"
+      ],
+      "rationale": "Conserva la ruta de procedencia y el caso de variante no confirmada.",
+      "sourceSections": 8,
+      "sourceWords": 817,
+      "historicalVisibleWords": 363,
+      "visible014IWords": 909,
+      "substantiveCoverage": 1,
+      "sourceDispositionCount": 8,
+      "historicContentHash": "fnv1a64:b5f2645343aea2ca",
+      "activeContentHash": "fnv1a64:56804fe104624d1a"
+    }
+  ],
+  "dispositions": [
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.resultado-buscado-y-condicion-segura",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "explanation",
+      "sourceHeading": "Resultado buscado y condición segura",
+      "sourceWordCount": 140,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.resultado-buscado-y-condicion-segura"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.1-zona-de-trabajo-controlada",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "explanation",
+      "sourceHeading": "1. zona de trabajo controlada",
+      "sourceWordCount": 90,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.1-zona-de-trabajo-controlada"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.2-control-de-piezas",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "explanation",
+      "sourceHeading": "2. control de piezas",
+      "sourceWordCount": 88,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.2-control-de-piezas"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.3-parada-segura",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "explanation",
+      "sourceHeading": "3. parada segura",
+      "sourceWordCount": 87,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.3-parada-segura"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.secuencia-controles-y-puntos-de-parada",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "procedure",
+      "sourceHeading": "Secuencia, controles y puntos de parada",
+      "sourceWordCount": 204,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.secuencia-controles-y-puntos-de-parada"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.condiciones-y-criterios-de-aceptacion",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "explanation",
+      "sourceHeading": "Condiciones y criterios de aceptación",
+      "sourceWordCount": 80,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.condiciones-y-criterios-de-aceptacion"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.ejemplo-de-trabajo-razonado",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "worked-example",
+      "sourceHeading": "Ejemplo de trabajo razonado",
+      "sourceWordCount": 115,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.ejemplo-de-trabajo-razonado"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.errores-de-proceso-y-senales-de-parada",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "common-errors",
+      "sourceHeading": "Errores de proceso y señales de parada",
+      "sourceWordCount": 81,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.errores-de-proceso-y-senales-de-parada"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.fuentes-y-alcance",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes y alcance",
+      "sourceWordCount": 69,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.fuentes-y-alcance"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.practica-deliberada-y-transferencia",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Práctica deliberada y transferencia",
+      "sourceWordCount": 87,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.practica-deliberada-y-transferencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.comprueba-antes-de-continuar",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.banco-y-seguridad",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Comprueba antes de continuar",
+      "sourceWordCount": 64,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.banco-y-seguridad.comprueba-antes-de-continuar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.zona-de-trabajo-controlada",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.control-de-piezas",
+        "concept.encyclopedia.workshop-tools-materials.banco-y-seguridad.parada-segura"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.banco-y-seguridad"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.sintoma-observacion-y-pregunta-diagnostica",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "diagnosis",
+      "sourceHeading": "Síntoma, observación y pregunta diagnóstica",
+      "sourceWordCount": 126,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.sintoma-observacion-y-pregunta-diagnostica"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.1-campo-de-vision",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "explanation",
+      "sourceHeading": "1. campo de visión",
+      "sourceWordCount": 91,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.1-campo-de-vision"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.2-iluminacion-rasante",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "explanation",
+      "sourceHeading": "2. iluminación rasante",
+      "sourceWordCount": 84,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.2-iluminacion-rasante"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.3-manipulacion-atraumatica",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "explanation",
+      "sourceHeading": "3. manipulación atraumática",
+      "sourceWordCount": 81,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.3-manipulacion-atraumatica"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.de-la-observacion-a-la-prueba-discriminante",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "observation",
+      "sourceHeading": "De la observación a la prueba discriminante",
+      "sourceWordCount": 199,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.de-la-observacion-a-la-prueba-discriminante"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.medidas-referencias-y-umbrales",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "reference",
+      "sourceHeading": "Medidas, referencias y umbrales",
+      "sourceWordCount": 79,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.medidas-referencias-y-umbrales"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.caso-diagnostico-razonado",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "diagnosis",
+      "sourceHeading": "Caso diagnóstico razonado",
+      "sourceWordCount": 112,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.caso-diagnostico-razonado"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.sesgos-y-conclusiones-prematuras",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "summary",
+      "sourceHeading": "Sesgos y conclusiones prematuras",
+      "sourceWordCount": 76,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.sesgos-y-conclusiones-prematuras"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.fuentes-y-alcance",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes y alcance",
+      "sourceWordCount": 66,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.fuentes-y-alcance"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.practica-deliberada-y-transferencia",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Práctica deliberada y transferencia",
+      "sourceWordCount": 87,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.practica-deliberada-y-transferencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.comprueba-antes-de-continuar",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Comprueba antes de continuar",
+      "sourceWordCount": 60,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.comprueba-antes-de-continuar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.campo-de-vision",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.iluminacion-rasante",
+        "concept.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion.manipulacion-atraumatica"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.observacion-optica-manipulacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.resultado-buscado-y-condicion-segura",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "explanation",
+      "sourceHeading": "Resultado buscado y condición segura",
+      "sourceWordCount": 137,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.resultado-buscado-y-condicion-segura"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.1-contaminante",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "explanation",
+      "sourceHeading": "1. contaminante",
+      "sourceWordCount": 85,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.1-contaminante"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.2-compatibilidad-quimica",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "explanation",
+      "sourceHeading": "2. compatibilidad química",
+      "sourceWordCount": 88,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.2-compatibilidad-quimica"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.3-arrastre-cruzado",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "explanation",
+      "sourceHeading": "3. arrastre cruzado",
+      "sourceWordCount": 88,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.3-arrastre-cruzado"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.secuencia-controles-y-puntos-de-parada",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "procedure",
+      "sourceHeading": "Secuencia, controles y puntos de parada",
+      "sourceWordCount": 212,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.secuencia-controles-y-puntos-de-parada"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.condiciones-y-criterios-de-aceptacion",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "explanation",
+      "sourceHeading": "Condiciones y criterios de aceptación",
+      "sourceWordCount": 75,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.condiciones-y-criterios-de-aceptacion"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.ejemplo-de-trabajo-razonado",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "worked-example",
+      "sourceHeading": "Ejemplo de trabajo razonado",
+      "sourceWordCount": 122,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.ejemplo-de-trabajo-razonado"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.errores-de-proceso-y-senales-de-parada",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "common-errors",
+      "sourceHeading": "Errores de proceso y señales de parada",
+      "sourceWordCount": 86,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.errores-de-proceso-y-senales-de-parada"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.fuentes-y-alcance",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes y alcance",
+      "sourceWordCount": 71,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.fuentes-y-alcance"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.practica-deliberada-y-transferencia",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Práctica deliberada y transferencia",
+      "sourceWordCount": 86,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.practica-deliberada-y-transferencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.comprueba-antes-de-continuar",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Comprueba antes de continuar",
+      "sourceWordCount": 60,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.comprueba-antes-de-continuar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.contaminante",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.compatibilidad-quimica",
+        "concept.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza.arrastre-cruzado"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.contaminacion-y-limpieza"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.resultado-buscado-y-condicion-segura",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "explanation",
+      "sourceHeading": "Resultado buscado y condición segura",
+      "sourceWordCount": 139,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.resultado-buscado-y-condicion-segura"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.1-agarre-controlado",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "explanation",
+      "sourceHeading": "1. agarre controlado",
+      "sourceWordCount": 81,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.1-agarre-controlado"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.2-alineacion-de-herramienta",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "explanation",
+      "sourceHeading": "2. alineación de herramienta",
+      "sourceWordCount": 81,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.2-alineacion-de-herramienta"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.3-criterio-de-parada",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "explanation",
+      "sourceHeading": "3. criterio de parada",
+      "sourceWordCount": 85,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.3-criterio-de-parada"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.secuencia-controles-y-puntos-de-parada",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "procedure",
+      "sourceHeading": "Secuencia, controles y puntos de parada",
+      "sourceWordCount": 214,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.secuencia-controles-y-puntos-de-parada"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.condiciones-y-criterios-de-aceptacion",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "explanation",
+      "sourceHeading": "Condiciones y criterios de aceptación",
+      "sourceWordCount": 82,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.condiciones-y-criterios-de-aceptacion"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.ejemplo-de-trabajo-razonado",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "worked-example",
+      "sourceHeading": "Ejemplo de trabajo razonado",
+      "sourceWordCount": 101,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.ejemplo-de-trabajo-razonado"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.errores-de-proceso-y-senales-de-parada",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "common-errors",
+      "sourceHeading": "Errores de proceso y señales de parada",
+      "sourceWordCount": 67,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.errores-de-proceso-y-senales-de-parada"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.fuentes-y-alcance",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes y alcance",
+      "sourceWordCount": 80,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.fuentes-y-alcance"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.practica-deliberada-y-transferencia",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Práctica deliberada y transferencia",
+      "sourceWordCount": 82,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.practica-deliberada-y-transferencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceSectionId": "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.comprueba-antes-de-continuar",
+      "sourceBlockId": "block.encyclopedia.workshop-tools-materials.bulova-destreza-basica",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Comprueba antes de continuar",
+      "sourceWordCount": 66,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.workshop-tools-materials.bulova-destreza-basica.comprueba-antes-de-continuar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.agarre-controlado",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.alineacion-de-herramienta",
+        "concept.encyclopedia.workshop-tools-materials.bulova-destreza-basica.criterio-de-parada"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.workshop-tools-materials.bulova-destreza-basica"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.proposito",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "preparation",
+      "sourceHeading": "Propósito",
+      "sourceWordCount": 30,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.proposito"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.conocimientos-previos",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "preparation",
+      "sourceHeading": "Conocimientos previos",
+      "sourceWordCount": 31,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.conocimientos-previos"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.objetivos-observables",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "preparation",
+      "sourceHeading": "Objetivos observables",
+      "sourceWordCount": 32,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.objetivos-observables"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.explicacion-principal",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "preparation",
+      "sourceHeading": "Explicación principal",
+      "sourceWordCount": 161,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.explicacion-principal"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": [
+        "term.horology.movement",
+        "term.horology.jewel"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.explicacion-visual",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "visual-anatomy",
+      "sourceHeading": "Explicación visual",
+      "sourceWordCount": 47,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.explicacion-visual"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.vocabulario",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "vocabulary",
+      "sourceHeading": "Vocabulario",
+      "sourceWordCount": 40,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.vocabulario"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": [
+        "term.horology.movement",
+        "term.horology.pinion",
+        "term.horology.arbor",
+        "term.horology.pivot"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.fuentes",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes",
+      "sourceWordCount": 41,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.fuentes"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.ejemplo",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "worked-example",
+      "sourceHeading": "Ejemplo",
+      "sourceWordCount": 58,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.ejemplo"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.errores-habituales",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "common-errors",
+      "sourceHeading": "Errores habituales",
+      "sourceWordCount": 38,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.errores-habituales"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.actividad",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Actividad",
+      "sourceWordCount": 38,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.actividad"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.feedback",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Feedback",
+      "sourceWordCount": 29,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.feedback"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.evidencia",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Evidencia",
+      "sourceWordCount": 27,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.evidencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.criterio-de-exito",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Criterio de éxito",
+      "sourceWordCount": 28,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.criterio-de-exito"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.resumen",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "summary",
+      "sourceHeading": "Resumen",
+      "sourceWordCount": 36,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.resumen"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.system",
+      "sourceSectionId": "reader.section.block.horology.system.siguiente-conexion",
+      "sourceBlockId": "block.horology.system",
+      "sourceRole": "next-connection",
+      "sourceHeading": "Siguiente conexión",
+      "sourceWordCount": 30,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.system.siguiente-conexion"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.watch-anatomy",
+        "concept.horology.part-language",
+        "concept.horology.functional-chain"
+      ],
+      "claimIds": [
+        "claim.horology.watch-functional-system"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.pregunta-de-funcionamiento",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "explanation",
+      "sourceHeading": "Pregunta de funcionamiento",
+      "sourceWordCount": 133,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.pregunta-de-funcionamiento"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.1-cadena-energetica",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "explanation",
+      "sourceHeading": "1. cadena energética",
+      "sourceWordCount": 76,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.1-cadena-energetica"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.2-cadena-informativa",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "explanation",
+      "sourceHeading": "2. cadena informativa",
+      "sourceWordCount": 88,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.2-cadena-informativa"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.3-estado-de-carga",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "explanation",
+      "sourceHeading": "3. estado de carga",
+      "sourceWordCount": 84,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.3-estado-de-carga"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-de-funcionamiento",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "explanation",
+      "sourceHeading": "Cadena de funcionamiento",
+      "sourceWordCount": 238,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-de-funcionamiento"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.magnitudes-que-cambian-el-resultado",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "explanation",
+      "sourceHeading": "Magnitudes que cambian el resultado",
+      "sourceWordCount": 78,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.magnitudes-que-cambian-el-resultado"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.mecanismo-aplicado-a-un-caso",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "explanation",
+      "sourceHeading": "Mecanismo aplicado a un caso",
+      "sourceWordCount": 105,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.mecanismo-aplicado-a-un-caso"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.confusiones-mecanicas-que-debes-detectar",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "common-errors",
+      "sourceHeading": "Confusiones mecánicas que debes detectar",
+      "sourceWordCount": 69,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.confusiones-mecanicas-que-debes-detectar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.fuentes-y-alcance",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes y alcance",
+      "sourceWordCount": 72,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.fuentes-y-alcance"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.practica-deliberada-y-transferencia",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Práctica deliberada y transferencia",
+      "sourceWordCount": 72,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.practica-deliberada-y-transferencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceSectionId": "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.comprueba-antes-de-continuar",
+      "sourceBlockId": "block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Comprueba antes de continuar",
+      "sourceWordCount": 70,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.comprueba-antes-de-continuar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-energetica",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.cadena-informativa",
+        "concept.encyclopedia.mechanical-energy-trains.toh-movimiento-simple.estado-de-carga"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.mechanical-energy-trains.toh-movimiento-simple"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.proposito",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "preparation",
+      "sourceHeading": "Propósito",
+      "sourceWordCount": 21,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.proposito"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.conocimientos-previos",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "preparation",
+      "sourceHeading": "Conocimientos previos",
+      "sourceWordCount": 20,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.conocimientos-previos"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.objetivos-observables",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "preparation",
+      "sourceHeading": "Objetivos observables",
+      "sourceWordCount": 27,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.objetivos-observables"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.explicacion-principal",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "explanation",
+      "sourceHeading": "Explicación principal",
+      "sourceWordCount": 252,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.explicacion-principal"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": [
+        "term.horology.mainspring",
+        "term.horology.barrel",
+        "term.horology.escape-wheel",
+        "term.horology.escapement",
+        "term.horology.pallet-fork",
+        "term.horology.balance-wheel",
+        "term.horology.balance-spring",
+        "term.horology.oscillation",
+        "term.horology.frequency",
+        "term.horology.amplitude"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.explicacion-visual",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "visual-anatomy",
+      "sourceHeading": "Explicación visual",
+      "sourceWordCount": 52,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.explicacion-visual"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.vocabulario",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "vocabulary",
+      "sourceHeading": "Vocabulario",
+      "sourceWordCount": 44,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.vocabulario"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": [
+        "term.horology.pivot",
+        "term.horology.jewel"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.fuentes",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes",
+      "sourceWordCount": 32,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.fuentes"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.ejemplo",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "worked-example",
+      "sourceHeading": "Ejemplo",
+      "sourceWordCount": 49,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.ejemplo"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.errores-habituales",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "common-errors",
+      "sourceHeading": "Errores habituales",
+      "sourceWordCount": 39,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.errores-habituales"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.actividad",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Actividad",
+      "sourceWordCount": 29,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.actividad"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.ayuda-despues-de-responder",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Ayuda después de responder",
+      "sourceWordCount": 21,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.ayuda-despues-de-responder"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.evidencia",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Evidencia",
+      "sourceWordCount": 25,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.evidencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.criterio-de-exito",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Criterio de éxito",
+      "sourceWordCount": 19,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.criterio-de-exito"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.resumen",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "summary",
+      "sourceHeading": "Resumen",
+      "sourceWordCount": 22,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.resumen"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.mechanical-chain",
+      "sourceSectionId": "reader.section.block.horology.mechanical-chain.siguiente-conexion",
+      "sourceBlockId": "block.horology.mechanical-chain",
+      "sourceRole": "next-connection",
+      "sourceHeading": "Siguiente conexión",
+      "sourceWordCount": 25,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.mechanical-chain.siguiente-conexion"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.mechanical-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.8215.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.proposito",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "preparation",
+      "sourceHeading": "Propósito",
+      "sourceWordCount": 24,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.proposito"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.conocimientos-previos",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "preparation",
+      "sourceHeading": "Conocimientos previos",
+      "sourceWordCount": 24,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.conocimientos-previos"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.objetivos-observables",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "preparation",
+      "sourceHeading": "Objetivos observables",
+      "sourceWordCount": 35,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.objetivos-observables"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.explicacion-principal",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "explanation",
+      "sourceHeading": "Explicación principal",
+      "sourceWordCount": 246,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.explicacion-principal"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": [
+        "term.horology.battery",
+        "term.horology.integrated-circuit",
+        "term.horology.resonador de cuarzo",
+        "term.horology.coil",
+        "term.horology.rotor paso a paso"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.explicacion-visual",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "visual-anatomy",
+      "sourceHeading": "Explicación visual",
+      "sourceWordCount": 66,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.explicacion-visual"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.vocabulario",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "vocabulary",
+      "sourceHeading": "Vocabulario",
+      "sourceWordCount": 29,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.vocabulario"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": [
+        "term.horology.wheel",
+        "term.horology.pinion",
+        "term.horology.arbor",
+        "term.horology.minutería"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.fuentes",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes",
+      "sourceWordCount": 33,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.fuentes"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.ejemplo",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "worked-example",
+      "sourceHeading": "Ejemplo",
+      "sourceWordCount": 59,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.ejemplo"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.errores-habituales",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "common-errors",
+      "sourceHeading": "Errores habituales",
+      "sourceWordCount": 39,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.errores-habituales"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.actividad",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Actividad",
+      "sourceWordCount": 32,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.actividad"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.ayuda-despues-de-responder",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Ayuda después de responder",
+      "sourceWordCount": 28,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.ayuda-despues-de-responder"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.evidencia",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Evidencia",
+      "sourceWordCount": 34,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.evidencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.criterio-de-exito",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Criterio de éxito",
+      "sourceWordCount": 22,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.criterio-de-exito"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.resumen",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "summary",
+      "sourceHeading": "Resumen",
+      "sourceWordCount": 26,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.resumen"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.quartz-chain",
+      "sourceSectionId": "reader.section.block.horology.quartz-chain.siguiente-conexion",
+      "sourceBlockId": "block.horology.quartz-chain",
+      "sourceRole": "next-connection",
+      "sourceHeading": "Siguiente conexión",
+      "sourceWordCount": 41,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.quartz-chain.siguiente-conexion"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.quartz-chain"
+      ],
+      "claimIds": [
+        "claim.miyota.2035.documented-parts"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.proposito",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "preparation",
+      "sourceHeading": "Propósito",
+      "sourceWordCount": 19,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.proposito"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.conocimientos-previos",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "preparation",
+      "sourceHeading": "Conocimientos previos",
+      "sourceWordCount": 15,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.conocimientos-previos"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.objetivos-observables",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "preparation",
+      "sourceHeading": "Objetivos observables",
+      "sourceWordCount": 22,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.objetivos-observables"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.explicacion-principal",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "worked-example",
+      "sourceHeading": "Explicación principal",
+      "sourceWordCount": 278,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.explicacion-principal"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.explicacion-visual",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "visual-anatomy",
+      "sourceHeading": "Explicación visual",
+      "sourceWordCount": 50,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.explicacion-visual"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.vocabulario",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "vocabulary",
+      "sourceHeading": "Vocabulario",
+      "sourceWordCount": 19,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.vocabulario"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": [
+        "term.horology.indication",
+        "term.horology.transmission",
+        "term.horology.regulation"
+      ]
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.fuentes",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes",
+      "sourceWordCount": 33,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.fuentes"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.ejemplo",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "worked-example",
+      "sourceHeading": "Ejemplo",
+      "sourceWordCount": 44,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.ejemplo"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.errores-habituales",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "common-errors",
+      "sourceHeading": "Errores habituales",
+      "sourceWordCount": 31,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.errores-habituales"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.actividad",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Actividad",
+      "sourceWordCount": 27,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.actividad"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.ayuda-despues-de-responder",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Ayuda después de responder",
+      "sourceWordCount": 31,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.ayuda-despues-de-responder"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.evidencia",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Evidencia",
+      "sourceWordCount": 30,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.evidencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.criterio-de-exito",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Criterio de éxito",
+      "sourceWordCount": 16,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.criterio-de-exito"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.resumen",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "summary",
+      "sourceHeading": "Resumen",
+      "sourceWordCount": 19,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.resumen"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.horology.functional-equivalence",
+      "sourceSectionId": "reader.section.block.horology.functional-equivalence.siguiente-conexion",
+      "sourceBlockId": "block.horology.functional-equivalence",
+      "sourceRole": "next-connection",
+      "sourceHeading": "Siguiente conexión",
+      "sourceWordCount": 20,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.horology.functional-equivalence.siguiente-conexion"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.horology.functional-equivalence"
+      ],
+      "claimIds": [
+        "claim.horology.functional-equivalence-limited"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.problema-y-contexto-historico",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "explanation",
+      "sourceHeading": "Problema y contexto histórico",
+      "sourceWordCount": 140,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.problema-y-contexto-historico"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.1-dato-nominal",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "explanation",
+      "sourceHeading": "1. dato nominal",
+      "sourceWordCount": 99,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.1-dato-nominal"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.2-revision-documental",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "explanation",
+      "sourceHeading": "2. revisión documental",
+      "sourceWordCount": 99,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.2-revision-documental"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.3-procedencia-por-afirmacion",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "reference",
+      "sourceHeading": "3. procedencia por afirmación",
+      "sourceWordCount": 99,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.3-procedencia-por-afirmacion"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.cambio-continuidad-y-consecuencia",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "procedure",
+      "sourceHeading": "Cambio, continuidad y consecuencia",
+      "sourceWordCount": 227,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.cambio-continuidad-y-consecuencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.escalas-y-evidencia-comparables",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Escalas y evidencia comparables",
+      "sourceWordCount": 82,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.escalas-y-evidencia-comparables"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.comparacion-historica-guiada",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "comparison",
+      "sourceHeading": "Comparación histórica guiada",
+      "sourceWordCount": 113,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.comparacion-historica-guiada"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.anacronismos-y-atajos-que-conviene-evitar",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "explanation",
+      "sourceHeading": "Anacronismos y atajos que conviene evitar",
+      "sourceWordCount": 91,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.anacronismos-y-atajos-que-conviene-evitar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.fuentes-y-alcance",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes y alcance",
+      "sourceWordCount": 84,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.fuentes-y-alcance"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.practica-deliberada-y-transferencia",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Práctica deliberada y transferencia",
+      "sourceWordCount": 94,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.practica-deliberada-y-transferencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.leer-documentacion",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.leer-documentacion.comprueba-antes-de-continuar",
+      "sourceBlockId": "block.encyclopedia.history-language.leer-documentacion",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Comprueba antes de continuar",
+      "sourceWordCount": 67,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.leer-documentacion.comprueba-antes-de-continuar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.leer-documentacion.dato-nominal",
+        "concept.encyclopedia.history-language.leer-documentacion.revision-documental",
+        "concept.encyclopedia.history-language.leer-documentacion.procedencia-por-afirmacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.leer-documentacion"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.problema-y-contexto-historico",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "explanation",
+      "sourceHeading": "Problema y contexto histórico",
+      "sourceWordCount": 142,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.problema-y-contexto-historico"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.1-referencia-temporal",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "explanation",
+      "sourceHeading": "1. referencia temporal",
+      "sourceWordCount": 96,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.1-referencia-temporal"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.2-oscilador",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "explanation",
+      "sourceHeading": "2. oscilador",
+      "sourceWordCount": 96,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.2-oscilador"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.3-conteo-y-visualizacion",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "visual-anatomy",
+      "sourceHeading": "3. conteo y visualización",
+      "sourceWordCount": 93,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.3-conteo-y-visualizacion"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.cambio-continuidad-y-consecuencia",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "procedure",
+      "sourceHeading": "Cambio, continuidad y consecuencia",
+      "sourceWordCount": 203,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.cambio-continuidad-y-consecuencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.escalas-y-evidencia-comparables",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Escalas y evidencia comparables",
+      "sourceWordCount": 88,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.escalas-y-evidencia-comparables"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.comparacion-historica-guiada",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "comparison",
+      "sourceHeading": "Comparación histórica guiada",
+      "sourceWordCount": 123,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.comparacion-historica-guiada"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.anacronismos-y-atajos-que-conviene-evitar",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "explanation",
+      "sourceHeading": "Anacronismos y atajos que conviene evitar",
+      "sourceWordCount": 93,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.anacronismos-y-atajos-que-conviene-evitar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.fuentes-y-alcance",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "sources",
+      "sourceHeading": "Fuentes y alcance",
+      "sourceWordCount": 66,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.fuentes-y-alcance"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.practica-deliberada-y-transferencia",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Práctica deliberada y transferencia",
+      "sourceWordCount": 92,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.practica-deliberada-y-transferencia"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.encyclopedia.history-language.medir-el-tiempo",
+      "sourceSectionId": "reader.section.block.encyclopedia.history-language.medir-el-tiempo.comprueba-antes-de-continuar",
+      "sourceBlockId": "block.encyclopedia.history-language.medir-el-tiempo",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Comprueba antes de continuar",
+      "sourceWordCount": 67,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.encyclopedia.history-language.medir-el-tiempo.comprueba-antes-de-continuar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.encyclopedia.history-language.medir-el-tiempo.referencia-temporal",
+        "concept.encyclopedia.history-language.medir-el-tiempo.oscilador",
+        "concept.encyclopedia.history-language.medir-el-tiempo.conteo-y-visualizacion"
+      ],
+      "claimIds": [
+        "claim.encyclopedia.history-language.medir-el-tiempo"
+      ],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "sourceSectionId": "reader.section.block.advanced.atlas-authority.pregunta-de-diseno",
+      "sourceBlockId": "block.advanced.atlas-authority",
+      "sourceRole": "explanation",
+      "sourceHeading": "Pregunta de diseño",
+      "sourceWordCount": 55,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.advanced.atlas-authority.pregunta-de-diseno"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.advanced.atlas-authority"
+      ],
+      "claimIds": [],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "sourceSectionId": "reader.section.block.advanced.atlas-authority.modelo-causal",
+      "sourceBlockId": "block.advanced.atlas-authority",
+      "sourceRole": "explanation",
+      "sourceHeading": "Modelo causal",
+      "sourceWordCount": 156,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.advanced.atlas-authority.modelo-causal"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.advanced.atlas-authority"
+      ],
+      "claimIds": [],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "sourceSectionId": "reader.section.block.advanced.atlas-authority.comparacion-y-compromisos",
+      "sourceBlockId": "block.advanced.atlas-authority",
+      "sourceRole": "comparison",
+      "sourceHeading": "Comparación y compromisos",
+      "sourceWordCount": 149,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.advanced.atlas-authority.comparacion-y-compromisos"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.advanced.atlas-authority"
+      ],
+      "claimIds": [],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "sourceSectionId": "reader.section.block.advanced.atlas-authority.ejemplo-razonado",
+      "sourceBlockId": "block.advanced.atlas-authority",
+      "sourceRole": "worked-example",
+      "sourceHeading": "Ejemplo razonado",
+      "sourceWordCount": 126,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.advanced.atlas-authority.ejemplo-razonado"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.advanced.atlas-authority"
+      ],
+      "claimIds": [],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "sourceSectionId": "reader.section.block.advanced.atlas-authority.metodo-de-estudio",
+      "sourceBlockId": "block.advanced.atlas-authority",
+      "sourceRole": "explanation",
+      "sourceHeading": "Método de estudio",
+      "sourceWordCount": 124,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.advanced.atlas-authority.metodo-de-estudio"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.advanced.atlas-authority"
+      ],
+      "claimIds": [],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "sourceSectionId": "reader.section.block.advanced.atlas-authority.errores-que-debes-detectar",
+      "sourceBlockId": "block.advanced.atlas-authority",
+      "sourceRole": "common-errors",
+      "sourceHeading": "Errores que debes detectar",
+      "sourceWordCount": 70,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.advanced.atlas-authority.errores-que-debes-detectar"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.advanced.atlas-authority"
+      ],
+      "claimIds": [],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "sourceSectionId": "reader.section.block.advanced.atlas-authority.comprobacion-antes-de-la-practica",
+      "sourceBlockId": "block.advanced.atlas-authority",
+      "sourceRole": "checkpoint",
+      "sourceHeading": "Comprobación antes de la práctica",
+      "sourceWordCount": 88,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.advanced.atlas-authority.comprobacion-antes-de-la-practica"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.advanced.atlas-authority"
+      ],
+      "claimIds": [],
+      "glossaryTermIds": []
+    },
+    {
+      "lessonId": "lesson.advanced.atlas-authority",
+      "sourceSectionId": "reader.section.block.advanced.atlas-authority.cierre",
+      "sourceBlockId": "block.advanced.atlas-authority",
+      "sourceRole": "explanation",
+      "sourceHeading": "Cierre",
+      "sourceWordCount": 49,
+      "action": "retained",
+      "targetSectionIds": [
+        "reader.section.block.advanced.atlas-authority.cierre"
+      ],
+      "reason": "La sección authored permanece íntegra y visible; la curación solo organiza o complementa su lectura.",
+      "conceptIds": [
+        "concept.advanced.atlas-authority"
+      ],
+      "claimIds": [],
+      "glossaryTermIds": []
+    }
+  ]
+}
