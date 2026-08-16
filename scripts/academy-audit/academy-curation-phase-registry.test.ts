@@ -13,9 +13,9 @@ import type { AcademyReaderCurationPhase } from '../../src/learning/academy/read
 
 describe('registro acumulativo de curación 0.14I', () => {
   it('define el orden canónico completo y la fase activa', () => {
-    expect(ACADEMY_READER_CURATION_PHASES).toEqual(['0.14D', '0.14E', '0.14F', '0.14G', '0.14H', '0.14I'])
-    expect(ACADEMY_PERSONAL_CURATION_PHASES).toEqual(['0.14E', '0.14F', '0.14G', '0.14H', '0.14I'])
-    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14I')
+    expect(ACADEMY_READER_CURATION_PHASES).toEqual(['0.14D', '0.14E', '0.14F', '0.14G', '0.14H', '0.14I', '0.14J'])
+    expect(ACADEMY_PERSONAL_CURATION_PHASES).toEqual(['0.14E', '0.14F', '0.14G', '0.14H', '0.14I', '0.14J'])
+    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14J')
   })
 
   it.each(ACADEMY_READER_CURATION_PHASES.flatMap((phase, phaseRank) =>

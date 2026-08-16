@@ -49,8 +49,30 @@ export function academyContentPreservation(
   const sourceBoilerplateWords = sourceSections.filter(academySourceSectionIsBoilerplate).reduce((sum, { wordCount }) => sum + wordCount, 0)
   const sourceSubstantiveWords = sourceTotalWords - sourceBoilerplateWords
   const dispositionById = new Map(dispositions.map((item) => [item.sourceSectionId, item]))
+  if (dispositionById.size !== dispositions.length) throw new Error(`Disposiciones duplicadas en ${lessonId}.`)
   const missing = sourceSections.filter(({ sectionId }) => !dispositionById.has(sectionId))
   if (missing.length) throw new Error(`Secciones fuente sin disposición en ${lessonId}: ${missing.map(({ sectionId }) => sectionId).join(', ')}`)
+  const visibleById = new Map(visibleSections.map((section) => [section.sectionId, section]))
+  for (const disposition of dispositions) {
+    const targets = disposition.targetSectionIds.map((targetId) => visibleById.get(targetId))
+    if (['retained', 'merged', 'replaced-equivalent'].includes(disposition.action)) {
+      if (!disposition.targetSectionIds.length || targets.some((target) => !target || !target.markdown.trim())) {
+        throw new Error(`La disposición ${disposition.action} de ${disposition.sourceSectionId} no resuelve un target visible no vacío.`)
+      }
+      if (!disposition.reason.trim()) throw new Error(`La disposición ${disposition.sourceSectionId} no declara razón.`)
+      const visibleConceptIds = new Set(targets.flatMap((target) => target?.conceptIds ?? []))
+      const visibleClaimIds = new Set(targets.flatMap((target) => target?.claimIds ?? []))
+      const visibleGlossaryIds = new Set(targets.flatMap((target) => target?.glossaryTermIds ?? []))
+      if (disposition.conceptIds.some((id) => !visibleConceptIds.has(id))
+        || disposition.claimIds.some((id) => !visibleClaimIds.has(id))
+        || disposition.glossaryTermIds.some((id) => !visibleGlossaryIds.has(id))) {
+        throw new Error(`La disposición ${disposition.sourceSectionId} pierde metadatos trazables en sus targets visibles.`)
+      }
+    }
+    if (disposition.action.startsWith('removed-') && !disposition.reason.trim()) {
+      throw new Error(`La eliminación ${disposition.sourceSectionId} no declara razón.`)
+    }
+  }
   const actions = (wanted: readonly AcademySourceSectionDispositionAction[]) => dispositions.filter(({ action }) => wanted.includes(action))
   const retainedIds = new Set(actions(['retained']).map(({ sourceSectionId }) => sourceSectionId))
   const retainedSourceWords = sourceSections

@@ -1,0 +1,1543 @@
+{
+  "schema": "wplab-stage4-3d-v1",
+  "phase": "0.14J",
+  "counts": {
+    "states": 7,
+    "partMappings": 56,
+    "selectorMappings": 16,
+    "sourceNeeded": 1
+  },
+  "states": [
+    {
+      "visualStateId": "reader.3d.miyota8215.overview",
+      "decision": "keep",
+      "reason": "Localiza un ensamblaje y sus grupos sin afirmar escala o tolerancias.",
+      "technicalStatus": "source-limited",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "R2 estructural con geometría interna normalizada.",
+          "Sin lubricación, desgaste, choque ni tolerancias internas validadas."
+        ]
+      },
+      "selectedIds": [],
+      "isolatedIds": [],
+      "expectedObservation": "Los subsistemas comparten un único ensamblaje y ocupan capas distintas alrededor de la estructura base.",
+      "limitations": [
+        "Fixture R2 estructural del MIYOTA 8215; la geometría interna está normalizada y no expresa tolerancias de servicio.",
+        "El fixture no representa escala real, holgura correcta, desgaste ni servicio."
+      ],
+      "reducedMotionSafe": true,
+      "fallback": "La alternativa textual enumera piezas, relación, evidencia y límite sin requerir WebGL."
+    },
+    {
+      "visualStateId": "reader.3d.miyota8215.train-isolated",
+      "decision": "keep",
+      "reason": "Aísla piezas modeladas del tren; contactos y geometría permanecen inferidos.",
+      "technicalStatus": "source-limited",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "R2 estructural con geometría interna normalizada.",
+          "Sin lubricación, desgaste, choque ni tolerancias internas validadas."
+        ]
+      },
+      "selectedIds": [
+        "selector.miyota.8215.train"
+      ],
+      "isolatedIds": [
+        "selector.miyota.8215.train"
+      ],
+      "expectedObservation": "El selector aísla únicamente las ruedas del tren modeladas, sin duplicar el calibre ni afirmar geometría medida.",
+      "limitations": [
+        "Fixture R2 estructural del MIYOTA 8215; la geometría interna está normalizada y no expresa tolerancias de servicio.",
+        "El fixture no representa escala real, holgura correcta, desgaste ni servicio."
+      ],
+      "reducedMotionSafe": true,
+      "fallback": "La alternativa textual enumera piezas, relación, evidencia y límite sin requerir WebGL."
+    },
+    {
+      "visualStateId": "reader.3d.miyota8215.automatic-isolated",
+      "decision": "correct",
+      "reason": "La ruta completa, sentidos y eficiencia no se presentan como oficiales.",
+      "technicalStatus": "source-limited",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "R2 estructural con geometría interna normalizada.",
+          "Sin lubricación, desgaste, choque ni tolerancias internas validadas."
+        ]
+      },
+      "selectedIds": [
+        "selector.miyota.8215.automatic-winding"
+      ],
+      "isolatedIds": [
+        "selector.miyota.8215.automatic-winding"
+      ],
+      "expectedObservation": "La masa oscilante y las ruedas automáticas forman un subsistema distinto del tren de marcha.",
+      "limitations": [
+        "Fixture R2 estructural del MIYOTA 8215; la geometría interna está normalizada y no expresa tolerancias de servicio.",
+        "La ruta cinemática completa del automático sigue declarada como parcialmente inferida.",
+        "El fixture no representa escala real, holgura correcta, desgaste ni servicio."
+      ],
+      "reducedMotionSafe": true,
+      "fallback": "La alternativa textual enumera piezas, relación, evidencia y límite sin requerir WebGL."
+    },
+    {
+      "visualStateId": "reader.3d.miyota8215.rotor-checkpoint",
+      "decision": "correct",
+      "reason": "Muestra una fijación y dependencia, no herramienta, par, dirección ni primer paso.",
+      "technicalStatus": "source-limited",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "R2 estructural con geometría interna normalizada.",
+          "Sin lubricación, desgaste, choque ni tolerancias internas validadas."
+        ]
+      },
+      "selectedIds": [
+        "instance:screw-rotor",
+        "instance:oscillating-weight"
+      ],
+      "isolatedIds": [
+        "instance:screw-rotor",
+        "instance:oscillating-weight"
+      ],
+      "expectedObservation": "La fijación se reconoce antes que la pieza retirada; el estado solo documenta la dependencia, no una destreza física.",
+      "limitations": [
+        "Fixture R2 estructural del MIYOTA 8215; la geometría interna está normalizada y no expresa tolerancias de servicio.",
+        "Explosión visual simbólica; no representa una distancia de extracción ni autoriza el procedimiento.",
+        "El fixture no representa escala real, holgura correcta, desgaste ni servicio."
+      ],
+      "reducedMotionSafe": true,
+      "fallback": "La alternativa textual enumera piezas, relación, evidencia y límite sin requerir WebGL."
+    },
+    {
+      "visualStateId": "reader.3d.miyota8215.barrel-bridge-checkpoint",
+      "decision": "source-needed",
+      "reason": "Solo puede mostrar dependencia; el orden físico necesita fuente de servicio.",
+      "technicalStatus": "source-needed",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "R2 estructural con geometría interna normalizada.",
+          "Sin lubricación, desgaste, choque ni tolerancias internas validadas."
+        ]
+      },
+      "selectedIds": [
+        "instance:screw-barrel-bridge",
+        "instance:barrel-bridge",
+        "instance:barrel-complete"
+      ],
+      "isolatedIds": [
+        "instance:screw-barrel-bridge",
+        "instance:barrel-bridge",
+        "instance:barrel-complete"
+      ],
+      "expectedObservation": "El orden parcial separa fijación, puente y conjunto completo; no completa un manual de desmontaje.",
+      "limitations": [
+        "Fixture R2 estructural del MIYOTA 8215; la geometría interna está normalizada y no expresa tolerancias de servicio.",
+        "Orden parcial inferido del despiece; requiere validación física y documental moderna.",
+        "El fixture no representa escala real, holgura correcta, desgaste ni servicio."
+      ],
+      "reducedMotionSafe": true,
+      "fallback": "La alternativa textual enumera piezas, relación, evidencia y límite sin requerir WebGL."
+    },
+    {
+      "visualStateId": "reader.3d.miyota8215.inspection-train",
+      "decision": "keep",
+      "reason": "Localiza el tren sin representar desgaste, suciedad o holguras.",
+      "technicalStatus": "source-limited",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "R2 estructural con geometría interna normalizada.",
+          "Sin lubricación, desgaste, choque ni tolerancias internas validadas."
+        ]
+      },
+      "selectedIds": [
+        "selector.miyota.8215.train"
+      ],
+      "isolatedIds": [
+        "selector.miyota.8215.train"
+      ],
+      "expectedObservation": "La observación identifica el sistema y la incertidumbre; el modelo no permite concluir desgaste o tolerancia.",
+      "limitations": [
+        "Fixture R2 estructural del MIYOTA 8215; la geometría interna está normalizada y no expresa tolerancias de servicio.",
+        "No se simulan holguras, suciedad, rayas, pivotes ni desgaste medible.",
+        "El fixture no representa escala real, holgura correcta, desgaste ni servicio."
+      ],
+      "reducedMotionSafe": true,
+      "fallback": "La alternativa textual enumera piezas, relación, evidencia y límite sin requerir WebGL."
+    },
+    {
+      "visualStateId": "reader.3d.miyota8215.inspection-support",
+      "decision": "keep",
+      "reason": "Localiza una interfaz sin declarar que la holgura sea correcta.",
+      "technicalStatus": "source-limited",
+      "fidelity": {
+        "geometry": "G2",
+        "kinematics": "K2",
+        "physics": "P0",
+        "limitations": [
+          "R2 estructural con geometría interna normalizada.",
+          "Sin lubricación, desgaste, choque ni tolerancias internas validadas."
+        ]
+      },
+      "selectedIds": [
+        "instance:center-wheel",
+        "instance:center-wheel-cock"
+      ],
+      "isolatedIds": [
+        "instance:center-wheel",
+        "instance:center-wheel-cock"
+      ],
+      "expectedObservation": "La interfaz de apoyo puede localizarse, pero el fixture no aporta un criterio dimensional de aceptación.",
+      "limitations": [
+        "Fixture R2 estructural del MIYOTA 8215; la geometría interna está normalizada y no expresa tolerancias de servicio.",
+        "El fixture no representa escala real, holgura correcta, desgaste ni servicio."
+      ],
+      "reducedMotionSafe": true,
+      "fallback": "La alternativa textual enumera piezas, relación, evidencia y límite sin requerir WebGL."
+    }
+  ],
+  "partMappings": [
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_02osuickpp06u",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_3r81d3fp9y06n"
+      ],
+      "officialName": null,
+      "preferredSpanishName": "Envolvente oficial del movimiento",
+      "partReference": null,
+      "sourceId": "source.miyota.8215.specification",
+      "documentSnapshot": null,
+      "functionalGroup": "structure",
+      "geometryStatus": "official-dimensions-present",
+      "modelMappingStatus": "unknown",
+      "reconstructionLevel": "R1",
+      "limitations": [
+        "Cilindro de envolvente, no contorno de platina."
+      ]
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_0yexlx56noeaz",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0lm88ri320o46"
+      ],
+      "officialName": null,
+      "preferredSpanishName": "Estructura base visible",
+      "partReference": null,
+      "sourceId": "source.miyota.8215.product-page",
+      "documentSnapshot": null,
+      "functionalGroup": "structure",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "unknown",
+      "reconstructionLevel": "R2",
+      "limitations": [
+        "Sin referencia oficial separada en la lista; contorno normalizado."
+      ]
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_2r7qdj8fz2set",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_1mlu2yfnrzubo"
+      ],
+      "officialName": "Balance cock complete",
+      "preferredSpanishName": "Puente de volante completo",
+      "partReference": "350-005",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "structure",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_2bwwrm1e1yrzp",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_1882dyb2de0is"
+      ],
+      "officialName": "Balance with hairspring regulated",
+      "preferredSpanishName": "Volante con espiral regulada",
+      "partReference": "039-102",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "regulation",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": [
+        "La lista oficial identifica un conjunto; volante y espiral no se presentan como dos recambios independientes."
+      ]
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_3kabe0882s8do",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0vxkjqtk9dirt"
+      ],
+      "officialName": "Barrel bridge",
+      "preferredSpanishName": "Puente de barrilete",
+      "partReference": "701-263",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "structure",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1vf3hum8v9jp2",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_00i7szckmc3zj"
+      ],
+      "officialName": "Barrel complete",
+      "preferredSpanishName": "Barrilete completo",
+      "partReference": "001-870",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "power-source",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": [
+        "La lista oficial identifica el barrilete completo; el muelle no se modela como recambio separado."
+      ]
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_0k1pnqajgo1oh",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0cxx05vj24g5s"
+      ],
+      "officialName": "Brake lever for second hand",
+      "preferredSpanishName": "Palanca de freno de segundero",
+      "partReference": "269-408",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "keyless",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_11hrmrd2ec3pf",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_18d25yfoxtsny"
+      ],
+      "officialName": "Calendar corrector lever",
+      "preferredSpanishName": "Palanca correctora de calendario",
+      "partReference": "116-300",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "calendar",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_2q6tindyd826h",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0xkiyy0h9arew"
+      ],
+      "officialName": "Center wheel and pinion",
+      "preferredSpanishName": "Rueda de centro y piñón",
+      "partReference": "012-116",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "train",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_354ag7fp6qmss",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_1p7c5altkaocp"
+      ],
+      "officialName": "Center wheel cock",
+      "preferredSpanishName": "Puente de rueda de centro",
+      "partReference": "711-074",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "structure",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_2lcf51tspmybq",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0bx6r7bbnmxvj"
+      ],
+      "officialName": "Click",
+      "preferredSpanishName": "Trinquete",
+      "partReference": "060-390",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "power-source",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_15torw9mtdlh4",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0aw14kh4y4syd"
+      ],
+      "officialName": "Click spring",
+      "preferredSpanishName": "Muelle de trinquete",
+      "partReference": "903-700",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "power-source",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_2hyxrxkfx1cs1",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_26svg5n3sd6bk"
+      ],
+      "officialName": "Clutch wheel",
+      "preferredSpanishName": "Piñón corredizo",
+      "partReference": "064-450",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "keyless",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1pq8mdqi69vwj",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0d43t07yeceou"
+      ],
+      "officialName": "Crown wheel",
+      "preferredSpanishName": "Rueda de corona",
+      "partReference": "058-360",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "keyless",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1v185lb4tsv72",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_2qkl771luy80n"
+      ],
+      "officialName": "Date corrector spring",
+      "preferredSpanishName": "Muelle corrector de fecha",
+      "partReference": "903-A31",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "calendar",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_3rzoy6bkzvhwb",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_2yom6jlyr1kw6"
+      ],
+      "officialName": "Date dial",
+      "preferredSpanishName": "Disco de fecha",
+      "partReference": "108-9500",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "calendar",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_31sp21v262a4m",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_2i00uu18gck8v"
+      ],
+      "officialName": "Date dial driving wheel",
+      "preferredSpanishName": "Rueda conductora de fecha",
+      "partReference": "103-650",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "calendar",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_16iukna3ebb3f",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_11jjv1b0z6ahi"
+      ],
+      "officialName": "Date dial guard",
+      "preferredSpanishName": "Protector del disco de fecha",
+      "partReference": "176-150",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "calendar",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_3m7960bhv51h2",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0wrntcl98l6un"
+      ],
+      "officialName": "Date jumper",
+      "preferredSpanishName": "Saltador de fecha",
+      "partReference": "109-350",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "calendar",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1r7xixanb4xr7",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_3fqckngw2ehz2"
+      ],
+      "officialName": "Escape wheel and pinion",
+      "preferredSpanishName": "Rueda de escape y piñón",
+      "partReference": "032-106",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "escapement",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_2rvj28nno3xis",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_3rsj9qp0usc01"
+      ],
+      "officialName": "Fourth wheel and pinion",
+      "preferredSpanishName": "Cuarta rueda y piñón",
+      "partReference": "023-940",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "train",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_07o5zyic4nzzr",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_00isrwwoqevrm"
+      ],
+      "officialName": "Friction spring for center second pinion",
+      "preferredSpanishName": "Muelle de fricción del piñón de segundero",
+      "partReference": "903-690",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "motion-works",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_2iwt4whk3e6oa",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0ia5hhsy8dxhv"
+      ],
+      "officialName": "Hour wheel",
+      "preferredSpanishName": "Rueda de horas",
+      "partReference": "075-124",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "motion-works",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1of7nhbovwg1c",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_077lxmiyz61fh"
+      ],
+      "officialName": "Intermediate date wheel",
+      "preferredSpanishName": "Rueda intermedia de fecha",
+      "partReference": "100-170",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "calendar",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_3hgxngjlypzah",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_196ms4jpn8g4o"
+      ],
+      "officialName": "Intermediate wheel",
+      "preferredSpanishName": "Rueda intermedia",
+      "partReference": "087-250",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "automatic",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_3a6cqm472yhe8",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_2c7mcc2x0sie5"
+      ],
+      "officialName": "Intermediate wheel washer",
+      "preferredSpanishName": "Arandela de rueda intermedia",
+      "partReference": "078-150",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "automatic",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_08dhpyl8asrx7",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_149lsh895gdmu"
+      ],
+      "officialName": "Jeweled pallet fork and staff",
+      "preferredSpanishName": "Áncora enjoyada con eje",
+      "partReference": "035-560",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "escapement",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1fv2ewfvooplg",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_06oa3y1y6fa75"
+      ],
+      "officialName": "Lower cap jewel mounted",
+      "preferredSpanishName": "Contrapiedra inferior montada",
+      "partReference": "094-040",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "regulation",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_06weveq0meftw",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_31f3mazr3nkvl"
+      ],
+      "officialName": "Minute wheel and pinion",
+      "preferredSpanishName": "Rueda de minutería y piñón",
+      "partReference": "072-520",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "motion-works",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_0dj2kg5z3l8rs",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_24ojzvo1xvj9h"
+      ],
+      "officialName": "Minute wheel guard",
+      "preferredSpanishName": "Protector de rueda de minutería",
+      "partReference": "079-600",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "structure",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_2a6jrqp3zb8ok",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_02cylmo8h1wch"
+      ],
+      "officialName": "Casing holder (Plastic)",
+      "preferredSpanishName": "Portamovimiento plástico",
+      "partReference": "500-710",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "structure",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1n3k07m77ortm",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_3hiodsr3ffioz"
+      ],
+      "officialName": "Oscillating weight",
+      "preferredSpanishName": "Masa oscilante",
+      "partReference": "119-A76",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "automatic",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_36uejsgvmobcv",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0mnqercly2f9m"
+      ],
+      "officialName": "Pallet cock",
+      "preferredSpanishName": "Puente de áncora",
+      "partReference": "708-095",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "structure",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_0ztjwwn7pgbcj",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_1bqmkihodx2mm"
+      ],
+      "officialName": "Pawl winding wheel",
+      "preferredSpanishName": "Rueda de carga con trinquete",
+      "partReference": "141-190",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "automatic",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_17z3rzcbms3ht",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_3mlv7ulwm97uo"
+      ],
+      "officialName": "Ratchet wheel",
+      "preferredSpanishName": "Rueda de rochete",
+      "partReference": "059-560",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "power-source",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_31aypqucfa33t",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_01kvvo9he7bi0"
+      ],
+      "officialName": "Reduction wheel",
+      "preferredSpanishName": "Rueda reductora",
+      "partReference": "088-120",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "automatic",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_2h9279wyvu4pj",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0owr6ggp6lz5e"
+      ],
+      "officialName": "Second hand brake connection lever",
+      "preferredSpanishName": "Palanca de conexión del freno de segundero",
+      "partReference": "273-201",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "keyless",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1h4026ghb3amz",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_24qeziawaf5ty"
+      ],
+      "officialName": "Setting lever",
+      "preferredSpanishName": "Tirete",
+      "partReference": "067-860",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "keyless",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1bz3qx2n7t36n",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_12ozfln8rdwh6"
+      ],
+      "officialName": "Setting lever spring",
+      "preferredSpanishName": "Muelle de tirete",
+      "partReference": "077-680",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "keyless",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_0ixy3cmk9gazo",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_1tjlk1ne4pp4h"
+      ],
+      "officialName": "Setting wheel",
+      "preferredSpanishName": "Rueda de puesta en hora",
+      "partReference": "076-430",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "keyless",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_2sbd83o7wbdzd",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_1b7hjyrazdl8o",
+        "pi_fixture-miyota-8215-stru_1b7hl4umpvra9"
+      ],
+      "officialName": "Spiral spring with jewel",
+      "preferredSpanishName": "Muelle espiral con rubí",
+      "partReference": "098-090",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "regulation",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_0c0c3j6wrcsqr",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_353ree1czha8u"
+      ],
+      "officialName": "Center second pinion",
+      "preferredSpanishName": "Piñón de segundero central",
+      "partReference": "025-670",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "motion-works",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_3nyx72vq2uhkl",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_107uo4mg441gk"
+      ],
+      "officialName": "Third wheel and pinion",
+      "preferredSpanishName": "Tercera rueda y piñón",
+      "partReference": "017-760",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "train",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_0xdyny6cepf61",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_13xx1l7v65g7c"
+      ],
+      "officialName": "Upper cap jewel mounted",
+      "preferredSpanishName": "Contrapiedra superior montada",
+      "partReference": "094-010",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "regulation",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_03fx9lmbzqs18",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_2ko0dv1i9rt55"
+      ],
+      "officialName": "Washer for wheel",
+      "preferredSpanishName": "Arandela para rueda",
+      "partReference": "078-140",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "train",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_27igjztgfcg8y",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_3n69f7psh5igr"
+      ],
+      "officialName": "Winding stem",
+      "preferredSpanishName": "Tija de remontuar",
+      "partReference": "065-212",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "keyless",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_33lyepnbiuj7q",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_24b8qcoe5jptr"
+      ],
+      "officialName": "Yoke",
+      "preferredSpanishName": "Báscula",
+      "partReference": "071-A04",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "keyless",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R2",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_0nf0znq9lzt0l",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_287947kycusgk",
+        "pi_fixture-miyota-8215-stru_28795doa3cyi5",
+        "pi_fixture-miyota-8215-stru_28794zn66iwhm"
+      ],
+      "officialName": "Screw for barrel and train wheel bridge",
+      "preferredSpanishName": "Tornillo de puente de barrilete/tren",
+      "partReference": "924-460",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "fasteners",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1lt26k4lymoq7",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_1ty9nyukp14hm",
+        "pi_fixture-miyota-8215-stru_1ty9nktgs72h3"
+      ],
+      "officialName": "Screw for center wheel cock",
+      "preferredSpanishName": "Tornillo de puente de rueda de centro",
+      "partReference": "923-600",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "fasteners",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_3tgbhbzz7cy85",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0bcqdccpcw5kk",
+        "pi_fixture-miyota-8215-stru_0bcqeig13ebm5",
+        "pi_fixture-miyota-8215-stru_0bcqe4ex6k9lm",
+        "pi_fixture-miyota-8215-stru_0bcqc69dmdziz"
+      ],
+      "officialName": "Screw for date dial guard",
+      "preferredSpanishName": "Tornillo de protector de fecha",
+      "partReference": "923-630",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "fasteners",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_3ax0cvpj2fevz",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_1f12b9sqdbt62"
+      ],
+      "officialName": "Screw for oscillating weight",
+      "preferredSpanishName": "Tornillo de masa oscilante",
+      "partReference": "925-490",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "fasteners",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1y93ec9h185ri",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_3k9gy5rba6kif"
+      ],
+      "officialName": "Screw for pallet bridge",
+      "preferredSpanishName": "Tornillo de puente de áncora",
+      "partReference": "923-600",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "fasteners",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_3erv12zfwgfdq",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0bg13564vbhfr"
+      ],
+      "officialName": "Screw for balance bridge",
+      "preferredSpanishName": "Tornillo de puente de volante",
+      "partReference": "924-460",
+      "sourceId": "source.miyota.8215.parts-list-exploded-view",
+      "documentSnapshot": "snapshot.miyota.8215.parts-list.fdafef81",
+      "functionalGroup": "fasteners",
+      "geometryStatus": "not-modelled",
+      "modelMappingStatus": "official-identified",
+      "reconstructionLevel": "R0",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_16b7bc1yfz53c",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_0hwtqzkwsq1et"
+      ],
+      "officialName": null,
+      "preferredSpanishName": "Interfaz de aguja horaria",
+      "partReference": null,
+      "sourceId": "source.miyota.8215.drawing",
+      "documentSnapshot": null,
+      "functionalGroup": "indication",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "unknown",
+      "reconstructionLevel": "R1",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_13nj0swavreoe",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_2p1wa8yn1avjr"
+      ],
+      "officialName": null,
+      "preferredSpanishName": "Interfaz de aguja minutera",
+      "partReference": null,
+      "sourceId": "source.miyota.8215.drawing",
+      "documentSnapshot": null,
+      "functionalGroup": "indication",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "unknown",
+      "reconstructionLevel": "R1",
+      "limitations": []
+    },
+    {
+      "canonicalId": "pd_fixture-miyota-8215-stru_1b76wvi27t2mm",
+      "instanceIds": [
+        "pi_fixture-miyota-8215-stru_1vwaa91w30rlj"
+      ],
+      "officialName": null,
+      "preferredSpanishName": "Interfaz de segundero",
+      "partReference": null,
+      "sourceId": "source.miyota.8215.drawing",
+      "documentSnapshot": null,
+      "functionalGroup": "indication",
+      "geometryStatus": "normalized-educational",
+      "modelMappingStatus": "unknown",
+      "reconstructionLevel": "R1",
+      "limitations": []
+    }
+  ],
+  "selectorMappings": [
+    {
+      "selectorId": "selector.miyota.8215.mainspring",
+      "purpose": "Resolver el rol semántico mainspring.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_00i7szckmc3zj"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_00i7szckmc3zj"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.barrel",
+      "purpose": "Resolver el rol semántico barrel.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_00i7szckmc3zj"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_00i7szckmc3zj"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.escape-wheel",
+      "purpose": "Resolver el rol semántico escape-wheel.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_3fqckngw2ehz2"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_3fqckngw2ehz2"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.pallet-fork",
+      "purpose": "Resolver el rol semántico pallet-fork.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_149lsh895gdmu"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_149lsh895gdmu"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.balance",
+      "purpose": "Resolver el rol semántico balance.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_1882dyb2de0is"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_1882dyb2de0is"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.hairspring",
+      "purpose": "Resolver el rol semántico hairspring.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_1882dyb2de0is"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_1882dyb2de0is"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.train",
+      "purpose": "Resolver las ruedas del tren disponibles.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_0xkiyy0h9arew",
+        "pi_fixture-miyota-8215-stru_107uo4mg441gk",
+        "pi_fixture-miyota-8215-stru_2ko0dv1i9rt55",
+        "pi_fixture-miyota-8215-stru_3rsj9qp0usc01"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_0xkiyy0h9arew",
+        "pi_fixture-miyota-8215-stru_107uo4mg441gk",
+        "pi_fixture-miyota-8215-stru_2ko0dv1i9rt55",
+        "pi_fixture-miyota-8215-stru_3rsj9qp0usc01"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.keyless",
+      "purpose": "Resolver cuerda y puesta en hora.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_0cxx05vj24g5s",
+        "pi_fixture-miyota-8215-stru_0d43t07yeceou",
+        "pi_fixture-miyota-8215-stru_0owr6ggp6lz5e",
+        "pi_fixture-miyota-8215-stru_12ozfln8rdwh6",
+        "pi_fixture-miyota-8215-stru_1tjlk1ne4pp4h",
+        "pi_fixture-miyota-8215-stru_24b8qcoe5jptr",
+        "pi_fixture-miyota-8215-stru_24qeziawaf5ty",
+        "pi_fixture-miyota-8215-stru_26svg5n3sd6bk",
+        "pi_fixture-miyota-8215-stru_3n69f7psh5igr"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_0cxx05vj24g5s",
+        "pi_fixture-miyota-8215-stru_0d43t07yeceou",
+        "pi_fixture-miyota-8215-stru_0owr6ggp6lz5e",
+        "pi_fixture-miyota-8215-stru_12ozfln8rdwh6",
+        "pi_fixture-miyota-8215-stru_1tjlk1ne4pp4h",
+        "pi_fixture-miyota-8215-stru_24b8qcoe5jptr",
+        "pi_fixture-miyota-8215-stru_24qeziawaf5ty",
+        "pi_fixture-miyota-8215-stru_26svg5n3sd6bk",
+        "pi_fixture-miyota-8215-stru_3n69f7psh5igr"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.motion-works",
+      "purpose": "Resolver la minutería disponible.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_00isrwwoqevrm",
+        "pi_fixture-miyota-8215-stru_0ia5hhsy8dxhv",
+        "pi_fixture-miyota-8215-stru_31f3mazr3nkvl",
+        "pi_fixture-miyota-8215-stru_353ree1czha8u"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_00isrwwoqevrm",
+        "pi_fixture-miyota-8215-stru_0ia5hhsy8dxhv",
+        "pi_fixture-miyota-8215-stru_31f3mazr3nkvl",
+        "pi_fixture-miyota-8215-stru_353ree1czha8u"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.automatic-winding",
+      "purpose": "Resolver el conjunto automático sin crear otro ensamblaje.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_01kvvo9he7bi0",
+        "pi_fixture-miyota-8215-stru_196ms4jpn8g4o",
+        "pi_fixture-miyota-8215-stru_1bqmkihodx2mm",
+        "pi_fixture-miyota-8215-stru_2c7mcc2x0sie5",
+        "pi_fixture-miyota-8215-stru_3hiodsr3ffioz"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_01kvvo9he7bi0",
+        "pi_fixture-miyota-8215-stru_196ms4jpn8g4o",
+        "pi_fixture-miyota-8215-stru_1bqmkihodx2mm",
+        "pi_fixture-miyota-8215-stru_2c7mcc2x0sie5",
+        "pi_fixture-miyota-8215-stru_3hiodsr3ffioz"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.calendar",
+      "purpose": "Resolver el calendario sin crear otro ensamblaje.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_077lxmiyz61fh",
+        "pi_fixture-miyota-8215-stru_0wrntcl98l6un",
+        "pi_fixture-miyota-8215-stru_11jjv1b0z6ahi",
+        "pi_fixture-miyota-8215-stru_18d25yfoxtsny",
+        "pi_fixture-miyota-8215-stru_2i00uu18gck8v",
+        "pi_fixture-miyota-8215-stru_2qkl771luy80n",
+        "pi_fixture-miyota-8215-stru_2yom6jlyr1kw6"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_077lxmiyz61fh",
+        "pi_fixture-miyota-8215-stru_0wrntcl98l6un",
+        "pi_fixture-miyota-8215-stru_11jjv1b0z6ahi",
+        "pi_fixture-miyota-8215-stru_18d25yfoxtsny",
+        "pi_fixture-miyota-8215-stru_2i00uu18gck8v",
+        "pi_fixture-miyota-8215-stru_2qkl771luy80n",
+        "pi_fixture-miyota-8215-stru_2yom6jlyr1kw6"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.indication",
+      "purpose": "Resolver las interfaces de agujas.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_0hwtqzkwsq1et",
+        "pi_fixture-miyota-8215-stru_1vwaa91w30rlj",
+        "pi_fixture-miyota-8215-stru_2p1wa8yn1avjr"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_0hwtqzkwsq1et",
+        "pi_fixture-miyota-8215-stru_1vwaa91w30rlj",
+        "pi_fixture-miyota-8215-stru_2p1wa8yn1avjr"
+      ],
+      "confidence": "low",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.jewels",
+      "purpose": "Resolver únicamente apoyos enjoyados identificados en el ledger.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_06oa3y1y6fa75",
+        "pi_fixture-miyota-8215-stru_13xx1l7v65g7c",
+        "pi_fixture-miyota-8215-stru_1b7hjyrazdl8o",
+        "pi_fixture-miyota-8215-stru_1b7hl4umpvra9"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_06oa3y1y6fa75",
+        "pi_fixture-miyota-8215-stru_13xx1l7v65g7c",
+        "pi_fixture-miyota-8215-stru_1b7hjyrazdl8o",
+        "pi_fixture-miyota-8215-stru_1b7hl4umpvra9"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.fasteners",
+      "purpose": "Resolver tornillería oficial modelada.",
+      "entityIds": [
+        "pi_fixture-miyota-8215-stru_0bcqc69dmdziz",
+        "pi_fixture-miyota-8215-stru_0bcqdccpcw5kk",
+        "pi_fixture-miyota-8215-stru_0bcqe4ex6k9lm",
+        "pi_fixture-miyota-8215-stru_0bcqeig13ebm5",
+        "pi_fixture-miyota-8215-stru_0bg13564vbhfr",
+        "pi_fixture-miyota-8215-stru_1f12b9sqdbt62",
+        "pi_fixture-miyota-8215-stru_1ty9nktgs72h3",
+        "pi_fixture-miyota-8215-stru_1ty9nyukp14hm",
+        "pi_fixture-miyota-8215-stru_287947kycusgk",
+        "pi_fixture-miyota-8215-stru_28794zn66iwhm",
+        "pi_fixture-miyota-8215-stru_28795doa3cyi5",
+        "pi_fixture-miyota-8215-stru_3k9gy5rba6kif"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_0bcqc69dmdziz",
+        "pi_fixture-miyota-8215-stru_0bcqdccpcw5kk",
+        "pi_fixture-miyota-8215-stru_0bcqe4ex6k9lm",
+        "pi_fixture-miyota-8215-stru_0bcqeig13ebm5",
+        "pi_fixture-miyota-8215-stru_0bg13564vbhfr",
+        "pi_fixture-miyota-8215-stru_1f12b9sqdbt62",
+        "pi_fixture-miyota-8215-stru_1ty9nktgs72h3",
+        "pi_fixture-miyota-8215-stru_1ty9nyukp14hm",
+        "pi_fixture-miyota-8215-stru_287947kycusgk",
+        "pi_fixture-miyota-8215-stru_28794zn66iwhm",
+        "pi_fixture-miyota-8215-stru_28795doa3cyi5",
+        "pi_fixture-miyota-8215-stru_3k9gy5rba6kif"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.calibre",
+      "purpose": "Resolver el calibre.",
+      "entityIds": [
+        "mr_fixture-miyota-8215-stru_2a8fyqe60tabv"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_3r81d3fp9y06n",
+        "pi_fixture-miyota-8215-stru_0lm88ri320o46",
+        "pi_fixture-miyota-8215-stru_1mlu2yfnrzubo",
+        "pi_fixture-miyota-8215-stru_1882dyb2de0is",
+        "pi_fixture-miyota-8215-stru_0vxkjqtk9dirt",
+        "pi_fixture-miyota-8215-stru_00i7szckmc3zj",
+        "pi_fixture-miyota-8215-stru_0cxx05vj24g5s",
+        "pi_fixture-miyota-8215-stru_18d25yfoxtsny",
+        "pi_fixture-miyota-8215-stru_0xkiyy0h9arew",
+        "pi_fixture-miyota-8215-stru_1p7c5altkaocp",
+        "pi_fixture-miyota-8215-stru_0bx6r7bbnmxvj",
+        "pi_fixture-miyota-8215-stru_0aw14kh4y4syd",
+        "pi_fixture-miyota-8215-stru_26svg5n3sd6bk",
+        "pi_fixture-miyota-8215-stru_0d43t07yeceou",
+        "pi_fixture-miyota-8215-stru_2qkl771luy80n",
+        "pi_fixture-miyota-8215-stru_2yom6jlyr1kw6",
+        "pi_fixture-miyota-8215-stru_2i00uu18gck8v",
+        "pi_fixture-miyota-8215-stru_11jjv1b0z6ahi",
+        "pi_fixture-miyota-8215-stru_0wrntcl98l6un",
+        "pi_fixture-miyota-8215-stru_3fqckngw2ehz2",
+        "pi_fixture-miyota-8215-stru_3rsj9qp0usc01",
+        "pi_fixture-miyota-8215-stru_00isrwwoqevrm",
+        "pi_fixture-miyota-8215-stru_0ia5hhsy8dxhv",
+        "pi_fixture-miyota-8215-stru_077lxmiyz61fh",
+        "pi_fixture-miyota-8215-stru_196ms4jpn8g4o",
+        "pi_fixture-miyota-8215-stru_2c7mcc2x0sie5",
+        "pi_fixture-miyota-8215-stru_149lsh895gdmu",
+        "pi_fixture-miyota-8215-stru_06oa3y1y6fa75",
+        "pi_fixture-miyota-8215-stru_31f3mazr3nkvl",
+        "pi_fixture-miyota-8215-stru_24ojzvo1xvj9h",
+        "pi_fixture-miyota-8215-stru_02cylmo8h1wch",
+        "pi_fixture-miyota-8215-stru_3hiodsr3ffioz",
+        "pi_fixture-miyota-8215-stru_0mnqercly2f9m",
+        "pi_fixture-miyota-8215-stru_1bqmkihodx2mm",
+        "pi_fixture-miyota-8215-stru_3mlv7ulwm97uo",
+        "pi_fixture-miyota-8215-stru_01kvvo9he7bi0",
+        "pi_fixture-miyota-8215-stru_0owr6ggp6lz5e",
+        "pi_fixture-miyota-8215-stru_24qeziawaf5ty",
+        "pi_fixture-miyota-8215-stru_12ozfln8rdwh6",
+        "pi_fixture-miyota-8215-stru_1tjlk1ne4pp4h",
+        "pi_fixture-miyota-8215-stru_1b7hjyrazdl8o",
+        "pi_fixture-miyota-8215-stru_1b7hl4umpvra9",
+        "pi_fixture-miyota-8215-stru_353ree1czha8u",
+        "pi_fixture-miyota-8215-stru_107uo4mg441gk",
+        "pi_fixture-miyota-8215-stru_13xx1l7v65g7c",
+        "pi_fixture-miyota-8215-stru_2ko0dv1i9rt55",
+        "pi_fixture-miyota-8215-stru_3n69f7psh5igr",
+        "pi_fixture-miyota-8215-stru_24b8qcoe5jptr",
+        "pi_fixture-miyota-8215-stru_287947kycusgk",
+        "pi_fixture-miyota-8215-stru_28795doa3cyi5",
+        "pi_fixture-miyota-8215-stru_28794zn66iwhm",
+        "pi_fixture-miyota-8215-stru_1ty9nyukp14hm",
+        "pi_fixture-miyota-8215-stru_1ty9nktgs72h3",
+        "pi_fixture-miyota-8215-stru_0bcqdccpcw5kk",
+        "pi_fixture-miyota-8215-stru_0bcqeig13ebm5",
+        "pi_fixture-miyota-8215-stru_0bcqe4ex6k9lm",
+        "pi_fixture-miyota-8215-stru_0bcqc69dmdziz",
+        "pi_fixture-miyota-8215-stru_1f12b9sqdbt62",
+        "pi_fixture-miyota-8215-stru_3k9gy5rba6kif",
+        "pi_fixture-miyota-8215-stru_0bg13564vbhfr",
+        "pi_fixture-miyota-8215-stru_0hwtqzkwsq1et",
+        "pi_fixture-miyota-8215-stru_2p1wa8yn1avjr",
+        "pi_fixture-miyota-8215-stru_1vwaa91w30rlj"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    },
+    {
+      "selectorId": "selector.miyota.8215.family",
+      "purpose": "Resolver la familia.",
+      "entityIds": [
+        "mr_fixture-miyota-8215-stru_2a8fyqe60tabv"
+      ],
+      "partInstanceIds": [
+        "pi_fixture-miyota-8215-stru_3r81d3fp9y06n",
+        "pi_fixture-miyota-8215-stru_0lm88ri320o46",
+        "pi_fixture-miyota-8215-stru_1mlu2yfnrzubo",
+        "pi_fixture-miyota-8215-stru_1882dyb2de0is",
+        "pi_fixture-miyota-8215-stru_0vxkjqtk9dirt",
+        "pi_fixture-miyota-8215-stru_00i7szckmc3zj",
+        "pi_fixture-miyota-8215-stru_0cxx05vj24g5s",
+        "pi_fixture-miyota-8215-stru_18d25yfoxtsny",
+        "pi_fixture-miyota-8215-stru_0xkiyy0h9arew",
+        "pi_fixture-miyota-8215-stru_1p7c5altkaocp",
+        "pi_fixture-miyota-8215-stru_0bx6r7bbnmxvj",
+        "pi_fixture-miyota-8215-stru_0aw14kh4y4syd",
+        "pi_fixture-miyota-8215-stru_26svg5n3sd6bk",
+        "pi_fixture-miyota-8215-stru_0d43t07yeceou",
+        "pi_fixture-miyota-8215-stru_2qkl771luy80n",
+        "pi_fixture-miyota-8215-stru_2yom6jlyr1kw6",
+        "pi_fixture-miyota-8215-stru_2i00uu18gck8v",
+        "pi_fixture-miyota-8215-stru_11jjv1b0z6ahi",
+        "pi_fixture-miyota-8215-stru_0wrntcl98l6un",
+        "pi_fixture-miyota-8215-stru_3fqckngw2ehz2",
+        "pi_fixture-miyota-8215-stru_3rsj9qp0usc01",
+        "pi_fixture-miyota-8215-stru_00isrwwoqevrm",
+        "pi_fixture-miyota-8215-stru_0ia5hhsy8dxhv",
+        "pi_fixture-miyota-8215-stru_077lxmiyz61fh",
+        "pi_fixture-miyota-8215-stru_196ms4jpn8g4o",
+        "pi_fixture-miyota-8215-stru_2c7mcc2x0sie5",
+        "pi_fixture-miyota-8215-stru_149lsh895gdmu",
+        "pi_fixture-miyota-8215-stru_06oa3y1y6fa75",
+        "pi_fixture-miyota-8215-stru_31f3mazr3nkvl",
+        "pi_fixture-miyota-8215-stru_24ojzvo1xvj9h",
+        "pi_fixture-miyota-8215-stru_02cylmo8h1wch",
+        "pi_fixture-miyota-8215-stru_3hiodsr3ffioz",
+        "pi_fixture-miyota-8215-stru_0mnqercly2f9m",
+        "pi_fixture-miyota-8215-stru_1bqmkihodx2mm",
+        "pi_fixture-miyota-8215-stru_3mlv7ulwm97uo",
+        "pi_fixture-miyota-8215-stru_01kvvo9he7bi0",
+        "pi_fixture-miyota-8215-stru_0owr6ggp6lz5e",
+        "pi_fixture-miyota-8215-stru_24qeziawaf5ty",
+        "pi_fixture-miyota-8215-stru_12ozfln8rdwh6",
+        "pi_fixture-miyota-8215-stru_1tjlk1ne4pp4h",
+        "pi_fixture-miyota-8215-stru_1b7hjyrazdl8o",
+        "pi_fixture-miyota-8215-stru_1b7hl4umpvra9",
+        "pi_fixture-miyota-8215-stru_353ree1czha8u",
+        "pi_fixture-miyota-8215-stru_107uo4mg441gk",
+        "pi_fixture-miyota-8215-stru_13xx1l7v65g7c",
+        "pi_fixture-miyota-8215-stru_2ko0dv1i9rt55",
+        "pi_fixture-miyota-8215-stru_3n69f7psh5igr",
+        "pi_fixture-miyota-8215-stru_24b8qcoe5jptr",
+        "pi_fixture-miyota-8215-stru_287947kycusgk",
+        "pi_fixture-miyota-8215-stru_28795doa3cyi5",
+        "pi_fixture-miyota-8215-stru_28794zn66iwhm",
+        "pi_fixture-miyota-8215-stru_1ty9nyukp14hm",
+        "pi_fixture-miyota-8215-stru_1ty9nktgs72h3",
+        "pi_fixture-miyota-8215-stru_0bcqdccpcw5kk",
+        "pi_fixture-miyota-8215-stru_0bcqeig13ebm5",
+        "pi_fixture-miyota-8215-stru_0bcqe4ex6k9lm",
+        "pi_fixture-miyota-8215-stru_0bcqc69dmdziz",
+        "pi_fixture-miyota-8215-stru_1f12b9sqdbt62",
+        "pi_fixture-miyota-8215-stru_3k9gy5rba6kif",
+        "pi_fixture-miyota-8215-stru_0bg13564vbhfr",
+        "pi_fixture-miyota-8215-stru_0hwtqzkwsq1et",
+        "pi_fixture-miyota-8215-stru_2p1wa8yn1avjr",
+        "pi_fixture-miyota-8215-stru_1vwaa91w30rlj"
+      ],
+      "confidence": "high",
+      "cardinalitySatisfied": true,
+      "diagnostics": []
+    }
+  ]
+}

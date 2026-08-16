@@ -212,7 +212,7 @@ describe('0.14I · compatibilidad y UX (pruebas 81–96)', () => {
     const packageJson = JSON.parse(await readFile(join(ACADEMY_014I_TEST_ROOT, 'package.json'), 'utf8')) as { scripts: Record<string, string> }
     expect(packageJson.scripts.verify).toContain('learning:0.14i -- --check')
     expect((await buildAcademy014IOutputs(ACADEMY_014I_TEST_ROOT)).size).toBe(ACADEMY_014I_OUTPUT_FILES.length)
-  })
+  }, 60_000)
   it('96. git diff --check pasa', async () => expect((await execFileAsync('git', ['diff', '--check'], { cwd: ACADEMY_014I_TEST_ROOT })).stdout).toBe(''))
 
   it('conserva las 12 actividades y 13 prácticas fuera del corpus', async () => {

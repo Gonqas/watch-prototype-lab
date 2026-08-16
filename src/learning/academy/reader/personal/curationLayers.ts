@@ -4,10 +4,11 @@ import { academyStage0LegacyAliases, academyStage0LessonCuration, academyStage0S
 import { academyStage1LegacyAliases, academyStage1LessonCuration, academyStage1SectionVisualCuration, applyAcademyStage1LessonCuration } from './phase014g'
 import { academyStage2LegacyAliases, academyStage2LessonCuration, academyStage2SectionVisualCuration, applyAcademyStage2LessonCuration } from './phase014h'
 import { academy014ILegacyAliases, academyStage3LessonCuration, academyStage3SectionVisualCuration, applyAcademy014ILessonCuration } from './phase014i'
+import { academy014JLegacyAliases, academyActiveMetadata014J, academyStage4SectionVisualCuration, applyAcademy014JLessonCuration } from './phase014j'
 import { academyPhaseIncludes } from './registry'
 import type { AcademySourcePreservingLessonContext } from './types'
 
-type PersonalMetadata = ReturnType<typeof academyPersonalPilotReview> | ReturnType<typeof academyStage0LessonCuration> | ReturnType<typeof academyStage1LessonCuration> | ReturnType<typeof academyStage2LessonCuration> | ReturnType<typeof academyStage3LessonCuration>
+type PersonalMetadata = ReturnType<typeof academyPersonalPilotReview> | ReturnType<typeof academyStage0LessonCuration> | ReturnType<typeof academyStage1LessonCuration> | ReturnType<typeof academyStage2LessonCuration> | ReturnType<typeof academyStage3LessonCuration> | ReturnType<typeof academyActiveMetadata014J>
 type VisualInput = { lessonId: string; section: AcademyReaderSection; contentHash: string; sectionHash: string; sourceIds: string[] }
 
 interface AcademyCurationLayer {
@@ -27,6 +28,7 @@ export const ACADEMY_DECLARATIVE_CURATION_LAYERS: readonly AcademyCurationLayer[
   { phase: '0.14G', layerId: 'stage-1', applySections: ({ lessonId, currentSections }) => applyAcademyStage1LessonCuration(lessonId, currentSections), legacyAliases: academyStage1LegacyAliases, metadata: academyStage1LessonCuration, visual: academyStage1SectionVisualCuration },
   { phase: '0.14H', layerId: 'stage-2', applySections: ({ lessonId, currentSections, authoredSections }) => applyAcademyStage2LessonCuration(lessonId, currentSections, authoredSections), legacyAliases: academyStage2LegacyAliases, metadata: academyStage2LessonCuration, visual: academyStage2SectionVisualCuration },
   { phase: '0.14I', layerId: 'stage-0-1-remediation-and-stage-3', applySections: applyAcademy014ILessonCuration, sourcePreservingAliases: academy014ILegacyAliases, metadata: academyStage3LessonCuration, visual: academyStage3SectionVisualCuration },
+  { phase: '0.14J', layerId: 'active-status-and-stage-4', applySections: applyAcademy014JLessonCuration, sourcePreservingAliases: academy014JLegacyAliases, metadata: academyActiveMetadata014J, visual: academyStage4SectionVisualCuration },
 ] as const
 
 export function academyCurationLayersForPhase(phase: AcademyReaderCurationPhase) {

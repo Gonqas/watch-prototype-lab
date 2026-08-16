@@ -1,0 +1,502 @@
+{
+  "schema": "wplab-stage4-curation-v1",
+  "phase": "0.14J",
+  "readerPhases": [
+    "0.14D",
+    "0.14E",
+    "0.14F",
+    "0.14G",
+    "0.14H",
+    "0.14I",
+    "0.14J"
+  ],
+  "personalPhases": [
+    "0.14E",
+    "0.14F",
+    "0.14G",
+    "0.14H",
+    "0.14I",
+    "0.14J"
+  ],
+  "counts": {
+    "chapters": 5,
+    "lessons": 16,
+    "anchors": 14,
+    "supports": 1,
+    "optionalBranches": 1,
+    "visibleSections": 364
+  },
+  "lessons": [
+    {
+      "lessonId": "lesson.miyota8215.identify",
+      "chapterId": "chapter.4.1",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.identify-calibre",
+      "visualDesignIds": [
+        "visual.miyota8215.identify",
+        "visual.stage4.identity-evidence.v1"
+      ],
+      "centralQuestion": "¿Qué evidencia permite identificar provisionalmente este movimiento como MIYOTA 8215?",
+      "observableOutcome": "Distinguir rasgo, inscripción, referencia, variante y confirmación documental.",
+      "editorialFocus": "La semejanza visual abre una búsqueda; la inscripción y el documento oficial sostienen la identidad. Rotor, color, disposición aproximada o número de rubíes no bastan por separado.",
+      "workedExample": "Una marca visible se coteja con la página oficial y un documento vigente; si falta la variante, la conclusión permanece provisional.",
+      "sourceScope": "Página oficial y documentos MIYOTA consultados el 16-08-2026; ninguna base secundaria prevalece.",
+      "whyNow": "La entrada al calibre exige una identidad demostrable antes de interpretar sus sistemas.",
+      "editorialArchetype": "calibre-identification",
+      "checkpointPrompt": "Justifica una identificación provisional del 8215.",
+      "checkpointExpectedElements": [
+        "rasgo observable",
+        "inscripción o referencia",
+        "documento oficial",
+        "variante y límite"
+      ],
+      "visibleSectionCount": 22,
+      "contentHash": "fnv1a64:82196c4a6cef873f"
+    },
+    {
+      "lessonId": "lesson.miyota8215.documentation",
+      "chapterId": "chapter.4.1",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.locate-specification",
+      "visualDesignIds": [
+        "visual.miyota8215.documentation",
+        "visual.stage4.document-authority.v1",
+        "visual.stage4.parts-drift.v1"
+      ],
+      "centralQuestion": "¿Qué documento oficial responde a cada clase de pregunta?",
+      "observableOutcome": "Seleccionar página, specification, drawing, manual o parts list y registrar snapshot.",
+      "editorialFocus": "Funciones declaradas: página o specification. Cotas: drawing o specification. Corona: manual. Nombre de pieza: parts list. Secuencia de servicio y lubricación: no disponibles en el conjunto público verificado.",
+      "workedExample": "Una referencia de pieza se busca en la parts list; la vista explosionada orienta relación espacial, pero no autoriza orden de desmontaje.",
+      "sourceScope": "Snapshot oficial 0.14J; la parts list vigente cambia terminología y URL, no referencias.",
+      "whyNow": "Una pregunta técnica solo es defendible cuando se dirige al documento con autoridad adecuada.",
+      "editorialArchetype": "document-reading",
+      "checkpointPrompt": "Elige el documento para una pregunta concreta y limita la conclusión.",
+      "checkpointExpectedElements": [
+        "pregunta",
+        "documento y localizador",
+        "dato",
+        "conclusión permitida y no permitida"
+      ],
+      "visibleSectionCount": 23,
+      "contentHash": "fnv1a64:d26c32b9f0a2a9da"
+    },
+    {
+      "lessonId": "lesson.miyota8215.architecture",
+      "chapterId": "chapter.4.1",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.classify-subsystems",
+      "visualDesignIds": [
+        "visual.miyota8215.architecture",
+        "visual.stage4.architecture-authority.v1"
+      ],
+      "centralQuestion": "¿Cómo se organiza el 8215 como sistema documentado?",
+      "observableOutcome": "Relacionar capas, subsistemas, piezas oficiales e interfaces con su grado de evidencia.",
+      "editorialFocus": "Rotor, automático, cuerda manual, barrilete, tren, escape, balance, indicación, calendario y parada del segundero forman un mapa funcional. Cada relación conserva su estado: oficial, inferida, conceptual o desconocida.",
+      "workedExample": "Una pieza puede tener nombre y referencia oficiales mientras su contacto o cinemática en el modelo sigue siendo inferida.",
+      "sourceScope": "Parts list para identidad; specification y manual para funciones; Theory of Horology solo para teoría general; fixture G2/K2/P0.",
+      "whyNow": "La teoría de sistemas se transfiere ahora a un calibre documentado sin convertir el modelo en geometría real.",
+      "editorialArchetype": "calibre-architecture",
+      "checkpointPrompt": "Reconstruye las capas funcionales del 8215.",
+      "checkpointExpectedElements": [
+        "subsistemas",
+        "interfaces",
+        "piezas oficiales",
+        "relaciones inferidas y desconocidos"
+      ],
+      "visibleSectionCount": 27,
+      "contentHash": "fnv1a64:c8accb836f2b3b07"
+    },
+    {
+      "lessonId": "lesson.miyota8215.automatic",
+      "chapterId": "chapter.4.2",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.follow-automatic",
+      "visualDesignIds": [
+        "visual.miyota8215.automatic",
+        "visual.stage4.automatic-authority.v1"
+      ],
+      "centralQuestion": "¿Qué se conoce del sistema automático y qué representa solo el modelo?",
+      "observableOutcome": "Seguir entrada y salida funcional separando piezas oficiales de transmisión inferida.",
+      "editorialFocus": "Oscillating weight, pawl winding wheel, reduction wheel y ratchet wheel están identificadas; dirección exacta, eficiencia y sentido de cada engrane no se afirman sin fuente.",
+      "workedExample": "La animación muestra una ruta educativa y etiqueta por separado identidad oficial y relación modelada.",
+      "sourceScope": "Parts list vigente para nombres y referencias; la cinemática completa permanece source-limited.",
+      "whyNow": "El sistema automático permite separar identidad oficial de pieza e interpretación funcional.",
+      "editorialArchetype": "subsystem",
+      "checkpointPrompt": "Sigue la función automática sin inventar cinemática.",
+      "checkpointExpectedElements": [
+        "entrada",
+        "piezas oficiales",
+        "salida funcional",
+        "relación inferida y límite"
+      ],
+      "visibleSectionCount": 22,
+      "contentHash": "fnv1a64:bffdcf7e42549b5f"
+    },
+    {
+      "lessonId": "lesson.miyota8215.winding-setting",
+      "chapterId": "chapter.4.2",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.reconstruct-winding-states",
+      "visualDesignIds": [
+        "visual.miyota8215.winding-setting",
+        "visual.stage4.crown-states.v1"
+      ],
+      "centralQuestion": "¿Qué función externa corresponde a cada posición de corona?",
+      "observableOutcome": "Reconstruir estados del usuario y distinguirlos de la cinemática interna.",
+      "editorialFocus": "El manual vigente respalda posición normal, primera, segunda, cuerda, ajuste de fecha, puesta en hora y parada del segundero según el documento consultado.",
+      "workedExample": "Un estado de corona se vincula a su página del manual; las piezas internas se identifican en parts list sin elevar su movimiento completo a hecho oficial.",
+      "sourceScope": "Instruction manual 8215 vigente; no se mezclan advertencias del 8205.",
+      "whyNow": "Los estados externos de corona tienen apoyo documental distinto de la cinemática interna.",
+      "editorialArchetype": "subsystem",
+      "checkpointPrompt": "Relaciona cada posición de corona con la función autorizada.",
+      "checkpointExpectedElements": [
+        "posición",
+        "operación del usuario",
+        "manual vigente",
+        "mecanismo interno no demostrado"
+      ],
+      "visibleSectionCount": 22,
+      "contentHash": "fnv1a64:9675ea636fb2ee86"
+    },
+    {
+      "lessonId": "lesson.miyota8215.barrel-energy",
+      "chapterId": "chapter.4.2",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.follow-barrel-energy",
+      "visualDesignIds": [
+        "visual.miyota8215.barrel-energy",
+        "visual.stage4.barrel-boundary.v1"
+      ],
+      "centralQuestion": "¿Qué conecta el barrilete con el tren y qué queda fuera del fixture?",
+      "observableOutcome": "Distinguir conjunto oficial, retención estructural e interior no representado.",
+      "editorialFocus": "Barrel complete, barrel bridge, ratchet wheel, click, click spring y crown wheel están identificados; el interior no se abre ni se convierte en lección física.",
+      "workedExample": "El checkpoint del puente enseña acceso y dependencia; si el orden procede solo del despiece queda source-needed como procedimiento.",
+      "sourceScope": "Parts list para piezas; exploded view para relación espacial aproximada, no secuencia.",
+      "whyNow": "El barrilete conecta almacenamiento y tren, pero el fixture no abre ni valida su interior.",
+      "editorialArchetype": "subsystem",
+      "checkpointPrompt": "Explica qué está identificado y qué queda cerrado en el barrilete.",
+      "checkpointExpectedElements": [
+        "entrada",
+        "barrel complete",
+        "puente y retención",
+        "interior desconocido"
+      ],
+      "visibleSectionCount": 22,
+      "contentHash": "fnv1a64:39322b8ff4b270f9"
+    },
+    {
+      "lessonId": "lesson.miyota8215.train",
+      "chapterId": "chapter.4.2",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.identify-train",
+      "visualDesignIds": [
+        "visual.miyota8215.train",
+        "visual.stage4.train-authority.v1"
+      ],
+      "centralQuestion": "¿Qué piezas forman el tren y qué relaciones siguen siendo modelo?",
+      "observableOutcome": "Clasificar piezas, contactos, función, dientes y geometría por evidencia.",
+      "editorialFocus": "Center, third, fourth y escape wheel and pinion, center second pinion, center wheel cock y barrel and train wheel bridge se trazan por referencia oficial.",
+      "workedExample": "El nombre “center second pinion” se conserva como terminología vigente; el contacto animado se etiqueta estructuralmente inferido.",
+      "sourceScope": "Parts list 2026 y snapshot anterior; sin conteos de dientes ni escala real.",
+      "whyNow": "El tren concreta la cadena de energía mediante piezas oficiales y contactos todavía modelados.",
+      "editorialArchetype": "subsystem",
+      "checkpointPrompt": "Clasifica piezas y relaciones del tren por autoridad.",
+      "checkpointExpectedElements": [
+        "referencias oficiales",
+        "orden funcional",
+        "contactos inferidos",
+        "dientes y geometría desconocidos"
+      ],
+      "visibleSectionCount": 23,
+      "contentHash": "fnv1a64:ffd8a4e715785403"
+    },
+    {
+      "lessonId": "lesson.miyota8215.escapement-oscillator",
+      "chapterId": "chapter.4.2",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.follow-escapement",
+      "visualDesignIds": [
+        "visual.miyota8215.escapement-oscillator",
+        "visual.stage4.escapement-limit.v1"
+      ],
+      "centralQuestion": "¿Qué anatomía está documentada y qué comportamiento necesitaría medición real?",
+      "observableOutcome": "Localizar escape y oscilador sin simular ajuste, desgaste o marcha reales.",
+      "editorialFocus": "Escape wheel, pallet fork, pallet cock, balance with hairspring, balance cock y cap jewels tienen identidad; lock, drop, lift, amplitud y beat error no se derivan del fixture.",
+      "workedExample": "El visual enseña la interfaz conceptual; una afirmación sobre amplitud queda fuera hasta medir una unidad bajo condiciones declaradas.",
+      "sourceScope": "Parts list para identidad; specification para datos declarados; fixture P0 no simula física.",
+      "whyNow": "Escape y oscilador muestran el límite entre localizar componentes y medir comportamiento.",
+      "editorialArchetype": "subsystem",
+      "checkpointPrompt": "Distingue anatomía documentada y comportamiento físico no medido.",
+      "checkpointExpectedElements": [
+        "piezas oficiales",
+        "interfaz conceptual",
+        "magnitudes no simuladas",
+        "prueba real pendiente"
+      ],
+      "visibleSectionCount": 22,
+      "contentHash": "fnv1a64:14475522b283f17b"
+    },
+    {
+      "lessonId": "lesson.miyota8215.calendar",
+      "chapterId": "chapter.4.2",
+      "pathRole": "support",
+      "visualDesignIds": [
+        "visual.miyota8215.calendar",
+        "visual.stage4.calendar-boundary.v1"
+      ],
+      "centralQuestion": "¿Cómo se relaciona el ajuste externo de fecha con el conjunto de calendario?",
+      "observableOutcome": "Identificar piezas y aplicar la advertencia del manual sin inventar la secuencia interna.",
+      "editorialFocus": "Date dial, driving wheel, intermediate wheel, jumper, guard, corrector lever y spring forman el mapa; el manual limita el ajuste rápido del 8215.",
+      "workedExample": "La posición externa está verificada; el orden interno del cambio no se deduce del exploded view ni se mezcla entre variantes 3H y 6H.",
+      "sourceScope": "Support no bloqueante; manual 8215 y parts list vigente.",
+      "whyNow": "El apoyo de calendario relaciona piezas y operación externa sin imponer el cambio interno como fundamento.",
+      "editorialArchetype": "subsystem",
+      "checkpointPrompt": "Explica el ajuste rápido y su límite documental.",
+      "checkpointExpectedElements": [
+        "posición de corona",
+        "advertencia 8215",
+        "piezas oficiales",
+        "secuencia interna desconocida"
+      ],
+      "visibleSectionCount": 22,
+      "contentHash": "fnv1a64:dc0d8420f87f3529"
+    },
+    {
+      "lessonId": "lesson.miyota8215.plan-disassembly",
+      "chapterId": "chapter.4.3",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.create-disassembly-plan",
+      "visualDesignIds": [
+        "visual.miyota8215.plan-disassembly",
+        "visual.stage4.dependency-plan.v1"
+      ],
+      "centralQuestion": "¿Cómo se planifica una exploración virtual sin fingir una secuencia de servicio?",
+      "observableOutcome": "Construir objetivo, dependencias, registro, checkpoints, desconocidos y reversión.",
+      "editorialFocus": "Cada paso declara fundamento y alcance. La vista explosionada ayuda a leer capas; no proporciona herramienta, par, técnica ni orden físico.",
+      "workedExample": "El plan comienza por el estado del simulador y termina en un checkpoint reproducible, no en una instrucción de banco.",
+      "sourceScope": "Contrato pedagógico interno simulation-only; cualquier procedimiento físico queda source-needed.",
+      "whyNow": "Antes de mover el modelo se planifican objetivo, dependencias, registro y desconocidos.",
+      "editorialArchetype": "structural-dependency",
+      "checkpointPrompt": "Construye un plan reversible del laboratorio.",
+      "checkpointExpectedElements": [
+        "objetivo y estado inicial",
+        "dependencias",
+        "checkpoints",
+        "frontera con procedimiento físico"
+      ],
+      "visibleSectionCount": 22,
+      "contentHash": "fnv1a64:cf6b449a23d33c32"
+    },
+    {
+      "lessonId": "lesson.miyota8215.guided-disassembly",
+      "chapterId": "chapter.4.3",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.guided-disassembly",
+      "visualDesignIds": [
+        "visual.miyota8215.guided-disassembly",
+        "visual.stage4.simulation-service-boundary.v1"
+      ],
+      "centralQuestion": "¿Qué demuestra cada paso de la secuencia didáctica del laboratorio?",
+      "observableOutcome": "Ejecutar y explicar cambios de estado, dependencias, inferencias y límites.",
+      "editorialFocus": "La secuencia existente se conserva como didáctica virtual. Cada acción modifica el modelo, tiene deshacer y no prescribe servicio físico.",
+      "workedExample": "Retirar virtualmente el rotor expone una dependencia; no demuestra herramienta, dirección, par ni técnica.",
+      "sourceScope": "Fixture y contrato de actividad; no existe manual público de servicio dentro del snapshot verificado.",
+      "whyNow": "La secuencia guiada comprueba dependencias del simulador, no técnica de banco.",
+      "editorialArchetype": "virtual-sequence",
+      "checkpointPrompt": "Audita un paso virtual por fundamento y alcance.",
+      "checkpointExpectedElements": [
+        "estado inicial",
+        "acción virtual",
+        "dependencia mostrada",
+        "inferencia y límite físico"
+      ],
+      "visibleSectionCount": 28,
+      "contentHash": "fnv1a64:5f68b075a38167d5"
+    },
+    {
+      "lessonId": "lesson.miyota8215.assisted-free-disassembly",
+      "chapterId": "chapter.4.3",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.free-disassembly",
+      "visualDesignIds": [
+        "visual.miyota8215.assisted-free-disassembly",
+        "visual.stage4.help-reduction.v1"
+      ],
+      "centralQuestion": "¿Qué permanece cuando se reduce la ayuda del laboratorio?",
+      "observableOutcome": "Recordar dependencias, planificar y documentar sin afirmar destreza manual.",
+      "editorialFocus": "La reducción de ayuda evalúa memoria del modelo, comprensión, planificación y registro; excluye fuerza, postura, herramienta, daño y control físico.",
+      "workedExample": "Un error se recupera con deshacer y explicación del estado; no se convierte en evaluación de banco.",
+      "sourceScope": "Simulación V con explicación K y resultado revisable R; nunca P.",
+      "whyNow": "Reducir ayuda evalúa el modelo mental y la documentación, nunca fuerza o destreza.",
+      "editorialArchetype": "virtual-sequence",
+      "checkpointPrompt": "Reconstruye una secuencia del laboratorio con menos ayuda.",
+      "checkpointExpectedElements": [
+        "plan",
+        "dependencias",
+        "registro",
+        "competencias físicas excluidas"
+      ],
+      "visibleSectionCount": 23,
+      "contentHash": "fnv1a64:ca9dce8ca7bf53ce"
+    },
+    {
+      "lessonId": "lesson.miyota8215.inspection",
+      "chapterId": "chapter.4.4",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.inspect-parts",
+      "visualDesignIds": [
+        "visual.miyota8215.inspection",
+        "visual.stage4.symbolic-inspection.v1"
+      ],
+      "centralQuestion": "¿Qué permite observar un escenario simbólico y qué exige una unidad real?",
+      "observableOutcome": "Registrar símbolo, observación, hipótesis, prueba necesaria e incertidumbre.",
+      "editorialFocus": "El modelo localiza e identifica interfaces y compara estados simbólicos; no representa desgaste, suciedad, grietas, pivotes, rebabas, aceite, holguras, rubíes o amplitud reales.",
+      "workedExample": "Un icono de “interfaz a revisar” abre hipótesis; no significa que la pieza física esté defectuosa.",
+      "sourceScope": "Escenarios educativos explícitos; el aspecto real requiere fotografía propia o futura con licencia.",
+      "whyNow": "La inspección simbólica permite formular hipótesis sin falsificar el aspecto de una pieza real.",
+      "editorialArchetype": "symbolic-inspection",
+      "checkpointPrompt": "Registra un escenario sin convertir el símbolo en defecto físico.",
+      "checkpointExpectedElements": [
+        "símbolo",
+        "observación válida",
+        "hipótesis rivales",
+        "prueba física necesaria"
+      ],
+      "visibleSectionCount": 27,
+      "contentHash": "fnv1a64:1d4861872323d8f4"
+    },
+    {
+      "lessonId": "lesson.miyota8215.assembly-verification",
+      "chapterId": "chapter.4.4",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.partial-verifications",
+      "visualDesignIds": [
+        "visual.miyota8215.assembly-verification",
+        "visual.stage4.verification-layers.v1"
+      ],
+      "centralQuestion": "¿Cómo se montan capas virtuales y se colocan controles sin prescribir servicio?",
+      "observableOutcome": "Relacionar capa, dependencia, estado y clase de verificación.",
+      "editorialFocus": "La verificación del simulador, la estructural, la física y la aceptación se distinguen. El modelo no prescribe lubricación, apriete, fuerza, alineación o libertad física.",
+      "workedExample": "Un control “correcto” confirma el contrato interno de la actividad, no la aceptación de una unidad real.",
+      "sourceScope": "Montaje reversible del simulador; la inversión no es una secuencia oficial de montaje.",
+      "whyNow": "El montaje virtual ordena capas y verificaciones internas sin prescribir servicio.",
+      "editorialArchetype": "virtual-assembly",
+      "checkpointPrompt": "Coloca un control entre dos capas del modelo.",
+      "checkpointExpectedElements": [
+        "capa",
+        "dependencia",
+        "verificación del simulador",
+        "aceptación física excluida"
+      ],
+      "visibleSectionCount": 23,
+      "contentHash": "fnv1a64:abcb61de96dccae5"
+    },
+    {
+      "lessonId": "lesson.miyota8215.diagnosis-project",
+      "chapterId": "chapter.4.5",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.miyota8215.complete-diagnosis",
+      "visualDesignIds": [
+        "visual.miyota8215.diagnosis-project",
+        "visual.stage4.dossier-provenance.v1"
+      ],
+      "centralQuestion": "¿Cómo se defiende un diagnóstico del escenario sin diagnosticar una unidad física?",
+      "observableOutcome": "Completar un dossier con identidad, fuentes, pruebas, resultados, claims, límites y transferencia.",
+      "editorialFocus": "El síntoma simulado abre hipótesis rivales; una prueba virtual actualiza confianza. El dossier separa principio general, dato oficial 8215, interpretación del modelo, actividad y dato físico pendiente.",
+      "workedExample": "El resultado puede ser R porque el dossier es revisable; sigue sin ser P ni diagnóstico de un reloj real.",
+      "sourceScope": "Síntesis local de etapas 1–4; no inicia integración del reloj de etapa 5.",
+      "whyNow": "El cierre integra evidencia, hipótesis, prueba y procedencia en un dossier revisable.",
+      "editorialArchetype": "traceable-dossier",
+      "checkpointPrompt": "Defiende una conclusión sobre el escenario y sus límites.",
+      "checkpointExpectedElements": [
+        "síntoma simulado",
+        "hipótesis y prueba",
+        "resultado",
+        "fuente y dato físico pendiente"
+      ],
+      "visibleSectionCount": 24,
+      "contentHash": "fnv1a64:9547808fe1debfbf"
+    },
+    {
+      "lessonId": "lesson.advanced.service-disassembly",
+      "chapterId": "chapter.4.5",
+      "pathRole": "optional-branch",
+      "visualDesignIds": [],
+      "centralQuestion": "¿Qué documentación falta antes de convertir dependencias en procedimiento físico?",
+      "observableOutcome": "Planificar por dependencias y checkpoints manteniendo el servicio bloqueado.",
+      "editorialFocus": "La rama avanzada permanece opcional y documental; puede organizar objetivo, registro y fuentes, pero no instruir desmontaje físico.",
+      "workedExample": "Una dependencia demostrada por el fixture no determina herramienta, dirección, fuerza, par o orden seguro.",
+      "sourceScope": "Procedimiento físico source-needed; no bloquea el recorrido principal.",
+      "whyNow": "La rama opcional organiza dependencias y fuentes sin convertirse en procedimiento físico avanzado.",
+      "editorialArchetype": "structural-dependency",
+      "checkpointPrompt": "Declara qué necesitaría una futura decisión física.",
+      "checkpointExpectedElements": [
+        "objetivo",
+        "dependencia",
+        "documentación aplicable",
+        "procedimiento pendiente"
+      ],
+      "visibleSectionCount": 12,
+      "contentHash": "fnv1a64:261b17f8bc616247"
+    }
+  ],
+  "checkpoint": {
+    "checkpointId": "checkpoint.stage4.miyota8215-dossier",
+    "title": "Cierre de etapa 4 · MIYOTA 8215 documentado",
+    "questions": [
+      "¿Qué evidencia sostiene la identidad y la variante?",
+      "¿Qué documento responde a funciones, cotas, corona y piezas?",
+      "¿Qué cambió entre snapshots de la parts list?",
+      "¿Qué relaciones del modelo son oficiales, inferidas o conceptuales?",
+      "¿Qué demuestra una secuencia virtual y qué no demuestra?",
+      "¿Qué escenario simbólico necesitaría fotografía o medición real?",
+      "¿Dónde se colocó una verificación del simulador y cuál sería la verificación física?",
+      "¿Qué prueba virtual separa dos hipótesis?",
+      "¿Qué claims, snapshots y límites conserva el dossier?",
+      "¿Qué dato del 8215 no debe transferirse a otro calibre?",
+      "¿Qué permanece source-needed antes de abrir un movimiento?",
+      "¿Por qué R no equivale a P en este cierre?",
+      "¿Qué fundamento y alcance tiene cada paso virtual?",
+      "¿Qué queda expresamente fuera hasta la etapa 5?"
+    ],
+    "actions": [
+      {
+        "label": "Repasar identificación",
+        "href": "#/learning/lesson/lesson.miyota8215.identify"
+      },
+      {
+        "label": "Repasar documentos",
+        "href": "#/learning/lesson/lesson.miyota8215.documentation"
+      },
+      {
+        "label": "Repasar arquitectura",
+        "href": "#/learning/lesson/lesson.miyota8215.architecture"
+      },
+      {
+        "label": "Repasar subsistemas",
+        "href": "#/learning/lesson/lesson.miyota8215.automatic"
+      },
+      {
+        "label": "Repasar frontera virtual",
+        "href": "#/learning/lesson/lesson.miyota8215.guided-disassembly"
+      },
+      {
+        "label": "Repasar inspección",
+        "href": "#/learning/lesson/lesson.miyota8215.inspection"
+      },
+      {
+        "label": "Repasar verificaciones",
+        "href": "#/learning/lesson/lesson.miyota8215.assembly-verification"
+      },
+      {
+        "label": "Abrir dossier",
+        "href": "#/learning/lesson/lesson.miyota8215.diagnosis-project"
+      },
+      {
+        "label": "Continuar a etapa 5",
+        "href": "#/learning/my-learning?chapter=chapter.5.1"
+      }
+    ],
+    "evidence": "El cierre puede producir K, V y R dentro del entorno local. No produce P, no diagnostica una unidad física y no inicia la integración del reloj de etapa 5."
+  }
+}

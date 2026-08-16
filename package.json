@@ -58,11 +58,17 @@
     "learning:source-preserving-curation": "vitest run scripts/academy-audit/academy-source-preserving-curation.test.ts",
     "learning:stage3-curation": "vitest run scripts/academy-audit/academy-stage3-curation.test.tsx",
     "learning:0.14i": "tsx scripts/academy-014i.ts",
+    "learning:technical-status-audit": "tsx scripts/academy-014j.ts --check",
+    "learning:source-preservation-integrity": "tsx scripts/academy-014j.ts --check",
+    "learning:miyota8215-source-snapshot": "tsx scripts/academy-014j.ts --check",
+    "learning:miyota8215-source-snapshot:refresh": "tsx scripts/verify-miyota-official-sources.ts --calibre 8215 --cache-dir .cache/reference-audit/miyota8215-refresh --json",
+    "learning:stage4-curation": "vitest run scripts/academy-audit/academy-014j.test.ts",
+    "learning:0.14j": "tsx scripts/academy-014j.ts",
     "learning:text-scale": "node scripts/normalize-learning-text-scale.mjs",
     "learning:schema": "node scripts/generate-learning-schema-validator.mjs",
     "lint": "eslint .",
     "test": "vitest run",
-    "verify": "npm run lint && npm run test && npm run learning:academy-p1-audit && npm run learning:academy-p2-audit && npm run learning:content-quality-audit && npm run learning:editorial-audit -- --check && npm run learning:semantic-audit -- --check && npm run learning:path-audit -- --check && npm run learning:path-semantics -- --check && npm run learning:reader-audit -- --check && npm run learning:reader-hardening -- --check && npm run learning:personal-curation -- --check && npm run learning:stage0-curation -- --check && npm run learning:0.14g -- --check && npm run learning:0.14h -- --check && npm run learning:0.14i -- --check && npm run build",
+    "verify": "npm run lint && npm run test && npm run learning:academy-p1-audit && npm run learning:academy-p2-audit && npm run learning:content-quality-audit && npm run learning:editorial-audit -- --check && npm run learning:semantic-audit -- --check && npm run learning:path-audit -- --check && npm run learning:path-semantics -- --check && npm run learning:reader-audit -- --check && npm run learning:reader-hardening -- --check && npm run learning:personal-curation -- --check && npm run learning:stage0-curation -- --check && npm run learning:0.14g -- --check && npm run learning:0.14h -- --check && npm run learning:0.14i -- --check && npm run learning:0.14j -- --check && npm run build",
     "preview": "vite preview"
   },
   "dependencies": {

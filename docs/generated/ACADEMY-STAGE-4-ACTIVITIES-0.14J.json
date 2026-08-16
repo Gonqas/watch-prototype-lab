@@ -1,0 +1,741 @@
+{
+  "schema": "wplab-stage4-activities-v1",
+  "phase": "0.14J",
+  "counts": {
+    "presentations": 14,
+    "presentInCorpus": 14,
+    "physicalEvidenceClaims": 0
+  },
+  "presentations": [
+    {
+      "activityId": "activity.miyota8215.identify-calibre",
+      "lessonId": "lesson.miyota8215.identify",
+      "visibleTitle": "Aplicar · Distinguir rasgo, inscripción, referencia, variante y confirmación documental",
+      "purpose": "Distinguir rasgo, inscripción, referencia, variante y confirmación documental.",
+      "instructions": [
+        "Observa sin nombrar todavía.",
+        "Registra rasgos e inscripción.",
+        "Coteja con documento oficial.",
+        "Declara variante y límite de la identidad."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "rasgo observable",
+        "inscripción o referencia",
+        "documento oficial",
+        "variante y límite",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.locate-specification",
+      "lessonId": "lesson.miyota8215.documentation",
+      "visibleTitle": "Aplicar · Seleccionar página, specification, drawing, manual o parts list y registrar snapshot",
+      "purpose": "Seleccionar página, specification, drawing, manual o parts list y registrar snapshot.",
+      "instructions": [
+        "Formula la pregunta.",
+        "Elige documento y localizador.",
+        "Extrae solo el dato aplicable.",
+        "Separa lo permitido de lo no demostrado."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "pregunta",
+        "documento y localizador",
+        "dato",
+        "conclusión permitida y no permitida",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "respuesta local estructurada",
+          "dossier revisable",
+          "límites declarados"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.classify-subsystems",
+      "lessonId": "lesson.miyota8215.architecture",
+      "visibleTitle": "Aplicar · Relacionar capas, subsistemas, piezas oficiales e interfaces con su grado de evidencia",
+      "purpose": "Relacionar capas, subsistemas, piezas oficiales e interfaces con su grado de evidencia.",
+      "instructions": [
+        "Explica la función general.",
+        "Identifica piezas oficiales.",
+        "Clasifica relaciones como oficiales, inferidas o conceptuales.",
+        "Registra entrada, salida y límite documental."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "subsistemas",
+        "interfaces",
+        "piezas oficiales",
+        "relaciones inferidas y desconocidos",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.follow-automatic",
+      "lessonId": "lesson.miyota8215.automatic",
+      "visibleTitle": "Aplicar · Seguir entrada y salida funcional separando piezas oficiales de transmisión inferida",
+      "purpose": "Seguir entrada y salida funcional separando piezas oficiales de transmisión inferida.",
+      "instructions": [
+        "Explica la función general.",
+        "Identifica piezas oficiales.",
+        "Clasifica relaciones como oficiales, inferidas o conceptuales.",
+        "Registra entrada, salida y límite documental."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "entrada",
+        "piezas oficiales",
+        "salida funcional",
+        "relación inferida y límite",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.reconstruct-winding-states",
+      "lessonId": "lesson.miyota8215.winding-setting",
+      "visibleTitle": "Aplicar · Reconstruir estados del usuario y distinguirlos de la cinemática interna",
+      "purpose": "Reconstruir estados del usuario y distinguirlos de la cinemática interna.",
+      "instructions": [
+        "Explica la función general.",
+        "Identifica piezas oficiales.",
+        "Clasifica relaciones como oficiales, inferidas o conceptuales.",
+        "Registra entrada, salida y límite documental."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "posición",
+        "operación del usuario",
+        "manual vigente",
+        "mecanismo interno no demostrado",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.follow-barrel-energy",
+      "lessonId": "lesson.miyota8215.barrel-energy",
+      "visibleTitle": "Aplicar · Distinguir conjunto oficial, retención estructural e interior no representado",
+      "purpose": "Distinguir conjunto oficial, retención estructural e interior no representado.",
+      "instructions": [
+        "Explica la función general.",
+        "Identifica piezas oficiales.",
+        "Clasifica relaciones como oficiales, inferidas o conceptuales.",
+        "Registra entrada, salida y límite documental."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "entrada",
+        "barrel complete",
+        "puente y retención",
+        "interior desconocido",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.identify-train",
+      "lessonId": "lesson.miyota8215.train",
+      "visibleTitle": "Aplicar · Clasificar piezas, contactos, función, dientes y geometría por evidencia",
+      "purpose": "Clasificar piezas, contactos, función, dientes y geometría por evidencia.",
+      "instructions": [
+        "Explica la función general.",
+        "Identifica piezas oficiales.",
+        "Clasifica relaciones como oficiales, inferidas o conceptuales.",
+        "Registra entrada, salida y límite documental."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "referencias oficiales",
+        "orden funcional",
+        "contactos inferidos",
+        "dientes y geometría desconocidos",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.follow-escapement",
+      "lessonId": "lesson.miyota8215.escapement-oscillator",
+      "visibleTitle": "Aplicar · Localizar escape y oscilador sin simular ajuste, desgaste o marcha reales",
+      "purpose": "Localizar escape y oscilador sin simular ajuste, desgaste o marcha reales.",
+      "instructions": [
+        "Explica la función general.",
+        "Identifica piezas oficiales.",
+        "Clasifica relaciones como oficiales, inferidas o conceptuales.",
+        "Registra entrada, salida y límite documental."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "piezas oficiales",
+        "interfaz conceptual",
+        "magnitudes no simuladas",
+        "prueba real pendiente",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.create-disassembly-plan",
+      "lessonId": "lesson.miyota8215.plan-disassembly",
+      "visibleTitle": "Aplicar · Construir objetivo, dependencias, registro, checkpoints, desconocidos y reversión",
+      "purpose": "Construir objetivo, dependencias, registro, checkpoints, desconocidos y reversión.",
+      "instructions": [
+        "Declara estado inicial y objetivo.",
+        "Clasifica fundamento y alcance.",
+        "Ejecuta o planifica el cambio virtual.",
+        "Registra checkpoint, deshacer y límite físico."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "objetivo y estado inicial",
+        "dependencias",
+        "checkpoints",
+        "frontera con procedimiento físico",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.guided-disassembly",
+      "lessonId": "lesson.miyota8215.guided-disassembly",
+      "visibleTitle": "Aplicar · Ejecutar y explicar cambios de estado, dependencias, inferencias y límites",
+      "purpose": "Ejecutar y explicar cambios de estado, dependencias, inferencias y límites.",
+      "instructions": [
+        "Declara estado inicial y objetivo.",
+        "Clasifica fundamento y alcance.",
+        "Ejecuta o planifica el cambio virtual.",
+        "Registra checkpoint, deshacer y límite físico."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "estado inicial",
+        "acción virtual",
+        "dependencia mostrada",
+        "inferencia y límite físico",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.free-disassembly",
+      "lessonId": "lesson.miyota8215.assisted-free-disassembly",
+      "visibleTitle": "Aplicar · Recordar dependencias, planificar y documentar sin afirmar destreza manual",
+      "purpose": "Recordar dependencias, planificar y documentar sin afirmar destreza manual.",
+      "instructions": [
+        "Declara estado inicial y objetivo.",
+        "Clasifica fundamento y alcance.",
+        "Ejecuta o planifica el cambio virtual.",
+        "Registra checkpoint, deshacer y límite físico."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "plan",
+        "dependencias",
+        "registro",
+        "competencias físicas excluidas",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.inspect-parts",
+      "lessonId": "lesson.miyota8215.inspection",
+      "visibleTitle": "Aplicar · Registrar símbolo, observación, hipótesis, prueba necesaria e incertidumbre",
+      "purpose": "Registrar símbolo, observación, hipótesis, prueba necesaria e incertidumbre.",
+      "instructions": [
+        "Nombra el símbolo como escenario.",
+        "Describe solo lo observable.",
+        "Abre hipótesis rivales.",
+        "Indica la prueba física que faltaría."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "símbolo",
+        "observación válida",
+        "hipótesis rivales",
+        "prueba física necesaria",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.partial-verifications",
+      "lessonId": "lesson.miyota8215.assembly-verification",
+      "visibleTitle": "Aplicar · Relacionar capa, dependencia, estado y clase de verificación",
+      "purpose": "Relacionar capa, dependencia, estado y clase de verificación.",
+      "instructions": [
+        "Ordena capas por dependencia.",
+        "Coloca una verificación interna.",
+        "Distingue verificación estructural, física y aceptación.",
+        "No prescribas lubricación, fuerza o ajuste."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "capa",
+        "dependencia",
+        "verificación del simulador",
+        "aceptación física excluida",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V"
+        ],
+        "primaryModality": "V",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": true,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": false,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "estado del simulador",
+          "explicación local",
+          "límite físico"
+        ]
+      }
+    },
+    {
+      "activityId": "activity.miyota8215.complete-diagnosis",
+      "lessonId": "lesson.miyota8215.diagnosis-project",
+      "visibleTitle": "Aplicar · Completar un dossier con identidad, fuentes, pruebas, resultados, claims, límites y transferencia",
+      "purpose": "Completar un dossier con identidad, fuentes, pruebas, resultados, claims, límites y transferencia.",
+      "instructions": [
+        "Registra identidad, documentos y snapshots.",
+        "Relaciona síntoma, hipótesis, prueba y resultado.",
+        "Vincula claims y límites.",
+        "Separa transferencia y dato físico pendiente."
+      ],
+      "availableHelp": [
+        "Vuelve a la pregunta central.",
+        "Consulta la matriz de autoridad documental.",
+        "Reduce la respuesta a evidencia, interpretación y desconocido."
+      ],
+      "successCriteria": [
+        "síntoma simulado",
+        "hipótesis y prueba",
+        "resultado",
+        "fuente y dato físico pendiente",
+        "El alcance simulation-only queda explícito cuando corresponde."
+      ],
+      "feedback": "Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.",
+      "limitations": [
+        "La actividad es local y digital.",
+        "No produce evidencia P ni acredita servicio, inspección o diagnóstico físico."
+      ],
+      "evidenceProfile": {
+        "modalities": [
+          "K",
+          "V",
+          "R"
+        ],
+        "primaryModality": "R",
+        "knowledgeExplanationRequired": true,
+        "virtualDemonstrationRequired": false,
+        "physicalExecutionRequired": false,
+        "measuredOrReviewedResultRequired": true,
+        "physicalCompetenceClaim": false,
+        "reviewerRequired": false,
+        "measurableAcceptanceCriteria": [
+          "Distingue dato oficial, interpretación del modelo y desconocido.",
+          "Cita el snapshot o fundamento de cada decisión.",
+          "Declara que la evidencia digital no acredita ejecución física."
+        ],
+        "evidenceArtifacts": [
+          "respuesta local estructurada",
+          "dossier revisable",
+          "límites declarados"
+        ]
+      }
+    }
+  ]
+}

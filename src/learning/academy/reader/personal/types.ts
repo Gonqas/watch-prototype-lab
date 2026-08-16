@@ -8,7 +8,7 @@ import type {
   AcademyReaderSectionRole,
 } from '../academyReaderModel'
 
-export type AcademyPersonalCurationPhase = '0.14E' | '0.14F' | '0.14G' | '0.14H' | '0.14I'
+export type AcademyPersonalCurationPhase = '0.14E' | '0.14F' | '0.14G' | '0.14H' | '0.14I' | '0.14J'
 export type AcademyEvidenceModality = 'K' | 'V' | 'P' | 'R'
 export type AcademyCurriculumPathRole = 'anchor' | 'support' | 'optional-branch' | 'reference'
 
@@ -330,3 +330,62 @@ export interface AcademyStage3PrerequisiteOverride extends Omit<AcademyStage1Pre
 export type AcademyStage3ActivityPresentation = AcademyStage0ActivityPresentation
 export type AcademyStage3VisualDesign = AcademyStage0VisualDesign
 export type AcademyStage3PersonalPractice = AcademyStage0PersonalPractice
+
+export type AcademyStage4EditorialArchetype =
+  | 'calibre-identification'
+  | 'document-reading'
+  | 'calibre-architecture'
+  | 'subsystem'
+  | 'structural-dependency'
+  | 'virtual-sequence'
+  | 'symbolic-inspection'
+  | 'virtual-assembly'
+  | 'scenario-diagnosis'
+  | 'traceable-dossier'
+
+export type AcademyStage4SectionSpec = AcademyStage2SectionSpec
+
+export interface AcademyStage4LessonCuration {
+  lessonId: string
+  sourceBlockId: string
+  macroStage: 4
+  chapterId: 'chapter.4.1' | 'chapter.4.2' | 'chapter.4.3' | 'chapter.4.4' | 'chapter.4.5'
+  pathRole: AcademyCurriculumPathRole
+  compositionMode: AcademyLessonCurationMode
+  editorialArchetype: AcademyStage4EditorialArchetype
+  centralQuestion: string
+  whyNow: string
+  observableOutcome: string
+  sections: readonly AcademyStage4SectionSpec[]
+  visualDesignIds: readonly string[]
+  activityPresentations: readonly AcademyStage0ActivityPresentation[]
+  sourceClaimIds: readonly string[]
+  limitations: readonly string[]
+  personalReviewStatus: 'not-reviewed'
+  technicalStatus: AcademyPersonalTechnicalStatus
+}
+
+export interface AcademyStage4PrerequisiteOverride extends Omit<AcademyStage1PrerequisiteOverride, 'phase'> {
+  phase: '0.14J'
+}
+
+export type AcademyStage4ActivityPresentation = AcademyStage0ActivityPresentation
+export type AcademyStage4VisualDesign = AcademyStage0VisualDesign
+export type AcademyStage4PersonalPractice = AcademyStage0PersonalPractice
+
+export interface AcademyStage4ClaimReview {
+  claimId: string
+  lessonId: string
+  sectionId: string
+  claim: string
+  claimType: 'identity' | 'official-specification' | 'official-part' | 'user-operation' | 'structural-relation' | 'simulation-boundary' | 'diagnosis-boundary'
+  technicalStatus: AcademyPersonalTechnicalStatus
+  central: boolean
+  sourceIds: readonly string[]
+  snapshotIds: readonly string[]
+  locators: readonly AcademySourceLocator[]
+  numericValues: readonly string[]
+  partReference?: string
+  verificationStatus: 'visually-verified' | 'verified-primary' | 'source-limited' | 'source-needed'
+  limitations: readonly string[]
+}

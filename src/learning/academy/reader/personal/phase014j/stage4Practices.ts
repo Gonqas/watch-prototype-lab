@@ -1,0 +1,31 @@
+import type { AcademyStage4PersonalPractice } from '../types'
+
+const practice = (personalPracticeId: string, lessonIds: readonly string[], title: string, objective: string, steps: readonly string[]): AcademyStage4PersonalPractice => ({
+  personalPracticeId, lessonIds, title, objective, inexpensiveMaterials: ['documentación oficial consultada en la Academia', 'simulación local', 'papel o tabla local'],
+  preparation: ['Trabaja solo con documentos y simulación.', 'No abras ni manipules un movimiento.', 'Declara el snapshot utilizado.'], steps,
+  help: ['Separa dato oficial, interpretación del modelo y desconocido.', 'Conserva nombre inglés oficial y español preferente.', 'Marca physical-procedure-source-needed antes de cualquier salto al banco.'],
+  stopSignal: 'Detente si la práctica exige retirar una pieza, soltar tornillos, tocar escape, volante o espiral, lubricar, regular o usar productos.',
+  possibleDamage: ['Ninguno dentro del alcance documental; no traslades la práctica a un movimiento físico.'], observe: ['evidencia', 'localizador', 'estado del simulador', 'incertidumbre'],
+  record: ['nota local sin datos personales', 'tabla de procedencia', 'límite de transferencia'], personalCriterion: ['La decisión es trazable.', 'No se inventa referencia, secuencia o geometría.', 'No se declara P.'],
+  suggestedRepetition: 'Repite cambiando la pregunta o el calibre de comparación, sin transferir datos específicos.', certificationStatus: 'optional-local-not-certified', affectsProgress: false, createsMastery: false, completesLesson: false,
+})
+
+export const ACADEMY_STAGE_4_PERSONAL_PRACTICES: readonly AcademyStage4PersonalPractice[] = [
+  practice('personal-practice.stage4.identify-document-set', ['lesson.miyota8215.identify'], 'Identificar el conjunto documental', 'Vincular identidad provisional y documento.', ['Lista rasgos observables.', 'Asocia página y documento.', 'Declara variante pendiente.']),
+  practice('personal-practice.stage4.compare-parts-list-snapshots', ['lesson.miyota8215.documentation'], 'Comparar snapshots de parts list', 'Clasificar cambios sin inventar piezas.', ['Compara locator y hash.', 'Registra tres cambios terminológicos.', 'Confirma cero altas y bajas.']),
+  practice('personal-practice.stage4.map-official-parts', ['lesson.miyota8215.architecture'], 'Mapear piezas oficiales', 'Relacionar nombre, referencia, grupo y mapping.', ['Elige cinco piezas.', 'Conserva nombre oficial.', 'Clasifica geometryStatus y modelMappingStatus.']),
+  practice('personal-practice.stage4.classify-source-authority', ['lesson.miyota8215.documentation'], 'Clasificar autoridad documental', 'Elegir el documento por pregunta.', ['Escribe cinco preguntas.', 'Asigna documento y localizador.', 'Añade una conclusión no permitida.']),
+  practice('personal-practice.stage4.reconstruct-crown-states', ['lesson.miyota8215.winding-setting'], 'Reconstruir estados de corona', 'Separar operación externa y mecanismo interno.', ['Ordena posiciones 0, 1 y 2.', 'Cita el manual.', 'Marca cinemática interna no demostrada.']),
+  practice('personal-practice.stage4.trace-automatic-dependencies', ['lesson.miyota8215.automatic'], 'Trazar dependencias del automático', 'Separar pieza oficial y ruta educativa.', ['Identifica rotor y ruedas.', 'Etiqueta relaciones inferidas.', 'Declara sentido y eficiencia desconocidos.']),
+  practice('personal-practice.stage4.trace-barrel-train', ['lesson.miyota8215.barrel-energy', 'lesson.miyota8215.train'], 'Trazar barrilete y tren', 'Conectar grupos sin abrir el barrilete.', ['Localiza conjuntos.', 'Dibuja la cadena conceptual.', 'Marca dientes y geometría desconocidos.']),
+  practice('personal-practice.stage4.map-escapement-parts', ['lesson.miyota8215.escapement-oscillator'], 'Mapear escape y oscilador', 'Distinguir identidad de comportamiento.', ['Lista referencias.', 'Agrupa interfaces.', 'Marca amplitud y beat error como no simulados.']),
+  practice('personal-practice.stage4.map-calendar-parts', ['lesson.miyota8215.calendar'], 'Mapear calendario', 'Relacionar ajuste externo y piezas.', ['Cita la advertencia 8215.', 'Identifica piezas.', 'No infieras la secuencia interna.']),
+  practice('personal-practice.stage4.build-dependency-graph', ['lesson.miyota8215.plan-disassembly'], 'Construir grafo de dependencias', 'Representar acceso sin orden de servicio.', ['Añade pieza, fijación y elemento retenido.', 'Distingue fixture y documento.', 'Registra desconocidos.']),
+  practice('personal-practice.stage4.audit-simulation-step', ['lesson.miyota8215.guided-disassembly', 'lesson.miyota8215.assisted-free-disassembly'], 'Auditar un paso virtual', 'Clasificar fundamento y alcance.', ['Registra estado antes y después.', 'Elige fundamento.', 'Etiqueta simulation-only y límite físico.']),
+  practice('personal-practice.stage4.record-symbolic-inspection', ['lesson.miyota8215.inspection'], 'Registrar inspección simbólica', 'Evitar diagnosticar desde un símbolo.', ['Describe el símbolo.', 'Propón hipótesis rivales.', 'Indica foto o medición física pendiente.']),
+  practice('personal-practice.stage4.plan-virtual-checkpoints', ['lesson.miyota8215.assembly-verification'], 'Planificar checkpoints virtuales', 'Separar clases de verificación.', ['Ordena capas.', 'Coloca un control del simulador.', 'Escribe qué requeriría verificación física.']),
+  practice('personal-practice.stage4.complete-diagnosis-dossier', ['lesson.miyota8215.diagnosis-project'], 'Completar dossier de diagnóstico', 'Conservar fuente, evidencia, resultado y límite.', ['Registra síntoma e hipótesis.', 'Añade prueba y resultado.', 'Vincula claims, snapshots y transferencia.']),
+  practice('personal-practice.stage4.compare-with-another-calibre', ['lesson.miyota8215.diagnosis-project'], 'Comparar con otro calibre', 'Transferir solo principios generales.', ['Elige un segundo diagrama documental.', 'Compara grupos funcionales.', 'Marca todo dato específico no transferible.']),
+]
+
+export function academyStage4PersonalPracticesForLesson(lessonId: string) { return ACADEMY_STAGE_4_PERSONAL_PRACTICES.filter(({ lessonIds }) => lessonIds.includes(lessonId)) }

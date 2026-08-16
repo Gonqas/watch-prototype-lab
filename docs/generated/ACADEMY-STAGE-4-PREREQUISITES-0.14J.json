@@ -1,0 +1,243 @@
+{
+  "schema": "wplab-stage4-prerequisites-v1",
+  "phase": "0.14J",
+  "chapterSequence": [
+    "chapter.4.1",
+    "chapter.4.2",
+    "chapter.4.3",
+    "chapter.4.4",
+    "chapter.4.5"
+  ],
+  "transitions": [
+    {
+      "fromChapterId": "chapter.3.4",
+      "toChapterId": "chapter.4.1",
+      "blocking": true,
+      "meaning": "El cierre conceptual de etapa 3 abre identificación documental del calibre."
+    },
+    {
+      "fromChapterId": "chapter.4.1",
+      "toChapterId": "chapter.4.2",
+      "blocking": true,
+      "meaning": "Identidad y autoridad documental preceden a los subsistemas."
+    },
+    {
+      "fromChapterId": "chapter.4.2",
+      "toChapterId": "chapter.4.3",
+      "blocking": true,
+      "meaning": "El mapa de subsistemas precede a las dependencias virtuales."
+    },
+    {
+      "fromChapterId": "chapter.4.3",
+      "toChapterId": "chapter.4.4",
+      "blocking": true,
+      "meaning": "La secuencia del laboratorio precede a inspección y montaje simbólicos."
+    },
+    {
+      "fromChapterId": "chapter.4.4",
+      "toChapterId": "chapter.4.5",
+      "blocking": true,
+      "meaning": "Las verificaciones del modelo preceden al diagnóstico y dossier."
+    },
+    {
+      "fromChapterId": "chapter.4.5",
+      "toChapterId": "chapter.5.1",
+      "blocking": true,
+      "meaning": "El dossier trazable abre etapa 5 sin afirmar competencia de servicio."
+    }
+  ],
+  "overrides": [
+    {
+      "lessonId": "lesson.miyota8215.identify",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.system"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.documentation",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.system"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.architecture",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.system"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.automatic",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.miyota8215.document-authority"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.winding-setting",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.miyota8215.document-authority"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.barrel-energy",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.miyota8215.document-authority"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.train",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.miyota8215.document-authority"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.escapement-oscillator",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.miyota8215.document-authority"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.calendar",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.miyota8215.automatic"
+      ],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Support o rama opcional accesible sin bloquear la ruta.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.plan-disassembly",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.miyota8215.structural-dependency"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.guided-disassembly",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.miyota8215.structural-dependency"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.assisted-free-disassembly",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.miyota8215.structural-dependency"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.inspection",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.miyota8215.simulation-boundary"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.assembly-verification",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.miyota8215.simulation-boundary"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.miyota8215.diagnosis-project",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [
+        "concept.horology.rival-hypotheses"
+      ],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "Solo conserva el fundamento conceptual anterior; no exige calibre, herramientas, servicio físico, lubricación ni etapa 5.",
+      "phase": "0.14J"
+    },
+    {
+      "lessonId": "lesson.advanced.service-disassembly",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.miyota8215.diagnosis-project"
+      ],
+      "pathRole": "optional-branch",
+      "blocking": false,
+      "rationale": "Support o rama opcional accesible sin bloquear la ruta.",
+      "phase": "0.14J"
+    }
+  ]
+}

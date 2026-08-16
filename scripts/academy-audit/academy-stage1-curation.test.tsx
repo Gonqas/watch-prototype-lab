@@ -54,7 +54,7 @@ describe('0.14G · corpus, historial y versionado', () => {
   })
 
   it('mantiene 0.14F reproducible y añade aliases explícitos a 0.14G', () => {
-    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14I')
+    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14J')
     for (const lessonId of ACADEMY_STAGE_1_LESSON_IDS) {
       const previous = readerDocument(lessonId, '0.14F')
       const current = readerDocument(lessonId, '0.14G')

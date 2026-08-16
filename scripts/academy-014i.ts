@@ -95,7 +95,7 @@ async function treeSnapshot(root: string) {
 
 async function historicalReportSnapshot(repositoryRoot: string) {
   const root = join(repositoryRoot, 'docs', 'generated')
-  const fileNames = (await readdir(root)).filter((name) => !name.startsWith('APRENDER-') && !name.includes('0.14I')).sort()
+  const fileNames = (await readdir(root)).filter((name) => !name.startsWith('APRENDER-') && !/0\.14[I-Z]/i.test(name)).sort()
   const rows = await Promise.all(fileNames.map(async (name) => `${name}:${sha256(await readFile(join(root, name)))}`))
   return { count: fileNames.length, digest: sha256(rows.join('\n')), fileNames }
 }
@@ -137,7 +137,7 @@ export async function buildAcademy014IOutputs(repositoryRoot: string): Promise<M
   const learningContent = await treeSnapshot(join(repositoryRoot, 'learning-content'))
   const originals = await treeSnapshot(join(repositoryRoot, 'reference-library', 'originals'))
   const screenshots = await screenshotRows(repositoryRoot)
-  if (CURRENT_ACADEMY_CURATION_PHASE !== '0.14I') throw new Error('0.14I no es la fase activa.')
+  if (!academyPhaseIncludes(CURRENT_ACADEMY_CURATION_PHASE, '0.14I')) throw new Error('La fase activa no incluye 0.14I.')
   if (JSON.stringify(corpus.counts, ['packages','routes','modules','lessons','activities']) !== JSON.stringify(ACADEMY_014I_BASELINE.corpusCounts)) throw new Error('Los conteos del corpus cambiaron.')
   if (corpus.digest !== ACADEMY_014I_BASELINE.corpusDigest) throw new Error('El digest del corpus cambió.')
   if (historical.count !== ACADEMY_014I_BASELINE.historicalReports.count || historical.digest !== ACADEMY_014I_BASELINE.historicalReports.digest) throw new Error('Los informes 0.14A–0.14H cambiaron.')
@@ -184,12 +184,15 @@ export async function buildAcademy014IOutputs(repositoryRoot: string): Promise<M
   if (missingClaimSources.length) throw new Error(`Fuentes de claims ausentes: ${missingClaimSources.join(', ')}`)
 
   const outputs = new Map<string, string>()
+  const readerPhases014I = ACADEMY_READER_CURATION_PHASES.filter((phase) => academyPhaseIncludes('0.14I', phase))
+  const personalPhases014I = ACADEMY_PERSONAL_CURATION_PHASES.filter((phase) => academyPhaseIncludes('0.14I', phase))
+  const layers014I = ACADEMY_CURATION_LAYER_REGISTRY.filter(({ phase }) => phase === '0.14C' || academyPhaseIncludes('0.14I', phase))
   const compositionJson = {
-    schema: 'wplab-academy-source-preserving-composition-v1', phase: '0.14I', currentPhase: CURRENT_ACADEMY_CURATION_PHASE,
-    readerPhases: ACADEMY_READER_CURATION_PHASES, personalPhases: ACADEMY_PERSONAL_CURATION_PHASES, layers: ACADEMY_CURATION_LAYER_REGISTRY,
+    schema: 'wplab-academy-source-preserving-composition-v1', phase: '0.14I', currentPhase: '0.14I',
+    readerPhases: readerPhases014I, personalPhases: personalPhases014I, layers: layers014I,
     requiredContextFields: ['lessonId','phase','authoredSections','previousPhaseSections','currentSections','historicalAliases','sourceBlockIds'],
     historicalSnapshot014H: ACADEMY_014H_PHASE_REGISTRY_SNAPSHOT,
-    compositionMatrix: ACADEMY_PERSONAL_CURATION_PHASES.map((phase) => ({ phase, includes: ACADEMY_PERSONAL_CURATION_PHASES.filter((candidate) => academyPhaseIncludes(phase, candidate)), layers: academyPhaseLayers(phase).map(({ phase: layerPhase }) => layerPhase) })),
+    compositionMatrix: personalPhases014I.map((phase) => ({ phase, includes: personalPhases014I.filter((candidate) => academyPhaseIncludes(phase, candidate)), layers: academyPhaseLayers(phase).filter(({ phase: layerPhase }) => layerPhase === '0.14C' || academyPhaseIncludes('0.14I', layerPhase)).map(({ phase: layerPhase }) => layerPhase) })),
     compatibility: remediationDocuments.map(({ record, byPhase }) => ({ lessonId: record.lessonId, historicalPhase: record.historicalPhase, historicalHash: byPhase[record.historicalPhase].contentHash, hHash: byPhase['0.14H'].contentHash, iHash: byPhase['0.14I'].contentHash })),
   }
   outputs.set('ACADEMY-SOURCE-PRESERVING-COMPOSITION-0.14I.json', json(compositionJson))

@@ -1,0 +1,1276 @@
+{
+  "schema": "wplab-stage4-visuals-v1",
+  "phase": "0.14J",
+  "counts": {
+    "reused": 15,
+    "new": 10,
+    "questionsCovered": 20,
+    "photoBriefs": 9
+  },
+  "reusedVisualIds": [
+    "visual.miyota8215.identify",
+    "visual.miyota8215.documentation",
+    "visual.miyota8215.architecture",
+    "visual.miyota8215.automatic",
+    "visual.miyota8215.winding-setting",
+    "visual.miyota8215.calendar",
+    "visual.miyota8215.barrel-energy",
+    "visual.miyota8215.train",
+    "visual.miyota8215.escapement-oscillator",
+    "visual.miyota8215.plan-disassembly",
+    "visual.miyota8215.guided-disassembly",
+    "visual.miyota8215.assisted-free-disassembly",
+    "visual.miyota8215.inspection",
+    "visual.miyota8215.assembly-verification",
+    "visual.miyota8215.diagnosis-project"
+  ],
+  "newDesigns": [
+    {
+      "visualDesignId": "visual.stage4.identity-evidence.v1",
+      "lessonIds": [
+        "lesson.miyota8215.identify"
+      ],
+      "sectionIds": [
+        "reader.section.block.miyota8215.identify.014j-evidencia-y-autoridad"
+      ],
+      "pedagogicalQuestion": "¿Cómo se identifica el 8215?",
+      "semanticPayload": {
+        "title": "Escalera de identidad",
+        "nodes": [
+          {
+            "id": "evidence",
+            "label": "Evidencia visible",
+            "detail": "observación",
+            "emphasis": "primary"
+          },
+          {
+            "id": "mark",
+            "label": "Inscripción",
+            "detail": "indicio",
+            "emphasis": "normal"
+          },
+          {
+            "id": "document",
+            "label": "Documento oficial",
+            "detail": "confirmación",
+            "emphasis": "normal"
+          },
+          {
+            "id": "variant",
+            "label": "Variante",
+            "detail": "alcance",
+            "emphasis": "normal"
+          },
+          {
+            "id": "limit",
+            "label": "Límite",
+            "detail": "provisional",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "evidence",
+            "to": "mark",
+            "label": "localiza",
+            "kind": "decision"
+          },
+          {
+            "from": "mark",
+            "to": "document",
+            "label": "coteja",
+            "kind": "decision"
+          },
+          {
+            "from": "document",
+            "to": "variant",
+            "label": "delimita",
+            "kind": "decision"
+          },
+          {
+            "from": "variant",
+            "to": "limit",
+            "label": "conserva",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Etiquetas, orden y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.product-page"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.product-page",
+          "documentLocator": "snapshot.miyota.8215.product-page.2026-08-16",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-16"
+        }
+      ],
+      "fidelity": "calibre-specific",
+      "limitations": [
+        "No identifica una unidad física por parecido."
+      ],
+      "accessibilitySummary": "Escalera de identidad: Evidencia visible, Inscripción, Documento oficial, Variante, Límite.",
+      "longDescription": "Escalera de identidad. evidence conduce a mark: localiza. mark conduce a document: coteja. document conduce a variant: delimita. variant conduce a limit: conserva.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:2ec720ec7350daa2",
+      "visualHash": "fnv1a64:e01efd9525424419",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage4.document-authority.v1",
+      "lessonIds": [
+        "lesson.miyota8215.documentation"
+      ],
+      "sectionIds": [
+        "reader.section.block.miyota8215.documentation.014j-evidencia-y-autoridad"
+      ],
+      "pedagogicalQuestion": "¿Qué documento responde cada pregunta?",
+      "semanticPayload": {
+        "title": "Matriz de autoridad documental",
+        "nodes": [
+          {
+            "id": "question",
+            "label": "Pregunta",
+            "detail": "entrada",
+            "emphasis": "primary"
+          },
+          {
+            "id": "spec",
+            "label": "Specification",
+            "detail": "función y datos",
+            "emphasis": "normal"
+          },
+          {
+            "id": "drawing",
+            "label": "Drawing",
+            "detail": "cotas expresas",
+            "emphasis": "normal"
+          },
+          {
+            "id": "manual",
+            "label": "Manual",
+            "detail": "corona",
+            "emphasis": "normal"
+          },
+          {
+            "id": "parts",
+            "label": "Parts list",
+            "detail": "piezas",
+            "emphasis": "normal"
+          },
+          {
+            "id": "missing",
+            "label": "No disponible",
+            "detail": "servicio y lubricación",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "question",
+            "to": "spec",
+            "label": "clasifica",
+            "kind": "decision"
+          },
+          {
+            "from": "question",
+            "to": "drawing",
+            "label": "clasifica",
+            "kind": "decision"
+          },
+          {
+            "from": "question",
+            "to": "manual",
+            "label": "clasifica",
+            "kind": "decision"
+          },
+          {
+            "from": "question",
+            "to": "parts",
+            "label": "clasifica",
+            "kind": "decision"
+          },
+          {
+            "from": "question",
+            "to": "missing",
+            "label": "bloquea",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Etiquetas, orden y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.specification"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.specification",
+          "documentLocator": "snapshot.miyota.8215.specification.bcb22d8e",
+          "page": "1–2",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-16"
+        }
+      ],
+      "fidelity": "calibre-specific",
+      "limitations": [
+        "El documento se elige por alcance, no por posición en una lista."
+      ],
+      "accessibilitySummary": "Matriz de autoridad documental: Pregunta, Specification, Drawing, Manual, Parts list, No disponible.",
+      "longDescription": "Matriz de autoridad documental. question conduce a spec: clasifica. question conduce a drawing: clasifica. question conduce a manual: clasifica. question conduce a parts: clasifica. question conduce a missing: bloquea.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:cabf425f8f287b85",
+      "visualHash": "fnv1a64:ba315eec42bd29e9",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage4.parts-drift.v1",
+      "lessonIds": [
+        "lesson.miyota8215.documentation"
+      ],
+      "sectionIds": [
+        "reader.section.block.miyota8215.documentation.014j-visual-stage4-parts-drift-v1"
+      ],
+      "pedagogicalQuestion": "¿Qué cambió entre snapshots de la parts list?",
+      "semanticPayload": {
+        "title": "Drift revisado de parts list",
+        "nodes": [
+          {
+            "id": "previous",
+            "label": "Snapshot anterior",
+            "detail": "hash ea5f…",
+            "emphasis": "primary"
+          },
+          {
+            "id": "current",
+            "label": "Snapshot vigente",
+            "detail": "hash fdaf…",
+            "emphasis": "normal"
+          },
+          {
+            "id": "terms",
+            "label": "3 términos",
+            "detail": "renombrados",
+            "emphasis": "normal"
+          },
+          {
+            "id": "layout",
+            "label": "1 cambio",
+            "detail": "maquetación",
+            "emphasis": "normal"
+          },
+          {
+            "id": "parts",
+            "label": "0 piezas",
+            "detail": "altas o bajas",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "previous",
+            "to": "current",
+            "label": "compara",
+            "kind": "decision"
+          },
+          {
+            "from": "current",
+            "to": "terms",
+            "label": "clasifica",
+            "kind": "decision"
+          },
+          {
+            "from": "current",
+            "to": "layout",
+            "label": "clasifica",
+            "kind": "decision"
+          },
+          {
+            "from": "current",
+            "to": "parts",
+            "label": "confirma",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Etiquetas, orden y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.parts-list-exploded-view"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.parts-list-exploded-view",
+          "documentLocator": "snapshot.miyota.8215.parts-list.fdafef81",
+          "page": "1",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-16"
+        }
+      ],
+      "fidelity": "calibre-specific",
+      "limitations": [
+        "La revisión no demuestra que sea una edición formalmente numerada."
+      ],
+      "accessibilitySummary": "Drift revisado de parts list: Snapshot anterior, Snapshot vigente, 3 términos, 1 cambio, 0 piezas.",
+      "longDescription": "Drift revisado de parts list. previous conduce a current: compara. current conduce a terms: clasifica. current conduce a layout: clasifica. current conduce a parts: confirma.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:23cc65d798b20f1a",
+      "visualHash": "fnv1a64:69d7ace806ec2927",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage4.architecture-authority.v1",
+      "lessonIds": [
+        "lesson.miyota8215.architecture"
+      ],
+      "sectionIds": [
+        "reader.section.block.miyota8215.architecture.014j-evidencia-y-autoridad"
+      ],
+      "pedagogicalQuestion": "¿Cómo se leen capas, subsistemas y piezas?",
+      "semanticPayload": {
+        "title": "Arquitectura y autoridad",
+        "nodes": [
+          {
+            "id": "whole",
+            "label": "Calibre completo",
+            "detail": "un ensamblaje",
+            "emphasis": "primary"
+          },
+          {
+            "id": "systems",
+            "label": "Subsistemas",
+            "detail": "función",
+            "emphasis": "normal"
+          },
+          {
+            "id": "parts",
+            "label": "Piezas",
+            "detail": "identidad oficial",
+            "emphasis": "normal"
+          },
+          {
+            "id": "relations",
+            "label": "Relaciones",
+            "detail": "inferidas",
+            "emphasis": "normal"
+          },
+          {
+            "id": "geometry",
+            "label": "Geometría",
+            "detail": "normalizada",
+            "emphasis": "normal"
+          },
+          {
+            "id": "unknown",
+            "label": "Desconocidos",
+            "detail": "no rellenar",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "whole",
+            "to": "systems",
+            "label": "organiza",
+            "kind": "decision"
+          },
+          {
+            "from": "systems",
+            "to": "parts",
+            "label": "agrupa",
+            "kind": "decision"
+          },
+          {
+            "from": "parts",
+            "to": "relations",
+            "label": "no demuestra",
+            "kind": "decision"
+          },
+          {
+            "from": "relations",
+            "to": "geometry",
+            "label": "modela",
+            "kind": "decision"
+          },
+          {
+            "from": "geometry",
+            "to": "unknown",
+            "label": "declara",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Etiquetas, orden y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.parts-list-exploded-view"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.parts-list-exploded-view",
+          "documentLocator": "snapshot.miyota.8215.parts-list.fdafef81",
+          "page": "1",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-16"
+        }
+      ],
+      "fidelity": "calibre-specific",
+      "limitations": [
+        "Fixture G2/K2/P0, no gemelo ni escala real."
+      ],
+      "accessibilitySummary": "Arquitectura y autoridad: Calibre completo, Subsistemas, Piezas, Relaciones, Geometría, Desconocidos.",
+      "longDescription": "Arquitectura y autoridad. whole conduce a systems: organiza. systems conduce a parts: agrupa. parts conduce a relations: no demuestra. relations conduce a geometry: modela. geometry conduce a unknown: declara.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:244815aa18db7efd",
+      "visualHash": "fnv1a64:0eab1e369142cdcd",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage4.crown-states.v1",
+      "lessonIds": [
+        "lesson.miyota8215.winding-setting",
+        "lesson.miyota8215.calendar"
+      ],
+      "sectionIds": [
+        "reader.section.block.miyota8215.winding-setting.014j-evidencia-y-autoridad",
+        "reader.section.block.miyota8215.calendar.014j-evidencia-y-autoridad"
+      ],
+      "pedagogicalQuestion": "¿Qué estados externos permite la corona?",
+      "semanticPayload": {
+        "title": "Estados documentados de corona",
+        "nodes": [
+          {
+            "id": "normal",
+            "label": "Normal",
+            "detail": "marcha y cuerda",
+            "emphasis": "primary"
+          },
+          {
+            "id": "first",
+            "label": "Primera",
+            "detail": "fecha",
+            "emphasis": "normal"
+          },
+          {
+            "id": "second",
+            "label": "Segunda",
+            "detail": "hora",
+            "emphasis": "normal"
+          },
+          {
+            "id": "warning",
+            "label": "Advertencia",
+            "detail": "9 PM–1 AM",
+            "emphasis": "normal"
+          },
+          {
+            "id": "internal",
+            "label": "Cinemática interna",
+            "detail": "no demostrada",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "normal",
+            "to": "first",
+            "label": "extraer",
+            "kind": "decision"
+          },
+          {
+            "from": "first",
+            "to": "second",
+            "label": "extraer",
+            "kind": "decision"
+          },
+          {
+            "from": "first",
+            "to": "warning",
+            "label": "limita",
+            "kind": "decision"
+          },
+          {
+            "from": "second",
+            "to": "internal",
+            "label": "no prueba",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Etiquetas, orden y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.instruction-manual"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.instruction-manual",
+          "documentLocator": "snapshot.miyota.8215.instruction-manual.6286b843",
+          "page": "1",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-16"
+        }
+      ],
+      "fidelity": "calibre-specific",
+      "limitations": [
+        "Solo manual 8215 vigente; no mezcla 8205."
+      ],
+      "accessibilitySummary": "Estados documentados de corona: Normal, Primera, Segunda, Advertencia, Cinemática interna.",
+      "longDescription": "Estados documentados de corona. normal conduce a first: extraer. first conduce a second: extraer. first conduce a warning: limita. second conduce a internal: no prueba.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:659ab4480650a455",
+      "visualHash": "fnv1a64:cb4afbfa0bba90c0",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage4.dependency-plan.v1",
+      "lessonIds": [
+        "lesson.miyota8215.plan-disassembly"
+      ],
+      "sectionIds": [
+        "reader.section.block.miyota8215.plan-disassembly.014j-evidencia-y-autoridad"
+      ],
+      "pedagogicalQuestion": "¿Qué diferencia dependencia y procedimiento?",
+      "semanticPayload": {
+        "title": "Grafo de dependencia estructural",
+        "nodes": [
+          {
+            "id": "piece",
+            "label": "Pieza",
+            "detail": "identidad",
+            "emphasis": "primary"
+          },
+          {
+            "id": "fastener",
+            "label": "Fijación",
+            "detail": "asociación",
+            "emphasis": "normal"
+          },
+          {
+            "id": "retained",
+            "label": "Elemento retenido",
+            "detail": "dependencia",
+            "emphasis": "normal"
+          },
+          {
+            "id": "access",
+            "label": "Acceso",
+            "detail": "modelo",
+            "emphasis": "normal"
+          },
+          {
+            "id": "procedure",
+            "label": "Procedimiento",
+            "detail": "source-needed",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "fastener",
+            "to": "piece",
+            "label": "retiene",
+            "kind": "decision"
+          },
+          {
+            "from": "piece",
+            "to": "retained",
+            "label": "cubre",
+            "kind": "decision"
+          },
+          {
+            "from": "retained",
+            "to": "access",
+            "label": "condiciona",
+            "kind": "decision"
+          },
+          {
+            "from": "access",
+            "to": "procedure",
+            "label": "no determina",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Etiquetas, orden y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.parts-list-exploded-view"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.parts-list-exploded-view",
+          "documentLocator": "snapshot.miyota.8215.parts-list.fdafef81",
+          "page": "1",
+          "verificationMethod": "visual-pdf-inspection",
+          "verifiedAt": "2026-08-16"
+        }
+      ],
+      "fidelity": "calibre-specific",
+      "limitations": [
+        "No codifica herramienta, sentido, par ni orden físico."
+      ],
+      "accessibilitySummary": "Grafo de dependencia estructural: Pieza, Fijación, Elemento retenido, Acceso, Procedimiento.",
+      "longDescription": "Grafo de dependencia estructural. fastener conduce a piece: retiene. piece conduce a retained: cubre. retained conduce a access: condiciona. access conduce a procedure: no determina.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:3aa777166410fe1f",
+      "visualHash": "fnv1a64:d5412e6f8a947f00",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage4.simulation-service-boundary.v1",
+      "lessonIds": [
+        "lesson.miyota8215.guided-disassembly",
+        "lesson.miyota8215.assisted-free-disassembly"
+      ],
+      "sectionIds": [
+        "reader.section.block.miyota8215.guided-disassembly.014j-evidencia-y-autoridad",
+        "reader.section.block.miyota8215.assisted-free-disassembly.014j-evidencia-y-autoridad"
+      ],
+      "pedagogicalQuestion": "¿Qué valida una secuencia virtual?",
+      "semanticPayload": {
+        "title": "Frontera simulación y servicio",
+        "nodes": [
+          {
+            "id": "state",
+            "label": "Estado del modelo",
+            "detail": "inicio",
+            "emphasis": "primary"
+          },
+          {
+            "id": "action",
+            "label": "Acción virtual",
+            "detail": "reversible",
+            "emphasis": "normal"
+          },
+          {
+            "id": "dependency",
+            "label": "Dependencia",
+            "detail": "mostrada",
+            "emphasis": "normal"
+          },
+          {
+            "id": "checkpoint",
+            "label": "Checkpoint",
+            "detail": "contrato interno",
+            "emphasis": "normal"
+          },
+          {
+            "id": "physical",
+            "label": "Servicio físico",
+            "detail": "source-needed",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "state",
+            "to": "action",
+            "label": "cambia",
+            "kind": "decision"
+          },
+          {
+            "from": "action",
+            "to": "dependency",
+            "label": "expone",
+            "kind": "decision"
+          },
+          {
+            "from": "dependency",
+            "to": "checkpoint",
+            "label": "comprueba",
+            "kind": "decision"
+          },
+          {
+            "from": "checkpoint",
+            "to": "physical",
+            "label": "no acredita",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Etiquetas, orden y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.project.horologia-system4b-blueprint"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.project.horologia-system4b-blueprint",
+          "documentLocator": "Contrato de simulación 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "calibre-specific",
+      "limitations": [
+        "La reversibilidad digital no define montaje físico."
+      ],
+      "accessibilitySummary": "Frontera simulación y servicio: Estado del modelo, Acción virtual, Dependencia, Checkpoint, Servicio físico.",
+      "longDescription": "Frontera simulación y servicio. state conduce a action: cambia. action conduce a dependency: expone. dependency conduce a checkpoint: comprueba. checkpoint conduce a physical: no acredita.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:34fb42f545d3b1d6",
+      "visualHash": "fnv1a64:ff21e9d6e8c5d5d1",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage4.symbolic-inspection.v1",
+      "lessonIds": [
+        "lesson.miyota8215.inspection"
+      ],
+      "sectionIds": [
+        "reader.section.block.miyota8215.inspection.014j-evidencia-y-autoridad"
+      ],
+      "pedagogicalQuestion": "¿Qué puede observar el modelo y qué requiere evidencia real?",
+      "semanticPayload": {
+        "title": "Inspección simbólica",
+        "nodes": [
+          {
+            "id": "scenario",
+            "label": "Escenario",
+            "detail": "símbolo",
+            "emphasis": "primary"
+          },
+          {
+            "id": "observation",
+            "label": "Observación válida",
+            "detail": "estado marcado",
+            "emphasis": "normal"
+          },
+          {
+            "id": "hypotheses",
+            "label": "Hipótesis",
+            "detail": "rivales",
+            "emphasis": "normal"
+          },
+          {
+            "id": "test",
+            "label": "Prueba física",
+            "detail": "pendiente",
+            "emphasis": "normal"
+          },
+          {
+            "id": "uncertainty",
+            "label": "Incertidumbre",
+            "detail": "conservada",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "scenario",
+            "to": "observation",
+            "label": "permite",
+            "kind": "decision"
+          },
+          {
+            "from": "observation",
+            "to": "hypotheses",
+            "label": "abre",
+            "kind": "decision"
+          },
+          {
+            "from": "hypotheses",
+            "to": "test",
+            "label": "distingue",
+            "kind": "decision"
+          },
+          {
+            "from": "test",
+            "to": "uncertainty",
+            "label": "delimita",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Etiquetas, orden y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.project.horologia-system4b-blueprint"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.project.horologia-system4b-blueprint",
+          "documentLocator": "Contrato de escenarios simbólicos 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "calibre-specific",
+      "limitations": [
+        "No representa desgaste, suciedad, aceite, holgura o amplitud reales."
+      ],
+      "accessibilitySummary": "Inspección simbólica: Escenario, Observación válida, Hipótesis, Prueba física, Incertidumbre.",
+      "longDescription": "Inspección simbólica. scenario conduce a observation: permite. observation conduce a hypotheses: abre. hypotheses conduce a test: distingue. test conduce a uncertainty: delimita.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:7ae595dcb8049b32",
+      "visualHash": "fnv1a64:651b274166f0a4e3",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage4.verification-layers.v1",
+      "lessonIds": [
+        "lesson.miyota8215.assembly-verification"
+      ],
+      "sectionIds": [
+        "reader.section.block.miyota8215.assembly-verification.014j-evidencia-y-autoridad"
+      ],
+      "pedagogicalQuestion": "¿Dónde colocar checkpoints virtuales?",
+      "semanticPayload": {
+        "title": "Cuatro niveles de verificación",
+        "nodes": [
+          {
+            "id": "simulation",
+            "label": "Simulador",
+            "detail": "estado interno",
+            "emphasis": "primary"
+          },
+          {
+            "id": "structural",
+            "label": "Estructural",
+            "detail": "relación documentada",
+            "emphasis": "normal"
+          },
+          {
+            "id": "physical",
+            "label": "Física",
+            "detail": "unidad y método",
+            "emphasis": "warning"
+          },
+          {
+            "id": "acceptance",
+            "label": "Aceptación",
+            "detail": "autoridad aplicable",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "simulation",
+            "to": "structural",
+            "label": "separa",
+            "kind": "decision"
+          },
+          {
+            "from": "structural",
+            "to": "physical",
+            "label": "no sustituye",
+            "kind": "decision"
+          },
+          {
+            "from": "physical",
+            "to": "acceptance",
+            "label": "no garantiza",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Etiquetas, orden y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.project.horologia-system4b-blueprint"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.project.horologia-system4b-blueprint",
+          "documentLocator": "Contrato de verificación 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "calibre-specific",
+      "limitations": [
+        "No prescribe lubricación, apriete, ajuste o fuerza."
+      ],
+      "accessibilitySummary": "Cuatro niveles de verificación: Simulador, Estructural, Física, Aceptación.",
+      "longDescription": "Cuatro niveles de verificación. simulation conduce a structural: separa. structural conduce a physical: no sustituye. physical conduce a acceptance: no garantiza.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:1214c3385b52b847",
+      "visualHash": "fnv1a64:cac2e6efb5d6a90d",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage4.dossier-provenance.v1",
+      "lessonIds": [
+        "lesson.miyota8215.diagnosis-project"
+      ],
+      "sectionIds": [
+        "reader.section.block.miyota8215.diagnosis-project.014j-evidencia-y-autoridad"
+      ],
+      "pedagogicalQuestion": "¿Cómo construir un dossier con procedencia?",
+      "semanticPayload": {
+        "title": "Cadena de diagnóstico y dossier",
+        "nodes": [
+          {
+            "id": "symptom",
+            "label": "Síntoma simulado",
+            "detail": "escenario",
+            "emphasis": "primary"
+          },
+          {
+            "id": "hypotheses",
+            "label": "Hipótesis",
+            "detail": "rivales",
+            "emphasis": "normal"
+          },
+          {
+            "id": "test",
+            "label": "Prueba virtual",
+            "detail": "resultado",
+            "emphasis": "normal"
+          },
+          {
+            "id": "claim",
+            "label": "Claim",
+            "detail": "fuente",
+            "emphasis": "normal"
+          },
+          {
+            "id": "limit",
+            "label": "Límite",
+            "detail": "dato físico pendiente",
+            "emphasis": "normal"
+          },
+          {
+            "id": "transfer",
+            "label": "Transferencia",
+            "detail": "solo principio",
+            "emphasis": "normal"
+          }
+        ],
+        "edges": [
+          {
+            "from": "symptom",
+            "to": "hypotheses",
+            "label": "abre",
+            "kind": "decision"
+          },
+          {
+            "from": "hypotheses",
+            "to": "test",
+            "label": "distingue",
+            "kind": "decision"
+          },
+          {
+            "from": "test",
+            "to": "claim",
+            "label": "documenta",
+            "kind": "decision"
+          },
+          {
+            "from": "claim",
+            "to": "limit",
+            "label": "delimita",
+            "kind": "decision"
+          },
+          {
+            "from": "limit",
+            "to": "transfer",
+            "label": "controla",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Etiquetas, orden y patrones conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.project.horologia-system4b-blueprint"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.project.horologia-system4b-blueprint",
+          "documentLocator": "Contrato de dossier 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "calibre-specific",
+      "limitations": [
+        "Diagnostica el escenario, nunca una unidad física."
+      ],
+      "accessibilitySummary": "Cadena de diagnóstico y dossier: Síntoma simulado, Hipótesis, Prueba virtual, Claim, Límite, Transferencia.",
+      "longDescription": "Cadena de diagnóstico y dossier. symptom conduce a hypotheses: abre. hypotheses conduce a test: distingue. test conduce a claim: documenta. claim conduce a limit: delimita. limit conduce a transfer: controla.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:8acade0e600e3f6e",
+      "visualHash": "fnv1a64:d03d426bccfb34a9",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    }
+  ],
+  "questionCoverage": [
+    "identidad",
+    "autoridad-documental",
+    "datos-vigentes",
+    "drift-parts-list",
+    "capas-exploded-view",
+    "subsistemas",
+    "automático",
+    "corona",
+    "barrilete-tren",
+    "piezas-tren",
+    "escape-oscilador",
+    "calendario",
+    "dependencia-estructural",
+    "simulación-servicio",
+    "alcance-modelo",
+    "evidencia-real",
+    "checkpoints",
+    "diagnóstico",
+    "dossier",
+    "transferencia"
+  ],
+  "photoBriefs": [
+    {
+      "photoBriefId": "photo-brief.014j.desgaste-diente",
+      "subject": "desgaste-diente",
+      "scale": "macro con escala o aumento declarado",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "interfaz completa y detalle localizado",
+      "comparison": "referencia o segunda condición real cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "unidad y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "polvo de preparación",
+        "fibra",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014j.pivote-doblado",
+      "subject": "pivote-doblado",
+      "scale": "macro con escala o aumento declarado",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "interfaz completa y detalle localizado",
+      "comparison": "referencia o segunda condición real cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "unidad y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "polvo de preparación",
+        "fibra",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014j.rebaba",
+      "subject": "rebaba",
+      "scale": "macro con escala o aumento declarado",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "interfaz completa y detalle localizado",
+      "comparison": "referencia o segunda condición real cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "unidad y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "polvo de preparación",
+        "fibra",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014j.grieta",
+      "subject": "grieta",
+      "scale": "macro con escala o aumento declarado",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "interfaz completa y detalle localizado",
+      "comparison": "referencia o segunda condición real cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "unidad y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "polvo de preparación",
+        "fibra",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014j.suciedad",
+      "subject": "suciedad",
+      "scale": "macro con escala o aumento declarado",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "interfaz completa y detalle localizado",
+      "comparison": "referencia o segunda condición real cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "unidad y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "polvo de preparación",
+        "fibra",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014j.exceso-aceite",
+      "subject": "exceso-aceite",
+      "scale": "macro con escala o aumento declarado",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "interfaz completa y detalle localizado",
+      "comparison": "referencia o segunda condición real cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "unidad y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "polvo de preparación",
+        "fibra",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014j.estado-rubi",
+      "subject": "estado-rubi",
+      "scale": "macro con escala o aumento declarado",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "interfaz completa y detalle localizado",
+      "comparison": "referencia o segunda condición real cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "unidad y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "polvo de preparación",
+        "fibra",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014j.endshake-sideshake",
+      "subject": "endshake-sideshake",
+      "scale": "macro con escala o aumento declarado",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "interfaz completa y detalle localizado",
+      "comparison": "referencia o segunda condición real cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "unidad y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "polvo de preparación",
+        "fibra",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.014j.marca-herramienta",
+      "subject": "marca-herramienta",
+      "scale": "macro con escala o aumento declarado",
+      "angle": "frontal y rasante",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "interfaz completa y detalle localizado",
+      "comparison": "referencia o segunda condición real cuando exista",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "unidad y zona"
+      ],
+      "avoidConfusionWith": [
+        "reflejo",
+        "polvo de preparación",
+        "fibra",
+        "artefacto de compresión"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no generar con IA.",
+      "status": "future-real-photo-required"
+    }
+  ]
+}
