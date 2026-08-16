@@ -127,7 +127,7 @@ describe('manifiesto curado 0.14B', () => {
     expect(miyotaLocations).toHaveLength(5)
     expect(miyotaLocations.every(({ stageId }) => stageId === 'stage.4')).toBe(true)
     expect(new Set(miyotaLocations.flatMap(({ anchorLessonIds, supportingLessonIds }) => [...anchorLessonIds, ...supportingLessonIds].filter((id) => id.startsWith('lesson.miyota8215.')))).size).toBe(15)
-    expect(ACADEMY_LEARNER_PATH.stages.find(({ stageId }) => stageId === 'stage.5')).toMatchObject({ coverageStatus: 'partial' })
+    expect(ACADEMY_LEARNER_PATH.stages.find(({ stageId }) => stageId === 'stage.5')).toMatchObject({ coverageStatus: 'complete' })
     expect(academyPathLocationForLesson('lesson.capstone.design.own-movement')?.stage.stageId).toBe('stage.7')
   })
 

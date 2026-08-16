@@ -1,0 +1,2161 @@
+{
+  "schema": "wplab-stage5-visuals-v1",
+  "phase": "0.14K",
+  "counts": {
+    "reused": 1,
+    "new": 20,
+    "questions": 20,
+    "photoBriefs": 12
+  },
+  "reusedVisualIds": [
+    "visual.mechanical.final-project"
+  ],
+  "newDesigns": [
+    {
+      "visualDesignId": "visual.stage5.requirements-to-movement.v1",
+      "lessonIds": [
+        "lesson.capstone.design.requirements"
+      ],
+      "sectionIds": [
+        "reader.section.block.capstone.design.requirements.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Cómo lleva un requisito a elegir movimiento?",
+      "semanticPayload": {
+        "title": "Requisitos y movimiento",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "intención",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "métrica o unknown",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "candidatos",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "elección limitada",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.official"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.official",
+          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "El 8215 es ejemplo, no requisito.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Requisitos y movimiento: intención, métrica o unknown, candidatos, elección limitada.",
+      "longDescription": "Requisitos y movimiento. intención conduce a métrica o unknown conduce a candidatos conduce a elección limitada. El 8215 es ejemplo, no requisito.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:af0c5f879f6b0abb",
+      "visualHash": "fnv1a64:bf4496576eae8ad1",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.document-authority.v1",
+      "lessonIds": [
+        "lesson.capstone.design.acquired-movement"
+      ],
+      "sectionIds": [
+        "reader.section.block.capstone.design.acquired-movement.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Qué autoridad corresponde a cada dato?",
+      "semanticPayload": {
+        "title": "Autoridad documental",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "pregunta",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "fabricante",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "supplier",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "medición",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "unknown",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.drawing"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.drawing",
+          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Una ficha comercial no se eleva a drawing.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Autoridad documental: pregunta, fabricante, supplier, medición, unknown.",
+      "longDescription": "Autoridad documental. pregunta conduce a fabricante conduce a supplier conduce a medición conduce a unknown. Una ficha comercial no se eleva a drawing.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:85b16987c216c743",
+      "visualHash": "fnv1a64:14c7285e11c8f51c",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.inventory.v1",
+      "lessonIds": [
+        "lesson.capstone.validation.calibre-transfer"
+      ],
+      "sectionIds": [
+        "reader.section.block.capstone.validation.calibre-transfer.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Qué integra el reloj completo?",
+      "semanticPayload": {
+        "title": "Inventario del conjunto",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "movimiento",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "caja y cierre",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "mando",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "esfera y agujas",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "documentos",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "El esquema no aporta cotas comerciales.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Inventario del conjunto: movimiento, caja y cierre, mando, esfera y agujas, documentos.",
+      "longDescription": "Inventario del conjunto. movimiento conduce a caja y cierre conduce a mando conduce a esfera y agujas conduce a documentos. El esquema no aporta cotas comerciales.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:c948be0c59a3c91a",
+      "visualHash": "fnv1a64:74258a8582bff7da",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.radial-fit.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.cases-water.arquitectura-de-caja"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.cases-water.arquitectura-de-caja.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Cómo encajan movimiento, aro y caja?",
+      "semanticPayload": {
+        "title": "Cadena radial",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "eje",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "movimiento",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "aro interior",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "aro exterior",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "asiento",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Sobre conceptual sin escala.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Cadena radial: eje, movimiento, aro interior, aro exterior, asiento.",
+      "longDescription": "Cadena radial. eje conduce a movimiento conduce a aro interior conduce a aro exterior conduce a asiento. Sobre conceptual sin escala.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:f001203eaec3617b",
+      "visualHash": "fnv1a64:86db68609da232ec",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.holder-functions.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.cases-water.arquitectura-de-caja"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.cases-water.arquitectura-de-caja.014k-caso-razonado"
+      ],
+      "pedagogicalQuestion": "¿Qué funciones puede cumplir el aro?",
+      "semanticPayload": {
+        "title": "Funciones del aro",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "centrado",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "apoyo",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "retención",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "antirrotación",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "acceso",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No es plano fabricable.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Funciones del aro: centrado, apoyo, retención, antirrotación, acceso.",
+      "longDescription": "Funciones del aro. centrado conduce a apoyo conduce a retención conduce a antirrotación conduce a acceso. No es plano fabricable.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:c0e512e1e1ae0209",
+      "visualHash": "fnv1a64:fe945790284f305c",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.control-chain.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.cases-water.corona-tubo-y-tija"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.cases-water.corona-tubo-y-tija.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Cómo conecta tija, tubo y corona?",
+      "semanticPayload": {
+        "title": "Cadena de mando",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "movimiento",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "eje de tija",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "tubo",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "corona",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "estados",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.drawing"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.drawing",
+          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No instruye corte ni roscado.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Cadena de mando: movimiento, eje de tija, tubo, corona, estados.",
+      "longDescription": "Cadena de mando. movimiento conduce a eje de tija conduce a tubo conduce a corona conduce a estados. No instruye corte ni roscado.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:1f4f1ca02a0b176f",
+      "visualHash": "fnv1a64:8bc60ce34db651fe",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.axial-chain.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.cases-water.toh-exterior-interfaces"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.cases-water.toh-exterior-interfaces.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Cómo se construye la cadena axial completa?",
+      "semanticPayload": {
+        "title": "Cadena axial",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "datum",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "movimiento",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "esfera",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "agujas",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "cristal y fondo",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Unknowns mantienen la cadena abierta.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Cadena axial: datum, movimiento, esfera, agujas, cristal y fondo.",
+      "longDescription": "Cadena axial. datum conduce a movimiento conduce a esfera conduce a agujas conduce a cristal y fondo. Unknowns mantienen la cadena abierta.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:33609ec317f0f32e",
+      "visualHash": "fnv1a64:bcd494cc47409640",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.dial-seat.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.dials-hands-finishing.arquitectura-de-esfera.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Qué diferencia diámetro total, asiento y apertura?",
+      "semanticPayload": {
+        "title": "Geometría de esfera y asiento",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "diámetro total",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "asiento",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "apertura visible",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "rehaut",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No usa un valor comercial como fit.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Geometría de esfera y asiento: diámetro total, asiento, apertura visible, rehaut.",
+      "longDescription": "Geometría de esfera y asiento. diámetro total conduce a asiento conduce a apertura visible conduce a rehaut. No usa un valor comercial como fit.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:5ddc01c701cc9cfe",
+      "visualHash": "fnv1a64:6ef77d87bc399eb9",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.dial-feet.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.dials-hands-finishing.arquitectura-de-esfera.014k-caso-razonado"
+      ],
+      "pedagogicalQuestion": "¿Cómo se localizan y fijan los pies?",
+      "semanticPayload": {
+        "title": "Mapa polar de pies",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "centro",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "radio",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "ángulo",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "longitud",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "agujero receptor",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No propone cortar, soldar o pegar.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Mapa polar de pies: centro, radio, ángulo, longitud, agujero receptor.",
+      "longDescription": "Mapa polar de pies. centro conduce a radio conduce a ángulo conduce a longitud conduce a agujero receptor. No propone cortar, soldar o pegar.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:53358d58c5319e9d",
+      "visualHash": "fnv1a64:85a58a83dd178620",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.hand-holes.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Cómo se comparan agujeros y tubos?",
+      "semanticPayload": {
+        "title": "Interfaces de agujas",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "poste",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "agujero",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "tubo",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "material",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "fit pendiente",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.drawing"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.drawing",
+          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Nominal igual no prueba ajuste.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Interfaces de agujas: poste, agujero, tubo, material, fit pendiente.",
+      "longDescription": "Interfaces de agujas. poste conduce a agujero conduce a tubo conduce a material conduce a fit pendiente. Nominal igual no prueba ajuste.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:047f63fcd952f251",
+      "visualHash": "fnv1a64:acdd96811eb2ee0d",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.hand-stack.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.014k-caso-razonado"
+      ],
+      "pedagogicalQuestion": "¿Cómo se apilan las agujas?",
+      "semanticPayload": {
+        "title": "Stack de indicación",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "rueda de horas",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "esfera",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "hora",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "minuto",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "segundo",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.drawing"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.drawing",
+          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Todas las alturas requieren datum.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Stack de indicación: rueda de horas, esfera, hora, minuto, segundo.",
+      "longDescription": "Stack de indicación. rueda de horas conduce a esfera conduce a hora conduce a minuto conduce a segundo. Todas las alturas requieren datum.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:dc05da8dd480a0a8",
+      "visualHash": "fnv1a64:dcb39857160e9700",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.crystal-clearance.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.cases-water.cristales-y-biseles"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.cases-water.cristales-y-biseles.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Qué altura interior deja el cristal?",
+      "semanticPayload": {
+        "title": "Cristal y volumen interior",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "asiento",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "retención",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "cara interior",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "aguja",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "margen",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No prescribe instalación.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Cristal y volumen interior: asiento, retención, cara interior, aguja, margen.",
+      "longDescription": "Cristal y volumen interior. asiento conduce a retención conduce a cara interior conduce a aguja conduce a margen. No prescribe instalación.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:5e467c8a229a646b",
+      "visualHash": "fnv1a64:b3bc8330f8a687da",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.rotor-caseback.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.cases-water.toh-exterior-interfaces"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.cases-water.toh-exterior-interfaces.014k-caso-razonado"
+      ],
+      "pedagogicalQuestion": "¿Cómo se compara rotor y fondo?",
+      "semanticPayload": {
+        "title": "Holgura posterior",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "rotor",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "barrido",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "fijación",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "junta",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "fondo",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.drawing"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.drawing",
+          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No simula juego ni deformación.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Holgura posterior: rotor, barrido, fijación, junta, fondo.",
+      "longDescription": "Holgura posterior. rotor conduce a barrido conduce a fijación conduce a junta conduce a fondo. No simula juego ni deformación.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:c5f696fd92e11f1d",
+      "visualHash": "fnv1a64:2393c94838a6f267",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.leak-paths.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.cases-water.toh-materiales-exterior"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.cases-water.toh-materiales-exterior.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Dónde están las rutas de fuga y juntas?",
+      "semanticPayload": {
+        "title": "Rutas de fuga",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "cristal",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "corona",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "fondo",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "juntas",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "ensayo pendiente",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Sin ensayo: not-verified.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Rutas de fuga: cristal, corona, fondo, juntas, ensayo pendiente.",
+      "longDescription": "Rutas de fuga. cristal conduce a corona conduce a fondo conduce a juntas conduce a ensayo pendiente. Sin ensayo: not-verified.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:9beb100422a34f38",
+      "visualHash": "fnv1a64:7fcaef2f052f9f9e",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.dynamic-sweeps.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.cases-water.toh-materiales-exterior"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.cases-water.toh-materiales-exterior.014k-caso-razonado"
+      ],
+      "pedagogicalQuestion": "¿Qué estados dinámicos se comprobaron?",
+      "semanticPayload": {
+        "title": "Barridos y estados",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "agujas",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "rotor",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "corona",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "evaluados",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "omitidos",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.drawing"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.drawing",
+          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Solo modelo representado.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Barridos y estados: agujas, rotor, corona, evaluados, omitidos.",
+      "longDescription": "Barridos y estados. agujas conduce a rotor conduce a corona conduce a evaluados conduce a omitidos. Solo modelo representado.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:4324f566a8465d5d",
+      "visualHash": "fnv1a64:e47a832f7c6423c2",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.donor-receiver.v1",
+      "lessonIds": [
+        "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto"
+      ],
+      "sectionIds": [
+        "reader.section.block.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Qué diferencia donante y receptor?",
+      "semanticPayload": {
+        "title": "Auditoría de donante",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "procedencia",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "identidad",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "interfaces",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "modificación",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "reversibilidad",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Parecido y marca no prueban compatibilidad.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Auditoría de donante: procedencia, identidad, interfaces, modificación, reversibilidad.",
+      "longDescription": "Auditoría de donante. procedencia conduce a identidad conduce a interfaces conduce a modificación conduce a reversibilidad. Parecido y marca no prueban compatibilidad.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:5a5d812375e9a8d3",
+      "visualHash": "fnv1a64:79dee2386b757d4e",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.compatibility-matrix.v1",
+      "lessonIds": [
+        "lesson.capstone.design.capstone"
+      ],
+      "sectionIds": [
+        "reader.section.block.capstone.design.capstone.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Cómo se lee la matriz de compatibilidad?",
+      "semanticPayload": {
+        "title": "Matriz de interfaces",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "interfaz",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "datos requeridos",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "datos disponibles",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "resultado",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "decisión",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.drawing"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.drawing",
+          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Incomplete no se presenta como compatible.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Matriz de interfaces: interfaz, datos requeridos, datos disponibles, resultado, decisión.",
+      "longDescription": "Matriz de interfaces. interfaz conduce a datos requeridos conduce a datos disponibles conduce a resultado conduce a decisión. Incomplete no se presenta como compatible.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:9d0ba4e1a8129e12",
+      "visualHash": "fnv1a64:3259af344a619b2b",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.assembly-plan.v1",
+      "lessonIds": [
+        "lesson.mechanical.final-project"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.final-project.014k-metodo-verificable"
+      ],
+      "pedagogicalQuestion": "¿Cómo se ordena el plan de montaje?",
+      "semanticPayload": {
+        "title": "Plan reversible",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "dependencia",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "paso",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "checkpoint",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "stop",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "rollback",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "Planificación, no ejecución.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Plan reversible: dependencia, paso, checkpoint, stop, rollback.",
+      "longDescription": "Plan reversible. dependencia conduce a paso conduce a checkpoint conduce a stop conduce a rollback. Planificación, no ejecución.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:fa14be8cf127723a",
+      "visualHash": "fnv1a64:32c1289ccf668c96",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.checkpoints.v1",
+      "lessonIds": [
+        "lesson.mechanical.final-project"
+      ],
+      "sectionIds": [
+        "reader.section.block.mechanical.final-project.014k-caso-razonado"
+      ],
+      "pedagogicalQuestion": "¿Dónde se detiene el proyecto?",
+      "semanticPayload": {
+        "title": "Checkpoints y stop conditions",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "dato",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "control",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "conflicto",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "detener",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "reabrir",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.private.daniels.movement-design"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.private.daniels.movement-design",
+          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No existe secuencia universal.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Checkpoints y stop conditions: dato, control, conflicto, detener, reabrir.",
+      "longDescription": "Checkpoints y stop conditions. dato conduce a control conduce a conflicto conduce a detener conduce a reabrir. No existe secuencia universal.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:cbe9a939aa403376",
+      "visualHash": "fnv1a64:73d37c4d34cfcc85",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    },
+    {
+      "visualDesignId": "visual.stage5.dossier.v1",
+      "lessonIds": [
+        "lesson.capstone.design.capstone"
+      ],
+      "sectionIds": [
+        "reader.section.block.capstone.design.capstone.014k-caso-razonado"
+      ],
+      "pedagogicalQuestion": "¿Qué conserva el dossier final?",
+      "semanticPayload": {
+        "title": "Dossier de integración",
+        "nodes": [
+          {
+            "id": "node.1",
+            "label": "requisitos",
+            "emphasis": "primary"
+          },
+          {
+            "id": "node.2",
+            "label": "documentos",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.3",
+            "label": "matriz y cadenas",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.4",
+            "label": "unknowns",
+            "emphasis": "normal"
+          },
+          {
+            "id": "node.5",
+            "label": "conclusión",
+            "emphasis": "warning"
+          }
+        ],
+        "edges": [
+          {
+            "from": "node.1",
+            "to": "node.2",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.2",
+            "to": "node.3",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.3",
+            "to": "node.4",
+            "label": "conduce a",
+            "kind": "decision"
+          },
+          {
+            "from": "node.4",
+            "to": "node.5",
+            "label": "conduce a",
+            "kind": "decision"
+          }
+        ],
+        "annotations": [
+          "Las etiquetas y el orden conservan el significado sin depender del color."
+        ]
+      },
+      "sourceIds": [
+        "source.miyota.8215.drawing"
+      ],
+      "sourceLocators": [
+        {
+          "sourceId": "source.miyota.8215.drawing",
+          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "verificationMethod": "source-limited"
+        }
+      ],
+      "fidelity": "conceptual",
+      "limitations": [
+        "No declara reloj completado.",
+        "Diagrama semántico sin dimensiones inventadas."
+      ],
+      "accessibilitySummary": "Dossier de integración: requisitos, documentos, matriz y cadenas, unknowns, conclusión.",
+      "longDescription": "Dossier de integración. requisitos conduce a documentos conduce a matriz y cadenas conduce a unknowns conduce a conclusión. No declara reloj completado.",
+      "implementationStatus": "implemented",
+      "contentHash": "fnv1a64:41dd098ec71c1ecb",
+      "visualHash": "fnv1a64:2148cb808a32bb90",
+      "colorIndependent": true,
+      "reducedMotionSafe": true
+    }
+  ],
+  "questionCoverage": [
+    "¿Cómo lleva un requisito a elegir movimiento?",
+    "¿Qué autoridad corresponde a cada dato?",
+    "¿Qué integra el reloj completo?",
+    "¿Cómo encajan movimiento, aro y caja?",
+    "¿Qué funciones puede cumplir el aro?",
+    "¿Cómo conecta tija, tubo y corona?",
+    "¿Cómo se construye la cadena axial completa?",
+    "¿Qué diferencia diámetro total, asiento y apertura?",
+    "¿Cómo se localizan y fijan los pies?",
+    "¿Cómo se comparan agujeros y tubos?",
+    "¿Cómo se apilan las agujas?",
+    "¿Qué altura interior deja el cristal?",
+    "¿Cómo se compara rotor y fondo?",
+    "¿Dónde están las rutas de fuga y juntas?",
+    "¿Qué estados dinámicos se comprobaron?",
+    "¿Qué diferencia donante y receptor?",
+    "¿Cómo se lee la matriz de compatibilidad?",
+    "¿Cómo se ordena el plan de montaje?",
+    "¿Dónde se detiene el proyecto?",
+    "¿Qué conserva el dossier final?"
+  ],
+  "photoBriefs": [
+    {
+      "photoBriefId": "photo-brief.stage5.case-interior",
+      "subject": "case interior",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.movement-seat",
+      "subject": "movement seat",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.stem-tube-alignment",
+      "subject": "stem tube alignment",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.dial-feet",
+      "subject": "dial feet",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.dial-seat",
+      "subject": "dial seat",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.hand-tubes",
+      "subject": "hand tubes",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.hand-stack",
+      "subject": "hand stack",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.crystal-clearance",
+      "subject": "crystal clearance",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.caseback-rotor",
+      "subject": "caseback rotor",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.gasket-path",
+      "subject": "gasket path",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.donor-identification",
+      "subject": "donor identification",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    },
+    {
+      "photoBriefId": "photo-brief.stage5.completed-dry-layout",
+      "subject": "completed dry layout",
+      "scale": "macro con escala declarada",
+      "angle": "frontal y rasante; segundo ángulo para datum",
+      "lighting": "difusa y rasante documentadas",
+      "background": "neutro mate",
+      "requiredDetail": "las dos caras de la interfaz y su referencia",
+      "comparison": "componente receptor o condición alternativa real",
+      "metadata": [
+        "autoría",
+        "licencia",
+        "fecha",
+        "equipo",
+        "aumento",
+        "referencia",
+        "unidad"
+      ],
+      "avoidConfusionWith": [
+        "perspectiva",
+        "reflejo",
+        "pieza de otra variante",
+        "escala no declarada"
+      ],
+      "authorshipAndLicense": "Fotografía real propia o licenciada; no IA.",
+      "status": "future-real-photo-required"
+    }
+  ]
+}

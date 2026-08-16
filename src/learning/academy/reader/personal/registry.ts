@@ -1,7 +1,7 @@
 import type { AcademyPersonalCurationPhase } from './types'
 import type { AcademyReaderCurationPhase } from '../academyReaderModel'
 
-export const CURRENT_ACADEMY_CURATION_PHASE = '0.14J' as const
+export const CURRENT_ACADEMY_CURATION_PHASE = '0.14K' as const
 
 export const ACADEMY_READER_CURATION_PHASES: readonly AcademyReaderCurationPhase[] = [
   '0.14D',
@@ -11,6 +11,7 @@ export const ACADEMY_READER_CURATION_PHASES: readonly AcademyReaderCurationPhase
   '0.14H',
   '0.14I',
   '0.14J',
+  '0.14K',
 ] as const
 
 export const ACADEMY_PERSONAL_CURATION_PHASES: readonly AcademyPersonalCurationPhase[] = [
@@ -20,6 +21,7 @@ export const ACADEMY_PERSONAL_CURATION_PHASES: readonly AcademyPersonalCurationP
   '0.14H',
   '0.14I',
   '0.14J',
+  '0.14K',
 ] as const
 
 export const ACADEMY_COMPATIBILITY_PHASES = ['0.14C'] as const
@@ -33,6 +35,7 @@ export const ACADEMY_CURATION_LAYER_REGISTRY = [
   { phase: '0.14H', layerId: 'stage-2', purpose: 'etapa 2 completa' },
   { phase: '0.14I', layerId: 'stage-0-1-remediation-and-stage-3', purpose: 'preservación activa de etapas 0–1 y etapa 3 completa' },
   { phase: '0.14J', layerId: 'active-status-and-stage-4', purpose: 'estado técnico derivado y etapa 4 MIYOTA 8215' },
+  { phase: '0.14K', layerId: 'stage-5-integration', purpose: 'integración documental de un reloj alrededor de un movimiento adquirido' },
 ] as const
 
 function phaseRank(phase: string): number {

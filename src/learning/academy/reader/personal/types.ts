@@ -8,7 +8,7 @@ import type {
   AcademyReaderSectionRole,
 } from '../academyReaderModel'
 
-export type AcademyPersonalCurationPhase = '0.14E' | '0.14F' | '0.14G' | '0.14H' | '0.14I' | '0.14J'
+export type AcademyPersonalCurationPhase = '0.14E' | '0.14F' | '0.14G' | '0.14H' | '0.14I' | '0.14J' | '0.14K'
 export type AcademyEvidenceModality = 'K' | 'V' | 'P' | 'R'
 export type AcademyCurriculumPathRole = 'anchor' | 'support' | 'optional-branch' | 'reference'
 
@@ -389,3 +389,43 @@ export interface AcademyStage4ClaimReview {
   verificationStatus: 'visually-verified' | 'verified-primary' | 'source-limited' | 'source-needed'
   limitations: readonly string[]
 }
+
+export type AcademyStage5EditorialArchetype =
+  | 'requirements-definition'
+  | 'documented-selection'
+  | 'interface-analysis'
+  | 'dimensional-chain'
+  | 'dynamic-clearance'
+  | 'donor-audit'
+  | 'integration-dossier'
+
+export type AcademyStage5SectionSpec = AcademyStage2SectionSpec
+
+export interface AcademyStage5LessonCuration {
+  lessonId: string
+  sourceBlockId: string
+  macroStage: 5
+  chapterId: 'chapter.5.1' | 'chapter.5.2' | 'chapter.5.3' | 'chapter.5.4' | 'chapter.5.5'
+  pathRole: 'anchor' | 'support'
+  compositionMode: 'augment'
+  editorialArchetype: AcademyStage5EditorialArchetype
+  centralQuestion: string
+  whyNow: string
+  observableOutcome: string
+  sections: readonly AcademyStage5SectionSpec[]
+  visualDesignIds: readonly string[]
+  activityPresentations: readonly AcademyStage0ActivityPresentation[]
+  sourceClaimIds: readonly string[]
+  limitations: readonly string[]
+  personalReviewStatus: 'not-reviewed'
+  technicalStatus: AcademyPersonalTechnicalStatus
+  curriculumStatus: 'complete-method'
+}
+
+export interface AcademyStage5PrerequisiteOverride extends Omit<AcademyStage1PrerequisiteOverride, 'phase'> {
+  phase: '0.14K'
+}
+
+export type AcademyStage5ActivityPresentation = AcademyStage0ActivityPresentation
+export type AcademyStage5VisualDesign = AcademyStage0VisualDesign
+export type AcademyStage5PersonalPractice = AcademyStage0PersonalPractice

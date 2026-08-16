@@ -1,0 +1,237 @@
+{
+  "schema": "wplab-stage5-compatibility-v1",
+  "phase": "0.14K",
+  "counts": {
+    "interfaces": 19
+  },
+  "interfaces": [
+    {
+      "interfaceId": "movement-case",
+      "componentA": "component.movement",
+      "componentB": "component.case",
+      "question": "¿La envolvente y los apoyos del movimiento caben en la caja?",
+      "requiredData": [
+        "movement-envelope",
+        "case-cavity",
+        "axial-support"
+      ],
+      "checkMethod": "clearance"
+    },
+    {
+      "interfaceId": "movement-holder",
+      "componentA": "component.movement",
+      "componentB": "component.movement-holder",
+      "question": "¿El aro centra y retiene el movimiento?",
+      "requiredData": [
+        "movement-diameter",
+        "holder-inner-diameter",
+        "axial-support"
+      ],
+      "checkMethod": "fit"
+    },
+    {
+      "interfaceId": "holder-case",
+      "componentA": "component.movement-holder",
+      "componentB": "component.case",
+      "question": "¿El aro se referencia en la caja sin giro ni pinzamiento?",
+      "requiredData": [
+        "holder-outer-diameter",
+        "case-seat-diameter",
+        "anti-rotation"
+      ],
+      "checkMethod": "fit"
+    },
+    {
+      "interfaceId": "stem-movement",
+      "componentA": "component.stem",
+      "componentB": "component.movement",
+      "question": "¿La tija corresponde al sistema de puesta en hora?",
+      "requiredData": [
+        "stem-reference",
+        "movement-stem-interface"
+      ],
+      "checkMethod": "document-comparison"
+    },
+    {
+      "interfaceId": "stem-crown",
+      "componentA": "component.stem",
+      "componentB": "component.crown",
+      "question": "¿Rosca, longitud y acoplamiento son aplicables?",
+      "requiredData": [
+        "stem-thread",
+        "crown-thread",
+        "functional-length"
+      ],
+      "checkMethod": "fit"
+    },
+    {
+      "interfaceId": "crown-tube",
+      "componentA": "component.crown",
+      "componentB": "component.tube",
+      "question": "¿La corona trabaja con el tubo en todos sus estados?",
+      "requiredData": [
+        "crown-interface",
+        "tube-interface",
+        "travel-states"
+      ],
+      "checkMethod": "dynamic-envelope"
+    },
+    {
+      "interfaceId": "tube-case",
+      "componentA": "component.tube",
+      "componentB": "component.case",
+      "question": "¿El tubo se asienta y alinea con la caja?",
+      "requiredData": [
+        "tube-seat",
+        "case-tube-seat",
+        "axis-height"
+      ],
+      "checkMethod": "alignment"
+    },
+    {
+      "interfaceId": "dial-movement",
+      "componentA": "component.dial",
+      "componentB": "component.movement",
+      "question": "¿La esfera se referencia al lado de esfera del movimiento?",
+      "requiredData": [
+        "dial-thickness",
+        "movement-dial-support",
+        "date-aperture"
+      ],
+      "checkMethod": "clearance"
+    },
+    {
+      "interfaceId": "dial-seat",
+      "componentA": "component.dial",
+      "componentB": "component.case",
+      "question": "¿Diámetro total, asiento y apertura visible son compatibles?",
+      "requiredData": [
+        "dial-total-diameter",
+        "case-dial-seat",
+        "visible-opening"
+      ],
+      "checkMethod": "fit"
+    },
+    {
+      "interfaceId": "dial-feet",
+      "componentA": "component.dial",
+      "componentB": "component.movement",
+      "question": "¿Número, radio y ángulo de los pies coinciden?",
+      "requiredData": [
+        "foot-count",
+        "foot-radius",
+        "foot-angles",
+        "movement-foot-holes"
+      ],
+      "checkMethod": "document-comparison"
+    },
+    {
+      "interfaceId": "hands-posts",
+      "componentA": "component.hand-hour",
+      "componentB": "component.movement",
+      "question": "¿Los agujeros y tubos de agujas corresponden a los postes?",
+      "requiredData": [
+        "post-diameters",
+        "hand-hole-diameters",
+        "tube-lengths"
+      ],
+      "checkMethod": "fit"
+    },
+    {
+      "interfaceId": "hour-wheel-dial",
+      "componentA": "component.movement",
+      "componentB": "component.dial",
+      "question": "¿La rueda de horas conserva engrane y apoyo con la esfera instalada?",
+      "requiredData": [
+        "hour-wheel-height",
+        "dial-thickness",
+        "dial-gap"
+      ],
+      "checkMethod": "clearance"
+    },
+    {
+      "interfaceId": "hands-dial",
+      "componentA": "component.hand-hour",
+      "componentB": "component.dial",
+      "question": "¿La aguja de horas libra esfera e índices?",
+      "requiredData": [
+        "hour-hand-height",
+        "dial-surface-height",
+        "index-height"
+      ],
+      "checkMethod": "clearance"
+    },
+    {
+      "interfaceId": "hands-hands",
+      "componentA": "component.hand-hour",
+      "componentB": "component.hand-minute",
+      "question": "¿Las agujas se libran durante el barrido?",
+      "requiredData": [
+        "hour-hand-envelope",
+        "minute-hand-envelope",
+        "second-hand-envelope"
+      ],
+      "checkMethod": "dynamic-envelope"
+    },
+    {
+      "interfaceId": "hands-crystal",
+      "componentA": "component.hand-minute",
+      "componentB": "component.crystal",
+      "question": "¿El stack libra cristal y rehaut?",
+      "requiredData": [
+        "hand-stack-top",
+        "crystal-inner-height",
+        "rehaut-envelope"
+      ],
+      "checkMethod": "dynamic-envelope"
+    },
+    {
+      "interfaceId": "rotor-caseback",
+      "componentA": "component.movement",
+      "componentB": "component.caseback",
+      "question": "¿Rotor, fijación, junta y fondo conservan margen posterior?",
+      "requiredData": [
+        "rotor-envelope",
+        "caseback-inner-height",
+        "gasket-stack"
+      ],
+      "checkMethod": "dynamic-envelope"
+    },
+    {
+      "interfaceId": "crystal-bezel",
+      "componentA": "component.crystal",
+      "componentB": "component.bezel",
+      "question": "¿Cristal, asiento, retención y junta están documentados como conjunto?",
+      "requiredData": [
+        "crystal-seat",
+        "bezel-seat",
+        "retention-method"
+      ],
+      "checkMethod": "fit"
+    },
+    {
+      "interfaceId": "gasket-housing",
+      "componentA": "component.gasket",
+      "componentB": "component.case",
+      "question": "¿Cada junta corresponde a su alojamiento documentado?",
+      "requiredData": [
+        "gasket-section",
+        "housing-section",
+        "supplier-fit"
+      ],
+      "checkMethod": "fit"
+    },
+    {
+      "interfaceId": "donor-receiver",
+      "componentA": "component.donor-part",
+      "componentB": "component.other",
+      "question": "¿La referencia y las interfaces del donante coinciden con el receptor?",
+      "requiredData": [
+        "donor-identity",
+        "receiver-identity",
+        "applicable-interfaces"
+      ],
+      "checkMethod": "document-comparison"
+    }
+  ]
+}

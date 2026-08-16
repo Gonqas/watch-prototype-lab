@@ -1,0 +1,24 @@
+import type { AcademyStage5PersonalPractice } from '../types'
+
+const practice = (id:string,lessonIds:string[],title:string,objective:string,record:string[]): AcademyStage5PersonalPractice => ({
+  personalPracticeId:`personal-practice.stage5.${id}`,lessonIds,title,objective,inexpensiveMaterials:['documentos del proyecto','hoja local o laboratorio de integración'],preparation:['Trabaja con un fixture o datos no sensibles.','Marca toda ausencia como unknown.'],steps:['Formula la pregunta.','Registra entradas y procedencia.','Aplica el método sin completar datos ausentes.','Guarda decisión, límite y siguiente dato necesario.'],help:['Usa la jerarquía de autoridad.','Vuelve a la interfaz mínima.'],stopSignal:'Detente ante adaptación física, dato sin autoridad o conclusión más fuerte que la evidencia.',possibleDamage:['Ninguno: práctica documental y local; no manipula componentes.'],observe:['Qué dato cambia la decisión.','Qué unknown impide cerrar la interfaz.'],record,personalCriterion:['Puedo explicar por qué la interfaz está abierta, en conflicto o pendiente.','No afirmo validación física.'],suggestedRepetition:'Una vez por familia de interfaz y al cambiar una entrada.',certificationStatus:'optional-local-not-certified',affectsProgress:false,createsMastery:false,completesLesson:false,
+})
+
+export const ACADEMY_STAGE_5_PERSONAL_PRACTICES: readonly AcademyStage5PersonalPractice[] = [
+  practice('requirements-sheet',['lesson.capstone.design.requirements'],'Pliego verificable','Convertir intención en requisitos sin inventar métricas.',['deseo','métrica o unknown','prioridad','verificación futura']),
+  practice('movement-candidates',['lesson.capstone.design.acquired-movement'],'Tabla de movimientos candidatos','Comparar función, documentación y riesgo de integración.',['candidatos','documentos','unknowns','razón de elección']),
+  practice('component-inventory',['lesson.capstone.validation.calibre-transfer'],'Inventario del reloj completo','Comprobar que ninguna categoría queda implícita.',['categoría','referencia','estado','procedencia']),
+  practice('holder-envelope',['lesson.encyclopedia.cases-water.arquitectura-de-caja'],'Sobre conceptual del aro','Asignar funciones e interfaces al aro sin fabricar.',['funciones','datums','entradas ausentes','estado conceptual']),
+  practice('control-chain',['lesson.encyclopedia.cases-water.corona-tubo-y-tija'],'Cadena de mando','Separar eje, rosca, longitud y recorrido.',['estados','interfaces','unknowns','stop conditions']),
+  practice('rear-clearance',['lesson.encyclopedia.cases-water.toh-exterior-interfaces'],'Holgura posterior','Construir la cadena rotor–fondo.',['envolvente','junta','margen o unknown','límite dinámico']),
+  practice('dial-feet-map',['lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera'],'Mapa de pies de esfera','Registrar cantidad, radio y ángulo sin adaptar.',['pies','agujeros','referencias','adaptation-required']),
+  practice('dial-seat',['lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera'],'Esfera, asiento y apertura','Distinguir tres diámetros y sus datums.',['diámetro total','asiento','apertura','juego']),
+  practice('hand-interface-table',['lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste'],'Tabla de agujas y postes','Comparar ambos lados del fit.',['postes','agujeros','tubos','autoridad']),
+  practice('axial-stack',['lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste'],'Stack axial','Propagar una altura ausente sin convertirla en cero.',['datum','miembros','margen','unknowns']),
+  practice('leak-paths',['lesson.encyclopedia.cases-water.toh-materiales-exterior'],'Mapa de rutas de fuga','Separar diseño y ensayo.',['rutas','juntas','documentos','not-verified']),
+  practice('dynamic-state-list',['lesson.encyclopedia.cases-water.toh-materiales-exterior'],'Estados dinámicos','Enumerar barridos comprobados y omitidos.',['estados evaluados','estados omitidos','envolventes','limitaciones']),
+  practice('donor-audit',['lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto'],'Auditoría de donante','Sustituir parecido por identidad e interfaces.',['procedencia','identidad','interfaces','reversibilidad']),
+  practice('assembly-stop-conditions',['lesson.mechanical.final-project'],'Stop conditions de montaje','Revisar dependencias y rollback sin ejecutar.',['pasos','dependencias','checkpoints','rollback']),
+  practice('dossier-conclusion',['lesson.capstone.design.capstone'],'Conclusión limitada','Emitir una decisión que conserve conflictos y validación pendiente.',['estado','evidencia','unknowns','pruebas físicas pendientes']),
+] as const
+export function academyStage5PersonalPracticesForLesson(lessonId:string) { return ACADEMY_STAGE_5_PERSONAL_PRACTICES.filter(({lessonIds}) => lessonIds.includes(lessonId)) }

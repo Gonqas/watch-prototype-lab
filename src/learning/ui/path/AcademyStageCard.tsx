@@ -158,8 +158,8 @@ function ChapterCard({
           })}
           {chapter.plannedContentRefs.length > 0 && (
             <details className="academy-chapter-support is-planned">
-              <summary>Contenido planificado · {chapter.plannedContentRefs.length}</summary>
-              <p>No son lecciones existentes y no cuentan para el progreso.</p>
+              <summary>Métodos de integración vinculados · {chapter.plannedContentRefs.length}</summary>
+              <p>Conservan sus refs históricos, no son lecciones y no cuentan para el progreso. El método está disponible; los datos dependen de tu proyecto.</p>
               <div>{chapter.plannedContentRefs.map((ref) => {
                 const planned = ACADEMY_PLANNED_CONTENT.find((item) => item.ref === ref)
                 return <span key={ref}><strong>{planned?.title ?? ref}</strong><small>{planned?.summary ?? 'Pendiente de definición editorial.'}</small></span>

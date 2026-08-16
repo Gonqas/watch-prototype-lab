@@ -1,0 +1,726 @@
+{
+  "schema": "wplab-stage5-curation-v1",
+  "phase": "0.14K",
+  "curriculumStatus": "complete-method",
+  "readerPhases": [
+    "0.14D",
+    "0.14E",
+    "0.14F",
+    "0.14G",
+    "0.14H",
+    "0.14I",
+    "0.14J",
+    "0.14K"
+  ],
+  "personalPhases": [
+    "0.14E",
+    "0.14F",
+    "0.14G",
+    "0.14H",
+    "0.14I",
+    "0.14J",
+    "0.14K"
+  ],
+  "counts": {
+    "chapters": 5,
+    "lessons": 16,
+    "anchors": 12,
+    "supports": 4,
+    "visibleSections": 233
+  },
+  "pathStage": {
+    "stageId": "stage.5",
+    "order": 5,
+    "title": "Construir un reloj completo",
+    "shortTitle": "Construir un reloj",
+    "promise": "Integrar un reloj alrededor de un movimiento adquirido.",
+    "outcome": "Defender un dossier de compatibilidad con datos, unknowns y validación física separados.",
+    "rationale": "Construir un reloj completo es un objetivo autónomo.",
+    "chapterIds": [
+      "chapter.5.1",
+      "chapter.5.2",
+      "chapter.5.3",
+      "chapter.5.4",
+      "chapter.5.5"
+    ],
+    "prerequisiteStageIds": [
+      "stage.4"
+    ],
+    "coverageStatus": "complete",
+    "optionalBranchIds": [
+      "branch.historical-cases"
+    ],
+    "completionPolicy": {
+      "anchorLessons": "all-studied",
+      "requiredActivities": "all-satisfied",
+      "physicalEvidence": "tracked-separately"
+    }
+  },
+  "transitions": [
+    {
+      "from": "chapter.4.5",
+      "to": "chapter.5.1",
+      "condition": "método de etapa 4 completado",
+      "physicalRequired": false
+    },
+    {
+      "from": "chapter.5.1",
+      "to": "chapter.5.2",
+      "condition": "pliego y elección documentada"
+    },
+    {
+      "from": "chapter.5.2",
+      "to": "chapter.5.3",
+      "condition": "interfaces estructurales registradas"
+    },
+    {
+      "from": "chapter.5.3",
+      "to": "chapter.5.4",
+      "condition": "stack axial abierto o calculado honestamente"
+    },
+    {
+      "from": "chapter.5.4",
+      "to": "chapter.5.5",
+      "condition": "cierres e interferencias registrados"
+    },
+    {
+      "from": "chapter.5.5",
+      "to": "chapter.6.1",
+      "condition": "dossier metodológico entregado",
+      "physicalWatchCompleted": false
+    }
+  ],
+  "prerequisites": [
+    {
+      "lessonId": "lesson.capstone.design.requirements",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.miyota8215.diagnosis-project"
+      ],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.capstone.design.acquired-movement",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [
+        "lesson.miyota8215.diagnosis-project"
+      ],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.arquitectura-de-caja",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.corona-tubo-y-tija",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.toh-exterior-interfaces",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.case",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Support no bloqueante: amplía fabricación o ensayo posterior.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.hands",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Support no bloqueante: amplía fabricación o ensayo posterior.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.cristales-y-biseles",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.toh-materiales-exterior",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.pruebas-de-presion",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Support no bloqueante: amplía fabricación o ensayo posterior.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.capstone.design.capstone",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.mechanical.final-project",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.capstone.validation.calibre-transfer",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "anchor",
+      "blocking": true,
+      "rationale": "La secuencia 5.1 → 5.5 bloquea por método, nunca por compra, ejecución física o revisión externa.",
+      "phase": "0.14K"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+      "rawConceptIds": [],
+      "effectiveRequiredConceptIds": [],
+      "recommendedLessonIds": [],
+      "pathRole": "support",
+      "blocking": false,
+      "rationale": "Support no bloqueante: amplía fabricación o ensayo posterior.",
+      "phase": "0.14K"
+    }
+  ],
+  "checkpoint": {
+    "checkpointId": "checkpoint.stage5.integration-method",
+    "title": "Checkpoint de integración · método completo",
+    "blocking": false,
+    "affectsProgress": false,
+    "createsMastery": false,
+    "questions": [
+      "¿He definido los requisitos?",
+      "¿He elegido y documentado el movimiento?",
+      "¿He inventariado todos los componentes?",
+      "¿He registrado los documentos?",
+      "¿He comparado movimiento, aro y caja?",
+      "¿He evaluado tija, tubo y corona?",
+      "¿He evaluado esfera, asiento y pies?",
+      "¿He evaluado agujeros y tubos de agujas?",
+      "¿He construido el stack axial?",
+      "¿He comprobado cristal y fondo?",
+      "¿He registrado el barrido del rotor?",
+      "¿He comprobado estados dinámicos?",
+      "¿He distinguido diseño y prueba de hermeticidad?",
+      "¿He evaluado las piezas donantes?",
+      "¿He registrado unknowns y conflictos?",
+      "¿He creado un plan de montaje?",
+      "¿He creado un plan de verificación?",
+      "¿Mi conclusión está limitada por la evidencia?"
+    ],
+    "actions": [
+      {
+        "label": "Repasar requisitos",
+        "href": "#/learning/lesson/lesson.capstone.design.requirements"
+      },
+      {
+        "label": "Repasar documentación",
+        "href": "#/learning/lesson/lesson.capstone.design.acquired-movement"
+      },
+      {
+        "label": "Repasar caja y aro",
+        "href": "#/learning/lesson/lesson.encyclopedia.cases-water.arquitectura-de-caja"
+      },
+      {
+        "label": "Repasar mando",
+        "href": "#/learning/lesson/lesson.encyclopedia.cases-water.corona-tubo-y-tija"
+      },
+      {
+        "label": "Repasar esfera y agujas",
+        "href": "#/learning/lesson/lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera"
+      },
+      {
+        "label": "Repasar cierre",
+        "href": "#/learning/lesson/lesson.encyclopedia.cases-water.cristales-y-biseles"
+      },
+      {
+        "label": "Repasar interferencias",
+        "href": "#/learning/workshop?integration=1&panel=interferences"
+      },
+      {
+        "label": "Repasar donantes",
+        "href": "#/learning/workshop?integration=1&panel=donors"
+      },
+      {
+        "label": "Abrir laboratorio",
+        "href": "#/learning/workshop?integration=1"
+      },
+      {
+        "label": "Abrir dossier",
+        "href": "#/learning/workshop?integration=1&panel=dossier"
+      },
+      {
+        "label": "Continuar a etapa 6",
+        "href": "#/learning/my-learning?stage=stage.6"
+      }
+    ]
+  },
+  "lessons": [
+    {
+      "lessonId": "lesson.capstone.design.requirements",
+      "chapterId": "chapter.5.1",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.capstone.design.requirements",
+      "centralQuestion": "¿Qué reloj quiero integrar y cómo sabré si satisface cada requisito?",
+      "observableOutcome": "Redactar un pliego que separe deseos, métricas, unknowns y método de verificación.",
+      "methodFocus": "Uso, tamaño, indicaciones, mantenimiento, entorno, coste, reversibilidad y política de donantes.",
+      "workedExample": "«Cómodo» se mantiene como deseo hasta declarar una métrica o una comprobación futura.",
+      "sourceScope": "Método de diseño; no inventa especificaciones comerciales.",
+      "visualDesignIds": [
+        "visual.stage5.requirements-to-movement.v1"
+      ],
+      "editorialArchetype": "requirements-definition",
+      "whyNow": "Primero se fija qué reloj se quiere integrar y qué evidencia permitiría comprobarlo.",
+      "sourceBoundary": "MIYOTA 8215 sirve como ejemplo documentado; no es la única opción ni sus cotas se generalizan.",
+      "checkpointExpectedElements": [
+        "requisito medible o unknown",
+        "autoridad del dato",
+        "razón de la elección"
+      ],
+      "visibleSectionCount": 13,
+      "contentHash": "fnv1a64:8b90b51fa3a24a92"
+    },
+    {
+      "lessonId": "lesson.capstone.design.acquired-movement",
+      "chapterId": "chapter.5.1",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.capstone.design.acquired-movement",
+      "centralQuestion": "¿Qué movimiento adquirido ofrece funciones, documentación e interfaces suficientes?",
+      "observableOutcome": "Comparar candidatos y elegir uno con incertidumbres explícitas.",
+      "methodFocus": "Funciones, documentación, disponibilidad, dimensiones, tija, esfera, agujas, repuestos y mantenibilidad.",
+      "workedExample": "El 8215 demuestra el método con el snapshot oficial de J; otro calibre sigue siendo válido si aporta autoridad equivalente.",
+      "sourceScope": "Solo documentos oficiales verificados de cada referencia.",
+      "visualDesignIds": [
+        "visual.stage5.document-authority.v1"
+      ],
+      "editorialArchetype": "requirements-definition",
+      "whyNow": "Primero se fija qué reloj se quiere integrar y qué evidencia permitiría comprobarlo.",
+      "sourceBoundary": "MIYOTA 8215 sirve como ejemplo documentado; no es la única opción ni sus cotas se generalizan.",
+      "checkpointExpectedElements": [
+        "requisito medible o unknown",
+        "autoridad del dato",
+        "razón de la elección"
+      ],
+      "visibleSectionCount": 13,
+      "contentHash": "fnv1a64:41913bfe1e2c937d"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.arquitectura-de-caja",
+      "chapterId": "chapter.5.2",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.encyclopedia.cases-water.arquitectura-de-caja",
+      "centralQuestion": "¿Cómo se referencia el movimiento dentro de la caja?",
+      "observableOutcome": "Definir envolvente, asiento, apoyo, retención, orientación y aro conceptual.",
+      "methodFocus": "Resuelve el método de movement-holder sin generar cotas fabricables.",
+      "workedExample": "Un aro centra radialmente y puede apoyar axialmente; cada función exige una interfaz documentada distinta.",
+      "sourceScope": "Teoría de arquitectura y planos del componente elegido.",
+      "visualDesignIds": [
+        "visual.stage5.radial-fit.v1",
+        "visual.stage5.holder-functions.v1"
+      ],
+      "editorialArchetype": "dimensional-chain",
+      "whyNow": "Caja, aro y mando fijan los datums estructurales antes de añadir indicación.",
+      "sourceBoundary": "No se diseña un aro fabricable ni se corta o rosca una tija sin cotas aplicables.",
+      "checkpointExpectedElements": [
+        "datum",
+        "interfaces",
+        "margen o unknown",
+        "stop condition"
+      ],
+      "visibleSectionCount": 15,
+      "contentHash": "fnv1a64:02591eb53dfac01e"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.corona-tubo-y-tija",
+      "chapterId": "chapter.5.2",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.encyclopedia.cases-water.corona-tubo-y-tija",
+      "centralQuestion": "¿Cómo se alinea movimiento, tija, tubo y corona en todos sus estados?",
+      "observableOutcome": "Construir la cadena de mando con ejes, roscas, recorrido y unknowns.",
+      "methodFocus": "Separar longitud, alineación, rosca, recorrido, estanqueidad y ergonomía.",
+      "workedExample": "Una rosca coincidente no compensa un eje desalineado ni demuestra longitud funcional.",
+      "sourceScope": "Drawing del movimiento y ficha aplicable de tija, tubo y corona.",
+      "visualDesignIds": [
+        "visual.stage5.control-chain.v1"
+      ],
+      "editorialArchetype": "dimensional-chain",
+      "whyNow": "Caja, aro y mando fijan los datums estructurales antes de añadir indicación.",
+      "sourceBoundary": "No se diseña un aro fabricable ni se corta o rosca una tija sin cotas aplicables.",
+      "checkpointExpectedElements": [
+        "datum",
+        "interfaces",
+        "margen o unknown",
+        "stop condition"
+      ],
+      "visibleSectionCount": 15,
+      "contentHash": "fnv1a64:14b1a368554b54d1"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.toh-exterior-interfaces",
+      "chapterId": "chapter.5.2",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.encyclopedia.cases-water.toh-exterior-interfaces",
+      "centralQuestion": "¿Qué datums conectan interior y exterior?",
+      "observableOutcome": "Cerrar la cadena estructural o conservarla abierta cuando falta una entrada.",
+      "methodFocus": "Movimiento, caja, aro, mando, fondo y holgura posterior.",
+      "workedExample": "Una altura sin datum no entra en una suma aunque su valor parezca plausible.",
+      "sourceScope": "Theory of Horology para principio general; componente comercial para cotas.",
+      "visualDesignIds": [
+        "visual.stage5.axial-chain.v1",
+        "visual.stage5.rotor-caseback.v1"
+      ],
+      "editorialArchetype": "dimensional-chain",
+      "whyNow": "Caja, aro y mando fijan los datums estructurales antes de añadir indicación.",
+      "sourceBoundary": "No se diseña un aro fabricable ni se corta o rosca una tija sin cotas aplicables.",
+      "checkpointExpectedElements": [
+        "datum",
+        "interfaces",
+        "margen o unknown",
+        "stop condition"
+      ],
+      "visibleSectionCount": 15,
+      "contentHash": "fnv1a64:39749323ccc4bc38"
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.case",
+      "chapterId": "chapter.5.2",
+      "pathRole": "support",
+      "centralQuestion": "¿Qué información necesitaría una futura fabricación de caja?",
+      "observableOutcome": "Reconocer datums, superficies funcionales y límites sin fabricar.",
+      "methodFocus": "Apoyo conceptual; toda modificación o fabricación pertenece a etapa 6.",
+      "workedExample": "El dossier marca una adaptación prevista y se detiene antes de definir una operación.",
+      "sourceScope": "Daniels aporta método de taller, no cotas del conjunto comercial.",
+      "visualDesignIds": [],
+      "editorialArchetype": "dimensional-chain",
+      "whyNow": "Caja, aro y mando fijan los datums estructurales antes de añadir indicación.",
+      "sourceBoundary": "No se diseña un aro fabricable ni se corta o rosca una tija sin cotas aplicables.",
+      "checkpointExpectedElements": [
+        "datum",
+        "interfaces",
+        "margen o unknown",
+        "stop condition"
+      ],
+      "visibleSectionCount": 14,
+      "contentHash": "fnv1a64:33568418b4636a0c"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+      "chapterId": "chapter.5.3",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.encyclopedia.dials-hands-finishing.arquitectura-de-esfera",
+      "centralQuestion": "¿Cómo se relacionan esfera, asiento, apertura y pies?",
+      "observableOutcome": "Comparar diámetro total, apertura, apoyo, espesor y pies con datums.",
+      "methodFocus": "Resuelve dial-feet y dial-diameter como método, no como adaptación física.",
+      "workedExample": "“Dial size” comercial no se equipara al diámetro útil del asiento sin plano o medición.",
+      "sourceScope": "Ficha del proveedor, drawing y medición propia trazable.",
+      "visualDesignIds": [
+        "visual.stage5.dial-seat.v1",
+        "visual.stage5.dial-feet.v1"
+      ],
+      "editorialArchetype": "interface-analysis",
+      "whyNow": "Esfera, pies y agujas se comprueban sobre la estructura ya definida.",
+      "sourceBoundary": "Igualdad nominal no demuestra ajuste; toda adaptación física se remite a etapa 6.",
+      "checkpointExpectedElements": [
+        "dos caras de la interfaz",
+        "altura con datum",
+        "barrido pendiente"
+      ],
+      "visibleSectionCount": 15,
+      "contentHash": "fnv1a64:cd874624eaa84c2d"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+      "chapterId": "chapter.5.3",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste",
+      "centralQuestion": "¿Cómo se comprueban agujeros, tubos, alturas y barridos?",
+      "observableOutcome": "Abrir una matriz de fit y una cadena axial sin confundir nominal con ajuste.",
+      "methodFocus": "Resuelve hand-holes-fit y hour-wheel-stack sin brochado o reducción.",
+      "workedExample": "Dos diámetros nominales iguales siguen pendientes de tolerancia, material y método aplicable.",
+      "sourceScope": "Drawing del movimiento y ficha técnica de las agujas elegidas.",
+      "visualDesignIds": [
+        "visual.stage5.hand-holes.v1",
+        "visual.stage5.hand-stack.v1"
+      ],
+      "editorialArchetype": "interface-analysis",
+      "whyNow": "Esfera, pies y agujas se comprueban sobre la estructura ya definida.",
+      "sourceBoundary": "Igualdad nominal no demuestra ajuste; toda adaptación física se remite a etapa 6.",
+      "checkpointExpectedElements": [
+        "dos caras de la interfaz",
+        "altura con datum",
+        "barrido pendiente"
+      ],
+      "visibleSectionCount": 15,
+      "contentHash": "fnv1a64:d60cfb8822106736"
+    },
+    {
+      "lessonId": "lesson.capstone.manufacturing.hands",
+      "chapterId": "chapter.5.3",
+      "pathRole": "support",
+      "centralQuestion": "¿Qué información exige una futura aguja fabricada?",
+      "observableOutcome": "Reconocer geometría, tubo, equilibrio y holguras sin ejecutar fabricación.",
+      "methodFocus": "Apoyo de etapa 6; no es solución automática a incompatibilidades.",
+      "workedExample": "Una incompatibilidad se registra; no se oculta proponiendo modificar la aguja.",
+      "sourceScope": "Daniels para fabricación avanzada, con revisión de seguridad.",
+      "visualDesignIds": [],
+      "editorialArchetype": "interface-analysis",
+      "whyNow": "Esfera, pies y agujas se comprueban sobre la estructura ya definida.",
+      "sourceBoundary": "Igualdad nominal no demuestra ajuste; toda adaptación física se remite a etapa 6.",
+      "checkpointExpectedElements": [
+        "dos caras de la interfaz",
+        "altura con datum",
+        "barrido pendiente"
+      ],
+      "visibleSectionCount": 14,
+      "contentHash": "fnv1a64:77a46c8899902779"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.cristales-y-biseles",
+      "chapterId": "chapter.5.4",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.encyclopedia.cases-water.cristales-y-biseles",
+      "centralQuestion": "¿Qué volumen interior deja el conjunto cristal–bisel?",
+      "observableOutcome": "Comparar asiento, retención, altura interior y barrido de agujas.",
+      "methodFocus": "La instalación física queda fuera; el modelo solo comprueba entradas declaradas.",
+      "workedExample": "Un cristal más alto comercialmente no garantiza más altura interior útil.",
+      "sourceScope": "Ficha técnica aplicable del cristal, bisel y junta.",
+      "visualDesignIds": [
+        "visual.stage5.crystal-clearance.v1"
+      ],
+      "editorialArchetype": "dynamic-clearance",
+      "whyNow": "Cristal, fondo y juntas cierran el volumen y exigen separar modelo, ensayo y resultado.",
+      "sourceBoundary": "Sin ensayo real documentado la hermeticidad permanece no verificada.",
+      "checkpointExpectedElements": [
+        "estado estático",
+        "estado dinámico",
+        "entrada ausente",
+        "límite físico"
+      ],
+      "visibleSectionCount": 15,
+      "contentHash": "fnv1a64:40a51bd5877ec7da"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.toh-materiales-exterior",
+      "chapterId": "chapter.5.4",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.encyclopedia.cases-water.toh-materiales-exterior",
+      "centralQuestion": "¿Cómo se documentan juntas, rutas de fuga y límites de material?",
+      "observableOutcome": "Separar diseño de cierre, preparación, ensayo y resultado.",
+      "methodFocus": "La hermeticidad permanece not-verified sin ensayo documentado.",
+      "workedExample": "Una junta presente en el modelo no aporta automáticamente compresión, material o clasificación.",
+      "sourceScope": "Teoría general y ficha moderna del conjunto elegido.",
+      "visualDesignIds": [
+        "visual.stage5.leak-paths.v1",
+        "visual.stage5.dynamic-sweeps.v1"
+      ],
+      "editorialArchetype": "dynamic-clearance",
+      "whyNow": "Cristal, fondo y juntas cierran el volumen y exigen separar modelo, ensayo y resultado.",
+      "sourceBoundary": "Sin ensayo real documentado la hermeticidad permanece no verificada.",
+      "checkpointExpectedElements": [
+        "estado estático",
+        "estado dinámico",
+        "entrada ausente",
+        "límite físico"
+      ],
+      "visibleSectionCount": 15,
+      "contentHash": "fnv1a64:10b603a7578883ee"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.cases-water.pruebas-de-presion",
+      "chapterId": "chapter.5.4",
+      "pathRole": "support",
+      "centralQuestion": "¿Qué podría demostrar un ensayo real y qué no demuestra el diseño?",
+      "observableOutcome": "Definir un plan de verificación sin simular resultado de presión.",
+      "methodFocus": "Ensayo profesional futuro, con autoridad moderna y seguridad aplicable.",
+      "workedExample": "Sin resultado de ensayo se conserva not-verified, nunca “hermético”.",
+      "sourceScope": "Protocolo moderno aplicable pendiente; fuentes históricas no autorizan ensayo.",
+      "visualDesignIds": [],
+      "editorialArchetype": "dynamic-clearance",
+      "whyNow": "Cristal, fondo y juntas cierran el volumen y exigen separar modelo, ensayo y resultado.",
+      "sourceBoundary": "Sin ensayo real documentado la hermeticidad permanece no verificada.",
+      "checkpointExpectedElements": [
+        "estado estático",
+        "estado dinámico",
+        "entrada ausente",
+        "límite físico"
+      ],
+      "visibleSectionCount": 15,
+      "contentHash": "fnv1a64:ff467ddad2144d57"
+    },
+    {
+      "lessonId": "lesson.capstone.design.capstone",
+      "chapterId": "chapter.5.5",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.capstone.design.capstone",
+      "centralQuestion": "¿Qué conclusión permite el dossier completo?",
+      "observableOutcome": "Emitir compatible en papel, condicional, incompatible o pendiente.",
+      "methodFocus": "Matriz, cadenas, interferencias, decisiones y validación física pendiente.",
+      "workedExample": "Sin conflictos y con todas las interfaces documentadas puede decirse documentally-compatible, no reloj terminado.",
+      "sourceScope": "Síntesis trazable de los documentos del proyecto.",
+      "visualDesignIds": [
+        "visual.stage5.compatibility-matrix.v1",
+        "visual.stage5.dossier.v1"
+      ],
+      "editorialArchetype": "integration-dossier",
+      "whyNow": "El dossier integra decisiones, unknowns y conflictos sin declarar un reloj físico terminado.",
+      "sourceBoundary": "Semejanza visual, misma marca o ausencia de colisión digital no prueban compatibilidad.",
+      "checkpointExpectedElements": [
+        "procedencia",
+        "matriz",
+        "plan reversible",
+        "validación física pendiente"
+      ],
+      "visibleSectionCount": 13,
+      "contentHash": "fnv1a64:416cdacf681f1592"
+    },
+    {
+      "lessonId": "lesson.mechanical.final-project",
+      "chapterId": "chapter.5.5",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.mechanical.build-final-project",
+      "centralQuestion": "¿Cómo se planifica un montaje final reversible?",
+      "observableOutcome": "Ordenar dependencias, checkpoints, stop conditions y rollback.",
+      "methodFocus": "El plan no es una secuencia universal ni se ejecuta físicamente.",
+      "workedExample": "Cada paso se detiene ante un unknown crítico y vuelve a la interfaz responsable.",
+      "sourceScope": "Método de proyecto; la secuencia física depende del conjunto real.",
+      "visualDesignIds": [
+        "visual.stage5.assembly-plan.v1",
+        "visual.stage5.checkpoints.v1"
+      ],
+      "editorialArchetype": "integration-dossier",
+      "whyNow": "El dossier integra decisiones, unknowns y conflictos sin declarar un reloj físico terminado.",
+      "sourceBoundary": "Semejanza visual, misma marca o ausencia de colisión digital no prueban compatibilidad.",
+      "checkpointExpectedElements": [
+        "procedencia",
+        "matriz",
+        "plan reversible",
+        "validación física pendiente"
+      ],
+      "visibleSectionCount": 17,
+      "contentHash": "fnv1a64:8306e3fe8c3f48ce"
+    },
+    {
+      "lessonId": "lesson.capstone.validation.calibre-transfer",
+      "chapterId": "chapter.5.5",
+      "pathRole": "anchor",
+      "requiredActivityId": "activity.capstone.validation.calibre-transfer",
+      "centralQuestion": "¿Qué se transfiere entre calibres y qué debe volver a documentarse?",
+      "observableOutcome": "Transferir método sin transferir cotas, fits o claims del 8215.",
+      "methodFocus": "Trazar fuente, aplicabilidad y cambio de entradas.",
+      "workedExample": "El esquema de cadena axial se reutiliza; todas sus dimensiones se sustituyen por datos del nuevo calibre.",
+      "sourceScope": "Principio general transferible; cada dato comercial requiere fuente propia.",
+      "visualDesignIds": [
+        "visual.stage5.inventory.v1"
+      ],
+      "editorialArchetype": "integration-dossier",
+      "whyNow": "El dossier integra decisiones, unknowns y conflictos sin declarar un reloj físico terminado.",
+      "sourceBoundary": "Semejanza visual, misma marca o ausencia de colisión digital no prueban compatibilidad.",
+      "checkpointExpectedElements": [
+        "procedencia",
+        "matriz",
+        "plan reversible",
+        "validación física pendiente"
+      ],
+      "visibleSectionCount": 14,
+      "contentHash": "fnv1a64:ba6de0a95cd168c2"
+    },
+    {
+      "lessonId": "lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto",
+      "chapterId": "chapter.5.5",
+      "pathRole": "support",
+      "centralQuestion": "¿Cuándo una pieza donante es identificable y compatible?",
+      "observableOutcome": "Auditar identidad, procedencia, interfaces, reversibilidad y modificaciones.",
+      "methodFocus": "La semejanza visual o la marca nunca cierran la compatibilidad.",
+      "workedExample": "Un donante visualmente idéntico permanece source-needed hasta cotejar referencia e interfaces.",
+      "sourceScope": "Casos reales sirven como caso particular; no se generalizan.",
+      "visualDesignIds": [
+        "visual.stage5.donor-receiver.v1"
+      ],
+      "editorialArchetype": "integration-dossier",
+      "whyNow": "El dossier integra decisiones, unknowns y conflictos sin declarar un reloj físico terminado.",
+      "sourceBoundary": "Semejanza visual, misma marca o ausencia de colisión digital no prueban compatibilidad.",
+      "checkpointExpectedElements": [
+        "procedencia",
+        "matriz",
+        "plan reversible",
+        "validación física pendiente"
+      ],
+      "visibleSectionCount": 15,
+      "contentHash": "fnv1a64:d724f7e5ee9577ac"
+    }
+  ]
+}

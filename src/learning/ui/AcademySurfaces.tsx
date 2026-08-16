@@ -69,6 +69,7 @@ import {
 } from '../academy/academyLocalState'
 import { buildAcademyLearnerModel } from '../academy/academyPersonalization'
 import { useAcademyLocalState } from '../academy/useAcademyLocalState'
+import AcademyIntegrationLabSurface from './AcademyIntegrationLabSurface'
 import { effectiveLessonPrerequisiteConceptIds } from '../academy/path/academyPathPrerequisites'
 import { academyPathLocationForStepLesson } from '../academy/path/academyLearnerPath'
 import { segmentLessonBlock } from '../academy/lessonSegmentation'
@@ -1060,6 +1061,7 @@ function WorkshopSurface() {
   const { snapshot } = useLearning()
   const { state } = useAcademyLocalState(snapshot.profile?.id)
   const [tool, setTool] = useState(snapshot.location.query.tool ?? '')
+  if (snapshot.location.query.integration === '1') return <AcademyIntegrationLabSurface />
   const allActivities = snapshot.product.activities.filter((activity) =>
     !activity.demo
     && (activity.workbenchContract || activity.mechanicalLabContract || activity.calibreLabContract || activity.serviceProcedureContract || activity.manufacturingContract || activity.personalWatchDesignContract || activity.validationContract || activity.packageId === 'wplab.horology.inspection-metrology'))
@@ -1109,6 +1111,7 @@ function WorkshopSurface() {
   }
   return (
     <AcademyPage eyebrow="TALLER" title="Práctica por herramienta" description="Entra por el tipo de trabajo que quieres realizar. Cada práctica conserva su lección, sus fuentes y tu resultado.">
+      <section className="academy-section-heading"><div><span className="academy-kicker">PROYECTO PERSONAL · ETAPA 5</span><h2>Laboratorio de integración</h2></div><a className="learning-primary-action" href="#/learning/workshop?integration=1">Abrir proyecto local</a><span>Secundario, sin red, sin mastery y separado del progreso curricular</span></section>
       <div className="academy-tool-chooser" role="group" aria-label="Filtrar herramientas">
         <button type="button" aria-pressed={tool === 'service'} className={tool === 'service' ? 'is-active' : undefined} onClick={() => setTool('service')}><FileCheck2 size={19} /><span><strong>Método de servicio</strong><small>{counts.service} prácticas</small></span></button>
         <button type="button" aria-pressed={tool === 'manufacturing'} className={tool === 'manufacturing' ? 'is-active' : undefined} onClick={() => setTool('manufacturing')}><Factory size={19} /><span><strong>Fabricación y acabados</strong><small>{counts.manufacturing} prácticas</small></span></button>

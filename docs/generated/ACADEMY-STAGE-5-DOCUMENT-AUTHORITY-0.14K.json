@@ -1,0 +1,43 @@
+{
+  "schema": "wplab-stage5-document-authority-v1",
+  "phase": "0.14K",
+  "policy": {
+    "movement": [
+      "official-manufacturer",
+      "manufacturer-drawing",
+      "secondary-reference",
+      "unknown"
+    ],
+    "commercialComponents": [
+      "official-component-supplier",
+      "supplier-technical-sheet",
+      "measured-own-component",
+      "derived-from-verified-inputs",
+      "estimated",
+      "unknown"
+    ],
+    "prohibitedElevations": [
+      {
+        "from": "visual-match-only",
+        "to": "compatible-on-paper",
+        "reason": "La semejanza no verifica identidad ni interfaces."
+      },
+      {
+        "from": "estimated",
+        "to": "official-manufacturer",
+        "reason": "Una estimación conserva su incertidumbre."
+      },
+      {
+        "from": "measured-own-component",
+        "to": "manufacturer-tolerance",
+        "reason": "Una medición propia no define tolerancia de fabricación."
+      },
+      {
+        "from": "secondary-reference",
+        "to": "official-manufacturer",
+        "reason": "Una base secundaria no se vuelve oficial por posición."
+      }
+    ],
+    "runtimeNetworkRequired": false
+  }
+}

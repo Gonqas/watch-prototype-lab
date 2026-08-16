@@ -4,6 +4,7 @@ import type {
   AcademyReaderEvent,
   AcademyUsabilitySession,
 } from './reader/academyReaderModel'
+import { normalizeIntegrationProject, type WatchIntegrationProject } from './reader/personal/phase014k'
 
 export type AcademyLessonMode = 'reading' | 'visual' | 'split' | 'focus' | 'textual'
 export type AcademyReaderMode = 'learn' | 'read'
@@ -72,7 +73,7 @@ export interface AcademyEditorialReview {
   ownerReviewedAt?: string
   personalStatus?: AcademyPersonalReviewStatus
   personalReviewedAt?: string
-  version: '0.14D' | '0.14E' | '0.14F' | '0.14G' | '0.14H' | '0.14I' | '0.14J'
+  version: '0.14D' | '0.14E' | '0.14F' | '0.14G' | '0.14H' | '0.14I' | '0.14J' | '0.14K'
   updatedAt: string
 }
 
@@ -182,6 +183,9 @@ export interface AcademyLocalState {
   readerEvents: AcademyReaderEvent[]
   editorialReviews: AcademyEditorialReview[]
   personalPractices: AcademyPersonalPracticeRecord[]
+  integrationProjects: WatchIntegrationProject[]
+  deletedIntegrationProjectIds: string[]
+  activeIntegrationProjectId?: string
   usabilitySessions: AcademyUsabilitySession[]
   updatedAt: string
 }
@@ -287,6 +291,8 @@ export function createDefaultAcademyLocalState(
     readerEvents: [],
     editorialReviews: [],
     personalPractices: [],
+    integrationProjects: [],
+    deletedIntegrationProjectIds: [],
     usabilitySessions: [],
     updatedAt: now,
   }
@@ -460,7 +466,7 @@ function normalizeEditorialReview(value: unknown): AcademyEditorialReview | unde
       ? value.personalStatus as AcademyPersonalReviewStatus
       : value.status === 'owner-reviewed' ? 'clear' : 'not-reviewed',
     personalReviewedAt: typeof value.personalReviewedAt === 'string' ? value.personalReviewedAt : undefined,
-    version: value.version === '0.14J' ? '0.14J' : value.version === '0.14I' ? '0.14I' : value.version === '0.14H' ? '0.14H' : value.version === '0.14G' ? '0.14G' : value.version === '0.14F' ? '0.14F' : value.version === '0.14E' ? '0.14E' : '0.14D',
+    version: value.version === '0.14K' ? '0.14K' : value.version === '0.14J' ? '0.14J' : value.version === '0.14I' ? '0.14I' : value.version === '0.14H' ? '0.14H' : value.version === '0.14G' ? '0.14G' : value.version === '0.14F' ? '0.14F' : value.version === '0.14E' ? '0.14E' : '0.14D',
     updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : new Date(0).toISOString(),
   }
 }
@@ -551,6 +557,11 @@ export function normalizeAcademyLocalState(profileId: string, value: unknown, no
   const personalPractices = Array.isArray(value.personalPractices)
     ? value.personalPractices.map(normalizePersonalPractice).filter((item): item is AcademyPersonalPracticeRecord => Boolean(item)).slice(0, 500)
     : []
+  const deletedIntegrationProjectIds = stringArray(value.deletedIntegrationProjectIds, 200)
+  const integrationProjects = Array.isArray(value.integrationProjects)
+    ? value.integrationProjects.map((project) => normalizeIntegrationProject(project, profileId, now))
+      .filter((project): project is WatchIntegrationProject => Boolean(project)).slice(0, 100)
+    : []
   const usabilitySessions = Array.isArray(value.usabilitySessions)
     ? value.usabilitySessions.map(normalizeUsabilitySession).filter((item): item is AcademyUsabilitySession => Boolean(item)).slice(0, 100)
     : []
@@ -594,6 +605,11 @@ export function normalizeAcademyLocalState(profileId: string, value: unknown, no
     readerEvents,
     editorialReviews,
     personalPractices,
+    integrationProjects: integrationProjects.filter(({projectId}) => !deletedIntegrationProjectIds.includes(projectId)),
+    deletedIntegrationProjectIds,
+    activeIntegrationProjectId: typeof value.activeIntegrationProjectId === 'string'
+      && integrationProjects.some(({projectId}) => projectId === value.activeIntegrationProjectId)
+      ? value.activeIntegrationProjectId.slice(0,160) : undefined,
     usabilitySessions,
     updatedAt: typeof value.updatedAt === 'string' ? value.updatedAt : now,
   }
@@ -652,6 +668,7 @@ export function mergeAcademyLocalState(
   const deletedNoteIds = [...new Set([...persisted.deletedNoteIds, ...local.deletedNoteIds])].slice(-500)
   const deletedBookmarkIds = [...new Set([...persisted.deletedBookmarkIds, ...local.deletedBookmarkIds])].slice(-300)
   const deletedCaptureIds = [...new Set([...persisted.deletedCaptureIds, ...local.deletedCaptureIds])].slice(-128)
+  const deletedIntegrationProjectIds = [...new Set([...persisted.deletedIntegrationProjectIds, ...local.deletedIntegrationProjectIds])].slice(-200)
   const readerEvents = mergeEntities(
     persisted.readerEvents,
     local.readerEvents,
@@ -680,6 +697,9 @@ export function mergeAcademyLocalState(
     metrics,
     editorialReviews: mergeEntities(persisted.editorialReviews, local.editorialReviews, ({ lessonId }) => lessonId, ({ updatedAt }) => updatedAt, 500),
     personalPractices: mergeEntities(persisted.personalPractices, local.personalPractices, ({ personalPracticeId }) => personalPracticeId, ({ updatedAt }) => updatedAt, 500),
+    integrationProjects: mergeEntities(persisted.integrationProjects, local.integrationProjects, ({projectId}) => projectId, ({updatedAt}) => updatedAt, 100)
+      .filter(({projectId}) => !deletedIntegrationProjectIds.includes(projectId)),
+    deletedIntegrationProjectIds,
     usabilitySessions: mergeEntities(persisted.usabilitySessions, local.usabilitySessions, ({ sessionId }) => sessionId, ({ finishedAt, startedAt }) => finishedAt ?? startedAt, 100),
     updatedAt: instantValue(local.updatedAt) >= instantValue(persisted.updatedAt) ? local.updatedAt : persisted.updatedAt,
   }, now)
@@ -1094,6 +1114,42 @@ export class AcademyLocalStore {
       personalPractices: [record, ...state.personalPractices.filter(({ personalPracticeId }) => personalPracticeId !== record.personalPracticeId)].slice(0, 500),
     }))
     return structuredClone(record)
+  }
+
+  saveIntegrationProject(profileId: string, input: WatchIntegrationProject, expectedRevision?: number): WatchIntegrationProject {
+    const state = this.load(profileId)
+    const existing = state.integrationProjects.find(({projectId}) => projectId === input.projectId)
+    if (existing && expectedRevision !== undefined && existing.revision !== expectedRevision) {
+      throw new Error('integration-project-version-conflict')
+    }
+    const timestamp = this.now()
+    const project = normalizeIntegrationProject({
+      ...structuredClone(input), profileId,
+      revision: existing ? existing.revision + 1 : Math.max(1,input.revision),
+      createdAt: existing?.createdAt ?? input.createdAt ?? timestamp,
+      updatedAt: timestamp,
+    },profileId,timestamp)
+    if (!project) throw new Error('El proyecto de integración no cumple el contrato local.')
+    this.update(profileId,(current)=>({
+      ...current,
+      integrationProjects:[project,...current.integrationProjects.filter(({projectId})=>projectId!==project.projectId)].slice(0,100),
+      deletedIntegrationProjectIds:current.deletedIntegrationProjectIds.filter((id)=>id!==project.projectId),
+      activeIntegrationProjectId:project.projectId,
+    }))
+    return structuredClone(project)
+  }
+
+  deleteIntegrationProject(profileId: string, projectId: string): AcademyLocalState {
+    return this.update(profileId,(state)=>({
+      ...state,
+      integrationProjects:state.integrationProjects.filter((project)=>project.projectId!==projectId),
+      deletedIntegrationProjectIds:[...new Set([...state.deletedIntegrationProjectIds,projectId])].slice(-200),
+      activeIntegrationProjectId:state.activeIntegrationProjectId===projectId?undefined:state.activeIntegrationProjectId,
+    }))
+  }
+
+  setActiveIntegrationProject(profileId: string, projectId: string | undefined): AcademyLocalState {
+    return this.update(profileId,(state)=>({...state,activeIntegrationProjectId:projectId&&state.integrationProjects.some((project)=>project.projectId===projectId)?projectId:undefined}))
   }
 
   saveUsabilitySession(profileId: string, input: AcademyUsabilitySession): AcademyUsabilitySession {

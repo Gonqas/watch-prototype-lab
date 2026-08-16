@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { join, resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import {
-  ACADEMY_LEARNER_PATH,
+  academyLearnerPathRuntimeLegacy014B,
   serializeAcademyLearnerPathLegacy014B,
 } from '../src/learning/academy/path/academyLearnerPath'
 import { ACADEMY_LIBRARY_DESTINATION_GROUPS, ACADEMY_LIBRARY_ROUTE_GROUPS } from '../src/learning/academy/path/academyLibrary'
@@ -33,7 +33,8 @@ export async function buildAcademyLearnerPathOutputs(repositoryRoot: string): Pr
   const corpus = await loadAcademyCorpus(repositoryRoot)
   const product = mergeLearningProductIndexes(corpus.packs.map(({ pack }) => createLearningProductIndex(pack)))
   const { routes, lessons, activities } = product
-  const validationIssues = validateAcademyLearnerPath(product)
+  const path014B = academyLearnerPathRuntimeLegacy014B()
+  const validationIssues = validateAcademyLearnerPath(product, path014B)
   if (validationIssues.length) throw new Error(`El manifiesto 0.14B contiene ${validationIssues.length} incidencias: ${JSON.stringify(validationIssues)}`)
 
   const lessonById = new Map(lessons.map((item) => [item.id, item]))
@@ -52,10 +53,10 @@ export async function buildAcademyLearnerPathOutputs(repositoryRoot: string): Pr
     throw new Error(`La Biblioteca no conserva exactamente el catálogo visible: ${JSON.stringify({ missingLibraryRoutes, duplicateLibraryRoutes, unknownLibraryRoutes })}`)
   }
 
-  const anchorIds = ACADEMY_LEARNER_PATH.chapters.flatMap(({ anchorLessonIds }) => anchorLessonIds)
-  const supportIds = ACADEMY_LEARNER_PATH.chapters.flatMap(({ supportingLessonIds }) => supportingLessonIds)
-  const requiredActivityIds = ACADEMY_LEARNER_PATH.chapters.flatMap(({ requiredActivityIds }) => requiredActivityIds)
-  const plannedRefs = ACADEMY_LEARNER_PATH.chapters.flatMap(({ plannedContentRefs }) => plannedContentRefs)
+  const anchorIds = path014B.chapters.flatMap(({ anchorLessonIds }) => anchorLessonIds)
+  const supportIds = path014B.chapters.flatMap(({ supportingLessonIds }) => supportingLessonIds)
+  const requiredActivityIds = path014B.chapters.flatMap(({ requiredActivityIds }) => requiredActivityIds)
+  const plannedRefs = path014B.chapters.flatMap(({ plannedContentRefs }) => plannedContentRefs)
   const lessonTitle = (id: string) => lessonById.get(id)?.title.es ?? id
   const activityTitle = (id: string) => activityById.get(id)?.title.es ?? id
   const chapterDuration = (activityIds: string[]) => activityIds.reduce((total, id) => total + (activityById.get(id)?.durationMinutes ?? 0), 0)
@@ -66,15 +67,15 @@ export async function buildAcademyLearnerPathOutputs(repositoryRoot: string): Pr
 
 ## Identidad
 
-- Path: ${code(ACADEMY_LEARNER_PATH.pathId)}
-- Versión: ${ACADEMY_LEARNER_PATH.version}
-- Objetivo: ${ACADEMY_LEARNER_PATH.learnerGoal}
-- Auditoría fuente: ${ACADEMY_LEARNER_PATH.sourceAuditPhase}
-- Estado de curación: ${ACADEMY_LEARNER_PATH.curationStatus}
-- Cobertura: ${ACADEMY_LEARNER_PATH.stages.length} etapas, ${ACADEMY_LEARNER_PATH.chapters.length} capítulos, ${anchorIds.length} anchors, ${supportIds.length} apoyos, ${requiredActivityIds.length} prácticas requeridas y ${ACADEMY_LEARNER_PATH.optionalBranches.length} ramas opcionales.
+- Path: ${code(path014B.pathId)}
+- Versión: ${path014B.version}
+- Objetivo: ${path014B.learnerGoal}
+- Auditoría fuente: ${path014B.sourceAuditPhase}
+- Estado de curación: ${path014B.curationStatus}
+- Cobertura: ${path014B.stages.length} etapas, ${path014B.chapters.length} capítulos, ${anchorIds.length} anchors, ${supportIds.length} apoyos, ${requiredActivityIds.length} prácticas requeridas y ${path014B.optionalBranches.length} ramas opcionales.
 - Validación: 0 incidencias sobre ${corpus.counts.lessons} lecciones y ${corpus.counts.activities} actividades visibles.
 
-${ACADEMY_LEARNER_PATH.stages.map((stage) => `## Etapa ${stage.order}. ${stage.title}
+${path014B.stages.map((stage) => `## Etapa ${stage.order}. ${stage.title}
 
 **Promesa:** ${stage.promise}
 
@@ -85,7 +86,7 @@ ${ACADEMY_LEARNER_PATH.stages.map((stage) => `## Etapa ${stage.order}. ${stage.t
 **Cobertura:** ${stage.coverageStatus}. **Prerrequisitos:** ${stage.prerequisiteStageIds.length ? stage.prerequisiteStageIds.map(code).join(', ') : 'ninguno'}.
 
 ${stage.chapterIds.map((chapterId) => {
-  const chapter = ACADEMY_LEARNER_PATH.chapters.find((item) => item.chapterId === chapterId)!
+  const chapter = path014B.chapters.find((item) => item.chapterId === chapterId)!
   return `### ${chapter.order}. ${chapter.title}
 
 - ID: ${code(chapter.chapterId)}
@@ -111,7 +112,7 @@ ${chapter.anchorReviews.map((review) => `- ${code(review.lessonId)}: título, ob
 
 | Rama | Etapa | Rutas | Uso |
 |---|---:|---|---|
-${ACADEMY_LEARNER_PATH.optionalBranches.map((branch) => `| ${pipe(branch.title)} | ${branch.stageId} | ${branch.routeIds.map(code).join(', ')} | ${pipe(branch.description)} |`).join('\n')}
+${path014B.optionalBranches.map((branch) => `| ${pipe(branch.title)} | ${branch.stageId} | ${branch.routeIds.map(code).join(', ')} | ${pipe(branch.description)} |`).join('\n')}
 `)
 
   const learnerPathJson = json({
@@ -121,17 +122,17 @@ ${ACADEMY_LEARNER_PATH.optionalBranches.map((branch) => `| ${pipe(branch.title)}
     corpusDigest: corpus.digest,
     corpusCounts: corpus.counts,
     pathCounts: {
-      stages: ACADEMY_LEARNER_PATH.stages.length,
-      chapters: ACADEMY_LEARNER_PATH.chapters.length,
+      stages: path014B.stages.length,
+      chapters: path014B.chapters.length,
       anchors: anchorIds.length,
       uniqueSupportingLessons: new Set(supportIds).size,
       supportingLessonPlacements: supportIds.length,
       requiredActivities: requiredActivityIds.length,
-      optionalBranches: ACADEMY_LEARNER_PATH.optionalBranches.length,
+      optionalBranches: path014B.optionalBranches.length,
       plannedContentRefs: plannedRefs.length,
     },
     validation: { valid: true, issues: validationIssues },
-    path: serializeAcademyLearnerPathLegacy014B(),
+    path: serializeAcademyLearnerPathLegacy014B(path014B),
   })
 
   const informationArchitecture = md(`# Arquitectura de información 0.14B
@@ -228,7 +229,7 @@ ${ACADEMY_STAGE_5_BLUEPRINT.map((item, index) => `## ${index + 1}. ${item.title}
 
 - No se cambia el esquema local, no se reescriben perfiles y no se duplican estados calculables.
 - Las ${anchorIds.length} lecciones anchor y ${requiredActivityIds.length} prácticas requeridas forman el único denominador core.
-- Los ${new Set(supportIds).size} apoyos únicos, las ${ACADEMY_LEARNER_PATH.optionalBranches.length} ramas opcionales, Atlas, glosario, fuentes e historia adicional no inflan ese denominador.
+- Los ${new Set(supportIds).size} apoyos únicos, las ${path014B.optionalBranches.length} ramas opcionales, Atlas, glosario, fuentes e historia adicional no inflan ese denominador.
 - Las sesiones existentes se leen sin mutarlas; una sesión interrumpida conserva precedencia de recuperación.
 - Una actividad K/V puede permitir progreso conceptual. La competencia física permanece pendiente sin modalidad P documentada.
 - R no sustituye a P y una evidencia automática no se presenta como revisión humana.

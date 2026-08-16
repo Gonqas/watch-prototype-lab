@@ -151,8 +151,9 @@ export function validateAcademyLearnerPath(
       issues.push({ code: 'planned-ref-chapter-mismatch', entityId: metadata.ref, message: `El metadata apunta a ${metadata.chapterId}, pero el manifiesto canónico lo declara en ${declaredOwner}.` })
     }
   }
-  if (path.stages.find(({ stageId }) => stageId === 'stage.5')?.coverageStatus !== 'partial') {
-    issues.push({ code: 'stage5-not-partial', entityId: 'stage.5', message: 'La etapa 5 debe declarar cobertura parcial.' })
+  const stage5Coverage = path.stages.find(({ stageId }) => stageId === 'stage.5')?.coverageStatus
+  if (stage5Coverage !== 'partial' && stage5Coverage !== 'complete') {
+    issues.push({ code: 'stage5-method-coverage-invalid', entityId: 'stage.5', message: 'La etapa 5 debe declarar cobertura metodológica parcial o completa.' })
   }
   issues.push(...cycles(path.stageIds, (id) => path.stages.find(({ stageId }) => stageId === id)?.prerequisiteStageIds ?? [], 'stage-cycle'))
   issues.push(...cycles([...chapterIds], (id) => path.chapters.find(({ chapterId }) => chapterId === id)?.prerequisiteChapterIds ?? [], 'chapter-cycle'))

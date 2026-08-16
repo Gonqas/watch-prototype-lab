@@ -1,0 +1,304 @@
+{
+  "schema": "wplab-stage5-ref-resolution-v1",
+  "phase": "0.14K",
+  "historicalIds": [
+    "stage5-gap.movement-holder",
+    "stage5-gap.dial-feet",
+    "stage5-gap.dial-diameter",
+    "stage5-gap.hand-holes-fit",
+    "stage5-gap.hour-wheel-stack",
+    "stage5-gap.caseback-clearance",
+    "stage5-gap.dynamic-interferences",
+    "stage5-gap.final-assembly-verification"
+  ],
+  "counts": {
+    "refs": 8,
+    "implementedMethod": 8,
+    "projectSourceNeeded": 8
+  },
+  "resolutions": [
+    {
+      "historicalStatus": "planned-reference-preserved",
+      "curriculumResolutionStatus": "implemented-method",
+      "projectDataStatus": "source-needed",
+      "ref": "stage5-gap.movement-holder",
+      "resolvedByLessonIds": [
+        "lesson.encyclopedia.cases-water.arquitectura-de-caja"
+      ],
+      "resolvedBySectionIds": [
+        "reader.section.block.encyclopedia.cases-water.arquitectura-de-caja.014k-metodo-verificable"
+      ],
+      "resolvedByVisualIds": [
+        "visual.stage5.holder-functions.v1",
+        "visual.stage5.radial-fit.v1"
+      ],
+      "resolvedByActivityIds": [
+        "activity.encyclopedia.cases-water.arquitectura-de-caja"
+      ],
+      "resolvedByPracticeIds": [
+        "personal-practice.stage5.holder-envelope"
+      ],
+      "requiredInputs": [
+        "envolvente del movimiento",
+        "asiento de caja",
+        "apoyo axial",
+        "alineación de tija"
+      ],
+      "sourceAuthority": [
+        "manufacturer-drawing",
+        "supplier-technical-sheet",
+        "measured-own-component"
+      ],
+      "limitations": [
+        "No genera una geometría fabricable ni autoriza modificar caja o aro."
+      ]
+    },
+    {
+      "historicalStatus": "planned-reference-preserved",
+      "curriculumResolutionStatus": "implemented-method",
+      "projectDataStatus": "source-needed",
+      "ref": "stage5-gap.dial-feet",
+      "resolvedByLessonIds": [
+        "lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera"
+      ],
+      "resolvedBySectionIds": [
+        "reader.section.block.encyclopedia.dials-hands-finishing.arquitectura-de-esfera.014k-metodo-verificable"
+      ],
+      "resolvedByVisualIds": [
+        "visual.stage5.dial-feet.v1"
+      ],
+      "resolvedByActivityIds": [
+        "activity.encyclopedia.dials-hands-finishing.arquitectura-de-esfera"
+      ],
+      "resolvedByPracticeIds": [
+        "personal-practice.stage5.dial-feet-map"
+      ],
+      "requiredInputs": [
+        "cantidad",
+        "radio",
+        "ángulos",
+        "longitud",
+        "agujeros del movimiento"
+      ],
+      "sourceAuthority": [
+        "manufacturer-drawing",
+        "supplier-technical-sheet",
+        "measured-own-component"
+      ],
+      "limitations": [
+        "No propone cortar, soldar o pegar pies."
+      ]
+    },
+    {
+      "historicalStatus": "planned-reference-preserved",
+      "curriculumResolutionStatus": "implemented-method",
+      "projectDataStatus": "source-needed",
+      "ref": "stage5-gap.dial-diameter",
+      "resolvedByLessonIds": [
+        "lesson.encyclopedia.dials-hands-finishing.arquitectura-de-esfera"
+      ],
+      "resolvedBySectionIds": [
+        "reader.section.block.encyclopedia.dials-hands-finishing.arquitectura-de-esfera.014k-metodo-verificable"
+      ],
+      "resolvedByVisualIds": [
+        "visual.stage5.dial-seat.v1"
+      ],
+      "resolvedByActivityIds": [
+        "activity.encyclopedia.dials-hands-finishing.arquitectura-de-esfera"
+      ],
+      "resolvedByPracticeIds": [
+        "personal-practice.stage5.dial-seat"
+      ],
+      "requiredInputs": [
+        "diámetro total",
+        "asiento",
+        "apertura visible",
+        "juego radial"
+      ],
+      "sourceAuthority": [
+        "supplier-technical-sheet",
+        "measured-own-component"
+      ],
+      "limitations": [
+        "“Dial size” comercial no equivale automáticamente al asiento útil."
+      ]
+    },
+    {
+      "historicalStatus": "planned-reference-preserved",
+      "curriculumResolutionStatus": "implemented-method",
+      "projectDataStatus": "source-needed",
+      "ref": "stage5-gap.hand-holes-fit",
+      "resolvedByLessonIds": [
+        "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste"
+      ],
+      "resolvedBySectionIds": [
+        "reader.section.block.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.014k-metodo-verificable"
+      ],
+      "resolvedByVisualIds": [
+        "visual.stage5.hand-holes.v1"
+      ],
+      "resolvedByActivityIds": [
+        "activity.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste"
+      ],
+      "resolvedByPracticeIds": [
+        "personal-practice.stage5.hand-interface-table"
+      ],
+      "requiredInputs": [
+        "postes",
+        "agujeros",
+        "tubos",
+        "material",
+        "fit aplicable"
+      ],
+      "sourceAuthority": [
+        "manufacturer-drawing",
+        "supplier-technical-sheet"
+      ],
+      "limitations": [
+        "Igualdad nominal no valida ajuste; no instruye brochado o reducción."
+      ]
+    },
+    {
+      "historicalStatus": "planned-reference-preserved",
+      "curriculumResolutionStatus": "implemented-method",
+      "projectDataStatus": "source-needed",
+      "ref": "stage5-gap.hour-wheel-stack",
+      "resolvedByLessonIds": [
+        "lesson.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste"
+      ],
+      "resolvedBySectionIds": [
+        "reader.section.block.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste.014k-metodo-verificable"
+      ],
+      "resolvedByVisualIds": [
+        "visual.stage5.hand-stack.v1",
+        "visual.stage5.axial-chain.v1"
+      ],
+      "resolvedByActivityIds": [
+        "activity.encyclopedia.dials-hands-finishing.agujas-geometria-y-ajuste"
+      ],
+      "resolvedByPracticeIds": [
+        "personal-practice.stage5.axial-stack"
+      ],
+      "requiredInputs": [
+        "altura rueda de horas",
+        "esfera",
+        "alturas de agujas",
+        "altura interior cristal"
+      ],
+      "sourceAuthority": [
+        "manufacturer-drawing",
+        "supplier-technical-sheet",
+        "measured-own-component"
+      ],
+      "limitations": [
+        "Una cadena con una entrada desconocida permanece abierta."
+      ]
+    },
+    {
+      "historicalStatus": "planned-reference-preserved",
+      "curriculumResolutionStatus": "implemented-method",
+      "projectDataStatus": "source-needed",
+      "ref": "stage5-gap.caseback-clearance",
+      "resolvedByLessonIds": [
+        "lesson.encyclopedia.cases-water.toh-exterior-interfaces"
+      ],
+      "resolvedBySectionIds": [
+        "reader.section.block.encyclopedia.cases-water.toh-exterior-interfaces.014k-metodo-verificable"
+      ],
+      "resolvedByVisualIds": [
+        "visual.stage5.rotor-caseback.v1"
+      ],
+      "resolvedByActivityIds": [
+        "activity.encyclopedia.cases-water.toh-exterior-interfaces"
+      ],
+      "resolvedByPracticeIds": [
+        "personal-practice.stage5.rear-clearance"
+      ],
+      "requiredInputs": [
+        "envolvente posterior",
+        "barrido del rotor",
+        "fijación",
+        "junta",
+        "cavidad del fondo"
+      ],
+      "sourceAuthority": [
+        "manufacturer-drawing",
+        "supplier-technical-sheet"
+      ],
+      "limitations": [
+        "La ausencia de colisión digital no acredita holgura real."
+      ]
+    },
+    {
+      "historicalStatus": "planned-reference-preserved",
+      "curriculumResolutionStatus": "implemented-method",
+      "projectDataStatus": "source-needed",
+      "ref": "stage5-gap.dynamic-interferences",
+      "resolvedByLessonIds": [
+        "lesson.encyclopedia.cases-water.toh-materiales-exterior"
+      ],
+      "resolvedBySectionIds": [
+        "reader.section.block.encyclopedia.cases-water.toh-materiales-exterior.014k-metodo-verificable"
+      ],
+      "resolvedByVisualIds": [
+        "visual.stage5.dynamic-sweeps.v1"
+      ],
+      "resolvedByActivityIds": [
+        "activity.encyclopedia.cases-water.toh-materiales-exterior"
+      ],
+      "resolvedByPracticeIds": [
+        "personal-practice.stage5.dynamic-state-list"
+      ],
+      "requiredInputs": [
+        "envolventes",
+        "estados",
+        "datums",
+        "márgenes"
+      ],
+      "sourceAuthority": [
+        "manufacturer-drawing",
+        "derived-from-verified-inputs"
+      ],
+      "limitations": [
+        "Solo se comprueban los estados representados."
+      ]
+    },
+    {
+      "historicalStatus": "planned-reference-preserved",
+      "curriculumResolutionStatus": "implemented-method",
+      "projectDataStatus": "source-needed",
+      "ref": "stage5-gap.final-assembly-verification",
+      "resolvedByLessonIds": [
+        "lesson.mechanical.final-project",
+        "lesson.capstone.design.capstone"
+      ],
+      "resolvedBySectionIds": [
+        "reader.section.block.mechanical.final-project.014k-metodo-verificable"
+      ],
+      "resolvedByVisualIds": [
+        "visual.stage5.assembly-plan.v1",
+        "visual.stage5.checkpoints.v1"
+      ],
+      "resolvedByActivityIds": [
+        "activity.mechanical.build-final-project",
+        "activity.capstone.design.capstone"
+      ],
+      "resolvedByPracticeIds": [
+        "personal-practice.stage5.assembly-stop-conditions"
+      ],
+      "requiredInputs": [
+        "dependencias",
+        "checkpoints",
+        "stop conditions",
+        "rollback",
+        "plan de verificación"
+      ],
+      "sourceAuthority": [
+        "derived-from-verified-inputs"
+      ],
+      "limitations": [
+        "Planifica; no ejecuta montaje físico ni declara reloj completado."
+      ]
+    }
+  ]
+}

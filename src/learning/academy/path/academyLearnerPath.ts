@@ -255,18 +255,18 @@ export interface AcademyPlannedContentMetadata {
   summary: string
   stageId: 'stage.5'
   chapterId: string
-  status: 'planned' | 'source-review-required'
+  status: 'planned' | 'source-review-required' | 'implemented-method'
 }
 
 export const ACADEMY_PLANNED_CONTENT: readonly AcademyPlannedContentMetadata[] = [
-  { ref: 'stage5-gap.movement-holder', title: 'Aro o soporte del movimiento', summary: 'Interfaz estructural entre movimiento, aro y caja.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'planned' },
-  { ref: 'stage5-gap.dial-feet', title: 'Pies de esfera', summary: 'Posición, fijación y compatibilidad con movimiento y caja.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'planned' },
-  { ref: 'stage5-gap.dial-diameter', title: 'Diámetro y asiento de esfera', summary: 'Cadena dimensional entre esfera, asiento, apertura y rehaut.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'planned' },
-  { ref: 'stage5-gap.hand-holes-fit', title: 'Ajuste de agujas', summary: 'Agujeros, tubos y ajustes aplicables al movimiento elegido.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'source-review-required' },
-  { ref: 'stage5-gap.hour-wheel-stack', title: 'Rueda de horas y apilamiento axial', summary: 'Engrane, alturas y libertad a través del stack esfera-agujas.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'source-review-required' },
-  { ref: 'stage5-gap.caseback-clearance', title: 'Fondo y holgura posterior', summary: 'Envolvente posterior, rotor, fijación y cierre de caja.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'planned' },
-  { ref: 'stage5-gap.dynamic-interferences', title: 'Interferencias dinámicas', summary: 'Barridos de agujas, corona, tija, rotor y exterior.', stageId: 'stage.5', chapterId: 'chapter.5.4', status: 'planned' },
-  { ref: 'stage5-gap.final-assembly-verification', title: 'Montaje final y verificación', summary: 'Secuencia de integración, checkpoints y criterios de liberación.', stageId: 'stage.5', chapterId: 'chapter.5.5', status: 'source-review-required' },
+  { ref: 'stage5-gap.movement-holder', title: 'Aro o soporte del movimiento', summary: 'Método disponible; requiere datos aplicables del movimiento y la caja.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'implemented-method' },
+  { ref: 'stage5-gap.dial-feet', title: 'Pies de esfera', summary: 'Método disponible; requiere posición y fijación documentadas.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'implemented-method' },
+  { ref: 'stage5-gap.dial-diameter', title: 'Diámetro y asiento de esfera', summary: 'Método disponible; requiere dimensiones del conjunto elegido.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'implemented-method' },
+  { ref: 'stage5-gap.hand-holes-fit', title: 'Ajuste de agujas', summary: 'Método disponible; necesita autoridad de ambas interfaces y validación física.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'implemented-method' },
+  { ref: 'stage5-gap.hour-wheel-stack', title: 'Rueda de horas y apilamiento axial', summary: 'Método disponible; la cadena permanece abierta con cualquier altura unknown.', stageId: 'stage.5', chapterId: 'chapter.5.3', status: 'implemented-method' },
+  { ref: 'stage5-gap.caseback-clearance', title: 'Fondo y holgura posterior', summary: 'Método disponible; requiere envolvente posterior y fondo aplicables.', stageId: 'stage.5', chapterId: 'chapter.5.2', status: 'implemented-method' },
+  { ref: 'stage5-gap.dynamic-interferences', title: 'Interferencias dinámicas', summary: 'Método disponible; declara estados evaluados y omitidos.', stageId: 'stage.5', chapterId: 'chapter.5.4', status: 'implemented-method' },
+  { ref: 'stage5-gap.final-assembly-verification', title: 'Montaje final y verificación', summary: 'Plan reversible disponible; la ejecución física permanece pendiente.', stageId: 'stage.5', chapterId: 'chapter.5.5', status: 'implemented-method' },
 ]
 
 const chapters: AcademyLearnerChapter[] = [
@@ -597,7 +597,7 @@ const chapters: AcademyLearnerChapter[] = [
     support: [['lesson.capstone.manufacturing.case', 'support', 'Fabricación de caja posterior; no sustituye integración.']],
     optionalActivityIds: [], prerequisiteChapterIds: ['chapter.5.1'], optionalBranchIds: [],
     plannedContentRefs: ['stage5-gap.movement-holder', 'stage5-gap.caseback-clearance'],
-    coverageStatus: 'partial', curationReason: 'Hay base real para caja y mando, pero faltan aro y holgura posterior verificables.',
+    coverageStatus: 'complete', curationReason: 'El método de caja, aro, mando y holgura está implementado; los datos del proyecto siguen separados.',
   }),
   chapter({
     chapterId: 'chapter.5.3', stageId: 'stage.5', order: 3,
@@ -612,7 +612,7 @@ const chapters: AcademyLearnerChapter[] = [
     support: [['lesson.capstone.manufacturing.hands', 'support', 'Plan de fabricación posterior, no cobertura de integración completa.']],
     optionalActivityIds: [], prerequisiteChapterIds: ['chapter.5.2'], optionalBranchIds: [],
     plannedContentRefs: ['stage5-gap.dial-feet', 'stage5-gap.dial-diameter', 'stage5-gap.hand-holes-fit', 'stage5-gap.hour-wheel-stack'],
-    coverageStatus: 'partial', curationReason: 'Las interfaces existen, pero cuatro datos de compatibilidad siguen sin cobertura completa.',
+    coverageStatus: 'complete', curationReason: 'El método de esfera, pies, agujas y stack está implementado sin inventar ajustes o alturas.',
   }),
   chapter({
     chapterId: 'chapter.5.4', stageId: 'stage.5', order: 4,
@@ -626,8 +626,8 @@ const chapters: AcademyLearnerChapter[] = [
     ],
     support: [['lesson.encyclopedia.cases-water.pruebas-de-presion', 'support', 'Ensayo especializado posterior con límites de seguridad.']],
     optionalActivityIds: [], prerequisiteChapterIds: ['chapter.5.3'], optionalBranchIds: [],
-    plannedContentRefs: ['stage5-gap.dynamic-interferences'], coverageStatus: 'partial',
-    curationReason: 'Cristal y juntas están cubiertos; fondo, holgura e interferencias requieren blueprint y documentación oficial.',
+    plannedContentRefs: ['stage5-gap.dynamic-interferences'], coverageStatus: 'complete',
+    curationReason: 'Cristal, juntas, rutas de fuga e interferencias tienen método; los ensayos físicos permanecen pendientes.',
   }),
   chapter({
     chapterId: 'chapter.5.5', stageId: 'stage.5', order: 5,
@@ -642,8 +642,8 @@ const chapters: AcademyLearnerChapter[] = [
     ],
     support: [['lesson.encyclopedia.atlas-restoration-design.restauracion-y-fabricacion-de-repuesto', 'support', 'Introduce donantes y repuestos como contexto, no como montaje completo.']],
     optionalActivityIds: ['activity.mechanical.document-limitations'], prerequisiteChapterIds: ['chapter.5.4'], optionalBranchIds: ['branch.historical-cases'],
-    plannedContentRefs: ['stage5-gap.final-assembly-verification'], coverageStatus: 'partial',
-    curationReason: 'El contenido existente permite dossier parcial, pero no cubre orden final ni verificación integral.',
+    plannedContentRefs: ['stage5-gap.final-assembly-verification'], coverageStatus: 'complete',
+    curationReason: 'El dossier, el plan reversible y los checkpoints cierran el método sin afirmar montaje físico.',
   }),
 
   chapter({
@@ -757,7 +757,7 @@ const stages: AcademyLearnerStage[] = [
   ['stage.2', 2, 'Comprender los sistemas mecánicos', 'Sistemas mecánicos', 'Seguir energía, transmisión, escape, regulación e indicación.', 'Explicar los subsistemas mecánicos y sus dependencias.', 'Las matemáticas aparecen cuando resuelven una necesidad.', 'complete', ['branch.complications']],
   ['stage.3', 3, 'Observar, medir y diagnosticar', 'Medir y diagnosticar', 'Pasar de observación a hipótesis comprobable.', 'Inspeccionar, medir y defender un diagnóstico causal.', 'La inspección precede a la intervención.', 'complete', ['branch.historical-cases', 'branch.advanced-service']],
   ['stage.4', 4, 'Trabajar sobre un calibre real', 'MIYOTA 8215', 'Transferir los fundamentos a un MIYOTA 8215 documentado.', 'Completar estudio, desmontaje, montaje y diagnóstico virtual del 8215.', 'Un calibre real se estudia después de entender sus subsistemas.', 'complete', ['branch.quartz-initiation', 'branch.comparative-atlas']],
-  ['stage.5', 5, 'Construir un reloj completo', 'Construir un reloj', 'Integrar un reloj alrededor de un movimiento adquirido.', 'Defender un dossier de compatibilidad con cobertura y vacíos explícitos.', 'Construir un reloj completo es un objetivo autónomo.', 'partial', ['branch.historical-cases']],
+  ['stage.5', 5, 'Construir un reloj completo', 'Construir un reloj', 'Integrar un reloj alrededor de un movimiento adquirido.', 'Defender un dossier de compatibilidad con datos, unknowns y validación física separados.', 'Construir un reloj completo es un objetivo autónomo.', 'complete', ['branch.historical-cases']],
   ['stage.6', 6, 'Reparar, adaptar y fabricar componentes', 'Fabricar y adaptar', 'Planificar intervenciones y fabricación sin fingir ejecución física.', 'Defender procesos, riesgos, inspección y aceptación de componentes.', 'Fabricar componentes viene después de integrar componentes existentes.', 'source-review-required', ['branch.bench-passports', 'branch.historical-cases']],
   ['stage.7', 7, 'Diseñar y validar un reloj o movimiento propio', 'Diseñar y validar', 'Convertir requisitos en arquitectura, prototipo y validación.', 'Defender una arquitectura propia y su dossier de validación independiente.', 'Diseñar un movimiento propio es una etapa avanzada.', 'complete', []],
 ].map(([stageId, order, title, shortTitle, promise, outcome, rationale, coverageStatus, optionalBranchIds], index) => ({
@@ -810,13 +810,36 @@ export interface AcademyLearnerPathLegacy014B extends Omit<AcademyLearnerPathDef
   chapters: AcademyLearnerChapterLegacy014B[]
 }
 
+const ACADEMY_STAGE_5_CHAPTER_OVERRIDES_014B: Record<string, Partial<AcademyLearnerChapter>> = {
+  'chapter.5.2': { coverageStatus: 'partial', curationReason: 'Hay base real para caja y mando, pero faltan aro y holgura posterior verificables.' },
+  'chapter.5.3': { coverageStatus: 'partial', curationReason: 'Las interfaces existen, pero cuatro datos de compatibilidad siguen sin cobertura completa.' },
+  'chapter.5.4': { coverageStatus: 'partial', curationReason: 'Cristal y juntas están cubiertos; fondo, holgura e interferencias requieren blueprint y documentación oficial.' },
+  'chapter.5.5': { coverageStatus: 'partial', curationReason: 'El contenido existente permite dossier parcial, pero no cubre orden final ni verificación integral.' },
+}
+
+/** Vista de runtime congelada para reproducir auditorías B/B.1 después del cierre metodológico K. */
+export function academyLearnerPathRuntimeLegacy014B(
+  path: AcademyLearnerPathDefinition = ACADEMY_LEARNER_PATH,
+): AcademyLearnerPathDefinition {
+  return {
+    ...path,
+    stages: path.stages.map((stage) => stage.stageId === 'stage.5' ? {
+      ...stage,
+      outcome: 'Defender un dossier de compatibilidad con cobertura y vacíos explícitos.',
+      coverageStatus: 'partial',
+    } : stage),
+    chapters: path.chapters.map((chapter) => ({ ...chapter, ...ACADEMY_STAGE_5_CHAPTER_OVERRIDES_014B[chapter.chapterId] })),
+  }
+}
+
 /** Reproduce la forma pública histórica 0.14B sin ocultar propiedades de runtime. */
 export function serializeAcademyLearnerPathLegacy014B(
   path: AcademyLearnerPathDefinition = ACADEMY_LEARNER_PATH,
 ): AcademyLearnerPathLegacy014B {
+  const historicalPath = academyLearnerPathRuntimeLegacy014B(path)
   return {
-    ...path,
-    chapters: path.chapters.map((chapterItem) => {
+    ...historicalPath,
+    chapters: historicalPath.chapters.map((chapterItem) => {
       const legacyChapter = { ...chapterItem } as Record<string, unknown>
       delete legacyChapter.steps
       delete legacyChapter.masteryCoveragePolicy

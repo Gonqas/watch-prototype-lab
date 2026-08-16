@@ -13,6 +13,7 @@ import {
   type AcademyUxPreferences,
 } from './academyLocalState'
 import type { AcademyReaderEvent, AcademyUsabilitySession } from './reader/academyReaderModel'
+import type { WatchIntegrationProject } from './reader/personal/phase014k'
 
 export interface AcademyLocalStateActions {
   setPreferences(patch: Partial<AcademyUxPreferences>): void
@@ -49,6 +50,9 @@ export interface AcademyLocalStateActions {
   clearReaderEvents(): void
   saveEditorialReview(input: AcademyEditorialReview): AcademyEditorialReview
   savePersonalPractice(input: Pick<AcademyPersonalPracticeRecord, 'personalPracticeId' | 'lessonId' | 'note'>): AcademyPersonalPracticeRecord
+  saveIntegrationProject(input: WatchIntegrationProject, expectedRevision?: number): WatchIntegrationProject
+  deleteIntegrationProject(projectId: string): void
+  setActiveIntegrationProject(projectId: string | undefined): void
   saveUsabilitySession(input: AcademyUsabilitySession): AcademyUsabilitySession
   deleteUsabilitySession(sessionId: string): void
 }
@@ -186,6 +190,18 @@ export function useAcademyLocalState(profileId: string | undefined, persistedSta
       const practice = store.savePersonalPractice(profileId, input)
       announce(store.load(profileId))
       return practice
+    },
+    saveIntegrationProject(input, expectedRevision) {
+      if (!profileId || !store) throw new Error('No hay un perfil local activo.')
+      const project = store.saveIntegrationProject(profileId,input,expectedRevision)
+      announce(store.load(profileId))
+      return project
+    },
+    deleteIntegrationProject(projectId) {
+      if (profileId && store) announce(store.deleteIntegrationProject(profileId,projectId))
+    },
+    setActiveIntegrationProject(projectId) {
+      if (profileId && store) announce(store.setActiveIntegrationProject(profileId,projectId))
     },
     saveUsabilitySession(input) {
       if (!profileId || !store) throw new Error('No hay un perfil local activo.')

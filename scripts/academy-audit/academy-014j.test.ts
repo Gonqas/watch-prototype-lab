@@ -42,11 +42,11 @@ add(8,'reference-library/originals no cambia',async()=>expect(await academy014IT
 add(9,'los informes 0.14A–0.14I permanecen byte por byte',async()=>expect(await historicalSnapshot()).toEqual(ACADEMY_014J_BASELINE.protected.historicalReports))
 add(10,'no se copian documentos MIYOTA al runtime',async()=>{ const hashes = new Set(ACADEMY_MIYOTA_8215_SOURCE_SNAPSHOT_014J.map(({currentSha256}) => currentSha256)); const runtime = [...await academy014IWalk(join(ACADEMY_014I_TEST_ROOT,'src')),...await academy014IWalk(join(ACADEMY_014I_TEST_ROOT,'public'))]; expect((await Promise.all(runtime.map(async (file) => hashes.has(academy014ITestSha256(await readFile(file))) ? file : null))).filter(Boolean)).toEqual([]) })
 
-add(11,'E/F/G/H/I/J son fases válidas',()=>{ expect(ACADEMY_READER_CURATION_PHASES).toEqual(['0.14D','0.14E','0.14F','0.14G','0.14H','0.14I','0.14J']); expect(ACADEMY_PERSONAL_CURATION_PHASES.at(-1)).toBe('0.14J') })
+add(11,'E/F/G/H/I/J permanecen y K es acumulativa',()=>{ expect(ACADEMY_READER_CURATION_PHASES).toEqual(['0.14D','0.14E','0.14F','0.14G','0.14H','0.14I','0.14J','0.14K']); expect(ACADEMY_PERSONAL_CURATION_PHASES.at(-1)).toBe('0.14K') })
 add(12,'una fase desconocida falla',()=>expect(()=>academyPhaseIncludes('0.14J','0.14Z' as never)).toThrow(/desconocida/))
 add(13,'los builds E/F/G/H/I conservan su salida',async()=>{ for (const phase of ['0.14E','0.14F','0.14G','0.14H','0.14I'] as const) expect((await academy014IBuildDocument('lesson.horology.mechanical-chain',phase)).readerSchemaVersion).toBe(phase) })
 add(14,'J compone todas las fases',()=>expect(academyPhaseLayers('0.14J').map(({phase})=>phase)).toEqual(['0.14C','0.14D','0.14E','0.14F','0.14G','0.14H','0.14I','0.14J']))
-add(15,'la UI usa la fase canónica',async()=>{ expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14J'); expect(await readFile(join(ACADEMY_014I_TEST_ROOT,'src/learning/ui/reader/AcademyContinuousLessonSurface.tsx'),'utf8')).toContain('CURRENT_ACADEMY_CURATION_PHASE') })
+add(15,'la UI usa la fase canónica',async()=>{ expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14K'); expect(await readFile(join(ACADEMY_014I_TEST_ROOT,'src/learning/ui/reader/AcademyContinuousLessonSurface.tsx'),'utf8')).toContain('CURRENT_ACADEMY_CURATION_PHASE') })
 add(16,'el registro enumera literalmente J',()=>expect(ACADEMY_CURATION_LAYER_REGISTRY.some(({phase})=>phase === '0.14J')).toBe(true))
 
 add(17,'el resolver aplica la precedencia correcta',()=>expect(deriveAcademyTechnicalStatus({claims:[{evidenceId:'a',kind:'claim',status:'source-reviewed',central:true,explanation:'a'},{evidenceId:'b',kind:'claim',status:'technical-conflict',central:true,explanation:'b'}]}).technicalStatus).toBe('technical-conflict'))

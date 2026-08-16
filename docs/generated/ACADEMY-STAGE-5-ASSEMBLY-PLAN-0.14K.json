@@ -1,0 +1,201 @@
+{
+  "schema": "wplab-stage5-assembly-plan-v1",
+  "phase": "0.14K",
+  "physicalExecution": false,
+  "universalSequence": false,
+  "steps": [
+    {
+      "stepId": "assembly.01",
+      "order": 1,
+      "title": "Congelar requisitos y referencias",
+      "dependencyStepIds": [],
+      "requiredInterfaceIds": [
+        "movement-case"
+      ],
+      "checkpoint": "Todos los componentes tienen identidad o unknown explícito.",
+      "stopCondition": "Detener si cambia el movimiento elegido.",
+      "rollback": "Volver al pliego",
+      "executionStatus": "planned-only"
+    },
+    {
+      "stepId": "assembly.02",
+      "order": 2,
+      "title": "Revisar documentación aplicable",
+      "dependencyStepIds": [
+        "assembly.01"
+      ],
+      "requiredInterfaceIds": [
+        "stem-movement",
+        "dial-feet"
+      ],
+      "checkpoint": "Cada dimensión crítica conserva documento, datum y aplicabilidad.",
+      "stopCondition": "Detener ante documentos de variante dudosa.",
+      "rollback": "Marcar source-needed",
+      "executionStatus": "planned-only"
+    },
+    {
+      "stepId": "assembly.03",
+      "order": 3,
+      "title": "Cerrar encaje radial",
+      "dependencyStepIds": [
+        "assembly.02"
+      ],
+      "requiredInterfaceIds": [
+        "movement-holder",
+        "holder-case"
+      ],
+      "checkpoint": "Cadena radial calculada o abierta con unknowns.",
+      "stopCondition": "Detener ante margen negativo o datum ausente.",
+      "rollback": "Reabrir selección de caja/aro",
+      "executionStatus": "planned-only"
+    },
+    {
+      "stepId": "assembly.04",
+      "order": 4,
+      "title": "Cerrar cadena de mando",
+      "dependencyStepIds": [
+        "assembly.02"
+      ],
+      "requiredInterfaceIds": [
+        "stem-movement",
+        "stem-crown",
+        "crown-tube",
+        "tube-case"
+      ],
+      "checkpoint": "Ejes, roscas y estados documentados.",
+      "stopCondition": "Detener ante desalineación o adaptación física.",
+      "rollback": "Remitir modificación a etapa 6",
+      "executionStatus": "planned-only"
+    },
+    {
+      "stepId": "assembly.05",
+      "order": 5,
+      "title": "Cerrar esfera y pies",
+      "dependencyStepIds": [
+        "assembly.03"
+      ],
+      "requiredInterfaceIds": [
+        "dial-movement",
+        "dial-seat",
+        "dial-feet"
+      ],
+      "checkpoint": "Asiento, apertura y pies comparados.",
+      "stopCondition": "Detener si se requiere cortar, soldar o pegar.",
+      "rollback": "Elegir esfera compatible",
+      "executionStatus": "planned-only"
+    },
+    {
+      "stepId": "assembly.06",
+      "order": 6,
+      "title": "Cerrar stack de indicación",
+      "dependencyStepIds": [
+        "assembly.05"
+      ],
+      "requiredInterfaceIds": [
+        "hands-posts",
+        "hour-wheel-dial",
+        "hands-dial",
+        "hands-hands"
+      ],
+      "checkpoint": "Cadena axial conserva márgenes y unknowns.",
+      "stopCondition": "Detener si falta un datum de altura.",
+      "rollback": "Revisar documentación/medición",
+      "executionStatus": "planned-only"
+    },
+    {
+      "stepId": "assembly.07",
+      "order": 7,
+      "title": "Cerrar cristal, fondo y juntas",
+      "dependencyStepIds": [
+        "assembly.06"
+      ],
+      "requiredInterfaceIds": [
+        "hands-crystal",
+        "rotor-caseback",
+        "crystal-bezel",
+        "gasket-housing"
+      ],
+      "checkpoint": "Rutas de fuga e interferencias están registradas.",
+      "stopCondition": "Detener si se infiere hermeticidad sin ensayo.",
+      "rollback": "Mantener not-verified",
+      "executionStatus": "planned-only"
+    },
+    {
+      "stepId": "assembly.08",
+      "order": 8,
+      "title": "Auditar donantes",
+      "dependencyStepIds": [
+        "assembly.02"
+      ],
+      "requiredInterfaceIds": [
+        "donor-receiver"
+      ],
+      "checkpoint": "Identidad, procedencia, interfaces y reversibilidad documentadas.",
+      "stopCondition": "Detener ante semejanza visual como única evidencia.",
+      "rollback": "Rechazar o pedir fuente",
+      "executionStatus": "planned-only"
+    },
+    {
+      "stepId": "assembly.09",
+      "order": 9,
+      "title": "Preparar dry-layout físico futuro",
+      "dependencyStepIds": [
+        "assembly.03",
+        "assembly.04",
+        "assembly.05",
+        "assembly.06",
+        "assembly.07"
+      ],
+      "requiredInterfaceIds": [
+        "movement-case",
+        "hands-crystal",
+        "rotor-caseback"
+      ],
+      "checkpoint": "Plan y stop conditions revisados; no se ejecuta en 0.14K.",
+      "stopCondition": "Detener ante conflicto documental.",
+      "rollback": "Volver al interfaz en conflicto",
+      "executionStatus": "planned-only"
+    },
+    {
+      "stepId": "assembly.10",
+      "order": 10,
+      "title": "Emitir dossier y conclusión",
+      "dependencyStepIds": [
+        "assembly.08",
+        "assembly.09"
+      ],
+      "requiredInterfaceIds": [
+        "movement-case"
+      ],
+      "checkpoint": "Conclusión distingue papel, modelo y validación física.",
+      "stopCondition": "Detener si se declara reloj completado.",
+      "rollback": "Limitar la conclusión",
+      "executionStatus": "planned-only"
+    }
+  ],
+  "dossierSections": [
+    "Pliego de requisitos",
+    "Movimiento seleccionado",
+    "Inventario de componentes",
+    "Documentos",
+    "Claims",
+    "Dimensiones",
+    "Datums",
+    "Mediciones",
+    "Matriz de compatibilidad",
+    "Cadena radial",
+    "Cadena de mando",
+    "Cadena axial",
+    "Holgura posterior",
+    "Interferencias",
+    "Donantes",
+    "Plan de montaje",
+    "Plan de verificación",
+    "Riesgos",
+    "Unknowns",
+    "Conflictos",
+    "Decisiones",
+    "Pruebas físicas pendientes",
+    "Conclusión"
+  ]
+}

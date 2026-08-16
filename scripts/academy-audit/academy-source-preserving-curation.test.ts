@@ -51,9 +51,9 @@ describe('0.14I · integridad (pruebas 1–10)', () => {
 })
 
 describe('0.14I · fases y composición (pruebas 11–18)', () => {
-  it('11. E, F, G, H e I son fases válidas', () => {
-    expect(ACADEMY_READER_CURATION_PHASES).toEqual(['0.14D', '0.14E', '0.14F', '0.14G', '0.14H', '0.14I', '0.14J'])
-    expect(ACADEMY_PERSONAL_CURATION_PHASES).toEqual(['0.14E', '0.14F', '0.14G', '0.14H', '0.14I', '0.14J'])
+  it('11. E–J permanecen registradas y K se añade de forma acumulativa', () => {
+    expect(ACADEMY_READER_CURATION_PHASES).toEqual(['0.14D', '0.14E', '0.14F', '0.14G', '0.14H', '0.14I', '0.14J', '0.14K'])
+    expect(ACADEMY_PERSONAL_CURATION_PHASES).toEqual(['0.14E', '0.14F', '0.14G', '0.14H', '0.14I', '0.14J', '0.14K'])
   })
   it('12. una fase desconocida se rechaza', () => expect(() => academyPhaseIncludes('0.14I', '0.14Z' as AcademyReaderCurationPhase)).toThrow(/desconocida/))
   it('13. los builds E/F/G/H siguen construyéndose explícitamente', async () => {
@@ -61,7 +61,7 @@ describe('0.14I · fases y composición (pruebas 11–18)', () => {
   })
   it('14. I compone E/F/G/H/I', () => expect(academyPhaseLayers('0.14I').map(({ phase }) => phase)).toEqual(['0.14C', '0.14D', '0.14E', '0.14F', '0.14G', '0.14H', '0.14I']))
   it('15. la UI utiliza la fase activa canónica', async () => {
-    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14J')
+    expect(CURRENT_ACADEMY_CURATION_PHASE).toBe('0.14K')
     expect(await readFile(join(ACADEMY_014I_TEST_ROOT, 'src/learning/ui/reader/AcademyContinuousLessonSurface.tsx'), 'utf8')).toContain('CURRENT_ACADEMY_CURATION_PHASE')
   })
   it('16. la capa recibe contexto fuente completo', async () => {
