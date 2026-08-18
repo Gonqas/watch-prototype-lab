@@ -5,7 +5,7 @@
 - Commit inicial: f2acf7f351bb8e7f4f9f1a7a6ee5f085792cb501.
 - Cambios ajenos al iniciar: ninguno; worktree limpio.
 - Corpus: **8 paquetes, 24 rutas, 217 módulos, 222 lecciones y 289 actividades**.
-- Digest del corpus: 1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e (coincide con el baseline).
+- Digest del corpus: 5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f (coincide con el baseline).
 - Informes históricos: **67**, digest combinado intacto.
 - Documentos 0.14E construidos y validados: **222**.
 

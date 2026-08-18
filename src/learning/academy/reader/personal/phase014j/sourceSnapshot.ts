@@ -1,3 +1,5 @@
+import { academyStage4VisibleList, academyStage4VisibleSpanish } from './visibleLanguage'
+
 export type AcademyMiyotaSnapshotStatus = 'verified-current' | 'drift-reviewed' | 'discovery-only'
 
 export interface AcademyMiyotaSourceSnapshot014JRecord {
@@ -18,7 +20,12 @@ export interface AcademyMiyotaSourceSnapshot014JRecord {
   limitations: readonly string[]
 }
 
-const record = (value: AcademyMiyotaSourceSnapshot014JRecord) => value
+const record = (value: AcademyMiyotaSourceSnapshot014JRecord): AcademyMiyotaSourceSnapshot014JRecord => ({
+  ...value,
+  title: academyStage4VisibleSpanish(value.title),
+  scope: academyStage4VisibleSpanish(value.scope),
+  limitations: academyStage4VisibleList(value.limitations),
+})
 
 export const ACADEMY_MIYOTA_8215_SOURCE_SNAPSHOT_014J: readonly AcademyMiyotaSourceSnapshot014JRecord[] = [
   record({ snapshotId: 'snapshot.miyota.8215.product-page.2026-08-16', sourceId: 'source.miyota.8215.product-page', documentType: 'product-page', title: 'MIYOTA 8215 · página oficial', currentLocator: 'https://miyotamovement.com/product/8215/', previousLocator: 'https://miyotamovement.com/product/8215/', currentSha256: 'c7eb21fbcca4f874f2a971ee53b4e4ad62356a5d9ec68cc94e620db8f3fa7c9d', previousSha256: '42abce52fa872351b448151ca7b79c0905b41ad33b2a0f2a2edef781686423db', sizeBytes: 53456, pages: null, checkedAt: '2026-08-16', visualInspection: 'not-applicable', status: 'drift-reviewed', scope: 'Identidad, familia comercial, funciones, resumen de especificaciones y enlaces documentales vigentes.', limitations: ['No demuestra servicio, piezas internas detalladas, lubricación ni tolerancias no publicadas.'] }),

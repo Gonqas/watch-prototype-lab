@@ -3,8 +3,8 @@
 ## Resultado
 
 - Corpus conservado: 8 paquetes, 24 rutas, 217 módulos, 222 lecciones y 289 actividades.
-- Digest del corpus: `1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e` (sin cambios).
-- Informes históricos 0.14A–0.14F: 95 archivos, digest `ad771a29ead7925a35d8ac5308767ec69332173b1ed100dc6cea246eb909f166`.
+- Digest del corpus: `5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f` (sin cambios).
+- Informes históricos 0.14A–0.14F: 95 archivos, digest `204f3ac4aed8ced4ad543fb8ec8b082b62f44d1efd6b81d8bbaf8bcf05568c04`.
 - Persistencia: cola funcional por perfil, merge del estado de Academia, tres reintentos, flush explícito y diagnósticos sin PII.
 - Etapa 1: 8 lecciones, 64 apartados, 10 overlays, 6 visuales, 5 prácticas personales y 8 claims.
 - Capturas 0.14G: 18.

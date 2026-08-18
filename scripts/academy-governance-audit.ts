@@ -36,7 +36,7 @@ const CURRICULUM_FILES = new Set<OutputFile>([
 ])
 
 const json = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`
-const md = (value: string) => `${value.trim()}\n`
+const md = (value: string) => `${value.trim().replace(/[ \t]+$/gmu, '')}\n`
 const pipe = (value: unknown) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ')
 const code = (value: string) => `\`${value.replaceAll('`', '\\`')}\``
 
@@ -67,7 +67,7 @@ function sourceRegistryMarkdown(registry: SourceRegistryResult, corpusDigest: st
 
 Versión del esquema: \`wplab-academy-source-registry-v1\`  
 Fase: **0.14A**  
-Huella del corpus: ${code(corpusDigest)}  
+Huella del corpus: ${code(corpusDigest)}
 Registros: **${registry.records.length}**
 
 Este registro conserva metadatos, autoridad, alcance, riesgos, localizadores y política de reutilización. No incorpora páginas, escaneos, imágenes ni fragmentos extensos de los originales.

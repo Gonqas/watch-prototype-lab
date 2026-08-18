@@ -7,6 +7,7 @@ import { academy014ILegacyAliases, academyStage3LessonCuration, academyStage3Sec
 import { academy014JLegacyAliases, academyActiveMetadata014J, academyStage4SectionVisualCuration, applyAcademy014JLessonCuration } from './phase014j'
 import { academy014KLegacyAliases, academyActiveMetadata014K, academyStage5SectionVisualCuration, applyAcademy014KLessonCuration } from './phase014k'
 import { academyPhaseIncludes } from './registry'
+import { academySourceFigureVisualCuration, applyAcademySourceFigureCuration } from './sourceFigureCuration'
 import type { AcademySourcePreservingLessonContext } from './types'
 
 type PersonalMetadata = ReturnType<typeof academyPersonalPilotReview> | ReturnType<typeof academyStage0LessonCuration> | ReturnType<typeof academyStage1LessonCuration> | ReturnType<typeof academyStage2LessonCuration> | ReturnType<typeof academyStage3LessonCuration> | ReturnType<typeof academyActiveMetadata014J> | ReturnType<typeof academyActiveMetadata014K>
@@ -22,6 +23,15 @@ interface AcademyCurationLayer {
   visual?: (input: VisualInput) => AcademySectionVisualCuration | undefined
 }
 
+function applyAcademy014KWithSourceFigures(context: AcademySourcePreservingLessonContext) {
+  const stage5Sections = applyAcademy014KLessonCuration(context)
+  return applyAcademySourceFigureCuration({ ...context, currentSections: stage5Sections })
+}
+
+function academy014KVisualCuration(input: VisualInput) {
+  return academySourceFigureVisualCuration(input) ?? academyStage5SectionVisualCuration(input)
+}
+
 export const ACADEMY_DECLARATIVE_CURATION_LAYERS: readonly AcademyCurationLayer[] = [
   { phase: '0.14D', layerId: 'editorial-base' },
   { phase: '0.14E', layerId: 'personal-pilots', applySections: ({ lessonId, currentSections }) => applyAcademyPersonalSectionPatches(lessonId, currentSections), metadata: academyPersonalPilotReview, visual: academyPersonalSectionVisualCuration },
@@ -30,7 +40,7 @@ export const ACADEMY_DECLARATIVE_CURATION_LAYERS: readonly AcademyCurationLayer[
   { phase: '0.14H', layerId: 'stage-2', applySections: ({ lessonId, currentSections, authoredSections }) => applyAcademyStage2LessonCuration(lessonId, currentSections, authoredSections), legacyAliases: academyStage2LegacyAliases, metadata: academyStage2LessonCuration, visual: academyStage2SectionVisualCuration },
   { phase: '0.14I', layerId: 'stage-0-1-remediation-and-stage-3', applySections: applyAcademy014ILessonCuration, sourcePreservingAliases: academy014ILegacyAliases, metadata: academyStage3LessonCuration, visual: academyStage3SectionVisualCuration },
   { phase: '0.14J', layerId: 'active-status-and-stage-4', applySections: applyAcademy014JLessonCuration, sourcePreservingAliases: academy014JLegacyAliases, metadata: academyActiveMetadata014J, visual: academyStage4SectionVisualCuration },
-  { phase: '0.14K', layerId: 'stage-5-integration', applySections: applyAcademy014KLessonCuration, sourcePreservingAliases: academy014KLegacyAliases, metadata: academyActiveMetadata014K, visual: academyStage5SectionVisualCuration },
+  { phase: '0.14K', layerId: 'stage-5-integration-and-source-figures', applySections: applyAcademy014KWithSourceFigures, sourcePreservingAliases: academy014KLegacyAliases, metadata: academyActiveMetadata014K, visual: academy014KVisualCuration },
 ] as const
 
 export function academyCurationLayersForPhase(phase: AcademyReaderCurationPhase) {

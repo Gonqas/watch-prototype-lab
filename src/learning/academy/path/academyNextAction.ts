@@ -88,7 +88,7 @@ export function academyNextAction(
       chapterId: location?.chapter.chapterId,
       chapterTitle: location?.chapter.title ?? 'Sesión guardada',
       title: activity ? localize(snapshot.profile?.locale, activity.title) : 'Retomar la práctica guardada',
-      reason: 'Existe una sesión core con un punto de recuperación seguro; se resuelve antes de abrir trabajo nuevo.',
+      reason: 'Existe una sesión principal con un punto de recuperación seguro; se resuelve antes de abrir trabajo nuevo.',
       type: 'resume',
       href: `#/learning/recovery/${encodeURIComponent(recovery.id)}`,
       ctaLabel: 'Retomar sesión',
@@ -253,7 +253,7 @@ export function academyNextAction(
     title: 'Recorrido disponible completado',
     reason: pathProgress.coveragePendingStageIds.length > 0
       ? 'Quedan contenidos planificados o pendientes de revisión antes de cerrar el currículo completo.'
-      : 'No queda ninguna tarea core disponible pendiente.',
+      : 'No queda ninguna tarea principal disponible pendiente.',
     type: 'available-path-complete',
     href: '#/learning/my-learning',
     ctaLabel: 'Ver cobertura',

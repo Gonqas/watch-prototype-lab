@@ -6,7 +6,7 @@ La auditoría no recorta los 83 anchors. La duración suma únicamente los minut
 |---:|---:|---:|---:|---:|---:|---:|---:|
 | 0 | 4 | 4 | 94 min | 45 | 4 | 0 | 0 |
 | 1 | 4 | 4 | 59 min | 45 | 2 | 2 | 2 |
-| 2 | 17 | 17 | 385 min | 229 | 17 | 0 | 0 |
+| 2 | 17 | 17 | 385 min | 230 | 17 | 0 | 0 |
 | 3 | 12 | 12 | 282 min | 118 | 10 | 2 | 2 |
 | 4 | 14 | 14 | 272 min | 178 | 13 | 1 | 1 |
 | 5 | 12 | 12 | 530 min | 115 | 11 | 1 | 1 |
@@ -42,7 +42,7 @@ La auditoría no recorta los 83 anchors. La duración suma únicamente los minut
 
 ## Fatiga y revisión humana
 
-- Etapa 2: 34 acciones core y 229 clics estimados; validar en sesiones observadas.
+- Etapa 2: 34 acciones core y 230 clics estimados; validar en sesiones observadas.
 - Etapa 3: 24 acciones core y 118 clics estimados; validar en sesiones observadas.
 - Etapa 4: 28 acciones core y 178 clics estimados; validar en sesiones observadas.
 - Etapa 5: 24 acciones core y 115 clics estimados; validar en sesiones observadas.

@@ -46,8 +46,8 @@ export const ACADEMY_014F_BASELINE = {
   initialCommit: '086b73eeb1b6d73aca4af4c9e497fd0d825562d6',
   initialBranch: 'main',
   initialTree: 'clean',
-  corpusDigest: '1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e',
-  historicalReportsDigest: 'a4a96deb8f2c17d147875c1c0f8a57257c4e41cbb6876274ab34f2fe09bba71c',
+  corpusDigest: '5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f',
+  historicalReportsDigest: '085477ac8849684cb8ef18de11081267717ce830605f9a3c1b5f8b94211fa65f',
   bulovaSha256: 'b13229157e4839d81285d9069f991f6e8c85c59536955f562298bffb7fe2c981',
   personalRegistryFiles: 23,
   personalRegistrySourceBytes: 159_962,
@@ -55,7 +55,7 @@ export const ACADEMY_014F_BASELINE = {
   activityUiSourceBytes: 108_632,
 } as const
 
-const md = (value: string) => `${value.trim()}\n`
+const md = (value: string) => `${value.trim().replace(/[ \t]+$/gmu, '')}\n`
 const json = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`
 const sha256 = (value: string | Buffer) => createHash('sha256').update(value).digest('hex')
 const pipe = (value: unknown) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ')

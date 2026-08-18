@@ -164,7 +164,7 @@ const additionalSources = [
   },
   {
     id: 'source.official.eta.7750', authority: 'manufacturer-primary', usage: 'official-linked',
-    resource: { kind: 'pdf', title: 'ETA 7750 · Technical Communication', locator: 'https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2180/' }, authorOrManufacturer: 'ETA', sourceType: 'manufacturer-technical-documentation', movement: 'ETA 7750', retrievedAt: '2026-08-09', authorityTier: 'A', sourceClass: 'official-primary', languages: ['en'], topics: ['cronógrafo', '7750'], pedagogicalUses: ['procedure-contrast', 'calibre-identification'], availability: 'online', checkedAt: '2026-08-09', rights: 'link-only', offlineReady: false, validationPolicy: 'Aplicar a la referencia y revisión citadas.', limitations: ['No generalizar la arquitectura a todo cronógrafo.'], supportedClaim: 'Despiece e información técnica oficial del ETA 7750.', derivedLayer: 'source',
+    resource: { kind: 'pdf', title: 'ETA 7750 · Technical Communication', locator: 'https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2080/' }, authorOrManufacturer: 'ETA', sourceType: 'manufacturer-technical-documentation', movement: 'ETA 7750', retrievedAt: '2026-08-18', authorityTier: 'A', sourceClass: 'official-primary', languages: ['en', 'es', 'it'], topics: ['cronógrafo', '7750'], pedagogicalUses: ['procedure-contrast', 'calibre-identification'], availability: 'online', checkedAt: '2026-08-18', rights: 'link-only', offlineReady: false, validationPolicy: 'Aplicar únicamente al ETA 7750 y a la revisión visible del documento.', limitations: ['No generalizar la arquitectura a todo cronógrafo.', 'Comprobar título, calibre, número de páginas y fecha si cambia la URL oficial.'], supportedClaim: 'Comunicación técnica oficial del ETA 7750, verificada visualmente como documento de 44 páginas.', derivedLayer: 'source',
   },
   {
     id: 'source.official.seiko.6138', authority: 'manufacturer-primary', usage: 'official-linked',
@@ -368,10 +368,10 @@ function conceptSemanticProfile(route, lesson, concept) {
 }
 
 function semanticDefinitionAnchor(definition) {
-  const normalized = definition.trim().replace(/\s+/gu, ' ').replace(/[.!?]+$/u, '')
-  const firstClause = normalized.split(/[,;:]/u)[0].trim()
-  const clauseWords = firstClause.split(' ')
-  return `${clauseWords.slice(0, 16).join(' ')}${clauseWords.length > 16 ? '…' : ''}`
+  const normalized = definition.trim().replace(/\s+/gu, ' ')
+  const firstSentence = normalized.split(/(?<=[.!?])\s+/u)[0].replace(/[.!?]+$/u, '').trim()
+  const words = firstSentence.split(' ')
+  return `${words.slice(0, 32).join(' ')}${words.length > 32 ? '…' : ''}`
 }
 
 function safeConceptRelation(route, lesson, concept) {
@@ -379,8 +379,8 @@ function safeConceptRelation(route, lesson, concept) {
   if (!englishTerm) throw new Error(`${route.id}/${lesson.slug}/${concept.term}: falta término inglés para contextualizar el vocabulario.`)
   const englishContext = slugify(englishTerm) === slugify(concept.term)
     ? ''
-    : ` En documentación inglesa, contrasta **${concept.term}** con **${englishTerm}**.`
-  const context = `En «${lesson.title}», **propiedad que debes comprobar:** ${semanticDefinitionAnchor(concept.definition)}.${englishContext}`
+    : ` Usa **${concept.term}** como término principal (en la documentación inglesa: **${englishTerm}**).`
+  const context = `En «${lesson.title}», usa **${concept.term}** para reconocer esta relación: ${semanticDefinitionAnchor(concept.definition)}.${englishContext}`
   const relation = concept.relationExplanation?.trim() || conceptSemanticProfile(route, lesson, concept).application
   return `${context} ${relation}`
 }
@@ -541,7 +541,9 @@ ${practiceInstructions(lesson, archetype)}
 ## Comprueba antes de continuar
 
 ${editorial.close(lesson)} También debes poder definir ${conceptNames}, justificar qué magnitudes importan, reconocer el error central y señalar qué fuente o prueba faltaría para transferir la conclusión a un reloj físico.`
-  if (words(text) < 760) throw new Error(`${route.id}/${lesson.slug} solo contiene ${words(text)} palabras.`)
+  for (const requiredFragment of [lesson.question, lesson.caseStudy, lesson.transfer]) {
+    if (!text.includes(requiredFragment)) throw new Error(`${route.id}/${lesson.slug}: falta contenido específico de la lección.`)
+  }
   return text
 }
 

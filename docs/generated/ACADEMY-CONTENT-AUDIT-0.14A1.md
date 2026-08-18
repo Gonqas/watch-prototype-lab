@@ -1,18 +1,18 @@
 # Auditoría semántica integral de la Academia — 0.14A.1
 
-Huella del corpus: `1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e`  
-Baseline preservado: **0.14A (1881 instancias sin calibrar)**  
+Huella del corpus: `5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f`
+Baseline preservado: **0.14A (1911 instancias sin calibrar)**
 Paquetes/rutas/módulos/lecciones/actividades visibles: **8/24/217/222/289**
 
 ## Resultado calibrado
 
 | Grupo | Conteo |
 |---|---:|
-| Incidencias registradas 0.14A.1 | 684 |
+| Incidencias registradas 0.14A.1 | 714 |
 | Migraciones globales (raíces) | 3 |
 | Incidencias confirmadas | 53 |
 | Incidencias probables | 124 |
-| Heurísticas de baja confianza | 343 |
+| Heurísticas de baja confianza | 373 |
 | Incidencias derivadas | 35 |
 | Problemas de claim/fuente | 164 |
 | Seguridad operativa accionable | 0 |
@@ -78,13 +78,13 @@ Fixtures: **47 lecciones + 33 actividades**; aserciones: **624/624 correctas**; 
 | 21 | 67 | high | high | `lesson.mechanical.final-project` | 6 | manual-review |
 | 22 | 67 | high | high | `lesson.encyclopedia.dials-hands-finishing.decoracion-del-movimiento` | 3 | manual-review |
 | 23 | 65 | high | high | `lesson.encyclopedia.escapements-chronometry.toh-escape-fases` | 4 | manual-review |
-| 24 | 61 | high | high | `lesson.encyclopedia.history-language.industrializacion-y-familias` | 3 | manual-review |
-| 25 | 61 | high | high | `lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria` | 3 | manual-review |
-| 26 | 61 | high | high | `lesson.encyclopedia.mechanical-energy-trains.toh-relaciones-tren` | 3 | manual-review |
-| 27 | 61 | high | high | `lesson.encyclopedia.mechanical-energy-trains.toh-minuteria-friccion` | 3 | manual-review |
-| 28 | 61 | high | high | `lesson.encyclopedia.cases-water.chicago-caja-corona-tija` | 3 | manual-review |
-| 29 | 61 | high | high | `lesson.encyclopedia.atlas-restoration-design.identidad-y-comparacion` | 3 | manual-review |
-| 30 | 60 | high | high | `lesson.encyclopedia.escapements-chronometry.toh-seguridad-escape` | 3 | manual-review |
+| 24 | 62 | high | high | `lesson.miyota8215.identify` | 6 | manual-review |
+| 25 | 62 | high | high | `lesson.miyota8215.documentation` | 6 | manual-review |
+| 26 | 62 | high | high | `lesson.miyota8215.architecture` | 6 | manual-review |
+| 27 | 62 | high | high | `lesson.miyota8215.automatic` | 6 | manual-review |
+| 28 | 61 | high | high | `lesson.encyclopedia.history-language.industrializacion-y-familias` | 3 | manual-review |
+| 29 | 61 | high | high | `lesson.encyclopedia.mechanical-energy-trains.toh-engranaje-geometria` | 3 | manual-review |
+| 30 | 61 | high | high | `lesson.encyclopedia.mechanical-energy-trains.toh-relaciones-tren` | 3 | manual-review |
 
 ## Decisiones que requieren revisión humana
 

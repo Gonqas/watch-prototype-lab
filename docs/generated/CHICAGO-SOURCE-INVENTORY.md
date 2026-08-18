@@ -1,7 +1,7 @@
 # Inventario verificable de Chicago School of Watchmaking
 
-Fuente: `reference-library/originals/Chicago CD.iso`  
-Formato verificado: **ISO 9660/Joliet**  
+Fuente: `reference-library/originals/Chicago CD.iso`
+Formato verificado: **ISO 9660/Joliet**
 SHA-256: `a969f30e81e355ad7e000b012a9a7e612d43e86c64eac179788188327cdccdfa`
 
 El volumen se abrió en solo lectura. La extracción técnica temporal se mantuvo bajo `.cache/reference-audit/`; no forma parte de Git ni del runtime.

@@ -14,7 +14,8 @@ import pathLinks from '../academy/path/academyPathLinks.ts?raw'
 describe('jerarquía clara de la Academia', () => {
   it('separa la ruta principal, la Biblioteca y los detalles de ruta', () => {
     expect(path).toContain('Una ruta principal, una siguiente acción')
-    expect(path).toContain('PROGRESO CORE')
+    expect(path).toContain('PROGRESO PRINCIPAL')
+    expect(path).not.toMatch(/progreso core|core disponible/i)
     expect(path).toContain('Ver las ocho etapas')
     expect(librarySurface).toContain('Las 24 rutas, agrupadas por función')
     expect(librarySurface).toContain('ACADEMY_LIBRARY_ROUTE_GROUPS')

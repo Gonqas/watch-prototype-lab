@@ -147,7 +147,7 @@ await writeFile(join(outputRoot, 'APRENDER-ACADEMIA-P2-AUDITORIA.json'), `${JSON
 
 const markdown = `# Auditoría reproducible de personalización P2
 
-Generada: ${report.generatedAt}  
+Generada: ${report.generatedAt}
 Resultado: **${pass ? 'CORRECTO' : 'FALLIDO'}**
 
 ## Alcance

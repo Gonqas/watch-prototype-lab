@@ -1,9 +1,29 @@
-import { lazy, Suspense, useState } from 'react'
+import { lazy, Suspense, useRef, useState } from 'react'
 import type { LearningActivityDescriptor } from '../../product/demoPackage'
 import type { AcademyVisualCue } from '../../academy/reader/academyReaderModel'
+import { academySourceFigureAssetIsValid } from '../../academy/reader/academySourceFigureAsset'
 import { AcademySpecificDiagram } from './AcademySpecificDiagram'
+import {
+  closeAcademySourceFigureDialog,
+  openAcademySourceFigureDialog,
+  restoreAcademySourceFigureFocus,
+} from './academySourceFigureDialog'
 
 const AcademyReaderScene = lazy(() => import('./AcademyReaderScene'))
+
+const SOURCE_FIGURE_RIGHTS_LABEL = {
+  'public-domain': 'dominio público',
+  licensed: 'licencia declarada',
+  'permission-granted': 'permiso concedido',
+  'personal-study-only': 'solo estudio personal',
+  'rights-review-required': 'revisión de derechos pendiente',
+} as const
+
+const SOURCE_FIGURE_DISTRIBUTION_LABEL = {
+  allowed: 'distribución permitida',
+  restricted: 'distribución restringida',
+  'review-required': 'revisar antes de distribuir',
+} as const
 
 function AcademyReaderStaticSceneSummary({ cue }: { cue: AcademyVisualCue }) {
   const labels = cue.labelDefinitions ?? []
@@ -24,6 +44,58 @@ function AcademyReaderStaticSceneSummary({ cue }: { cue: AcademyVisualCue }) {
   )
 }
 
+function AcademyReaderSourceFigure({ cue, onExpand }: { cue: AcademyVisualCue; onExpand?: () => void }) {
+  const dialogRef = useRef<HTMLDialogElement>(null)
+  const triggerRef = useRef<HTMLButtonElement>(null)
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
+  const asset = cue.imageAsset
+  if (!academySourceFigureAssetIsValid(asset)) return null
+  const dialogId = `${cue.cueId}-image-dialog`
+  const open = () => openAcademySourceFigureDialog(dialogRef.current, closeButtonRef.current, onExpand)
+  const close = () => closeAcademySourceFigureDialog(dialogRef.current)
+  return (
+    <>
+      <div className="academy-reader-source-figure__viewport">
+        <img
+          className="academy-reader-source-figure__image"
+          src={asset.src}
+          width={asset.width}
+          height={asset.height}
+          alt={asset.alt}
+          loading="lazy"
+          decoding="async"
+        />
+        <button
+          ref={triggerRef}
+          type="button"
+          className="academy-reader-source-figure__zoom"
+          aria-haspopup="dialog"
+          aria-controls={dialogId}
+          onClick={open}
+        >
+          Ampliar imagen
+        </button>
+      </div>
+      <dialog
+        id={dialogId}
+        ref={dialogRef}
+        className="academy-reader-source-figure__dialog"
+        aria-labelledby={`${cue.cueId}-image-dialog-title`}
+        onClose={() => restoreAcademySourceFigureFocus(triggerRef.current)}
+        onClick={(event) => { if (event.target === event.currentTarget) close() }}
+      >
+        <div className="academy-reader-source-figure__dialog-content">
+          <header>
+            <strong id={`${cue.cueId}-image-dialog-title`}>{asset.caption}</strong>
+            <button ref={closeButtonRef} type="button" autoFocus onClick={close}>Cerrar</button>
+          </header>
+          <img src={asset.src} width={asset.width} height={asset.height} alt={asset.alt} loading="lazy" decoding="async" />
+        </div>
+      </dialog>
+    </>
+  )
+}
+
 export function AcademyReaderVisual({
   cue,
   activities,
@@ -40,7 +112,8 @@ export function AcademyReaderVisual({
   const [announcement, setAnnouncement] = useState('')
   if (!cue || cue.implementationStatus !== 'implemented') return null
   const activity = cue.activityId ? activities.find(({ id }) => id === cue.activityId) : undefined
-  const hasRenderableVisual = cue.kind === 'scene-3d' || Boolean(cue.diagramData)
+  const renderableImage = cue.kind === 'image' && academySourceFigureAssetIsValid(cue.imageAsset)
+  const hasRenderableVisual = cue.kind === 'scene-3d' || renderableImage || Boolean(cue.diagramData)
   if (!hasRenderableVisual) return null
   const announce = () => {
     const value = `${cue.caption}. ${cue.expectedObservation ?? cue.altText}`
@@ -53,7 +126,9 @@ export function AcademyReaderVisual({
       data-visual-design={cue.visualDesignId}
       data-visual-state={cue.visualStateId}
     >
-      {cue.kind === 'scene-3d'
+      {renderableImage
+        ? <AcademyReaderSourceFigure cue={cue} onExpand={onExpand} />
+        : cue.kind === 'scene-3d'
         ? staticOnly
           ? <AcademyReaderStaticSceneSummary cue={cue} />
           : activity
@@ -63,7 +138,30 @@ export function AcademyReaderVisual({
       <figcaption>
         <strong>{cue.caption}</strong>
         <span>{cue.pedagogicalQuestion}</span>
-        <span>{cue.altText}</span>
+        {renderableImage && cue.imageAsset
+          ? <>
+              <dl className="academy-reader-source-figure__didactics">
+                <div><dt>Qué mirar</dt><dd>{cue.imageAsset.whatToLookFor}</dd></div>
+                <div><dt>Qué demuestra</dt><dd>{cue.imageAsset.evidence}</dd></div>
+                <div><dt>Límite</dt><dd>{cue.imageAsset.limitation}</dd></div>
+              </dl>
+              <details className="academy-reader-source-figure__provenance">
+                <summary>Fuente y derechos</summary>
+                <dl>
+                  <div><dt>Fuente</dt><dd>{cue.imageAsset.source.title}</dd></div>
+                  <div><dt>Localizador</dt><dd>{cue.imageAsset.source.locator}</dd></div>
+                  {cue.imageAsset.source.page !== undefined && <div><dt>Página</dt><dd>{cue.imageAsset.source.page}</dd></div>}
+                  {cue.imageAsset.source.figure && <div><dt>Figura</dt><dd>{cue.imageAsset.source.figure}</dd></div>}
+                  <div><dt>Atribución</dt><dd>{cue.imageAsset.rights.attribution}</dd></div>
+                  <div><dt>Uso</dt><dd>{SOURCE_FIGURE_RIGHTS_LABEL[cue.imageAsset.rights.status]} · {SOURCE_FIGURE_DISTRIBUTION_LABEL[cue.imageAsset.rights.distribution]}</dd></div>
+                  {cue.imageAsset.rights.license && <div><dt>Licencia</dt><dd>{cue.imageAsset.rights.license}</dd></div>}
+                  {cue.imageAsset.rights.notes?.length
+                    ? <div><dt>Notas de derechos</dt><dd><ul>{cue.imageAsset.rights.notes.map((note) => <li key={note}>{note}</li>)}</ul></dd></div>
+                    : null}
+                </dl>
+              </details>
+            </>
+          : <span>{cue.altText}</span>}
         <button type="button" className="academy-reader-announce-visual" onClick={announce}>Anunciar este cambio visual</button>
         <details><summary>Fidelidad y límites</summary><ul>{cue.limitations.map((item) => <li key={item}>{item}</li>)}</ul></details>
       </figcaption>

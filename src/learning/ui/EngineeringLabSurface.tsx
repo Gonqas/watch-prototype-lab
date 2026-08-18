@@ -316,7 +316,7 @@ function ResultPanel({
         <span className={`engineering-validity is-${run.validity}`}>{run.validity === 'within-domain' ? 'Válido con estos supuestos' : 'Requiere cautela'}</span>
       </header>
       <div className="engineering-output-grid">
-        {Object.entries(run.outputs).map(([key, value]) => <div key={key}><span>{outputLabels[key] ?? key}</span><strong>{formatOutput(value)}</strong></div>)}
+        {Object.entries(run.outputs).map(([key, value]) => <div key={key}><span>{outputLabels[key] ?? 'Resultado calculado'}</span><strong>{formatOutput(value)}</strong></div>)}
       </div>
       {run.notices.map((notice) => <div className={`engineering-notice is-${notice.severity}`} key={notice.code}><ShieldAlert size={16} /><span>{notice.message}</span></div>)}
       <details open>
@@ -373,14 +373,14 @@ function NotebookPanel({
   return (
     <section className="engineering-notebook">
       <header>
-        <div><span className="academy-kicker">CUADERNO TÉCNICO</span><h2>{runs.length} ejecuciones guardadas</h2><p>Ámbito: <code>{projectId}</code>. Los datos permanecen en este dispositivo.</p></div>
+        <div><span className="academy-kicker">CUADERNO TÉCNICO</span><h2>{runs.length} ejecuciones guardadas</h2><p>Cuaderno del proyecto local activo. Los datos permanecen en este dispositivo.</p></div>
         <button className="academy-button is-secondary" type="button" onClick={download} disabled={!runs.length}><Download size={15} /> Exportar JSON</button>
       </header>
       {!runs.length && <div className="engineering-notebook-empty"><NotebookPen size={22} /><span>Guarda un cálculo para conservar entradas, versión, fuentes, límites y resultado.</span></div>}
       {runs.map((run) => (
         <article key={run.id}>
           <Archive size={16} />
-          <div><strong>{run.title}</strong><span>{new Date(run.createdAt).toLocaleString('es-ES')} · {run.formulaId}@{run.formulaVersion}</span></div>
+          <div><strong>{run.title}</strong><span>{new Date(run.createdAt).toLocaleString('es-ES')} · versión del método {run.formulaVersion}</span></div>
           <span>{Object.values(run.outputs).slice(0, 1).map(formatOutput).join('')}</span>
           <button type="button" onClick={() => onRemove(run.id)} aria-label={`Eliminar ${run.title}`}><Trash2 size={15} /></button>
         </article>

@@ -1,5 +1,6 @@
 import type { AcademyCurriculumPathRole } from '../types'
 import { academyStage4EditorialContract, type AcademyStage4EditorialContract } from './stage4EditorialContracts'
+import { academyStage4VisibleList, academyStage4VisibleSpanish } from './visibleLanguage'
 
 export interface AcademyStage4CatalogEntry extends AcademyStage4EditorialContract {
   lessonId: string
@@ -15,7 +16,21 @@ export interface AcademyStage4CatalogEntry extends AcademyStage4EditorialContrac
 }
 
 type Source = Omit<AcademyStage4CatalogEntry, keyof AcademyStage4EditorialContract>
-const entry = (value: Source): AcademyStage4CatalogEntry => ({ ...value, ...academyStage4EditorialContract(value.lessonId) })
+const entry = (value: Source): AcademyStage4CatalogEntry => {
+  const contract = academyStage4EditorialContract(value.lessonId)
+  return {
+    ...value,
+    centralQuestion: academyStage4VisibleSpanish(value.centralQuestion),
+    observableOutcome: academyStage4VisibleSpanish(value.observableOutcome),
+    editorialFocus: academyStage4VisibleSpanish(value.editorialFocus),
+    workedExample: academyStage4VisibleSpanish(value.workedExample),
+    sourceScope: academyStage4VisibleSpanish(value.sourceScope),
+    ...contract,
+    whyNow: academyStage4VisibleSpanish(contract.whyNow),
+    checkpointPrompt: academyStage4VisibleSpanish(contract.checkpointPrompt),
+    checkpointExpectedElements: academyStage4VisibleList(contract.checkpointExpectedElements),
+  }
+}
 
 export const ACADEMY_STAGE_4_CATALOG: readonly AcademyStage4CatalogEntry[] = [
   entry({ lessonId: 'lesson.miyota8215.identify', chapterId: 'chapter.4.1', pathRole: 'anchor', requiredActivityId: 'activity.miyota8215.identify-calibre', visualDesignIds: ['visual.miyota8215.identify', 'visual.stage4.identity-evidence.v1'], centralQuestion: '¿Qué evidencia permite identificar provisionalmente este movimiento como MIYOTA 8215?', observableOutcome: 'Distinguir rasgo, inscripción, referencia, variante y confirmación documental.', editorialFocus: 'La semejanza visual abre una búsqueda; la inscripción y el documento oficial sostienen la identidad. Rotor, color, disposición aproximada o número de rubíes no bastan por separado.', workedExample: 'Una marca visible se coteja con la página oficial y un documento vigente; si falta la variante, la conclusión permanece provisional.', sourceScope: 'Página oficial y documentos MIYOTA consultados el 16-08-2026; ninguna base secundaria prevalece.' }),

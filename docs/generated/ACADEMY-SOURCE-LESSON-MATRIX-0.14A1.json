@@ -2,7 +2,7 @@
   "schema": "wplab-academy-semantic-lesson-matrix-v1",
   "phase": "0.14A.1",
   "baselinePhase": "0.14A",
-  "corpusDigest": "1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e",
+  "corpusDigest": "5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f",
   "counts": {
     "packages": 8,
     "routes": 24,
@@ -110,12 +110,12 @@
       "detectorId": 5,
       "category": "generic-reused-objective",
       "title": "Objetivos genéricos reutilizados",
-      "countBefore": 52,
-      "countAfter": 52,
+      "countBefore": 67,
+      "countAfter": 67,
       "globalAffectedEntities": 0,
       "confirmed": 0,
       "likely": 0,
-      "lowConfidence": 52,
+      "lowConfidence": 67,
       "derived": 0,
       "variationReason": "Se conserva la señal baseline con procedencia y confianza explícitas."
     },
@@ -305,12 +305,12 @@
       "detectorId": 20,
       "category": "template-conditioned-content",
       "title": "Contenido excesivamente condicionado por plantillas",
-      "countBefore": 99,
-      "countAfter": 99,
+      "countBefore": 114,
+      "countAfter": 114,
       "globalAffectedEntities": 0,
       "confirmed": 0,
       "likely": 0,
-      "lowConfidence": 99,
+      "lowConfidence": 114,
       "derived": 0,
       "variationReason": "Se conserva la señal baseline con procedencia y confianza explícitas."
     },
@@ -1499,7 +1499,6 @@
       "entityId": "lesson.mechanical.gear-pair",
       "message": "El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla.",
       "evidence": [
-        "lesson.mechanical.barrel",
         "lesson.mechanical.train"
       ],
       "detectionMethod": "exact-match",
@@ -2991,6 +2990,291 @@
       "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "evidence": [
         "repeticiones=12"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.architecture",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.assembly-verification",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.assisted-free-disassembly",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.automatic",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.barrel-energy",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.calendar",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.diagnosis-project",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.documentation",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.escapement-oscillator",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.guided-disassembly",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.identify",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.inspection",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.plan-disassembly",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.train",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.winding-setting",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
       ],
       "detectionMethod": "heuristic-keyword",
       "confidence": "low",
@@ -11379,6 +11663,306 @@
       "category": "template-conditioned-content",
       "severity": "high",
       "entityType": "lesson",
+      "entityId": "lesson.miyota8215.architecture",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.assembly-verification",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.assisted-free-disassembly",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.automatic",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.barrel-energy",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.calendar",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.diagnosis-project",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.documentation",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.escapement-oscillator",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.guided-disassembly",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.identify",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.inspection",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.plan-disassembly",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.train",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.winding-setting",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "detectionMethod": "heuristic-keyword",
+      "confidence": "low",
+      "scope": "lesson",
+      "rootCauseId": null,
+      "derivedFromIssueIds": [],
+      "reviewStatus": "needs-human-judgment",
+      "actionable": false,
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
       "entityId": "lesson.quartz2035.anatomy",
       "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
       "evidence": [
@@ -13180,6 +13764,7 @@
       "message": "La segmentación automática divide una sección larga en continuaciones que requieren revisión de unidad conceptual.",
       "evidence": [
         "block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.segment.pretrain.2",
+        "block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.segment.pretrain.3",
         "block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.segment.explain.2"
       ],
       "detectionMethod": "heuristic-keyword",
@@ -13200,6 +13785,7 @@
       "message": "La segmentación automática divide una sección larga en continuaciones que requieren revisión de unidad conceptual.",
       "evidence": [
         "block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.segment.pretrain.2",
+        "block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.segment.pretrain.3",
         "block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.segment.explain.2"
       ],
       "detectionMethod": "heuristic-keyword",
@@ -14830,7 +15416,7 @@
           "visualInspirationSourceIds": [],
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
-          "sourceLocator": "https://miyotamovement.com/uploads/product/product_x2MOZCosd7iH59wu0K.pdf",
+          "sourceLocator": "https://miyotamovement.com/product/8215/",
           "page": null,
           "figure": null,
           "table": null,
@@ -25753,7 +26339,7 @@
       ],
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
-        "source.private.toh.ch05 [p.63-99; 5]",
+        "source.private.toh.ch05 [p.53-99; 5]",
         "source.private.vba-uhrentechnik"
       ],
       "citationPrecision": "page-or-figure",
@@ -25869,7 +26455,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
-          "page": "63-99",
+          "page": "53-99",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -26012,7 +26598,7 @@
       ],
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
-        "source.private.toh.ch05 [p.63-99; 5]",
+        "source.private.toh.ch05 [p.53-99; 5]",
         "source.private.vba-uhrentechnik"
       ],
       "citationPrecision": "page-or-figure",
@@ -26126,7 +26712,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
-          "page": "63-99",
+          "page": "53-99",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -28520,7 +29106,7 @@
       "currentType": "worked-example / explanation",
       "proposedCurriculumStage": "3-observe-measure-diagnose",
       "curriculumCategory": null,
-      "currentObservableObjective": "Explicar cómo definir datums, orientación, instrumento y repeticiones antes de leer.",
+      "currentObservableObjective": "Explicar cómo definir referencias geométricas (datums), orientación, instrumento y repeticiones antes de leer.",
       "objectiveQuality": "specific-observable",
       "currentLearningArchetype": "inspection",
       "recommendedLearningArchetype": "measurement",
@@ -35207,7 +35793,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.daniels.mainsprings [p.272-297; Mainsprings and Accessories]",
-        "source.private.toh.ch04 [p.45-62; 4]"
+        "source.private.toh.ch04 [p.45-52; 4]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -35323,7 +35909,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
-          "page": "45-62",
+          "page": "45-52",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -35467,7 +36053,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.chicago.6 [Motor and jeweled barrels]",
-        "source.private.toh.ch04 [p.45-62; 4]"
+        "source.private.toh.ch04 [p.45-52; 4]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -35585,7 +36171,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
-          "page": "45-62",
+          "page": "45-52",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -35728,7 +36314,7 @@
       ],
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
-        "source.private.toh.ch05 [p.63-99; 5]",
+        "source.private.toh.ch05 [p.53-99; 5]",
         "source.private.vba-uhrentechnik"
       ],
       "citationPrecision": "page-or-figure",
@@ -35846,7 +36432,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
-          "page": "63-99",
+          "page": "53-99",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -35992,7 +36578,7 @@
       ],
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
-        "source.private.toh.ch05 [p.63-99; 5]",
+        "source.private.toh.ch05 [p.53-99; 5]",
         "source.private.vba-uhrentechnik"
       ],
       "citationPrecision": "page-or-figure",
@@ -36110,7 +36696,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
-          "page": "63-99",
+          "page": "53-99",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -36257,7 +36843,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.daniels.wheels-pinions [p.123-167; Wheels and Pinions]",
-        "source.private.toh.ch05 [p.63-99; 5]"
+        "source.private.toh.ch05 [p.53-99; 5]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -36373,7 +36959,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
-          "page": "63-99",
+          "page": "53-99",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -36517,7 +37103,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.chicago.9 [Winding and setting]",
-        "source.private.toh.ch05 [p.63-99; 5]"
+        "source.private.toh.ch05 [p.53-99; 5]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -36636,7 +37222,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
-          "page": "63-99",
+          "page": "53-99",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -36784,7 +37370,7 @@
       "currentCitations": [
         "source.private.chicago.5 [Mainsprings]",
         "source.private.chicago.7 [Selecting a mainspring]",
-        "source.private.toh.ch04 [p.45-62; 4]"
+        "source.private.toh.ch04 [p.45-52; 4]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -36904,7 +37490,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
-          "page": "45-62",
+          "page": "45-52",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -37049,7 +37635,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.chicago.6 [Motor and jeweled barrels]",
-        "source.private.toh.ch04 [p.45-62; 4]"
+        "source.private.toh.ch04 [p.45-52; 4]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -37167,7 +37753,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 4&5.pdf",
-          "page": "45-62",
+          "page": "45-52",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -44282,7 +44868,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.institutional.awci.standards",
-        "source.official.tm9-1575.inspection [p.1-30; Inspection before disassembly and service records]"
+        "source.official.tm9-1575.inspection [p.PDF 25-27 · impresas 12-14; Inspection before disassembly and service records]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -44401,7 +44987,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/TM 9-1575.pdf",
-          "page": "1-30",
+          "page": "PDF 25-27 · impresas 12-14",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -44544,7 +45130,7 @@
       ],
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
-        "source.official.tm9-1575.diagnosis [p.31-83; Troubleshooting, adjustment and repair]",
+        "source.official.tm9-1575.diagnosis [p.PDF 49-88 · impresas 19-44; Troubleshooting, adjustment and repair]",
         "source.private.chicago.35 [Problems and solutions]"
       ],
       "citationPrecision": "page-or-figure",
@@ -44663,7 +45249,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/TM 9-1575.pdf",
-          "page": "31-83",
+          "page": "PDF 49-88 · impresas 19-44",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -45377,7 +45963,7 @@
           ],
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
-          "sourceLocator": "https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2180/",
+          "sourceLocator": "https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2080/",
           "page": null,
           "figure": null,
           "table": null,
@@ -45638,7 +46224,7 @@
           "identificationDatabaseSourceIds": [
             "source.external.watchguy-manuals"
           ],
-          "sourceLocator": "https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2180/",
+          "sourceLocator": "https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2080/",
           "page": null,
           "figure": null,
           "table": null,
@@ -47736,7 +48322,7 @@
           "visualInspirationSourceIds": [],
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
-          "sourceLocator": "https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2180/",
+          "sourceLocator": "https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2080/",
           "page": null,
           "figure": null,
           "table": null,
@@ -47874,8 +48460,8 @@
       "currentType": "orientation / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar identificar el miyota 8215 con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "visual-anatomy",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -47908,14 +48494,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 52,
+      "priority": "high",
+      "priorityScore": 62,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -47923,7 +48511,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=12; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -48029,9 +48617,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.identify",
         "issue.4.foreign-lesson-title.lesson.miyota8215.identify",
+        "issue.5.generic-reused-objective.lesson.miyota8215.identify",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.identify",
         "issue.12.overbroad-citation.claim.miyota8215.identify",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.identify"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.identify",
+        "issue.20.template-conditioned-content.lesson.miyota8215.identify"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -48041,15 +48631,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.identify",
         "issue.4.foreign-lesson-title.lesson.miyota8215.identify",
+        "issue.5.generic-reused-objective.lesson.miyota8215.identify",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.identify",
-        "issue.12.overbroad-citation.claim.miyota8215.identify"
+        "issue.12.overbroad-citation.claim.miyota8215.identify",
+        "issue.20.template-conditioned-content.lesson.miyota8215.identify"
       ],
       "semanticPriority": {
-        "score": 52,
-        "level": "medium",
+        "score": 62,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -48058,8 +48650,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.identify",
           "issue.4.foreign-lesson-title.lesson.miyota8215.identify",
+          "issue.5.generic-reused-objective.lesson.miyota8215.identify",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.identify",
-          "issue.12.overbroad-citation.claim.miyota8215.identify"
+          "issue.12.overbroad-citation.claim.miyota8215.identify",
+          "issue.20.template-conditioned-content.lesson.miyota8215.identify"
         ],
         "rationale": [
           "exposición=12",
@@ -48088,8 +48682,8 @@
       "currentType": "pretraining / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar leer su documentación con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "visual-anatomy",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -48124,14 +48718,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 52,
+      "priority": "high",
+      "priorityScore": 62,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -48139,7 +48735,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=12; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -48264,9 +48860,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.documentation",
         "issue.4.foreign-lesson-title.lesson.miyota8215.documentation",
+        "issue.5.generic-reused-objective.lesson.miyota8215.documentation",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.documentation",
         "issue.12.overbroad-citation.claim.miyota8215.documentation",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.documentation"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.documentation",
+        "issue.20.template-conditioned-content.lesson.miyota8215.documentation"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -48276,15 +48874,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.documentation",
         "issue.4.foreign-lesson-title.lesson.miyota8215.documentation",
+        "issue.5.generic-reused-objective.lesson.miyota8215.documentation",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.documentation",
-        "issue.12.overbroad-citation.claim.miyota8215.documentation"
+        "issue.12.overbroad-citation.claim.miyota8215.documentation",
+        "issue.20.template-conditioned-content.lesson.miyota8215.documentation"
       ],
       "semanticPriority": {
-        "score": 52,
-        "level": "medium",
+        "score": 62,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -48293,8 +48893,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.documentation",
           "issue.4.foreign-lesson-title.lesson.miyota8215.documentation",
+          "issue.5.generic-reused-objective.lesson.miyota8215.documentation",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.documentation",
-          "issue.12.overbroad-citation.claim.miyota8215.documentation"
+          "issue.12.overbroad-citation.claim.miyota8215.documentation",
+          "issue.20.template-conditioned-content.lesson.miyota8215.documentation"
         ],
         "rationale": [
           "exposición=12",
@@ -48323,8 +48925,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar arquitectura general con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "system-overview",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -48359,14 +48961,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 52,
+      "priority": "high",
+      "priorityScore": 62,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -48374,7 +48978,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=12; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -48498,9 +49102,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.architecture",
         "issue.4.foreign-lesson-title.lesson.miyota8215.architecture",
+        "issue.5.generic-reused-objective.lesson.miyota8215.architecture",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.architecture",
         "issue.12.overbroad-citation.claim.miyota8215.architecture",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.architecture"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.architecture",
+        "issue.20.template-conditioned-content.lesson.miyota8215.architecture"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -48510,15 +49116,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.architecture",
         "issue.4.foreign-lesson-title.lesson.miyota8215.architecture",
+        "issue.5.generic-reused-objective.lesson.miyota8215.architecture",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.architecture",
-        "issue.12.overbroad-citation.claim.miyota8215.architecture"
+        "issue.12.overbroad-citation.claim.miyota8215.architecture",
+        "issue.20.template-conditioned-content.lesson.miyota8215.architecture"
       ],
       "semanticPriority": {
-        "score": 52,
-        "level": "medium",
+        "score": 62,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -48527,8 +49135,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.architecture",
           "issue.4.foreign-lesson-title.lesson.miyota8215.architecture",
+          "issue.5.generic-reused-objective.lesson.miyota8215.architecture",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.architecture",
-          "issue.12.overbroad-citation.claim.miyota8215.architecture"
+          "issue.12.overbroad-citation.claim.miyota8215.architecture",
+          "issue.20.template-conditioned-content.lesson.miyota8215.architecture"
         ],
         "rationale": [
           "exposición=12",
@@ -48557,8 +49167,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar rotor y carga automática con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -48593,14 +49203,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 52,
+      "priority": "high",
+      "priorityScore": 62,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -48608,7 +49220,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=12; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -48732,9 +49344,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.automatic",
         "issue.4.foreign-lesson-title.lesson.miyota8215.automatic",
+        "issue.5.generic-reused-objective.lesson.miyota8215.automatic",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.automatic",
         "issue.12.overbroad-citation.claim.miyota8215.automatic",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.automatic"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.automatic",
+        "issue.20.template-conditioned-content.lesson.miyota8215.automatic"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -48744,15 +49358,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.automatic",
         "issue.4.foreign-lesson-title.lesson.miyota8215.automatic",
+        "issue.5.generic-reused-objective.lesson.miyota8215.automatic",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.automatic",
-        "issue.12.overbroad-citation.claim.miyota8215.automatic"
+        "issue.12.overbroad-citation.claim.miyota8215.automatic",
+        "issue.20.template-conditioned-content.lesson.miyota8215.automatic"
       ],
       "semanticPriority": {
-        "score": 52,
-        "level": "medium",
+        "score": 62,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -48761,8 +49377,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.automatic",
           "issue.4.foreign-lesson-title.lesson.miyota8215.automatic",
+          "issue.5.generic-reused-objective.lesson.miyota8215.automatic",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.automatic",
-          "issue.12.overbroad-citation.claim.miyota8215.automatic"
+          "issue.12.overbroad-citation.claim.miyota8215.automatic",
+          "issue.20.template-conditioned-content.lesson.miyota8215.automatic"
         ],
         "rationale": [
           "exposición=12",
@@ -48791,8 +49409,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar cuerda manual y puesta en hora con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -48827,14 +49445,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 51,
+      "priority": "high",
+      "priorityScore": 61,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -48842,7 +49462,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -48966,9 +49586,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.winding-setting",
         "issue.4.foreign-lesson-title.lesson.miyota8215.winding-setting",
+        "issue.5.generic-reused-objective.lesson.miyota8215.winding-setting",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.winding-setting",
         "issue.12.overbroad-citation.claim.miyota8215.winding-setting",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.winding-setting"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.winding-setting",
+        "issue.20.template-conditioned-content.lesson.miyota8215.winding-setting"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -48978,15 +49600,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.winding-setting",
         "issue.4.foreign-lesson-title.lesson.miyota8215.winding-setting",
+        "issue.5.generic-reused-objective.lesson.miyota8215.winding-setting",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.winding-setting",
-        "issue.12.overbroad-citation.claim.miyota8215.winding-setting"
+        "issue.12.overbroad-citation.claim.miyota8215.winding-setting",
+        "issue.20.template-conditioned-content.lesson.miyota8215.winding-setting"
       ],
       "semanticPriority": {
-        "score": 51,
-        "level": "medium",
+        "score": 61,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -48995,8 +49619,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.winding-setting",
           "issue.4.foreign-lesson-title.lesson.miyota8215.winding-setting",
+          "issue.5.generic-reused-objective.lesson.miyota8215.winding-setting",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.winding-setting",
-          "issue.12.overbroad-citation.claim.miyota8215.winding-setting"
+          "issue.12.overbroad-citation.claim.miyota8215.winding-setting",
+          "issue.20.template-conditioned-content.lesson.miyota8215.winding-setting"
         ],
         "rationale": [
           "exposición=11",
@@ -49025,8 +49651,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar calendario con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -49061,14 +49687,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 51,
+      "priority": "high",
+      "priorityScore": 61,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -49076,7 +49704,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -49200,9 +49828,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.calendar",
         "issue.4.foreign-lesson-title.lesson.miyota8215.calendar",
+        "issue.5.generic-reused-objective.lesson.miyota8215.calendar",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.calendar",
         "issue.12.overbroad-citation.claim.miyota8215.calendar",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.calendar"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.calendar",
+        "issue.20.template-conditioned-content.lesson.miyota8215.calendar"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -49212,15 +49842,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.calendar",
         "issue.4.foreign-lesson-title.lesson.miyota8215.calendar",
+        "issue.5.generic-reused-objective.lesson.miyota8215.calendar",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.calendar",
-        "issue.12.overbroad-citation.claim.miyota8215.calendar"
+        "issue.12.overbroad-citation.claim.miyota8215.calendar",
+        "issue.20.template-conditioned-content.lesson.miyota8215.calendar"
       ],
       "semanticPriority": {
-        "score": 51,
-        "level": "medium",
+        "score": 61,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -49229,8 +49861,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.calendar",
           "issue.4.foreign-lesson-title.lesson.miyota8215.calendar",
+          "issue.5.generic-reused-objective.lesson.miyota8215.calendar",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.calendar",
-          "issue.12.overbroad-citation.claim.miyota8215.calendar"
+          "issue.12.overbroad-citation.claim.miyota8215.calendar",
+          "issue.20.template-conditioned-content.lesson.miyota8215.calendar"
         ],
         "rationale": [
           "exposición=11",
@@ -49259,8 +49893,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar barrilete y energía con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "diagnosis-case",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -49294,14 +49928,16 @@
       ],
       "editorialProblems": [
         "empty-markdown-headings",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 46,
+      "priority": "high",
+      "priorityScore": 56,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -49309,7 +49945,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -49432,9 +50068,11 @@
       ],
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.barrel-energy",
+        "issue.5.generic-reused-objective.lesson.miyota8215.barrel-energy",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.barrel-energy",
         "issue.12.overbroad-citation.claim.miyota8215.barrel-energy",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.barrel-energy"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.barrel-energy",
+        "issue.20.template-conditioned-content.lesson.miyota8215.barrel-energy"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -49443,15 +50081,17 @@
       ],
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.barrel-energy",
+        "issue.5.generic-reused-objective.lesson.miyota8215.barrel-energy",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.barrel-energy",
-        "issue.12.overbroad-citation.claim.miyota8215.barrel-energy"
+        "issue.12.overbroad-citation.claim.miyota8215.barrel-energy",
+        "issue.20.template-conditioned-content.lesson.miyota8215.barrel-energy"
       ],
       "semanticPriority": {
-        "score": 46,
-        "level": "medium",
+        "score": 56,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 16,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -49459,8 +50099,10 @@
         ],
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.barrel-energy",
+          "issue.5.generic-reused-objective.lesson.miyota8215.barrel-energy",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.barrel-energy",
-          "issue.12.overbroad-citation.claim.miyota8215.barrel-energy"
+          "issue.12.overbroad-citation.claim.miyota8215.barrel-energy",
+          "issue.20.template-conditioned-content.lesson.miyota8215.barrel-energy"
         ],
         "rationale": [
           "exposición=11",
@@ -49489,8 +50131,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar tren de rodaje con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -49525,14 +50167,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 51,
+      "priority": "high",
+      "priorityScore": 61,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -49540,7 +50184,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -49664,9 +50308,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.train",
         "issue.4.foreign-lesson-title.lesson.miyota8215.train",
+        "issue.5.generic-reused-objective.lesson.miyota8215.train",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.train",
         "issue.12.overbroad-citation.claim.miyota8215.train",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.train"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.train",
+        "issue.20.template-conditioned-content.lesson.miyota8215.train"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -49676,15 +50322,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.train",
         "issue.4.foreign-lesson-title.lesson.miyota8215.train",
+        "issue.5.generic-reused-objective.lesson.miyota8215.train",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.train",
-        "issue.12.overbroad-citation.claim.miyota8215.train"
+        "issue.12.overbroad-citation.claim.miyota8215.train",
+        "issue.20.template-conditioned-content.lesson.miyota8215.train"
       ],
       "semanticPriority": {
-        "score": 51,
-        "level": "medium",
+        "score": 61,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -49693,8 +50341,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.train",
           "issue.4.foreign-lesson-title.lesson.miyota8215.train",
+          "issue.5.generic-reused-objective.lesson.miyota8215.train",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.train",
-          "issue.12.overbroad-citation.claim.miyota8215.train"
+          "issue.12.overbroad-citation.claim.miyota8215.train",
+          "issue.20.template-conditioned-content.lesson.miyota8215.train"
         ],
         "rationale": [
           "exposición=11",
@@ -49723,8 +50373,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar escape, volante y espiral con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -49759,14 +50409,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 51,
+      "priority": "high",
+      "priorityScore": 61,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -49774,7 +50426,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -49898,9 +50550,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.escapement-oscillator",
         "issue.4.foreign-lesson-title.lesson.miyota8215.escapement-oscillator",
+        "issue.5.generic-reused-objective.lesson.miyota8215.escapement-oscillator",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.escapement-oscillator",
         "issue.12.overbroad-citation.claim.miyota8215.escapement-oscillator",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.escapement-oscillator"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.escapement-oscillator",
+        "issue.20.template-conditioned-content.lesson.miyota8215.escapement-oscillator"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -49910,15 +50564,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.escapement-oscillator",
         "issue.4.foreign-lesson-title.lesson.miyota8215.escapement-oscillator",
+        "issue.5.generic-reused-objective.lesson.miyota8215.escapement-oscillator",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.escapement-oscillator",
-        "issue.12.overbroad-citation.claim.miyota8215.escapement-oscillator"
+        "issue.12.overbroad-citation.claim.miyota8215.escapement-oscillator",
+        "issue.20.template-conditioned-content.lesson.miyota8215.escapement-oscillator"
       ],
       "semanticPriority": {
-        "score": 51,
-        "level": "medium",
+        "score": 61,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -49927,8 +50583,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.escapement-oscillator",
           "issue.4.foreign-lesson-title.lesson.miyota8215.escapement-oscillator",
+          "issue.5.generic-reused-objective.lesson.miyota8215.escapement-oscillator",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.escapement-oscillator",
-          "issue.12.overbroad-citation.claim.miyota8215.escapement-oscillator"
+          "issue.12.overbroad-citation.claim.miyota8215.escapement-oscillator",
+          "issue.20.template-conditioned-content.lesson.miyota8215.escapement-oscillator"
         ],
         "rationale": [
           "exposición=11",
@@ -49957,8 +50615,8 @@
       "currentType": "guided-practice / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar planificar el desmontaje con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -49992,14 +50650,16 @@
       ],
       "editorialProblems": [
         "empty-markdown-headings",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 46,
+      "priority": "high",
+      "priorityScore": 56,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -50007,7 +50667,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -50130,9 +50790,11 @@
       ],
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.plan-disassembly",
+        "issue.5.generic-reused-objective.lesson.miyota8215.plan-disassembly",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.plan-disassembly",
         "issue.12.overbroad-citation.claim.miyota8215.plan-disassembly",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.plan-disassembly"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.plan-disassembly",
+        "issue.20.template-conditioned-content.lesson.miyota8215.plan-disassembly"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -50141,15 +50803,17 @@
       ],
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.plan-disassembly",
+        "issue.5.generic-reused-objective.lesson.miyota8215.plan-disassembly",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.plan-disassembly",
-        "issue.12.overbroad-citation.claim.miyota8215.plan-disassembly"
+        "issue.12.overbroad-citation.claim.miyota8215.plan-disassembly",
+        "issue.20.template-conditioned-content.lesson.miyota8215.plan-disassembly"
       ],
       "semanticPriority": {
-        "score": 46,
-        "level": "medium",
+        "score": 56,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 16,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -50157,8 +50821,10 @@
         ],
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.plan-disassembly",
+          "issue.5.generic-reused-objective.lesson.miyota8215.plan-disassembly",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.plan-disassembly",
-          "issue.12.overbroad-citation.claim.miyota8215.plan-disassembly"
+          "issue.12.overbroad-citation.claim.miyota8215.plan-disassembly",
+          "issue.20.template-conditioned-content.lesson.miyota8215.plan-disassembly"
         ],
         "rationale": [
           "exposición=11",
@@ -50187,8 +50853,8 @@
       "currentType": "guided-practice / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar desmontaje guiado con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -50223,14 +50889,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 51,
+      "priority": "high",
+      "priorityScore": 61,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -50238,7 +50906,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -50363,9 +51031,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.guided-disassembly",
         "issue.4.foreign-lesson-title.lesson.miyota8215.guided-disassembly",
+        "issue.5.generic-reused-objective.lesson.miyota8215.guided-disassembly",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.guided-disassembly",
         "issue.12.overbroad-citation.claim.miyota8215.guided-disassembly",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.guided-disassembly"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.guided-disassembly",
+        "issue.20.template-conditioned-content.lesson.miyota8215.guided-disassembly"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -50375,15 +51045,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.guided-disassembly",
         "issue.4.foreign-lesson-title.lesson.miyota8215.guided-disassembly",
+        "issue.5.generic-reused-objective.lesson.miyota8215.guided-disassembly",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.guided-disassembly",
-        "issue.12.overbroad-citation.claim.miyota8215.guided-disassembly"
+        "issue.12.overbroad-citation.claim.miyota8215.guided-disassembly",
+        "issue.20.template-conditioned-content.lesson.miyota8215.guided-disassembly"
       ],
       "semanticPriority": {
-        "score": 51,
-        "level": "medium",
+        "score": 61,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -50392,8 +51064,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.guided-disassembly",
           "issue.4.foreign-lesson-title.lesson.miyota8215.guided-disassembly",
+          "issue.5.generic-reused-objective.lesson.miyota8215.guided-disassembly",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.guided-disassembly",
-          "issue.12.overbroad-citation.claim.miyota8215.guided-disassembly"
+          "issue.12.overbroad-citation.claim.miyota8215.guided-disassembly",
+          "issue.20.template-conditioned-content.lesson.miyota8215.guided-disassembly"
         ],
         "rationale": [
           "exposición=11",
@@ -50422,8 +51096,8 @@
       "currentType": "guided-practice / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar desmontaje asistido y libre con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -50457,14 +51131,16 @@
       ],
       "editorialProblems": [
         "empty-markdown-headings",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 46,
+      "priority": "high",
+      "priorityScore": 56,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -50472,7 +51148,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -50595,9 +51271,11 @@
       ],
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.assisted-free-disassembly",
+        "issue.5.generic-reused-objective.lesson.miyota8215.assisted-free-disassembly",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.assisted-free-disassembly",
         "issue.12.overbroad-citation.claim.miyota8215.assisted-free-disassembly",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.assisted-free-disassembly"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.assisted-free-disassembly",
+        "issue.20.template-conditioned-content.lesson.miyota8215.assisted-free-disassembly"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -50606,15 +51284,17 @@
       ],
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.assisted-free-disassembly",
+        "issue.5.generic-reused-objective.lesson.miyota8215.assisted-free-disassembly",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.assisted-free-disassembly",
-        "issue.12.overbroad-citation.claim.miyota8215.assisted-free-disassembly"
+        "issue.12.overbroad-citation.claim.miyota8215.assisted-free-disassembly",
+        "issue.20.template-conditioned-content.lesson.miyota8215.assisted-free-disassembly"
       ],
       "semanticPriority": {
-        "score": 46,
-        "level": "medium",
+        "score": 56,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 16,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -50622,8 +51302,10 @@
         ],
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.assisted-free-disassembly",
+          "issue.5.generic-reused-objective.lesson.miyota8215.assisted-free-disassembly",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.assisted-free-disassembly",
-          "issue.12.overbroad-citation.claim.miyota8215.assisted-free-disassembly"
+          "issue.12.overbroad-citation.claim.miyota8215.assisted-free-disassembly",
+          "issue.20.template-conditioned-content.lesson.miyota8215.assisted-free-disassembly"
         ],
         "rationale": [
           "exposición=11",
@@ -50652,8 +51334,8 @@
       "currentType": "guided-practice / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar inspección con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "diagnosis-case",
       "recommendedLearningArchetype": "inspection",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -50688,14 +51370,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 51,
+      "priority": "high",
+      "priorityScore": 61,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -50703,7 +51387,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -50828,9 +51512,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.inspection",
         "issue.4.foreign-lesson-title.lesson.miyota8215.inspection",
+        "issue.5.generic-reused-objective.lesson.miyota8215.inspection",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.inspection",
         "issue.12.overbroad-citation.claim.miyota8215.inspection",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.inspection"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.inspection",
+        "issue.20.template-conditioned-content.lesson.miyota8215.inspection"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -50840,15 +51526,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.inspection",
         "issue.4.foreign-lesson-title.lesson.miyota8215.inspection",
+        "issue.5.generic-reused-objective.lesson.miyota8215.inspection",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.inspection",
-        "issue.12.overbroad-citation.claim.miyota8215.inspection"
+        "issue.12.overbroad-citation.claim.miyota8215.inspection",
+        "issue.20.template-conditioned-content.lesson.miyota8215.inspection"
       ],
       "semanticPriority": {
-        "score": 51,
-        "level": "medium",
+        "score": 61,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -50857,8 +51545,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.inspection",
           "issue.4.foreign-lesson-title.lesson.miyota8215.inspection",
+          "issue.5.generic-reused-objective.lesson.miyota8215.inspection",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.inspection",
-          "issue.12.overbroad-citation.claim.miyota8215.inspection"
+          "issue.12.overbroad-citation.claim.miyota8215.inspection",
+          "issue.20.template-conditioned-content.lesson.miyota8215.inspection"
         ],
         "rationale": [
           "exposición=11",
@@ -50887,8 +51577,8 @@
       "currentType": "guided-practice / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar montaje y comprobaciones con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "diagnosis-case",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -50923,14 +51613,16 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 51,
+      "priority": "high",
+      "priorityScore": 61,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -50938,7 +51630,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -51064,9 +51756,11 @@
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.assembly-verification",
         "issue.4.foreign-lesson-title.lesson.miyota8215.assembly-verification",
+        "issue.5.generic-reused-objective.lesson.miyota8215.assembly-verification",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.assembly-verification",
         "issue.12.overbroad-citation.claim.miyota8215.assembly-verification",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.assembly-verification"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.assembly-verification",
+        "issue.20.template-conditioned-content.lesson.miyota8215.assembly-verification"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -51076,15 +51770,17 @@
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.assembly-verification",
         "issue.4.foreign-lesson-title.lesson.miyota8215.assembly-verification",
+        "issue.5.generic-reused-objective.lesson.miyota8215.assembly-verification",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.assembly-verification",
-        "issue.12.overbroad-citation.claim.miyota8215.assembly-verification"
+        "issue.12.overbroad-citation.claim.miyota8215.assembly-verification",
+        "issue.20.template-conditioned-content.lesson.miyota8215.assembly-verification"
       ],
       "semanticPriority": {
-        "score": 51,
-        "level": "medium",
+        "score": 61,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 21,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -51093,8 +51789,10 @@
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.assembly-verification",
           "issue.4.foreign-lesson-title.lesson.miyota8215.assembly-verification",
+          "issue.5.generic-reused-objective.lesson.miyota8215.assembly-verification",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.assembly-verification",
-          "issue.12.overbroad-citation.claim.miyota8215.assembly-verification"
+          "issue.12.overbroad-citation.claim.miyota8215.assembly-verification",
+          "issue.20.template-conditioned-content.lesson.miyota8215.assembly-verification"
         ],
         "rationale": [
           "exposición=11",
@@ -51123,8 +51821,8 @@
       "currentType": "transfer / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar diagnóstico y proyecto final con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "diagnosis-case",
       "recommendedLearningArchetype": "diagnosis-case",
       "declaredPrimarySource": "source.miyota.8215.drawing",
@@ -51158,14 +51856,16 @@
       ],
       "editorialProblems": [
         "empty-markdown-headings",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "overbroad-citation",
-        "numeric-data-without-locator"
+        "numeric-data-without-locator",
+        "template-conditioned-content"
       ],
       "editorialStatus": "needs-source-review",
       "recommendedAction": "manual-review",
-      "priority": "medium",
-      "priorityScore": 46,
+      "priority": "high",
+      "priorityScore": 56,
       "priorityBreakdown": [
         {
           "reason": "incidencias confirmadas",
@@ -51173,7 +51873,7 @@
         },
         {
           "reason": "incidencias heurísticas",
-          "points": 10
+          "points": 20
         }
       ],
       "reason": "exposición=11; daño-pedagógico=4; riesgo-técnico=0; dependencias=0; incertidumbre-fuente=8; visual=0; coste=large",
@@ -51300,9 +52000,11 @@
       ],
       "issueIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.diagnosis-project",
+        "issue.5.generic-reused-objective.lesson.miyota8215.diagnosis-project",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.diagnosis-project",
         "issue.12.overbroad-citation.claim.miyota8215.diagnosis-project",
-        "issue.13.numeric-data-without-locator.claim.miyota8215.diagnosis-project"
+        "issue.13.numeric-data-without-locator.claim.miyota8215.diagnosis-project",
+        "issue.20.template-conditioned-content.lesson.miyota8215.diagnosis-project"
       ],
       "globalIssueIds": [
         "migration.global.locale-placeholder-en",
@@ -51311,15 +52013,17 @@
       ],
       "rootCauseIds": [
         "issue.1.empty-markdown-headings.lesson.miyota8215.diagnosis-project",
+        "issue.5.generic-reused-objective.lesson.miyota8215.diagnosis-project",
         "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.diagnosis-project",
-        "issue.12.overbroad-citation.claim.miyota8215.diagnosis-project"
+        "issue.12.overbroad-citation.claim.miyota8215.diagnosis-project",
+        "issue.20.template-conditioned-content.lesson.miyota8215.diagnosis-project"
       ],
       "semanticPriority": {
-        "score": 46,
-        "level": "medium",
+        "score": 56,
+        "level": "high",
         "confidence": "high",
         "confirmedIssuePoints": 16,
-        "heuristicIssuePoints": 10,
+        "heuristicIssuePoints": 20,
         "globalIssuesExcluded": [
           "migration.global.locale-placeholder-en",
           "migration.global.single-lesson-modules",
@@ -51327,8 +52031,10 @@
         ],
         "rootCauses": [
           "issue.1.empty-markdown-headings.lesson.miyota8215.diagnosis-project",
+          "issue.5.generic-reused-objective.lesson.miyota8215.diagnosis-project",
           "issue.6.repeated-paragraph-or-instruction.lesson.miyota8215.diagnosis-project",
-          "issue.12.overbroad-citation.claim.miyota8215.diagnosis-project"
+          "issue.12.overbroad-citation.claim.miyota8215.diagnosis-project",
+          "issue.20.template-conditioned-content.lesson.miyota8215.diagnosis-project"
         ],
         "rationale": [
           "exposición=11",
@@ -52851,7 +53557,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.daniels.casemaking [p.371-386; Casemaking]",
-        "source.private.toh.ch12 [p.254-275; 12]"
+        "source.private.toh.ch12 [p.253-274; 12]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -53106,7 +53812,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.official.bipm.vim",
-        "source.private.toh.ch12 [p.254-275; 12]"
+        "source.private.toh.ch12 [p.253-274; 12]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -53636,7 +54342,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.chicago.3 [Fitting watch crystals and attachments]",
-        "source.private.toh.ch12 [p.254-275; 12]"
+        "source.private.toh.ch12 [p.253-274; 12]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -59812,7 +60518,7 @@
           "identificationDatabaseSourceIds": [
             "source.external.watchguy-manuals"
           ],
-          "sourceLocator": "https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2180/",
+          "sourceLocator": "https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2080/",
           "page": null,
           "figure": null,
           "table": null,
@@ -60740,7 +61446,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.external.pocket-watch-database",
-        "source.official.tm9-1575.hamilton-992b [p.84-116; Hamilton 992B]"
+        "source.official.tm9-1575.hamilton-992b [p.PDF 90-107 · impresas 47-48; Hamilton 992B]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -60849,10 +61555,10 @@
           "claimId": "claim.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
           "lessonId": "lesson.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
           "blockId": "block.encyclopedia.atlas-restoration-design.tm-hamilton-992b",
-          "claimTextHash": "1428ab2431685a5c7debdc654ba1ff75fbf922aa514bc9d44b31c3913e1cb078",
+          "claimTextHash": "edd90032391958b7da66f939f2899e32c62926caf06f33d8a483d7d038d86504",
           "claimType": "source",
           "numericValues": [
-            "16 líneas",
+            "16",
             "21 rubíes"
           ],
           "formulaPresent": false,
@@ -60870,7 +61576,7 @@
             "source.external.pocket-watch-database"
           ],
           "sourceLocator": "reference-library/originals/TM 9-1575.pdf",
-          "page": "84-116",
+          "page": "PDF 90-107 · impresas 47-48",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,
@@ -61532,7 +62238,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.official.tm9-1575.bulova-10ak [p.175-183; Bulova 10AK waterproof wrist watch]",
-        "source.private.toh.ch12 [p.254-275; 12]"
+        "source.private.toh.ch12 [p.253-274; 12]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -61649,7 +62355,7 @@
           "safetySourceIds": [],
           "identificationDatabaseSourceIds": [],
           "sourceLocator": "reference-library/originals/Theory of Horology-20260809T132232Z-1-001.zip#ToH ch 12.pdf",
-          "page": "254-275",
+          "page": "253-274",
           "figure": null,
           "table": null,
           "manufacturerApplicability": null,

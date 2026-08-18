@@ -115,7 +115,7 @@ function conceptDefinition(concept) {
   const definitions = {
     terminology: `${title} es el término técnico usado para identificar sin ambigüedad una pieza, interfaz o estado de ${subsystem}. ${plain} Debe vincularse a una entidad o fuente concreta, no solo recordarse como etiqueta.`,
     'conceptual-causal': `${title} describe una relación causal dentro de ${subsystem}: una entrada produce un cambio observable mediante una interfaz declarada. ${plain} La explicación técnica debe nombrar origen, receptor, relación y efecto.`,
-    spatial: `${title} se reconoce por su posición relativa, sus apoyos y sus interfaces dentro de ${subsystem}. ${plain} La proximidad visual no basta: la identificación exige una relación documentada o explícitamente reconstruida.`,
+    spatial: `Para reconocer «${title}», examina su posición relativa, sus apoyos y sus interfaces dentro de ${subsystem}. ${plain} La proximidad visual no basta: la identificación exige una relación documentada o explícitamente reconstruida.`,
     quantitative: `${title} exige declarar magnitud, unidad, fórmula, entradas y margen de interpretación dentro de ${subsystem}. ${plain} Un valor normalizado o calculado no se presenta como dimensión oficial.`,
     procedural: `${title} es una secuencia reversible sobre ${subsystem} que conserva identidad, orientación, dependencias y estado inicial. ${plain} Cada paso se valida antes de avanzar y deja evidencia de ayudas, errores y restauración.`,
     diagnostic: `${title} separa observación, síntoma, hipótesis y comprobación en ${subsystem}. ${plain} Una hipótesis solo mejora cuando una prueba puede confirmarla o refutarla sin exceder los datos disponibles.`,
@@ -129,7 +129,7 @@ function bookBoundary(packageName) {
     return 'El libro privado se usa solo como teoría general de construcción relojera mecánica, herramientas, trenes, escape, muelle, volante y diseño. No aporta datos de ningún calibre MIYOTA.'
   }
   if (packageName === 'miyota8215') {
-    return 'La teoría mecánica general puede contrastarse con el libro privado, pero toda afirmación específica del 8215 debe proceder de la página, especificación, plano, manual o lista de piezas oficial de MIYOTA.'
+    return 'La teoría mecánica general puede contrastarse con el libro privado, pero toda afirmación específica del 8215 debe proceder de la página de producto, la especificación, el plano, el manual o la lista de piezas oficial de MIYOTA.'
   }
   if (packageName === 'quartz-miyota2035') {
     return 'El libro privado de relojería mecánica no es fuente del MIYOTA 2035. Toda identidad, dimensión y dato del calibre procede exclusivamente de documentación oficial MIYOTA; las reconstrucciones educativas quedan marcadas como tales.'

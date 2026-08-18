@@ -46,14 +46,14 @@ export const ACADEMY_014G_BASELINE = {
   initialCommit: '2f8385c8686fb216c618e1f6de868a3cdbfd61d3',
   initialBranch: 'main',
   initialTree: 'clean',
-  corpusDigest: '1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e',
+  corpusDigest: '5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f',
   historicalReportsCount: 95,
-  historicalReportsDigest: 'ad771a29ead7925a35d8ac5308767ec69332173b1ed100dc6cea246eb909f166',
+  historicalReportsDigest: '204f3ac4aed8ced4ad543fb8ec8b082b62f44d1efd6b81d8bbaf8bcf05568c04',
   protectedFilesCount: 3994,
   protectedFilesDigest: '19969323dca2f844eec56ed6a34c47fa88e96e4bb8e60bd1e6767afeb7ca43e0',
 } as const
 
-const md = (value: string) => `${value.trim()}\n`
+const md = (value: string) => `${value.trim().replace(/[ \t]+$/gmu, '')}\n`
 const json = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`
 const pipe = (value: unknown) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ')
 const sha256 = (value: string | Buffer) => createHash('sha256').update(value).digest('hex')

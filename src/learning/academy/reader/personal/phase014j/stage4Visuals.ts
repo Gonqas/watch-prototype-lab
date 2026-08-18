@@ -3,6 +3,7 @@ import type { AcademyDiagramData, AcademyReaderSection, AcademySectionVisualCura
 import type { AcademySourceLocator, AcademyStage0PhotoBrief, AcademyStage4VisualDesign } from '../types'
 import { deriveAcademyTechnicalStatus } from './activeTechnicalStatus'
 import { academyStage4SectionId } from './stage4Sections'
+import { academyStage4VisibleSpanish } from './visibleLanguage'
 
 interface Spec { visualDesignId: string; question: string; title: string; lessonIds: readonly string[]; nodes: readonly [string,string,string][]; edges: readonly [string,string,string][]; source: AcademySourceLocator; limitation: string; status: 'source-reviewed' | 'source-limited' }
 const source = (sourceId: string, snapshot: string, page?: string): AcademySourceLocator => ({ sourceId, documentLocator: snapshot, page, verificationMethod: 'visual-pdf-inspection', verifiedAt: '2026-08-16' })
@@ -10,7 +11,7 @@ const internal = (title: string): AcademySourceLocator => ({ sourceId: 'source.p
 const PARTS = source('source.miyota.8215.parts-list-exploded-view', 'snapshot.miyota.8215.parts-list.fdafef81', '1')
 const MANUAL = source('source.miyota.8215.instruction-manual', 'snapshot.miyota.8215.instruction-manual.6286b843', '1')
 
-const specs: readonly Spec[] = [
+const rawSpecs: readonly Spec[] = [
   { visualDesignId: 'visual.stage4.identity-evidence.v1', question: '¿Cómo se identifica el 8215?', title: 'Escalera de identidad', lessonIds: ['lesson.miyota8215.identify'], nodes: [['evidence','Evidencia visible','observación'],['mark','Inscripción','indicio'],['document','Documento oficial','confirmación'],['variant','Variante','alcance'],['limit','Límite','provisional']], edges: [['evidence','mark','localiza'],['mark','document','coteja'],['document','variant','delimita'],['variant','limit','conserva']], source: source('source.miyota.8215.product-page','snapshot.miyota.8215.product-page.2026-08-16'), limitation: 'No identifica una unidad física por parecido.', status: 'source-reviewed' },
   { visualDesignId: 'visual.stage4.document-authority.v1', question: '¿Qué documento responde cada pregunta?', title: 'Matriz de autoridad documental', lessonIds: ['lesson.miyota8215.documentation'], nodes: [['question','Pregunta','entrada'],['spec','Specification','función y datos'],['drawing','Drawing','cotas expresas'],['manual','Manual','corona'],['parts','Parts list','piezas'],['missing','No disponible','servicio y lubricación']], edges: [['question','spec','clasifica'],['question','drawing','clasifica'],['question','manual','clasifica'],['question','parts','clasifica'],['question','missing','bloquea']], source: source('source.miyota.8215.specification','snapshot.miyota.8215.specification.bcb22d8e','1–2'), limitation: 'El documento se elige por alcance, no por posición en una lista.', status: 'source-reviewed' },
   { visualDesignId: 'visual.stage4.parts-drift.v1', question: '¿Qué cambió entre snapshots de la parts list?', title: 'Drift revisado de parts list', lessonIds: ['lesson.miyota8215.documentation'], nodes: [['previous','Snapshot anterior','hash ea5f…'],['current','Snapshot vigente','hash fdaf…'],['terms','3 términos','renombrados'],['layout','1 cambio','maquetación'],['parts','0 piezas','altas o bajas']], edges: [['previous','current','compara'],['current','terms','clasifica'],['current','layout','clasifica'],['current','parts','confirma']], source: PARTS, limitation: 'La revisión no demuestra que sea una edición formalmente numerada.', status: 'source-reviewed' },
@@ -23,11 +24,27 @@ const specs: readonly Spec[] = [
   { visualDesignId: 'visual.stage4.dossier-provenance.v1', question: '¿Cómo construir un dossier con procedencia?', title: 'Cadena de diagnóstico y dossier', lessonIds: ['lesson.miyota8215.diagnosis-project'], nodes: [['symptom','Síntoma simulado','escenario'],['hypotheses','Hipótesis','rivales'],['test','Prueba virtual','resultado'],['claim','Claim','fuente'],['limit','Límite','dato físico pendiente'],['transfer','Transferencia','solo principio']], edges: [['symptom','hypotheses','abre'],['hypotheses','test','distingue'],['test','claim','documenta'],['claim','limit','delimita'],['limit','transfer','controla']], source: internal('Contrato de dossier 0.14J'), limitation: 'Diagnostica el escenario, nunca una unidad física.', status: 'source-limited' },
 ]
 
+const specs: readonly Spec[] = rawSpecs.map((spec) => ({
+  ...spec,
+  question: academyStage4VisibleSpanish(spec.question),
+  title: academyStage4VisibleSpanish(spec.title),
+  nodes: spec.nodes.map(([id, label, detail]) => [id, academyStage4VisibleSpanish(label), academyStage4VisibleSpanish(detail)] as const),
+  edges: spec.edges.map(([from, to, label]) => [from, to, academyStage4VisibleSpanish(label)] as const),
+  limitation: academyStage4VisibleSpanish(spec.limitation),
+}))
+
 const diagram = (spec: Spec): AcademyDiagramData => ({ title: spec.title, nodes: spec.nodes.map(([id,label,detail], index) => ({ id,label,detail,emphasis: index === 0 ? 'primary' : id === 'unknown' || id === 'missing' || id === 'physical' ? 'warning' : 'normal' })), edges: spec.edges.map(([from,to,label]) => ({ from,to,label,kind: 'decision' })), annotations: ['Etiquetas, orden y patrones conservan el significado sin depender del color.'] })
+
+const describeRelations = (spec: Spec): string => {
+  const labels = new Map(spec.nodes.map(([id, label]) => [id, label]))
+  return spec.edges
+    .map(([from, to, relation]) => `${labels.get(from) ?? from} se relaciona con ${labels.get(to) ?? to}: ${relation}`)
+    .join('. ')
+}
 
 export const ACADEMY_STAGE_4_VISUAL_DESIGNS: readonly AcademyStage4VisualDesign[] = specs.map((spec) => {
   const semanticPayload = diagram(spec)
-  return { visualDesignId: spec.visualDesignId, lessonIds: spec.lessonIds, sectionIds: spec.lessonIds.map((lessonId) => spec.visualDesignId === 'visual.stage4.parts-drift.v1' ? academyStage4SectionId.visual(lessonId,spec.visualDesignId) : academyStage4SectionId.evidence(lessonId)), pedagogicalQuestion: spec.question, semanticPayload, sourceIds: [spec.source.sourceId], sourceLocators: [spec.source], fidelity: 'calibre-specific', limitations: [spec.limitation], accessibilitySummary: `${spec.title}: ${spec.nodes.map(([,label]) => label).join(', ')}.`, longDescription: `${spec.title}. ${spec.edges.map(([from,to,label]) => `${from} conduce a ${to}: ${label}`).join('. ')}.`, implementationStatus: 'implemented', contentHash: academyReaderStableHash([spec.question,spec.title,spec.limitation].join('\n')), visualHash: academyReaderStableHash(JSON.stringify(semanticPayload)), colorIndependent: true, reducedMotionSafe: true }
+  return { visualDesignId: spec.visualDesignId, lessonIds: spec.lessonIds, sectionIds: spec.lessonIds.map((lessonId) => spec.visualDesignId === 'visual.stage4.parts-drift.v1' ? academyStage4SectionId.visual(lessonId,spec.visualDesignId) : academyStage4SectionId.evidence(lessonId)), pedagogicalQuestion: spec.question, semanticPayload, sourceIds: [spec.source.sourceId], sourceLocators: [spec.source], fidelity: 'calibre-specific', limitations: [spec.limitation], accessibilitySummary: `${spec.title}: ${spec.nodes.map(([,label]) => label).join(', ')}.`, longDescription: `${spec.title}. ${describeRelations(spec)}. ${spec.limitation}`, implementationStatus: 'implemented', contentHash: academyReaderStableHash([spec.question,spec.title,spec.limitation].join('\n')), visualHash: academyReaderStableHash(JSON.stringify(semanticPayload)), colorIndependent: true, reducedMotionSafe: true }
 })
 
 export const ACADEMY_STAGE_4_REUSED_VISUALS = ['visual.miyota8215.identify','visual.miyota8215.documentation','visual.miyota8215.architecture','visual.miyota8215.automatic','visual.miyota8215.winding-setting','visual.miyota8215.calendar','visual.miyota8215.barrel-energy','visual.miyota8215.train','visual.miyota8215.escapement-oscillator','visual.miyota8215.plan-disassembly','visual.miyota8215.guided-disassembly','visual.miyota8215.assisted-free-disassembly','visual.miyota8215.inspection','visual.miyota8215.assembly-verification','visual.miyota8215.diagnosis-project'] as const

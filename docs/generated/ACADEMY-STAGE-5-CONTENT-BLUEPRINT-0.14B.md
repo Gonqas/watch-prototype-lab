@@ -4,7 +4,7 @@ La etapa 5 conserva `coverageStatus = partial`. Estos registros no son lecciones
 
 Resumen: 8 vacíos y 5 temas parciales.
 
-## 1. Aro o movement holder como interfaz estructural
+## 1. Aro portamovimiento como interfaz estructural
 
 - Referencia editorial: `stage5-gap.movement-holder`
 - Estado: gap

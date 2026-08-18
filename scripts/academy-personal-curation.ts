@@ -40,9 +40,9 @@ type OutputFile = (typeof ACADEMY_PERSONAL_CURATION_OUTPUT_FILES)[number]
 
 export const ACADEMY_014E_BASELINE = {
   initialCommit: 'f2acf7f351bb8e7f4f9f1a7a6ee5f085792cb501',
-  corpusDigest: '1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e',
+  corpusDigest: '5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f',
   historicalReportCount: 67,
-  historicalReportsDigest: '8c5ae7d7454c02a13dd49840c59e7f8a2c4cef9ee3041476dbf9ff618b5eddef',
+  historicalReportsDigest: '7488fe81a8ddc8da83955f95cc2654cc37340c77f4355c3711b1cd5498f6f236',
   sections014d: 2_568,
   detailedPilots014d: 16,
   curatedSections014d: 254,
@@ -57,7 +57,7 @@ export const ACADEMY_014E_BASELINE = {
   stage5Gaps014d: 8,
 } as const
 
-const md = (value: string) => `${value.trim()}\n`
+const md = (value: string) => `${value.trim().replace(/[ \t]+$/gmu, '')}\n`
 const json = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`
 const pipe = (value: unknown) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ')
 const sha256 = (value: string | Buffer) => createHash('sha256').update(value).digest('hex')

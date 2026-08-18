@@ -24,7 +24,7 @@ export const ACADEMY_PATH_OUTPUT_FILES = [
 
 type OutputFile = (typeof ACADEMY_PATH_OUTPUT_FILES)[number]
 
-const md = (value: string) => `${value.trim()}\n`
+const md = (value: string) => `${value.trim().replace(/[ \t]+$/gmu, '')}\n`
 const json = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`
 const code = (value: string) => `\`${value.replaceAll('`', '\\`')}\``
 const pipe = (value: unknown) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ')

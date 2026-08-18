@@ -25,7 +25,7 @@ export const ACADEMY_STAGE_5_CHAIN_TEMPLATES: readonly DimensionalChain[] = [
     {memberId:'indication.minute-hand',dimensionId:'minute-hand-top-height',sign:1,role:'aguja de minutos'},
     {memberId:'indication.second-hand',dimensionId:'second-hand-top-height',sign:1,role:'aguja de segundos'},
     {memberId:'indication.crystal',dimensionId:'crystal-inner-height',sign:-1,role:'cara interior del cristal'},
-  ], operations:['sumar stack','restar altura interior'], unit:'mm', status:'not-evaluated', unknowns:[] },
+  ], operations:['sumar el apilado','restar la altura interior'], unit:'mm', status:'not-evaluated', unknowns:[] },
   { chainId:'chain.rear', name:'Movimiento → rotor → fijación → junta → fondo', datum:'plano posterior de apoyo de caja', direction:'axial', members:[
     {memberId:'rear.rotor',dimensionId:'rotor-rear-envelope',sign:1,role:'envolvente del rotor'},
     {memberId:'rear.fixing',dimensionId:'caseback-fixing-stack',sign:1,role:'fijación'},
@@ -39,9 +39,8 @@ export function calculateDimensionalChain(template: DimensionalChain, dimensions
   const unknowns = values.filter(({dimension}) => dimension?.value === undefined).map(({member}) => member.dimensionId)
   if (unknowns.length) return { ...template, result: undefined, margin: undefined, status:'unknown', unknowns }
   const datumMismatch = values.some(({dimension}) => !dimension?.datum || dimension.datum !== template.datum)
-  if (datumMismatch) return { ...template, result: undefined, margin: undefined, status:'datum-conflict', unknowns:['datum incompatible o ausente'] }
+  if (datumMismatch) return { ...template, result: undefined, margin: undefined, status:'datum-conflict', unknowns:['referencia geométrica incompatible o ausente'] }
   const result = values.reduce((total,{member,dimension}) => total + member.sign * (dimension?.value ?? 0),0)
   const uncertainty = values.reduce((total,{dimension}) => total + (dimension?.uncertainty ?? 0),0)
   return { ...template, result, margin: result, uncertainty, status: result < 0 ? 'conflict-found' : 'calculated', unknowns:[] }
 }
-

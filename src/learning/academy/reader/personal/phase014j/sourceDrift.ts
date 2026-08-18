@@ -1,3 +1,5 @@
+import { academyStage4VisibleList, academyStage4VisibleSpanish } from './visibleLanguage'
+
 export const ACADEMY_MIYOTA_8215_PARTS_LIST_DRIFT_014J = {
   sourceId: 'source.miyota.8215.parts-list-exploded-view',
   previousLocator: 'https://miyotamovement.com/uploads/product/product_x2MOZCosd7iH59wu0K.pdf',
@@ -25,6 +27,6 @@ export const ACADEMY_MIYOTA_8215_PRODUCT_PAGE_DRIFT_014J = {
   currentSha256: 'c7eb21fbcca4f874f2a971ee53b4e4ad62356a5d9ec68cc94e620db8f3fa7c9d',
   currentLocator: 'https://miyotamovement.com/product/8215/',
   checkedAt: '2026-08-16',
-  semanticReview: 'Los datos visibles centrales permanecen; cambió el enlace de parts list y se registraron dos dial drawings.',
-  claimImpact: ['El locator activo de parts list cambia.', 'Los claims de identidad, funciones y datos visibles fueron revisados contra la página actual.'],
+  semanticReview: academyStage4VisibleSpanish('Los datos visibles centrales permanecen; cambió el enlace de parts list y se registraron dos dial drawings.'),
+  claimImpact: academyStage4VisibleList(['El locator activo de parts list cambia.', 'Los claims de identidad, funciones y datos visibles fueron revisados contra la página actual.']),
 } as const

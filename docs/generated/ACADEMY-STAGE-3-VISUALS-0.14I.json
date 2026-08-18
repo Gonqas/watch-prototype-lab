@@ -109,7 +109,7 @@
         "Plantilla educativa; no clasifica automáticamente defectos."
       ],
       "accessibilitySummary": "Hallazgo trazable: Objeto y zona, Condición observada, Medio y evidencia, Hipótesis rivales, Siguiente comprobación.",
-      "longDescription": "Hallazgo trazable. object conduce a condition: delimita. condition conduce a evidence: documenta. evidence conduce a hypotheses: permite. hypotheses conduce a next: diferencia.",
+      "longDescription": "Hallazgo trazable. Objeto y zona se relaciona con Condición observada: delimita. Condición observada se relaciona con Medio y evidencia: documenta. Medio y evidencia se relaciona con Hipótesis rivales: permite. Hipótesis rivales se relaciona con Siguiente comprobación: diferencia. Plantilla educativa; no clasifica automáticamente defectos.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:206b5e39fe816fe5",
       "visualHash": "fnv1a64:a5222c191ef695a1",
@@ -179,10 +179,10 @@
         {
           "sourceId": "source.official.tm9-1575.inspection",
           "documentLocator": "reference-library/originals/TM 9-1575.pdf",
-          "page": "impresas 20–22",
+          "page": "PDF 25–27 · impresas 12–14",
           "section": "III",
           "verificationMethod": "visual-pdf-inspection",
-          "verifiedAt": "2026-08-16"
+          "verifiedAt": "2026-08-18"
         }
       ],
       "fidelity": "conceptual",
@@ -190,7 +190,7 @@
         "No contiene valores, sustancias ni pasos operativos del manual."
       ],
       "accessibilitySummary": "Método histórico y frontera actual: Orden de observación, Registro previo, Dato de 1945, Fuente actual.",
-      "longDescription": "Método histórico y frontera actual. observe conduce a record: aplica. historic conduce a modern: no se transfiere.",
+      "longDescription": "Método histórico y frontera actual. Orden de observación se relaciona con Registro previo: aplica. Dato de 1945 se relaciona con Fuente actual: no se transfiere. No contiene valores, sustancias ni pasos operativos del manual.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:57e6acb29d436478",
       "visualHash": "fnv1a64:384c65a7add1d64f",
@@ -210,50 +210,62 @@
       ],
       "pedagogicalQuestion": "¿Qué diferencia resolución, precisión, exactitud e incertidumbre?",
       "semanticPayload": {
-        "title": "Cuatro conceptos no equivalentes",
+        "title": "Cuatro lecturas distintas de un resultado",
         "nodes": [
+          {
+            "id": "result",
+            "label": "Resultado de medición",
+            "detail": "objeto común",
+            "emphasis": "primary"
+          },
           {
             "id": "resolution",
             "label": "Resolución",
             "detail": "incremento mostrado",
-            "emphasis": "primary"
+            "emphasis": "normal"
           },
           {
             "id": "precision",
             "label": "Precisión",
-            "detail": "proximidad repetida",
+            "detail": "proximidad entre repeticiones",
             "emphasis": "normal"
           },
           {
             "id": "accuracy",
             "label": "Exactitud",
-            "detail": "relación con referencia",
+            "detail": "proximidad a una referencia",
             "emphasis": "normal"
           },
           {
             "id": "uncertainty",
             "label": "Incertidumbre",
-            "detail": "duda asociada",
+            "detail": "duda asociada al resultado",
             "emphasis": "normal"
           }
         ],
         "edges": [
           {
-            "from": "resolution",
+            "from": "result",
+            "to": "resolution",
+            "label": "qué detalle muestra",
+            "kind": "decision"
+          },
+          {
+            "from": "result",
             "to": "precision",
-            "label": "no implica",
+            "label": "cómo se agrupan las repeticiones",
             "kind": "decision"
           },
           {
-            "from": "precision",
+            "from": "result",
             "to": "accuracy",
-            "label": "no implica",
+            "label": "cómo se relaciona con la referencia",
             "kind": "decision"
           },
           {
-            "from": "accuracy",
+            "from": "result",
             "to": "uncertainty",
-            "label": "se interpreta con",
+            "label": "qué duda acompaña al valor",
             "kind": "decision"
           }
         ],
@@ -274,13 +286,13 @@
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "No asigna valores a instrumentos o resultados."
+        "Los cuatro conceptos se comparan en paralelo: ninguno se deduce automáticamente de otro."
       ],
-      "accessibilitySummary": "Cuatro conceptos no equivalentes: Resolución, Precisión, Exactitud, Incertidumbre.",
-      "longDescription": "Cuatro conceptos no equivalentes. resolution conduce a precision: no implica. precision conduce a accuracy: no implica. accuracy conduce a uncertainty: se interpreta con.",
+      "accessibilitySummary": "Cuatro lecturas distintas de un resultado: Resultado de medición, Resolución, Precisión, Exactitud, Incertidumbre.",
+      "longDescription": "Cuatro lecturas distintas de un resultado. Resultado de medición se relaciona con Resolución: qué detalle muestra. Resultado de medición se relaciona con Precisión: cómo se agrupan las repeticiones. Resultado de medición se relaciona con Exactitud: cómo se relaciona con la referencia. Resultado de medición se relaciona con Incertidumbre: qué duda acompaña al valor. Los cuatro conceptos se comparan en paralelo: ninguno se deduce automáticamente de otro.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:f2812d38e3521f9d",
-      "visualHash": "fnv1a64:890057de5026e7a7",
+      "contentHash": "fnv1a64:1539f307c2953165",
+      "visualHash": "fnv1a64:c1c1913a4e156245",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -374,7 +386,7 @@
         "No recomienda marca, modelo o calibración concreta."
       ],
       "accessibilitySummary": "De la pregunta al instrumento: Magnitud y pregunta, Rango, acceso y geometría, Fuerza, alineación y riesgo, Instrumento y método, Unidad, referencia y resolución.",
-      "longDescription": "De la pregunta al instrumento. question conduce a geometry: delimita. geometry conduce a interaction: condiciona. interaction conduce a instrument: selecciona. instrument conduce a record: produce.",
+      "longDescription": "De la pregunta al instrumento. Magnitud y pregunta se relaciona con Rango, acceso y geometría: delimita. Rango, acceso y geometría se relaciona con Fuerza, alineación y riesgo: condiciona. Fuerza, alineación y riesgo se relaciona con Instrumento y método: selecciona. Instrumento y método se relaciona con Unidad, referencia y resolución: produce. No recomienda marca, modelo o calibración concreta.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:738b4522a7f309a2",
       "visualHash": "fnv1a64:3ea10243a8a8326b",
@@ -495,7 +507,7 @@
         "No calcula una incertidumbre ni demuestra exactitud."
       ],
       "accessibilitySummary": "Serie, dispersión y duda: Método declarado, Lectura 1, Lectura 2, Lectura 3, Serie registrada, Incertidumbre y límite.",
-      "longDescription": "Serie, dispersión y duda. method conduce a read1: aplica. method conduce a read2: repite. method conduce a read3: repite. read1 conduce a series: integra. read2 conduce a series: integra. read3 conduce a series: integra. series conduce a limit: informa.",
+      "longDescription": "Serie, dispersión y duda. Método declarado se relaciona con Lectura 1: aplica. Método declarado se relaciona con Lectura 2: repite. Método declarado se relaciona con Lectura 3: repite. Lectura 1 se relaciona con Serie registrada: integra. Lectura 2 se relaciona con Serie registrada: integra. Lectura 3 se relaciona con Serie registrada: integra. Serie registrada se relaciona con Incertidumbre y límite: informa. No calcula una incertidumbre ni demuestra exactitud.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:23d85a30867b3beb",
       "visualHash": "fnv1a64:4e9f8ff34593719a",
@@ -529,8 +541,8 @@
           },
           {
             "id": "datum",
-            "label": "Datum y método",
-            "detail": "puerta 3",
+            "label": "Referencia geométrica",
+            "detail": "datum y método",
             "emphasis": "normal"
           },
           {
@@ -602,11 +614,11 @@
       "limitations": [
         "No crea un criterio de aceptación."
       ],
-      "accessibilitySummary": "Puertas de comparabilidad: Misma magnitud, Unidad compatible, Datum y método, Condición y orientación, Redondeo e incertidumbre, Comparación permitida.",
-      "longDescription": "Puertas de comparabilidad. magnitude conduce a unit: comprueba. unit conduce a datum: comprueba. datum conduce a condition: comprueba. condition conduce a uncertainty: comprueba. uncertainty conduce a comparison: habilita.",
+      "accessibilitySummary": "Puertas de comparabilidad: Misma magnitud, Unidad compatible, Referencia geométrica, Condición y orientación, Redondeo e incertidumbre, Comparación permitida.",
+      "longDescription": "Puertas de comparabilidad. Misma magnitud se relaciona con Unidad compatible: comprueba. Unidad compatible se relaciona con Referencia geométrica: comprueba. Referencia geométrica se relaciona con Condición y orientación: comprueba. Condición y orientación se relaciona con Redondeo e incertidumbre: comprueba. Redondeo e incertidumbre se relaciona con Comparación permitida: habilita. No crea un criterio de aceptación.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:26299284806d422c",
-      "visualHash": "fnv1a64:a4cf1b3e19ece3d6",
+      "visualHash": "fnv1a64:5b1605cb1b3e0b77",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -657,7 +669,7 @@
           },
           {
             "id": "unknown",
-            "label": "Desconocido",
+            "label": "Dato pendiente",
             "detail": "bloquea afirmación",
             "emphasis": "warning"
           }
@@ -706,11 +718,11 @@
       "limitations": [
         "No contiene valores; el fabricante conserva prioridad para un calibre concreto."
       ],
-      "accessibilitySummary": "Autoridad del criterio: Fabricante, Diseño, Medición propia, Criterio educativo, Comparación histórica, Desconocido.",
-      "longDescription": "Autoridad del criterio. manufacturer conduce a measurement: se comprueba con. design conduce a measurement: se valida con. educational conduce a unknown: no sustituye. historic conduce a unknown: requiere corroboración.",
+      "accessibilitySummary": "Autoridad del criterio: Fabricante, Diseño, Medición propia, Criterio educativo, Comparación histórica, Dato pendiente.",
+      "longDescription": "Autoridad del criterio. Fabricante se relaciona con Medición propia: se comprueba con. Diseño se relaciona con Medición propia: se valida con. Criterio educativo se relaciona con Dato pendiente: no sustituye. Comparación histórica se relaciona con Dato pendiente: requiere corroboración. No contiene valores; el fabricante conserva prioridad para un calibre concreto.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:61d69179aced4619",
-      "visualHash": "fnv1a64:5f9a5eafecab8d41",
+      "visualHash": "fnv1a64:879a2a698b63e5cf",
       "colorIndependent": true,
       "reducedMotionSafe": true
     }

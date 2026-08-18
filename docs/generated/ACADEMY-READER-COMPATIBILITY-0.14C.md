@@ -14,12 +14,12 @@
 
 | Método | Aliases |
 |---|---:|
-| nearest-order | 2004 |
+| nearest-order | 2006 |
 | same-block | 7 |
 | same-block-and-heading | 100 |
 
-- Segmentos legados inventariados: **2111**.
-- Aliases con destino válido: **2111**.
+- Segmentos legados inventariados: **2113**.
+- Aliases con destino válido: **2113**.
 - Lecciones con cobertura de alias: **222/222**.
 - Si un alias no existe, el lector abre el primer apartado sin error fatal.
 - `currentSegmentId` y `completedSegmentIds` permanecen almacenados; `completedAt` conserva autoridad explícita.

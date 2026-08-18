@@ -11,7 +11,7 @@ IDs preservados: **189/189**. Alias o localizadores actualizados: **10**. Ningun
 | `source.miyota.8215.official` | `source.miyota.8215.product-page` | active-alias | sí | https://miyotamovement.com/product/8215/ |  | Alias de la misma página oficial de producto MIYOTA 8215; los PDF técnicos siguen siendo documentos distintos. |
 | `source.official.eta.2824` | `source.eta.2824-2.product` | active-alias | sí | https://portal.eta.ch/en/mecaline/2824-2-2824-2-5.html |  | Mismo recurso oficial ETA 2824-2 y mismo localizador. |
 | `source.official.eta.6497` | `source.eta.6497-2.communication` | active-alias | sí | https://portal.eta.ch/en/technicaldocuments/index/pdf/id/1532/ |  | Misma comunicación técnica ETA 6497-2. |
-| `source.official.eta.7750` | `source.eta.7750.communication` | active-alias | sí | https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2180/ |  | Misma comunicación técnica ETA 7750. |
+| `source.official.eta.7750` | `source.eta.7750.communication` | active-alias | sí | https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2080/ |  | Misma comunicación técnica ETA 7750. |
 | `source.official.miyota.2035` | `source.miyota.2035.product-page` | active-alias | sí | https://miyotamovement.com/product/2035/ |  | Variante de ID de la página oficial MIYOTA 2035. |
 | `source.official.miyota.8215` | `source.miyota.8215.product-page` | active-alias | sí | https://miyotamovement.com/product/8215/ |  | Variante de ID de la página oficial MIYOTA 8215. |
 

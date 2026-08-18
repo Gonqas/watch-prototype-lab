@@ -1,9 +1,10 @@
 import type { AcademyStage4PersonalPractice } from '../types'
+import { academyStage4VisibleList, academyStage4VisibleSpanish } from './visibleLanguage'
 
 const practice = (personalPracticeId: string, lessonIds: readonly string[], title: string, objective: string, steps: readonly string[]): AcademyStage4PersonalPractice => ({
-  personalPracticeId, lessonIds, title, objective, inexpensiveMaterials: ['documentación oficial consultada en la Academia', 'simulación local', 'papel o tabla local'],
-  preparation: ['Trabaja solo con documentos y simulación.', 'No abras ni manipules un movimiento.', 'Declara el snapshot utilizado.'], steps,
-  help: ['Separa dato oficial, interpretación del modelo y desconocido.', 'Conserva nombre inglés oficial y español preferente.', 'Marca physical-procedure-source-needed antes de cualquier salto al banco.'],
+  personalPracticeId, lessonIds, title: academyStage4VisibleSpanish(title), objective: academyStage4VisibleSpanish(objective), inexpensiveMaterials: ['documentación oficial consultada en la Academia', 'simulación local', 'papel o tabla local'],
+  preparation: ['Trabaja solo con documentos y simulación.', 'No abras ni manipules un movimiento.', 'Declara la versión documental utilizada.'], steps: academyStage4VisibleList(steps),
+  help: academyStage4VisibleList(['Separa dato oficial, interpretación del modelo y desconocido.', 'Conserva el nombre oficial inglés junto a la denominación española preferente cuando sea necesario.', 'Marca el procedimiento físico como pendiente de una fuente aplicable antes de cualquier salto al banco.']),
   stopSignal: 'Detente si la práctica exige retirar una pieza, soltar tornillos, tocar escape, volante o espiral, lubricar, regular o usar productos.',
   possibleDamage: ['Ninguno dentro del alcance documental; no traslades la práctica a un movimiento físico.'], observe: ['evidencia', 'localizador', 'estado del simulador', 'incertidumbre'],
   record: ['nota local sin datos personales', 'tabla de procedencia', 'límite de transferencia'], personalCriterion: ['La decisión es trazable.', 'No se inventa referencia, secuencia o geometría.', 'No se declara P.'],

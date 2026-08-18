@@ -74,11 +74,11 @@ function observableActionsFor(concept) {
       `Señalarlo en el modelo sin confundirlo con una pieza vecina.`,
     ],
     'conceptual-causal': [
-      `Explicar qué recibe y qué entrega ${title} dentro de la cadena funcional.`,
-      `Predecir qué cambia si se interrumpe su relación con el subsistema ${subsystem}.`,
+      `Explicar la entrada, la relación y el resultado observable asociados a «${title}» dentro de la cadena funcional.`,
+      `Predecir qué cambiaría al interrumpir una interfaz del subsistema ${subsystem}.`,
     ],
     spatial: [
-      `Localizar ${title} y justificar su posición por sus relaciones funcionales.`,
+      `Localizar en el modelo los elementos implicados en «${title}» y justificar su posición por sus relaciones funcionales.`,
       `Distinguir contacto, apoyo y simple proximidad en la vista disponible.`,
     ],
     quantitative: [
@@ -86,15 +86,15 @@ function observableActionsFor(concept) {
       `Comprobar el sentido o la proporción mediante un ejemplo trazable.`,
     ],
     procedural: [
-      `Ejecutar la secuencia de ${title} sin perder identidad, orientación ni reversibilidad.`,
+      `Aplicar «${title}» sin perder identidad, orientación ni capacidad de restaurar el estado inicial.`,
       `Explicar el criterio usado antes de confirmar cada paso.`,
     ],
     diagnostic: [
-      `Separar síntoma, observación e hipótesis al trabajar con ${title}.`,
+      `Al trabajar con «${title}», separar síntoma, observación e hipótesis.`,
       `Proponer una comprobación que pueda confirmar o refutar la hipótesis.`,
     ],
     epistemic: [
-      `Distinguir qué parte de ${title} es oficial, medida, deducida, estimada o desconocida.`,
+      `Al estudiar «${title}», distinguir qué información es oficial, medida, deducida, estimada o desconocida.`,
       `Citar la fuente y declarar el límite antes de extraer una conclusión.`,
     ],
   }
@@ -103,9 +103,9 @@ function observableActionsFor(concept) {
 
 function whyItMattersFor(concept) {
   const byKind = {
-    concept: `Entender ${concept.title.es.toLocaleLowerCase('es')} permite razonar sobre el reloj completo y no memorizar piezas aisladas.`,
-    skill: `Dominar ${concept.title.es.toLocaleLowerCase('es')} permite actuar de forma trazable, reversible y segura.`,
-    subsystem: `Reconocer ${concept.title.es.toLocaleLowerCase('es')} permite seguir la causa y el efecto entre subsistemas.`,
+    concept: `Este concepto permite relacionar «${concept.title.es}» con el funcionamiento del reloj completo, en lugar de memorizar piezas aisladas.`,
+    skill: `Esta habilidad permite aplicar «${concept.title.es}» de forma documentada, reversible y segura.`,
+    subsystem: `Este subsistema permite seguir causas y efectos al estudiar «${concept.title.es}».`,
   }
   return localized(byKind[concept.kind])
 }

@@ -120,7 +120,7 @@
         "measured-own-component"
       ],
       "limitations": [
-        "“Dial size” comercial no equivale automáticamente al asiento útil."
+        "El diámetro comercial de la esfera no equivale automáticamente al asiento útil."
       ]
     },
     {
@@ -148,14 +148,14 @@
         "agujeros",
         "tubos",
         "material",
-        "fit aplicable"
+        "ajuste aplicable"
       ],
       "sourceAuthority": [
         "manufacturer-drawing",
         "supplier-technical-sheet"
       ],
       "limitations": [
-        "Igualdad nominal no valida ajuste; no instruye brochado o reducción."
+        "La igualdad nominal no valida el ajuste; este método no enseña brochado ni reducción."
       ]
     },
     {
@@ -252,7 +252,7 @@
       "requiredInputs": [
         "envolventes",
         "estados",
-        "datums",
+        "referencias geométricas",
         "márgenes"
       ],
       "sourceAuthority": [
@@ -288,16 +288,16 @@
       ],
       "requiredInputs": [
         "dependencias",
-        "checkpoints",
-        "stop conditions",
-        "rollback",
+        "puntos de control",
+        "condiciones de parada",
+        "método de reversión",
         "plan de verificación"
       ],
       "sourceAuthority": [
         "derived-from-verified-inputs"
       ],
       "limitations": [
-        "Planifica; no ejecuta montaje físico ni declara reloj completado."
+        "Planifica; no ejecuta un montaje físico ni declara el reloj completado."
       ]
     }
   ]

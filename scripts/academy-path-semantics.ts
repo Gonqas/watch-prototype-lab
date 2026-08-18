@@ -26,16 +26,16 @@ export const ACADEMY_PATH_SEMANTIC_OUTPUT_FILES = [
 
 export const ACADEMY_0_14B_BASELINE_SHA256 = {
   'ACADEMY-INFORMATION-ARCHITECTURE-0.14B.md': '448afe8fe4d168b523d47948b3cf9e66b576ac3f7db883a084962dc6bcf9919e',
-  'ACADEMY-LEARNER-PATH-0.14B.json': '455c7261f44ccfa4d8fde5e243bfb0c156d5b2dec64847cbd3275b42a559f2c0',
+  'ACADEMY-LEARNER-PATH-0.14B.json': '807c0c57cc897a571ed1aa23c6484d8a2cc619a5b26b40e55978b88b089d4f48',
   'ACADEMY-LEARNER-PATH-0.14B.md': '590f41d29eaea93ac9561d850f1562f67853ca62118852065689aa626aca44df',
   'ACADEMY-PREREQUISITE-RESOLUTIONS-0.14B.md': 'a981fa4d1cf9ef2bc68ccf68e02a8b92c081f917b84aabde7636f12119b6dd12',
   'ACADEMY-PROGRESS-COMPATIBILITY-0.14B.md': '9bde765718d3a08cef5d3ee69394c0b3a4779a17ec339590661e124981a7be28',
-  'ACADEMY-STAGE-5-CONTENT-BLUEPRINT-0.14B.md': 'a8a82ff680aff469b6127a32afec3022965632772006ad17e6b72b008c2f916b',
+  'ACADEMY-STAGE-5-CONTENT-BLUEPRINT-0.14B.md': '200ca423adf304573d08c3683f248682533f4cb5f62c04703cc459dc8728568a',
   'ACADEMY-UX-QA-0.14B.md': '43be10fd84b65304e7e9e18fbae51eb4865baa82ff2ccdf0a1c6864a8e84f788',
 } as const
 
 type OutputFile = (typeof ACADEMY_PATH_SEMANTIC_OUTPUT_FILES)[number]
-const md = (value: string) => `${value.trim()}\n`
+const md = (value: string) => `${value.trim().replace(/[ \t]+$/gmu, '')}\n`
 const code = (value: string) => `\`${value.replaceAll('`', '\\`')}\``
 const pipe = (value: unknown) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ')
 

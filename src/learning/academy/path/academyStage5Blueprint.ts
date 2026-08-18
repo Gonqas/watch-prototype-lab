@@ -44,7 +44,7 @@ type LegacyStage5BlueprintItem = Omit<AcademyStage5BlueprintItem,
 
 const LEGACY_STAGE_5_BLUEPRINT: readonly LegacyStage5BlueprintItem[] = [
   {
-    blueprintRef: 'stage5-gap.movement-holder', status: 'gap', title: 'Aro o movement holder como interfaz estructural',
+    blueprintRef: 'stage5-gap.movement-holder', status: 'gap', title: 'Aro portamovimiento como interfaz estructural',
     observableObjective: 'Comparar el movimiento, la caja y un aro propuesto y registrar apoyos, retención y cotas desconocidas.',
     primarySourceIds: COMMON_SOURCES, officialDocumentationNeeded: ['Plano oficial del movimiento elegido', 'Plano de caja y especificación del proveedor del aro'],
     requiredVisual: 'Sección axial y vista explotada con contactos, holguras y sentidos de montaje.',

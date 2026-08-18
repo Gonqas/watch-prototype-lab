@@ -69,7 +69,7 @@ La unidad de conteo 0.14A.1 es una incidencia revisable o una causa global. Una 
 - **Precisión gold:** no calculable
 - **Recall gold:** no calculable
 - **Confianza:** baja/no calculable
-- **Antes → después:** 52 → 52
+- **Antes → después:** 67 → 67
 - **Variación:** Se conserva la señal baseline con procedencia y confianza explícitas.
 
 ## 6. Párrafos o instrucciones repetidos
@@ -279,7 +279,7 @@ La unidad de conteo 0.14A.1 es una incidencia revisable o una causa global. Una 
 - **Precisión gold:** no calculable
 - **Recall gold:** no calculable
 - **Confianza:** baja/no calculable
-- **Antes → después:** 99 → 99
+- **Antes → después:** 114 → 114
 - **Variación:** Se conserva la señal baseline con procedencia y confianza explícitas.
 
 ## 21. Segmentación automática potencialmente disruptiva

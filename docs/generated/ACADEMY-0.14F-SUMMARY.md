@@ -5,13 +5,13 @@
 - Commit inicial: 086b73eeb1b6d73aca4af4c9e497fd0d825562d6.
 - Rama: main.
 - Árbol inicial: clean; no había cambios ajenos que mezclar.
-- Informes históricos 0.14A–0.14E descubiertos: 79; digest combinado a4a96deb8f2c17d147875c1c0f8a57257c4e41cbb6876274ab34f2fe09bba71c.
+- Informes históricos 0.14A–0.14E descubiertos: 79; digest combinado 085477ac8849684cb8ef18de11081267717ce830605f9a3c1b5f8b94211fa65f.
 
 ## Corpus e integridad
 
 | Paquetes | Rutas | Módulos | Lecciones | Actividades | Digest |
 | ---: | ---: | ---: | ---: | ---: | --- |
-| 8 | 24 | 217 | 222 | 289 | 1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e |
+| 8 | 24 | 217 | 222 | 289 | 5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f |
 
 `learning-content/` y `reference-library/originals/` permanecen deliberadamente intactos. Se conservaron todos los IDs, el progreso, mastery, sesiones, notas, marcadores, deep links y aliases.
 

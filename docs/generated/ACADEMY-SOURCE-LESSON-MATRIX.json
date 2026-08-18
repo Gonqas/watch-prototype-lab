@@ -1,7 +1,7 @@
 {
   "schema": "wplab-academy-source-lesson-matrix-v1",
   "phase": "0.14A",
-  "corpusDigest": "1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e",
+  "corpusDigest": "5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f",
   "counts": {
     "packages": 8,
     "routes": 24,
@@ -61,9 +61,9 @@
       "detectorId": 5,
       "category": "generic-reused-objective",
       "title": "Objetivos genéricos reutilizados",
-      "count": 52,
+      "count": 67,
       "critical": 0,
-      "high": 52,
+      "high": 67,
       "medium": 0,
       "low": 0,
       "info": 0
@@ -226,9 +226,9 @@
       "detectorId": 20,
       "category": "template-conditioned-content",
       "title": "Contenido excesivamente condicionado por plantillas",
-      "count": 99,
+      "count": 114,
       "critical": 0,
-      "high": 99,
+      "high": 114,
       "medium": 0,
       "low": 0,
       "info": 0
@@ -5138,7 +5138,6 @@
       "entityId": "lesson.mechanical.gear-pair",
       "message": "El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla.",
       "evidence": [
-        "lesson.mechanical.barrel",
         "lesson.mechanical.train"
       ],
       "manualReviewRequired": true
@@ -6084,6 +6083,186 @@
       "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "evidence": [
         "repeticiones=12"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.architecture",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.assembly-verification",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.assisted-free-disassembly",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.automatic",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.barrel-energy",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.calendar",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.diagnosis-project",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.documentation",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.escapement-oscillator",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.guided-disassembly",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.identify",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.inspection",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.plan-disassembly",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.train",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 5,
+      "category": "generic-reused-objective",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.winding-setting",
+      "message": "El objetivo es genérico, no observable o se reutiliza de forma extensa.",
+      "evidence": [
+        "repeticiones=15"
       ],
       "manualReviewRequired": true
     },
@@ -23020,6 +23199,201 @@
       "category": "template-conditioned-content",
       "severity": "high",
       "entityType": "lesson",
+      "entityId": "lesson.miyota8215.architecture",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.assembly-verification",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.assisted-free-disassembly",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.automatic",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.barrel-energy",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.calendar",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.diagnosis-project",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.documentation",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.escapement-oscillator",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.guided-disassembly",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.identify",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.inspection",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.plan-disassembly",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.train",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
+      "entityId": "lesson.miyota8215.winding-setting",
+      "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
+      "evidence": [
+        "repeatedParagraphs=1",
+        "objectiveFrequency=15"
+      ],
+      "manualReviewRequired": true
+    },
+    {
+      "detectorId": 20,
+      "category": "template-conditioned-content",
+      "severity": "high",
+      "entityType": "lesson",
       "entityId": "lesson.quartz2035.anatomy",
       "message": "La densidad de texto reutilizado indica una plantilla que puede dominar la explicación específica.",
       "evidence": [
@@ -24184,6 +24558,7 @@
       "message": "La segmentación automática divide una sección larga en continuaciones que requieren revisión de unidad conceptual.",
       "evidence": [
         "block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.segment.pretrain.2",
+        "block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.segment.pretrain.3",
         "block.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora.segment.explain.2"
       ],
       "manualReviewRequired": true
@@ -24197,6 +24572,7 @@
       "message": "La segmentación automática divide una sección larga en continuaciones que requieren revisión de unidad conceptual.",
       "evidence": [
         "block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.segment.pretrain.2",
+        "block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.segment.pretrain.3",
         "block.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete.segment.explain.2"
       ],
       "manualReviewRequired": true
@@ -28996,7 +29372,7 @@
       ],
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
-        "source.private.toh.ch05 [p.63-99; 5]",
+        "source.private.toh.ch05 [p.53-99; 5]",
         "source.private.vba-uhrentechnik"
       ],
       "citationPrecision": "page-or-figure",
@@ -29073,7 +29449,7 @@
       ],
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
-        "source.private.toh.ch05 [p.63-99; 5]",
+        "source.private.toh.ch05 [p.53-99; 5]",
         "source.private.vba-uhrentechnik"
       ],
       "citationPrecision": "page-or-figure",
@@ -29969,7 +30345,7 @@
       "currentType": "worked-example / explanation",
       "proposedCurriculumStage": "3-observe-measure-diagnose",
       "curriculumCategory": null,
-      "currentObservableObjective": "Explicar cómo definir datums, orientación, instrumento y repeticiones antes de leer.",
+      "currentObservableObjective": "Explicar cómo definir referencias geométricas (datums), orientación, instrumento y repeticiones antes de leer.",
       "objectiveQuality": "specific-observable",
       "currentLearningArchetype": "inspection",
       "recommendedLearningArchetype": "inspection",
@@ -32176,7 +32552,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.daniels.mainsprings [p.272-297; Mainsprings and Accessories]",
-        "source.private.toh.ch04 [p.45-62; 4]"
+        "source.private.toh.ch04 [p.45-52; 4]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -32257,7 +32633,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.chicago.6 [Motor and jeweled barrels]",
-        "source.private.toh.ch04 [p.45-62; 4]"
+        "source.private.toh.ch04 [p.45-52; 4]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -32336,7 +32712,7 @@
       ],
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
-        "source.private.toh.ch05 [p.63-99; 5]",
+        "source.private.toh.ch05 [p.53-99; 5]",
         "source.private.vba-uhrentechnik"
       ],
       "citationPrecision": "page-or-figure",
@@ -32417,7 +32793,7 @@
       ],
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
-        "source.private.toh.ch05 [p.63-99; 5]",
+        "source.private.toh.ch05 [p.53-99; 5]",
         "source.private.vba-uhrentechnik"
       ],
       "citationPrecision": "page-or-figure",
@@ -32499,7 +32875,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.daniels.wheels-pinions [p.123-167; Wheels and Pinions]",
-        "source.private.toh.ch05 [p.63-99; 5]"
+        "source.private.toh.ch05 [p.53-99; 5]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -32580,7 +32956,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.chicago.9 [Winding and setting]",
-        "source.private.toh.ch05 [p.63-99; 5]"
+        "source.private.toh.ch05 [p.53-99; 5]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -32661,7 +33037,7 @@
       "currentCitations": [
         "source.private.chicago.5 [Mainsprings]",
         "source.private.chicago.7 [Selecting a mainspring]",
-        "source.private.toh.ch04 [p.45-62; 4]"
+        "source.private.toh.ch04 [p.45-52; 4]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -32742,7 +33118,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.chicago.6 [Motor and jeweled barrels]",
-        "source.private.toh.ch04 [p.45-62; 4]"
+        "source.private.toh.ch04 [p.45-52; 4]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -34956,7 +35332,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.institutional.awci.standards",
-        "source.official.tm9-1575.inspection [p.1-30; Inspection before disassembly and service records]"
+        "source.official.tm9-1575.inspection [p.PDF 25-27 · impresas 12-14; Inspection before disassembly and service records]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -35037,7 +35413,7 @@
       ],
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
-        "source.official.tm9-1575.diagnosis [p.31-83; Troubleshooting, adjustment and repair]",
+        "source.official.tm9-1575.diagnosis [p.PDF 49-88 · impresas 19-44; Troubleshooting, adjustment and repair]",
         "source.private.chicago.35 [Problems and solutions]"
       ],
       "citationPrecision": "page-or-figure",
@@ -36027,8 +36403,8 @@
       "currentType": "orientation / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar identificar el miyota 8215 con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36070,10 +36446,12 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36091,7 +36469,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -36108,8 +36486,8 @@
       "currentType": "pretraining / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar leer su documentación con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36155,12 +36533,14 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
         "hazardous-historical-procedure",
         "modern-safety-source-required",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36178,7 +36558,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -36195,8 +36575,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar arquitectura general con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36240,10 +36620,12 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36261,7 +36643,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -36278,8 +36660,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar rotor y carga automática con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36323,10 +36705,12 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36344,7 +36728,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -36361,8 +36745,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar cuerda manual y puesta en hora con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36406,9 +36790,11 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36426,7 +36812,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -36443,8 +36829,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar calendario con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36488,10 +36874,12 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36509,7 +36897,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -36526,8 +36914,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar barrilete y energía con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "diagnosis-case",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36570,11 +36958,13 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "identical-english-spanish",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
         "hazardous-historical-procedure",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36592,7 +36982,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. La lección comparte párrafos o instrucciones extensos con otras lecciones. Los nombres de módulo y lección son redundantes.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El objetivo es genérico, no observable o se reutiliza de forma extensa. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
       "manualReviewRequired": true
     },
     {
@@ -36609,8 +36999,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar tren de rodaje con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36654,10 +37044,12 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36675,7 +37067,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -36692,8 +37084,8 @@
       "currentType": "conceptual-model / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar escape, volante y espiral con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36737,12 +37129,14 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
         "hazardous-historical-procedure",
         "modern-safety-source-required",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36760,7 +37154,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -36777,8 +37171,8 @@
       "currentType": "guided-practice / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar planificar el desmontaje con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36821,12 +37215,14 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "identical-english-spanish",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
         "hazardous-historical-procedure",
         "modern-safety-source-required",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36844,7 +37240,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. La lección comparte párrafos o instrucciones extensos con otras lecciones. Los nombres de módulo y lección son redundantes.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El objetivo es genérico, no observable o se reutiliza de forma extensa. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
       "manualReviewRequired": true
     },
     {
@@ -36861,8 +37257,8 @@
       "currentType": "guided-practice / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar desmontaje guiado con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36908,10 +37304,12 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -36929,7 +37327,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -36946,8 +37344,8 @@
       "currentType": "guided-practice / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar desmontaje asistido y libre con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "calibre-service",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -36990,10 +37388,12 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "identical-english-spanish",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -37011,7 +37411,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. La lección comparte párrafos o instrucciones extensos con otras lecciones. Los nombres de módulo y lección son redundantes.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El objetivo es genérico, no observable o se reutiliza de forma extensa. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
       "manualReviewRequired": true
     },
     {
@@ -37028,8 +37428,8 @@
       "currentType": "guided-practice / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar inspección con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "diagnosis-case",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -37073,10 +37473,12 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -37098,7 +37500,7 @@
           "points": 16
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -37115,8 +37517,8 @@
       "currentType": "guided-practice / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar montaje y comprobaciones con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "diagnosis-case",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -37163,10 +37565,12 @@
         "empty-markdown-headings",
         "identical-english-spanish",
         "foreign-lesson-title",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -37184,7 +37588,7 @@
           "points": 18
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El cuerpo contiene el título de otra lección; puede ser referencia válida o contaminación de plantilla. El objetivo es genérico, no observable o se reutiliza de forma extensa.",
       "manualReviewRequired": true
     },
     {
@@ -37201,8 +37605,8 @@
       "currentType": "transfer / explanation",
       "proposedCurriculumStage": "4-work-on-real-calibre",
       "curriculumCategory": null,
-      "currentObservableObjective": "Identificar y explicar diagnóstico y proyecto final con fuentes.",
-      "objectiveQuality": "specific-observable",
+      "currentObservableObjective": "Explicar el objetivo de la lección y justificar cada conclusión con la fuente adecuada.",
+      "objectiveQuality": "generic",
       "currentLearningArchetype": "calibre-service",
       "recommendedLearningArchetype": "diagnosis-case",
       "declaredPrimarySource": "source.miyota.8215.product-page",
@@ -37248,10 +37652,12 @@
       "editorialProblems": [
         "empty-markdown-headings",
         "identical-english-spanish",
+        "generic-reused-objective",
         "repeated-paragraph-or-instruction",
         "redundant-names",
         "overbroad-citation",
         "numeric-data-without-locator",
+        "template-conditioned-content",
         "single-lesson-module",
         "physical-skill-digital-only"
       ],
@@ -37273,7 +37679,7 @@
           "points": 15
         }
       ],
-      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. La lección comparte párrafos o instrucciones extensos con otras lecciones. Los nombres de módulo y lección son redundantes.",
+      "reason": "La lección contiene encabezados sin contenido verificable. Campos localizados en inglés repiten literalmente el español. El objetivo es genérico, no observable o se reutiliza de forma extensa. La lección comparte párrafos o instrucciones extensos con otras lecciones.",
       "manualReviewRequired": true
     },
     {
@@ -37754,7 +38160,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.daniels.casemaking [p.371-386; Casemaking]",
-        "source.private.toh.ch12 [p.254-275; 12]"
+        "source.private.toh.ch12 [p.253-274; 12]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -37831,7 +38237,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.official.bipm.vim",
-        "source.private.toh.ch12 [p.254-275; 12]"
+        "source.private.toh.ch12 [p.253-274; 12]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -37985,7 +38391,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.private.chicago.3 [Fitting watch crystals and attachments]",
-        "source.private.toh.ch12 [p.254-275; 12]"
+        "source.private.toh.ch12 [p.253-274; 12]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -40151,7 +40557,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.external.pocket-watch-database",
-        "source.official.tm9-1575.hamilton-992b [p.84-116; Hamilton 992B]"
+        "source.official.tm9-1575.hamilton-992b [p.PDF 90-107 · impresas 47-48; Hamilton 992B]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [
@@ -40382,7 +40788,7 @@
       "currentCitations": [
         "source.encyclopedia.original-synthesis",
         "source.official.tm9-1575.bulova-10ak [p.175-183; Bulova 10AK waterproof wrist watch]",
-        "source.private.toh.ch12 [p.254-275; 12]"
+        "source.private.toh.ch12 [p.253-274; 12]"
       ],
       "citationPrecision": "page-or-figure",
       "requiredConcepts": [

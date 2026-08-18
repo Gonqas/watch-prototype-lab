@@ -30,9 +30,9 @@ export function AcademyPathHomeSurface() {
       </section>
       <AcademyNextActionCard action={next} />
       <section className="academy-path-home-secondary">
-        <article><BookOpenCheck size={21} /><div><span>PROGRESO CORE</span><strong>{progress.anchorLessonsCompleted}/{progress.anchorLessonsTotal} lecciones ancla</strong><small>{progress.requiredActivitiesCompleted}/{progress.requiredActivitiesTotal} prácticas requeridas · {progress.stagesCompleted}/{progress.stagesTotal} etapas</small></div></article>
+        <article><BookOpenCheck size={21} /><div><span>PROGRESO PRINCIPAL</span><strong>{progress.anchorLessonsCompleted}/{progress.anchorLessonsTotal} lecciones esenciales</strong><small>{progress.requiredActivitiesCompleted}/{progress.requiredActivitiesTotal} prácticas requeridas · {progress.stagesCompleted}/{progress.stagesTotal} etapas</small></div></article>
         <article><ShieldCheck size={21} /><div><span>COMPETENCIA DE BANCO</span><strong>{progress.benchEvidenceStatus.status === 'pending' ? 'Evidencia física pendiente' : progress.benchEvidenceStatus.status}</strong><small>Las sesiones virtuales no se cuentan como P.</small></div></article>
-        {lastNote ? <article><NotebookPen size={21} /><div><span>ÚLTIMA NOTA</span><strong>{lastNote.title}</strong><small>{lastNote.body.slice(0, 100)}</small></div></article> : <article><LibraryBig size={21} /><div><span>BIBLIOTECA</span><strong>24 rutas conservadas</strong><small>Especializaciones y consulta no inflan tu progreso core.</small></div></article>}
+        {lastNote ? <article><NotebookPen size={21} /><div><span>ÚLTIMA NOTA</span><strong>{lastNote.title}</strong><small>{lastNote.body.slice(0, 100)}</small></div></article> : <article><LibraryBig size={21} /><div><span>BIBLIOTECA</span><strong>24 rutas conservadas</strong><small>Las especializaciones y los materiales de consulta no alteran tu progreso principal.</small></div></article>}
       </section>
       <a className="academy-path-library-link" href="#/learning/explore"><LibraryBig size={16} /> Explorar toda la biblioteca</a>
     </PathPage>

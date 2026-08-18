@@ -114,7 +114,7 @@
         "No identifica una unidad física por parecido."
       ],
       "accessibilitySummary": "Escalera de identidad: Evidencia visible, Inscripción, Documento oficial, Variante, Límite.",
-      "longDescription": "Escalera de identidad. evidence conduce a mark: localiza. mark conduce a document: coteja. document conduce a variant: delimita. variant conduce a limit: conserva.",
+      "longDescription": "Escalera de identidad. Evidencia visible se relaciona con Inscripción: localiza. Inscripción se relaciona con Documento oficial: coteja. Documento oficial se relaciona con Variante: delimita. Variante se relaciona con Límite: conserva. No identifica una unidad física por parecido.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:2ec720ec7350daa2",
       "visualHash": "fnv1a64:e01efd9525424419",
@@ -141,13 +141,13 @@
           },
           {
             "id": "spec",
-            "label": "Specification",
+            "label": "especificación",
             "detail": "función y datos",
             "emphasis": "normal"
           },
           {
             "id": "drawing",
-            "label": "Drawing",
+            "label": "plano",
             "detail": "cotas expresas",
             "emphasis": "normal"
           },
@@ -159,7 +159,7 @@
           },
           {
             "id": "parts",
-            "label": "Parts list",
+            "label": "lista de piezas",
             "detail": "piezas",
             "emphasis": "normal"
           },
@@ -222,11 +222,11 @@
       "limitations": [
         "El documento se elige por alcance, no por posición en una lista."
       ],
-      "accessibilitySummary": "Matriz de autoridad documental: Pregunta, Specification, Drawing, Manual, Parts list, No disponible.",
-      "longDescription": "Matriz de autoridad documental. question conduce a spec: clasifica. question conduce a drawing: clasifica. question conduce a manual: clasifica. question conduce a parts: clasifica. question conduce a missing: bloquea.",
+      "accessibilitySummary": "Matriz de autoridad documental: Pregunta, especificación, plano, Manual, lista de piezas, No disponible.",
+      "longDescription": "Matriz de autoridad documental. Pregunta se relaciona con especificación: clasifica. Pregunta se relaciona con plano: clasifica. Pregunta se relaciona con Manual: clasifica. Pregunta se relaciona con lista de piezas: clasifica. Pregunta se relaciona con No disponible: bloquea. El documento se elige por alcance, no por posición en una lista.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:cabf425f8f287b85",
-      "visualHash": "fnv1a64:ba315eec42bd29e9",
+      "visualHash": "fnv1a64:ae30beaab1f1b846",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -238,20 +238,20 @@
       "sectionIds": [
         "reader.section.block.miyota8215.documentation.014j-visual-stage4-parts-drift-v1"
       ],
-      "pedagogicalQuestion": "¿Qué cambió entre snapshots de la parts list?",
+      "pedagogicalQuestion": "¿Qué cambió entre las versiones verificadas de la lista de piezas?",
       "semanticPayload": {
-        "title": "Drift revisado de parts list",
+        "title": "cambio entre versiones revisado de lista de piezas",
         "nodes": [
           {
             "id": "previous",
-            "label": "Snapshot anterior",
-            "detail": "hash ea5f…",
+            "label": "versión documental anterior",
+            "detail": "huella digital ea5f…",
             "emphasis": "primary"
           },
           {
             "id": "current",
-            "label": "Snapshot vigente",
-            "detail": "hash fdaf…",
+            "label": "versión documental vigente",
+            "detail": "huella digital fdaf…",
             "emphasis": "normal"
           },
           {
@@ -319,11 +319,11 @@
       "limitations": [
         "La revisión no demuestra que sea una edición formalmente numerada."
       ],
-      "accessibilitySummary": "Drift revisado de parts list: Snapshot anterior, Snapshot vigente, 3 términos, 1 cambio, 0 piezas.",
-      "longDescription": "Drift revisado de parts list. previous conduce a current: compara. current conduce a terms: clasifica. current conduce a layout: clasifica. current conduce a parts: confirma.",
+      "accessibilitySummary": "cambio entre versiones revisado de lista de piezas: versión documental anterior, versión documental vigente, 3 términos, 1 cambio, 0 piezas.",
+      "longDescription": "cambio entre versiones revisado de lista de piezas. versión documental anterior se relaciona con versión documental vigente: compara. versión documental vigente se relaciona con 3 términos: clasifica. versión documental vigente se relaciona con 1 cambio: clasifica. versión documental vigente se relaciona con 0 piezas: confirma. La revisión no demuestra que sea una edición formalmente numerada.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:23cc65d798b20f1a",
-      "visualHash": "fnv1a64:69d7ace806ec2927",
+      "contentHash": "fnv1a64:fb99b228c61efff0",
+      "visualHash": "fnv1a64:6e13485a6ba66507",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -426,12 +426,12 @@
       ],
       "fidelity": "calibre-specific",
       "limitations": [
-        "Fixture G2/K2/P0, no gemelo ni escala real."
+        "modelo didáctico geometría estructural y secuencia educativa, sin simulación física, no gemelo ni escala real."
       ],
       "accessibilitySummary": "Arquitectura y autoridad: Calibre completo, Subsistemas, Piezas, Relaciones, Geometría, Desconocidos.",
-      "longDescription": "Arquitectura y autoridad. whole conduce a systems: organiza. systems conduce a parts: agrupa. parts conduce a relations: no demuestra. relations conduce a geometry: modela. geometry conduce a unknown: declara.",
+      "longDescription": "Arquitectura y autoridad. Calibre completo se relaciona con Subsistemas: organiza. Subsistemas se relaciona con Piezas: agrupa. Piezas se relaciona con Relaciones: no demuestra. Relaciones se relaciona con Geometría: modela. Geometría se relaciona con Desconocidos: declara. modelo didáctico geometría estructural y secuencia educativa, sin simulación física, no gemelo ni escala real.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:244815aa18db7efd",
+      "contentHash": "fnv1a64:393ec7452dd5b025",
       "visualHash": "fnv1a64:0eab1e369142cdcd",
       "colorIndependent": true,
       "reducedMotionSafe": true
@@ -528,7 +528,7 @@
         "Solo manual 8215 vigente; no mezcla 8205."
       ],
       "accessibilitySummary": "Estados documentados de corona: Normal, Primera, Segunda, Advertencia, Cinemática interna.",
-      "longDescription": "Estados documentados de corona. normal conduce a first: extraer. first conduce a second: extraer. first conduce a warning: limita. second conduce a internal: no prueba.",
+      "longDescription": "Estados documentados de corona. Normal se relaciona con Primera: extraer. Primera se relaciona con Segunda: extraer. Primera se relaciona con Advertencia: limita. Segunda se relaciona con Cinemática interna: no prueba. Solo manual 8215 vigente; no mezcla 8205.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:659ab4480650a455",
       "visualHash": "fnv1a64:cb4afbfa0bba90c0",
@@ -574,7 +574,7 @@
           {
             "id": "procedure",
             "label": "Procedimiento",
-            "detail": "source-needed",
+            "detail": "pendiente de una fuente aplicable",
             "emphasis": "normal"
           }
         ],
@@ -625,10 +625,10 @@
         "No codifica herramienta, sentido, par ni orden físico."
       ],
       "accessibilitySummary": "Grafo de dependencia estructural: Pieza, Fijación, Elemento retenido, Acceso, Procedimiento.",
-      "longDescription": "Grafo de dependencia estructural. fastener conduce a piece: retiene. piece conduce a retained: cubre. retained conduce a access: condiciona. access conduce a procedure: no determina.",
+      "longDescription": "Grafo de dependencia estructural. Fijación se relaciona con Pieza: retiene. Pieza se relaciona con Elemento retenido: cubre. Elemento retenido se relaciona con Acceso: condiciona. Acceso se relaciona con Procedimiento: no determina. No codifica herramienta, sentido, par ni orden físico.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:3aa777166410fe1f",
-      "visualHash": "fnv1a64:d5412e6f8a947f00",
+      "visualHash": "fnv1a64:3b308e6c7a67b45c",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -666,14 +666,14 @@
           },
           {
             "id": "checkpoint",
-            "label": "Checkpoint",
+            "label": "punto de control",
             "detail": "contrato interno",
             "emphasis": "normal"
           },
           {
             "id": "physical",
             "label": "Servicio físico",
-            "detail": "source-needed",
+            "detail": "pendiente de una fuente aplicable",
             "emphasis": "warning"
           }
         ],
@@ -721,11 +721,11 @@
       "limitations": [
         "La reversibilidad digital no define montaje físico."
       ],
-      "accessibilitySummary": "Frontera simulación y servicio: Estado del modelo, Acción virtual, Dependencia, Checkpoint, Servicio físico.",
-      "longDescription": "Frontera simulación y servicio. state conduce a action: cambia. action conduce a dependency: expone. dependency conduce a checkpoint: comprueba. checkpoint conduce a physical: no acredita.",
+      "accessibilitySummary": "Frontera simulación y servicio: Estado del modelo, Acción virtual, Dependencia, punto de control, Servicio físico.",
+      "longDescription": "Frontera simulación y servicio. Estado del modelo se relaciona con Acción virtual: cambia. Acción virtual se relaciona con Dependencia: expone. Dependencia se relaciona con punto de control: comprueba. punto de control se relaciona con Servicio físico: no acredita. La reversibilidad digital no define montaje físico.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:34fb42f545d3b1d6",
-      "visualHash": "fnv1a64:ff21e9d6e8c5d5d1",
+      "visualHash": "fnv1a64:dd9937776e9d97e3",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -817,7 +817,7 @@
         "No representa desgaste, suciedad, aceite, holgura o amplitud reales."
       ],
       "accessibilitySummary": "Inspección simbólica: Escenario, Observación válida, Hipótesis, Prueba física, Incertidumbre.",
-      "longDescription": "Inspección simbólica. scenario conduce a observation: permite. observation conduce a hypotheses: abre. hypotheses conduce a test: distingue. test conduce a uncertainty: delimita.",
+      "longDescription": "Inspección simbólica. Escenario se relaciona con Observación válida: permite. Observación válida se relaciona con Hipótesis: abre. Hipótesis se relaciona con Prueba física: distingue. Prueba física se relaciona con Incertidumbre: delimita. No representa desgaste, suciedad, aceite, holgura o amplitud reales.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:7ae595dcb8049b32",
       "visualHash": "fnv1a64:651b274166f0a4e3",
@@ -832,7 +832,7 @@
       "sectionIds": [
         "reader.section.block.miyota8215.assembly-verification.014j-evidencia-y-autoridad"
       ],
-      "pedagogicalQuestion": "¿Dónde colocar checkpoints virtuales?",
+      "pedagogicalQuestion": "¿Dónde colocar puntos de control virtuales?",
       "semanticPayload": {
         "title": "Cuatro niveles de verificación",
         "nodes": [
@@ -900,9 +900,9 @@
         "No prescribe lubricación, apriete, ajuste o fuerza."
       ],
       "accessibilitySummary": "Cuatro niveles de verificación: Simulador, Estructural, Física, Aceptación.",
-      "longDescription": "Cuatro niveles de verificación. simulation conduce a structural: separa. structural conduce a physical: no sustituye. physical conduce a acceptance: no garantiza.",
+      "longDescription": "Cuatro niveles de verificación. Simulador se relaciona con Estructural: separa. Estructural se relaciona con Física: no sustituye. Física se relaciona con Aceptación: no garantiza. No prescribe lubricación, apriete, ajuste o fuerza.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:1214c3385b52b847",
+      "contentHash": "fnv1a64:9b4ed6082ed8dc93",
       "visualHash": "fnv1a64:cac2e6efb5d6a90d",
       "colorIndependent": true,
       "reducedMotionSafe": true
@@ -939,7 +939,7 @@
           },
           {
             "id": "claim",
-            "label": "Claim",
+            "label": "afirmación",
             "detail": "fuente",
             "emphasis": "normal"
           },
@@ -1006,11 +1006,11 @@
       "limitations": [
         "Diagnostica el escenario, nunca una unidad física."
       ],
-      "accessibilitySummary": "Cadena de diagnóstico y dossier: Síntoma simulado, Hipótesis, Prueba virtual, Claim, Límite, Transferencia.",
-      "longDescription": "Cadena de diagnóstico y dossier. symptom conduce a hypotheses: abre. hypotheses conduce a test: distingue. test conduce a claim: documenta. claim conduce a limit: delimita. limit conduce a transfer: controla.",
+      "accessibilitySummary": "Cadena de diagnóstico y dossier: Síntoma simulado, Hipótesis, Prueba virtual, afirmación, Límite, Transferencia.",
+      "longDescription": "Cadena de diagnóstico y dossier. Síntoma simulado se relaciona con Hipótesis: abre. Hipótesis se relaciona con Prueba virtual: distingue. Prueba virtual se relaciona con afirmación: documenta. afirmación se relaciona con Límite: delimita. Límite se relaciona con Transferencia: controla. Diagnostica el escenario, nunca una unidad física.",
       "implementationStatus": "implemented",
       "contentHash": "fnv1a64:8acade0e600e3f6e",
-      "visualHash": "fnv1a64:d03d426bccfb34a9",
+      "visualHash": "fnv1a64:f8a8b3feb6f87537",
       "colorIndependent": true,
       "reducedMotionSafe": true
     }

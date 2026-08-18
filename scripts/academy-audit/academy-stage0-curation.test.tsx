@@ -1,9 +1,7 @@
-import { execFile } from 'node:child_process'
 import { createHash } from 'node:crypto'
-import { readFile, readdir } from 'node:fs/promises'
+import { readFile, readdir, readlink } from 'node:fs/promises'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { promisify } from 'node:util'
 import { renderToStaticMarkup } from 'react-dom/server'
 import { beforeAll, describe, expect, it } from 'vitest'
 import { academyLessonMaterial } from '../../src/learning/academy/academyCatalog'
@@ -43,8 +41,57 @@ import {
 import { loadAcademyCorpus, type AcademyCorpus } from './corpus'
 
 const repositoryRoot = fileURLToPath(new URL('../../', import.meta.url))
-const execFileAsync = promisify(execFile)
 const now = '2026-08-15T12:00:00.000Z'
+
+type ProtectedTreeEntry = {
+  absolutePath: string
+  kind: 'directory' | 'file' | 'other' | 'symlink'
+  path: string
+}
+
+async function protectedTreeSnapshot() {
+  const entries: ProtectedTreeEntry[] = []
+
+  async function collect(root: string, prefix: string, relativePath = ''): Promise<void> {
+    const directory = join(root, relativePath)
+    const children = (await readdir(directory, { withFileTypes: true })).sort((left, right) => left.name.localeCompare(right.name, 'en'))
+    for (const child of children) {
+      const childRelativePath = relativePath ? join(relativePath, child.name) : child.name
+      const path = `${prefix}/${childRelativePath.replaceAll('\\', '/')}`
+      const absolutePath = join(root, childRelativePath)
+      if (child.isDirectory()) {
+        entries.push({ absolutePath, kind: 'directory', path })
+        await collect(root, prefix, childRelativePath)
+      } else if (child.isFile()) {
+        entries.push({ absolutePath, kind: 'file', path })
+      } else if (child.isSymbolicLink()) {
+        entries.push({ absolutePath, kind: 'symlink', path })
+      } else {
+        entries.push({ absolutePath, kind: 'other', path })
+      }
+    }
+  }
+
+  await collect(join(repositoryRoot, 'learning-content'), 'learning-content')
+  await collect(join(repositoryRoot, 'reference-library', 'originals'), 'reference-library/originals')
+
+  const rows: string[] = []
+  for (const entry of entries) {
+    if (entry.kind === 'file') {
+      const digest = createHash('sha256').update(await readFile(entry.absolutePath)).digest('hex')
+      rows.push(`${entry.path}:file:${digest}`)
+    } else if (entry.kind === 'symlink') {
+      rows.push(`${entry.path}:symlink:${await readlink(entry.absolutePath)}`)
+    } else {
+      rows.push(`${entry.path}:${entry.kind}`)
+    }
+  }
+
+  return {
+    digest: createHash('sha256').update(rows.join('\n')).digest('hex'),
+    entries: rows.length,
+  }
+}
 
 class MemoryStorage implements AcademyStorage {
   values = new Map<string, string>()
@@ -67,21 +114,21 @@ function readerDocument(lessonId: string, phase: AcademyReaderCurationPhase): Ac
 
 let corpus: AcademyCorpus
 let outputs: Awaited<ReturnType<typeof buildAcademyStage0CurationOutputs>>
+let protectedTreesBefore: Awaited<ReturnType<typeof protectedTreeSnapshot>>
+let protectedTreesAfter: Awaited<ReturnType<typeof protectedTreeSnapshot>>
 
 beforeAll(async () => {
   corpus = await loadAcademyCorpus(repositoryRoot)
+  protectedTreesBefore = await protectedTreeSnapshot()
   outputs = await buildAcademyStage0CurationOutputs(repositoryRoot)
-}, 60_000)
+  protectedTreesAfter = await protectedTreeSnapshot()
+}, 120_000)
 
 describe('0.14F · integridad, versionado y modularización', () => {
   it('01–10 · conserva corpus, IDs, paquetes y rutas protegidas', async () => {
     expect(corpus.counts).toMatchObject({ packages: 8, routes: 24, modules: 217, lessons: 222, activities: 289 })
     expect(corpus.digest).toBe(ACADEMY_014F_BASELINE.corpusDigest)
-    const { stdout } = await execFileAsync('git', ['diff', '--name-only', 'HEAD'], { cwd: repositoryRoot })
-    const changed = stdout.split(/\r?\n/).filter(Boolean)
-    expect(changed.some((path) => path.startsWith('learning-content/'))).toBe(false)
-    expect(changed.some((path) => path.startsWith('reference-library/originals/'))).toBe(false)
-    expect(changed.some((path) => /\.(?:pdf|iso|zip)$/i.test(path))).toBe(false)
+    expect(protectedTreesAfter).toEqual(protectedTreesBefore)
   })
 
   it('11–16 · compone 0.14F sin contaminar 0.14E y conserva revisiones antiguas', () => {

@@ -797,15 +797,15 @@ for (const [slug, termEs, termEn] of glossary) {
 
 const sourceDocuments = [
   ['2035', 'product-page', 'web-page', 'MIYOTA 2035 · página oficial', 'https://miyotamovement.com/product/2035/'],
-  ['2035', 'specification', 'pdf', 'MIYOTA 2035 · specification', 'https://miyotamovement.com/uploads/product/product_pgSIG6yWb0akqcUhDf.pdf'],
-  ['2035', 'drawing', 'pdf', 'MIYOTA 2035 · drawing', 'https://miyotamovement.com/uploads/product/product_4tdsbpNVQi1WcE5lUw.pdf'],
-  ['2035', 'instruction-manual', 'pdf', 'MIYOTA 2035 · instruction manual', 'https://miyotamovement.com/uploads/product/product_cKAJDxu3CLoa18GHXO.pdf'],
-  ['2035', 'parts-list-exploded-view', 'pdf', 'MIYOTA 2035 · parts list and exploded view', 'https://miyotamovement.com/uploads/product/product_j6P3s1O5naNRxHZWMK.pdf'],
+  ['2035', 'specification', 'pdf', 'MIYOTA 2035 · especificación oficial', 'https://miyotamovement.com/uploads/product/product_pgSIG6yWb0akqcUhDf.pdf'],
+  ['2035', 'drawing', 'pdf', 'MIYOTA 2035 · plano oficial', 'https://miyotamovement.com/uploads/product/product_4tdsbpNVQi1WcE5lUw.pdf'],
+  ['2035', 'instruction-manual', 'pdf', 'MIYOTA 2035 · manual de instrucciones', 'https://miyotamovement.com/uploads/product/product_cKAJDxu3CLoa18GHXO.pdf'],
+  ['2035', 'parts-list-exploded-view', 'pdf', 'MIYOTA 2035 · lista de piezas y vista explosionada', 'https://miyotamovement.com/uploads/product/product_j6P3s1O5naNRxHZWMK.pdf'],
   ['8215', 'product-page', 'web-page', 'MIYOTA 8215 · página oficial', 'https://miyotamovement.com/product/8215/'],
-  ['8215', 'specification', 'pdf', 'MIYOTA 8215 · specification', 'https://miyotamovement.com/uploads/product/product_8jT5DEdzRXAsaSN2Bu.pdf'],
-  ['8215', 'drawing', 'pdf', 'MIYOTA 8215 · drawing', 'https://miyotamovement.com/uploads/product/product_LGuS8EY5DX03RiBaJH.pdf'],
-  ['8215', 'instruction-manual', 'pdf', 'MIYOTA 8215 · instruction manual', 'https://miyotamovement.com/uploads/product/product_mRAnUkS0wHFurpOK3T.pdf'],
-  ['8215', 'parts-list-exploded-view', 'pdf', 'MIYOTA 8215 · parts list and exploded view', 'https://miyotamovement.com/uploads/product/product_x2MOZCosd7iH59wu0K.pdf'],
+  ['8215', 'specification', 'pdf', 'MIYOTA 8215 · especificación oficial', 'https://miyotamovement.com/uploads/product/product_8jT5DEdzRXAsaSN2Bu.pdf'],
+  ['8215', 'drawing', 'pdf', 'MIYOTA 8215 · plano oficial', 'https://miyotamovement.com/uploads/product/product_LGuS8EY5DX03RiBaJH.pdf'],
+  ['8215', 'instruction-manual', 'pdf', 'MIYOTA 8215 · manual de instrucciones', 'https://miyotamovement.com/uploads/product/product_mRAnUkS0wHFurpOK3T.pdf'],
+  ['8215', 'parts-list-exploded-view', 'pdf', 'MIYOTA 8215 · lista de piezas y vista explosionada', 'https://miyotamovement.com/uploads/product/product_x2MOZCosd7iH59wu0K.pdf'],
 ]
 for (const [calibre, type, kind, title, locator] of sourceDocuments) {
   const id = `source.miyota.${calibre}.${type}`

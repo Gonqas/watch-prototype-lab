@@ -39,13 +39,13 @@ const B1_BASELINE_SHA256 = {
   'ACADEMY-PATH-SEMANTICS-0.14B1.md': 'b5c88d03419bab0fbe2f22514d4658ed3c39467aaf1c4f541fc7d47f0980f81d',
   'ACADEMY-PROGRESS-STATE-MODEL-0.14B1.md': 'f86ace2cec2727d5a62ba85b05ff3c809de136d38b595672ba3a3f0e16a0fda8',
   'ACADEMY-PROGRESS-COMPATIBILITY-0.14B1.md': '563e6bb3c1b54d6815337bcf881df5c8852bc4b215c6d70cf02754512739f336',
-  'ACADEMY-CORE-LOAD-0.14B1.md': 'a408bcb97dc57e033ee2a2e12229f685507919ded232a9c11f8778db83d84ffa',
-  'ACADEMY-STAGE-5-CONTENT-BLUEPRINT-0.14B1.md': '04c63722735e6545e768a66b1f0fe09e039eb6bcdb96e148782f8db0e8070d5c',
+  'ACADEMY-CORE-LOAD-0.14B1.md': '545350712376d7215784571c22771dabb8fff51b4b689806a7d288e5c22e94b1',
+  'ACADEMY-STAGE-5-CONTENT-BLUEPRINT-0.14B1.md': 'faf2b2a6d689f3b676ae824ffd01614931bc980f3a5c3b0f920df9b1c4de55ee',
   'ACADEMY-CURATION-TRACE-0.14B1.md': '7f421d8209bdd27188db71ee8ce0d6cf53c40f8570daa49ab46b71f5f55a8586',
   'ACADEMY-UX-QA-0.14B1.md': 'e558be6b4cbba1841162a6697b5793b22727576b2a88cbf506cff96ce356df32',
 } as const
 
-const md = (value: string) => `${value.trim()}\n`
+const md = (value: string) => `${value.trim().replace(/[ \t]+$/gmu, '')}\n`
 const json = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`
 const pipe = (value: unknown) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ')
 const sha256 = (value: string | Buffer) => createHash('sha256').update(value).digest('hex')

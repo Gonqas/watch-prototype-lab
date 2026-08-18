@@ -30,7 +30,7 @@
           },
           {
             "id": "node.2",
-            "label": "métrica o unknown",
+            "label": "métrica o dato pendiente",
             "emphasis": "normal"
           },
           {
@@ -74,20 +74,20 @@
       "sourceLocators": [
         {
           "sourceId": "source.miyota.8215.official",
-          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "documentLocator": "Documentación oficial del MIYOTA 8215 verificada en 0.14J",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "El 8215 es ejemplo, no requisito.",
+        "El 8215 es un ejemplo, no un requisito.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
-      "accessibilitySummary": "Requisitos y movimiento: intención, métrica o unknown, candidatos, elección limitada.",
-      "longDescription": "Requisitos y movimiento. intención conduce a métrica o unknown conduce a candidatos conduce a elección limitada. El 8215 es ejemplo, no requisito.",
+      "accessibilitySummary": "Requisitos y movimiento: intención, métrica o dato pendiente, candidatos, elección limitada.",
+      "longDescription": "Requisitos y movimiento. intención conduce a métrica o dato pendiente conduce a candidatos conduce a elección limitada. El 8215 es un ejemplo, no un requisito.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:af0c5f879f6b0abb",
-      "visualHash": "fnv1a64:bf4496576eae8ad1",
+      "contentHash": "fnv1a64:9087d99fc75e5263",
+      "visualHash": "fnv1a64:7ef63e56622ac473",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -115,7 +115,7 @@
           },
           {
             "id": "node.3",
-            "label": "supplier",
+            "label": "proveedor",
             "emphasis": "normal"
           },
           {
@@ -125,7 +125,7 @@
           },
           {
             "id": "node.5",
-            "label": "unknown",
+            "label": "dato pendiente",
             "emphasis": "warning"
           }
         ],
@@ -165,20 +165,20 @@
       "sourceLocators": [
         {
           "sourceId": "source.miyota.8215.drawing",
-          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "documentLocator": "Documentación oficial del MIYOTA 8215 verificada en 0.14J",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "Una ficha comercial no se eleva a drawing.",
+        "Una ficha comercial no adquiere la autoridad de un plano del fabricante.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
-      "accessibilitySummary": "Autoridad documental: pregunta, fabricante, supplier, medición, unknown.",
-      "longDescription": "Autoridad documental. pregunta conduce a fabricante conduce a supplier conduce a medición conduce a unknown. Una ficha comercial no se eleva a drawing.",
+      "accessibilitySummary": "Autoridad documental: pregunta, fabricante, proveedor, medición, dato pendiente.",
+      "longDescription": "Autoridad documental. pregunta conduce a fabricante conduce a proveedor conduce a medición conduce a dato pendiente. Una ficha comercial no adquiere la autoridad de un plano del fabricante.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:85b16987c216c743",
-      "visualHash": "fnv1a64:14c7285e11c8f51c",
+      "contentHash": "fnv1a64:8fe78a26f493325f",
+      "visualHash": "fnv1a64:e979765acb8a4f9e",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -256,7 +256,7 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
@@ -347,7 +347,7 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
@@ -438,7 +438,7 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
@@ -529,7 +529,7 @@
       "sourceLocators": [
         {
           "sourceId": "source.miyota.8215.drawing",
-          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "documentLocator": "Documentación oficial del MIYOTA 8215 verificada en 0.14J",
           "verificationMethod": "source-limited"
         }
       ],
@@ -560,7 +560,7 @@
         "nodes": [
           {
             "id": "node.1",
-            "label": "datum",
+            "label": "referencia geométrica",
             "emphasis": "primary"
           },
           {
@@ -620,20 +620,20 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "Unknowns mantienen la cadena abierta.",
+        "Los datos pendientes mantienen la cadena abierta.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
-      "accessibilitySummary": "Cadena axial: datum, movimiento, esfera, agujas, cristal y fondo.",
-      "longDescription": "Cadena axial. datum conduce a movimiento conduce a esfera conduce a agujas conduce a cristal y fondo. Unknowns mantienen la cadena abierta.",
+      "accessibilitySummary": "Cadena axial: referencia geométrica, movimiento, esfera, agujas, cristal y fondo.",
+      "longDescription": "Cadena axial. referencia geométrica conduce a movimiento conduce a esfera conduce a agujas conduce a cristal y fondo. Los datos pendientes mantienen la cadena abierta.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:33609ec317f0f32e",
-      "visualHash": "fnv1a64:bcd494cc47409640",
+      "contentHash": "fnv1a64:a00c03f7a5a43d1d",
+      "visualHash": "fnv1a64:46dff714e48c5e52",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -666,7 +666,7 @@
           },
           {
             "id": "node.4",
-            "label": "rehaut",
+            "label": "realce interior",
             "emphasis": "warning"
           }
         ],
@@ -700,20 +700,20 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "No usa un valor comercial como fit.",
+        "No usa un valor comercial como prueba de ajuste.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
-      "accessibilitySummary": "Geometría de esfera y asiento: diámetro total, asiento, apertura visible, rehaut.",
-      "longDescription": "Geometría de esfera y asiento. diámetro total conduce a asiento conduce a apertura visible conduce a rehaut. No usa un valor comercial como fit.",
+      "accessibilitySummary": "Geometría de esfera y asiento: diámetro total, asiento, apertura visible, realce interior.",
+      "longDescription": "Geometría de esfera y asiento. diámetro total conduce a asiento conduce a apertura visible conduce a realce interior. No usa un valor comercial como prueba de ajuste.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:5ddc01c701cc9cfe",
-      "visualHash": "fnv1a64:6ef77d87bc399eb9",
+      "contentHash": "fnv1a64:addb66a8376ad68d",
+      "visualHash": "fnv1a64:9971943be8f7371a",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -791,7 +791,7 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
@@ -842,7 +842,7 @@
           },
           {
             "id": "node.5",
-            "label": "fit pendiente",
+            "label": "ajuste pendiente",
             "emphasis": "warning"
           }
         ],
@@ -882,20 +882,20 @@
       "sourceLocators": [
         {
           "sourceId": "source.miyota.8215.drawing",
-          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "documentLocator": "Documentación oficial del MIYOTA 8215 verificada en 0.14J",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "Nominal igual no prueba ajuste.",
+        "La igualdad nominal no prueba el ajuste.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
-      "accessibilitySummary": "Interfaces de agujas: poste, agujero, tubo, material, fit pendiente.",
-      "longDescription": "Interfaces de agujas. poste conduce a agujero conduce a tubo conduce a material conduce a fit pendiente. Nominal igual no prueba ajuste.",
+      "accessibilitySummary": "Interfaces de agujas: poste, agujero, tubo, material, ajuste pendiente.",
+      "longDescription": "Interfaces de agujas. poste conduce a agujero conduce a tubo conduce a material conduce a ajuste pendiente. La igualdad nominal no prueba el ajuste.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:047f63fcd952f251",
-      "visualHash": "fnv1a64:acdd96811eb2ee0d",
+      "contentHash": "fnv1a64:4562202abc4fe4ca",
+      "visualHash": "fnv1a64:dc4d0a68a7596a2a",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -909,7 +909,7 @@
       ],
       "pedagogicalQuestion": "¿Cómo se apilan las agujas?",
       "semanticPayload": {
-        "title": "Stack de indicación",
+        "title": "Apilado de la indicación",
         "nodes": [
           {
             "id": "node.1",
@@ -973,20 +973,20 @@
       "sourceLocators": [
         {
           "sourceId": "source.miyota.8215.drawing",
-          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "documentLocator": "Documentación oficial del MIYOTA 8215 verificada en 0.14J",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "Todas las alturas requieren datum.",
+        "Todas las alturas requieren una referencia geométrica.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
-      "accessibilitySummary": "Stack de indicación: rueda de horas, esfera, hora, minuto, segundo.",
-      "longDescription": "Stack de indicación. rueda de horas conduce a esfera conduce a hora conduce a minuto conduce a segundo. Todas las alturas requieren datum.",
+      "accessibilitySummary": "Apilado de la indicación: rueda de horas, esfera, hora, minuto, segundo.",
+      "longDescription": "Apilado de la indicación. rueda de horas conduce a esfera conduce a hora conduce a minuto conduce a segundo. Todas las alturas requieren una referencia geométrica.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:dc05da8dd480a0a8",
-      "visualHash": "fnv1a64:dcb39857160e9700",
+      "contentHash": "fnv1a64:150dd8dcfd00030a",
+      "visualHash": "fnv1a64:79f54b3d58dd41bb",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -1064,7 +1064,7 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
@@ -1155,7 +1155,7 @@
       "sourceLocators": [
         {
           "sourceId": "source.miyota.8215.drawing",
-          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "documentLocator": "Documentación oficial del MIYOTA 8215 verificada en 0.14J",
           "verificationMethod": "source-limited"
         }
       ],
@@ -1180,7 +1180,7 @@
       "sectionIds": [
         "reader.section.block.encyclopedia.cases-water.toh-materiales-exterior.014k-metodo-verificable"
       ],
-      "pedagogicalQuestion": "¿Dónde están las rutas de fuga y juntas?",
+      "pedagogicalQuestion": "¿Dónde están las rutas de fuga y las juntas?",
       "semanticPayload": {
         "title": "Rutas de fuga",
         "nodes": [
@@ -1246,19 +1246,19 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "Sin ensayo: not-verified.",
+        "Sin ensayo documentado, la hermeticidad no está verificada.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
       "accessibilitySummary": "Rutas de fuga: cristal, corona, fondo, juntas, ensayo pendiente.",
-      "longDescription": "Rutas de fuga. cristal conduce a corona conduce a fondo conduce a juntas conduce a ensayo pendiente. Sin ensayo: not-verified.",
+      "longDescription": "Rutas de fuga. cristal conduce a corona conduce a fondo conduce a juntas conduce a ensayo pendiente. Sin ensayo documentado, la hermeticidad no está verificada.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:9beb100422a34f38",
+      "contentHash": "fnv1a64:2e59b7ac927d87bc",
       "visualHash": "fnv1a64:7fcaef2f052f9f9e",
       "colorIndependent": true,
       "reducedMotionSafe": true
@@ -1337,7 +1337,7 @@
       "sourceLocators": [
         {
           "sourceId": "source.miyota.8215.drawing",
-          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "documentLocator": "Documentación oficial del MIYOTA 8215 verificada en 0.14J",
           "verificationMethod": "source-limited"
         }
       ],
@@ -1428,7 +1428,7 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
@@ -1519,19 +1519,19 @@
       "sourceLocators": [
         {
           "sourceId": "source.miyota.8215.drawing",
-          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "documentLocator": "Documentación oficial del MIYOTA 8215 verificada en 0.14J",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "Incomplete no se presenta como compatible.",
+        "Un resultado incompleto no se presenta como compatible.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
       "accessibilitySummary": "Matriz de interfaces: interfaz, datos requeridos, datos disponibles, resultado, decisión.",
-      "longDescription": "Matriz de interfaces. interfaz conduce a datos requeridos conduce a datos disponibles conduce a resultado conduce a decisión. Incomplete no se presenta como compatible.",
+      "longDescription": "Matriz de interfaces. interfaz conduce a datos requeridos conduce a datos disponibles conduce a resultado conduce a decisión. Un resultado incompleto no se presenta como compatible.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:9d0ba4e1a8129e12",
+      "contentHash": "fnv1a64:502d738c533907c8",
       "visualHash": "fnv1a64:3259af344a619b2b",
       "colorIndependent": true,
       "reducedMotionSafe": true
@@ -1560,17 +1560,17 @@
           },
           {
             "id": "node.3",
-            "label": "checkpoint",
+            "label": "punto de control",
             "emphasis": "normal"
           },
           {
             "id": "node.4",
-            "label": "stop",
+            "label": "condición de parada",
             "emphasis": "normal"
           },
           {
             "id": "node.5",
-            "label": "rollback",
+            "label": "método de reversión",
             "emphasis": "warning"
           }
         ],
@@ -1610,20 +1610,20 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "Planificación, no ejecución.",
+        "Es una planificación, no una ejecución.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
-      "accessibilitySummary": "Plan reversible: dependencia, paso, checkpoint, stop, rollback.",
-      "longDescription": "Plan reversible. dependencia conduce a paso conduce a checkpoint conduce a stop conduce a rollback. Planificación, no ejecución.",
+      "accessibilitySummary": "Plan reversible: dependencia, paso, punto de control, condición de parada, método de reversión.",
+      "longDescription": "Plan reversible. dependencia conduce a paso conduce a punto de control conduce a condición de parada conduce a método de reversión. Es una planificación, no una ejecución.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:fa14be8cf127723a",
-      "visualHash": "fnv1a64:32c1289ccf668c96",
+      "contentHash": "fnv1a64:9d78027b3d49efd2",
+      "visualHash": "fnv1a64:74cbf939b4cba0e5",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -1637,7 +1637,7 @@
       ],
       "pedagogicalQuestion": "¿Dónde se detiene el proyecto?",
       "semanticPayload": {
-        "title": "Checkpoints y stop conditions",
+        "title": "Puntos de control y condiciones de parada",
         "nodes": [
           {
             "id": "node.1",
@@ -1701,20 +1701,20 @@
       "sourceLocators": [
         {
           "sourceId": "source.private.daniels.movement-design",
-          "documentLocator": "Registro canónico de fuente privada; método conceptual sin cotas comerciales",
+          "documentLocator": "Registro canónico de una fuente privada; método conceptual sin cotas comerciales",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "No existe secuencia universal.",
+        "No existe una secuencia universal.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
-      "accessibilitySummary": "Checkpoints y stop conditions: dato, control, conflicto, detener, reabrir.",
-      "longDescription": "Checkpoints y stop conditions. dato conduce a control conduce a conflicto conduce a detener conduce a reabrir. No existe secuencia universal.",
+      "accessibilitySummary": "Puntos de control y condiciones de parada: dato, control, conflicto, detener, reabrir.",
+      "longDescription": "Puntos de control y condiciones de parada. dato conduce a control conduce a conflicto conduce a detener conduce a reabrir. No existe una secuencia universal.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:cbe9a939aa403376",
-      "visualHash": "fnv1a64:73d37c4d34cfcc85",
+      "contentHash": "fnv1a64:c3a76e2d439e5148",
+      "visualHash": "fnv1a64:9b2df700dc5a6b29",
       "colorIndependent": true,
       "reducedMotionSafe": true
     },
@@ -1747,7 +1747,7 @@
           },
           {
             "id": "node.4",
-            "label": "unknowns",
+            "label": "datos pendientes",
             "emphasis": "normal"
           },
           {
@@ -1792,20 +1792,20 @@
       "sourceLocators": [
         {
           "sourceId": "source.miyota.8215.drawing",
-          "documentLocator": "Snapshot oficial MIYOTA 8215 verificado en 0.14J",
+          "documentLocator": "Documentación oficial del MIYOTA 8215 verificada en 0.14J",
           "verificationMethod": "source-limited"
         }
       ],
       "fidelity": "conceptual",
       "limitations": [
-        "No declara reloj completado.",
+        "No declara que el reloj esté completado.",
         "Diagrama semántico sin dimensiones inventadas."
       ],
-      "accessibilitySummary": "Dossier de integración: requisitos, documentos, matriz y cadenas, unknowns, conclusión.",
-      "longDescription": "Dossier de integración. requisitos conduce a documentos conduce a matriz y cadenas conduce a unknowns conduce a conclusión. No declara reloj completado.",
+      "accessibilitySummary": "Dossier de integración: requisitos, documentos, matriz y cadenas, datos pendientes, conclusión.",
+      "longDescription": "Dossier de integración. requisitos conduce a documentos conduce a matriz y cadenas conduce a datos pendientes conduce a conclusión. No declara que el reloj esté completado.",
       "implementationStatus": "implemented",
-      "contentHash": "fnv1a64:41dd098ec71c1ecb",
-      "visualHash": "fnv1a64:2148cb808a32bb90",
+      "contentHash": "fnv1a64:d95a309ed7f6d077",
+      "visualHash": "fnv1a64:a6626a7051524709",
       "colorIndependent": true,
       "reducedMotionSafe": true
     }
@@ -1824,7 +1824,7 @@
     "¿Cómo se apilan las agujas?",
     "¿Qué altura interior deja el cristal?",
     "¿Cómo se compara rotor y fondo?",
-    "¿Dónde están las rutas de fuga y juntas?",
+    "¿Dónde están las rutas de fuga y las juntas?",
     "¿Qué estados dinámicos se comprobaron?",
     "¿Qué diferencia donante y receptor?",
     "¿Cómo se lee la matriz de compatibilidad?",
@@ -1835,9 +1835,9 @@
   "photoBriefs": [
     {
       "photoBriefId": "photo-brief.stage5.case-interior",
-      "subject": "case interior",
+      "subject": "interior de la caja",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -1862,9 +1862,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.movement-seat",
-      "subject": "movement seat",
+      "subject": "asiento del movimiento",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -1889,9 +1889,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.stem-tube-alignment",
-      "subject": "stem tube alignment",
+      "subject": "alineación entre tija y tubo",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -1916,9 +1916,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.dial-feet",
-      "subject": "dial feet",
+      "subject": "pies de esfera",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -1943,9 +1943,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.dial-seat",
-      "subject": "dial seat",
+      "subject": "asiento de la esfera",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -1970,9 +1970,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.hand-tubes",
-      "subject": "hand tubes",
+      "subject": "tubos de las agujas",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -1997,9 +1997,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.hand-stack",
-      "subject": "hand stack",
+      "subject": "apilado de las agujas",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -2024,9 +2024,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.crystal-clearance",
-      "subject": "crystal clearance",
+      "subject": "holgura bajo el cristal",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -2051,9 +2051,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.caseback-rotor",
-      "subject": "caseback rotor",
+      "subject": "relación entre fondo y rotor",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -2078,9 +2078,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.gasket-path",
-      "subject": "gasket path",
+      "subject": "recorrido de las juntas",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -2105,9 +2105,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.donor-identification",
-      "subject": "donor identification",
+      "subject": "identificación de la pieza donante",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",
@@ -2132,9 +2132,9 @@
     },
     {
       "photoBriefId": "photo-brief.stage5.completed-dry-layout",
-      "subject": "completed dry layout",
+      "subject": "disposición provisional completa",
       "scale": "macro con escala declarada",
-      "angle": "frontal y rasante; segundo ángulo para datum",
+      "angle": "frontal y rasante; segundo ángulo para la referencia geométrica",
       "lighting": "difusa y rasante documentadas",
       "background": "neutro mate",
       "requiredDetail": "las dos caras de la interfaz y su referencia",

@@ -1,0 +1,45 @@
+/**
+ * Traduce únicamente texto pedagógico visible. Los identificadores, estados
+ * técnicos y localizadores conservan sus valores canónicos en los modelos.
+ */
+export function academyStage4VisibleSpanish(value: string): string {
+  return value
+    .replace(/\b(?:assembly\s*[–—-]\s*disassembly|assembly\s+and\s+disassembly)\s+charts?\b/giu, 'esquema de montaje y desmontaje')
+    .replace(/\bparts list and exploded view\b/giu, 'lista de piezas y vista explosionada')
+    .replace(/\bparts lists?\b/giu, 'lista de piezas')
+    .replace(/\binstruction manuals?\b/giu, 'manual de instrucciones')
+    .replace(/\bdial drawings?\b/giu, 'planos de esfera')
+    .replace(/\bspecifications?\b/giu, (match) => match.toLocaleLowerCase('en-US').endsWith('s') ? 'especificaciones' : 'especificación')
+    .replace(/\bdrawings?\b/giu, (match) => match.toLocaleLowerCase('en-US').endsWith('s') ? 'planos' : 'plano')
+    .replace(/\bexploded views?\b/giu, 'vista explosionada')
+    .replace(/\bcomparar snapshots? de (?:la )?lista de piezas\b/giu, 'comparar versiones verificadas de la lista de piezas')
+    .replace(/\bentre snapshots? de (?:la )?lista de piezas\b/giu, 'entre las versiones verificadas de la lista de piezas')
+    .replace(/\bsnapshot oficial\b/giu, 'copia documental oficial verificada')
+    .replace(/\bsnapshot anterior\b/giu, 'versión documental anterior')
+    .replace(/\bsnapshot vigente\b/giu, 'versión documental vigente')
+    .replace(/\bsnapshots\b/giu, 'versiones documentales verificadas')
+    .replace(/\bsnapshot\b/giu, 'versión documental verificada')
+    .replace(/\bfixtures\b/giu, 'modelos didácticos')
+    .replace(/\bfixture\b/giu, 'modelo didáctico')
+    .replace(/\bcheckpoints\b/giu, 'puntos de control')
+    .replace(/\bcheckpoint\b/giu, 'punto de control')
+    .replace(/\bclaims\b/giu, 'afirmaciones')
+    .replace(/\bclaim\b/giu, 'afirmación')
+    .replace(/\bphysical-procedure-source-needed\b/giu, 'procedimiento físico pendiente de una fuente aplicable')
+    .replace(/\bsource-needed\b/giu, 'pendiente de una fuente aplicable')
+    .replace(/\bsource-limited\b/giu, 'limitado por las fuentes disponibles')
+    .replace(/\bsimulation-only\b/giu, 'exclusivamente simulado')
+    .replace(/\bdrift\b/giu, 'cambio entre versiones')
+    .replace(/\bhash\b/giu, 'huella digital')
+    .replace(/\blocators?\b/giu, (match) => match.toLocaleLowerCase('en-US').endsWith('s') ? 'localizadores' : 'localizador')
+    .replace(/\bmapping\b/giu, 'correspondencia')
+    .replace(/\bgeometryStatus\b/gu, 'estado de la geometría')
+    .replace(/\bmodelMappingStatus\b/gu, 'estado de correspondencia del modelo')
+    .replace(/\bStandard Automatic\b/gu, 'automática estándar (Standard Automatic)')
+    .replace(/\bstop second device\b/giu, 'dispositivo de parada del segundero (stop second device)')
+    .replace(/\bwinding information\b/giu, 'información de cuerda')
+    .replace(/\bbeat error\b/giu, 'error de batido')
+    .replace(/\bG2\s*\/\s*K2\s*\/\s*P0\b/gu, 'geometría estructural y secuencia educativa, sin simulación física')
+}
+
+export const academyStage4VisibleList = (values: readonly string[]): string[] => values.map(academyStage4VisibleSpanish)

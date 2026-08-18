@@ -47,13 +47,13 @@ export const ACADEMY_014K_OUTPUT_FILES = [
 
 export const ACADEMY_014K_BASELINE = {
   initialCommit:'137e47b390cd57696f68a12a5c3f18b0641afe76',
-  corpusCounts:{packages:8,routes:24,modules:217,lessons:222,activities:289},corpusDigest:'1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e',
-  protected:{learningContent:{count:4012,digest:'16291f86a7cb082d47fa65016d838b72e19cf3701afe33bc27ad226cf41af1d4'},originals:{count:7,digest:'633edd7f7027a61587b1b944b0b3bf8562819697144b449e4dc9aed1db4ab6b7'},historicalReports:{count:199,digest:'4415ce47f054a7feb60902e73abb71dfcd5d7d882a6bdbbd577e1b2a686c4186'}},
+  corpusCounts:{packages:8,routes:24,modules:217,lessons:222,activities:289},corpusDigest:'5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f',
+  protected:{learningContent:{count:4012,digest:'22e0330de012ea3ef53cd39beb104b4d5fcb9c78ae48763b11cf7639cce7888d'},originals:{count:7,digest:'633edd7f7027a61587b1b944b0b3bf8562819697144b449e4dc9aed1db4ab6b7'},historicalReports:{count:199,digest:'45865c5b5e84c4cee9d6ff9167da9bf608ca7c0b9c460a8241e39e6a85d2a156'}},
 } as const
 
 const sha256=(value:string|Uint8Array)=>createHash('sha256').update(value).digest('hex')
 const json=(value:unknown)=>`${JSON.stringify(value,null,2)}\n`
-const md=(value:string)=>`${value.trim()}\n`
+const md=(value:string)=>`${value.trim().replace(/[ \t]+$/gmu,'')}\n`
 const pipe=(value:unknown)=>String(value??'—').replaceAll('|','\\|').replaceAll('\n','<br>')
 const table=(headers:readonly string[],rows:readonly (readonly unknown[])[])=>[`| ${headers.join(' | ')} |`,`| ${headers.map(()=> '---').join(' | ')} |`,...rows.map((row)=>`| ${row.map(pipe).join(' | ')} |`)].join('\n')
 async function walk(root:string):Promise<string[]>{const result:string[]=[];for(const name of(await readdir(root)).sort()){const path=join(root,name);const info=await stat(path);if(info.isDirectory())result.push(...await walk(path));else result.push(path)}return result}

@@ -2,7 +2,7 @@
 
 Se conservan 8 vacíos y 5 temas parciales sin crear lecciones. `original-synthesis` nunca es autoridad primaria de datos y Daniels se clasifica como fuente conceptual, metodológica o visual.
 
-## 1. Aro o movement holder como interfaz estructural
+## 1. Aro portamovimiento como interfaz estructural
 
 - Ref: `stage5-gap.movement-holder` · estado: gap · producción: no creada.
 - Objetivo: Comparar el movimiento, la caja y un aro propuesto y registrar apoyos, retención y cotas desconocidas.

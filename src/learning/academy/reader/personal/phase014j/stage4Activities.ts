@@ -1,5 +1,6 @@
 import type { AcademyEvidenceProfile, AcademyStage4ActivityPresentation } from '../types'
 import { ACADEMY_STAGE_4_CATALOG } from './stage4Catalog'
+import { academyStage4VisibleList } from './visibleLanguage'
 
 const VIRTUAL_SEQUENCE_IDS = new Set(['activity.miyota8215.guided-disassembly', 'activity.miyota8215.free-disassembly', 'activity.miyota8215.partial-verifications'])
 const RESULT_IDS = new Set(['activity.miyota8215.locate-specification', 'activity.miyota8215.complete-diagnosis'])
@@ -10,7 +11,7 @@ function evidence(activityId: string): AcademyEvidenceProfile {
     modalities: primaryModality === 'R' ? ['K', 'V', 'R'] : ['K', 'V'], primaryModality,
     knowledgeExplanationRequired: true, virtualDemonstrationRequired: primaryModality === 'V' || VIRTUAL_SEQUENCE_IDS.has(activityId),
     physicalExecutionRequired: false, measuredOrReviewedResultRequired: primaryModality === 'R', physicalCompetenceClaim: false, reviewerRequired: false,
-    measurableAcceptanceCriteria: ['Distingue dato oficial, interpretación del modelo y desconocido.', 'Cita el snapshot o fundamento de cada decisión.', 'Declara que la evidencia digital no acredita ejecución física.'],
+    measurableAcceptanceCriteria: academyStage4VisibleList(['Distingue dato oficial, interpretación del modelo y desconocido.', 'Cita la versión documental o el fundamento de cada decisión.', 'Declara que la evidencia digital no acredita ejecución física.']),
     evidenceArtifacts: primaryModality === 'R' ? ['respuesta local estructurada', 'dossier revisable', 'límites declarados'] : ['estado del simulador', 'explicación local', 'límite físico'],
   }
 }
@@ -21,7 +22,7 @@ function instructionsFor(archetype: string): readonly string[] {
   if (archetype === 'virtual-sequence' || archetype === 'structural-dependency') return ['Declara estado inicial y objetivo.', 'Clasifica fundamento y alcance.', 'Ejecuta o planifica el cambio virtual.', 'Registra checkpoint, deshacer y límite físico.']
   if (archetype === 'symbolic-inspection') return ['Nombra el símbolo como escenario.', 'Describe solo lo observable.', 'Abre hipótesis rivales.', 'Indica la prueba física que faltaría.']
   if (archetype === 'virtual-assembly') return ['Ordena capas por dependencia.', 'Coloca una verificación interna.', 'Distingue verificación estructural, física y aceptación.', 'No prescribas lubricación, fuerza o ajuste.']
-  if (archetype === 'traceable-dossier') return ['Registra identidad, documentos y snapshots.', 'Relaciona síntoma, hipótesis, prueba y resultado.', 'Vincula claims y límites.', 'Separa transferencia y dato físico pendiente.']
+  if (archetype === 'traceable-dossier') return ['Registra identidad, documentos y versiones documentales verificadas.', 'Relaciona síntoma, hipótesis, prueba y resultado.', 'Vincula afirmaciones y límites.', 'Separa transferencia y dato físico pendiente.']
   return ['Explica la función general.', 'Identifica piezas oficiales.', 'Clasifica relaciones como oficiales, inferidas o conceptuales.', 'Registra entrada, salida y límite documental.']
 }
 
@@ -30,9 +31,9 @@ export const ACADEMY_STAGE_4_ACTIVITY_PRESENTATIONS: readonly AcademyStage4Activ
   .map((item) => ({
     activityId: item.requiredActivityId, lessonId: item.lessonId,
     visibleTitle: `Aplicar · ${item.observableOutcome.replace(/\.$/, '')}`, purpose: item.observableOutcome,
-    instructions: instructionsFor(item.editorialArchetype),
+    instructions: academyStage4VisibleList(instructionsFor(item.editorialArchetype)),
     availableHelp: ['Vuelve a la pregunta central.', 'Consulta la matriz de autoridad documental.', 'Reduce la respuesta a evidencia, interpretación y desconocido.'],
-    successCriteria: [...item.checkpointExpectedElements, 'El alcance simulation-only queda explícito cuando corresponde.'],
+    successCriteria: academyStage4VisibleList([...item.checkpointExpectedElements, 'El alcance simulation-only queda explícito cuando corresponde.']),
     feedback: 'Revisa el primer punto donde una identidad, relación o secuencia inferida se presentó como oficial.',
     limitations: ['La actividad es local y digital.', 'No produce evidencia P ni acredita servicio, inspección o diagnóstico físico.'],
     evidenceProfile: evidence(item.requiredActivityId),

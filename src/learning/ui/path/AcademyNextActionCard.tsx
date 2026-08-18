@@ -31,7 +31,7 @@ export function AcademyNextActionCard({ action }: { action: AcademyNextAction })
       <dl>
         <div><dt>Ahora</dt><dd>{actionLabels[action.type].toLocaleLowerCase('es-ES')}</dd></div>
         {action.durationMinutes !== undefined && <div><dt>Duración real</dt><dd><Clock3 size={14} /> {action.durationMinutes} min</dd></div>}
-        <div><dt>Core disponible pendiente</dt><dd>{action.remainingCoreItems} {action.remainingCoreItems === 1 ? 'elemento' : 'elementos'}</dd></div>
+        <div><dt>Contenido principal pendiente</dt><dd>{action.remainingCoreItems} {action.remainingCoreItems === 1 ? 'elemento' : 'elementos'}</dd></div>
         {action.plannedCurriculumItems !== undefined && <div><dt>Currículo planificado</dt><dd>{action.plannedCurriculumItems} {action.plannedCurriculumItems === 1 ? 'referencia' : 'referencias'}</dd></div>}
         <div><dt>Después</dt><dd>{action.after}</dd></div>
       </dl>

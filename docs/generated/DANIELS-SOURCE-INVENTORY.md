@@ -1,7 +1,7 @@
 # Inventario verificable de Horologia completa / George Daniels - Watchmaking
 
-Fuente: `reference-library/originals/Horologia_completa_OCR_ligera_100MB.pdf`  
-Páginas PDF verificadas: **425**  
+Fuente: `reference-library/originals/Horologia_completa_OCR_ligera_100MB.pdf`
+Páginas PDF verificadas: **425**
 SHA-256: `78cb0b2931e256f42e6f2843c21be86e47762c0e53f755eef04c86c798e348b2`
 
 Los rangos son índices aproximados del PDF combinado, no la paginación impresa del libro. Las páginas 1-25 contienen láminas preliminares; la 420 está vacía en la copia; los apéndices comienzan en la 421.

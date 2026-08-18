@@ -168,7 +168,7 @@ const failureLines = failures.length === 0
       `- \`${activityId}\`: ${Object.entries(checks).filter(([, passed]) => !passed).map(([name]) => name).join(', ')}`).join('\n')
 const markdown = `# Auditoría reproducible de profundidad P1
 
-Generada: ${report.generatedAt}  
+Generada: ${report.generatedAt}
 Resultado: **${report.result === 'pass' ? 'CORRECTO' : 'FALLIDO'}**
 
 ## Alcance real

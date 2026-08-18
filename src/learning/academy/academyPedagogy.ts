@@ -297,6 +297,9 @@ export function contextualTutorGuidance(
   const misconceptionId = activity.feedbackContract?.misconceptionIds[0]
   const misconception = snapshot.product.misconceptions.find(({ id }) => id === misconceptionId)
   const attempts = context.attempts ?? 0
+  const declaredSourceCount = context.sourceCount
+    ? `${context.sourceCount} ${context.sourceCount === 1 ? 'fuente declarada' : 'fuentes declaradas'}`
+    : ''
   const phase = context.hasIncorrectAnswer
     ? 'repair'
     : context.hasPendingReview
@@ -326,7 +329,7 @@ export function contextualTutorGuidance(
     'source-check': {
       status: 'Ahora justifica lo observado',
       orientation: context.sourceCount
-        ? `Hay ${context.sourceCount} fuente(s) declarada(s). Señala cuál respalda la identidad o el dato y qué parte sigue siendo educativa o estimada.`
+        ? `Hay ${declaredSourceCount}. Señala cuál respalda la identidad o el dato y qué parte sigue siendo educativa o estimada.`
         : 'No atribuyas autoridad técnica a la animación: declara qué observaste y qué sigue sin documentar.',
     },
   } as const
@@ -350,7 +353,7 @@ export function contextualTutorGuidance(
     'source-check': {
       status: 'Comprueba la autoridad antes de continuar',
       orientation: context.sourceCount
-        ? `Hay ${context.sourceCount} fuente(s) declarada(s). Indica cuál autoriza cada paso y qué depende de la referencia concreta.`
+        ? `Hay ${declaredSourceCount}. Indica cuál autoriza cada paso y qué depende de la referencia concreta.`
         : 'Detente donde falte documentación aplicable; una práctica habitual no sustituye el procedimiento de la referencia.',
     },
   } as const
@@ -374,14 +377,14 @@ export function contextualTutorGuidance(
     'source-check': {
       status: 'Ahora verifica la procedencia de la comparación',
       orientation: context.sourceCount
-        ? `Hay ${context.sourceCount} fuente(s) declarada(s). Distingue las primarias de las referencias de descubrimiento.`
+        ? `Hay ${declaredSourceCount}. Distingue las primarias de las referencias de descubrimiento.`
         : 'Sin fuente no conviertas una semejanza visual en una afirmación técnica.',
     },
   } as const
   const capstonePhaseCopy = {
     orient: {
       status: activity.manufacturingContract
-        ? 'Empieza por función, revisión, datum y riesgo'
+        ? 'Empieza por la función, la referencia geométrica y el riesgo'
         : activity.personalWatchDesignContract
           ? 'Empieza por el pliego, las interfaces y las alternativas'
           : 'Empieza por la afirmación, la muestra y el criterio de aceptación',
@@ -406,7 +409,7 @@ export function contextualTutorGuidance(
     'source-check': {
       status: 'Comprueba la autoridad y el alcance antes de concluir',
       orientation: context.sourceCount
-        ? `Hay ${context.sourceCount} fuente(s) declarada(s). Enlaza cada afirmación técnica con la fuente aplicable y conserva los desconocidos.`
+        ? `Hay ${declaredSourceCount}. Enlaza cada afirmación técnica con la fuente aplicable y conserva como pendientes los datos todavía desconocidos.`
         : 'Sin fuente o evidencia no cierres la decisión; mantén el campo desconocido y define cómo resolverlo.',
     },
   } as const

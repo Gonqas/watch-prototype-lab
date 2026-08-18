@@ -4,9 +4,9 @@ La comparación cuenta únicamente confirmaciones obligatorias de lectura; abrir
 
 | Alcance | 0.14B.1: confirmaciones por segmento | 0.14C: confirmación final | Reducción |
 |---|---:|---:|---:|
-| Corpus completo | 1897 | 222 | 1675 (88 %) |
-| Ruta principal curada | 773 | 83 | 690 (89 %) |
-| stage.2 | 195 | 17 | 178 |
+| Corpus completo | 1899 | 222 | 1677 (88 %) |
+| Ruta principal curada | 774 | 83 | 691 (89 %) |
+| stage.2 | 196 | 17 | 179 |
 | stage.4 | 150 | 14 | 136 |
 | stage.5 | 91 | 12 | 79 |
 

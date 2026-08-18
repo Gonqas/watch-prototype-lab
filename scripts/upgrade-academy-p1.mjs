@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { dirname, join } from 'node:path'
+import { polishLearnerFacing, polishStudentCopy } from './academy-editorial/student-copy.mjs'
 
 const CONTENT_ROOT = join(process.cwd(), 'learning-content')
 const PACKAGE_NAMES = [
@@ -33,83 +34,6 @@ const PACKAGE_RANGES = {
 const P1_MARKER = '## Estudio en profundidad'
 const LEGACY_P1_MARKER = '<!-- academy-p1-depth -->'
 const GENERIC_COMPLETENESS_MARKER = '## Modelo mental paso a paso'
-
-function polishStudentCopy(value) {
-  return value
-    .replace(/dominio retenido/giu, 'consolidación del aprendizaje')
-    .replace(/R2\s*\/\s*G2\s*\/\s*K2\s*\/\s*P0/giu, 'ensamblaje estructural con geometría reconstruida y secuencia educativa, sin simulación física')
-    .replace(/G1\s*\/\s*K2\s*\/\s*P0/giu, 'geometría conceptual y secuencia educativa, sin simulación física')
-    .replace(/G2\s*\/\s*K2\s*\/\s*P0/giu, 'geometría estructural reconstruida y secuencia educativa, sin simulación física')
-    .replace(/R2\s*\/\s*K2/giu, 'ensamblaje estructural con secuencia educativa')
-    .replace(/G\s*\/\s*K\s*\/\s*P/giu, 'ficha técnica de fidelidad')
-    .replace(/\bR0\b/gu, 'nivel de referencia documental')
-    .replace(/\bR1\b/gu, 'nivel de envolvente oficial')
-    .replace(/\bR2\b/gu, 'nivel de ensamblaje estructural')
-    .replace(/\bR3\b/gu, 'nivel de reconstrucción visual')
-    .replace(/\bR4\b/gu, 'nivel basado en una unidad física medida')
-    .replace(/\bG0\b/gu, 'sin geometría representada')
-    .replace(/\bG1\b/gu, 'geometría conceptual')
-    .replace(/\bG2\b/gu, 'geometría estructural reconstruida')
-    .replace(/\bG3\b/gu, 'geometría contrastada con mediciones')
-    .replace(/\bK0\b/gu, 'sin cinemática representada')
-    .replace(/\bK1\b/gu, 'direcciones de movimiento educativas')
-    .replace(/\bK2\b/gu, 'secuencia cinemática educativa')
-    .replace(/\bK3\b/gu, 'cinemática contrastada con mediciones')
-    .replace(/\bP0\b/gu, 'sin simulación física')
-    .replace(/\bP1\b/gu, 'comportamiento físico cualitativo')
-    .replace(/\bP2\b/gu, 'comportamiento físico calibrado')
-    .replace(/\bP3\b/gu, 'comportamiento físico contrastado con mediciones')
-    .replace(/\b[RGKP]\d\b/gu, 'nivel de fidelidad indicado en la ficha técnica')
-    .replace(/\bG,\s*K\s*o\s*P\b/gu, 'cada dimensión de fidelidad')
-    .replace(/\bfixtures\b/giu, 'modelos didácticos')
-    .replace(/\bfixture\b/giu, 'modelo didáctico')
-    .replace(/\bruntime\b/giu, 'entorno de práctica')
-    .replace(/\bWatchProject\b/gu, 'proyecto técnico')
-    .replace(/\bsnapshots\b/giu, 'estados iniciales guardados')
-    .replace(/\bsnapshot\b/giu, 'estado inicial guardado')
-    .replace(/\bclaims?\b/giu, 'afirmaciones')
-    .replace(/\bretained\b/giu, 'consolidado')
-    .replace(/\bledger\b/giu, 'registro técnico')
-    .replace(/\bremove-before\b/giu, 'retirar antes de')
-    .replace(/\bIDs\b/gu, 'identidades de pieza')
-    .replace(/\bID\b/gu, 'identidad de pieza')
-    .replace(/\bcheckpoints\b/giu, 'puntos de control')
-    .replace(/\bcheckpoint\b/giu, 'punto de control')
-    .replace(/\bviewport\b/giu, 'vista del modelo')
-    .replace(/\boverlays\b/giu, 'capas informativas')
-    .replace(/\boverlay\b/giu, 'capa informativa')
-    .replace(/\bconceptual[- ]causal\b/giu, 'relaciones de causa y efecto')
-    .replace(/\bhorology[- ]foundations\b/giu, 'fundamentos de relojería')
-    .replace(/\bmotion[- ]works\b/giu, 'minutería')
-    .replace(/\bpower[- ]source\b/giu, 'fuente de energía')
-    .replace(/\belectronic[- ]control\b/giu, 'control electrónico')
-    .replace(/\bquartz[- ]resonator\b/giu, 'resonador de cuarzo')
-    .replace(/\bstepper[- ]rotor\b/giu, 'rotor paso a paso')
-    .replace(/\bautomatic[- ]winding\b/giu, 'carga automática')
-    .replace(/\bsystem[- ]overview\b/giu, 'visión del sistema completo')
-    .replace(/\bfinal[- ]project\b/giu, 'proyecto final')
-    .replace(/\bkeyless\b/giu, 'cuerda y puesta en hora')
-}
-
-const LEARNER_FACING_KEYS = new Set([
-  'accessibleLabel', 'bodyMarkdown', 'causalQuestion', 'colorIndependentCues', 'content', 'correctExplanation',
-  'correction', 'definitionMarkdown', 'description', 'diagnosis', 'errorSignals', 'evidence', 'feedback', 'forbiddenClaims', 'incorrectDiagnosis',
-  'instruction', 'instructionMarkdown', 'keyboardActions', 'label', 'labels', 'markdown', 'narrative',
-  'learnerExpression', 'nextObservation', 'notePrompt', 'observableActions', 'observableResult', 'observableSignals', 'outcome',
-  'physicalBoundary', 'plainLanguage', 'prompt', 'promptMarkdown', 'promptStarters', 'purpose', 'readinessCriteria', 'reason', 'restoration',
-  'simpleDefinition', 'successCriteria', 'successCriterion', 'summary', 'technicalDefinition', 'technicalLanguage', 'term', 'textualAlternative',
-  'title', 'transferPrompt', 'userInteraction', 'reducedMotionAlternative', 'whyItMatters', 'context',
-])
-
-function polishLearnerFacing(value, learnerFacing = false) {
-  if (typeof value === 'string') return learnerFacing ? polishStudentCopy(value) : value
-  if (Array.isArray(value)) return value.map((item) => polishLearnerFacing(item, learnerFacing))
-  if (!value || typeof value !== 'object') return value
-  return Object.fromEntries(Object.entries(value).map(([key, item]) => [
-    key,
-    polishLearnerFacing(item, learnerFacing || LEARNER_FACING_KEYS.has(key)),
-  ]))
-}
 
 const text = (es) => ({ es })
 const words = (value) => value.replace(/\{\{[^}]+\}\}/g, ' ').match(/[\p{L}\p{N}]+/gu)?.length ?? 0
@@ -167,11 +91,12 @@ function hasSubstantivePretraining(markdowns) {
 }
 
 function contextualPretrainingSection(lesson, concepts) {
-  const conceptIds = [...new Set([
+  const introducedConceptIds = lesson.authoring?.conceptIds ?? []
+  const fallbackConceptIds = [
     ...(lesson.authoring?.prerequisiteConceptIds ?? []),
     ...(lesson.authoring?.recommendedPrerequisiteConceptIds ?? []),
-    ...(lesson.authoring?.conceptIds ?? []),
-  ])]
+  ]
+  const conceptIds = [...new Set(introducedConceptIds.length ? introducedConceptIds : fallbackConceptIds)]
   const entries = conceptIds.flatMap((conceptId) => {
     const concept = concepts.get(conceptId)?.value
     if (!concept) return []

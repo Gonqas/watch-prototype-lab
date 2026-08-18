@@ -95,12 +95,12 @@ Todas las lecciones visibles están representadas. Una incidencia queda como rev
 | lesson.quartz2035.assembly | 14 | 11 | 2 | no | 0 |
 | lesson.quartz2035.diagnosis | 15 | 12 | 2 | no | 0 |
 | lesson.quartz2035.final-project | 15 | 12 | 2 | no | 0 |
-| lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete | 11 | 9 | 1 | no | 0 |
+| lesson.encyclopedia.mechanical-energy-trains.muelle-real-y-barrilete | 11 | 10 | 1 | no | 0 |
 | lesson.encyclopedia.mechanical-energy-trains.cuerda-clic-y-automatico | 11 | 9 | 1 | no | 0 |
 | lesson.encyclopedia.mechanical-energy-trains.dentado-y-engranes | 11 | 9 | 1 | no | 0 |
 | lesson.encyclopedia.mechanical-energy-trains.relaciones-y-arquitectura-del-tren | 11 | 9 | 1 | no | 0 |
 | lesson.encyclopedia.mechanical-energy-trains.pivotes-rubies-y-puentes | 11 | 9 | 1 | no | 0 |
-| lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora | 11 | 10 | 1 | no | 0 |
+| lesson.encyclopedia.mechanical-energy-trains.minuteria-y-puesta-en-hora | 11 | 11 | 1 | no | 0 |
 | lesson.encyclopedia.mechanical-energy-trains.toh-movimiento-simple | 11 | 9 | 1 | no | 0 |
 | lesson.encyclopedia.mechanical-energy-trains.toh-muelle-par | 11 | 9 | 1 | no | 0 |
 | lesson.encyclopedia.mechanical-energy-trains.toh-barrilete-arquitecturas | 11 | 9 | 1 | no | 0 |

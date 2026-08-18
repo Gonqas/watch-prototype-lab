@@ -204,6 +204,89 @@
 .academy-reader-visual__unavailable { border-inline-start: 3px solid var(--academy-accent, #b88941); }
 .academy-reader-visual .educational-spatial-label small { display: none; }
 
+.academy-reader-source-figure__viewport {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-width: 0;
+  padding: clamp(.5rem, 2vw, 1.25rem);
+  background: color-mix(in srgb, var(--academy-surface, #fff) 88%, currentColor);
+}
+.academy-reader-source-figure__image {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(72dvh, 52rem);
+  object-fit: contain;
+}
+.academy-reader-source-figure__zoom {
+  position: absolute;
+  inset-inline-end: 1rem;
+  inset-block-end: 1rem;
+  min-height: 2.75rem;
+  padding: .55rem .8rem;
+  border: 1px solid color-mix(in srgb, currentColor 24%, transparent);
+  border-radius: .6rem;
+  box-shadow: 0 .25rem 1rem rgb(0 0 0 / .16);
+  background: color-mix(in srgb, var(--academy-surface, #fff) 94%, transparent);
+  color: inherit;
+  font: inherit;
+  font-weight: 700;
+  cursor: zoom-in;
+}
+.academy-reader-source-figure__dialog {
+  width: min(96vw, 90rem);
+  max-width: none;
+  max-height: 96dvh;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  border-radius: 1rem;
+  background: var(--academy-surface, #fff);
+  color: inherit;
+}
+.academy-reader-source-figure__dialog::backdrop { background: rgb(0 0 0 / .78); }
+.academy-reader-source-figure__dialog-content { display: grid; max-height: 96dvh; overflow: auto; }
+.academy-reader-source-figure__dialog-content header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .75rem 1rem;
+  border-block-end: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  background: color-mix(in srgb, var(--academy-surface, #fff) 96%, transparent);
+}
+.academy-reader-source-figure__dialog-content header button {
+  min-height: 2.75rem;
+  padding: .45rem .8rem;
+  border: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+  border-radius: .5rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+}
+.academy-reader-source-figure__dialog-content img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+}
+.academy-reader-source-figure__didactics,
+.academy-reader-source-figure__provenance dl { display: grid; gap: .55rem; margin: .35rem 0; }
+.academy-reader-source-figure__didactics > div,
+.academy-reader-source-figure__provenance dl > div { display: grid; grid-template-columns: minmax(7rem, 9rem) minmax(0, 1fr); gap: .75rem; }
+.academy-reader-source-figure__didactics dt,
+.academy-reader-source-figure__provenance dt { font-weight: 750; }
+.academy-reader-source-figure__didactics dd,
+.academy-reader-source-figure__provenance dd { min-width: 0; margin: 0; overflow-wrap: anywhere; line-height: 1.5; }
+.academy-reader-source-figure__provenance summary { cursor: pointer; font-weight: 700; }
+
 .academy-reader-diagram { display: block; width: 100%; height: auto; min-height: 15rem; background: color-mix(in srgb, var(--academy-accent, #b88941) 5%, transparent); }
 .academy-reader-diagram__link,
 .academy-reader-diagram__arrow { fill: none; stroke: currentColor; stroke-width: 4; stroke-linecap: round; }
@@ -283,6 +366,10 @@
   .mode-read .academy-reader-layout { grid-template-areas: "document"; }
   .academy-reader-narrative { position: static; }
   .academy-reader-visual canvas { min-height: 16rem; }
+  .academy-reader-source-figure__image { max-height: 68dvh; }
+  .academy-reader-source-figure__zoom { inset-inline-end: .75rem; inset-block-end: .75rem; }
+  .academy-reader-source-figure__didactics > div,
+  .academy-reader-source-figure__provenance dl > div { grid-template-columns: 1fr; gap: .15rem; }
   .academy-reader-completion { grid-template-columns: 1fr; }
   .academy-reader-completion button { grid-column: 1; width: 100%; }
   .academy-reader-completion__blocked { grid-column: 1; }

@@ -34,7 +34,7 @@ export default function AcademyReaderScene({ activity, cue, reducedMotion }: {
         }
         setPreview({ graphs: composition.mounted().map(({ sceneGraph }) => sceneGraph), state: applied.state })
       })
-      .catch(() => { if (active) setFailed('El fixture no pudo cargarse.') })
+      .catch(() => { if (active) setFailed('El modelo didáctico no pudo cargarse.') })
     return () => {
       active = false
       const composition = compositionRef.current
@@ -62,8 +62,8 @@ export default function AcademyReaderScene({ activity, cue, reducedMotion }: {
     return () => { active = false }
   }, [cue, reducedMotion])
 
-  if (!webGlAvailable) return <p className="academy-reader-visual__unavailable" role="status">Vista no disponible. WebGL no está disponible en este navegador. La explicación completa permanece en el texto.</p>
-  if (!activity.fixtureBinding) return <p className="academy-reader-visual__unavailable" role="status">Vista no disponible. La actividad exacta no declara un fixture. La explicación completa permanece en el texto.</p>
+  if (!webGlAvailable) return <p className="academy-reader-visual__unavailable" role="status">Vista no disponible. Este navegador no admite la vista 3D. La explicación completa permanece en el texto.</p>
+  if (!activity.fixtureBinding) return <p className="academy-reader-visual__unavailable" role="status">Vista no disponible. Esta actividad no tiene asociado un modelo didáctico. La explicación completa permanece en el texto.</p>
   if (failed) return <p className="academy-reader-visual__unavailable" role="status">Vista no disponible. La vista no está disponible en este estado. {failed} La explicación completa permanece en el texto.</p>
   if (!preview) return <p role="status">Preparando la vista de estudio…</p>
   return (

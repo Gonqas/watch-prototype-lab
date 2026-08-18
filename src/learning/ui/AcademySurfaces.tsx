@@ -1111,7 +1111,7 @@ function WorkshopSurface() {
   }
   return (
     <AcademyPage eyebrow="TALLER" title="Práctica por herramienta" description="Entra por el tipo de trabajo que quieres realizar. Cada práctica conserva su lección, sus fuentes y tu resultado.">
-      <section className="academy-section-heading"><div><span className="academy-kicker">PROYECTO PERSONAL · ETAPA 5</span><h2>Laboratorio de integración</h2></div><a className="learning-primary-action" href="#/learning/workshop?integration=1">Abrir proyecto local</a><span>Secundario, sin red, sin mastery y separado del progreso curricular</span></section>
+      <section className="academy-section-heading"><div><span className="academy-kicker">PROYECTO PERSONAL · ETAPA 5</span><h2>Laboratorio de integración</h2></div><a className="learning-primary-action" href="#/learning/workshop?integration=1">Abrir proyecto local</a><span>Secundario, sin red, no acredita dominio y permanece separado del progreso curricular</span></section>
       <div className="academy-tool-chooser" role="group" aria-label="Filtrar herramientas">
         <button type="button" aria-pressed={tool === 'service'} className={tool === 'service' ? 'is-active' : undefined} onClick={() => setTool('service')}><FileCheck2 size={19} /><span><strong>Método de servicio</strong><small>{counts.service} prácticas</small></span></button>
         <button type="button" aria-pressed={tool === 'manufacturing'} className={tool === 'manufacturing' ? 'is-active' : undefined} onClick={() => setTool('manufacturing')}><Factory size={19} /><span><strong>Fabricación y acabados</strong><small>{counts.manufacturing} prácticas</small></span></button>
@@ -2009,7 +2009,7 @@ function ResultsSurface() {
             <div><dt>Criterios pendientes</dt><dd>{result.assessment.explanation.unsatisfiedRuleIds.length}</dd></div>
             <div><dt>Pistas usadas</dt><dd>{hintIds.length}</dd></div>
             <div><dt>Adaptaciones</dt><dd>{accommodations.join(', ') || 'Ninguna'}</dd></div>
-            <div><dt>Errores relevantes</dt><dd>{result.session.reason ?? 'Ninguno registrado'}</dd></div>
+            <div><dt>Errores relevantes</dt><dd>{result.session.reason ? friendlyLearningTerm(result.session.reason) : 'Ninguno registrado'}</dd></div>
             {activity && <div><dt>Alcance del modelo</dt><dd>{friendlyFidelity(activity.fidelity).summary}</dd></div>}
           </dl>
           {activity?.fidelity.limitations.length ? <details><summary>Limitaciones del modelo</summary><ul>{activity.fidelity.limitations.map((item) => <li key={item}>{item}</li>)}</ul></details> : null}

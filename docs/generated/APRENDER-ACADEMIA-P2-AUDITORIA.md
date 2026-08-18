@@ -1,6 +1,6 @@
 # Auditoría reproducible de personalización P2
 
-Generada: 2026-08-13T17:59:47.494Z  
+Generada: 2026-08-18T14:40:28.876Z
 Resultado: **CORRECTO**
 
 ## Alcance

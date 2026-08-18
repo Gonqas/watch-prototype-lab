@@ -30,14 +30,14 @@ export const SEMANTIC_OUTPUT_FILES = [
 type SemanticOutputFile = (typeof SEMANTIC_OUTPUT_FILES)[number]
 
 export const BASELINE_DIGESTS: Record<string, string> = {
-  'ACADEMY-SOURCE-REGISTRY.md': '4a38d5de98536b8c50ef7f6d7bce455d25c66f07f9dff56efb6ae12f7cc1b20d',
-  'ACADEMY-SOURCE-REGISTRY.json': '33975375d3a783a146cd947e2dde2dc9946aa2a81faaeee3af2b8e1287be6cb4',
-  'CHICAGO-SOURCE-INVENTORY.md': '703dc545c2f08594d041892b28ca5f86a30e54c07900be01058dc9c4ac2b34a0',
-  'DANIELS-SOURCE-INVENTORY.md': '8aa3860dd44be558f59ee08bdce5554ad7cb96ffb1729e04af9fdb60ac52717a',
-  'ACADEMY-SOURCE-LESSON-MATRIX.csv': '4c8657f19c3bd10d8d0050362dd3aa3edd94fcb1070cf66e092ea699506883a8',
-  'ACADEMY-SOURCE-LESSON-MATRIX.json': '47fc7b16404dafc360930cccfd34f59df242a0e68cb762cf6c8d5bdfdbfa6914',
+  'ACADEMY-SOURCE-REGISTRY.md': '88ca049d8aaa51ac9e20b09785c3319b083094bf04f74f187b9af41680731c8a',
+  'ACADEMY-SOURCE-REGISTRY.json': '2405c7e218230a815d97ec2aa18f57d85b2ba24d7aedc770a344843ec4a3e95c',
+  'CHICAGO-SOURCE-INVENTORY.md': 'e59b0cb2f91cac9b4933d1399774265a63d775ad02ccb7b459812247f284d0e8',
+  'DANIELS-SOURCE-INVENTORY.md': 'aa2ca9761cbf4ade1cf3ef9a14114c1e2838975477457ec451a6f3d6f5c4c409',
+  'ACADEMY-SOURCE-LESSON-MATRIX.csv': '5ee099e0d0b3cbeccbf57a2e6ddd286099d04739bce772966a66d8e011c4ce11',
+  'ACADEMY-SOURCE-LESSON-MATRIX.json': '6eee452e8990e06ebebc70364c22d06581394d9b1625ca0b8afd0451847e34a2',
   'ACADEMY-ACTIVITY-EVIDENCE-MATRIX.csv': '229c57ba3481aa805e624ce60174e459c2f3cb757afde1205b9044f2877d5ad6',
-  'ACADEMY-CONTENT-AUDIT-0.14A.md': 'd981eaf219667d8273a95b4c78f931bc794a0c48eed129039b75bcdf54483c70',
+  'ACADEMY-CONTENT-AUDIT-0.14A.md': '9ceb7bb51938033f056c070a62775b33c26e5943d4a81d4e223ed2278e9f51bf',
   'ACADEMY-CURRICULUM-MACRO-STAGES.md': '0c21643b1929bc4adb42d3fff485bf9bfaff7ffdb9e20b01a05389283ccb6b24',
   'ACADEMY-EDITORIAL-PRIORITIES.md': '83fdb8a666ffc50a146752601bf976546329f973951da2bcefadb688439262d5',
 }
@@ -49,7 +49,7 @@ interface BaselineMatrix {
 }
 
 const json = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`
-const md = (value: string) => `${value.trim()}\n`
+const md = (value: string) => `${value.trim().replace(/[ \t]+$/gmu, '')}\n`
 const code = (value: string) => `\`${value.replaceAll('`', '\\`')}\``
 const pipe = (value: unknown) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ')
 const percent = (value: number) => `${(value * 100).toFixed(1)}%`

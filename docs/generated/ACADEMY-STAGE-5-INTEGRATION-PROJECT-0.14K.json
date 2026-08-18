@@ -1279,8 +1279,8 @@
           }
         ],
         "operations": [
-          "sumar stack",
-          "restar altura interior"
+          "sumar el apilado",
+          "restar la altura interior"
         ],
         "unit": "mm",
         "status": "not-evaluated",
@@ -1473,20 +1473,20 @@
       {
         "stepId": "assembly.01",
         "order": 1,
-        "title": "Congelar requisitos y referencias",
+        "title": "Fijar requisitos y referencias",
         "dependencyStepIds": [],
         "requiredInterfaceIds": [
           "movement-case"
         ],
-        "checkpoint": "Todos los componentes tienen identidad o unknown explícito.",
-        "stopCondition": "Detener si cambia el movimiento elegido.",
+        "checkpoint": "Todos los componentes tienen una identidad o un dato pendiente explícito.",
+        "stopCondition": "Detenerse si cambia el movimiento elegido.",
         "rollback": "Volver al pliego",
         "executionStatus": "planned-only"
       },
       {
         "stepId": "assembly.02",
         "order": 2,
-        "title": "Revisar documentación aplicable",
+        "title": "Revisar la documentación aplicable",
         "dependencyStepIds": [
           "assembly.01"
         ],
@@ -1494,15 +1494,15 @@
           "stem-movement",
           "dial-feet"
         ],
-        "checkpoint": "Cada dimensión crítica conserva documento, datum y aplicabilidad.",
-        "stopCondition": "Detener ante documentos de variante dudosa.",
-        "rollback": "Marcar source-needed",
+        "checkpoint": "Cada dimensión crítica conserva su documento, referencia geométrica y aplicabilidad.",
+        "stopCondition": "Detenerse ante documentos de una variante dudosa.",
+        "rollback": "Marcar como pendiente de fuente",
         "executionStatus": "planned-only"
       },
       {
         "stepId": "assembly.03",
         "order": 3,
-        "title": "Cerrar encaje radial",
+        "title": "Cerrar el encaje radial",
         "dependencyStepIds": [
           "assembly.02"
         ],
@@ -1510,9 +1510,9 @@
           "movement-holder",
           "holder-case"
         ],
-        "checkpoint": "Cadena radial calculada o abierta con unknowns.",
-        "stopCondition": "Detener ante margen negativo o datum ausente.",
-        "rollback": "Reabrir selección de caja/aro",
+        "checkpoint": "Cadena radial calculada o abierta con datos pendientes.",
+        "stopCondition": "Detenerse ante un margen negativo o una referencia geométrica ausente.",
+        "rollback": "Reabrir la selección de caja o aro",
         "executionStatus": "planned-only"
       },
       {
@@ -1553,7 +1553,7 @@
       {
         "stepId": "assembly.06",
         "order": 6,
-        "title": "Cerrar stack de indicación",
+        "title": "Cerrar el apilado de la indicación",
         "dependencyStepIds": [
           "assembly.05"
         ],
@@ -1563,9 +1563,9 @@
           "hands-dial",
           "hands-hands"
         ],
-        "checkpoint": "Cadena axial conserva márgenes y unknowns.",
-        "stopCondition": "Detener si falta un datum de altura.",
-        "rollback": "Revisar documentación/medición",
+        "checkpoint": "La cadena axial conserva los márgenes y los datos pendientes.",
+        "stopCondition": "Detenerse si falta una referencia geométrica de altura.",
+        "rollback": "Revisar la documentación o la medición",
         "executionStatus": "planned-only"
       },
       {
@@ -1581,9 +1581,9 @@
           "crystal-bezel",
           "gasket-housing"
         ],
-        "checkpoint": "Rutas de fuga e interferencias están registradas.",
-        "stopCondition": "Detener si se infiere hermeticidad sin ensayo.",
-        "rollback": "Mantener not-verified",
+        "checkpoint": "Las rutas de fuga y las interferencias están registradas.",
+        "stopCondition": "Detenerse si se infiere hermeticidad sin ensayo.",
+        "rollback": "Mantener el estado «no verificado»",
         "executionStatus": "planned-only"
       },
       {
@@ -1604,7 +1604,7 @@
       {
         "stepId": "assembly.09",
         "order": 9,
-        "title": "Preparar dry-layout físico futuro",
+        "title": "Preparar una disposición física provisional futura",
         "dependencyStepIds": [
           "assembly.03",
           "assembly.04",
@@ -1617,9 +1617,9 @@
           "hands-crystal",
           "rotor-caseback"
         ],
-        "checkpoint": "Plan y stop conditions revisados; no se ejecuta en 0.14K.",
-        "stopCondition": "Detener ante conflicto documental.",
-        "rollback": "Volver al interfaz en conflicto",
+        "checkpoint": "Plan y condiciones de parada revisados; no se ejecuta en 0.14K.",
+        "stopCondition": "Detenerse ante un conflicto documental.",
+        "rollback": "Volver a la interfaz en conflicto",
         "executionStatus": "planned-only"
       },
       {
@@ -1640,10 +1640,10 @@
       }
     ],
     "verificationPlan": [
-      "Revisar documentación aplicable.",
-      "Cerrar interfaces críticas en papel.",
-      "Preparar dry-layout físico futuro con stop conditions.",
-      "Documentar ensayo real solo cuando exista."
+      "Revisar la documentación aplicable.",
+      "Cerrar las interfaces críticas en papel.",
+      "Preparar una disposición física provisional futura con condiciones de parada.",
+      "Documentar un ensayo real solo cuando exista."
     ],
     "claims": [],
     "unknowns": [
@@ -1663,9 +1663,9 @@
       "Movimiento seleccionado": "present",
       "Inventario de componentes": "present",
       "Documentos": "pending",
-      "Claims": "pending",
+      "Afirmaciones": "pending",
       "Dimensiones": "pending",
-      "Datums": "pending",
+      "Referencias geométricas": "pending",
       "Mediciones": "pending",
       "Matriz de compatibilidad": "present",
       "Cadena radial": "present",
@@ -1677,13 +1677,13 @@
       "Plan de montaje": "present",
       "Plan de verificación": "present",
       "Riesgos": "present",
-      "Unknowns": "present",
+      "Datos pendientes": "present",
       "Conflictos": "present",
       "Decisiones": "present",
       "Pruebas físicas pendientes": "present",
       "Conclusión": "present"
     },
-    "conclusion": "Proyecto source-needed; los unknowns y conflictos limitan la conclusión.",
+    "conclusion": "Los datos pendientes y los conflictos limitan la conclusión del proyecto.",
     "physicalWatchCompleted": false
   }
 }

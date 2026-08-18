@@ -1,8 +1,8 @@
 # Registro canónico de fuentes de la Academia
 
-Versión del esquema: `wplab-academy-source-registry-v1`  
-Fase: **0.14A**  
-Huella del corpus: `1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e`  
+Versión del esquema: `wplab-academy-source-registry-v1`
+Fase: **0.14A**
+Huella del corpus: `5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f`
 Registros: **189**
 
 Este registro conserva metadatos, autoridad, alcance, riesgos, localizadores y política de reutilización. No incorpora páginas, escaneos, imágenes ni fragmentos extensos de los originales.
@@ -43,7 +43,7 @@ Los originales permanecen bajo `reference-library/originals/` y Git LFS. Cualqui
 | `source.eta.2824-2.product` | ETA 2824-2 product page | A-manufacturer-official | verified-primary | document | 6 | no | https://portal.eta.ch/en/mecaline/2824-2-2824-2-5.html |
 | `source.eta.6497-2.communication` | ETA 6497-2 · comunicación técnica | A-manufacturer-official | verified-primary | document | 13 | no | https://portal.eta.ch/en/technicaldocuments/index/pdf/id/1532/ |
 | `source.eta.6497-2.product` | ETA 6497-2 product page | A-manufacturer-official | verified-primary | document | 2 | no | https://portal.eta.ch/fr/6497-2-6497-2-3.html |
-| `source.eta.7750.communication` | ETA 7750 Technical Communication | A-manufacturer-official | verified-primary | document | 5 | no | https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2180/ |
+| `source.eta.7750.communication` | ETA 7750 Technical Communication | A-manufacturer-official | verified-primary | document | 5 | no | https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2080/ |
 | `source.eta.7750.product` | ETA 7750 product page | A-manufacturer-official | verified-primary | document | 5 | no | https://portal.eta.ch/en/7750-7750-5.html |
 | `source.external.17jewels` | 17jewels movement archive | H-reference-database | unknown | document | 5 | sí | https://17jewels.info/ |
 | `source.external.animagraffs-mechanical-watch` | How a Mechanical Watch Works | G-watchmaker-or-visual-resource | unknown | document | 3 | sí | https://animagraffs.com/mechanical-watch/ |
@@ -97,25 +97,25 @@ Los originales permanecen bajo `reference-library/originals/` y Git LFS. Cualqui
 | `source.metrology.bipm.vim` | JCGM 200:2012 · Vocabulario Internacional de Metrología | other | unknown | document | 14 | sí | https://www.bipm.org/en/doi/10.59161/jcgm200-2012 |
 | `source.metrology.nist.handbook` | NIST/SEMATECH e-Handbook of Statistical Methods · Measurement Process Characterization | other | unknown | document | 14 | sí | https://www.itl.nist.gov/div898/handbook/mpc/mpc.htm |
 | `source.metrology.original-course` | Síntesis original del Sistema 5A | project-original | inferred | missing | 14 | no | unresolved:source.metrology.original-course |
-| `source.miyota.2035.drawing` | MIYOTA 2035 · drawing | A-manufacturer-official | verified-primary | document | 7 | no | https://miyotamovement.com/uploads/product/product_4tdsbpNVQi1WcE5lUw.pdf |
-| `source.miyota.2035.instruction-manual` | MIYOTA 2035 · instruction manual | A-manufacturer-official | verified-primary | document | 7 | no | https://miyotamovement.com/uploads/product/product_cKAJDxu3CLoa18GHXO.pdf |
+| `source.miyota.2035.drawing` | MIYOTA 2035 · plano | A-manufacturer-official | verified-primary | document | 7 | no | https://miyotamovement.com/uploads/product/product_4tdsbpNVQi1WcE5lUw.pdf |
+| `source.miyota.2035.instruction-manual` | MIYOTA 2035 · manual de instrucciones | A-manufacturer-official | verified-primary | document | 7 | no | https://miyotamovement.com/uploads/product/product_cKAJDxu3CLoa18GHXO.pdf |
 | `source.miyota.2035.official` | MIYOTA 2035 official documentation | A-manufacturer-official | verified-primary | document | 0 | no | https://miyotamovement.com/product/2035/ |
-| `source.miyota.2035.parts-list-exploded-view` | MIYOTA 2035 · parts list and exploded view | A-manufacturer-official | verified-primary | document | 9 | no | https://miyotamovement.com/uploads/product/product_j6P3s1O5naNRxHZWMK.pdf |
+| `source.miyota.2035.parts-list-exploded-view` | MIYOTA 2035 · lista de piezas y vista explosionada | A-manufacturer-official | verified-primary | document | 9 | no | https://miyotamovement.com/uploads/product/product_j6P3s1O5naNRxHZWMK.pdf |
 | `source.miyota.2035.product-page` | MIYOTA 2035 · página oficial | A-manufacturer-official | verified-primary | document | 8 | no | https://miyotamovement.com/product/2035/ |
-| `source.miyota.2035.specification` | MIYOTA 2035 · specification | A-manufacturer-official | verified-primary | document | 7 | no | https://miyotamovement.com/uploads/product/product_pgSIG6yWb0akqcUhDf.pdf |
-| `source.miyota.8215.drawing` | MIYOTA 8215 · drawing | A-manufacturer-official | verified-primary | document | 15 | no | https://miyotamovement.com/uploads/product/product_LGuS8EY5DX03RiBaJH.pdf |
-| `source.miyota.8215.instruction-manual` | MIYOTA 8215 · instruction manual | A-manufacturer-official | verified-primary | document | 15 | no | https://miyotamovement.com/uploads/product/product_mRAnUkS0wHFurpOK3T.pdf |
+| `source.miyota.2035.specification` | MIYOTA 2035 · especificación | A-manufacturer-official | verified-primary | document | 7 | no | https://miyotamovement.com/uploads/product/product_pgSIG6yWb0akqcUhDf.pdf |
+| `source.miyota.8215.drawing` | MIYOTA 8215 · plano | A-manufacturer-official | verified-primary | document | 15 | no | https://miyotamovement.com/uploads/product/product_LGuS8EY5DX03RiBaJH.pdf |
+| `source.miyota.8215.instruction-manual` | MIYOTA 8215 · manual de instrucciones | A-manufacturer-official | verified-primary | document | 15 | no | https://miyotamovement.com/uploads/product/product_mRAnUkS0wHFurpOK3T.pdf |
 | `source.miyota.8215.official` | MIYOTA 8215 · documentación oficial | A-manufacturer-official | verified-primary | document | 11 | no | https://miyotamovement.com/product/8215/ |
-| `source.miyota.8215.parts-list-exploded-view` | MIYOTA 8215 · parts list and exploded view | A-manufacturer-official | verified-primary | document | 16 | no | https://miyotamovement.com/uploads/product/product_x2MOZCosd7iH59wu0K.pdf |
+| `source.miyota.8215.parts-list-exploded-view` | MIYOTA 8215 · lista de piezas PDF y vistas explosionadas web | A-manufacturer-official | verified-primary | document | 16 | no | https://miyotamovement.com/product/8215/ |
 | `source.miyota.8215.product-page` | MIYOTA 8215 · página oficial | A-manufacturer-official | verified-primary | document | 16 | no | https://miyotamovement.com/product/8215/ |
-| `source.miyota.8215.specification` | MIYOTA 8215 · specification | A-manufacturer-official | verified-primary | document | 15 | no | https://miyotamovement.com/uploads/product/product_8jT5DEdzRXAsaSN2Bu.pdf |
+| `source.miyota.8215.specification` | MIYOTA 8215 · especificación | A-manufacturer-official | verified-primary | document | 15 | no | https://miyotamovement.com/uploads/product/product_8jT5DEdzRXAsaSN2Bu.pdf |
 | `source.niosh.machine-safety` | NIOSH · Machine Safety | other | verified-secondary | document | 1 | sí | https://www.cdc.gov/niosh/machine-safety/about/index.html |
 | `source.niosh.metalworking-fluids` | NIOSH · Metalworking Fluids | other | verified-secondary | document | 0 | sí | https://www.cdc.gov/niosh/docs/98-116/default.html |
 | `source.nist.human-centered-design` | NIST · Human Factors and Human-Centered Design | other | verified-secondary | document | 0 | sí | https://www.nist.gov/itl/iad/human-centered-technologies/human-factors-human-centered-design |
 | `source.official.bipm.vim` | BIPM · International Vocabulary of Metrology | other | verified-secondary | document | 4 | sí | https://www.bipm.org/en/committees/jc/jcgm/publications |
 | `source.official.eta.2824` | ETA 2824-2 · ficha oficial | A-manufacturer-official | verified-primary | document | 4 | no | https://portal.eta.ch/en/mecaline/2824-2-2824-2-5.html |
 | `source.official.eta.6497` | ETA 6497-2 · Technical Communication | A-manufacturer-official | verified-primary | document | 1 | no | https://portal.eta.ch/en/technicaldocuments/index/pdf/id/1532/ |
-| `source.official.eta.7750` | ETA 7750 · Technical Communication | A-manufacturer-official | verified-primary | document | 4 | no | https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2180/ |
+| `source.official.eta.7750` | ETA 7750 · Technical Communication | A-manufacturer-official | verified-primary | document | 4 | no | https://portal.eta.ch/en/technicaldocuments/index/pdf/id/2080/ |
 | `source.official.miyota.2035` | MIYOTA 2035 · documentación oficial | A-manufacturer-official | verified-primary | document | 11 | no | https://miyotamovement.com/product/2035/ |
 | `source.official.miyota.8215` | MIYOTA 8215 · documentación oficial | A-manufacturer-official | verified-primary | document | 13 | no | https://miyotamovement.com/product/8215/ |
 | `source.official.nist.uncertainty` | NIST · Uncertainty of Measurement | other | verified-secondary | document | 2 | sí | https://www.nist.gov/pml/nist-technical-note-1297 |

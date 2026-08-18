@@ -103,7 +103,7 @@ function AcademyContextPanel({
           <a href={`#/learning/route/${encodeURIComponent(route.id)}`} onClick={drawer ? onClose : undefined}>Ver estructura</a>
         </section>
       )}
-      {snapshot.recommendations.length > 0 && <section className="academy-context-suggestions"><span className="academy-kicker">SUGERENCIAS DE BIBLIOTECA</span><p>Son consultas opcionales y nunca sustituyen la siguiente acción core.</p><details><summary>Ver sugerencias</summary>{snapshot.recommendations.slice(0, 3).map((recommendation) => <a href={recommendation.href} key={`${recommendation.href}:${recommendation.title}`} onClick={drawer ? onClose : undefined}>{recommendation.title}</a>)}</details></section>}
+      {snapshot.recommendations.length > 0 && <section className="academy-context-suggestions"><span className="academy-kicker">SUGERENCIAS DE BIBLIOTECA</span><p>Son consultas opcionales y nunca sustituyen la siguiente acción principal.</p><details><summary>Ver sugerencias</summary>{snapshot.recommendations.slice(0, 3).map((recommendation) => <a href={recommendation.href} key={`${recommendation.href}:${recommendation.title}`} onClick={drawer ? onClose : undefined}>{recommendation.title}</a>)}</details></section>}
       <section>
         <span className="academy-kicker">DISPONIBILIDAD</span>
         <h2>Tu Academia está en este equipo</h2>
@@ -388,7 +388,7 @@ export function AcademyShell({ onExit }: { onExit: () => void }) {
           <aside className="academy-recovery-notice" role="status" data-qa-fixture={conflictFixture ? 'profile-conflict-recovery' : undefined}>
             <TriangleAlert size={17} />
             <div>
-              <strong>{conflictFixture ? 'Fixture QA · conflicto de guardado recuperable' : 'La copia durable necesita atención.'}</strong>
+              <strong>{conflictFixture ? 'Escenario de prueba · conflicto de guardado recuperable' : 'La copia durable necesita atención.'}</strong>
               <span>{conflictFixture ? 'Esta vista simula el aviso; no representa una pérdida real ni contiene datos personales.' : persistenceWarning}</span>
             </div>
           </aside>

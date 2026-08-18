@@ -119,6 +119,66 @@ export interface AcademyVisualLabelDefinition {
   description?: string
 }
 
+/** Procedencia exacta de una figura recortada o reproducida para estudio. */
+export interface AcademySourceFigureSource {
+  sourceId: string
+  title: string
+  locator: string
+  page?: number | string
+  figure?: string
+}
+
+/** Coordenadas del recorte respecto de la página o imagen fuente. */
+export type AcademySourceFigureCrop =
+  | {
+      unit: 'normalized'
+      x: number
+      y: number
+      width: number
+      height: number
+    }
+  | {
+      unit: 'pixels'
+      x: number
+      y: number
+      width: number
+      height: number
+      sourceWidth: number
+      sourceHeight: number
+    }
+
+export interface AcademySourceFigureRights {
+  status: 'public-domain' | 'licensed' | 'permission-granted' | 'personal-study-only' | 'rights-review-required'
+  distribution: 'allowed' | 'restricted' | 'review-required'
+  attribution: string
+  license?: string
+  notes?: string[]
+}
+
+/**
+ * Contrato de una imagen fuente servida por la propia aplicación.
+ * `width` y `height` son las dimensiones intrínsecas del asset final; `crop`
+ * conserva la trazabilidad hacia el original, no aplica un recorte en runtime.
+ */
+export interface AcademySourceFigureAsset {
+  assetId: string
+  src: string
+  width: number
+  height: number
+  alt: string
+  caption: string
+  source: AcademySourceFigureSource
+  crop: AcademySourceFigureCrop
+  /** SHA-256 hexadecimal, con prefijo `sha256:` opcional. */
+  contentHash: string
+  /** SHA-256 del binario fuente original, antes de renderizar y recortar. */
+  sourceSha256: string
+  rights: AcademySourceFigureRights
+  whatToLookFor: string
+  evidence: string
+  limitation: string
+}
+
 export interface AcademySectionVisualCuration {
   curationId: string
   lessonId: string
@@ -133,6 +193,7 @@ export interface AcademySectionVisualCuration {
   visualKind: AcademyVisualCueKind
   diagramSchemaId?: string
   diagramData?: AcademyDiagramData
+  imageAsset?: AcademySourceFigureAsset
   fixtureBinding?: NonNullable<LearningActivityDescriptor['fixtureBinding']>
   activityId?: string
   visualStateId?: string
@@ -190,6 +251,7 @@ export interface AcademyVisualCue {
   visualDesignId?: string
   diagramSchemaId?: string
   diagramData?: AcademyDiagramData
+  imageAsset?: AcademySourceFigureAsset
   diagramPayloadHash?: string
   compositionId?: string
   visualStateId?: string
@@ -218,7 +280,7 @@ export interface AcademyVisualCue {
   misconceptionAddressed?: string
   readingModePolicy?: AcademyReadingModePolicy
   implementationStatus: 'implemented' | 'not-required' | 'gap-recorded' | 'unavailable'
-  provenance: 'existing-fixture' | 'original-data-driven-svg' | 'editorial-decision'
+  provenance: 'existing-fixture' | 'original-data-driven-svg' | 'source-figure-asset' | 'editorial-decision'
   sourceRole: 'supporting' | 'visual-inspiration' | 'none'
   curationStatus: 'implemented' | 'available-pending' | 'unnecessary' | 'gap'
 }
@@ -372,6 +434,8 @@ export interface AcademyReaderValidationIssue {
     | 'missing-3d-activity'
     | 'missing-3d-state'
     | 'generic-diagram-misclassified'
+    | 'missing-image-asset'
+    | 'invalid-image-asset'
   lessonId: string
   sectionId?: string
   message: string

@@ -9,7 +9,7 @@ export const ACADEMY_STAGE_5_TRANSITIONS = [
   {from:'chapter.4.5',to:'chapter.5.1',condition:'método de etapa 4 completado',physicalRequired:false},
   {from:'chapter.5.1',to:'chapter.5.2',condition:'pliego y elección documentada'},
   {from:'chapter.5.2',to:'chapter.5.3',condition:'interfaces estructurales registradas'},
-  {from:'chapter.5.3',to:'chapter.5.4',condition:'stack axial abierto o calculado honestamente'},
+  {from:'chapter.5.3',to:'chapter.5.4',condition:'apilado axial abierto o calculado con datos trazables'},
   {from:'chapter.5.4',to:'chapter.5.5',condition:'cierres e interferencias registrados'},
   {from:'chapter.5.5',to:'chapter.6.1',condition:'dossier metodológico entregado',physicalWatchCompleted:false},
 ] as const

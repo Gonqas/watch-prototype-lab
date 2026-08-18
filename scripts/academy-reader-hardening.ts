@@ -40,19 +40,19 @@ type OutputFile = (typeof ACADEMY_READER_HARDENING_OUTPUT_FILES)[number]
 
 export const ACADEMY_014C_BASELINE_SHA256: Readonly<Record<string, string>> = {
   'ACADEMY-B1-RETOUCHES-0.14C.md': '882ebd358deebb66d4edc129ee77f6fe1f8bad6b738854867f33377a5e23e71e',
-  'ACADEMY-CONTINUOUS-READER-0.14C.json': 'a1b90cfcc9c90b6784b5163cd6a540c9fb22047fedd86d33b501858428dc2606',
-  'ACADEMY-CONTINUOUS-READER-0.14C.md': '3f3c0efeeec1b362efb8834e5e6c8819b8611d1204c3f5f5d68ea2cc3c89bb3a',
-  'ACADEMY-PILOT-CURATION-0.14C.json': '867fc4aebdd02bcf3d7ebadfb86eeaa758a4bd4b7575d87a32109169324a5078',
-  'ACADEMY-PILOT-CURATION-0.14C.md': 'fbd6c0d7b7ed814ec1c57c85d5eaa3b0f46b6cd9240bd8a90851d7180a87052d',
-  'ACADEMY-READER-COMPATIBILITY-0.14C.md': '1b72bd6632bf6016a557eeae2442c817536c2224a6c35bdd106978701fc6f0d3',
-  'ACADEMY-READER-COVERAGE-0.14C.md': '12e494ca5bb76ff5e743ae3358cb2388b81217740e0b1e01017c96135c47fe0d',
-  'ACADEMY-READER-FATIGUE-0.14C.md': 'c2e5d03df7a0c39286b9e4d33829f0dfacd64d3b163a9160db61f3df76d27b97',
+  'ACADEMY-CONTINUOUS-READER-0.14C.json': '7d81b74e3bf936abb7ebbf8893b1c891b0faabdb48d9a0a6611bdf90d63a4174',
+  'ACADEMY-CONTINUOUS-READER-0.14C.md': '91934a600e5ec74e5619389167a24bd3e56793151447ded91bd5ac138d513067',
+  'ACADEMY-PILOT-CURATION-0.14C.json': 'dc0948c5f689864c0ee19c80f79e84e8f3c47caaf1ba0df40365850cc41dba39',
+  'ACADEMY-PILOT-CURATION-0.14C.md': 'a7f2d7ca26e14726830553a02930d35a22f77294868d841dc4a6fb9476ea7f89',
+  'ACADEMY-READER-COMPATIBILITY-0.14C.md': 'abb6abdaf3fc2ab9061edef0c436baac62fd9de32c181d09ecfd453369ab1df8',
+  'ACADEMY-READER-COVERAGE-0.14C.md': '9e9a9944b8268819260e5aaeedb14b56cffba1f08efb4cba3a946d3014120f02',
+  'ACADEMY-READER-FATIGUE-0.14C.md': '9d73659d8ee3c2f9d9b7c7a804ee4643124970c649b54c1a5d456554e14e2cb5',
   'ACADEMY-READER-QA-0.14C.md': 'eefca3b9600185e1d71134206168177e5fbf104f33a98a04c0af27a8d6dda5e3',
   'ACADEMY-VISUAL-NARRATIVE-PILOT-0.14C.json': '5b1dcc2a721fe597fcd9ec3d5a3d0659c73687234a03900113eb978576114cfb',
   'ACADEMY-VISUAL-NARRATIVE-PILOT-0.14C.md': '4f859aaca0a0172d5f57aaa6b5085f07538f0c49d4d0b51ca3a6e4cec0157cbb',
 }
 
-const md = (value: string) => `${value.trim()}\n`
+const md = (value: string) => `${value.trim().replace(/[ \t]+$/gmu, '')}\n`
 const json = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`
 const pipe = (value: unknown) => String(value ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ')
 const sha256 = (value: string | Buffer) => createHash('sha256').update(value).digest('hex')

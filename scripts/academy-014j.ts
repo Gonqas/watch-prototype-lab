@@ -43,13 +43,13 @@ export const ACADEMY_014J_OUTPUT_FILES = [
 
 export const ACADEMY_014J_BASELINE = {
   initialCommit: '200b4fc8101c8f1da45a62bcf39204d5223a21bb',
-  corpusCounts: { packages: 8, routes: 24, modules: 217, lessons: 222, activities: 289 }, corpusDigest: '1d209ac9608ca8040222e741401778affac03770b4a51b28ff6e0e2fc44cfd1e',
-  protected: { learningContent: { count: 4012, digest: '16291f86a7cb082d47fa65016d838b72e19cf3701afe33bc27ad226cf41af1d4' }, originals: { count: 7, digest: '633edd7f7027a61587b1b944b0b3bf8562819697144b449e4dc9aed1db4ab6b7' }, historicalReports: { count: 166, digest: 'db499204c626f6d0ede6822b618fa876b312b14ddaf02fa3c8e228d892eefc87' } },
+  corpusCounts: { packages: 8, routes: 24, modules: 217, lessons: 222, activities: 289 }, corpusDigest: '5098aef19660130a4ee6a08749e5aedcf99ecb3ad15f9acffe7bdb034a4eae7f',
+  protected: { learningContent: { count: 4012, digest: '22e0330de012ea3ef53cd39beb104b4d5fcb9c78ae48763b11cf7639cce7888d' }, originals: { count: 7, digest: '633edd7f7027a61587b1b944b0b3bf8562819697144b449e4dc9aed1db4ab6b7' }, historicalReports: { count: 166, digest: 'ad7e2fb5526e358de8fd988efab72fb3d3dee4ecad33184d66bd5b2275068df2' } },
 } as const
 
 const sha256 = (value: string | Uint8Array) => createHash('sha256').update(value).digest('hex')
 const json = (value: unknown) => `${JSON.stringify(value, null, 2)}\n`
-const md = (value: string) => `${value.trim()}\n`
+const md = (value: string) => `${value.trim().replace(/[ \t]+$/gmu, '')}\n`
 const pipe = (value: unknown) => String(value ?? '—').replaceAll('|','\\|').replaceAll('\n','<br>')
 const table = (headers: readonly string[], rows: readonly (readonly unknown[])[]) => [
   `| ${headers.join(' | ')} |`, `| ${headers.map(() => '---').join(' | ')} |`, ...rows.map((row) => `| ${row.map(pipe).join(' | ')} |`),

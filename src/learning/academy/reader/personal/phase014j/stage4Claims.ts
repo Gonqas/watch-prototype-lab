@@ -1,6 +1,7 @@
 import type { AcademySourceLocator, AcademyStage4ClaimReview } from '../types'
 import { ACADEMY_STAGE_4_CATALOG } from './stage4Catalog'
 import { academyStage4SectionId } from './stage4Sections'
+import { academyStage4VisibleList, academyStage4VisibleSpanish } from './visibleLanguage'
 
 const locator = (sourceId: string, documentLocator: string, page?: string): AcademySourceLocator => ({ sourceId, documentLocator, page, verificationMethod: 'visual-pdf-inspection', verifiedAt: '2026-08-16' })
 const SPEC = locator('source.miyota.8215.specification', 'snapshot.miyota.8215.specification.bcb22d8e', '1–2')
@@ -8,7 +9,11 @@ const PRODUCT = locator('source.miyota.8215.product-page', 'snapshot.miyota.8215
 const MANUAL = locator('source.miyota.8215.instruction-manual', 'snapshot.miyota.8215.instruction-manual.6286b843', '1')
 const PARTS = locator('source.miyota.8215.parts-list-exploded-view', 'snapshot.miyota.8215.parts-list.fdafef81', '1')
 
-const claim = (value: AcademyStage4ClaimReview) => value
+const claim = (value: AcademyStage4ClaimReview): AcademyStage4ClaimReview => ({
+  ...value,
+  claim: academyStage4VisibleSpanish(value.claim),
+  limitations: academyStage4VisibleList(value.limitations),
+})
 const officialLimit = ['Aplicable únicamente al documento y variante citados.', 'No autoriza una secuencia física de servicio.']
 
 const centralBoundaryClaims: readonly AcademyStage4ClaimReview[] = ACADEMY_STAGE_4_CATALOG.map((item) => claim({

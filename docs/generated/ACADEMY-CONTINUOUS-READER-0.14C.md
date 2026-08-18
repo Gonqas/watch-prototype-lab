@@ -9,7 +9,7 @@ Fase detenida en **0.14C**. Este informe describe la capa de presentación y com
 | Lecciones convertidas | 222 |
 | Apartados semánticos | 2568 |
 | Lecciones piloto curadas | 21 |
-| Aliases legados | 2111 |
+| Aliases legados | 2113 |
 | Cues visuales | 2568 |
 | Escenas 3D existentes | 97 |
 | Diagramas originales | 401 |

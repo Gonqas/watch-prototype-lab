@@ -488,7 +488,7 @@ for (const [index, module] of modules.entries()) {
     title: { es: module.title, en: module.title },
     purpose: { es: module.purpose, en: module.purpose },
     objectives: [
-      { es: `Identificar y explicar ${module.title.toLowerCase()} con fuentes.`, en: `Identificar y explicar ${module.title.toLowerCase()} con fuentes.` },
+      { es: `Explicar cómo ${module.purpose.replace(/\.$/, '').replace(/^./, (letter) => letter.toLocaleLowerCase('es'))}.`, en: `Explicar cómo ${module.purpose.replace(/\.$/, '').replace(/^./, (letter) => letter.toLocaleLowerCase('es'))}.` },
       { es: 'Ejecutar una acción reversible cuando el modelo y las fuentes la respalden.', en: 'Ejecutar una acción reversible cuando el modelo y las fuentes la respalden.' },
       { es: 'Distinguir conclusión permitida, desconocido y límite del modelo estructural.', en: 'Distinguir conclusión permitida, desconocido y límite del modelo estructural.' },
     ],
@@ -813,7 +813,7 @@ for (const [slug, title, skillType] of competencySpecs) {
     id: `concept.miyota8215.${slug}`,
     version,
     title: { es: title, en: title },
-    summary: { es: `${title} con un modelo estructural, fuentes, operaciones y límites declarados.`, en: `${title} con un modelo estructural, fuentes, operaciones y límites declarados.` },
+    summary: { es: `${title}: ${module.purpose.replace(/^./, (letter) => letter.toLocaleLowerCase('es'))}`, en: `${title}: ${module.purpose.replace(/^./, (letter) => letter.toLocaleLowerCase('es'))}` },
     kind: skillType === 'knowledge' ? 'concept' : 'skill',
     prerequisiteIds: graph.prerequisiteIds ?? [],
     relatedIds: graph.relatedIds ?? [],

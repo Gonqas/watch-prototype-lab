@@ -21,7 +21,7 @@ export function createIntegrationProject(profileId:string,now=new Date().toISOSt
   project.dimensionalChains=structuredClone([...ACADEMY_STAGE_5_CHAIN_TEMPLATES])
   project.interferenceChecks=structuredClone([...ACADEMY_STAGE_5_INTERFERENCE_TEMPLATES])
   project.assemblyPlan=structuredClone([...ACADEMY_STAGE_5_ASSEMBLY_PLAN])
-  project.verificationPlan=['Revisar documentación aplicable.','Cerrar interfaces críticas en papel.','Preparar dry-layout físico futuro con stop conditions.','Documentar ensayo real solo cuando exista.']
+  project.verificationPlan=['Revisar la documentación aplicable.','Cerrar las interfaces críticas en papel.','Preparar una disposición física provisional futura con condiciones de parada.','Documentar un ensayo real solo cuando exista.']
   return project
 }
 

@@ -6,6 +6,10 @@ import {
   academyDiagramPayloadHash,
   academySectionVisualCuration,
 } from './academyReaderCuration'
+import {
+  academySourceFigureAssetIsValid,
+  auditAcademySourceFigureAsset,
+} from './academySourceFigureAsset'
 import { academy3dVisualStateForPhase } from './academyReader3dStates'
 import {
   academyCurationMetadataForLesson,
@@ -303,7 +307,7 @@ function structuralVisualCue(
   }
 }
 
-function curatedVisualCue(
+export function academyVisualCueFromCuration(
   section: AcademyReaderSection,
   curation: NonNullable<AcademyReaderDocument['sectionCurations']>[number],
   activities: AcademyReaderBuildInput['material']['activities'],
@@ -311,10 +315,17 @@ function curatedVisualCue(
 ): AcademyVisualCue {
   const activity = curation.activityId ? activities.find(({ id }) => id === curation.activityId) : undefined
   const visualState = academy3dVisualStateForPhase(curation.visualStateId, phase)
-  const implementedDiagram = Boolean(curation.diagramData && academyDiagramIsContentSpecific(curation.diagramData))
+  const implementedDiagram = curation.visualKind !== 'image'
+    && Boolean(curation.diagramData && academyDiagramIsContentSpecific(curation.diagramData))
   const implementedScene = curation.visualKind === 'scene-3d' && Boolean(activity?.fixtureBinding && visualState)
-  const implemented = implementedDiagram || implementedScene
+  const implementedImage = curation.visualKind === 'image' && academySourceFigureAssetIsValid(curation.imageAsset)
+  const implemented = implementedDiagram || implementedScene || implementedImage
   const gap = ['visual-gap', 'source-review-required'].includes(curation.visualDecision)
+  const imageAsset = implementedImage ? curation.imageAsset : undefined
+  const imageSourceType: AcademyVisualCue['sourceType'] = imageAsset?.rights.status === 'licensed'
+    || imageAsset?.rights.status === 'permission-granted'
+    ? 'licensed-asset'
+    : 'existing-runtime-asset'
   const compositionId = curation.fixtureBinding?.kind === 'composition'
     ? curation.fixtureBinding.compositionId
     : curation.fixtureBinding?.kind === 'fixture'
@@ -335,11 +346,18 @@ function curatedVisualCue(
             ? 'compare'
             : 'follow',
     kind: implemented ? curation.visualKind : 'none',
-    sourceType: implementedScene ? 'existing-fixture' : implementedDiagram ? 'original-diagram' : 'none',
+    sourceType: implementedScene
+      ? 'existing-fixture'
+      : implementedDiagram
+        ? 'original-diagram'
+        : implementedImage
+          ? imageSourceType
+          : 'none',
     visualDecision: curation.visualDecision,
     visualDesignId: curation.visualDesignId,
     diagramSchemaId: curation.diagramSchemaId,
     diagramData: curation.diagramData,
+    imageAsset,
     diagramPayloadHash: academyDiagramPayloadHash(curation.diagramData),
     activityId: curation.activityId,
     fixtureBinding: activity?.fixtureBinding,
@@ -352,7 +370,7 @@ function curatedVisualCue(
         : curation.visualKind === 'diagram'
           ? 'system-map'
           : undefined,
-    modelReference: visualState?.fixtureId ?? curation.visualDesignId,
+    modelReference: visualState?.fixtureId ?? imageAsset?.assetId ?? curation.visualDesignId,
     selectorIds: curation.selectorIds,
     cameraPreset: curation.cameraPreset,
     isolation: curation.isolationIds,
@@ -363,11 +381,11 @@ function curatedVisualCue(
     labels: curation.labelDefinitions.map(({ label }) => label),
     labelDefinitions: curation.labelDefinitions,
     pedagogicalQuestion: curation.pedagogicalQuestion,
-    caption: curation.diagramData?.title ?? section.title,
-    altText: curation.expectedObservation,
+    caption: imageAsset?.caption ?? curation.diagramData?.title ?? section.title,
+    altText: imageAsset?.alt ?? curation.expectedObservation,
     fidelity: curation.fidelity,
-    limitations: curation.limitations,
-    expectedObservation: curation.expectedObservation,
+    limitations: [...new Set([...curation.limitations, ...(imageAsset ? [imageAsset.limitation] : [])])],
+    expectedObservation: imageAsset?.evidence ?? curation.expectedObservation,
     misconceptionAddressed: curation.misconceptionAddressed,
     readingModePolicy: curation.readingModePolicy,
     semanticSpecificity: implemented ? 'section-specific' : gap ? 'topic-specific' : 'generic-scaffold',
@@ -375,16 +393,30 @@ function curatedVisualCue(
       ? curation.diagramData?.nodes.map(({ label }) => label) ?? []
       : implementedScene
         ? [visualState?.visualStateId ?? '', ...curation.selectorIds].filter(Boolean)
+        : implementedImage && imageAsset
+          ? [imageAsset.assetId, imageAsset.source.sourceId, imageAsset.whatToLookFor]
         : [],
     reviewStatus: 'codex-assisted',
     implementationStatus: implemented
       ? 'implemented'
       : curation.visualKind === 'scene-3d' && curation.visualDecision === 'content-specific-3d'
         ? 'unavailable'
+        : curation.visualKind === 'image' && curation.visualDecision === 'essential-inline-image'
+          ? 'unavailable'
         : gap ? 'gap-recorded' : 'not-required',
-    provenance: implementedScene ? 'existing-fixture' : implementedDiagram ? 'original-data-driven-svg' : 'editorial-decision',
+    provenance: implementedScene
+      ? 'existing-fixture'
+      : implementedDiagram
+        ? 'original-data-driven-svg'
+        : implementedImage
+          ? 'source-figure-asset'
+          : 'editorial-decision',
     sourceRole: implemented ? 'supporting' : 'none',
-    curationStatus: implemented ? 'implemented' : gap ? 'gap' : 'unnecessary',
+    curationStatus: implemented
+      ? 'implemented'
+      : curation.visualKind === 'image' && curation.visualDecision === 'essential-inline-image'
+        ? 'available-pending'
+        : gap ? 'gap' : 'unnecessary',
   }
 }
 
@@ -556,7 +588,7 @@ export function buildAcademyReaderDocument(
     for (const section of sections) {
       const curation = curationBySection.get(section.sectionId)
       if (!curation) continue
-      const cue = curatedVisualCue(section, curation, input.material.activities, curationPhase)
+      const cue = academyVisualCueFromCuration(section, curation, input.material.activities, curationPhase)
       section.visualCue = cue
       section.visualCueIds = [cue.cueId]
       section.curationMethod = 'pilot-override'
@@ -697,6 +729,26 @@ export function validateAcademyReaderDocument(document: AcademyReaderDocument): 
       && section.visualCue.diagramData
       && !academyDiagramIsContentSpecific(section.visualCue.diagramData)) {
       issues.push({ code: 'generic-diagram-misclassified', lessonId: document.lessonId, sectionId: section.sectionId, message: 'Un payload genérico se marcó como contenido específico.' })
+    }
+    const imageCuration = document.sectionCurations?.find(({ lessonId, sectionId }) => lessonId === document.lessonId && sectionId === section.sectionId)
+    const expectsImage = section.visualCue.kind === 'image' || imageCuration?.visualKind === 'image'
+    if (expectsImage) {
+      const imageAsset = section.visualCue.imageAsset ?? imageCuration?.imageAsset
+      if (!imageAsset) {
+        issues.push({ code: 'missing-image-asset', lessonId: document.lessonId, sectionId: section.sectionId, message: 'El visual de tipo imagen no declara un asset fuente.' })
+      } else {
+        const assetIssues = auditAcademySourceFigureAsset(imageAsset)
+        if (assetIssues.length > 0) {
+          issues.push({
+            code: 'invalid-image-asset',
+            lessonId: document.lessonId,
+            sectionId: section.sectionId,
+            message: `El asset ${imageAsset.assetId || '(sin assetId)'} incumple el contrato: ${assetIssues.map(({ code, message }) => `${code}: ${message}`).join(' ')}`,
+          })
+        } else if (section.visualCue.kind !== 'image' || section.visualCue.implementationStatus !== 'implemented') {
+          issues.push({ code: 'invalid-image-asset', lessonId: document.lessonId, sectionId: section.sectionId, message: 'El asset fuente es válido, pero el cue no quedó transferido como imagen implementada.' })
+        }
+      }
     }
     if (/\]\(\s*(?:javascript|vbscript|data):/i.test(section.markdown)) {
       issues.push({ code: 'unsafe-markdown-url', lessonId: document.lessonId, sectionId: section.sectionId, message: 'El Markdown contiene una URL no permitida.' })

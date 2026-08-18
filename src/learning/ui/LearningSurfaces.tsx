@@ -582,7 +582,7 @@ function ActivitySurface() {
       : activity.fixtureBinding.fixtureIds.map(friendlyLearningTerm).join(' y ')
     : 'una copia de solo lectura de tu proyecto'
   const historicalPracticePreparation = isManufacturingStudy
-    ? 'Prepararemos un expediente de fabricación con operaciones, material, datums, tolerancias, riesgos, inspecciones y aceptación. No ejecutará ninguna operación física.'
+    ? 'Prepararemos un expediente de fabricación con operaciones, material, referencias geométricas, tolerancias, riesgos, inspecciones y aceptación. No ejecutará ninguna operación física.'
     : isPersonalDesignStudy
       ? 'Prepararemos una puerta de diseño con entradas, interfaces, alternativas, riesgos, entregables y verificación. Tu proyecto técnico no se modificará.'
       : isValidationStudy
@@ -631,7 +631,7 @@ function ActivitySurface() {
   const practiceCycleDescriptions = isManufacturingStudy
     ? [
         'Fija función, revisión, material y estado de entrada.',
-        'Relaciona operaciones con datums, riesgos e inspecciones.',
+        'Relaciona operaciones con referencias geométricas, riesgos e inspecciones.',
         'Compara al menos dos secuencias y su acumulación de error.',
         'Define criterios de aceptación y condiciones de parada.',
         'Transfiere el plan a otra pieza sin declarar fabricación realizada.',

@@ -12,6 +12,7 @@ import {
   type ImagePoint,
 } from '../../core/horology-metrology'
 import { isNativeApp } from '../../platform/native'
+import { metrologyAnnotationKindLabel, metrologyAnnotationMethodLabel, metrologyAnnotationUnitLabel } from './metrologyUiLanguage'
 
 const requiredPoints: Readonly<Record<ImageAnnotationKind, number>> = {
   distance: 2,
@@ -127,12 +128,12 @@ export function MetrologyImageWorkbench({
       </div>
       <div className="metrology-tool-panel">
         <label>Herramienta<select value={tool} onChange={(event) => { setTool(event.target.value as ImageAnnotationKind); setPendingPoints([]) }}><option value="distance">Distancia</option><option value="diameter-circle">Diámetro por círculo</option><option value="diameter-three-point">Diámetro por tres puntos</option><option value="radius">Radio</option><option value="angle">Ángulo</option><option value="center">Centro</option><option value="area">Área aproximada</option><option value="tooth-count">Conteo manual de dientes</option><option value="marker">Marcador</option><option value="label">Etiqueta</option><option value="region">Región</option></select></label>
-        <div><span>Puntos: {pendingPoints.length}{tool !== 'tooth-count' ? `/${requiredPoints[tool]}` : ''}</span><strong>{currentValue.value === undefined ? 'Traza sobre la imagen' : `${currentValue.value.toFixed(3)} ${currentValue.unit}`}</strong></div>
+        <div><span>Puntos: {pendingPoints.length}{tool !== 'tooth-count' ? `/${requiredPoints[tool]}` : ''}</span><strong>{currentValue.value === undefined ? 'Traza sobre la imagen' : `${currentValue.value.toFixed(3)} ${metrologyAnnotationUnitLabel(currentValue.unit)}`}</strong></div>
         <button type="button" disabled={!complete} onClick={() => void onCreateAnnotation(tool, pendingPoints, currentValue.value, currentValue.unit).then(() => setPendingPoints([]))}><Ruler size={15} />Guardar anotación</button>
         <label>Referencia física (mm)<input inputMode="decimal" value={physicalReference} onChange={(event) => setPhysicalReference(event.target.value)} /></label>
         <button type="button" disabled={pendingPoints.length < 2 || !(Number(physicalReference) > 0)} onClick={() => void onCreateCalibration(Math.hypot(pendingPoints[1].x - pendingPoints[0].x, pendingPoints[1].y - pendingPoints[0].y), Number(physicalReference))}>Calibrar escala 2D</button>
       </div>
-      <details className="metrology-annotation-table" open><summary>Anotaciones guardadas ({annotations.length})</summary><table><thead><tr><th>Tipo</th><th>Valor</th><th>Método</th></tr></thead><tbody>{annotations.map((annotation) => <tr key={annotation.id}><td>{annotation.kind}</td><td>{annotation.value === undefined ? '—' : `${annotation.value.toFixed(3)} ${annotation.unit}`}</td><td>{annotation.method}</td></tr>)}</tbody></table></details>
+      <details className="metrology-annotation-table" open><summary>Anotaciones guardadas ({annotations.length})</summary><table><thead><tr><th>Tipo</th><th>Valor</th><th>Método</th></tr></thead><tbody>{annotations.map((annotation) => <tr key={annotation.id}><td>{metrologyAnnotationKindLabel(annotation.kind)}</td><td>{annotation.value === undefined ? '—' : `${annotation.value.toFixed(3)} ${metrologyAnnotationUnitLabel(annotation.unit)}`}</td><td>{metrologyAnnotationMethodLabel(annotation.method)}</td></tr>)}</tbody></table></details>
     </section>
   )
 }

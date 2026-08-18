@@ -53,6 +53,13 @@ const payload = (spec: VisualSpec): AcademyDiagramData => ({
   annotations: ['Las etiquetas y relaciones transmiten la información sin depender del color.'],
 })
 
+const describeRelations = (spec: VisualSpec): string => {
+  const labels = new Map(spec.nodes.map(([id, label]) => [id, label]))
+  return spec.edges
+    .map(([from, to, relation]) => `${labels.get(from) ?? from} se relaciona con ${labels.get(to) ?? to}: ${relation}`)
+    .join('. ')
+}
+
 export const ACADEMY_STAGE_2_VISUAL_DESIGNS: readonly (AcademyStage2VisualDesign & { questionGroupId: string })[] = specs.map((spec) => {
   const lessonIds = ACADEMY_STAGE_2_CATALOG.filter(({ visualDesignIds }) => visualDesignIds.includes(spec.visualDesignId)).map(({ lessonId }) => lessonId)
   const sectionIds = lessonIds.map((lessonId) => academyStage2SectionId.visual(lessonId, spec.visualDesignId))
@@ -61,7 +68,7 @@ export const ACADEMY_STAGE_2_VISUAL_DESIGNS: readonly (AcademyStage2VisualDesign
     visualDesignId: spec.visualDesignId, questionGroupId: spec.questionGroupId, lessonIds, sectionIds,
     pedagogicalQuestion: spec.question, semanticPayload, sourceIds: [spec.source.sourceId], sourceLocators: [spec.source],
     fidelity: 'conceptual', limitations: [spec.limitation], accessibilitySummary: `${spec.title}: ${spec.nodes.map(([, label]) => label).join(', ')}.`,
-    longDescription: `${spec.title}. ${spec.edges.map(([from, to, label]) => `${from} se relaciona con ${to}: ${label}`).join('. ')}.`,
+    longDescription: `${spec.title}. ${describeRelations(spec)}. ${spec.limitation}`,
     implementationStatus: spec.visualDesignId.startsWith('visual.stage2.') ? 'implemented' : 'reused-and-versioned',
     contentHash: academyReaderStableHash([spec.question, spec.title, spec.limitation].join('\n')),
     visualHash: academyReaderStableHash(JSON.stringify(semanticPayload)), colorIndependent: true, reducedMotionSafe: true,
